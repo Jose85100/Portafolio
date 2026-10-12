@@ -24,3 +24,7 @@ recesion_local       -9.90         0.50     1.80              -0.52      -8.13  
 Peor escenario: crisis_2008 (-14.20% | -1,419,600)
 Estres inverso: para perder 10.0% solo con acciones se requiere un choque de -22.2%
 ```
+
+## Notebook
+
+[`notebook.ipynb`](notebook.ipynb) desarrolla el tema de forma extensa: versión ingenua, diagnóstico, mejoras, robustez y **pruebas automáticas** (`assert`) que fallan el notebook si un hallazgo deja de cumplirse. Las cifras de sus conclusiones se calculan desde los datos. `main.py` es la versión corta del mismo tema.
