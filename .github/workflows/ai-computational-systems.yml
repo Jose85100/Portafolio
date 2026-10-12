@@ -1,0 +1,25 @@
+name: AI Computational Systems
+on:
+  push:
+    paths:
+      - '05-artificial-intelligence-and-computational-systems/**'
+      - '.github/workflows/ai-computational-systems.yml'
+  pull_request:
+    paths:
+      - '05-artificial-intelligence-and-computational-systems/**'
+      - '.github/workflows/ai-computational-systems.yml'
+jobs:
+  projects:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Validate Python syntax
+        run: python -m compileall -q 05-artificial-intelligence-and-computational-systems
+      - name: Run independent project suites
+        run: python 05-artificial-intelligence-and-computational-systems/scripts/test_projects.py
