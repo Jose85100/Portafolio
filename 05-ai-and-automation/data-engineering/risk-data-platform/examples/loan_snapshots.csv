@@ -1,0 +1,5 @@
+loan_id,as_of_date,principal,days_past_due,status
+L001,2026-10-01,100000.00,0,active
+L002,2026-10-01,50000.50,35,active
+L003,2026-10-01,0.00,0,closed
+L001,2026-10-02,95000.00,0,active
