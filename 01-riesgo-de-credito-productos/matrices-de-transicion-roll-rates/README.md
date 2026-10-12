@@ -26,3 +26,7 @@ default   0.000    0.000    0.000    0.000    1.000
 Error absoluto maximo vs matriz verdadera: 0.0068
 PD acumulada a 12 meses (cuenta al dia): estimada 0.1653 | verdadera 0.1636
 ```
+
+## Notebook
+
+[`notebook.ipynb`](notebook.ipynb) desarrolla el tema de forma extensa: versión ingenua, diagnóstico, mejoras, robustez y **pruebas automáticas** (`assert`) que fallan el notebook si un hallazgo deja de cumplirse. Las cifras de sus conclusiones se calculan desde los datos. `main.py` es la versión corta del mismo tema.

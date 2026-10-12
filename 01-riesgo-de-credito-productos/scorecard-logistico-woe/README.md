@@ -24,3 +24,7 @@ Information Value por variable:
 Tasa de default en prueba: 0.094
 AUC = 0.667 | Gini = 0.333 | KS = 0.254
 ```
+
+## Notebook
+
+[`notebook.ipynb`](notebook.ipynb) desarrolla el tema de forma extensa: versión ingenua, diagnóstico, mejoras, robustez y **pruebas automáticas** (`assert`) que fallan el notebook si un hallazgo deja de cumplirse. Las cifras de sus conclusiones se calculan desde los datos. `main.py` es la versión corta del mismo tema.

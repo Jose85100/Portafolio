@@ -24,3 +24,7 @@ vehiculo     57,704,772.6350   698,922.2269         0.0121            690,262.57
 hipotecario 143,611,411.3453   425,355.7590         0.0030            422,339.8035            0.1207
 EL total = 3,523,762 sobre exposicion 250,275,708
 ```
+
+## Notebook
+
+[`notebook.ipynb`](notebook.ipynb) desarrolla el tema de forma extensa: versión ingenua, diagnóstico, mejoras, robustez y **pruebas automáticas** (`assert`) que fallan el notebook si un hallazgo deja de cumplirse. Las cifras de sus conclusiones se calculan desde los datos. `main.py` es la versión corta del mismo tema.
