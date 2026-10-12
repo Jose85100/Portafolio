@@ -27,7 +27,7 @@ A digital twin represents a defined system using a synchronized state estimate, 
 - [Reference architecture and coupling semantics](ARCHITECTURE.md)
 - [Versioned data contracts and ledger invariants](DATA_CONTRACTS.md)
 - [Validation matrix, implementation roadmap and bank use cases](VALIDATION_AND_ROADMAP.md)
-- [Existing credit portfolio digital twin research](../../../03-financial-risk/04-advanced-research/02-nonstationary-credit-digital-twin/README.md) — separate prior proposal, avoid duplicate claims.
+- [Existing credit portfolio digital twin research](../../03-financial-risk/04-advanced-research/02-nonstationary-credit-digital-twin/README.md) — separate prior proposal, avoid duplicate claims.
 
 ## Intended operating modes
 
