@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Jose85100/Portafolio/03-financial-risk/01-credit-risk/contracts/v1/risk_estimate.schema.json",
+  "title": "Synthetic RiskEstimate/v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract_version", "dataset_version", "model_version", "run_id",
+    "exposure_id", "as_of_date", "synthetic", "pd_12m", "lgd_downturn",
+    "ead_cop", "expected_loss_cop", "status"
+  ],
+  "properties": {
+    "contract_version": {"const": "1.0.0"},
+    "dataset_version": {"type": "string", "minLength": 1},
+    "model_version": {"type": "string", "minLength": 1},
+    "run_id": {"type": "string", "format": "uuid"},
+    "exposure_id": {"type": "string", "format": "uuid"},
+    "as_of_date": {"type": "string", "format": "date"},
+    "synthetic": {"const": true},
+    "pd_12m": {"type": "number", "minimum": 0, "maximum": 1},
+    "lgd_downturn": {"type": "number", "minimum": 0, "maximum": 1},
+    "ead_cop": {"type": "number", "minimum": 0},
+    "expected_loss_cop": {"type": "number", "minimum": 0},
+    "status": {"enum": ["accepted", "rejected", "quarantined"]}
+  }
+}

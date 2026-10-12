@@ -1,32 +1,46 @@
-# Asignación de capital por RAROC
+# Asignación de cartera por RAROC
 
-Asignación del presupuesto de crédito entre segmentos maximizando el retorno ajustado por riesgo sujeto a un presupuesto de capital y topes por segmento, resuelto con programación lineal.
+Ejemplo reproducible de asignación de exposición entre segmentos de crédito. Distingue explícitamente dos decisiones que suelen confundirse:
 
-## Datos
+| Decisión | Objetivo | Uso adecuado |
+|---|---|---|
+| Máximo RAROC | `utilidad / capital` | Eficiencia ajustada por capital |
+| Máxima utilidad | `utilidad` | Crecimiento/beneficio sujeto a presupuesto de capital |
 
-Datos **sintéticos** generados con semilla fija (`numpy.random.default_rng`). No hay datos de clientes, de empresas ni confidenciales. Los resultados son **ilustrativos del método**, no evidencia de desempeño real.
+El script resuelve el primer objetivo exactamente con la transformación lineal-fraccional de Charnes--Cooper; el segundo se conserva como comparación. Por tanto, no afirma que una optimización de utilidad esté maximizando RAROC.
 
-## Cómo ejecutar
+## Formulación
+
+Para pesos de exposición `x`, utilidad neta unitaria `π`, cargo de capital `k`, topes `u` y presupuesto `K`:
+
+\[
+\max_x \frac{\pi^\top x}{k^\top x}\quad
+\text{s.a.}\quad \mathbf{1}^\top x=1,\; k^\top x\leq K,\;0\leq x_i\leq u_i.
+\]
+
+Con `y=x/(k'x)` y `t=1/(k'x)`, se resuelve un LP global: maximizar `π'y`, con `1'y=t`, `k'y=1`, `Kt≥1` y `yᵢ≤uᵢt`. El modelo asume cargos de capital lineales; para dependencia, diversificación y error de estimación consulte el [notebook](notebook.ipynb).
+
+```mermaid
+flowchart LR
+    A[Supuestos sintéticos<br/>margen, EL, costo, capital] --> B[Controles<br/>topes y K]
+    B --> C{Decisión}
+    C -->|Eficiencia| D[Maximizar RAROC<br/>LP fraccional]
+    C -->|Beneficio| E[Maximizar utilidad<br/>LP]
+    D --> F[Validar factibilidad<br/>y sensibilidad]
+    E --> F
+    F --> G[Comité de riesgo]
+```
+
+## Datos y límites
+
+Los seis segmentos y todos sus parámetros son **sintéticos y deterministas**, declarados en `segmentos_sinteticos()`. No hay clientes, operaciones, precios ni desempeño real. `pérdida_esperada` es un insumo resumido; no sustituye PD, LGD, EAD, correlación, impuestos, liquidez o costos de fondeo. Un RAROC alto tampoco autoriza originación: los topes deben provenir del apetito de riesgo aprobado.
+
+## Ejecución y pruebas
 
 ```bash
 pip install numpy pandas scipy
 python3 main.py
+python3 -m unittest test_model.py
 ```
 
-## Resultado de ejemplo
-
-```text
-segmento  utilidad  capital  raroc  tope  asignacion
-    consumo     0.070     0.10 0.7000  0.30      0.3000
-    tarjeta     0.100     0.13 0.7692  0.15      0.1500
-   vehiculo     0.053     0.08 0.6625  0.30      0.2667
-hipotecario     0.041     0.05 0.8200  0.40      0.2833
-       pyme     0.052     0.11 0.4727  0.20      0.0000
-corporativo     0.033     0.07 0.4714  0.35      0.0000
-Estado del optimizador: Optimization terminated successfully. (HiGHS Status 7: Optimal)
-Utilidad esperada sobre cartera: 0.0618 | capital usado: 0.0850 de 0.085 | RAROC: 0.726
-```
-
-## Notebook
-
-[`notebook.ipynb`](notebook.ipynb) desarrolla el tema de forma extensa: versión ingenua, diagnóstico, mejoras, robustez y **pruebas automáticas** (`assert`) que fallan el notebook si un hallazgo deja de cumplirse. Las cifras de sus conclusiones se calculan desde los datos. `main.py` es la versión corta del mismo tema.
+`test_model.py` comprueba presupuesto, inversión total, topes y que cada objetivo domina a la otra solución en su propia métrica.

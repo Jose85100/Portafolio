@@ -2,6 +2,12 @@
 
 Segmentación de clientes por comportamiento de crédito con k-means: estandarización, elección de k por coeficiente de silueta y lectura de la tasa de incumplimiento y el perfil de cada segmento.
 
+## Método y contrato
+
+Con variables estandarizadas, k-means minimiza \(\sum_{c=1}^{k}\sum_{i\in C_c}\lVert x_i-\mu_c\rVert^2\). El script elige el \(k\) de mayor silueta entre 2 y 6 y presenta perfiles descriptivos. El default se usa solo **después** para describir segmentos; no participa en el clustering.
+
+El grano es **cuenta–fecha de corte** con `monthly_income`, `utilization`, `days_past_due`/mora y, para lectura posterior, `default_flag`. Un clúster es una agrupación exploratoria, no una clase de riesgo, score ni regla de elegibilidad. Antes de uso real se requiere estabilidad temporal, representatividad, revisión de sesgo y gobierno; véanse el [contrato común](../docs/DATA_CONTRACTS.md) y la [guía de gobierno](../docs/QUALITY_AND_GOVERNANCE.md).
+
 ## Datos
 
 Datos **sintéticos** generados con semilla fija (`numpy.random.default_rng`). No hay datos de clientes, de empresas ni confidenciales. Los resultados son **ilustrativos del método**, no evidencia de desempeño real.

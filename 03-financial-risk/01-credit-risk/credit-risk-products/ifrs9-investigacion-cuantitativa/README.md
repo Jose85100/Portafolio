@@ -21,6 +21,19 @@ Cada estudio distingue: **norma / principio contable**, **decisión de modelaci�
 
 Congelar snapshot as-of, construir panel contrato-mes sin filtración futura, generar cohortes de desarrollo y validación temporal, estimar PD condicionales y sus incertidumbres, estimar recuperaciones y EAD, reconciliar cash shortfalls, producir ECL por escenario, someter a pruebas independientes y documentar aprobaciones. La unidad mínima de trazabilidad es (contrato, fecha de observación, horizonte, escenario, versión de modelo, versión de datos).
 
+```mermaid
+flowchart LR
+  A[Snapshot as-of<br/>contrato-mes] --> B[PD y SICR]
+  A --> C[LGD, EAD y flujos]
+  D[Escenarios macro<br/>ponderados] --> B
+  D --> C
+  B --> E[ECL descontada]
+  C --> E
+  E --> F[Backtesting, validación<br/>y gobierno]
+```
+
+El [contrato de datos del laboratorio](../docs/DATA_CONTRACTS.md) y su [DDL de referencia](../docs/credit_risk_schema.sql) especifican una base mínima para experimentos sintéticos. No codifican IFRS 9, políticas contables ni un cálculo ECL productivo.
+
 ## Bibliografía primaria para cotejo
 
 - IFRS Foundation, **IFRS 9 Financial Instruments**, especialmente requerimientos de impairment y medición de expected credit losses.

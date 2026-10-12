@@ -2,6 +2,17 @@
 
 Cálculo de la pérdida esperada EL = PD x LGD x EAD a nivel de crédito para cuatro productos, con distribuciones beta para PD y LGD, y verificación por simulación Monte Carlo de incumplimientos.
 
+## Método y contrato
+
+Para cada exposición sintética \(i\), el script calcula \(EL_i=PD_i\,LGD_i\,EAD_i\) y contrasta su suma contra la media de pérdidas Bernoulli simuladas:
+
+\[
+L^{(s)}=\sum_i \mathbf{1}\{U_i^{(s)}<PD_i\}\,LGD_i\,EAD_i,
+\qquad \overline L\approx\sum_i EL_i.
+\]
+
+El grano es **cuenta–fecha de corte**. Entradas mínimas: `product_code`, `pd_12m`, `lgd` y `ead`; las tres últimas deben estar alineadas al mismo horizonte y cumplir \(PD,LGD\in[0,1]\), \(EAD\ge0\). Consulte el [contrato común](../docs/DATA_CONTRACTS.md) y el [DDL SQL](../docs/credit_risk_schema.sql). La simulación supone defaults independientes: no estima capital económico ni dependencia de cartera.
+
 ## Datos
 
 Datos **sintéticos** generados con semilla fija (`numpy.random.default_rng`). No hay datos de clientes, de empresas ni confidenciales. Los resultados son **ilustrativos del método**, no evidencia de desempeño real.

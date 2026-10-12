@@ -2,6 +2,12 @@
 
 Estimación por máxima verosimilitud de una matriz de transición entre estados de mora (al día, 30, 60, 90+ días y default absorbente) a partir de historias simuladas, y cálculo de la PD acumulada a 12 meses con potencias de la matriz.
 
+## Método y contrato
+
+Para conteos de transición mensuales \(N_{ij}\), la estimación usada es \(\widehat P_{ij}=N_{ij}/\sum_jN_{ij}\). Si `al_dia` es el estado inicial y `default` el absorbente, la PD acumulada a \(h\) meses es \((\widehat P^h)_{al\_dia,default}\).
+
+El grano requerido es **cuenta–mes de observación** con `account_id`, `observation_month`, `state_from` y `state_to`. El catálogo se cierra a `al_dia`, `mora_30`, `mora_60`, `mora_90` y `default`; en este laboratorio, default no cura. El [contrato común](../docs/DATA_CONTRACTS.md) y el [DDL SQL](../docs/credit_risk_schema.sql) hacen explícitas esas restricciones. En una cartera real, curas, castigos, prepagos, cierres y censura deben documentarse antes de estimar la matriz.
+
 ## Datos
 
 Datos **sintéticos** generados con semilla fija (`numpy.random.default_rng`). No hay datos de clientes, de empresas ni confidenciales. Los resultados son **ilustrativos del método**, no evidencia de desempeño real.
