@@ -1,12 +1,14 @@
-# Mathematics, Statistics & Physics-Inspired Quant
+# Matemáticas, estadística y métodos cuantitativos
 
-Probabilidad, inferencia estadística, procesos estocásticos, optimización, sistemas complejos y física aplicada a economía y finanzas.
+Aquí agrupo herramientas que utilizo para estudiar problemas económicos y financieros: inferencia, simulación, optimización y procesos estocásticos. La intención es entender tanto la solución numérica como las condiciones bajo las cuales esa solución es válida.
 
-**Ejes:** Probability | Stochastic Processes | Statistical Inference | Optimization | Complex Systems.
+## Trabajo disponible
 
-## Criterio de inclusión
-Cada proyecto debe tener pregunta o problema, hipótesis verificable, supuestos, desarrollo matemático, identificación estadística cuando aplique, implementación reproducible, validación y limitaciones.
+- [Métodos cuantitativos](quantitative-methods/): modelos estadísticos, pronóstico, regularización, simulación y valoración.
+- [Laboratorio multilenguaje](quant-libraries/): implementaciones comparables en varios lenguajes para estudiar precisión, diseño y portabilidad.
 
-**Estados:** idea → formulación → prototipo → validación → publicación/producto.
+## Criterios técnicos
 
-Los proyectos históricos permanecen temporalmente en sus rutas originales durante la migración no destructiva. Véase [mapa de migración](../RESEARCH_ARCHITECTURE.md).
+En cada ejercicio distingo los supuestos, el procedimiento de estimación, el diagnóstico y las limitaciones. Una simulación con datos sintéticos sirve para comprobar el comportamiento de un algoritmo, pero no sustituye una validación empírica.
+
+La relación entre estos métodos y las demás áreas está descrita en el [mapa del repositorio](../RESEARCH_ARCHITECTURE.md).
