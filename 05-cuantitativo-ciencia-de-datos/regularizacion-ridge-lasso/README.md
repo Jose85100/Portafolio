@@ -22,3 +22,7 @@ Ridge  RMSE prueba=2.532 | variables no nulas=60 | relevantes recuperadas=6/6
 Lasso  RMSE prueba=2.238 | variables no nulas=26 | relevantes recuperadas=6/6
 Error irreducible (sigma) = 2.000
 ```
+
+## Notebook
+
+[`notebook.ipynb`](notebook.ipynb) desarrolla el tema de forma extensa: versión ingenua, diagnóstico, mejoras, robustez y **pruebas automáticas** (`assert`) que fallan el notebook si un hallazgo deja de cumplirse. Las cifras de sus conclusiones se calculan desde los datos. `main.py` es la versión corta del mismo tema.

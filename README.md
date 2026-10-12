@@ -19,6 +19,21 @@ Proyectos de riesgo de crédito, modelado cuantitativo, portafolios y ciencia de
 - [06 · Estrategia, innovación y venture capital](06-estrategia-innovacion-vc)
 - [07 · Liderazgo de datos](07-liderazgo-de-datos)
 
+## Cómo está hecho cada proyecto
+
+Cada proyecto tiene tres piezas:
+
+- **`notebook.ipynb`** — el desarrollo completo: versión ingenua, diagnóstico, mejoras, robustez y límites. Los datos son sintéticos y **se conoce el proceso que los genera**, así que el notebook puede comprobar si el método recupera la verdad. Las cifras de las conclusiones se **calculan e imprimen desde los datos** (celdas «Lectura»), y una sección final de **pruebas automáticas** (`assert`) hace fallar el notebook si un hallazgo deja de cumplirse. Cuando una hipótesis inicial resultó falsa al ejecutarla, el notebook lo dice y muestra la corrección.
+- **`main.py`** — la versión corta y ejecutable del mismo tema.
+- **`README.md`** — qué hace, cómo ejecutar y un resultado de ejemplo.
+
+Para reproducir todo:
+
+```bash
+pip install -r requirements.txt
+python3 -m unittest tests.test_notebooks -v   # ejecuta los 35 notebooks de principio a fin (tarda: algunos corren simulaciones largas)
+```
+
 ## Proyectos
 
 > **Sobre los datos:** los proyectos de las carpetas 01 a 07 usan datos sintéticos con semilla fija para ilustrar el método. No contienen datos de clientes ni confidenciales, y sus resultados no son evidencia de desempeño real.

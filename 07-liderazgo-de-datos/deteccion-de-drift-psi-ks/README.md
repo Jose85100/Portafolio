@@ -24,3 +24,7 @@ utilizacion  0.3672  0.2366      0.0000   ROJO
 antiguedad   0.0023  0.0260      0.0023  VERDE
 Variables a revisar: ['ingreso', 'utilizacion']
 ```
+
+## Notebook
+
+[`notebook.ipynb`](notebook.ipynb) desarrolla el tema de forma extensa: versión ingenua, diagnóstico, mejoras, robustez y **pruebas automáticas** (`assert`) que fallan el notebook si un hallazgo deja de cumplirse. Las cifras de sus conclusiones se calculan desde los datos. `main.py` es la versión corta del mismo tema.

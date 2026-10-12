@@ -22,3 +22,7 @@ Si falla 'raw_macro' se afecta: ['features_riesgo', 'limpio_macro', 'modelo_pd',
 Si falla 'raw_precios' se afecta: ['features_riesgo', 'limpio_precios', 'modelo_pd', 'reporte_riesgo', 'tablero_ejecutivo']
 Prueba de ciclo: Ciclo detectado en el linaje
 ```
+
+## Notebook
+
+[`notebook.ipynb`](notebook.ipynb) desarrolla el tema de forma extensa: versión ingenua, diagnóstico, mejoras, robustez y **pruebas automáticas** (`assert`) que fallan el notebook si un hallazgo deja de cumplirse. Las cifras de sus conclusiones se calculan desde los datos. `main.py` es la versión corta del mismo tema.

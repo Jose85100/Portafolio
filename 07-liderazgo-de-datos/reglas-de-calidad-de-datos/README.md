@@ -25,3 +25,7 @@ ciudad existe                  0.970              30  ALERTA
 actualizado <= 60 dias         0.940              60   FALLA
 Indice global de calidad (promedio de reglas): 0.971
 ```
+
+## Notebook
+
+[`notebook.ipynb`](notebook.ipynb) desarrolla el tema de forma extensa: versión ingenua, diagnóstico, mejoras, robustez y **pruebas automáticas** (`assert`) que fallan el notebook si un hallazgo deja de cumplirse. Las cifras de sus conclusiones se calculan desde los datos. `main.py` es la versión corta del mismo tema.

@@ -37,3 +37,7 @@ C7           0.06  552.79     2.13           8.33
 C8           0.05  671.50     2.58           8.33
 Cohorte con menor LTV/CAC: C6 (1.37); regla usual: >= 3
 ```
+
+## Notebook
+
+[`notebook.ipynb`](notebook.ipynb) desarrolla el tema de forma extensa: versión ingenua, diagnóstico, mejoras, robustez y **pruebas automáticas** (`assert`) que fallan el notebook si un hallazgo deja de cumplirse. Las cifras de sus conclusiones se calculan desde los datos. `main.py` es la versión corta del mismo tema.

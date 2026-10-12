@@ -24,3 +24,7 @@ serie B        140.000 0.100       0.434        0.124              60.702       
 Suma de participaciones tras la ultima ronda: 1.000
 Fundadores: de 100% a 43.4%
 ```
+
+## Notebook
+
+[`notebook.ipynb`](notebook.ipynb) desarrolla el tema de forma extensa: versión ingenua, diagnóstico, mejoras, robustez y **pruebas automáticas** (`assert`) que fallan el notebook si un hallazgo deja de cumplirse. Las cifras de sus conclusiones se calculan desde los datos. `main.py` es la versión corta del mismo tema.

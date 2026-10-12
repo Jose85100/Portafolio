@@ -20,3 +20,7 @@ Orden elegido por AIC: ARIMA(1, 1, 1) x (1,0,0,12) | AIC=775.9
 RMSE modelo   = 1.731
 RMSE ingenuo estacional = 2.869
 ```
+
+## Notebook
+
+[`notebook.ipynb`](notebook.ipynb) desarrolla el tema de forma extensa: versión ingenua, diagnóstico, mejoras, robustez y **pruebas automáticas** (`assert`) que fallan el notebook si un hallazgo deja de cumplirse. Las cifras de sus conclusiones se calculan desde los datos. `main.py` es la versión corta del mismo tema.
