@@ -9,6 +9,16 @@ Proyectos de riesgo de crédito, modelado cuantitativo, portafolios y ciencia de
 - **Ciencia de datos y econometría:** machine learning, deep learning y análisis econométrico.
 - **Investigación aplicada:** modelos analíticos y reproducibles para problemas de economía y finanzas.
 
+## Carpetas por perfil
+
+- [01 · Riesgo de crédito: productos](01-riesgo-de-credito-productos)
+- [02 · Riesgo de crédito: estrategia y portafolio](02-riesgo-de-credito-estrategia-portafolio)
+- [03 · Riesgo financiero y riesgo de modelos](03-riesgo-financiero-modelos)
+- [04 · Gestión de portafolios](04-gestion-de-portafolios)
+- [05 · Cuantitativo y ciencia de datos](05-cuantitativo-ciencia-de-datos)
+- [06 · Estrategia, innovación y venture capital](06-estrategia-innovacion-vc)
+- [07 · Liderazgo de datos](07-liderazgo-de-datos)
+
 ## Proyectos
 
 | Proyecto | Área | Descripción | Estado |
