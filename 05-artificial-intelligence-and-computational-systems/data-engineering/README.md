@@ -1,6 +1,6 @@
 # Data Engineering — Ingeniería de Datos
 
-Línea independiente dentro de AI Architecture & Automation, con foco en plataformas analíticas y de riesgo financiero.
+Pilar de infraestructura dentro de Artificial Intelligence & Computational Systems, con foco en plataformas analíticas y de riesgo financiero.
 
 ## Áreas
 

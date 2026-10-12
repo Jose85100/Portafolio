@@ -4,10 +4,10 @@
 
 ## Run
 ```bash
-python3 05-ai-and-automation/data-engineering/risk-data-platform/src/pipeline.py \
-  --source 05-ai-and-automation/data-engineering/risk-data-platform/examples/loan_snapshots.csv \
+python3 05-artificial-intelligence-and-computational-systems/data-engineering/risk-data-platform/src/pipeline.py \
+  --source 05-artificial-intelligence-and-computational-systems/data-engineering/risk-data-platform/examples/loan_snapshots.csv \
   --snapshot-root /tmp/risk-snapshots
-python3 -m unittest discover -s 05-ai-and-automation/data-engineering/risk-data-platform/tests -v
+python3 -m unittest discover -s 05-artificial-intelligence-and-computational-systems/data-engineering/risk-data-platform/tests -v
 ```
 
 ## Features

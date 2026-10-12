@@ -12,7 +12,7 @@ La arquitectura está organizada por **pregunta científica y dominio**, no por 
 2. [Mathematics, Statistics & Physics-Inspired Quant](02-mathematics-statistics-and-quant): cálculo estocástico, inferencia, optimización, sistemas complejos, física económica.
 3. [Financial Risk Research](03-financial-risk): crédito, mercado, liquidez, contagio, IFRS 9, pruebas de estrés.
 4. [Quant Strategy & Financial Products](04-quant-strategy-and-products): asset management, trading, derivados, motores cuantitativos.
-5. [AI Architecture & Automation](05-artificial-intelligence-and-computational-systems): agentes, RAG, n8n y sistemas de evaluación. Incluye la línea especializada [Data Engineering](05-artificial-intelligence-and-computational-systems/data-engineering/) para pipelines, lakehouse, contratos, calidad y linaje.
+5. [Artificial Intelligence & Computational Systems](05-artificial-intelligence-and-computational-systems): agentes, RAG, n8n y sistemas de evaluación. Incluye la línea especializada [Data Engineering](05-artificial-intelligence-and-computational-systems/data-engineering/) para pipelines, lakehouse, contratos, calidad y linaje.
 6. [Economic Architecture, Strategy & Leadership](06-strategy-innovation-and-leadership): diseño de mecanismos, innovación, VC y gobierno de datos.
 
 ## Líneas de investigación prioritarias
