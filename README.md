@@ -4,7 +4,7 @@ Proyectos de riesgo de crédito, modelado cuantitativo, portafolios, estrategia 
 
 ## Arquitectura de investigación
 
-La organización parte de la pregunta científica y el dominio, no de la herramienta. Consulta el [mapa de investigación y migración](RESEARCH_ARCHITECTURE.md).
+La organización parte de la pregunta científica y el dominio, no de la herramienta. Consulta el [mapa de investigación y migración](RESEARCH_ARCHITECTURE.md) y la [matriz de madurez](PROJECT_MATURITY.md): un README o una propuesta no se presenta como producto terminado.
 
 | Dominio | Contenido |
 |---|---|
@@ -27,6 +27,9 @@ La organización parte de la pregunta científica y el dominio, no de la herrami
 ```bash
 pip install -r requirements.txt
 
+# Para notebooks (incluye el entorno de investigación)
+pip install -r requirements-research.txt
+
 # Notebooks: ejecuta los 36 de principio a fin (tarda más de una hora; algunos corren simulaciones largas)
 python3 -m unittest tests.test_notebooks -v
 
@@ -43,7 +46,7 @@ for p in 06-strategy-innovation-and-leadership/[0-9][0-9]-*; do python3 -m unitt
 cmake -S 04-quant-strategy-and-products/risk-engines -B build && cmake --build build && ctest --test-dir build
 ```
 
-La integración continua (`.github/workflows`) ejecuta los motores de decisión en Python 3.11–3.13 y compila la plataforma C++.
+La integración continua (`.github/workflows`) ejecuta los motores de decisión en Python 3.11–3.13 y compila la plataforma C++. Los notebooks modificados se ejecutan en cada PR; una regresión integral programada conserva notebooks ejecutados y un manifiesto de resultados como artefactos.
 
 ## Sobre los datos
 

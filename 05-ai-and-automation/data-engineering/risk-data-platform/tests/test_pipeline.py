@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
-from pipeline import normalize, run
+from pipeline import normalize, publish_snapshot, run
 
 class PipelineTests(unittest.TestCase):
     def setUp(self):
@@ -60,6 +60,37 @@ class PipelineTests(unittest.TestCase):
         self.write("A,2026-10-01,100,0,active\n")
         result = run(self.source, self.output, self.manifest)
         self.assertEqual(result, json.loads(self.manifest.read_text()))
+
+    def test_snapshot_publication_is_complete_before_atomic_activation(self):
+        self.write("A,2026-10-01,100,0,active\n")
+        snapshots = self.root / "snapshots"
+        first = publish_snapshot(self.source, snapshots)
+        pointer = json.loads((snapshots / "current.json").read_text())
+        self.assertEqual(pointer["run_id"], first["run_id"])
+        self.assertEqual(pointer["sha256"], first["sha256"])
+        self.assertTrue((snapshots / pointer["csv"]).exists())
+        self.assertTrue((snapshots / pointer["manifest"]).exists())
+        self.assertEqual(first, json.loads((snapshots / pointer["manifest"]).read_text()))
+
+    def test_failed_snapshot_never_moves_current_pointer(self):
+        snapshots = self.root / "snapshots"
+        self.write("A,2026-10-01,100,0,active\n")
+        publish_snapshot(self.source, snapshots)
+        before = (snapshots / "current.json").read_text()
+        self.write("A,2026-10-02,-1,0,active\n")
+        with self.assertRaises(ValueError):
+            publish_snapshot(self.source, snapshots)
+        self.assertEqual(before, (snapshots / "current.json").read_text())
+
+    def test_snapshot_replay_is_idempotent(self):
+        self.write("A,2026-10-01,100,0,active\n")
+        snapshots = self.root / "snapshots"
+        first = publish_snapshot(self.source, snapshots)
+        second = publish_snapshot(self.source, snapshots)
+        self.assertEqual(first["run_id"], second["run_id"])
+        self.assertEqual(first["sha256"], second["sha256"])
+        self.assertEqual(second["new_keys"], 0)
+        self.assertEqual(len(list((snapshots / "runs").iterdir())), 1)
 
 if __name__ == "__main__":
     unittest.main()

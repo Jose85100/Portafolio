@@ -26,6 +26,26 @@ class SharedTests(unittest.TestCase):
         result = asof_join(events,feats,feature_names=["score"])
         self.assertEqual([x["score"] for x in result],[10,90])
 
+    def test_bitemporal_correction_is_not_visible_before_recording(self):
+        events = [{"entity_id":"A", "decision_at":"2026-01-03T12:00:00+00:00"}]
+        feats = [
+            {"entity_id":"A", "available_at":"2026-01-01T00:00:00+00:00", "recorded_at":"2026-01-01T00:00:00+00:00", "valid_from":"2026-01-01T00:00:00+00:00", "score":10, "version":"v1"},
+            {"entity_id":"A", "available_at":"2026-01-02T00:00:00+00:00", "recorded_at":"2026-01-04T00:00:00+00:00", "valid_from":"2026-01-01T00:00:00+00:00", "score":20, "version":"v2"},
+        ]
+        historical = asof_join(events, feats, feature_names=["score"], system_as_of="2026-01-03T12:00:00+00:00")
+        corrected = asof_join(events, feats, feature_names=["score"], system_as_of="2026-01-05T00:00:00+00:00")
+        self.assertEqual(historical[0]["score"], 10)
+        self.assertEqual(corrected[0]["score"], 20)
+
+    def test_timezone_mixing_and_expired_features_fail_or_exclude(self):
+        with self.assertRaises(ValueError):
+            asof_join([{"entity_id":"A", "decision_at":"2026-01-02T00:00:00"}],
+                      [{"entity_id":"A", "available_at":"2026-01-01T00:00:00+00:00", "score":1}], feature_names=["score"])
+        result = asof_join([{"entity_id":"A", "decision_at":"2026-01-03T00:00:00+00:00"}],
+                           [{"entity_id":"A", "available_at":"2026-01-01T00:00:00+00:00", "valid_to":"2026-01-02T00:00:00+00:00", "score":1}],
+                           feature_names=["score"])
+        self.assertIsNone(result[0]["score"])
+
     def test_reconcile_single_date_not_sum_of_snapshots(self):
         rows = [{"loan_id":"A","as_of_date":"2026-01-01","principal":"100"},
                 {"loan_id":"A","as_of_date":"2026-01-02","principal":"90"}]

@@ -9,8 +9,10 @@ flowchart LR
  A["Source CSV"] --> B["Contract validation"]
  B --> C["Keyed deduplication"]
  C --> D["Snapshot upsert"]
- D --> E["Curated CSV"]
- E --> F["SHA256 evidence manifest"]
+ D --> E["Immutable runs/<run_id>/"]
+ E --> F["CSV + SHA256 manifest"]
+ F --> H["Verify both files"]
+ H --> I["Atomic current.json pointer"]
  B --> G["Rejects on failure"]
 ```
 
@@ -25,6 +27,7 @@ flowchart LR
 ## Reliability and limitations
 - Deterministic ordering and SHA256 enable exact replay checks.
 - Fail-closed on invalid records before publishing. Optional reject file includes line and reason.
-- Atomic replacement is **per file**; CSV and manifest are not transactionally committed together. For production use immutable run directories and atomic pointer/snapshot manifests, plus locks for concurrent writers.
+- A run directory is completed before it is renamed into `runs/<run_id>/`. Its CSV hash is verified against its manifest before an atomic `current.json` pointer activates it. Readers resolve that pointer and therefore observe one run, never independently published files.
+- This local implementation does not coordinate simultaneous writers. A shared deployment needs a writer lease / compare-and-swap pointer update supplied by its object store or database.
 - This MVP does not provide CDC, database transactions, distributed storage, schema registry, IAM, encryption, scheduling, observability telemetry, SLA enforcement, data catalog or orchestration. These are subsequent milestones.
 - Synthetic fixture only; no private or regulated data.
