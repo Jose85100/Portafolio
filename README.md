@@ -21,6 +21,8 @@ Proyectos de riesgo de crédito, modelado cuantitativo, portafolios y ciencia de
 
 ## Proyectos
 
+> **Sobre los datos:** los proyectos de las carpetas 01 a 07 usan datos sintéticos con semilla fija para ilustrar el método. No contienen datos de clientes ni confidenciales, y sus resultados no son evidencia de desempeño real.
+
 | Proyecto | Área | Descripción | Estado |
 |---|---|---|---|
 | [JoseData](https://github.com/Jose85100/JoseData) | Ciencia de datos y econometría | Ejercicios y proyectos de machine learning, econometría y optimización de portafolios. | Público |
