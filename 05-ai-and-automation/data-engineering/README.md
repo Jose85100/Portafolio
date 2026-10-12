@@ -32,3 +32,13 @@ Cada producto debe documentar arquitectura física y lógica, esquemas, contrato
 - Riesgos: cartera, provisiones, liquidez y mercado.
 - Quant: precios, factores, señales y backtesting point-in-time.
 - IA: pipelines RAG, agentes y evaluación de modelos.
+
+## Proyectos implementados (prototipos reproducibles)
+
+1. [Risk Data Platform](01-risk-data-platform/) — snapshot D+1, validación y publicación atómica.
+2. [Macro Data Lakehouse](02-macro-data-lakehouse/) — SQLite, vintages y consultas as-of.
+3. [Data Quality & Lineage Engine](03-data-quality-lineage/) — reglas y evidencia SHA-256.
+4. [Quant Research Data Factory](04-quant-research-data-factory/) — features y etiquetas forward con purga temporal.
+5. [Workflow Orchestrator](05-workflow-orchestrator/) — DAG, reintentos y checkpoints.
+
+Cada proyecto incluye módulo Python y pruebas unitarias. El workflow [data-engineering.yml](../../../.github/workflows/data-engineering.yml) ejecuta la batería en Python 3.11, 3.12 y 3.13. **Estado: prototipos funcionales sin validación de CI confirmada; no son sistemas productivos.**
