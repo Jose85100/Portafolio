@@ -1,9 +1,9 @@
-# AI Architecture and Automation
+# Arquitectura de IA y automatización
 
-Investigación y desarrollo de agentes, RAG, arquitectura de IA, automatizaciones, ingeniería de datos y orquestación de sistemas cuantitativos.
+Sistemas que conectan modelos, datos y decisiones. El énfasis está en contratos claros entre componentes, ejecución repetible y capacidad de diagnóstico cuando algo falla.
 
-Esta línea es transversal a economía, finanzas, estadística y motores de riesgo.
+## Trabajo disponible
 
-## Línea especializada
+- [Ingeniería de datos](data-engineering/): cinco prototipos de ingesta, almacenamiento por versiones, calidad, preparación de datos cuantitativos y orquestación.
 
-- [Data Engineering](data-engineering/): plataformas de datos, lakehouse, ETL/ELT, calidad, linaje, orquestación y productos de datos.
+Los proyectos de agentes, RAG y automatización avanzada forman parte de la agenda de investigación, pero no se presentan como productos ya construidos. Prefiero documentar las integraciones reales y dejar explícitas las que todavía están pendientes.
