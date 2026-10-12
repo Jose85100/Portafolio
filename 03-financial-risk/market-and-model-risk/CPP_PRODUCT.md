@@ -1,3 +1,3 @@
 ## Market Risk Engine en C++17
 
-Implementación: [biblioteca](../10-cpp-risk-platform/include/quant/risk.hpp), [CLI](../10-cpp-risk-platform/apps/market.cpp), [pruebas](../10-cpp-risk-platform/tests/tests.cpp). Simulación de pérdidas normales, VaR/ES y función de backtesting de cobertura. Consultar [instrucciones](../10-cpp-risk-platform/README.md). Prototipo sintético; no FRTB completo.
+Implementación: [biblioteca](../../04-quant-strategy-and-products/risk-engines/include/quant/risk.hpp), [CLI](../../04-quant-strategy-and-products/risk-engines/apps/market.cpp), [pruebas](../../04-quant-strategy-and-products/risk-engines/tests/tests.cpp). Simulación de pérdidas normales, VaR/ES y función de backtesting de cobertura. Consultar [instrucciones](../../04-quant-strategy-and-products/risk-engines/README.md). Prototipo sintético; no FRTB completo.
