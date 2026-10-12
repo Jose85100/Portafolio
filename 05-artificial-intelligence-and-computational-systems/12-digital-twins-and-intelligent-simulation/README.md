@@ -1,36 +1,36 @@
-# Digital Twins & Intelligent Simulation — Banking, Payments and Financial Risk
+# Digital Twins & Intelligent Simulation — Economic, Innovation and Financial Systems
 
-**Status: S1, research and engineering design.** This section now contains **seven independent project specifications**, **three disciplinary foundations**, common contracts, architecture and a falsifiable validation plan. No production twin or institution-specific model has been built or validated in this folder.
+**Maturity: S1 documentation and research design, not calibrated or operational digital twins.** The portfolio includes **27 independently specified twins**: seven banking/financial plus twenty economic/innovation projects. Shared architecture, theory, contracts and validation are reusable and not counted as projects.
 
-## Scope and distinguishing criterion
+## Six domain directories
 
-A digital twin represents a defined system using a synchronized state estimate, dynamic simulator, uncertainty propagation and independently testable predictions. Distinguish a synchronized digital twin from a dashboard, static stress spreadsheet or generic simulation.
+1. [Financial & Banking Twins](financial-and-banking-twins/) — index to the [seven existing financial projects](projects/).
+2. [Macroeconomic Twins](macroeconomic-twins/) — four projects.
+3. [Microeconomic & Market Twins](microeconomic-and-market-twins/) — four projects.
+4. [Innovation & Technology Twins](innovation-and-technology-twins/) — four projects.
+5. [Public Policy & Development Twins](public-policy-and-development-twins/) — four projects.
+6. [Integrated Economic System Twins](integrated-economic-system-twins/) — four projects.
 
-## Three independent foundations
+## Shared architecture and mathematical rigor
 
-1. [Mathematical and dynamical foundations](fundamentals/01-mathematical-foundations.md)
-2. [Statistical inference and data assimilation](fundamentals/02-statistical-foundations.md)
-3. [Computational and numerical engineering](fundamentals/03-computational-foundations.md)
+- [Economic & Innovation Digital Twin Platform](platform/README.md)
+- [Technical architecture and cross-domain coupling](platform/ARCHITECTURE.md)
+- [Interoperable economic contracts](platform/CONTRACTS.md)
+- [Research and validation methodology](platform/RESEARCH_AND_VALIDATION.md)
+- [Research portfolio and cross-domain programs](RESEARCH_PORTFOLIO.md)
+- [Mathematical foundations](fundamentals/01-mathematical-foundations.md)
+- [Statistical foundations](fundamentals/02-statistical-foundations.md)
+- [Computational foundations](fundamentals/03-computational-foundations.md)
+- [Economic theory and causal identification](fundamentals/04-economic-theory-and-identification.md)
 
-## Seven research projects
+## Existing financial platform documentation
 
-1. [Digital Banking System Twin](projects/01-digital-banking-system-twin/) — deposits, pricing, credit and balance-sheet economics.
-2. [Real-Time Payments & Settlement Twin](projects/02-real-time-payments-settlement-twin/) — rails, intraday liquidity, queues and settlement finality.
-3. [Credit Portfolio & Collections Twin](projects/03-credit-portfolio-collections-twin/) — transitions, default, recoveries and policy effects.
-4. [Liquidity, Treasury & ALM Twin](projects/04-liquidity-treasury-alm-twin/) — funding, runoff, liquidity gaps and interest-rate risk.
-5. [Fraud & Financial Crime Twin](projects/05-fraud-financial-crime-twin/) — adaptive attacks, review queues and customer friction.
-6. [Operational & Cyber Resilience Twin](projects/06-operational-cyber-resilience-twin/) — outage cascades and recovery.
-7. [Integrated Financial Contagion & Stress Twin](projects/07-integrated-financial-contagion-stress-twin/) — nonlinear feedback, reverse stress and joint breaches.
+[Financial architecture](ARCHITECTURE.md) · [Financial data contracts](DATA_CONTRACTS.md) · [Financial validation roadmap](VALIDATION_AND_ROADMAP.md).
 
-## Shared engineering
+## Defining standard
 
-- [Reference architecture and coupling semantics](ARCHITECTURE.md)
-- [Versioned data contracts and ledger invariants](DATA_CONTRACTS.md)
-- [Validation matrix, implementation roadmap and bank use cases](VALIDATION_AND_ROADMAP.md)
-- [Existing credit portfolio digital twin research](../../03-financial-risk/04-advanced-research/02-nonstationary-credit-digital-twin/README.md) — separate prior proposal, avoid duplicate claims.
+A twin needs an observable system, estimable state, calibrated dynamics, synchronization strategy, scenarios, uncertainty and falsifiable validation. A dashboard, static forecast or unconstrained agent simulation is not automatically a digital twin. Public-data research may establish proof-of-method but not bank-specific validation.
 
-## Intended operating modes
+## Highest-priority integrated program
 
-**Research** using public/synthetic data; **tactical D+1** using governed bank records; **intraday** only with authorized streaming payment/ledger feeds. Public macro and payment-system aggregates do not identify private customer transitions, fraud labels or actual participant settlement queues.
-
-**Important:** seven new S1 specifications are distinct from the prior five unimplemented illustrative application tracks; no code/test results are asserted.
+**AI Economic Transformation** ↔ **Technology Diffusion** ↔ **Labor Market & Skills**, then couple macro output, household consumption and financial conditions. Preserve stock-flow identities and explicit assumptions for causal counterfactuals.
