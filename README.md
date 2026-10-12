@@ -2,6 +2,10 @@
 
 Proyectos de riesgo de crédito, modelado cuantitativo, portafolios y ciencia de datos aplicada a finanzas y economía.
 
+## Arquitectura de investigación
+
+La organización científica propuesta parte de economía, macroeconomía, microeconomía, teoría de juegos, econometría, matemáticas, estadística y física aplicada, y se extiende a riesgo financiero, estrategia cuantitativa, IA y automatizaciones. Consulta el [mapa de investigación y migración](RESEARCH_ARCHITECTURE.md). Las rutas históricas siguen activas mientras se valida su traslado.
+
 ## Áreas
 
 - **Riesgo de crédito y de modelos:** scoring, validación, pruebas de estrés y gobierno de modelos.
