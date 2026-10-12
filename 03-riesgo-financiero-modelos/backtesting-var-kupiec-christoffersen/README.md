@@ -21,3 +21,7 @@ Kupiec (cobertura):      LR=  4.09  p-valor=0.0431
 Christoffersen (indep.): LR=  1.12  p-valor=0.2897
 Excepciones consecutivas (n11): 1
 ```
+
+## Notebook
+
+[`notebook.ipynb`](notebook.ipynb) desarrolla el tema de forma extensa: versión ingenua, diagnóstico, mejoras, robustez y **pruebas automáticas** (`assert`) que fallan el notebook si un hallazgo deja de cumplirse. Las cifras de sus conclusiones se calculan desde los datos. `main.py` es la versión corta del mismo tema.

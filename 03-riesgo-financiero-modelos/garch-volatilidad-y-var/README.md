@@ -23,3 +23,7 @@ Parametros (estimado vs verdadero):
   gl:    6.0 vs 6
 Volatilidad pronosticada a 1 dia: 0.953% | VaR 99% a 1 dia: 2.452%
 ```
+
+## Notebook
+
+[`notebook.ipynb`](notebook.ipynb) desarrolla el tema de forma extensa: versión ingenua, diagnóstico, mejoras, robustez y **pruebas automáticas** (`assert`) que fallan el notebook si un hallazgo deja de cumplirse. Las cifras de sus conclusiones se calculan desde los datos. `main.py` es la versión corta del mismo tema.
