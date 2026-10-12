@@ -2,11 +2,11 @@ name: Data Engineering Reliability
 on:
   push:
     paths:
-      - '05-ai-and-automation/data-engineering/**'
+      - '05-artificial-intelligence-and-computational-systems/data-engineering/**'
       - '.github/workflows/data-engineering-reliability.yml'
   pull_request:
     paths:
-      - '05-ai-and-automation/data-engineering/**'
+      - '05-artificial-intelligence-and-computational-systems/data-engineering/**'
       - '.github/workflows/data-engineering-reliability.yml'
 jobs:
   unit-tests:
@@ -19,5 +19,5 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      - run: python -m unittest discover -s 05-ai-and-automation/data-engineering/shared/tests -v
-      - run: python -m unittest discover -s 05-ai-and-automation/data-engineering/risk-data-platform/tests -v
+      - run: python -m unittest discover -s 05-artificial-intelligence-and-computational-systems/data-engineering/shared/tests -v
+      - run: python -m unittest discover -s 05-artificial-intelligence-and-computational-systems/data-engineering/risk-data-platform/tests -v
