@@ -41,3 +41,11 @@ S1 especificación → S2 código y tests → S3 simulaciones y benchmarks → S
 ## 9. Proyectos asociados
 
 Consultar [catálogo de los siete proyectos](../README.md). Las bases no cuentan como un octavo proyecto.
+
+## Tres módulos de fundamentación separados
+
+1. [Fundamento matemático y teórico](01-mathematical-and-theoretical-foundations.md)
+2. [Fundamento estadístico y econométrico](02-statistical-and-econometric-foundations.md)
+3. [Fundamento computacional y numérico](03-computational-and-numerical-foundations.md)
+
+**Conteo:** tres fundamentos y siete proyectos independientes por temática.

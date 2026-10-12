@@ -29,3 +29,7 @@ Cada temática incluye **fundamentals/** (bases propias) y **siete carpetas de p
 2. Implementar un motor verificable por práctica con tests y simulaciones.
 3. Integrar escenarios, dependencia entre riesgos y validación independiente.
 4. Publicar evidencias, resultados y decisiones solo tras evaluación reproducible.
+
+## Fundamentación ampliada — 3 bases por temática
+
+Cada una de las ocho prácticas tiene **tres documentos independientes de fundamentación**: matemática/teoría, estadística/econometría y computación/métodos numéricos. Son **24 fundamentos disciplinares**, separados de los **56 proyectos** (7 por práctica). La base transversal `00-foundations/` es compartida y no cuenta como proyecto.
