@@ -20,3 +20,7 @@ estrategia  retorno_anual  vol_anual  Sharpe  rotacion_total
      iguales         10.09%     11.63%    0.87            2.14
 min_varianza         10.09%     11.63%    0.87            2.14
 ```
+
+## Notebook
+
+[`notebook.ipynb`](notebook.ipynb) desarrolla el tema de forma extensa: versión ingenua, diagnóstico, mejoras, robustez y **pruebas automáticas** (`assert`) que fallan el notebook si un hallazgo deja de cumplirse. Las cifras de sus conclusiones se calculan desde los datos. `main.py` es la versión corta del mismo tema.

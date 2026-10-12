@@ -32,3 +32,7 @@ commodities             0.069       0.000
 min_varianza: retorno 6.201% | vol 6.359% | Sharpe 0.503
 max_sharpe: retorno 6.833% | vol 6.971% | Sharpe 0.550
 ```
+
+## Notebook
+
+[`notebook.ipynb`](notebook.ipynb) desarrolla el tema de forma extensa: versión ingenua, diagnóstico, mejoras, robustez y **pruebas automáticas** (`assert`) que fallan el notebook si un hallazgo deja de cumplirse. Las cifras de sus conclusiones se calculan desde los datos. `main.py` es la versión corta del mismo tema.
