@@ -39,3 +39,7 @@ La novedad científica debe establecerse mediante revisión de literatura; las n
 ## Advanced AI Systems Engineering — 10 proyectos adicionales
 
 Se añade [un noveno pilar](09-advanced-ai-systems-engineering/) con diez proyectos de ingeniería avanzada, bases compartidas y un kernel C++20 inicial de benchmarks. Se preservan los ocho pilares y el código existente. No confundir las diez especificaciones con diez sistemas productivos.
+
+## AI Orchestration Engineering — siete proyectos
+
+[Nueva especialidad de ingeniería de orquestación](10-ai-orchestration-engineering/) con siete proyectos independientes y tres bases de fundamentación matemática, estadística y computacional. No se consideran implementaciones productivas.
