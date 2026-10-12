@@ -1,0 +1,17 @@
+# Risk Data Platform — executable MVP
+
+**Status:** implemented local Python standard-library pipeline with unit tests. Not a production lakehouse.
+
+## Run
+```bash
+python3 05-ai-and-automation/data-engineering/risk-data-platform/src/pipeline.py \
+  --source 05-ai-and-automation/data-engineering/risk-data-platform/examples/loan_snapshots.csv \
+  --output /tmp/risk_curated.csv --manifest /tmp/risk_manifest.json
+python3 -m unittest discover -s 05-ai-and-automation/data-engineering/risk-data-platform/tests -v
+```
+
+## Features
+Incremental upsert by `(loan_id, as_of_date)`, schema and financial invariants, duplicate conflict rejection, stable ordering, SHA256 output evidence, and reconciliation metrics. Optional `--rejects` writes diagnostics for invalid records.
+
+## What it does **not** claim
+No production SLA, no cloud deployment, no CDC, no Airflow/n8n execution, no point-in-time feature store, and no IFRS 9 ECL computation. See [architecture and contract](docs/ARCHITECTURE.md).
