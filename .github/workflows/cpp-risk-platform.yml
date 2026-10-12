@@ -2,11 +2,11 @@ name: C++ Quant Risk Platform
 on:
   push:
     paths:
-      - '10-cpp-risk-platform/**'
+      - '04-quant-strategy-and-products/risk-engines/**'
       - '.github/workflows/cpp-risk-platform.yml'
   pull_request:
     paths:
-      - '10-cpp-risk-platform/**'
+      - '04-quant-strategy-and-products/risk-engines/**'
       - '.github/workflows/cpp-risk-platform.yml'
 jobs:
   build-test:
@@ -18,7 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Configure
-        run: cmake -S 10-cpp-risk-platform -B build/quant -DCMAKE_BUILD_TYPE=${{ matrix.build_type }}
+        run: cmake -S 04-quant-strategy-and-products/risk-engines -B build/quant -DCMAKE_BUILD_TYPE=${{ matrix.build_type }}
       - name: Build
         run: cmake --build build/quant --config ${{ matrix.build_type }} --parallel
       - name: Test
