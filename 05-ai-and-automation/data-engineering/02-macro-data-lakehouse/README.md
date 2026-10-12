@@ -1,23 +1,31 @@
 # Macro Data Lakehouse
 
-Almacén de series macroeconómicas con vintages y consultas point-in-time sin look-ahead.
+## Por qué existe
 
-## Contrato
+Una serie macroeconómica cambia después de publicarse. Guardar solo su último valor introduce información futura en un backtest. Este ejercicio conserva cada versión y permite consultar qué estaba disponible en una fecha.
 
-**Entrada:** CSV con campos `series_id,observation_date,release_date,value` (o tareas declaradas en Python para el orquestador).
+## Qué hay implementado
 
-**Salida:** resultados estructurados, verificables y reproducibles. Las implementaciones usan exclusivamente Python estándar.
+- **Python:** [`macro_lakehouse.py`](macro_lakehouse.py), motor de referencia y validaciones.
+- **SQL:** [`sql/schema.sql`](sql/schema.sql), definición de tablas, restricciones e índices para PostgreSQL.
+- **Pruebas:** [`tests/test_project.py`](tests/test_project.py), casos normales y entradas adversas.
 
-## Ejecución
+## Entrada y resultado
+
+series_id,observation_date,release_date,value.
+
+El módulo produce resultados determinísticos para los datos y parámetros suministrados. No hay conectores a fuentes productivas ni credenciales en este repositorio.
+
+## Ejecutar las pruebas
+
+Desde la raíz del repositorio:
 
 ```bash
 python3 -m unittest discover -s 05-ai-and-automation/data-engineering/02-macro-data-lakehouse/tests -v
 ```
 
-## Alcance y límites
+## Qué falta resolver
 
-Prototipo funcional de referencia: no incluye credenciales, conectores productivos, infraestructura cloud ni garantías SLA. Los datos de ejemplo son sintéticos. No usar con datos confidenciales sin controles de acceso y cifrado.
+El prototipo almacena los vintages en SQLite. El esquema PostgreSQL modela una posible migración; no es el backend activo.
 
-## Diseño
-
-Separa validación de entrada, lógica de negocio y pruebas. Los algoritmos deben ser determinísticos y fallar ante esquemas o estados inválidos.
+Las pruebas unitarias verifican casos específicos; no demuestran capacidad productiva, escalabilidad ni cumplimiento de un SLA. Antes de usar datos sensibles se necesitan controles de acceso, gestión de secretos y una revisión de seguridad.
