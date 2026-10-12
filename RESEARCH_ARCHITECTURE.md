@@ -34,7 +34,7 @@ La arquitectura está organizada por **pregunta científica y dominio**, no por 
 | AI-01 | Gemelo digital de riesgo | IA / automatización | SDE, nowcasting, orquestación |
 | AI-02 | Arquitectura multiagente para investigación | IA / automatización | RAG, evaluación, trazabilidad |
 
-## Migración no destructiva: rutas actuales → destino conceptual
+## Migración ejecutada: rutas anteriores → rutas actuales
 
 | Ruta actual | Destino propuesto |
 |---|---|
@@ -49,7 +49,7 @@ La arquitectura está organizada por **pregunta científica y dominio**, no por 
 | `09-riesgo-mercado-liquidez-avanzado` | `03-financial-risk/market-liquidity-research` |
 | `10-cpp-risk-platform` (PR #4) | `04-quant-strategy-and-products/risk-engines` |
 
-**Estado de la migración:** los destinos anteriores son la taxonomía propuesta; NO se han trasladado las carpetas históricas. Se conservan sus rutas, notebooks y enlaces hasta una migración probada.
+**Estado de la migración:** las nueve carpetas históricas fueron trasladadas a sus destinos en esta rama. Se comprobó el árbol de Git y se localizaron 36 notebooks. La ejecución completa de notebooks y CI sigue pendiente; no se debe afirmar validación empírica por este traslado.
 
 ## Estándar mínimo de cada investigación
 
@@ -63,10 +63,10 @@ La arquitectura está organizada por **pregunta científica y dominio**, no por 
 
 La estructura interna es un **contrato de organización**, no evidencia de que esos archivos ya existan. No llamar 'publicado' a una formulación teórica ni 'validado' a una simulación sintética.
 
-## Protocolo de migración posterior
+## Verificación y cierre de migración
 
-1. Crear mapa de archivos y referencias cruzadas, incluido `tests/test_notebooks.py`.
-2. Mover preservando contenido e historial Git y ajustar rutas relativas.
-3. Actualizar el descubrimiento de notebooks para rutas recursivas, sin incluir entornos virtuales.
-4. Ejecutar notebooks, pruebas Python y C++ y comprobar los enlaces.
-5. Fusionar solo con CI verde y revisión de diffs.
+1. **Hecho:** mapear archivos y actualizar `tests/test_notebooks.py` para descubrir notebooks recursivamente.
+2. **Hecho:** trasladar los nueve árboles de archivos mediante objetos Git; revisar referencias relativas externas aún es necesario.
+3. **Hecho:** actualizar el descubrimiento recursivo de notebooks (el repositorio no debe contener entornos virtuales versionados).
+4. **Pendiente:** ejecutar notebooks y pruebas Python y comprobar enlaces; C++ pertenece a PR #4, que debe integrarse por separado.
+5. **Pendiente:** fusionar después de CI verde y revisión de diferencias.
