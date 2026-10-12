@@ -1,0 +1,28 @@
+name: Executive Operating Systems
+on:
+  push:
+    paths:
+      - '06-strategy-innovation-and-leadership/1[1-5]-*/**'
+      - '.github/workflows/executive-operating-systems.yml'
+  pull_request:
+    paths:
+      - '06-strategy-innovation-and-leadership/1[1-5]-*/**'
+      - '.github/workflows/executive-operating-systems.yml'
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Run model regression tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          for project in 06-strategy-innovation-and-leadership/1[1-5]-*; do
+            python -m unittest discover -s "$project/tests" -p 'test_*.py' -v
+          done
