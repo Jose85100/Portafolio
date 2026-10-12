@@ -2,7 +2,9 @@
 
 **Estructura objetivo:** 7 proyectos por cada una de las 8 temáticas = **56**. Se conservan sin cambios los 24 proyectos previos; se añaden 32 nuevos proyectos S1. Los proyectos anteriores mantienen su estado y sus limitaciones, no se declaran implementados.
 
-**Arquitectura transversal:** [estándar matemático, computacional y de gobierno](00-architecture/README.md).
+**Bases transversales:** [00-foundations/](00-foundations/) — matemática, estadística, arquitectura C++/Python/SQL, validación y gobierno. **Arquitectura de referencia:** [00-architecture/](00-architecture/).
+
+Cada temática incluye **fundamentals/** (bases propias) y **siete carpetas de proyectos independientes**. Los fundamentos no se contabilizan como proyectos.
 
 | Práctica | Proyectos | Carpeta |
 |---|---:|---|

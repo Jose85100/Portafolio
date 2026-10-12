@@ -1,4 +1,8 @@
-# Aseguramiento y transformación — 7 proyectos
+# Aseguramiento y transformación — bases + 7 proyectos
+
+**Bases especializadas:** [fundamentals/](fundamentals/) · **Bases transversales:** [00-foundations/](../00-foundations/)
+
+Los fundamentos son independientes del catálogo; **no cuentan** entre los siete proyectos.
 
 Se mantienen los tres proyectos existentes y se incorporan cuatro líneas nuevas. Todos deben adoptar los [contratos y criterios transversales](../00-architecture/README.md) sin sustituir su matemática especializada.
 
