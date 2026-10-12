@@ -25,3 +25,21 @@ jobs:
           for project in 05-ai-and-automation/data-engineering/0[1-5]-*; do
             python -m unittest discover -s "$project/tests" -p 'test_*.py' -v
           done
+  cpp-build-and-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile with warnings as errors
+        run: |
+          set -e
+          c++ -std=c++17 -O2 -Wall -Wextra -Werror -pedantic 05-ai-and-automation/data-engineering/01-risk-data-platform/cpp/loan_snapshot.cpp -o /tmp/loan_snapshot
+          c++ -std=c++17 -O2 -Wall -Wextra -Werror -pedantic 05-ai-and-automation/data-engineering/04-quant-research-data-factory/cpp/rolling_features.cpp -o /tmp/rolling_features
+      - name: Run deterministic smoke cases
+        run: |
+          set -e
+          printf 'a,2026-01-01,10000,0\na,2026-01-02,9000,5\nb,2026-01-02,2000,31\n' > /tmp/loans.csv
+          /tmp/loan_snapshot /tmp/loans.csv 2026-01-02 > /tmp/loan_out.csv
+          grep -q 'a,2026-01-02,9000,5' /tmp/loan_out.csv
+          printf 'A,2026-01-01,100\nA,2026-01-02,102\nA,2026-01-03,104\nA,2026-01-04,106\n' > /tmp/prices.csv
+          /tmp/rolling_features /tmp/prices.csv 1 1 > /tmp/features.csv
+          grep -q 'A,2026-01-02,' /tmp/features.csv
