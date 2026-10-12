@@ -24,7 +24,7 @@ Línea independiente dentro de AI Architecture & Automation, con foco en platafo
 
 Cada producto debe documentar arquitectura física y lógica, esquemas, contratos, SLA/SLO, pruebas, seguridad, reproducibilidad, costos, observabilidad y límites operativos.
 
-**Estado:** catálogo y línea de trabajo creados; los cinco productos descritos son propuestas, no implementaciones terminadas.
+**Estado:** cinco prototipos de referencia implementados en Python, con esquemas SQL PostgreSQL; dos incluyen ejecutables C++17. No constituyen servicios de producción.
 
 ## Relación con otros dominios
 
@@ -42,3 +42,25 @@ Cada producto debe documentar arquitectura física y lógica, esquemas, contrato
 5. [Workflow Orchestrator](05-workflow-orchestrator/) — DAG, reintentos y checkpoints.
 
 Cada proyecto incluye módulo Python y pruebas unitarias. El workflow [data-engineering.yml](../../../.github/workflows/data-engineering.yml) ejecuta la batería en Python 3.11, 3.12 y 3.13. **Estado: prototipos funcionales sin validación de CI confirmada; no son sistemas productivos.**
+
+## Distribución por lenguaje
+
+| Proyecto | Python | SQL PostgreSQL | C++17 |
+|---|---|---|---|
+| Risk Data Platform | Snapshot y publicación atómica | Ledger y posición D+1 | CLI de agregación en centavos enteros |
+| Macro Data Lakehouse | SQLite con vintages | Registro de publicaciones y revisiones | — |
+| Data Quality & Lineage | Reglas, hash y manifiesto | Runs, resultados y grafo de linaje | — |
+| Quant Research Data Factory | Features y purga temporal | Precios as-of y registro de features | CLI de momentum y etiquetas |
+| Workflow Orchestrator | DAG, reintentos, checkpoints | Estado durable y leasing | — |
+
+**Decisión de ingeniería:** Python implementa los flujos de referencia, SQL especifica almacenamiento relacional PostgreSQL y C++ acelera dos transformaciones determinísticas. Los módulos no están integrados todavía en un despliegue único: los esquemas PostgreSQL y el almacenamiento SQLite son alternativas/etapas distintas. No se simula una integración inexistente.
+
+### Verificación
+
+```bash
+for project in 05-ai-and-automation/data-engineering/0[1-5]-*; do
+  python3 -m unittest discover -s "$project/tests" -p 'test_*.py' -v
+done
+```
+
+Los ejecutables C++17 se compilan y se prueban mediante el workflow de GitHub Actions. Los esquemas SQL requieren PostgreSQL 15+ para ejecutarse; no se afirma que estén desplegados. No usar archivos CSV con campos entrecomillados en los CLIs C++, pues sus lectores están deliberadamente restringidos a formatos sin comillas.
