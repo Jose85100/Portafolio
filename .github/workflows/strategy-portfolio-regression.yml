@@ -1,0 +1,29 @@
+name: Strategy Portfolio Regression
+on:
+  push:
+    paths:
+      - '06-strategy-innovation-and-leadership/**'
+      - '.github/workflows/strategy-portfolio-regression.yml'
+  pull_request:
+    paths:
+      - '06-strategy-innovation-and-leadership/**'
+      - '.github/workflows/strategy-portfolio-regression.yml'
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Test ten strategy and executive engines
+        shell: bash
+        run: |
+          set -euo pipefail
+          for project in 06-strategy-innovation-and-leadership/0[1-9]-* 06-strategy-innovation-and-leadership/10-*; do
+            python -m unittest discover -s "$project/tests" -p 'test_*.py' -v
+          done
+          python -m unittest discover -s 06-strategy-innovation-and-leadership/shared_validation/tests -p 'test_*.py' -v
