@@ -11,6 +11,6 @@ Machine learning, deep learning, econometría y modelado estocástico aplicados 
 | [Pronóstico con ARIMA y selección por AIC](arima-pronostico) | Pronóstico de una serie con tendencia y estacionalidad: selección de orden ARIMA por AIC en una malla, validación en un tramo reservado y comparación contra un pronóstico ingenuo estacional. | Funcional · datos sintéticos |
 | [Valoración de opciones: Monte Carlo y Black-Scholes](monte-carlo-opciones-black-scholes) | Valoración de una opción call europea con Black-Scholes en forma cerrada y con Monte Carlo (con y sin variables antitéticas), error estándar, convergencia con el número de trayectorias y delta por derivada pathwise. | Funcional · datos sintéticos |
 | [Validación cruzada temporal y fuga de información](validacion-cruzada-temporal) | Demostración de por qué la validación cruzada aleatoria es engañosa en series de tiempo: sobre una serie persistente sin poder predictivo real, la validación aleatoria reporta un R² alto, mientras la validación temporal muestra el desempeño verdadero. | Funcional · datos sintéticos |
-
-Cada proyecto trae su `main.py` ejecutable y el resultado de una corrida real. Las versiones con datos reales abiertos se agregarán por separado.
 | [Análisis factorial múltiple (MFA)](analisis-factorial-multiple-mfa) | MFA con datos reales del Banco Mundial: ejes, planos, clusters y robustez. | Funcional · datos reales abiertos |
+
+Cada proyecto trae su notebook y, salvo el análisis factorial múltiple, su `main.py` ejecutable. El análisis factorial múltiple usa datos reales abiertos del Banco Mundial; los demás, datos sintéticos.
