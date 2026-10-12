@@ -26,3 +26,7 @@ corporativo     0.033     0.07 0.4714  0.35      0.0000
 Estado del optimizador: Optimization terminated successfully. (HiGHS Status 7: Optimal)
 Utilidad esperada sobre cartera: 0.0618 | capital usado: 0.0850 de 0.085 | RAROC: 0.726
 ```
+
+## Notebook
+
+[`notebook.ipynb`](notebook.ipynb) desarrolla el tema de forma extensa: versión ingenua, diagnóstico, mejoras, robustez y **pruebas automáticas** (`assert`) que fallan el notebook si un hallazgo deja de cumplirse. Las cifras de sus conclusiones se calculan desde los datos. `main.py` es la versión corta del mismo tema.
