@@ -1,23 +1,32 @@
 # Workflow Orchestrator
 
-DAG determinístico, detección de ciclos, reintentos e idempotencia mediante checkpoint.
+## Por qué existe
 
-## Contrato
+Los pipelines fallan y se vuelven a ejecutar. Este orquestador ordena tareas por dependencias, detecta ciclos y guarda un checkpoint para no repetir las que terminaron correctamente.
 
-**Entrada:** CSV con campos `task_id,dependencies` (o tareas declaradas en Python para el orquestador).
+## Qué hay implementado
 
-**Salida:** resultados estructurados, verificables y reproducibles. Las implementaciones usan exclusivamente Python estándar.
+- **Python:** [`workflow_orchestrator.py`](workflow_orchestrator.py), motor de referencia y validaciones.
+- **SQL:** [`sql/schema.sql`](sql/schema.sql), definición de tablas, restricciones e índices para PostgreSQL.
+- **Pruebas:** [`tests/test_project.py`](tests/test_project.py), casos normales y entradas adversas.
+- **Arquitectura:** [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md), decisiones de diseño y diagramas Mermaid.
 
-## Ejecución
+## Entrada y resultado
+
+Tareas Python con identificador, dependencias y reintentos.
+
+El módulo produce resultados determinísticos para los datos y parámetros suministrados. No hay conectores a fuentes productivas ni credenciales en este repositorio.
+
+## Ejecutar las pruebas
+
+Desde la raíz del repositorio:
 
 ```bash
 python3 -m unittest discover -s 05-ai-and-automation/data-engineering/05-workflow-orchestrator/tests -v
 ```
 
-## Alcance y límites
+## Qué falta resolver
 
-Prototipo funcional de referencia: no incluye credenciales, conectores productivos, infraestructura cloud ni garantías SLA. Los datos de ejemplo son sintéticos. No usar con datos confidenciales sin controles de acceso y cifrado.
+El checkpoint local no garantiza exactamente una ejecución de efectos externos. Las operaciones con side effects deben diseñarse como idempotentes.
 
-## Diseño
-
-Separa validación de entrada, lógica de negocio y pruebas. Los algoritmos deben ser determinísticos y fallar ante esquemas o estados inválidos.
+Las pruebas unitarias verifican casos específicos; no demuestran capacidad productiva, escalabilidad ni cumplimiento de un SLA. Antes de usar datos sensibles se necesitan controles de acceso, gestión de secretos y una revisión de seguridad.
