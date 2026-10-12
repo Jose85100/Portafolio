@@ -1,55 +1,35 @@
-# Enterprise Risk Advisory | 24 programas de consultoría
+# Enterprise Risk Advisory | 56 proyectos, 8 prácticas
 
-**Alcance:** 8 prácticas, 24 proyectos, con especificaciones metodológicas, cuantitativas, de validación y entrega. Son diseños de investigación, no motores implementados ni auditorías realizadas.
+**Estructura objetivo:** 7 proyectos por cada una de las 8 temáticas = **56**. Se conservan sin cambios los 24 proyectos previos; se añaden 32 nuevos proyectos S1. Los proyectos anteriores mantienen su estado y sus limitaciones, no se declaran implementados.
 
-## [Gobierno, ERM y estrategia](01-erm-governance/)
+**Bases transversales:** [00-foundations/](00-foundations/) — matemática, estadística, arquitectura C++/Python/SQL, validación y gobierno. **Arquitectura de referencia:** [00-architecture/](00-architecture/).
 
-- [Apetito de riesgo y cascada de límites](01-erm-governance/risk-appetite/)
-- [RCSA y efectividad de controles](01-erm-governance/rcsa-controls/)
-- [Riesgo estratégico y reputacional](01-erm-governance/strategic-reputation/)
+Cada temática incluye **fundamentals/** (bases propias) y **siete carpetas de proyectos independientes**. Los fundamentos no se contabilizan como proyectos.
 
-## [Capital, tesorería y ALM](02-capital-alm/)
+| Práctica | Proyectos | Carpeta |
+|---|---:|---|
+| Gobierno, ERM y estrategia | 7 | [01-erm-governance](01-erm-governance/) |
+| Capital, tesorería y ALM | 7 | [02-capital-alm](02-capital-alm/) |
+| Riesgo operacional y resiliencia | 7 | [03-operational-resilience](03-operational-resilience/) |
+| Ciberseguridad, tecnología e IA | 7 | [04-cyber-ai](04-cyber-ai/) |
+| Fraude, AML y cumplimiento | 7 | [05-financial-crime](05-financial-crime/) |
+| Seguros, clima y conducta | 7 | [06-insurance-climate-esg](06-insurance-climate-esg/) |
+| Valoración y contraparte | 7 | [07-valuation-counterparty](07-valuation-counterparty/) |
+| Aseguramiento y transformación | 7 | [08-assurance-risk-data](08-assurance-risk-data/) |
 
-- [ICAAP y capital económico](02-capital-alm/icaap/)
-- [ILAAP y liquidez estructural](02-capital-alm/ilaap/)
-- [IRRBB, NII y EVE](02-capital-alm/irrbb/)
+## Alcance y madurez
 
-## [Operacional, continuidad y terceros](03-operational-resilience/)
+- **24 programas existentes:** se preservan sus README y especificaciones.
+- **32 programas nuevos:** README individuales con hipótesis, formulación, estadística, arquitectura C++/Python/SQL, experimentos y validación; todos **S1**.
+- **56 proyectos en total:** catálogo metodológico; no 56 implementaciones.
 
-- [Riesgo operacional de frecuencia y severidad](03-operational-resilience/loss-distribution/)
-- [BIA y continuidad operacional](03-operational-resilience/business-continuity/)
-- [Riesgo de proveedores y concentración](03-operational-resilience/third-party/)
+## Orden de implementación
 
-## [Ciberseguridad, tecnología e IA](04-cyber-ai/)
+1. Establecer contratos comunes y criterios de aceptación.
+2. Implementar un motor verificable por práctica con tests y simulaciones.
+3. Integrar escenarios, dependencia entre riesgos y validación independiente.
+4. Publicar evidencias, resultados y decisiones solo tras evaluación reproducible.
 
-- [Cuantificación de ciberriesgo](04-cyber-ai/cyber-loss/)
-- [Riesgo de cambios tecnológicos](04-cyber-ai/technology-change/)
-- [Gobierno de IA y riesgo de modelos](04-cyber-ai/ai-governance/)
+## Fundamentación ampliada — 3 bases por temática
 
-## [Fraude, AML y cumplimiento](05-financial-crime/)
-
-- [Fraude y redes de colusión](05-financial-crime/fraud-graphs/)
-- [AML/CFT basado en riesgo](05-financial-crime/aml-typologies/)
-- [Obligaciones regulatorias y control testing](05-financial-crime/regulatory-controls/)
-
-## [Seguros, clima y conducta](06-insurance-climate-esg/)
-
-- [Pricing y reservas actuariales](06-insurance-climate-esg/insurance-reserving/)
-- [Riesgo climático físico y transición](06-insurance-climate-esg/climate-risk/)
-- [Conducta y protección del consumidor](06-insurance-climate-esg/conduct-risk/)
-
-## [Valoración y contraparte](07-valuation-counterparty/)
-
-- [CVA/DVA/FVA y exposición de contraparte](07-valuation-counterparty/xva/)
-- [Validación independiente de pricing](07-valuation-counterparty/model-validation/)
-- [Pagos, liquidación y liquidez intradía](07-valuation-counterparty/settlement-risk/)
-
-## [Aseguramiento y transformación](08-assurance-risk-data/)
-
-- [Monitoreo continuo de controles](08-assurance-risk-data/continuous-controls/)
-- [Datos de riesgo y BCBS 239](08-assurance-risk-data/risk-data-bcbs239/)
-- [Modelo operativo y transformación de riesgos](08-assurance-risk-data/risk-operating-model/)
-
-## Estándar de entrega
-
-Cada programa define mandato, problema falsable, formalización matemática, datos, estimación, incertidumbre, stress, validación independiente, KRIs, arquitectura objetivo, entregables D1–D6 y gates A–F. Para producción se requieren implementación, fuentes, pruebas y revisión regulatoria específica. La amplitud de consultoría no implica afiliación con ninguna firma.
+Cada una de las ocho prácticas tiene **tres documentos independientes de fundamentación**: matemática/teoría, estadística/econometría y computación/métodos numéricos. Son **24 fundamentos disciplinares**, separados de los **56 proyectos** (7 por práctica). La base transversal `00-foundations/` es compartida y no cuenta como proyecto.
