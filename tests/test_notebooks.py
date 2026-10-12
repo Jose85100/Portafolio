@@ -26,8 +26,8 @@ class PruebasDeNotebooks(unittest.TestCase):
     pass
 
 
-for _nb in sorted(RAIZ.glob("*/*/notebook.ipynb")):
-    _nombre = f"test_{_nb.parent.parent.name[:2]}_{_nb.parent.name.replace('-', '_')}"
+for _nb in sorted(RAIZ.rglob("notebook.ipynb")):
+    _nombre = "test_" + "_".join(_nb.relative_to(RAIZ).parts[:-1]).replace("-", "_")
     setattr(PruebasDeNotebooks, _nombre, _crear_prueba(_nb))
 
 if __name__ == "__main__":

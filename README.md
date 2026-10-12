@@ -2,6 +2,10 @@
 
 Proyectos de riesgo de crédito, modelado cuantitativo, portafolios y ciencia de datos aplicada a finanzas y economía.
 
+## Arquitectura de investigación
+
+La organización científica propuesta parte de economía, macroeconomía, microeconomía, teoría de juegos, econometría, matemáticas, estadística y física aplicada, y se extiende a riesgo financiero, estrategia cuantitativa, IA y automatizaciones. Consulta el [mapa de investigación y migración](RESEARCH_ARCHITECTURE.md). Los proyectos históricos fueron reubicados por dominio; el código y los notebooks se preservan. La ejecución de pruebas de integración debe verificarse.
+
 ## Áreas
 
 - **Riesgo de crédito y de modelos:** scoring, validación, pruebas de estrés y gobierno de modelos.
@@ -11,13 +15,13 @@ Proyectos de riesgo de crédito, modelado cuantitativo, portafolios y ciencia de
 
 ## Carpetas por perfil
 
-- [01 · Riesgo de crédito: productos](01-riesgo-de-credito-productos)
-- [02 · Riesgo de crédito: estrategia y portafolio](02-riesgo-de-credito-estrategia-portafolio)
-- [03 · Riesgo financiero y riesgo de modelos](03-riesgo-financiero-modelos)
-- [04 · Gestión de portafolios](04-gestion-de-portafolios)
-- [05 · Cuantitativo y ciencia de datos](05-cuantitativo-ciencia-de-datos)
-- [06 · Estrategia, innovación y venture capital](06-estrategia-innovacion-vc)
-- [07 · Liderazgo de datos](07-liderazgo-de-datos)
+- [01 · Riesgo de crédito: productos](03-financial-risk/credit-risk-products)
+- [02 · Riesgo de crédito: estrategia y portafolio](03-financial-risk/credit-portfolio-strategy)
+- [03 · Riesgo financiero y riesgo de modelos](03-financial-risk/market-and-model-risk)
+- [04 · Gestión de portafolios](04-quant-strategy-and-products/asset-management)
+- [05 · Cuantitativo y ciencia de datos](02-mathematics-statistics-and-quant/quantitative-methods)
+- [06 · Estrategia, innovación y venture capital](06-strategy-innovation-and-leadership/venture-capital)
+- [07 · Liderazgo de datos](06-strategy-innovation-and-leadership/data-leadership)
 
 ## Cómo está hecho cada proyecto
 
@@ -36,7 +40,7 @@ python3 -m unittest tests.test_notebooks -v   # ejecuta los 35 notebooks de prin
 
 ## Proyectos
 
-> **Sobre los datos:** los proyectos de las carpetas 01 a 07 usan datos sintéticos con semilla fija para ilustrar el método. No contienen datos de clientes ni confidenciales, y sus resultados no son evidencia de desempeño real.
+> **Sobre los datos:** los proyectos originales reorganizados por dominio usan datos sintéticos con semilla fija para ilustrar el método. No contienen datos de clientes ni confidenciales, y sus resultados no son evidencia de desempeño real.
 
 | Proyecto | Área | Descripción | Estado |
 |---|---|---|---|
