@@ -26,3 +26,7 @@ paridad_riesgo: volatilidad 7.196%
   pesos: {'acciones': 0.14, 'bonos_largos': 0.347, 'bonos_corp': 0.195, 'oro': 0.189, 'inmobiliario': 0.129}
   % del riesgo: {'acciones': 0.2, 'bonos_largos': 0.2, 'bonos_corp': 0.2, 'oro': 0.2, 'inmobiliario': 0.2}
 ```
+
+## Notebook
+
+[`notebook.ipynb`](notebook.ipynb) desarrolla el tema de forma extensa: versión ingenua, diagnóstico, mejoras, robustez y **pruebas automáticas** (`assert`) que fallan el notebook si un hallazgo deja de cumplirse. Las cifras de sus conclusiones se calculan desde los datos. `main.py` es la versión corta del mismo tema.
