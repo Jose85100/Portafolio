@@ -1,0 +1,30 @@
+name: Executive Strategy Engines
+on:
+  push:
+    paths:
+      - '06-strategy-innovation-and-leadership/0[6-9]-*/**'
+      - '06-strategy-innovation-and-leadership/10-*/**'
+      - '.github/workflows/executive-engines.yml'
+  pull_request:
+    paths:
+      - '06-strategy-innovation-and-leadership/0[6-9]-*/**'
+      - '06-strategy-innovation-and-leadership/10-*/**'
+      - '.github/workflows/executive-engines.yml'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Execute five executive model suites
+        shell: bash
+        run: |
+          set -euo pipefail
+          for project in 06-strategy-innovation-and-leadership/0[6-9]-* 06-strategy-innovation-and-leadership/10-*; do
+            python -m unittest discover -s "$project/tests" -p 'test_*.py' -v
+          done
