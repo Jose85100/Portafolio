@@ -12,7 +12,7 @@ La organización parte de la pregunta científica y el dominio, no de la herrami
 | [02 · Mathematics, Statistics & Quant](02-mathematics-statistics-and-quant) | [Métodos cuantitativos](02-mathematics-statistics-and-quant/quantitative-methods) (6 notebooks, incluido un análisis factorial múltiple con datos reales) y [laboratorio multilenguaje](02-mathematics-statistics-and-quant/quant-libraries) (Python, C, C++, R, MATLAB, Julia). |
 | [03 · Financial Risk](03-financial-risk) | [Productos de crédito](03-financial-risk/credit-risk-products), [estrategia y portafolio de crédito](03-financial-risk/credit-portfolio-strategy), [riesgo de mercado y de modelos](03-financial-risk/market-and-model-risk) (15 notebooks) e [investigación de liquidez](03-financial-risk/market-liquidity-research). |
 | [04 · Quant Strategy & Products](04-quant-strategy-and-products) | [Gestión de portafolios](04-quant-strategy-and-products/asset-management) (5 notebooks) y [plataforma de riesgo en C++17](04-quant-strategy-and-products/risk-engines). |
-| [05 · AI & Automation](05-ai-and-automation) | Línea de [ingeniería de datos](05-ai-and-automation/data-engineering) (marco; sin proyectos aún). |
+| [05 · AI & Automation](05-ai-and-automation) | Línea de [ingeniería de datos](05-ai-and-automation/data-engineering), con un [MVP ejecutable de plataforma de datos de riesgo](05-ai-and-automation/data-engineering/risk-data-platform): carga incremental, validaciones, trazabilidad y pruebas. |
 | [06 · Strategy, Innovation & Leadership](06-strategy-innovation-and-leadership) | [15 motores de decisión](06-strategy-innovation-and-leadership) en Python, [venture capital](06-strategy-innovation-and-leadership/venture-capital) y [liderazgo de datos](06-strategy-innovation-and-leadership/data-leadership) (10 notebooks). |
 
 ## Cuatro tipos de proyecto
@@ -55,6 +55,6 @@ Los proyectos con notebook usan **datos sintéticos con semilla fija**, salvo el
 |---|---|---|---|
 | [JoseData](https://github.com/Jose85100/JoseData) | Ciencia de datos y econometría | Ejercicios y proyectos de machine learning, econometría y optimización de portafolios. | Público |
 | Soluciones analíticas | Modelado cuantitativo | Notas analíticas con derivación formal y código de verificación. | En revisión |
-| InvestmentOS | Portafolios y riesgo | Herramienta reproducible para guardar precios, monitorear riesgo y proponer una asignación. | En revisión |
+| InvesmentOs | Portafolios y riesgo | Herramienta reproducible para guardar precios, monitorear riesgo y proponer una asignación. | En revisión |
 
 Los proyectos marcados como "En revisión" se publicarán cuando termine la revisión de datos sensibles y credenciales.
