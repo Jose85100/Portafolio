@@ -15,7 +15,7 @@ El repositorio reúne investigación, prototipos y herramientas ejecutables. No 
 | 02 · Mathematics, Statistics & Quant | M1 | Notebooks y librerías didácticas reproducibles, incluidos datos abiertos donde se indica. |
 | 03 · Financial Risk | M0–M2 | Hay propuestas, laboratorios y motores; consultar el README de cada subproyecto antes de asumir cobertura. |
 | 04 · Quant Strategy & Products | M1–M2 | Laboratorios de portafolio y plataforma C++ con pruebas, no una mesa de inversión desplegada. |
-| 05 · AI & Automation | M1–M2 | MVPs y componentes de confiabilidad; la plataforma de datos sigue siendo local y no un lakehouse productivo. |
+| 05 · Artificial Intelligence & Computational Systems | M1–M2 | MVPs y componentes de confiabilidad; la plataforma de datos sigue siendo local y no un lakehouse productivo. |
 | 06 · Strategy, Innovation & Leadership | M1–M2 | Motores reproducibles para análisis y decisión; no sustituyen diligencia ni datos corporativos reales. |
 
 La etiqueta de nivel se actualiza sólo cuando se incorpora la evidencia indicada, no por extensión de la documentación.
