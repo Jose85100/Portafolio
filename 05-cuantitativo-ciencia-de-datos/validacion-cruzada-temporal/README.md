@@ -20,3 +20,7 @@ Serie persistente sin senal predictiva real (solo indice de tiempo como variable
 R2 con KFold aleatorio (con fuga temporal): 0.961
 R2 con TimeSeriesSplit (sin fuga):         -0.588
 ```
+
+## Notebook
+
+[`notebook.ipynb`](notebook.ipynb) desarrolla el tema de forma extensa: versión ingenua, diagnóstico, mejoras, robustez y **pruebas automáticas** (`assert`) que fallan el notebook si un hallazgo deja de cumplirse. Las cifras de sus conclusiones se calculan desde los datos. `main.py` es la versión corta del mismo tema.

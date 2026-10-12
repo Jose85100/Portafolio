@@ -29,3 +29,7 @@ chatbot de servicio          4.65       6.0       0.78  descartar o aplazar
 Caso en primer lugar bajo pesos aleatorios de valor:
 automatizacion de reportes    1.0
 ```
+
+## Notebook
+
+[`notebook.ipynb`](notebook.ipynb) desarrolla el tema de forma extensa: versión ingenua, diagnóstico, mejoras, robustez y **pruebas automáticas** (`assert`) que fallan el notebook si un hallazgo deja de cumplirse. Las cifras de sus conclusiones se calculan desde los datos. `main.py` es la versión corta del mismo tema.

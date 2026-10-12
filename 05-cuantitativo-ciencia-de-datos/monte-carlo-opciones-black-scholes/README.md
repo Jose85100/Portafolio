@@ -27,3 +27,7 @@ Black-Scholes: precio=9.5563 delta=0.5358
   1000000     simple     9.5610    0.0167    0.5359
   1000000 antitetico     9.5604    0.0167    0.5360
 ```
+
+## Notebook
+
+[`notebook.ipynb`](notebook.ipynb) desarrolla el tema de forma extensa: versión ingenua, diagnóstico, mejoras, robustez y **pruebas automáticas** (`assert`) que fallan el notebook si un hallazgo deja de cumplirse. Las cifras de sus conclusiones se calculan desde los datos. `main.py` es la versión corta del mismo tema.
