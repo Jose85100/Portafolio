@@ -64,3 +64,9 @@ done
 ```
 
 Los ejecutables C++17 se compilan y se prueban mediante el workflow de GitHub Actions. Los esquemas SQL requieren PostgreSQL 15+ para ejecutarse; no se afirma que estén desplegados. No usar archivos CSV con campos entrecomillados en los CLIs C++, pues sus lectores están deliberadamente restringidos a formatos sin comillas.
+
+## Documentación arquitectónica
+
+Los proyectos 01, 03, 04 y 05 incluyen `docs/ARCHITECTURE.md` con diagramas Mermaid de componentes y secuencia, invariantes, pruebas y deuda técnica. La documentación específica del proyecto 02 está pendiente por una restricción de escritura del conector.
+
+Los diagramas describen la arquitectura implementada y distinguen explícitamente los esquemas PostgreSQL propuestos de los flujos Python activos.
