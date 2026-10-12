@@ -27,3 +27,22 @@ Los cinco incluyen código Python, pruebas unitarias y notas técnicas con diagr
 | [Crisis Management & Recovery](10-crisis-management-recovery-planning/) | Contingencias y trayectorias de liquidez |
 
 Los motores 01–10 incorporan notas de investigación en `docs/RESEARCH_EXTENSION.md` y herramientas transversales de [validación estadística](shared_validation/). Estas notas describen protocolos de contraste y no acreditan experimentos ejecutados.
+
+## Sistemas corporativos: proyectos 11–15
+
+| Proyecto | Foco de decisión |
+|---|---|
+| [Corporate Strategic Planning](11-corporate-strategic-planning/) | Planeación estratégica corporativa |
+| [Balance Sheet & Capital Management](12-balance-sheet-capital-management/) | Balance y gestión de capital |
+| [Executive Incentive Design](13-executive-incentive-design/) | Diseño de incentivos ejecutivos |
+| [M&A Strategic Synergies](14-ma-strategic-synergies/) | Sinergias estratégicas en M&A |
+| [Enterprise Transformation Portfolio](15-enterprise-transformation-portfolio/) | Portafolio de transformación |
+
+Los 15 motores se prueban con `python -m unittest discover -s <proyecto>/tests` (ver los flujos de trabajo en `.github/workflows`).
+
+## Colecciones de notebooks
+
+Dos colecciones de cinco notebooks extensos cada una, con datos sintéticos de verdad conocida y pruebas automáticas internas:
+
+- [Venture capital](venture-capital/): fondo de venture, cohortes y LTV/CAC, TAM–SAM–SOM con Monte Carlo, *cap table* y dilución, valoración DCF por escenarios.
+- [Liderazgo de datos](data-leadership/): reglas de calidad de datos, manifiesto SHA-256, detección de drift (PSI/KS), linaje e impacto, priorización de casos de uso.

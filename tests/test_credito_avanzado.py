@@ -5,7 +5,7 @@ import unittest
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
-FILE = ROOT / "02-riesgo-de-credito-estrategia-portafolio" / "copula-gaussiana-perdidas" / "modelo_avanzado.py"
+FILE = ROOT / "03-financial-risk" / "credit-portfolio-strategy" / "copula-gaussiana-perdidas" / "modelo_avanzado.py"
 spec = importlib.util.spec_from_file_location("modelo_credito_avanzado", FILE)
 mod = importlib.util.module_from_spec(spec)
 import sys
