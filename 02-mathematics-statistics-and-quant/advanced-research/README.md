@@ -24,3 +24,24 @@ Diez programas de investigación propuestos, no implementaciones ni resultados v
 ## Estándar transversal
 
 Cada proyecto exige formulación rigurosa, supuestos y contraejemplos, evaluación estadística, experimentos numéricos, reproducción y aplicación económica. La originalidad deberá justificarse mediante revisión bibliográfica; una propuesta no es una implementación.
+
+## Segunda generación — proyectos 11–20
+
+Esta segunda ola investiga conexiones interdisciplinarias. **Todos son diseños S1, no implementaciones.**
+
+| ID | Investigación | Estado |
+|---|---|---|
+| 11 | [Causal Optimal Transport](11-causal-optimal-transport/) | S1 |
+| 12 | [Statistical Gauge Invariance](12-statistical-gauge-invariance/) | S1 |
+| 13 | [Path Signatures & Hidden Dynamics](13-path-signatures-hidden-dynamics/) | S1 |
+| 14 | [Algorithmic Renormalization](14-algorithmic-renormalization/) | S1 |
+| 15 | [Distributional Phase Diagrams](15-distributional-phase-diagrams/) | S1 |
+| 16 | [Non-Equilibrium Information Thermodynamics](16-nonequilibrium-information-thermodynamics/) | S1 |
+| 17 | [Sheaf-Theoretic Data Consistency](17-sheaf-statistical-consistency/) | S1 |
+| 18 | [Rare-Event Geometry & Importance Sampling](18-rare-event-geometry-importance-sampling/) | S1 |
+| 19 | [Causal Games under Partial Observability](19-causal-games-partial-observability/) | S1 |
+| 20 | [Self-Exciting Networks & Endogenous Cascades](20-self-exciting-network-cascades/) | S1 |
+
+**Prioridad matemática exploratoria:** 12, 14 y 17. **Métodos computacionales con validación factible:** 11, 13, 16 y 18. **Aplicación macrofinanciera:** 15, 19 y 20.
+
+La revisión de literatura, la implementación y los resultados empíricos quedan pendientes. Ningún proyecto se declara original o validado por su descripción.
