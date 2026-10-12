@@ -32,3 +32,9 @@ Cada producto debe documentar arquitectura física y lógica, esquemas, contrato
 - Riesgos: cartera, provisiones, liquidez y mercado.
 - Quant: precios, factores, señales y backtesting point-in-time.
 - IA: pipelines RAG, agentes y evaluación de modelos.
+
+## Implementación disponible
+
+- [Risk Data Platform — MVP ejecutable](risk-data-platform/): ingesta incremental CSV, contratos de datos, validación, deduplicación, reconciliación y manifiesto SHA256, con pruebas unitarias y CI.
+
+Los otros cuatro productos del catálogo siguen en fase de propuesta. La plataforma implementada es un MVP local, no un servicio cloud productivo.
