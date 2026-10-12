@@ -13,3 +13,4 @@ Machine learning, deep learning, econometría y modelado estocástico aplicados 
 | [Validación cruzada temporal y fuga de información](validacion-cruzada-temporal) | Demostración de por qué la validación cruzada aleatoria es engañosa en series de tiempo: sobre una serie persistente sin poder predictivo real, la validación aleatoria reporta un R² alto, mientras la validación temporal muestra el desempeño verdadero. | Funcional · datos sintéticos |
 
 Cada proyecto trae su `main.py` ejecutable y el resultado de una corrida real. Las versiones con datos reales abiertos se agregarán por separado.
+| [Análisis factorial múltiple (MFA)](analisis-factorial-multiple-mfa) | MFA con datos reales del Banco Mundial: ejes, planos, clusters y robustez. | Funcional · datos reales abiertos |
