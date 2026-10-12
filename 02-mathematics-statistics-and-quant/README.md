@@ -15,3 +15,8 @@ Los proyectos históricos permanecen temporalmente en sus rutas originales duran
 
 - [Quantitative methods](quantitative-methods/): regularización, ARIMA, gradient boosting vs logit, Monte Carlo de opciones, validación cruzada temporal y análisis factorial múltiple (datos reales del Banco Mundial).
 - [Quant libraries](quant-libraries/): pérdida esperada de crédito con un contrato numérico común en Python, C, C++, R, MATLAB/Octave y Julia.
+
+
+## Nueva línea: investigación matemática y estadística avanzada
+
+[Diez programas de investigación avanzada](advanced-research/) sobre sistemas estocásticos, geometría de información, optimización robusta, dependencia extrema, memoria fraccional, causalidad dinámica, topología, problemas inversos, transporte óptimo y sistemas de agentes. **Estado S1 (diseño):** no se confunden propuestas con código ejecutable.
