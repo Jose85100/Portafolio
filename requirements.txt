@@ -1,11 +1,2 @@
-numpy>=2.0
-pandas>=2.2
-scipy>=1.13
-scikit-learn>=1.5
-statsmodels>=0.14
-arch>=7.0
-matplotlib>=3.9
-nbformat>=5.10
-nbclient>=0.10
-ipykernel>=6.29
-requests>=2.31
+# Backwards-compatible entry point: deterministic runtime environment.
+-r requirements-runtime.txt

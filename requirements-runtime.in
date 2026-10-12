@@ -1,0 +1,8 @@
+# Runtime: engines and scripts needed outside exploratory notebooks.
+numpy>=2.0,<2.2
+pandas>=2.2,<2.3
+scipy>=1.13,<1.15
+scikit-learn>=1.5,<1.6
+statsmodels>=0.14,<0.15
+arch>=7.0,<7.3
+requests>=2.31,<3
