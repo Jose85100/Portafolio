@@ -22,3 +22,7 @@ Cada proyecto de las tres primeras carpetas trae un `notebook.ipynb` extenso. Lo
 7. [Optimización de portafolio con capital y provisiones](07-capital-constrained-portfolio-control/): Asignar originación, pricing y límites maximizando valor sujeto a ECL y capital.
 
 **Estado:** propuestas metodológicas, no implementaciones ni resultados empíricos. Cada proyecto incluye formulación, identificación, validación, arquitectura objetivo y gobierno.
+
+## Enterprise Risk Advisory — consultoría integral
+
+[24 proyectos rigurosamente especificados en ocho líneas de servicio](enterprise-risk-advisory/). Incluyen gobierno, capital, liquidez, operacional, resiliencia, ciber, IA, fraude, cumplimiento, seguros, clima, contraparte, controles y datos de riesgo. **Diseños metodológicos pendientes de implementación.**
