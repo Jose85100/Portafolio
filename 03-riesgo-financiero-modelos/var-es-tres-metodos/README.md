@@ -25,3 +25,7 @@ Valor del portafolio: 1,000,000 | observaciones: 2500
   0.99       normal       22,576       25,901
   0.99    t-student       26,485       36,823
 ```
+
+## Notebook
+
+[`notebook.ipynb`](notebook.ipynb) desarrolla el tema de forma extensa: versión ingenua, diagnóstico, mejoras, robustez y **pruebas automáticas** (`assert`) que fallan el notebook si un hallazgo deja de cumplirse. Las cifras de sus conclusiones se calculan desde los datos. `main.py` es la versión corta del mismo tema.

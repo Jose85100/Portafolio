@@ -23,3 +23,7 @@ PD=0.02, LGD=0.45, deudores=2000, nivel 99.9%
  0.15     0.0703       0.0711
  0.24     0.1115       0.1148
 ```
+
+## Notebook
+
+[`notebook.ipynb`](notebook.ipynb) desarrolla el tema de forma extensa: versión ingenua, diagnóstico, mejoras, robustez y **pruebas automáticas** (`assert`) que fallan el notebook si un hallazgo deja de cumplirse. Las cifras de sus conclusiones se calculan desde los datos. `main.py` es la versión corta del mismo tema.
