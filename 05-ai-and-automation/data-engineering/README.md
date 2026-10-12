@@ -38,3 +38,23 @@ Cada producto debe documentar arquitectura física y lógica, esquemas, contrato
 - [Risk Data Platform — MVP ejecutable](risk-data-platform/): ingesta incremental CSV, contratos de datos, validación, deduplicación, reconciliación y manifiesto SHA256, con pruebas unitarias y CI.
 
 Los otros cuatro productos del catálogo siguen en fase de propuesta. La plataforma implementada es un MVP local, no un servicio cloud productivo.
+
+## Platform v2 — nuevas capacidades
+
+### Implementado en esta rama
+
+- [Shared Data Reliability Toolkit](shared/): calidad declarativa, joins point-in-time, reconciliación por fecha y manifiestos de evidencia, con pruebas unitarias.
+- [Arquitectura de referencia v2](ARCHITECTURE.md): cinco capas, flujos y requisitos de operación.
+
+### Ocho nuevos productos de ingeniería de datos (diseño)
+
+- [Macro Vintage Lakehouse](macro-vintage-lakehouse/)
+- [Quant Research Data Factory](quant-research-data-factory/)
+- [Data Quality & Observability Control Plane](data-quality-observability/)
+- [Workflow Orchestrator & Recovery](workflow-orchestrator/)
+- [Credit Feature Store & Label Factory](credit-feature-store/)
+- [CDC & Data Contracts Platform](data-contracts-cdc/)
+- [Regulatory Risk Data Mart](risk-regulatory-reporting/)
+- [DataOps, Security & FinOps](dataops-finops-security/)
+
+**Nota:** la plataforma ejecutable sigue siendo un MVP local. Los ocho nuevos productos son especificaciones para implementación futura, no servicios desplegados.
