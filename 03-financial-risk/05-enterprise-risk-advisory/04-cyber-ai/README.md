@@ -1,7 +1,13 @@
-# Ciberseguridad, tecnología e IA
+# Ciberseguridad, tecnología e IA — 7 proyectos
 
-Tres proyectos de consultoría con metodología y criterios de aceptación independientes.
+Se mantienen los tres proyectos existentes y se incorporan cuatro líneas nuevas. Todos deben adoptar los [contratos y criterios transversales](../00-architecture/README.md) sin sustituir su matemática especializada.
 
-- [Cuantificación de ciberriesgo](cyber-loss/) — Traducir amenazas a distribución de pérdidas.
-- [Riesgo de cambios tecnológicos](technology-change/) — Predecir incidentes y exposición de despliegues.
-- [Gobierno de IA y riesgo de modelos](ai-governance/) — Evaluar robustez, sesgo, drift y uso de modelos.
+## Catálogo
+
+- **Existente:** [Cuantificación de ciberriesgo](cyber-loss/)
+- **Existente:** [Riesgo de cambios tecnológicos](technology-change/)
+- **Existente:** [Gobierno de IA y riesgo de modelos](ai-governance/)
+- **Nuevo S1:** [Grafos probabilísticos de rutas de ataque](cyber-attack-graphs/)
+- **Nuevo S1:** [Riesgo de deriva de modelos de IA](ai-model-drift-risk/)
+- **Nuevo S1:** [Robustez adversarial de modelos](adversarial-model-robustness/)
+- **Nuevo S1:** [Contagio por dependencias tecnológicas](technology-dependency-contagion/)
