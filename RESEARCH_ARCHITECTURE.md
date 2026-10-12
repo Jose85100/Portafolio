@@ -38,15 +38,15 @@ La arquitectura está organizada por **pregunta científica y dominio**, no por 
 
 | Ruta actual | Destino propuesto |
 |---|---|
-| `01-riesgo-de-credito-productos` | `03-financial-risk/credit-risk-products` |
-| `02-riesgo-de-credito-estrategia-portafolio` | `03-financial-risk/credit-portfolio-strategy` |
-| `03-riesgo-financiero-modelos` | `03-financial-risk/market-and-model-risk` |
+| `01-riesgo-de-credito-productos` | `03-financial-risk/01-credit-risk/credit-risk-products` |
+| `02-riesgo-de-credito-estrategia-portafolio` | `03-financial-risk/01-credit-risk/credit-portfolio-strategy` |
+| `03-riesgo-financiero-modelos` | `03-financial-risk/02-market-and-model-risk` |
 | `04-gestion-de-portafolios` | `04-quant-strategy-and-products/asset-management` |
 | `05-cuantitativo-ciencia-de-datos` | `02-mathematics-statistics-and-quant/quantitative-methods` |
 | `06-estrategia-innovacion-vc` | `06-strategy-innovation-and-leadership/venture-capital` |
 | `07-liderazgo-de-datos` | `06-strategy-innovation-and-leadership/data-leadership` |
 | `08-laboratorio-multilenguaje-quant` | `02-mathematics-statistics-and-quant/quant-libraries` |
-| `09-riesgo-mercado-liquidez-avanzado` | `03-financial-risk/market-liquidity-research` |
+| `09-riesgo-mercado-liquidez-avanzado` | `03-financial-risk/03-market-liquidity-research` |
 | `10-cpp-risk-platform` (PR #4) | `04-quant-strategy-and-products/risk-engines` |
 
 **Estado de la migración:** las nueve carpetas históricas fueron trasladadas a sus destinos en esta rama. Se comprobó el árbol de Git y se localizaron 36 notebooks. La ejecución completa de notebooks y CI sigue pendiente; no se debe afirmar validación empírica por este traslado.

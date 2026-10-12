@@ -49,7 +49,7 @@ La implementación estima el ES de la distribución empírica tomando la cola su
 ## Reproducibilidad
 
 ```bash
-python 03-financial-risk/credit-portfolio-strategy/copula-gaussiana-perdidas/modelo_avanzado.py
+python 03-financial-risk/01-credit-risk/credit-portfolio-strategy/copula-gaussiana-perdidas/modelo_avanzado.py
 python -m unittest discover -s tests -p 'test_credito_avanzado.py' -v
 ```
 
