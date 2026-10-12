@@ -39,3 +39,7 @@ La novedad científica debe establecerse mediante revisión de literatura; las n
 ## Advanced AI Systems Engineering — 10 proyectos adicionales
 
 Se añade [un noveno pilar](09-advanced-ai-systems-engineering/) con diez proyectos de ingeniería avanzada, bases compartidas y un kernel C++20 inicial de benchmarks. Se preservan los ocho pilares y el código existente. No confundir las diez especificaciones con diez sistemas productivos.
+
+## Enterprise AI Backend Engineering
+
+- [Five enterprise AI backend engineering projects](13-enterprise-ai-backend-engineering/): Kotlin/Rust services, secure identity, distributed agent execution, permission-aware RAG and AI-assisted software delivery. **S1 architecture specifications.**
