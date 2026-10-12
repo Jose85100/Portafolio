@@ -26,8 +26,8 @@ Trayectoria \(C_{t+1}=C_t+I_t-O_t-M_t\); primer déficit, probabilidad de défic
 Código compartido en \`include/quant/risk.hpp\`, aplicaciones CLI separadas y pruebas de invariantes. Los tres motores utilizan semillas fijas, verifican parámetros y no requieren dependencias externas. Las implementaciones son prototipos cuantitativos reproducibles, **no productos listos para producción**: faltan configuración de portafolios reales, ingestión de datos, logging, perfiles de rendimiento, calibración, validación independiente y controles de despliegue.
 
 ## Integración temática
-- Crédito: \`03-financial-risk/credit-risk-products\`.
-- Mercado: \`03-financial-risk/market-and-model-risk\`.
-- Liquidez: \`03-financial-risk/market-liquidity-research\`.
+- Crédito: \`03-financial-risk/01-credit-risk/credit-risk-products\`.
+- Mercado: \`03-financial-risk/02-market-and-model-risk\`.
+- Liquidez: \`03-financial-risk/03-market-liquidity-research\`.
 
 Esta carpeta constituye la biblioteca central para evitar duplicación de código.
