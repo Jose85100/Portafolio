@@ -1,0 +1,27 @@
+name: Data Engineering Projects
+on:
+  push:
+    paths:
+      - '05-ai-and-automation/data-engineering/**'
+      - '.github/workflows/data-engineering.yml'
+  pull_request:
+    paths:
+      - '05-ai-and-automation/data-engineering/**'
+      - '.github/workflows/data-engineering.yml'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Unit tests
+        run: |
+          set -e
+          for project in 05-ai-and-automation/data-engineering/0[1-5]-*; do
+            python -m unittest discover -s "$project/tests" -p 'test_*.py' -v
+          done
