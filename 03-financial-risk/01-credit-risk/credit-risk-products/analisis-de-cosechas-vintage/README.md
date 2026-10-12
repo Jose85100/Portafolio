@@ -2,6 +2,12 @@
 
 Curvas de incumplimiento acumulado por cohorte de originación con una hazard que crece y decae con la antigüedad. Compara cosechas, identifica la de peor desempeño y la ubica frente al promedio.
 
+## Método y contrato
+
+Para una cohorte \(v\), la curva mostrada es la incidencia acumulada \(F_v(h)=1-S_v(h)\), donde \(S_v(h)=\prod_{t=1}^{h}(1-\lambda_{v,t})\). El script usa una hazard sintética con forma de campana; no infiere riesgo observado ni causalidad.
+
+El grano analítico es **cuenta–mes desde originación**, con `vintage_id`, `origination_month`, `as_of_date` y una primera fecha de default. Compare solamente cohortes con igual madurez y exposición elegible. El [contrato común](../docs/DATA_CONTRACTS.md) y el [DDL SQL](../docs/credit_risk_schema.sql) especifican las llaves de referencia.
+
 ## Datos
 
 Datos **sintéticos** generados con semilla fija (`numpy.random.default_rng`). No hay datos de clientes, de empresas ni confidenciales. Los resultados son **ilustrativos del método**, no evidencia de desempeño real.
