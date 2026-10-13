@@ -10,7 +10,7 @@ Economía teórica, econometría avanzada y simulación computacional con énfas
 - [Econometría](04-econometrics/) — 2 programas
 - [Macrofinanzas](05-macrofinance/) — 2 programas
 
-**Total: 12 programas de investigación: 11 en S1 y uno con componente de evaluación en S2.** Los documentos describen hipótesis, modelos, identificación, fuentes potenciales, validación y límites. Real-Time Causal Nowcasting incluye ahora un prototipo sintético ejecutable; no hay resultados empíricos de esos programas.
+**Total: 12 programas de investigación: 10 en S1 y dos con componentes en S2.** Los documentos describen hipótesis, modelos, identificación, fuentes potenciales, validación y límites. Real-Time Causal Nowcasting y Endogenous Credit Freeze incluyen ahora prototipos sintéticos ejecutables; no hay resultados empíricos de esos programas.
 
 ## Infraestructura compartida
 
@@ -51,3 +51,7 @@ python3 -m unittest discover -s 01-economics-and-econometrics/computational-econ
 ## Ciclo diario 2026-10-12
 
 [Vintage Audit](04-econometrics/01-real-time-causal-nowcasting/vintage-audit/): auditor as-of, benchmark factorial y tests; componente S2, modelo causal completo S1.
+
+## Ciclo diario 2026-10-13
+
+[Bayesian Freeze Audit](03-game-theory/01-endogenous-credit-freeze/bayesian-freeze-audit/): enumeración finita de BNE, oracle racional, selección y tests; componente S2, modelo global completo S1.
