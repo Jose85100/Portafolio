@@ -42,13 +42,15 @@ Se añade [un noveno pilar](09-advanced-ai-systems-engineering/) con diez proyec
 
 ## Proyectos con implementación ejecutable (librería + pruebas + notebook)
 
-Tres proyectos se construyeron como librerías probadas, con notebooks extensos que validan cada método contra una verdad conocida y no necesitan red ni claves de API:
+Cinco proyectos se construyeron como librerías probadas, con notebooks extensos que validan cada método contra una verdad conocida y no necesitan red ni claves de API:
 
 | Proyecto | Pilar | Qué demuestra |
 |---|---|---|
 | [Recuperación para RAG](06-knowledge-engineering-and-rag/rag-retrieval-evaluation/) | Knowledge Engineering & RAG | Qué decisiones de un RAG importan de verdad, con corpus real, pruebas pareadas y potencia |
 | [Confiabilidad de agentes](04-agentic-ai-and-multi-agent-systems/agent-runtime-reliability/) | Agentic AI | Falla metaestable por reintentos, presupuesto de reintentos, cortacircuitos, idempotencia y sagas |
 | [Evaluación de LLM y jueces](08-ai-reliability-security-and-governance/llm-evaluation-judge-reliability/) | AI Reliability | Intervalos, PPI, sesgos de jueces, acuerdo, comparaciones múltiples y compuertas secuenciales |
+| [Contratos de datos y ELT incremental](data-engineering/data-pipeline-contracts-incremental-elt/) | Data Engineering | Contratos, evolución de esquemas, pipeline idempotente y transaccional, SCD2 y conciliación |
+| [Enrutar entre modelos](03-deep-learning-and-foundation-models/model-routing-cascade-economics/) | Deep Learning & Foundation Models | Cascadas, enrutador aprendido, caché semántico, bandidos y control conforme del riesgo |
 
 Según la [matriz de madurez](../PROJECT_MATURITY.md) están en **M2 (prototipo verificado)**: pruebas automáticas, resultados reproducibles y límites explícitos; no tienen evaluación independiente ni datos operativos.
 
