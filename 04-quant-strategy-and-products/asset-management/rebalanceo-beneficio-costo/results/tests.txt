@@ -1,0 +1,12 @@
+.............                                                            [100%]
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.12.14-final-0 _______________
+
+Name               Stmts   Miss Branch BrPart  Cover
+----------------------------------------------------
+src/__init__.py        0      0      0      0   100%
+src/portfolio.py     103      2     38      2    97%
+----------------------------------------------------
+TOTAL                103      2     38      2    97%
+Coverage JSON written to file results/coverage.json
+13 passed in 1.83s

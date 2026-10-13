@@ -1,0 +1,24 @@
+name: Quant cost gate MVP
+on:
+  push:
+    paths:
+      - '04-quant-strategy-and-products/asset-management/rebalanceo-beneficio-costo/**'
+      - '.github/workflows/quant-cost-gate.yml'
+  pull_request:
+    paths:
+      - '04-quant-strategy-and-products/asset-management/rebalanceo-beneficio-costo/**'
+      - '.github/workflows/quant-cost-gate.yml'
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: bash 04-quant-strategy-and-products/asset-management/rebalanceo-beneficio-costo/reproduce.sh
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cost-gate-evidence
+          path: 04-quant-strategy-and-products/asset-management/rebalanceo-beneficio-costo/results/
