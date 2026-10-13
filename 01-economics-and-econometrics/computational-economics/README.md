@@ -12,4 +12,4 @@
 | `structural-estimation/` | SMM, indirect inference y likelihood | Identification, simulation error, coverage |
 | `numerical-validation/` | Monte Carlo, bootstrap, stability, benchmarks | Reproducibility, numerical convergence |
 
-No hay solvers implementados en este directorio. Cada módulo futuro deberá incluir API, tests, benchmark, documentación y casos degenerados.
+Existe un núcleo estadístico sintético con OLS, bootstrap, ECL, paso Markov y best response en grilla; no son solvers estructurales completos. Cada módulo futuro deberá incluir API, tests, benchmark, documentación y casos degenerados.
