@@ -1,0 +1,40 @@
+{
+  "config": {
+    "alpha": 0.975,
+    "seed": 20261013,
+    "sample_sizes": [
+      250,
+      501
+    ],
+    "replications": 40,
+    "distributions": [
+      "normal",
+      "student4",
+      "discrete_credit",
+      "weighted_rounded_t"
+    ],
+    "oracle_tolerance": 1e-08
+  },
+  "python": "3.12.14",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "processor": "x86_64",
+  "cpu_info": "model name\t: AMD EPYC 9V74 80-Core Processor",
+  "packages": {
+    "numpy": "2.1.3",
+    "scipy": "1.14.1",
+    "matplotlib": "3.9.4",
+    "pytest": "8.3.5",
+    "hypothesis": "6.131.9"
+  },
+  "repo_commit": "db51d4def262980c002e9be799b7e3cd034108f9",
+  "baseline_sha256": {
+    "03-financial-risk/02-market-and-model-risk/var-es-tres-metodos/main.py": "8b190a58926e0a3d415bb477bc16b67f96ccdf868d05a34c935aa410fa80a6cb",
+    "03-financial-risk/07-financial-and-construction-risk-lab/python/src/risk_models.py": "af21c7e210b4763d203f22d0bd15b0249de9e24a6f02b7fc9de848edaa69af74",
+    "03-financial-risk/03-market-liquidity-research/python/laboratorio.py": "acc479186b18baf1f48b270960e8fc89c9756e8c0b6d5a5a184732b42fec17fb",
+    "04-quant-strategy-and-products/risk-engines/include/quant/risk.hpp": "241e6189f8232f74a3d7f926cb63654dbd354028c247a0253236ae83149399e6"
+  },
+  "max_oracle_abs_error": 7.105427357601002e-15,
+  "memory_scope": "tracemalloc Python/NumPy allocation peak; excludes native LP workspace and RSS",
+  "interpretation": "finite-distribution numerical error, not population bias or forecast accuracy"
+}
