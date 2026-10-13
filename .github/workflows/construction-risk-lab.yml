@@ -1,0 +1,32 @@
+name: Construction financial risk lab
+on:
+  push:
+    paths:
+      - '03-financial-risk/07-financial-and-construction-risk-lab/**'
+      - '.github/workflows/construction-risk-lab.yml'
+  pull_request:
+    paths:
+      - '03-financial-risk/07-financial-and-construction-risk-lab/**'
+      - '.github/workflows/construction-risk-lab.yml'
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Test cashflow simulation
+        run: python -m unittest discover -s 03-financial-risk/07-financial-and-construction-risk-lab/02-construction-enterprise-risk/01-project-cashflow-at-risk/tests -p 'test_*.py' -v
+      - name: Test quantitative models
+        run: python -m unittest discover -s 03-financial-risk/07-financial-and-construction-risk-lab/python/tests -p 'test_*.py' -v
+  cpp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: cmake -S 03-financial-risk/07-financial-and-construction-risk-lab/cpp -B /tmp/construction-risk-build
+      - run: cmake --build /tmp/construction-risk-build
+      - run: ctest --test-dir /tmp/construction-risk-build --output-on-failure
