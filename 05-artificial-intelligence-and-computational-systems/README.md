@@ -52,3 +52,7 @@ Tres proyectos se construyeron como librerías probadas, con notebooks extensos 
 
 Según la [matriz de madurez](../PROJECT_MATURITY.md) están en **M2 (prototipo verificado)**: pruebas automáticas, resultados reproducibles y límites explícitos; no tienen evaluación independiente ni datos operativos.
 
+
+## AI Orchestration Engineering
+
+- [Seven AI orchestration projects](10-ai-orchestration-engineering/): distributed workflow scheduling, multi-agent coordination, routing, events, memory, recovery and governance.
