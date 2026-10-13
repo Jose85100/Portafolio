@@ -30,3 +30,20 @@ Economía teórica, econometría avanzada y simulación computacional con énfas
 La originalidad debe establecerse frente a la literatura existente. Cada programa requiere una revisión sistemática antes de afirmar contribuciones inéditas. Se distingue explícitamente teoría, simulación y evidencia observacional.
 
 Véase [arquitectura general](../RESEARCH_ARCHITECTURE.md).
+
+
+## Laboratorios reproducibles — expansión
+
+Se incorporan **35 proyectos adicionales** (siete por área) con 35 notebooks de Python, README con ecuaciones, diseños de identificación y validación; y siete módulos de economía computacional con un núcleo común de utilidades y pruebas unitarias. El alcance computacional inicial es un baseline estadístico sintético, **no** 35 estimadores estructurales completos ni experimentos con datos reales.
+
+- [Macroeconomía](01-macroeconomics/ADDITIONAL_RESEARCH_LABS.md)
+- [Microeconomía](02-microeconomics/ADDITIONAL_RESEARCH_LABS.md)
+- [Teoría de juegos](03-game-theory/ADDITIONAL_RESEARCH_LABS.md)
+- [Econometría](04-econometrics/ADDITIONAL_RESEARCH_LABS.md)
+- [Macrofinanzas](05-macrofinance/ADDITIONAL_RESEARCH_LABS.md)
+- [Economía computacional](computational-economics/)
+
+### Ejecución de tests
+```bash
+python3 -m unittest discover -s 01-economics-and-econometrics/computational-economics/tests -v
+```
