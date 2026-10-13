@@ -61,3 +61,7 @@ Según la [matriz de madurez](../PROJECT_MATURITY.md) están en **M2 (prototipo 
 
 - [Five AI Literacy projects](11-ai-literacy-and-human-ai-competence/): competency assessment, evidence, task specifications, human-AI decisions and responsible use.
 - [Digital Twins & Intelligent Simulation](12-digital-twins-and-intelligent-simulation/): 27 research project specifications across banking, macroeconomics, innovation and public policy.
+
+## Enterprise AI Backend Engineering
+
+- [Five enterprise AI backend projects](13-enterprise-ai-backend-engineering/): Kotlin, Rust, REST, identity, distributed execution, RAG and AI-assisted software delivery.
