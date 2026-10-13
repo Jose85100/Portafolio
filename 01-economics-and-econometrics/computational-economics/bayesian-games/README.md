@@ -13,3 +13,7 @@ Actualización de creencias y decisiones bayesianas.
 
 ## Validación futura
 Comparar con soluciones analíticas cuando existan, evaluar convergencia en refinamiento de grilla y estabilidad de resultados.
+
+## Prototipo disponible
+
+[Bayesian Freeze Audit](../../03-game-theory/01-endogenous-credit-freeze/bayesian-freeze-audit/) implementa un caso finito de dos agentes y dos tipos, con oracle racional y regret. No es un solver bayesiano genérico ni continuo.
