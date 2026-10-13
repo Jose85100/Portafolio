@@ -1,21 +1,20 @@
-# Matriz de madurez del portafolio
+# Matriz de madurez — evidencia y límites
 
-El repositorio reúne investigación, prototipos y herramientas ejecutables. No todos los directorios tienen el mismo nivel; esta matriz evita presentar una propuesta documental como producto terminado.
+| Nivel | Criterio verificable | Restricción |
+|---|---|---|
+| M0 | Formulación y README | No implica código |
+| M1 | Implementación reproducible y resultados sintéticos/abiertos | No implica validez empírica |
+| M2 | Tests, contratos, integridad, reproducibilidad y revisión técnica | No implica operación productiva |
+| M3 | Datos aprobados, controles de acceso, monitoreo, validación independiente y operación | No es garantía de desempeño |
 
-| Nivel | Denominación | Evidencia mínima | No significa |
-|---|---|---|---|
-| M0 | Marco / propuesta | README con alcance, supuestos y próximos pasos | Código validado o producto |
-| M1 | Laboratorio reproducible | Código o notebook ejecutable, datos sintéticos/abiertos y límites explícitos | Validación con datos operativos |
-| M2 | Prototipo verificado | Pruebas automáticas, contratos, resultados reproducibles y controles de integridad | SLA, seguridad o despliegue productivo |
-| M3 | Producción gobernada | Datos aprobados, observabilidad, control de acceso, operación y validación independiente | Garantía universal de desempeño |
+## Evaluación por dominio
+| Dominio | Estado orientativo | Brecha prioritaria |
+|---|---|---|
+| 01 Economía | M0–M1 (notebooks y auditoría vintage) | Estimación real, diagnóstico y pruebas temporales por modelo |
+| 02 Matemáticas | M0–M2 parcial (núcleo numérico con pruebas) | Extender demostraciones, precisión y benchmark de los programas de investigación |
+| 03 Riesgo | M0–M2 heterogéneo | Calibración, validación independiente, datos reales y límites de uso |
+| 04 Quant | M1–M2 parcial | Costos de ejecución, sesgo de supervivencia, stress y backtesting |
+| 05 IA | M1–M2 parcial | Evaluación empírica, seguridad y contratos de datos |
+| 06 Estrategia | M1–M2 parcial | Resultados reales y contrafactuales |
 
-| Dominio | Nivel actual | Lectura correcta |
-|---|---:|---|
-| 01 · Economics & Econometrics | M0 | Marco de investigación y criterios de incorporación; todavía no entrega modelos ejecutables. |
-| 02 · Mathematics, Statistics & Quant | M1 | Notebooks y librerías didácticas reproducibles, incluidos datos abiertos donde se indica. |
-| 03 · Financial Risk | M0–M2 | Hay propuestas, laboratorios y motores; consultar el README de cada subproyecto antes de asumir cobertura. |
-| 04 · Quant Strategy & Products | M1–M2 | Laboratorios de portafolio y plataforma C++ con pruebas, no una mesa de inversión desplegada. |
-| 05 · Artificial Intelligence & Computational Systems | M1–M2 | MVPs y componentes de confiabilidad; la plataforma de datos sigue siendo local y no un lakehouse productivo. |
-| 06 · Strategy, Innovation & Leadership | M1–M2 | Motores reproducibles para análisis y decisión; no sustituyen diligencia ni datos corporativos reales. |
-
-La etiqueta de nivel se actualiza sólo cuando se incorpora la evidencia indicada, no por extensión de la documentación.
+**No se certifica ningún dominio completo como M2 o M3.** Los niveles describen evidencia local de componentes. El inventario automatizado registra archivos, no calidad de modelos.
