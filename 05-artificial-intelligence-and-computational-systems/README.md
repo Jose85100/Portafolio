@@ -56,3 +56,8 @@ Según la [matriz de madurez](../PROJECT_MATURITY.md) están en **M2 (prototipo 
 ## AI Orchestration Engineering
 
 - [Seven AI orchestration projects](10-ai-orchestration-engineering/): distributed workflow scheduling, multi-agent coordination, routing, events, memory, recovery and governance.
+
+## AI Literacy and Digital Twins
+
+- [Five AI Literacy projects](11-ai-literacy-and-human-ai-competence/): competency assessment, evidence, task specifications, human-AI decisions and responsible use.
+- [Digital Twins & Intelligent Simulation](12-digital-twins-and-intelligent-simulation/): 27 research project specifications across banking, macroeconomics, innovation and public policy.
