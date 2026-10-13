@@ -5,3 +5,7 @@ Asset management, trading cuantitativo, optimización de portafolios, pricing y 
 ## Motores cuantitativos
 
 - [Quant Risk Platform en C++17](risk-engines/): simulación de pérdidas de crédito, riesgo de mercado y flujos de liquidez; compilación CMake y pruebas automatizadas.
+
+## Laboratorio de asset management
+
+- [Rebalanceo por beneficio frente a costo](asset-management/rebalanceo-beneficio-costo/): MVP M2, solver verificado y comparación de costos, riesgo y rotación con resultados sintéticos.
