@@ -58,3 +58,9 @@ Los otros cuatro productos del catálogo siguen en fase de propuesta. La platafo
 - [DataOps, Security & FinOps](dataops-finops-security/)
 
 **Nota:** la plataforma ejecutable sigue siendo un MVP local. Los ocho nuevos productos son especificaciones para implementación futura, no servicios desplegados.
+
+## Implementaciones ejecutables
+
+A diferencia de las propuestas, este proyecto sí tiene código, pruebas y notebook reproducibles sin red ni claves de API:
+
+- [Contratos de datos y ELT incremental](data-pipeline-contracts-incremental-elt/): contratos con cuarentena, compatibilidad de esquemas, pipeline medallón transaccional e idempotente, SCD tipo 2 y conciliación; probado bajo duplicados, desorden y caídas.
