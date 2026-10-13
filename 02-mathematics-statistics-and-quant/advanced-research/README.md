@@ -1,6 +1,6 @@
 # Advanced Research — Mathematics, Statistics & Quantitative Methods
 
-Diez programas de investigación propuestos, no implementaciones ni resultados validados. Se conservan los seis proyectos existentes de métodos cuantitativos y las bibliotecas multilenguaje.
+Veinte programas de investigación. El programa 18 tiene un prototipo S2 acotado; los demás siguen como propuestas S1. Se conservan los seis proyectos existentes de métodos cuantitativos y las bibliotecas multilenguaje.
 
 | ID | Proyecto | Estado |
 |---|---|---|
@@ -27,7 +27,7 @@ Cada proyecto exige formulación rigurosa, supuestos y contraejemplos, evaluaci�
 
 ## Segunda generación — proyectos 11–20
 
-Esta segunda ola investiga conexiones interdisciplinarias. **Todos son diseños S1, no implementaciones.**
+Esta segunda ola investiga conexiones interdisciplinarias. **Los programas siguen en S1 salvo el 18, que tiene un prototipo S2 acotado.**
 
 | ID | Investigación | Estado |
 |---|---|---|
@@ -38,10 +38,10 @@ Esta segunda ola investiga conexiones interdisciplinarias. **Todos son diseños 
 | 15 | [Distributional Phase Diagrams](15-distributional-phase-diagrams/) | S1 |
 | 16 | [Non-Equilibrium Information Thermodynamics](16-nonequilibrium-information-thermodynamics/) | S1 |
 | 17 | [Sheaf-Theoretic Data Consistency](17-sheaf-statistical-consistency/) | S1 |
-| 18 | [Rare-Event Geometry & Importance Sampling](18-rare-event-geometry-importance-sampling/) | S1 |
+| 18 | [Rare-Event Geometry & Importance Sampling](18-rare-event-geometry-importance-sampling/) | S2: auditoría ejecutable de colas gaussianas |
 | 19 | [Causal Games under Partial Observability](19-causal-games-partial-observability/) | S1 |
 | 20 | [Self-Exciting Networks & Endogenous Cascades](20-self-exciting-network-cascades/) | S1 |
 
 **Prioridad matemática exploratoria:** 12, 14 y 17. **Métodos computacionales con validación factible:** 11, 13, 16 y 18. **Aplicación macrofinanciera:** 15, 19 y 20.
 
-La revisión de literatura, la implementación y los resultados empíricos quedan pendientes. Ningún proyecto se declara original o validado por su descripción.
+La revisión e implementación completas siguen pendientes para los programas S1. El programa 18 incluye un benchmark sintético reproducible; no constituye validación externa ni demuestra originalidad algorítmica.
