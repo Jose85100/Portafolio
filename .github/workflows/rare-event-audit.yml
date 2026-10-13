@@ -1,0 +1,22 @@
+name: Rare event geometry audit
+on:
+  push:
+    paths:
+      - '02-mathematics-statistics-and-quant/advanced-research/18-rare-event-geometry-importance-sampling/**'
+      - '.github/workflows/rare-event-audit.yml'
+  pull_request:
+    paths:
+      - '02-mathematics-statistics-and-quant/advanced-research/18-rare-event-geometry-importance-sampling/**'
+      - '.github/workflows/rare-event-audit.yml'
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Reproduce MVP
+        working-directory: 02-mathematics-statistics-and-quant/advanced-research/18-rare-event-geometry-importance-sampling
+        run: make run

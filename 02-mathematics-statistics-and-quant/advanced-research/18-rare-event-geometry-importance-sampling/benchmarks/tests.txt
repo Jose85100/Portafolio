@@ -1,0 +1,19 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-8.3.5, pluggy-1.6.0
+rootdir: /workspace/scratch/b4f745a5b045/Portafolio/02-mathematics-statistics-and-quant/advanced-research/18-rare-event-geometry-importance-sampling
+configfile: pyproject.toml
+plugins: platformdirs-4.13.0, cov-6.1.1, hypothesis-6.131.9
+collected 32 items
+
+tests/test_estimators.py ................................                [100%]
+
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.12.14-final-0 _______________
+
+Name                Stmts   Miss  Cover   Missing
+-------------------------------------------------
+src/estimators.py      61      0   100%
+-------------------------------------------------
+TOTAL                  61      0   100%
+Coverage JSON written to file benchmarks/coverage.json
+============================== 32 passed in 2.53s ==============================
