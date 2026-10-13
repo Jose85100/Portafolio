@@ -1,0 +1,3 @@
+  estrategia  retorno_anual  vol_anual  Sharpe  rotacion_total
+     iguales         10.09%     11.63%    0.87            2.14
+min_varianza         10.09%     11.63%    0.87            2.14
