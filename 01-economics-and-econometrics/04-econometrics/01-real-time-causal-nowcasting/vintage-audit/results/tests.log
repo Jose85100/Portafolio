@@ -1,0 +1,16 @@
+test_asof_future_mutation_and_order (test_properties.LedgerProperties.test_asof_future_mutation_and_order) ... ok
+test_baseline_agrees_numpy (test_vintages.VintageTests.test_baseline_agrees_numpy) ... ok
+test_duplicate_release_latest (test_vintages.VintageTests.test_duplicate_release_latest) ... ok
+test_future_mutation_invariant (test_vintages.VintageTests.test_future_mutation_invariant) ... ok
+test_invalid_config (test_vintages.VintageTests.test_invalid_config) ... ok
+test_long_delay_excludes_unreleased_training (test_vintages.VintageTests.test_long_delay_excludes_unreleased_training) ... ok
+test_no_revision_no_delay_equal (test_vintages.VintageTests.test_no_revision_no_delay_equal) ... ok
+test_no_violations (test_vintages.VintageTests.test_no_violations) ... ok
+test_positive_control_detected (test_vintages.VintageTests.test_positive_control_detected) ... ok
+test_reproducible (test_vintages.VintageTests.test_reproducible) ... ok
+test_small_history (test_vintages.VintageTests.test_small_history) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 1.212s
+
+OK

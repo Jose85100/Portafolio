@@ -12,9 +12,15 @@ class EconLabTests(unittest.TestCase):
     def test_simulation_reproducible(self):
         self.assertEqual(m.generate_panel(seed=2),m.generate_panel(seed=2))
     def test_bootstrap_interval(self):
-        x,y=m.generate_panel(n=200,noise=.1)
-        lo,hi=m.bootstrap_slope(x,y,seed=3)
-        self.assertLess(lo,.8);self.assertGreater(hi,.8)
+        # Nominal 95% intervals need not cover in every finite sample.
+        covered = 0
+        for seed in range(100):
+            x,y=m.generate_panel(n=200,noise=.1,seed=seed)
+            lo,hi=m.bootstrap_slope(x,y,seed=seed+1000)
+            self.assertLessEqual(lo,hi)
+            covered += lo <= .8 <= hi
+        # Broad Monte Carlo guardrail, not a theorem of exact coverage.
+        self.assertGreaterEqual(covered,85)
     def test_credit_loss(self):
         self.assertAlmostEqual(m.expected_credit_loss([.1,.2],[.5,.5],[100,200]),25)
     def test_credit_loss_validation(self):
