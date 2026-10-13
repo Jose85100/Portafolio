@@ -19,7 +19,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      - run: python -m unittest discover -s 03-financial-risk/07-financial-and-construction-risk-lab -p 'test_*.py' -v
+      - name: Test cashflow simulation
+        run: python -m unittest discover -s 03-financial-risk/07-financial-and-construction-risk-lab/02-construction-enterprise-risk/01-project-cashflow-at-risk/tests -p 'test_*.py' -v
+      - name: Test quantitative models
+        run: python -m unittest discover -s 03-financial-risk/07-financial-and-construction-risk-lab/python/tests -p 'test_*.py' -v
   cpp:
     runs-on: ubuntu-latest
     steps:

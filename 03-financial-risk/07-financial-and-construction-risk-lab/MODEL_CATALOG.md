@@ -1,21 +1,23 @@
 # Model catalog and maturity
 
-13 new project research specifications complement the existing nine, for **22 research projects** in this lab.
+The lab contains **22 research projects**. Most project directories are research specifications, not working software.
 
-## Implemented baselines
-- Python: empirical VaR/ES, DSCR/LLCR, CPM critical path, triangular-duration Monte Carlo, Gaussian one-factor credit losses.
+## Executable baselines
+- Python: empirical VaR/ES, DSCR/LLCR, CPM critical path, triangular-duration Monte Carlo, Gaussian one-factor credit losses, stochastic project cash-flow shortfall.
 - C++17: empirical VaR/ES, deterministic cash path and peak liquidity shortfall.
-- Existing Python: stochastic project cash-flow shortfall engine.
 
-These are **algorithmic baselines**, not full implementations of all 22 project proposals. There is no empirical calibration, out-of-time validation or independent model review.
+No empirical calibration, out-of-time validation, or independent model review has been performed.
 
-## Verification
+## Reproducibility
+Run from repository root:
+
 ```bash
-python -m unittest discover -s 03-financial-risk/07-financial-and-construction-risk-lab -p 'test_*.py' -v
+python -m unittest discover -s 03-financial-risk/07-financial-and-construction-risk-lab/python/tests -p 'test_*.py' -v
+python -m unittest discover -s 03-financial-risk/07-financial-and-construction-risk-lab/02-construction-enterprise-risk/01-project-cashflow-at-risk/tests -p 'test_*.py' -v
 cmake -S 03-financial-risk/07-financial-and-construction-risk-lab/cpp -B build/construction-risk
 cmake --build build/construction-risk
 ctest --test-dir build/construction-risk --output-on-failure
 ```
 
-## Next gates
-Dataset contracts; as-of leakage controls; scenario factor correlations; parameter uncertainty; convergence diagnostics; out-of-time backtests; model risk inventory; governance and limits.
+## Validation roadmap
+Dataset contracts; as-of leakage controls; scenario-factor dependence; parameter uncertainty; numerical convergence; out-of-time backtesting; independent validation; risk appetite limits and governance.
