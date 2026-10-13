@@ -1,0 +1,31 @@
+{
+  "trials": 1600,
+  "max_oracle_abs_error": 7.105427357601002e-15,
+  "counterexample": [
+    {
+      "method": "repo_historical",
+      "es": 1.0,
+      "reference": 39.999999999999964
+    },
+    {
+      "method": "repo_construction",
+      "es": 33.333333333333336,
+      "reference": 39.999999999999964
+    },
+    {
+      "method": "repo_liquidity_fractional",
+      "es": 39.999999999999964,
+      "reference": 39.999999999999964
+    },
+    {
+      "method": "strict_tail_ablation",
+      "es": 100.0,
+      "reference": 39.999999999999964
+    },
+    {
+      "method": "weighted_exact",
+      "es": 39.999999999999964,
+      "reference": 39.999999999999964
+    }
+  ]
+}

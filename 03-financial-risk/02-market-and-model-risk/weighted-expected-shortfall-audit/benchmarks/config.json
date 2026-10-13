@@ -1,0 +1,8 @@
+{
+  "alpha": 0.975,
+  "seed": 20261013,
+  "sample_sizes": [250, 501],
+  "replications": 40,
+  "distributions": ["normal", "student4", "discrete_credit", "weighted_rounded_t"],
+  "oracle_tolerance": 1e-8
+}
