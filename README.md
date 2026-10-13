@@ -8,7 +8,7 @@ La organización parte de la pregunta científica y el dominio, no de la herrami
 
 | Dominio | Contenido |
 |---|---|
-| [01 · Economics & Econometrics](01-economics-and-econometrics) | Microeconomía, macroeconomía, teoría de juegos, econometría y macrofinanzas (marco y criterios de inclusión). |
+| [01 · Economics & Econometrics](01-economics-and-econometrics) | 35 laboratorios de macro, micro, teoría de juegos, econometría y macrofinanzas, con notebooks reproducibles. |
 | [02 · Mathematics, Statistics & Quant](02-mathematics-statistics-and-quant) | [Métodos cuantitativos](02-mathematics-statistics-and-quant/quantitative-methods) (6 notebooks, incluido un análisis factorial múltiple con datos reales) y [laboratorio multilenguaje](02-mathematics-statistics-and-quant/quant-libraries) (Python, C, C++, R, MATLAB, Julia). |
 | [03 · Financial Risk](03-financial-risk) | [Crédito](03-financial-risk/01-credit-risk), [riesgo de mercado y de modelos](03-financial-risk/02-market-and-model-risk), [investigación de liquidez](03-financial-risk/03-market-liquidity-research), propuestas avanzadas y advisory empresarial. |
 | [04 · Quant Strategy & Products](04-quant-strategy-and-products) | [Gestión de portafolios](04-quant-strategy-and-products/asset-management) (5 notebooks) y [plataforma de riesgo en C++17](04-quant-strategy-and-products/risk-engines). |
@@ -17,8 +17,8 @@ La organización parte de la pregunta científica y el dominio, no de la herrami
 
 ## Cuatro tipos de proyecto
 
-- **Notebooks (36)** — `notebook.ipynb` con versión ingenua, diagnóstico, mejoras, robustez y límites. Los datos son **sintéticos con verdad conocida**, así que el notebook comprueba si el método recupera la verdad; las cifras de las conclusiones se **calculan desde los datos** (celdas «Lectura») y una sección final de `assert` hace fallar el notebook si un hallazgo deja de cumplirse. Cuando una hipótesis inicial resultó falsa, el notebook lo dice y muestra la corrección. La excepción es el [análisis factorial múltiple](02-mathematics-statistics-and-quant/quantitative-methods/analisis-factorial-multiple-mfa), que usa **datos reales y abiertos** del Banco Mundial.
-- **`main.py` (35)** — la versión corta y ejecutable de cada notebook.
+- **Notebooks (77)** — archivos `.ipynb` con versión ingenua, diagnóstico, mejoras, robustez y límites. Los datos son **sintéticos con verdad conocida**, así que el notebook comprueba si el método recupera la verdad; las cifras de las conclusiones se **calculan desde los datos** (celdas «Lectura») y una sección final de `assert` hace fallar el notebook si un hallazgo deja de cumplirse. Cuando una hipótesis inicial resultó falsa, el notebook lo dice y muestra la corrección. La excepción es el [análisis factorial múltiple](02-mathematics-statistics-and-quant/quantitative-methods/analisis-factorial-multiple-mfa), que usa **datos reales y abiertos** del Banco Mundial.
+- **`main.py` (40)** — la versión corta y ejecutable de cada notebook.
 - **Motores de decisión (15)** — proyectos 01–15 de la carpeta 06, cada uno con `src/`, `tests/` y `docs/`.
 - **Plataforma C++17** — simulación de pérdidas de crédito, riesgo de mercado y flujos de liquidez, con CMake y pruebas.
 
@@ -30,7 +30,7 @@ pip install -r requirements.txt
 # Para notebooks (incluye el entorno de investigación)
 pip install -r requirements-research.txt
 
-# Notebooks: ejecuta los 36 de principio a fin (tarda más de una hora; algunos corren simulaciones largas)
+# Notebooks: ejecuta los 77 de principio a fin (puede tardar varias horas)
 python3 -m unittest tests.test_notebooks -v
 
 # Un solo notebook

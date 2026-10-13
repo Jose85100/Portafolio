@@ -11,13 +11,13 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def notebooks(arguments):
     if arguments.all:
-        return sorted(ROOT.rglob("notebook.ipynb"))
+        return sorted(ROOT.rglob("*.ipynb"))
     return [ROOT / value for value in arguments.notebooks]
 
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--all", action="store_true", help="execute every notebook.ipynb")
+    parser.add_argument("--all", action="store_true", help="execute every Jupyter notebook")
     parser.add_argument("--output", default="artifacts/notebooks")
     parser.add_argument("notebooks", nargs="*", help="repository-relative notebook paths")
     args = parser.parse_args()
@@ -28,7 +28,7 @@ def main():
     destination = ROOT / args.output
     results = []
     for source in selected:
-        if not source.is_file() or source.name != "notebook.ipynb":
+        if not source.is_file() or source.suffix != ".ipynb":
             raise ValueError(f"invalid notebook path: {source.relative_to(ROOT)}")
         relative = source.relative_to(ROOT)
         target = destination / relative
@@ -37,7 +37,8 @@ def main():
         NotebookClient(notebook, timeout=1800, kernel_name="python3",
                        resources={"metadata": {"path": str(source.parent)}}).execute()
         nbformat.write(notebook, target)
-        results.append({"notebook": str(relative), "status": "passed", "artifact": str(target.relative_to(ROOT))})
+        artifact = str(target.relative_to(ROOT)) if target.is_relative_to(ROOT) else str(target)
+        results.append({"notebook": str(relative), "status": "passed", "artifact": artifact})
     (destination / "results.json").write_text(json.dumps(results, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(results, indent=2))
 
