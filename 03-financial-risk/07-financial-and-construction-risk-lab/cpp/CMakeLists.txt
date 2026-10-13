@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.16)
+project(construction_risk_baselines LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+add_executable(risk_engine_tests tests/test_risk_engine.cpp)
+target_include_directories(risk_engine_tests PRIVATE include)
+enable_testing()
+add_test(NAME risk_engine_tests COMMAND risk_engine_tests)
