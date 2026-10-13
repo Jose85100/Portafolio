@@ -1,23 +1,17 @@
 # Financial & Construction Risk Lab
 
-**Estado:** laboratorio en construcción. Los documentos son especificaciones de investigación; el código incluido es un prototipo cuantitativo reproducible, **no un modelo validado para decisiones de inversión o crédito**.
+**32 quantitative risk projects** across corporate financial risk (7), construction enterprise risk (15), and advanced research (10). See [model inventory](MODEL_INVENTORY.md) for implementation maturity and release gates.
 
-## Propósito
-Desarrollar modelos auditables de riesgo financiero corporativo y riesgo integral de constructoras, desde la identificación de exposiciones hasta la cuantificación probabilística, stress testing, validación independiente y gobierno.
+## Core decision problem
+Quantify project solvency, cash shortfall, schedule/cost risk, presales, financing covenants and portfolio-level tail loss under common macro shocks. Outputs include P(min cash < floor), peak cash-shortfall quantiles, DSCR breach, NPV-at-Risk, VaR/CVaR and reverse stress.
 
-## Líneas
-- **01-corporate-financial-risk:** liquidez, tasas y FX.
-- **02-construction-enterprise-risk:** caja de obra, plazos, costos, preventas, contratistas y covenants.
-- **03-research-in-progress:** gemelos digitales y contagio macro-inmobiliario.
+## Code status
+Only `02-construction-enterprise-risk/01-project-cashflow-at-risk/src/model.py` currently contains a reproducible Monte Carlo baseline; the other 31 folders are research specifications, **not implemented models**. Inputs are synthetic; no real-world calibration or independent validation.
 
-## Estándar mínimo de cada proyecto
-Definición de evento de riesgo y horizonte; variables y fuentes; ecuaciones y supuestos; estrategia de estimación y dependencias; simulación y pruebas de estrés; backtesting/calibración; controles de leakage y sesgo; límites de uso y plan de validación independiente.
-
-## Implementación inicial
-El prototipo de `02-construction-enterprise-risk/01-project-cashflow-at-risk/src/model.py` simula escenarios mensuales con una semilla reproducible. Ejecutar desde la raíz del repositorio:
-
+## Run baseline unit tests
 ```bash
 python -m unittest discover -s 03-financial-risk/07-financial-and-construction-risk-lab/02-construction-enterprise-risk/01-project-cashflow-at-risk/tests -p 'test_*.py' -v
 ```
 
-**No hay datos reales ni parámetros calibrados.** El motor sirve como base verificable, no como prueba de desempeño predictivo.
+## Model development protocol
+Point-in-time data contracts, leakage prevention, estimation uncertainty, dependence and tail risk, rolling backtests, independent validation, documented use limits and model risk governance.
