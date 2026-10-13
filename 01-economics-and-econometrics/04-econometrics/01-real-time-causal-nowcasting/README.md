@@ -1,6 +1,6 @@
 # Real-Time Causal Nowcasting
 
-> **Estado: formulación de investigación.** No se han estimado modelos, demostrado teoremas específicos ni obtenido resultados empíricos en este directorio.
+> **Estado: S2 parcial — prototipo de evaluación sintética.** [Vintage Audit](vintage-audit/) implementa evaluación as-of con OLS, tests y benchmark. El modelo de factores/MIDAS y la identificación causal siguen en S1; no hay resultados empíricos ni teoremas demostrados.
 
 ## Pregunta de investigación
 
@@ -58,3 +58,7 @@ Vintages incompletos impiden reconstrucción exacta; pronóstico no equivale a i
 3. Dataset versionado, contratos y vintages.
 4. Solver/estimador, simulación y pruebas automatizadas.
 5. Backtesting, análisis de robustez y reporte reproducible.
+
+## Ciclo 2026-10-12
+
+MVP ejecutable: [Vintage Audit](vintage-audit/). Comando y resultados en su README; alcance sintético y madurez parcial explícitos.
