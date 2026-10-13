@@ -1,17 +1,14 @@
-# Financial & Construction Risk Lab
+# Financial and Construction Risk Lab
 
-**32 quantitative risk projects** across corporate financial risk (7), construction enterprise risk (15), and advanced research (10). See [model inventory](MODEL_INVENTORY.md) for implementation maturity and release gates.
+**Status:** 22 projects in research and construction, **not 22 implemented models**.
 
-## Core decision problem
-Quantify project solvency, cash shortfall, schedule/cost risk, presales, financing covenants and portfolio-level tail loss under common macro shocks. Outputs include P(min cash < floor), peak cash-shortfall quantiles, DSCR breach, NPV-at-Risk, VaR/CVaR and reverse stress.
+## Domains
+1. Corporate financial risk: liquidity, rates/FX, refinancing, ALM, CVA.
+2. Construction enterprise risk: project cashflows, schedule/cost, presales, counterparties, project finance, materials inflation, inventory, permits, concentration, safety, climate.
+3. Research in progress: digital twin, systemic stress, Bayesian early warning, causal delays, robust capital allocation, network contagion.
 
-## Code status
-Only `02-construction-enterprise-risk/01-project-cashflow-at-risk/src/model.py` currently contains a reproducible Monte Carlo baseline; the other 31 folders are research specifications, **not implemented models**. Inputs are synthetic; no real-world calibration or independent validation.
+## Executable baselines
+Python: cashflow Monte Carlo; VaR/ES; DSCR/LLCR; critical path and schedule simulation; one-factor credit portfolio losses.
+C++17: deterministic cashflow, liquidity shortfall, empirical VaR/ES. See [model catalog](MODEL_CATALOG.md) for execution and maturity details.
 
-## Run baseline unit tests
-```bash
-python -m unittest discover -s 03-financial-risk/07-financial-and-construction-risk-lab/02-construction-enterprise-risk/01-project-cashflow-at-risk/tests -p 'test_*.py' -v
-```
-
-## Model development protocol
-Point-in-time data contracts, leakage prevention, estimation uncertainty, dependence and tail risk, rolling backtests, independent validation, documented use limits and model risk governance.
+All numerical outputs require independent calibration, validation, stress testing and governance before business use. Synthetic examples are not empirical evidence.
