@@ -1,0 +1,11 @@
+{
+  "main_equilibria": 3,
+  "baseline_equilibria": 1,
+  "grid_games": 3813,
+  "multiple_games": 1667,
+  "max_equilibria": 4,
+  "max_abs_gain_error": 4.440892098500626e-16,
+  "oracle_mismatches": 0,
+  "no_complementarity_count": 1,
+  "uninformative_tie_count": 16
+}
