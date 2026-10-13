@@ -1,0 +1,35 @@
+name: Numerical Core Reliability
+on:
+  push:
+    paths:
+      - '02-mathematics-statistics-and-quant/numerical-core/**'
+      - 'PROJECT_MATURITY.md'
+      - '.github/workflows/numerical-core.yml'
+  pull_request:
+    paths:
+      - '02-mathematics-statistics-and-quant/numerical-core/**'
+      - 'PROJECT_MATURITY.md'
+      - '.github/workflows/numerical-core.yml'
+jobs:
+  numerical:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11','3.12','3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Unit tests and invariants
+        run: python -m unittest discover -s 02-mathematics-statistics-and-quant/numerical-core/tests -p 'test_*.py' -v
+      - name: Accuracy and convergence benchmark
+        run: python 02-mathematics-statistics-and-quant/numerical-core/benchmarks/convergence.py > numerical-benchmark.json
+      - name: Repository evidence inventory
+        run: python 02-mathematics-statistics-and-quant/numerical-core/scripts/repository_inventory.py > maturity-inventory.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: numerical-evidence-${{ matrix.python-version }}
+          path: |
+            numerical-benchmark.json
+            maturity-inventory.json
