@@ -46,3 +46,11 @@ Dos colecciones de cinco notebooks extensos cada una, con datos sintéticos de v
 
 - [Venture capital](venture-capital/): fondo de venture, cohortes y LTV/CAC, TAM–SAM–SOM con Monte Carlo, *cap table* y dilución, valoración DCF por escenarios.
 - [Liderazgo de datos](data-leadership/): reglas de calidad de datos, manifiesto SHA-256, detección de drift (PSI/KS), linaje e impacto, priorización de casos de uso.
+
+
+## Executive fintech leadership: ampliación 2026
+
+- [Seis programas de investigación ejecutiva, proyectos 16–21](EXECUTIVE_PROGRAM_INDEX.md): Head Credit Risk, VP Risk/CRO, CFO, CEO, innovación y gobierno.
+- [Sistema continuo de aprendizaje y matriz de evidencia](EXECUTIVE_LEARNING_SYSTEM.md).
+- Los 15 motores existentes tienen un nuevo protocolo individual de investigación, validación, escenarios y decisión ejecutiva en `docs/EXECUTIVE_RESEARCH_AND_VALIDATION.md`.
+- **Madurez:** 01–15 conservan sus prototipos existentes; 16–21 son diseños S1, no implementaciones ni resultados empíricos validados.
