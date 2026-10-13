@@ -49,7 +49,7 @@ La arquitectura está organizada por **pregunta científica y dominio**, no por 
 | `09-riesgo-mercado-liquidez-avanzado` | `03-financial-risk/03-market-liquidity-research` |
 | `10-cpp-risk-platform` (PR #4) | `04-quant-strategy-and-products/risk-engines` |
 
-**Estado de la migración:** las nueve carpetas históricas fueron trasladadas a sus destinos en esta rama. Se comprobó el árbol de Git y se localizaron 36 notebooks. La ejecución completa de notebooks y CI sigue pendiente; no se debe afirmar validación empírica por este traslado.
+**Estado de la migración:** las nueve carpetas históricas fueron trasladadas a sus destinos en esta rama. El repositorio contiene 77 notebooks y la CI ejecuta los modificados en cada PR, además de una regresión completa programada. La primera regresión integral debe revisarse antes de afirmar validación empírica por este traslado.
 
 ## Estándar mínimo de cada investigación
 
