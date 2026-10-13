@@ -91,6 +91,8 @@ Lint Ruff pasa. No se ejecutó un type checker estático; validación de contrat
 es dinámica. Se intentó regresión adicional de C++ con ASan/UBSan, pero CMake/ctest
 no están instalados: no ejecutada, no se inventan resultados. No hay cambios C++,
 por lo que se reduce el alcance a Python. Dockerfile presente, no construido.
+La CI general de notebooks falló al instalar contourpy==1.4.0 con Python 3.11;
+se actualizó el workflow a Python 3.12, compatible con ese pin.
 Notebook: cuatro celdas de código realmente ejecutadas con IPython en proceso,
 con tablas/figura visibles. El kernel TCP de nbclient falla por restricciones de
 sockets; no se simulan outputs. Se usa captura real de rich display y stdout.
