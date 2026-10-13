@@ -1,6 +1,6 @@
 # Endogenous Credit Freeze
 
-> **Estado: formulación de investigación.** No se han estimado modelos, demostrado teoremas específicos ni obtenido resultados empíricos en este directorio.
+> **Estado: S2 parcial.** [Bayesian Freeze Audit](bayesian-freeze-audit/) implementa un juego bayesiano finito de dos prestamistas con tests, oracle y benchmark. El juego global continuo y la identificación empírica siguen en S1; no hay resultados empíricos.
 
 ## Pregunta de investigación
 
@@ -58,3 +58,7 @@ Datos agregados pueden no identificar creencias privadas ni coordinación; hipó
 3. Dataset versionado, contratos y vintages.
 4. Solver/estimador, simulación y pruebas automatizadas.
 5. Backtesting, análisis de robustez y reporte reproducible.
+
+## Ciclo 2026-10-13
+
+Prototipo ejecutable: [Bayesian Freeze Audit](bayesian-freeze-audit/). Enumera todos los perfiles puros del juego finito, reporta multiplicidad y compara con un único punto fijo de mejores respuestas.
