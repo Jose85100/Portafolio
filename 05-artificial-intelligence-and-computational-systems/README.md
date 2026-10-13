@@ -40,6 +40,19 @@ La novedad científica debe establecerse mediante revisión de literatura; las n
 
 Se añade [un noveno pilar](09-advanced-ai-systems-engineering/) con diez proyectos de ingeniería avanzada, bases compartidas y un kernel C++20 inicial de benchmarks. Se preservan los ocho pilares y el código existente. No confundir las diez especificaciones con diez sistemas productivos.
 
-## AI Orchestration Engineering — siete proyectos
+## Proyectos con implementación ejecutable (librería + pruebas + notebook)
 
-[Nueva especialidad de ingeniería de orquestación](10-ai-orchestration-engineering/) con siete proyectos independientes y tres bases de fundamentación matemática, estadística y computacional. No se consideran implementaciones productivas.
+Tres proyectos se construyeron como librerías probadas, con notebooks extensos que validan cada método contra una verdad conocida y no necesitan red ni claves de API:
+
+| Proyecto | Pilar | Qué demuestra |
+|---|---|---|
+| [Recuperación para RAG](06-knowledge-engineering-and-rag/rag-retrieval-evaluation/) | Knowledge Engineering & RAG | Qué decisiones de un RAG importan de verdad, con corpus real, pruebas pareadas y potencia |
+| [Confiabilidad de agentes](04-agentic-ai-and-multi-agent-systems/agent-runtime-reliability/) | Agentic AI | Falla metaestable por reintentos, presupuesto de reintentos, cortacircuitos, idempotencia y sagas |
+| [Evaluación de LLM y jueces](08-ai-reliability-security-and-governance/llm-evaluation-judge-reliability/) | AI Reliability | Intervalos, PPI, sesgos de jueces, acuerdo, comparaciones múltiples y compuertas secuenciales |
+
+Según la [matriz de madurez](../PROJECT_MATURITY.md) están en **M2 (prototipo verificado)**: pruebas automáticas, resultados reproducibles y límites explícitos; no tienen evaluación independiente ni datos operativos.
+
+
+## AI Orchestration Engineering
+
+- [Seven AI orchestration projects](10-ai-orchestration-engineering/): distributed workflow scheduling, multi-agent coordination, routing, events, memory, recovery and governance.
