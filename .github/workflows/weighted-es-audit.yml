@@ -1,0 +1,27 @@
+name: Weighted Expected Shortfall Audit
+on:
+  push:
+    paths:
+      - '03-financial-risk/02-market-and-model-risk/weighted-expected-shortfall-audit/**'
+      - '.github/workflows/weighted-es-audit.yml'
+  pull_request:
+    paths:
+      - '03-financial-risk/02-market-and-model-risk/weighted-expected-shortfall-audit/**'
+      - '.github/workflows/weighted-es-audit.yml'
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install, check, test, benchmark and execute notebook
+        run: bash 03-financial-risk/02-market-and-model-risk/weighted-expected-shortfall-audit/run.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: weighted-es-audit
+          path: |
+            03-financial-risk/02-market-and-model-risk/weighted-expected-shortfall-audit/results/
+            03-financial-risk/02-market-and-model-risk/weighted-expected-shortfall-audit/notebook.ipynb
