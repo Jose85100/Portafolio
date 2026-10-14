@@ -1,0 +1,190 @@
+File '/usr/include/c++/13/bits/stl_algobase.h'
+Lines executed:92.98% of 171
+Branches executed:94.12% of 34
+Taken at least once:76.47% of 34
+Calls executed:90.22% of 92
+
+File '/usr/include/c++/13/bits/stl_iterator.h'
+Lines executed:100.00% of 126
+No branches
+Calls executed:100.00% of 53
+
+File '/usr/include/c++/13/bits/predefined_ops.h'
+Lines executed:75.00% of 32
+No branches
+Calls executed:77.78% of 18
+
+File '/usr/include/c++/13/bits/stl_heap.h'
+Lines executed:0.00% of 96
+Branches executed:0.00% of 52
+Taken at least once:0.00% of 52
+Calls executed:0.00% of 90
+
+File '/usr/include/c++/13/bits/move.h'
+Lines executed:94.87% of 39
+No branches
+Calls executed:100.00% of 9
+
+File '/usr/include/c++/13/bits/cpp_type_traits.h'
+Lines executed:100.00% of 12
+No branches
+No calls
+
+File '/usr/include/c++/13/bits/stl_iterator_base_types.h'
+Lines executed:100.00% of 1
+No branches
+No calls
+
+File '/usr/include/c++/13/bits/stl_uninitialized.h'
+Lines executed:98.55% of 69
+Branches executed:100.00% of 6
+Taken at least once:83.33% of 6
+Calls executed:100.00% of 33
+
+File '/usr/include/c++/13/bits/stl_vector.h'
+Lines executed:96.27% of 241
+Branches executed:87.50% of 48
+Taken at least once:52.08% of 48
+Calls executed:87.26% of 157
+
+File '/usr/include/c++/13/bits/new_allocator.h'
+Lines executed:73.53% of 34
+Branches executed:50.00% of 12
+Taken at least once:25.00% of 12
+Calls executed:69.23% of 26
+
+File '/usr/include/c++/13/bits/stl_algo.h'
+Lines executed:86.50% of 200
+Branches executed:85.14% of 148
+Taken at least once:64.19% of 148
+Calls executed:86.24% of 189
+
+File '/workspace/scratch/e32aba0f5414/Portafolio/04-quant-strategy-and-products/risk-engines/include/quant/weighted_tail.hpp'
+Lines executed:96.77% of 62
+Branches executed:94.59% of 74
+Taken at least once:75.68% of 74
+Calls executed:84.81% of 79
+
+File '/usr/include/c++/13/bit'
+Lines executed:91.67% of 12
+Branches executed:100.00% of 2
+Taken at least once:50.00% of 2
+Calls executed:100.00% of 1
+
+File '/usr/include/c++/13/bits/stl_pair.h'
+Lines executed:100.00% of 5
+No branches
+Calls executed:100.00% of 5
+
+File '/usr/include/c++/13/bits/alloc_traits.h'
+Lines executed:100.00% of 9
+Branches executed:0.00% of 4
+Taken at least once:0.00% of 4
+Calls executed:84.21% of 19
+
+File '/usr/include/c++/13/bits/stl_construct.h'
+Lines executed:100.00% of 12
+No branches
+Calls executed:100.00% of 3
+
+File '/usr/include/c++/13/bits/random.h'
+Lines executed:100.00% of 15
+No branches
+Calls executed:100.00% of 3
+
+File '/usr/include/c++/13/bits/uniform_int_dist.h'
+Lines executed:82.86% of 35
+Branches executed:66.67% of 12
+Taken at least once:33.33% of 12
+Calls executed:66.67% of 12
+
+File '/usr/include/c++/13/bits/vector.tcc'
+Lines executed:74.29% of 140
+Branches executed:70.00% of 40
+Taken at least once:40.00% of 40
+Calls executed:67.01% of 97
+
+File '/usr/include/c++/13/bits/allocator.h'
+Lines executed:100.00% of 3
+No branches
+Calls executed:51.32% of 76
+
+File '/usr/include/c++/13/initializer_list'
+Lines executed:100.00% of 6
+No branches
+Calls executed:100.00% of 4
+
+File '/usr/include/c++/13/bits/stl_iterator_base_funcs.h'
+Lines executed:100.00% of 3
+No branches
+No calls
+
+File '/usr/include/c++/13/bits/random.tcc'
+Lines executed:100.00% of 40
+Branches executed:100.00% of 14
+Taken at least once:100.00% of 14
+Calls executed:100.00% of 4
+
+File '/usr/include/c++/13/bits/basic_string.tcc'
+Lines executed:100.00% of 12
+Branches executed:100.00% of 6
+Taken at least once:66.67% of 6
+Calls executed:88.89% of 9
+
+File '/usr/include/c++/13/bits/basic_string.h'
+Lines executed:87.50% of 8
+Branches executed:100.00% of 6
+Taken at least once:50.00% of 6
+Calls executed:66.67% of 6
+
+File '/usr/include/c++/13/bits/char_traits.h'
+Lines executed:27.27% of 11
+Branches executed:50.00% of 4
+Taken at least once:25.00% of 4
+Calls executed:33.33% of 3
+
+File '/workspace/scratch/e32aba0f5414/Portafolio/04-quant-strategy-and-products/risk-engines/weighted-tail-audit/tests/test_weighted.cpp'
+Lines executed:95.33% of 107
+Branches executed:97.39% of 306
+Taken at least once:50.33% of 306
+Calls executed:78.44% of 269
+
+File '/usr/include/c++/13/ext/alloc_traits.h'
+Lines executed:100.00% of 1
+No branches
+No calls
+
+File '/usr/include/c++/13/bits/stl_numeric.h'
+Lines executed:100.00% of 4
+Branches executed:100.00% of 2
+Taken at least once:100.00% of 2
+Calls executed:100.00% of 3
+
+File '/workspace/scratch/e32aba0f5414/Portafolio/04-quant-strategy-and-products/risk-engines/include/quant/risk.hpp'
+Lines executed:100.00% of 15
+Branches executed:90.00% of 20
+Taken at least once:60.00% of 20
+Calls executed:87.50% of 32
+
+File '/usr/include/c++/13/cmath'
+Lines executed:100.00% of 2
+No branches
+No calls
+
+File '/usr/include/c++/13/bits/std_abs.h'
+Lines executed:100.00% of 4
+No branches
+No calls
+
+File '/usr/include/c++/13/new'
+Lines executed:100.00% of 2
+No branches
+No calls
+
+File '/usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h'
+Lines executed:100.00% of 2
+No branches
+No calls
+
+Creating 'test_weighted.cpp.gcov.json.gz'
+Lines executed:85.43% of 1531

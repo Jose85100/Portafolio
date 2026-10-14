@@ -1,0 +1,11 @@
+Initial sanitized CTest attempt, 2026-10-14:
+
+weighted_invariants: Failed
+Can't open /proc/225/task for reading.
+LeakSanitizer has encountered a fatal error.
+HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+0% tests passed, 1 tests failed out of 1
+
+Scope reduction: local AddressSanitizer + UndefinedBehaviorSanitizer with
+detect_leaks=0. No local leak-verification claim. CI sets detect_leaks=1.
