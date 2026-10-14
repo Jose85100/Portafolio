@@ -1,0 +1,42 @@
+name: AI Event Inbox M2
+on:
+  pull_request:
+    paths:
+      - '05-artificial-intelligence-and-computational-systems/10-ai-orchestration-engineering/04-event-driven-ai-automation/**'
+      - '.github/workflows/ai-event-inbox-m2.yml'
+  push:
+    branches: [main]
+    paths:
+      - '05-artificial-intelligence-and-computational-systems/10-ai-orchestration-engineering/04-event-driven-ai-automation/**'
+      - '.github/workflows/ai-event-inbox-m2.yml'
+jobs:
+  reproducibility:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run unit tests and paired benchmarks
+        working-directory: 05-artificial-intelligence-and-computational-systems/10-ai-orchestration-engineering/04-event-driven-ai-automation
+        run: bash reproduce.sh
+      - name: Verify 270 rows and zero transactional error
+        working-directory: 05-artificial-intelligence-and-computational-systems/10-ai-orchestration-engineering/04-event-driven-ai-automation
+        run: |
+          python - <<'PY'
+          import csv, json
+          from pathlib import Path
+          rows=list(csv.DictReader(Path('results/raw.csv').open()))
+          report=json.loads(Path('results/summary.json').read_text())
+          assert len(rows)==270 and report['runs']==270
+          assert all(float(r['absolute_error'])==0 and float(r['replay_delta'])==0 for r in rows if r['policy']=='inbox')
+          print('M2 gates passed: 270 runs, 90 inbox correctness checks')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ai-event-inbox-results
+          path: |
+            05-artificial-intelligence-and-computational-systems/10-ai-orchestration-engineering/04-event-driven-ai-automation/results/raw.csv
+            05-artificial-intelligence-and-computational-systems/10-ai-orchestration-engineering/04-event-driven-ai-automation/results/summary.json
+            05-artificial-intelligence-and-computational-systems/10-ai-orchestration-engineering/04-event-driven-ai-automation/results/error_by_regime.svg
