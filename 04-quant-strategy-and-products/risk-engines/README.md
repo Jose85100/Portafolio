@@ -31,3 +31,13 @@ Código compartido en \`include/quant/risk.hpp\`, aplicaciones CLI separadas y p
 - Liquidez: \`03-financial-risk/03-market-liquidity-research\`.
 
 Esta carpeta constituye la biblioteca central para evitar duplicación de código.
+
+## ES de escenarios ponderados — MVP validado numéricamente
+
+[Weighted Tail Audit](weighted-tail-audit/) añade la API pública `include/quant/weighted_tail.hpp` con probabilidades desiguales, VaR inversa-CDF y ES fraccionario. Incluye CLI, oráculo racional, paridad Python/C++, benchmark contra expansión equivalente, pruebas generativas, ASan/UBSan y cobertura. No sustituye `quant::tail` ni cambia los motores existentes; no calcula capital regulatorio.
+
+Desde la raíz del repo, en Linux con Python 3.12/g++/gcov/make:
+
+```bash
+bash 04-quant-strategy-and-products/risk-engines/weighted-tail-audit/run.sh
+```

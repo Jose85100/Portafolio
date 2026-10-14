@@ -1,0 +1,11 @@
+{
+  "seed": 20261014,
+  "fixture_trials": 200,
+  "fixture_max_n": 32,
+  "levels": [0.5, 0.75, 0.875, 0.975, 0.99],
+  "benchmark_n": [1000, 10000, 100000, 500000],
+  "benchmark_repeats": 7,
+  "integer_weights": [1, 8],
+  "scaled_error_tolerance": 1e-12,
+  "inference": "Finite scenario measure, no population or forecast claims"
+}
