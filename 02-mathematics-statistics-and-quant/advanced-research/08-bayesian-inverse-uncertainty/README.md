@@ -1,57 +1,48 @@
 # Bayesian Inverse Problems & Uncertainty Quantification
 
-> **Madurez: S1 — protocolo de investigación.** No se afirma código, experimentos ejecutados, revisión sistemática concluida ni novedad demostrada.
+**Madurez: S2 — prototipo ejecutable acotado (2026-10-14).** No valida el programa
+completo, no es investigación publicada ni demuestra originalidad algorítmica.
 
-## Pregunta de investigación
+## Pregunta y alcance
+¿Puede una implementación estable del posterior gaussiano separar error numérico
+de mala calibración por un ruido o prior mal especificados?
 
-¿Cómo separar incertidumbre paramétrica, error de observación y mala especificación en problemas inversos?
+Modelo: `y = A theta + eta`, `theta ~ N(0, tau² I)`, `eta ~ N(0, sigma² I)`.
+Se implementan media y covarianza posterior mediante SVD, QR aumentado y
+ecuaciones normales, con referencia independiente de 80 dígitos para las entradas
+float64 reales. Un experimento separado mide cobertura prior-predictiva bajo
+supuestos correctos e incorrectos, con 1.000 réplicas.
 
-## Hipótesis contrastable
-
-El método propuesto supera a baselines explícitos en al menos una métrica predefinida, sin degradación inaceptable en robustez, calibración ni costo. Esta hipótesis debe operacionalizarse antes de observar resultados.
-
-## Formulación matemática
-
-y=G(θ)+η; π(θ|y)∝π(y|θ)π(θ); regularización y estabilidad posterior.
-
-**Trabajo teórico pendiente:** definir espacios de probabilidad y parámetros, supuestos de existencia e identificabilidad, resultados de convergencia o estabilidad, demostraciones y contraejemplos. No se presume que tales propiedades estén establecidas.
-
-## Modelado estadístico y estimación
-
-Comparar MCMC, Laplace, VI y modelos surrogate; diagnósticos de identificabilidad.
-
-Estimar sesgo, varianza, consistencia bajo supuestos adecuados e intervalos de incertidumbre. Separar evaluación predictiva de identificación causal.
-
-## Métodos numéricos y protocolo experimental
-
-Operadores mal condicionados, EDE con observación parcial, sensibilidad a priors; cobertura posterior y costo.
-
-**Diseño mínimo:** (1) generador sintético con verdad conocida; (2) baseline trivial y avanzado; (3) evaluación fuera de muestra o por réplicas independientes; (4) ablaciones y pruebas adversariales; (5) tiempos, memoria y sensibilidad a hiperparámetros; (6) semillas, versiones y resultados reproducibles.
-
-## Aplicación económico-financiera
-
-Calibración financiera y parámetros estructurales.
-
-## Limitaciones y posibles fallos
-
-Posterior concentrado no implica identificación ni buen ajuste predictivo.
-
-## Entregables y criterios de aceptación
-
-- **S1:** revisión bibliográfica verificable, hipótesis operacionales, teoremas/proposiciones y plan preregistrado de simulación.
-- **S2:** módulos `src/`, `tests/`, datos sintéticos y script de reproducción, con cobertura de invariantes y casos límite.
-- **S3:** comparadores estadísticos, tablas y figuras generadas, análisis de sensibilidad, errores numéricos y benchmark de recursos.
-- **S4:** réplica independiente, aplicación con datos públicos licenciados, documentación de riesgos y límites de validez.
-
-## Estructura prevista (no creada aún)
-
-```text
-theory/       # supuestos, derivaciones y pruebas
-src/          # modelos, estimadores y algoritmos
-tests/        # tests unitarios y estadísticos
-experiments/  # simulaciones y benchmarks
-data/         # manifiestos y fuentes públicas
-docs/         # interpretación, limitaciones y referencias
+## Un comando de reproducción
+Desde esta carpeta (Linux/macOS, Python 3.11+, make e internet para pip):
+```bash
+make run
 ```
+Crea `.venv`, instala versiones directas fijadas, ejecuta Ruff, mypy, tests y
+cobertura, benchmarks, notebook y reporte. BLAS/OMP se limitan a un hilo.
 
-**Regla de evidencia:** no reportar métricas, resultados, referencias bibliográficas ni garantías matemáticas que no hayan sido verificadas.
+## Artefactos
+- `config.json`: semillas, dimensiones, condicionamiento y umbrales fijados antes de ejecutar.
+- `src/posterior.py`: kernels con validación y tipos.
+- `src/oracle.py`: referencia mpmath de 80 dígitos, solo para validación.
+- `src/benchmark.py`: precisión, tiempo, memoria y calibración separados.
+- `tests/`: fórmulas escalares, nulidad, equivarianza, límites y Hypothesis.
+- `benchmarks/`: resultados crudos CSV, resumen JSON, figura y evidencia de pruebas.
+- `notebook.ipynb`: ejecutado con salidas visibles.
+- `informe.md`, `referencias.bib`, `MVP.md`: análisis crítico, referencias y límites.
+
+## Tests aislados
+```bash
+.venv/bin/python -m pytest --cov=src.posterior tests
+```
+La cobertura reportada corresponde a `src.posterior`, no a toda la aplicación.
+El notebook se ejecuta realmente mediante IPython en proceso; no necesita kernel
+TCP. Sigue siendo un notebook Python estándar reejecutable por Jupyter.
+
+## Límites del entorno y del modelo
+Versiones directas fijadas; no lock transitivo ni imagen Docker. Dominio del
+kernel: A no vacío, cuadrado o alto, entradas y datos finitos con magnitud ≤1e4;
+sigma/tau entre 1e-14 y 1e4. Dense float64, no problemas gigantes ni garantía de
+precisión para toda combinación admitida. Un posterior correcto numéricamente
+no corrige ruido, prior u operador equivocados. Cobertura prior-predictiva no es
+cobertura frecuentista uniforme para parámetros fijos.

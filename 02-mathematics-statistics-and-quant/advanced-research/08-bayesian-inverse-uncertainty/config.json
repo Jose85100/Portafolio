@@ -1,0 +1,17 @@
+{
+  "dimensions": [4, 12, 32],
+  "condition_numbers": [100, 1000000, 10000000000],
+  "noise_std": [0.001, 0.00000001],
+  "replications": 20,
+  "seed": 20261014,
+  "methods": ["svd", "augmented_qr", "normal_equations"],
+  "calibration_replications": 1000,
+  "gate": {
+    "condition_number": 10000000000,
+    "noise_std": 0.00000001,
+    "max_svd_mean_relative_error": 0.00001,
+    "max_svd_cov_relative_error": 0.00001,
+    "min_median_error_improvement_vs_normal": 100,
+    "max_svd_qr_mean_relative_difference": 0.00001
+  }
+}
