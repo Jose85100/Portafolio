@@ -19,4 +19,4 @@ Los proyectos históricos permanecen temporalmente en sus rutas originales duran
 
 ## Nueva línea: investigación matemática y estadística avanzada
 
-[Veinte programas de investigación avanzada](advanced-research/) sobre sistemas estocásticos, geometría de información, optimización robusta, dependencia extrema, memoria fraccional, causalidad dinámica, topología, problemas inversos, transporte óptimo y sistemas de agentes. **Estado:** 19 programas S1 (diseño); el programa 18 tiene un prototipo S2 de colas gaussianas desconectadas. No se confunden propuestas con validación externa.
+[Veinte programas de investigación avanzada](advanced-research/) sobre sistemas estocásticos, geometría de información, optimización robusta, dependencia extrema, memoria fraccional, causalidad dinámica, topología, problemas inversos, transporte óptimo y sistemas de agentes. **Estado:** 18 programas S1 (diseño); los programas 08 (posterior gaussiano) y 18 (colas gaussianas desconectadas) tienen prototipos S2 acotados. No se confunden propuestas con validación externa.
