@@ -1,0 +1,141 @@
+{
+  "config": {
+    "seeds": [
+      11,
+      23,
+      37,
+      41,
+      59,
+      67,
+      71,
+      83
+    ],
+    "jobs_per_seed": 80,
+    "fault_probability": 0.65,
+    "python": "3.13.5",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "cpu_count": 5,
+    "sqlite": "3.46.1",
+    "scope": "single-process, local SQLite ACID effects; not remote exactly-once"
+  },
+  "metrics": {
+    "naive": {
+      "duplicate_rate": {
+        "mean": 0.486719,
+        "ci95_normal": [
+          0.439025,
+          0.534413
+        ]
+      },
+      "completion_rate": {
+        "mean": 1.0,
+        "ci95_normal": [
+          1.0,
+          1.0
+        ]
+      },
+      "ms_per_job": {
+        "mean": 0.5869,
+        "ci95_normal": [
+          0.566419,
+          0.607381
+        ]
+      },
+      "recovery_ms_mean": {
+        "mean": 0.350888,
+        "ci95_normal": [
+          0.340313,
+          0.361462
+        ]
+      },
+      "peak_python_kib": {
+        "mean": 5.1625,
+        "ci95_normal": [
+          5.05127,
+          5.27373
+        ]
+      },
+      "total_duplicates": 623,
+      "total_injected_crashes": 430
+    },
+    "split": {
+      "duplicate_rate": {
+        "mean": 0.335938,
+        "ci95_normal": [
+          0.310604,
+          0.361271
+        ]
+      },
+      "completion_rate": {
+        "mean": 1.0,
+        "ci95_normal": [
+          1.0,
+          1.0
+        ]
+      },
+      "ms_per_job": {
+        "mean": 0.6309,
+        "ci95_normal": [
+          0.606987,
+          0.654813
+        ]
+      },
+      "recovery_ms_mean": {
+        "mean": 0.384587,
+        "ci95_normal": [
+          0.372454,
+          0.396721
+        ]
+      },
+      "peak_python_kib": {
+        "mean": 5.30875,
+        "ci95_normal": [
+          5.277443,
+          5.340057
+        ]
+      },
+      "total_duplicates": 430,
+      "total_injected_crashes": 430
+    },
+    "atomic": {
+      "duplicate_rate": {
+        "mean": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      },
+      "completion_rate": {
+        "mean": 1.0,
+        "ci95_normal": [
+          1.0,
+          1.0
+        ]
+      },
+      "ms_per_job": {
+        "mean": 0.625225,
+        "ci95_normal": [
+          0.605169,
+          0.645281
+        ]
+      },
+      "recovery_ms_mean": {
+        "mean": 0.344525,
+        "ci95_normal": [
+          0.334649,
+          0.354401
+        ]
+      },
+      "peak_python_kib": {
+        "mean": 5.485,
+        "ci95_normal": [
+          5.451664,
+          5.518336
+        ]
+      },
+      "total_duplicates": 0,
+      "total_injected_crashes": 430
+    }
+  },
+  "notes": "Normal-approximation CI across 8 seeded scenarios, descriptive only; scenarios not field samples."
+}
