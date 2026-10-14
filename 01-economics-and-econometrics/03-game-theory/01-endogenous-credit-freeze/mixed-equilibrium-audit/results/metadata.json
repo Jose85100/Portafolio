@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-14",
+  "seed": 20261014,
+  "prior": 0.5,
+  "accuracy": 0.8,
+  "cost": 0.9,
+  "alpha": 0.8,
+  "support_patterns": 81,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "cpu": "INTEL(R) XEON(R) PLATINUM 8573C",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "memory": "tracemalloc: solver allocations only, not RSS/native/input objects",
+  "hashes": {
+    "equilibria.csv": "e9cb210e054cb26496e839498c764cf128ab1a022282ebf39ea7499748579e70",
+    "sensitivity.csv": "137a3d3743d030a9d552afa89f412c90132061c075530670ddfad59d9063b8e2",
+    "negative.csv": "13079deee392ff79ceda0c366120252163af01816a0a758325853a42cd8d8dcf",
+    "oracle.csv": "47fc2ab0911aecd1653c2adcb12d48dd94d7f0817f452db62962985d1ce24dc6",
+    "stability.csv": "78a73d12a173a5c0408053065e17601e1c0ff9c5e1e75348edef6be61fa6ba3f",
+    "timing.csv": "0db2d1ec60d553376fa49e699fcd53b155540ee190cd94dcb2417be0862f651c"
+  }
+}

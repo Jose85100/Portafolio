@@ -62,3 +62,9 @@ Datos agregados pueden no identificar creencias privadas ni coordinación; hipó
 ## Ciclo 2026-10-13
 
 Prototipo ejecutable: [Bayesian Freeze Audit](bayesian-freeze-audit/). Enumera todos los perfiles puros del juego finito, reporta multiplicidad y compara con un único punto fijo de mejores respuestas.
+
+## Ciclo 2026-10-14
+
+[Mixed Freeze Audit](mixed-equilibrium-audit/) amplía el componente S2 a estrategias
+mixtas de comportamiento: 81 soportes, oráculo racional y rechazo explícito de
+soportes singulares factibles. No se eleva la madurez del juego global completo.
