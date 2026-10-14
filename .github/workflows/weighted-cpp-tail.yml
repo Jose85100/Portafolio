@@ -1,0 +1,30 @@
+name: Weighted C++ Tail Audit
+on:
+  push:
+    paths:
+      - '04-quant-strategy-and-products/risk-engines/weighted-tail-audit/**'
+      - '04-quant-strategy-and-products/risk-engines/include/quant/weighted_tail.hpp'
+      - '.github/workflows/weighted-cpp-tail.yml'
+  pull_request:
+    paths:
+      - '04-quant-strategy-and-products/risk-engines/weighted-tail-audit/**'
+      - '04-quant-strategy-and-products/risk-engines/include/quant/weighted_tail.hpp'
+      - '.github/workflows/weighted-cpp-tail.yml'
+jobs:
+  reproduce:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      ASAN_OPTIONS: detect_leaks=1
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compile, validate, sanitize and benchmark
+        run: bash 04-quant-strategy-and-products/risk-engines/weighted-tail-audit/run.sh
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: weighted-cpp-tail-evidence
+          path: 04-quant-strategy-and-products/risk-engines/weighted-tail-audit/results/

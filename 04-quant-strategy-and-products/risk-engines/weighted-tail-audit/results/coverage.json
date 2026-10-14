@@ -1,0 +1,11 @@
+{
+  "scope": "weighted_tail.hpp line coverage only; compiler-generated branches excluded",
+  "covered_lines": 60,
+  "executable_lines": 62,
+  "line_percent": 96.7741935483871,
+  "uncovered": [
+    78,
+    119
+  ],
+  "gcc_version": "13.3.0"
+}

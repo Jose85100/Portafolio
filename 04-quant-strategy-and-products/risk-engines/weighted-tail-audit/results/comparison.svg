@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="430" viewBox="0 0 960 430">
+<rect width="960" height="430" fill="white"/>
+<text x="480" y="25" text-anchor="middle" font-family="sans-serif" font-size="19">Weighted ES vs equivalent expanded baseline</text>
+<text x="50" y="55" font-family="sans-serif" font-size="15">Median algorithm time (ms)</text>
+<path d="M50,340.0h370" stroke="#ddd"/>
+<text x="45" y="344.0" text-anchor="end" font-family="sans-serif" font-size="11">0.0</text>
+<path d="M50,273.75h370" stroke="#ddd"/>
+<text x="45" y="277.75" text-anchor="end" font-family="sans-serif" font-size="11">41.1</text>
+<path d="M50,207.5h370" stroke="#ddd"/>
+<text x="45" y="211.5" text-anchor="end" font-family="sans-serif" font-size="11">82.1</text>
+<path d="M50,141.25h370" stroke="#ddd"/>
+<text x="45" y="145.25" text-anchor="end" font-family="sans-serif" font-size="11">123.2</text>
+<path d="M50,75.0h370" stroke="#ddd"/>
+<text x="45" y="79.0" text-anchor="end" font-family="sans-serif" font-size="11">164.2</text>
+<text x="50.0" y="360" text-anchor="middle" font-family="sans-serif" font-size="11">1,000</text>
+<text x="187.08933385905664" y="360" text-anchor="middle" font-family="sans-serif" font-size="11">10,000</text>
+<text x="324.1786677181133" y="360" text-anchor="middle" font-family="sans-serif" font-size="11">100,000</text>
+<text x="420.0" y="360" text-anchor="middle" font-family="sans-serif" font-size="11">500,000</text>
+<polyline points="50.0,339.9265591020216 187.08933385905664,338.26154370361957 324.1786677181133,319.3757666085374 420.0,221.73989575407046" fill="none" stroke="#247c77" stroke-width="2"/>
+<polyline points="50.0,339.9064845787625 187.08933385905664,336.4877718036955 324.1786677181133,297.3711987337713 420.0,99.0909090909091" fill="none" stroke="#bb593a" stroke-width="2"/>
+<polyline points="50.0,339.98130046619474 187.08933385905664,339.065501005604 324.1786677181133,327.5897776977244 420.0,272.888527066682" fill="none" stroke="#8770a3" stroke-width="2"/>
+<text x="490" y="55" font-family="sans-serif" font-size="15">Process peak RSS (MiB)</text>
+<path d="M490,340.0h370" stroke="#ddd"/>
+<text x="485" y="344.0" text-anchor="end" font-family="sans-serif" font-size="11">0.0</text>
+<path d="M490,273.75h370" stroke="#ddd"/>
+<text x="485" y="277.75" text-anchor="end" font-family="sans-serif" font-size="11">7.3</text>
+<path d="M490,207.5h370" stroke="#ddd"/>
+<text x="485" y="211.5" text-anchor="end" font-family="sans-serif" font-size="11">14.6</text>
+<path d="M490,141.25h370" stroke="#ddd"/>
+<text x="485" y="145.25" text-anchor="end" font-family="sans-serif" font-size="11">22.0</text>
+<path d="M490,75.0h370" stroke="#ddd"/>
+<text x="485" y="79.0" text-anchor="end" font-family="sans-serif" font-size="11">29.3</text>
+<text x="490.0" y="360" text-anchor="middle" font-family="sans-serif" font-size="11">1,000</text>
+<text x="627.0893338590566" y="360" text-anchor="middle" font-family="sans-serif" font-size="11">10,000</text>
+<text x="764.1786677181133" y="360" text-anchor="middle" font-family="sans-serif" font-size="11">100,000</text>
+<text x="860.0" y="360" text-anchor="middle" font-family="sans-serif" font-size="11">500,000</text>
+<polyline points="490.0,323.0395477212726 627.0893338590566,319.2587802341396 764.1786677181133,281.9811194965199 860.0,116.33403557428198" fill="none" stroke="#247c77" stroke-width="2"/>
+<polyline points="490.0,322.89821061894986 627.0893338590566,318.79943465159073 764.1786677181133,278.5183604896131 860.0,99.0909090909091" fill="none" stroke="#bb593a" stroke-width="2"/>
+<polyline points="490.0,323.32222192591803 627.0893338590566,321.3081682178191 764.1786677181133,302.68700498679965 860.0,219.8634630256807" fill="none" stroke="#8770a3" stroke-width="2"/>
+<rect x="100" y="390" width="15" height="12" fill="#247c77"/>
+<text x="122" y="401" font-family="sans-serif" font-size="13">weighted</text>
+<rect x="380" y="390" width="15" height="12" fill="#bb593a"/>
+<text x="402" y="401" font-family="sans-serif" font-size="13">expanded</text>
+<rect x="660" y="390" width="15" height="12" fill="#8770a3"/>
+<text x="682" y="401" font-family="sans-serif" font-size="13">uniform_ablation</text>
+<text x="480" y="379" text-anchor="middle" font-family="sans-serif" font-size="11">Scenario count (log scale)</text>
+</svg>
