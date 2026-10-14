@@ -1,42 +1,33 @@
 # Event-Driven AI Automation Platform
 
-**Estado:** S1 — diseño verificable, no motor implementado.
+**Madurez:** M2 — prototipo local verificado, NO plataforma operacional.
 
-## 1. Mandato, decisión y pregunta
+## Mandato y brecha S1
 
-Procesar eventos de negocio y disparar workflows con garantías explícitas de entrega e idempotencia.
+Procesar eventos de negocio y disparar workflows con garantías explícitas de entrega e idempotencia. La especificación S1 no contenía código. El MVP cubre solamente efectos locales SQLite: inbox, idempotencia por event_id, rechazo de payloads conflictivos, DLQ de mensajes inválidos, recuperación y replay. Kafka/NATS, outbox, autenticación y side effects externos quedan fuera.
 
-**Pregunta falsable:** ¿el diseño propuesto mejora event lag, duplicates prevented, replay correctness, DLQ rate frente a un baseline simple y reproducible sin introducir fallos de seguridad, integridad o costo?
+## Comando único de reproducción
 
-## 2. Modelo matemático
+Desde esta carpeta, con Python 3.11+:
 
-Estado s_{t+1}=δ(s_t,e_t); deduplicación por event_id; balance λ<μ para estabilidad de cola simple.
+```bash
+bash reproduce.sh
+```
 
-Definir formalmente estados, eventos, transiciones, decisiones, restricciones, dominio, horizonte y unidades. Demostrar invariantes, condiciones de terminación y límites de validez. No asumir independencia ni atomicidad de servicios distribuidos sin justificación.
+No requiere internet ni dependencias externas. Ejecuta los tests y 270 simulaciones (30 seeds x 3 regímenes x 3 políticas), y genera `results/raw.csv`, `results/summary.json` y `results/error_by_regime.svg`. Alternativa: `docker build -t event-inbox . && docker run --rm event-inbox`.
 
-## 3. Modelado estadístico
+## Diseño experimental
 
-Modelos de llegadas, burstiness, retraso, reordenamiento y pruebas de carga. Estimar incertidumbre, dependencia, percentiles de cola y estabilidad entre cargas; registrar tamaños muestrales, seeds, hardware y entorno.
+Cada secuencia tiene 120 eventos base; duplicados 10/30/60%, conflictos 5%, inválidos 5%, fallos inyectados 10/15/60% según régimen. Se evalúan `naive` (sin deduplicación), `inbox` (persistencia y recuperación) e `inbox_no_retry` (ablación negativa). El mismo workload se usa en las tres políticas y luego se reentrega íntegramente. Se mide error absoluto contra oráculo first-valid, replay delta, pendientes, DLQ, p95 de entrega local, tiempo y memoria. IC t(29) aproximados; no se ajustan comparaciones múltiples.
 
-## 4. Arquitectura de implementación
+## Archivos
 
-Python consumers/producers; Kafka/NATS opcional; SQL outbox/inbox; C++ workers opcionales.
+`src/engine.py`: inbox SQLite; `src/experiment.py`: generador y baseline; `src/benchmark.py`: evaluación y figura; `tests/`: contratos, integridad y recuperación; `results/`: salidas; `informe.md`, `MVP.md`, `referencias.bib`: análisis, límites y prior art.
 
-**Diseño de carpetas futuro:** `contracts/`, `cpp/`, `python/`, `sql/`, `tests/`, `experiments/`, `security/`, `docs/`. Versionar contratos de eventos y decisiones; separar plano de control y plano de ejecución.
+## Garantías y restricciones
 
-## 5. Pruebas y aceptación
+La transacción atómica cubre exclusivamente el efecto escrito en la misma base SQLite. No existe garantía exactly-once para APIs, pagos, mensajes o servicios externos. No hay aislamiento multiworker, control de acceso, TTL, backpressure, pruebas de red ni validación independiente. Las pruebas sintéticas no constituyen evidencia operacional.
 
-**Métricas:** event lag, duplicates prevented, replay correctness, DLQ rate.
+## Fundamentos compartidos
 
-- Baseline determinista y escenarios sintéticos con resultado esperado.
-- Unit tests, contract tests, integration tests, property tests y fault injection.
-- Evaluación de carga, límites de concurrencia, saturación y errores de red.
-- Idempotencia de efectos externos, autenticación, autorización y secretos fuera de logs.
-- Reproducción de incidentes, rollback y trazabilidad de entradas, salidas y versiones.
-- Benchmark con IC y comparación por carga, no una única corrida.
-
-## 6. Entregables y gates
-
-D1 arquitectura y amenaza; D2 contratos y modelo formal; D3 implementación; D4 pruebas y benchmarks; D5 validación independiente; D6 operación y runbook. G0 diseño → G1 modelo → G2 tests → G3 stress → G4 revisión → G5 operación. **D3–D6 pendientes**.
-
-[Fundamentos compartidos](../fundamentals/README.md).
+Consultar `../fundamentals/README.md` para modelos formales, estadística y diseño computacional. El proyecto sigue el estándar de madurez del repositorio y no altera `data-engineering/`.
