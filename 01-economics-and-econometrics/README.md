@@ -61,3 +61,9 @@ python3 -m unittest discover -s 01-economics-and-econometrics/computational-econ
 [Mixed Freeze Audit](03-game-theory/01-endogenous-credit-freeze/mixed-equilibrium-audit/):
 extensión S2 del juego finito a equilibrios mixtos aislados, con regret, oráculo
 racional, controles de degeneración y comparación con el baseline puro.
+
+## Ciclo diario 2026-10-15
+
+[Polyhedral Freeze Audit](03-game-theory/01-endogenous-credit-freeze/polyhedral-freeze-audit/):
+extensión S2 a familias degeneradas del juego finito, con regiones racionales,
+dimensión afín, oracle LP y regresiones de los MVP anteriores.
