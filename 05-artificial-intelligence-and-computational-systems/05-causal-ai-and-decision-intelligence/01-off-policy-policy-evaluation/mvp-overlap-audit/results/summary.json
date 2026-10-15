@@ -1,0 +1,189 @@
+{
+  "config": {
+    "n_per_seed": 600,
+    "seeds": 40,
+    "seed_start": 20261015,
+    "clip": 8,
+    "min_ess": 30,
+    "regimes": {
+      "well_overlap": [
+        0.5,
+        0.5
+      ],
+      "weak_overlap": [
+        0.04,
+        0.04
+      ],
+      "misreported_propensity": [
+        0.04,
+        0.2
+      ]
+    },
+    "reward_matrix": [
+      [
+        0.15,
+        0.55
+      ],
+      [
+        0.7,
+        0.3
+      ]
+    ],
+    "target": "a=1-x",
+    "folds": 3,
+    "synthetic_truth": 0.625,
+    "hardware": "machine-dependent; see timings.csv; no hardware-normalized speed claim"
+  },
+  "runs": 720,
+  "summary": {
+    "well_overlap": {
+      "ips": {
+        "bias": 0.002583,
+        "rmse": 0.04094,
+        "mae": 0.0305,
+        "abstention_fraction": 0,
+        "mean_ess": 300.525
+      },
+      "snips": {
+        "bias": 0.001357,
+        "rmse": 0.028549,
+        "mae": 0.021981,
+        "abstention_fraction": 0,
+        "mean_ess": 300.525
+      },
+      "dm": {
+        "bias": -0.000915,
+        "rmse": 0.029189,
+        "mae": 0.022989,
+        "abstention_fraction": 0,
+        "mean_ess": 300.525
+      },
+      "dr": {
+        "bias": 0.001255,
+        "rmse": 0.029481,
+        "mae": 0.023052,
+        "abstention_fraction": 0,
+        "mean_ess": 300.525
+      },
+      "clipped_ips": {
+        "bias": 0.002583,
+        "rmse": 0.04094,
+        "mae": 0.0305,
+        "abstention_fraction": 0,
+        "mean_ess": 300.525
+      },
+      "clipped_dr": {
+        "bias": 0.001255,
+        "rmse": 0.029481,
+        "mae": 0.023052,
+        "abstention_fraction": 0,
+        "mean_ess": 300.525
+      },
+      "paired_ips_minus_dr_mse_ci95": [
+        -0.0001055,
+        0.0018772
+      ]
+    },
+    "weak_overlap": {
+      "ips": {
+        "bias": -0.025,
+        "rmse": 0.136613,
+        "mae": 0.108333,
+        "abstention_fraction": 0.9,
+        "mean_ess": 23.1
+      },
+      "snips": {
+        "bias": 0.002855,
+        "rmse": 0.091683,
+        "mae": 0.076193,
+        "abstention_fraction": 0.9,
+        "mean_ess": 23.1
+      },
+      "dm": {
+        "bias": -0.029421,
+        "rmse": 0.074184,
+        "mae": 0.057909,
+        "abstention_fraction": 0.9,
+        "mean_ess": 23.1
+      },
+      "dr": {
+        "bias": -0.000392,
+        "rmse": 0.089511,
+        "mae": 0.072404,
+        "abstention_fraction": 0.9,
+        "mean_ess": 23.1
+      },
+      "clipped_ips": {
+        "bias": -0.433,
+        "rmse": 0.435128,
+        "mae": 0.433,
+        "abstention_fraction": 0.9,
+        "mean_ess": 23.1
+      },
+      "clipped_dr": {
+        "bias": -0.020132,
+        "rmse": 0.077235,
+        "mae": 0.060898,
+        "abstention_fraction": 0.9,
+        "mean_ess": 23.1
+      },
+      "paired_ips_minus_dr_mse_ci95": [
+        0.0021559,
+        0.0219856
+      ]
+    },
+    "misreported_propensity": {
+      "ips": {
+        "bias": -0.505,
+        "rmse": 0.505714,
+        "mae": 0.505,
+        "abstention_fraction": 0.9,
+        "mean_ess": 23.1
+      },
+      "snips": {
+        "bias": 0.002855,
+        "rmse": 0.091683,
+        "mae": 0.076193,
+        "abstention_fraction": 0.9,
+        "mean_ess": 23.1
+      },
+      "dm": {
+        "bias": -0.029421,
+        "rmse": 0.074184,
+        "mae": 0.057909,
+        "abstention_fraction": 0.9,
+        "mean_ess": 23.1
+      },
+      "dr": {
+        "bias": -0.023615,
+        "rmse": 0.075858,
+        "mae": 0.059412,
+        "abstention_fraction": 0.9,
+        "mean_ess": 23.1
+      },
+      "clipped_ips": {
+        "bias": -0.505,
+        "rmse": 0.505714,
+        "mae": 0.505,
+        "abstention_fraction": 0.9,
+        "mean_ess": 23.1
+      },
+      "clipped_dr": {
+        "bias": -0.023615,
+        "rmse": 0.075858,
+        "mae": 0.059412,
+        "abstention_fraction": 0.9,
+        "mean_ess": 23.1
+      },
+      "paired_ips_minus_dr_mse_ci95": [
+        0.2408033,
+        0.2582432
+      ]
+    }
+  },
+  "performance": {
+    "total_elapsed_seconds": 0.97476,
+    "peak_tracemalloc_bytes": 497445,
+    "caveat": "tracemalloc captures Python allocations, not full process RSS"
+  }
+}

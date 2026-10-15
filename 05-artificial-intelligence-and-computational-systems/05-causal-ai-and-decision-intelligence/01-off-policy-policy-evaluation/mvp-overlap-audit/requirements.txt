@@ -1,0 +1,2 @@
+# Python >=3.10, standard library only. No runtime dependencies.
+# Optional diagnostics: coverage>=7; no downloads needed for core reproduction.
