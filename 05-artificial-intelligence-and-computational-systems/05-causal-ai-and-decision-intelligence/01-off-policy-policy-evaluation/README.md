@@ -32,3 +32,7 @@ Requisitos: dataset público con licencia, corte temporal point-in-time, baselin
 ## Límites
 
 La validez externa, los cambios de distribución, los costes computacionales y la gobernanza de datos requieren verificación empírica; ningún resultado está establecido aún.
+
+## Componente M2 reproducible (2026-10-15)
+
+El [MVP de auditoría de solapamiento y propensiones](mvp-overlap-audit/) implementa IPS, SNIPS, método directo y DR con pruebas, baseline y evidencia sintética reproducible. **Solo este componente** alcanza M2; el programa de investigación restante conserva su estado S1. No es un sistema operacional ni está validado con datos reales.
