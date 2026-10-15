@@ -12,5 +12,6 @@ Validación y documentación de modelos, pruebas de estrés, análisis de sensib
 | [Pruebas de estrés y estrés inverso](pruebas-de-estres-escenarios) | Pruebas de estrés de un portafolio con sensibilidades lineales a factores (acciones, tasas, tipo de cambio, spreads de crédito). | Funcional · datos sintéticos |
 | [Validación de modelo: Gini, calibración y PSI](validacion-de-modelo-psi-gini) | Validación independiente de un modelo de PD: comparación champion (regresión logística) contra challenger (gradient boosting), discriminación (Gini), calibración por deciles y estabilidad (PSI) entre desarrollo y muestra fuera de tiempo, con umbrales de alerta. | Funcional · datos sintéticos |
 | [Auditoría de ES ponderado](weighted-expected-shortfall-audit/) | ES de masa fraccionaria con probabilidades desiguales, oráculo LP y auditoría de tres baselines reales. Pruebas, resultados crudos y notebook ejecutado. | MVP · validación numérica sintética |
+| [Guard Python contra underflow en ES](weighted-tail-underflow-guard/) | Detección NumPy, rechazo o fallback racional, flags de representabilidad y comparación con el baseline real. | MVP · validación numérica sintética |
 
-Cada proyecto trae su `main.py` ejecutable y el resultado de una corrida real. Las versiones con datos reales abiertos se agregarán por separado.
+Cada proyecto trae código ejecutable y evidencia de una corrida real. Las versiones con datos reales abiertos se agregarán por separado.

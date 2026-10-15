@@ -1,0 +1,61 @@
+{
+  "summary": {
+    "fixtures": 388,
+    "fallbacks": 107,
+    "baseline_lost_representable": 78,
+    "guard_lost_representable": 0,
+    "unrepresentable_final": 29,
+    "performance_rows": 168
+  },
+  "config": {
+    "seed": 20261015,
+    "weight_exponents": [
+      -50,
+      -100,
+      -150,
+      -200,
+      -250,
+      -300
+    ],
+    "large_weight_exponents": [
+      50,
+      100,
+      150,
+      200,
+      250,
+      300
+    ],
+    "loss_exponents": [
+      50,
+      100,
+      200,
+      300,
+      308
+    ],
+    "alpha": 0.975,
+    "benchmark_n": [
+      2,
+      32,
+      256,
+      2048
+    ],
+    "repeats": 7,
+    "method_order": "seeded shuffle per replication",
+    "max_exact_scenarios": 4096,
+    "exact_fallback_float_agreement": true,
+    "ordinary_baseline_parity": true
+  },
+  "python": "3.12.14",
+  "numpy": "2.1.3",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "base_commit": "afcbc7facb17485786c02e539759afc31b5d23fd",
+  "source_sha256": {
+    "03-financial-risk/02-market-and-model-risk/weighted-expected-shortfall-audit/src/tail.py": "82657e3fdcdce20f6100c3b63f094e0e1c800f39937a93af6e722970dd0a2587",
+    "04-quant-strategy-and-products/risk-engines/weighted-tail-audit/benchmarks/audit.py": "8941ccddebc49994271a585b154d2fb154d9c264f6a29627133df7c32be67a19",
+    "04-quant-strategy-and-products/risk-engines/weighted-tail-audit/results/fixtures.json": "6682014436335f2c287101bef737909c76e24d543d68ac21a4a582a4ff7060cb",
+    "03-financial-risk/02-market-and-model-risk/weighted-tail-underflow-guard/src/guard.py": "1833defd42b257b9421a20b9c235f16ee14463688e92188fe55383d92b26f53e"
+  },
+  "cpu": "model name\t: AMD EPYC 9V74 80-Core Processor",
+  "memory_scope": "tracemalloc Python/NumPy allocated peak; not RSS or complete native memory",
+  "inference": "synthetic finite distributions, not forecasting/population estimation"
+}

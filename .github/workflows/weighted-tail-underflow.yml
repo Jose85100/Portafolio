@@ -1,0 +1,28 @@
+name: Weighted Tail Underflow Guard
+on:
+  push:
+    paths:
+      - '03-financial-risk/02-market-and-model-risk/weighted-tail-underflow-guard/**'
+      - '.github/workflows/weighted-tail-underflow.yml'
+  pull_request:
+    paths:
+      - '03-financial-risk/02-market-and-model-risk/weighted-tail-underflow-guard/**'
+      - '.github/workflows/weighted-tail-underflow.yml'
+jobs:
+  reproduce:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install, test, benchmark and execute notebook
+        run: bash 03-financial-risk/02-market-and-model-risk/weighted-tail-underflow-guard/run.sh
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: weighted-tail-underflow-evidence
+          path: |
+            03-financial-risk/02-market-and-model-risk/weighted-tail-underflow-guard/results/
+            03-financial-risk/02-market-and-model-risk/weighted-tail-underflow-guard/notebook.ipynb
