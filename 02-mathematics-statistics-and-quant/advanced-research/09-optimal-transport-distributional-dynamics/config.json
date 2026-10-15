@@ -1,0 +1,16 @@
+{
+  "sizes": [8, 32, 64],
+  "scenarios": ["overlap", "separated", "mass_mismatch"],
+  "seeds": [20261015, 20261016],
+  "epsilons": [1.0, 0.05, 0.005],
+  "methods": ["naive", "log"],
+  "max_iterations": 1000,
+  "tolerance": 1e-9,
+  "gate": {
+    "max_rounded_marginal_residual": 1e-10,
+    "max_reference_relative_discrepancy": 1e-8,
+    "max_bound_violation_scaled": 1e-8,
+    "max_separated_relative_cost_error": 0.001,
+    "require_naive_failure_on_separated_small_epsilon": true
+  }
+}
