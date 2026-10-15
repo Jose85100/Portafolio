@@ -1,0 +1,11 @@
+[tool.ruff]
+line-length = 110
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+[tool.mypy]
+python_version = "3.12"
+disallow_untyped_defs = true
+check_untyped_defs = true
+[[tool.mypy.overrides]]
+module = ["nbformat.*", "IPython.*"]
+ignore_missing_imports = true

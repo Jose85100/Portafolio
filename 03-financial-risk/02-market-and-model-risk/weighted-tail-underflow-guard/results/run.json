@@ -1,0 +1,8 @@
+{
+  "fixtures": 388,
+  "fallbacks": 107,
+  "baseline_lost_representable": 78,
+  "guard_lost_representable": 0,
+  "unrepresentable_final": 29,
+  "performance_rows": 168
+}
