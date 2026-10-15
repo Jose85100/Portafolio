@@ -1,0 +1,19 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-8.3.5, pluggy-1.6.0
+rootdir: /workspace/scratch/b4f745a5b045/math-cycle-20261014/02-mathematics-statistics-and-quant/advanced-research/08-bayesian-inverse-uncertainty
+configfile: pyproject.toml
+plugins: hypothesis-6.131.9, cov-6.1.1, platformdirs-4.13.0
+collected 24 items
+
+tests/test_posterior.py ........................                         [100%]
+
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.12.14-final-0 _______________
+
+Name               Stmts   Miss  Cover   Missing
+------------------------------------------------
+src/posterior.py      46      0   100%
+------------------------------------------------
+TOTAL                 46      0   100%
+Coverage JSON written to file benchmarks/coverage.json
+============================== 24 passed in 1.33s ==============================
