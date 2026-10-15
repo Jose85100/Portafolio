@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-15",
+  "seed": 20261015,
+  "support_patterns": 81,
+  "base_commit": "afcbc7facb17485786c02e539759afc31b5d23fd",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "cpu": "AMD EPYC 9V74 80-Core Processor",
+  "max_lp_error": 6.661338147750939e-16,
+  "max_float_regret": 4.5306895490217785e-17,
+  "lp_checks": 240,
+  "samples": 220,
+  "scenario_config": {
+    "regular": {
+      "prior": 0.5,
+      "accuracy": 0.8,
+      "cost": 0.9,
+      "complementarity": 0.8
+    },
+    "coordination_family": {
+      "prior": 0.5,
+      "accuracy": 0.5,
+      "cost": 0.9,
+      "complementarity": 0.8
+    },
+    "full_indifference": {
+      "prior": 0.5,
+      "accuracy": 0.5,
+      "cost": 0.5,
+      "complementarity": 0
+    },
+    "singular_but_isolated": {
+      "prior": 0.5,
+      "accuracy": 1.0,
+      "cost": 1.0,
+      "complementarity": 0.8
+    }
+  },
+  "memory": "tracemalloc solver allocations; excludes native/RSS/input objects",
+  "hashes": {
+    "summary.csv": "532c8625b85515ec47e901061706f817d69e11c6921cbb18571967aee5329d8a",
+    "perturbations.csv": "b89e77fe6ac838d82acba2730be671a18f555cd970bcef0a51476251e183b98e",
+    "timing.csv": "f1621e8f3b10985e6255468f9420cdd1bcd98e3fc65558f94153c897e84a7d3b",
+    "samples.csv": "aa26b641bde4ca7c10b021845eeff1884f4fab214d65f3df9e2a00a5ead26359",
+    "lp_oracle.csv": "736bf34bb7f356e1fe1967cd7fb10373f6b5eca085af2bbdfac088fe11f8bced"
+  }
+}

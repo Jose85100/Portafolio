@@ -1,0 +1,17 @@
+test_baseline_start_dependence (test_game.GameTests.test_baseline_start_dependence) ... ok
+test_complementarity_monotone_gain (test_game.GameTests.test_complementarity_monotone_gain) ... ok
+test_extreme_cost (test_game.GameTests.test_extreme_cost) ... ok
+test_invalid (test_game.GameTests.test_invalid) ... ok
+test_limit (test_game.GameTests.test_limit) ... ok
+test_main_three_equilibria (test_game.GameTests.test_main_three_equilibria) ... ok
+test_oracle_and_probability_properties (test_game.GameTests.test_oracle_and_probability_properties) ... ok
+test_outcomes (test_game.GameTests.test_outcomes) ... ok
+test_posterior_bayes (test_game.GameTests.test_posterior_bayes) ... ok
+test_synchronous_cycle (test_game.GameTests.test_synchronous_cycle) ... ok
+test_tie_all_profiles (test_game.GameTests.test_tie_all_profiles) ... ok
+test_zero_complementarity_unique (test_game.GameTests.test_zero_complementarity_unique) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.319s
+
+OK

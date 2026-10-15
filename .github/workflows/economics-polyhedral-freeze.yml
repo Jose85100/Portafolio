@@ -1,0 +1,22 @@
+name: Economics polyhedral freeze audit
+on:
+  push:
+    paths:
+      - '01-economics-and-econometrics/03-game-theory/01-endogenous-credit-freeze/**'
+      - '01-economics-and-econometrics/computational-economics/**'
+      - '.github/workflows/economics-polyhedral-freeze.yml'
+  pull_request:
+    paths:
+      - '01-economics-and-econometrics/03-game-theory/01-endogenous-credit-freeze/**'
+      - '01-economics-and-econometrics/computational-economics/**'
+      - '.github/workflows/economics-polyhedral-freeze.yml'
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: bash 01-economics-and-econometrics/03-game-theory/01-endogenous-credit-freeze/polyhedral-freeze-audit/reproduce.sh
