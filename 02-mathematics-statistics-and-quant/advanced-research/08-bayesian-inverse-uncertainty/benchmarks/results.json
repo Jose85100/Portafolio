@@ -1,0 +1,204 @@
+{
+  "success": true,
+  "checks": [
+    {
+      "d": 4,
+      "improvement_vs_normal": 309469872.3780269,
+      "passed": true
+    },
+    {
+      "d": 12,
+      "improvement_vs_normal": 163919590.11230448,
+      "passed": true
+    },
+    {
+      "d": 32,
+      "improvement_vs_normal": 147446793.6995082,
+      "passed": true
+    }
+  ],
+  "max_svd_qr_difference": 5.405661746354819e-10,
+  "selected": [
+    {
+      "d": 4,
+      "condition": 10000000000,
+      "sigma": 1e-08,
+      "method": "svd",
+      "successful": 20,
+      "failed": 0,
+      "median_mean_relative_error": 3.002540359698137e-10,
+      "max_mean_relative_error": 1.0154966545579677e-09,
+      "max_covariance_relative_error": 5.560895293358303e-11,
+      "median_seconds": 7.57115000169506e-05,
+      "traced_peak_bytes": 2616
+    },
+    {
+      "d": 4,
+      "condition": 10000000000,
+      "sigma": 1e-08,
+      "method": "augmented_qr",
+      "successful": 20,
+      "failed": 0,
+      "median_mean_relative_error": 1.1185881368944058e-09,
+      "max_mean_relative_error": 3.907249642301575e-09,
+      "max_covariance_relative_error": 2.692914246657464e-10,
+      "median_seconds": 0.00016214300001138326,
+      "traced_peak_bytes": 7494
+    },
+    {
+      "d": 4,
+      "condition": 10000000000,
+      "sigma": 1e-08,
+      "method": "normal_equations",
+      "successful": 20,
+      "failed": 0,
+      "median_mean_relative_error": 0.09291957819256574,
+      "max_mean_relative_error": 0.3299135507164992,
+      "max_covariance_relative_error": 0.1974150214818918,
+      "median_seconds": 6.11579999940659e-05,
+      "traced_peak_bytes": 6112
+    },
+    {
+      "d": 12,
+      "condition": 10000000000,
+      "sigma": 1e-08,
+      "method": "svd",
+      "successful": 20,
+      "failed": 0,
+      "median_mean_relative_error": 9.352638856144605e-10,
+      "max_mean_relative_error": 3.0782130116505254e-09,
+      "max_covariance_relative_error": 4.88634642552434e-10,
+      "median_seconds": 0.00014424350001718267,
+      "traced_peak_bytes": 7968
+    },
+    {
+      "d": 12,
+      "condition": 10000000000,
+      "sigma": 1e-08,
+      "method": "augmented_qr",
+      "successful": 20,
+      "failed": 0,
+      "median_mean_relative_error": 6.012076283461579e-10,
+      "max_mean_relative_error": 1.8028986267718155e-09,
+      "max_covariance_relative_error": 6.313448014457841e-10,
+      "median_seconds": 0.0002546310000752783,
+      "traced_peak_bytes": 16478
+    },
+    {
+      "d": 12,
+      "condition": 10000000000,
+      "sigma": 1e-08,
+      "method": "normal_equations",
+      "successful": 20,
+      "failed": 0,
+      "median_mean_relative_error": 0.1533080727767636,
+      "max_mean_relative_error": 0.27357156517540615,
+      "max_covariance_relative_error": 0.12404540463814386,
+      "median_seconds": 0.00010004499995375227,
+      "traced_peak_bytes": 8224
+    },
+    {
+      "d": 32,
+      "condition": 10000000000,
+      "sigma": 1e-08,
+      "method": "svd",
+      "successful": 20,
+      "failed": 0,
+      "median_mean_relative_error": 1.034907628594011e-09,
+      "max_mean_relative_error": 2.307384082787297e-09,
+      "max_covariance_relative_error": 7.030740311205156e-10,
+      "median_seconds": 0.00029679450000230645,
+      "traced_peak_bytes": 43808
+    },
+    {
+      "d": 32,
+      "condition": 10000000000,
+      "sigma": 1e-08,
+      "method": "augmented_qr",
+      "successful": 20,
+      "failed": 0,
+      "median_mean_relative_error": 5.696124974832968e-10,
+      "max_mean_relative_error": 1.9027566475578145e-09,
+      "max_covariance_relative_error": 4.888210623411535e-10,
+      "median_seconds": 0.0004874095000104717,
+      "traced_peak_bytes": 87550
+    },
+    {
+      "d": 32,
+      "condition": 10000000000,
+      "sigma": 1e-08,
+      "method": "normal_equations",
+      "successful": 20,
+      "failed": 0,
+      "median_mean_relative_error": 0.15259381161134838,
+      "max_mean_relative_error": 0.43041128964872055,
+      "max_covariance_relative_error": 0.1406247907416452,
+      "median_seconds": 0.00015267999998513915,
+      "traced_peak_bytes": 34464
+    }
+  ],
+  "calibration": [
+    {
+      "scenario": "correct",
+      "direction": "strong",
+      "replications": 1000,
+      "coverage_95": 0.947,
+      "coverage_wilson_low": 0.9313253831625082,
+      "coverage_wilson_high": 0.9592534947514054,
+      "posterior_sd": 0.0009999994999951196
+    },
+    {
+      "scenario": "correct",
+      "direction": "weak",
+      "replications": 1000,
+      "coverage_95": 0.953,
+      "coverage_wilson_low": 0.9380600619184716,
+      "coverage_wilson_high": 0.9644728948936154,
+      "posterior_sd": 0.9999500037496873
+    },
+    {
+      "scenario": "noise_understated",
+      "direction": "strong",
+      "replications": 1000,
+      "coverage_95": 0.145,
+      "coverage_wilson_low": 0.12453493622851891,
+      "coverage_wilson_high": 0.16818206229622523,
+      "posterior_sd": 9.99999993457012e-05
+    },
+    {
+      "scenario": "noise_understated",
+      "direction": "weak",
+      "replications": 1000,
+      "coverage_95": 0.843,
+      "coverage_wilson_low": 0.8191441706597944,
+      "coverage_wilson_high": 0.8642306730191147,
+      "posterior_sd": 0.9950371902099681
+    },
+    {
+      "scenario": "prior_too_tight",
+      "direction": "strong",
+      "replications": 1000,
+      "coverage_95": 0.945,
+      "coverage_wilson_low": 0.9290916123226243,
+      "coverage_wilson_high": 0.9575025726252315,
+      "posterior_sd": 0.0009999500037495821
+    },
+    {
+      "scenario": "prior_too_tight",
+      "direction": "weak",
+      "replications": 1000,
+      "coverage_95": 0.145,
+      "coverage_wilson_low": 0.12453493622851891,
+      "coverage_wilson_high": 0.16818206229622523,
+      "posterior_sd": 0.0999999500000375
+    }
+  ],
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "logical_cpus": 9,
+    "numpy": "2.2.6",
+    "oracle_decimal_digits": 80
+  }
+}
