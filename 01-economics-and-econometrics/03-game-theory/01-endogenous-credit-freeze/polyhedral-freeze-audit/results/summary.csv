@@ -1,0 +1,5 @@
+scenario,maximal_cells,dimensions,max_dimension,total_cell_vertices,old_status,old_isolated_count
+regular,5,0;0;0;0;0,0,5,isolated_list,5
+coordination_family,3,0;0;2,2,6,degenerate_rejected,-1
+full_indifference,1,4,4,16,degenerate_rejected,-1
+singular_but_isolated,2,0;0,0,2,degenerate_rejected,-1
