@@ -51,7 +51,7 @@
       "gap": 0.033866860043874514,
       "iterations": 310,
       "converged": true,
-      "seconds": 0.012876665000021603,
+      "seconds": 0.007614779000050476,
       "traced_peak_bytes": 275352
     },
     {
@@ -72,7 +72,7 @@
       "gap": 0.03386686004387451,
       "iterations": 310,
       "converged": true,
-      "seconds": 0.15096200299990414,
+      "seconds": 0.08465212900000552,
       "traced_peak_bytes": 241732
     },
     {
@@ -93,7 +93,7 @@
       "gap": null,
       "iterations": null,
       "converged": false,
-      "seconds": 0.00013295799999468727,
+      "seconds": 0.00020546199993987102,
       "traced_peak_bytes": 105424
     },
     {
@@ -114,8 +114,8 @@
       "gap": 0.03326043932037237,
       "iterations": 880,
       "converged": true,
-      "seconds": 0.2404082190000736,
-      "traced_peak_bytes": 241778
+      "seconds": 0.28566139899999143,
+      "traced_peak_bytes": 241732
     },
     {
       "n": 64,
@@ -135,7 +135,7 @@
       "gap": 0.007339334819759569,
       "iterations": 40,
       "converged": true,
-      "seconds": 0.0013547529999868857,
+      "seconds": 0.0012365579999595866,
       "traced_peak_bytes": 275320
     },
     {
@@ -156,7 +156,7 @@
       "gap": 0.00733933481975968,
       "iterations": 40,
       "converged": true,
-      "seconds": 0.00946963000001233,
+      "seconds": 0.012547132999998212,
       "traced_peak_bytes": 241700
     }
   ],

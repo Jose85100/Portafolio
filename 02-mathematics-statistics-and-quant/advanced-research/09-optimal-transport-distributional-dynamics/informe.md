@@ -30,6 +30,7 @@ Hay **12 datasets**, 72 corridas temporizadas Sinkhorn, más 12 LP y referencias
 Entorno real: `{'python': '3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]', 'platform': 'Linux-6.18.44-x86_64-with-glibc2.39', 'processor': 'x86_64', 'logical_cpus': 9, 'numpy': '2.2.6', 'scipy': '1.15.3', 'blas_threads': '1'}`. Make fija BLAS/OMP a un hilo. Tiempos por instancia con orden fijo, sin warm-up dedicado; solo dos réplicas aleatorias, insuficientes para conclusiones de microbenchmark generales. Memoria = peak de asignaciones rastreadas por tracemalloc en otra ejecución, no RSS completo ni garantía de capturar todos los buffers externos. Complejidad del kernel denso por iteración O(nm), memoria O(nm); el LP usa restricciones dispersas.
 
 ## 6. Matemática e implementación
+references.csv incluye tiempos y peak de memoria rastreada para ambos comparadores (LP y acoplamiento monótono), medidos en ejecuciones separadas de las corridas temporizadas.
 El politopo de transporte no está vacío: abᵀ es factible para a,b probabilidades; es cerrado y acotado, por lo que un costo finito alcanza mínimo. Con masas positivas tras retirar soportes de peso cero, la regularización min <C,P>+epsilon ΣP(log P-1) tiene solución positiva y escalable en aritmética exacta. No se infiere convergencia numérica a partir de esa existencia.
 `src/transport.py` implementa dos métodos para el mismo problema regularizado: escalados sobre K=exp(-C/epsilon) y actualizaciones f_i=epsilon[log a_i-logsumexp((g_j-C_ij)/epsilon)] y análogas para g. El recentrado f←f-aᵀf, g←g+aᵀf preserva f+g y el plan. El directo registra división por cero/overflow, no devuelve NaNs como éxito.
 La reparación contrae filas para no exceder a, luego columnas para no exceder b. En aritmética exacta, residuos r=a-P1 y s=b-Pᵀ1 son no negativos y tienen la misma masa t. Si t>0, añadir rsᵀ/t corrige ambos marginales; si t=0, ya es factible. En float64 se evita división por cero y se verifica el residuo posterior. Reparar **no** demuestra optimalidad ni conserva el óptimo entrópico.
@@ -58,12 +59,12 @@ a=(.9,.1), b=(.1,.9), C=[[0,1],[1,0]], epsilon=.01. Óptimo exacto analítico y 
 ### n=64, epsilon=.005, primera seed
 | Escenario | Método | LP W2² | Costo reparado | Error relativo | Residuo crudo | Convergió | ms | Peak bytes |
 |---|---|---:|---:|---:|---:|---|---:|---:|
-| overlap | naive | 0.0867507414 | 0.0888667775 | 0.0243921 | 5.9329e-10 | True | 12.877 | 275352 |
-| overlap | log | 0.0867507414 | 0.0888667775 | 0.0243921 | 5.9329e-10 | True | 150.962 | 241732 |
-| separated | naive | 400 | FALLÓ | N/A | N/A | False | 0.133 | 105424 |
-| separated | log | 400 | 400.002376 | 5.9403e-06 | 9.2681e-10 | True | 240.408 | 241778 |
-| mass_mismatch | naive | 0.865087764 | 0.865088356 | 6.85016e-07 | 2.5318e-11 | True | 1.355 | 275320 |
-| mass_mismatch | log | 0.865087764 | 0.865088356 | 6.85016e-07 | 2.5321e-11 | True | 9.470 | 241700 |
+| overlap | naive | 0.0867507414 | 0.0888667775 | 0.0243921 | 5.9329e-10 | True | 7.615 | 275352 |
+| overlap | log | 0.0867507414 | 0.0888667775 | 0.0243921 | 5.9329e-10 | True | 84.652 | 241732 |
+| separated | naive | 400 | FALLÓ | N/A | N/A | False | 0.205 | 105424 |
+| separated | log | 400 | 400.002376 | 5.9403e-06 | 9.2681e-10 | True | 285.661 | 241732 |
+| mass_mismatch | naive | 0.865087764 | 0.865088356 | 6.85016e-07 | 2.5318e-11 | True | 1.237 | 275320 |
+| mass_mismatch | log | 0.865087764 | 0.865088356 | 6.85016e-07 | 2.5321e-11 | True | 12.547 | 241700 |
 
 ![Auditoría](benchmarks/audit.png)
 

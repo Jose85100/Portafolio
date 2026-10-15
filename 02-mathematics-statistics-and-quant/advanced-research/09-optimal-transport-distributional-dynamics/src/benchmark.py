@@ -96,6 +96,14 @@ def main() -> None:
                 start = time.perf_counter()
                 monotone = monotone_w2_squared(x, y, a, b)
                 monotone_seconds = time.perf_counter() - start
+                tracemalloc.start()
+                linear_program(a, b, cost)
+                _, lp_peak = tracemalloc.get_traced_memory()
+                tracemalloc.stop()
+                tracemalloc.start()
+                monotone_w2_squared(x, y, a, b)
+                _, monotone_peak = tracemalloc.get_traced_memory()
+                tracemalloc.stop()
                 refs.append(
                     dict(
                         n=n,
@@ -106,6 +114,8 @@ def main() -> None:
                         relative_discrepancy=abs(reference - monotone) / max(1.0, abs(reference)),
                         lp_seconds=seconds,
                         monotone_seconds=monotone_seconds,
+                        lp_traced_peak_bytes=lp_peak,
+                        monotone_traced_peak_bytes=monotone_peak,
                         lp_residual=residual(plan, a, b),
                     )
                 )
