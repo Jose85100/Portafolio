@@ -15,7 +15,7 @@ bash reproduce.sh
 This runs 15 unittest methods (including 100 deterministic generative examples),
 120 paired synthetic datasets × 6 estimators = **720** raw rows, an SVG chart,
 summary JSON, timing CSV, and four genuinely executed notebook cells with visible outputs.
-A CI workflow runs the same command on Python 3.12. No pip installation required.
+CI is not configured on this branch. No pip installation required.
 
 Optional coverage (when `coverage` is installed):
 
