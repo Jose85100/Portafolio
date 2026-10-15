@@ -1,0 +1,13 @@
+{
+  "seed": 20261015,
+  "weight_exponents": [-50, -100, -150, -200, -250, -300],
+  "large_weight_exponents": [50, 100, 150, 200, 250, 300],
+  "loss_exponents": [50, 100, 200, 300, 308],
+  "alpha": 0.975,
+  "benchmark_n": [2, 32, 256, 2048],
+  "repeats": 7,
+  "method_order": "seeded shuffle per replication",
+  "max_exact_scenarios": 4096,
+  "exact_fallback_float_agreement": true,
+  "ordinary_baseline_parity": true
+}
