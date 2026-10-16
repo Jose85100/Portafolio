@@ -1,0 +1,11 @@
+name: AI Process Conformance MVP
+on: [push, pull_request]
+jobs:
+  reproduce:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: bash 05-artificial-intelligence-and-computational-systems/07-intelligent-automation-and-process-mining/01-process-mining-risk-operations/conformance-mvp/reproduce.sh
