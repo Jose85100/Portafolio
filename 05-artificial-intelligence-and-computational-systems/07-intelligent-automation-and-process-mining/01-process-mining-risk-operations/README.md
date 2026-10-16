@@ -32,3 +32,7 @@ Requisitos: dataset público con licencia, corte temporal point-in-time, baselin
 ## Límites
 
 La validez externa, los cambios de distribución, los costes computacionales y la gobernanza de datos requieren verificación empírica; ningún resultado está establecido aún.
+
+## Implementación acotada (M2, 2026-10-16)
+
+- [Conformance MVP: alineación global vs. transiciones locales](conformance-mvp/): motor Python ejecutable, 11 tests, 360 evaluaciones sintéticas y evidencia reproducible CSV/JSON/SVG. **Solo componente M2; la propuesta general continúa S1 y no es un sistema operacional.**
