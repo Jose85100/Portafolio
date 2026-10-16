@@ -1,0 +1,44 @@
+{
+  "hybrid_heavy": {
+    "activity_set": {
+      "recall_mean": 0.055
+    },
+    "direct_follows": {
+      "recall_mean": 0.2
+    },
+    "alignment_tolerant": {
+      "recall_mean": 0.04833333333333333
+    },
+    "alignment": {
+      "recall_mean": 1
+    }
+  },
+  "balanced": {
+    "activity_set": {
+      "recall_mean": 0.13055555555555556
+    },
+    "direct_follows": {
+      "recall_mean": 0.5
+    },
+    "alignment_tolerant": {
+      "recall_mean": 0.11833333333333333
+    },
+    "alignment": {
+      "recall_mean": 1
+    }
+  },
+  "local_heavy": {
+    "activity_set": {
+      "recall_mean": 0.20277777777777778
+    },
+    "direct_follows": {
+      "recall_mean": 0.8
+    },
+    "alignment_tolerant": {
+      "recall_mean": 0.195
+    },
+    "alignment": {
+      "recall_mean": 1
+    }
+  }
+}
