@@ -1,0 +1,32 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-8.3.5, pluggy-1.7.0
+rootdir: /workspace/scratch/b4f745a5b045/math-cycle-20261016/02-mathematics-statistics-and-quant/advanced-research/03-distributionally-robust-optimization
+configfile: pyproject.toml
+plugins: platformdirs-4.13.3, hypothesis-6.131.9, cov-6.1.1
+collected 42 items
+
+tests/test_kl_robust.py ..........................................       [100%]
+
+=============================== warnings summary ===============================
+tests/test_kl_robust.py::test_slsqp_competitive_baseline[two_start]
+tests/test_kl_robust.py::test_slsqp_competitive_baseline[refined]
+  /workspace/scratch/b4f745a5b045/math-cycle-20261016/02-mathematics-statistics-and-quant/advanced-research/03-distributionally-robust-optimization/.venv/lib/python3.12/site-packages/scipy/optimize/_slsqp_py.py:435: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+    fx = wrapped_fun(x)
+
+tests/test_kl_robust.py::test_slsqp_competitive_baseline[two_start]
+tests/test_kl_robust.py::test_slsqp_competitive_baseline[refined]
+  /workspace/scratch/b4f745a5b045/math-cycle-20261016/02-mathematics-statistics-and-quant/advanced-research/03-distributionally-robust-optimization/.venv/lib/python3.12/site-packages/scipy/optimize/_slsqp_py.py:439: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+    g = append(wrapped_grad(x), 0.0)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.12.14-final-0 _______________
+
+Name               Stmts   Miss  Cover   Missing
+------------------------------------------------
+src/kl_robust.py      73      3    96%   71, 82, 87
+src/reference.py      51      0   100%
+------------------------------------------------
+TOTAL                124      3    98%
+Coverage JSON written to file benchmarks/coverage.json
+======================== 42 passed, 4 warnings in 1.32s ========================
