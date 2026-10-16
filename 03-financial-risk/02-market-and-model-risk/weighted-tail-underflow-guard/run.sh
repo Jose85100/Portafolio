@@ -10,6 +10,7 @@ mkdir -p results
 ruff check src tests benchmarks | tee results/lint.txt
 ruff format --check src tests benchmarks | tee results/format.txt
 mypy src benchmarks | tee results/types.txt
-python -m pytest -q --cov=src.guard --cov-branch --cov-report=term-missing --cov-report=json:results/coverage.json | tee results/tests.txt
+python -m pytest -q --cov=src.guard --cov=src.consumer --cov-branch --cov-report=term-missing --cov-report=json:results/coverage.json | tee results/tests.txt
 python -m benchmarks.run | tee results/run.json
+python -m benchmarks.consumer | tee results/consumer-run.json
 python benchmarks/notebook.py | tee results/notebook.txt
