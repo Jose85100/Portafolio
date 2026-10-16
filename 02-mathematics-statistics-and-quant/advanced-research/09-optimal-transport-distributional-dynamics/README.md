@@ -1,57 +1,50 @@
 # Optimal Transport & Distributional Dynamics
 
-> **Madurez: S1 — protocolo de investigación.** No se afirma código, experimentos ejecutados, revisión sistemática concluida ni novedad demostrada.
+**Madurez: S2 — prototipo acotado (2026-10-15).** Factibilidad y estabilidad del
+transporte balanceado discreto; no valida el programa completo ni demuestra un algoritmo nuevo.
 
-## Pregunta de investigación
+## Pregunta
+¿Cómo evitar interpretar un costo Sinkhorn bajo pero infactible como una mejora?
 
-¿Es posible describir trayectorias distributivas mediante transporte óptimo sin atribuirles causalidad espuria?
-
-## Hipótesis contrastable
-
-El método propuesto supera a baselines explícitos en al menos una métrica predefinida, sin degradación inaceptable en robustez, calibración ni costo. Esta hipótesis debe operacionalizarse antes de observar resultados.
-
-## Formulación matemática
-
-W₂²(μ,ν)=inf_{γ∈Π(μ,ν)}∫||x−y||²dγ; esquema JKO para flujos de gradiente.
-
-**Trabajo teórico pendiente:** definir espacios de probabilidad y parámetros, supuestos de existencia e identificabilidad, resultados de convergencia o estabilidad, demostraciones y contraejemplos. No se presume que tales propiedades estén establecidas.
-
-## Modelado estadístico y estimación
-
-Comparar transporte exacto, Sinkhorn, Benamou–Brenier y simulación de partículas.
-
-Estimar sesgo, varianza, consistencia bajo supuestos adecuados e intervalos de incertidumbre. Separar evaluación predictiva de identificación causal.
-
-## Métodos numéricos y protocolo experimental
-
-Distribuciones que se desplazan, mezclan y cambian de masa; error de aproximación y estabilidad numérica.
-
-**Diseño mínimo:** (1) generador sintético con verdad conocida; (2) baseline trivial y avanzado; (3) evaluación fuera de muestra o por réplicas independientes; (4) ablaciones y pruebas adversariales; (5) tiempos, memoria y sensibilidad a hiperparámetros; (6) semillas, versiones y resultados reproducibles.
-
-## Aplicación económico-financiera
-
-Movilidad de ingresos y distribución de riesgo.
-
-## Limitaciones y posibles fallos
-
-Regularización entrópica sesga distancias; el transporte no identifica trayectorias individuales.
-
-## Entregables y criterios de aceptación
-
-- **S1:** revisión bibliográfica verificable, hipótesis operacionales, teoremas/proposiciones y plan preregistrado de simulación.
-- **S2:** módulos `src/`, `tests/`, datos sintéticos y script de reproducción, con cobertura de invariantes y casos límite.
-- **S3:** comparadores estadísticos, tablas y figuras generadas, análisis de sensibilidad, errores numéricos y benchmark de recursos.
-- **S4:** réplica independiente, aplicación con datos públicos licenciados, documentación de riesgos y límites de validez.
-
-## Estructura prevista (no creada aún)
-
-```text
-theory/       # supuestos, derivaciones y pruebas
-src/          # modelos, estimadores y algoritmos
-tests/        # tests unitarios y estadísticos
-experiments/  # simulaciones y benchmarks
-data/         # manifiestos y fuentes públicas
-docs/         # interpretación, limitaciones y referencias
+## Reproducir con un comando
+Desde esta carpeta, Linux/macOS con Python 3.11+, make e internet para pip:
+```bash
+make run
 ```
+Crea un entorno local, instala versiones directas fijadas, ejecuta Ruff/mypy/tests,
+benchmark, notebook e informe. Make fija BLAS/OMP a un hilo. Sin lock transitivo
+ni imagen Docker: estas instrucciones y requirements.txt definen el entorno.
 
-**Regla de evidencia:** no reportar métricas, resultados, referencias bibliográficas ni garantías matemáticas que no hayan sido verificadas.
+## Modelo y baselines
+W2² discreto con costo cuadrático, masas normalizadas y balanceadas. Métodos:
+Sinkhorn directo, Sinkhorn logarítmico y reparación de marginales. Comparadores:
+LP HiGHS no regularizado y acoplamiento monótono ponderado 1D.
+Se conservan por separado costo crudo, residuo, costo reparado, cotas numéricas,
+convergencia, error contra LP, tiempo y memoria. Reparación no implica optimalidad.
+
+## Artefactos
+- `config.json`: tamaños, epsilons, seeds y gates anteriores al benchmark.
+- `src/transport.py`: kernel, reparación y diagnóstico primal-dual.
+- `src/reference.py`: LP y referencia monótona independiente 1D.
+- `src/benchmark.py`: casos sintéticos y contraejemplo con datos guardados.
+- `tests/`: invariantes, property-based, casos límite y fórmulas analíticas.
+- `benchmarks/`: CSV, JSON, NPZ, figura, pruebas y cobertura.
+- `notebook.ipynb`: cuatro celdas realmente ejecutadas, outputs visibles.
+- `informe.md`, `referencias.bib`, `MVP.md`: análisis, cinco citas reales y alcance.
+
+## Tests aislados
+```bash
+.venv/bin/python -m pytest --cov=src.transport --cov=src.reference tests
+```
+La cobertura se limita a esos dos módulos. El notebook se ejecuta mediante
+IPython en proceso para evitar depender de puertos TCP, y puede reejecutarse
+como notebook Python estándar.
+
+## Límites explícitos
+API: masas no negativas con suma a distancia ≤1e-12 de 1 (normalización explícita);
+costos finitos en [0,1e6]; epsilon en [1e-8,1e4]; soporte de peso cero permitido.
+Estos rangos no garantizan precisión/convergencia para toda combinación.
+Benchmark solo 1D, n≤64 y epsilon≥.005. Las cotas usan float64 y tolerancias,
+no aritmética de intervalos. Sin JKO, causalidad, OT no balanceado, epsilon-scaling
+ni divergencias Sinkhorn des-sesgadas. El contrato EL=83 y los programas previos
+no se modifican. Ver los fallos y la no convergencia en informe.md.

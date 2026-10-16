@@ -1,6 +1,6 @@
 # Advanced Research — Mathematics, Statistics & Quantitative Methods
 
-Veinte programas de investigación. Los programas 08 y 18 tienen prototipos S2 acotados; los demás siguen como propuestas S1. Se conservan los seis proyectos existentes de métodos cuantitativos y las bibliotecas multilenguaje.
+Veinte programas de investigación. Los programas 08, 09 y 18 tienen prototipos S2 acotados; los demás siguen como propuestas S1. Se conservan los seis proyectos existentes de métodos cuantitativos y las bibliotecas multilenguaje.
 
 | ID | Proyecto | Estado |
 |---|---|---|
@@ -12,7 +12,7 @@ Veinte programas de investigación. Los programas 08 y 18 tienen prototipos S2 a
 | 06 | [Causal Discovery in Nonlinear Stochastic Systems](06-nonlinear-dynamic-causal-discovery/) | S1: diseño científico |
 | 07 | [Topological Data Analysis & Regime Detection](07-topological-regime-detection/) | S1: diseño científico |
 | 08 | [Bayesian Inverse Problems & Uncertainty Quantification](08-bayesian-inverse-uncertainty/) | S2: posterior gaussiano, estabilidad y calibración |
-| 09 | [Optimal Transport & Distributional Dynamics](09-optimal-transport-distributional-dynamics/) | S1: diseño científico |
+| 09 | [Optimal Transport & Distributional Dynamics](09-optimal-transport-distributional-dynamics/) | S2: factibilidad, estabilidad y sesgo de transporte discreto |
 | 10 | [Statistical Mechanics of Interacting Agents](10-interacting-agents-statistical-mechanics/) | S1: diseño científico |
 
 ## Priorización
@@ -44,4 +44,4 @@ Esta segunda ola investiga conexiones interdisciplinarias. **Los programas sigue
 
 **Prioridad matemática exploratoria:** 12, 14 y 17. **Métodos computacionales con validación factible:** 11, 13, 16 y 18. **Aplicación macrofinanciera:** 15, 19 y 20.
 
-La revisión e implementación completas siguen pendientes para los programas S1. Los programas 08 y 18 incluyen benchmarks sintéticos reproducibles; no constituyen validación externa ni demuestran originalidad algorítmica.
+La revisión e implementación completas siguen pendientes para los programas S1. Los programas 08, 09 y 18 incluyen benchmarks sintéticos reproducibles; no constituyen validación externa ni demuestran originalidad algorítmica.
