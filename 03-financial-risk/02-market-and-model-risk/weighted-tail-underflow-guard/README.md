@@ -1,5 +1,37 @@
 # Weighted Tail Underflow Guard
 
+## Iteración 2026-10-16: contrato de decisión y transporte
+
+El mismo comando run.sh incluye ahora `src.consumer.decide` y
+`src.consumer.encode`. Reutiliza el guard integrado en PR #39, sin cambiarlo.
+Ver [informe del consumidor](informe-consumidor.md) para resultados actuales;
+el informe de 2026-10-15 conserva el registro histórico de esa ejecución.
+
+```python
+from src.consumer import decide, encode
+packet = decide([0.0, 5e-324], "0", alpha=.5, weights=[3.0, 1.0])
+assert packet["es_float"] == 0 and packet["breach"] is True
+payload = encode(packet)
+```
+
+Contrato v1: `breach` significa estrictamente ES > umbral. El umbral debe ser
+string decimal/racional finito. Si hay racional retenido, se compara antes de
+redondear; si no, `comparison_basis=binary64-output` declara que sólo se compara
+el resultado float existente, no un ES matemáticamente certificado. Numerador y
+denominador viajan como strings, nunca números JSON de precisión limitada.
+Un rechazo por política/cap tiene `status=rejected`, `breach=null`, sin ES.
+Datos inválidos provocan ValueError, no una decisión aceptada. `encode` rechaza
+NaN/Infinity; es un serializador, NO un validador de paquetes arbitrarios.
+No convierte en confiables payloads externos ni impide ignorar deliberadamente
+el contrato. No hay API HTTP ni autenticación.
+
+Nuevos outputs: consumer-accuracy.csv (388 decisiones), consumer-performance.csv
+(112 mediciones), consumer-summary.json, consumer-examples.json. Notebook con
+cinco celdas ejecutadas, incluidos ejemplo de decisión y tabla comparativa.
+Pruebas actuales: 34, con tres propiedades generativas de 100 ejemplos cada una.
+Cobertura desglosada en results/coverage.json y tests.txt; las métricas históricas
+inferiores corresponden al núcleo original.
+
 MVP del 2026-10-15: entrada Python protegida frente a underflow de NumPy, con rechazo explícito o fallback racional. Continúa los PR #32 y #35, ya integrados. No modifica el baseline: su comportamiento y sus límites permanecen auditables.
 
 ## Instalación y reproducción: un comando
