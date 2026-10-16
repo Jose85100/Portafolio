@@ -1,0 +1,43 @@
+{
+  "nonrepresentable": {
+    "schema": "weighted-es-decision/v1",
+    "threshold": {
+      "numerator": "0",
+      "denominator": "1"
+    },
+    "comparison": ">",
+    "status": "accepted",
+    "breach": true,
+    "comparison_basis": "exact-input-rational",
+    "es_float": 0.0,
+    "es_rational": {
+      "numerator": "1",
+      "denominator": "404804506614621236704990693437834614099113299528284236713802716054860679135990693783920767402874248990374155728633623822779617474771586953734026799881477019843034848553132722728933815484186432682479535356945490137124014966849385397236206711298319112681620113024717539104666829230461005064372655017292012526615415482186989568"
+    },
+    "output_rounds_to_zero": true,
+    "backend": "fraction",
+    "fallback_reason": "underflow encountered in multiply"
+  },
+  "policy_rejection": {
+    "schema": "weighted-es-decision/v1",
+    "threshold": {
+      "numerator": "0",
+      "denominator": "1"
+    },
+    "comparison": ">",
+    "status": "rejected",
+    "breach": null,
+    "reason": "underflow encountered in divide"
+  },
+  "budget_rejection": {
+    "schema": "weighted-es-decision/v1",
+    "threshold": {
+      "numerator": "0",
+      "denominator": "1"
+    },
+    "comparison": ">",
+    "status": "rejected",
+    "breach": null,
+    "reason": "exact fallback exceeds cap=1; underflow encountered in divide"
+  }
+}

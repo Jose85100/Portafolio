@@ -61,6 +61,37 @@ nb.cells = [
     ),
 ]
 shell = InteractiveShell.instance()
+nb.cells.extend(
+    [
+        nbformat.v4.new_markdown_cell(
+            "## Contrato consumidor — 2026-10-16\n\n"
+            "Hipótesis: conservar el racional al decidir ES > 0 evita que un float cero "
+            "oculte una contribución positiva. Se reutilizan los 388 inputs originales y el "
+            "oráculo hinge independiente. No se afirma corrección universal cerca de otros umbrales. "
+            "Un rechazo no es una decisión de seguridad."
+        ),
+        nbformat.v4.new_code_cell(
+            "from src.consumer import decide, encode\n"
+            "p=decide([0.0,5e-324], '0', .5, [3.0,1.0])\n"
+            "keys=['status','breach','es_float','output_rounds_to_zero','comparison_basis']\n"
+            "print({k:p[k] for k in keys})\n"
+            "assert p['es_float']==0 and p['breach'] is True\n"
+            "assert json.loads(encode(p)) == p\n"
+            "reject=decide([1e308,0], '0', weights=[1e-300,1e300], policy='raise')\n"
+            "print('Rechazo:', reject['status'], reject['breach'])\n"
+            "assert reject['breach'] is None"
+        ),
+        nbformat.v4.new_code_cell(
+            "from IPython.display import HTML\n"
+            "s=json.loads(Path('results/consumer-summary.json').read_text())\n"
+            "display(HTML('<table><tr><th>388 casos, umbral cero</th><th>Errores de decisión</th></tr>'"
+            "+f'<tr><td>Consumidor float del guard</td><td>{s[\"naive_errors\"]}</td></tr>'"
+            "+f'<tr><td>Contrato racional</td><td>{s[\"contract_errors\"]}</td></tr></table>'))\n"
+            "assert s['contract_errors']==0\n"
+            "print('Limitación: esta prueba de signo no certifica decisiones próximas a todo umbral.')"
+        ),
+    ]
+)
 for cell in nb.cells:
     if cell.cell_type != "code":
         continue
@@ -88,4 +119,4 @@ for cell in nb.cells:
 nbformat.validate(nb)
 assert all(c.outputs and c.execution_count is not None for c in nb.cells if c.cell_type == "code")
 nbformat.write(nb, project / "notebook.ipynb")
-print("Three code cells executed with real output; notebook validated")
+print("Five code cells executed with real output; notebook validated")

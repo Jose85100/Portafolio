@@ -1,1 +1,1 @@
-Three code cells executed with real output; notebook validated
+Five code cells executed with real output; notebook validated
