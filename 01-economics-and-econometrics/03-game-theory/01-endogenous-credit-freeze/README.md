@@ -75,3 +75,10 @@ soportes singulares factibles. No se eleva la madurez del juego global completo.
 degeneradas mediante restricciones/vértices racionales y dimensión afín exacta.
 Distingue familias positivas de puntos aislados con soportes singulares; extensión
 S2 del mismo juego finito, no solver global ni validación empírica.
+
+## Ciclo 2026-10-16
+
+[Strategic Form Audit](strategic-form-audit/) exporta el juego finito a matrices
+ex ante racionales y contrasta equilibrios con Nashpy externo. Conserva fallos
+degenerados y muestra cómo el regret ex ante puede ocultar incentivos de tipos
+raros. Extensión S2 de auditoría; programa S2 parcial, sin ascenso a S3.

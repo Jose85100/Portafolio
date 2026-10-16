@@ -1,0 +1,19 @@
+{
+  "seed": 20261016,
+  "python": "3.12.14",
+  "machine": "x86_64",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "cpu": "x86_64",
+  "nashpy": "0.0.43",
+  "numpy": "2.3.5",
+  "source_commit": "681836e",
+  "memory": "tracemalloc peak Python allocations, excludes native RSS",
+  "threshold": 1e-08,
+  "hashes": {
+    "timing.csv": "550d3425ef78554083280ea3749d32d84e42bd626b5e624b2cbc2af1308a0525",
+    "equilibria.csv": "9384acdf229993c061ac302a38320dd470f9988f30ef22af50d6176320ff2037",
+    "rare_type_ablation.csv": "6c71c0858289706303f77a8217344751e99b56fabcf4416258fd91bb9dfca691",
+    "summary.csv": "bd4c104f7d03f501953627d047cc038928899c5f968520fce7e9b401a4ce6b99",
+    "stability.csv": "c9c4cf917cd4af697ad294e6c505873543160180d66e02b5d1979b1a8f2e3f86"
+  }
+}

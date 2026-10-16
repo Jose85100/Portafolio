@@ -67,3 +67,10 @@ racional, controles de degeneración y comparación con el baseline puro.
 [Polyhedral Freeze Audit](03-game-theory/01-endogenous-credit-freeze/polyhedral-freeze-audit/):
 extensión S2 a familias degeneradas del juego finito, con regiones racionales,
 dimensión afín, oracle LP y regresiones de los MVP anteriores.
+
+## Ciclo diario 2026-10-16
+
+[Strategic Form Audit](03-game-theory/01-endogenous-credit-freeze/strategic-form-audit/):
+exportación estratégica racional y contraste ejecutado con Nashpy externo; diagnóstico
+de degeneración y control negativo del regret ex ante en tipos raros. Componente S2,
+Endogenous Credit Freeze sigue S2 parcial; no hay nueva validación empírica.
