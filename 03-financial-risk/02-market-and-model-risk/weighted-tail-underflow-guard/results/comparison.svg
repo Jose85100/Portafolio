@@ -9,19 +9,19 @@
 <text x="255" y="335" text-anchor="middle" font-family="sans-serif">guarded</text>
 <text x="55" y="60" font-family="sans-serif" font-size="14">Representable ES lost to zero</text>
 <text x="410" y="60" font-family="sans-serif" font-size="14">Median ms; n=2,048</text>
-<rect x="420" y="305.4312864089856" width="50" height="4.56871359101438" fill="#b25335"/>
-<text x="445" y="295.4312864089856" text-anchor="middle" font-family="sans-serif" font-size="11">0.61</text>
-<rect x="485" y="305.4359898834561" width="50" height="4.564010116543885" fill="#247e78"/>
-<text x="510" y="295.4359898834561" text-anchor="middle" font-family="sans-serif" font-size="11">0.61</text>
-<rect x="550" y="166.14460601995728" width="50" height="143.85539398004272" fill="#8170a3"/>
-<text x="575" y="156.14460601995728" text-anchor="middle" font-family="sans-serif" font-size="11">19.30</text>
+<rect x="420" y="304.960869221751" width="50" height="5.039130778249013" fill="#b25335"/>
+<text x="445" y="294.960869221751" text-anchor="middle" font-family="sans-serif" font-size="11">0.61</text>
+<rect x="485" y="305.48476112223005" width="50" height="4.51523887776995" fill="#247e78"/>
+<text x="510" y="295.48476112223005" text-anchor="middle" font-family="sans-serif" font-size="11">0.54</text>
+<rect x="550" y="162.62641227519234" width="50" height="147.37358772480766" fill="#8170a3"/>
+<text x="575" y="152.62641227519234" text-anchor="middle" font-family="sans-serif" font-size="11">17.71</text>
 <text x="485" y="335" text-anchor="middle" font-family="sans-serif">ordinary</text>
-<rect x="670" y="305.9429439281674" width="50" height="4.057056071832611" fill="#b25335"/>
-<text x="695" y="295.9429439281674" text-anchor="middle" font-family="sans-serif" font-size="11">0.54</text>
-<rect x="735" y="118.33333333333331" width="50" height="191.66666666666669" fill="#247e78"/>
-<text x="760" y="108.33333333333331" text-anchor="middle" font-family="sans-serif" font-size="11">25.71</text>
-<rect x="800" y="122.89460037760279" width="50" height="187.10539962239721" fill="#8170a3"/>
-<text x="825" y="112.89460037760279" text-anchor="middle" font-family="sans-serif" font-size="11">25.10</text>
+<rect x="670" y="305.97565863976246" width="50" height="4.024341360237548" fill="#b25335"/>
+<text x="695" y="295.97565863976246" text-anchor="middle" font-family="sans-serif" font-size="11">0.48</text>
+<rect x="735" y="119.35004451192489" width="50" height="190.6499554880751" fill="#247e78"/>
+<text x="760" y="109.35004451192489" text-anchor="middle" font-family="sans-serif" font-size="11">22.92</text>
+<rect x="800" y="118.33333333333331" width="50" height="191.66666666666669" fill="#8170a3"/>
+<text x="825" y="108.33333333333331" text-anchor="middle" font-family="sans-serif" font-size="11">23.04</text>
 <text x="735" y="335" text-anchor="middle" font-family="sans-serif">tiny_weight</text>
 <rect x="150" y="380" width="15" height="12" fill="#b25335"/>
 <text x="173" y="391" font-family="sans-serif" font-size="13">baseline</text>

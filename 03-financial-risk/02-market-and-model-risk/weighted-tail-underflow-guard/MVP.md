@@ -1,5 +1,15 @@
 # MVP completo: ES Python con guard de underflow
 
+## Extensión ejecutada 2026-10-16
+
+Qué es: consumidor de ES con decisión racional cuando está disponible y JSON
+sin pérdida del numerador/denominador. Mismo comando único run.sh. Produce
+388 comparaciones (29 errores del consumidor float, 0 del contrato en umbral
+cero), 112 mediciones nuevas, dos rechazos comprobados, notebook y 34 tests.
+No cubre validación de payloads ajenos, transporte por red, incertidumbre
+estadística, umbrales arbitrarios exactos en ruta rápida ni producción.
+Detalle y límites en informe-consumidor.md. El apartado siguiente es histórico.
+
 **Qué es:** nueva entrada ejecutable que protege el motor Python existente mediante detección de underflow, rechazo configurable y fallback con fracciones exactas. Los métodos son conocidos; la contribución es integración, contrato de salida y benchmark reproducible.
 
 **Cómo corre:** `bash 03-financial-risk/02-market-and-model-risk/weighted-tail-underflow-guard/run.sh`, desde el repo completo; Python 3.12 y venv. Instala dependencias fijadas y ejecuta todo.
