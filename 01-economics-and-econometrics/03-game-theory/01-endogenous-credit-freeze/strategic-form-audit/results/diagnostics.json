@@ -1,0 +1,150 @@
+[
+  {
+    "scenario": "regular",
+    "method": "vertex_enumeration",
+    "warnings": [],
+    "status": "ok"
+  },
+  {
+    "scenario": "regular",
+    "method": "support_enumeration",
+    "warnings": [],
+    "status": "ok"
+  },
+  {
+    "scenario": "coordination_family",
+    "method": "vertex_enumeration",
+    "warnings": [],
+    "status": "ok"
+  },
+  {
+    "scenario": "coordination_family",
+    "method": "support_enumeration",
+    "warnings": [],
+    "status": "ok"
+  },
+  {
+    "scenario": "full_indifference",
+    "method": "vertex_enumeration",
+    "warnings": [],
+    "status": "TypeError: 'NoneType' object is not subscriptable"
+  },
+  {
+    "scenario": "full_indifference",
+    "method": "support_enumeration",
+    "warnings": [
+      "\nAn even number of (16) equilibria was returned. This\nindicates that the game is degenerate. Consider using another algorithm\nto investigate.\n                  "
+    ],
+    "status": "ok"
+  },
+  {
+    "scenario": "singular_isolated",
+    "method": "vertex_enumeration",
+    "warnings": [],
+    "status": "ok"
+  },
+  {
+    "scenario": "singular_isolated",
+    "method": "support_enumeration",
+    "warnings": [
+      "\nAn even number of (2) equilibria was returned. This\nindicates that the game is degenerate. Consider using another algorithm\nto investigate.\n                  "
+    ],
+    "status": "ok"
+  },
+  {
+    "scenario": "random_0",
+    "method": "vertex_enumeration",
+    "warnings": [],
+    "status": "ok"
+  },
+  {
+    "scenario": "random_0",
+    "method": "support_enumeration",
+    "warnings": [],
+    "status": "ok"
+  },
+  {
+    "scenario": "random_1",
+    "method": "vertex_enumeration",
+    "warnings": [],
+    "status": "ok"
+  },
+  {
+    "scenario": "random_1",
+    "method": "support_enumeration",
+    "warnings": [],
+    "status": "ok"
+  },
+  {
+    "scenario": "random_2",
+    "method": "vertex_enumeration",
+    "warnings": [],
+    "status": "ok"
+  },
+  {
+    "scenario": "random_2",
+    "method": "support_enumeration",
+    "warnings": [],
+    "status": "ok"
+  },
+  {
+    "scenario": "random_3",
+    "method": "vertex_enumeration",
+    "warnings": [],
+    "status": "ok"
+  },
+  {
+    "scenario": "random_3",
+    "method": "support_enumeration",
+    "warnings": [],
+    "status": "ok"
+  },
+  {
+    "scenario": "random_4",
+    "method": "vertex_enumeration",
+    "warnings": [],
+    "status": "ok"
+  },
+  {
+    "scenario": "random_4",
+    "method": "support_enumeration",
+    "warnings": [],
+    "status": "ok"
+  },
+  {
+    "scenario": "random_5",
+    "method": "vertex_enumeration",
+    "warnings": [],
+    "status": "ok"
+  },
+  {
+    "scenario": "random_5",
+    "method": "support_enumeration",
+    "warnings": [],
+    "status": "ok"
+  },
+  {
+    "scenario": "random_6",
+    "method": "vertex_enumeration",
+    "warnings": [],
+    "status": "ok"
+  },
+  {
+    "scenario": "random_6",
+    "method": "support_enumeration",
+    "warnings": [],
+    "status": "ok"
+  },
+  {
+    "scenario": "random_7",
+    "method": "vertex_enumeration",
+    "warnings": [],
+    "status": "ok"
+  },
+  {
+    "scenario": "random_7",
+    "method": "support_enumeration",
+    "warnings": [],
+    "status": "ok"
+  }
+]

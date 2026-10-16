@@ -1,0 +1,14 @@
+test_bad_behavior (test_strategic.StrategicTests.test_bad_behavior) ... ok
+test_bad_nfg (test_strategic.StrategicTests.test_bad_nfg) ... ok
+test_bad_simplex (test_strategic.StrategicTests.test_bad_simplex) ... ok
+test_equivalence (test_strategic.StrategicTests.test_equivalence) ... ok
+test_external_regular_equivalence (test_strategic.StrategicTests.test_external_regular_equivalence) ... ok
+test_many_to_one (test_strategic.StrategicTests.test_many_to_one) ... ok
+test_rare_type_negative_control (test_strategic.StrategicTests.test_rare_type_negative_control) ... ok
+test_round_trip (test_strategic.StrategicTests.test_round_trip) ... ok
+test_symmetry (test_strategic.StrategicTests.test_symmetry) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.827s
+
+OK
