@@ -1,0 +1,17 @@
+name: AI Conformal Shift MVP
+on:
+  pull_request:
+    paths:
+      - '05-artificial-intelligence-and-computational-systems/02-machine-learning-engineering/02-conformal-risk-prediction/mvp-group-shift/**'
+      - '.github/workflows/ai-conformal-shift-m2.yml'
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Reproduce MVP
+        run: bash 05-artificial-intelligence-and-computational-systems/02-machine-learning-engineering/02-conformal-risk-prediction/mvp-group-shift/reproduce.sh
