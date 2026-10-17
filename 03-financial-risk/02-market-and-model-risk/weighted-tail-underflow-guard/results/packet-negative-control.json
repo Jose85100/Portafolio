@@ -1,0 +1,24 @@
+{
+  "original_loss": 1.0,
+  "forged_packet": {
+    "schema": "weighted-es-decision/v1",
+    "threshold": {
+      "numerator": "0",
+      "denominator": "1"
+    },
+    "comparison": ">",
+    "status": "accepted",
+    "breach": false,
+    "comparison_basis": "binary64-output",
+    "es_float": 0.0,
+    "es_rational": {
+      "numerator": "0",
+      "denominator": "1"
+    },
+    "output_rounds_to_zero": false,
+    "backend": "float64",
+    "fallback_reason": null
+  },
+  "validator_accepts": true,
+  "meaning": "internally consistent forgery is not detectable without provenance/recomputation"
+}

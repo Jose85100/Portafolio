@@ -1,5 +1,14 @@
 # MVP completo: ES Python con guard de underflow
 
+## Extensión ejecutada 2026-10-17
+
+Recepción bytes->paquete validado, acotada y con coherencia racional. Mismo
+comando único run.sh. Produce corpus crudo (390 válidos+114 mutaciones), 56
+mediciones de tiempo/memoria, control negativo de falsificación coherente,
+68 tests y notebook de siete celdas. Ver informe-recepcion.md y README actual.
+NO autentica emisor, verifica escenarios, impone límites al cálculo upstream ni
+certifica seguridad de producción. Las secciones siguientes son históricas.
+
 ## Extensión ejecutada 2026-10-16
 
 Qué es: consumidor de ES con decisión racional cuando está disponible y JSON

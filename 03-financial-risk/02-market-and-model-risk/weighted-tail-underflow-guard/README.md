@@ -1,5 +1,41 @@
 # Weighted Tail Underflow Guard
 
+## Iteración 2026-10-17: recepción acotada y coherencia del contrato
+
+El mismo comando run.sh añade `src.packet.decode(payload: bytes)`. Ver
+[informe-recepcion.md](informe-recepcion.md). La iteración anterior se conserva
+debajo como contexto histórico; los crudos se regeneran al ejecutar el pipeline.
+
+```python
+from src.consumer import decide, encode
+from src.packet import decode, PacketError
+packet = decide([0.0, 5e-324], "0", alpha=.5, weights=[3.0, 1.0])
+received = decode(encode(packet).encode("utf-8"))
+assert received["breach"] is True  # no consumir sólo es_float=0
+```
+
+Recepción v1: máximo32768 bytes UTF-8; enteros racionales como strings canónicos
+reducidos de hasta2048 caracteres (incluido signo); denominador positivo.
+Se rechazan claves duplicadas/desconocidas, campos ausentes, tipos incorrectos,
+NaN/Infinity/overflow, discrepancias racional-float/decisión/flag y estados de
+rechazo tratados como decisión numérica. Un rechazo válido conserva breach=null.
+JSON integers nativos no forman parte de este perfil v1 (es_float se emite como
+token float). Los tokens float se limitan a128 caracteres y las razones a1024
+caracteres ASCII imprimibles. Los límites son política explícita, no un estándar
+universal ni garantía de tiempo real. Payloads demasiado grandes se rechazan
+antes de decodificar; enteros string se acotan antes de convertirlos a int.
+
+**Límite crucial:** esto valida consistencia interna, NO origen, autenticidad,
+frescura ni ES verdadero. Una falsificación coherente puede pasar: se entrega
+control negativo ejecutado. No hay servidor, firma ni verificación de escenarios.
+El emisor previo sigue opt-in y sin límites nuevos; para entradas no confiables
+hay que acotar también el ingreso de escenarios/umbrales, no sólo esta recepción.
+
+Outputs nuevos: packet-accuracy.csv, packet-mutations.json, packet-performance.csv,
+packet-summary.json y packet-negative-control.json. 390 paquetes válidos aceptados,
+114 mutaciones incompatibles rechazadas; 68 tests totales; notebook de siete
+celdas ejecutadas. La figura histórica compara ES, no detección de mutaciones.
+
 ## Iteración 2026-10-16: contrato de decisión y transporte
 
 El mismo comando run.sh incluye ahora `src.consumer.decide` y
