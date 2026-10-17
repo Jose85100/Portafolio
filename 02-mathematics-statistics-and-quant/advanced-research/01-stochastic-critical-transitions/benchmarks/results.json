@@ -1,0 +1,44 @@
+{
+  "checks": {
+    "max_transition_scaled_error": 1.4210854715202004e-14,
+    "max_variance_match_error": 3.552713678800501e-15,
+    "max_exact_mc_z": 2.473310511441326,
+    "min_euler_relative_bias_at_dt1": 1.0,
+    "min_ac1_population_separation_at_kappa01": 0.5369579768645172
+  },
+  "passed": {
+    "max_transition_scaled_error": true,
+    "max_variance_match_error": true,
+    "max_exact_mc_z": true,
+    "min_euler_relative_bias_at_dt1": true,
+    "min_ac1_population_separation_at_kappa01": true
+  },
+  "discretization_runs": 84,
+  "stationary_episodes": 3200,
+  "undefined_rates": 0,
+  "metadata": {
+    "date": "2026-10-17",
+    "base_commit": "931aa473062f70a55c58c73bc56aaada23564ff4",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "cpu": "x86_64",
+    "logical_cpus": 9,
+    "python": "3.12.14",
+    "versions": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "matplotlib": "3.10.8",
+      "nbformat": "5.10.4",
+      "nbclient": "0.10.2",
+      "pytest": "9.1.1",
+      "hypothesis": "6.138.2",
+      "ruff": "0.12.9",
+      "mypy": "1.17.1"
+    },
+    "threads": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "policy": "Record platform, CPU, Python and packages at run time. One BLAS/OMP thread; no warmup; fixed method order. Timings descriptive, not a speed claim. Memory is tracemalloc Python/NumPy tracked peak, not RSS."
+  }
+}

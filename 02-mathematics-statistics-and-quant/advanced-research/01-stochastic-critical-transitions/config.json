@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-17",
+  "base_commit": "931aa473062f70a55c58c73bc56aaada23564ff4",
+  "question": "Can noise amplification mimic variance-based slowing, and can Euler discretization corrupt OU warning statistics?",
+  "discretization": {"kappa": 1.0, "sigma": 1.0, "dt": [0.05, 0.2, 0.5, 1.0, 1.9, 2.0, 2.5], "steps": 40, "paths": [1000, 10000], "seeds": [20261017, 20261018, 20261019]},
+  "identification": {"kappa_levels": [1.0, 0.5, 0.2, 0.1], "dt": 1.0, "lengths": [256, 2048], "replicates": 200, "seed": 861017},
+  "gates": {"max_transition_scaled_error": 1e-12, "max_variance_match_error": 1e-12, "max_exact_mc_z": 6.0, "min_euler_relative_bias_at_dt1": 0.99, "min_ac1_population_separation_at_kappa01": 0.5},
+  "baselines": ["Euler-Maruyama at identical dt, steps, path count and Gaussian innovations", "Van Loan block matrix exponential for scalar transition oracle", "variance-only population diagnostic versus lag-1 population diagnostic"],
+  "hardware_policy": "Record platform, CPU, Python and packages at run time. One BLAS/OMP thread; no warmup; fixed method order. Timings descriptive, not a speed claim. Memory is tracemalloc Python/NumPy tracked peak, not RSS.",
+  "scope": "Stationary OU episodes with 200 independent replicates within each cell, paired standardized innovations across mechanisms. No observed tipping event, forecasting, threshold tuning or financial validation. No filtering by realized collapse. Euler instability cases intentionally included and reported."
+}

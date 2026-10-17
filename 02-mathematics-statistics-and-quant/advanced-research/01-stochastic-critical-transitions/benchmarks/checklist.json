@@ -1,0 +1,31 @@
+{
+  "required_documents": [
+    "README.md",
+    "MVP.md",
+    "informe.md",
+    "referencias.bib",
+    "config.json",
+    "requirements.txt"
+  ],
+  "src_modules": [
+    "__init__.py",
+    "benchmark.py",
+    "ou.py",
+    "reference.py"
+  ],
+  "csv_rows": {
+    "discretization.csv": 84,
+    "identification.csv": 3200,
+    "oracle.csv": 20,
+    "population.csv": 8,
+    "summary.csv": 16
+  },
+  "notebook_executed_code_cells": 4,
+  "notebook_png_outputs": 1,
+  "tests_passed": 43,
+  "coverage_scope": "src/ou.py and src/reference.py only",
+  "coverage_percent": 97.5609756097561,
+  "all_gates_passed": true,
+  "presentation_review": "Figure PNG visually inspected; notebook cells/outputs structurally checked. No full notebook-viewer visual QA in this environment.",
+  "review_reproduction": "Open notebook.ipynb in Jupyter; optional: python -m pip install nbconvert && python -m jupyter nbconvert --to html notebook.ipynb"
+}
