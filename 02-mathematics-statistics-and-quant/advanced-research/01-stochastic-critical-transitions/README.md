@@ -1,6 +1,50 @@
 # Stochastic Dynamical Systems & Critical Transitions
 
-> **Madurez: S1 — protocolo de investigación.** No se afirma código, experimentos ejecutados, revisión sistemática concluida ni novedad demostrada.
+> **Madurez: S2 acotado — auditoría OU de discretización e identificación.** El programa completo de detección de transiciones no está validado. El protocolo original se conserva debajo como agenda, no como trabajo terminado.
+
+## MVP ejecutable — 2026-10-17
+
+¿Puede el aumento de ruido imitar la varianza de un sistema que pierde recuperación, y puede una discretización Euler fabricar señales espurias?
+
+Se implementan transiciones gaussianas exactas Ornstein–Uhlenbeck, Euler–Maruyama y una referencia independiente por exponencial matricial de Van Loan. Se comparan momentos finitos, estabilidad, recursos y episodios estacionarios con varianzas poblacionales iguales pero distinta recuperación.
+
+### Reproducción con un comando
+
+Desde esta carpeta, con **Python 3.12, make, venv y acceso a PyPI**:
+
+```bash
+make run
+```
+
+Desde la raíz del repositorio:
+
+```bash
+make -C 02-mathematics-statistics-and-quant/advanced-research/01-stochastic-critical-transitions run
+```
+
+El comando crea `.venv`, instala las versiones directas fijadas, ejecuta Ruff/mypy/tests con cobertura, las 84 simulaciones y los 3.200 episodios, regenera el informe y ejecuta el notebook completo. Si `python3` no es 3.12: `make run PYTHON=python3.12`. No requiere datos privados ni descargas durante el experimento. Dependencias transitivas no bloqueadas; `benchmarks/environment.txt` registra las resueltas. Una reproducción reescribe únicamente los resultados generados de este MVP; los tiempos varían por máquina.
+
+El notebook se ejecuta realmente con IPython en proceso, capturando stdout y salidas enriquecidas; no necesita sockets locales. La primera prueba con nbclient falló por la restricción de sockets del entorno y no se presenta como exitosa. En un entorno convencional, `.venv/bin/python scripts_notebook.py --kernel` ejecuta el mismo cuaderno con nbclient. El workflow general Notebook Reliability valida además los notebooks modificados con un kernel separado.
+
+QA: figura PNG inspeccionada visualmente; celdas, salidas y formato del notebook validados automáticamente. No se hizo una revisión visual integral en un visor de notebooks. Para completarla, abrir `notebook.ipynb` en Jupyter; alternativamente instalar `nbconvert` y exportar con `python -m jupyter nbconvert --to html notebook.ipynb`. `benchmarks/checklist.json` registra esta distinción. La guía de notebooks influyó en la separación método/datos/resultados/límites y en conservar las salidas reales.
+
+### Estructura y salidas
+
+- `src/ou.py`: transiciones, simulación y diagnósticos; `src/reference.py`: oráculo; `src/benchmark.py`: experimento, figura y registros.
+- `tests/`: tests unitarios, edge cases y propiedades Hypothesis. `make verify` requiere entorno ya instalado.
+- `config.json`: hipótesis, umbrales, semillas, baselines y política de hardware.
+- `benchmarks/discretization.csv`: 84 corridas; precisión, estabilidad, tiempo y memoria rastreada.
+- `benchmarks/identification.csv`: 3.200 episodios; tasas indefinidas explícitas.
+- `benchmarks/population.csv`, `oracle.csv`, `summary.csv`, `results.json`, `audit.png`, `example_paths.npz`.
+- `notebook.ipynb`: cuatro celdas de código realmente ejecutadas; `informe.md`: resultados y límites.
+- `referencias.bib`, `fuentes.md`: antecedentes verificados, sin reivindicar novedad algorítmica.
+- `MVP.md`: contrato y exclusiones. CI específico reproduce el comando.
+
+### Interpretación y límites
+
+Para media cero conocida, Var(X)=σ²/(2κ) no identifica κ sin controlar σ. La correlación lag-1 exp(−κΔt) distingue **estos dos mecanismos OU especificados**, no toda fuente posible de fragilidad. No hay bifurcación, transición realizada, evaluación prospectiva de falsas alarmas, ruido coloreado ni validación financiera. El indicador estimado es un coeficiente OLS condicional con media cero conocida, no Pearson con media estimada. Ver `informe.md` para resultados medidos y cobertura exacta. Los métodos matemáticos son conocidos; el avance es un artefacto reproducible nuevo en este programa.
+
+## Protocolo original — agenda pendiente fuera del MVP
 
 ## Pregunta de investigación
 
@@ -43,7 +87,7 @@ Separar alertas de bifurcación y alertas de ruido; inferencia bajo dependencia 
 - **S3:** comparadores estadísticos, tablas y figuras generadas, análisis de sensibilidad, errores numéricos y benchmark de recursos.
 - **S4:** réplica independiente, aplicación con datos públicos licenciados, documentación de riesgos y límites de validez.
 
-## Estructura prevista (no creada aún)
+## Estructura del programa completo prevista en S1 (solo src/tests y el MVP están implementados)
 
 ```text
 theory/       # supuestos, derivaciones y pruebas

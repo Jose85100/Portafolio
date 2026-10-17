@@ -1,0 +1,10 @@
+{
+  "exact_dt1": {
+    "phi": 0.36787944117144233,
+    "innovation_variance": 0.43233235838169365
+  },
+  "euler_dt1": {
+    "phi": 0,
+    "innovation_variance": 1
+  }
+}
