@@ -1,5 +1,8 @@
 # ES ponderado: detectar underflow y recuperar desde los datos originales
 
+**Iteración 2026-10-17:** [informe-recepcion.md](informe-recepcion.md) documenta
+el nuevo receptor. Las métricas históricas siguientes no son las de esa extensión.
+
 **Iteración actual 2026-10-16:** ver [informe-consumidor.md](informe-consumidor.md).
 Este texto conserva los resultados históricos de 2026-10-15; run.sh regenera
 los resultados crudos, por lo que sus tiempos pueden variar entre ejecuciones.

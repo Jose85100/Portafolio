@@ -1,5 +1,19 @@
 # Prior art focalizado — 2026-10-15
 
+## Recepción del contrato — búsqueda 2026-10-17
+
+Prior art decisivo: RFC8259 (nombres duplicados, interoperabilidad numérica y
+límites de parser), Python3.12 json (hooks y advertencia de recursos), Fraction
+(equivalencia de floats vs decimales), BIS BCBS239 (integridad como contexto).
+Verificados directamente sus sitios primarios; Acerbi–Tasche sólo fundamenta
+ES, no nuestro receptor. NIST Numerical Reproducibility y la guía ECB2024 de
+agregación/reporting aportan contexto, no prueba de nuestro código ni aval.
+Consultas arXiv/SSRN/SemanticScholar/PaperswithCode sobre ES numérico devolvieron
+principalmente estimación/convergencia; la cobertura parcial no identifica una
+implementación primaria de este contrato y NO demuestra ausencia de ella.
+No se busca novedad en JSON ni validación de esquema: aporte incremental local
+de invariantes racionales, políticas acotadas y corpus con control negativo.
+
 ## Extensión de búsqueda 2026-10-16
 
 Pregunta nueva: preservar decisiones y rechazo en el consumidor y JSON.
