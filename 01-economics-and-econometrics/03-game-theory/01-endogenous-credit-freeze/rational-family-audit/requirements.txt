@@ -1,0 +1,11 @@
+pygambit==16.4.1
+numpy==2.3.5
+scipy==1.17.0
+nashpy==0.0.43
+matplotlib==3.10.8
+coverage==7.10.6
+hypothesis==6.140.3
+ruff==0.13.1
+mypy==1.18.2
+nbformat==5.10.4
+ipython==9.6.0

@@ -1,0 +1,15 @@
+test_dimensions (test_families.FamilyTests.test_dimensions) ... ok
+test_empty_and_cap_fail_closed (test_families.FamilyTests.test_empty_and_cap_fail_closed) ... ok
+test_four_scenarios (test_families.FamilyTests.test_four_scenarios) ... ok
+test_hull_invariants (test_families.FamilyTests.test_hull_invariants) ... ok
+test_invalid_probability (test_families.FamilyTests.test_invalid_probability) ... ok
+test_invalid_profile (test_families.FamilyTests.test_invalid_profile) ... ok
+test_negative_convex_hull (test_families.FamilyTests.test_negative_convex_hull) ... ok
+test_parser_dimensions (test_families.FamilyTests.test_parser_dimensions) ... ok
+test_parser_mismatch (test_families.FamilyTests.test_parser_mismatch) ... ok
+test_rational_games (test_families.FamilyTests.test_rational_games) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.231s
+
+OK
