@@ -82,3 +82,10 @@ S2 del mismo juego finito, no solver global ni validación empírica.
 ex ante racionales y contrasta equilibrios con Nashpy externo. Conserva fallos
 degenerados y muestra cómo el regret ex ante puede ocultar incentivos de tipos
 raros. Extensión S2 de auditoría; programa S2 parcial, sin ascenso a S3.
+
+## Ciclo 2026-10-17
+
+[Rational Family Audit](rational-family-audit/) ejecuta el parser NFG y solver racional
+Gambit, reconstruye familias mediante compatibilidad de estrategias y compara sus
+factores exactos con el baseline poliédrico. Conserva controles negativos de
+convexificación global y cobertura incompleta. Componente S2, programa S2 parcial.

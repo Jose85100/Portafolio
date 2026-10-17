@@ -1,0 +1,18 @@
+{
+  "seed": 20261017,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "cpu": "x86_64",
+  "pygambit": "16.4.1",
+  "source_base": "b19c03599a1f7cbb88a17eaed65fdd590dbb009a",
+  "matching": "exact rational equality, no numeric tolerance",
+  "measured_samples": 380,
+  "memory": "tracemalloc Python allocation peak, excludes C++ Gambit and native RSS",
+  "hashes": {
+    "timing.csv": "0f2848b0370d15f86058741bb97e8d98fd5b64f8ab237f5fbec79cc909bf0a12",
+    "ablations.csv": "8ac400c8012b6a2fa2882a46a9a4314abe79840897bd1dc676c6290becf974f1",
+    "samples.csv": "e0bb49154e9098b0bfc791bbc3566bbdc968df455d1896d7458e2122feffc1fd",
+    "summary.csv": "fb0db550a54f83dad59294139a1bb360e0142590e6a91202a10549f6de8f4e9b",
+    "profiles.csv": "a5e1afb5d732b3b5388b965eb90c0a0b9c1e491d7d87e392c2dd812279812baa"
+  }
+}

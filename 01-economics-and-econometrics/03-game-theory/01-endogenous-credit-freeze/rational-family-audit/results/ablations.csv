@@ -1,0 +1,4 @@
+scenario,ablation,candidate,exact_exante_regret,true_max_dimension,first_profile_only_dimension,profiles
+regular,convexify_all_equilibria,"[1/2,1/2,1/2,1/2]",3/20,0,0,5
+coordination_family,convexify_all_equilibria,"[1/2,1/2,1/2,1/2]",0,2,0,11
+full_indifference,convexify_all_equilibria,"[1/2,1/2,1/2,1/2]",0,4,0,16
