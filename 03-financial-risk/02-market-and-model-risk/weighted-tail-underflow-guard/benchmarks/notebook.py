@@ -92,6 +92,42 @@ nb.cells.extend(
         ),
     ]
 )
+nb.cells.extend(
+    [
+        nbformat.v4.new_markdown_cell(
+            "## Recepción validada — 2026-10-17\n\n"
+            "Goal: validar consistencia interna antes de consumir ES/decisión; no autenticar "
+            "al emisor. Setup: paquetes v1 generados desde las mismas fixtures, "
+            "mutaciones deterministas y límites 32768 bytes/2048 caracteres por entero. "
+            "Se compara el parser json.loads con la recepción validada."
+        ),
+        nbformat.v4.new_code_cell(
+            "from src.packet import decode, PacketError\n"
+            "good=decide([0.0,5e-324], '0', .5, [3.,1.])\n"
+            "assert decode(encode(good).encode()) == good\n"
+            "bad=dict(good, breach=False)\n"
+            "try:\n    decode(encode(bad).encode())\n"
+            "except PacketError as error:\n    print('Rechazo coherencia:',error)\n"
+            "else:\n    raise AssertionError('Mutation accepted')\n"
+            "print('Paquete original positivo aceptado:',good['breach'])"
+        ),
+        nbformat.v4.new_code_cell(
+            "v=json.loads(Path('results/packet-summary.json').read_text())\n"
+            "print({k:v[k] for k in ['valid_packets','invalid_mutants',"
+            "'json_invalid_accepted','validator_invalid_accepted','validator_valid_rejected']})\n"
+            "assert v['validator_invalid_accepted']==0 and v['validator_valid_rejected']==0\n"
+            "negative=json.loads(Path('results/packet-negative-control.json').read_text())\n"
+            "assert decode(encode(negative['forged_packet']).encode()) == negative['forged_packet']\n"
+            "print('Control negativo: falsificación coherente aceptada; no hay autenticación.')"
+        ),
+        nbformat.v4.new_markdown_cell(
+            "### Next steps y límites\n\n"
+            "El corpus de mutaciones no es una tasa de ataques reales. El validador rechaza "
+            "inconsistencias pero no demuestra ES verdadero, origen ni frescura; hace falta "
+            "recalcular o verificar procedencia. Ver informe-recepcion.md."
+        ),
+    ]
+)
 for cell in nb.cells:
     if cell.cell_type != "code":
         continue
@@ -119,4 +155,4 @@ for cell in nb.cells:
 nbformat.validate(nb)
 assert all(c.outputs and c.execution_count is not None for c in nb.cells if c.cell_type == "code")
 nbformat.write(nb, project / "notebook.ipynb")
-print("Five code cells executed with real output; notebook validated")
+print("Seven code cells executed with real output; notebook validated")

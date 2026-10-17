@@ -1,0 +1,572 @@
+[
+  {
+    "id": "mutant/144/0:breach",
+    "payload": "{\"backend\":\"float64\",\"breach\":false,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":30.01428571428572,\"es_rational\":{\"denominator\":\"70368744177664\",\"numerator\":\"2112067593103887\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/144/1:output_rounds_to_zero",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":30.01428571428572,\"es_rational\":{\"denominator\":\"70368744177664\",\"numerator\":\"2112067593103887\"},\"fallback_reason\":null,\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/144/2:es_float",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":-30.01428571428572,\"es_rational\":{\"denominator\":\"70368744177664\",\"numerator\":\"2112067593103887\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/144/3:backend",
+    "payload": "{\"backend\":\"unknown\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":30.01428571428572,\"es_rational\":{\"denominator\":\"70368744177664\",\"numerator\":\"2112067593103887\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/144/4:schema",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":30.01428571428572,\"es_rational\":{\"denominator\":\"70368744177664\",\"numerator\":\"2112067593103887\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"unknown\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/144/5:breach",
+    "payload": "{\"backend\":\"float64\",\"breach\":1.0,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":30.01428571428572,\"es_rational\":{\"denominator\":\"70368744177664\",\"numerator\":\"2112067593103887\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/144/6:extra",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":30.01428571428572,\"es_rational\":{\"denominator\":\"70368744177664\",\"numerator\":\"2112067593103887\"},\"extra\":\"field\",\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/144/7:es_rational",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":30.01428571428572,\"es_rational\":{\"denominator\":\"0\",\"numerator\":\"1\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/144/duplicate_breach",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":30.01428571428572,\"es_rational\":{\"denominator\":\"70368744177664\",\"numerator\":\"2112067593103887\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"},\"breach\":false}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/16/0:breach",
+    "payload": "{\"backend\":\"float64\",\"breach\":false,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":92.3,\"es_rational\":{\"denominator\":\"70368744177664\",\"numerator\":\"6495035087598387\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/16/1:output_rounds_to_zero",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":92.3,\"es_rational\":{\"denominator\":\"70368744177664\",\"numerator\":\"6495035087598387\"},\"fallback_reason\":null,\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/16/2:es_float",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":-92.3,\"es_rational\":{\"denominator\":\"70368744177664\",\"numerator\":\"6495035087598387\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/16/3:backend",
+    "payload": "{\"backend\":\"unknown\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":92.3,\"es_rational\":{\"denominator\":\"70368744177664\",\"numerator\":\"6495035087598387\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/16/4:schema",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":92.3,\"es_rational\":{\"denominator\":\"70368744177664\",\"numerator\":\"6495035087598387\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"unknown\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/16/5:breach",
+    "payload": "{\"backend\":\"float64\",\"breach\":1.0,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":92.3,\"es_rational\":{\"denominator\":\"70368744177664\",\"numerator\":\"6495035087598387\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/16/6:extra",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":92.3,\"es_rational\":{\"denominator\":\"70368744177664\",\"numerator\":\"6495035087598387\"},\"extra\":\"field\",\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/16/7:es_rational",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":92.3,\"es_rational\":{\"denominator\":\"0\",\"numerator\":\"1\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/16/duplicate_breach",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":92.3,\"es_rational\":{\"denominator\":\"70368744177664\",\"numerator\":\"6495035087598387\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"},\"breach\":false}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/225/0:breach",
+    "payload": "{\"backend\":\"float64\",\"breach\":false,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":3.9999999999999966e+51,\"es_rational\":{\"denominator\":\"1\",\"numerator\":\"3999999999999996649813805235156829646329183066914816\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/225/1:output_rounds_to_zero",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":3.9999999999999966e+51,\"es_rational\":{\"denominator\":\"1\",\"numerator\":\"3999999999999996649813805235156829646329183066914816\"},\"fallback_reason\":null,\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/225/2:es_float",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":-3.9999999999999966e+51,\"es_rational\":{\"denominator\":\"1\",\"numerator\":\"3999999999999996649813805235156829646329183066914816\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/225/3:backend",
+    "payload": "{\"backend\":\"unknown\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":3.9999999999999966e+51,\"es_rational\":{\"denominator\":\"1\",\"numerator\":\"3999999999999996649813805235156829646329183066914816\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/225/4:schema",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":3.9999999999999966e+51,\"es_rational\":{\"denominator\":\"1\",\"numerator\":\"3999999999999996649813805235156829646329183066914816\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"unknown\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/225/5:breach",
+    "payload": "{\"backend\":\"float64\",\"breach\":1.0,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":3.9999999999999966e+51,\"es_rational\":{\"denominator\":\"1\",\"numerator\":\"3999999999999996649813805235156829646329183066914816\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/225/6:extra",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":3.9999999999999966e+51,\"es_rational\":{\"denominator\":\"1\",\"numerator\":\"3999999999999996649813805235156829646329183066914816\"},\"extra\":\"field\",\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/225/7:es_rational",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":3.9999999999999966e+51,\"es_rational\":{\"denominator\":\"0\",\"numerator\":\"1\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/225/duplicate_breach",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":3.9999999999999966e+51,\"es_rational\":{\"denominator\":\"1\",\"numerator\":\"3999999999999996649813805235156829646329183066914816\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"},\"breach\":false}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/94/0:breach",
+    "payload": "{\"backend\":\"float64\",\"breach\":false,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":80.9793103448276,\"es_rational\":{\"denominator\":\"70368744177664\",\"numerator\":\"5698412373338833\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/94/1:output_rounds_to_zero",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":80.9793103448276,\"es_rational\":{\"denominator\":\"70368744177664\",\"numerator\":\"5698412373338833\"},\"fallback_reason\":null,\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/94/2:es_float",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":-80.9793103448276,\"es_rational\":{\"denominator\":\"70368744177664\",\"numerator\":\"5698412373338833\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/94/3:backend",
+    "payload": "{\"backend\":\"unknown\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":80.9793103448276,\"es_rational\":{\"denominator\":\"70368744177664\",\"numerator\":\"5698412373338833\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/94/4:schema",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":80.9793103448276,\"es_rational\":{\"denominator\":\"70368744177664\",\"numerator\":\"5698412373338833\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"unknown\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/94/5:breach",
+    "payload": "{\"backend\":\"float64\",\"breach\":1.0,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":80.9793103448276,\"es_rational\":{\"denominator\":\"70368744177664\",\"numerator\":\"5698412373338833\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/94/6:extra",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":80.9793103448276,\"es_rational\":{\"denominator\":\"70368744177664\",\"numerator\":\"5698412373338833\"},\"extra\":\"field\",\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/94/7:es_rational",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":80.9793103448276,\"es_rational\":{\"denominator\":\"0\",\"numerator\":\"1\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/94/duplicate_breach",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":80.9793103448276,\"es_rational\":{\"denominator\":\"70368744177664\",\"numerator\":\"5698412373338833\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"},\"breach\":false}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/63/0:breach",
+    "payload": "{\"backend\":\"float64\",\"breach\":false,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":97.75205479452055,\"es_rational\":{\"denominator\":\"35184372088832\",\"numerator\":\"3439344668338305\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/63/1:output_rounds_to_zero",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":97.75205479452055,\"es_rational\":{\"denominator\":\"35184372088832\",\"numerator\":\"3439344668338305\"},\"fallback_reason\":null,\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/63/2:es_float",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":-97.75205479452055,\"es_rational\":{\"denominator\":\"35184372088832\",\"numerator\":\"3439344668338305\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/63/3:backend",
+    "payload": "{\"backend\":\"unknown\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":97.75205479452055,\"es_rational\":{\"denominator\":\"35184372088832\",\"numerator\":\"3439344668338305\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/63/4:schema",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":97.75205479452055,\"es_rational\":{\"denominator\":\"35184372088832\",\"numerator\":\"3439344668338305\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"unknown\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/63/5:breach",
+    "payload": "{\"backend\":\"float64\",\"breach\":1.0,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":97.75205479452055,\"es_rational\":{\"denominator\":\"35184372088832\",\"numerator\":\"3439344668338305\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/63/6:extra",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":97.75205479452055,\"es_rational\":{\"denominator\":\"35184372088832\",\"numerator\":\"3439344668338305\"},\"extra\":\"field\",\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/63/7:es_rational",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":97.75205479452055,\"es_rational\":{\"denominator\":\"0\",\"numerator\":\"1\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/63/duplicate_breach",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":97.75205479452055,\"es_rational\":{\"denominator\":\"35184372088832\",\"numerator\":\"3439344668338305\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"},\"breach\":false}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/254/0:breach",
+    "payload": "{\"backend\":\"float64\",\"breach\":false,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":3.999999999999997e-99,\"es_rational\":{\"denominator\":\"615656346818663737691860001564743965704370926101022604186692084441339402679643915803347910232576806887603562348544\",\"numerator\":\"2462625387274653\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/254/1:output_rounds_to_zero",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":3.999999999999997e-99,\"es_rational\":{\"denominator\":\"615656346818663737691860001564743965704370926101022604186692084441339402679643915803347910232576806887603562348544\",\"numerator\":\"2462625387274653\"},\"fallback_reason\":null,\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/254/2:es_float",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":-3.999999999999997e-99,\"es_rational\":{\"denominator\":\"615656346818663737691860001564743965704370926101022604186692084441339402679643915803347910232576806887603562348544\",\"numerator\":\"2462625387274653\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/254/3:backend",
+    "payload": "{\"backend\":\"unknown\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":3.999999999999997e-99,\"es_rational\":{\"denominator\":\"615656346818663737691860001564743965704370926101022604186692084441339402679643915803347910232576806887603562348544\",\"numerator\":\"2462625387274653\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/254/4:schema",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":3.999999999999997e-99,\"es_rational\":{\"denominator\":\"615656346818663737691860001564743965704370926101022604186692084441339402679643915803347910232576806887603562348544\",\"numerator\":\"2462625387274653\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"unknown\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/254/5:breach",
+    "payload": "{\"backend\":\"float64\",\"breach\":1.0,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":3.999999999999997e-99,\"es_rational\":{\"denominator\":\"615656346818663737691860001564743965704370926101022604186692084441339402679643915803347910232576806887603562348544\",\"numerator\":\"2462625387274653\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/254/6:extra",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":3.999999999999997e-99,\"es_rational\":{\"denominator\":\"615656346818663737691860001564743965704370926101022604186692084441339402679643915803347910232576806887603562348544\",\"numerator\":\"2462625387274653\"},\"extra\":\"field\",\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/254/7:es_rational",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":3.999999999999997e-99,\"es_rational\":{\"denominator\":\"0\",\"numerator\":\"1\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/254/duplicate_breach",
+    "payload": "{\"backend\":\"float64\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"binary64-output\",\"es_float\":3.999999999999997e-99,\"es_rational\":{\"denominator\":\"615656346818663737691860001564743965704370926101022604186692084441339402679643915803347910232576806887603562348544\",\"numerator\":\"2462625387274653\"},\"fallback_reason\":null,\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"},\"breach\":false}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/382/0:breach",
+    "payload": "{\"backend\":\"fraction\",\"breach\":false,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"30184411756653047266798468070718237417599399961789221142518801149534678355204867187954622305497444004138947530314020109758144644503146535573047972383082347217328752830155185571681769977866752439900124845286822346246281087178347209986344080046382201694297610866913409598928567567037707435364822187303764956877318518636627076213977561294702150549081369382577803892605834644687717105417245332292231232108631912464053474320633216275728336343876375401815831253042676839006262257024757267562589269856594477366381866567510017863422660720116524414381212266099342443647707962287350784160988856091096226011102616267676325400032636270061945\",\"numerator\":\"120737647026612087728900491452583816446970582613021297331399773864308154822557696\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/382/1:output_rounds_to_zero",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"30184411756653047266798468070718237417599399961789221142518801149534678355204867187954622305497444004138947530314020109758144644503146535573047972383082347217328752830155185571681769977866752439900124845286822346246281087178347209986344080046382201694297610866913409598928567567037707435364822187303764956877318518636627076213977561294702150549081369382577803892605834644687717105417245332292231232108631912464053474320633216275728336343876375401815831253042676839006262257024757267562589269856594477366381866567510017863422660720116524414381212266099342443647707962287350784160988856091096226011102616267676325400032636270061945\",\"numerator\":\"120737647026612087728900491452583816446970582613021297331399773864308154822557696\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/382/2:es_float",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":1.0,\"es_rational\":{\"denominator\":\"30184411756653047266798468070718237417599399961789221142518801149534678355204867187954622305497444004138947530314020109758144644503146535573047972383082347217328752830155185571681769977866752439900124845286822346246281087178347209986344080046382201694297610866913409598928567567037707435364822187303764956877318518636627076213977561294702150549081369382577803892605834644687717105417245332292231232108631912464053474320633216275728336343876375401815831253042676839006262257024757267562589269856594477366381866567510017863422660720116524414381212266099342443647707962287350784160988856091096226011102616267676325400032636270061945\",\"numerator\":\"120737647026612087728900491452583816446970582613021297331399773864308154822557696\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/382/3:backend",
+    "payload": "{\"backend\":\"unknown\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"30184411756653047266798468070718237417599399961789221142518801149534678355204867187954622305497444004138947530314020109758144644503146535573047972383082347217328752830155185571681769977866752439900124845286822346246281087178347209986344080046382201694297610866913409598928567567037707435364822187303764956877318518636627076213977561294702150549081369382577803892605834644687717105417245332292231232108631912464053474320633216275728336343876375401815831253042676839006262257024757267562589269856594477366381866567510017863422660720116524414381212266099342443647707962287350784160988856091096226011102616267676325400032636270061945\",\"numerator\":\"120737647026612087728900491452583816446970582613021297331399773864308154822557696\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/382/4:schema",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"30184411756653047266798468070718237417599399961789221142518801149534678355204867187954622305497444004138947530314020109758144644503146535573047972383082347217328752830155185571681769977866752439900124845286822346246281087178347209986344080046382201694297610866913409598928567567037707435364822187303764956877318518636627076213977561294702150549081369382577803892605834644687717105417245332292231232108631912464053474320633216275728336343876375401815831253042676839006262257024757267562589269856594477366381866567510017863422660720116524414381212266099342443647707962287350784160988856091096226011102616267676325400032636270061945\",\"numerator\":\"120737647026612087728900491452583816446970582613021297331399773864308154822557696\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"unknown\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/382/5:breach",
+    "payload": "{\"backend\":\"fraction\",\"breach\":1.0,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"30184411756653047266798468070718237417599399961789221142518801149534678355204867187954622305497444004138947530314020109758144644503146535573047972383082347217328752830155185571681769977866752439900124845286822346246281087178347209986344080046382201694297610866913409598928567567037707435364822187303764956877318518636627076213977561294702150549081369382577803892605834644687717105417245332292231232108631912464053474320633216275728336343876375401815831253042676839006262257024757267562589269856594477366381866567510017863422660720116524414381212266099342443647707962287350784160988856091096226011102616267676325400032636270061945\",\"numerator\":\"120737647026612087728900491452583816446970582613021297331399773864308154822557696\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/382/6:extra",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"30184411756653047266798468070718237417599399961789221142518801149534678355204867187954622305497444004138947530314020109758144644503146535573047972383082347217328752830155185571681769977866752439900124845286822346246281087178347209986344080046382201694297610866913409598928567567037707435364822187303764956877318518636627076213977561294702150549081369382577803892605834644687717105417245332292231232108631912464053474320633216275728336343876375401815831253042676839006262257024757267562589269856594477366381866567510017863422660720116524414381212266099342443647707962287350784160988856091096226011102616267676325400032636270061945\",\"numerator\":\"120737647026612087728900491452583816446970582613021297331399773864308154822557696\"},\"extra\":\"field\",\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/382/7:es_rational",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"0\",\"numerator\":\"1\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/382/duplicate_breach",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"30184411756653047266798468070718237417599399961789221142518801149534678355204867187954622305497444004138947530314020109758144644503146535573047972383082347217328752830155185571681769977866752439900124845286822346246281087178347209986344080046382201694297610866913409598928567567037707435364822187303764956877318518636627076213977561294702150549081369382577803892605834644687717105417245332292231232108631912464053474320633216275728336343876375401815831253042676839006262257024757267562589269856594477366381866567510017863422660720116524414381212266099342443647707962287350784160988856091096226011102616267676325400032636270061945\",\"numerator\":\"120737647026612087728900491452583816446970582613021297331399773864308154822557696\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"},\"breach\":false}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/348/0:breach",
+    "payload": "{\"backend\":\"fraction\",\"breach\":false,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"36304123742133404936622241201375715886444150312714720193446239218096151480786467798266283896533260848466568116598330508046219828526510430435141833276375965314672884966772879792043623622443572973309530065622431540587328253013447578703693327597188810665119407566596602682488971920822933324230694221267959216579459133783486531065603330519922398897745074441075902680030601603701919594998256625570694181154670428360742131381463465693788252760599301804985223298755135501813434889344135458363989670861227199629213535231839810610262030775\",\"numerator\":\"145216494968533512377358927592307427253778174343634705934936389066295592519552640569796124964426316981269400524874714995610655653888\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/348/1:output_rounds_to_zero",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"36304123742133404936622241201375715886444150312714720193446239218096151480786467798266283896533260848466568116598330508046219828526510430435141833276375965314672884966772879792043623622443572973309530065622431540587328253013447578703693327597188810665119407566596602682488971920822933324230694221267959216579459133783486531065603330519922398897745074441075902680030601603701919594998256625570694181154670428360742131381463465693788252760599301804985223298755135501813434889344135458363989670861227199629213535231839810610262030775\",\"numerator\":\"145216494968533512377358927592307427253778174343634705934936389066295592519552640569796124964426316981269400524874714995610655653888\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/348/2:es_float",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":1.0,\"es_rational\":{\"denominator\":\"36304123742133404936622241201375715886444150312714720193446239218096151480786467798266283896533260848466568116598330508046219828526510430435141833276375965314672884966772879792043623622443572973309530065622431540587328253013447578703693327597188810665119407566596602682488971920822933324230694221267959216579459133783486531065603330519922398897745074441075902680030601603701919594998256625570694181154670428360742131381463465693788252760599301804985223298755135501813434889344135458363989670861227199629213535231839810610262030775\",\"numerator\":\"145216494968533512377358927592307427253778174343634705934936389066295592519552640569796124964426316981269400524874714995610655653888\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/348/3:backend",
+    "payload": "{\"backend\":\"unknown\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"36304123742133404936622241201375715886444150312714720193446239218096151480786467798266283896533260848466568116598330508046219828526510430435141833276375965314672884966772879792043623622443572973309530065622431540587328253013447578703693327597188810665119407566596602682488971920822933324230694221267959216579459133783486531065603330519922398897745074441075902680030601603701919594998256625570694181154670428360742131381463465693788252760599301804985223298755135501813434889344135458363989670861227199629213535231839810610262030775\",\"numerator\":\"145216494968533512377358927592307427253778174343634705934936389066295592519552640569796124964426316981269400524874714995610655653888\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/348/4:schema",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"36304123742133404936622241201375715886444150312714720193446239218096151480786467798266283896533260848466568116598330508046219828526510430435141833276375965314672884966772879792043623622443572973309530065622431540587328253013447578703693327597188810665119407566596602682488971920822933324230694221267959216579459133783486531065603330519922398897745074441075902680030601603701919594998256625570694181154670428360742131381463465693788252760599301804985223298755135501813434889344135458363989670861227199629213535231839810610262030775\",\"numerator\":\"145216494968533512377358927592307427253778174343634705934936389066295592519552640569796124964426316981269400524874714995610655653888\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"unknown\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/348/5:breach",
+    "payload": "{\"backend\":\"fraction\",\"breach\":1.0,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"36304123742133404936622241201375715886444150312714720193446239218096151480786467798266283896533260848466568116598330508046219828526510430435141833276375965314672884966772879792043623622443572973309530065622431540587328253013447578703693327597188810665119407566596602682488971920822933324230694221267959216579459133783486531065603330519922398897745074441075902680030601603701919594998256625570694181154670428360742131381463465693788252760599301804985223298755135501813434889344135458363989670861227199629213535231839810610262030775\",\"numerator\":\"145216494968533512377358927592307427253778174343634705934936389066295592519552640569796124964426316981269400524874714995610655653888\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/348/6:extra",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"36304123742133404936622241201375715886444150312714720193446239218096151480786467798266283896533260848466568116598330508046219828526510430435141833276375965314672884966772879792043623622443572973309530065622431540587328253013447578703693327597188810665119407566596602682488971920822933324230694221267959216579459133783486531065603330519922398897745074441075902680030601603701919594998256625570694181154670428360742131381463465693788252760599301804985223298755135501813434889344135458363989670861227199629213535231839810610262030775\",\"numerator\":\"145216494968533512377358927592307427253778174343634705934936389066295592519552640569796124964426316981269400524874714995610655653888\"},\"extra\":\"field\",\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/348/7:es_rational",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"0\",\"numerator\":\"1\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/348/duplicate_breach",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"36304123742133404936622241201375715886444150312714720193446239218096151480786467798266283896533260848466568116598330508046219828526510430435141833276375965314672884966772879792043623622443572973309530065622431540587328253013447578703693327597188810665119407566596602682488971920822933324230694221267959216579459133783486531065603330519922398897745074441075902680030601603701919594998256625570694181154670428360742131381463465693788252760599301804985223298755135501813434889344135458363989670861227199629213535231839810610262030775\",\"numerator\":\"145216494968533512377358927592307427253778174343634705934936389066295592519552640569796124964426316981269400524874714995610655653888\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"},\"breach\":false}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/347/0:breach",
+    "payload": "{\"backend\":\"fraction\",\"breach\":false,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"7260824748426680987324448240275143177288830062542944038689247843619230296157293559653256779306652169693313623319666101609243965705302086087028366655275193062934576993354575958408724724488714594661906013124486308117465650602689515740738665519437762133023881513319320536497794384164586664846138844253591843315891826756697306213120666103984479779549014888215180536006120320740383918999651325114138836230934085672148426276292693138757650552119860360997044659751027100362686977868827091672797934172245439925842707046367962122052406155\",\"numerator\":\"290432989937067042295362316333214553326578102687521395678370448553480249266929664\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/347/1:output_rounds_to_zero",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"7260824748426680987324448240275143177288830062542944038689247843619230296157293559653256779306652169693313623319666101609243965705302086087028366655275193062934576993354575958408724724488714594661906013124486308117465650602689515740738665519437762133023881513319320536497794384164586664846138844253591843315891826756697306213120666103984479779549014888215180536006120320740383918999651325114138836230934085672148426276292693138757650552119860360997044659751027100362686977868827091672797934172245439925842707046367962122052406155\",\"numerator\":\"290432989937067042295362316333214553326578102687521395678370448553480249266929664\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/347/2:es_float",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":1.0,\"es_rational\":{\"denominator\":\"7260824748426680987324448240275143177288830062542944038689247843619230296157293559653256779306652169693313623319666101609243965705302086087028366655275193062934576993354575958408724724488714594661906013124486308117465650602689515740738665519437762133023881513319320536497794384164586664846138844253591843315891826756697306213120666103984479779549014888215180536006120320740383918999651325114138836230934085672148426276292693138757650552119860360997044659751027100362686977868827091672797934172245439925842707046367962122052406155\",\"numerator\":\"290432989937067042295362316333214553326578102687521395678370448553480249266929664\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/347/3:backend",
+    "payload": "{\"backend\":\"unknown\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"7260824748426680987324448240275143177288830062542944038689247843619230296157293559653256779306652169693313623319666101609243965705302086087028366655275193062934576993354575958408724724488714594661906013124486308117465650602689515740738665519437762133023881513319320536497794384164586664846138844253591843315891826756697306213120666103984479779549014888215180536006120320740383918999651325114138836230934085672148426276292693138757650552119860360997044659751027100362686977868827091672797934172245439925842707046367962122052406155\",\"numerator\":\"290432989937067042295362316333214553326578102687521395678370448553480249266929664\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/347/4:schema",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"7260824748426680987324448240275143177288830062542944038689247843619230296157293559653256779306652169693313623319666101609243965705302086087028366655275193062934576993354575958408724724488714594661906013124486308117465650602689515740738665519437762133023881513319320536497794384164586664846138844253591843315891826756697306213120666103984479779549014888215180536006120320740383918999651325114138836230934085672148426276292693138757650552119860360997044659751027100362686977868827091672797934172245439925842707046367962122052406155\",\"numerator\":\"290432989937067042295362316333214553326578102687521395678370448553480249266929664\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"unknown\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/347/5:breach",
+    "payload": "{\"backend\":\"fraction\",\"breach\":1.0,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"7260824748426680987324448240275143177288830062542944038689247843619230296157293559653256779306652169693313623319666101609243965705302086087028366655275193062934576993354575958408724724488714594661906013124486308117465650602689515740738665519437762133023881513319320536497794384164586664846138844253591843315891826756697306213120666103984479779549014888215180536006120320740383918999651325114138836230934085672148426276292693138757650552119860360997044659751027100362686977868827091672797934172245439925842707046367962122052406155\",\"numerator\":\"290432989937067042295362316333214553326578102687521395678370448553480249266929664\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/347/6:extra",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"7260824748426680987324448240275143177288830062542944038689247843619230296157293559653256779306652169693313623319666101609243965705302086087028366655275193062934576993354575958408724724488714594661906013124486308117465650602689515740738665519437762133023881513319320536497794384164586664846138844253591843315891826756697306213120666103984479779549014888215180536006120320740383918999651325114138836230934085672148426276292693138757650552119860360997044659751027100362686977868827091672797934172245439925842707046367962122052406155\",\"numerator\":\"290432989937067042295362316333214553326578102687521395678370448553480249266929664\"},\"extra\":\"field\",\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/347/7:es_rational",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"0\",\"numerator\":\"1\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/347/duplicate_breach",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"7260824748426680987324448240275143177288830062542944038689247843619230296157293559653256779306652169693313623319666101609243965705302086087028366655275193062934576993354575958408724724488714594661906013124486308117465650602689515740738665519437762133023881513319320536497794384164586664846138844253591843315891826756697306213120666103984479779549014888215180536006120320740383918999651325114138836230934085672148426276292693138757650552119860360997044659751027100362686977868827091672797934172245439925842707046367962122052406155\",\"numerator\":\"290432989937067042295362316333214553326578102687521395678370448553480249266929664\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"},\"breach\":false}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/377/0:breach",
+    "payload": "{\"backend\":\"fraction\",\"breach\":false,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"2716597058098773897029473760079413318830177414875231563992085506440260991200329923945801577682411116192405731055745298699381821913544348833059680714779443655311959767531288475511019260227643570120688384340447566907895453836827364359004476341156621187668325841363291610079890269885048893273954387368317994101612903116265122110483336123235828266512608818970323977824855479111486046051170711512513128525611425237126302974671051335848071288722072316205156141264120583015646235688804888299281137019000411286102035393646648478652774000175209000929615188189385697542473075147371809731905\",\"numerator\":\"1086638823239508789560104423073254348022735243517191675982597964778773393403019264\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/377/1:output_rounds_to_zero",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"2716597058098773897029473760079413318830177414875231563992085506440260991200329923945801577682411116192405731055745298699381821913544348833059680714779443655311959767531288475511019260227643570120688384340447566907895453836827364359004476341156621187668325841363291610079890269885048893273954387368317994101612903116265122110483336123235828266512608818970323977824855479111486046051170711512513128525611425237126302974671051335848071288722072316205156141264120583015646235688804888299281137019000411286102035393646648478652774000175209000929615188189385697542473075147371809731905\",\"numerator\":\"1086638823239508789560104423073254348022735243517191675982597964778773393403019264\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/377/2:es_float",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":1.0,\"es_rational\":{\"denominator\":\"2716597058098773897029473760079413318830177414875231563992085506440260991200329923945801577682411116192405731055745298699381821913544348833059680714779443655311959767531288475511019260227643570120688384340447566907895453836827364359004476341156621187668325841363291610079890269885048893273954387368317994101612903116265122110483336123235828266512608818970323977824855479111486046051170711512513128525611425237126302974671051335848071288722072316205156141264120583015646235688804888299281137019000411286102035393646648478652774000175209000929615188189385697542473075147371809731905\",\"numerator\":\"1086638823239508789560104423073254348022735243517191675982597964778773393403019264\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/377/3:backend",
+    "payload": "{\"backend\":\"unknown\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"2716597058098773897029473760079413318830177414875231563992085506440260991200329923945801577682411116192405731055745298699381821913544348833059680714779443655311959767531288475511019260227643570120688384340447566907895453836827364359004476341156621187668325841363291610079890269885048893273954387368317994101612903116265122110483336123235828266512608818970323977824855479111486046051170711512513128525611425237126302974671051335848071288722072316205156141264120583015646235688804888299281137019000411286102035393646648478652774000175209000929615188189385697542473075147371809731905\",\"numerator\":\"1086638823239508789560104423073254348022735243517191675982597964778773393403019264\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/377/4:schema",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"2716597058098773897029473760079413318830177414875231563992085506440260991200329923945801577682411116192405731055745298699381821913544348833059680714779443655311959767531288475511019260227643570120688384340447566907895453836827364359004476341156621187668325841363291610079890269885048893273954387368317994101612903116265122110483336123235828266512608818970323977824855479111486046051170711512513128525611425237126302974671051335848071288722072316205156141264120583015646235688804888299281137019000411286102035393646648478652774000175209000929615188189385697542473075147371809731905\",\"numerator\":\"1086638823239508789560104423073254348022735243517191675982597964778773393403019264\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"unknown\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/377/5:breach",
+    "payload": "{\"backend\":\"fraction\",\"breach\":1.0,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"2716597058098773897029473760079413318830177414875231563992085506440260991200329923945801577682411116192405731055745298699381821913544348833059680714779443655311959767531288475511019260227643570120688384340447566907895453836827364359004476341156621187668325841363291610079890269885048893273954387368317994101612903116265122110483336123235828266512608818970323977824855479111486046051170711512513128525611425237126302974671051335848071288722072316205156141264120583015646235688804888299281137019000411286102035393646648478652774000175209000929615188189385697542473075147371809731905\",\"numerator\":\"1086638823239508789560104423073254348022735243517191675982597964778773393403019264\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/377/6:extra",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"2716597058098773897029473760079413318830177414875231563992085506440260991200329923945801577682411116192405731055745298699381821913544348833059680714779443655311959767531288475511019260227643570120688384340447566907895453836827364359004476341156621187668325841363291610079890269885048893273954387368317994101612903116265122110483336123235828266512608818970323977824855479111486046051170711512513128525611425237126302974671051335848071288722072316205156141264120583015646235688804888299281137019000411286102035393646648478652774000175209000929615188189385697542473075147371809731905\",\"numerator\":\"1086638823239508789560104423073254348022735243517191675982597964778773393403019264\"},\"extra\":\"field\",\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/377/7:es_rational",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"0\",\"numerator\":\"1\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/377/duplicate_breach",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"2716597058098773897029473760079413318830177414875231563992085506440260991200329923945801577682411116192405731055745298699381821913544348833059680714779443655311959767531288475511019260227643570120688384340447566907895453836827364359004476341156621187668325841363291610079890269885048893273954387368317994101612903116265122110483336123235828266512608818970323977824855479111486046051170711512513128525611425237126302974671051335848071288722072316205156141264120583015646235688804888299281137019000411286102035393646648478652774000175209000929615188189385697542473075147371809731905\",\"numerator\":\"1086638823239508789560104423073254348022735243517191675982597964778773393403019264\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"},\"breach\":false}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/352/0:breach",
+    "payload": "{\"backend\":\"fraction\",\"breach\":false,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"726082474842668194145437799010907645652165712368766209414835869627011096426364275620356670974534849825046238161047665830497573495362502082481717850226002958159418014880061697736061571516275862319099005262827345847427108669974456465351839436962391248155980956028899933157379154792292753397540817633718091408112207077796238293880747092618350998463734619101782879955605693333942204575423589903591451134655744278325511260645176923174833542896819956625660152782776786320850502310829010846822603901917948554076280107387058374257261299298835489775511656351707227013089923892517272783755\",\"numerator\":\"290432989937067042295362316333214553326578102687521395678370448553480249266929664\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/352/1:output_rounds_to_zero",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"726082474842668194145437799010907645652165712368766209414835869627011096426364275620356670974534849825046238161047665830497573495362502082481717850226002958159418014880061697736061571516275862319099005262827345847427108669974456465351839436962391248155980956028899933157379154792292753397540817633718091408112207077796238293880747092618350998463734619101782879955605693333942204575423589903591451134655744278325511260645176923174833542896819956625660152782776786320850502310829010846822603901917948554076280107387058374257261299298835489775511656351707227013089923892517272783755\",\"numerator\":\"290432989937067042295362316333214553326578102687521395678370448553480249266929664\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/352/2:es_float",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":1.0,\"es_rational\":{\"denominator\":\"726082474842668194145437799010907645652165712368766209414835869627011096426364275620356670974534849825046238161047665830497573495362502082481717850226002958159418014880061697736061571516275862319099005262827345847427108669974456465351839436962391248155980956028899933157379154792292753397540817633718091408112207077796238293880747092618350998463734619101782879955605693333942204575423589903591451134655744278325511260645176923174833542896819956625660152782776786320850502310829010846822603901917948554076280107387058374257261299298835489775511656351707227013089923892517272783755\",\"numerator\":\"290432989937067042295362316333214553326578102687521395678370448553480249266929664\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/352/3:backend",
+    "payload": "{\"backend\":\"unknown\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"726082474842668194145437799010907645652165712368766209414835869627011096426364275620356670974534849825046238161047665830497573495362502082481717850226002958159418014880061697736061571516275862319099005262827345847427108669974456465351839436962391248155980956028899933157379154792292753397540817633718091408112207077796238293880747092618350998463734619101782879955605693333942204575423589903591451134655744278325511260645176923174833542896819956625660152782776786320850502310829010846822603901917948554076280107387058374257261299298835489775511656351707227013089923892517272783755\",\"numerator\":\"290432989937067042295362316333214553326578102687521395678370448553480249266929664\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/352/4:schema",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"726082474842668194145437799010907645652165712368766209414835869627011096426364275620356670974534849825046238161047665830497573495362502082481717850226002958159418014880061697736061571516275862319099005262827345847427108669974456465351839436962391248155980956028899933157379154792292753397540817633718091408112207077796238293880747092618350998463734619101782879955605693333942204575423589903591451134655744278325511260645176923174833542896819956625660152782776786320850502310829010846822603901917948554076280107387058374257261299298835489775511656351707227013089923892517272783755\",\"numerator\":\"290432989937067042295362316333214553326578102687521395678370448553480249266929664\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"unknown\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/352/5:breach",
+    "payload": "{\"backend\":\"fraction\",\"breach\":1.0,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"726082474842668194145437799010907645652165712368766209414835869627011096426364275620356670974534849825046238161047665830497573495362502082481717850226002958159418014880061697736061571516275862319099005262827345847427108669974456465351839436962391248155980956028899933157379154792292753397540817633718091408112207077796238293880747092618350998463734619101782879955605693333942204575423589903591451134655744278325511260645176923174833542896819956625660152782776786320850502310829010846822603901917948554076280107387058374257261299298835489775511656351707227013089923892517272783755\",\"numerator\":\"290432989937067042295362316333214553326578102687521395678370448553480249266929664\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/352/6:extra",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"726082474842668194145437799010907645652165712368766209414835869627011096426364275620356670974534849825046238161047665830497573495362502082481717850226002958159418014880061697736061571516275862319099005262827345847427108669974456465351839436962391248155980956028899933157379154792292753397540817633718091408112207077796238293880747092618350998463734619101782879955605693333942204575423589903591451134655744278325511260645176923174833542896819956625660152782776786320850502310829010846822603901917948554076280107387058374257261299298835489775511656351707227013089923892517272783755\",\"numerator\":\"290432989937067042295362316333214553326578102687521395678370448553480249266929664\"},\"extra\":\"field\",\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/352/7:es_rational",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"0\",\"numerator\":\"1\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/352/duplicate_breach",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":0.0,\"es_rational\":{\"denominator\":\"726082474842668194145437799010907645652165712368766209414835869627011096426364275620356670974534849825046238161047665830497573495362502082481717850226002958159418014880061697736061571516275862319099005262827345847427108669974456465351839436962391248155980956028899933157379154792292753397540817633718091408112207077796238293880747092618350998463734619101782879955605693333942204575423589903591451134655744278325511260645176923174833542896819956625660152782776786320850502310829010846822603901917948554076280107387058374257261299298835489775511656351707227013089923892517272783755\",\"numerator\":\"290432989937067042295362316333214553326578102687521395678370448553480249266929664\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"},\"breach\":false}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/351/0:breach",
+    "payload": "{\"backend\":\"fraction\",\"breach\":false,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":3.999999999999997e-191,\"es_rational\":{\"denominator\":\"36304123742133404936622241201375715886444150312714720193446239218096151480786467798266283896533260848466568116598330508046219828526510430435141833276375965314672884966772879792043623622443572973309530065622431540587328253013447578703693327597188810665119407566596602682488971920822933324230694221267959216579459133783486531065603330519922398897745074441075902680030601603701919594998256625570694181154670428360742131381463465693788252760599301804985223298755135501813434889344135458363989670861227199629213535231839810610262030775\",\"numerator\":\"1452164949685335116623379590705691517606945536681972485946154046589687437471933765948379803937107226600632710658674930430457718008579869887513235860885546525329092206821353302738443666926731241300673627926006734717907965641652964576336178426162173221067416600108866714386160079887311276311484903268927900250262095523709591903199236081057792\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/351/1:output_rounds_to_zero",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":3.999999999999997e-191,\"es_rational\":{\"denominator\":\"36304123742133404936622241201375715886444150312714720193446239218096151480786467798266283896533260848466568116598330508046219828526510430435141833276375965314672884966772879792043623622443572973309530065622431540587328253013447578703693327597188810665119407566596602682488971920822933324230694221267959216579459133783486531065603330519922398897745074441075902680030601603701919594998256625570694181154670428360742131381463465693788252760599301804985223298755135501813434889344135458363989670861227199629213535231839810610262030775\",\"numerator\":\"1452164949685335116623379590705691517606945536681972485946154046589687437471933765948379803937107226600632710658674930430457718008579869887513235860885546525329092206821353302738443666926731241300673627926006734717907965641652964576336178426162173221067416600108866714386160079887311276311484903268927900250262095523709591903199236081057792\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":true,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/351/2:es_float",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":-3.999999999999997e-191,\"es_rational\":{\"denominator\":\"36304123742133404936622241201375715886444150312714720193446239218096151480786467798266283896533260848466568116598330508046219828526510430435141833276375965314672884966772879792043623622443572973309530065622431540587328253013447578703693327597188810665119407566596602682488971920822933324230694221267959216579459133783486531065603330519922398897745074441075902680030601603701919594998256625570694181154670428360742131381463465693788252760599301804985223298755135501813434889344135458363989670861227199629213535231839810610262030775\",\"numerator\":\"1452164949685335116623379590705691517606945536681972485946154046589687437471933765948379803937107226600632710658674930430457718008579869887513235860885546525329092206821353302738443666926731241300673627926006734717907965641652964576336178426162173221067416600108866714386160079887311276311484903268927900250262095523709591903199236081057792\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/351/3:backend",
+    "payload": "{\"backend\":\"unknown\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":3.999999999999997e-191,\"es_rational\":{\"denominator\":\"36304123742133404936622241201375715886444150312714720193446239218096151480786467798266283896533260848466568116598330508046219828526510430435141833276375965314672884966772879792043623622443572973309530065622431540587328253013447578703693327597188810665119407566596602682488971920822933324230694221267959216579459133783486531065603330519922398897745074441075902680030601603701919594998256625570694181154670428360742131381463465693788252760599301804985223298755135501813434889344135458363989670861227199629213535231839810610262030775\",\"numerator\":\"1452164949685335116623379590705691517606945536681972485946154046589687437471933765948379803937107226600632710658674930430457718008579869887513235860885546525329092206821353302738443666926731241300673627926006734717907965641652964576336178426162173221067416600108866714386160079887311276311484903268927900250262095523709591903199236081057792\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/351/4:schema",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":3.999999999999997e-191,\"es_rational\":{\"denominator\":\"36304123742133404936622241201375715886444150312714720193446239218096151480786467798266283896533260848466568116598330508046219828526510430435141833276375965314672884966772879792043623622443572973309530065622431540587328253013447578703693327597188810665119407566596602682488971920822933324230694221267959216579459133783486531065603330519922398897745074441075902680030601603701919594998256625570694181154670428360742131381463465693788252760599301804985223298755135501813434889344135458363989670861227199629213535231839810610262030775\",\"numerator\":\"1452164949685335116623379590705691517606945536681972485946154046589687437471933765948379803937107226600632710658674930430457718008579869887513235860885546525329092206821353302738443666926731241300673627926006734717907965641652964576336178426162173221067416600108866714386160079887311276311484903268927900250262095523709591903199236081057792\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":false,\"schema\":\"unknown\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/351/5:breach",
+    "payload": "{\"backend\":\"fraction\",\"breach\":1.0,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":3.999999999999997e-191,\"es_rational\":{\"denominator\":\"36304123742133404936622241201375715886444150312714720193446239218096151480786467798266283896533260848466568116598330508046219828526510430435141833276375965314672884966772879792043623622443572973309530065622431540587328253013447578703693327597188810665119407566596602682488971920822933324230694221267959216579459133783486531065603330519922398897745074441075902680030601603701919594998256625570694181154670428360742131381463465693788252760599301804985223298755135501813434889344135458363989670861227199629213535231839810610262030775\",\"numerator\":\"1452164949685335116623379590705691517606945536681972485946154046589687437471933765948379803937107226600632710658674930430457718008579869887513235860885546525329092206821353302738443666926731241300673627926006734717907965641652964576336178426162173221067416600108866714386160079887311276311484903268927900250262095523709591903199236081057792\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/351/6:extra",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":3.999999999999997e-191,\"es_rational\":{\"denominator\":\"36304123742133404936622241201375715886444150312714720193446239218096151480786467798266283896533260848466568116598330508046219828526510430435141833276375965314672884966772879792043623622443572973309530065622431540587328253013447578703693327597188810665119407566596602682488971920822933324230694221267959216579459133783486531065603330519922398897745074441075902680030601603701919594998256625570694181154670428360742131381463465693788252760599301804985223298755135501813434889344135458363989670861227199629213535231839810610262030775\",\"numerator\":\"1452164949685335116623379590705691517606945536681972485946154046589687437471933765948379803937107226600632710658674930430457718008579869887513235860885546525329092206821353302738443666926731241300673627926006734717907965641652964576336178426162173221067416600108866714386160079887311276311484903268927900250262095523709591903199236081057792\"},\"extra\":\"field\",\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/351/7:es_rational",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":3.999999999999997e-191,\"es_rational\":{\"denominator\":\"0\",\"numerator\":\"1\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "mutant/351/duplicate_breach",
+    "payload": "{\"backend\":\"fraction\",\"breach\":true,\"comparison\":\">\",\"comparison_basis\":\"exact-input-rational\",\"es_float\":3.999999999999997e-191,\"es_rational\":{\"denominator\":\"36304123742133404936622241201375715886444150312714720193446239218096151480786467798266283896533260848466568116598330508046219828526510430435141833276375965314672884966772879792043623622443572973309530065622431540587328253013447578703693327597188810665119407566596602682488971920822933324230694221267959216579459133783486531065603330519922398897745074441075902680030601603701919594998256625570694181154670428360742131381463465693788252760599301804985223298755135501813434889344135458363989670861227199629213535231839810610262030775\",\"numerator\":\"1452164949685335116623379590705691517606945536681972485946154046589687437471933765948379803937107226600632710658674930430457718008579869887513235860885546525329092206821353302738443666926731241300673627926006734717907965641652964576336178426162173221067416600108866714386160079887311276311484903268927900250262095523709591903199236081057792\"},\"fallback_reason\":\"underflow encountered in divide\",\"output_rounds_to_zero\":false,\"schema\":\"weighted-es-decision/v1\",\"status\":\"accepted\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"},\"breach\":false}",
+    "expected_valid": false
+  },
+  {
+    "id": "rejected/0/breach",
+    "payload": "{\"breach\":false,\"comparison\":\">\",\"reason\":\"underflow encountered in divide\",\"schema\":\"weighted-es-decision/v1\",\"status\":\"rejected\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "rejected/0/reason",
+    "payload": "{\"breach\":null,\"comparison\":\">\",\"reason\":\"\",\"schema\":\"weighted-es-decision/v1\",\"status\":\"rejected\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "rejected/0/es_float",
+    "payload": "{\"breach\":null,\"comparison\":\">\",\"es_float\":0.0,\"reason\":\"underflow encountered in divide\",\"schema\":\"weighted-es-decision/v1\",\"status\":\"rejected\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "rejected/1/breach",
+    "payload": "{\"breach\":false,\"comparison\":\">\",\"reason\":\"exact fallback exceeds cap=1; underflow encountered in divide\",\"schema\":\"weighted-es-decision/v1\",\"status\":\"rejected\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "rejected/1/reason",
+    "payload": "{\"breach\":null,\"comparison\":\">\",\"reason\":\"\",\"schema\":\"weighted-es-decision/v1\",\"status\":\"rejected\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  },
+  {
+    "id": "rejected/1/es_float",
+    "payload": "{\"breach\":null,\"comparison\":\">\",\"es_float\":0.0,\"reason\":\"exact fallback exceeds cap=1; underflow encountered in divide\",\"schema\":\"weighted-es-decision/v1\",\"status\":\"rejected\",\"threshold\":{\"denominator\":\"1\",\"numerator\":\"0\"}}",
+    "expected_valid": false
+  }
+]
