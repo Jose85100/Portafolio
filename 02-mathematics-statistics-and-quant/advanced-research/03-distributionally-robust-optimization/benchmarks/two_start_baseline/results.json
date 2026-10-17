@@ -1,0 +1,98 @@
+{
+  "success": false,
+  "checks": {
+    "max_kl_violation": 0.0,
+    "max_mass_error": 5.551115123125783e-16,
+    "max_scaled_duality_gap": 3.677613769070831e-13,
+    "accepted_slsqp_fraction": 1.0,
+    "max_scaled_slsqp_difference": 9.81674873906436e-05,
+    "max_binary_oracle_error": 5.059008767460682e-13,
+    "rare_approximation_underestimate": 0.0026922119753416763
+  },
+  "summary": [
+    {
+      "n": 3,
+      "cases": 18,
+      "slsqp_accepted": 18,
+      "max_gap": 3.677613769070831e-13,
+      "root_median_ms": 2.3411960000316867,
+      "slsqp_median_ms": 1.8697104999887415,
+      "approximation_median_ms": 0.027770500025781075,
+      "root_peak_bytes": 5085,
+      "slsqp_peak_bytes": 15669
+    },
+    {
+      "n": 16,
+      "cases": 18,
+      "slsqp_accepted": 18,
+      "max_gap": 3.5743630277806915e-13,
+      "root_median_ms": 2.255018999960612,
+      "slsqp_median_ms": 15.885096999966208,
+      "approximation_median_ms": 0.03455099994198463,
+      "root_peak_bytes": 5355,
+      "slsqp_peak_bytes": 38771
+    },
+    {
+      "n": 64,
+      "cases": 18,
+      "slsqp_accepted": 18,
+      "max_gap": 3.5599301284605644e-13,
+      "root_median_ms": 2.2058520000314275,
+      "slsqp_median_ms": 309.04393300005495,
+      "approximation_median_ms": 0.03618850001885221,
+      "root_peak_bytes": 8369,
+      "slsqp_peak_bytes": 325191
+    }
+  ],
+  "decision": {
+    "nominal_risky_loss": 0.001,
+    "mean_variance_risky_loss": 0.005469899327725402,
+    "exact_robust_risky_loss": 0.008162111303067078,
+    "dual_upper": 0.008162111303079533,
+    "binary_oracle": 0.00816211130307954,
+    "radius": 0.01,
+    "safe_loss": 0.006,
+    "nominal_action": 0,
+    "approximate_action": 0,
+    "robust_action": 1,
+    "action_labels": [
+      "risky",
+      "safe"
+    ],
+    "scenarios": [
+      {
+        "scenario": "nominal",
+        "true_rare_probability": 0.001,
+        "kl_to_nominal": 0.0,
+        "inside_radius": true,
+        "nominal_action_loss": 0.001,
+        "approximate_action_loss": 0.001,
+        "robust_action_loss": 0.006,
+        "best_action_loss": 0.001
+      },
+      {
+        "scenario": "shifted",
+        "true_rare_probability": 0.007,
+        "kl_to_nominal": 0.0076394252422299575,
+        "inside_radius": true,
+        "nominal_action_loss": 0.007,
+        "approximate_action_loss": 0.007,
+        "robust_action_loss": 0.006,
+        "best_action_loss": 0.006
+      }
+    ]
+  },
+  "cases": 54,
+  "approximation_underestimates": 35,
+  "approximation_overestimates": 19,
+  "rejected_slsqp": [],
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "logical_cpus": 9,
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "blas_threads": "1"
+  }
+}
