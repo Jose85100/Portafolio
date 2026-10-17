@@ -74,3 +74,10 @@ dimensión afín, oracle LP y regresiones de los MVP anteriores.
 exportación estratégica racional y contraste ejecutado con Nashpy externo; diagnóstico
 de degeneración y control negativo del regret ex ante en tipos raros. Componente S2,
 Endogenous Credit Freeze sigue S2 parcial; no hay nueva validación empírica.
+
+## Ciclo diario 2026-10-17
+
+[Rational Family Audit](03-game-theory/01-endogenous-credit-freeze/rational-family-audit/):
+parser y solver racional Gambit ejecutados, reconstrucción local de familias por
+compatibilidad y comparación exacta con los poliedros del repo. Extensión S2 del
+componente finito, sin elevar el programa completo a S3.

@@ -1,0 +1,17 @@
+test_additional_equilibrium_not_new_extrema (test_mixed.MixedTests.test_additional_equilibrium_not_new_extrema) ... ok
+test_degenerate_fail_closed (test_mixed.MixedTests.test_degenerate_fail_closed) ... ok
+test_exact_oracle (test_mixed.MixedTests.test_exact_oracle) ... ok
+test_fully_mixed_infeasible_main (test_mixed.MixedTests.test_fully_mixed_infeasible_main) ... ok
+test_lp_failure_not_infeasibility (test_mixed.MixedTests.test_lp_failure_not_infeasibility) ... ok
+test_main_five (test_mixed.MixedTests.test_main_five) ... ok
+test_no_externality_unique (test_mixed.MixedTests.test_no_externality_unique) ... ok
+test_oracle_property (test_mixed.MixedTests.test_oracle_property) ... ok
+test_outcome_matches_pure (test_mixed.MixedTests.test_outcome_matches_pure) ... ok
+test_probability_property (test_mixed.MixedTests.test_probability_property) ... ok
+test_pure_contained (test_mixed.MixedTests.test_pure_contained) ... ok
+test_validation (test_mixed.MixedTests.test_validation) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.314s
+
+OK

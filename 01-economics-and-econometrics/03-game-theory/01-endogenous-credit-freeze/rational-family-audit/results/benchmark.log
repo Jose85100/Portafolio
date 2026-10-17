@@ -1,0 +1,68 @@
+[
+  {
+    "scenario": "regular",
+    "gambit_profiles": 5,
+    "baseline_families": 5,
+    "reconstructed_families": 5,
+    "dimensions": "[0, 0, 0, 0, 0]",
+    "exact_equal": true,
+    "max_interim_regret": "0",
+    "external_seconds": 0.026058858999931545,
+    "baseline_seconds": 0.06374450099997375,
+    "external_peak_python_bytes": 19468,
+    "baseline_peak_python_bytes": 167771
+  },
+  {
+    "scenario": "coordination_family",
+    "gambit_profiles": 11,
+    "baseline_families": 3,
+    "reconstructed_families": 3,
+    "dimensions": "[0, 2, 0]",
+    "exact_equal": true,
+    "max_interim_regret": "0",
+    "external_seconds": 0.03333096899996235,
+    "baseline_seconds": 0.07610332400008701,
+    "external_peak_python_bytes": 21452,
+    "baseline_peak_python_bytes": 107832
+  },
+  {
+    "scenario": "full_indifference",
+    "gambit_profiles": 16,
+    "baseline_families": 1,
+    "reconstructed_families": 1,
+    "dimensions": "[4]",
+    "exact_equal": true,
+    "max_interim_regret": "0",
+    "external_seconds": 0.02568183800008228,
+    "baseline_seconds": 0.21647575700001198,
+    "external_peak_python_bytes": 21824,
+    "baseline_peak_python_bytes": 125264
+  },
+  {
+    "scenario": "singular_isolated",
+    "gambit_profiles": 2,
+    "baseline_families": 2,
+    "reconstructed_families": 2,
+    "dimensions": "[0, 0]",
+    "exact_equal": true,
+    "max_interim_regret": "0",
+    "external_seconds": 0.016244058999973277,
+    "baseline_seconds": 0.04682601399997566,
+    "external_peak_python_bytes": 7720,
+    "baseline_peak_python_bytes": 101704
+  },
+  {
+    "scenario": "near_family",
+    "gambit_profiles": 5,
+    "baseline_families": 5,
+    "reconstructed_families": 5,
+    "dimensions": "[0, 0, 0, 0, 0]",
+    "exact_equal": true,
+    "max_interim_regret": "0",
+    "external_seconds": 0.04785132799997882,
+    "baseline_seconds": 0.10552427799996167,
+    "external_peak_python_bytes": 19140,
+    "baseline_peak_python_bytes": 138428
+  }
+]
+Exact sample regret zero: 380
