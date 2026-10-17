@@ -1,0 +1,22 @@
+name: KL robust expectation audit
+on:
+  push:
+    paths:
+      - '02-mathematics-statistics-and-quant/advanced-research/03-distributionally-robust-optimization/**'
+      - '.github/workflows/kl-robust-expectation.yml'
+  pull_request:
+    paths:
+      - '02-mathematics-statistics-and-quant/advanced-research/03-distributionally-robust-optimization/**'
+      - '.github/workflows/kl-robust-expectation.yml'
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Reproduce complete MVP
+        working-directory: 02-mathematics-statistics-and-quant/advanced-research/03-distributionally-robust-optimization
+        run: make run

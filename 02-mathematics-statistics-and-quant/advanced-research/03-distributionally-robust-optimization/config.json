@@ -1,0 +1,16 @@
+{
+  "sizes": [3, 16, 64],
+  "seeds": [20261016, 20261017, 20261018],
+  "radii": [0.001, 0.05, 0.5],
+  "loss_families": ["bounded", "rare_spike"],
+  "gate": {
+    "max_kl_violation": 1e-10,
+    "max_mass_error": 1e-12,
+    "max_scaled_duality_gap": 1e-9,
+    "max_scaled_difference_from_accepted_slsqp": 1e-5,
+    "minimum_accepted_slsqp_fraction": 0.8,
+    "max_binary_oracle_error": 1e-10,
+    "minimum_rare_case_approximation_underestimate": 0.001
+  },
+  "decision_example": {"rare_probability": 0.001, "radius": 0.01, "safe_loss": 0.006}
+}
