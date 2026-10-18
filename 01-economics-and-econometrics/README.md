@@ -10,7 +10,7 @@ Economía teórica, econometría avanzada y simulación computacional con énfas
 - [Econometría](04-econometrics/) — 2 programas
 - [Macrofinanzas](05-macrofinance/) — 2 programas
 
-**Total: 12 programas de investigación: 10 en S1 y dos con componentes en S2.** Los documentos describen hipótesis, modelos, identificación, fuentes potenciales, validación y límites. Real-Time Causal Nowcasting y Endogenous Credit Freeze incluyen ahora prototipos sintéticos ejecutables; no hay resultados empíricos de esos programas.
+**Total: 12 programas de investigación: nueve en S1 y tres con componentes en S2.** Los documentos describen hipótesis, modelos, identificación, fuentes potenciales, validación y límites. Real-Time Causal Nowcasting, Endogenous Credit Freeze y Sovereign–Bank Strategic Nexus incluyen prototipos sintéticos ejecutables; no hay resultados empíricos de esos programas. Los componentes dinámicos/empíricos no implementados siguen S1.
 
 ## Infraestructura compartida
 
@@ -81,3 +81,10 @@ Endogenous Credit Freeze sigue S2 parcial; no hay nueva validación empírica.
 parser y solver racional Gambit ejecutados, reconstrucción local de familias por
 compatibilidad y comparación exacta con los poliedros del repo. Extensión S2 del
 componente finito, sin elevar el programa completo a S3.
+
+## Ciclo diario 2026-10-18
+
+[Sovereign Clearing Audit](05-macrofinance/01-sovereign-bank-strategic-nexus/sovereign-clearing-audit/):
+componente estático S1→S2 del programa soberano-bancario, con dos cotas, LP, oráculo
+racional, regresión contra el notebook semanal y separación de impagos brutos de
+pérdidas a acreedores externos. Programa S2 parcial; doom loop dinámico sigue S1.
