@@ -2,7 +2,7 @@
 
 Investigación aplicada en sistemas inteligentes, ingeniería de datos, aprendizaje automático, IA agéntica, modelos fundacionales, inferencia causal y confiabilidad computacional. El área construye **infraestructura y métodos reutilizables**, no duplica los problemas económicos, de riesgo o inversión de los dominios 01–04.
 
-## Ocho pilares
+## Pilares iniciales y extensiones
 
 - [Data Engineering & Platforms](data-engineering/) — MVP ejecutable, librerías compartidas y ocho plataformas de diseño
 - [Machine Learning Engineering](02-machine-learning-engineering/) — 2 propuestas de investigación
