@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-18",
+  "cases": 432,
+  "seed": 20261018,
+  "oracle_max_relative_error": 1.3230795769326005e-16,
+  "baseline_underestimates": 372,
+  "nonzero_reference_cases": 372,
+  "performance_rows": 56,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "cpu": "model name\t: AMD EPYC 9V74 80-Core Processor",
+  "baseline_source_sha256": "c0d747d609e642d3788426d0f20484ad19daa8fccb192238f96b917cf0d643f3",
+  "model_sha256": "ccf81b0af816fce6cdfd4c36f8f32a9c5d6c839144d42562737f5ef067d068b4",
+  "medians_ms": {
+    "1/parent_engine": 1.788985,
+    "1/cashflow_batch": 0.058658,
+    "32/parent_engine": 1.951139,
+    "32/cashflow_batch": 0.058418,
+    "256/parent_engine": 2.075496,
+    "256/cashflow_batch": 0.066851,
+    "2048/parent_engine": 2.108655,
+    "2048/cashflow_batch": 0.076104
+  }
+}
