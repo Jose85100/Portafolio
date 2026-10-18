@@ -1,0 +1,28 @@
+name: Stage3 Cash Shortfall Audit
+on:
+  pull_request:
+    paths:
+      - '03-financial-risk/01-credit-risk/credit-risk-products/ifrs9-investigacion-cuantitativa/**'
+      - '.github/workflows/stage3-cash-shortfall.yml'
+  push:
+    branches: [main]
+    paths:
+      - '03-financial-risk/01-credit-risk/credit-risk-products/ifrs9-investigacion-cuantitativa/**'
+      - '.github/workflows/stage3-cash-shortfall.yml'
+jobs:
+  reproduce:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install, test, benchmark and execute notebook
+        run: bash 03-financial-risk/01-credit-risk/credit-risk-products/ifrs9-investigacion-cuantitativa/stage3-cash-shortfall-audit/run.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: stage3-cash-shortfall-evidence
+          path: |
+            03-financial-risk/01-credit-risk/credit-risk-products/ifrs9-investigacion-cuantitativa/stage3-cash-shortfall-audit/results/
+            03-financial-risk/01-credit-risk/credit-risk-products/ifrs9-investigacion-cuantitativa/stage3-cash-shortfall-audit/notebook.ipynb
