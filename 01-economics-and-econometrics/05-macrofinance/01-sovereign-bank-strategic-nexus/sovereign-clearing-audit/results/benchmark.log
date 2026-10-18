@@ -1,0 +1,49 @@
+{
+  "stress_end": {
+    "haircut": 1.0,
+    "direct_sovereign_loss": 0.1,
+    "one_pass_gross": 0.09999999999999998,
+    "clearing_gross": 1.0000000015419728,
+    "clearing_outside": 0.1000000001541973,
+    "one_pass_resource_error": -0.09000000000000002,
+    "resource_error": -1.5419737708910475e-10,
+    "iterations": 186,
+    "width_l1": 9.251838073431884e-09,
+    "lp_error_l1": 1.5419725496457204e-09
+  },
+  "near_end": [
+    {
+      "anchor": 1e-09,
+      "method": "residual_only",
+      "status": "accepted",
+      "iterations": 1,
+      "residual_l1": 1.4999997910436491e-09,
+      "error_l1": 1.4999999985000003,
+      "width_l1": "",
+      "seconds": 7.130699998469936e-05
+    },
+    {
+      "anchor": 1e-09,
+      "method": "two_sided",
+      "status": "Payment bracket did not close: width=2.9999700001520737, iterations=10000",
+      "iterations": 10000,
+      "residual_l1": "",
+      "error_l1": "",
+      "width_l1": "",
+      "seconds": 0.31615889800002606
+    },
+    {
+      "anchor": 1e-09,
+      "method": "LP",
+      "status": "solver_success_not_accuracy_certificate",
+      "iterations": "",
+      "residual_l1": 1.4999997910436491e-09,
+      "error_l1": 1.5,
+      "width_l1": "",
+      "seconds": ""
+    }
+  ],
+  "max_oracle_error": 4.473321268960717e-09,
+  "max_lp_error": 8.881784197001252e-16,
+  "max_weekly_difference": 0.0
+}

@@ -1,0 +1,15 @@
+test_bad_network (test_clearing.ClearingTests.test_bad_network) ... ok
+test_bad_vectors_and_controls (test_clearing.ClearingTests.test_bad_vectors_and_controls) ... ok
+test_lp_failure_not_solution (test_clearing.ClearingTests.test_lp_failure_not_solution) ... ok
+test_near_closed_negative (test_clearing.ClearingTests.test_near_closed_negative) ... ok
+test_oracles_and_enclosure (test_clearing.ClearingTests.test_oracles_and_enclosure) ... ok
+test_rational_cap (test_clearing.ClearingTests.test_rational_cap) ... ok
+test_reference_iteration (test_clearing.ClearingTests.test_reference_iteration) ... ok
+test_shock_monotonicity (test_clearing.ClearingTests.test_shock_monotonicity) ... ok
+test_sovereign_ring (test_clearing.ClearingTests.test_sovereign_ring) ... ok
+test_zero_debt_and_no_network (test_clearing.ClearingTests.test_zero_debt_and_no_network) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.791s
+
+OK
