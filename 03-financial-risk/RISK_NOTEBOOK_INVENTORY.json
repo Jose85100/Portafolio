@@ -1,0 +1,122 @@
+[
+  {
+    "path": "01-credit-risk/credit-portfolio-strategy/asignacion-de-capital-raroc/notebook.ipynb",
+    "cells": 30,
+    "code_cells": 18,
+    "sha256": "015cbe51254a3db32486b51c909ce64789c9465c1a99d8a0491ab987d2c6df26"
+  },
+  {
+    "path": "01-credit-risk/credit-portfolio-strategy/concentracion-hhi-cartera/notebook.ipynb",
+    "cells": 31,
+    "code_cells": 16,
+    "sha256": "e193a797c1316d67c1b71a1693e117836c97576f7909a3ae47f9a9d4ede4719f"
+  },
+  {
+    "path": "01-credit-risk/credit-portfolio-strategy/copula-gaussiana-perdidas/notebook.ipynb",
+    "cells": 32,
+    "code_cells": 17,
+    "sha256": "3908ab5749f8b34b77e01d3d7e79ca98249e6dab7cfa284e4eaa9d15391e1c24"
+  },
+  {
+    "path": "01-credit-risk/credit-portfolio-strategy/monitor-de-limites-de-apetito/notebook.ipynb",
+    "cells": 34,
+    "code_cells": 20,
+    "sha256": "3e73354a3f984eaafe1af125fe240289f4f396b92ef07b89f6b782f3331f6ca3"
+  },
+  {
+    "path": "01-credit-risk/credit-portfolio-strategy/vasicek-perdida-no-esperada/notebook.ipynb",
+    "cells": 29,
+    "code_cells": 16,
+    "sha256": "fea3611dc4923e7b38e231a0e86e084d6e896ecef80430b40a31e9b5526a90e4"
+  },
+  {
+    "path": "01-credit-risk/credit-risk-products/analisis-de-cosechas-vintage/notebook.ipynb",
+    "cells": 28,
+    "code_cells": 15,
+    "sha256": "9efc1e8e7e0d4ddd50e6459e03bc7547adb4712f81ab65348db355a6d9a23752"
+  },
+  {
+    "path": "01-credit-risk/credit-risk-products/ifrs9-investigacion-cuantitativa/notebooks/ifrs9_laboratory.ipynb",
+    "cells": 25,
+    "code_cells": 12,
+    "sha256": "3e9697cc3119460455e8074a726a8b430333ab12bf1d7d6e72c7023d94b819f4"
+  },
+  {
+    "path": "01-credit-risk/credit-risk-products/matrices-de-transicion-roll-rates/notebook.ipynb",
+    "cells": 34,
+    "code_cells": 19,
+    "sha256": "4fdb0b393db05013341c3aea84f69473590f6757b27982705d56dcd044314953"
+  },
+  {
+    "path": "01-credit-risk/credit-risk-products/perdida-esperada-pd-lgd-ead/notebook.ipynb",
+    "cells": 30,
+    "code_cells": 16,
+    "sha256": "b0db5dde69efc5517df5c281965455b2766626729054a7f094ba941408f0e674"
+  },
+  {
+    "path": "01-credit-risk/credit-risk-products/scorecard-logistico-woe/notebook.ipynb",
+    "cells": 94,
+    "code_cells": 48,
+    "sha256": "c735c0ee5f0e239010d9bcd62df048e9ec1e05f5db6fcad6956e5d9bc871e544"
+  },
+  {
+    "path": "01-credit-risk/credit-risk-products/segmentacion-clientes-kmeans/notebook.ipynb",
+    "cells": 35,
+    "code_cells": 18,
+    "sha256": "165d4e16e5a4a36f6bcabb2844a88ef5773b713aaf21f102213b8f24b0adecbc"
+  },
+  {
+    "path": "02-market-and-model-risk/backtesting-var-kupiec-christoffersen/notebook.ipynb",
+    "cells": 30,
+    "code_cells": 16,
+    "sha256": "5538100fdfe59f793fdb5ecbcc923c03c49bd34525885ccf48af32092c34dd45"
+  },
+  {
+    "path": "02-market-and-model-risk/garch-volatilidad-y-var/notebook.ipynb",
+    "cells": 29,
+    "code_cells": 16,
+    "sha256": "6dd3033bbb233eeb62e6e63176a8a6a474a1b54c035eb4180ee403504f776694"
+  },
+  {
+    "path": "02-market-and-model-risk/pruebas-de-estres-escenarios/notebook.ipynb",
+    "cells": 31,
+    "code_cells": 17,
+    "sha256": "22890279f957be9f8ba3ec18f3c9f9af53de57635cbc00514ee56c127cf074fd"
+  },
+  {
+    "path": "02-market-and-model-risk/validacion-de-modelo-psi-gini/notebook.ipynb",
+    "cells": 29,
+    "code_cells": 15,
+    "sha256": "eb83c668224209e87db3c60cae60703fc4151dfbf8972ed01ae99096a60adaa2"
+  },
+  {
+    "path": "02-market-and-model-risk/var-es-tres-metodos/notebook.ipynb",
+    "cells": 22,
+    "code_cells": 12,
+    "sha256": "d223553525a3628a4c1394c50618f51fa3859a2303c874fc9cdae3c51559f563"
+  },
+  {
+    "path": "02-market-and-model-risk/weighted-expected-shortfall-audit/notebook.ipynb",
+    "cells": 14,
+    "code_cells": 6,
+    "sha256": "09743e03d3f20833df228b9be66f10ed7a3200c7fe2f9f1cf8974db64f284394"
+  },
+  {
+    "path": "02-market-and-model-risk/weighted-tail-underflow-guard/notebook.ipynb",
+    "cells": 22,
+    "code_cells": 10,
+    "sha256": "591374228b3b9c544bf3f74b9e5a704847ddd8ab78daab93e801b6d81e310132"
+  },
+  {
+    "path": "03-market-liquidity-research/notebook.ipynb",
+    "cells": 13,
+    "code_cells": 6,
+    "sha256": "931a065b9a92705017802cd77ecc286c61725b8aea48ca3e17af63a31231306b"
+  },
+  {
+    "path": "07-financial-and-construction-risk-lab/notebook.ipynb",
+    "cells": 15,
+    "code_cells": 7,
+    "sha256": "67136d881317d67145cb166c0e3c3d2d54030bb1297a0a61bff2cb22acc1d9b7"
+  }
+]

@@ -1,0 +1,173 @@
+{
+  "base_commit": "f03f242",
+  "review_date_utc": "2026-10-18",
+  "python_suites": [
+    {
+      "path": "03-financial-risk/03-market-liquidity-research/tests",
+      "success": true,
+      "seconds": 0.36,
+      "output": "...........                                                              [100%]\n11 passed in 0.15s\n"
+    },
+    {
+      "path": "03-financial-risk/07-financial-and-construction-risk-lab/02-construction-enterprise-risk/01-project-cashflow-at-risk/tests",
+      "success": true,
+      "seconds": 0.33,
+      "output": "......                                                                   [100%]\n6 passed in 0.13s\n"
+    },
+    {
+      "path": "03-financial-risk/01-credit-risk/credit-risk-products/ifrs9-investigacion-cuantitativa/tests",
+      "success": true,
+      "seconds": 0.78,
+      "output": ".....................                            [100%]\n21 passed, 24 subtests passed in 0.42s\n"
+    },
+    {
+      "path": "03-financial-risk/07-financial-and-construction-risk-lab/python/tests",
+      "success": true,
+      "seconds": 0.33,
+      "output": "..........                                                               [100%]\n10 passed in 0.12s\n"
+    },
+    {
+      "path": "03-financial-risk/02-market-and-model-risk/weighted-tail-underflow-guard/tests",
+      "success": true,
+      "seconds": 1.09,
+      "output": "....................................................................     [100%]\n68 passed in 0.81s\n"
+    },
+    {
+      "path": "03-financial-risk/02-market-and-model-risk/weighted-expected-shortfall-audit/tests",
+      "success": true,
+      "seconds": 1.58,
+      "output": "23 passed in 1.24s\n"
+    }
+  ],
+  "python_tests_passed": 139,
+  "notebooks": [
+    {
+      "path": "03-financial-risk/03-market-liquidity-research/notebook.ipynb",
+      "success": true,
+      "seconds": 1.48
+    },
+    {
+      "path": "03-financial-risk/01-credit-risk/credit-risk-products/ifrs9-investigacion-cuantitativa/notebooks/ifrs9_laboratory.ipynb",
+      "success": true,
+      "seconds": 1.53
+    },
+    {
+      "path": "03-financial-risk/07-financial-and-construction-risk-lab/notebook.ipynb",
+      "success": true,
+      "seconds": 2.96
+    },
+    {
+      "path": "03-financial-risk/01-credit-risk/credit-portfolio-strategy/concentracion-hhi-cartera/notebook.ipynb",
+      "success": true,
+      "seconds": 3.23
+    },
+    {
+      "path": "03-financial-risk/01-credit-risk/credit-portfolio-strategy/vasicek-perdida-no-esperada/notebook.ipynb",
+      "success": true,
+      "seconds": 24.47
+    },
+    {
+      "path": "03-financial-risk/01-credit-risk/credit-risk-products/analisis-de-cosechas-vintage/notebook.ipynb",
+      "success": true,
+      "seconds": 5.16
+    },
+    {
+      "path": "03-financial-risk/01-credit-risk/credit-risk-products/matrices-de-transicion-roll-rates/notebook.ipynb",
+      "success": true,
+      "seconds": 4.78
+    },
+    {
+      "path": "03-financial-risk/01-credit-risk/credit-portfolio-strategy/monitor-de-limites-de-apetito/notebook.ipynb",
+      "success": true,
+      "seconds": 38.9
+    },
+    {
+      "path": "03-financial-risk/01-credit-risk/credit-risk-products/scorecard-logistico-woe/notebook.ipynb",
+      "success": true,
+      "seconds": 5.37
+    },
+    {
+      "path": "03-financial-risk/01-credit-risk/credit-risk-products/perdida-esperada-pd-lgd-ead/notebook.ipynb",
+      "success": true,
+      "seconds": 8.87
+    },
+    {
+      "path": "03-financial-risk/01-credit-risk/credit-risk-products/segmentacion-clientes-kmeans/notebook.ipynb",
+      "success": true,
+      "seconds": 10.28
+    },
+    {
+      "path": "03-financial-risk/01-credit-risk/credit-portfolio-strategy/asignacion-de-capital-raroc/notebook.ipynb",
+      "success": true,
+      "seconds": 66.6
+    },
+    {
+      "path": "03-financial-risk/02-market-and-model-risk/garch-volatilidad-y-var/notebook.ipynb",
+      "success": true,
+      "seconds": 12.07
+    },
+    {
+      "path": "03-financial-risk/01-credit-risk/credit-portfolio-strategy/copula-gaussiana-perdidas/notebook.ipynb",
+      "success": true,
+      "seconds": 69.71
+    },
+    {
+      "path": "03-financial-risk/02-market-and-model-risk/pruebas-de-estres-escenarios/notebook.ipynb",
+      "success": true,
+      "seconds": 23.94
+    },
+    {
+      "path": "03-financial-risk/02-market-and-model-risk/weighted-expected-shortfall-audit/notebook.ipynb",
+      "success": true,
+      "seconds": 1.23
+    },
+    {
+      "path": "03-financial-risk/02-market-and-model-risk/weighted-tail-underflow-guard/notebook.ipynb",
+      "success": true,
+      "seconds": 1.13
+    },
+    {
+      "path": "03-financial-risk/02-market-and-model-risk/validacion-de-modelo-psi-gini/notebook.ipynb",
+      "success": true,
+      "seconds": 29.91
+    },
+    {
+      "path": "03-financial-risk/02-market-and-model-risk/backtesting-var-kupiec-christoffersen/notebook.ipynb",
+      "success": true,
+      "seconds": 54.95
+    },
+    {
+      "path": "03-financial-risk/02-market-and-model-risk/var-es-tres-metodos/notebook.ipynb",
+      "success": true,
+      "seconds": 56.9
+    }
+  ],
+  "execution_method": "Isolated IPython processes, code cells in order, saved outputs for new/modified experiments; no Jupyter kernel sockets",
+  "cpp": [
+    {
+      "build": "cpp-build",
+      "success": true,
+      "output": "Test project /workspace/scratch/df86338d8058/risk_work/cpp-build\n    Start 1: risk_engine_tests\n1/1 Test #1: risk_engine_tests ................   Passed    0.00 sec\n\n100% tests passed out of 1\n\nTotal Test time (real) =   0.00 sec\n"
+    },
+    {
+      "build": "cpp-debug",
+      "success": true,
+      "output": "Test project /workspace/scratch/df86338d8058/risk_work/cpp-debug\n    Start 1: risk_engine_tests\n1/1 Test #1: risk_engine_tests ................   Passed    0.00 sec\n\n100% tests passed out of 1\n\nTotal Test time (real) =   0.00 sec\n"
+    }
+  ],
+  "additional_cpp_checks": [
+    "06 research engine portfolio test: compiled with -Wall -Wextra -Werror and executed",
+    "01 credit-risk domain contracts: C++17 syntax check with warnings as errors"
+  ],
+  "numeric_contract": "Nearest-rank empirical VaR; ES exactly 1-alpha mass with fractional boundary. Ordinary binary64 baseline, not an underflow-proof universal oracle.",
+  "fixture_oracle": "100 small signed integer cases; independent hinge minimization with Fraction.from_float(alpha). Shared Python/C++/market-liquidity fixtures.",
+  "sql_validation": "SQLite in-memory grammar/constraint smoke tests; no production migration or live Python SQL adapter.",
+  "external_validation": false,
+  "environment": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "pytest": "9.1.1"
+  }
+}

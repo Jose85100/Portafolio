@@ -5,7 +5,7 @@ All amounts are in a single currency. Synthetic assumptions only; not calibrated
 from dataclasses import dataclass
 from random import Random
 from statistics import mean
-from math import ceil
+from math import ceil, isfinite
 
 @dataclass(frozen=True)
 class Project:
@@ -19,7 +19,9 @@ class Project:
         n = len(self.monthly_collections)
         if n == 0 or len(self.monthly_costs) != n or len(self.monthly_debt_service) != n:
             raise ValueError('All monthly series must have the same positive length')
-        if any(x < 0 for series in (self.monthly_collections, self.monthly_costs, self.monthly_debt_service) for x in series):
+        if not isfinite(self.opening_cash) or not isfinite(self.liquidity_floor) or self.opening_cash < 0:
+            raise ValueError('Opening cash must be finite/nonnegative and floor finite')
+        if any(not isfinite(x) or x < 0 for series in (self.monthly_collections, self.monthly_costs, self.monthly_debt_service) for x in series):
             raise ValueError('Flows must be nonnegative')
 
 
@@ -31,7 +33,9 @@ def simulate(project: Project, scenarios: int = 1000, seed: int = 42,
     Shocks are clipped at zero for collections/costs. Quantile uses nearest rank.
     Results report peak shortfall vs liquidity floor, not a VaR of P&L.
     """
-    if scenarios < 1 or collection_vol < 0 or cost_vol < 0 or not 0 <= common_shock_weight <= 1:
+    if (isinstance(scenarios, bool) or not isinstance(scenarios, int) or scenarios < 1
+            or not all(isfinite(x) for x in (collection_vol, cost_vol, common_shock_weight))
+            or collection_vol < 0 or cost_vol < 0 or not 0 <= common_shock_weight <= 1):
         raise ValueError('Invalid simulation parameters')
     rng = Random(seed)
     shortfalls = []
@@ -46,6 +50,7 @@ def simulate(project: Project, scenarios: int = 1000, seed: int = 42,
             collections = max(0.0, revenue * (1 + collection_vol * rev_shock))
             costs = max(0.0, cost * (1 + cost_vol * cost_shock))
             cash += collections - costs - debt
+            if not isfinite(cash): raise ArithmeticError("Cash accumulation overflow")
             peak = max(peak, project.liquidity_floor - cash)
         shortfalls.append(peak)
         terminal_cash.append(cash)
