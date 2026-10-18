@@ -38,3 +38,12 @@ El error reportado NO es error de predicción ni sesgo frente al ES poblacional.
 ## Verificación aislada
 
 Con `.venv` activado: `python -m pytest -q`, `python -m ruff check src tests benchmarks`, `python -m mypy src benchmarks`, `python -m src.main`. Cobertura declarada solo para el núcleo numérico/oráculo, no todo el pipeline. Ver alcance exacto en `MVP.md` e informe.
+
+
+## Revisión de contratos de riesgo — 2026-10-18
+
+El comparador de construcción vivo ya integra masa fraccionaria y coincide con ES=40 en el contraejemplo de 99 ceros y una pérdida de 100 a 97.5%. La cifra histórica 100/3 permanece en los resultados del benchmark anterior, asociado a su commit y hashes; no se ha reescrito esa evidencia como si proviniera del código nuevo.
+
+El extractor AST incluye ahora el cierre de helpers de la función elegida y sus primitivas numéricas explícitas; sigue excluyendo demos de nivel superior. Las pruebas contrastan el código actual. Para repetir un benchmark histórico se debe usar su versión de fuentes registrada.
+
+El comparador histórico ingenuo se conserva con nombre explícito `historico_legacy_conditional`; la API actual `historico` ya usa masa fraccionaria. Las pruebas verifican ambas semánticas por separado.

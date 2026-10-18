@@ -3,6 +3,7 @@
 No estima LCR/NSFR ni capital regulatorio. NumPy requerido.
 """
 from dataclasses import dataclass
+from math import ceil, fsum
 import numpy as np
 
 
@@ -25,11 +26,18 @@ def tail_risk(losses, alpha=0.975):
     mass = n * (1 - alpha)
     whole = int(np.floor(mass))
     fractional = mass - whole
-    tail_sum = float(ordered[-whole:].sum()) if whole else 0.0
+    contributions = [float(v) / mass for v in ordered[-whole:]] if whole else []
     if fractional > 0:
-        tail_sum += fractional * ordered[-whole - 1]
-    return TailRisk(float(np.quantile(x, alpha)), tail_sum / mass,
-                    float(x.mean()))
+        contributions.append(float(ordered[-whole - 1]) * (fractional / mass))
+    try:
+        es = fsum(contributions)
+        mean = fsum(float(v) / n for v in x)
+    except OverflowError as error:
+        raise ArithmeticError("Tail accumulation overflow") from error
+    if not np.isfinite([es, mean]).all(): raise ArithmeticError("Nonfinite tail result")
+    # Same empirical generalized-inverse VaR convention as construction Python/C++.
+    var = ordered[max(0, min(n-1, ceil(alpha*n)-1))]
+    return TailRisk(float(var), es, mean)
 
 
 @dataclass(frozen=True)
@@ -61,7 +69,8 @@ def liquidity_paths(initial_cash, inflows, outflows, margin_calls=None):
     if not all(np.all(np.isfinite(a)) and np.all(a >= 0)
                for a in (ins, outs, margin)):
         raise ValueError("Los flujos deben ser finitos y no negativos")
-    paths = initial_cash + np.cumsum(ins - outs - margin, axis=1)
+    with np.errstate(over="raise", invalid="raise"):
+        paths = initial_cash + np.cumsum(ins - outs - margin, axis=1)
     breached = paths < 0
     any_breach = breached.any(axis=1)
     first = np.where(any_breach, breached.argmax(axis=1) + 1,
@@ -76,7 +85,8 @@ def correlated_stress(n_scenarios=20_000, horizon=30, seed=23,
 
     Parámetros arbitrarios en unidades monetarias abstractas. No calibrado.
     """
-    if n_scenarios < 2 or horizon < 1:
+    if (isinstance(n_scenarios, bool) or not isinstance(n_scenarios, int) or n_scenarios < 2
+            or isinstance(horizon, bool) or not isinstance(horizon, int) or horizon < 1):
         raise ValueError("Escenarios >=2, horizonte >=1")
     rng = np.random.default_rng(seed)
     z = rng.standard_normal((n_scenarios, horizon))

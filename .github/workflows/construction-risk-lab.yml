@@ -25,8 +25,11 @@ jobs:
         run: python -m unittest discover -s 03-financial-risk/07-financial-and-construction-risk-lab/python/tests -p 'test_*.py' -v
   cpp:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        build-type: [Debug, Release]
     steps:
       - uses: actions/checkout@v4
-      - run: cmake -S 03-financial-risk/07-financial-and-construction-risk-lab/cpp -B /tmp/construction-risk-build
+      - run: cmake -S 03-financial-risk/07-financial-and-construction-risk-lab/cpp -B /tmp/construction-risk-build -DCMAKE_BUILD_TYPE=${{ matrix.build-type }}
       - run: cmake --build /tmp/construction-risk-build
       - run: ctest --test-dir /tmp/construction-risk-build --output-on-failure

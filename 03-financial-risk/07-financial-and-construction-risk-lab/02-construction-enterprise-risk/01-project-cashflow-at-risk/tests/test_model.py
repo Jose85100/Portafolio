@@ -32,5 +32,17 @@ class CashflowTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             module.simulate(self.project, scenarios=0)
 
-if __name__ == '__main__':
-    unittest.main()
+
+
+class FiniteInputTests(unittest.TestCase):
+    def test_nonfinite_inputs_rejected(self):
+        for value in [float('nan'),float('inf')]:
+            with self.assertRaises(ValueError):module.Project(value,(1,),(1,),(0,))
+            with self.assertRaises(ValueError):module.Project(0,(value,),(1,),(0,))
+            with self.assertRaises(ValueError):module.simulate(module.Project(0,(1,),(1,),(0,)),collection_vol=value)
+    def test_initial_floor_breach_is_counted(self):
+        result=module.simulate(module.Project(0,(10,),(0,),(0,),liquidity_floor=5),scenarios=10,collection_vol=0,cost_vol=0)
+        self.assertEqual(result['probability_shortfall'],1.)
+        self.assertEqual(result['expected_peak_shortfall'],5.)
+
+if __name__ == '__main__':unittest.main()
