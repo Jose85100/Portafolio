@@ -39,3 +39,8 @@ python3 -m coverage run -m unittest discover -s tests && python3 -m coverage rep
 ```
 
 No se afirma exactamente-una-vez para efectos externos, múltiples procesos, brokers, redes, sistemas distribuidos, ni ejecución de agentes LLM.
+
+
+## Notebook de la revisión semanal
+
+[Experimentos ejecutados](notebook.ipynb): Ventanas de fallo, sensibilidad al failpoint, reintentos idempotentes y control negativo de efectos externos.

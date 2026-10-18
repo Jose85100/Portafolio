@@ -54,3 +54,8 @@ Dos colecciones de cinco notebooks extensos cada una, con datos sintéticos de v
 - [Sistema continuo de aprendizaje y matriz de evidencia](EXECUTIVE_LEARNING_SYSTEM.md).
 - Los 15 motores existentes tienen un nuevo protocolo individual de investigación, validación, escenarios y decisión ejecutiva en `docs/EXECUTIVE_RESEARCH_AND_VALIDATION.md`.
 - **Madurez:** 01–15 conservan sus prototipos existentes; 16–21 son diseños S1, no implementaciones ni resultados empíricos validados.
+
+
+## Notebook de la revisión semanal
+
+[Experimentos ejecutados](weekly-decision-audit.ipynb): Sensibilidad y fronteras de decisión de los 15 motores, con inputs sintéticos nuevos y restricciones verificadas.
