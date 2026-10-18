@@ -29,3 +29,10 @@ Valor del portafolio: 1,000,000 | observaciones: 2500
 ## Notebook
 
 [`notebook.ipynb`](notebook.ipynb) desarrolla el tema de forma extensa: versión ingenua, diagnóstico, mejoras, robustez y **pruebas automáticas** (`assert`) que fallan el notebook si un hallazgo deja de cumplirse. Las cifras de sus conclusiones se calculan desde los datos. `main.py` es la versión corta del mismo tema.
+
+
+## Contrato histórico revisado — 2026-10-18
+
+`main.py:historico` usa VaR empírico sin interpolación y ES de masa fraccionaria exacta. El caso de 99 ceros y pérdida 100 al 97.5% devuelve ES=40. La función `historico_legacy_conditional` preserva el antiguo promedio condicionado como comparador deliberado del benchmark; no es la API por defecto. Importar el módulo ya no ejecuta la demo ni ajusta modelos automáticamente.
+
+El método t usa una distribución predictiva ajustada y 400.000 draws con semilla explícita; no es la misma medida empírica sobre las n observaciones originales. El notebook conserva su desarrollo didáctico y sus comparaciones de estimación.

@@ -6,3 +6,5 @@ add_executable(risk_engine_tests tests/test_risk_engine.cpp)
 target_include_directories(risk_engine_tests PRIVATE include)
 enable_testing()
 add_test(NAME risk_engine_tests COMMAND risk_engine_tests)
+
+target_compile_definitions(risk_engine_tests PRIVATE TAIL_FIXTURE_PATH="${CMAKE_CURRENT_SOURCE_DIR}/../tests/fixtures/tail_contract.csv")

@@ -47,5 +47,30 @@ class TestMarketLiquidity(unittest.TestCase):
             mod.liquidity_paths(1, [[1]], [[-1]])
 
 
-if __name__ == "__main__":
-    unittest.main()
+
+
+class TailConventionTests(unittest.TestCase):
+    def test_var_generalized_inverse_not_linear_interpolation(self):
+        result=mod.tail_risk([0.,0.,10.,20.],alpha=.625)
+        self.assertEqual(result.var,10.)
+    def test_construction_hinge_oracle_parity(self):
+        import csv
+        path=FILE.parents[2]/'07-financial-and-construction-risk-lab/tests/fixtures/tail_contract.csv'
+        with path.open() as handle:
+            for row in csv.DictReader(handle):
+                losses=list(map(float,row['losses'].split(';')))
+                if len(losses)<2:continue  # This interface intentionally requires >=2.
+                result=mod.tail_risk(losses,float(row['alpha']))
+                self.assertEqual(result.var,float(row['var']))
+                self.assertAlmostEqual(result.es,float(row['es']),places=9)
+    def test_large_representable_tail_mean(self):
+        result=mod.tail_risk([1e308,1e308],.5)
+        self.assertEqual(result.es,1e308)
+        self.assertEqual(result.mean,1e308)
+    def test_cash_overflow_rejected(self):
+        with self.assertRaises(ArithmeticError):mod.liquidity_paths(1e308,[[1e308,1e308]],[[0,0]])
+    def test_counts_are_not_boolean_or_float(self):
+        for count in [True,1.5]:
+            with self.assertRaises(ValueError):mod.correlated_stress(n_scenarios=count)
+
+if __name__ == '__main__':unittest.main()
