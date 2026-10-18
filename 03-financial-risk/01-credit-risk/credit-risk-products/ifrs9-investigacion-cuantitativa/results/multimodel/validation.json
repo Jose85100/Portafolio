@@ -1,0 +1,75 @@
+{
+  "base_commit": "494fca04945c8c63023843711243ee6e5383e476",
+  "python_tests": 58,
+  "test_runner": "python -m unittest discover -s tests -v",
+  "tests_passed": true,
+  "notebooks": [
+    {
+      "path": "notebooks/01_pd_model_comparison.ipynb",
+      "success": true,
+      "seconds": 12.06,
+      "output": "PASS notebooks cells 13 code 6\n"
+    },
+    {
+      "path": "notebooks/02_lgd_ead_recoveries.ipynb",
+      "success": true,
+      "seconds": 9.29,
+      "output": "PASS notebooks cells 13 code 6\n"
+    },
+    {
+      "path": "notebooks/03_integrated_ecl_models.ipynb",
+      "success": true,
+      "seconds": 12.28,
+      "output": "PASS notebooks cells 17 code 8\n"
+    },
+    {
+      "path": "notebooks/04_simplified_provision_matrix.ipynb",
+      "success": true,
+      "seconds": 4.66,
+      "output": "PASS notebooks cells 11 code 5\n"
+    },
+    {
+      "path": "notebooks/ifrs9_laboratory.ipynb",
+      "success": true,
+      "seconds": 2.27,
+      "output": "PASS notebooks cells 25 code 12\n"
+    }
+  ],
+  "notebook_inventory": [
+    {
+      "path": "notebooks/01_pd_model_comparison.ipynb",
+      "cells": 13,
+      "code_cells": 6,
+      "sha256": "0261991482b2d09f590b0ad27940bd50eee4063aada83ca2bfe69d6e6f7a765f"
+    },
+    {
+      "path": "notebooks/02_lgd_ead_recoveries.ipynb",
+      "cells": 13,
+      "code_cells": 6,
+      "sha256": "f8e05660de85147ead18a30583460c4b2758f4449c933d679089ae17f9b776a9"
+    },
+    {
+      "path": "notebooks/03_integrated_ecl_models.ipynb",
+      "cells": 17,
+      "code_cells": 8,
+      "sha256": "cfb667641acfffe3370bceb9ff4cc503ed08b3e87dff5b10ba563367b4c668ff"
+    },
+    {
+      "path": "notebooks/04_simplified_provision_matrix.ipynb",
+      "cells": 11,
+      "code_cells": 5,
+      "sha256": "43de6b3e4adef632bc77b2aedd162f24c293846443b243edc7fe9bccb4733a95"
+    },
+    {
+      "path": "notebooks/ifrs9_laboratory.ipynb",
+      "cells": 25,
+      "code_cells": 12,
+      "sha256": "3e9697cc3119460455e8074a726a8b430333ab12bf1d7d6e72c7023d94b819f4"
+    }
+  ],
+  "execution": "Isolated IPython process per notebook, code cells in order; no Jupyter kernel sockets used locally",
+  "figures": 9,
+  "visual_qa": "Saved figures inspected; calibration chart refined with Wilson intervals",
+  "ci_remote": "pending",
+  "external_validation": false
+}
