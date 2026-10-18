@@ -17,7 +17,7 @@ El contraste ilustra por qué sumar hazards \(0.02+0.03+0.04=0.09\) sobreestima 
 
 Para tres escenarios con pesos \((0.2,0.6,0.2)\) y ECL condicional \((6,3,12)\), el promedio ponderado es \(0.2(6)+0.6(3)+0.2(12)=5.4\). El escenario central por sí solo da 3. El ejemplo no implica que pesos o niveles sean adecuados para una entidad particular.
 
-## 3. Experimentos a implementar
+## 3. Agenda experimental y correspondencia con implementación
 
 **A — PD dinámica:** generar cohortes sintéticas con hazard conocida y censura; comparar logit discreto, modelo de supervivencia y gradient boosting con calibración. Criterio: recuperación de parámetros o probabilidades dentro de bandas de Monte Carlo.
 
@@ -50,3 +50,7 @@ No aprobar una extensión por tener gráficos convincentes. Exigir pruebas de in
 ## 6. Qué se puede afirmar
 
 Las identidades de supervivencia y expectativa son demostraciones matemáticas. Los ejemplos numéricos son ejercicios sintéticos verificables. Ninguna conclusión de mejora predictiva, reducción de provisiones o cumplimiento IFRS 9 puede inferirse sin ejecutar experimentos, calibrar sobre datos pertinentes y someter el marco a revisión contable y de riesgo independiente.
+
+## 7. Implementación multimodelo disponible
+
+Los experimentos de PD, EAD, LGD, sensibilidad de escenarios y reconciliación ahora tienen implementaciones parciales y explícitas en `src/multimodel` y notebooks 01–04. Ver [fichas de modelo](docs/MODEL_CARDS.md). No se implementaron gradient boosting, riesgos competitivos, supervivencia de recuperaciones abiertas ni integración Monte Carlo de escenarios. El estado de la agenda se distingue del código ejecutado.

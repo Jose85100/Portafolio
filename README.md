@@ -21,7 +21,7 @@ La [revisión del 12–17 de octubre de 2026](reviews/2026-10-12-week/README.md)
 
 ## Cuatro tipos de proyecto
 
-- **Notebooks (96)** — archivos `.ipynb` con versión ingenua, diagnóstico, mejoras, robustez y límites. Los datos son **sintéticos con verdad conocida**, así que el notebook comprueba si el método recupera la verdad; las cifras de las conclusiones se **calculan desde los datos** (celdas «Lectura») y una sección final de `assert` hace fallar el notebook si un hallazgo deja de cumplirse. Cuando una hipótesis inicial resultó falsa, el notebook lo dice y muestra la corrección. La excepción es el [análisis factorial múltiple](02-mathematics-statistics-and-quant/quantitative-methods/analisis-factorial-multiple-mfa), que usa **datos reales y abiertos** del Banco Mundial.
+- **Notebooks (100)** — archivos `.ipynb` con versión ingenua, diagnóstico, mejoras, robustez y límites. Los datos son **sintéticos con verdad conocida**, así que el notebook comprueba si el método recupera la verdad; las cifras de las conclusiones se **calculan desde los datos** (celdas «Lectura») y una sección final de `assert` hace fallar el notebook si un hallazgo deja de cumplirse. Cuando una hipótesis inicial resultó falsa, el notebook lo dice y muestra la corrección. La excepción es el [análisis factorial múltiple](02-mathematics-statistics-and-quant/quantitative-methods/analisis-factorial-multiple-mfa), que usa **datos reales y abiertos** del Banco Mundial.
 - **`main.py` (40)** — la versión corta y ejecutable de cada notebook.
 - **Motores de decisión (15)** — proyectos 01–15 de la carpeta 06, cada uno con `src/`, `tests/` y `docs/`.
 - **Plataforma C++17** — simulación de pérdidas de crédito, riesgo de mercado y flujos de liquidez, con CMake y pruebas.
@@ -34,7 +34,7 @@ pip install -r requirements.txt
 # Para notebooks (incluye el entorno de investigación)
 pip install -r requirements-research.txt
 
-# Notebooks: ejecuta los 96 de principio a fin (puede tardar varias horas)
+# Notebooks: ejecuta los 100 de principio a fin (puede tardar varias horas)
 python3 -m unittest tests.test_notebooks -v
 
 # Un solo notebook
