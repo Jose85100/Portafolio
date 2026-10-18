@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-18",
+  "base_commit": "2eb24941cd7fd7fd31a9bad05670a25361574413",
+  "question": "Does matching Kendall tau suffice for joint extremes, and does conditional Monte Carlo resolve finite-threshold coexceedance more precisely than direct simulation?",
+  "grid": {"rho": [-0.5, 0.0, 0.5, 0.9], "q": [0.9, 0.99, 0.999, 0.9999], "models": [{"name": "gaussian", "df": null}, {"name": "t4", "df": 4.0}, {"name": "t30", "df": 30.0}]},
+  "monte_carlo": {"rho": 0.5, "q": [0.99, 0.999], "n": [2000, 20000], "replicates": 80, "seed": 20261018, "models": [{"name": "gaussian", "df": null}, {"name": "t4", "df": 4.0}]},
+  "rank_check": {"n": 10000, "seed": 180041},
+  "gates": {"max_quadrature_disagreement": 2e-7, "max_independence_error": 1e-10, "max_empirical_kendall_error": 0.03, "min_t4_to_gaussian_joint_ratio": 2.0, "max_conditional_to_direct_rmse_ratio": 0.25, "max_conditional_relative_rmse": 0.03, "max_variance_bound_violation": 1e-10},
+  "gate_scenario": {"rho": 0.5, "q": 0.999, "n": 20000, "model": "t4"},
+  "baseline": "Direct latent elliptical simulation at identical n, q, rho, model, and 80 independent replicates. Different RNG streams by method. Equal n is not equal CPU budget; time and tracked peak memory are reported separately.",
+  "reference": "Two 1D adaptive quadratures: truncated marginal survival coordinates and latent x on [threshold,infinity). Shared scipy special-function library, different integral coordinates; not formal interval certification.",
+  "scope": "Known bivariate copula parameters and exact marginal exceedance probability; no estimation, time dependence, credit-loss capital validation or universal empirical superiority claim.",
+  "hardware": "Recorded at execution. One BLAS/OMP thread; timed calls include RNG; tracemalloc peak in separate calls, not RSS; no warmup, fixed order."
+}

@@ -1,6 +1,51 @@
 # Nonlinear Dependence & Tail Geometry
 
-> **Madurez: S1 — protocolo de investigación.** No se afirma código, experimentos ejecutados, revisión sistemática concluida ni novedad demostrada.
+> **Madurez: S2 acotado — auditoría de coexcedencias elípticas.** El programa completo de geometría extrema, ajuste y backtesting sigue pendiente; el protocolo original se conserva debajo como agenda.
+
+## MVP ejecutable — 2026-10-18
+
+¿Basta igualar Kendall tau para extrapolar colas conjuntas? Se comparan cópulas gaussiana, t4 y t30, distinguiendo L(q)=P(V>q|U>q) del límite lambda_U. Se implementan dos cuadraturas, Monte Carlo directo y condicional, una cota de varianza demostrada y tests numéricos. Son métodos conocidos: la aportación es una auditoría integrada y reproducible, no una cópula nueva.
+
+### Instalar y reproducir con un comando
+
+Python **3.12**, `make`, `venv` y acceso a PyPI. Desde esta carpeta:
+
+```bash
+make run
+```
+
+Desde la raíz de un checkout que contenga este MVP:
+
+```bash
+make -C 02-mathematics-statistics-and-quant/advanced-research/04-nonlinear-tail-dependence run
+```
+
+El comando crea `.venv`, instala dependencias directas fijadas, ejecuta lint/formato/tipado/tests, benchmark, informe, notebook con outputs y checklist. Si hace falta seleccionar intérprete: `make run PYTHON=python3.12`. No requiere cuentas privadas ni datos externos durante el experimento. Versiones resueltas en `benchmarks/environment.txt`; no hay lock transitivo. Reescribe los resultados generados de este MVP; los tiempos dependen del hardware.
+
+### Estructura real
+
+- `src/copulas.py`: modelos, tau, lambda, muestreo y estimadores.
+- `src/reference.py`: integrales en dos coordenadas y segundo momento condicional.
+- `src/benchmark.py`: 48 escenarios, 1.280 corridas temporizadas, memoria y figura.
+- `tests/`: unitarios, propiedades Hypothesis, casos límite y ejecución del notebook.
+- `config.json`: pregunta, umbrales, baselines, semillas y política de recursos.
+- `benchmarks/`: CSV/JSON crudos, `audit.png`, ejemplos NPZ, logs, cobertura y checklist.
+- `notebook.ipynb`: ocho celdas de código ejecutadas, problema → método → evidencia → límites.
+- `informe.md`, `MVP.md`, `referencias.bib`, `fuentes.md`: interpretación, alcance y cinco antecedentes reales.
+
+### Baselines y lectura correcta
+
+El baseline de simulación directa usa el mismo N y los mismos parámetros que el condicional, con streams independientes y 80 réplicas por celda. Igual N no es igual tiempo: se registran ambos. El denominador N(1−q) es conocido; el cociente con denominador empírico se guarda aparte, sin convertir 0/0 en cero. Las cuadraturas comparten SciPy y no son certificados formales. La cota de varianza se aplica a parámetros conocidos y no incluye el coste de estimarlos.
+
+La biblioteca de cartera gaussiana existente en `03-financial-risk/.../copula-gaussiana-perdidas` se conserva; aquí no se calcula capital de 200 deudores ni se modifica el contrato EL=83 de quant-libraries.
+
+### Notebook y revisión
+
+El notebook se ejecuta con IPython en proceso para no requerir sockets locales; captura stdout y salidas enriquecidas reales y aborta ante errores. `.venv/bin/python scripts_notebook.py --kernel` usa nbclient convencional. El workflow Notebook Reliability ejecuta el notebook modificado por separado; el workflow específico reproduce todo el MVP.
+
+Se siguen las guías de notebooks y visualización para separar supuestos, datos, resultados e incertidumbre. Se inspecciona la figura y se validan estructura y outputs; no se afirma revisión visual integral de un visor de notebooks. Para completarla abrir `notebook.ipynb` en Jupyter o exportar con `python -m jupyter nbconvert --to html notebook.ipynb` tras instalar nbconvert.
+
+## Protocolo S1 original — agenda fuera del alcance del MVP
 
 ## Pregunta de investigación
 
@@ -43,7 +88,7 @@ Identificación y extrapolación de cola con pocas observaciones extremas.
 - **S3:** comparadores estadísticos, tablas y figuras generadas, análisis de sensibilidad, errores numéricos y benchmark de recursos.
 - **S4:** réplica independiente, aplicación con datos públicos licenciados, documentación de riesgos y límites de validez.
 
-## Estructura prevista (no creada aún)
+## Estructura prevista para el programa completo (el MVP anterior sí está implementado)
 
 ```text
 theory/       # supuestos, derivaciones y pruebas

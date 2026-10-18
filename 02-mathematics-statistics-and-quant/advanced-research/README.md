@@ -1,13 +1,13 @@
 # Advanced Research — Mathematics, Statistics & Quantitative Methods
 
-Veinte programas de investigación. Los programas 01, 03, 08, 09 y 18 tienen prototipos S2 acotados; los demás siguen como propuestas S1. Se conservan los seis proyectos existentes de métodos cuantitativos y las bibliotecas multilenguaje.
+Veinte programas de investigación. Los programas 01, 03, 04, 08, 09 y 18 tienen prototipos S2 acotados; los demás siguen como propuestas S1. Se conservan los seis proyectos existentes de métodos cuantitativos y las bibliotecas multilenguaje.
 
 | ID | Proyecto | Estado |
 |---|---|---|
 | 01 | [Stochastic Dynamical Systems & Critical Transitions](01-stochastic-critical-transitions/) | S2: auditoría OU de discretización e identificación, sin detector de crisis validado |
 | 02 | [Information Geometry & Statistical Manifolds](02-information-geometry-statistical-manifolds/) | S1: diseño científico |
 | 03 | [Distributionally Robust Optimization](03-distributionally-robust-optimization/) | S2: expectativa robusta KL finita y diagnóstico primal-dual |
-| 04 | [Nonlinear Dependence & Tail Geometry](04-nonlinear-tail-dependence/) | S1: diseño científico |
+| 04 | [Nonlinear Dependence & Tail Geometry](04-nonlinear-tail-dependence/) | S2: coexcedencia finita, límite asintótico y Monte Carlo condicional bivariado |
 | 05 | [Fractional Calculus & Long-Memory Systems](05-fractional-long-memory-systems/) | S1: diseño científico |
 | 06 | [Causal Discovery in Nonlinear Stochastic Systems](06-nonlinear-dynamic-causal-discovery/) | S1: diseño científico |
 | 07 | [Topological Data Analysis & Regime Detection](07-topological-regime-detection/) | S1: diseño científico |
@@ -44,4 +44,4 @@ Esta segunda ola investiga conexiones interdisciplinarias. **Los programas sigue
 
 **Prioridad matemática exploratoria:** 12, 14 y 17. **Métodos computacionales con validación factible:** 11, 13, 16 y 18. **Aplicación macrofinanciera:** 15, 19 y 20.
 
-La revisión e implementación completas siguen pendientes para los programas S1. Los programas 01, 03, 08, 09 y 18 incluyen benchmarks sintéticos reproducibles; no constituyen validación externa ni demuestran originalidad algorítmica.
+La revisión e implementación completas siguen pendientes para los programas S1. Los programas 01, 03, 04, 08, 09 y 18 incluyen benchmarks sintéticos reproducibles; no constituyen validación externa ni demuestran originalidad algorítmica.
