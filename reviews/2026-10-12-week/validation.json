@@ -1,0 +1,510 @@
+{
+  "period_bogota": {
+    "from": "2026-10-12T00:00:00-05:00",
+    "to": "2026-10-17T23:59:59-05:00"
+  },
+  "base_main": "41fc967f2965b00c7c27a911d3b4694cedfbc2cb",
+  "parent": "865c326139eeed4eb7523b3d2721b6776451be46",
+  "history_commits_including_merges": 190,
+  "notebooks_inventory": 94,
+  "notebooks_developed_or_repaired_this_pass": 48,
+  "notebook_execution_method": "All code cells, in order, isolated Python/IPython process per notebook, Matplotlib Agg; no Jupyter kernel sockets",
+  "notebook_results": [
+    {
+      "path": "01-economics-and-econometrics/01-macroeconomics/03-inflation-expectations-phillips/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.17
+    },
+    {
+      "path": "01-economics-and-econometrics/01-macroeconomics/04-fiscal-multipliers-local-projections/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.26
+    },
+    {
+      "path": "01-economics-and-econometrics/01-macroeconomics/05-exchange-rate-pass-through/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.27
+    },
+    {
+      "path": "01-economics-and-econometrics/01-macroeconomics/06-macro-regime-switching/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.25
+    },
+    {
+      "path": "01-economics-and-econometrics/01-macroeconomics/07-labor-productivity-growth/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.3
+    },
+    {
+      "path": "01-economics-and-econometrics/01-macroeconomics/08-monetary-policy-reaction/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.33
+    },
+    {
+      "path": "01-economics-and-econometrics/01-macroeconomics/09-macro-forecast-combination/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.43
+    },
+    {
+      "path": "01-economics-and-econometrics/02-microeconomics/03-consumer-credit-demand-elasticity/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.44
+    },
+    {
+      "path": "01-economics-and-econometrics/02-microeconomics/04-platform-network-effects/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 2.43
+    },
+    {
+      "path": "01-economics-and-econometrics/02-microeconomics/05-merchant-cash-flow-economics/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.61
+    },
+    {
+      "path": "01-economics-and-econometrics/02-microeconomics/06-search-matching-credit/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.25
+    },
+    {
+      "path": "01-economics-and-econometrics/02-microeconomics/07-auctions-payment-routing/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.32
+    },
+    {
+      "path": "01-economics-and-econometrics/02-microeconomics/08-behavioral-repayment-decisions/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.39
+    },
+    {
+      "path": "01-economics-and-econometrics/02-microeconomics/09-heterogeneous-agent-consumption/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.69
+    },
+    {
+      "path": "01-economics-and-econometrics/03-game-theory/01-endogenous-credit-freeze/bayesian-freeze-audit/notebook.ipynb",
+      "success": true,
+      "seconds": 1.34
+    },
+    {
+      "path": "01-economics-and-econometrics/03-game-theory/01-endogenous-credit-freeze/mixed-equilibrium-audit/notebook.ipynb",
+      "success": true,
+      "seconds": 1.22
+    },
+    {
+      "path": "01-economics-and-econometrics/03-game-theory/01-endogenous-credit-freeze/polyhedral-freeze-audit/notebook.ipynb",
+      "success": true,
+      "seconds": 1.0
+    },
+    {
+      "path": "01-economics-and-econometrics/03-game-theory/05-bank-run-coordination/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.3
+    },
+    {
+      "path": "01-economics-and-econometrics/03-game-theory/06-dynamic-pricing-competition/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.55
+    },
+    {
+      "path": "01-economics-and-econometrics/03-game-theory/07-fraud-defense-attacker-game/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 2.08
+    },
+    {
+      "path": "01-economics-and-econometrics/03-game-theory/08-collections-bargaining/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.86
+    },
+    {
+      "path": "01-economics-and-econometrics/03-game-theory/09-platform-subsidy-competition/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.27
+    },
+    {
+      "path": "01-economics-and-econometrics/03-game-theory/10-information-sharing-credit/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.45
+    },
+    {
+      "path": "01-economics-and-econometrics/03-game-theory/11-regulatory-compliance-games/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.21
+    },
+    {
+      "path": "01-economics-and-econometrics/04-econometrics/01-real-time-causal-nowcasting/vintage-audit/notebook.ipynb",
+      "success": true,
+      "seconds": 1.79
+    },
+    {
+      "path": "01-economics-and-econometrics/04-econometrics/03-panel-fixed-effects/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.54
+    },
+    {
+      "path": "01-economics-and-econometrics/04-econometrics/04-difference-in-differences/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.55
+    },
+    {
+      "path": "01-economics-and-econometrics/04-econometrics/05-instrumental-variables/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.43
+    },
+    {
+      "path": "01-economics-and-econometrics/04-econometrics/06-time-series-volatility/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.79
+    },
+    {
+      "path": "01-economics-and-econometrics/04-econometrics/07-bayesian-linear-regression/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.45
+    },
+    {
+      "path": "01-economics-and-econometrics/04-econometrics/08-quantile-regression/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 4.17
+    },
+    {
+      "path": "01-economics-and-econometrics/04-econometrics/09-spatial-econometrics/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.52
+    },
+    {
+      "path": "01-economics-and-econometrics/05-macrofinance/03-macro-credit-loss-stress/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.39
+    },
+    {
+      "path": "01-economics-and-econometrics/05-macrofinance/04-liquidity-contagion-network/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.49
+    },
+    {
+      "path": "01-economics-and-econometrics/05-macrofinance/05-sovereign-yield-spreads/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.47
+    },
+    {
+      "path": "01-economics-and-econometrics/05-macrofinance/06-bank-capital-credit-cycle/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.41
+    },
+    {
+      "path": "01-economics-and-econometrics/05-macrofinance/07-fx-liquidity-mismatch/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.41
+    },
+    {
+      "path": "01-economics-and-econometrics/05-macrofinance/08-payment-system-systemic-risk/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.11
+    },
+    {
+      "path": "01-economics-and-econometrics/05-macrofinance/09-macro-financial-early-warning/notebooks/01-estimation-and-robustness.ipynb",
+      "success": true,
+      "seconds": 1.17
+    },
+    {
+      "path": "02-mathematics-statistics-and-quant/advanced-research/08-bayesian-inverse-uncertainty/notebook.ipynb",
+      "success": true,
+      "seconds": 1.78
+    },
+    {
+      "path": "02-mathematics-statistics-and-quant/advanced-research/18-rare-event-geometry-importance-sampling/notebook.ipynb",
+      "success": true,
+      "seconds": 2.59
+    },
+    {
+      "path": "02-mathematics-statistics-and-quant/numerical-core/notebook.ipynb",
+      "success": true,
+      "seconds": 1.34
+    },
+    {
+      "path": "03-financial-risk/01-credit-risk/credit-risk-products/ifrs9-investigacion-cuantitativa/notebooks/ifrs9_laboratory.ipynb",
+      "success": true,
+      "seconds": 1.18
+    },
+    {
+      "path": "03-financial-risk/02-market-and-model-risk/weighted-expected-shortfall-audit/notebook.ipynb",
+      "success": true,
+      "seconds": 1.38
+    },
+    {
+      "path": "04-quant-strategy-and-products/asset-management/frontera-eficiente-markowitz/notebook.ipynb",
+      "success": true,
+      "seconds": 30.27
+    },
+    {
+      "path": "04-quant-strategy-and-products/asset-management/rebalanceo-beneficio-costo/notebook.ipynb",
+      "success": true,
+      "seconds": 3.5
+    },
+    {
+      "path": "05-artificial-intelligence-and-computational-systems/10-ai-orchestration-engineering/06-fault-tolerant-ai-execution-recovery/mvp-durable-checkpoints/notebook.ipynb",
+      "success": true,
+      "seconds": 3.57
+    },
+    {
+      "path": "06-strategy-innovation-and-leadership/weekly-decision-audit.ipynb",
+      "success": true,
+      "seconds": 1.7
+    }
+  ],
+  "retained_regression": "Additional run of 41 existing extensive notebooks exceeded the 240-second per-notebook budget at gradient-boosting-vs-logit; no complete regression claim. Three dependency-related failures passed after installing packages. Markowitz was repaired and passed.",
+  "pytest_suites": [
+    {
+      "path": "01-economics-and-econometrics/03-game-theory/01-endogenous-credit-freeze/rational-family-audit/tests",
+      "success": true,
+      "summary": "..........                                                               [100%]\n10 passed in 1.34s\n"
+    },
+    {
+      "path": "01-economics-and-econometrics/03-game-theory/01-endogenous-credit-freeze/bayesian-freeze-audit/tests",
+      "success": true,
+      "summary": "............                                                             [100%]\n12 passed in 0.77s\n"
+    },
+    {
+      "path": "01-economics-and-econometrics/03-game-theory/01-endogenous-credit-freeze/mixed-equilibrium-audit/tests",
+      "success": true,
+      "summary": "............                                                             [100%]\n12 passed in 1.06s\n"
+    },
+    {
+      "path": "01-economics-and-econometrics/03-game-theory/01-endogenous-credit-freeze/polyhedral-freeze-audit/tests",
+      "success": true,
+      "summary": "..........                                                               [100%]\n10 passed in 1.13s\n"
+    },
+    {
+      "path": "01-economics-and-econometrics/04-econometrics/01-real-time-causal-nowcasting/vintage-audit/tests",
+      "success": true,
+      "summary": "...........                                                              [100%]\n11 passed in 0.63s\n"
+    },
+    {
+      "path": "01-economics-and-econometrics/03-game-theory/01-endogenous-credit-freeze/strategic-form-audit/tests",
+      "success": true,
+      "summary": ".........                                                                [100%]\n9 passed in 0.84s\n"
+    },
+    {
+      "path": "02-mathematics-statistics-and-quant/advanced-research/08-bayesian-inverse-uncertainty/tests",
+      "success": true,
+      "summary": "........................                                                 [100%]\n24 passed in 0.55s\n"
+    },
+    {
+      "path": "02-mathematics-statistics-and-quant/advanced-research/03-distributionally-robust-optimization/tests",
+      "success": true,
+      "summary": "..........................................                               [100%]\n42 passed in 0.87s\n"
+    },
+    {
+      "path": "02-mathematics-statistics-and-quant/advanced-research/01-stochastic-critical-transitions/tests",
+      "success": true,
+      "summary": "...........................................                              [100%]\n43 passed in 1.36s\n"
+    },
+    {
+      "path": "01-economics-and-econometrics/computational-economics/tests",
+      "success": true,
+      "summary": "........                                                                 [100%]\n8 passed in 1.80s\n"
+    },
+    {
+      "path": "02-mathematics-statistics-and-quant/numerical-core/tests",
+      "success": true,
+      "summary": "........                                                                 [100%]\n8 passed in 0.13s\n"
+    },
+    {
+      "path": "02-mathematics-statistics-and-quant/advanced-research/09-optimal-transport-distributional-dynamics/tests",
+      "success": true,
+      "summary": ".............................                                            [100%]\n29 passed in 0.59s\n"
+    },
+    {
+      "path": "03-financial-risk/01-credit-risk/credit-risk-products/ifrs9-investigacion-cuantitativa/tests",
+      "success": true,
+      "summary": "...                                                                      [100%]\n3 passed in 0.39s\n"
+    },
+    {
+      "path": "02-mathematics-statistics-and-quant/advanced-research/18-rare-event-geometry-importance-sampling/tests",
+      "success": true,
+      "summary": "................................                                         [100%]\n32 passed in 1.11s\n"
+    },
+    {
+      "path": "03-financial-risk/03-market-liquidity-research/tests",
+      "success": true,
+      "summary": "......                                                                   [100%]\n6 passed in 0.18s\n"
+    },
+    {
+      "path": "03-financial-risk/07-financial-and-construction-risk-lab/02-construction-enterprise-risk/01-project-cashflow-at-risk/tests",
+      "success": true,
+      "summary": "....                                                                     [100%]\n4 passed in 0.11s\n"
+    },
+    {
+      "path": "03-financial-risk/02-market-and-model-risk/weighted-tail-underflow-guard/tests",
+      "success": true,
+      "summary": "....................................................................     [100%]\n68 passed in 0.94s\n"
+    },
+    {
+      "path": "03-financial-risk/07-financial-and-construction-risk-lab/python/tests",
+      "success": true,
+      "summary": ".....                                                                    [100%]\n5 passed in 0.14s\n"
+    },
+    {
+      "path": "03-financial-risk/02-market-and-model-risk/weighted-expected-shortfall-audit/tests",
+      "success": true,
+      "summary": "......................                                                   [100%]\n22 passed in 1.22s\n"
+    },
+    {
+      "path": "04-quant-strategy-and-products/risk-engines/weighted-tail-audit/tests",
+      "success": true,
+      "summary": "........                                                          [100%]\n8 passed, 7 subtests passed in 0.13s\n"
+    },
+    {
+      "path": "05-artificial-intelligence-and-computational-systems/03-deep-learning-and-foundation-models/model-routing-cascade-economics/tests",
+      "success": true,
+      "summary": "........................................                                 [100%]\n40 passed in 6.57s\n"
+    },
+    {
+      "path": "05-artificial-intelligence-and-computational-systems/04-agentic-ai-and-multi-agent-systems/agent-runtime-reliability/tests",
+      "success": true,
+      "summary": "..............................                                           [100%]\n30 passed in 0.72s\n"
+    },
+    {
+      "path": "05-artificial-intelligence-and-computational-systems/06-knowledge-engineering-and-rag/rag-retrieval-evaluation/tests",
+      "success": true,
+      "summary": "........................................                                 [100%]\n40 passed in 1.15s\n"
+    },
+    {
+      "path": "04-quant-strategy-and-products/asset-management/rebalanceo-beneficio-costo/tests",
+      "success": true,
+      "summary": ".............                                                            [100%]\n13 passed in 1.16s\n"
+    },
+    {
+      "path": "05-artificial-intelligence-and-computational-systems/data-engineering/risk-data-platform/tests",
+      "success": true,
+      "summary": "........                                                                 [100%]\n8 passed in 0.16s\n"
+    },
+    {
+      "path": "05-artificial-intelligence-and-computational-systems/data-engineering/data-pipeline-contracts-incremental-elt/tests",
+      "success": true,
+      "summary": "....................................................                     [100%]\n52 passed in 6.90s\n"
+    },
+    {
+      "path": "05-artificial-intelligence-and-computational-systems/08-ai-reliability-security-and-governance/llm-evaluation-judge-reliability/tests",
+      "success": true,
+      "summary": "................................                                         [100%]\n32 passed in 1.57s\n"
+    },
+    {
+      "path": "05-artificial-intelligence-and-computational-systems/data-engineering/shared/tests",
+      "success": true,
+      "summary": ".......                                                                  [100%]\n7 passed in 0.14s\n"
+    },
+    {
+      "path": "06-strategy-innovation-and-leadership/01-capital-allocation-real-options/tests",
+      "success": true,
+      "summary": "...                                                                      [100%]\n3 passed in 0.14s\n"
+    },
+    {
+      "path": "06-strategy-innovation-and-leadership/03-venture-portfolio-construction/tests",
+      "success": true,
+      "summary": "...                                                                      [100%]\n3 passed in 0.11s\n"
+    },
+    {
+      "path": "06-strategy-innovation-and-leadership/02-market-entry-game-theory/tests",
+      "success": true,
+      "summary": "..                                                                       [100%]\n2 passed in 0.17s\n"
+    },
+    {
+      "path": "06-strategy-innovation-and-leadership/04-data-investment-prioritization/tests",
+      "success": true,
+      "summary": "..                                                                       [100%]\n2 passed in 0.11s\n"
+    },
+    {
+      "path": "06-strategy-innovation-and-leadership/05-strategic-resilience-stress-testing/tests",
+      "success": true,
+      "summary": "..                                                                       [100%]\n2 passed in 0.11s\n"
+    },
+    {
+      "path": "06-strategy-innovation-and-leadership/06-enterprise-capital-allocation-roic/tests",
+      "success": true,
+      "summary": "..                                                                       [100%]\n2 passed in 0.10s\n"
+    },
+    {
+      "path": "05-artificial-intelligence-and-computational-systems/10-ai-orchestration-engineering/06-fault-tolerant-ai-execution-recovery/mvp-durable-checkpoints/tests",
+      "success": true,
+      "summary": "......                                                             [100%]\n6 passed, 6 subtests passed in 1.96s\n"
+    },
+    {
+      "path": "06-strategy-innovation-and-leadership/07-executive-strategy-okr-operating-system/tests",
+      "success": true,
+      "summary": "..                                                                       [100%]\n2 passed in 0.11s\n"
+    },
+    {
+      "path": "06-strategy-innovation-and-leadership/10-crisis-management-recovery-planning/tests",
+      "success": true,
+      "summary": "..                                                                       [100%]\n2 passed in 0.09s\n"
+    },
+    {
+      "path": "06-strategy-innovation-and-leadership/08-enterprise-risk-appetite-board-reporting/tests",
+      "success": true,
+      "summary": "..                                                                       [100%]\n2 passed in 0.10s\n"
+    },
+    {
+      "path": "06-strategy-innovation-and-leadership/09-business-unit-economics-pricing/tests",
+      "success": true,
+      "summary": "..                                                                       [100%]\n2 passed in 0.12s\n"
+    },
+    {
+      "path": "06-strategy-innovation-and-leadership/11-corporate-strategic-planning/tests",
+      "success": true,
+      "summary": "..                                                                       [100%]\n2 passed in 0.12s\n"
+    },
+    {
+      "path": "06-strategy-innovation-and-leadership/13-executive-incentive-design/tests",
+      "success": true,
+      "summary": "..                                                                       [100%]\n2 passed in 0.10s\n"
+    },
+    {
+      "path": "06-strategy-innovation-and-leadership/12-balance-sheet-capital-management/tests",
+      "success": true,
+      "summary": "..                                                                       [100%]\n2 passed in 0.10s\n"
+    },
+    {
+      "path": "06-strategy-innovation-and-leadership/14-ma-strategic-synergies/tests",
+      "success": true,
+      "summary": "..                                                                       [100%]\n2 passed in 0.11s\n"
+    },
+    {
+      "path": "06-strategy-innovation-and-leadership/15-enterprise-transformation-portfolio/tests",
+      "success": true,
+      "summary": "..                                                                       [100%]\n2 passed in 0.13s\n"
+    },
+    {
+      "path": "06-strategy-innovation-and-leadership/shared_validation/tests",
+      "success": true,
+      "summary": "......                                                                   [100%]\n6 passed in 0.11s\n"
+    }
+  ],
+  "cpp_projects": [
+    {
+      "path": "04-quant-strategy-and-products/risk-engines",
+      "success": true,
+      "ctest_output": "Test project /workspace/scratch/df86338d8058/weekly_work/cpp-risk\n    Start 1: risk_tests\n1/1 Test #1: risk_tests .......................   Passed    0.00 sec\n\n100% tests passed out of 1\n\nTotal Test time (real) =   0.00 sec\n"
+    },
+    {
+      "path": "04-quant-strategy-and-products/risk-engines/weighted-tail-audit",
+      "success": true,
+      "ctest_output": "Test project /workspace/scratch/df86338d8058/Portafolio-weekly/04-quant-strategy-and-products/risk-engines/weighted-tail-audit/build/release\n    Start 1: weighted_invariants\n1/1 Test #1: weighted_invariants ..............   Passed    0.01 sec\n\n100% tests passed out of 1\n\nTotal Test time (real) =   0.01 sec\n"
+    },
+    {
+      "path": "03-financial-risk/07-financial-and-construction-risk-lab/cpp",
+      "success": true,
+      "ctest_output": "Test project /workspace/scratch/df86338d8058/weekly_work/cpp-construction\n    Start 1: risk_engine_tests\n1/1 Test #1: risk_engine_tests ................   Passed    0.00 sec\n\n100% tests passed out of 1\n\nTotal Test time (real) =   0.00 sec\n"
+    }
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "scikit-learn": "1.8.0",
+    "statsmodels": "0.15.0",
+    "nbformat": "5.11.1",
+    "ipython": "9.17.1"
+  }
+}
