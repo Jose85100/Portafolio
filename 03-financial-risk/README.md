@@ -8,9 +8,11 @@ Crédito, mercado, liquidez, riesgo sistémico, IFRS 9 y stress testing integrad
 2. [Mercado y modelos](02-market-and-model-risk/): VaR/ES, backtesting, GARCH, pruebas de estrés y validación (PSI/Gini).
 3. [Liquidez de mercado](03-market-liquidity-research/): ES dinámico y EVT, regímenes de volatilidad, liquidez estocástica, espirales de liquidez y optimización de liquidez.
 4. [Investigación avanzada](04-advanced-research/): siete propuestas metodológicas de crédito, IFRS 9, SIAR y control de cartera.
-5. [Enterprise Risk Advisory](05-enterprise-risk-advisory/): 24 programas de consultoría agrupados en ocho prácticas.
+5. [Enterprise Risk Advisory](05-enterprise-risk-advisory/): 56 diseños metodológicos agrupados en ocho prácticas, con fundamentos separados.
+6. [Motor de investigación cuantitativa](06-quantitative-research-engine/): arquitectura y referencias numéricas de crédito.
+7. [Riesgo corporativo y construcción](07-financial-and-construction-risk-lab/): baselines Python/C++, experimentos y 45 carpetas preservadas con solapamientos documentados.
 
-Cada proyecto ejecutable de las dos primeras áreas trae un `notebook.ipynb` extenso. Los productos en C++ están en [04 · risk-engines](../04-quant-strategy-and-products/risk-engines/).
+Los proyectos ejecutables de las dos primeras áreas incluyen notebooks; IFRS 9 conserva su notebook dentro de `notebooks/`. Los diseños de investigación no se cuentan como implementaciones. Los productos en C++ están en [04 · risk-engines](../04-quant-strategy-and-products/risk-engines/).
 
 ## Agenda de investigación avanzada — siete proyectos
 
@@ -26,4 +28,16 @@ Cada proyecto ejecutable de las dos primeras áreas trae un `notebook.ipynb` ext
 
 ## Enterprise Risk Advisory — consultoría integral
 
-[24 proyectos rigurosamente especificados en ocho líneas de servicio](05-enterprise-risk-advisory/). Incluyen gobierno, capital, liquidez, operacional, resiliencia, ciber, IA, fraude, cumplimiento, seguros, clima, contraparte, controles y datos de riesgo. **Diseños metodológicos pendientes de implementación.**
+[56 proyectos especificados en ocho líneas de servicio](05-enterprise-risk-advisory/). Incluyen gobierno, capital, liquidez, operacional, resiliencia, ciber, IA, fraude, cumplimiento, seguros, clima, contraparte, controles y datos de riesgo. **Diseños metodológicos pendientes de implementación.**
+
+
+## Revisión técnica de riesgo — 18 de octubre de 2026 UTC
+
+La [revisión y evidencia](REVIEW_2026-10-18.md) registra errores reproducidos, cambios de contrato, cobertura y límites. Incluye:
+
+- Corrección de ES en construcción y alineación de VaR/ES Python/C++/mercado-liquidez.
+- Contratos de datos para ECL, pesos de escenario y validación de PD.
+- Stage 3 financiado con recuperaciones esperadas explícitas, separado de la aproximación de default futuro de Stage 1/2.
+- [Notebook de mercado y financiación](03-market-liquidity-research/notebook.ipynb) y [notebook de construcción](07-financial-and-construction-risk-lab/notebook.ipynb).
+
+No se elevan los diseños a productos ni se certifica implementación contable o prudencial completa.

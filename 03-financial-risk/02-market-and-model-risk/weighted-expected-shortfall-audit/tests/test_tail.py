@@ -3,7 +3,7 @@ import pytest
 from hypothesis import given, settings
 from hypothesis import strategies as st
 
-from src.baselines import construction_es, historical_es, liquidity_es
+from src.baselines import construction_es, historical_es, liquidity_es, historical_corrected_es
 from src.oracle import lp_es
 from src.tail import equal_mass_reference, weighted_tail
 
@@ -36,7 +36,7 @@ def test_discrete_counterexample():
     x = [0.0] * 99 + [100.0]
     assert weighted_tail(x).es == pytest.approx(40)
     assert historical_es(x, 0.975) == pytest.approx(1)
-    assert construction_es(x, 0.975) == pytest.approx(100 / 3)
+    assert construction_es(x, 0.975) == pytest.approx(40)
     assert lp_es(x) == pytest.approx(40)
 
 
@@ -117,3 +117,14 @@ def test_lp_errors(monkeypatch):
 @given(st.lists(st.integers(-1000, 1000), min_size=2, max_size=50), levels)
 def test_actual_liquidity_baseline(x, alpha):
     assert weighted_tail(x, alpha).es == pytest.approx(liquidity_es(x, alpha), abs=1e-8)
+
+
+def test_current_historical_api_matches_shared_fixtures():
+    import csv
+    from pathlib import Path
+    path=Path(__file__).resolve().parents[3]/'07-financial-and-construction-risk-lab/tests/fixtures/tail_contract.csv'
+    for row in csv.DictReader(path.open()):
+        losses=list(map(float,row['losses'].split(';')))
+        if len(losses)<2:continue
+        assert historical_corrected_es(losses,float(row['alpha'])) == pytest.approx(float(row['es']),abs=1e-9)
+    with pytest.raises(ValueError):historical_corrected_es([float('nan'),0],.95)

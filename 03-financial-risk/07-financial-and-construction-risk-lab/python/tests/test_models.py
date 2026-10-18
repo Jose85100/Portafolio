@@ -8,7 +8,7 @@ sys.modules[spec.name]=m
 spec.loader.exec_module(m)
 class ModelTests(unittest.TestCase):
     def test_var_es(self):
-        self.assertEqual(m.empirical_var_es([5,1,4,3,2],.8),{"var":4.0,"es":4.5})
+        self.assertEqual(m.empirical_var_es([5,1,4,3,2],.8),{"var":4.0,"es":5.0})
     def test_finance(self):
         r=m.project_finance([120,120],[100,100],200,0)
         self.assertEqual(r["dscr"],[1.2,1.2])

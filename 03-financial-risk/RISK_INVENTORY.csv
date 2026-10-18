@@ -1,0 +1,166 @@
+readme,local_code_files,local_notebooks,category,first_heading
+01-credit-risk/README.md,0,0,documentation_or_parent_index,Riesgo de crédito
+01-credit-risk/architecture/README.md,0,0,documentation_or_parent_index,Arquitectura de referencia — riesgo de crédito
+01-credit-risk/contracts/README.md,0,0,documentation_or_parent_index,Contratos de intercambio
+01-credit-risk/cpp/README.md,0,0,documentation_or_parent_index,Integración C++
+01-credit-risk/credit-portfolio-strategy/README.md,0,0,documentation_or_parent_index,Riesgo de crédito: estrategia y portafolio
+01-credit-risk/credit-portfolio-strategy/asignacion-de-capital-raroc/README.md,3,0,has_local_experiment_or_code,Asignación de cartera por RAROC
+01-credit-risk/credit-portfolio-strategy/concentracion-hhi-cartera/README.md,2,0,has_local_experiment_or_code,Concentración de cartera con HHI
+01-credit-risk/credit-portfolio-strategy/copula-gaussiana-perdidas/README.md,3,0,has_local_experiment_or_code,Distribución de pérdidas con cópula gaussiana
+01-credit-risk/credit-portfolio-strategy/monitor-de-limites-de-apetito/README.md,2,0,has_local_experiment_or_code,Monitor de límites de apetito de riesgo
+01-credit-risk/credit-portfolio-strategy/vasicek-perdida-no-esperada/README.md,2,0,has_local_experiment_or_code,Capital de Vasicek frente a Monte Carlo
+01-credit-risk/credit-risk-products/README.md,0,0,documentation_or_parent_index,Riesgo de crédito — productos y ciclo de vida
+01-credit-risk/credit-risk-products/analisis-de-cosechas-vintage/README.md,2,0,has_local_experiment_or_code,Análisis de cosechas (vintage)
+01-credit-risk/credit-risk-products/ifrs9-investigacion-cuantitativa/.pytest_cache/README.md,0,0,documentation_or_parent_index,pytest cache directory #
+01-credit-risk/credit-risk-products/ifrs9-investigacion-cuantitativa/README.md,2,1,has_local_experiment_or_code,IFRS 9 — Laboratorio de investigación matemática y cuantitativa
+01-credit-risk/credit-risk-products/matrices-de-transicion-roll-rates/README.md,2,0,has_local_experiment_or_code,Matrices de transición y roll rates
+01-credit-risk/credit-risk-products/perdida-esperada-pd-lgd-ead/README.md,2,0,has_local_experiment_or_code,"Pérdida esperada por producto (PD, LGD, EAD)"
+01-credit-risk/credit-risk-products/scorecard-logistico-woe/README.md,2,0,has_local_experiment_or_code,Scorecard logístico con WoE e IV
+01-credit-risk/credit-risk-products/segmentacion-clientes-kmeans/README.md,2,0,has_local_experiment_or_code,Segmentación de clientes con k-means
+01-credit-risk/database/README.md,0,0,documentation_or_parent_index,Modelo de datos y controles
+01-credit-risk/notebooks/README.md,0,0,documentation_or_parent_index,Notebooks reproducibles
+02-market-and-model-risk/README.md,0,0,documentation_or_parent_index,Riesgo financiero y riesgo de modelos
+02-market-and-model-risk/backtesting-var-kupiec-christoffersen/README.md,2,0,has_local_experiment_or_code,Backtesting de VaR: Kupiec y Christoffersen
+02-market-and-model-risk/garch-volatilidad-y-var/README.md,2,0,has_local_experiment_or_code,Volatilidad GARCH y VaR condicional
+02-market-and-model-risk/pruebas-de-estres-escenarios/README.md,2,0,has_local_experiment_or_code,Pruebas de estrés y estrés inverso
+02-market-and-model-risk/validacion-de-modelo-psi-gini/README.md,2,0,has_local_experiment_or_code,"Validación de modelo: Gini, calibración y PSI"
+02-market-and-model-risk/var-es-tres-metodos/README.md,2,0,has_local_experiment_or_code,VaR y Expected Shortfall por tres métodos
+02-market-and-model-risk/weighted-expected-shortfall-audit/.pytest_cache/README.md,0,0,documentation_or_parent_index,pytest cache directory #
+02-market-and-model-risk/weighted-expected-shortfall-audit/README.md,6,0,has_local_experiment_or_code,Weighted Expected Shortfall Audit
+02-market-and-model-risk/weighted-tail-underflow-guard/.pytest_cache/README.md,0,0,documentation_or_parent_index,pytest cache directory #
+02-market-and-model-risk/weighted-tail-underflow-guard/README.md,6,0,has_local_experiment_or_code,Weighted Tail Underflow Guard
+03-market-liquidity-research/.pytest_cache/README.md,0,0,documentation_or_parent_index,pytest cache directory #
+03-market-liquidity-research/README.md,1,0,has_local_experiment_or_code,Riesgo de mercado y liquidez: laboratorio avanzado
+04-advanced-research/01-causal-origination-policy/README.md,0,0,documentation_or_parent_index,Originación causal y aprobación contrafactual
+04-advanced-research/02-nonstationary-credit-digital-twin/README.md,0,0,documentation_or_parent_index,Gemelo digital de portafolio y cambios de régimen
+04-advanced-research/03-collections-dynamic-treatment-regimes/README.md,0,0,documentation_or_parent_index,Cobranzas causales y políticas dinámicas
+04-advanced-research/04-ifrs9-forward-looking-ecl/README.md,0,0,documentation_or_parent_index,IFRS 9: ECL prospectiva y SICR dinámico
+04-advanced-research/05-siar-integrated-risk-contagion/README.md,0,0,documentation_or_parent_index,"SIAR: contagio entre crédito, liquidez, mercado y operación"
+04-advanced-research/06-mca-cashflow-credit-underwriting/README.md,0,0,documentation_or_parent_index,Originación MCA con flujos comerciales intermitentes
+04-advanced-research/07-capital-constrained-portfolio-control/README.md,0,0,documentation_or_parent_index,Optimización de portafolio con capital y provisiones
+04-advanced-research/README.md,0,0,documentation_or_parent_index,Investigación avanzada de riesgo financiero
+05-enterprise-risk-advisory/00-architecture/README.md,0,0,documentation_or_parent_index,Enterprise Risk Advisory — arquitectura de referencia
+05-enterprise-risk-advisory/00-foundations/README.md,0,0,documentation_or_parent_index,Bases — Enterprise Risk Advisory
+05-enterprise-risk-advisory/01-erm-governance/README.md,0,0,documentation_or_parent_index,"Gobierno, ERM y estrategia — bases + 7 proyectos"
+05-enterprise-risk-advisory/01-erm-governance/enterprise-risk-aggregation/README.md,0,0,documentation_or_parent_index,Agregación de riesgos empresariales
+05-enterprise-risk-advisory/01-erm-governance/fundamentals/README.md,0,0,documentation_or_parent_index,"Bases de Gobierno, ERM y estrategia"
+05-enterprise-risk-advisory/01-erm-governance/rcsa-controls/README.md,0,0,documentation_or_parent_index,RCSA y efectividad de controles
+05-enterprise-risk-advisory/01-erm-governance/reverse-stress-risk-appetite/README.md,0,0,documentation_or_parent_index,Reverse stress del apetito de riesgo
+05-enterprise-risk-advisory/01-erm-governance/risk-appetite/README.md,0,0,documentation_or_parent_index,Apetito de riesgo y cascada de límites
+05-enterprise-risk-advisory/01-erm-governance/risk-culture-measurement/README.md,0,0,documentation_or_parent_index,Medición de cultura y conducta de riesgo
+05-enterprise-risk-advisory/01-erm-governance/strategic-option-risk/README.md,0,0,documentation_or_parent_index,Opciones reales y riesgo estratégico
+05-enterprise-risk-advisory/01-erm-governance/strategic-reputation/README.md,0,0,documentation_or_parent_index,Riesgo estratégico y reputacional
+05-enterprise-risk-advisory/02-capital-alm/README.md,0,0,documentation_or_parent_index,"Capital, tesorería y ALM — bases + 7 proyectos"
+05-enterprise-risk-advisory/02-capital-alm/capital-allocation-euler/README.md,0,0,documentation_or_parent_index,Asignación marginal de capital económico
+05-enterprise-risk-advisory/02-capital-alm/capital-liquidity-feedback/README.md,0,0,documentation_or_parent_index,Retroalimentación capital-liquidez
+05-enterprise-risk-advisory/02-capital-alm/contingent-liquidity-optimization/README.md,0,0,documentation_or_parent_index,Optimización de colchones de liquidez
+05-enterprise-risk-advisory/02-capital-alm/fundamentals/README.md,0,0,documentation_or_parent_index,"Bases de Capital, tesorería y ALM"
+05-enterprise-risk-advisory/02-capital-alm/icaap/README.md,0,0,documentation_or_parent_index,ICAAP y capital económico
+05-enterprise-risk-advisory/02-capital-alm/ilaap/README.md,0,0,documentation_or_parent_index,ILAAP y liquidez estructural
+05-enterprise-risk-advisory/02-capital-alm/irrbb/README.md,0,0,documentation_or_parent_index,"IRRBB, NII y EVE"
+05-enterprise-risk-advisory/02-capital-alm/stochastic-balance-sheet-alm/README.md,0,0,documentation_or_parent_index,ALM estocástico multihorizonte
+05-enterprise-risk-advisory/03-operational-resilience/README.md,0,0,documentation_or_parent_index,Riesgo operacional y resiliencia — bases + 7 proyectos
+05-enterprise-risk-advisory/03-operational-resilience/business-continuity/README.md,0,0,documentation_or_parent_index,BIA y continuidad operacional
+05-enterprise-risk-advisory/03-operational-resilience/control-effectiveness-causal/README.md,0,0,documentation_or_parent_index,Efectividad causal de controles
+05-enterprise-risk-advisory/03-operational-resilience/fundamentals/README.md,0,0,documentation_or_parent_index,Bases de Riesgo operacional y resiliencia
+05-enterprise-risk-advisory/03-operational-resilience/loss-distribution/README.md,0,0,documentation_or_parent_index,Riesgo operacional de frecuencia y severidad
+05-enterprise-risk-advisory/03-operational-resilience/operational-extreme-tail/README.md,0,0,documentation_or_parent_index,Colas extremas de pérdidas operacionales
+05-enterprise-risk-advisory/03-operational-resilience/recovery-time-stochastic/README.md,0,0,documentation_or_parent_index,Tiempo estocástico de recuperación
+05-enterprise-risk-advisory/03-operational-resilience/resilience-network-percolation/README.md,0,0,documentation_or_parent_index,Propagación de fallas en redes operativas
+05-enterprise-risk-advisory/03-operational-resilience/third-party/README.md,0,0,documentation_or_parent_index,Riesgo de proveedores y concentración
+05-enterprise-risk-advisory/04-cyber-ai/README.md,0,0,documentation_or_parent_index,"Ciberseguridad, tecnología e IA — bases + 7 proyectos"
+05-enterprise-risk-advisory/04-cyber-ai/adversarial-model-robustness/README.md,0,0,documentation_or_parent_index,Robustez adversarial de modelos
+05-enterprise-risk-advisory/04-cyber-ai/ai-governance/README.md,0,0,documentation_or_parent_index,Gobierno de IA y riesgo de modelos
+05-enterprise-risk-advisory/04-cyber-ai/ai-model-drift-risk/README.md,0,0,documentation_or_parent_index,Riesgo de deriva de modelos de IA
+05-enterprise-risk-advisory/04-cyber-ai/cyber-attack-graphs/README.md,0,0,documentation_or_parent_index,Grafos probabilísticos de rutas de ataque
+05-enterprise-risk-advisory/04-cyber-ai/cyber-loss/README.md,0,0,documentation_or_parent_index,Cuantificación de ciberriesgo
+05-enterprise-risk-advisory/04-cyber-ai/fundamentals/README.md,0,0,documentation_or_parent_index,"Bases de Ciberseguridad, tecnología e IA"
+05-enterprise-risk-advisory/04-cyber-ai/technology-change/README.md,0,0,documentation_or_parent_index,Riesgo de cambios tecnológicos
+05-enterprise-risk-advisory/04-cyber-ai/technology-dependency-contagion/README.md,0,0,documentation_or_parent_index,Contagio por dependencias tecnológicas
+05-enterprise-risk-advisory/05-financial-crime/README.md,0,0,documentation_or_parent_index,"Fraude, AML y cumplimiento — bases + 7 proyectos"
+05-enterprise-risk-advisory/05-financial-crime/aml-alert-prioritization/README.md,0,0,documentation_or_parent_index,Priorización de alertas AML
+05-enterprise-risk-advisory/05-financial-crime/aml-typologies/README.md,0,0,documentation_or_parent_index,AML/CFT basado en riesgo
+05-enterprise-risk-advisory/05-financial-crime/fraud-causal-intervention/README.md,0,0,documentation_or_parent_index,Evaluación causal de medidas antifraude
+05-enterprise-risk-advisory/05-financial-crime/fraud-dynamic-networks/README.md,0,0,documentation_or_parent_index,Detección temporal de redes de fraude
+05-enterprise-risk-advisory/05-financial-crime/fraud-graphs/README.md,0,0,documentation_or_parent_index,Fraude y redes de colusión
+05-enterprise-risk-advisory/05-financial-crime/fundamentals/README.md,0,0,documentation_or_parent_index,"Bases de Fraude, AML y cumplimiento"
+05-enterprise-risk-advisory/05-financial-crime/regulatory-change-impact/README.md,0,0,documentation_or_parent_index,Impacto de cambios regulatorios
+05-enterprise-risk-advisory/05-financial-crime/regulatory-controls/README.md,0,0,documentation_or_parent_index,Obligaciones regulatorias y control testing
+05-enterprise-risk-advisory/06-insurance-climate-esg/README.md,0,0,documentation_or_parent_index,"Seguros, clima y conducta — bases + 7 proyectos"
+05-enterprise-risk-advisory/06-insurance-climate-esg/actuarial-reserve-uncertainty/README.md,0,0,documentation_or_parent_index,Incertidumbre de reservas actuariales
+05-enterprise-risk-advisory/06-insurance-climate-esg/climate-hazard-credit/README.md,0,0,documentation_or_parent_index,Transmisión de riesgo climático al crédito
+05-enterprise-risk-advisory/06-insurance-climate-esg/climate-insurance-dependence/README.md,0,0,documentation_or_parent_index,Dependencia espacial de pérdidas climáticas
+05-enterprise-risk-advisory/06-insurance-climate-esg/climate-risk/README.md,0,0,documentation_or_parent_index,Riesgo climático físico y transición
+05-enterprise-risk-advisory/06-insurance-climate-esg/conduct-harm-early-warning/README.md,0,0,documentation_or_parent_index,Alertas tempranas de daño al consumidor
+05-enterprise-risk-advisory/06-insurance-climate-esg/conduct-risk/README.md,0,0,documentation_or_parent_index,Conducta y protección del consumidor
+05-enterprise-risk-advisory/06-insurance-climate-esg/fundamentals/README.md,0,0,documentation_or_parent_index,"Bases de Seguros, clima y conducta"
+05-enterprise-risk-advisory/06-insurance-climate-esg/insurance-reserving/README.md,0,0,documentation_or_parent_index,Pricing y reservas actuariales
+05-enterprise-risk-advisory/07-valuation-counterparty/README.md,0,0,documentation_or_parent_index,Valoración y contraparte — bases + 7 proyectos
+05-enterprise-risk-advisory/07-valuation-counterparty/collateral-margin-dynamics/README.md,0,0,documentation_or_parent_index,Dinámica de colateral y llamadas de margen
+05-enterprise-risk-advisory/07-valuation-counterparty/fundamentals/README.md,0,0,documentation_or_parent_index,Bases de Valoración y contraparte
+05-enterprise-risk-advisory/07-valuation-counterparty/intraday-payment-network/README.md,0,0,documentation_or_parent_index,Redes de pagos y liquidez intradía
+05-enterprise-risk-advisory/07-valuation-counterparty/model-validation/README.md,0,0,documentation_or_parent_index,Validación independiente de pricing
+05-enterprise-risk-advisory/07-valuation-counterparty/pricing-uncertainty-bounds/README.md,0,0,documentation_or_parent_index,Bandas de incertidumbre de valoración
+05-enterprise-risk-advisory/07-valuation-counterparty/settlement-risk/README.md,0,0,documentation_or_parent_index,"Pagos, liquidación y liquidez intradía"
+05-enterprise-risk-advisory/07-valuation-counterparty/wrong-way-risk-xva/README.md,0,0,documentation_or_parent_index,Wrong-way risk y CVA dinámico
+05-enterprise-risk-advisory/07-valuation-counterparty/xva/README.md,0,0,documentation_or_parent_index,CVA/DVA/FVA y exposición de contraparte
+05-enterprise-risk-advisory/08-assurance-risk-data/README.md,0,0,documentation_or_parent_index,Aseguramiento y transformación — bases + 7 proyectos
+05-enterprise-risk-advisory/08-assurance-risk-data/continuous-assurance-statistics/README.md,0,0,documentation_or_parent_index,Aseguramiento estadístico continuo
+05-enterprise-risk-advisory/08-assurance-risk-data/continuous-controls/README.md,0,0,documentation_or_parent_index,Monitoreo continuo de controles
+05-enterprise-risk-advisory/08-assurance-risk-data/fundamentals/README.md,0,0,documentation_or_parent_index,Bases de Aseguramiento y transformación
+05-enterprise-risk-advisory/08-assurance-risk-data/risk-data-bcbs239/README.md,0,0,documentation_or_parent_index,Datos de riesgo y BCBS 239
+05-enterprise-risk-advisory/08-assurance-risk-data/risk-data-reconciliation/README.md,0,0,documentation_or_parent_index,Reconciliación cuantitativa de datos de riesgo
+05-enterprise-risk-advisory/08-assurance-risk-data/risk-model-lineage-graph/README.md,0,0,documentation_or_parent_index,Grafo de linaje y dependencia de modelos
+05-enterprise-risk-advisory/08-assurance-risk-data/risk-operating-model/README.md,0,0,documentation_or_parent_index,Modelo operativo y transformación de riesgos
+05-enterprise-risk-advisory/08-assurance-risk-data/risk-transformation-value/README.md,0,0,documentation_or_parent_index,Medición causal del valor de transformación
+05-enterprise-risk-advisory/README.md,0,0,documentation_or_parent_index,"Enterprise Risk Advisory | 56 proyectos, 8 prácticas"
+06-quantitative-research-engine/README.md,0,0,documentation_or_parent_index,Financial Risk Quantitative Research Engine — first verified vertical slice
+07-financial-and-construction-risk-lab/01-corporate-financial-risk/01-liquidity-at-risk/README.md,0,0,documentation_or_parent_index,Liquidity-at-Risk corporativo
+07-financial-and-construction-risk-lab/01-corporate-financial-risk/02-fx-interest-rate-exposure/README.md,0,0,documentation_or_parent_index,Exposición cambiaria y de tasas
+07-financial-and-construction-risk-lab/01-corporate-financial-risk/03-credit-spread-and-refinancing-risk/README.md,0,0,documentation_or_parent_index,Credit spread and refinancing risk
+07-financial-and-construction-risk-lab/01-corporate-financial-risk/03-working-capital-liquidity-forecast/README.md,0,0,documentation_or_parent_index,Capital de trabajo y liquidez
+07-financial-and-construction-risk-lab/01-corporate-financial-risk/04-asset-liability-management/README.md,0,0,documentation_or_parent_index,Corporate ALM and duration gap
+07-financial-and-construction-risk-lab/01-corporate-financial-risk/04-debt-refinancing-and-covenant-risk/README.md,0,0,documentation_or_parent_index,Refinanciación y covenants
+07-financial-and-construction-risk-lab/01-corporate-financial-risk/05-counterparty-cva-and-wrong-way-risk/README.md,0,0,documentation_or_parent_index,Counterparty CVA and wrong-way risk
+07-financial-and-construction-risk-lab/01-corporate-financial-risk/05-treasury-hedging-optimization/README.md,0,0,documentation_or_parent_index,Optimización de coberturas
+07-financial-and-construction-risk-lab/01-corporate-financial-risk/06-counterparty-credit-exposure/README.md,0,0,documentation_or_parent_index,Crédito de contrapartes
+07-financial-and-construction-risk-lab/01-corporate-financial-risk/07-enterprise-economic-capital/README.md,0,0,documentation_or_parent_index,Capital económico corporativo
+07-financial-and-construction-risk-lab/02-construction-enterprise-risk/01-project-cashflow-at-risk/.pytest_cache/README.md,0,0,documentation_or_parent_index,pytest cache directory #
+07-financial-and-construction-risk-lab/02-construction-enterprise-risk/01-project-cashflow-at-risk/README.md,1,0,has_local_experiment_or_code,Cash-Flow-at-Risk de proyectos de construcción
+07-financial-and-construction-risk-lab/02-construction-enterprise-risk/02-schedule-cost-overrun/README.md,0,0,documentation_or_parent_index,Riesgo de cronograma y sobrecostos
+07-financial-and-construction-risk-lab/02-construction-enterprise-risk/03-presales-demand-and-cancellations/README.md,0,0,documentation_or_parent_index,"Preventas, desistimientos y absorción comercial"
+07-financial-and-construction-risk-lab/02-construction-enterprise-risk/04-contractor-counterparty-risk/README.md,0,0,documentation_or_parent_index,Riesgo de contratistas y proveedores
+07-financial-and-construction-risk-lab/02-construction-enterprise-risk/05-project-finance-covenants/README.md,0,0,documentation_or_parent_index,Project finance y covenants
+07-financial-and-construction-risk-lab/02-construction-enterprise-risk/06-material-price-and-inflation-risk/README.md,0,0,documentation_or_parent_index,Construction material inflation risk
+07-financial-and-construction-risk-lab/02-construction-enterprise-risk/06-materials-inflation-and-supply-chain/README.md,0,0,documentation_or_parent_index,Inflación de materiales y suministro
+07-financial-and-construction-risk-lab/02-construction-enterprise-risk/07-land-acquisition-and-residual-valuation/README.md,0,0,documentation_or_parent_index,Riesgo de adquisición de suelo
+07-financial-and-construction-risk-lab/02-construction-enterprise-risk/07-real-estate-inventory-and-pricing/README.md,0,0,documentation_or_parent_index,Real estate inventory and pricing
+07-financial-and-construction-risk-lab/02-construction-enterprise-risk/08-permit-environmental-and-regulatory-delay/README.md,0,0,documentation_or_parent_index,Permits and regulatory delay
+07-financial-and-construction-risk-lab/02-construction-enterprise-risk/08-permit-regulatory-and-legal-delay/README.md,0,0,documentation_or_parent_index,Licencias y contingencias legales
+07-financial-and-construction-risk-lab/02-construction-enterprise-risk/09-construction-safety-and-operational-loss/README.md,0,0,documentation_or_parent_index,Seguridad y pérdida operacional
+07-financial-and-construction-risk-lab/02-construction-enterprise-risk/09-portfolio-concentration-and-dependency/README.md,0,0,documentation_or_parent_index,Project portfolio concentration and dependency
+07-financial-and-construction-risk-lab/02-construction-enterprise-risk/10-climate-flood-and-physical-risk/README.md,0,0,documentation_or_parent_index,Riesgo climático físico
+07-financial-and-construction-risk-lab/02-construction-enterprise-risk/10-safety-operational-loss/README.md,0,0,documentation_or_parent_index,Construction operational and safety loss
+07-financial-and-construction-risk-lab/02-construction-enterprise-risk/11-climate-physical-risk/README.md,0,0,documentation_or_parent_index,Climate physical risk for sites
+07-financial-and-construction-risk-lab/02-construction-enterprise-risk/11-portfolio-project-concentration/README.md,0,0,documentation_or_parent_index,Concentración multiproyecto
+07-financial-and-construction-risk-lab/02-construction-enterprise-risk/12-construction-quality-warranty-reserves/README.md,0,0,documentation_or_parent_index,Calidad y garantías
+07-financial-and-construction-risk-lab/02-construction-enterprise-risk/13-real-estate-price-demand-regimes/README.md,0,0,documentation_or_parent_index,Regímenes de precios y absorción
+07-financial-and-construction-risk-lab/02-construction-enterprise-risk/14-surety-performance-bond-risk/README.md,0,0,documentation_or_parent_index,Pólizas y garantías de cumplimiento
+07-financial-and-construction-risk-lab/02-construction-enterprise-risk/15-project-npv-at-risk/README.md,0,0,documentation_or_parent_index,NPV-at-Risk y rentabilidad
+07-financial-and-construction-risk-lab/03-research-in-progress/01-integrated-construction-digital-twin/README.md,0,0,documentation_or_parent_index,Gemelo cuantitativo de riesgo de constructora
+07-financial-and-construction-risk-lab/03-research-in-progress/02-systemic-housing-construction-stress/README.md,0,0,documentation_or_parent_index,Stress sistémico inmobiliario y construcción
+07-financial-and-construction-risk-lab/03-research-in-progress/03-bayesian-project-early-warning/README.md,0,0,documentation_or_parent_index,Bayesian project early warning
+07-financial-and-construction-risk-lab/03-research-in-progress/03-causal-delay-cost-propagation/README.md,0,0,documentation_or_parent_index,Causalidad entre retrasos y sobrecostos
+07-financial-and-construction-risk-lab/03-research-in-progress/04-bayesian-construction-nowcasting/README.md,0,0,documentation_or_parent_index,Nowcasting bayesiano de avance
+07-financial-and-construction-risk-lab/03-research-in-progress/04-causal-delay-attribution/README.md,0,0,documentation_or_parent_index,Causal attribution of delays
+07-financial-and-construction-risk-lab/03-research-in-progress/05-network-contagion-contractors/README.md,0,0,documentation_or_parent_index,Contagio de contratistas
+07-financial-and-construction-risk-lab/03-research-in-progress/05-robust-capital-allocation/README.md,0,0,documentation_or_parent_index,Distributionally robust capital allocation
+07-financial-and-construction-risk-lab/03-research-in-progress/06-construction-network-contagion/README.md,0,0,documentation_or_parent_index,Contractor and project network contagion
+07-financial-and-construction-risk-lab/03-research-in-progress/06-robust-capital-allocation-construction/README.md,0,0,documentation_or_parent_index,Asignación robusta de capital
+07-financial-and-construction-risk-lab/03-research-in-progress/07-real-options-staged-development/README.md,0,0,documentation_or_parent_index,Opciones reales por etapas
+07-financial-and-construction-risk-lab/03-research-in-progress/08-adversarial-reverse-stress/README.md,0,0,documentation_or_parent_index,Reverse stress adversarial
+07-financial-and-construction-risk-lab/03-research-in-progress/09-hierarchical-bayesian-project-risk/README.md,0,0,documentation_or_parent_index,Bayes jerárquico entre obras
+07-financial-and-construction-risk-lab/03-research-in-progress/10-causal-policy-optimization/README.md,0,0,documentation_or_parent_index,Políticas de mitigación causal
+07-financial-and-construction-risk-lab/README.md,1,0,has_local_experiment_or_code,Financial and Construction Risk Lab
+07-financial-and-construction-risk-lab/python/.pytest_cache/README.md,0,0,documentation_or_parent_index,pytest cache directory #
+README.md,0,0,documentation_or_parent_index,Financial Risk Research
