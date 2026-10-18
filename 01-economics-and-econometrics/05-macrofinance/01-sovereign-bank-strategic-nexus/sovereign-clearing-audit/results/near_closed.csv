@@ -1,0 +1,13 @@
+anchor,method,status,iterations,residual_l1,error_l1,width_l1,seconds
+0.1,residual_only,accepted,148,2.5350273880064833e-08,2.5350273946678215e-07,,0.0037375509999719725
+0.1,two_sided,accepted,186,0.0,6.661338147750939e-16,9.251838961610304e-09,0.0068674670000064
+0.1,LP,solver_success_not_accuracy_certificate,,0.0,3.3306690738754696e-16,,
+0.01,residual_only,accepted,1307,2.9599924178391745e-08,2.959992404849565e-06,,0.02458451499990133
+0.01,two_sided,accepted,1943,0.0,4.3298697960381105e-15,9.915257781489828e-09,0.06866572899991752
+0.01,LP,solver_success_not_accuracy_certificate,,0.0,4.496403249731884e-15,,
+0.001,residual_only,Residual-only iteration budget exhausted,10000,,,,0.19743396500007293
+0.001,two_sided,"Payment bracket did not close: width=0.00013552003784417233, iterations=10000",10000,,,,0.326286957000093
+0.001,LP,solver_success_not_accuracy_certificate,,0.0,3.0808688933348094e-14,,
+1e-09,residual_only,accepted,1,1.4999997910436491e-09,1.4999999985000003,,7.130699998469936e-05
+1e-09,two_sided,"Payment bracket did not close: width=2.9999700001520737, iterations=10000",10000,,,,0.31615889800002606
+1e-09,LP,solver_success_not_accuracy_certificate,,1.4999997910436491e-09,1.5,,

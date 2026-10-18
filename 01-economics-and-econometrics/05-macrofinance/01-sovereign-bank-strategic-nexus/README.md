@@ -1,6 +1,6 @@
 # Sovereign–Bank Strategic Nexus
 
-> **Estado: formulación de investigación.** No se han estimado modelos, demostrado teoremas específicos ni obtenido resultados empíricos en este directorio.
+> **Estado: S2 parcial.** [Sovereign Clearing Audit](sovereign-clearing-audit/) implementa un componente estático de balance y pagos interbancarios con tests, LP y oráculo racional. El juego dinámico, los precios endógenos, garantías e identificación empírica siguen S1. No hay resultados empíricos ni teoremas nuevos del programa completo.
 
 ## Pregunta de investigación
 
@@ -58,3 +58,11 @@ Endogeneidad fiscal y falta de datos de balance granular limitan identificación
 3. Dataset versionado, contratos y vintages.
 4. Solver/estimador, simulación y pruebas automatizadas.
 5. Backtesting, análisis de robustez y reporte reproducible.
+
+## Ciclo 2026-10-18
+
+[Sovereign Clearing Audit](sovereign-clearing-audit/): primer componente S2 del
+programa. Reutiliza el mecanismo EN ya presente en el laboratorio semanal sin
+atribuirse su novedad; añade balances soberanos estáticos, contrato de parada,
+oráculos y conciliación entre impago bruto y acreedores externos. No implementa
+todavía el doom loop fiscal endógeno ni el juego dinámico descrito arriba.
