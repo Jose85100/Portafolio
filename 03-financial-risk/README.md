@@ -41,3 +41,7 @@ La [revisión y evidencia](REVIEW_2026-10-18.md) registra errores reproducidos, 
 - [Notebook de mercado y financiación](03-market-liquidity-research/notebook.ipynb) y [notebook de construcción](07-financial-and-construction-risk-lab/notebook.ipynb).
 
 No se elevan los diseños a productos ni se certifica implementación contable o prudencial completa.
+
+### IFRS 9 multimodelo
+
+La [plataforma de impairment](01-credit-risk/credit-risk-products/ifrs9-investigacion-cuantitativa/README.md) incluye 3 PD, 3 LGD, exposición contractual/CPR/CCF, Stage 3 por recuperaciones y matriz simplificada. Cuatro notebooks nuevos comparan 18 configuraciones bajo datos sintéticos; los modelos no se consideran validados externamente.
