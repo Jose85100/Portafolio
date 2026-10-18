@@ -1,0 +1,190 @@
+41fc967f2965b00c7c27a911d3b4694cedfbc2cb|2026-10-17T20:04:37-05:00|Merge pull request #47 from Jose85100/research/2026-10-17-ou-identification-audit
+8c05ecafa9ff0dfa21b95c89d896b75e89bcf0df|2026-10-17T15:06:20-05:00|feat(math): OU finite-step and noise-confounding audit (program 01 S2)
+931aa473062f70a55c58c73bc56aaada23564ff4|2026-10-17T13:46:28-05:00|feat(economics): rational Gambit families and convexification audit (#46)
+b19c03599a1f7cbb88a17eaed65fdd590dbb009a|2026-10-17T09:51:04-05:00|Merge pull request #45 from Jose85100/research/2026-10-17-es-packet-validation
+3c9edc810442502ab5ac0131e57fd8409259780c|2026-10-17T08:06:03-05:00|risk: validate bounded ES decision packets with rational invariants and mutation corpus
+cd464aa9bd842b9307206020def4371d3197471f|2026-10-16T23:59:26-05:00|Merge pull request #44 from Jose85100/research/2026-10-16-kl-robust-expectation
+c0eeaa033af07366c6392245ac7bb9d91dc3f1d7|2026-10-16T15:17:39-05:00|feat(math): finite KL robust expectations with primal-dual and rare-decision audits (S2)
+2193e5a82b96ce20c3210a5c2e23f1df033e5884|2026-10-16T13:46:21-05:00|feat(economics): external strategic-form and rare-type regret audit (#43)
+681836e7c4be3108e4a4bad6e20dc9b0239808ab|2026-10-16T08:20:45-05:00|Merge pull request #42 from Jose85100/research/2026-10-16-es-consumer-contract
+398cc1414ed34d25c6af707f1c71a8f7367a15e2|2026-10-16T08:20:31-05:00|Merge pull request #41 from Jose85100/research/2026-10-15-transport-feasibility
+f6985a9645a558553164d7b36bbe9af593d2ba2e|2026-10-16T08:04:34-05:00|risk: preserve weighted ES decisions and rejection through JSON consumer contract
+1015808efa9cc065f7b650d4ab68bde156311a4d|2026-10-15T15:09:35-05:00|Measure LP and monotone-reference memory separately; refresh verified outputs
+b784ad1d3931565428179d97536fd8840768ba3a|2026-10-15T15:08:13-05:00|feat(math): feasibility-first optimal transport audit with log scaling and LP bounds (S2)
+a8199a6864c63d25bd322537f60cc184e8c43bc7|2026-10-15T14:06:08-05:00|Merge pull request #39 from Jose85100/research/2026-10-15-python-underflow-guard
+2badd8a5ed685a3437eeedfcd31cdfe6d206e3f7|2026-10-15T14:05:55-05:00|Merge pull request #36 from Jose85100/research/ai-durable-checkpoints-2026-10-14
+2ab1fb27013423b71d5e36cab615bd89efedd796|2026-10-15T13:46:12-05:00|feat(economics): exact polyhedral equilibrium families (#40)
+40bdc14c985c0659fb388a20839e2f8b5aba7c23|2026-10-15T08:20:52-05:00|risk: guard weighted ES underflow with exact recovery and explicit refusal
+afcbc7facb17485786c02e539759afc31b5d23fd|2026-10-14T21:29:21-05:00|Merge pull request #38 from Jose85100/research/2026-10-14-bayesian-inverse
+cfa231ddffbfefc76fb4297288ce96dfc0ac2214|2026-10-14T15:09:48-05:00|feat(math): stable Gaussian inverse posterior with independent precision and coverage audits (S2)
+e19d56d7f36ea1e521a814aa495ac49e3d1847eb|2026-10-14T13:44:26-05:00|feat(economics): isolated mixed Bayesian freeze audit (#37)
+483da6620e043d51c60110961a770e349166f13c|2026-10-14T10:09:31-05:00|feat(ai): add reproducible SQLite durable recovery MVP and fault-injection tests
+c62ae3c8271dfe57d643e821c489efaf9f57011e|2026-10-14T09:27:29-05:00|Merge pull request #35 from Jose85100/research/2026-10-14-weighted-cpp-tail
+bbdb707cd4448a578aaebd942cdf05f6b60314e6|2026-10-14T08:24:31-05:00|Add weighted C++ ES engine with rational oracle, cross-language fixtures and equivalent benchmark
+c213a687d501faae8b2637546f89b980425adfad|2026-10-13T16:21:45-05:00|Merge pull request #34 from Jose85100/research/2026-10-13-rare-event-geometry
+6426301ddce1dacae6564a2695daf30e90e204e0|2026-10-13T15:10:45-05:00|feat(math): executable disconnected Gaussian rare-event audit (S2)
+8f2b11f9bc0e2b23f775c84cec2b2242d17d8e8d|2026-10-13T13:44:35-05:00|feat(economics): audit finite Bayesian credit-freeze equilibria (#33)
+75423ac53aab6ed8f6d28da478307c1ce04dead1|2026-10-13T08:31:11-05:00|Merge pull request #32 from Jose85100/research/2026-10-13-weighted-es-audit
+6daf5f0c893e8044611be3707dd89b73219ab1e9|2026-10-13T08:17:17-05:00|Preserve raw CSV bytes in published benchmark outputs
+bed1b156b5ffba6788e2c88b7432ec981dd50a38|2026-10-13T08:15:10-05:00|Add reproducible weighted ES audit with LP oracle and repository baselines
+db51d4def262980c002e9be799b7e3cd034108f9|2026-10-13T05:48:49-05:00|Merge pull request #31 from Jose85100/feat/risk-gap-closure-numerical-core
+054c5d5a855adb48ecdddb5f313566e82bf14567|2026-10-13T00:24:21-05:00|feat(math): numerical kernels, invariants, convergence benchmarks and evidence inventory
+1af30d5105173aec41471cdc93507a529492e47a|2026-10-12T22:32:17-05:00|Merge pull request #29 from Jose85100/feat/daily-vintage-audit-2026-10-12
+dd1368a6ebf55242ffbe4ecd5df4f1bdf95dc4bb|2026-10-12T22:09:49-05:00|feat(quant): verified cost-aware rebalancing MVP (#30)
+3664b8da726dd67bd4e49e4c871c699c7a016a59|2026-10-12T21:56:30-05:00|fix(reproducibility): preserve exact CSV bytes and recorded hashes
+a556f4e812b2e13a291dcf942e5c7116d28c6c3e|2026-10-12T21:55:28-05:00|feat(econometrics): add executed S2 vintage leakage audit with factorial benchmark
+558bde13013df8a446fbb6acf4c69447be88dd03|2026-10-12T21:22:36-05:00|Merge pull request #28 from Jose85100/feat/construction-financial-risk-lab
+0c38913d788499c0117378075589315474aeddef|2026-10-12T21:21:21-05:00|fix(ci): run both Python suites explicitly
+8d77c0741e13e2fc677703663a5e86b41e120f25|2026-10-12T21:21:03-05:00|feat(risk): expand to 22 projects with Python C++ baselines and CI
+ce023a23398e3ff39d5876b125e752051110da1f|2026-10-12T21:20:25-05:00|docs(risk): expand construction lab to 32 quantitative model projects
+73f325412ca4eb2fb9a00ec05395a632afb78870|2026-10-12T21:15:28-05:00|feat(risk): add financial and construction quantitative risk lab
+4edbe1f4a7bb250f8aa9a473b08329d057bba505|2026-10-12T20:46:17-05:00|fix: execute every notebook in reliability checks
+6a4dd6faffbe59cb81167b0c6b821d2bb4d0b1da|2026-10-12T20:39:23-05:00|Merge pull request #26 from Jose85100/feat/economics-econometrics-35-research-labs
+12504b3556fc13154e479e211b9533e85381b563|2026-10-12T20:12:31-05:00|Add 35 economics research projects, runnable notebooks and computational validation toolkit
+4b2d6d1e56246fff4d55eed25ca7b04efac1ccbd|2026-10-12T20:06:39-05:00|Agrega dos proyectos de IA: contratos de datos y ELT incremental, y enrutamiento entre modelos con control conforme
+94b1d1b906b5595074b7cd2dae195ebe36834593|2026-10-12T20:05:13-05:00|Merge pull request #25 from Jose85100/feat/executive-fintech-leadership-research
+b7200a58c9dc7a833380d410c5057f84e11685bf|2026-10-12T20:00:56-05:00|Strengthen 15 strategy engines with executive validation protocols and add six fintech leadership research programs
+5b7a75dbf5ee2d29fe424eee3da62b2ade29bca2|2026-10-12T19:32:10-05:00|Merge pull request #22 from Jose85100/feat/ai-orchestration-engineering-seven
+d77a6f98e0285b7392871388c14e4f2f60665d69|2026-10-12T19:10:06-05:00|Merge main into feat/ai-orchestration-engineering-seven; preserve all AI specializations and reconcile index
+5977cebb3730c48e03b13acffd16ac290f3533e6|2026-10-12T19:04:47-05:00|Agrega tres proyectos de IA y automatizacion: RAG, confiabilidad de agentes y evaluacion de LLM
+1de8a239bbcc4d88505d8047a8117b00aebbcb97|2026-10-12T18:39:00-05:00|docs(ai): define seven AI orchestration engineering projects and three foundations
+9e9d23ccbb3b8cc0e3f5a5adef031f979b52b23a|2026-10-12T18:37:09-05:00|Merge pull request #21 from Jose85100/feat/advanced-ai-systems-engineering-10
+9388cd729cac7794d9f8817c59fbc126cfabb7c6|2026-10-12T18:24:33-05:00|feat(ai): add ten advanced AI systems engineering research projects and C++ benchmark kernel
+8eed9f74959f05b1b1a3e0a4c477c652d1d3401f|2026-10-12T18:21:34-05:00|Merge pull request #20 from Jose85100/feat/enterprise-risk-advisory-56-programs
+8f666f80c8c7d1f05d3710d520e5a8ae0e57845f|2026-10-12T18:21:16-05:00|Merge pull request #19 from Jose85100/feat/financial-risk-quant-foundation
+0b64b83a407dd08590037c4b18414dc1ada4b049|2026-10-12T18:21:05-05:00|Merge pull request #18 from Jose85100/feat/advanced-math-stat-quant-second-wave
+9c9e9e9cad72a118baea22022d1737b8f1b14925|2026-10-12T18:15:42-05:00|docs(enterprise-risk): split each practice into three independent foundations plus seven projects
+3a010be815a2e7c6636f776f92a1b9a6962e643c|2026-10-12T17:30:54-05:00|docs(enterprise-risk): separate rigorous thematic foundations from 56 research projects
+8cdba17e5fa9ec5281747091a5eb1c04cf922ff9|2026-10-12T17:29:13-05:00|docs(enterprise-risk): expand eight practices from 24 to 56 aligned research projects
+c1b06426ddbf6a92d9e05fa65af88e93adfabf10|2026-10-12T17:20:19-05:00|feat(risk): introduce tested C++ credit loss kernel and quantitative research architecture
+09f108d01aa54767506e9e8f0d56238ff2033d1b|2026-10-12T16:02:21-05:00|docs(quant): add second wave of ten frontier mathematical research programs
+37aee944d88ced56eae3493355e053732cb39101|2026-10-12T15:59:45-05:00|Merge pull request #17 from Jose85100/feat/advanced-math-stat-quant-research
+0913c83ef53af0106e832033abb0183e60b77db4|2026-10-12T15:55:15-05:00|docs(quant): add ten rigorous advanced mathematics and statistics research programs
+c3282c98b8d26f68b89c6ad92293076f4ed02729|2026-10-12T15:37:02-05:00|Merge pull request #16 from Jose85100/feat/ai-computational-systems-restructure
+fd43270dc075ccfa161517aab2b09353f4967965|2026-10-12T15:36:43-05:00|Merge pull request #15 from Jose85100/feat/economics-research-programs
+ce4b49635f332f5f3f8e28716e4af9be8d7a0453|2026-10-12T15:34:09-05:00|refactor(ai): rename computational systems domain and establish eight research pillars
+424367b79d4b478751ba12ae767ecdba9ea0fd7e|2026-10-12T15:31:19-05:00|feat: harden reliability and reproducibility
+cf465974d5cd6541c040c1c5295ad15cef2cec34|2026-10-12T15:23:36-05:00|docs(economics): organize twelve rigorous programs across five economic disciplines
+42b9718fc6c03da89deca2fd0f84635237121555|2026-10-12T15:14:13-05:00|feat: add executable ifrs9 laboratory
+dee80ea67fc9a24f8156003dd20219875de78b13|2026-10-12T15:04:50-05:00|Merge pull request #14 from Jose85100/feat/data-engineering-platform-v2
+1ecf10bf0f9b566be9e632ac920e30d9518fce8b|2026-10-12T15:04:15-05:00|feat: professionalize credit risk portfolio
+d62b3c798e5abc58217a1efcd613c275dd043370|2026-10-12T14:54:29-05:00|refactor: organize financial risk research
+6e7cfa5adde28275ce395a05a8a67ed4fb55578d|2026-10-12T14:42:03-05:00|docs: update data engineering portfolio entry
+e38cfab6cf613a0e2e64d279b259ea6e75a12bae|2026-10-12T14:40:25-05:00|feat(data-engineering): add reliability toolkit, PIT joins and eight platform designs
+b19bed26b0443b98859179685af6269c646f66c6|2026-10-12T14:35:56-05:00|Merge pull request #13 from Jose85100/feat/data-engineering-risk-platform-mvp
+93a4d54759c2ff2866da2b2fb5b741397b98cbc5|2026-10-12T14:35:40-05:00|Merge pull request #12 from Jose85100/feat/enterprise-risk-advisory-24-programs
+c29e41ba8934755fd51a5f47d887ac7fa0dacf1a|2026-10-12T14:32:30-05:00|merge main into enterprise advisory: resolve README conflict and preserve seven credit projects
+17256641e52ecc879cf20176086e996f012a871a|2026-10-12T14:32:02-05:00|fix: reconcile financial risk index with main and preserve advisory links
+4b287d5ba65b78e1b2c2701fcc2e235d58438125|2026-10-12T14:30:52-05:00|fix(ci): locate data engineering workflow in GitHub Actions root
+cab184b319c99e87587b652a237d5671cea078e7|2026-10-12T14:30:38-05:00|feat(data-engineering): implement tested incremental risk data pipeline MVP
+fdc5a6410e4dc9f5796fc8b7ef2bccde44d3e284|2026-10-12T14:29:03-05:00|docs(risk): 24 rigorous enterprise risk advisory project specifications
+b519b57f5e54db12ccd6fde22c4d31ecd8a7d616|2026-10-12T14:22:21-05:00|Merge pull request #11 from Jose85100/feat/credit-risk-seven-research-programs
+cfb217f1a428becef92aae4b76e3c4fc948ba9a1|2026-10-12T14:19:21-05:00|docs(credit): seven innovative originations, portfolio, collections, IFRS9 and SIAR research projects
+9e175be078570b7713bb99bcc52975e393378fb9|2026-10-12T13:53:44-05:00|Revisa el repositorio: corrige rutas obsoletas y enlaces, y actualiza los README
+25267e4c8ce4fe6f585d1d9e91cd2333d59b9d5f|2026-10-12T13:39:07-05:00|Merge pull request #10 from Jose85100/feat/strengthen-strategy-engines-01-10
+dd2a690a7085096d7cc71538d4f0cf1e462b3498|2026-10-12T13:25:32-05:00|fix(strategy): rebase strategy engines onto latest main
+252e8f02b068da58fc54311bbf76bb52442ae0cf|2026-10-12T13:15:47-05:00|Merge pull request #9 from Jose85100/feat/executive-operating-systems-11-15
+f137a055f874a8ad7adeb2c9c42da934647ccff8|2026-10-12T13:08:34-05:00|ci(executive): test corporate operating systems on Python 3.11-3.13
+40a78f976a6778f90c62e8a9fd7b6a0455088f9c|2026-10-12T13:08:29-05:00|docs(executive): index five corporate operating system projects
+97d2ad5e26ea704d8a64d7e2b97ee0900fe026e3|2026-10-12T13:08:21-05:00|docs(executive): add board-facing business case for 15-enterprise-transformation-portfolio
+afbbe7aefaffadcfe9aa49d152e93e2cc5257d25|2026-10-12T13:08:19-05:00|docs(executive): add board-facing business case for 14-ma-strategic-synergies
+c0da965b07e7c1d7b36b94e90c7cad30506df512|2026-10-12T13:08:17-05:00|docs(executive): add board-facing business case for 13-executive-incentive-design
+229c3545747482f20cb61ea1cab548a322f25505|2026-10-12T13:08:15-05:00|docs(executive): add board-facing business case for 12-balance-sheet-capital-management
+b4b6a01dcb5b1fd1213f3b2564d216b247742b5c|2026-10-12T13:08:13-05:00|docs(executive): add board-facing business case for 11-corporate-strategic-planning
+5319c187f334c5306034fd542c4ffc5bffe00b61|2026-10-12T13:08:01-05:00|docs(executive): add mathematical governance design for 15-enterprise-transformation-portfolio
+88ee3cdf2aa424e487034d6b716cec525d32eb8b|2026-10-12T13:07:59-05:00|docs(executive): add mathematical governance design for 14-ma-strategic-synergies
+ab6a0a18d31afd36d7b51e9fb926dfef7de76950|2026-10-12T13:07:56-05:00|docs(executive): add mathematical governance design for 13-executive-incentive-design
+d35940a958ec1e22a9da7d92ad28cf1a9ca0f127|2026-10-12T13:07:54-05:00|docs(executive): add mathematical governance design for 12-balance-sheet-capital-management
+dc5069938a76d95929a00c6f907cb04027f3153f|2026-10-12T13:07:52-05:00|docs(executive): add mathematical governance design for 11-corporate-strategic-planning
+9be9a47213ddb48cb9cbc9c4012d429afa511494|2026-10-12T13:07:36-05:00|test(executive): check 15-enterprise-transformation-portfolio invariants
+fdbde64b5eb4216b9c43ff217427d05ec25a120a|2026-10-12T13:07:33-05:00|test(executive): check 14-ma-strategic-synergies invariants
+91033a612378f9fe708957ffe36311e48b673fb5|2026-10-12T13:07:31-05:00|test(executive): check 13-executive-incentive-design invariants
+9b521f9cef864de7e0c40433800a91c264aaf2d4|2026-10-12T13:07:29-05:00|test(executive): check 12-balance-sheet-capital-management invariants
+7226edd7b27fe019db900e50779b29fa7ccccacc|2026-10-12T13:07:26-05:00|test(executive): check 11-corporate-strategic-planning invariants
+275f87c7b0bd44462cc74350b447ca818af5c516|2026-10-12T13:07:17-05:00|feat(executive): implement 15-enterprise-transformation-portfolio model
+94912135faaf6d517e8dfd57526ffa5485db8317|2026-10-12T13:07:15-05:00|feat(executive): implement 14-ma-strategic-synergies model
+94eb5671fdc8ccc2dd5e89fc4dbf3fbc12d4f336|2026-10-12T13:07:13-05:00|feat(executive): implement 13-executive-incentive-design model
+4b241176fede3be33ca355e0c486ae7a3f817adb|2026-10-12T13:07:08-05:00|feat(executive): implement 12-balance-sheet-capital-management model
+22c88431b06bfc5927804ccc0918a253d8380966|2026-10-12T13:07:06-05:00|feat(executive): implement 11-corporate-strategic-planning model
+78e76bc7194c896b71d692e764b362c1aae95d2b|2026-10-12T13:06:43-05:00|docs(executive): establish Enterprise Transformation Portfolio
+c70124c6abe021860a3f6b60f3d260e39d3f8cf5|2026-10-12T13:06:39-05:00|docs(executive): establish M&A and Strategic Synergies
+e42547f85f14c255a53e34f7678b3b7a2f06247c|2026-10-12T13:06:36-05:00|docs(executive): establish Executive Performance & Incentive Design
+32324d5e14292e128076624f35370028c661932f|2026-10-12T13:06:34-05:00|docs(executive): establish Balance Sheet & Capital Management
+67ffe0c261c3e776616f91df365adc0e3abe5d6f|2026-10-12T13:06:32-05:00|docs(executive): establish Corporate Strategic Planning & Scenario Engine
+4104698f60e66fa24730e5352b9ece6f7fbdae1f|2026-10-12T13:01:46-05:00|Merge pull request #7 from Jose85100/feat/strategy-innovation-five-decision-engines
+95500aa58273a67e31ca5e9340efe9de35499372|2026-10-12T12:59:32-05:00|Corrige tabla del README de la carpeta 05
+24655af8323c08ca9087345fecd32499315e4720|2026-10-12T12:53:27-05:00|ci(strategy): validate five decision engines on three Python versions
+40569b6939fe577868f1bb0a60d5637bcc25b311|2026-10-12T12:53:16-05:00|docs(strategy): index five new decision engines without replacing legacy work
+187b6e4cf154d69b8a92d19164976fabc06fe0e9|2026-10-12T12:53:03-05:00|docs(strategy): add mathematical and architecture note for 05-strategic-resilience-stress-testing
+d0b5980c84e2103844303e61dba44bfc71a07558|2026-10-12T12:52:59-05:00|docs(strategy): add mathematical and architecture note for 04-data-investment-prioritization
+4476a5550a60fd3337b00d89ba35db2d9991ad00|2026-10-12T12:52:56-05:00|docs(strategy): add mathematical and architecture note for 03-venture-portfolio-construction
+a577cc10a2d117193b9fa08cd639ee4e97e7f34b|2026-10-12T12:52:53-05:00|docs(strategy): add mathematical and architecture note for 02-market-entry-game-theory
+e88005338031763e1d8706c0d589abdc155fe89e|2026-10-12T12:52:51-05:00|docs(strategy): add mathematical and architecture note for 01-capital-allocation-real-options
+ad8b2d0d4d3e7ec897f90d79aa68201db76f2b2c|2026-10-12T12:52:34-05:00|test(strategy): verify 05-strategic-resilience-stress-testing model invariants
+9ed90e0805c5a623dcf24a3952e32c6e6f5f8ff9|2026-10-12T12:52:32-05:00|test(strategy): verify 04-data-investment-prioritization model invariants
+fcfc0ffd34f8b3a075d8aba04e4eb6b64f19e7f1|2026-10-12T12:52:30-05:00|test(strategy): verify 03-venture-portfolio-construction model invariants
+2fb5e8aa212f4d0f3044717820ca08933a728adf|2026-10-12T12:52:25-05:00|test(strategy): verify 02-market-entry-game-theory model invariants
+acd734469626806c910257b342588eb5d1869aa4|2026-10-12T12:52:23-05:00|test(strategy): verify 01-capital-allocation-real-options model invariants
+80eb36e879b517f6b427778dbac8a6955ac33575|2026-10-12T12:52:10-05:00|feat(strategy): implement 05-strategic-resilience-stress-testing decision engine
+63cd089b07920b76dd9954afadcae1e914688b23|2026-10-12T12:52:08-05:00|feat(strategy): implement 04-data-investment-prioritization decision engine
+5ef5417df66b2cd02e189204ff4475b9e6d5cea3|2026-10-12T12:52:05-05:00|feat(strategy): implement 03-venture-portfolio-construction decision engine
+5cb553984525386112b763c3d84399b328ba0191|2026-10-12T12:52:03-05:00|feat(strategy): implement 02-market-entry-game-theory decision engine
+01045719332e6769b914a9f07a67fc71a57ee9cb|2026-10-12T12:52:01-05:00|feat(strategy): implement 01-capital-allocation-real-options decision engine
+1a0015610b3aa8ff453dad91892333feb33db209|2026-10-12T12:51:33-05:00|docs(strategy): define Strategic Resilience & Stress Testing research product
+101d4a32d3a4824fafaffbfe7a00ea7d862b59bb|2026-10-12T12:51:30-05:00|docs(strategy): define Data Investment Prioritization research product
+9dd941aac7a9a74528d5e174827b36eb4762c6f3|2026-10-12T12:51:28-05:00|docs(strategy): define Venture Portfolio Construction research product
+c90186fdd86dd107591d954d9a4cc6448a09fbfe|2026-10-12T12:51:25-05:00|docs(strategy): define Market Entry & Strategic Games research product
+572fc8460e984f3833805a6311645e929dc6b333|2026-10-12T12:51:23-05:00|docs(strategy): define Capital Allocation & Real Options research product
+e438b942d8e0e1f0f06d3184b45ffcadaa91101d|2026-10-12T12:48:51-05:00|Merge pull request #6 from Jose85100/fix/consolidate-legacy-root-folders
+2cc0fc27f93b0344db3d3f8bc822c9c66f97c372|2026-10-12T12:47:54-05:00|docs: link relocated C++ risk platform from quant domain
+964a507e9d9d196b924ffb1c796a81403f4a78f3|2026-10-12T12:47:49-05:00|fix: update C++ build and documentation paths after consolidation
+a7969dfeca33764e5aa63f2948adc186a8230808|2026-10-12T12:47:47-05:00|fix: update C++ build and documentation paths after consolidation
+51446f749287b14fcff4cf48dae3e7a2c49107c4|2026-10-12T12:47:32-05:00|refactor: consolidate four legacy root folders into domain architecture
+01c98e2fe8ee6718f81e00f9c738b999738b2c0b|2026-10-12T12:47:14-05:00|refactor: relocate C++ documentation into market-liquidity-research
+04fb221f8e279d3c8e5b1445c0bdabb827cb17b6|2026-10-12T12:47:12-05:00|refactor: relocate C++ documentation into market-and-model-risk
+888bd4694074e22adcba0126bfcb56f315bf2091|2026-10-12T12:47:10-05:00|refactor: relocate C++ documentation into credit-risk-products
+75c743cc5216ec98d2160b59e7d35aa7ab609e65|2026-10-12T12:29:17-05:00|Merge pull request #5 from Jose85100/feat/research-architecture-economics-quant
+69be8d2368427b69677d3614e89aa2c7f8590df6|2026-10-12T12:28:34-05:00|Merge pull request #4 from Jose85100/feat/cpp-risk-products
+fe04db849c582f2c1bdc52bcf9d0cfe3acdc8f9a|2026-10-12T12:26:53-05:00|docs: connect data engineering track to research navigation
+fe10fbdfb139ab7e0f910c0f615b1b3e9902b609|2026-10-12T12:26:51-05:00|docs: connect data engineering track to research navigation
+bb7f21aef9add25ddf9411b8f8872abfc12287d9|2026-10-12T12:26:45-05:00|docs: add dedicated data engineering research and products track
+bcbe423e34ccff07293715b9cbfa33d77f9b0126|2026-10-12T12:25:30-05:00|docs: record verified directory relocation and outstanding validation
+bd89add832acdbaff475132d688dcfa4035c3229|2026-10-12T12:25:14-05:00|refactor: relocate all legacy research directories into six domains
+2274dd01209718105ba3524e7490f37fb14e51fe|2026-10-12T12:25:02-05:00|docs: update portfolio navigation after migration
+2ff21bf911d419aacd449b706ea3d0eb8cde5493|2026-10-12T12:24:56-05:00|test: discover notebooks recursively after domain migration
+015ff60ee6f42354c9c31b44596ccbeb3ad8891d|2026-10-12T12:21:14-05:00|docs: link AI and automation research domain
+ae6844509ce3d99a2cd5dcdd5b8d6950ed01e542|2026-10-12T12:21:08-05:00|docs: establish AI architecture and automation domain
+ed81c9def6fb747fbe52da6f30113f2b52adb631|2026-10-12T12:21:01-05:00|docs: link economics-first research taxonomy from portfolio home
+53955309e85409d5e4a87e9257fe2b7d64f57403|2026-10-12T12:20:56-05:00|docs: research architecture and safe migration roadmap
+056cb1a17d8b284443476d21fffb91883c4eeeff|2026-10-12T12:20:39-05:00|docs: add 06-strategy-innovation-and-leadership/README.md
+c1d482423bae2868571b9882107e571979ccfd56|2026-10-12T12:20:36-05:00|docs: add 04-quant-strategy-and-products/README.md
+728de8e23a3a06c9b128401b9f4fa18f9980a9ce|2026-10-12T12:20:34-05:00|docs: add 03-financial-risk/README.md
+eb01c9e222af1fc67811245102269471858638af|2026-10-12T12:20:26-05:00|docs: create 02-mathematics-statistics-and-quant research domain
+aeac51cf338bf22730413cb3dd4a41aee633a19a|2026-10-12T12:20:24-05:00|docs: create 01-economics-and-econometrics research domain
+54b11b17c98e0484cdf5099eb20606674ed249f1|2026-10-12T12:15:45-05:00|fix(cpp): include <string> for std::stoull in liquidity
+920f65d8e4a6a6db5acfd6cb077c949860637794|2026-10-12T12:15:43-05:00|fix(cpp): include <string> for std::stoull in market
+8e3d4b5928ac639af68cc8ffe1e450faaf0d80ff|2026-10-12T12:15:40-05:00|fix(cpp): include <string> for std::stoull in credit
+97ac3235ffb918a16cef23872f3a2647c8633350|2026-10-12T12:14:01-05:00|feat(cpp): integrate 09-riesgo-mercado-liquidez-avanzado/CPP_PRODUCT.md
+b74cb9a52393cdf0e70f1056e173c34d6d732b0f|2026-10-12T12:13:58-05:00|feat(cpp): integrate 03-riesgo-financiero-modelos/CPP_PRODUCT.md
+b985718bb4c8bc72aef98a9ef629ab2fa30e553c|2026-10-12T12:13:56-05:00|feat(cpp): integrate 01-riesgo-de-credito-productos/CPP_PRODUCT.md
+a6da7b19ca600004ec0facbbf2feac23197bb8d0|2026-10-12T12:13:54-05:00|feat(cpp): integrate .github/workflows/cpp-risk-platform.yml
+dda62984bdd30881dde3aa46ccb18d9bb7233ae6|2026-10-12T12:13:40-05:00|feat(cpp): README.md
+eaac30828526d96d29f383d98285c6dd7adcb06b|2026-10-12T12:13:37-05:00|feat(cpp): tests.cpp
+6e79611f690ee677cd8e8fd309683a6e29d0f13b|2026-10-12T12:13:35-05:00|feat(cpp): liquidity.cpp
+6ef80e68834a0fd3bd416d07a41eeb93fc3d4b0d|2026-10-12T12:13:32-05:00|feat(cpp): market.cpp
+100dc91cc700764556fc7bc93c1da5f4f087fc9a|2026-10-12T12:13:30-05:00|feat(cpp): credit.cpp
+3ea0c0abe6869a0b17b59429b919e3ac27c46e73|2026-10-12T12:13:28-05:00|feat(cpp): risk.hpp
+f31099a2ffdcd868f5e3b57c656f25e3d45ab54e|2026-10-12T12:13:25-05:00|feat(cpp): CMakeLists.txt
+ea0efb25668dfb955a9bf7096185006b0fbbde9a|2026-10-12T12:10:21-05:00|Investigación avanzada: riesgo de mercado, liquidez y stress integrado (#3)
+39def0fb468e786c3c5b1a6ce4736fbdde795e1f|2026-10-12T12:10:17-05:00|Laboratorio cuantitativo multilenguaje: POO, C, C++, R, MATLAB y Julia (#2)
+82d5887b1295c0786622b292e8c4a0224766728f|2026-10-12T12:10:13-05:00|Profundización cuantitativa: crédito, ECL e IFRS 9 (7 monografías) (#1)
+70e4f0a4fd0e92cdc6e74e80e4b5ed43b006aeda|2026-10-12T09:37:28-05:00|Agrega notebook de analisis factorial multiple con datos reales del Banco Mundial
+a2eb3efbb29eb56a404ea957f0cfc33700db6daf|2026-10-12T07:03:31-05:00|Notebooks extensos con pruebas para carpetas 05-07 (15 proyectos) y README
+880c74219653dc7c921d6f970720903291c6b0af|2026-10-12T03:46:24-05:00|Add five notebooks for the portfolio-management folder
+4d485ea3f04c7195e794793e8e17bccc0a3cd7cf|2026-10-12T03:15:49-05:00|Add four notebooks completing the financial-risk and model-risk folder
+4cf561cfb7d301aae5c9871264970cd934bea897|2026-10-12T02:44:01-05:00|Add notebooks for portfolio-credit-strategy folder and VaR/ES
+1205c446d2fecfb42a9a7cc8cd92b95a264152a4|2026-10-12T01:10:04-05:00|Add five extended notebooks for the credit-risk products folder
+b4ab34a9a5ae8856b00e692a4f3d162cc37757df|2026-10-12T00:43:38-05:00|Add scorecard notebook, notebook test runner and requirements
+84b946f54443c19ab89e8ad42f5803290d6afd5a|2026-10-12T00:27:41-05:00|Add 35 runnable projects, five per profile folder
+566728d6e8e588d4ec15556b30772eaeb42baebf|2026-10-12T00:19:25-05:00|Add folders aligned to each CV profile
+97edbabc0671d942d98eaeae2f3c248c9eba133f|2026-10-12T00:18:28-05:00|Add portfolio index README

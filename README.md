@@ -8,16 +8,20 @@ La organización parte de la pregunta científica y el dominio, no de la herrami
 
 | Dominio | Contenido |
 |---|---|
-| [01 · Economics & Econometrics](01-economics-and-econometrics) | 35 laboratorios de macro, micro, teoría de juegos, econometría y macrofinanzas, con notebooks reproducibles. |
+| [01 · Economics & Econometrics](01-economics-and-econometrics) | 35 laboratorios de macro, micro, teoría de juegos, econometría y macrofinanzas, con experimentos estructurales específicos y sensibilidad reproducible. |
 | [02 · Mathematics, Statistics & Quant](02-mathematics-statistics-and-quant) | [Métodos cuantitativos](02-mathematics-statistics-and-quant/quantitative-methods) (6 notebooks, incluido un análisis factorial múltiple con datos reales) y [laboratorio multilenguaje](02-mathematics-statistics-and-quant/quant-libraries) (Python, C, C++, R, MATLAB, Julia). |
 | [03 · Financial Risk](03-financial-risk) | [Crédito](03-financial-risk/01-credit-risk), [riesgo de mercado y de modelos](03-financial-risk/02-market-and-model-risk), [investigación de liquidez](03-financial-risk/03-market-liquidity-research), propuestas avanzadas y advisory empresarial. |
-| [04 · Quant Strategy & Products](04-quant-strategy-and-products) | [Gestión de portafolios](04-quant-strategy-and-products/asset-management) (5 notebooks) y [plataforma de riesgo en C++17](04-quant-strategy-and-products/risk-engines). |
+| [04 · Quant Strategy & Products](04-quant-strategy-and-products) | [Gestión de portafolios](04-quant-strategy-and-products/asset-management) (6 notebooks) y [plataforma de riesgo en C++17](04-quant-strategy-and-products/risk-engines). |
 | [05 · Artificial Intelligence & Computational Systems](05-artificial-intelligence-and-computational-systems) | Línea de [ingeniería de datos](05-artificial-intelligence-and-computational-systems/data-engineering), con un [MVP ejecutable de plataforma de datos de riesgo](05-artificial-intelligence-and-computational-systems/data-engineering/risk-data-platform): carga incremental, validaciones, trazabilidad y pruebas. |
 | [06 · Strategy, Innovation & Leadership](06-strategy-innovation-and-leadership) | [15 motores de decisión](06-strategy-innovation-and-leadership) en Python, [venture capital](06-strategy-innovation-and-leadership/venture-capital) y [liderazgo de datos](06-strategy-innovation-and-leadership/data-leadership) (10 notebooks). |
 
+## Revisión semanal
+
+La [revisión del 12–17 de octubre de 2026](reviews/2026-10-12-week/README.md) registra cobertura, desarrollo, resultados y límites. Incluye 35 laboratorios económicos con modelos específicos, ampliación de auditorías y notebooks de sensibilidad para los motores ejecutivos, recuperación durable y núcleo numérico.
+
 ## Cuatro tipos de proyecto
 
-- **Notebooks (77)** — archivos `.ipynb` con versión ingenua, diagnóstico, mejoras, robustez y límites. Los datos son **sintéticos con verdad conocida**, así que el notebook comprueba si el método recupera la verdad; las cifras de las conclusiones se **calculan desde los datos** (celdas «Lectura») y una sección final de `assert` hace fallar el notebook si un hallazgo deja de cumplirse. Cuando una hipótesis inicial resultó falsa, el notebook lo dice y muestra la corrección. La excepción es el [análisis factorial múltiple](02-mathematics-statistics-and-quant/quantitative-methods/analisis-factorial-multiple-mfa), que usa **datos reales y abiertos** del Banco Mundial.
+- **Notebooks (94)** — archivos `.ipynb` con versión ingenua, diagnóstico, mejoras, robustez y límites. Los datos son **sintéticos con verdad conocida**, así que el notebook comprueba si el método recupera la verdad; las cifras de las conclusiones se **calculan desde los datos** (celdas «Lectura») y una sección final de `assert` hace fallar el notebook si un hallazgo deja de cumplirse. Cuando una hipótesis inicial resultó falsa, el notebook lo dice y muestra la corrección. La excepción es el [análisis factorial múltiple](02-mathematics-statistics-and-quant/quantitative-methods/analisis-factorial-multiple-mfa), que usa **datos reales y abiertos** del Banco Mundial.
 - **`main.py` (40)** — la versión corta y ejecutable de cada notebook.
 - **Motores de decisión (15)** — proyectos 01–15 de la carpeta 06, cada uno con `src/`, `tests/` y `docs/`.
 - **Plataforma C++17** — simulación de pérdidas de crédito, riesgo de mercado y flujos de liquidez, con CMake y pruebas.
@@ -30,7 +34,7 @@ pip install -r requirements.txt
 # Para notebooks (incluye el entorno de investigación)
 pip install -r requirements-research.txt
 
-# Notebooks: ejecuta los 77 de principio a fin (puede tardar varias horas)
+# Notebooks: ejecuta los 94 de principio a fin (puede tardar varias horas)
 python3 -m unittest tests.test_notebooks -v
 
 # Un solo notebook

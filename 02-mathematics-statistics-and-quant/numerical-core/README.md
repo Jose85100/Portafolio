@@ -26,3 +26,8 @@ python 02-mathematics-statistics-and-quant/numerical-core/scripts/repository_inv
 
 ## Limitations and next steps
 No empirical calibration, cross-language parity, multidimensional optimal transport, jump diffusion, sensitivity adjoints, uncertainty propagation or independent validation. Add property-based tests, CI performance budgets, benchmarks against SciPy/QuantLib and independent peer review before promotion to M2 across all kernels.
+
+
+## Notebook de la revisión semanal
+
+[Experimentos ejecutados](notebook.ipynb): Convergencia fuerte de GBM con ruido acoplado, error Monte Carlo y convenciones de ES.
