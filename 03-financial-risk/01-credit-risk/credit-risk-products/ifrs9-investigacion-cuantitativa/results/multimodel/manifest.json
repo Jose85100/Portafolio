@@ -1,0 +1,36 @@
+{
+  "seed": 20261018,
+  "history_accounts": 2200,
+  "reporting_accounts": 180,
+  "reporting_seed": 61,
+  "train_accounts": 1335,
+  "oot_accounts": 865,
+  "configurations": 18,
+  "provenance": "Fully synthetic; no Colombian portfolio calibration or external validation",
+  "units": "arbitrary monetary units, annual effective rates, monthly default buckets",
+  "split": "Train origination 0..29, 36m performance ends by 65; OOT origination 66..83, retrospectively mature labels",
+  "stage_counts": {
+    "1": 97,
+    "2": 78,
+    "3": 5
+  },
+  "bootstrap": "95% percentile paired account resampling; model fits/scenarios held fixed, no parameter uncertainty",
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0"
+  },
+  "source_sha256": {
+    "src/multimodel/__init__.py": "3c3a7f363a59cd18d985c948b7e101784d7d6bd3725e56a0d981879c3f8136f0",
+    "src/multimodel/contracts.py": "3042562181f67d72eee0a1179c9e9749fb1da96f3e9468c01e62f85ad369725b",
+    "src/multimodel/data.py": "05610ee5b80ee27af2cd84b07fe6f36448d06fd8955bc0414ee427f42434a194",
+    "src/multimodel/ead.py": "07ddffdc4669a429f6664b278c491a426d93adaccde0ef5d6ee6c736d11d4706",
+    "src/multimodel/engine.py": "816de39f9d543e467433d5b0c07b615f04632fcde28c960bddc3ca8503f947c0",
+    "src/multimodel/experiment.py": "1be8d7397213a6237fa3a3cf17f4edc3772e774f8b93f0d5100243b74ae6fff4",
+    "src/multimodel/lgd.py": "29c0ace924c7171ba4db0f04eb3c4f516b7cd84fba0b64970150a229ef0ad39d",
+    "src/multimodel/pd.py": "8d29bc4bdfb98ccdd8d2c2ae1087792ba8f3091845373079744967d6855018de",
+    "src/multimodel/staging.py": "e88c16f781b2622040fd58217c7ea36a85f591dbe03bee67b8b023adbb6dbd47",
+    "src/multimodel/validation.py": "447b39be0439644d7cce49bb41e54fb9b4d454c6421ffa9334d035e513733ea4"
+  }
+}

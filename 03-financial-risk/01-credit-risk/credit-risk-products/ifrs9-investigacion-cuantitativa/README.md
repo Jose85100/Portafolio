@@ -1,8 +1,63 @@
-# IFRS 9 — Laboratorio de investigación matemática y cuantitativa
+# IFRS 9 — Plataforma multimodelo de pérdida esperada
+
+Implementaciones intercambiables de PD, LGD y EAD conectadas a un motor mensual común. El experimento compara **18 configuraciones completas**, conserva una ruta de recuperaciones para Stage 3 y agrega una matriz lifetime simplificada para un universo separado de cuentas por cobrar.
+
+La evidencia es sintética y reproducible. No constituye calibración de una cartera colombiana, política contable aprobada ni cálculo de provisiones SFC.
+
+## Modelos desarrollados
+
+| Familia | Implementaciones | Evidencia |
+|---|---|---|
+| PD | Logit 12m, supervivencia logística mensual, transiciones Markov | Ajuste en entrenamiento, OOT 12m, calibración e identidades de supervivencia |
+| LGD | Workout segmentado, logit fraccional, recuperaciones descontadas | Holdout de casos cerrados; sensibilidad de garantías y demora |
+| EAD | Amortización contractual, prepago independiente, CCF fijo/fraccional para cupos | Calendarios analíticos y errores reservados de CCF |
+| Staging | Cambio relativo y absoluto de PD comparable, watchlist, mora y deterioro | Stage y motivo explícitos; sensibilidad de umbrales |
+| Stage 3 | Saldo financiado menos PV de flujos netos de recuperación | Independencia de PD futura; descuento, monto y demora |
+| Enfoque simplificado | Matriz lifetime por bucket y escenarios | Tasas ponderadas por exposición y cohortes reservadas |
+
+**18 configuraciones** significa 3 PD × 3 LGD × 2 adaptadores mixtos de EAD. No son 18 metodologías independientes: cada configuración reutiliza componentes. El baseline de EAD usa amortización y CCF fijo; el challenger incorpora CPR y CCF ajustado.
+
+## Recorrido de notebooks
+
+1. [PD: modelos y comparación OOT](notebooks/01_pd_model_comparison.ipynb).
+2. [LGD/EAD: severidad, exposición y recuperaciones](notebooks/02_lgd_ead_recoveries.ipynb).
+3. [ECL integrada: 18 configuraciones, escenarios y SICR](notebooks/03_integrated_ecl_models.ipynb).
+4. [Matriz de provisión simplificada](notebooks/04_simplified_provision_matrix.ipynb).
+5. [Laboratorio anual anterior](notebooks/ifrs9_laboratory.ipynb), conservado como baseline didáctico.
+
+## Método, contratos y gobierno
+
+- [Arquitectura e interfaces](docs/ARCHITECTURE.md).
+- [Fichas de todos los modelos](docs/MODEL_CARDS.md): objetivo, entradas, ajuste, supuestos, validación y fallas.
+- [Derivaciones y fronteras del cálculo](docs/METHODOLOGY.md).
+- [Datos, temporalidad y validación](docs/DATA_AND_VALIDATION.md).
+- [Resultados ejecutados y limitaciones](docs/EXPERIMENT_RESULTS.md).
+- [DDL de versiones, corridas y resultados](sql/multimodel_results_schema.sql), diseño de referencia sin adaptador ETL.
+
+## Reproducir
+
+Desde esta carpeta, con las dependencias runtime del repositorio:
+
+```bash
+python run_multimodel.py --config configs/reference.json --output results/multimodel
+python -m unittest discover -s tests -v
+```
+
+`--save-monthly` exporta además todas las contribuciones mensuales del baseline. La salida predeterminada incluye comparación factorial, métricas OOT y holdout, parámetros ajustados, resultados de contratos/escenarios del baseline, bootstrap pareado y hashes del código. Los notebooks calculan desde código; no dependen de CSV manualmente editados.
+
+La CLI usa el mismo experimento que los notebooks. El workflow `financial-risk-contracts.yml` ejecuta contratos en Python 3.11/3.12 y añade ejecución de los cinco notebooks en kernels limpios en CI.
+
+## Límites del desarrollo actual
+
+Datos generados, factor macro estandarizado y escenarios de referencia. No se resuelve dependencia residual LGD–EAD, censura informativa, calibración de recuperaciones abiertas, riesgos competitivos, sobreutilización, modelos de origen reconstruidos, POCI, modificaciones, curas, asientos ni interés sobre saldo neto. La prueba OOT es estacionaria y construida; no equivale a validación en crisis. Las formulaciones avanzadas de las monografías siguen siendo agenda cuando no tienen implementación identificada.
+
+---
+
+# Motor anual y monografías de referencia
 
 > **Laboratorio ejecutable:** abre [`notebooks/ifrs9_laboratory.ipynb`](notebooks/ifrs9_laboratory.ipynb) en GitHub para ver ecuaciones renderizadas, tablas de staging, ECL por escenario y gráficos de calibración. Los datos son sintéticos; no es un cálculo contable ni una política productiva.
 
-## Implementación reproducible
+## Implementación anual reproducible
 
 - [`src/ifrs9_engine.py`](src/ifrs9_engine.py): PD a 12 meses y de vida, staging por SICR/DPD, LGD/EAD, ECL descontada y ponderación de escenarios.
 - [`run_lab.py`](run_lab.py): corrida determinista con resumen de exposición, ECL y stages.
@@ -74,4 +129,4 @@ El [contrato de datos del laboratorio](../docs/DATA_CONTRACTS.md) y su [DDL de r
 
 La [nota pública de IFRS Foundation](https://www.ifrs.org/projects/completed-projects/2019/curing-of-a-credit-impaired-financial-asset-ifrs-9/tad-presentation-of-unrecognised-interest-following-the-curing-of-a-credit-impaired-financial-asset/) reproduce definiciones de pérdidas y descuento; es una decisión tentativa histórica sobre curas, no una certificación de este motor ni una revisión del texto consolidado vigente. El acceso al texto completo consultado requiere suscripción. No se afirma haber auditado cumplimiento contable.
 
-**Límites persistentes:** staging por DPD/ratio es ilustrativo; Stage 1/2 usan EAD y LGD constantes y buckets anuales. No se implementan POCI, modificación, curas, interés neto, asientos, aplicación local SFC ni estimación histórica de recuperaciones. El generador fabrica recuperaciones para investigación; datos externos Stage 3 sin esos inputs se rechazan.
+**Límites del motor anual heredado:** staging por DPD/ratio es ilustrativo; Stage 1/2 usan EAD y LGD constantes y buckets anuales. No se implementan POCI, modificación, curas, interés neto, asientos, aplicación local SFC ni estimación histórica de recuperaciones. El generador fabrica recuperaciones para investigación; datos externos Stage 3 sin esos inputs se rechazan.
