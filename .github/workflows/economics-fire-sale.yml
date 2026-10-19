@@ -1,0 +1,22 @@
+name: Economics fire sale price audit
+on:
+  push:
+    paths:
+      - '01-economics-and-econometrics/05-macrofinance/**'
+      - '01-economics-and-econometrics/computational-economics/**'
+      - '.github/workflows/economics-fire-sale.yml'
+  pull_request:
+    paths:
+      - '01-economics-and-econometrics/05-macrofinance/**'
+      - '01-economics-and-econometrics/computational-economics/**'
+      - '.github/workflows/economics-fire-sale.yml'
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: bash 01-economics-and-econometrics/05-macrofinance/01-sovereign-bank-strategic-nexus/fire-sale-price-audit/reproduce.sh
