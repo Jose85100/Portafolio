@@ -1,0 +1,29 @@
+name: Economics Theory Refutation
+on:
+  push:
+    paths:
+      - '01-economics-and-econometrics/theory-refutation/**'
+      - '.github/workflows/economics-theory-refutation.yml'
+  pull_request:
+    paths:
+      - '01-economics-and-econometrics/theory-refutation/**'
+      - '.github/workflows/economics-theory-refutation.yml'
+jobs:
+  counterexamples:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11','3.12','3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Tests
+        run: python -m unittest discover -s 01-economics-and-econometrics/theory-refutation/tests -p 'test_*.py' -v
+      - name: Reproducible counterexamples
+        run: python 01-economics-and-econometrics/theory-refutation/benchmarks/run.py > theory-refutation-results.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: theory-refutation-${{ matrix.python-version }}
+          path: theory-refutation-results.json
