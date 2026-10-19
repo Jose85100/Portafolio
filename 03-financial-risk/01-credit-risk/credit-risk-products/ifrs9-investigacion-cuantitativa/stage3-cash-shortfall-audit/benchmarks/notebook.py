@@ -15,7 +15,7 @@ nb.metadata.execution_method = "IPython in-process; real outputs"
 nb.cells = [
     nbformat.v4.new_markdown_cell(
         "# Stage 3: default ya ocurrido y recuperaciones\n\n"
-        "## tl;dr\nEl motor padre no distingue pérdida dado incumplimiento actual "
+        "## tl;dr\nEl motor histórico del 18-oct no distingue pérdida dado incumplimiento actual "
         "de nuevo default futuro. Esta auditoría separa PD y descuento. "
         "No es una calibración de cartera ni un cálculo contable aprobado.\n\n"
         "## Context & Methods\n### Key Assumptions\n"
@@ -49,11 +49,37 @@ nb.cells = [
     nbformat.v4.new_markdown_cell(
         "## Takeaways\nNo se debe reutilizar sin adaptación una curva de nuevo default para un "
         "activo ya incumplido. Una LGD a valor presente tampoco se vuelve a descontar por defecto. "
-        "El motor padre queda intacto: se entrega un módulo opt-in y evidencia para migración revisada. "
+        "Esta sección reproduce el snapshot histórico; la reconciliación posterior audita el padre actual. "
         "No todos los Stage3 son reducibles a este caso; no se modela POCI, cura, write-off, intereses "
         "ni error de estimación de recuperaciones. Referencias y crítica en informe.md."
     ),
 ]
+nb.cells.extend(
+    [
+        nbformat.v4.new_markdown_cell(
+            "## Migración reconciliada — 2026-10-19\n\n"
+            "El motor padre YA aplica flujos Stage3. El baseline histórico se congela "
+            "en baselines/ con hash verificado para no confundir versiones. Se prueban "
+            "432 casos Stage3 y 300 contratos mixtos, comparando por loan_id. "
+            "La equivalencia Stage1/2 excluye cambios de caps y clipping de PD original."
+        ),
+        nbformat.v4.new_code_cell(
+            "migration=json.loads(Path('results/migration-summary.json').read_text())\n"
+            "keys=['stage3_cases','stage3_max_relative_error','mixed_loans',"
+            "'stage12_max_relative_change','tiny_rate_subtractive','tiny_rate_current']\n"
+            "print({k:migration[k] for k in keys})\n"
+            "assert migration['stage3_max_relative_error']<1e-12\n"
+            "assert migration['stage12_max_relative_change']<1e-12\n"
+            "display(SVG(filename='results/migration.svg'))"
+        ),
+        nbformat.v4.new_markdown_cell(
+            "### Límite de la reconciliación\nEl snapshot no estima pérdidas reales ni certifica "
+            "IFRS9. Se conserva prechange-reproduction.txt con el fallo previo; diferencias "
+            "fuera del dominio compartido requieren revisión, no se declaran idénticas. "
+            "La ruta actual por contrato tiene mayor coste que el cálculo vectorizado."
+        ),
+    ]
+)
 shell = InteractiveShell.instance()
 for cell in nb.cells:
     if cell.cell_type != "code":
@@ -83,4 +109,4 @@ for cell in nb.cells:
 nbformat.validate(nb)
 assert all(c.outputs for c in nb.cells if c.cell_type == "code")
 nbformat.write(nb, project / "notebook.ipynb")
-print("Three code cells executed with real output; notebook validated")
+print("Four code cells executed with real output; notebook validated")

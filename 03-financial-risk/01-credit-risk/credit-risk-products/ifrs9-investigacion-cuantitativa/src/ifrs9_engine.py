@@ -110,6 +110,13 @@ def credit_impaired_shortfall(gross_carrying_amount: float, recovery_cashflows,
     if not np.isfinite(pv):
         raise ArithmeticError("Nonfinite recovery present value")
     raw = float(gross_carrying_amount - pv)
+    # Within the bounded nonnegative-rate case, avoid cancellation of a tiny
+    # delay loss when nominal recoveries equal gross. Preserve the existing
+    # surplus/negative-rate route outside that domain.
+    nominal = float(np.sum(flows))
+    if effective_interest_rate >= 0 and nominal <= gross_carrying_amount:
+        delay_loss = -np.expm1(-np.log1p(effective_interest_rate) * times)
+        raw = float((gross_carrying_amount - nominal) + np.sum(flows * delay_loss))
     return {"pv_expected_recoveries": pv, "raw_shortfall": raw,
             "ecl": max(raw, 0.), "recovery_surplus": max(-raw, 0.)}
 

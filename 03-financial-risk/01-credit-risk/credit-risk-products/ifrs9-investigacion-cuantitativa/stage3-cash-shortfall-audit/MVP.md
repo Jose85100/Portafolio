@@ -1,5 +1,15 @@
 # MVP completo — Stage3 cash-shortfall audit
 
+## Extensión 2026-10-19: migración verificable
+
+Qué es: baseline congelado con hash, reconciliación por contrato y estabilidad
+integrada al motor actual. Mismo comando único. Produce 432 verificaciones Stage3,
+300 reconciliaciones mixtas, 63 mediciones nuevas, figuras y notebook ejecutado.
+Pasan 32 tests locales y 21 del padre. Fallo previo guardado, no ocultado.
+No certifica IFRS9, equivalencia fuera del dominio compartido, estimación de
+recuperaciones ni error predictivo. Detalle en informe-migracion.md.
+La descripción siguiente es histórica; el motor padre ahora sí está migrado.
+
 Qué es: modelo vectorizado de cash shortfall para activos ya deteriorados no
 POCI y auditoría del motor IFRS9 existente. Cómo corre: comando completo en
 README, o bash run.sh desde esta carpeta. Instala dependencias y ejecuta todo.

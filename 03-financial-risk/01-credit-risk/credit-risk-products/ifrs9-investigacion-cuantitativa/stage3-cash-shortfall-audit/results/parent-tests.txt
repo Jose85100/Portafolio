@@ -1,0 +1,26 @@
+test_calibration_rejects_nonbinary_or_misaligned_labels (test_ifrs9_contracts.ContractTests.test_calibration_rejects_nonbinary_or_misaligned_labels) ... ok
+test_curve_rejects_invalid_parameters (test_ifrs9_contracts.ContractTests.test_curve_rejects_invalid_parameters) ... ok
+test_duplicate_and_missing_ids_rejected (test_ifrs9_contracts.ContractTests.test_duplicate_and_missing_ids_rejected) ... ok
+test_funded_impaired_cashflow_identity (test_ifrs9_contracts.ContractTests.test_funded_impaired_cashflow_identity) ... ok
+test_high_base_pd_is_not_reduced_by_hidden_cap (test_ifrs9_contracts.ContractTests.test_high_base_pd_is_not_reduced_by_hidden_cap) ... ok
+test_impaired_does_not_depend_on_future_default_pd (test_ifrs9_contracts.ContractTests.test_impaired_does_not_depend_on_future_default_pd) ... ok
+test_impaired_rejects_missing_recovery_inputs (test_ifrs9_contracts.ContractTests.test_impaired_rejects_missing_recovery_inputs) ... ok
+test_negative_and_nonfinite_weights_rejected (test_ifrs9_contracts.ContractTests.test_negative_and_nonfinite_weights_rejected) ... ok
+test_nonfinite_and_out_of_bounds_portfolio (test_ifrs9_contracts.ContractTests.test_nonfinite_and_out_of_bounds_portfolio) ... ok
+test_recovery_contract_rejects_nonfinite_and_times (test_ifrs9_contracts.ContractTests.test_recovery_contract_rejects_nonfinite_and_times) ... ok
+test_recovery_delay_increases_loss (test_ifrs9_contracts.ContractTests.test_recovery_delay_increases_loss) ... ok
+test_recovery_surplus_is_visible (test_ifrs9_contracts.ContractTests.test_recovery_surplus_is_visible) ... ok
+test_scenario_weighted_loss_inside_convex_hull (test_ifrs9_contracts.ContractTests.test_scenario_weighted_loss_inside_convex_hull) ... ok
+test_stage_dpd_boundaries (test_ifrs9_contracts.ContractTests.test_stage_dpd_boundaries) ... ok
+test_stage_index_mismatch_rejected (test_ifrs9_contracts.ContractTests.test_stage_index_mismatch_rejected) ... ok
+test_survival_reconciles_and_zero_hazard (test_ifrs9_contracts.ContractTests.test_survival_reconciles_and_zero_hazard) ... ok
+test_adverse_ecl_exceeds_base (test_ifrs9_engine.TestIFRS9Laboratory.test_adverse_ecl_exceeds_base) ... ok
+test_stage_3_requires_90_days_past_due (test_ifrs9_engine.TestIFRS9Laboratory.test_stage_3_requires_90_days_past_due) ... ok
+test_weights_and_ecl_are_valid (test_ifrs9_engine.TestIFRS9Laboratory.test_weights_and_ecl_are_valid) ... ok
+test_recovery_reference_and_weight_audit (test_sql_contract.SchemaContractTests.test_recovery_reference_and_weight_audit) ... ok
+test_zero_original_pd_and_negative_weight_rejected (test_sql_contract.SchemaContractTests.test_zero_original_pd_and_negative_weight_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.115s
+
+OK

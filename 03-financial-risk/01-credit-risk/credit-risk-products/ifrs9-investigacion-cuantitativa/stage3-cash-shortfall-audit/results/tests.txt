@@ -1,11 +1,12 @@
-.....................                                                    [100%]
+................................                                         [100%]
 ================================ tests coverage ================================
 _______________ coverage: platform linux, python 3.12.14-final-0 _______________
 
-Name           Stmts   Miss Branch BrPart  Cover   Missing
-----------------------------------------------------------
-src/model.py      27      0     14      0   100%
-----------------------------------------------------------
-TOTAL             27      0     14      0   100%
+Name               Stmts   Miss Branch BrPart  Cover   Missing
+--------------------------------------------------------------
+src/migration.py      30      2      8      2    89%   17, 42
+src/model.py          27      0     14      0   100%
+--------------------------------------------------------------
+TOTAL                 57      2     22      2    95%
 Coverage JSON written to file results/coverage.json
-21 passed in 1.08s
+32 passed in 2.79s
