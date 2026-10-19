@@ -3,11 +3,13 @@
 ## Auditoría Stage3 — 2026-10-18
 
 [MVP ejecutado de cash shortfalls y recuperación descontada](stage3-cash-shortfall-audit/)
-con baseline real,432 casos,oracleDecimal,tests y notebook. Detecta una limitación
-del motor ilustrativo: Stage3 aún reutiliza la curva de nuevo default. No usar
-esa salida como cálculo aprobado de activos ya deteriorados. El nuevo módulo
-opt-in separa default actual de PD futura y LGD a valor presente de un descuento
-adicional. No migra automáticamente las cifras históricas; ver supuestos y límites.
+con baseline histórico, 432 casos, oráculo Decimal, tests y notebook. La ruta
+actual ya distingue Stage3 por recuperaciones descontadas. La actualización del
+19-oct fija el baseline por commit y SHA256, reconcilia 300 contratos entre
+versiones y conserva pérdidas de demora pequeñas con expm1. Ver
+[informe de migración](stage3-cash-shortfall-audit/informe-migracion.md).
+Las equivalencias Stage1/2 sólo se afirman en el dominio común de inputs;
+no es un cálculo de provisiones aprobado ni una revisión normativa completa.
 
 > **Laboratorio ejecutable:** abre [`notebooks/ifrs9_laboratory.ipynb`](notebooks/ifrs9_laboratory.ipynb) en GitHub para ver ecuaciones renderizadas, tablas de staging, ECL por escenario y gráficos de calibración. Los datos son sintéticos; no es un cálculo contable ni una política productiva.
 

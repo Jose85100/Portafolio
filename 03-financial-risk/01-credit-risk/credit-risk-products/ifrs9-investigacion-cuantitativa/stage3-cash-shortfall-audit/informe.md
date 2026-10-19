@@ -1,5 +1,9 @@
 # Stage3: estado incumplido, recuperación y descuento
 
+**Actualización 2026-10-19:** [informe-migracion.md](informe-migracion.md).
+El texto siguiente registra el experimento histórico: no describe como defecto
+vigente la ruta Stage3 ya migrada. Baseline congelado y padre actual se separan.
+
 Fecha2026-10-18. Base: f03f242222a0410f4558fb0522544afcd9ebb4f8.
 
 ## Pregunta, hipótesis y aporte
