@@ -1,0 +1,29 @@
+name: Economics Identification Laboratory
+on:
+  push:
+    paths:
+      - '01-economics-and-econometrics/research-methods/**'
+      - '.github/workflows/economics-identification.yml'
+  pull_request:
+    paths:
+      - '01-economics-and-econometrics/research-methods/**'
+      - '.github/workflows/economics-identification.yml'
+jobs:
+  reproducibility:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11','3.12','3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Test identification invariants
+        run: python -m unittest discover -s 01-economics-and-econometrics/research-methods/tests -p 'test_*.py' -v
+      - name: Run bias and RMSE study
+        run: python 01-economics-and-econometrics/research-methods/benchmarks/identification_study.py > identification-benchmark.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: identification-benchmark-${{ matrix.python-version }}
+          path: identification-benchmark.json
