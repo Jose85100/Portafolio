@@ -88,3 +88,8 @@ componente finito, sin elevar el programa completo a S3.
 componente estático S1→S2 del programa soberano-bancario, con dos cotas, LP, oráculo
 racional, regresión contra el notebook semanal y separación de impagos brutos de
 pérdidas a acreedores externos. Programa S2 parcial; doom loop dinámico sigue S1.
+
+
+## Profundización metodológica — octubre de 2026
+
+La auditoría detectó README breves en varios laboratorios frente al volumen de notebooks existentes. Se inició una refactorización por **mecanismo económico e identificación**, no por longitud artificial: [guía de métodos y núcleo OLS/IV](research-methods/), [multiplicadores fiscales](01-macroeconomics/04-fiscal-multipliers-local-projections/) y [elasticidad de crédito](02-microeconomics/03-consumer-credit-demand-elasticity/). Los ejemplos siguen siendo sintéticos. El resto de proyectos requiere una revisión individual antes de declarar cerrada la brecha documental y científica.
