@@ -1,0 +1,60 @@
+F....................                                                    [100%]
+=================================== FAILURES ===================================
+_______________________ test_worked_example_and_baseline _______________________
+
+    def test_worked_example_and_baseline() -> None:
+        g = np.array([100.0])
+        new = shortfall(g, [[60]], [2], 0.1)
+        assert new[0] == pytest.approx(100 - 60 / 1.1**2)
+>       old = legacy_ecl(g, new / g, 0.05, 5, 0.1)
+
+tests/test_model.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/baseline.py:33: in legacy_ecl
+    out = engine.ecl_componentes(frame, "base", horizon, eir)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+cartera =    loan_id  pd_12m  pd_origen  dpd    ead  lgd_base  ccf  undrawn
+0        0    0.05       0.05   95  100.0  0.504132  0.0      0.0
+escenario = 'base', horizonte = 5, tasa_descuento = 0.1
+
+    def ecl_componentes(cartera: pd.DataFrame, escenario: str = "base", horizonte: int = 5,
+                        tasa_descuento: float = .10) -> pd.DataFrame:
+        """Stage 1/2 hazard proxy; Stage 3 expected recovery PV with explicit inputs.
+    
+        The rate is a supplied illustrative EIR, not inferred from portfolio rates.
+        EAD is constant across annual default buckets. This does not implement POCI.
+        """
+        _validate_portfolio(cartera)
+        _count(horizonte, "horizonte", 120)
+        if not np.isfinite(tasa_descuento) or tasa_descuento <= -1:
+            raise ValueError("Finite effective discount rate > -1 required")
+        shocks = {"base": (1., 1.), "adverso": (1.45, 1.18), "severo": (2.10, 1.35)}
+        if escenario not in shocks:
+            raise ValueError("escenario must be base, adverso or severo")
+        pd_mult, lgd_mult = shocks[escenario]
+        out = cartera.copy()
+        out["stage"] = stage(out.pd_12m, out.pd_origen, out.dpd)
+        curve_pd = (out.pd_12m * pd_mult).clip(upper=np.nextafter(1., 0.)).where(out.stage.ne(3), 0.)
+        _, marginal = pd_lifetime(curve_pd, horizonte)
+        lgd = (out.lgd_base * lgd_mult).clip(upper=1.).to_numpy()
+        with np.errstate(over="raise", invalid="raise"):
+            ead = (out.ead + out.ccf * out.undrawn).to_numpy()
+            discount = np.exp(-np.log1p(tasa_descuento) * np.arange(1, horizonte + 1))
+            out["ecl_12m"] = marginal[:, 0] * discount[0] * lgd * ead
+            out["ecl_lifetime"] = (marginal * discount).sum(axis=1) * lgd * ead
+        out["ecl"] = np.where(out.stage.eq(1), out.ecl_12m, out.ecl_lifetime)
+        out["ecl_basis"] = np.where(out.stage.eq(1), "annual_12m_default_proxy", "annual_lifetime_default_proxy")
+        out["pv_expected_recoveries"] = np.nan
+        out["recovery_surplus"] = 0.
+        impaired = out.stage.eq(3)
+        if impaired.any():
+            required = {"gross_carrying_amount", "recovery_cashflows", "recovery_times"}
+            if required - set(out):
+>               raise ValueError("Stage 3 requires funded gross carrying amount and expected recovery cash flows/times")
+E               ValueError: Stage 3 requires funded gross carrying amount and expected recovery cash flows/times
+
+../src/ifrs9_engine.py:167: ValueError
+=========================== short test summary info ============================
+FAILED tests/test_model.py::test_worked_example_and_baseline - ValueError: St...
+1 failed, 20 passed in 0.70s

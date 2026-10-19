@@ -141,7 +141,7 @@ def main() -> None:
     ]
     fig, axes = plt.subplots(1, 2, figsize=(11, 4.2), constrained_layout=True)
     for name, label, color, marker in [
-        ("baseline_ecl", "Motor actual: default futuro", "#24557a", "o"),
+        ("baseline_ecl", "Motor histórico: default futuro", "#24557a", "o"),
         ("cash_shortfall", "Activo ya incumplido: flujos", "#b55b22", "s"),
     ]:
         axes[0].plot(
@@ -169,6 +169,8 @@ def main() -> None:
         ax.grid(axis="y", alpha=0.2)
         ax.set_axisbelow(True)
     fig.savefig(out / "comparison.svg")
+    svg = out / "comparison.svg"
+    svg.write_text("\n".join(line.rstrip() for line in svg.read_text().splitlines()) + "\n")
     fig.savefig(out / "comparison.png", dpi=150)
     plt.close(fig)
     summary = {

@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-19",
+  "seed": 20261019,
+  "stage3_cases": 432,
+  "stage3_max_relative_error": 1.3230795769326005e-16,
+  "mixed_loans": 300,
+  "stage_counts": {
+    "1": 100,
+    "2": 100,
+    "3": 100
+  },
+  "stage12_max_relative_change": 9.084315339071267e-16,
+  "tiny_rate_subtractive": 0.0,
+  "tiny_rate_current": 1.0000000000000001e-16,
+  "frozen_commit": "f03f242222a0410f4558fb0522544afcd9ebb4f8",
+  "historical_sha256": "c0d747d609e642d3788426d0f20484ad19daa8fccb192238f96b917cf0d643f3",
+  "current_sha256": "ada3d996063df79f83409bd8f04ab150a7bf2074d1bf7658036ceff89d6517f4",
+  "performance_rows": 63,
+  "medians_ms": {
+    "1/historical_engine": 2.598144,
+    "1/current_engine": 4.732351,
+    "1/batch_oracle_route": 0.06785,
+    "32/historical_engine": 3.60942,
+    "32/current_engine": 10.375199,
+    "32/batch_oracle_route": 0.07447,
+    "256/historical_engine": 3.31899,
+    "256/current_engine": 47.436378,
+    "256/batch_oracle_route": 0.143823
+  }
+}

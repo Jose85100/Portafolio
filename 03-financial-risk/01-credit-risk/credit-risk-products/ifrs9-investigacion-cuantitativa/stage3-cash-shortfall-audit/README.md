@@ -1,5 +1,28 @@
 # Stage3 cash-shortfall audit — 2026-10-18
 
+## Actualización ejecutada: 2026-10-19
+
+El motor padre ya migró a flujos Stage3. Esta extensión repara la auditoría:
+el baseline del 18-oct queda congelado en `baselines/` con commit y SHA256
+comprobados, separado del motor actual. No se atribuye el defecto antiguo al
+código actual. Se entrega `src/migration.py` y reconciliación por loan_id.
+
+Mismo comando run.sh: 32 pruebas del audit, 21 del laboratorio padre, 432 casos
+Stage3 contra Decimal, 300 contratos mixtos (100 por stage), 63 mediciones nuevas
+y notebook de cuatro celdas ejecutadas. Resultados en `migration-*.csv/json` y
+figuras `migration.png/svg`; fallo previo conservado en prechange-reproduction.txt.
+Ver [informe-migracion.md](informe-migracion.md). Las cifras inferiores documentan
+el experimento original; los tiempos se regeneran en cada ejecución.
+
+También se integra la suma estable del cash shortfall al motor padre, sólo en
+su dominio de EIR no negativa y recuperaciones nominales <= saldo bruto.
+Se mantienen las rutas existentes para tasas negativas o recovery surplus.
+La equivalencia Stage1/2 excluye caps y clipping de PD origen que cambiaron entre
+versiones: fuera de ese dominio se rechaza la comparación, no se ocultan cambios.
+
+La etiqueta histórica `parent_engine` en el benchmark original se conserva para
+compatibilidad: ahora refiere al snapshot, NO al motor padre actual.
+
 MVP ejecutado que profundiza el laboratorio IFRS9: distingue default ya ocurrido
 de default futuro y separa el descuento incorporado en LGD. No sustituye política
 contable, estimación de recuperaciones ni el motor padre, que queda intacto.
