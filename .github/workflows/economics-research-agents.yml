@@ -1,0 +1,28 @@
+name: Economics Research Agents
+on:
+  push:
+    paths:
+      - '01-economics-and-econometrics/research-agents/**'
+      - '01-economics-and-econometrics/**/02-*.ipynb'
+      - '.github/workflows/economics-research-agents.yml'
+  pull_request:
+    paths:
+      - '01-economics-and-econometrics/research-agents/**'
+      - '01-economics-and-econometrics/**/02-*.ipynb'
+      - '.github/workflows/economics-research-agents.yml'
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Unit tests
+        run: python -m unittest discover -s 01-economics-and-econometrics/research-agents/tests -v
+      - name: Review all economics programs
+        run: python 01-economics-and-econometrics/research-agents/review.py --output economics-review.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: economics-research-review
+          path: economics-review.json
