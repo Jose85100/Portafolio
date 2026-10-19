@@ -1,0 +1,31 @@
+{
+  "seed": 20261019,
+  "market": {
+    "cash": [
+      0.0,
+      0.0
+    ],
+    "debt": [
+      0.1,
+      0.1
+    ],
+    "holdings": [
+      1.0,
+      1.0
+    ],
+    "impact": 0.8,
+    "fundamental": 1.0,
+    "floor": 0.05
+  },
+  "price_tolerance": 1e-10,
+  "iteration_tolerance": 1e-12,
+  "iteration_budget": 10000,
+  "h1": "Main fixture roots .05,.2,.8 within1e-10; upper iteration misses2/3",
+  "h2": "Fold at total funding .3125; enumeration recovers tangent price .5",
+  "scale_banks": [
+    8,
+    32,
+    128
+  ],
+  "repeats": 3
+}
