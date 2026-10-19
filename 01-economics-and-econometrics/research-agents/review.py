@@ -9,7 +9,7 @@ import re
 from collections import Counter
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[1]
 REVIEWERS = ("theory", "identification", "computation", "pedagogy", "reproducibility")
 MIN_MARKDOWN = 850
 
