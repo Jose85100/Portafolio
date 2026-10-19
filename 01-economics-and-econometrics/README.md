@@ -93,3 +93,11 @@ pérdidas a acreedores externos. Programa S2 parcial; doom loop dinámico sigue 
 ## Profundización metodológica — octubre de 2026
 
 La auditoría detectó README breves en varios laboratorios frente al volumen de notebooks existentes. Se inició una refactorización por **mecanismo económico e identificación**, no por longitud artificial: [guía de métodos y núcleo OLS/IV](research-methods/), [multiplicadores fiscales](01-macroeconomics/04-fiscal-multipliers-local-projections/) y [elasticidad de crédito](02-microeconomics/03-consumer-credit-demand-elasticity/). Los ejemplos siguen siendo sintéticos. El resto de proyectos requiere una revisión individual antes de declarar cerrada la brecha documental y científica.
+
+## Ciclo diario 2026-10-19
+
+[Fire-Sale Price Audit](05-macrofinance/01-sovereign-bank-strategic-nexus/fire-sale-price-audit/):
+extensión S2 del mercado de un activo con precio endógeno, enumeración por
+regímenes, estabilidad de Picard y contraejemplos a unicidad por convergencia.
+No acopla todavía pagos interbancarios/precios ni implementa feedback fiscal.
+Sovereign–Bank Strategic Nexus permanece S2 parcial; inventario9 S1+3 S2 parciales.
