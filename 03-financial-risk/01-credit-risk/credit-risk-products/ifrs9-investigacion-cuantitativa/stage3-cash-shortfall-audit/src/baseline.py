@@ -1,4 +1,4 @@
-"""Load and execute the actual parent IFRS9 engine unchanged."""
+"""Historical source snapshot, distinct from the evolving parent engine."""
 
 import importlib.util
 from pathlib import Path
@@ -8,7 +8,9 @@ import numpy as np
 import pandas as pd
 from numpy.typing import NDArray
 
-SOURCE = Path(__file__).resolve().parents[2] / "src" / "ifrs9_engine.py"
+PROJECT = Path(__file__).resolve().parents[1]
+SOURCE = PROJECT / "baselines" / "ifrs9_engine_20261018.py"
+CURRENT_SOURCE = PROJECT.parent / "src" / "ifrs9_engine.py"
 spec = importlib.util.spec_from_file_location("ifrs9_parent_baseline", SOURCE)
 assert spec and spec.loader
 engine: Any = importlib.util.module_from_spec(spec)

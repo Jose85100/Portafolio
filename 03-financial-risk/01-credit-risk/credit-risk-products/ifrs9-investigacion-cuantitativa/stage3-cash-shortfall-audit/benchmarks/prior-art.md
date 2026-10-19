@@ -1,5 +1,16 @@
 # Prior art y acceso — 2026-10-18
 
+## Revisión de migración — 2026-10-19
+
+Main f1658d32226a517f2e7e88652120001eeea6f47d ya tiene Stage3 corregido. Se
+verificó el fallo reproducible de la auditoría vieja (1 failed,20passed), no se
+duplica esa migración. Prior art nuevo decisivo: NumPy2.1 expm1 y NIST Numerical
+Reproducibility; IFRIC March2019 leído en fuente primaria para el contexto de
+cash shortfall descontado. ArXiv2603.11897 continúa siendo contextoLGD, no prueba
+de este código. Consultas focalizadas BIS/ECB/SSRN/indexes devolvieron literatura
+general de provisiones: búsqueda parcial, no revisión exhaustiva ni prioridad.
+Las limitaciones de acceso al estándar completo registradas abajo siguen vigentes.
+
 Se revisó main f03f242222a0410f4558fb0522544afcd9ebb4f8: nuevo laboratorio IFRS9,
 motor src/ifrs9_engine.py y tests, auditorías anterioresES y risk-enginesC++.
 La contribución de hoy profundiza Stage3, no replica los aportes JSON/ES.

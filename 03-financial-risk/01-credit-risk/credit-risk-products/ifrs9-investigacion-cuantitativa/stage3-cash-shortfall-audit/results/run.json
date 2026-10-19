@@ -12,13 +12,13 @@
   "baseline_source_sha256": "c0d747d609e642d3788426d0f20484ad19daa8fccb192238f96b917cf0d643f3",
   "model_sha256": "ccf81b0af816fce6cdfd4c36f8f32a9c5d6c839144d42562737f5ef067d068b4",
   "medians_ms": {
-    "1/parent_engine": 1.788985,
-    "1/cashflow_batch": 0.058658,
-    "32/parent_engine": 1.951139,
-    "32/cashflow_batch": 0.058418,
-    "256/parent_engine": 2.075496,
-    "256/cashflow_batch": 0.066851,
-    "2048/parent_engine": 2.108655,
-    "2048/cashflow_batch": 0.076104
+    "1/parent_engine": 2.629621,
+    "1/cashflow_batch": 0.088761,
+    "32/parent_engine": 2.374614,
+    "32/cashflow_batch": 0.079147,
+    "256/parent_engine": 2.304329,
+    "256/cashflow_batch": 0.083303,
+    "2048/parent_engine": 2.644974,
+    "2048/cashflow_batch": 0.095391
   }
 }
