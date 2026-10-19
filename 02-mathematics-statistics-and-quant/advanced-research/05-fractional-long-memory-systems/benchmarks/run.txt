@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "max_fft_scaled_error": 1.0685896612017132e-15,
+    "max_tail_bound_violation": 1.0685896612017132e-15,
+    "max_budget_error": 0.009999418935581428,
+    "max_oracle_scaled_error": 6.106226635438361e-16,
+    "min_cutoff_error_over_epsilon": 117.60242701828483,
+    "max_constant_bound_gap": 4.996003610813204e-16,
+    "min_circular_wraparound_error": 0.4
+  },
+  "passed": {
+    "max_fft_scaled_error": true,
+    "max_tail_bound_violation": true,
+    "max_budget_error": true,
+    "max_oracle_scaled_error": true,
+    "min_cutoff_error_over_epsilon": true,
+    "max_constant_bound_gap": true,
+    "min_circular_wraparound_error": true
+  }
+}
