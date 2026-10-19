@@ -1,6 +1,6 @@
 # Sovereign–Bank Strategic Nexus
 
-> **Estado: S2 parcial.** [Sovereign Clearing Audit](sovereign-clearing-audit/) implementa un componente estático de balance y pagos interbancarios con tests, LP y oráculo racional. El juego dinámico, los precios endógenos, garantías e identificación empírica siguen S1. No hay resultados empíricos ni teoremas nuevos del programa completo.
+> **Estado: S2 parcial.** [Sovereign Clearing Audit](sovereign-clearing-audit/) implementa un componente estático de balance y pagos interbancarios con tests, LP y oráculo racional. [Fire-Sale Price Audit](fire-sale-price-audit/) añade un mercado de un activo con precios endógenos y censo de puntos fijos, sin red interbancaria simultánea. El juego dinámico, el acoplamiento red/precio, garantías e identificación empírica siguen S1. No hay resultados empíricos ni teoremas nuevos del programa completo.
 
 ## Pregunta de investigación
 
@@ -66,3 +66,10 @@ programa. Reutiliza el mecanismo EN ya presente en el laboratorio semanal sin
 atribuirse su novedad; añade balances soberanos estáticos, contrato de parada,
 oráculos y conciliación entre impago bruto y acreedores externos. No implementa
 todavía el doom loop fiscal endógeno ni el juego dinámico descrito arriba.
+
+## Ciclo 2026-10-19
+
+[Fire-Sale Price Audit](fire-sale-price-audit/): extensión S2 de liquidación mínima
+de un activo, precios múltiples, pliegue y comparación con Picard/malla+Brent.
+Se comprueba la reducción al clearing anterior sin enlaces, no un acoplamiento
+simultáneo ya resuelto. Modelo sintético con piso exógeno; no política óptima.
