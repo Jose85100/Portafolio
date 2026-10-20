@@ -1,0 +1,39 @@
+{
+  "seed": 20261020,
+  "economy": {
+    "liabilities": [
+      [
+        0.0,
+        0.1
+      ],
+      [
+        0.1,
+        0.0
+      ]
+    ],
+    "outside": [
+      0.1,
+      0.1
+    ],
+    "cash": [
+      0.0,
+      0.02
+    ],
+    "stock": [
+      1.0,
+      0.2
+    ],
+    "impact": 0.8,
+    "floor": 0.05,
+    "fundamental": 1.0
+  },
+  "candidate_tolerance": 1e-08,
+  "h1": "Three analytical joint roots with price error<=1e-10 and residual<=1e-9",
+  "h2": "Frozen contractual receipts understates low-root external unpaid by>=.05; not jointly feasible",
+  "regimes": "3^n, n<=4; external debtor share>=1%",
+  "grid_sizes": [
+    101,
+    501
+  ],
+  "repeats": 3
+}

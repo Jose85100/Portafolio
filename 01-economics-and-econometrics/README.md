@@ -101,3 +101,11 @@ extensión S2 del mercado de un activo con precio endógeno, enumeración por
 regímenes, estabilidad de Picard y contraejemplos a unicidad por convergencia.
 No acopla todavía pagos interbancarios/precios ni implementa feedback fiscal.
 Sovereign–Bank Strategic Nexus permanece S2 parcial; inventario9 S1+3 S2 parciales.
+
+## Ciclo diario 2026-10-20
+
+[Coupled Clearing Audit](05-macrofinance/01-sovereign-bank-strategic-nexus/coupled-clearing-audit/):
+extensión S2 que acopla pagos interbancarios y precio de liquidación de un activo
+para1–4 bancos. Enumera regímenes y muestra cuándo congelar cobros nominales
+produce balances no factibles. Programa S2 parcial; no evidencia empírica ni
+promoción a S3. Conserva las regresiones de los componentes anteriores.

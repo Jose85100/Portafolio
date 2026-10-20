@@ -1,6 +1,6 @@
 # Sovereign–Bank Strategic Nexus
 
-> **Estado: S2 parcial.** [Sovereign Clearing Audit](sovereign-clearing-audit/) implementa un componente estático de balance y pagos interbancarios con tests, LP y oráculo racional. [Fire-Sale Price Audit](fire-sale-price-audit/) añade un mercado de un activo con precios endógenos y censo de puntos fijos, sin red interbancaria simultánea. El juego dinámico, el acoplamiento red/precio, garantías e identificación empírica siguen S1. No hay resultados empíricos ni teoremas nuevos del programa completo.
+> **Estado: S2 parcial.** [Sovereign Clearing Audit](sovereign-clearing-audit/) implementa balance y pagos interbancarios a precio fijo. [Fire-Sale Price Audit](fire-sale-price-audit/) añade un mercado de un activo sin red simultánea. [Coupled Clearing Audit](coupled-clearing-audit/) conecta ambos mecanismos en redes de1–4 bancos con enumeración de regímenes. El juego dinámico, las garantías, el colateral y la identificación empírica siguen S1. No hay resultados empíricos ni teoremas nuevos del programa completo.
 
 ## Pregunta de investigación
 
@@ -73,3 +73,10 @@ todavía el doom loop fiscal endógeno ni el juego dinámico descrito arriba.
 de un activo, precios múltiples, pliegue y comparación con Picard/malla+Brent.
 Se comprueba la reducción al clearing anterior sin enlaces, no un acoplamiento
 simultáneo ya resuelto. Modelo sintético con piso exógeno; no política óptima.
+
+## Ciclo 2026-10-20
+
+[Coupled Clearing Audit](coupled-clearing-audit/): pagos y precios simultáneos,
+coeficientes racionales por régimen y contrastes con ambos MVP anteriores.
+El censo se limita a1–4 bancos; no se anuncia escalabilidad industrial ni
+solución del doom loop fiscal. Incluye contraejemplo a congelar cobros nominales.

@@ -1,0 +1,11 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "cpu": "INTEL(R) XEON(R) PLATINUM 8573C",
+  "logical_cpus": 9,
+  "seed": 20261020,
+  "base_commit": "dd5dc42984ca98ecf3ccda47a21dfd4008afe0bb",
+  "memory": "Python allocations via tracemalloc, not RSS/native",
+  "timing": "wall with tracemalloc,3 paired repeats",
+  "config_sha256": "ba7edd1bbaf254ce51ee9937bf3a2b8d1f75406464c5cac0aecbe6ad5d6afe9c"
+}
