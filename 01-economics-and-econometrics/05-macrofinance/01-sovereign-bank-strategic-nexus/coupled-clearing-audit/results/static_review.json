@@ -1,0 +1,980 @@
+{
+  "reviewers": [
+    "theory",
+    "identification",
+    "computation",
+    "pedagogy",
+    "reproducibility"
+  ],
+  "scope": "static evidence, heuristic review, not scientific peer review",
+  "projects_reviewed": 47,
+  "findings_by_severity": {
+    "medium": 75,
+    "low": 2
+  },
+  "projects": [
+    {
+      "project": "01-macroeconomics/01-strategic-monetary-transmission",
+      "notebooks": 0,
+      "findings": [
+        {
+          "agent": "theory",
+          "severity": "medium",
+          "code": "no_literature",
+          "evidence": "No explicit literature section detected",
+          "remedy": "Add verified primary sources and distinguish citations from conjectures."
+        },
+        {
+          "agent": "computation",
+          "severity": "medium",
+          "code": "no_executable",
+          "evidence": "No notebook or Python file found",
+          "remedy": "Create a scoped executable baseline with an independent oracle."
+        }
+      ],
+      "finding_counts": {
+        "medium": 2
+      }
+    },
+    {
+      "project": "01-macroeconomics/02-endogenous-macroeconomic-regimes",
+      "notebooks": 0,
+      "findings": [
+        {
+          "agent": "theory",
+          "severity": "medium",
+          "code": "no_literature",
+          "evidence": "No explicit literature section detected",
+          "remedy": "Add verified primary sources and distinguish citations from conjectures."
+        },
+        {
+          "agent": "computation",
+          "severity": "medium",
+          "code": "no_executable",
+          "evidence": "No notebook or Python file found",
+          "remedy": "Create a scoped executable baseline with an independent oracle."
+        }
+      ],
+      "finding_counts": {
+        "medium": 2
+      }
+    },
+    {
+      "project": "01-macroeconomics/03-inflation-expectations-phillips",
+      "notebooks": 2,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "01-macroeconomics/03-inflation-expectations-phillips/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        },
+        {
+          "agent": "pedagogy",
+          "severity": "medium",
+          "code": "thin_notebook",
+          "evidence": "01-macroeconomics/03-inflation-expectations-phillips/notebooks/02-theory-refutation-and-alternatives.ipynb: 3 markdown cells, 2240 chars",
+          "remedy": "Add theory, derivation, assumptions, diagnostics, interpretation and discussion."
+        }
+      ],
+      "finding_counts": {
+        "medium": 2
+      }
+    },
+    {
+      "project": "01-macroeconomics/04-fiscal-multipliers-local-projections",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "01-macroeconomics/04-fiscal-multipliers-local-projections/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "01-macroeconomics/05-exchange-rate-pass-through",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "01-macroeconomics/05-exchange-rate-pass-through/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "01-macroeconomics/06-macro-regime-switching",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "01-macroeconomics/06-macro-regime-switching/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "01-macroeconomics/07-labor-productivity-growth",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "01-macroeconomics/07-labor-productivity-growth/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "01-macroeconomics/08-monetary-policy-reaction",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "01-macroeconomics/08-monetary-policy-reaction/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "01-macroeconomics/09-macro-forecast-combination",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "01-macroeconomics/09-macro-forecast-combination/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "02-microeconomics/01-financial-inclusion-mechanism-design",
+      "notebooks": 0,
+      "findings": [
+        {
+          "agent": "theory",
+          "severity": "medium",
+          "code": "no_literature",
+          "evidence": "No explicit literature section detected",
+          "remedy": "Add verified primary sources and distinguish citations from conjectures."
+        },
+        {
+          "agent": "computation",
+          "severity": "medium",
+          "code": "no_executable",
+          "evidence": "No notebook or Python file found",
+          "remedy": "Create a scoped executable baseline with an independent oracle."
+        }
+      ],
+      "finding_counts": {
+        "medium": 2
+      }
+    },
+    {
+      "project": "02-microeconomics/02-strategic-supply-chain-propagation",
+      "notebooks": 0,
+      "findings": [
+        {
+          "agent": "theory",
+          "severity": "medium",
+          "code": "no_literature",
+          "evidence": "No explicit literature section detected",
+          "remedy": "Add verified primary sources and distinguish citations from conjectures."
+        },
+        {
+          "agent": "computation",
+          "severity": "medium",
+          "code": "no_executable",
+          "evidence": "No notebook or Python file found",
+          "remedy": "Create a scoped executable baseline with an independent oracle."
+        }
+      ],
+      "finding_counts": {
+        "medium": 2
+      }
+    },
+    {
+      "project": "02-microeconomics/03-consumer-credit-demand-elasticity",
+      "notebooks": 2,
+      "findings": [
+        {
+          "agent": "theory",
+          "severity": "medium",
+          "code": "assumptions_implicit",
+          "evidence": "Fewer than two assumption/theory references",
+          "remedy": "State mathematical hypotheses, what is proved and what remains conjectural."
+        },
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "02-microeconomics/03-consumer-credit-demand-elasticity/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        },
+        {
+          "agent": "pedagogy",
+          "severity": "medium",
+          "code": "thin_notebook",
+          "evidence": "02-microeconomics/03-consumer-credit-demand-elasticity/notebooks/02-endogeneity-and-iv-counterexample.ipynb: 3 markdown cells, 2153 chars",
+          "remedy": "Add theory, derivation, assumptions, diagnostics, interpretation and discussion."
+        }
+      ],
+      "finding_counts": {
+        "medium": 3
+      }
+    },
+    {
+      "project": "02-microeconomics/04-platform-network-effects",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "02-microeconomics/04-platform-network-effects/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "02-microeconomics/05-merchant-cash-flow-economics",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "02-microeconomics/05-merchant-cash-flow-economics/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "02-microeconomics/06-search-matching-credit",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "02-microeconomics/06-search-matching-credit/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "02-microeconomics/07-auctions-payment-routing",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "02-microeconomics/07-auctions-payment-routing/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "02-microeconomics/08-behavioral-repayment-decisions",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "02-microeconomics/08-behavioral-repayment-decisions/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "02-microeconomics/09-heterogeneous-agent-consumption",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "02-microeconomics/09-heterogeneous-agent-consumption/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "03-game-theory/01-endogenous-credit-freeze",
+      "notebooks": 5,
+      "findings": [
+        {
+          "agent": "reproducibility",
+          "severity": "medium",
+          "code": "no_seed",
+          "evidence": "03-game-theory/01-endogenous-credit-freeze/bayesian-freeze-audit/notebook.ipynb",
+          "remedy": "Fix and record all random seeds."
+        },
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "03-game-theory/01-endogenous-credit-freeze/bayesian-freeze-audit/notebook.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        },
+        {
+          "agent": "reproducibility",
+          "severity": "medium",
+          "code": "no_seed",
+          "evidence": "03-game-theory/01-endogenous-credit-freeze/mixed-equilibrium-audit/notebook.ipynb",
+          "remedy": "Fix and record all random seeds."
+        },
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "03-game-theory/01-endogenous-credit-freeze/mixed-equilibrium-audit/notebook.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        },
+        {
+          "agent": "reproducibility",
+          "severity": "medium",
+          "code": "no_seed",
+          "evidence": "03-game-theory/01-endogenous-credit-freeze/polyhedral-freeze-audit/notebook.ipynb",
+          "remedy": "Fix and record all random seeds."
+        },
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "03-game-theory/01-endogenous-credit-freeze/polyhedral-freeze-audit/notebook.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        },
+        {
+          "agent": "reproducibility",
+          "severity": "medium",
+          "code": "no_seed",
+          "evidence": "03-game-theory/01-endogenous-credit-freeze/rational-family-audit/notebook.ipynb",
+          "remedy": "Fix and record all random seeds."
+        },
+        {
+          "agent": "reproducibility",
+          "severity": "medium",
+          "code": "no_seed",
+          "evidence": "03-game-theory/01-endogenous-credit-freeze/strategic-form-audit/notebook.ipynb",
+          "remedy": "Fix and record all random seeds."
+        },
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "03-game-theory/01-endogenous-credit-freeze/strategic-form-audit/notebook.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 9
+      }
+    },
+    {
+      "project": "03-game-theory/02-algorithmic-market-equilibria",
+      "notebooks": 0,
+      "findings": [
+        {
+          "agent": "computation",
+          "severity": "medium",
+          "code": "no_executable",
+          "evidence": "No notebook or Python file found",
+          "remedy": "Create a scoped executable baseline with an independent oracle."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "03-game-theory/03-belief-networks-and-expectations",
+      "notebooks": 0,
+      "findings": [
+        {
+          "agent": "theory",
+          "severity": "medium",
+          "code": "no_literature",
+          "evidence": "No explicit literature section detected",
+          "remedy": "Add verified primary sources and distinguish citations from conjectures."
+        },
+        {
+          "agent": "computation",
+          "severity": "medium",
+          "code": "no_executable",
+          "evidence": "No notebook or Python file found",
+          "remedy": "Create a scoped executable baseline with an independent oracle."
+        }
+      ],
+      "finding_counts": {
+        "medium": 2
+      }
+    },
+    {
+      "project": "03-game-theory/04-fiscal-competition-and-regional-spillovers",
+      "notebooks": 0,
+      "findings": [
+        {
+          "agent": "computation",
+          "severity": "medium",
+          "code": "no_executable",
+          "evidence": "No notebook or Python file found",
+          "remedy": "Create a scoped executable baseline with an independent oracle."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "03-game-theory/05-bank-run-coordination",
+      "notebooks": 2,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "03-game-theory/05-bank-run-coordination/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        },
+        {
+          "agent": "pedagogy",
+          "severity": "medium",
+          "code": "thin_notebook",
+          "evidence": "03-game-theory/05-bank-run-coordination/notebooks/02-coordination-equilibria.ipynb: 3 markdown cells, 2161 chars",
+          "remedy": "Add theory, derivation, assumptions, diagnostics, interpretation and discussion."
+        },
+        {
+          "agent": "reproducibility",
+          "severity": "medium",
+          "code": "no_seed",
+          "evidence": "03-game-theory/05-bank-run-coordination/notebooks/02-coordination-equilibria.ipynb",
+          "remedy": "Fix and record all random seeds."
+        }
+      ],
+      "finding_counts": {
+        "medium": 3
+      }
+    },
+    {
+      "project": "03-game-theory/06-dynamic-pricing-competition",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "03-game-theory/06-dynamic-pricing-competition/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "03-game-theory/07-fraud-defense-attacker-game",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "03-game-theory/07-fraud-defense-attacker-game/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "03-game-theory/08-collections-bargaining",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "03-game-theory/08-collections-bargaining/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "03-game-theory/09-platform-subsidy-competition",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "03-game-theory/09-platform-subsidy-competition/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "03-game-theory/10-information-sharing-credit",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "03-game-theory/10-information-sharing-credit/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "03-game-theory/11-regulatory-compliance-games",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "03-game-theory/11-regulatory-compliance-games/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "04-econometrics/01-real-time-causal-nowcasting",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "theory",
+          "severity": "medium",
+          "code": "no_literature",
+          "evidence": "No explicit literature section detected",
+          "remedy": "Add verified primary sources and distinguish citations from conjectures."
+        },
+        {
+          "agent": "reproducibility",
+          "severity": "medium",
+          "code": "no_seed",
+          "evidence": "04-econometrics/01-real-time-causal-nowcasting/vintage-audit/notebook.ipynb",
+          "remedy": "Fix and record all random seeds."
+        },
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "04-econometrics/01-real-time-causal-nowcasting/vintage-audit/notebook.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 3
+      }
+    },
+    {
+      "project": "04-econometrics/02-structural-policy-heterogeneity",
+      "notebooks": 0,
+      "findings": [
+        {
+          "agent": "theory",
+          "severity": "medium",
+          "code": "no_literature",
+          "evidence": "No explicit literature section detected",
+          "remedy": "Add verified primary sources and distinguish citations from conjectures."
+        },
+        {
+          "agent": "computation",
+          "severity": "medium",
+          "code": "no_executable",
+          "evidence": "No notebook or Python file found",
+          "remedy": "Create a scoped executable baseline with an independent oracle."
+        }
+      ],
+      "finding_counts": {
+        "medium": 2
+      }
+    },
+    {
+      "project": "04-econometrics/03-panel-fixed-effects",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "04-econometrics/03-panel-fixed-effects/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "04-econometrics/04-difference-in-differences",
+      "notebooks": 2,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "04-econometrics/04-difference-in-differences/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        },
+        {
+          "agent": "pedagogy",
+          "severity": "medium",
+          "code": "thin_notebook",
+          "evidence": "04-econometrics/04-difference-in-differences/notebooks/02-parallel-trends-counterexample.ipynb: 3 markdown cells, 2021 chars",
+          "remedy": "Add theory, derivation, assumptions, diagnostics, interpretation and discussion."
+        }
+      ],
+      "finding_counts": {
+        "medium": 2
+      }
+    },
+    {
+      "project": "04-econometrics/05-instrumental-variables",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "04-econometrics/05-instrumental-variables/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "04-econometrics/06-time-series-volatility",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "04-econometrics/06-time-series-volatility/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "04-econometrics/07-bayesian-linear-regression",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "04-econometrics/07-bayesian-linear-regression/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "04-econometrics/08-quantile-regression",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "04-econometrics/08-quantile-regression/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "04-econometrics/09-spatial-econometrics",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "04-econometrics/09-spatial-econometrics/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "05-macrofinance/01-sovereign-bank-strategic-nexus",
+      "notebooks": 3,
+      "findings": [
+        {
+          "agent": "theory",
+          "severity": "medium",
+          "code": "no_literature",
+          "evidence": "No explicit literature section detected",
+          "remedy": "Add verified primary sources and distinguish citations from conjectures."
+        },
+        {
+          "agent": "reproducibility",
+          "severity": "medium",
+          "code": "no_seed",
+          "evidence": "05-macrofinance/01-sovereign-bank-strategic-nexus/fire-sale-price-audit/notebook.ipynb",
+          "remedy": "Fix and record all random seeds."
+        },
+        {
+          "agent": "pedagogy",
+          "severity": "low",
+          "code": "no_plot",
+          "evidence": "05-macrofinance/01-sovereign-bank-strategic-nexus/fire-sale-price-audit/notebook.ipynb",
+          "remedy": "Plot model predictions and competing scenarios."
+        },
+        {
+          "agent": "reproducibility",
+          "severity": "medium",
+          "code": "no_seed",
+          "evidence": "05-macrofinance/01-sovereign-bank-strategic-nexus/sovereign-clearing-audit/notebook.ipynb",
+          "remedy": "Fix and record all random seeds."
+        },
+        {
+          "agent": "computation",
+          "severity": "medium",
+          "code": "no_assert",
+          "evidence": "05-macrofinance/01-sovereign-bank-strategic-nexus/sovereign-clearing-audit/notebook.ipynb",
+          "remedy": "Add oracle-based invariants or tests."
+        },
+        {
+          "agent": "pedagogy",
+          "severity": "low",
+          "code": "no_plot",
+          "evidence": "05-macrofinance/01-sovereign-bank-strategic-nexus/sovereign-clearing-audit/notebook.ipynb",
+          "remedy": "Plot model predictions and competing scenarios."
+        },
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "05-macrofinance/01-sovereign-bank-strategic-nexus/sovereign-clearing-audit/notebook.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 5,
+        "low": 2
+      }
+    },
+    {
+      "project": "05-macrofinance/02-climate-adaptation-coordination",
+      "notebooks": 0,
+      "findings": [
+        {
+          "agent": "theory",
+          "severity": "medium",
+          "code": "no_literature",
+          "evidence": "No explicit literature section detected",
+          "remedy": "Add verified primary sources and distinguish citations from conjectures."
+        },
+        {
+          "agent": "computation",
+          "severity": "medium",
+          "code": "no_executable",
+          "evidence": "No notebook or Python file found",
+          "remedy": "Create a scoped executable baseline with an independent oracle."
+        }
+      ],
+      "finding_counts": {
+        "medium": 2
+      }
+    },
+    {
+      "project": "05-macrofinance/03-macro-credit-loss-stress",
+      "notebooks": 2,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "05-macrofinance/03-macro-credit-loss-stress/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        },
+        {
+          "agent": "pedagogy",
+          "severity": "medium",
+          "code": "thin_notebook",
+          "evidence": "05-macrofinance/03-macro-credit-loss-stress/notebooks/02-tail-dependence-counterexample.ipynb: 3 markdown cells, 2080 chars",
+          "remedy": "Add theory, derivation, assumptions, diagnostics, interpretation and discussion."
+        }
+      ],
+      "finding_counts": {
+        "medium": 2
+      }
+    },
+    {
+      "project": "05-macrofinance/04-liquidity-contagion-network",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "05-macrofinance/04-liquidity-contagion-network/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "05-macrofinance/05-sovereign-yield-spreads",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "05-macrofinance/05-sovereign-yield-spreads/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "05-macrofinance/06-bank-capital-credit-cycle",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "05-macrofinance/06-bank-capital-credit-cycle/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "05-macrofinance/07-fx-liquidity-mismatch",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "05-macrofinance/07-fx-liquidity-mismatch/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "05-macrofinance/08-payment-system-systemic-risk",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "05-macrofinance/08-payment-system-systemic-risk/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    },
+    {
+      "project": "05-macrofinance/09-macro-financial-early-warning",
+      "notebooks": 1,
+      "findings": [
+        {
+          "agent": "identification",
+          "severity": "medium",
+          "code": "no_counterexample",
+          "evidence": "05-macrofinance/09-macro-financial-early-warning/notebooks/01-estimation-and-robustness.ipynb",
+          "remedy": "Construct an explicit assumption-breaking scenario; do not mislabel it a theorem refutation."
+        }
+      ],
+      "finding_counts": {
+        "medium": 1
+      }
+    }
+  ]
+}
