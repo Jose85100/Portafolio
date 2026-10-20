@@ -1,0 +1,25 @@
+{
+  "required_documents": [
+    "README.md",
+    "MVP.md",
+    "informe.md",
+    "referencias.bib",
+    "requirements.txt",
+    "config.json",
+    "Makefile"
+  ],
+  "csv_rows": {
+    "replicates.csv": 1600,
+    "summary.csv": 64,
+    "timings.csv": 75,
+    "oracle.csv": 12,
+    "geodesics.csv": 132
+  },
+  "tests_passed": 42,
+  "coverage_numeric_modules_percent": 100.0,
+  "coverage_scope": "geometry.py, testing.py, reference.py only",
+  "executed_code_cells": 6,
+  "png_outputs": 1,
+  "all_gates_passed": true,
+  "visual_scope": "Figure inspected separately; full notebook-viewer visual QA not claimed. Open notebook in Jupyter or export HTML using nbconvert."
+}

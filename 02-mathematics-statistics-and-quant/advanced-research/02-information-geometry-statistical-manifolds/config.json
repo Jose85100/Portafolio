@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-20",
+  "question": "¿Fisher–Rao aporta detecciones distintas de Hellinger bajo las mismas permutaciones categóricas?",
+  "seed": 20261020,
+  "categories": [
+    8,
+    32
+  ],
+  "sample_sizes": [
+    100,
+    500
+  ],
+  "scenarios": [
+    "null_uniform",
+    "null_sparse",
+    "shift_dense",
+    "shift_rare"
+  ],
+  "replicates": 100,
+  "permutations": 199,
+  "alpha": 0.05,
+  "benchmark_dimensions": [
+    8,
+    32,
+    128,
+    512,
+    2048
+  ],
+  "timing_repeats": 5,
+  "checks": {
+    "max_pvalue_difference": 1e-12,
+    "max_oracle_error": 1e-11,
+    "max_geodesic_error": 1e-10,
+    "max_identity_error": 1e-12,
+    "max_local_smallstep_relative_error": 0.01,
+    "min_local_asymmetry": 3,
+    "min_local_exceeds_pi": 0.1
+  },
+  "assumptions": [
+    "IID within/between independent samples; common fixed category vocabulary",
+    "Uniform fixed-size label partitions conditional on pooled counts",
+    "Fisher metric per categorical observation, not sample-size-scaled multinomial metric",
+    "Zeros allowed only via continuous closure of simplex; tangent approximation requires interior",
+    "No inferential superiority threshold vs Pearson; report all outcomes"
+  ]
+}
