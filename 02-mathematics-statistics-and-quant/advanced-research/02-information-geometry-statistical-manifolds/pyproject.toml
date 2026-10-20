@@ -1,0 +1,7 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+[tool.ruff]
+line-length = 110
+[tool.mypy]
+ignore_missing_imports = true
+check_untyped_defs = true
