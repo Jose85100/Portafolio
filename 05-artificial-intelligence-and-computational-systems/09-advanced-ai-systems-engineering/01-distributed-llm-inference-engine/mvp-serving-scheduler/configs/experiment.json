@@ -1,0 +1,19 @@
+{
+  "seeds": 20,
+  "requests_per_seed": 90,
+  "regimes": ["light", "bursty", "long_prompts"],
+  "policies": ["serial", "prefill_first", "chunked", "tiny_chunks"],
+  "simulator": {
+    "max_batch": 12,
+    "kv_capacity_tokens": 4096,
+    "token_budget": 256,
+    "chunk_tokens": 96,
+    "tiny_chunk_tokens": 8,
+    "iteration_overhead_ms": 0.9,
+    "prefill_ms_per_token": 0.012,
+    "decode_ms_per_request": 0.12,
+    "interference_ms": 0.02,
+    "ttft_slo_ms": 60.0,
+    "tpot_slo_ms": 6.0
+  }
+}
