@@ -1,0 +1,9 @@
+test_audit_scope (test_review.ReviewTests.test_audit_scope) ... ok
+test_invalid_notebook (test_review.ReviewTests.test_invalid_notebook) ... ok
+test_missing_identification (test_review.ReviewTests.test_missing_identification) ... ok
+test_valid_notebook (test_review.ReviewTests.test_valid_notebook) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.008s
+
+OK

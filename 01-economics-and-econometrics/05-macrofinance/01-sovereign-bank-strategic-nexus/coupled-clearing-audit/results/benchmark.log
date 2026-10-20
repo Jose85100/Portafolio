@@ -1,0 +1,49 @@
+{
+  "roots": [
+    {
+      "price": 0.05,
+      "payments": "[0.08666666666666667, 0.07333333333333333]",
+      "sales": "[1.0, 0.2]",
+      "defaults": 2,
+      "residual": 0.0,
+      "outside_paid": 0.08,
+      "outside_unpaid": 0.12000000000000001,
+      "gross_unpaid": 0.24000000000000002,
+      "equity": 0.0,
+      "marked_loss": 1.14,
+      "identity_error": 0.0,
+      "min_equity": 0.0
+    },
+    {
+      "price": 0.14440532323881,
+      "payments": "[0.2, 0.148881064647762]",
+      "sales": "[0.8694933459514876, 0.2]",
+      "defaults": 1,
+      "residual": 1.6653345369377348e-16,
+      "outside_paid": 0.17444053232388101,
+      "outside_unpaid": 0.025559467676118997,
+      "gross_unpaid": 0.05111893535223799,
+      "equity": 0.018845855562691,
+      "marked_loss": 1.026713612113428,
+      "identity_error": -2.7755575615628914e-17,
+      "min_equity": 2.7755575615628914e-17
+    },
+    {
+      "price": 0.8255764119219942,
+      "payments": "[0.2, 0.2]",
+      "sales": "[0.12112749172083741, 0.09690199337666995]",
+      "defaults": 0,
+      "residual": 0.0,
+      "outside_paid": 0.2,
+      "outside_unpaid": 0.0,
+      "gross_unpaid": 0.0,
+      "equity": 0.8106916943063929,
+      "marked_loss": 0.209308305693607,
+      "identity_error": 0.0,
+      "min_equity": 0.08511528238439886
+    }
+  ],
+  "crosschecks": 12,
+  "max_crosscheck_error": 2.2426505097428162e-13,
+  "max_repo_error": 0.0
+}
