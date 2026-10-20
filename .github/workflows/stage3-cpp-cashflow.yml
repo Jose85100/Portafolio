@@ -1,0 +1,26 @@
+name: Stage3 C++ Cashflow Audit
+on:
+  pull_request:
+    paths:
+      - '04-quant-strategy-and-products/risk-engines/include/quant/stage3.hpp'
+      - '04-quant-strategy-and-products/risk-engines/stage3-cashflow-audit/**'
+      - '03-financial-risk/01-credit-risk/credit-risk-products/ifrs9-investigacion-cuantitativa/stage3-cash-shortfall-audit/src/model.py'
+      - '.github/workflows/stage3-cpp-cashflow.yml'
+  workflow_dispatch:
+jobs:
+  reproduce:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Reproduce tests, sanitizers, parity and benchmark
+        env:
+          ASAN_OPTIONS: detect_leaks=1
+        run: bash 04-quant-strategy-and-products/risk-engines/stage3-cashflow-audit/run.sh
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: stage3-cpp-evidence
+          path: 04-quant-strategy-and-products/risk-engines/stage3-cashflow-audit/results/
