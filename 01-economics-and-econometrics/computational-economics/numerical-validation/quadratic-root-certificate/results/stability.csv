@@ -1,0 +1,6 @@
+decimal_digits,max_width,verified
+6,5e-07,True
+12,5e-13,True
+18,5e-19,True
+24,5e-25,True
+30,5e-31,True
