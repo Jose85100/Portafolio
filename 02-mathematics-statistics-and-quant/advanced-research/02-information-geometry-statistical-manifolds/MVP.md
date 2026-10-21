@@ -1,11 +1,15 @@
-# MVP — alcance S2
+# MVP del programa 02 — detección de cambios y geometría de información
 
-Qué es: biblioteca escalar de geometría Fisher–Rao categórica, geodésicas y auditoría de tests de dos muestras. Demuestra por identidad y ejecución que FR y Hellinger ordenan igual las mismas particiones, y que el cuadrático local no es una distancia global.
+Qué es: detector continuo univariado por proyección gaussiana Fisher–Rao, comparado con KS y Wasserstein-1 bajo referencia fija y calibración separada. La auditoría categórica previa se conserva como componente auxiliar.
 
-Cómo se corre: desde esta carpeta, con Python 3.12, make, venv y acceso a PyPI, ejecutar `make run`. Instala dependencias directas fijadas y reproduce tests, benchmark, figura, informe y notebook.
+Cómo se corre: Python 3.12, make, venv y PyPI; ejecutar `make run` desde esta carpeta. El comando reproduce ambos estudios, pruebas, informes, CSV/JSON/NPZ, figuras y notebooks con outputs.
 
-Qué produce: 1.600 pares de muestras y 6.400 p-valores, 318.400 particiones recreables por semilla, 64 tasas con Wilson 95%, 75 mediciones de funciones, 12 comparaciones con 80 dígitos y 132 puntos geodésicos. CSV/JSON/NPZ, PNG, notebook ejecutado y logs reales.
+Qué produce el estudio principal: 798 scores de calibración (399 por tamaño), 3.000 ventanas de evaluación, 9.000 decisiones, 30 tasas con Wilson 95%, umbrales, referencia de 80 dígitos y vistas previas de muestras con semillas completas. El piloto desfavorable de calibración marginal queda guardado. API en src/drift.py, experimento en experiments/drift.json, informe.md y drift_notebook.ipynb.
 
-Qué NO cubre: datos financieros, detección online, dependencia temporal, comparación universal de potencia, Fisher en familias continuas, estimación de binning, matriz Fisher regular en fronteras ni certificación formal. Una igualdad de p-valores no demuestra igualdad de leyes a partir de no rechazar: aquí se debe a monotonía de las estadísticas. El programa de investigación original permanece como agenda debajo del MVP.
+Qué produce el anexo: 1.600 pares categóricos, 6.400 p-valores, 75 tiempos, 12 oráculos y 132 puntos geodésicos. docs/categorical-audit.md y notebook.ipynb conservan su interpretación.
 
-Estado: prototipo ejecutable S2 acotado; no producción ni validación externa. Figura revisada; revisión visual integral de notebook en visor no reclamada. Las ocho pruebas existentes de numerical-core se incluyen en el comando; no se modifica quant-libraries ni su contrato EL=83.
+Qué NO cubre: control secuencial, alarma conjunta de los tres métodos, calibración por bloques, datos bancarios, validación económica, superioridad universal o detección de cualquier cambio con una proyección de dos momentos. Las ventanas AR1 violan la ley de calibración y se muestran como fallo.
+
+Garantía acotada: bajo ventanas limpias independientes de igual ley, el rango binomial controla con confianza 1-delta la probabilidad de falsa alarma por ventana de cada detector. Una tasa observada en 300 ventanas puede exceder alpha; no se afirma que cada calibración ni cada simulación cumpla exactamente el objetivo.
+
+Estado: S2 acotado. Se resolvieron los conflictos con main conservando el programa 05. Tests del código nuevo y anterior, numerical-core, lint y tipos se incluyen en make run. Figuras revisadas por separado; inspección visual integral de ambos notebooks en visor pendiente.

@@ -1,0 +1,8 @@
+Internal ctest changing into directory: /workspace/scratch/e32aba0f5414/Portafolio/04-quant-strategy-and-products/risk-engines/stage3-cashflow-audit/build/cmake
+Test project /workspace/scratch/e32aba0f5414/Portafolio/04-quant-strategy-and-products/risk-engines/stage3-cashflow-audit/build/cmake
+    Start 1: stage3_contract
+1/1 Test #1: stage3_contract ..................   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.00 sec

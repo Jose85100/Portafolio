@@ -1,0 +1,37 @@
+{
+  "question": "¿Cuándo la proyección gaussiana Fisher–Rao detecta drift de media/escala y cuándo pierde cambios de forma frente a KS y W1?",
+  "date": "2026-10-21",
+  "seed": 20261021,
+  "sizes": [
+    32,
+    128
+  ],
+  "calibration_windows": 399,
+  "evaluation_replicates": 300,
+  "alpha": 0.05,
+  "calibration_delta": 0.05,
+  "scenarios": [
+    "null",
+    "mean_shift",
+    "scale_shift",
+    "matched_mixture",
+    "correlated_null"
+  ],
+  "mean_shift": 0.8,
+  "scale_shift": 1.6,
+  "mixture_location": 0.95,
+  "ar1": 0.8,
+  "checks": {
+    "oracle_error": 1e-10,
+    "mean_power_n128_min": 0.6,
+    "scale_power_n128_min": 0.6
+  },
+  "calibration_scope": "Fresh independent N(0,1) windows, same fixed reference per size; no fit on evaluation; guarantee only exchangeable clean baseline windows",
+  "reference_baselines": [
+    "Gaussian projected FR",
+    "KS statistic with same held-out calibration",
+    "Wasserstein-1 / reference MLE standard deviation with same calibration"
+  ],
+  "hypothesis": "FR detects specified mean/scale shifts at n128 with power>=.6; arbitrary-shape superiority not hypothesized",
+  "hardware": "recorded in benchmarks/drift-results.json"
+}

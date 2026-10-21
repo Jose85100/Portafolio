@@ -1,4 +1,4 @@
-name: Categorical geometry audit
+name: Information geometry and drift
 
 on:
   pull_request:
@@ -26,4 +26,7 @@ jobs:
           path: |
             02-mathematics-statistics-and-quant/advanced-research/02-information-geometry-statistical-manifolds/benchmarks/
             02-mathematics-statistics-and-quant/advanced-research/02-information-geometry-statistical-manifolds/notebook.ipynb
+            02-mathematics-statistics-and-quant/advanced-research/02-information-geometry-statistical-manifolds/drift_notebook.ipynb
+            02-mathematics-statistics-and-quant/advanced-research/02-information-geometry-statistical-manifolds/experiments/
+            02-mathematics-statistics-and-quant/advanced-research/02-information-geometry-statistical-manifolds/data/
             02-mathematics-statistics-and-quant/advanced-research/02-information-geometry-statistical-manifolds/informe.md

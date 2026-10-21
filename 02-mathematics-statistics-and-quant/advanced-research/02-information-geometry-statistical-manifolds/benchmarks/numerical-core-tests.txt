@@ -8,6 +8,6 @@ test_sde_seed (test_numerical_core.Invariants.test_sde_seed) ... ok
 test_wasserstein_metric_basics (test_numerical_core.Invariants.test_wasserstein_metric_basics) ... ok
 
 ----------------------------------------------------------------------
-Ran 8 tests in 0.031s
+Ran 8 tests in 0.028s
 
 OK

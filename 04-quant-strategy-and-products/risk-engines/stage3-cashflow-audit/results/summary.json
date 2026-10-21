@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-20",
+  "seed": 20261020,
+  "fixtures": 288,
+  "max_relative_error": 2.118802798548048e-16,
+  "max_python_relative_difference": 2.47866253148264e-16,
+  "positive_losses_lost_to_zero_baseline": 12,
+  "positive_losses_lost_to_zero_stable": 0,
+  "performance_rows": 42,
+  "medians_ms": {
+    "1/stable": 2.581e-05,
+    "1/subtractive": 2.922e-05,
+    "128/stable": 0.0068090799999999995,
+    "128/subtractive": 0.00362597,
+    "4096/stable": 0.15935570999999998,
+    "4096/subtractive": 0.2282436
+  },
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "python_model_path": "03-financial-risk/01-credit-risk/credit-risk-products/ifrs9-investigacion-cuantitativa/stage3-cash-shortfall-audit/src/model.py",
+  "python_model_sha256": "ccf81b0af816fce6cdfd4c36f8f32a9c5d6c839144d42562737f5ef067d068b4",
+  "fixtures_sha256": "d5397639ce63ca583d4360cbd6d65d5f7dca97abef1bb741b8d8b0f620866ea7",
+  "cpu": "INTEL(R) XEON(R) PLATINUM 8573C",
+  "python": "3.12.14",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "memory_definition": "process_vm_hwm_kib: CLI /proc/self/status VmHWM after exec; wait4_peak_rss_kib may include inherited pre-exec Python RSS. Both are entire processes, not incremental kernel allocations."
+}

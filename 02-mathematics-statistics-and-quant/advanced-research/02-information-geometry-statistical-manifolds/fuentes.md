@@ -13,3 +13,13 @@ No se declara revisión sistemática de arXiv, SSRN, Semantic Scholar, Papers wi
 También se localizó Nielsen, An Elementary Introduction to Information Geometry, pero la apertura de PMC pidió recaptcha; no se usa como una de las cinco entradas verificadas ni se presume lectura integral.
 
 La identidad FR/H y su consecuencia para el orden de permutaciones se derivan explícitamente en informe.md. La prueba elemental y la auditoría del repositorio no se presentan como un descubrimiento teórico.
+
+## Ampliación de alineación — 2026-10-21
+
+Se leyó Miyamoto et al., sección 4.4.1 de https://arxiv.org/html/2304.14885v3: métrica gaussiana diag(1/sigma²,2/sigma²) y distancia cerrada. El programa usa una identidad equivalente estable, contrastada con acosh a 80 dígitos. No se atribuye Fisher–Rao de las leyes originales a sus proyecciones normales.
+
+Se verificó Shafer–Vovk, JMLR 9, 371–421 (2008), https://jmlr.org/papers/v9/shafer08a.html y su PDF: contexto de rangos e intercambio. El control de tolerancia implementado no se presenta como idéntico a todo su framework conformal.
+
+NIST, https://www.itl.nist.gov/div898/software/dataplot/refman1/auxillar/tolelimi.htm: distingue contenido y confianza de límites de tolerancia y su relación con percentiles unilaterales. La cota binomial y unión de tres métodos se derivan explícitamente en informe.md.
+
+Documentación oficial de SciPy 1.17.0 para ks_2samp y wasserstein_distance: se usan sus estadísticas; la calibración es independiente y compartida entre métodos. Los nuevos cuatro registros se añaden a referencias.bib; no se presume novedad de estos algoritmos ni revisión exhaustiva.

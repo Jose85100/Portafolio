@@ -1,8 +1,21 @@
 # Information Geometry & Statistical Manifolds
 
-> **Madurez: S2 acotado — geometría categórica y auditoría de tests de dos muestras.** No se afirma detector de drift financiero validado. Se conserva el protocolo original como agenda.
+> **Madurez: S2 acotado — detección de drift continuo por proyección gaussiana, calibración y auditoría categórica.** No se afirma detector financiero validado. Se conserva el protocolo original como agenda.
 
-## MVP ejecutable — 2026-10-20
+## Corrección de alineación — 2026-10-21
+
+**Hilo principal: detección de cambios en variables continuas.** Se ajustan proyecciones gaussianas y se compara su distancia Fisher–Rao con KS y Wasserstein-1, usando referencia fija, calibración separada y evaluación independiente.
+
+- API real: `src.drift.calibrate(reference, baseline_windows, alpha=.05, delta=.05)` y `Detector.predict(current)`.
+- Diseño: `experiments/drift.json`; dos tamaños, 399 ventanas de calibración y 3.000 de evaluación; media, escala, mezcla con iguales momentos y control AR1.
+- Calibración: estadístico de orden con cota binomial de tolerancia; Bonferroni sobre la incertidumbre de los tres umbrales. No controla una alarma conjunta ni un horizonte secuencial.
+- Evidencia principal: `informe.md`, `drift_notebook.ipynb`, `benchmarks/drift-*.csv`, `benchmarks/drift.png` y `data/drift-examples.npz`.
+- Se conservan resultados desfavorables: falsa alarma del piloto marginal, pérdida de cambios de forma y fallo de calibración IID bajo AR1. Las tasas finales y sus intervalos deben leerse, no sustituirse por el objetivo nominal del 5%.
+- La auditoría categórica anterior queda como anexo reproducible: `docs/categorical-audit.md` y `notebook.ipynb`.
+
+**Reproducción:** `make run` sigue instalando y ejecutando ambos estudios, tests, cobertura y los dos notebooks. El comando desde la raíz se conserva abajo. La garantía de tolerancia exige ventanas limpias de igual ley que las futuras; aquí se evalúan datos sintéticos. No se afirma detector financiero validado ni superioridad universal.
+
+## Anexo categórico ejecutable — 2026-10-20
 
 ¿Fisher–Rao detecta cambios distintos de Hellinger usando las mismas permutaciones? En el simplex categórico ambas distancias son transformaciones estrictamente monótonas, así que sus tests tienen el mismo orden de rechazo. El MVP comprueba esa identidad, implementa geodésicas y contrasta contra Pearson permutado y asintótico. No es un algoritmo nuevo ni evidencia de superioridad universal.
 
