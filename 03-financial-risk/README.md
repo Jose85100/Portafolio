@@ -4,7 +4,7 @@ Crédito, mercado, liquidez, riesgo sistémico, IFRS 9 y stress testing integrad
 
 ## Estructura
 
-1. [Crédito](01-credit-risk/): [productos de crédito](01-credit-risk/credit-risk-products/) y [estrategia de cartera](01-credit-risk/credit-portfolio-strategy/): scoring, IFRS 9, cosechas, concentración, cópula, capital y apetito de riesgo.
+1. [Crédito](01-credit-risk/): [productos de crédito](01-credit-risk/credit-risk-products/) y [estrategia de cartera](01-credit-risk/credit-portfolio-strategy/): scoring, IFRS 9, cosechas, concentración, cópula, capital y apetito de riesgo. Incluye [cuatro diseños S1 de fraude y anomalías](01-credit-risk/fraud-and-anomaly-research/), pendientes de implementación.
 2. [Mercado y modelos](02-market-and-model-risk/): VaR/ES, backtesting, GARCH, pruebas de estrés y validación (PSI/Gini).
 3. [Liquidez de mercado](03-market-liquidity-research/): ES dinámico y EVT, regímenes de volatilidad, liquidez estocástica, espirales de liquidez y optimización de liquidez.
 4. [Investigación avanzada](04-advanced-research/): siete propuestas metodológicas de crédito, IFRS 9, SIAR y control de cartera.
