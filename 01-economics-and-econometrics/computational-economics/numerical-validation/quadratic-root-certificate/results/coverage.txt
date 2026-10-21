@@ -1,0 +1,6 @@
+Name                                                                                                                           Stmts   Miss Branch BrPart  Cover   Missing
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+01-economics-and-econometrics/computational-economics/numerical-validation/quadratic-root-certificate/src/rootcert.py             63      0     26      0   100%
+01-economics-and-econometrics/computational-economics/numerical-validation/quadratic-root-certificate/tests/test_rootcert.py      62      1      2      1    97%   86
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                            125      1     28      1    99%

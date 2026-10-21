@@ -13,3 +13,7 @@ Convergencia Monte Carlo, bootstrap y sensibilidad.
 
 ## Validación futura
 Comparar con soluciones analíticas cuando existan, evaluar convergencia en refinamiento de grilla y estabilidad de resultados.
+
+## 2026-10-21 — Quadratic Root Certificate
+
+`quadratic-root-certificate/` añade un componente S2 para encerrar con racionales exactos las raíces cuadráticas usadas por los MVP de precios y clearing. Certifica el polinomio, no la admisibilidad económica completa del régimen.

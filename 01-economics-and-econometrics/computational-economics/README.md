@@ -1,6 +1,6 @@
 # Computational Economics — infraestructura transversal
 
-**Estado: arquitectura propuesta.** Compartida por macroeconomía, microeconomía, teoría de juegos, econometría y macrofinanzas.
+**Estado: arquitectura propuesta con componentes S2 parciales.** Compartida por macroeconomía, microeconomía, teoría de juegos, econometría y macrofinanzas.
 
 | Módulo | Objetivo | Criterios de validación |
 |---|---|---|
@@ -13,3 +13,5 @@
 | `numerical-validation/` | Monte Carlo, bootstrap, stability, benchmarks | Reproducibility, numerical convergence |
 
 Existe un núcleo estadístico sintético con OLS, bootstrap, ECL, paso Markov y best response en grilla; no son solvers estructurales completos. Cada módulo futuro deberá incluir API, tests, benchmark, documentación y casos degenerados.
+
+El componente `numerical-validation/quadratic-root-certificate/` (2026-10-21) aporta envolventes racionales reproducibles para raíces cuadráticas de regímenes; no convierte la infraestructura completa en S3 ni certifica equilibrios multivariados.
