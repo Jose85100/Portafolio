@@ -6,7 +6,11 @@
     "referencias.bib",
     "requirements.txt",
     "config.json",
-    "Makefile"
+    "Makefile",
+    "experiments/drift.json",
+    "drift_notebook.ipynb",
+    "data/drift-examples.npz",
+    "docs/categorical-audit.md"
   ],
   "csv_rows": {
     "replicates.csv": 1600,
@@ -15,9 +19,17 @@
     "oracle.csv": 12,
     "geodesics.csv": 132
   },
-  "tests_passed": 42,
+  "tests_passed": 64,
   "coverage_numeric_modules_percent": 100.0,
-  "coverage_scope": "geometry.py, testing.py, reference.py only",
+  "coverage_scope": "geometry.py, testing.py, reference.py, drift.py only",
+  "drift_csv_rows": {
+    "drift-raw-32.csv": 1500,
+    "drift-raw-128.csv": 1500,
+    "drift-summary.csv": 30,
+    "drift-calibration.csv": 798,
+    "drift-oracle.csv": 4
+  },
+  "drift_notebook_executed_cells": 4,
   "executed_code_cells": 6,
   "png_outputs": 1,
   "all_gates_passed": true,

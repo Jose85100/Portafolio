@@ -152,8 +152,9 @@ Novedad 2; rigor 4; reproducibilidad 4; código 4; claridad 4; impacto 3; honest
 2. advanced-research: permutaciones por bloques para dependencia temporal y calibración bajo H0.
 3. quantitative-methods: ampliar réplicas y comparar potencia a presupuesto de tiempo común.
 """
-    Path("informe.md").write_text(text)
-    print("Informe regenerado de resultados crudos.")
+    Path("docs").mkdir(exist_ok=True)
+    Path("docs/categorical-audit.md").write_text(text)
+    print("Anexo categórico regenerado en docs/categorical-audit.md.")
 
 
 if __name__ == "__main__":
