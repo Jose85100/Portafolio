@@ -53,3 +53,12 @@ La revisión humana debe poder concluir error de captura, diferencia explicable,
 ## Integración con motores y capas
 
 Este especialista conserva estado S1. Su familia de señal se representa mediante una variable sintética en el [motor S2 de comparación y asignación](../loss-minimization-engine/README.md); ese experimento no implementa el detector especializado descrito arriba. Véanse [capas y contratos](../ARCHITECTURE.md) y [técnicas y función de pérdida](../MODEL_AND_LOSS_METHODS.md) para el desarrollo incremental y los criterios de comparación.
+
+## Notebooks ejecutados: experimentos S2 acotados
+
+- [Cuantiles, bandas y cobertura](notebooks/01-income-quantiles-and-coverage.ipynb)
+- [Conciliación y robustez](notebooks/02-flow-reconciliation-and-robustness.ipynb)
+
+Los dos experimentos incluyen 40 celdas y cuatro figuras en conjunto. Usan datos sintéticos y no completan el detector especializado de esta ficha. Las ecuaciones y los resultados se desarrollan dentro de las celdas; las preguntas abiertas conservan estado de investigación.
+
+[Agenda de investigación y ecuaciones adicionales](EQUATIONS_AND_RESEARCH.md) · [Reproducción y evidencia](../notebook-lab/README.md).

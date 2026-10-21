@@ -2,6 +2,10 @@
 
 Cuatro programas de investigación para solicitudes de crédito y KYC. Revisión de la estructura: 21 de octubre de 2026, sobre `main` en `69983fb`. **Los cuatro especialistas permanecen en S1. Incluye ahora un motor S2 acotado con modelos tabulares entrenados y comparación de políticas sobre datos sintéticos; sin validación productiva.** Los umbrales y cronogramas siguientes son propuestas experimentales.
 
+## Notebooks, ecuaciones e ideas
+
+[Ocho notebooks ejecutados](notebook-lab/README.md), dos por especialista: 160 celdas y 16 figuras, con derivaciones, sensibilidad y contraejemplos. Las fichas originales conservan S1 para su alcance integral; los experimentos concretos son S2 acotados a datos sintéticos. Cada carpeta añade una agenda de ecuaciones e investigación.
+
 ## Modelos, pérdida y arquitectura
 
 - [Arquitectura por capas y motores](ARCHITECTURE.md): responsabilidades, contratos, tres diagramas y estado de implementación.

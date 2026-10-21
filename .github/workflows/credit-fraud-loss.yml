@@ -13,7 +13,7 @@ permissions:
 jobs:
   test-and-reproduce:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     env:
       OPENBLAS_NUM_THREADS: '1'
       OMP_NUM_THREADS: '1'
@@ -25,10 +25,14 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: python -m pip install -r requirements.txt
+      - run: python -m pip install -r ../notebook-lab/requirements.txt
       - run: python -m unittest discover -s tests -v
       - run: python run_experiment.py
+      - run: python ../notebook-lab/execute_notebooks.py
       - uses: actions/upload-artifact@v4
         with:
           name: credit-fraud-synthetic-results
-          path: 03-financial-risk/01-credit-risk/fraud-and-anomaly-research/loss-minimization-engine/results/
+          path: |
+            03-financial-risk/01-credit-risk/fraud-and-anomaly-research/loss-minimization-engine/results/
+            03-financial-risk/01-credit-risk/fraud-and-anomaly-research/*/notebooks/*.ipynb
+            03-financial-risk/01-credit-risk/fraud-and-anomaly-research/notebook-lab/execution_evidence.json

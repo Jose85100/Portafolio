@@ -49,3 +49,12 @@ Esta línea complementa los modelos individuales y de red. Integrarla exige dedu
 ## Integración con motores y capas
 
 Este especialista conserva estado S1. Su familia de señal se representa mediante una variable sintética en el [motor S2 de comparación y asignación](../loss-minimization-engine/README.md); ese experimento no implementa el detector especializado descrito arriba. Véanse [capas y contratos](../ARCHITECTURE.md) y [técnicas y función de pérdida](../MODEL_AND_LOSS_METHODS.md) para el desarrollo incremental y los criterios de comparación.
+
+## Notebooks ejecutados: experimentos S2 acotados
+
+- [Mezcla de cartera y contracción](notebooks/01-case-mix-and-shrinkage.ipynb)
+- [CUSUM, falsas alarmas y demora](notebooks/02-cusum-false-alarms-and-delay.ipynb)
+
+Los dos experimentos incluyen 40 celdas y cuatro figuras en conjunto. Usan datos sintéticos y no completan el detector especializado de esta ficha. Las ecuaciones y los resultados se desarrollan dentro de las celdas; las preguntas abiertas conservan estado de investigación.
+
+[Agenda de investigación y ecuaciones adicionales](EQUATIONS_AND_RESEARCH.md) · [Reproducción y evidencia](../notebook-lab/README.md).
