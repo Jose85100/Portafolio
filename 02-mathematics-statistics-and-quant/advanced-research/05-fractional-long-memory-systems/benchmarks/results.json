@@ -1,0 +1,73 @@
+{
+  "checks": {
+    "max_fft_scaled_error": 1.0685896612017132e-15,
+    "max_tail_bound_violation": 1.0685896612017132e-15,
+    "max_budget_error": 0.009999418935581428,
+    "max_oracle_scaled_error": 6.106226635438361e-16,
+    "min_cutoff_error_over_epsilon": 117.60242701828483,
+    "max_constant_bound_gap": 4.996003610813204e-16,
+    "min_circular_wraparound_error": 0.4
+  },
+  "passed": {
+    "max_fft_scaled_error": true,
+    "max_tail_bound_violation": true,
+    "max_budget_error": true,
+    "max_oracle_scaled_error": true,
+    "min_cutoff_error_over_epsilon": true,
+    "max_constant_bound_gap": true,
+    "min_circular_wraparound_error": true
+  },
+  "scenarios": 36,
+  "method_results": 216,
+  "timed_runs": 648,
+  "adversarial": {
+    "family": "constant",
+    "n": 8192,
+    "d": 0.4,
+    "seed": 20261219,
+    "method": "coefficient_cutoff",
+    "memory": 54,
+    "max_abs_error": 0.11760242701828483,
+    "scaled_error": 0.11760242701828483,
+    "finite_tail_bound": 0.11760242701828463,
+    "scaled_bound": 0.11760242701828463,
+    "bound_violation": 1.942890293094024e-16,
+    "median_seconds": 0.00017030599997269746,
+    "tracked_peak_bytes": 197219,
+    "last_value": 0.13587114620008078,
+    "reference_last_value": 0.018268719181795956
+  },
+  "boundary": {
+    "circular_first_value": -0.4,
+    "linear_first_value": 0.0,
+    "max_circular_error": 0.4,
+    "n": 64,
+    "d": 0.4,
+    "zero_extended_constant_last_at_n8192": 0.0182687191817959,
+    "infinite_past_constant_fractional_difference": 0.0
+  },
+  "metadata": {
+    "date": "2026-10-19",
+    "base_commit": "dd5dc42984ca98ecf3ccda47a21dfd4008afe0bb",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "cpu": "x86_64",
+    "logical_cpus": 9,
+    "python": "3.12.14",
+    "versions": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "matplotlib": "3.10.8",
+      "mpmath": "1.3.0",
+      "pytest": "9.1.1",
+      "hypothesis": "6.138.2",
+      "ruff": "0.12.9",
+      "mypy": "1.17.1"
+    },
+    "threads": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "timing_scope": "Weights/memory selection precomputed; timed filter calls include input and weight validation but exclude RNG/weight/selector setup. 3 repetitions, fixed order, no separate warmup; full direct reference calculated before timing. Separate tracemalloc peak includes output allocation, not RSS. Weight/selector setup timed separately. No universal speed claim."
+  }
+}

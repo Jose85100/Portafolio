@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-19",
+  "base_commit": "dd5dc42984ca98ecf3ccda47a21dfd4008afe0bb",
+  "question": "Does a small last fractional-difference coefficient control accumulated truncation error, and can a finite-horizon tail budget guarantee the requested bound?",
+  "grid": {"d": [0.1, 0.4, 0.8], "n": [256, 2048, 8192], "families": ["constant", "sinusoid", "ar1", "pulse"], "seed": 20261019, "timing_repeats": 3},
+  "methods": ["full_direct", "full_fft", "fixed_32", "fixed_128", "coefficient_cutoff", "tail_budget"],
+  "coefficient_epsilon": 0.001,
+  "tail_budget": 0.01,
+  "oracle": {"decimal_digits": 80, "d": [0.1, 0.4, 0.8], "n": [64, 256], "seed": 191905},
+  "adversarial": {"d": 0.4, "n": 8192, "family": "constant"},
+  "gates": {"max_fft_scaled_error": 1e-10, "max_tail_bound_violation": 1e-10, "max_budget_error": 0.0100000001, "max_oracle_scaled_error": 1e-11, "min_cutoff_error_over_epsilon": 20.0, "max_constant_bound_gap": 1e-10, "min_circular_wraparound_error": 0.1},
+  "initialization": "Discrete (1-L)^d, lag step 1, zero extension before t=0. Not Caputo or an infinite-past stationary filter. All generated inputs have sup norm <=1.",
+  "timing": "Weights/memory selection precomputed; timed filter calls include input and weight validation but exclude RNG/weight/selector setup. 3 repetitions, fixed order, no separate warmup; full direct reference calculated before timing. Separate tracemalloc peak includes output allocation, not RSS. Weight/selector setup timed separately. No universal speed claim.",
+  "scope": "Numerical operator audit only. No Hurst estimation, proof of economic long memory, structural-break classification, fractional SDE solver or financial forecast."
+}
