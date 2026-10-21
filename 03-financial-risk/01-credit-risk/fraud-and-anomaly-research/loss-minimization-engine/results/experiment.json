@@ -1,0 +1,63 @@
+{
+  "seed": 20261021,
+  "test_days": 30,
+  "test_n": 600,
+  "test_positives": 69,
+  "test_prevalence": 0.115,
+  "train_n": 1400,
+  "calibration_n": 400,
+  "training_label_cutoff": 80,
+  "calibration_label_cutoff": 110,
+  "test_start": 110,
+  "capacity_minutes_per_day": 75.0,
+  "policy_model": "boosting_calibrated (prespecified)",
+  "cost_interpretation": "simulation under assumed efficacy, not observed avoided loss",
+  "paired_savings_vs_probability_rank_cop": 31558320.863696422,
+  "paired_day_bootstrap_95_cop": [
+    23402689.654766295,
+    42181612.10622604
+  ],
+  "logit_coefficients": [
+    [
+      3.288137497355465,
+      2.251293479284922,
+      1.574530644758286,
+      0.9131712728014161,
+      0.3735153542005543,
+      0.31769608623792844,
+      0.015622640531481161,
+      -0.2262430432276879
+    ]
+  ],
+  "training_medians": [
+    0.30278628549505066,
+    0.31247619588202047,
+    0.30127798863771965,
+    0.3114745314125158
+  ],
+  "feature_names": [
+    "kyc_discrepancy",
+    "graph_reuse_signal",
+    "income_residual",
+    "process_deviation",
+    "kyc_discrepancy_missing",
+    "graph_reuse_signal_missing",
+    "income_residual_missing",
+    "process_deviation_missing"
+  ],
+  "calibrator_coefficient": [
+    [
+      1.1091463262094814
+    ]
+  ],
+  "calibrator_intercept": [
+    0.38348128413000654
+  ],
+  "versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "threadpoolctl": "3.6.0"
+  }
+}

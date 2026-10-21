@@ -45,3 +45,7 @@ La hipótesis se debilita si las alertas desaparecen al controlar cambios de pol
 Entregables propuestos: taxonomía de eventos; simulador de proceso; reconstrucción temporal; baseline ajustado; notebook de falsas alarmas/demora; ficha de grupos nuevos y vista de evidencia por alerta. Pruebas: una política autorizada modifica el flujo permitido desde su vigencia; duplicar eventos no cambia conteos; ausencia de logging produce incidente de calidad; grupos con cero exposición no reciben tasa inventada.
 
 Esta línea complementa los modelos individuales y de red. Integrarla exige deduplicar solicitudes y casos, limitar alertas por capacidad y conservar separado el motivo operativo del eventual hallazgo de fraude.
+
+## Integración con motores y capas
+
+Este especialista conserva estado S1. Su familia de señal se representa mediante una variable sintética en el [motor S2 de comparación y asignación](../loss-minimization-engine/README.md); ese experimento no implementa el detector especializado descrito arriba. Véanse [capas y contratos](../ARCHITECTURE.md) y [técnicas y función de pérdida](../MODEL_AND_LOSS_METHODS.md) para el desarrollo incremental y los criterios de comparación.

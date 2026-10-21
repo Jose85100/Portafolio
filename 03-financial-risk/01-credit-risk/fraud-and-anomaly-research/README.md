@@ -1,6 +1,12 @@
 # Fraude y anomalías en originación de crédito
 
-Cuatro programas de investigación para solicitudes de crédito y KYC. Revisión de la estructura: 21 de octubre de 2026, sobre `main` en `69983fb`. **Estado S1: formulación y diseño; sin modelos entrenados, notebooks, métricas observadas ni decisiones productivas.** Los umbrales y cronogramas siguientes son propuestas experimentales.
+Cuatro programas de investigación para solicitudes de crédito y KYC. Revisión de la estructura: 21 de octubre de 2026, sobre `main` en `69983fb`. **Los cuatro especialistas permanecen en S1. Incluye ahora un motor S2 acotado con modelos tabulares entrenados y comparación de políticas sobre datos sintéticos; sin validación productiva.** Los umbrales y cronogramas siguientes son propuestas experimentales.
+
+## Modelos, pérdida y arquitectura
+
+- [Arquitectura por capas y motores](ARCHITECTURE.md): responsabilidades, contratos, tres diagramas y estado de implementación.
+- [Técnicas y minimización de pérdida](MODEL_AND_LOSS_METHODS.md): calibración, costos por acción, MILP y escenarios.
+- [Motor ejecutable](loss-minimization-engine/README.md) y [resultados](loss-minimization-engine/RESULTS.md): logit, boosting, novedad y siete políticas.
 
 ## Preguntas que cubre la línea
 

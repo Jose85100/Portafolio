@@ -49,3 +49,7 @@ El enfoque fracasa si detecta principalmente independientes, penaliza datos ause
 Entregables propuestos: diccionario de conciliación; generador por tipo de ingreso; pipeline de variables al corte; modelos de cuantiles; notebook de cobertura, errores y ablaciones; formato de explicación con campos y períodos discrepantes. Pruebas: conversión de moneda coherente, anual/mensual/quincenal, faltantes distintos de cero y transferencias internas que no duplican ingreso. Ningún contrato real o soporte sensible se añade al repositorio.
 
 La revisión humana debe poder concluir error de captura, diferencia explicable, evidencia insuficiente o tergiversación confirmada, conservando la explicación y su versión. Esa separación permitirá mejorar las variables sin fabricar etiquetas de fraude.
+
+## Integración con motores y capas
+
+Este especialista conserva estado S1. Su familia de señal se representa mediante una variable sintética en el [motor S2 de comparación y asignación](../loss-minimization-engine/README.md); ese experimento no implementa el detector especializado descrito arriba. Véanse [capas y contratos](../ARCHITECTURE.md) y [técnicas y función de pérdida](../MODEL_AND_LOSS_METHODS.md) para el desarrollo incremental y los criterios de comparación.
