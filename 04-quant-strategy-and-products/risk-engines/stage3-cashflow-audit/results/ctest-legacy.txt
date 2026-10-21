@@ -1,0 +1,8 @@
+Internal ctest changing into directory: /workspace/scratch/e32aba0f5414/Portafolio/04-quant-strategy-and-products/risk-engines/stage3-cashflow-audit/build/legacy
+Test project /workspace/scratch/e32aba0f5414/Portafolio/04-quant-strategy-and-products/risk-engines/stage3-cashflow-audit/build/legacy
+    Start 1: risk_tests
+1/1 Test #1: risk_tests .......................   Passed    0.01 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.01 sec
