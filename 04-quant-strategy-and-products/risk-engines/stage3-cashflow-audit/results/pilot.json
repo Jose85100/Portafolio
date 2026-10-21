@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-20",
+  "status": "first executed pilot; retained observation, not final performance sample",
+  "fixtures": 288,
+  "max_relative_error": 2.118802798548048e-16,
+  "max_python_relative_difference": 2.47866253148264e-16,
+  "positive_losses_lost_to_zero_baseline": 12,
+  "positive_losses_lost_to_zero_stable": 0,
+  "n4096_median_ms_stable": 0.25129324000000003,
+  "n4096_median_ms_subtractive": 0.18408644,
+  "limitations": "Timing rankings reversed in later runs. Original wait4 RSS dominated inherited pre-exec Python high water. Final script additionally reads VmHWM within the exec'd CLI. Initial gcov source-path warnings corrected with absolute source paths and counter reset. First strict compilation rejected implicit numeric conversions; fixed before tests."
+}
