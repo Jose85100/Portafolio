@@ -48,3 +48,7 @@ La hipótesis se refuta operativamente si el aporte desaparece al separar campa�
 Diseño de entidades y resolución; generador de redes temporales; snapshot reproducible; baseline de conteos; modelo tabular; notebook de campañas no vistas; ficha de latencia y caso exportable con subgrafo explicativo minimizado. No publicar tokens reales ni subgrafos de clientes.
 
 Primero implementar agregados auditables; después decidir si una GNN mejora suficiente para su costo. [CaT-GNN, Duan et al.](https://arxiv.org/abs/2402.14708) es antecedente en fraude transaccional; su arquitectura y sus resultados no validan automáticamente este caso de originación.
+
+## Integración con motores y capas
+
+Este especialista conserva estado S1. Su familia de señal se representa mediante una variable sintética en el [motor S2 de comparación y asignación](../loss-minimization-engine/README.md); ese experimento no implementa el detector especializado descrito arriba. Véanse [capas y contratos](../ARCHITECTURE.md) y [técnicas y función de pérdida](../MODEL_AND_LOSS_METHODS.md) para el desarrollo incremental y los criterios de comparación.

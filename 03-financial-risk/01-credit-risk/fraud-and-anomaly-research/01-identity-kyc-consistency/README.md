@@ -51,3 +51,7 @@ Entregables propuestos: ficha de etiquetas; generador; constructor temporal; bas
 Pasar a S2 únicamente con ejecución reproducible y comparación sintética documentada. El paso posterior requiere datos adjudicados externos y revisión del costo de falsos positivos.
 
 Referencia de identidad: [NIST SP 800-63A-4](https://pages.nist.gov/800-63-4/sp800-63a.html). Referencia del detector: [IsolationForest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html). Son fundamentos técnicos; no se declara conformidad normativa ni desempeño.
+
+## Integración con motores y capas
+
+Este especialista conserva estado S1. Su familia de señal se representa mediante una variable sintética en el [motor S2 de comparación y asignación](../loss-minimization-engine/README.md); ese experimento no implementa el detector especializado descrito arriba. Véanse [capas y contratos](../ARCHITECTURE.md) y [técnicas y función de pérdida](../MODEL_AND_LOSS_METHODS.md) para el desarrollo incremental y los criterios de comparación.

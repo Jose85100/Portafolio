@@ -169,3 +169,4 @@ README.md,0,0,documentation_or_parent_index,Financial Risk Research
 01-credit-risk/fraud-and-anomaly-research/03-income-document-consistency/README.md,0,0,documentation_or_parent_index,03 · Consistencia de ingresos y evidencia documental
 01-credit-risk/fraud-and-anomaly-research/04-origination-process-anomalies/README.md,0,0,documentation_or_parent_index,04 · Anomalías en el proceso de originación y canales
 01-credit-risk/fraud-and-anomaly-research/README.md,0,0,documentation_or_parent_index,Fraude y anomalías en originación de crédito
+01-credit-risk/fraud-and-anomaly-research/loss-minimization-engine/README.md,1,0,has_local_experiment_or_code,Motor de minimización de pérdida por fraude
