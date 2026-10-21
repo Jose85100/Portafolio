@@ -7,6 +7,7 @@ Modelos y análisis para originación, seguimiento y gestión de cartera. Todo e
 ## Áreas
 
 - [Productos de crédito](credit-risk-products/): scorecard, pérdida esperada, roll rates, cosechas, segmentación e investigación IFRS 9.
+- [Fraude y anomalías](fraud-and-anomaly-research/): cuatro diseños S1 de KYC, redes temporales, ingresos/documentos y proceso de originación; pendientes de implementación y validación.
 - [Estrategia de cartera](credit-portfolio-strategy/): concentración, cópula de pérdidas, capital, límites de apetito y Vasicek.
 
 ## Plataforma transversal

@@ -164,3 +164,8 @@ readme,local_code_files,local_notebooks,category,first_heading
 07-financial-and-construction-risk-lab/README.md,1,0,has_local_experiment_or_code,Financial and Construction Risk Lab
 07-financial-and-construction-risk-lab/python/.pytest_cache/README.md,0,0,documentation_or_parent_index,pytest cache directory #
 README.md,0,0,documentation_or_parent_index,Financial Risk Research
+01-credit-risk/fraud-and-anomaly-research/01-identity-kyc-consistency/README.md,0,0,documentation_or_parent_index,01 · Consistencia de identidad y KYC
+01-credit-risk/fraud-and-anomaly-research/02-temporal-application-graphs/README.md,0,0,documentation_or_parent_index,02 · Redes temporales de solicitudes y fraude coordinado
+01-credit-risk/fraud-and-anomaly-research/03-income-document-consistency/README.md,0,0,documentation_or_parent_index,03 · Consistencia de ingresos y evidencia documental
+01-credit-risk/fraud-and-anomaly-research/04-origination-process-anomalies/README.md,0,0,documentation_or_parent_index,04 · Anomalías en el proceso de originación y canales
+01-credit-risk/fraud-and-anomaly-research/README.md,0,0,documentation_or_parent_index,Fraude y anomalías en originación de crédito
