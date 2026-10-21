@@ -52,3 +52,12 @@ Primero implementar agregados auditables; después decidir si una GNN mejora suf
 ## Integración con motores y capas
 
 Este especialista conserva estado S1. Su familia de señal se representa mediante una variable sintética en el [motor S2 de comparación y asignación](../loss-minimization-engine/README.md); ese experimento no implementa el detector especializado descrito arriba. Véanse [capas y contratos](../ARCHITECTURE.md) y [técnicas y función de pérdida](../MODEL_AND_LOSS_METHODS.md) para el desarrollo incremental y los criterios de comparación.
+
+## Notebooks ejecutados: experimentos S2 acotados
+
+- [Variables al corte y fuga](notebooks/01-point-in-time-graph-features.ipynb)
+- [Solapamiento y cobertura de pérdida](notebooks/02-network-overlap-and-loss-coverage.ipynb)
+
+Los dos experimentos incluyen 40 celdas y cuatro figuras en conjunto. Usan datos sintéticos y no completan el detector especializado de esta ficha. Las ecuaciones y los resultados se desarrollan dentro de las celdas; las preguntas abiertas conservan estado de investigación.
+
+[Agenda de investigación y ecuaciones adicionales](EQUATIONS_AND_RESEARCH.md) · [Reproducción y evidencia](../notebook-lab/README.md).

@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-21",
+  "scope": "synthetic experiments, independent processes",
+  "notebooks": [
+    {
+      "path": "01-identity-kyc-consistency/notebooks/01-bayes-evidence-and-calibration.ipynb",
+      "cells": 20,
+      "code_cells": 6,
+      "figures": 2,
+      "execution_mode": "ipython",
+      "seconds": 2.378,
+      "metrics": {
+        "Posterior correcto": 0.2081,
+        "Posterior inválido por duplicación": 0.7293,
+        "Positivos de prueba": 26
+      },
+      "sha256": "196e8eedc575da1908fa8d14b88701eab32c3943cad416619b7e48c6331707f0"
+    },
+    {
+      "path": "01-identity-kyc-consistency/notebooks/02-economic-thresholds-and-capacity.ipynb",
+      "cells": 20,
+      "code_cells": 6,
+      "figures": 2,
+      "execution_mode": "ipython",
+      "seconds": 2.366,
+      "metrics": {
+        "Costo sin capacidad (COP)": 8025285.9,
+        "Costo con 60 minutos (COP)": 4274124.94,
+        "Costo adicional con eficacia cero (COP)": 120006.94
+      },
+      "sha256": "584f0cce1610d7a53ccfb56af709d97c207ad97dff9120a1394ed29442447083"
+    },
+    {
+      "path": "02-temporal-application-graphs/notebooks/01-point-in-time-graph-features.ipynb",
+      "cells": 20,
+      "code_cells": 6,
+      "figures": 2,
+      "execution_mode": "ipython",
+      "seconds": 2.297,
+      "metrics": {
+        "Primer conteo válido de campaña": 0,
+        "Grado retrospectivo inválido": 24,
+        "Invariancia a eventos futuros": true
+      },
+      "sha256": "66c7b5d154b64f84e6472dbe65b94c46cd5fd4dd608154fe135ec8d9f8dab95e"
+    },
+    {
+      "path": "02-temporal-application-graphs/notebooks/02-network-overlap-and-loss-coverage.ipynb",
+      "cells": 20,
+      "code_cells": 6,
+      "figures": 2,
+      "execution_mode": "ipython",
+      "seconds": 2.189,
+      "metrics": {
+        "Beneficio ranking aditivo con K=2 (COP)": 110000.0,
+        "Beneficio cobertura conjunta K=2 (COP)": 220000.0,
+        "Presupuestos contrastados con oráculo": 4
+      },
+      "sha256": "fcc14bcddd78535bcc16ee881a92cdf769b7c2ebc51dbf49845501e34562e869"
+    },
+    {
+      "path": "03-income-document-consistency/notebooks/01-income-quantiles-and-coverage.ipynb",
+      "cells": 20,
+      "code_cells": 6,
+      "figures": 2,
+      "execution_mode": "ipython",
+      "seconds": 2.626,
+      "metrics": {
+        "Cobertura nominal": 0.8,
+        "Cobertura test ampliada": 0.7829,
+        "Cobertura con cambio de ingreso": 0.2057,
+        "Ampliación en log puntos": 0.0097
+      },
+      "sha256": "7d0547da2bc3a9f86c944ad6b848d604aba09771769f846f8d15daf7b966a7ea"
+    },
+    {
+      "path": "03-income-document-consistency/notebooks/02-flow-reconciliation-and-robustness.ipynb",
+      "cells": 20,
+      "code_cells": 6,
+      "figures": 2,
+      "execution_mode": "ipython",
+      "seconds": 2.262,
+      "metrics": {
+        "Abonos brutos (COP)": 10000000,
+        "Ingreso elegible (COP)": 3000000,
+        "Sobreestimación por sumar abonos": 3.333,
+        "Conversiones reconciliadas": 5
+      },
+      "sha256": "7cd570ae3cea083b8983e98946addf643e36b5a15c7f196d56799893fd42505b"
+    },
+    {
+      "path": "04-origination-process-anomalies/notebooks/01-case-mix-and-shrinkage.ipynb",
+      "cells": 20,
+      "code_cells": 6,
+      "figures": 2,
+      "execution_mode": "ipython",
+      "seconds": 2.427,
+      "metrics": {
+        "Grupos simulados": 80,
+        "Cambios inyectados": 4,
+        "Grupos revisados por criterio": 8,
+        "Mayor residuo ajustado": 9.7
+      },
+      "sha256": "f0881a03a4fe17c0512bb9ce7c949ca08e6e79b6cdc00a46ce9da1ae9445120c"
+    },
+    {
+      "path": "04-origination-process-anomalies/notebooks/02-cusum-false-alarms-and-delay.ipynb",
+      "cells": 20,
+      "code_cells": 6,
+      "figures": 2,
+      "execution_mode": "ipython",
+      "seconds": 2.462,
+      "metrics": {
+        "Umbral calibrado": 5.604,
+        "Falsa alarma en 120 días": 0.0633,
+        "Réplicas independientes de evaluación": 600,
+        "Escenarios de cambio": 5
+      },
+      "sha256": "b8d4f9107b685e6384cf65818e0900d6cb94e17668f66324117a11ac4fc33953"
+    }
+  ],
+  "inspection": {
+    "figures_visually_reviewed": 16,
+    "html_previews_exported": 8,
+    "notebook_schema": "nbformat validated",
+    "method": "IPython dedicated processes (local sockets unavailable)"
+  }
+}

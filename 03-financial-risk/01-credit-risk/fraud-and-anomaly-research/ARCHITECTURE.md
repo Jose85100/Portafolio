@@ -2,13 +2,13 @@
 
 ## Alcance de esta entrega
 
-La línea conserva cuatro diseños S1 de detección especializada e incorpora un [motor S2 acotado](loss-minimization-engine/README.md) para comparar modelos tabulares y decidir cómo asignar intervenciones. El motor usa cuatro señales sintéticas ya agregadas. No interpreta documentos, no entrena una GNN, no conecta proveedores KYC y no despliega un servicio.
+La línea conserva cuatro diseños S1 de detección especializada, añade [ocho experimentos de notebook S2 acotados](notebook-lab/README.md) e incorpora un [motor S2 acotado](loss-minimization-engine/README.md) para comparar modelos tabulares y decidir cómo asignar intervenciones. El motor usa cuatro señales sintéticas ya agregadas. No interpreta documentos, no entrena una GNN, no conecta proveedores KYC y no despliega un servicio.
 
 | Componente | Implementado en esta entrega | Pendiente |
 |---|---|---|
 | Contratos económicos | Casos, acciones y escenarios; rechazo de entradas no finitas, pesos inválidos y casos duplicados | Validación de procedencia y cobertura institucional |
-| Variables temporales | Conteo por entidad compartida con doble fecha, deduplicación y exclusión de solicitud actual | Constructor integral de señales, snapshot y feature store |
-| Detección | Logit y gradient boosting sobre cuatro señales simuladas; Isolation Forest como novedad | Modelos especializados de las cuatro fichas y datos adjudicados |
+| Variables temporales | Conteo por entidad compartida con doble fecha, deduplicación y exclusión de solicitud actual; notebook de fuga temporal | Constructor integral de señales, snapshot y feature store |
+| Detección | Logit y gradient boosting sobre cuatro señales simuladas; Isolation Forest como novedad | Integración de los especialistas de las cuatro fichas y datos adjudicados |
 | Calibración | Sigmoide ajustada en período posterior; evaluación Brier, log loss y confiabilidad | Selección temporal anidada y validación independiente |
 | Severidad y eficacia | Montos y eficacia por acción explícitos; análisis de sensibilidad | Estimación de pérdida neta y efecto causal de la intervención |
 | Decisión | MILP con acciones discretas, capacidad y escenarios esperados/minimax | Red, colas dinámicas, múltiples recursos y dependencia de casos |
