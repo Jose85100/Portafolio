@@ -1,0 +1,5 @@
+scenario,method,liquidation,borrowing,price,cost,collateral_slack,liquidity_slack
+abundant_collateral,collateral_choice,0.09090909090909091,0.3132231404958678,0.9545454545454546,0.03545454545454546,0.38099173553719007,0.0
+free_borrowing,collateral_choice,0.0,0.4,1.0,0.0,0.4,0.0
+high_borrowing_rate,collateral_choice,0.5527864045000421,0.0,0.7236067977499789,0.1527864045000421,0.2588854381999831,0.0
+no_price_impact,collateral_choice,0.4,0.0,1.0,0.0,0.18,0.0

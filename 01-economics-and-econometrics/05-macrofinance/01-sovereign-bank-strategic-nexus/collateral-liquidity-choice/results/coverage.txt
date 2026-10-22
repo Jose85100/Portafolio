@@ -1,0 +1,6 @@
+Name                                                                                                                                  Stmts   Miss Branch BrPart  Cover   Missing
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+01-economics-and-econometrics/05-macrofinance/01-sovereign-bank-strategic-nexus/collateral-liquidity-choice/src/liquidity.py             80      1     26      2    97%   110->112, 150
+01-economics-and-econometrics/05-macrofinance/01-sovereign-bank-strategic-nexus/collateral-liquidity-choice/tests/test_liquidity.py      62      1      2      1    97%   82
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                   142      2     28      3    97%

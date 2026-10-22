@@ -1,0 +1,13 @@
+test_analytical_asymmetric (test_coupled.CoupledTests.test_analytical_asymmetric) ... ok
+test_fixed_price_and_nulls (test_coupled.CoupledTests.test_fixed_price_and_nulls) ... ok
+test_fold_and_resolution (test_coupled.CoupledTests.test_fold_and_resolution) ... ok
+test_generated_payment_oracle_and_monotonicity (test_coupled.CoupledTests.test_generated_payment_oracle_and_monotonicity) ... ok
+test_invalid_and_scope (test_coupled.CoupledTests.test_invalid_and_scope) ... ok
+test_no_edges_reduces_previous_market (test_coupled.CoupledTests.test_no_edges_reduces_previous_market) ... ok
+test_permutation (test_coupled.CoupledTests.test_permutation) ... ok
+test_symmetric_previous_prices (test_coupled.CoupledTests.test_symmetric_previous_prices) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.204s
+
+OK
