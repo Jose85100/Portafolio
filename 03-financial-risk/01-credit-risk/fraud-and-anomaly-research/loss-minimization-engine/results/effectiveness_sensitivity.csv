@@ -1,0 +1,16 @@
+effectiveness_multiplier,policy,simulator_expected_cost_cop
+0.0,probability_rank,172939252.25347087
+0.0,expected_loss,173059478.8314198
+0.0,scenario_minimax,173059693.0863111
+0.4,probability_rank,148109934.74246514
+0.4,expected_loss,135558742.34375605
+0.4,scenario_minimax,135634398.66746604
+0.7,probability_rank,129487946.60921091
+0.7,expected_loss,107433189.97800826
+0.7,scenario_minimax,107565427.85333227
+1.0,probability_rank,110865958.47595653
+1.0,expected_loss,79307637.61226015
+1.0,scenario_minimax,79496457.03919818
+1.2,probability_rank,98451299.72045368
+1.2,expected_loss,60557269.368428186
+1.2,scenario_minimax,60783809.82977555
