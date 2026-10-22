@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="510" viewBox="0 0 1040 510">
+<rect width="1040" height="510" fill="#f8fafc"/>
+<text x="42" y="42" font-family="sans-serif" font-size="23" font-weight="bold" fill="#0f172a">Selective error at 80% coverage</text>
+<text x="42" y="66" font-family="sans-serif" font-size="13" fill="#475569">40 paired seeds · synthetic binary agent votes · lower is better</text>
+<text x="55" y="106" font-family="sans-serif" font-size="17" fill="#0f172a">shared failure</text>
+<text x="55" y="135" font-family="sans-serif" font-size="13" fill="#334155">majority</text>
+<rect x="55" y="145" width="210" height="17" rx="3" fill="#e2e8f0"/>
+<rect x="55" y="145" width="45.7" height="17" rx="3" fill="#64748b"/>
+<text x="275" y="159" font-family="sans-serif" font-size="12" fill="#0f172a">0.098</text>
+<text x="55" y="217" font-family="sans-serif" font-size="13" fill="#334155">weighted</text>
+<rect x="55" y="227" width="210" height="17" rx="3" fill="#e2e8f0"/>
+<rect x="55" y="227" width="38.8" height="17" rx="3" fill="#0f766e"/>
+<text x="275" y="241" font-family="sans-serif" font-size="12" fill="#0f172a">0.083</text>
+<text x="55" y="299" font-family="sans-serif" font-size="13" fill="#334155">group capped</text>
+<rect x="55" y="309" width="210" height="17" rx="3" fill="#e2e8f0"/>
+<rect x="55" y="309" width="35.2" height="17" rx="3" fill="#2563eb"/>
+<text x="275" y="323" font-family="sans-serif" font-size="12" fill="#0f172a">0.075</text>
+<text x="55" y="381" font-family="sans-serif" font-size="13" fill="#334155">wrong metadata</text>
+<rect x="55" y="391" width="210" height="17" rx="3" fill="#e2e8f0"/>
+<rect x="55" y="391" width="38.8" height="17" rx="3" fill="#d97706"/>
+<text x="275" y="405" font-family="sans-serif" font-size="12" fill="#0f172a">0.083</text>
+<text x="385" y="106" font-family="sans-serif" font-size="17" fill="#0f172a">mild dependence</text>
+<text x="385" y="135" font-family="sans-serif" font-size="13" fill="#334155">majority</text>
+<rect x="385" y="145" width="210" height="17" rx="3" fill="#e2e8f0"/>
+<rect x="385" y="145" width="11.5" height="17" rx="3" fill="#64748b"/>
+<text x="605" y="159" font-family="sans-serif" font-size="12" fill="#0f172a">0.025</text>
+<text x="385" y="217" font-family="sans-serif" font-size="13" fill="#334155">weighted</text>
+<rect x="385" y="227" width="210" height="17" rx="3" fill="#e2e8f0"/>
+<rect x="385" y="227" width="13.0" height="17" rx="3" fill="#0f766e"/>
+<text x="605" y="241" font-family="sans-serif" font-size="12" fill="#0f172a">0.028</text>
+<text x="385" y="299" font-family="sans-serif" font-size="13" fill="#334155">group capped</text>
+<rect x="385" y="309" width="210" height="17" rx="3" fill="#e2e8f0"/>
+<rect x="385" y="309" width="18.9" height="17" rx="3" fill="#2563eb"/>
+<text x="605" y="323" font-family="sans-serif" font-size="12" fill="#0f172a">0.040</text>
+<text x="385" y="381" font-family="sans-serif" font-size="13" fill="#334155">wrong metadata</text>
+<rect x="385" y="391" width="210" height="17" rx="3" fill="#e2e8f0"/>
+<rect x="385" y="391" width="13.0" height="17" rx="3" fill="#d97706"/>
+<text x="605" y="405" font-family="sans-serif" font-size="12" fill="#0f172a">0.028</text>
+<text x="715" y="106" font-family="sans-serif" font-size="17" fill="#0f172a">independent</text>
+<text x="715" y="135" font-family="sans-serif" font-size="13" fill="#334155">majority</text>
+<rect x="715" y="145" width="210" height="17" rx="3" fill="#e2e8f0"/>
+<rect x="715" y="145" width="0.3" height="17" rx="3" fill="#64748b"/>
+<text x="935" y="159" font-family="sans-serif" font-size="12" fill="#0f172a">0.001</text>
+<text x="715" y="217" font-family="sans-serif" font-size="13" fill="#334155">weighted</text>
+<rect x="715" y="227" width="210" height="17" rx="3" fill="#e2e8f0"/>
+<rect x="715" y="227" width="0.2" height="17" rx="3" fill="#0f766e"/>
+<text x="935" y="241" font-family="sans-serif" font-size="12" fill="#0f172a">0.000</text>
+<text x="715" y="299" font-family="sans-serif" font-size="13" fill="#334155">group capped</text>
+<rect x="715" y="309" width="210" height="17" rx="3" fill="#e2e8f0"/>
+<rect x="715" y="309" width="11.3" height="17" rx="3" fill="#2563eb"/>
+<text x="935" y="323" font-family="sans-serif" font-size="12" fill="#0f172a">0.024</text>
+<text x="715" y="381" font-family="sans-serif" font-size="13" fill="#334155">wrong metadata</text>
+<rect x="715" y="391" width="210" height="17" rx="3" fill="#e2e8f0"/>
+<rect x="715" y="391" width="0.2" height="17" rx="3" fill="#d97706"/>
+<text x="935" y="405" font-family="sans-serif" font-size="12" fill="#0f172a">0.000</text>
+<text x="42" y="492" font-family="sans-serif" font-size="12" fill="#475569">Group labels are assumed known; the experiment does not use real LLMs or validate operational correctness.</text></svg>

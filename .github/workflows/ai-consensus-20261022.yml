@@ -1,0 +1,17 @@
+name: AI correlated consensus M2
+on:
+  pull_request:
+    paths:
+      - '05-artificial-intelligence-and-computational-systems/10-ai-orchestration-engineering/02-multi-agent-coordination-consensus/mvp-correlated-consensus/**'
+      - '.github/workflows/ai-consensus-20261022.yml'
+  workflow_dispatch:
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Reproduce
+        run: bash 05-artificial-intelligence-and-computational-systems/10-ai-orchestration-engineering/02-multi-agent-coordination-consensus/mvp-correlated-consensus/reproduce.sh
