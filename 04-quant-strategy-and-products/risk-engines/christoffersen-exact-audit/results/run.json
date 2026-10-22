@@ -1,0 +1,19 @@
+{
+  "n": 30,
+  "exceptions": 4,
+  "states": 27405,
+  "statistic": 1.3695320221450018,
+  "exact_p": 0.0421455938697318,
+  "mid_p": 0.04077723043240285,
+  "mc_replications": 999,
+  "mc_seeds": 200,
+  "decision_disagreements": 32,
+  "max_abs_mc_error": 0.018854406130268196,
+  "exact_microseconds": 2420.828,
+  "mc_microseconds_per_seed": 201.35139500000002,
+  "environment": {
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "python": "3.12.14",
+    "peak_rss_kib": 58468
+  }
+}

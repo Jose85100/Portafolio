@@ -1,0 +1,173 @@
+File '/usr/include/c++/13/bits/stl_algobase.h'
+Lines executed:95.50% of 111
+Branches executed:100.00% of 22
+Taken at least once:72.73% of 22
+Calls executed:100.00% of 38
+Creating 'stl_algobase.h.gcov'
+
+File '/usr/include/c++/13/bits/cpp_type_traits.h'
+Lines executed:100.00% of 6
+No branches
+No calls
+Creating 'cpp_type_traits.h.gcov'
+
+File '/usr/include/c++/13/bits/stl_iterator.h'
+Lines executed:94.44% of 54
+No branches
+Calls executed:100.00% of 13
+Creating 'stl_iterator.h.gcov'
+
+File '/usr/include/c++/13/bits/stl_iterator_base_types.h'
+Lines executed:100.00% of 1
+No branches
+No calls
+Creating 'stl_iterator_base_types.h.gcov'
+
+File '/usr/include/c++/13/bits/stl_construct.h'
+Lines executed:100.00% of 15
+No branches
+Calls executed:100.00% of 3
+Creating 'stl_construct.h.gcov'
+
+File '/usr/include/c++/13/bits/move.h'
+Lines executed:100.00% of 11
+No branches
+Calls executed:100.00% of 3
+Creating 'move.h.gcov'
+
+File '/usr/include/c++/13/bits/new_allocator.h'
+Lines executed:75.86% of 29
+Branches executed:66.67% of 6
+Taken at least once:33.33% of 6
+Calls executed:57.14% of 7
+Creating 'new_allocator.h.gcov'
+
+File '/usr/include/c++/13/bits/stl_uninitialized.h'
+Lines executed:100.00% of 43
+Branches executed:100.00% of 2
+Taken at least once:50.00% of 2
+Calls executed:100.00% of 14
+Creating 'stl_uninitialized.h.gcov'
+
+File '/usr/include/c++/13/bits/stl_vector.h'
+Lines executed:98.32% of 179
+Branches executed:100.00% of 26
+Taken at least once:50.00% of 26
+Calls executed:87.14% of 70
+Creating 'stl_vector.h.gcov'
+
+File '/usr/include/c++/13/bits/alloc_traits.h'
+Lines executed:100.00% of 6
+No branches
+Calls executed:100.00% of 6
+Creating 'alloc_traits.h.gcov'
+
+File '/usr/include/c++/13/bits/random.tcc'
+Lines executed:100.00% of 40
+Branches executed:100.00% of 14
+Taken at least once:100.00% of 14
+Calls executed:100.00% of 4
+Creating 'random.tcc.gcov'
+
+File '/usr/include/c++/13/bits/stl_pair.h'
+Lines executed:100.00% of 5
+No branches
+Calls executed:100.00% of 5
+Creating 'stl_pair.h.gcov'
+
+File '/usr/include/c++/13/bits/random.h'
+Lines executed:100.00% of 22
+No branches
+Calls executed:100.00% of 3
+Creating 'random.h.gcov'
+
+File '/usr/include/c++/13/bits/allocator.h'
+Lines executed:100.00% of 3
+No branches
+Calls executed:54.55% of 22
+Creating 'allocator.h.gcov'
+
+File '/usr/include/c++/13/initializer_list'
+Lines executed:100.00% of 9
+No branches
+Calls executed:100.00% of 4
+Creating 'initializer_list.gcov'
+
+File '/usr/include/c++/13/bits/uniform_int_dist.h'
+Lines executed:82.86% of 35
+Branches executed:66.67% of 12
+Taken at least once:33.33% of 12
+Calls executed:66.67% of 12
+Creating 'uniform_int_dist.h.gcov'
+
+File '/usr/include/c++/13/bits/predefined_ops.h'
+Lines executed:100.00% of 7
+No branches
+Calls executed:100.00% of 2
+Creating 'predefined_ops.h.gcov'
+
+File '/usr/include/c++/13/bits/stl_iterator_base_funcs.h'
+Lines executed:100.00% of 3
+No branches
+No calls
+Creating 'stl_iterator_base_funcs.h.gcov'
+
+File '/usr/include/c++/13/bits/stl_algo.h'
+Lines executed:88.00% of 25
+Branches executed:76.92% of 26
+Taken at least once:42.31% of 26
+Calls executed:68.75% of 32
+Creating 'stl_algo.h.gcov'
+
+File '/usr/include/c++/13/bits/stl_numeric.h'
+Lines executed:100.00% of 5
+Branches executed:100.00% of 2
+Taken at least once:100.00% of 2
+Calls executed:100.00% of 3
+Creating 'stl_numeric.h.gcov'
+
+File '/workspace/scratch/e32aba0f5414/Portafolio/04-quant-strategy-and-products/risk-engines/christoffersen-exact-audit/include/exact.hpp'
+Lines executed:91.16% of 147
+Branches executed:92.41% of 158
+Taken at least once:68.35% of 158
+Calls executed:77.31% of 119
+Creating 'exact.hpp.gcov'
+
+File '/workspace/scratch/e32aba0f5414/Portafolio/04-quant-strategy-and-products/risk-engines/christoffersen-exact-audit/tests/tests.cpp'
+Lines executed:97.87% of 47
+Branches executed:97.44% of 78
+Taken at least once:51.28% of 78
+Calls executed:83.61% of 61
+Creating 'tests.cpp.gcov'
+
+File '/usr/include/c++/13/ext/alloc_traits.h'
+Lines executed:100.00% of 1
+No branches
+No calls
+Creating 'alloc_traits.h.gcov'
+
+File '/usr/include/c++/13/limits'
+Lines executed:50.00% of 2
+No branches
+No calls
+Creating 'limits.gcov'
+
+File '/usr/include/c++/13/bits/std_abs.h'
+Lines executed:100.00% of 2
+No branches
+No calls
+Creating 'std_abs.h.gcov'
+
+File '/usr/include/c++/13/new'
+Lines executed:100.00% of 2
+No branches
+No calls
+Creating 'new.gcov'
+
+File '/usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h'
+Lines executed:100.00% of 2
+No branches
+No calls
+Creating 'c++config.h.gcov'
+
+Lines executed:94.83% of 812
