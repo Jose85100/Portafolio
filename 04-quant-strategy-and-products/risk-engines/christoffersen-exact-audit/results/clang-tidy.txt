@@ -1,0 +1,1 @@
+clang-tidy unavailable; strict g++ warnings remain enforced

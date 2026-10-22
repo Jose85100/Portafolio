@@ -1,0 +1,5 @@
+clang-format==20.1.8
+cmake==3.31.10
+matplotlib==3.9.4
+mypy==1.15.0
+ruff==0.11.5
