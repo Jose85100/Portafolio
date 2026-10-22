@@ -1,0 +1,12 @@
+numpy==2.3.5
+matplotlib==3.10.8
+pytest==9.0.2
+pytest-cov==7.0.0
+hypothesis==6.148.9
+ruff==0.14.10
+mypy==1.19.1
+jupyter==1.1.1
+nbformat==5.10.4
+nbclient==0.10.2
+ipykernel==7.1.0
+psutil==7.2.1

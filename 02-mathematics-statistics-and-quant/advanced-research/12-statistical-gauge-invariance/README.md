@@ -1,57 +1,39 @@
-# Statistical Gauge Invariance
+# Statistical Gauge Invariance — certificado S2 para factorización rango uno
 
-> **Estado: S1 — diseño de investigación.** Sin código implementado, resultados empíricos ni contribución inédita demostrada.
+**Estado: S2 (prototipo ejecutable y sintético).**
 
-## Pregunta de investigación
+Pregunta: ¿puede un certificado espectral de la información de Fisher reconocer automáticamente la no identificabilidad por escala en `M = u vᵀ`, distinguirla de degeneraciones adicionales y eliminar la inestabilidad paramétrica sin cambiar la predicción?
 
-¿Puede identificarse automáticamente la no identificabilidad producida por simetrías en modelos estadísticos?
+El MVP implementa el Jacobiano analítico, la Fisher gaussiana, el vector tangente gauge `(u,-v)`, un certificado de nulidad, una sección canónica balanceada obtenida por SVD y un baseline de diferencias finitas. El benchmark usa matrices sintéticas completamente observadas; no afirma resolver simetrías desconocidas ni modelos de rango mayor.
 
-## Hipótesis falsable
+## Reproducción completa
 
-Existe una región de supuestos y parámetros en la que el método estudiado aporta ventajas medibles sobre baselines definidos antes del experimento. Se reportarán también condiciones de fallo y casos negativos.
+Desde esta carpeta:
 
-## Formulación matemática y supuestos
-
-p(x|g·θ)=p(x|θ) para g∈G; espacio cociente Θ/G; direcciones nulas de la información de Fisher.
-
-**Obligatorio en desarrollo:** definir espacios, filtraciones si corresponde, condiciones de regularidad, identificabilidad, existencia, unicidad, estabilidad, resultados demostrables y contraejemplos. Ninguna garantía se presume sin demostración o referencia verificada.
-
-## Modelado estadístico
-
-Caracterizar acciones de grupo, órbitas y estabilizadores; analizar Hessianos y rango de Fisher.
-
-Separar incertidumbre de muestreo, incertidumbre paramétrica y error de especificación. Medir sesgo, consistencia cuando proceda, calibración, sensibilidad e intervalos mediante procedimientos adecuados para datos dependientes.
-
-## Métodos numéricos y simulación
-
-Modelos factoriales, mezclas y redes pequeñas; comparar optimización con y sin gauge fixing, sesgo y estabilidad.
-
-**Protocolo:** generador sintético con verdad conocida; al menos dos comparadores; validación fuera de muestra o réplicas independientes; pruebas de robustez, ablaciones, complejidad temporal y espacial, control de semillas y reproducción automatizada.
-
-## Aplicación económico-financiera
-
-Factores económicos latentes y calibración de modelos.
-
-## Límites de interpretación
-
-No toda redundancia es una simetría global; el cociente puede ser singular y no identificabilidad adicional puede persistir.
-
-## Criterios de entrega
-
-1. **S1 — Investigación:** revisión de literatura trazable, formalización, hipótesis y diseño experimental preespecificado.
-2. **S2 — Prototipo:** `src/`, `tests/`, simuladores reproducibles y pruebas de invariantes/casos límite.
-3. **S3 — Validación:** benchmarks, incertidumbre, sensibilidad, errores numéricos y resultados generados automáticamente.
-4. **S4 — Evidencia externa:** datos públicos con licencia, réplica independiente, documentación de fallos y límites operativos.
-
-## Arquitectura futura (no implementada)
-
-```text
-theory/       # definiciones, pruebas, contraejemplos
-src/          # modelos y algoritmos
-experiments/  # simulación, comparadores y figuras
-tests/        # pruebas matemáticas y computacionales
-data/         # manifiestos de datos públicos
-docs/         # bibliografía, validación y limitaciones
+```bash
+make run
 ```
 
-**Integridad científica:** la combinación de teorías conocidas no demuestra originalidad; esta deberá establecerse frente al estado del arte.
+El comando crea `.venv`, instala dependencias fijadas, ejecuta tests/cobertura/lint/tipos, benchmark, figura, notebook y auditoría de artefactos. Las salidas verificables quedan en `benchmarks/` y el análisis crítico en `informe.md`.
+
+También puede reproducirse con contenedor:
+
+```bash
+docker build -t gauge-certificate . && docker run --rm gauge-certificate
+```
+
+## Alcance matemático
+
+Con ruido gaussiano iid de varianza conocida, `J(u,v)(u,-v)=0`. Si `u` y `v` son no nulos, `rank(J)=m+n-1`: hay exactamente una dirección infinitesimal no identificable. El certificado numérico comprueba esa proposición; el caso degenerado `u=0` se rechaza porque su nulidad excede uno.
+
+## Estructura
+
+- `src/gauge.py`: núcleo tipado y certificado.
+- `src/benchmark.py`: simulación, baseline y resultados crudos.
+- `tests/`: propiedades, casos límite y regresiones.
+- `config.json`: diseño preespecificado, semillas y umbrales.
+- `benchmarks/`: CSV/JSON, figura, logs, cobertura y entorno.
+- `notebook.ipynb`: análisis ejecutado de punta a punta.
+- `informe.md`, `MVP.md`, `referencias.bib`, `fuentes.md`: evidencia y límites.
+
+No se reclama novedad algorítmica: la contribución es una formalización verificable y repo-específica que conecta simetría, nulidad de Fisher y gauge fixing.
