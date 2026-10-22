@@ -1,5 +1,9 @@
 # Ecuaciones y agenda — proceso de originación
 
+## Estado después de la ampliación
+
+Los notebooks ya ajustan beta-binomial y calibran un máximo de cinco canales independientes. La mezcla heterogénea conjunta, dependencia multicanal general y un modelo causal de error de observación siguen pendientes.
+
 Los notebooks comparan mezcla y contracción de tasas y calibran CUSUM en un horizonte fijo. Detectan desviaciones simuladas del proceso, no intención ni fraude adjudicado.
 
 ## 1. Dependencia por lotes y sobredispersión

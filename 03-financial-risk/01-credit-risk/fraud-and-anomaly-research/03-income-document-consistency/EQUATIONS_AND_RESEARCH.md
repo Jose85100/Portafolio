@@ -1,5 +1,9 @@
 # Ecuaciones y agenda — ingresos y documentos
 
+## Estado después de la ampliación
+
+Los notebooks ya ajustan un modelo de dos partes, cuantiles y calibración conformal global, y ejecutan conciliación por eventos. La calibración conformal segmentada y un grafo integral de flujos institucionales siguen pendientes.
+
 Los notebooks ajustan bandas de ingreso corroborado, estudian cobertura y prueban conciliación y sensibilidad a contaminación. Una declaración fuera de banda es una discrepancia, no un fraude confirmado.
 
 ## 1. Ingresos cero y modelo en dos partes

@@ -1,5 +1,9 @@
 # Ecuaciones y agenda — redes temporales
 
+## Estado después de la ampliación
+
+Los notebooks ya ejecutan comparación individual/red, cobertura nominal y por escenarios, y eficacia parcial bajo supuestos. El decaimiento temporal propuesto, los efectos causales de contención y una GNN siguen pendientes.
+
 Los notebooks implementan conteos disponibles al corte y cobertura conjunta de pérdida en un pequeño problema exacto. No entrenan una GNN ni validan campañas reales.
 
 ## 1. Vínculos inciertos y cobertura robusta

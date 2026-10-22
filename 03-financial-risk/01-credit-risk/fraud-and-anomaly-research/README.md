@@ -4,9 +4,11 @@ Cuatro programas de investigación para solicitudes de crédito y KYC. Revisión
 
 ## Notebooks, ecuaciones e ideas
 
-[Ocho notebooks ejecutados](notebook-lab/README.md), dos por especialista: 160 celdas y 16 figuras, con derivaciones, sensibilidad y contraejemplos. Las fichas originales conservan S1 para su alcance integral; los experimentos concretos son S2 acotados a datos sintéticos. Cada carpeta añade una agenda de ecuaciones e investigación.
+[Ocho notebooks ejecutados](notebook-lab/README.md), dos por especialista: 304 celdas y 31 figuras, con derivaciones, sensibilidad y contraejemplos. Las fichas originales conservan S1 para su alcance integral; los experimentos concretos son S2 acotados a datos sintéticos. Cada carpeta añade una agenda de ecuaciones e investigación.
 
 ## Modelos, pérdida y arquitectura
+
+[Catálogo de modelos y usos](MODEL_CATALOG.md) · [Revisión integral](REVIEW_AND_RESULTS.md). Las fórmulas y las tablas de símbolos están dentro de los ocho notebooks.
 
 - [Arquitectura por capas y motores](ARCHITECTURE.md): responsabilidades, contratos, tres diagramas y estado de implementación.
 - [Técnicas y minimización de pérdida](MODEL_AND_LOSS_METHODS.md): calibración, costos por acción, MILP y escenarios.

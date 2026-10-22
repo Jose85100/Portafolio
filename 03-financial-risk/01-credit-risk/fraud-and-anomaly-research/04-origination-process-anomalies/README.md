@@ -55,6 +55,8 @@ Este especialista conserva estado S1. Su familia de señal se representa mediant
 - [Mezcla de cartera y contracción](notebooks/01-case-mix-and-shrinkage.ipynb)
 - [CUSUM, falsas alarmas y demora](notebooks/02-cusum-false-alarms-and-delay.ipynb)
 
-Los dos experimentos incluyen 40 celdas y cuatro figuras en conjunto. Usan datos sintéticos y no completan el detector especializado de esta ficha. Las ecuaciones y los resultados se desarrollan dentro de las celdas; las preguntas abiertas conservan estado de investigación.
+Los dos experimentos incluyen 76 celdas y 8 figuras en conjunto, con derivaciones, diccionario de símbolos, ajuste de alternativas y casos de uso. Usan datos sintéticos y no completan el detector especializado de esta ficha. Las ecuaciones y los resultados se desarrollan dentro de las celdas; las preguntas abiertas conservan estado de investigación.
 
 [Agenda de investigación y ecuaciones adicionales](EQUATIONS_AND_RESEARCH.md) · [Reproducción y evidencia](../notebook-lab/README.md).
+
+[Catálogo de modelos y usos](../MODEL_CATALOG.md) · [Revisión integral y resultados](../REVIEW_AND_RESULTS.md).

@@ -8,7 +8,7 @@ La línea conserva cuatro diseños S1 de detección especializada, añade [ocho 
 |---|---|---|
 | Contratos económicos | Casos, acciones y escenarios; rechazo de entradas no finitas, pesos inválidos y casos duplicados | Validación de procedencia y cobertura institucional |
 | Variables temporales | Conteo por entidad compartida con doble fecha, deduplicación y exclusión de solicitud actual; notebook de fuga temporal | Constructor integral de señales, snapshot y feature store |
-| Detección | Logit y gradient boosting sobre cuatro señales simuladas; Isolation Forest como novedad | Integración de los especialistas de las cuatro fichas y datos adjudicados |
+| Detección | Logit y gradient boosting sobre cuatro señales simuladas; Isolation Forest como novedad. Los notebooks añaden comparación individual/red, ingreso de dos partes y beta-binomial | Integración de los especialistas de las cuatro fichas y datos adjudicados |
 | Calibración | Sigmoide ajustada en período posterior; evaluación Brier, log loss y confiabilidad | Selección temporal anidada y validación independiente |
 | Severidad y eficacia | Montos y eficacia por acción explícitos; análisis de sensibilidad | Estimación de pérdida neta y efecto causal de la intervención |
 | Decisión | MILP con acciones discretas, capacidad y escenarios esperados/minimax | Red, colas dinámicas, múltiples recursos y dependencia de casos |
