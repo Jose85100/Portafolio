@@ -164,3 +164,14 @@ readme,local_code_files,local_notebooks,category,first_heading
 07-financial-and-construction-risk-lab/README.md,1,0,has_local_experiment_or_code,Financial and Construction Risk Lab
 07-financial-and-construction-risk-lab/python/.pytest_cache/README.md,0,0,documentation_or_parent_index,pytest cache directory #
 README.md,0,0,documentation_or_parent_index,Financial Risk Research
+01-credit-risk/fraud-and-anomaly-research/01-identity-kyc-consistency/README.md,0,0,documentation_or_parent_index,01 · Consistencia de identidad y KYC
+01-credit-risk/fraud-and-anomaly-research/02-temporal-application-graphs/README.md,0,0,documentation_or_parent_index,02 · Redes temporales de solicitudes y fraude coordinado
+01-credit-risk/fraud-and-anomaly-research/03-income-document-consistency/README.md,0,0,documentation_or_parent_index,03 · Consistencia de ingresos y evidencia documental
+01-credit-risk/fraud-and-anomaly-research/04-origination-process-anomalies/README.md,0,0,documentation_or_parent_index,04 · Anomalías en el proceso de originación y canales
+01-credit-risk/fraud-and-anomaly-research/README.md,0,0,documentation_or_parent_index,Fraude y anomalías en originación de crédito
+01-credit-risk/fraud-and-anomaly-research/loss-minimization-engine/README.md,1,0,has_local_experiment_or_code,Motor de minimización de pérdida por fraude
+01-credit-risk/fraud-and-anomaly-research/01-identity-kyc-consistency/notebooks/README.md,0,2,has_local_experiment_or_code,Notebooks — Identidad y KYC
+01-credit-risk/fraud-and-anomaly-research/02-temporal-application-graphs/notebooks/README.md,0,2,has_local_experiment_or_code,Notebooks — Redes temporales
+01-credit-risk/fraud-and-anomaly-research/03-income-document-consistency/notebooks/README.md,0,2,has_local_experiment_or_code,Notebooks — Ingresos y documentos
+01-credit-risk/fraud-and-anomaly-research/04-origination-process-anomalies/notebooks/README.md,0,2,has_local_experiment_or_code,Notebooks — Proceso de originación
+01-credit-risk/fraud-and-anomaly-research/notebook-lab/README.md,4,0,has_local_experiment_or_code,Laboratorio de notebooks de fraude y anomalías

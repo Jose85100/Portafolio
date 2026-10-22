@@ -1,0 +1,26 @@
+test_cost_by_outcomes (test_engine.LossContracts.test_cost_by_outcomes) ... ok
+test_invalid_action (test_engine.LossContracts.test_invalid_action) ... ok
+test_invalid_loss (test_engine.LossContracts.test_invalid_loss) ... ok
+test_invalid_probability (test_engine.LossContracts.test_invalid_probability) ... ok
+test_invalid_scenario (test_engine.LossContracts.test_invalid_scenario) ... ok
+test_no_prevention_costs_more (test_engine.LossContracts.test_no_prevention_costs_more) ... ok
+test_overflow_rejected (test_engine.LossContracts.test_overflow_rejected) ... ok
+test_allow_action_required (test_engine.Optimization.test_allow_action_required) ... ok
+test_bruteforce_random_finite_scenarios (test_engine.Optimization.test_bruteforce_random_finite_scenarios) ... ok
+test_capacity_monotonic (test_engine.Optimization.test_capacity_monotonic) ... ok
+test_deduplication_required (test_engine.Optimization.test_deduplication_required) ... ok
+test_duplicate_actions_or_scenarios (test_engine.Optimization.test_duplicate_actions_or_scenarios) ... ok
+test_malformed_optimization (test_engine.Optimization.test_malformed_optimization) ... ok
+test_probability_rank_counterexample (test_engine.Optimization.test_probability_rank_counterexample) ... ok
+test_scenario_weights (test_engine.Optimization.test_scenario_weights) ... ok
+test_uneconomic_review (test_engine.Optimization.test_uneconomic_review) ... ok
+test_zero_capacity (test_engine.Optimization.test_zero_capacity) ... ok
+test_chronological_labels (test_engine.Temporal.test_chronological_labels) ... ok
+test_duplicates_and_boundary (test_engine.Temporal.test_duplicates_and_boundary) ... ok
+test_future_and_delayed_evidence (test_engine.Temporal.test_future_and_delayed_evidence) ... ok
+test_future_data_cannot_change_fitted_model (test_engine.Temporal.test_future_data_cannot_change_fitted_model) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.521s
+
+OK

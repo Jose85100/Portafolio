@@ -1,0 +1,9 @@
+{
+  "n": 250,
+  "probability": 0.01,
+  "trials": 2000,
+  "permutations": 1999,
+  "cluster_probability": 0.35,
+  "alpha": 0.05,
+  "seed": 20261021
+}
