@@ -1,0 +1,7 @@
+{
+  "max_gauge_residual": 2.5380220588272907e-17,
+  "max_prediction_change": 1.5342051657747618e-15,
+  "min_instability_reduction": 1.0,
+  "max_jacobian_relative_error": 3.1335333540770966e-11,
+  "min_speedup": 2.3769568443733182
+}
