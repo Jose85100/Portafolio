@@ -1,0 +1,174 @@
+{
+  "config": {
+    "seeds": [
+      20261022,
+      20261023,
+      20261024,
+      20261025,
+      20261026,
+      20261027,
+      20261028,
+      20261029,
+      20261030,
+      20261031,
+      20261032,
+      20261033,
+      20261034,
+      20261035,
+      20261036,
+      20261037,
+      20261038,
+      20261039,
+      20261040,
+      20261041,
+      20261042,
+      20261043,
+      20261044,
+      20261045,
+      20261046,
+      20261047,
+      20261048,
+      20261049,
+      20261050,
+      20261051,
+      20261052,
+      20261053,
+      20261054,
+      20261055,
+      20261056,
+      20261057,
+      20261058,
+      20261059,
+      20261060,
+      20261061
+    ],
+    "calibration_n": 800,
+    "test_n": 600,
+    "coverage": 0.8,
+    "regimes": {
+      "shared_failure": 0.2,
+      "mild_dependence": 0.07,
+      "independent": 0
+    },
+    "policies": [
+      "majority",
+      "weighted",
+      "group_capped",
+      "wrong_metadata"
+    ],
+    "provenance": [
+      "provider_A",
+      "provider_A",
+      "provider_A",
+      "provider_B",
+      "provider_C"
+    ],
+    "note": "Measured locally on Python 3.13.5; reproduced by benchmarks.run; timing fields are regenerated."
+  },
+  "summary": {
+    "shared_failure": {
+      "majority": {
+        "accuracy": 0.7922917,
+        "risk_at_80": 0.0979167,
+        "aurc": 0.0601325,
+        "coverage": 0.8
+      },
+      "weighted": {
+        "accuracy": 0.8500417,
+        "risk_at_80": 0.0832292,
+        "aurc": 0.0454344,
+        "coverage": 0.8
+      },
+      "group_capped": {
+        "accuracy": 0.907375,
+        "risk_at_80": 0.0754688,
+        "aurc": 0.0393766,
+        "coverage": 0.8
+      },
+      "wrong_metadata": {
+        "accuracy": 0.8500417,
+        "risk_at_80": 0.0832292,
+        "aurc": 0.0454344,
+        "coverage": 0.8
+      }
+    },
+    "mild_dependence": {
+      "majority": {
+        "accuracy": 0.9187917,
+        "risk_at_80": 0.0246354,
+        "aurc": 0.0171166,
+        "coverage": 0.8
+      },
+      "weighted": {
+        "accuracy": 0.9187917,
+        "risk_at_80": 0.0278646,
+        "aurc": 0.0201805,
+        "coverage": 0.8
+      },
+      "group_capped": {
+        "accuracy": 0.9418333,
+        "risk_at_80": 0.0404687,
+        "aurc": 0.0178605,
+        "coverage": 0.8
+      },
+      "wrong_metadata": {
+        "accuracy": 0.9187917,
+        "risk_at_80": 0.0278646,
+        "aurc": 0.0201805,
+        "coverage": 0.8
+      }
+    },
+    "independent": {
+      "majority": {
+        "accuracy": 0.9865833,
+        "risk_at_80": 0.0005729,
+        "aurc": 0.0009492,
+        "coverage": 0.8
+      },
+      "weighted": {
+        "accuracy": 0.9865833,
+        "risk_at_80": 0.0003646,
+        "aurc": 0.0005606,
+        "coverage": 0.8
+      },
+      "group_capped": {
+        "accuracy": 0.961125,
+        "risk_at_80": 0.0241667,
+        "aurc": 0.0089154,
+        "coverage": 0.8
+      },
+      "wrong_metadata": {
+        "accuracy": 0.9865833,
+        "risk_at_80": 0.0003646,
+        "aurc": 0.0005606,
+        "coverage": 0.8
+      }
+    }
+  },
+  "paired_bootstrap": {
+    "shared_failure": {
+      "mean_group_minus_weighted_risk80": -0.0077604,
+      "bootstrap95": [
+        -0.0107813,
+        -0.0048958
+      ],
+      "seeds": 40
+    },
+    "mild_dependence": {
+      "mean_group_minus_weighted_risk80": 0.0126042,
+      "bootstrap95": [
+        0.0098958,
+        0.0152604
+      ],
+      "seeds": 40
+    },
+    "independent": {
+      "mean_group_minus_weighted_risk80": 0.0238021,
+      "bootstrap95": [
+        0.0217187,
+        0.0258854
+      ],
+      "seeds": 40
+    }
+  }
+}
