@@ -1,6 +1,6 @@
 # Laboratorio de notebooks de fraude y anomalías
 
-Ocho experimentos especializados: dos por carpeta, 160 celdas en total, 48 celdas de código y 16 figuras guardadas. Todos usan datos sintéticos, semilla explícita, ecuaciones, comprobaciones y discusión de límites. Se conservan los resultados negativos y los contraejemplos.
+Ocho experimentos especializados: dos por carpeta, 304 celdas en total, 88 celdas de código y 31 figuras guardadas. Todos usan datos sintéticos, semilla explícita, ecuaciones, comprobaciones y discusión de límites. Se conservan los resultados negativos y los contraejemplos.
 
 | Carpeta | Notebook de fundamentos | Notebook de decisión y robustez |
 |---|---|---|
@@ -32,7 +32,7 @@ Cada celda se ejecuta en orden, los errores interrumpen el proceso y las salidas
 
 El entorno de esta entrega impidió abrir sockets de kernels, tanto TCP como IPC. La validación local utilizó `--execution-mode ipython`, un proceso separado por archivo, conservando tablas, figuras, comprobaciones y conteos de ejecución. [execution_evidence.json](execution_evidence.json) registra métricas, tiempos y SHA-256 de los ocho archivos guardados.
 
-Se revisaron visualmente las 16 figuras exportadas. Los HTML de previsualización se exportaron; su estructura contiene el resumen, las secciones y las salidas esperadas. Las ecuaciones quedan en LaTeX para el renderizador de notebooks. La ejecución con nbclient queda cubierta por el workflow remoto, cuyo resultado debe consultarse para el commit correspondiente.
+Se revisaron las 31 figuras: las 16 originales son idénticas byte a byte a las ya inspeccionadas, y se inspeccionaron las 15 nuevas. Los HTML de previsualización se exportaron; su estructura contiene el resumen, las secciones y las salidas esperadas. Las ecuaciones quedan en LaTeX para el renderizador de notebooks. La ejecución con nbclient queda cubierta por el workflow remoto, cuyo resultado debe consultarse para el commit correspondiente.
 
 ## Resultados para interpretar, no para extrapolar
 
@@ -42,3 +42,7 @@ Se revisaron visualmente las 16 figuras exportadas. Los HTML de previsualizació
 - CUSUM se calibra con 600 trayectorias y se evalúa en otras 600: la falsa alarma a horizonte 120 días es 6,33%, con intervalo Wilson calculado en el notebook. No es tasa diaria ni control simultáneo de todos los canales.
 
 Los experimentos son prototipos S2 acotados. La integración de los cuatro especialistas, los pipelines de datos reales y la estimación de fraude adjudicado siguen pendientes. Un conteo, una discrepancia de ingreso o un desvío de proceso no confirma fraude.
+
+## Profundización de modelos y fórmulas
+
+Cada notebook añade derivaciones, un diccionario de símbolos/unidades y una tabla de modelos/usos. Los nuevos ajustes incluyen logit individual/red, ingreso cero/monto positivo y beta-binomial. Se contrastan gradientes, límites de información y capacidad, supuestos de cobertura, conciliación e incertidumbre de proceso. Véanse el [catálogo](../MODEL_CATALOG.md) y la [revisión](../REVIEW_AND_RESULTS.md).

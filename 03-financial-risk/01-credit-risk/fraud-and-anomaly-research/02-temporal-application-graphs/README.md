@@ -58,6 +58,8 @@ Este especialista conserva estado S1. Su familia de señal se representa mediant
 - [Variables al corte y fuga](notebooks/01-point-in-time-graph-features.ipynb)
 - [Solapamiento y cobertura de pérdida](notebooks/02-network-overlap-and-loss-coverage.ipynb)
 
-Los dos experimentos incluyen 40 celdas y cuatro figuras en conjunto. Usan datos sintéticos y no completan el detector especializado de esta ficha. Las ecuaciones y los resultados se desarrollan dentro de las celdas; las preguntas abiertas conservan estado de investigación.
+Los dos experimentos incluyen 76 celdas y 8 figuras en conjunto, con derivaciones, diccionario de símbolos, ajuste de alternativas y casos de uso. Usan datos sintéticos y no completan el detector especializado de esta ficha. Las ecuaciones y los resultados se desarrollan dentro de las celdas; las preguntas abiertas conservan estado de investigación.
 
 [Agenda de investigación y ecuaciones adicionales](EQUATIONS_AND_RESEARCH.md) · [Reproducción y evidencia](../notebook-lab/README.md).
+
+[Catálogo de modelos y usos](../MODEL_CATALOG.md) · [Revisión integral y resultados](../REVIEW_AND_RESULTS.md).

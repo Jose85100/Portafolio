@@ -49,7 +49,7 @@ Para priorizar, una aproximación de beneficio de revisión es:
 
 `V_i = p_i * L_i * q_i - c_review_i - (1-p_i)*c_friction_i`.
 
-Aquí `p` exige calibración, `L` es pérdida neta esperada condicionada a fraude, `q` es fracción prevenible por investigar, y los costos comparten moneda y horizonte. Elegir hasta `K` casos con `V_i>0` es una heurística si tiempos son iguales; con tiempos distintos debe resolverse una asignación bajo capacidad. Una alerta sin investigar no equivale a pérdida evitada.
+Aquí `p` exige calibración, `L` es pérdida neta esperada condicionada a fraude, `q` es fracción prevenible por investigar, y los costos comparten moneda y horizonte. Ordenar por `V_i` y elegir hasta `K` valores positivos es exacto si los casos son independientes, hay una sola acción alternativa y los tiempos son iguales. Con varios menús, tiempos distintos o casos relacionados, debe formularse la asignación correspondiente. Una alerta sin investigar no equivale a pérdida evitada.
 
 Ejemplo exclusivamente ilustrativo: con `p=0,08`, `L=2.000.000 COP`, `q=0,60`, costo de revisión `15.000` y fricción `10.000`, el valor aproximado es `71.800 COP`. No es un resultado observado ni prueba causal. Para medir pérdidas evitadas, una comparación histórica simple mezcla selección y política; diseñar un piloto controlado de revisión adicional sobre casos elegibles, conservando controles obligatorios.
 

@@ -543,4 +543,6 @@ end(c,"assert np.array_equal(cusum(deviation),cusum(logging))\nassert 0<=false_a
     '1. Introducir residuos autocorrelacionados para probar cuándo se pierde la calibración.\n2. Calibrar máximos conjuntos de varios canales, en vez de copiar el umbral de una serie.\n3. Comparar reinicios y períodos de espera después de investigar una alarma.\n4. Modelar señales de logging y calidad en un canal separado.\n5. Incorporar el costo de demora y la capacidad de revisión a la selección de umbral.',
     '- [NIST: CUSUM](https://www.itl.nist.gov/div898/handbook/pmc/section3/pmc323.htm).\n- [NIST: average run length](https://www.itl.nist.gov/div898/handbook/pmc/section3/pmc3131.htm).\nEste notebook evalúa probabilidad de alarma a horizonte fijo, no estima ARL infinito.')
 save('04-origination-process-anomalies','02-cusum-false-alarms-and-delay.ipynb',c)
-print('Authored eight notebooks')
+from deepen_notebooks import deepen_all
+deepen_all()
+print('Authored and deepened eight notebooks')

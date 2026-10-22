@@ -38,9 +38,9 @@ Se compara costo total por escenario, incluyendo la base de continuar. Los costo
 | Gradient boosting | Interacciones tabulares | Challenger fijo, sin tuning en test | Aporte fuera de muestra y costo incremental |
 | Calibración sigmoidal | Correspondencia score–frecuencia | Ajuste posterior, Brier/log loss/bins | Mejorar en validación; no asumir mejora universal |
 | Isolation Forest | Exploración de rareza no supervisada | Canal diagnóstico separado | Evidencia adjudicada antes de decisiones económicas |
-| Grafo temporal | Coordinación y reutilización | Conteo temporal unitario; cuatro señales aún simuladas | Mejora sobre individual, campañas nuevas y hubs legítimos |
-| Cuantiles de ingreso | Incertidumbre y estacionalidad | Diseño de proyecto 03 | Cobertura por actividad y base monetaria coherente |
-| Modelo jerárquico/CUSUM | Cambios en grupos con poca muestra | Diseño de proyecto 04 | Falsas alarmas y dependencia temporal bajo control |
+| Grafo temporal | Coordinación y reutilización | Conteo temporal y comparación logit individual/red en notebook; motor integrado conserva señales simuladas | Mejora sobre individual, campañas nuevas y hubs legítimos |
+| Cuantiles de ingreso | Incertidumbre y estacionalidad | Notebook con boosting cuantílico, conformal y modelo de dos partes | Cobertura por actividad y base monetaria coherente |
+| Modelo jerárquico/CUSUM | Cambios en grupos con poca muestra | Contracción, beta-binomial ajustada y CUSUM multicanal en notebooks; jerárquico general pendiente | Falsas alarmas y dependencia temporal bajo control |
 | Aprendizaje con costos por caso | Considerar severidad durante ajuste | Pendiente; costos ya entran en decisión | Mantener probabilidad calibrada o separar score económico |
 | PU y muestreo de verificación | Etiquetas incompletas y sesgo de investigación | Protocolo, sin implementación | Identificación, soporte y auditoría de selección |
 | Stacking temporal | Combinar especialistas | Pendiente | Predicciones fuera de muestra y calibración sin fuga |
