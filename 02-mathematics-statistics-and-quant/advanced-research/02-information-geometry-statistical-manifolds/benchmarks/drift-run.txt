@@ -1,0 +1,49 @@
+{
+  "checks": {
+    "oracle_error": 8.881784197001252e-16,
+    "mean_power_n128": 1.0,
+    "scale_power_n128": 1.0
+  },
+  "passed": {
+    "oracle_error": true,
+    "mean_power_n128": true,
+    "scale_power_n128": true
+  },
+  "thresholds": [
+    {
+      "n": 32,
+      "fr": 0.555290100676863,
+      "ks": 0.3125,
+      "w1": 0.5122508931097121
+    },
+    {
+      "n": 128,
+      "fr": 0.24818213752125431,
+      "ks": 0.1484375,
+      "w1": 0.2555035084137265
+    }
+  ],
+  "resources": [
+    {
+      "n": 32,
+      "peak_traced_bytes_three_scores": 15486
+    },
+    {
+      "n": 128,
+      "peak_traced_bytes_three_scores": 23070
+    }
+  ],
+  "hardware": {
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "python": "3.12.14"
+  },
+  "scope": "One alarm per independent batch. No sequential-horizon error guarantee. AR1 null intentionally violates calibration.",
+  "calibration_score_rows": 798,
+  "evaluation_datasets": 3000,
+  "mixture_population": {
+    "mean": 0,
+    "variance": 1,
+    "gaussian_projection_fr": 0,
+    "note": "Different shape; FR here compares projected normals, not true mixture laws."
+  }
+}

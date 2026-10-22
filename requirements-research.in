@@ -4,4 +4,4 @@ matplotlib>=3.9,<3.10
 nbformat>=5.10,<5.11
 nbclient>=0.10,<0.11
 ipykernel>=6.29,<7
-mpmath==1.3.0  # independent high-precision fractional-difference notebook oracle
+mpmath==1.3.0  # independent high-precision research oracles
