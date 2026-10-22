@@ -1,0 +1,14 @@
+test_cash_no_impact_and_domain (test_market.MarketTests.test_cash_no_impact_and_domain) ... ok
+test_fold_and_sides (test_market.MarketTests.test_fold_and_sides) ... ok
+test_generated_invariants (test_market.MarketTests.test_generated_invariants) ... ok
+test_identical_bank_split (test_market.MarketTests.test_identical_bank_split) ... ok
+test_invalid (test_market.MarketTests.test_invalid) ... ok
+test_iteration_basins_and_budget (test_market.MarketTests.test_iteration_basins_and_budget) ... ok
+test_kink_duplicate (test_market.MarketTests.test_kink_duplicate) ... ok
+test_three_analytical_roots (test_market.MarketTests.test_three_analytical_roots) ... ok
+test_unit_rescaling (test_market.MarketTests.test_unit_rescaling) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.169s
+
+OK

@@ -1,6 +1,6 @@
 # Sovereign–Bank Strategic Nexus
 
-> **Estado: S2 parcial.** [Sovereign Clearing Audit](sovereign-clearing-audit/) implementa balance y pagos interbancarios a precio fijo. [Fire-Sale Price Audit](fire-sale-price-audit/) añade un mercado de un activo sin red simultánea. [Coupled Clearing Audit](coupled-clearing-audit/) conecta ambos mecanismos en redes de1–4 bancos con enumeración de regímenes. El juego dinámico, las garantías, el colateral y la identificación empírica siguen S1. No hay resultados empíricos ni teoremas nuevos del programa completo.
+> **Estado: S2 parcial.** [Sovereign Clearing Audit](sovereign-clearing-audit/) implementa pagos; [Fire-Sale Price Audit](fire-sale-price-audit/) añade precio endógeno; [Coupled Clearing Audit](coupled-clearing-audit/) conecta ambos; [Collateral Liquidity Choice](collateral-liquidity-choice/) incorpora una decisión estática y acotada entre venta y préstamo colateralizado. El juego dinámico, garantías públicas e identificación siguen S1. No hay resultados empíricos ni teoremas nuevos del programa completo.
 
 ## Pregunta de investigación
 
@@ -80,3 +80,7 @@ simultáneo ya resuelto. Modelo sintético con piso exógeno; no política ópti
 coeficientes racionales por régimen y contrastes con ambos MVP anteriores.
 El censo se limita a1–4 bancos; no se anuncia escalabilidad industrial ni
 solución del doom loop fiscal. Incluye contraejemplo a congelar cobros nominales.
+
+## Ciclo 2026-10-22
+
+[Collateral Liquidity Choice](collateral-liquidity-choice/): optimización privada de un banco entre venta y préstamo sujeto a capacidad pignorable. Compara con liquidación pura y malla densa. Es un componente S2 reducido, no equilibrio de red, política óptima ni evaluación de bienestar.
