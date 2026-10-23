@@ -1,0 +1,328 @@
+{
+  "config": {
+    "seed": 20261023,
+    "alpha": 0.1,
+    "source_high": 0.1,
+    "target_high": 0.8,
+    "calibration_sizes": [
+      40,
+      80,
+      320
+    ],
+    "test_size": 2000,
+    "repeats": 100,
+    "predictor": "fixed oracle conditional mean zero",
+    "dataset": "synthetic Bernoulli covariate, heteroskedastic Gaussian residual; no private data",
+    "hypothesis": "correct_weighted coverage >=0.88 and improves >=0.10 over unweighted at n=80 under covariate_shift"
+  },
+  "summary": [
+    {
+      "n": 40,
+      "scenario": "no_shift",
+      "method": "unweighted",
+      "coverage": 0.8981949999999999,
+      "coverage_mc_se": 0.005110485828572505,
+      "high_group_coverage": 0.4212942641083171,
+      "finite_rate": 1.0,
+      "finite_mean_width": 4.535203693344855,
+      "mean_ess": 40.0
+    },
+    {
+      "n": 40,
+      "scenario": "no_shift",
+      "method": "naive_weighted",
+      "coverage": 0.8722999999999999,
+      "coverage_mc_se": 0.005636031270747926,
+      "high_group_coverage": 0.37236726558383443,
+      "finite_rate": 1.0,
+      "finite_mean_width": 3.9162918666177426,
+      "mean_ess": 40.0
+    },
+    {
+      "n": 40,
+      "scenario": "no_shift",
+      "method": "correct_weighted",
+      "coverage": 0.8981949999999999,
+      "coverage_mc_se": 0.005110485828572505,
+      "high_group_coverage": 0.4212942641083171,
+      "finite_rate": 1.0,
+      "finite_mean_width": 4.535203693344855,
+      "mean_ess": 40.0
+    },
+    {
+      "n": 40,
+      "scenario": "covariate_shift",
+      "method": "unweighted",
+      "coverage": 0.52633,
+      "coverage_mc_se": 0.010014638830686354,
+      "high_group_coverage": 0.42063592072580286,
+      "finite_rate": 1.0,
+      "finite_mean_width": 4.535203693344855,
+      "mean_ess": 6.68544975822667
+    },
+    {
+      "n": 40,
+      "scenario": "covariate_shift",
+      "method": "naive_weighted",
+      "coverage": 0.80478,
+      "coverage_mc_se": 0.01743935425317339,
+      "high_group_coverage": 0.7599572963484786,
+      "finite_rate": 1.0,
+      "finite_mean_width": 11.171208062548033,
+      "mean_ess": 6.68544975822667
+    },
+    {
+      "n": 40,
+      "scenario": "covariate_shift",
+      "method": "correct_weighted",
+      "coverage": 0.996055,
+      "coverage_mc_se": 0.001678592107882812,
+      "high_group_coverage": 0.9981382316313824,
+      "finite_rate": 0.20631,
+      "finite_mean_width": 11.172088376678026,
+      "mean_ess": 6.68544975822667
+    },
+    {
+      "n": 40,
+      "scenario": "conditional_shift",
+      "method": "unweighted",
+      "coverage": 0.320315,
+      "coverage_mc_se": 0.008047107689829755,
+      "high_group_coverage": 0.222288235422391,
+      "finite_rate": 1.0,
+      "finite_mean_width": 4.535203693344855,
+      "mean_ess": 6.68544975822667
+    },
+    {
+      "n": 40,
+      "scenario": "conditional_shift",
+      "method": "naive_weighted",
+      "coverage": 0.57816,
+      "coverage_mc_se": 0.01774998773651589,
+      "high_group_coverage": 0.49089056472136633,
+      "finite_rate": 1.0,
+      "finite_mean_width": 11.171208062548033,
+      "mean_ess": 6.68544975822667
+    },
+    {
+      "n": 40,
+      "scenario": "conditional_shift",
+      "method": "correct_weighted",
+      "coverage": 0.98247,
+      "coverage_mc_se": 0.004694386396150581,
+      "high_group_coverage": 0.9949315068493151,
+      "finite_rate": 0.20631,
+      "finite_mean_width": 11.172088376678026,
+      "mean_ess": 6.68544975822667
+    },
+    {
+      "n": 80,
+      "scenario": "no_shift",
+      "method": "unweighted",
+      "coverage": 0.8998999999999999,
+      "coverage_mc_se": 0.0035997544809656563,
+      "high_group_coverage": 0.4059408311324033,
+      "finite_rate": 1.0,
+      "finite_mean_width": 4.291958324319284,
+      "mean_ess": 80.0
+    },
+    {
+      "n": 80,
+      "scenario": "no_shift",
+      "method": "naive_weighted",
+      "coverage": 0.88627,
+      "coverage_mc_se": 0.0038810886997013476,
+      "high_group_coverage": 0.3810840946677159,
+      "finite_rate": 1.0,
+      "finite_mean_width": 3.994997500009921,
+      "mean_ess": 80.0
+    },
+    {
+      "n": 80,
+      "scenario": "no_shift",
+      "method": "correct_weighted",
+      "coverage": 0.8998999999999999,
+      "coverage_mc_se": 0.0035997544809656563,
+      "high_group_coverage": 0.4059408311324033,
+      "finite_rate": 1.0,
+      "finite_mean_width": 4.291958324319284,
+      "mean_ess": 80.0
+    },
+    {
+      "n": 80,
+      "scenario": "covariate_shift",
+      "method": "unweighted",
+      "coverage": 0.51616,
+      "coverage_mc_se": 0.0061462597643533665,
+      "high_group_coverage": 0.4057438954271618,
+      "finite_rate": 1.0,
+      "finite_mean_width": 4.291958324319284,
+      "mean_ess": 12.548412391942954
+    },
+    {
+      "n": 80,
+      "scenario": "covariate_shift",
+      "method": "naive_weighted",
+      "coverage": 0.8626699999999999,
+      "coverage_mc_se": 0.010258195097904245,
+      "high_group_coverage": 0.8286810009055818,
+      "finite_rate": 1.0,
+      "finite_mean_width": 12.03072116479078,
+      "mean_ess": 12.548412391942954
+    },
+    {
+      "n": 80,
+      "scenario": "covariate_shift",
+      "method": "correct_weighted",
+      "coverage": 0.94717,
+      "coverage_mc_se": 0.006127410760367108,
+      "high_group_coverage": 0.9343180948140676,
+      "finite_rate": 0.736745,
+      "finite_mean_width": 13.807971596064721,
+      "mean_ess": 12.548412391942954
+    },
+    {
+      "n": 80,
+      "scenario": "conditional_shift",
+      "method": "unweighted",
+      "coverage": 0.31094,
+      "coverage_mc_se": 0.0048883869806642015,
+      "high_group_coverage": 0.21133261477291262,
+      "finite_rate": 1.0,
+      "finite_mean_width": 4.291958324319284,
+      "mean_ess": 12.548412391942954
+    },
+    {
+      "n": 80,
+      "scenario": "conditional_shift",
+      "method": "naive_weighted",
+      "coverage": 0.62312,
+      "coverage_mc_se": 0.011455617297935875,
+      "high_group_coverage": 0.5341166335550684,
+      "finite_rate": 1.0,
+      "finite_mean_width": 12.03072116479078,
+      "mean_ess": 12.548412391942954
+    },
+    {
+      "n": 80,
+      "scenario": "conditional_shift",
+      "method": "correct_weighted",
+      "coverage": 0.7961899999999998,
+      "coverage_mc_se": 0.016382840524047215,
+      "high_group_coverage": 0.7503572194270585,
+      "finite_rate": 0.736745,
+      "finite_mean_width": 13.807971596064721,
+      "mean_ess": 12.548412391942954
+    },
+    {
+      "n": 320,
+      "scenario": "no_shift",
+      "method": "unweighted",
+      "coverage": 0.897865,
+      "coverage_mc_se": 0.0019497196768207014,
+      "high_group_coverage": 0.3916487971037958,
+      "finite_rate": 1.0,
+      "finite_mean_width": 4.053407244190861,
+      "mean_ess": 320.0
+    },
+    {
+      "n": 320,
+      "scenario": "no_shift",
+      "method": "naive_weighted",
+      "coverage": 0.89483,
+      "coverage_mc_se": 0.0019954394974237605,
+      "high_group_coverage": 0.3861309324585398,
+      "finite_rate": 1.0,
+      "finite_mean_width": 3.997390051549191,
+      "mean_ess": 320.0
+    },
+    {
+      "n": 320,
+      "scenario": "no_shift",
+      "method": "correct_weighted",
+      "coverage": 0.897865,
+      "coverage_mc_se": 0.0019497196768207014,
+      "high_group_coverage": 0.3916487971037958,
+      "finite_rate": 1.0,
+      "finite_mean_width": 4.053407244190861,
+      "mean_ess": 320.0
+    },
+    {
+      "n": 320,
+      "scenario": "covariate_shift",
+      "method": "unweighted",
+      "coverage": 0.5029150000000001,
+      "coverage_mc_se": 0.0028976745727035897,
+      "high_group_coverage": 0.3893408314533884,
+      "finite_rate": 1.0,
+      "finite_mean_width": 4.053407244190861,
+      "mean_ess": 49.52036798493443
+    },
+    {
+      "n": 320,
+      "scenario": "covariate_shift",
+      "method": "naive_weighted",
+      "coverage": 0.8805900000000001,
+      "coverage_mc_se": 0.004673611607156231,
+      "high_group_coverage": 0.8505553383577553,
+      "finite_rate": 1.0,
+      "finite_mean_width": 11.793843277814014,
+      "mean_ess": 49.52036798493443
+    },
+    {
+      "n": 320,
+      "scenario": "covariate_shift",
+      "method": "correct_weighted",
+      "coverage": 0.905065,
+      "coverage_mc_se": 0.004433997757228922,
+      "high_group_coverage": 0.8812082937889493,
+      "finite_rate": 1.0,
+      "finite_mean_width": 12.652168573853624,
+      "mean_ess": 49.52036798493443
+    },
+    {
+      "n": 320,
+      "scenario": "conditional_shift",
+      "method": "unweighted",
+      "coverage": 0.298885,
+      "coverage_mc_se": 0.002337440703077629,
+      "high_group_coverage": 0.20141584159146636,
+      "finite_rate": 1.0,
+      "finite_mean_width": 4.053407244190861,
+      "mean_ess": 49.52036798493443
+    },
+    {
+      "n": 320,
+      "scenario": "conditional_shift",
+      "method": "naive_weighted",
+      "coverage": 0.6301300000000001,
+      "coverage_mc_se": 0.00542515474806056,
+      "high_group_coverage": 0.5385827804913602,
+      "finite_rate": 1.0,
+      "finite_mean_width": 11.793843277814014,
+      "mean_ess": 49.52036798493443
+    },
+    {
+      "n": 320,
+      "scenario": "conditional_shift",
+      "method": "correct_weighted",
+      "coverage": 0.66034,
+      "coverage_mc_se": 0.005824507955981597,
+      "high_group_coverage": 0.5764053015140659,
+      "finite_rate": 1.0,
+      "finite_mean_width": 12.652168573853624,
+      "mean_ess": 49.52036798493443
+    }
+  ],
+  "execution": {
+    "seconds": 1.0765255250000791,
+    "python_peak_bytes": 1989503,
+    "process_maxrss_kib": 56660,
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "cpu_count": 9,
+    "notes": "tracemalloc tracks Python allocations; RSS is whole-process peak, not method-specific"
+  }
+}

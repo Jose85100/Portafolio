@@ -1,0 +1,57 @@
+[
+  {
+    "domain": "Economía",
+    "path": "01-economics-and-econometrics/04-econometrics/05-instrumental-variables/weak-iv-inference-audit",
+    "missing": [],
+    "code_cells": 4,
+    "error_outputs": 0,
+    "command": "cd 01-economics-and-econometrics/04-econometrics/05-instrumental-variables/weak-iv-inference-audit && bash run.sh",
+    "implemented": true,
+    "executed": true,
+    "reviewed": true
+  },
+  {
+    "domain": "Matemáticas",
+    "path": "02-mathematics-statistics-and-quant/advanced-research/13-path-signatures-hidden-dynamics",
+    "missing": [],
+    "code_cells": 6,
+    "error_outputs": 0,
+    "command": "cd 02-mathematics-statistics-and-quant/advanced-research/13-path-signatures-hidden-dynamics && bash run.sh",
+    "implemented": true,
+    "executed": true,
+    "reviewed": true
+  },
+  {
+    "domain": "Riesgo",
+    "path": "03-financial-risk/01-credit-risk/fraud-and-anomaly-research/01-identity-kyc-consistency/channel-conformal-audit",
+    "missing": [],
+    "code_cells": 3,
+    "error_outputs": 0,
+    "command": "cd 03-financial-risk/01-credit-risk/fraud-and-anomaly-research/01-identity-kyc-consistency/channel-conformal-audit && bash run.sh",
+    "implemented": true,
+    "executed": true,
+    "reviewed": true
+  },
+  {
+    "domain": "IA",
+    "path": "05-artificial-intelligence-and-computational-systems/02-machine-learning-engineering/02-conformal-risk-prediction",
+    "missing": [],
+    "code_cells": 4,
+    "error_outputs": 0,
+    "command": "cd 05-artificial-intelligence-and-computational-systems/02-machine-learning-engineering/02-conformal-risk-prediction && bash run.sh",
+    "implemented": true,
+    "executed": true,
+    "reviewed": true
+  },
+  {
+    "domain": "CEO e Innovación",
+    "path": "06-strategy-innovation-and-leadership/20-ai-innovation-productivity-leadership/innovation-evsi-gate",
+    "missing": [],
+    "code_cells": 4,
+    "error_outputs": 0,
+    "command": "cd 06-strategy-innovation-and-leadership/20-ai-innovation-productivity-leadership/innovation-evsi-gate && bash run.sh",
+    "implemented": true,
+    "executed": true,
+    "reviewed": true
+  }
+]

@@ -1,0 +1,88 @@
+{
+  "config": {
+    "seed": 20261023,
+    "replications": 3000,
+    "n": 250,
+    "rho": 0.8,
+    "beta_null": 1.0,
+    "alpha": 0.05,
+    "hypothesis": "Valid AR rejection within .05 +/-.02; weak Wald distortion exceeds AR by >=.05",
+    "scenarios": [
+      {
+        "name": "Sin relevancia",
+        "strength": 0.0,
+        "exclusion": 0.0
+      },
+      {
+        "name": "D\u00e9bil c=1",
+        "strength": 1.0,
+        "exclusion": 0.0
+      },
+      {
+        "name": "Fuerte c=10",
+        "strength": 10.0,
+        "exclusion": 0.0
+      },
+      {
+        "name": "Exclusi\u00f3n inv\u00e1lida",
+        "strength": 1.0,
+        "exclusion": 0.2
+      }
+    ]
+  },
+  "summaries": [
+    {
+      "scenario": "Sin relevancia",
+      "ar_rejection": 0.049666666666666665,
+      "wald_rejection": 0.14166666666666666,
+      "ar_mc_se": 0.00396652193946993,
+      "wald_mc_se": 0.006366506687926072,
+      "paired_difference_se": 0.005702880057215155,
+      "median_first_stage_f": 0.4759762777211759,
+      "elapsed_seconds": 2.610367414999928,
+      "python_peak_bytes": 1517644
+    },
+    {
+      "scenario": "D\u00e9bil c=1",
+      "ar_rejection": 0.049666666666666665,
+      "wald_rejection": 0.116,
+      "ar_mc_se": 0.00396652193946993,
+      "wald_mc_se": 0.005846480422727279,
+      "paired_difference_se": 0.005733898222492699,
+      "median_first_stage_f": 1.0949800949587054,
+      "elapsed_seconds": 2.643785115000128,
+      "python_peak_bytes": 1540695
+    },
+    {
+      "scenario": "Fuerte c=10",
+      "ar_rejection": 0.049666666666666665,
+      "wald_rejection": 0.049666666666666665,
+      "ar_mc_se": 0.00396652193946993,
+      "wald_mc_se": 0.00396652193946993,
+      "paired_difference_se": 0.0036520924495079873,
+      "median_first_stage_f": 99.62854623015056,
+      "elapsed_seconds": 2.592914877000112,
+      "python_peak_bytes": 1548956
+    },
+    {
+      "scenario": "Exclusi\u00f3n inv\u00e1lida",
+      "ar_rejection": 0.8726666666666667,
+      "wald_rejection": 0.35333333333333333,
+      "ar_mc_se": 0.006086037450743451,
+      "wald_mc_se": 0.00872713944903844,
+      "paired_difference_se": 0.009147736270692578,
+      "median_first_stage_f": 1.0949800949587054,
+      "elapsed_seconds": 2.477634113000022,
+      "python_peak_bytes": 1599826
+    }
+  ],
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "matplotlib": "3.10.8",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "cpu": "x86_64",
+  "source_sha256": "3c694ba5337f4a98a4df09c45ed484a70691c22d57ecff5faaabfebab04f1787",
+  "data_sha256": "09ac9489bcaa5908f09662d210839fc1a7b3f326709276de820b422259565a12",
+  "timing_note": "Combined generation and both methods, instrumented with tracemalloc; Python allocation peak, not RSS."
+}
