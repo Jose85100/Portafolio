@@ -6,10 +6,12 @@ This is not a separate Jupyter-kernel validation.
 
 from pathlib import Path
 import nbformat
+import sys
 from IPython.core.interactiveshell import InteractiveShell
 from IPython.utils.capture import capture_output
 
-p = Path("notebook.ipynb")
+p = Path("notebook.ipynb").resolve()
+sys.path.insert(0, str(p.parent))
 nb = nbformat.read(p, as_version=4)
 shell = InteractiveShell.instance()
 shell.user_ns.clear()
@@ -22,7 +24,8 @@ for cell in nb.cells:
     with capture_output() as captured:
         result = shell.run_cell(cell.source, store_history=False)
     if result.error_before_exec or result.error_in_exec:
-        raise RuntimeError(f"Notebook cell {count} failed")
+        sys.stderr.write(captured.stdout + captured.stderr)
+        raise RuntimeError(f"Notebook cell {count} failed") from (result.error_before_exec or result.error_in_exec)
     cell.execution_count = count
     outputs = []
     if captured.stdout:
