@@ -99,7 +99,7 @@ Cada fórmula es una especificación de investigación o una adaptación declara
 
 | ID | Idea | Fuente | Especificación | Experimento siguiente | Límite |
 |---|---|---|---|---|---|
-| ECO-1 | CLR y potencia | CLR2003 | `Pr(rechazar H0 | beta != beta0)` | Comparar AR/CLR bajo alternativas y misma fuerza instrumental; no usar potencia como tamaño. | CLR requiere implementación y valores críticos condicionales verificables. |
+| ECO-1 | CLR y potencia | CLR2003 | `Pr(rechazar H0 \| beta != beta0)` | Comparar AR/CLR bajo alternativas y misma fuerza instrumental; no usar potencia como tamaño. | CLR requiere implementación y valores críticos condicionales verificables. |
 | ECO-2 | Varios instrumentos y sobreidentificación | AR1949 | `F_AR = (r\'P_Z r / k)/(r\'M_Z r/(n-k-1))` | Introducir k instrumentos y contrastar contra OLS restringido por proyecciones. | El F exacto sigue requiriendo error normal IID homocedástico. |
 | ECO-3 | Robustez de covarianza | CLR2003 | `T = g(b)\prime\widehat\Omega^{-1}g(b)` | Ensayar heterocedasticidad y clustering con covarianza apropiada y control de tamaño. | Forma de Wald del momento no garantiza exactitud finita; estudiar referencia asintótica. |
 | MAT-1 | Covariación multicanal | SIG2025 | `[X,Y]_n=\sum_i\Delta X_i\Delta Y_i` | Derivar coordenadas lead-lag cruzadas y verificar contra suma directa. | Es un diagnóstico en malla observada, no predicción financiera. |
@@ -113,12 +113,12 @@ Cada fórmula es una especificación de investigación o una adaptación declara
 | ML-3 | Pesos estimados y CQR | WCP2019 | `w(x)=dQ_X/dP_X` | Estimar razones con covariables sin etiqueta, cross-fitting y pruebas de solapamiento. | La garantía con pesos oráculo no se transfiere automáticamente a pesos aprendidos. |
 | CEO-1 | Prior robusto | DESIGN1995 | `\max_d\min_{\pi\in\Pi}E_\pi[U(d)]` | Comparar política Bayes y minimax sobre priors explícitos conservando costo nominal. | La clase de priors es una elección que necesita justificación. |
 | CEO-2 | Usuarios heterogéneos | DECISION1999 | `V=\sum_gN_g(B_g\theta_g-c_g)-F` | Añadir grupos y elegir dónde experimentar con presupuesto fijo. | Resultados sanitarios del paper no validan una fintech. |
-| CEO-3 | Demora y competencia | DESIGN1995 | `W_t=\max\{V_t,\ E[W_{t+1}|D_t]-c_t\}` | Añadir lanzamiento diferido y costo de oportunidad a Bellman. | La ventaja del piloto no es gratuita si el mercado cambia. |
+| CEO-3 | Demora y competencia | DESIGN1995 | `W_t=\max\{V_t,\ E[W_{t+1}\|D_t]-c_t\}` | Añadir lanzamiento diferido y costo de oportunidad a Bellman. | La ventaja del piloto no es gratuita si el mercado cambia. |
 | AI-1 | Fallback falible por segmento | CHOW1970 | `C_{derivar}(x)=c_r+c_e\epsilon_f(x)` | Estimar error del fallback en calibración independiente y comparar con derivar perfecto. | No sustituir confianza del proveedor por error condicional estimado. |
 | AI-2 | Control de riesgo y cobertura | SELECT2010 | `R=E[\ell g]/E[g],\quad\phi=E[g]` | Comparar cotas de aceptación con soporte mínimo y error por grupo. | Los teoremas noise-free no se aplican sin cambios a etiquetas ruidosas. |
 | AI-3 | Capacidad compartida | CHOW1970 | `\min\sum_i C_i(a_i)\quad s.a.\sum_i t_i(a_i)\le B` | Conectar al MILP existente de riesgo y medir cola/costo frente a umbrales. | La regla por caso deja de resolver por sí sola la asignación global. |
 | DOC-1 | Anotación de fidelidad | FAITH2020 | `P=TP/(TP+FP),\quad R=TP/(TP+FN)` | Anotar concepto, moneda, negación y período con dos revisores y adjudicación. | Fidelidad documental no autentica al emisor. |
-| DOC-2 | Verificador semántico | FAITH2020 | `P(entailment|fuente,afirmacion)` | Comparar reglas, NLI y humano con corpus separado y paráfrasis adversarias. | Una probabilidad NLI necesita calibración y no prueba verdad financiera. |
+| DOC-2 | Verificador semántico | FAITH2020 | `P(entailment\|fuente,afirmacion)` | Comparar reglas, NLI y humano con corpus separado y paráfrasis adversarias. | Una probabilidad NLI necesita calibración y no prueba verdad financiera. |
 | DOC-3 | Compresión basada en evidencia | FAITH2020 | `retencion=\#hechos\ preservados/\#hechos\ necesarios` | Evaluar correcciones y negaciones después de compresión con referencias humanas. | ROUGE o reducción de tokens no bastan para medir fidelidad. |
 | MC-1 | Mezcla beta-binomial | CS2021 | `M_t(p)=B(a+S_t,b+t-S_t)/(B(a,b)p^{S_t}(1-p)^{t-S_t})` | Invertir M_t(p)<1/delta y comparar draws/abstención contra gasto Hoeffding. | Requiere draws Bernoulli con media p y modelo condicional defendible. |
 | MC-2 | Error secuencial frente a frontera | CS2021 | `P(\exists t:p\notin C_t)\le\delta` | Simular probabilidades a ambos lados de alpha y declarar undecided cerca de frontera. | Control de remuestreo no prueba validez del test financiero subyacente. |
@@ -157,3 +157,7 @@ La CI de `cdf9a9c` pasó el workflow de arquitecturas con kernel y Notebook Reli
 Los 36 tests originales de hoy y seis de contratos ya pasaron en la revisión precedente. Las nuevas comprobaciones son las ejecutadas dentro de notebooks: 1.500 comparaciones AR aleatorias, 100 identidades lead–lag, oráculo de 128 políticas y contraejemplos de semántica/calibración. No se afirma haber repetido todos los run.sh ni la validación independiente del ciclo en esta pasada. Dependencias directas fijadas, sin lock transitivo íntegro.
 
 La investigación sigue siendo sintética. No hay eficacia causal estimada, cartera real, OCR aprobado, API comercial evaluada, validación regulatoria o servicio operativo. La bibliografía amplía y delimita la investigación; no completa por sí sola esas brechas.
+
+## Comprobación remota de la ampliación
+
+En el commit de código `4312f948d67812d56a84c2d840d3de27e53691a2` pasaron **Structured decision architectures** (siete notebooks con kernels Jupyter), **Notebook Reliability** y **Daily multi-domain MVPs** (cinco proyectos). El ajuste posterior de este informe solo corrige separadores de tabla y registra ese resultado; no modifica los métodos ni los notebooks.
