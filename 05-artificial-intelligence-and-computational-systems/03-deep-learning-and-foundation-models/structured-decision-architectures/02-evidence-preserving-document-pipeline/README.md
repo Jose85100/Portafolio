@@ -60,3 +60,5 @@ Estas métricas requieren etiquetas independientes. El notebook distingue retenc
 - Reutilizar ELT incremental para persistencia y checkpoints durables para recuperación. No afirmar exactly-once de APIs externas por tener una transacción local.
 
 [Notebook de evidencia, contradicciones y normalización](notebook.ipynb). No hay conexiones comerciales ni transmisión de documentos.
+
+[Revisión académica y criterios de cierre](ACADEMIC_REVIEW.md): fuentes publicadas, fórmulas en el notebook y extensiones experimentales.

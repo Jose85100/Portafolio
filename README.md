@@ -71,3 +71,5 @@ Los proyectos con notebook usan **datos sintéticos con semilla fija**, salvo el
 Los proyectos marcados como "En revisión" se publicarán cuando termine la revisión de datos sensibles y credenciales.
 
 La [revisión del 17–23 de octubre](reviews/2026-10-23-alignment/README.md) distingue inventario, ejecución nueva y evidencia histórica; incluye dos arquitecturas de decisiones estructuradas en IA y ampliaciones de los cinco MVP del día.
+
+La [revisión académica de los desarrollos del 23 de octubre](reviews/2026-10-23-academic/README.md) vincula 16 referencias publicadas, siete ampliaciones ejecutadas y 24 ideas adicionales con criterios de cierre.

@@ -25,3 +25,5 @@ Notebook ejecutado secuencialmente en proceso con IPython; el kernel ZeroMQ no a
 ## Ampliación del notebook — 23 de octubre
 
 El notebook incorpora fórmulas, diccionario de variables en contexto, reconstrucción de cálculos, sensibilidad y casos negativos. `run.sh` conserva esta ampliación después de regenerar el estudio original. La extensión se mantiene en `scripts/deepen_20261023_notebooks.py` y `scripts/research_depth_experiments.py` desde la raíz; las celdas realmente se ejecutan y guardan sus salidas. [Revisión de alcance](../../../../../reviews/2026-10-23-alignment/README.md).
+
+[Revisión académica y criterios de cierre](ACADEMIC_REVIEW.md): fuentes publicadas, fórmulas en el notebook y extensiones experimentales.
