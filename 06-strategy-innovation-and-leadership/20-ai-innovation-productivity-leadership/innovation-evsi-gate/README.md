@@ -29,3 +29,7 @@ La mejora frente a hoy es 5.140,42 unidades sintéticas; frente al piloto fijo e
 ## Decisión y alcance
 
 El piloto es una muestra separada de la población futura fija; no consume despliegue ni recibe beneficio operativo. Son datos IID de éxito operativo, **no uplift causal**. Requiere beneficio/costos conocidos y prior transferible. Requiere rediseño si hay drift, dependencia, selección o costos omitidos. La política elige el mejor tamaño **del grid**, no un óptimo continuo ni una estrategia secuencial. No certifica desempeño operativo ni regulatorio.
+
+## Ampliación del notebook — 23 de octubre
+
+El notebook incorpora fórmulas, diccionario de variables en contexto, reconstrucción de cálculos, sensibilidad y casos negativos. `run.sh` conserva esta ampliación después de regenerar el estudio original. La extensión se mantiene en `scripts/deepen_20261023_notebooks.py` y `scripts/research_depth_experiments.py` desde la raíz; las celdas realmente se ejecutan y guardan sus salidas. [Revisión de alcance](../../../reviews/2026-10-23-alignment/README.md).

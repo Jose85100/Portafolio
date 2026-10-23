@@ -25,3 +25,7 @@ Con n=80 y cambio de mezcla 10%→80%, cobertura marginal 51,616% / 86,267% / 94
 ## Alcance
 
 Ratios de densidad conocidos y predictor fijo cero independiente de calibración. Garantía marginal bajo independencia, solapamiento y ley Y|X invariante; no garantía por grupo ni por calibración realizada. Pesos estimados, datos reales y dependencia temporal no están implementados. A diferencia de KYC/Mondrian en riesgo, este componente no detecta fraude ni produce p-valores de anomalía: audita intervalos predictivos generales.
+
+## Ampliación del notebook — 23 de octubre
+
+El notebook incorpora fórmulas, diccionario de variables en contexto, reconstrucción de cálculos, sensibilidad y casos negativos. `run.sh` conserva esta ampliación después de regenerar el estudio original. La extensión se mantiene en `scripts/deepen_20261023_notebooks.py` y `scripts/research_depth_experiments.py` desde la raíz; las celdas realmente se ejecutan y guardan sus salidas. [Revisión de alcance](../../../reviews/2026-10-23-alignment/README.md).

@@ -110,7 +110,7 @@ Se guardan 132 puntos geodésicos. Todas son comprobaciones float64 con toleranc
 Hardware registrado: {"platform": "Linux-6.18.55-x86_64-with-glibc2.39", "processor": "x86_64", "machine": "x86_64", "python": "3.12.14"}.
 Dependencias directas fijadas; transitivas resueltas en environment.txt, no lock completo.
 
-![Auditoría](benchmarks/audit.png)
+![Auditoría](../benchmarks/audit.png)
 
 ## Qué funcionó, qué no y riesgos
 El operador es estable y las geodésicas satisfacen los controles. La supuesta ventaja exclusiva

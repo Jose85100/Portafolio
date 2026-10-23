@@ -1,0 +1,27 @@
+[
+  {
+    "project": "01-economics-and-econometrics/04-econometrics/05-instrumental-variables/weak-iv-inference-audit",
+    "exit_code": 0,
+    "tail": "_exclusion) ... ok\ntest_zero_first_stage (test_inference.InferenceTests.test_zero_first_stage) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.152s\n\nOK\n"
+  },
+  {
+    "project": "02-mathematics-statistics-and-quant/advanced-research/13-path-signatures-hidden-dynamics",
+    "exit_code": 0,
+    "tail": "ests.test_square_oracle) ... ok\ntest_tree_like (test_signatures.SignatureTests.test_tree_like) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.060s\n\nOK\n"
+  },
+  {
+    "project": "03-financial-risk/01-credit-risk/fraud-and-anomaly-research/01-identity-kyc-consistency/channel-conformal-audit",
+    "exit_code": 0,
+    "tail": "st_sparse_channel_cannot_alert (test_conformal.TestConformal.test_sparse_channel_cannot_alert) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nOK\n"
+  },
+  {
+    "project": "05-artificial-intelligence-and-computational-systems/02-machine-learning-engineering/02-conformal-risk-prediction",
+    "exit_code": 0,
+    "tail": "rmalTests.test_test_mass_monotonic) ... ok\ntest_ties (test_conformal.ConformalTests.test_ties) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.077s\n\nOK\n"
+  },
+  {
+    "project": "06-strategy-innovation-and-leadership/20-ai-innovation-productivity-leadership/innovation-evsi-gate",
+    "exit_code": 0,
+    "tail": "... ok\ntest_uniform_predictive_oracle (test_evsi.DecisionTests.test_uniform_predictive_oracle) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.960s\n\nOK\n"
+  }
+]

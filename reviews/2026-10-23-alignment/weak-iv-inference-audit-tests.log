@@ -1,0 +1,14 @@
+test_bad_inputs (test_inference.InferenceTests.test_bad_inputs) ... ok
+test_baseline_and_relevance (test_inference.InferenceTests.test_baseline_and_relevance) ... ok
+test_baseline_edge_contracts (test_inference.InferenceTests.test_baseline_edge_contracts) ... ok
+test_degenerate_null (test_inference.InferenceTests.test_degenerate_null) ... ok
+test_invariance (test_inference.InferenceTests.test_invariance) ... ok
+test_reduced_form (test_inference.InferenceTests.test_reduced_form) ... ok
+test_reproducibility (test_inference.InferenceTests.test_reproducibility) ... ok
+test_size_and_exclusion (test_inference.InferenceTests.test_size_and_exclusion) ... ok
+test_zero_first_stage (test_inference.InferenceTests.test_zero_first_stage) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.152s
+
+OK

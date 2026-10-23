@@ -53,3 +53,7 @@ Siguiente iteración recomendada: probar fragilidad de supuestos antes de amplia
 1. `01-economics-and-econometrics/04-econometrics/05-instrumental-variables/weak-iv-inference-audit`: heterocedasticidad y conjuntos de confianza AR.
 2. `03-financial-risk/01-credit-risk/fraud-and-anomaly-research/01-identity-kyc-consistency/channel-conformal-audit`: drift temporal, calibración contaminada y coste de revisión humana.
 3. `06-strategy-innovation-and-leadership/20-ai-innovation-productivity-leadership/innovation-evsi-gate`: robustez del prior y decisión secuencial con costes de demora.
+
+## Ampliación posterior del mismo día
+
+La [revisión del 23 de octubre](../2026-10-23-alignment/README.md) amplía los cinco notebooks y añade dos arquitecturas de IA. Los conteos del dictamen independiente anterior corresponden a su snapshot original; la nueva ejecución y sus límites están separados en esa revisión.
