@@ -1,0 +1,12 @@
+{
+  "inspected_figure_count": 25,
+  "notebooks": 7,
+  "html_exported": 7,
+  "full_frontend_inspection": false,
+  "figure_corrections": [
+    "cost heatmap text contrast",
+    "convergence markers/colors"
+  ],
+  "generator_sources_match": true,
+  "metadata_only_repairs_preserve_original_sources_outputs": true
+}

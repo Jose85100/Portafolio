@@ -13,3 +13,10 @@ mkdir -p results
 "$PYTHON" -m mypy src/conformal.py > results/types.txt
 "$PYTHON" -m src.experiment > results/experiment.txt
 "$PYTHON" benchmarks/build_notebook.py
+
+# Preserve the expanded scientific notebook after the original builder.
+REPO_ROOT=$(git rev-parse --show-toplevel)
+DEPTH_PYTHON="${PYTHON:-python3}"
+if [[ -x .venv/bin/python ]]; then DEPTH_PYTHON="$PWD/.venv/bin/python"; fi
+"$DEPTH_PYTHON" "$REPO_ROOT/scripts/deepen_20261023_notebooks.py" --path "$PWD/notebook.ipynb"
+"$DEPTH_PYTHON" "$REPO_ROOT/scripts/execute_research_depth.py" --one "$PWD/notebook.ipynb" --mode "${NOTEBOOK_EXECUTION_MODE:-ipython}"

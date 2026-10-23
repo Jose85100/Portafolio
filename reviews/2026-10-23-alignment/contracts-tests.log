@@ -1,0 +1,11 @@
+test_action_enumeration (test_contracts.Contracts.test_action_enumeration) ... ok
+test_decision (test_contracts.Contracts.test_decision) ... ok
+test_invalid_actions (test_contracts.Contracts.test_invalid_actions) ... ok
+test_schema_does_not_prove_truth (test_contracts.Contracts.test_schema_does_not_prove_truth) ... ok
+test_spans_and_tampering (test_contracts.Contracts.test_spans_and_tampering) ... ok
+test_threshold_abstention_and_perfect_sample (test_contracts.Contracts.test_threshold_abstention_and_perfect_sample) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.022s
+
+OK

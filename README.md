@@ -25,7 +25,7 @@ El [informe del ciclo multiagente](reviews/2026-10-23-cycle/README.md) reúne ci
 
 ## Cuatro tipos de proyecto
 
-- **Notebooks (115)** — archivos `.ipynb` con versión ingenua, diagnóstico, mejoras, robustez y límites. Los datos son **sintéticos con verdad conocida**, así que el notebook comprueba si el método recupera la verdad; las cifras de las conclusiones se **calculan desde los datos** (celdas «Lectura») y una sección final de `assert` hace fallar el notebook si un hallazgo deja de cumplirse. Cuando una hipótesis inicial resultó falsa, el notebook lo dice y muestra la corrección. La excepción es el [análisis factorial múltiple](02-mathematics-statistics-and-quant/quantitative-methods/analisis-factorial-multiple-mfa), que usa **datos reales y abiertos** del Banco Mundial.
+- **Notebooks (128; inventario al 23 de octubre de 2026)** — archivos `.ipynb` con versión ingenua, diagnóstico, mejoras, robustez y límites. Los datos son **sintéticos con verdad conocida**, así que el notebook comprueba si el método recupera la verdad; las cifras de las conclusiones se **calculan desde los datos** (celdas «Lectura») y una sección final de `assert` hace fallar el notebook si un hallazgo deja de cumplirse. Cuando una hipótesis inicial resultó falsa, el notebook lo dice y muestra la corrección. La excepción es el [análisis factorial múltiple](02-mathematics-statistics-and-quant/quantitative-methods/analisis-factorial-multiple-mfa), que usa **datos reales y abiertos** del Banco Mundial.
 - **`main.py` (40)** — la versión corta y ejecutable de cada notebook.
 - **Motores de decisión (15)** — proyectos 01–15 de la carpeta 06, cada uno con `src/`, `tests/` y `docs/`.
 - **Plataforma C++17** — simulación de pérdidas de crédito, riesgo de mercado y flujos de liquidez, con CMake y pruebas.
@@ -69,3 +69,5 @@ Los proyectos con notebook usan **datos sintéticos con semilla fija**, salvo el
 | InvesmentOs | Portafolios y riesgo | Herramienta reproducible para guardar precios, monitorear riesgo y proponer una asignación. | En revisión |
 
 Los proyectos marcados como "En revisión" se publicarán cuando termine la revisión de datos sensibles y credenciales.
+
+La [revisión del 17–23 de octubre](reviews/2026-10-23-alignment/README.md) distingue inventario, ejecución nueva y evidencia histórica; incluye dos arquitecturas de decisiones estructuradas en IA y ampliaciones de los cinco MVP del día.

@@ -21,3 +21,7 @@ Núcleo tipado sin dependencias externas: `src/conformal.py`. `ChannelCalibrator
 Madurez: componente implementado y verificado con datos sintéticos; no se eleva la madurez del pilar ni se declara validación independiente empírica/operación. Revisión externa del ciclo pendiente. Ver `informe.md`, `MVP.md`, `referencias.bib` y `results/`.
 
 Notebook ejecutado secuencialmente en proceso con IPython; el kernel ZeroMQ no arranca en este entorno por restricción de interfaces. Outputs proceden de ejecución real. El generador registra este modo en metadatos. Inspección de la figura separada del notebook; no se afirma render HTML completo.
+
+## Ampliación del notebook — 23 de octubre
+
+El notebook incorpora fórmulas, diccionario de variables en contexto, reconstrucción de cálculos, sensibilidad y casos negativos. `run.sh` conserva esta ampliación después de regenerar el estudio original. La extensión se mantiene en `scripts/deepen_20261023_notebooks.py` y `scripts/research_depth_experiments.py` desde la raíz; las celdas realmente se ejecutan y guardan sus salidas. [Revisión de alcance](../../../../../reviews/2026-10-23-alignment/README.md).
