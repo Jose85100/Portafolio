@@ -65,3 +65,5 @@ Según la [matriz de madurez](../PROJECT_MATURITY.md) están en **M2 (prototipo 
 - [Conformal ponderado bajo cambio de covariables](02-machine-learning-engineering/02-conformal-risk-prediction/): MVP sintético de hoy con notebook ampliado, sensibilidad de pesos y diagnóstico de intervalos infinitos.
 - [Recuperación durable SQLite](10-ai-orchestration-engineering/06-fault-tolerant-ai-execution-recovery/mvp-durable-checkpoints/): componente ya existente; atomicidad local no implica exactly-once remoto.
 - [Revisión semanal y estado de las PR de hoy](../reviews/2026-10-23-alignment/README.md): inventario, correcciones, evidencia ejecutada y límites de cobertura.
+
+[Base académica y brechas](../reviews/2026-10-23-academic/README.md): clasificación selectiva, fidelidad documental, CQR y control de riesgo; publicación, propuesta e implementación se distinguen por referencia.

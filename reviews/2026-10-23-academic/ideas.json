@@ -1,0 +1,218 @@
+[
+  {
+    "id": "ECO-1",
+    "project": "IV débil",
+    "idea": "CLR y potencia",
+    "paper": "CLR2003",
+    "formula": "Pr(rechazar H0 | beta != beta0)",
+    "experiment": "Comparar AR/CLR bajo alternativas y misma fuerza instrumental; no usar potencia como tamaño.",
+    "caveat": "CLR requiere implementación y valores críticos condicionales verificables."
+  },
+  {
+    "id": "ECO-2",
+    "project": "IV débil",
+    "idea": "Varios instrumentos y sobreidentificación",
+    "paper": "AR1949",
+    "formula": "F_AR = (r\\'P_Z r / k)/(r\\'M_Z r/(n-k-1))",
+    "experiment": "Introducir k instrumentos y contrastar contra OLS restringido por proyecciones.",
+    "caveat": "El F exacto sigue requiriendo error normal IID homocedástico."
+  },
+  {
+    "id": "ECO-3",
+    "project": "IV débil",
+    "idea": "Robustez de covarianza",
+    "paper": "CLR2003",
+    "formula": "T = g(b)\\prime\\widehat\\Omega^{-1}g(b)",
+    "experiment": "Ensayar heterocedasticidad y clustering con covarianza apropiada y control de tamaño.",
+    "caveat": "Forma de Wald del momento no garantiza exactitud finita; estudiar referencia asintótica."
+  },
+  {
+    "id": "MAT-1",
+    "project": "Firmas",
+    "idea": "Covariación multicanal",
+    "paper": "SIG2025",
+    "formula": "[X,Y]_n=\\sum_i\\Delta X_i\\Delta Y_i",
+    "experiment": "Derivar coordenadas lead-lag cruzadas y verificar contra suma directa.",
+    "caveat": "Es un diagnóstico en malla observada, no predicción financiera."
+  },
+  {
+    "id": "MAT-2",
+    "project": "Firmas",
+    "idea": "Features con separación temporal",
+    "paper": "SIG2025",
+    "formula": "\\widehat y=f_\\theta(S_{\\le d}(X_{past}))",
+    "experiment": "Comparar con área, retornos y variación realizada en train/test temporal.",
+    "caveat": "Definir ventanas sin mirar el futuro; truncación no identifica trayectorias."
+  },
+  {
+    "id": "MAT-3",
+    "project": "Firmas",
+    "idea": "Payoffs de firma",
+    "paper": "HEDGE2020",
+    "formula": "\\widehat\\pi=\\langle\\ell,E[S(X)]\\rangle",
+    "experiment": "Probar aproximación de payoffs en un generador y evaluar fuera de muestra.",
+    "caveat": "No copiar precios simulados como precios de mercado; separar hedging y ajuste."
+  },
+  {
+    "id": "RSK-1",
+    "project": "KYC",
+    "idea": "FDR con etiquetas retrasadas",
+    "paper": "BY2001",
+    "formula": "FDR=E[V/(R\\vee1)]",
+    "experiment": "Simular confirmaciones tardías y dependencia de lote; medir también potencia y carga.",
+    "caveat": "La ausencia de confirmación no es un negativo legítimo."
+  },
+  {
+    "id": "RSK-2",
+    "project": "KYC",
+    "idea": "Resolución de p-valores y BY",
+    "paper": "BY2001",
+    "formula": "p_{min}=1/(n+1),\\quad t_1=q/(mH_m)",
+    "experiment": "Mapear cuándo el primer umbral es inalcanzable y cuándo agrupaciones fuertes sí cruzan.",
+    "caveat": "No exigir pmin<=t1 como condición necesaria para cualquier rechazo step-up."
+  },
+  {
+    "id": "RSK-3",
+    "project": "KYC",
+    "idea": "Deriva frente a multiplicidad",
+    "paper": "BY2001",
+    "formula": "P(p_i\\le u)\\le u",
+    "experiment": "Romper intercambiabilidad y medir si BY pierde control por p-valores inválidos.",
+    "caveat": "BY corrige dependencia, no deriva o contaminación de calibración."
+  },
+  {
+    "id": "ML-1",
+    "project": "Conformal",
+    "idea": "ACI online",
+    "paper": "ACI2021",
+    "formula": "\\alpha_{t+1}=\\alpha_t+\\gamma(\\alpha-err_t)",
+    "experiment": "Predecir antes de ver etiqueta y comparar frecuencia global/local, ancho e infinitos.",
+    "caveat": "Frecuencia temporal no es cobertura condicional por x."
+  },
+  {
+    "id": "ML-2",
+    "project": "Conformal",
+    "idea": "Paso adaptativo",
+    "paper": "ACI2024",
+    "formula": "\\gamma_t \\text{ adaptado al historial disponible}",
+    "experiment": "Comparar varios regímenes con hiperparámetros sin usar test futuro.",
+    "caveat": "No atribuir a una gamma fija el resultado del procedimiento adaptativo publicado."
+  },
+  {
+    "id": "ML-3",
+    "project": "Conformal",
+    "idea": "Pesos estimados y CQR",
+    "paper": "WCP2019",
+    "formula": "w(x)=dQ_X/dP_X",
+    "experiment": "Estimar razones con covariables sin etiqueta, cross-fitting y pruebas de solapamiento.",
+    "caveat": "La garantía con pesos oráculo no se transfiere automáticamente a pesos aprendidos."
+  },
+  {
+    "id": "CEO-1",
+    "project": "EVSI",
+    "idea": "Prior robusto",
+    "paper": "DESIGN1995",
+    "formula": "\\max_d\\min_{\\pi\\in\\Pi}E_\\pi[U(d)]",
+    "experiment": "Comparar política Bayes y minimax sobre priors explícitos conservando costo nominal.",
+    "caveat": "La clase de priors es una elección que necesita justificación."
+  },
+  {
+    "id": "CEO-2",
+    "project": "EVSI",
+    "idea": "Usuarios heterogéneos",
+    "paper": "DECISION1999",
+    "formula": "V=\\sum_gN_g(B_g\\theta_g-c_g)-F",
+    "experiment": "Añadir grupos y elegir dónde experimentar con presupuesto fijo.",
+    "caveat": "Resultados sanitarios del paper no validan una fintech."
+  },
+  {
+    "id": "CEO-3",
+    "project": "EVSI",
+    "idea": "Demora y competencia",
+    "paper": "DESIGN1995",
+    "formula": "W_t=\\max\\{V_t,\\ E[W_{t+1}|D_t]-c_t\\}",
+    "experiment": "Añadir lanzamiento diferido y costo de oportunidad a Bellman.",
+    "caveat": "La ventaja del piloto no es gratuita si el mercado cambia."
+  },
+  {
+    "id": "AI-1",
+    "project": "Decisiones",
+    "idea": "Fallback falible por segmento",
+    "paper": "CHOW1970",
+    "formula": "C_{derivar}(x)=c_r+c_e\\epsilon_f(x)",
+    "experiment": "Estimar error del fallback en calibración independiente y comparar con derivar perfecto.",
+    "caveat": "No sustituir confianza del proveedor por error condicional estimado."
+  },
+  {
+    "id": "AI-2",
+    "project": "Decisiones",
+    "idea": "Control de riesgo y cobertura",
+    "paper": "SELECT2010",
+    "formula": "R=E[\\ell g]/E[g],\\quad\\phi=E[g]",
+    "experiment": "Comparar cotas de aceptación con soporte mínimo y error por grupo.",
+    "caveat": "Los teoremas noise-free no se aplican sin cambios a etiquetas ruidosas."
+  },
+  {
+    "id": "AI-3",
+    "project": "Decisiones",
+    "idea": "Capacidad compartida",
+    "paper": "CHOW1970",
+    "formula": "\\min\\sum_i C_i(a_i)\\quad s.a.\\sum_i t_i(a_i)\\le B",
+    "experiment": "Conectar al MILP existente de riesgo y medir cola/costo frente a umbrales.",
+    "caveat": "La regla por caso deja de resolver por sí sola la asignación global."
+  },
+  {
+    "id": "DOC-1",
+    "project": "Documentos",
+    "idea": "Anotación de fidelidad",
+    "paper": "FAITH2020",
+    "formula": "P=TP/(TP+FP),\\quad R=TP/(TP+FN)",
+    "experiment": "Anotar concepto, moneda, negación y período con dos revisores y adjudicación.",
+    "caveat": "Fidelidad documental no autentica al emisor."
+  },
+  {
+    "id": "DOC-2",
+    "project": "Documentos",
+    "idea": "Verificador semántico",
+    "paper": "FAITH2020",
+    "formula": "P(entailment|fuente,afirmacion)",
+    "experiment": "Comparar reglas, NLI y humano con corpus separado y paráfrasis adversarias.",
+    "caveat": "Una probabilidad NLI necesita calibración y no prueba verdad financiera."
+  },
+  {
+    "id": "DOC-3",
+    "project": "Documentos",
+    "idea": "Compresión basada en evidencia",
+    "paper": "FAITH2020",
+    "formula": "retencion=\\#hechos\\ preservados/\\#hechos\\ necesarios",
+    "experiment": "Evaluar correcciones y negaciones después de compresión con referencias humanas.",
+    "caveat": "ROUGE o reducción de tokens no bastan para medir fidelidad."
+  },
+  {
+    "id": "MC-1",
+    "project": "Christoffersen",
+    "idea": "Mezcla beta-binomial",
+    "paper": "CS2021",
+    "formula": "M_t(p)=B(a+S_t,b+t-S_t)/(B(a,b)p^{S_t}(1-p)^{t-S_t})",
+    "experiment": "Invertir M_t(p)<1/delta y comparar draws/abstención contra gasto Hoeffding.",
+    "caveat": "Requiere draws Bernoulli con media p y modelo condicional defendible."
+  },
+  {
+    "id": "MC-2",
+    "project": "Christoffersen",
+    "idea": "Error secuencial frente a frontera",
+    "paper": "CS2021",
+    "formula": "P(\\exists t:p\\notin C_t)\\le\\delta",
+    "experiment": "Simular probabilidades a ambos lados de alpha y declarar undecided cerca de frontera.",
+    "caveat": "Control de remuestreo no prueba validez del test financiero subyacente."
+  },
+  {
+    "id": "MC-3",
+    "project": "Christoffersen",
+    "idea": "Tamaño del test y presupuesto MC",
+    "paper": "CS2021",
+    "formula": "P(rechazo\\ equivocado)\\le riesgo_{test}+riesgo_{MC}",
+    "experiment": "Separar error del procedimiento financiero de error de aproximar su p-valor.",
+    "caveat": "La suma es una cota por unión, no una igualdad ni garantía del modelo de mercado."
+  }
+]

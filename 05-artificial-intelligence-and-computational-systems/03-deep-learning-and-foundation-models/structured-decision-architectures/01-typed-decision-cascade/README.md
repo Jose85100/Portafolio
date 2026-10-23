@@ -59,3 +59,5 @@ $L_a$: severidad; $q_a$: eficacia asumida; $c_a$: costo; $f_a$: fricción legít
 5. Revalidar después de cambiar modelo, idioma, rúbrica, población o etiquetas.
 
 [Notebook con derivaciones y experimentos](notebook.ipynb). No hay promesa de reducción financiera real ni servicio desplegado.
+
+[Revisión académica y criterios de cierre](ACADEMIC_REVIEW.md): fuentes publicadas, fórmulas en el notebook y extensiones experimentales.

@@ -34,12 +34,20 @@ def execute_one(path,mode,qa):
             with capture_output() as captured:
                 result=shell.run_cell(cell.source,store_history=True)
             if result.error_before_exec or result.error_in_exec:
+                sys.stderr.write(captured.stdout+captured.stderr)
                 raise RuntimeError(str(result.error_before_exec or result.error_in_exec))
             cell.execution_count=shell.execution_count-1
             if captured.stdout:cell.outputs.append(nbf.v4.new_output('stream',name='stdout',text=captured.stdout))
             if captured.stderr:cell.outputs.append(nbf.v4.new_output('stream',name='stderr',text=captured.stderr))
             for output in captured.outputs:
                 cell.outputs.append(nbf.v4.new_output('display_data',data=output.data,metadata=output.metadata))
+    academic_metrics={}
+    for cell in nb.cells:
+        for output in cell.get('outputs',[]):
+            if output.get('output_type')=='stream' and output.get('name')=='stdout':
+                for line in output.text.splitlines():
+                    if line.startswith('ACADEMIC_METRICS:'):
+                        academic_metrics.update(json.loads(line.split(':',1)[1]))
     if path in TARGETS:
         index=TARGETS.index(path)
         summaries=[
@@ -52,6 +60,8 @@ def execute_one(path,mode,qa):
             'Sumar transferencias al salario sobreestimó el ingreso en 2.450.000 COP por caso en promedio en este corpus. Los cinco casos de mutación literal retuvieron solo el original; un span semánticamente mal etiquetado sí pasó.'
         ]
         nb.cells=[c for c in nb.cells if not c.metadata.get('depth_summary')]
+        if academic_metrics:
+            summaries[index]+='\n\nResultados académicos adicionales (valores del experimento):\n\n```json\n'+json.dumps(academic_metrics,ensure_ascii=False,indent=2)+'\n```'
         summary=nbf.v4.new_markdown_cell('## Lectura de los resultados ejecutados\n\n'+summaries[index]+'\n\nDatos sintéticos. Esta sección acompaña las salidas guardadas y no es una medición comercial o bancaria.')
         summary.metadata['depth_summary']=True
         summary.id=hashlib.sha256((str(path.relative_to(ROOT))+'summary').encode()).hexdigest()[:12]
@@ -74,13 +84,13 @@ def execute_one(path,mode,qa):
             'code_cells':sum(c.cell_type=='code' for c in nb.cells),
             'code_lines':sum(len(c.source.splitlines()) for c in nb.cells if c.cell_type=='code'),
             'figures':sum('image/png' in o.get('data',{}) for c in nb.cells for o in c.get('outputs',[])),
-            'mode':mode,'sha256':hashlib.sha256(path.read_bytes()).hexdigest()}
+            'mode':mode,'academic_metrics':academic_metrics,'sha256':hashlib.sha256(path.read_bytes()).hexdigest()}
 
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser();parser.add_argument('--mode',choices=['kernel','ipython'],default='kernel')
     parser.add_argument('--one');parser.add_argument('--qa-dir');parser.add_argument('--result')
-    parser.add_argument('--evidence',default='reviews/2026-10-23-alignment/execution.json')
+    parser.add_argument('--evidence',default='reviews/2026-10-23-academic/execution.json')
     args=parser.parse_args()
     if args.one:
         row=execute_one(args.one,args.mode,args.qa_dir)

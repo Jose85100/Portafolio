@@ -4,9 +4,10 @@ Captures IPython display/stream outputs, validates and saves nbformat.
 This is not a separate Jupyter-kernel validation.
 """
 
-from pathlib import Path
-import nbformat
 import sys
+from pathlib import Path
+
+import nbformat
 from IPython.core.interactiveshell import InteractiveShell
 from IPython.utils.capture import capture_output
 

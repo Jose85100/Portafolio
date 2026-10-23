@@ -584,9 +584,12 @@ def extend(path):
     nb.cells=[x for x in nb.cells if not x.metadata.get('research_depth_20261023') and not x.metadata.get('depth_summary')]
     for cell in extensions(i):
         cell.metadata['research_depth_20261023']=True; nb.cells.append(cell)
+ from academic_20261023 import sections
+ for cell in sections(i,md,code,pair):
+    cell.metadata['research_depth_20261023']=True;nb.cells.append(cell)
  nb.metadata['kernelspec']={'display_name':'Python 3','language':'python','name':'python3'}
  nb.metadata['language_info']={'name':'python','version':'3.12'}
- nb.metadata['depth_revision']='2026-10-23-v1'
+ nb.metadata['depth_revision']='2026-10-23-academic-v2'
  for position,cell in enumerate(nb.cells):
     if i>=5 or cell.metadata.get('research_depth_20261023'):
         cell.id=hashlib.sha256((str(p.relative_to(ROOT))+str(position)+cell.source).encode()).hexdigest()[:12]

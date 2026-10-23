@@ -74,3 +74,7 @@ python scripts/audit_20261023_alignment.py
 Si el host restringe sockets, usar `--mode ipython`. Los run.sh originales conservan su contrato; algunos instalan dependencias, por lo que conviene un entorno separado por proyecto. Pins directos, sin lock transitivo con hashes. Las dependencias de ejecución local se registran en [environment.json](environment.json).
 
 El inventario detecta notebooks con pocas celdas, incluidos companions que llaman librerías o experimentos extensos. Ese indicador por sí solo no prueba superficialidad: hace falta inspeccionar fuentes y métodos. Esta pasada no reescribe los 88 ni certifica sus matemáticas o una regresión integral de toda la semana. Conserva los resultados negativos y la madurez local. No hay cartera real, validación regulatoria, eficacia causal estimada ni integración comercial operativa.
+
+## Ampliación académica posterior
+
+Este informe conserva el snapshot de 239 celdas y sus hashes. La [ampliación académica](../2026-10-23-academic/README.md) registra los notebooks actuales, fuentes publicadas, nuevas métricas y el fallo de dependencias encontrado al terminar la CI.

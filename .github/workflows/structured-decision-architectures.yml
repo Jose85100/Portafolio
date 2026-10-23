@@ -5,6 +5,7 @@ on:
       - '05-artificial-intelligence-and-computational-systems/03-deep-learning-and-foundation-models/structured-decision-architectures/**'
       - 'scripts/deepen_20261023_notebooks.py'
       - 'scripts/research_depth_experiments.py'
+      - 'scripts/academic_20261023.py'
       - 'scripts/execute_research_depth.py'
       - '.github/workflows/structured-decision-architectures.yml'
   workflow_dispatch:
@@ -35,4 +36,4 @@ jobs:
           name: research-depth-notebooks-and-preview
           path: |
             artifacts/research-depth
-            reviews/2026-10-23-alignment/execution.json
+            reviews/2026-10-23-academic/execution.json

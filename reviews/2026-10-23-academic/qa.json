@@ -1,0 +1,9 @@
+{
+  "new_figures_inspected": 6,
+  "preceding_figures_inspected_in_prior_review": 25,
+  "html_exports": 7,
+  "sources_match_generators": true,
+  "full_jupyter_frontend_inspected": false,
+  "legacy_conformal_executor": "15 cells passed after sys.path repair",
+  "numerical_scope": "synthetic component experiments; no empirical validation"
+}
