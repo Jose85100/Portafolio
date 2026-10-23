@@ -1,0 +1,12 @@
+{
+  "alpha": 0.05,
+  "error_budget": 0.01,
+  "seeds": 200,
+  "fixed_draws": 999,
+  "max_sequential_draws": 65536,
+  "scenarios": [
+    {"name": "clear_reject", "exact_p": 0.00098522167487684722, "fixed_wrong": 0, "sequential_wrong": 0, "undecided": 0, "mean_sequential_draws": 2048},
+    {"name": "boundary", "exact_p": 0.042145593869731802, "fixed_wrong": 32, "sequential_wrong": 0, "undecided": 167, "mean_sequential_draws": 65536},
+    {"name": "clear_non_reject", "exact_p": 0.5037401933953658, "fixed_wrong": 0, "sequential_wrong": 0, "undecided": 0, "mean_sequential_draws": 256}
+  ]
+}

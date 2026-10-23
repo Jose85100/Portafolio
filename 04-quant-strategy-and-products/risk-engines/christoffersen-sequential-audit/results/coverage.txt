@@ -1,0 +1,29 @@
+File '/usr/include/c++/13/bits/random.tcc'
+Lines executed:98.18% of 55
+Creating 'random.tcc.gcov'
+
+File '/usr/include/c++/13/bits/stl_algobase.h'
+Lines executed:95.83% of 24
+Creating 'stl_algobase.h.gcov'
+
+File '/usr/include/c++/13/bits/random.h'
+Lines executed:100.00% of 49
+Creating 'random.h.gcov'
+
+File 'include/sequential.hpp'
+Lines executed:85.00% of 160
+Creating 'sequential.hpp.gcov'
+
+File 'tests/tests.cpp'
+Lines executed:96.15% of 26
+Creating 'tests.cpp.gcov'
+
+File '/usr/include/c++/13/cmath'
+Lines executed:100.00% of 2
+Creating 'cmath.gcov'
+
+File '/usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h'
+Lines executed:100.00% of 2
+Creating 'c++config.h.gcov'
+
+Lines executed:91.51% of 318
