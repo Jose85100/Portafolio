@@ -1,0 +1,44 @@
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+
+[notice] A new release of pip is available: 26.2.1 -> 26.2.2
+[notice] To update, run: pip install --upgrade pip
+All checks passed!
+Success: no issues found in 3 source files
+test_aliasing (test_signatures.SignatureTests.test_aliasing) ... ok
+test_bad_inputs (test_signatures.SignatureTests.test_bad_inputs) ... ok
+test_chen_shuffle_translation_reversal_randomized (test_signatures.SignatureTests.test_chen_shuffle_translation_reversal_randomized) ... ok
+test_collinear_subdivision_and_stationary_points (test_signatures.SignatureTests.test_collinear_subdivision_and_stationary_points) ... ok
+test_single_point (test_signatures.SignatureTests.test_single_point) ... ok
+test_square_oracle (test_signatures.SignatureTests.test_square_oracle) ... ok
+test_tree_like (test_signatures.SignatureTests.test_tree_like) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.050s
+
+OK
+Name                Stmts   Miss  Cover
+---------------------------------------
+src/signatures.py      37      0   100%
+---------------------------------------
+TOTAL                  37      0   100%
+Wrote JSON report to results/coverage.json
+{
+  "seed": 422,
+  "samples": 800,
+  "accuracy_by_noise": {
+    "0": 1.0,
+    "0.05": 1.0,
+    "0.25": 1.0,
+    "1.0": 0.7
+  },
+  "endpoint_accuracy": 0.5,
+  "moments_accuracy": 0.5,
+  "max_oracle_error": 1.0658141036401503e-14,
+  "convergence_order": 1.999869639150011,
+  "aliasing_dense_area": 6.280662313909504,
+  "aliasing_four_segment_area": 0.0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "hardware": "x86_64",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+}

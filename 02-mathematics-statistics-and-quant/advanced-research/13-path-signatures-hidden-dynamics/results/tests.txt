@@ -1,0 +1,12 @@
+test_aliasing (test_signatures.SignatureTests.test_aliasing) ... ok
+test_bad_inputs (test_signatures.SignatureTests.test_bad_inputs) ... ok
+test_chen_shuffle_translation_reversal_randomized (test_signatures.SignatureTests.test_chen_shuffle_translation_reversal_randomized) ... ok
+test_collinear_subdivision_and_stationary_points (test_signatures.SignatureTests.test_collinear_subdivision_and_stationary_points) ... ok
+test_single_point (test_signatures.SignatureTests.test_single_point) ... ok
+test_square_oracle (test_signatures.SignatureTests.test_square_oracle) ... ok
+test_tree_like (test_signatures.SignatureTests.test_tree_like) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.050s
+
+OK

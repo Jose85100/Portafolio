@@ -1,0 +1,25 @@
+{
+  "artifacts": {
+    "README.md": true,
+    "src/signatures.py": true,
+    "tests/test_signatures.py": true,
+    "results/replicates.csv": true,
+    "results/audit.png": true,
+    "notebook.ipynb": true,
+    "informe.md": true,
+    "referencias.bib": true,
+    "MVP.md": true,
+    "requirements.txt": true,
+    "config.json": true,
+    "run.sh": true
+  },
+  "all_present": true,
+  "test_status": "7 passed",
+  "lint": "passed",
+  "types": "src passed",
+  "coverage_scope": "src.signatures",
+  "source_verification": "5 primary metadata/abstract pages opened on 2026-10-23",
+  "maturity": "S2 component, not S3 or operational",
+  "notebook_executor": "IPython in-process, kernel sockets blocked",
+  "figure_inspection": "audit.png viewed, labels legible; notebook rich image same image"
+}

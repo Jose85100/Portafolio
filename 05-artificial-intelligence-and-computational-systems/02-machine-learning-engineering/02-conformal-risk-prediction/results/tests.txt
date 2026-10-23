@@ -1,0 +1,14 @@
+test_alpha_monotonic_property (test_conformal.ConformalTests.test_alpha_monotonic_property) ... ok
+test_equal_weights_finite_sample_rank (test_conformal.ConformalTests.test_equal_weights_finite_sample_rank) ... ok
+test_infinity_is_not_clipped (test_conformal.ConformalTests.test_infinity_is_not_clipped) ... ok
+test_invalid_inputs (test_conformal.ConformalTests.test_invalid_inputs) ... ok
+test_naive_is_ablation (test_conformal.ConformalTests.test_naive_is_ablation) ... ok
+test_ratios (test_conformal.ConformalTests.test_ratios) ... ok
+test_scaling_and_permutation_property (test_conformal.ConformalTests.test_scaling_and_permutation_property) ... ok
+test_test_mass_monotonic (test_conformal.ConformalTests.test_test_mass_monotonic) ... ok
+test_ties (test_conformal.ConformalTests.test_ties) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.065s
+
+OK

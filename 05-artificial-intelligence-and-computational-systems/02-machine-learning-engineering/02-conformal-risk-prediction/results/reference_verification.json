@@ -1,0 +1,26 @@
+{
+  "checked_on": "2026-10-23",
+  "method": "Opened primary arXiv abstract pages with web retrieval; title, authors and identifier verified; not an exhaustive literature review",
+  "references": [
+    {
+      "id": "tibshirani2019",
+      "url": "https://arxiv.org/abs/1904.06019"
+    },
+    {
+      "id": "barber2022",
+      "url": "https://arxiv.org/abs/2202.13415"
+    },
+    {
+      "id": "angelopoulos2021",
+      "url": "https://arxiv.org/abs/2107.07511"
+    },
+    {
+      "id": "gibbs2021",
+      "url": "https://arxiv.org/abs/2106.00170"
+    },
+    {
+      "id": "lei2016",
+      "url": "https://arxiv.org/abs/1604.04173"
+    }
+  ]
+}
