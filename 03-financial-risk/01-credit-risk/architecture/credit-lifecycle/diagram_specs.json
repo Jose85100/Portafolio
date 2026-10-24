@@ -1,0 +1,1554 @@
+{
+  "scope": "S1 design; no production integrations",
+  "pages": [
+    [
+      "01-credit-cycle",
+      "01 · Ciclo de crédito de extremo a extremo",
+      "Cada transición conserva autoridad, evidencia, estado y versión.",
+      [
+        [
+          "01 · Solicitud",
+          [
+            [
+              "Producto y oferta",
+              "Apetito, elegibilidad y vigencia",
+              "internal"
+            ],
+            [
+              "Canal y finalidad",
+              "Web, app, oficina, aliado y permisos",
+              "internal"
+            ],
+            [
+              "Expediente / LOS",
+              "Caso único; captura y estado",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "02 · Evaluación",
+          [
+            [
+              "Identidad y cumplimiento",
+              "Evidencias y colas competentes",
+              "internal"
+            ],
+            [
+              "Fraude e ingresos",
+              "Contrastes con fuentes al corte",
+              "internal"
+            ],
+            [
+              "Capacidad y riesgo de crédito",
+              "PD, endeudamiento y escenarios",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "03 · Decisión",
+          [
+            [
+              "Política y límites",
+              "Cupo, plazo, precio y exposición",
+              "internal"
+            ],
+            [
+              "Control y explicación",
+              "Razones; revisión cuando corresponda",
+              "review"
+            ],
+            [
+              "Oferta aceptada",
+              "Vigente y coherente con condiciones",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "04 · Ejecución",
+          [
+            [
+              "Formalización y garantías",
+              "Contrato, instrumento y condiciones",
+              "internal"
+            ],
+            [
+              "Desembolso y conciliación",
+              "Destino, reserva y efecto único",
+              "internal"
+            ],
+            [
+              "Administración / LMS",
+              "Cronograma, saldo e imputaciones",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "05 · Gestión",
+          [
+            [
+              "Monitoreo y alertas",
+              "Cosechas, mora, riesgos y servicio",
+              "internal"
+            ],
+            [
+              "Cobranza o cierre",
+              "Según estado: pago, acuerdo o recuperación",
+              "review"
+            ],
+            [
+              "Aprendizaje y gobierno",
+              "Pérdida madura, modelos y provisiones",
+              "internal"
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          13,
+          14
+        ]
+      ]
+    ],
+    [
+      "02-modular",
+      "02 · Plataforma modular con operación síncrona",
+      "Una unidad de despliegue puede conservar límites claros de dominio.",
+      [
+        [
+          "01 · Acceso",
+          [
+            [
+              "Canales y API",
+              "Solicitud y autenticación contextual",
+              "internal"
+            ],
+            [
+              "Identidad / permisos",
+              "Finalidad y acceso por tarea",
+              "internal"
+            ],
+            [
+              "Control operacional",
+              "Configuración y trazabilidad mínima",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "02 · Backend",
+          [
+            [
+              "Módulo LOS",
+              "Estado del expediente y tareas",
+              "internal"
+            ],
+            [
+              "Módulo decisión",
+              "Reglas, modelos y políticas",
+              "internal"
+            ],
+            [
+              "Módulo de integración",
+              "Contratos, deadlines y respuestas",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "03 · Trabajo",
+          [
+            [
+              "Workers y tareas durables",
+              "OCR, esperas y revisión humana",
+              "internal"
+            ],
+            [
+              "Modelos versionados",
+              "Features permitidas y calibración",
+              "internal"
+            ],
+            [
+              "Fuentes especializadas",
+              "Buró, identidad, ingreso y firma",
+              "external"
+            ]
+          ]
+        ],
+        [
+          "04 · Efectos",
+          [
+            [
+              "Formalización y control",
+              "Condiciones antes del desembolso",
+              "internal"
+            ],
+            [
+              "Core / LMS",
+              "Dueño de obligación y ledger",
+              "internal"
+            ],
+            [
+              "Rieles de pago",
+              "Orden, estado y conciliación",
+              "external"
+            ]
+          ]
+        ],
+        [
+          "05 · Gobierno",
+          [
+            [
+              "Casos y reclamaciones",
+              "Resolución y trazabilidad",
+              "review"
+            ],
+            [
+              "Datos y auditoría",
+              "Snapshots y etiquetas maduras",
+              "internal"
+            ],
+            [
+              "Operación y continuidad",
+              "Capacidad, degradación y recuperación",
+              "internal"
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          10,
+          13
+        ],
+        [
+          11,
+          14
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          2,
+          5
+        ]
+      ]
+    ],
+    [
+      "03-event-workflow",
+      "03 · Eventos y workflow durable de crédito",
+      "Duplicados y estados inciertos son parte del contrato; no exactly-once global.",
+      [
+        [
+          "01 · Entrada",
+          [
+            [
+              "Solicitudes y comandos",
+              "Case_id y autoridad de la acción",
+              "internal"
+            ],
+            [
+              "API y control de acceso",
+              "Esquema, finalidad y límites",
+              "internal"
+            ],
+            [
+              "Callbacks externos",
+              "Autenticados y correlacionados",
+              "external"
+            ]
+          ]
+        ],
+        [
+          "02 · Estado",
+          [
+            [
+              "Workflow durable",
+              "Expediente, espera y vencimiento",
+              "internal"
+            ],
+            [
+              "Puerta de comandos",
+              "Versión, vigencia y precondiciones",
+              "internal"
+            ],
+            [
+              "Outbox transaccional",
+              "Estado y evento en la misma BD",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "03 · Transporte",
+          [
+            [
+              "Bus de eventos",
+              "Schema_version y orden por agregado",
+              "internal"
+            ],
+            [
+              "Consumidor idempotente",
+              "Event_id y efecto con clave única",
+              "internal"
+            ],
+            [
+              "Cola de errores",
+              "Aislar causa y escalar incidente",
+              "review"
+            ]
+          ]
+        ],
+        [
+          "04 · Dominios",
+          [
+            [
+              "Decisión y revisión",
+              "Oferta o nueva evidencia",
+              "internal"
+            ],
+            [
+              "Firma y formalización",
+              "Condiciones y evidencia de contrato",
+              "internal"
+            ],
+            [
+              "Core y pagos",
+              "Reserva, intención y consulta de estado",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "05 · Resolución",
+          [
+            [
+              "Ledger y conciliación",
+              "Efectos confirmados o pendientes",
+              "internal"
+            ],
+            [
+              "Operación y monitoreo",
+              "Lag, duplicados, SLA y exposición",
+              "internal"
+            ],
+            [
+              "Replay gobernado",
+              "Reintento autorizado y versión fijada",
+              "review"
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          8,
+          14
+        ]
+      ]
+    ],
+    [
+      "04-existing-core",
+      "04 · Core existente y decisión desacoplada",
+      "Modernización incremental: preservar sistemas de registro y conciliar proyecciones.",
+      [
+        [
+          "01 · Sistemas",
+          [
+            [
+              "Canales y LOS existente",
+              "Conservar expediente y journey",
+              "internal"
+            ],
+            [
+              "Core / LMS existente",
+              "Registro de obligación y saldos",
+              "internal"
+            ],
+            [
+              "Fuentes contratadas",
+              "Identidad, buró y datos habilitados",
+              "external"
+            ]
+          ]
+        ],
+        [
+          "02 · Frontera",
+          [
+            [
+              "API de decisión",
+              "Contrato, corte y respuesta tipada",
+              "internal"
+            ],
+            [
+              "Adaptador semántico",
+              "Códigos, moneda, calendarios y estados",
+              "internal"
+            ],
+            [
+              "Adaptadores de datos",
+              "Estado, cobertura y versión",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "03 · Inteligencia",
+          [
+            [
+              "Reglas y modelos",
+              "Features con fecha de disponibilidad",
+              "internal"
+            ],
+            [
+              "Snapshot de decisión",
+              "Fuentes y semántica congeladas",
+              "internal"
+            ],
+            [
+              "CDC / eventos",
+              "Proyección con retraso medido",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "04 · Control",
+          [
+            [
+              "Sombra y comparación",
+              "Sin autorizar efectos en la réplica",
+              "internal"
+            ],
+            [
+              "Puerta de liberación",
+              "Atribución y rollout acotado",
+              "review"
+            ],
+            [
+              "Conciliación de datos",
+              "Conteos, saldos y diferencias",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "05 · Operación",
+          [
+            [
+              "Decisión activa",
+              "Solo servicio autorizado",
+              "internal"
+            ],
+            [
+              "Efecto en core / pago",
+              "Precondiciones y ledger de referencia",
+              "internal"
+            ],
+            [
+              "Vigilancia y rollback",
+              "Retraso, versiones y anomalías",
+              "internal"
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          11,
+          14
+        ],
+        [
+          13,
+          14
+        ]
+      ]
+    ],
+    [
+      "05-signal-capture",
+      "05 · Captación de IP, ubicación y dispositivo",
+      "Separar lo observado, lo estimado y lo habilitado para una finalidad.",
+      [
+        [
+          "01 · Origen",
+          [
+            [
+              "Servidor y proxy confiable",
+              "IP de salida; no GPS ni persona",
+              "internal"
+            ],
+            [
+              "App / navegador",
+              "APIs de posición e ID de instalación",
+              "internal"
+            ],
+            [
+              "Fuente habilitada",
+              "Buró, telco, ingresos e identidad",
+              "external"
+            ]
+          ]
+        ],
+        [
+          "02 · Captura",
+          [
+            [
+              "Enriquecimiento de IP",
+              "ASN, región, VPN/proxy y fecha",
+              "external"
+            ],
+            [
+              "Permiso técnico y finalidad",
+              "No confundir permiso del SO y uso",
+              "internal"
+            ],
+            [
+              "Respuesta de fuente",
+              "Contrato, cobertura y disponibilidad",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "03 · Calidad",
+          [
+            [
+              "Método y precisión",
+              "Radio, tiempo y cambio de red",
+              "internal"
+            ],
+            [
+              "Estado y alternativa",
+              "Denegado, faltante, obsoleto o válido",
+              "review"
+            ],
+            [
+              "Verificación de consistencia",
+              "Titular, concepto y evidencia",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "04 · Uso",
+          [
+            [
+              "Contexto antifraude",
+              "Cambios y asociación con cautela",
+              "internal"
+            ],
+            [
+              "Variables de crédito",
+              "Solo usos justificados y validados",
+              "internal"
+            ],
+            [
+              "Acceso mínimo",
+              "Vault separado; datos minimizados",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "05 · Decisión",
+          [
+            [
+              "Verificar o investigar",
+              "Ninguna señal aislada prueba fraude",
+              "review"
+            ],
+            [
+              "Decisión crediticia",
+              "Capacidad y riesgos por producto",
+              "internal"
+            ],
+            [
+              "Auditoría y derechos",
+              "Uso, versión, retención y corrección",
+              "internal"
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          10,
+          13
+        ],
+        [
+          11,
+          14
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          13,
+          14
+        ]
+      ]
+    ],
+    [
+      "06-credit-decision",
+      "06 · Motor de decisión y oferta de crédito",
+      "Fraude, capacidad, PD y exposición conservan objetivos y salidas distintas.",
+      [
+        [
+          "01 · Corte",
+          [
+            [
+              "Expediente y población",
+              "Producto, canal y estado de evidencia",
+              "internal"
+            ],
+            [
+              "Snapshot al corte",
+              "Event_time y available_time",
+              "internal"
+            ],
+            [
+              "Política vigente",
+              "Apetito, atribuciones y restricciones",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "02 · Estimación",
+          [
+            [
+              "Fraude y novedad",
+              "Probabilidad o score explícito",
+              "internal"
+            ],
+            [
+              "Capacidad y PD",
+              "Flujo, obligaciones y horizonte",
+              "internal"
+            ],
+            [
+              "LGD, EAD y garantías",
+              "Severidad, exposición y cobertura",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "03 · Evaluación",
+          [
+            [
+              "Costo de intervención",
+              "Eficacia supuesta y fricción",
+              "internal"
+            ],
+            [
+              "Oferta y escenarios",
+              "Cupo, plazo, precio y NPV",
+              "internal"
+            ],
+            [
+              "Límites y reservas",
+              "Concentración y exposición disponible",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "04 · Selección",
+          [
+            [
+              "Cola de revisión",
+              "Capacidad y datos faltantes",
+              "review"
+            ],
+            [
+              "Puerta de política",
+              "Elegibilidad y acciones factibles",
+              "internal"
+            ],
+            [
+              "Analista / comité",
+              "Excepciones autorizadas y razones",
+              "review"
+            ]
+          ]
+        ],
+        [
+          "05 · Salida",
+          [
+            [
+              "Decisión motivada",
+              "Fuente de razón y reclamación",
+              "internal"
+            ],
+            [
+              "Oferta vigente",
+              "No equivale a fondos desembolsados",
+              "internal"
+            ],
+            [
+              "Registro de decisión",
+              "Modelo, política, corte y autoridad",
+              "internal"
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          10,
+          13
+        ],
+        [
+          11,
+          14
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          13,
+          14
+        ]
+      ]
+    ],
+    [
+      "07-disbursement",
+      "07 · Formalización, desembolso y conciliación",
+      "Una aceptación, una autorización y un efecto liquidado son estados diferentes.",
+      [
+        [
+          "01 · Acuerdo",
+          [
+            [
+              "Oferta aceptada",
+              "Tasa, plazo, monto y vigencia",
+              "internal"
+            ],
+            [
+              "Firma e instrumento",
+              "Proveedor y evidencia aplicable",
+              "external"
+            ],
+            [
+              "Garantías y condiciones",
+              "Validación documental/jurídica",
+              "review"
+            ]
+          ]
+        ],
+        [
+          "02 · Puerta",
+          [
+            [
+              "Paquete de formalización",
+              "Identidad, oferta y contrato coherentes",
+              "internal"
+            ],
+            [
+              "Cuenta destino",
+              "Titularidad y cambios revalidados",
+              "internal"
+            ],
+            [
+              "Reserva de exposición",
+              "Autoridad y control de concurrencia",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "03 · Intención",
+          [
+            [
+              "Orden autorizada",
+              "Decision_id y precondiciones",
+              "internal"
+            ],
+            [
+              "Idempotencia durable",
+              "Clave única de la operación",
+              "internal"
+            ],
+            [
+              "Proveedor / riel de pago",
+              "Estado, referencia y servicio exacto",
+              "external"
+            ]
+          ]
+        ],
+        [
+          "04 · Estado",
+          [
+            [
+              "Confirmado o rechazado",
+              "Conservar respuesta verificable",
+              "internal"
+            ],
+            [
+              "Estado incierto",
+              "Consultar antes de reenviar",
+              "review"
+            ],
+            [
+              "Devolución o reverso",
+              "Nuevo evento y reglas contables",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "05 · Registro",
+          [
+            [
+              "Core / ledger",
+              "Obligación, asiento y fecha efectiva",
+              "internal"
+            ],
+            [
+              "Conciliación",
+              "Diferencias y pendientes por edad",
+              "internal"
+            ],
+            [
+              "Servicio y atención",
+              "Confirmación correcta y reclamación",
+              "review"
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          10,
+          13
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          13,
+          14
+        ]
+      ]
+    ],
+    [
+      "08-servicing-collections",
+      "08 · Administración, cobranza y recuperación",
+      "Saldo correcto y contacto admisible preceden a cualquier tratamiento.",
+      [
+        [
+          "01 · Registro",
+          [
+            [
+              "Core / LMS",
+              "Cronograma, cuotas e imputaciones",
+              "internal"
+            ],
+            [
+              "Pagos y conciliación",
+              "Efectivo confirmado, no promesa",
+              "internal"
+            ],
+            [
+              "Novedades y atención",
+              "Correcciones y controversias",
+              "review"
+            ]
+          ]
+        ],
+        [
+          "02 · Estado",
+          [
+            [
+              "Saldo y DPD",
+              "Calendario, corte y definiciones",
+              "internal"
+            ],
+            [
+              "Señales tempranas",
+              "Cosecha, comportamiento y cobertura",
+              "internal"
+            ],
+            [
+              "Contacto habilitado",
+              "Canal, límites y estado del cliente",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "03 · Estrategia",
+          [
+            [
+              "Tratamiento de cartera",
+              "Preventivo, servicio o investigación",
+              "internal"
+            ],
+            [
+              "Acuerdos admisibles",
+              "Capacidad, alternativas y autoridad",
+              "review"
+            ],
+            [
+              "Motor de contacto",
+              "Reglas comunes entre campañas",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "04 · Gestión",
+          [
+            [
+              "Atención y cobranza",
+              "No revelar deuda a terceros",
+              "review"
+            ],
+            [
+              "Seguimiento de acuerdo",
+              "Promesa, pago y cumplimiento",
+              "internal"
+            ],
+            [
+              "Recuperación especializada",
+              "Jurídica/garantía según requisitos",
+              "review"
+            ]
+          ]
+        ],
+        [
+          "05 · Resultado",
+          [
+            [
+              "Recuperación neta",
+              "Monto, costo, tiempo y conciliación",
+              "internal"
+            ],
+            [
+              "Cura o nueva gestión",
+              "No tratar acuerdo como pago",
+              "internal"
+            ],
+            [
+              "Riesgo y aprendizaje",
+              "Labels maduras; sesgo y quejas",
+              "internal"
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          10,
+          13
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          13,
+          14
+        ]
+      ]
+    ],
+    [
+      "09-risk-data-models",
+      "09 · Datos, riesgo y ciclo de modelos",
+      "La proyección analítica aprende del ledger; no lo sustituye para autorizar efectos.",
+      [
+        [
+          "01 · Fuentes",
+          [
+            [
+              "LOS, core y pagos",
+              "Eventos y registros de referencia",
+              "internal"
+            ],
+            [
+              "Proveedores habilitados",
+              "Respuestas, cobertura y versiones",
+              "external"
+            ],
+            [
+              "Adjudicación y derechos",
+              "Fraude, mora, reclamos y correcciones",
+              "review"
+            ]
+          ]
+        ],
+        [
+          "02 · Datos",
+          [
+            [
+              "Registro y calidad",
+              "Esquemas, doble fecha y linaje",
+              "internal"
+            ],
+            [
+              "Vault y minimización",
+              "Acceso por tarea y finalidad",
+              "internal"
+            ],
+            [
+              "Snapshots y variables",
+              "Corte, producto, moneda y población",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "03 · Investigación",
+          [
+            [
+              "Entrenamiento / calibración",
+              "Tiempo, persona y red separados",
+              "internal"
+            ],
+            [
+              "Labels y maduración",
+              "Default, fraude y recuperaciones",
+              "internal"
+            ],
+            [
+              "Cartera y provisiones",
+              "Escenarios y metodología aplicable",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "04 · Validación",
+          [
+            [
+              "Benchmark y desempeño",
+              "Calibración, costo y subgrupos",
+              "internal"
+            ],
+            [
+              "Gobierno de liberación",
+              "Validación, aprobación y límites",
+              "review"
+            ],
+            [
+              "Conciliación y estrés",
+              "Saldos, concentración y sensibilidad",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "05 · Operación",
+          [
+            [
+              "Registro de modelos",
+              "Dataset, modelo y política versionados",
+              "internal"
+            ],
+            [
+              "Sombra / canary / rollback",
+              "Responsable y pruebas de efecto",
+              "internal"
+            ],
+            [
+              "Monitoreo y diagnóstico",
+              "Drift, incidentes y pérdida madura",
+              "internal"
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          11,
+          10
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          7,
+          6
+        ]
+      ]
+    ]
+  ]
+}
