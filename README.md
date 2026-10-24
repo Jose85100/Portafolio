@@ -15,6 +15,10 @@ La organización parte de la pregunta científica y el dominio, no de la herrami
 | [05 · Artificial Intelligence & Computational Systems](05-artificial-intelligence-and-computational-systems) | Línea de [ingeniería de datos](05-artificial-intelligence-and-computational-systems/data-engineering), con un [MVP ejecutable de plataforma de datos de riesgo](05-artificial-intelligence-and-computational-systems/data-engineering/risk-data-platform): carga incremental, validaciones, trazabilidad y pruebas. |
 | [06 · Strategy, Innovation & Leadership](06-strategy-innovation-and-leadership) | [15 motores de decisión](06-strategy-innovation-and-leadership) en Python, [venture capital](06-strategy-innovation-and-leadership/venture-capital) y [liderazgo de datos](06-strategy-innovation-and-leadership/data-leadership) (10 notebooks). |
 
+## Legal Tech colombiano
+
+La nueva línea [07 · Legal Tech](07-legal-tech) contiene doce propuestas M0 de RAG jurídico, filtros temporales, validación de citas, agentes y especificaciones de skills para Colombia. Incluye arquitectura, contratos y evaluación propuesta; todavía no hay componentes ejecutables.
+
 ## Revisión semanal
 
 La [revisión del 12–17 de octubre de 2026](reviews/2026-10-12-week/README.md) registra cobertura, desarrollo, resultados y límites. Incluye 35 laboratorios económicos con modelos específicos, ampliación de auditorías y notebooks de sensibilidad para los motores ejecutivos, recuperación durable y núcleo numérico.
