@@ -1,0 +1,1 @@
+{"seeds":80,"calibration_size":499,"test_inliers":2000,"test_outliers":500,"alpha":0.05,"contamination_fraction":0.4,"anomaly_shift":3,"hypothesis":"under low-score contamination, robust mean FPR <=0.055 and baseline minus robust >=0.02","scenarios":["clean","low-score-contamination","understated-bound","high-score-contamination"]}
