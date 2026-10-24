@@ -1,0 +1,17 @@
+scenario,method,kind,mean,se_seeds
+clean,ordinary,inlier,0.05017499999999999,0.0011909169693341771
+clean,ordinary,outlier,0.8487749999999998,0.0024865444860313005
+clean,guard,inlier,0.0309125,0.0008959638311387692
+clean,guard,outlier,0.795425,0.0035589419829458696
+low-score-contamination,ordinary,inlier,0.08346250000000001,0.0018852100703883564
+low-score-contamination,ordinary,outlier,0.8957750000000001,0.00242272828475918
+low-score-contamination,guard,inlier,0.050068749999999995,0.0015505395077300176
+low-score-contamination,guard,outlier,0.8474,0.0032271396591636433
+understated-bound,ordinary,inlier,0.08346250000000001,0.0018852100703883564
+understated-bound,ordinary,outlier,0.8957750000000001,0.00242272828475918
+understated-bound,guard,inlier,0.06763125,0.0017210706427792874
+understated-bound,guard,outlier,0.875275,0.002720350812726882
+high-score-contamination,ordinary,inlier,0.0,0.0
+high-score-contamination,ordinary,outlier,0.0,0.0
+high-score-contamination,guard,inlier,0.0,0.0
+high-score-contamination,guard,outlier,0.0,0.0
