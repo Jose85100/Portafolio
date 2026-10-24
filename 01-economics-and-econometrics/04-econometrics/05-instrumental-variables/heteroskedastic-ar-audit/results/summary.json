@@ -1,0 +1,140 @@
+{
+  "config": {
+    "seed": 20261024,
+    "replications": 2000,
+    "alpha": 0.05,
+    "beta_null": 1.0,
+    "c": 1.0,
+    "hypothesis": "At n1000 heteroskedastic valid exclusion HC3 rejection in [.03,.07], homoskedastic baseline excess >=.05; evaluate rather than force result",
+    "scenarios": [
+      {
+        "name": "IID n100",
+        "n": 100,
+        "hetero": false,
+        "gamma": 0
+      },
+      {
+        "name": "Hetero n100",
+        "n": 100,
+        "hetero": true,
+        "gamma": 0
+      },
+      {
+        "name": "IID n1000",
+        "n": 1000,
+        "hetero": false,
+        "gamma": 0
+      },
+      {
+        "name": "Hetero n1000",
+        "n": 1000,
+        "hetero": true,
+        "gamma": 0
+      },
+      {
+        "name": "Exclusi\u00f3n inv\u00e1lida",
+        "n": 1000,
+        "hetero": true,
+        "gamma": 0.2
+      }
+    ]
+  },
+  "summary": [
+    {
+      "scenario": "IID n100",
+      "rates": [
+        0.048,
+        0.0555,
+        0.0475
+      ],
+      "mc_se": [
+        0.0047799581588126895,
+        0.005119558086397693,
+        0.004756245893559331
+      ],
+      "hc3_minus_f": -0.0005,
+      "paired_se": 0.002958758544738491,
+      "seconds": 1.9210769479999499,
+      "python_peak_bytes": 1214809
+    },
+    {
+      "scenario": "Hetero n100",
+      "rates": [
+        0.24,
+        0.0665,
+        0.059
+      ],
+      "mc_se": [
+        0.009549869109050658,
+        0.005571254347092763,
+        0.0052687284993630104
+      ],
+      "hc3_minus_f": -0.181,
+      "paired_se": 0.008611421386109527,
+      "seconds": 2.0487074010000015,
+      "python_peak_bytes": 1016309
+    },
+    {
+      "scenario": "IID n1000",
+      "rates": [
+        0.055,
+        0.0555,
+        0.0555
+      ],
+      "mc_se": [
+        0.005097793640389928,
+        0.005119558086397693,
+        0.005119558086397693
+      ],
+      "hc3_minus_f": 0.0005,
+      "paired_se": 0.0015003334630175136,
+      "seconds": 2.0211934300000394,
+      "python_peak_bytes": 1130209
+    },
+    {
+      "scenario": "Hetero n1000",
+      "rates": [
+        0.239,
+        0.0555,
+        0.0555
+      ],
+      "mc_se": [
+        0.009536220425304776,
+        0.005119558086397693,
+        0.005119558086397693
+      ],
+      "hc3_minus_f": -0.1835,
+      "paired_se": 0.008657444812145074,
+      "seconds": 2.0738845580000316,
+      "python_peak_bytes": 1143755
+    },
+    {
+      "scenario": "Exclusi\u00f3n inv\u00e1lida",
+      "rates": [
+        0.9965,
+        0.9625,
+        0.9605
+      ],
+      "mc_se": [
+        0.0013205585939290896,
+        0.004248161366991606,
+        0.004355441998236229
+      ],
+      "hc3_minus_f": -0.036,
+      "paired_se": 0.004166614973833084,
+      "seconds": 2.2077400850000117,
+      "python_peak_bytes": 1161812
+    }
+  ],
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "hardware": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "cpu": "AMD EPYC 9V74 80-Core Processor",
+  "data_sha256": "0c9fe1b0761d1bcfc51e358ecc3310802a54fdffbae56256f67efa7cc6c50524",
+  "source_sha256": "c2b7e57ef24c79c257005b7b154274e98ba1b6b908b81921887f023388477d33",
+  "timing_note": "Combined DGP and3 tests with tracemalloc; Python allocations, not RSS; no production cost claim."
+}
