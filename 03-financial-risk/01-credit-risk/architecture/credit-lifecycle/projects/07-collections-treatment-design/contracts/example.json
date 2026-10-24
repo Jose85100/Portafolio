@@ -1,0 +1,11 @@
+{
+  "case_id": "synthetic-collections-001",
+  "loan_id": "synthetic-loan-001",
+  "contact_eligibility": "blocked",
+  "reason_codes": [
+    "contact_limit_reached"
+  ],
+  "proposed_action": "no_contact",
+  "horizon_days": 30,
+  "policy_version": "design-v1"
+}

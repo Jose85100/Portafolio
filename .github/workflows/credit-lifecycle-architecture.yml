@@ -25,3 +25,11 @@ jobs:
           python -m ruff check "$MODULE/build_diagrams.py"
           python "$MODULE/build_diagrams.py"
           git diff --exit-code -- "$MODULE/diagrams"
+      - name: Validate project inventory and defensive overlays
+        env:
+          MODULE: 03-financial-risk/01-credit-risk/architecture/credit-lifecycle
+        run: |
+          python -m ruff check "$MODULE/validate_program.py" "$MODULE/defense-layers/build_diagrams.py"
+          python "$MODULE/validate_program.py"
+          python "$MODULE/defense-layers/build_diagrams.py"
+          git diff --exit-code -- "$MODULE/defense-layers/diagrams"

@@ -1,0 +1,13 @@
+{
+  "signal_id": "synthetic-purpose-001",
+  "signal_name": "device_location",
+  "requested_use": "credit_pd",
+  "permitted_uses": [
+    "fraud_context"
+  ],
+  "decision": "denied",
+  "reason_codes": [
+    "purpose_not_allowed"
+  ],
+  "policy_version": "design-v1"
+}

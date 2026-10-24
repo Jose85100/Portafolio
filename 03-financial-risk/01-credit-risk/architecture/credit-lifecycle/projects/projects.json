@@ -1,0 +1,1331 @@
+{
+  "cutoff_local": "2026-10-23 America/Bogota",
+  "scope": "10 S1 formulations; 30 proposed ideas; 40 proposed adversarial scenarios. No experiment executed or vulnerability verified.",
+  "projects": [
+    {
+      "slug": "01-geo-device-context",
+      "title": "Contexto geográfico y dispositivo bajo incertidumbre",
+      "question": "¿Cuándo una discrepancia de ubicación añade información verificable y cuándo solo refleja la imprecisión de la red?",
+      "boundary": "Posee calidad, incertidumbre y estabilidad de geoseñales. No implementa otra prueba de vida, otra identidad civil ni el clasificador de fraude existente.",
+      "unit": "Par de eventos de una sesión/persona sintética, con método y fechas de disponibilidad.",
+      "baseline": "Regla de distancia entre centros con abstención por faltantes.",
+      "challenger": "Comparación que incorpora radios, método, antigüedad y tipo de red; score contextual separado de la probabilidad de fraude.",
+      "equation": "d_{min}=\\max(0,d-r_1-r_2),\\qquad v_{min}=d_{min}/\\Delta t,\\quad \\Delta t>0.",
+      "symbols": "d es distancia geodésica en km, r son radios en km y el tiempo se mide en horas. Es una heurística geométrica; el radio de proveedor no es una cota física garantizada.",
+      "inputs": [
+        "IP/contexto de red sintéticos y versión de enriquecimiento",
+        "Posiciones generadas con errores controlados, método y radio",
+        "Resultado de permiso, antigüedad de evidencia e ID de instalación con alcance"
+      ],
+      "output": "ContextAssessment: comparable/inconclusive, discrepancia, razones, antigüedad y fuentes; nunca fraude confirmado.",
+      "example": {
+        "case_id": "synthetic-geo-001",
+        "cutoff": "2026-10-23T20:00:00Z",
+        "signal_status": "inconclusive",
+        "method_pair": [
+          "geoip",
+          "device_api"
+        ],
+        "radius_km": [
+          80,
+          null
+        ],
+        "delta_hours": 2,
+        "assessment": null,
+        "reason_codes": [
+          "missing_accuracy"
+        ],
+        "policy_version": "design-v1"
+      },
+      "diagram": "05-signal-capture",
+      "reuse": [
+        "03-financial-risk/01-credit-risk/fraud-and-anomaly-research/ai-enabled-fraud-defense/",
+        "03-financial-risk/01-credit-risk/fraud-and-anomaly-research/02-temporal-application-graphs/"
+      ],
+      "sources": [
+        "maxmind",
+        "maxmind-vpn",
+        "fingerprint",
+        "w3c"
+      ],
+      "risks": [
+        "IP compartida o cambiante: agrupar evaluación por red y persona, no por evento aislado.",
+        "La ausencia de permiso o radio produce estado explícito; no coordenada cero ni etiqueta adversa."
+      ],
+      "ideas": [
+        {
+          "id": "GEO-01",
+          "title": "Radios frente a distancia ingenua",
+          "hypothesis": "Incorporar precisión reduce alertas espurias en traslados legítimos sin borrar discrepancias grandes.",
+          "formula": "\\Delta FPR=FPR_{centros}-FPR_{radios}",
+          "design": "Generar trayectorias legítimas y eventos incompatibles en un plano/geodesia conocido; variar error, método, radio y muestreo. Comparar a igual presupuesto de verificación, conservando familias de trayectorias fuera de desarrollo.",
+          "metrics": "Falsas alertas, poder por tipo de discrepancia, abstención y costo por caso; bootstrap por trayectoria.",
+          "falsification": "Descartar si la mejora desaparece al mismo presupuesto o si la regla solo se beneficia de radios artificialmente correctos.",
+          "deliverable": "Notebook futuro con generador, curvas de error y contraejemplos de radios mal especificados.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "GEO-A1",
+            "GEO-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        },
+        {
+          "id": "GEO-02",
+          "title": "Antigüedad y cambio de método",
+          "hypothesis": "Mezclar ubicaciones viejas o métodos heterogéneos puede explicar una discrepancia antes que un desplazamiento real.",
+          "formula": "age=t_{cutoff}-t_{medicion}",
+          "design": "Factorial de antigüedad, cambio IP/API y fuente actualizada. Fijar un criterio de vigencia por finalidad antes de test; introducir retrasos de disponibilidad y comparar con regla sin caducidad.",
+          "metrics": "Errores por cohorte de edad/método, fracción comparable y volumen de nueva evidencia requerida.",
+          "falsification": "No promover la regla si necesita un umbral elegido con el test o trata un radio desconocido como cero.",
+          "deliverable": "Tabla de estados y benchmark de caducidad con timestamps sintéticos.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "GEO-A2",
+            "GEO-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        },
+        {
+          "id": "GEO-03",
+          "title": "Dispositivo compartido y restablecido",
+          "hypothesis": "Un modelo de continuidad explícita evita atribuir a una misma persona todos los eventos de un equipo.",
+          "formula": "N_e(t)=\\sum_j1[e\\in caso_j,\\ event_j<t,\\ available_j\\le t]",
+          "design": "Simular hogares, oficinas, equipos restablecidos y granjas controladas; deduplicar solicitudes. Comparar IP sola, instalación sola y combinación con tipos de red, con partición por componente y tiempo.",
+          "metrics": "Falsos vínculos, vínculos perdidos, carga de revisión y efecto incremental de cada señal.",
+          "falsification": "Descartar continuidad como identidad si pequeños resets o redes compartidas producen asociaciones masivas equivocadas.",
+          "deliverable": "Corpus de eventos y evaluación de vinculación; sin rastreo de personas reales.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "GEO-A3",
+            "GEO-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        }
+      ],
+      "priority": "P1",
+      "dependencies": [
+        "09-purpose-bound-signal-governance"
+      ],
+      "status": "S1",
+      "implemented": false,
+      "security_cases": [
+        {
+          "id": "GEO-A1",
+          "scenario": "Contexto de red que aparenta normalidad",
+          "weak_assumption": "El origen/IP/geolocalización coincide con el perfil aunque la identidad reclamada no se haya verificado.",
+          "control": "La coherencia geográfica solo añade contexto; no permite identity_verified.",
+          "safe_fixture": "Trayectorias y redes ficticias con identidad pendiente; la salida conserva alcance limitado."
+        },
+        {
+          "id": "GEO-A2",
+          "scenario": "Ubicación declarada o incierta tratada como exacta",
+          "weak_assumption": "Una posición de cliente o radio desconocido se usa como evidencia fuerte.",
+          "control": "Método, confianza y antigüedad obligatorios; abstención ante comparación inválida.",
+          "safe_fixture": "Contrastar estimaciones con radio ausente, grande y mal especificado; no hay geolocalización real."
+        },
+        {
+          "id": "GEO-A3",
+          "scenario": "Vínculo falso por equipo o línea compartidos",
+          "weak_assumption": "Un mismo dispositivo/teléfono se interpreta como una única persona o una única voluntad.",
+          "control": "Separar entidad técnica, identidad y relación autorizada; investigar vínculos con contexto.",
+          "safe_fixture": "Hogar compartido y teléfono controlado por actor distinto en corpus sintético."
+        },
+        {
+          "id": "GEO-A4",
+          "scenario": "Sondeo del score contextual",
+          "weak_assumption": "Intentos repetidos pueden mostrar inestabilidad o revelar reglas de un motor.",
+          "control": "Presupuesto de consultas de laboratorio, monitoreo de intentos y evaluación con escenarios reservados.",
+          "safe_fixture": "Medir consistencia y cambio de acción ante variaciones controladas; no extraer modelos ni probar servicios ajenos."
+        }
+      ]
+    },
+    {
+      "slug": "02-provider-orchestration",
+      "title": "Orquestación de proveedores, costo y resiliencia",
+      "question": "¿Qué verificación conviene consultar a continuación cuando hay costo, latencia, fallos compartidos y evidencia incompleta?",
+      "boundary": "Posee plan de consultas, cobertura y política de degradación. Reutiliza el experimento de dependencia/colas y no copia modelos propietarios ni el MILP de acciones antifraude.",
+      "unit": "Caso y etapa de consulta; historia de respuestas disponibles y recursos restantes.",
+      "baseline": "Consultar secuencia fija de fuentes con timeout y ruta pendiente explícita.",
+      "challenger": "Plan adaptativo por costo esperado/valor de información con escenarios de dependencia y presupuesto; sin presuponer independencia.",
+      "equation": "V(h,b)=\\min\\{C_{stop}(h),\\min_{a\\in Q(h,b)}[c_a+\\mathbb E V(h\\oplus Y_a,b-r_a)]\\}.",
+      "symbols": "h es historia de evidencia disponible; b presupuesto; Q consultas admisibles; Y respuesta, incluyendo unavailable; r_a>0 consumo. C_stop(h) es el costo mínimo esperado de una acción terminal admisible. Si Q está vacío, V=C_stop. Presupuesto finito y consumo mínimo positivo acotan el número de consultas; las distribuciones/costos son supuestos hasta estimación.",
+      "inputs": [
+        "Plan y cobertura de cada fuente por producto/canal",
+        "Respuestas sintéticas con latencia, versión, timeout y dependencia",
+        "Costos por intento/reintento y capacidad de revisión supuestos"
+      ],
+      "output": "QueryPlan/ProviderOutcome: fuente, deadline, idempotency_key, estado, cobertura y motivo de siguiente acción.",
+      "example": {
+        "case_id": "synthetic-provider-001",
+        "request_id": "req-design-001",
+        "provider_id": "candidate-a",
+        "attempt": 1,
+        "deadline_ms": 1500,
+        "status": "unavailable",
+        "score": null,
+        "next_action": "defer",
+        "plan_version": "design-v1"
+      },
+      "diagram": "03-event-workflow",
+      "reuse": [
+        "03-financial-risk/01-credit-risk/fraud-and-anomaly-research/ai-enabled-fraud-defense/notebook.ipynb",
+        "06-strategy-innovation-and-leadership/20-ai-innovation-productivity-leadership/innovation-evsi-gate/"
+      ],
+      "sources": [
+        "seon",
+        "persona",
+        "provenir"
+      ],
+      "risks": [
+        "Un adaptador interoperable no vuelve intercambiables scores o coberturas.",
+        "Un proveedor caído puede compartir infraestructura o fuente con el fallback."
+      ],
+      "ideas": [
+        {
+          "id": "PROV-01",
+          "title": "Orden de consulta por información incremental",
+          "hypothesis": "Una segunda consulta puede no compensar si repite evidencia ya disponible.",
+          "formula": "VOI_a=C_{sin\\ consulta}-\\mathbb E[C_{con\\ Y_a}]-c_a",
+          "design": "Problema pequeño de dos/tres fuentes con probabilidades conocidas en laboratorio; enumerar políticas admisibles como oráculo y comparar orden fijo/adaptativo al mismo costo, latencia y menú terminal.",
+          "metrics": "Costo esperado, regret frente al oráculo, consultas por caso y uso de revisión.",
+          "falsification": "Descartar ventaja si depende de probabilidades oráculo incompatibles con la población o de excluir los casos sin cobertura.",
+          "deliverable": "Prototipo futuro con enumeración pequeña y curvas de sensibilidad a probabilidades mal especificadas.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "PROV-A1",
+            "PROV-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        },
+        {
+          "id": "PROV-02",
+          "title": "Dependencia y caída compartida",
+          "hypothesis": "Dos fuentes comercialmente distintas pueden aportar menos resiliencia de la que su disponibilidad marginal sugiere.",
+          "formula": "P(U_A,U_B)=P(U_A)P(U_B\\mid U_A)",
+          "design": "Extender el notebook existente con un factor de caída compartida, límite de reintentos y costos de espera; conservar solicitudes entre políticas y reportar pendientes manuales y externos.",
+          "metrics": "Cobertura efectiva, pérdida/costo bajo supuestos, picos de cola, espera y llamadas facturables.",
+          "falsification": "No llamar robusta a una ruta que solo funciona con capacidad manual o llamadas ilimitadas.",
+          "deliverable": "Matriz de escenarios y replay de fallos controlados; datos sintéticos.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "PROV-A2",
+            "PROV-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        },
+        {
+          "id": "PROV-03",
+          "title": "Cambio silencioso de versión/cobertura",
+          "hypothesis": "El comportamiento del proveedor puede cambiar aunque el esquema de API no cambie.",
+          "formula": "\\Delta_c=P(covered\\mid version_2,c)-P(covered\\mid version_1,c)",
+          "design": "Replay pareado de un corpus congelado con dos versiones simuladas y poblaciones distintas; comparar cobertura, razones, semántica del score y calibración sin usar test para reajustar.",
+          "metrics": "Diferencia por canal, calidad de razones, costo incremental y casos no reproducibles.",
+          "falsification": "Bloquear una conclusión de mejora si las poblaciones o el concepto de score dejaron de ser comparables.",
+          "deliverable": "Ficha de aceptación de versión y reporte de shadow por cohortes.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "PROV-A3",
+            "PROV-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        }
+      ],
+      "priority": "P1",
+      "dependencies": [
+        "09-purpose-bound-signal-governance"
+      ],
+      "status": "S1",
+      "implemented": false,
+      "security_cases": [
+        {
+          "id": "PROV-A1",
+          "scenario": "Teléfono preparado para una identidad reclamada",
+          "weak_assumption": "Posesión de número/OTP se promueve a identidad civil por una cadena de proveedores.",
+          "control": "Tipar phone_possession_verified separado de identity_link_verified; la evidencia insuficiente sigue pendiente.",
+          "safe_fixture": "Proveedor simulado confirma posesión pero no vínculo; oferta no avanza por ese solo pase."
+        },
+        {
+          "id": "PROV-A2",
+          "scenario": "Aprobación por degradación o fuente ausente",
+          "weak_assumption": "Un timeout o falta de cobertura elimina controles necesarios.",
+          "control": "Estado unavailable distinto de passed; plan alternativo autorizado con capacidad real.",
+          "safe_fixture": "Forzar caída individual/compartida y verificar que no surja aprobación implícita."
+        },
+        {
+          "id": "PROV-A3",
+          "scenario": "Respuesta duplicada o no confiable",
+          "weak_assumption": "Un resultado se atribuye a otro caso, fuente, versión o sesión.",
+          "control": "Autenticar el canal/callback, correlacionar caso/sesión y rechazar semántica desconocida.",
+          "safe_fixture": "Eventos ficticios duplicados, antiguos y con case_id diferente; sin llamadas a proveedores."
+        },
+        {
+          "id": "PROV-A4",
+          "scenario": "Independencia falsa de varias verificaciones",
+          "weak_assumption": "Tres señales favorables dependen del mismo teléfono, documento o fuente equivocada.",
+          "control": "Linaje por hecho verificado y análisis de fallo conjunto; no contar evidencia repetida como independiente.",
+          "safe_fixture": "Mismo atributo falso alimenta tres respuestas simuladas; medir si cambia indebidamente la conclusión."
+        }
+      ]
+    },
+    {
+      "slug": "03-credit-offer-policy",
+      "title": "Ofertas de crédito bajo capacidad y exposición",
+      "question": "¿Cómo elegir monto, plazo y condiciones entre ofertas admisibles considerando flujo de pago, incertidumbre y exposición concurrente?",
+      "boundary": "Posee selección de oferta y restricciones de cartera por caso. Reutiliza scorecard/PD y límites existentes; no crea un score de fraude ni implementa normativa de tasas o capital.",
+      "unit": "Solicitud y menú discreto de ofertas con horizonte/moneda homogéneos.",
+      "baseline": "Reglas de elegibilidad, capacidad y un menú fijo de ofertas.",
+      "challenger": "Optimización de valor/costo sobre el mismo menú con escenarios de ingreso, PD/severidad y límites reservados.",
+      "equation": "\\max_x\\sum_{i,a}NPV_{ia}x_{ia},\\quad\\sum_a x_{ia}\\le1,\\quad\\sum_{i,a}EAD_{ia}x_{ia}\\le B,\\quad x_{ia}\\in\\{0,1\\}.",
+      "symbols": "i caso, a oferta admisible, B presupuesto de exposición. La opción sin oferta debe definirse con sus consecuencias y estados; NPV requiere costos y flujos coherentes, sin doble restar pérdidas ya incluidas.",
+      "inputs": [
+        "Ingreso/deuda verificados y calidad del respaldo",
+        "Predicciones temporales versionadas y límites por producto",
+        "Menú de ofertas, precios supuestos, escenarios y reserva vigente"
+      ],
+      "output": "OfferDecision: oferta o revisión, restricciones vinculantes, versión y fecha de vencimiento; distinta de autorización de desembolso.",
+      "example": {
+        "case_id": "synthetic-offer-001",
+        "currency": "COP",
+        "selected_offer_id": null,
+        "decision_status": "review",
+        "reason_codes": [
+          "income_evidence_incomplete"
+        ],
+        "snapshot_id": "snapshot-design-001",
+        "policy_version": "design-v1",
+        "expires_at": null
+      },
+      "diagram": "06-credit-decision",
+      "reuse": [
+        "03-financial-risk/01-credit-risk/credit-risk-products/scorecard-logistico-woe/",
+        "03-financial-risk/01-credit-risk/credit-portfolio-strategy/monitor-de-limites-de-apetito/"
+      ],
+      "sources": [
+        "fico",
+        "provenir",
+        "tu",
+        "experian"
+      ],
+      "risks": [
+        "Datos de aprobados no identifican directamente resultados de todos los solicitantes rechazados.",
+        "Precio, elegibilidad y límites requieren reglas institucionales; el optimum del laboratorio no aprueba una oferta real."
+      ],
+      "ideas": [
+        {
+          "id": "OFFER-01",
+          "title": "Menú fijo frente a asignación bajo presupuesto",
+          "hypothesis": "Una política optimizada puede redistribuir exposición con el mismo menú y presupuesto, aunque no mejore la aprobación.",
+          "formula": "\\Delta NPV=NPV_{asignacion}-NPV_{reglas}",
+          "design": "Generar lotes pequeños con ofertas y restricciones; contrastar solver futuro con enumeración independiente. Mantener el mismo presupuesto, elegibilidad y costo de revisión.",
+          "metrics": "Factibilidad, reconciliación de objetivo, exposición, NPV supuesto y distribución de ofertas.",
+          "falsification": "Descartar si la mejora proviene de relajar elegibilidad o comparar menús/costos diferentes.",
+          "deliverable": "Oráculo de enumeración y benchmark de asignación por exposición.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "OFFER-A1",
+            "OFFER-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        },
+        {
+          "id": "OFFER-02",
+          "title": "Ingreso irregular y estrés de capacidad",
+          "hypothesis": "Una decisión basada en un solo promedio puede ser frágil ante estacionalidad o gasto esencial.",
+          "formula": "F_{libre,s}=I_s-G_s-D_{existente}-cuota_a",
+          "design": "Cohortes sintéticas de ingreso estable/estacional, omisiones y deuda concurrente; comparar promedio, cuantiles y escenarios adversos con política congelada.",
+          "metrics": "Fracción de escenarios con flujo negativo, cobertura, abstención y costo/beneficio condicionado a supuestos.",
+          "falsification": "No presentar un cuantil de ingreso como garantía de capacidad ni elegir retrospectivamente el escenario favorable.",
+          "deliverable": "Laboratorio de ofertas y tabla de sensibilidad por tipo de ingreso.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "OFFER-A2",
+            "OFFER-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        },
+        {
+          "id": "OFFER-03",
+          "title": "Oferta concurrente y reserva",
+          "hypothesis": "Dos ofertas individualmente factibles pueden sobreconsumir exposición si comparten un límite no reservado.",
+          "formula": "used+reserved+new\\_reservation\\le limit",
+          "design": "Intercalar dos solicitudes, vencimiento y cancelación; comparar lectura sin reserva, reserva atómica y liberación tras estado de pago conocido.",
+          "metrics": "Sobreasignación, reservas huérfanas, espera y cantidad de ofertas inconsistentes.",
+          "falsification": "Una política queda descartada ante una secuencia admitida que exceda el límite o libere una reserva ya liquidada.",
+          "deliverable": "Corpus de intercalados y especificación de invariantes de reserva.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "OFFER-A3",
+            "OFFER-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        }
+      ],
+      "priority": "P2",
+      "dependencies": [
+        "06-servicing-ledger-quality",
+        "09-purpose-bound-signal-governance"
+      ],
+      "status": "S1",
+      "implemented": false,
+      "security_cases": [
+        {
+          "id": "OFFER-A1",
+          "scenario": "Entrada económica alterada",
+          "weak_assumption": "Ingreso, gasto u obligación incompleta cambia el menú sin respaldo.",
+          "control": "Estado declarado/verificado, reconciliación y política de faltantes; no un pase antifraude como solvencia.",
+          "safe_fixture": "Contrastes con préstamos recibidos como supuesto ingreso y deuda omitida en datos ficticios."
+        },
+        {
+          "id": "OFFER-A2",
+          "scenario": "Sondeo de condiciones de oferta",
+          "weak_assumption": "Repetir solicitudes con pequeñas variaciones puede explotar discontinuidades o exposición no compartida.",
+          "control": "Consistencia de política y reservas por entidad; evaluación de sensibilidad y repetición.",
+          "safe_fixture": "Batería acotada de casos sintéticos alrededor de discontinuidades, con escenarios de test reservados."
+        },
+        {
+          "id": "OFFER-A3",
+          "scenario": "Sustitución de oferta o identificador",
+          "weak_assumption": "Una aceptación de términos se usa para ejecutar otros.",
+          "control": "Vínculo de versión exacta y nueva evaluación/aceptación conforme a reglas aplicables.",
+          "safe_fixture": "Cambiar referencia de monto/plazo/moneda entre oferta y ejecución de laboratorio."
+        },
+        {
+          "id": "OFFER-A4",
+          "scenario": "Excepción humana sin atribución",
+          "weak_assumption": "Una solicitud obtiene condiciones mediante intervención no autorizada o evidencia aparente.",
+          "control": "Atribución, razón, doble control donde aplique e historial inmutable.",
+          "safe_fixture": "Roles simulados autorizados/no autorizados y revisión ciega de evidencia inconsistente."
+        }
+      ]
+    },
+    {
+      "slug": "04-durable-origination-workflow",
+      "title": "Workflow durable de originación y excepciones",
+      "question": "¿Cómo conservar un estado de solicitud correcto ante callbacks duplicados, evidencia tardía, vencimientos y decisiones humanas?",
+      "boundary": "Posee estados/transiciones de solicitud y precondiciones de etapa. Reutiliza runtime/checkpoints de IA; no duplica el LOS como producto ni mezcla estados de solicitud y pago.",
+      "unit": "Agregado solicitud con versión y comandos autorizados.",
+      "baseline": "Máquina de estados explícita con registro de eventos e idempotencia de comando.",
+      "challenger": "Workflow durable con outbox, historial de transición, deadlines y tareas humanas versionadas.",
+      "equation": "s_{t+1}=T(s_t,e_t)\\quad\\text{si}\\quad allowed(s_t,e_t,authority,version,cutoff).",
+      "symbols": "s es estado; e evento; T transición parcial. Una transición inválida queda rechazada o en revisión, sin avanzar implícitamente. No se promete exactamente una entrega entre organizaciones.",
+      "inputs": [
+        "Estado/versionado de solicitud, oferta y condiciones",
+        "Eventos con event_id, disponibilidad y autoridad",
+        "Callbacks, comandos, decisiones humanas y plazos sintéticos"
+      ],
+      "output": "TransitionRecord: estado previo/nuevo, precondiciones, actor, evento, versión y resultado del comando.",
+      "example": {
+        "case_id": "synthetic-workflow-001",
+        "aggregate_version": 4,
+        "state": "evidence_pending",
+        "event_id": "evt-design-001",
+        "command": "issue_offer",
+        "transition_status": "rejected",
+        "reason_codes": [
+          "evidence_not_ready"
+        ],
+        "policy_version": "design-v1"
+      },
+      "diagram": "03-event-workflow",
+      "reuse": [
+        "05-artificial-intelligence-and-computational-systems/10-ai-orchestration-engineering/06-fault-tolerant-ai-execution-recovery/mvp-durable-checkpoints/",
+        "05-artificial-intelligence-and-computational-systems/04-agentic-ai-and-multi-agent-systems/agent-runtime-reliability/"
+      ],
+      "sources": [
+        "persona",
+        "provenir"
+      ],
+      "risks": [
+        "Un callback legítimo puede llegar tarde y no habilitar una oferta vencida.",
+        "Una intervención humana necesita atribución y evidencia; no un cambio manual opaco en la base."
+      ],
+      "ideas": [
+        {
+          "id": "WF-01",
+          "title": "Callbacks fuera de orden y duplicados",
+          "hypothesis": "Un guard de versión evita avanzar por eventos ya consumidos o semánticamente obsoletos.",
+          "formula": "T(T(s,e),e)=T(s,e)\\quad\\text{para evento idempotente}",
+          "design": "Enumerar permutaciones pequeñas de verificación, rechazo técnico, callback y expiración; usar una máquina de estados de referencia independiente.",
+          "metrics": "Transiciones inválidas, resultados finales divergentes, duplicados consumidos y eventos pendientes.",
+          "falsification": "Descartar si un orden admitido permite oferta sin evidencia vigente o efecto duplicado.",
+          "deliverable": "Tabla de transición y corpus de permutaciones para un prototipo futuro.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "WF-A1",
+            "WF-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        },
+        {
+          "id": "WF-02",
+          "title": "Fallo entre estado y publicación",
+          "hypothesis": "Registrar estado sin evento, o evento sin estado, puede dejar el proceso inconsistente.",
+          "formula": "commit(state,outbox)\\in\\{both,neither\\}",
+          "design": "Inyectar fallos antes/después del commit y de la publicación; comparar publicación directa con outbox transaccional e idempotencia del consumidor.",
+          "metrics": "Eventos perdidos, duplicados inocuos, recuperación y decisiones sin registro de causa.",
+          "falsification": "No aceptar el diseño si requiere que dos commits remotos sean atómicos por suposición.",
+          "deliverable": "Matriz de puntos de caída y replay de recuperación.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "WF-A2",
+            "WF-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        },
+        {
+          "id": "WF-03",
+          "title": "Revisión humana con evidencia nueva",
+          "hypothesis": "Una excepción solo es reproducible si conserva evidencia, atribución y vigencia.",
+          "formula": "valid\\_override=authorized\\land evidence\\_linked\\land version\\_current",
+          "design": "Escenarios con analista autorizado/no autorizado, oferta modificada, evidencia posterior y tarea vencida; separar nuevas decisiones de reescritura del historial.",
+          "metrics": "Overrides explicables, bloqueos correctos, latencia de tareas y estados abandonados.",
+          "falsification": "Cualquier override sin autoridad o sobre términos no aceptados invalida el flujo.",
+          "deliverable": "Contrato de tarea humana y reporte de trazabilidad de excepciones.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "WF-A3",
+            "WF-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        }
+      ],
+      "priority": "P1",
+      "dependencies": [
+        "09-purpose-bound-signal-governance",
+        "10-formalization-collateral"
+      ],
+      "status": "S1",
+      "implemented": false,
+      "security_cases": [
+        {
+          "id": "WF-A1",
+          "scenario": "Reutilización de verificación en otro expediente",
+          "weak_assumption": "Un pase KYC/documental se traslada a otra solicitud, persona o sesión.",
+          "control": "Binding de evidencia a sujeto/caso/sesión y vigencia; referencias verificadas.",
+          "safe_fixture": "Referencia de caso A llega al caso B ficticio; no debe cumplir su condición."
+        },
+        {
+          "id": "WF-A2",
+          "scenario": "Evento tardío reabre una etapa vencida",
+          "weak_assumption": "Una confirmación posterior habilita oferta o firma ya no vigentes.",
+          "control": "Guard de estado/versión/deadline; decisión nueva en vez de reescribir el pasado.",
+          "safe_fixture": "Permutar aprobación, vencimiento y callback con reloj sintético."
+        },
+        {
+          "id": "WF-A3",
+          "scenario": "Escalada mediante soporte o revisión",
+          "weak_assumption": "Un actor presiona para saltar pasos o cambiar teléfono/cuenta sin nueva evidencia.",
+          "control": "Ruta de recuperación con atribución y precondiciones; no equivaler urgencia con autoridad.",
+          "safe_fixture": "Guion ficticio para revisión de escritorio y comandos de rol sin privilegio; no contacto a empleados reales."
+        },
+        {
+          "id": "WF-A4",
+          "scenario": "Duplicados y carreras",
+          "weak_assumption": "Dos comandos válidos por separado disparan efectos incompatibles.",
+          "control": "Control de versión e idempotencia transaccional por agregado.",
+          "safe_fixture": "Intercalados pequeños de comandos y comparación con máquina de estados de referencia."
+        }
+      ]
+    },
+    {
+      "slug": "05-disbursement-reconciliation",
+      "title": "Desembolso idempotente y conciliación de efectos",
+      "question": "¿Cómo evitar doble desembolso y reconstruir el estado correcto cuando la respuesta del riel es incierta?",
+      "boundary": "Posee intención, clave de efecto y conciliación de pago. Reutiliza las precondiciones de crédito; no implementa un riel bancario ni afirma reversibilidad de todo pago.",
+      "unit": "Intención de desembolso y referencia de efecto por obligación.",
+      "baseline": "Registro durable de intención, clave única y consulta ante timeout.",
+      "challenger": "Coordinación de reserva, intención, confirmación y ledger con replay de fallos y conciliación por referencia.",
+      "equation": "\\#\\{effect:\\ effect.idempotency\\_key=k,\\ status=settled\\}\\le1.",
+      "symbols": "La invariante se exige por operación autorizada. Cumplirla requiere semántica del riel y control durable; no basta mandar un UUID sin contrato de idempotencia/consulta.",
+      "inputs": [
+        "Autorización/condiciones vigentes y cuenta destino sintética",
+        "Reserva, clave de intención y respuestas simuladas del riel",
+        "Confirmación/devolución y asientos de ledger reconciliables"
+      ],
+      "output": "DisbursementState: pending/unknown/confirmed/rejected/returned con referencia, reserva y evidencia; un timeout no crea otra intención.",
+      "example": {
+        "intent_id": "synthetic-intent-001",
+        "loan_id": "synthetic-loan-001",
+        "idempotency_key": "design-effect-001",
+        "currency": "COP",
+        "amount": 1000000,
+        "state": "unknown",
+        "provider_reference": null,
+        "next_action": "query_status",
+        "reservation_id": "synthetic-res-001"
+      },
+      "diagram": "07-disbursement",
+      "reuse": [
+        "03-financial-risk/01-credit-risk/contracts/",
+        "03-financial-risk/01-credit-risk/database/"
+      ],
+      "sources": [
+        "ach",
+        "mambu",
+        "temenos"
+      ],
+      "risks": [
+        "El simulador debe representar liquidado aunque se pierda la respuesta; asumir que timeout es fallo elimina el caso difícil.",
+        "No borrar asientos ni liberar exposición por un estado incierto."
+      ],
+      "ideas": [
+        {
+          "id": "PAY-01",
+          "title": "Timeout después de liquidación",
+          "hypothesis": "Consultar la misma operación antes de reenviar reduce dobles efectos frente a reintentar como operación nueva.",
+          "formula": "double\\_rate=operaciones\\ con\\ mas\\ de\\ un\\ settled/operaciones",
+          "design": "Emular aceptado, liquidado, respuesta perdida, callback duplicado y rechazo definitivo; comparar políticas sobre los mismos eventos y enumerar secuencias pequeñas.",
+          "metrics": "Dobles efectos, pendientes por edad, consultas y tiempo hasta estado conciliado.",
+          "falsification": "Cualquier doble liquidación admisible descarta la política; cero en un corpus no demuestra seguridad universal.",
+          "deliverable": "Emulador futuro de riel y un oráculo de estado por intención.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "PAY-A1",
+            "PAY-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        },
+        {
+          "id": "PAY-02",
+          "title": "Reserva y liberación coherentes",
+          "hypothesis": "Liberar por timeout puede permitir que otro préstamo consuma un cupo ya usado por un pago liquidado.",
+          "formula": "reservation\\_release\\Rightarrow known\\_terminal\\_state\\land applicable\\_rule",
+          "design": "Intercalar reserva, pago desconocido, segunda solicitud, confirmación tardía y devolución. Las reglas de retorno/corrección se mantienen separadas del primer efecto.",
+          "metrics": "Exposición sobreasignada, reservas huérfanas y conciliación de saldo/reserva.",
+          "falsification": "Descartar si una confirmación tardía deja exposición por encima del límite debido a una liberación previa.",
+          "deliverable": "Modelo de referencia de reservas e intercalados adversariales.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "PAY-A2",
+            "PAY-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        },
+        {
+          "id": "PAY-03",
+          "title": "Conciliación por referencia y valor",
+          "hypothesis": "Conciliar solo por total agregado puede ocultar errores compensados entre operaciones.",
+          "formula": "\\Delta_k=ledger_k-settlement_k",
+          "design": "Inyectar duplicación, ausencia, referencia cruzada, moneda incorrecta y dos errores de signos opuestos. Comparar agregado, referencia y referencia+moneda+valor.",
+          "metrics": "Errores ocultos, falsas discrepancias, partidas pendientes y tiempo de resolución.",
+          "falsification": "No aceptar el agregado como evidencia suficiente si detecta total cero con partidas equivocadas.",
+          "deliverable": "Corpus conciliable y reporte de diferencias por operación, sin dinero real.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "PAY-A3",
+            "PAY-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        }
+      ],
+      "priority": "P1",
+      "dependencies": [
+        "04-durable-origination-workflow",
+        "10-formalization-collateral"
+      ],
+      "status": "S1",
+      "implemented": false,
+      "security_cases": [
+        {
+          "id": "PAY-A1",
+          "scenario": "Cambio de cuenta destino después del control",
+          "weak_assumption": "La identidad se verifica pero los fondos se redirigen a un destino no vinculado.",
+          "control": "Revalidar cambios y enlazar cuenta/autoridad a la intención; precondiciones antes del efecto.",
+          "safe_fixture": "Destino sintético cambia entre autorización y envío; el estado debe exigir revisión apropiada."
+        },
+        {
+          "id": "PAY-A2",
+          "scenario": "Reintento explotando respuesta incierta",
+          "weak_assumption": "Un pago liquidado sin respuesta origina otra intención pagadera.",
+          "control": "Consulta de la misma operación, idempotencia durable y reconciliación.",
+          "safe_fixture": "Riel simulado liquida y pierde respuesta; comprobar una sola liquidación por clave."
+        },
+        {
+          "id": "PAY-A3",
+          "scenario": "Confirmación atribuida a otro pago",
+          "weak_assumption": "Un callback de una operación se reutiliza en otra referencia/moneda.",
+          "control": "Autenticación/correlación, valor y moneda; el resultado no cierra una operación ajena.",
+          "safe_fixture": "Callback ficticio de A hacia B con valores distintos; discrepancia conservada."
+        },
+        {
+          "id": "PAY-A4",
+          "scenario": "Identidad real pero destino/voluntad problemáticos",
+          "weak_assumption": "Un solicitante verificado puede actuar bajo engaño o transferir a una cuenta intermediaria.",
+          "control": "Capas de contexto e intención y revisión especializada; face match no es consentimiento económico.",
+          "safe_fixture": "Escenarios narrativos adjudicados de laboratorio; no inferir coerción desde una sola señal."
+        }
+      ]
+    },
+    {
+      "slug": "06-servicing-ledger-quality",
+      "title": "Calidad del ledger y estado de la obligación",
+      "question": "¿Cuánta mora aparente puede explicar una discrepancia de calendario, imputación o fecha efectiva antes que un deterioro crediticio?",
+      "boundary": "Posee reconciliación de estado administrativo y eventos de corrección. Reutiliza roll rates/cosechas; no entrena otro score ni reemplaza contabilidad.",
+      "unit": "Obligación, evento de pago y snapshot a una fecha de corte.",
+      "baseline": "Reconciliación por referencia y reglas explícitas de calendario/imputación.",
+      "challenger": "Replay de eventos bitemporales con correcciones versionadas y diagnóstico de fuente de discrepancia.",
+      "equation": "balance_t=balance_{t-1}+debits_t-credits_t+adjustments_t.",
+      "symbols": "La identidad aplica al ledger definido y a sus signos, moneda y período. Intereses, cargos, reversos y ajustes necesitan categorías y reglas por producto; no se fija aquí una política contable.",
+      "inputs": [
+        "Cronograma, calendario y reglas de imputación sintéticos",
+        "Ledger, pagos confirmados, fecha efectiva y fecha de disponibilidad",
+        "Correcciones, reclamaciones y versiones de snapshot"
+      ],
+      "output": "LoanStateSnapshot: saldo, DPD, fuente, corte, versión y bandera de conciliación; no etiqueta automática de fraude/default.",
+      "example": {
+        "loan_id": "synthetic-servicing-001",
+        "snapshot_id": "snapshot-design-001",
+        "currency": "COP",
+        "balance": 900000,
+        "dpd": null,
+        "reconciliation_status": "pending",
+        "reason_codes": [
+          "unmatched_payment"
+        ],
+        "calendar_version": "design-v1"
+      },
+      "diagram": "08-servicing-collections",
+      "reuse": [
+        "03-financial-risk/01-credit-risk/credit-risk-products/matrices-de-transicion-roll-rates/",
+        "03-financial-risk/01-credit-risk/credit-risk-products/analisis-de-cosechas-vintage/"
+      ],
+      "sources": [
+        "mambu",
+        "temenos"
+      ],
+      "risks": [
+        "La corrección de un error no debe borrar la trazabilidad de la decisión anterior.",
+        "No confundir fecha contable, fecha de pago y disponibilidad para una predicción histórica."
+      ],
+      "ideas": [
+        {
+          "id": "SERV-01",
+          "title": "Pago no imputado frente a mora real",
+          "hypothesis": "Conciliar pagos antes del cálculo de DPD reduce clasificación operacionalmente incorrecta.",
+          "formula": "false\\_dpd=1[DPD_{observado}>0\\land DPD_{referencia}=0]",
+          "design": "Crear un ledger pequeño verificable con pagos puntuales, parciales, retrasados en transmisión y mal referenciados; contrastar cronograma+ledger con un oráculo manual del contrato sintético.",
+          "metrics": "Error de saldo/DPD, casos enviados erróneamente a cobranza y tiempo de resolución.",
+          "falsification": "Descartar si mejora mora agregada ocultando partidas sin conciliar o reclasificando pagos no confirmados como efectivos.",
+          "deliverable": "Fixtures futuros de ledger y conciliación de DPD por obligación.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "SERV-A1",
+            "SERV-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        },
+        {
+          "id": "SERV-02",
+          "title": "Corrección bitemporal",
+          "hypothesis": "Una corrección conocida hoy no puede aparecer como información conocida en una decisión anterior.",
+          "formula": "known(e,t)=1[event\\_time_e\\le t\\land available\\_time_e\\le t]",
+          "design": "Introducir pagos retroactivos y correcciones con distintas fechas de disponibilidad; reconstruir decisiones al corte y comparar con reconstrucción contaminada por información futura.",
+          "metrics": "Fugas detectadas, snapshots reproducibles y cambios legítimos de estado.",
+          "falsification": "Cualquier feature histórica dependiente de una corrección aún no conocida invalida el snapshot.",
+          "deliverable": "Benchmark de replay al corte y linaje de correcciones.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "SERV-A2",
+            "SERV-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        },
+        {
+          "id": "SERV-03",
+          "title": "Cambios de calendario y producto",
+          "hypothesis": "Un cambio de convención puede desplazar cohortes de mora sin cambio de conducta del cliente.",
+          "formula": "\\Delta DPD_i=DPD_i(calendar_2)-DPD_i(calendar_1)",
+          "design": "Mismos pagos con fines de semana, fechas límite, prepago y reestructuración; comparar políticas únicamente sobre productos/cambios expresamente definidos en laboratorio.",
+          "metrics": "Desplazamiento de DPD, transición de bandas y efecto en alertas/acciones.",
+          "falsification": "No atribuir a riesgo un salto explicado por convención administrativa o por una migración inconsistente.",
+          "deliverable": "Reporte de equivalencia semántica para migración de LMS.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "SERV-A3",
+            "SERV-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        }
+      ],
+      "priority": "P2",
+      "dependencies": [
+        "05-disbursement-reconciliation"
+      ],
+      "status": "S1",
+      "implemented": false,
+      "security_cases": [
+        {
+          "id": "SERV-A1",
+          "scenario": "Pago aparente sin confirmación",
+          "weak_assumption": "Una promesa, comprobante o mensaje se convierte en saldo pagado.",
+          "control": "Ledger y conciliación de efectivo como evidencia; soporte aportado abre investigación.",
+          "safe_fixture": "Comprobante ficticio y promesa sin movimiento conciliado; no cerrar deuda como pagada."
+        },
+        {
+          "id": "SERV-A2",
+          "scenario": "Corrección que contamina el pasado",
+          "weak_assumption": "Una modificación borra la evidencia o altera features históricas sin disponibilidad al corte.",
+          "control": "Bitemporalidad y ajustes versionados con atribución.",
+          "safe_fixture": "Corrección posterior en pagos sintéticos; snapshots anteriores se mantienen reproducibles."
+        },
+        {
+          "id": "SERV-A3",
+          "scenario": "Errores compensados entre cuentas",
+          "weak_assumption": "Dos imputaciones opuestas dejan el agregado correcto y obligaciones incorrectas.",
+          "control": "Conciliación por referencia/titular/moneda/valor, no solo totales.",
+          "safe_fixture": "Intercambiar abonos entre dos préstamos ficticios y exigir discrepancias individuales."
+        },
+        {
+          "id": "SERV-A4",
+          "scenario": "Reestructuración o novedad indebida",
+          "weak_assumption": "Un cambio administrativo altera mora/saldo sin autoridad o evidencia de acuerdo.",
+          "control": "Workflow de novedad con atribuciones y documento/condiciones pertinentes.",
+          "safe_fixture": "Evento sintético con rol no autorizado; debe conservarse intento y no cambiar obligación."
+        }
+      ]
+    },
+    {
+      "slug": "07-collections-treatment-design",
+      "title": "Tratamientos de cobranza y recuperación sostenible",
+      "question": "¿Qué acción admisible aporta recuperación incremental sin confundir facilidad de contacto con eficacia causal?",
+      "boundary": "Posee decisión de tratamiento y medición de su efecto bajo restricciones. Reutiliza saldos del LMS y el programa causal; no crea acceso irrestricto a contactos ni localización del deudor.",
+      "unit": "Cliente/obligación elegible, acción de tratamiento y horizonte de resultado.",
+      "baseline": "Segmentación transparente y reglas de contacto aplicables con costos explícitos.",
+      "challenger": "Estimación incremental de tratamientos con identificación justificada y optimización dentro del conjunto admisible.",
+      "equation": "a_i^*=\\arg\\max_{a\\in\\mathcal A_i}\\{\\mathbb E[R_i\\mid do(a)]-C_i(a)\\}.",
+      "symbols": "R es recuperación neta en horizonte común, C costo no incluido en R y A acciones admisibles. El operador causal formula el objetivo, no demuestra identificación ni efecto positivo.",
+      "inputs": [
+        "Saldo/estado conciliado y capacidad del cliente según evidencia habilitada",
+        "Elegibilidad de contacto, intentos concurrentes, acción y probabilidad de asignación",
+        "Acuerdos, pagos confirmados, costos, reclamaciones y tiempo"
+      ],
+      "output": "TreatmentProposal: elegibilidad, acción/abstención, fundamento, límite y horizonte; resultado pago separado de promesa.",
+      "example": {
+        "case_id": "synthetic-collections-001",
+        "loan_id": "synthetic-loan-001",
+        "contact_eligibility": "blocked",
+        "reason_codes": [
+          "contact_limit_reached"
+        ],
+        "proposed_action": "no_contact",
+        "horizon_days": 30,
+        "policy_version": "design-v1"
+      },
+      "diagram": "08-servicing-collections",
+      "reuse": [
+        "05-artificial-intelligence-and-computational-systems/05-causal-ai-and-decision-intelligence/01-off-policy-policy-evaluation/",
+        "03-financial-risk/01-credit-risk/credit-risk-products/matrices-de-transicion-roll-rates/"
+      ],
+      "sources": [
+        "law2300",
+        "katabat",
+        "tu-collections"
+      ],
+      "risks": [
+        "No asignar tratamiento inválido para ganar una comparación; la admisibilidad es una restricción previa.",
+        "La promesa de pago y el contacto efectivo no sustituyen el flujo recuperado confirmado."
+      ],
+      "ideas": [
+        {
+          "id": "COLL-01",
+          "title": "Sesgo de selección del contacto",
+          "hypothesis": "Comparar solo contactados puede atribuir eficacia a una selección de clientes más fáciles.",
+          "formula": "\\hat V_{IPW}(\\pi)=N^{-1}\\sum_i R_i1[A_i=\\pi(X_i)]/p(A_i\\mid X_i)",
+          "design": "Laboratorio con política de asignación conocida, confusión observada y un caso sin positividad; comparar naïve, ponderación y verdad generada. No extrapolar el estimador a datos reales sin supuestos.",
+          "metrics": "Sesgo, varianza, pesos extremos, soporte y recuperación neta estimada.",
+          "falsification": "Declarar no identificable cuando falte soporte o haya confusión no controlada; no rellenar valor con cero.",
+          "deliverable": "Notebook futuro de selección/positividad y ficha de diseño causal.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "COLL-A1",
+            "COLL-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        },
+        {
+          "id": "COLL-02",
+          "title": "Elegibilidad concurrente de campañas",
+          "hypothesis": "Un control central puede impedir que campañas individualmente válidas excedan límites compartidos.",
+          "formula": "admissible(a,t)=channel\\_allowed\\land limit\\_available\\land balance\\_valid",
+          "design": "Intercalar campañas internas/tercerizadas con intentos, contacto efectivo y cambios de preferencia; usar reglas parametrizadas y verificadas antes de despliegue.",
+          "metrics": "Contactos indebidos, restricciones respetadas, duplicados y oportunidad de atención.",
+          "falsification": "Cualquier contacto que viole el contrato vigente invalida el plan, aunque mejore recaudo simulado.",
+          "deliverable": "Modelo de referencia de elegibilidad y eventos entre campañas.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "COLL-A2",
+            "COLL-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        },
+        {
+          "id": "COLL-03",
+          "title": "Acuerdo frente a cura sostenible",
+          "hypothesis": "Contar acuerdos como éxito puede mejorar la métrica sin mejorar recuperación sostenida.",
+          "formula": "net\\_recovery=\\sum_t CF_t/(1+r)^t-cost",
+          "design": "Cohortes sintéticas con promesas, pagos parciales, recaída y costos de gestión; comparar conteo de acuerdos, flujo neto y estado de cura en horizonte fijado.",
+          "metrics": "Cumplimiento, recaída, recuperación neta, costo y reclamaciones.",
+          "falsification": "Descartar un criterio que favorezca acuerdos nominales sin pagos o que compare horizontes incompatibles.",
+          "deliverable": "Definiciones de outcome y reporte por cohortes maduras.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "COLL-A3",
+            "COLL-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        }
+      ],
+      "priority": "P3",
+      "dependencies": [
+        "06-servicing-ledger-quality",
+        "09-purpose-bound-signal-governance"
+      ],
+      "status": "S1",
+      "implemented": false,
+      "security_cases": [
+        {
+          "id": "COLL-A1",
+          "scenario": "Suplantación de gestor o canal",
+          "weak_assumption": "Una gestión aparente de cobranza desvía pagos o expone deuda a un tercero.",
+          "control": "Canal y destinatario verificados; instrucciones de pago autorizadas y trazabilidad.",
+          "safe_fixture": "Escenario ficticio con canal no registrado y destino diferente; sin mensajes reales."
+        },
+        {
+          "id": "COLL-A2",
+          "scenario": "Presión para saltar restricciones",
+          "weak_assumption": "Campañas/terceros tratan urgencia o recuperación esperada como permiso de contacto.",
+          "control": "Elegibilidad central previa a cada contacto y límites compartidos.",
+          "safe_fixture": "Campañas sintéticas concurrentes intentan contactar pese a bloqueo; no se envía nada."
+        },
+        {
+          "id": "COLL-A3",
+          "scenario": "Métrica de éxito manipulada",
+          "weak_assumption": "Promesas, contactos o acuerdos duplicados inflan resultado y política aprendida.",
+          "control": "Resultado económico confirmado, deduplicación y horizonte fijo.",
+          "safe_fixture": "Duplicar eventos de promesa/acuerdo sin nuevos pagos; la recuperación no aumenta."
+        },
+        {
+          "id": "COLL-A4",
+          "scenario": "Tratamiento dirigido por una señal indebida",
+          "weak_assumption": "GPS, datos de familiares o quejas determinan presión de cobro sin finalidad admisible.",
+          "control": "Puerta de uso y revisión de daños; el catálogo de datos no es una habilitación universal.",
+          "safe_fixture": "Consulta de variable excluida en laboratorio debe denegarse y quedar registrada."
+        }
+      ]
+    },
+    {
+      "slug": "08-risk-data-observability",
+      "title": "Observabilidad de datos, etiquetas y modelos",
+      "question": "¿Cómo distinguir deterioro de riesgo de cambios de fuente, cobertura, maduración de etiquetas o errores del pipeline?",
+      "boundary": "Posee trazabilidad/diagnóstico entre eventos, variables y evaluación. Reutiliza plataforma/feature store; no implementa otro lago de datos ni reentrenamiento automático.",
+      "unit": "Snapshot de modelo por cohorte, versión de fuente y horizonte de label.",
+      "baseline": "Controles de esquema, cobertura y ventanas maduras con reportes estratificados.",
+      "challenger": "Descomposición por fuente/versión, replay al corte y alarmas conjuntas de horizonte evaluado.",
+      "equation": "coverage_c=P(signal\\ usable\\mid cohort=c),\\quad maturity_c=P(label\\ available\\mid cohort=c,t_{cutoff}).",
+      "symbols": "Ambas son tasas sobre denominadores definidos. Un label desconocido no se codifica como no evento. Drift de variables no demuestra caída de capacidad predictiva.",
+      "inputs": [
+        "Eventos con doble fecha, contratos y versiones de proveedor/modelo",
+        "Snapshot y predicciones congeladas antes de desenlaces",
+        "Labels disponibles/adjudicadas, correcciones y exposición"
+      ],
+      "output": "MonitoringAssessment: calidad/cobertura/madurez, métricas válidas y estado de investigación; sin liberar modelos por una alerta.",
+      "example": {
+        "cohort_id": "synthetic-monitor-001",
+        "cutoff": "2026-10-23T20:00:00Z",
+        "coverage_rate": 0.8,
+        "maturity_rate": 0.4,
+        "performance_status": "not_ready",
+        "reason_codes": [
+          "immature_labels"
+        ],
+        "model_version": "design-v1"
+      },
+      "diagram": "09-risk-data-models",
+      "reuse": [
+        "05-artificial-intelligence-and-computational-systems/data-engineering/credit-feature-store/",
+        "03-financial-risk/01-credit-risk/fraud-and-anomaly-research/01-identity-kyc-consistency/channel-conformal-audit/"
+      ],
+      "sources": [
+        "fico",
+        "provenir"
+      ],
+      "risks": [
+        "Versiones comparadas sobre mezclas diferentes pueden aparentar una mejora inexistente.",
+        "La revisión repetida de muchos canales cambia la frecuencia de falsas alarmas."
+      ],
+      "ideas": [
+        {
+          "id": "OBS-01",
+          "title": "Maduración y métricas de riesgo",
+          "hypothesis": "Tratar labels pendientes como negativos produce una falsa mejora de default/fraude.",
+          "formula": "rate_{mature}=events_{mature}/N_{mature}",
+          "design": "Generar atraso de label dependiente de canal y resultado; comparar rate ingenuo, ventanas maduras y estimación explícita de censura con sus supuestos.",
+          "metrics": "Sesgo por cohorte, tamaño evaluable y cobertura de incertidumbre.",
+          "falsification": "No publicar una tasa como comparable si cambian la edad de cohorte o los casos observables.",
+          "deliverable": "Generador de disponibilidad y tablero futuro de madurez.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "OBS-A1",
+            "OBS-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        },
+        {
+          "id": "OBS-02",
+          "title": "Fuente o modelo: atribución del cambio",
+          "hypothesis": "La caída de cobertura puede explicar un salto de score sin cambio del comportamiento económico.",
+          "formula": "\\Delta=metric(version_2,population)-metric(version_1,population)",
+          "design": "Diseño factorial de mezcla poblacional, versión de proveedor e imputación con corpus congelado; replay pareado para separar cambios y sin afirmar causalidad fuera del laboratorio.",
+          "metrics": "Cobertura, score, calibración madura y costo por fuente/canal.",
+          "falsification": "Rechazar atribución al modelo si el contraste no fija población/versión de entradas.",
+          "deliverable": "Reporte de descomposición y reglas para abrir investigación.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "OBS-A2",
+            "OBS-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        },
+        {
+          "id": "OBS-03",
+          "title": "Alertas múltiples por horizonte",
+          "hypothesis": "Umbrales por canal independientes pueden generar demasiados incidentes al vigilar muchos canales.",
+          "formula": "P(\\exists\\ false\\ alert\\ en\\ horizonte)",
+          "design": "Simular series dependientes y referencias contaminadas; comparar umbral individual con calibración conjunta de máximo o procedimiento por lote apropiado, explicitando supuestos.",
+          "metrics": "Falsas alarmas por horizonte, demora, poder y carga operativa.",
+          "falsification": "No usar garantía por lote como garantía online ni mantenerla bajo deriva no modelada.",
+          "deliverable": "Benchmark de monitoreo con escenarios nulos y cambios controlados.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "OBS-A3",
+            "OBS-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        }
+      ],
+      "priority": "P2",
+      "dependencies": [
+        "06-servicing-ledger-quality",
+        "09-purpose-bound-signal-governance"
+      ],
+      "status": "S1",
+      "implemented": false,
+      "security_cases": [
+        {
+          "id": "OBS-A1",
+          "scenario": "Envenenamiento de etiquetas",
+          "weak_assumption": "Alertas o revisiones se convierten en fraude/default confirmado sin adjudicación.",
+          "control": "Taxonomía, maduración y origen de label; aprobados y alertados evaluados con diseño apropiado.",
+          "safe_fixture": "Inyectar alertas positivas sin desenlace; el entrenamiento no las toma como verdad confirmada."
+        },
+        {
+          "id": "OBS-A2",
+          "scenario": "Feature con información futura",
+          "weak_assumption": "Una señal posterior al desembolso hace parecer excelente el modelo histórico.",
+          "control": "Doble fecha y snapshot al corte; pruebas de fuga.",
+          "safe_fixture": "Variable disponible después de la decisión queda fuera del snapshot de laboratorio."
+        },
+        {
+          "id": "OBS-A3",
+          "scenario": "Mejora aparente por cobertura selectiva",
+          "weak_assumption": "Un cambio excluye casos difíciles y mejora la métrica de los restantes.",
+          "control": "Denominador poblacional y comparación de cobertura/madurez por canal.",
+          "safe_fixture": "Versión simulada falla en un subgrupo; se reporta abandono de cobertura además de desempeño."
+        },
+        {
+          "id": "OBS-A4",
+          "scenario": "Cambio remoto sin versión",
+          "weak_assumption": "Una misma API devuelve otra semántica y el monitor solo mira la estructura JSON.",
+          "control": "Registro de versión/semántica, shadow y diagnóstico antes de recalibrar.",
+          "safe_fixture": "Payloads válidos de esquema con score invertido o concepto cambiado; no se liberan por compatibilidad sintáctica."
+        }
+      ]
+    },
+    {
+      "slug": "09-purpose-bound-signal-governance",
+      "title": "Contratos de señales vinculadas a finalidad",
+      "question": "¿Cómo impedir que una señal disponible para seguridad se use automáticamente en otra decisión sin habilitación y evaluación?",
+      "boundary": "Posee contrato técnico de finalidad/uso, minimización y referencias de evidencia. La determinación jurídica procede del área competente; no la inventa el motor ni se implementa aquí una ley en código.",
+      "unit": "Señal, propósito, consumidor, versión de política y fecha de evaluación.",
+      "baseline": "Lista explícita de usos permitidos y estados de captación/permiso.",
+      "challenger": "Puerta de uso por fuente/consumidor/retención con linaje de variables derivadas y auditoría.",
+      "equation": "allow(s,u,t)=purpose\\_allowed(s,u)\\land authority\\_valid(s,t)\\land quality\\_valid(s,t).",
+      "symbols": "Es un predicado de diseño propio. authority_valid referencia una evaluación institucional vigente; un permiso del SO no equivale por sí solo a autorización jurídica ni legitimidad de la finalidad.",
+      "inputs": [
+        "Catálogo de señales, estados y lista de usos aprobados",
+        "Referencias de habilitación/permiso, fuente y política de conservación",
+        "Consumidor, finalidad de consulta y linaje de variables derivadas"
+      ],
+      "output": "SignalUseDecision: permitido/denegado/inconcluso con razón y política; no presume que denegado signifique fraude.",
+      "example": {
+        "signal_id": "synthetic-purpose-001",
+        "signal_name": "device_location",
+        "requested_use": "credit_pd",
+        "permitted_uses": [
+          "fraud_context"
+        ],
+        "decision": "denied",
+        "reason_codes": [
+          "purpose_not_allowed"
+        ],
+        "policy_version": "design-v1"
+      },
+      "diagram": "05-signal-capture",
+      "reuse": [
+        "03-financial-risk/01-credit-risk/contracts/",
+        "03-financial-risk/01-credit-risk/architecture/credit-lifecycle/COLOMBIA_DATA_USE.md"
+      ],
+      "sources": [
+        "law1581",
+        "law1266",
+        "sic-ai",
+        "w3c"
+      ],
+      "risks": [
+        "Una variable derivada puede conservar información que se pretendía excluir al borrar solo el campo bruto.",
+        "Las reglas de acceso no reemplazan el análisis de necesidad, daño, alternativa y habilitación por caso."
+      ],
+      "ideas": [
+        {
+          "id": "PUR-01",
+          "title": "Separación seguridad/underwriting",
+          "hypothesis": "Una lista de usos explícita reduce reutilización accidental entre features de fraude y PD.",
+          "formula": "violation=1[use\\notin permitted\\_uses]",
+          "design": "Solicitudes sintéticas de consumidores autorizados/no autorizados y políticas versionadas; comparar autorización solo por rol con rol+finalidad+referencia vigente.",
+          "metrics": "Usos indebidos permitidos, usos legítimos bloqueados y decisiones auditables.",
+          "falsification": "Descartar una puerta que acepte declarar una finalidad arbitraria desde el cliente sin validación del servicio consumidor.",
+          "deliverable": "Matriz de accesos y contratos tipados para un prototipo posterior.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "PUR-A1",
+            "PUR-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        },
+        {
+          "id": "PUR-02",
+          "title": "Linaje de una señal retirada",
+          "hypothesis": "Bloquear el dato bruto no basta si un agregado o caché sigue exponiendo su información.",
+          "formula": "derived\\_allowed(f,u)=\\bigwedge_{s\\in lineage(f)}allowed(s,u)",
+          "design": "Grafo pequeño de variables y cachés con reglas de conservación/excepciones configuradas por institución; retirar una fuente y observar usos descendientes. Evitar afirmar que toda revocación elimina deberes legales de conservación.",
+          "metrics": "Dependencias alcanzadas, datos derivados residuales y bloqueos incorrectos.",
+          "falsification": "No considerar completado el control si se pierde la trazabilidad o quedan consumidores que operan sobre copias no inventariadas.",
+          "deliverable": "Grafo de linaje de laboratorio y reporte de propagación de restricciones.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "PUR-A2",
+            "PUR-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        },
+        {
+          "id": "PUR-03",
+          "title": "Minimización y valor de la señal",
+          "hypothesis": "Mayor precisión o más atributos pueden aumentar fricción/exposición sin mejorar la acción.",
+          "formula": "\\Delta U=U_{senal\\ amplia}-U_{senal\\ minima}",
+          "design": "Comparar señales mínimas, región aproximada y precisión adicional sobre el mismo problema sintético; medir valor y daño definidos previamente, sin colectar ubicación real.",
+          "metrics": "Beneficio incremental, cobertura, acceso a datos brutos y fricción por alternativa.",
+          "falsification": "No justificar captura adicional si su utilidad desaparece bajo incertidumbre de medición o no supera la alternativa menos intrusiva.",
+          "deliverable": "Ablación de granularidad y ficha de justificación de necesidad.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "PUR-A3",
+            "PUR-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        }
+      ],
+      "priority": "P1",
+      "dependencies": [],
+      "status": "S1",
+      "implemented": false,
+      "security_cases": [
+        {
+          "id": "PUR-A1",
+          "scenario": "Finalidad autodeclarada por un cliente",
+          "weak_assumption": "Un consumidor cambia el texto purpose_id para acceder a información no habilitada.",
+          "control": "Finalidad ligada a servicio/rol/política; no confiar solo en campo de solicitud.",
+          "safe_fixture": "Actor sin privilegio solicita la misma señal con otra finalidad; denegar uso indebido."
+        },
+        {
+          "id": "PUR-A2",
+          "scenario": "Inferencia desde variable derivada",
+          "weak_assumption": "Se elimina una señal bruta pero queda un proxy en features o caché.",
+          "control": "Linaje y evaluación de usos derivados con política aplicable.",
+          "safe_fixture": "Grafo sintético con dos descendientes; revisar alcance de la restricción y falsos bloqueos."
+        },
+        {
+          "id": "PUR-A3",
+          "scenario": "Permiso técnico usado como autorización genérica",
+          "weak_assumption": "Un pase del SO habilita biometría, ubicación o contacto para cualquier modelo.",
+          "control": "Estados y referencias de habilitación separados; uso por finalidad.",
+          "safe_fixture": "Permiso técnico granted sin evaluación de uso crediticio: no permite ese consumidor."
+        },
+        {
+          "id": "PUR-A4",
+          "scenario": "Exportación o acceso excesivo",
+          "weak_assumption": "Roles analíticos obtienen medios o identificadores brutos sin necesidad.",
+          "control": "Referencias protegidas, minimización, acceso por tarea y auditoría.",
+          "safe_fixture": "Roles de laboratorio intentan leer campos fuera de su alcance; no hay PII real."
+        }
+      ]
+    },
+    {
+      "slug": "10-formalization-collateral",
+      "title": "Formalización y condiciones precedentes",
+      "question": "¿Cómo demostrar que la aceptación, el instrumento, la garantía y el desembolso corresponden a la misma oferta vigente?",
+      "boundary": "Posee coherencia/versionado del paquete previo al efecto. Reutiliza extracción documental y servicios de firma; no certifica exigibilidad jurídica ni reconstruye plataformas de pagarés.",
+      "unit": "Oferta, versión aceptada, evidencias/instrumentos y autorización de efecto.",
+      "baseline": "Checklist versionado de condiciones, huellas de documento y revisión de discrepancias.",
+      "challenger": "Grafo de evidencias y condiciones por producto, vigencia y cambios de términos.",
+      "equation": "ready=accepted(offer_v)\\land terms\\_match\\land instrument\\_ready\\land conditions\\_met\\land valid\\_at(t).",
+      "symbols": "Cada predicado requiere evidencia y autoridad definida. Un hash verifica integridad respecto a bytes conservados; no autentica por sí solo emisor, voluntad o validez jurídica.",
+      "inputs": [
+        "Oferta/aceptación con versiones y vigencia",
+        "Contrato/instrumento/garantía con referencias y estado validado por responsable",
+        "Cambios de términos, documentos y condiciones precedentes"
+      ],
+      "output": "FormalizationReadiness: lista de condiciones cumplidas/pendientes y referencias exactas antes del desembolso.",
+      "example": {
+        "case_id": "synthetic-formalization-001",
+        "offer_version": "offer-v2",
+        "accepted_offer_version": "offer-v1",
+        "instrument_status": "pending_review",
+        "ready_for_disbursement": false,
+        "reason_codes": [
+          "offer_version_mismatch"
+        ],
+        "policy_version": "design-v1"
+      },
+      "diagram": "07-disbursement",
+      "reuse": [
+        "05-artificial-intelligence-and-computational-systems/03-deep-learning-and-foundation-models/structured-decision-architectures/02-evidence-preserving-document-pipeline/",
+        "03-financial-risk/01-credit-risk/contracts/"
+      ],
+      "sources": [
+        "certicamara",
+        "deceval"
+      ],
+      "risks": [
+        "Una firma válida de un documento puede no corresponder a la oferta que se pretende ejecutar.",
+        "Condiciones de garantía e instrumento se validan por producto; no se asigna estado jurídico desde un OCR."
+      ],
+      "ideas": [
+        {
+          "id": "FORM-01",
+          "title": "Cambio de oferta después de aceptar",
+          "hypothesis": "Enlazar aceptación a versión exacta evita ejecutar términos diferentes a los aceptados.",
+          "formula": "accepted\\_version=execution\\_offer\\_version",
+          "design": "Variar monto, plazo, moneda, tasa y cuenta destino; conservar original e introducir cambios antes/después de aceptación y firma. Diferenciar cambios que requieren nueva aceptación según regla de producto.",
+          "metrics": "Paquetes incoherentes detectados, reprocesos y falsos bloqueos.",
+          "falsification": "Una secuencia que permita términos incompatibles con la versión aceptada invalida el control.",
+          "deliverable": "Corpus de paquetes y validación determinista de referencias/versiones.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "FORM-A1",
+            "FORM-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        },
+        {
+          "id": "FORM-02",
+          "title": "Autenticidad, integridad y soporte",
+          "hypothesis": "Conservar un span/hash no detecta por sí solo un documento falso o una afirmación mal interpretada.",
+          "formula": "claim\\_supported=integrity\\land source\\_scope\\land semantic\\_support",
+          "design": "Documentos de laboratorio ficticios y marcados como no válidos: texto coherente sin emisor, campo cambiado, concepto de ingreso equivocado y corrección posterior. Separar tres capas del predicado.",
+          "metrics": "Afirmaciones sin soporte aceptadas, abstención y evidencia alternativa requerida.",
+          "falsification": "Descartar la conclusión de autenticidad si solo se comprobó igualdad con el archivo subido.",
+          "deliverable": "Suite documental defensiva que referencia el pipeline de evidencia existente.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "FORM-A2",
+            "FORM-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        },
+        {
+          "id": "FORM-03",
+          "title": "Garantía y vigencia antes de efecto",
+          "hypothesis": "Una condición satisfecha al emitir la oferta puede dejar de estar vigente antes de ejecutar.",
+          "formula": "valid\\_at(t_{execution})\\land conditions\\_version=policy\\_version",
+          "design": "Estados sintéticos de condición pendiente/cumplida/expirada/controvertida y autorización concurrente. Los criterios jurídicos se proporcionan como reglas de ejemplo, sin inferirlos del laboratorio.",
+          "metrics": "Autorizaciones sin condición vigente, esperas y discrepancias por revisión.",
+          "falsification": "No aceptar un paquete si no puede reconstruirse quién validó la condición y con qué evidencia al tiempo del efecto.",
+          "deliverable": "Contrato de condiciones y reporte de precondiciones por caso.",
+          "status": "proposed",
+          "executed": false,
+          "adversarial_case_ids": [
+            "FORM-A3",
+            "FORM-A4"
+          ],
+          "adversarial_acceptance": "El experimento registra el control vulnerado/alcance de evidencia y exige un estado seguro y auditable; sin resultados observados todavía."
+        }
+      ],
+      "priority": "P2",
+      "dependencies": [
+        "09-purpose-bound-signal-governance"
+      ],
+      "status": "S1",
+      "implemented": false,
+      "security_cases": [
+        {
+          "id": "FORM-A1",
+          "scenario": "Imagen de documento alterada",
+          "weak_assumption": "El OCR extrae datos coherentes de una evidencia cuyo contenido o retrato fue modificado.",
+          "control": "Separar extracción, autenticidad y vínculo con persona; fuente corroborante habilitada y revisión de inconclusos.",
+          "safe_fixture": "Documento enteramente ficticio marcado NO VÁLIDO con campos contradictorios; evaluar la capa que debe abstenerse."
+        },
+        {
+          "id": "FORM-A2",
+          "scenario": "Documento de otra persona o reutilizado",
+          "weak_assumption": "Una imagen auténtica se aporta fuera de su sujeto/sesión/contexto válido.",
+          "control": "Identidad reclamada, titular de evidencia, captura y sesión enlazadas; no pase por archivo conocido.",
+          "safe_fixture": "Dos identidades de prueba y referencia cruzada; sin fotos ni documentos de terceros reales."
+        },
+        {
+          "id": "FORM-A3",
+          "scenario": "Paquete firmado distinto al ejecutado",
+          "weak_assumption": "La firma o aceptación corresponde a una versión y la operación usa otra.",
+          "control": "Integridad, versión de oferta y condiciones coherentes; autenticidad/validez jurídica se evalúan aparte.",
+          "safe_fixture": "Versiones sintéticas con monto/plazo distintos; impedir readiness del paquete incoherente."
+        },
+        {
+          "id": "FORM-A4",
+          "scenario": "Instrucción dentro del documento",
+          "weak_assumption": "El texto intenta convertir al extractor en aprobador o invocar una herramienta.",
+          "control": "Tratar archivo como datos, extractor sin permisos de pago/aprobación y validación de soporte.",
+          "safe_fixture": "Texto ficticio que pide aprobar; verificar que solo produzca candidatos de campos o abstención."
+        }
+      ]
+    }
+  ]
+}
