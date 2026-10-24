@@ -1,0 +1,1 @@
+{"seed": 20261024, "turns": [1, 2, 4, 8], "max_segments": 4096, "plateau_tolerance": 1e-10, "irregular_trials": 200, "hypothesis": "all continuous-area signs certified with correct L agree with analytic truth; plateau false stopping occurs on aliased loops", "speed_assumption": "known Euclidean speed upper bound L=2*pi*turns on [0,1]"}

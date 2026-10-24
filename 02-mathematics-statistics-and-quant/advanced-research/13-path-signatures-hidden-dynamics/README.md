@@ -29,3 +29,11 @@ El área shoelace iguala numéricamente a la firma y es más eficiente para áre
 El notebook incorpora fórmulas, diccionario de variables en contexto, reconstrucción de cálculos, sensibilidad y casos negativos. `run.sh` conserva esta ampliación después de regenerar el estudio original. La extensión se mantiene en `scripts/deepen_20261023_notebooks.py` y `scripts/research_depth_experiments.py` desde la raíz; las celdas realmente se ejecutan y guardan sus salidas. [Revisión de alcance](../../../reviews/2026-10-23-alignment/README.md).
 
 [Revisión académica y criterios de cierre](ACADEMIC_REVIEW.md): fuentes publicadas, fórmulas en el notebook y extensiones experimentales.
+
+## Iteración del 24 de octubre: guardia contra falsa convergencia
+
+Nuevo MVP incremental: `bash run_guard.sh` instala en entorno aislado, prueba y reproduce una regla condicional de refinamiento. La cota externa de velocidad permite acotar el área continua entre muestras; no se estima esa garantía desde secantes.
+
+En ocho casos sintéticos, la meseta entre mallas para falsamente cuatro veces; el guardia con L válido certifica ocho signos correctos (30 segmentos finales medios). Con presupuesto ocho, se abstiene seis veces. En200 grillas irregulares, la cota contiene200 verdades y certifica114 signos sin error. Un contraejemplo con L falso pasa las secantes y produce signo equivocado: garantía condicionada al supuesto, sin validación operacional.
+
+[Notebook nuevo ejecutado](notebook_guard.ipynb), [informe de14 puntos y derivación](informe_guard.md), [fuentes verificadas](fuentes_guard.md), salidas `results/guard_*`. El notebook anterior conserva la ampliación académica existente. Madurez S2; no se convierte estabilidad de mallas en prueba de resolución.

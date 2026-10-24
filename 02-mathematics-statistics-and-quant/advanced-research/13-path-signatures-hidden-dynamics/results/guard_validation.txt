@@ -1,0 +1,77 @@
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.2
+[notice] To update, run: python -m pip install --upgrade pip
+All checks passed!
+Success: no issues found in 2 source files
+test_constant_and_bad_inputs (test_aliasing_guard.GuardTests.test_constant_and_bad_inputs) ... ok
+test_enclosure_circle_irregular_and_reversed (test_aliasing_guard.GuardTests.test_enclosure_circle_irregular_and_reversed) ... ok
+test_false_assumption_not_inferred_from_samples (test_aliasing_guard.GuardTests.test_false_assumption_not_inferred_from_samples) ... ok
+test_insufficient_budget_abstains (test_aliasing_guard.GuardTests.test_insufficient_budget_abstains) ... ok
+test_refinement_and_false_plateau (test_aliasing_guard.GuardTests.test_refinement_and_false_plateau) ... ok
+test_aliasing (test_signatures.SignatureTests.test_aliasing) ... ok
+test_bad_inputs (test_signatures.SignatureTests.test_bad_inputs) ... ok
+test_chen_shuffle_translation_reversal_randomized (test_signatures.SignatureTests.test_chen_shuffle_translation_reversal_randomized) ... ok
+test_collinear_subdivision_and_stationary_points (test_signatures.SignatureTests.test_collinear_subdivision_and_stationary_points) ... ok
+test_single_point (test_signatures.SignatureTests.test_single_point) ... ok
+test_square_oracle (test_signatures.SignatureTests.test_square_oracle) ... ok
+test_tree_like (test_signatures.SignatureTests.test_tree_like) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.060s
+
+OK
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/aliasing_guard.py      49      2    96%
+-------------------------------------------
+TOTAL                      49      2    96%
+Wrote JSON report to results/guard_coverage.json
+{
+  "seed": 20261024,
+  "cases": 8,
+  "methods": {
+    "fixed8": {
+      "wrong_signs": 0,
+      "abstentions": 4,
+      "max_area_error": 25.132741228718345,
+      "mean_final_segments": 8.0,
+      "total_seconds": 0.0014451439998879323
+    },
+    "plateau": {
+      "wrong_signs": 0,
+      "abstentions": 4,
+      "max_area_error": 25.132741228718345,
+      "mean_final_segments": 2052.0,
+      "total_seconds": 0.008814804999985881
+    },
+    "certified": {
+      "wrong_signs": 0,
+      "abstentions": 0,
+      "max_area_error": 2.5053242307488297,
+      "mean_final_segments": 30.0,
+      "total_seconds": 0.006793485999992299
+    },
+    "certified_budget8": {
+      "wrong_signs": 0,
+      "abstentions": 6,
+      "max_area_error": 25.132741228718345,
+      "mean_final_segments": 8.0,
+      "total_seconds": 0.0042224599999372
+    }
+  },
+  "plateau_false_convergence": 4,
+  "irregular_trials": 200,
+  "irregular_enclosed": 200,
+  "irregular_wrong_sign": 0,
+  "irregular_certified": 114,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "invalid_bound_counterexample": {
+    "supplied_L": 6.2,
+    "actual_L": 43.982297150257104,
+    "certified_sign": -1,
+    "true_sign": 1,
+    "area": -2.82842712474619,
+    "radius": 2.4025000000000003
+  }
+}

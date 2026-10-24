@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-24",
+  "artifacts": {
+    "src/aliasing_guard.py": true,
+    "tests/test_aliasing_guard.py": true,
+    "run_guard.sh": true,
+    "config_guard.json": true,
+    "notebook_guard.ipynb": true,
+    "informe_guard.md": true,
+    "fuentes_guard.md": true,
+    "referencias.bib": true,
+    "requirements.txt": true,
+    "MVP.md": true,
+    "README.md": true,
+    "results/guard_summary.json": true,
+    "results/guard_audit.png": true,
+    "results/guard_comparison.csv": true,
+    "results/guard_irregular.csv": true
+  },
+  "tests": "12 passed (5 new + 7 existing)",
+  "lint": "passed new modules, tests and notebook executor",
+  "mypy": "passed two new modules",
+  "coverage": "47/49 statements aliasing_guard, 96%",
+  "figure_review": "guard_audit.png visually inspected; saved figure embedded in notebook",
+  "notebook": "5 cells sequentially executed IPython in-process fresh namespace; kernel sockets not tested",
+  "maturity": "S2 limited component; not operational",
+  "prior_art": "5 primary abstract/metadata pages reopened, no exhaustive claim"
+}
