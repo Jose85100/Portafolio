@@ -7,3 +7,6 @@
 - **Madurez:** componente S2 (prototipo sintético ejecutado). Programa 20 sigue S1; M2 requeriría completar revisión técnica local, no se presume equivalente a S2.
 - **Ejecución notebook:** IPython real en proceso; kernel TCP bloqueado. No se simulan resultados ni se declara QA de kernel.
 - **Checklist:** src sí; comando único sí; 6 tests sí; baseline numérico sí; salida sí; README/informe/referencias/MVP sí; carpeta20 sí; notebook outputs sí; revisión externa al autor coordinada por integrador.
+
+## Extensión24oct
+Regla común bajo conjunto de priors y demora: 11tests, cobertura86statements100%, benchmark tres priors y cinco tasas, oracle MC600.000 draws, notebook real ejecutado. ComponenteS2; sin validación empírica. No actualiza pesos de modelos ni cubre priors omitidos.
