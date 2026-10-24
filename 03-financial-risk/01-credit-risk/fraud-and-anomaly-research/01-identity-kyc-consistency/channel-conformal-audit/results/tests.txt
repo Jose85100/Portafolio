@@ -1,0 +1,10 @@
+test_exact_leave_one_out_validity_with_ties (test_conformal.TestConformal.test_exact_leave_one_out_validity_with_ties) ... ok
+test_hand_oracle (test_conformal.TestConformal.test_hand_oracle) ... ok
+test_invalid (test_conformal.TestConformal.test_invalid) ... ok
+test_monotone_permutation (test_conformal.TestConformal.test_monotone_permutation) ... ok
+test_sparse_channel_cannot_alert (test_conformal.TestConformal.test_sparse_channel_cannot_alert) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK

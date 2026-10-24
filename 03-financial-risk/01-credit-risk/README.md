@@ -10,6 +10,10 @@ Modelos y análisis para originación, seguimiento y gestión de cartera. Todo e
 - [Fraude y anomalías](fraud-and-anomaly-research/): cuatro especialistas S1 de KYC, redes, ingresos y proceso, más un motor S2 acotado de comparación sintética y asignación por pérdida bajo capacidad.
 - [Estrategia de cartera](credit-portfolio-strategy/): concentración, cópula de pérdidas, capital, límites de apetito y Vasicek.
 
+## Ciclo completo de crédito: arquitecturas y datos
+
+[Mapa ampliado](architecture/credit-lifecycle/README.md): nueve diagramas draw.io nuevos (tres alternativas de plataforma y seis vistas de proceso/datos), 15 responsabilidades, ocho flujos operativos, 35 señales y 24 proveedores candidatos. Incluye IP, geolocalización, dispositivo y sus límites; formalización, desembolso, LMS, seguimiento, cobranza y gobierno. Es diseño S1, complementario de las cuatro vistas defensivas previas de fraude; no integra datos ni proveedores reales.
+
 ## Plataforma transversal
 
 | Capa | Propósito | Artefacto |

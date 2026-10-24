@@ -49,7 +49,7 @@ La arquitectura está organizada por **pregunta científica y dominio**, no por 
 | `09-riesgo-mercado-liquidez-avanzado` | `03-financial-risk/03-market-liquidity-research` |
 | `10-cpp-risk-platform` (PR #4) | `04-quant-strategy-and-products/risk-engines` |
 
-**Estado de la migración:** las nueve carpetas históricas fueron trasladadas a sus destinos en esta rama. El repositorio contiene 77 notebooks y la CI ejecuta los modificados en cada PR, además de una regresión completa programada. La primera regresión integral debe revisarse antes de afirmar validación empírica por este traslado.
+**Estado de la migración:** las nueve carpetas históricas fueron trasladadas a sus destinos en esta rama. El inventario histórico de la migración contenía 77 notebooks y la CI ejecuta los modificados en cada PR, además de una regresión completa programada. El conteo vigente y el alcance de revisión se consultan en [la revisión del 23 de octubre](reviews/2026-10-23-alignment/README.md); un traslado no implica validación empírica.
 
 ## Estándar mínimo de cada investigación
 
@@ -68,5 +68,5 @@ La estructura interna es un **contrato de organización**, no evidencia de que e
 1. **Hecho:** mapear archivos y actualizar `tests/test_notebooks.py` para descubrir notebooks recursivamente.
 2. **Hecho:** trasladar los nueve árboles de archivos mediante objetos Git; revisar referencias relativas externas aún es necesario.
 3. **Hecho:** actualizar el descubrimiento recursivo de notebooks (el repositorio no debe contener entornos virtuales versionados).
-4. **Pendiente:** ejecutar notebooks y pruebas Python y comprobar enlaces; C++ pertenece a PR #4, que debe integrarse por separado.
-5. **Pendiente:** fusionar después de CI verde y revisión de diferencias.
+4. **Actualizado al 23 de octubre:** existen pruebas y ejecuciones posteriores a la migración; consultar las revisiones fechadas para su cobertura. No se certifica aquí una regresión integral actual.
+5. **Histórico:** la migración ya está integrada. Las nuevas PR conservan comprobaciones y revisión propias.

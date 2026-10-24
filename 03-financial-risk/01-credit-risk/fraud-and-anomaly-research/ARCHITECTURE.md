@@ -91,3 +91,7 @@ Imputación y modelos se ajustan con entrenamiento; el calibrador utiliza exclus
 Primera extensión: sustituir una señal simulada por un baseline especializado, conservando la interfaz económica y comparando su aporte incremental. Segunda: registrar versiones de features, modelos y políticas con replay temporal. Tercera: cola con tiempo variable y costos de demora; después, dependencias por red y decisiones secuenciales. Solo separar servicios cuando latencia, carga o aislamiento lo requieran.
 
 No se certifica volumen ni latencia de producción. El MILP actual usa matrices densas para pequeños lotes diarios; la evolución a gran escala exige estructura dispersa, límites de tiempo, una solución factible de respaldo y medición de brecha de optimalidad.
+
+## Defensa frente a fraude potenciado por IA
+
+La [extensión de arquitecturas](ai-enabled-fraud-defense/ARCHITECTURES.md) detalla KYC, documentos/ingresos, sesión/desembolso y red/monitoreo. Incluye [cuatro páginas draw.io editables y vistas SVG](ai-enabled-fraud-defense/diagrams/README.md), contratos de evidencia, rutas de indisponibilidad y separación de riesgos. El [notebook](ai-enabled-fraud-defense/notebook.ipynb) prueba dependencia y carga de revisión en escenarios sintéticos; no amplía el alcance implementado del motor ni acredita proveedores.

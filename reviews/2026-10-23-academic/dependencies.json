@@ -1,0 +1,27 @@
+[
+  {
+    "project": "01-economics-and-econometrics/04-econometrics/05-instrumental-variables/weak-iv-inference-audit",
+    "pandas_scipy_declared": true,
+    "sklearn_required_for_CQR": false
+  },
+  {
+    "project": "02-mathematics-statistics-and-quant/advanced-research/13-path-signatures-hidden-dynamics",
+    "pandas_scipy_declared": true,
+    "sklearn_required_for_CQR": false
+  },
+  {
+    "project": "03-financial-risk/01-credit-risk/fraud-and-anomaly-research/01-identity-kyc-consistency/channel-conformal-audit",
+    "pandas_scipy_declared": true,
+    "sklearn_required_for_CQR": false
+  },
+  {
+    "project": "05-artificial-intelligence-and-computational-systems/02-machine-learning-engineering/02-conformal-risk-prediction",
+    "pandas_scipy_declared": true,
+    "sklearn_required_for_CQR": true
+  },
+  {
+    "project": "06-strategy-innovation-and-leadership/20-ai-innovation-productivity-leadership/innovation-evsi-gate",
+    "pandas_scipy_declared": true,
+    "sklearn_required_for_CQR": false
+  }
+]

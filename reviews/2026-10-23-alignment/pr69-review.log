@@ -1,0 +1,26 @@
+PR69 764942ebf602edacdcb38f2de040241f08e7a842
+Compiled g++ -std=c++17 -Wall -Wextra -Wpedantic -Werror -Iinclude tests/tests.cpp; binary exit 0.
+CMake command unavailable. Sanitizers and full benchmark not repeated.
+[
+  {
+    "scenario": "clear_reject",
+    "n": 200,
+    "fixed_wrong": 0,
+    "sequential_wrong": 0,
+    "undecided": 0
+  },
+  {
+    "scenario": "boundary",
+    "n": 200,
+    "fixed_wrong": 32,
+    "sequential_wrong": 0,
+    "undecided": 167
+  },
+  {
+    "scenario": "clear_non_reject",
+    "n": 200,
+    "fixed_wrong": 0,
+    "sequential_wrong": 0,
+    "undecided": 0
+  }
+]

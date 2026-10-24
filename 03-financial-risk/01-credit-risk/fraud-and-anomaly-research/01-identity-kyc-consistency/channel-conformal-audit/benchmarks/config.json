@@ -1,0 +1,1 @@
+{"seeds": 60, "calibration_per_channel": 499, "test_inliers_per_channel": 2000, "test_outliers_per_channel": 500, "alpha": 0.05, "score_round_decimals": 1, "channel_scales": [1,4], "anomaly_shift_sigma": 3, "drift_multiplier": 1.7, "sparse_calibration_per_channel": 9, "hypothesis": "stationary channel FPR disparity decreases by >=0.03 with channel calibration"}

@@ -1,0 +1,237 @@
+{
+  "cutoff_local": "2026-10-23 America/Bogota",
+  "scope": "Fuentes públicas primarias; capacidades comerciales declaradas; sin APIs ni compras.",
+  "sources": [
+    {
+      "id": "law1581",
+      "title": "Ley 1581 de 2012, arts. 3–6, 9–10",
+      "type": "norma, compilación oficial",
+      "url": "https://cancilleria.gov.co/normograma/compilacion/docs/ley_1581_2012.htm",
+      "scope": "Finalidad, tratamiento, autorización/excepciones y datos sensibles; no habilita captación indiscriminada."
+    },
+    {
+      "id": "law1266",
+      "title": "Ley 1266 de 2008, texto con notas",
+      "type": "norma, compilación oficial",
+      "url": "https://cancilleria.gov.co/normograma/compilacion/docs/ley_1266_2008.htm",
+      "scope": "Régimen especial del dato financiero/crediticio; determinar roles y ámbito por fuente y finalidad."
+    },
+    {
+      "id": "law2300",
+      "title": "Ley 2300 de 2023, arts. 2–4",
+      "type": "norma, compilación oficial",
+      "url": "https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=143903",
+      "scope": "Canales autorizados, horarios, periodicidad y límites de contacto en cobranza; implementar reglas verificadas localmente."
+    },
+    {
+      "id": "sic-ai",
+      "title": "SIC Circular Externa 002 de 2024",
+      "type": "autoridad",
+      "url": "https://cancilleria.gov.co/normograma/compilacion/docs/circular_superindustria_0002_2024.htm",
+      "scope": "Protección de datos en sistemas de IA; no certifica esta arquitectura."
+    },
+    {
+      "id": "w3c",
+      "title": "W3C Geolocation, Candidate Recommendation Snapshot 2026-03-26",
+      "type": "especificación técnica",
+      "url": "https://www.w3.org/TR/2026/CR-geolocation-20260326/",
+      "scope": "Permiso, contexto seguro, coordenadas, tiempo y precisión; no garantiza GPS ni verdad física."
+    },
+    {
+      "id": "android",
+      "title": "Android: Best practices for unique identifiers",
+      "type": "documentación oficial",
+      "url": "https://developer.android.com/identity/user-data-ids",
+      "scope": "Restricciones de identificadores de hardware y preferencia por identificadores de alcance limitado."
+    },
+    {
+      "id": "maxmind",
+      "title": "MaxMind: Geolocation accuracy",
+      "type": "documentación comercial",
+      "url": "https://support.maxmind.com/knowledge-base/articles/maxmind-geolocation-accuracy",
+      "scope": "GeoIP aproxima una región; no ubicación residencial exacta. No trasladar exactitudes de otros países a Colombia."
+    },
+    {
+      "id": "maxmind-vpn",
+      "title": "MaxMind: Anonymizer and proxy data",
+      "type": "documentación comercial",
+      "url": "https://support.maxmind.com/knowledge-base/articles/anonymizer-and-proxy-data-maxmind",
+      "scope": "Una IP anónima puede corresponder al servidor intermediario; VPN no equivale a fraude."
+    },
+    {
+      "id": "fingerprint",
+      "title": "Fingerprint Smart Signals",
+      "type": "documentación comercial",
+      "url": "https://docs.fingerprint.com/docs/smart-signals-reference",
+      "scope": "Señales de IP y dispositivo; disponibilidad depende de integración y producto."
+    },
+    {
+      "id": "ipinfo",
+      "title": "IPinfo: API information",
+      "type": "documentación comercial",
+      "url": "https://support.ipinfo.io/hc/en-us/articles/30792535299346-What-Information-Can-Your-API-Provide",
+      "scope": "Geolocalización de IP y categorías de anonimización."
+    },
+    {
+      "id": "lexis",
+      "title": "LexisNexis ThreatMetrix",
+      "type": "declaración comercial",
+      "url": "https://risk.lexisnexis.com/products/threatmetrix",
+      "scope": "Contexto de identidad digital: dispositivo, ubicación y comportamiento; no prueba identidad civil."
+    },
+    {
+      "id": "prove",
+      "title": "Prove Identity",
+      "type": "declaración comercial",
+      "url": "https://www.prove.com/solutions/identity",
+      "scope": "Señales centradas en teléfono y riesgo de identidad; confirmar cobertura de mercado."
+    },
+    {
+      "id": "telesign",
+      "title": "Telesign SIM Swap API",
+      "type": "documentación comercial",
+      "url": "https://developer.telesign.com/enterprise/reference/submitphonenumberforidentityalt",
+      "scope": "Datos SIM swap como complemento habilitado; cobertura depende del mercado y contrato."
+    },
+    {
+      "id": "tu",
+      "title": "TransUnion Colombia: Adquisición",
+      "type": "declaración comercial local",
+      "url": "https://www.transunion.co/solucion/adquisicion-de-clientes",
+      "scope": "Soluciones de originación y analítica; acuerdo y autorización aplicables."
+    },
+    {
+      "id": "tu-collections",
+      "title": "TransUnion Colombia: Cobranzas",
+      "type": "declaración comercial local",
+      "url": "https://www.transunion.co/solucion/cobranzas",
+      "scope": "Priorización y analítica para cobranza; no autoriza contacto irrestricto."
+    },
+    {
+      "id": "experian",
+      "title": "DataCrédito Experian: Empresas",
+      "type": "declaración comercial local",
+      "url": "https://www.datacredito.com.co/empresas/",
+      "scope": "Información crediticia y soluciones empresariales; no equivale a cuenta bancaria transaccional completa."
+    },
+    {
+      "id": "fico",
+      "title": "FICO Platform",
+      "type": "declaración comercial",
+      "url": "https://www.fico.com/en/fico-platform",
+      "scope": "Plataforma de decisiones en originación, clientes, fraude y cobranza; no score colombiano universal."
+    },
+    {
+      "id": "provenir",
+      "title": "Provenir Platform",
+      "type": "declaración comercial",
+      "url": "https://www.provenir.com/platform/",
+      "scope": "Orquestación de datos, modelos y decisiones; no sustituye gobierno interno."
+    },
+    {
+      "id": "mambu",
+      "title": "Mambu Documentation Hub",
+      "type": "documentación comercial",
+      "url": "https://docs.mambu.com/docs/",
+      "scope": "Core de productos de préstamo/depósito, APIs y ledger; no inferir integración local lista."
+    },
+    {
+      "id": "temenos",
+      "title": "Temenos Credit Unions and Community Banking",
+      "type": "declaración comercial, alcance de mercado específico",
+      "url": "https://www.temenos.com/specialized/credit-unions-and-community/",
+      "scope": "Módulos de onboarding, originación y collections; confirmar oferta y localización colombiana."
+    },
+    {
+      "id": "certicamara",
+      "title": "Certicámara: Certificados de firma digital",
+      "type": "declaración comercial local",
+      "url": "https://web.certicamara.com/servicios/firmas-digitales/certificados",
+      "scope": "Servicio de certificados; la estructura jurídica del contrato/pagaré se valida aparte."
+    },
+    {
+      "id": "deceval",
+      "title": "Deceval: Pagarés desmaterializados",
+      "type": "servicio, sitio BVC",
+      "url": "https://www.bvc.com.co/pagares?tab=manuales",
+      "scope": "Instrumentación de pagarés; firma, custodia y exigibilidad no son conceptos intercambiables."
+    },
+    {
+      "id": "ach",
+      "title": "ACH Colombia: Centro de ayuda PSE",
+      "type": "documentación comercial local",
+      "url": "https://www.pse.com.co/persona-centro-de-ayuda",
+      "scope": "Recaudo PSE y transferencias ACH como servicios distintos; PSE no es por sí solo una API de desembolso."
+    },
+    {
+      "id": "katabat",
+      "title": "Finvi: Banks and Lenders, Katabat",
+      "type": "declaración comercial",
+      "url": "https://finvi.com/banks-and-lenders/",
+      "scope": "Gestión de interacción y cobranza; no asumir reglas colombianas configuradas."
+    },
+    {
+      "id": "iproov",
+      "title": "iProov: Product overview",
+      "type": "documentación comercial",
+      "url": "https://docs.iproov.com/getting-started/product-overview",
+      "scope": "Verificación de vida, comparación facial y perfil biométrico. Fuente consultada en la revisión defensiva previa del mismo día."
+    },
+    {
+      "id": "truora",
+      "title": "Truora: Document and Face Validation",
+      "type": "documentación comercial",
+      "url": "https://dev.truora.com/guides/documentandface/",
+      "scope": "Documento y comparación facial; no prueba de solvencia. Fuente consultada en la revisión defensiva previa del mismo día."
+    },
+    {
+      "id": "seon",
+      "title": "SEON: Fraud API",
+      "type": "documentación comercial",
+      "url": "https://docs.seon.io/api-reference/fraud-api",
+      "scope": "Señales de email, teléfono, IP y dispositivo mediante API. Fuente consultada en la revisión defensiva previa del mismo día."
+    },
+    {
+      "id": "socure",
+      "title": "Socure: Sigma Synthetic Fraud",
+      "type": "documentación comercial",
+      "url": "https://help.socure.com/riskos/docs/sigma-synthetic-fraud",
+      "scope": "Score para identidad sintética; no asumir calibración local. Fuente consultada en la revisión defensiva previa del mismo día."
+    },
+    {
+      "id": "biocatch",
+      "title": "BioCatch: Behavioral Biometrics",
+      "type": "declaración comercial",
+      "url": "https://www.biocatch.com/behavioral-biometrics-solution",
+      "scope": "Comportamiento para apertura, toma de cuenta, estafas y mulas. Fuente consultada en la revisión defensiva previa del mismo día."
+    },
+    {
+      "id": "feedzai",
+      "title": "Feedzai: RiskOps",
+      "type": "declaración comercial",
+      "url": "https://www.feedzai.com/riskops/",
+      "scope": "Orquestación de señales de fraude; cifras comerciales no adoptadas como rendimiento propio. Fuente consultada en la revisión defensiva previa del mismo día."
+    },
+    {
+      "id": "persona",
+      "title": "Persona: Workflows",
+      "type": "documentación comercial",
+      "url": "https://docs.withpersona.com/workflows",
+      "scope": "Orquestación mediante eventos y estados de verificación. Fuente consultada en la revisión defensiva previa del mismo día."
+    },
+    {
+      "id": "belvo",
+      "title": "Belvo: Income Verification",
+      "type": "documentación comercial",
+      "url": "https://belvo.com/products/income-verification/",
+      "scope": "Perfil de ingresos a partir de fuentes conectadas; confirmar país, banco y producto. Fuente consultada en la revisión defensiva previa del mismo día."
+    },
+    {
+      "id": "belvo-doc",
+      "title": "Belvo: Enrichment overview",
+      "type": "documentación comercial",
+      "url": "https://developers.belvo.com/developer_resources/enrichment-overview",
+      "scope": "Dependencia del histórico bancario disponible y de conectar la cuenta receptora de ingreso. Fuente consultada en la revisión defensiva previa del mismo día."
+    }
+  ]
+}

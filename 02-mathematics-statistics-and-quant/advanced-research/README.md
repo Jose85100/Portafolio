@@ -1,6 +1,6 @@
 # Advanced Research — Mathematics, Statistics & Quantitative Methods
 
-Veinte programas de investigación. Los programas 01, 02, 03, 04, 05, 08, 09, 12 y 18 tienen prototipos S2 acotados; los demás siguen como propuestas S1. Se conservan los seis proyectos existentes de métodos cuantitativos y las bibliotecas multilenguaje.
+Veinte programas de investigación. Los programas 01, 02, 03, 04, 05, 08, 09, 12, 13 y 18 tienen prototipos S2 acotados; los demás siguen como propuestas S1. Se conservan los seis proyectos existentes de métodos cuantitativos y las bibliotecas multilenguaje.
 
 | ID | Proyecto | Estado |
 |---|---|---|
@@ -27,13 +27,13 @@ Cada proyecto exige formulación rigurosa, supuestos y contraejemplos, evaluaci�
 
 ## Segunda generación — proyectos 11–20
 
-Esta segunda ola investiga conexiones interdisciplinarias. **Los programas 12 y 18 tienen prototipos S2 acotados; los demás siguen en S1.**
+Esta segunda ola investiga conexiones interdisciplinarias. **Los programas 12, 13 y 18 tienen prototipos S2 acotados; los demás siguen en S1.**
 
 | ID | Investigación | Estado |
 |---|---|---|
 | 11 | [Causal Optimal Transport](11-causal-optimal-transport/) | S1 |
 | 12 | [Statistical Gauge Invariance](12-statistical-gauge-invariance/) | S2: certificado Fisher de simetría de escala y caso degenerado |
-| 13 | [Path Signatures & Hidden Dynamics](13-path-signatures-hidden-dynamics/) | S1 |
+| 13 | [Path Signatures & Hidden Dynamics](13-path-signatures-hidden-dynamics/) | S2: firma nivel 2, certificado de Chen y auditoría de aliasing |
 | 14 | [Algorithmic Renormalization](14-algorithmic-renormalization/) | S1 |
 | 15 | [Distributional Phase Diagrams](15-distributional-phase-diagrams/) | S1 |
 | 16 | [Non-Equilibrium Information Thermodynamics](16-nonequilibrium-information-thermodynamics/) | S1 |
@@ -44,4 +44,4 @@ Esta segunda ola investiga conexiones interdisciplinarias. **Los programas 12 y 
 
 **Prioridad matemática exploratoria:** 12, 14 y 17. **Métodos computacionales con validación factible:** 11, 13, 16 y 18. **Aplicación macrofinanciera:** 15, 19 y 20.
 
-La revisión e implementación completas siguen pendientes para los programas S1. Los programas 01, 02, 03, 04, 05, 08, 09, 12 y 18 incluyen benchmarks sintéticos reproducibles; no constituyen validación externa ni demuestran originalidad algorítmica.
+La revisión e implementación completas siguen pendientes para los programas S1. Los programas 01, 02, 03, 04, 05, 08, 09, 12, 13 y 18 incluyen benchmarks sintéticos reproducibles; no constituyen validación externa ni demuestran originalidad algorítmica.
