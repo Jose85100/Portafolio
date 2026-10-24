@@ -1,0 +1,113 @@
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.2
+[notice] To update, run: python -m pip install --upgrade pip
+test_baseline_not_robust (test_robust.RobustTests.test_baseline_not_robust) ... ok
+test_contracts (test_robust.RobustTests.test_contracts) ... ok
+test_degenerate_residual (test_robust.RobustTests.test_degenerate_residual) ... ok
+test_leverage_and_nonfinite (test_robust.RobustTests.test_leverage_and_nonfinite) ... ok
+test_properties (test_robust.RobustTests.test_properties) ... ok
+test_sandwich_matrix_oracle (test_robust.RobustTests.test_sandwich_matrix_oracle) ... ok
+test_size_smoke (test_robust.RobustTests.test_size_smoke) ... ok
+test_weakness_invariance_at_true_null (test_robust.RobustTests.test_weakness_invariance_at_true_null) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.063s
+
+OK
+Name              Stmts   Miss  Cover
+-------------------------------------
+src/baseline.py      28      0   100%
+src/robust.py        33      0   100%
+-------------------------------------
+TOTAL                61      0   100%
+All checks passed!
+Success: no issues found in 4 source files
+[
+  {
+    "scenario": "IID n100",
+    "rates": [
+      0.048,
+      0.0555,
+      0.0475
+    ],
+    "mc_se": [
+      0.0047799581588126895,
+      0.005119558086397693,
+      0.004756245893559331
+    ],
+    "hc3_minus_f": -0.0005,
+    "paired_se": 0.002958758544738491,
+    "seconds": 1.9210769479999499,
+    "python_peak_bytes": 1214809
+  },
+  {
+    "scenario": "Hetero n100",
+    "rates": [
+      0.24,
+      0.0665,
+      0.059
+    ],
+    "mc_se": [
+      0.009549869109050658,
+      0.005571254347092763,
+      0.0052687284993630104
+    ],
+    "hc3_minus_f": -0.181,
+    "paired_se": 0.008611421386109527,
+    "seconds": 2.0487074010000015,
+    "python_peak_bytes": 1016309
+  },
+  {
+    "scenario": "IID n1000",
+    "rates": [
+      0.055,
+      0.0555,
+      0.0555
+    ],
+    "mc_se": [
+      0.005097793640389928,
+      0.005119558086397693,
+      0.005119558086397693
+    ],
+    "hc3_minus_f": 0.0005,
+    "paired_se": 0.0015003334630175136,
+    "seconds": 2.0211934300000394,
+    "python_peak_bytes": 1130209
+  },
+  {
+    "scenario": "Hetero n1000",
+    "rates": [
+      0.239,
+      0.0555,
+      0.0555
+    ],
+    "mc_se": [
+      0.009536220425304776,
+      0.005119558086397693,
+      0.005119558086397693
+    ],
+    "hc3_minus_f": -0.1835,
+    "paired_se": 0.008657444812145074,
+    "seconds": 2.0738845580000316,
+    "python_peak_bytes": 1143755
+  },
+  {
+    "scenario": "Exclusi\u00f3n inv\u00e1lida",
+    "rates": [
+      0.9965,
+      0.9625,
+      0.9605
+    ],
+    "mc_se": [
+      0.0013205585939290896,
+      0.004248161366991606,
+      0.004355441998236229
+    ],
+    "hc3_minus_f": -0.036,
+    "paired_se": 0.004166614973833084,
+    "seconds": 2.2077400850000117,
+    "python_peak_bytes": 1161812
+  }
+]
+[{'n': 100, 'method': 'F', 'calls': 100, 'seconds': 0.02230976699996745, 'python_peak_bytes': 23166}, {'n': 100, 'method': 'HC1', 'calls': 100, 'seconds': 0.024343474999966475, 'python_peak_bytes': 21696}, {'n': 100, 'method': 'HC3', 'calls': 100, 'seconds': 0.025460664999968685, 'python_peak_bytes': 21070}, {'n': 1000, 'method': 'F', 'calls': 100, 'seconds': 0.02282894799998303, 'python_peak_bytes': 50721}, {'n': 1000, 'method': 'HC1', 'calls': 100, 'seconds': 0.027022262000002684, 'python_peak_bytes': 78057}, {'n': 1000, 'method': 'HC3', 'calls': 100, 'seconds': 0.024400130999993053, 'python_peak_bytes': 77961}, {'n': 10000, 'method': 'F', 'calls': 100, 'seconds': 0.026024491999976362, 'python_peak_bytes': 406317}, {'n': 10000, 'method': 'HC1', 'calls': 100, 'seconds': 0.030816225000023678, 'python_peak_bytes': 726263}, {'n': 10000, 'method': 'HC3', 'calls': 100, 'seconds': 0.03288308200001211, 'python_peak_bytes': 726010}]
+Executed 4 code cells in process.
