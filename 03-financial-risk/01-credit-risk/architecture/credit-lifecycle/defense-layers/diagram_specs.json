@@ -1,0 +1,673 @@
+{
+  "scope": "4 S1 defense overlays; conceptual, no integrations",
+  "pages": [
+    [
+      "01-evidence-chain",
+      "01 · Evidencia: teléfono, documento, sujeto y efecto",
+      "Cada pase conserva el hecho que verificó; no completa automáticamente la cadena.",
+      [
+        [
+          "01 · Captura",
+          [
+            [
+              "Identidad reclamada",
+              "Sujeto de prueba y solicitud",
+              "internal"
+            ],
+            [
+              "Teléfono y canal",
+              "Posesión distinta de titularidad",
+              "external"
+            ],
+            [
+              "Documento aportado",
+              "Campos, foto y fuente de prueba",
+              "external"
+            ]
+          ]
+        ],
+        [
+          "02 · Validación",
+          [
+            [
+              "Autenticidad y alcance",
+              "Fuente, integridad y soporte",
+              "internal"
+            ],
+            [
+              "Estado por hecho",
+              "Verificado, inconcluso o no observado",
+              "internal"
+            ],
+            [
+              "Contexto de sesión",
+              "Captura, tiempo y disponibilidad",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "03 · Vínculo",
+          [
+            [
+              "Binding de evidencia",
+              "Sujeto, caso, sesión y versión",
+              "internal"
+            ],
+            [
+              "Revisión de contradicciones",
+              "Canal controlado no basta",
+              "review"
+            ],
+            [
+              "Finalidad y cobertura",
+              "Uso permitido y datos suficientes",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "04 · Puerta",
+          [
+            [
+              "Identidad e intención",
+              "Procesos y límites separados",
+              "internal"
+            ],
+            [
+              "Formalización coherente",
+              "Oferta aceptada y condiciones",
+              "internal"
+            ],
+            [
+              "Destino y autoridad",
+              "Cambios revalidados antes de efecto",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "05 · Salida",
+          [
+            [
+              "Continuar o pedir evidencia",
+              "Razón sin acusación automática",
+              "review"
+            ],
+            [
+              "Autorización limitada",
+              "Solo con precondiciones cumplidas",
+              "internal"
+            ],
+            [
+              "Ledger de evidencia y efecto",
+              "Qué verificó cada control",
+              "internal"
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          11,
+          13
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          13,
+          14
+        ]
+      ]
+    ],
+    [
+      "02-intelligence-network",
+      "02 · Inteligencia de fraude y coordinación",
+      "Patrones con procedencia, confianza y alternativa benigna; sin culpa por asociación.",
+      [
+        [
+          "01 · Fuentes",
+          [
+            [
+              "Señales internas habilitadas",
+              "Casos, sesiones y eventos",
+              "internal"
+            ],
+            [
+              "Indicadores especializados",
+              "Fuente, confianza y cobertura",
+              "external"
+            ],
+            [
+              "Casos adjudicados",
+              "Sospecha distinta de confirmación",
+              "review"
+            ]
+          ]
+        ],
+        [
+          "02 · Contexto",
+          [
+            [
+              "Linaje y vigencia",
+              "Hecho compartido y fuente original",
+              "internal"
+            ],
+            [
+              "Relaciones tipadas",
+              "IP, teléfono, documento y destino",
+              "internal"
+            ],
+            [
+              "Hipótesis alternativas",
+              "Hogar, oficina, viaje y error",
+              "review"
+            ]
+          ]
+        ],
+        [
+          "03 · Contraste",
+          [
+            [
+              "Dependencia entre señales",
+              "No contar el mismo hecho varias veces",
+              "internal"
+            ],
+            [
+              "Grafo al corte",
+              "Disponibilidad y caducidad",
+              "internal"
+            ],
+            [
+              "Investigación de patrón",
+              "Corroborar y deduplicar caso",
+              "review"
+            ]
+          ]
+        ],
+        [
+          "04 · Control",
+          [
+            [
+              "Uso y alcance autorizado",
+              "Finalidad y minimización",
+              "internal"
+            ],
+            [
+              "Prioridad de investigación",
+              "Capacidad y evidencia faltante",
+              "internal"
+            ],
+            [
+              "Cambio y corrección",
+              "Fuente o hipótesis equivocada",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "05 · Aprendizaje",
+          [
+            [
+              "Caso y razones",
+              "Estado explícito de la sospecha",
+              "internal"
+            ],
+            [
+              "Decisión responsable",
+              "Sin rechazo por vecindad",
+              "review"
+            ],
+            [
+              "Feedback adjudicado",
+              "No envenenar etiquetas",
+              "internal"
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          10,
+          13
+        ],
+        [
+          11,
+          14
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          13,
+          14
+        ]
+      ]
+    ],
+    [
+      "03-adversarial-model-human",
+      "03 · Evaluación adversarial, modelo y personas",
+      "La prueba cubre controles, rutas alternativas y respuesta fiel al cliente.",
+      [
+        [
+          "01 · Diseño",
+          [
+            [
+              "Capacidad del actor",
+              "Entradas, rol y frontera de confianza",
+              "internal"
+            ],
+            [
+              "Fixtures sintéticos",
+              "Documento/identidades NO VÁLIDOS",
+              "internal"
+            ],
+            [
+              "Controles legítimos",
+              "Accesibilidad, cambios y faltantes",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "02 · Prueba",
+          [
+            [
+              "Cadena y fallback",
+              "Control fuerte seguido por ruta débil",
+              "internal"
+            ],
+            [
+              "Sondeo de laboratorio",
+              "Presupuesto fijo; modelo propio",
+              "internal"
+            ],
+            [
+              "Revisión y recuperación",
+              "Urgencia no equivale a autoridad",
+              "review"
+            ]
+          ]
+        ],
+        [
+          "03 · Protección",
+          [
+            [
+              "Precondiciones e integridad",
+              "Evidencia, versión y autoridad",
+              "internal"
+            ],
+            [
+              "Interfaz y explicación",
+              "Detalle necesario y razón fiel",
+              "internal"
+            ],
+            [
+              "Atribución humana",
+              "Mínimo privilegio y trazabilidad",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "04 · Evaluación",
+          [
+            [
+              "Familias no vistas",
+              "Test reservado y baseline congelado",
+              "internal"
+            ],
+            [
+              "Costo y daño en legítimos",
+              "Falsos bloqueos y carga operativa",
+              "internal"
+            ],
+            [
+              "Hallazgos y residuo",
+              "Caso observado; alcance limitado",
+              "review"
+            ]
+          ]
+        ],
+        [
+          "05 · Liberación",
+          [
+            [
+              "Corregir y repetir",
+              "Regresión de casos vecinos",
+              "internal"
+            ],
+            [
+              "Puerta de validación",
+              "Revisión institucional pertinente",
+              "review"
+            ],
+            [
+              "Estado de la entrega",
+              "S1: estudios aún no ejecutados",
+              "internal"
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          10,
+          13
+        ],
+        [
+          11,
+          13
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          13,
+          14
+        ]
+      ]
+    ],
+    [
+      "04-assurance-response",
+      "04 · Vigilancia, contención y aprendizaje",
+      "Detectar omisiones y responder sin borrar efectos ni convertir sospechas en verdad.",
+      [
+        [
+          "01 · Registro",
+          [
+            [
+              "Control ejecutado y versión",
+              "Pasó, faltó, falló o fue inconcluso",
+              "internal"
+            ],
+            [
+              "Efectos y estados",
+              "Pago, reserva y conciliación",
+              "internal"
+            ],
+            [
+              "Canarios internos de prueba",
+              "Aislados de clientes y entrenamiento",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "02 · Vigilancia",
+          [
+            [
+              "Cobertura y maduración",
+              "No confundir ausencia con legitimidad",
+              "internal"
+            ],
+            [
+              "Cambio de fuente/modelo",
+              "Esquema válido no prueba semántica",
+              "internal"
+            ],
+            [
+              "Alarma e investigación",
+              "Responsable y evidencia",
+              "review"
+            ]
+          ]
+        ],
+        [
+          "03 · Respuesta",
+          [
+            [
+              "Contención proporcional",
+              "Pendiente o revisión autorizada",
+              "review"
+            ],
+            [
+              "Preservar evidencia",
+              "Referencias protegidas y linaje",
+              "internal"
+            ],
+            [
+              "Resolver efecto financiero",
+              "Consultar y conciliar; no borrar",
+              "internal"
+            ]
+          ]
+        ],
+        [
+          "04 · Corrección",
+          [
+            [
+              "Adjudicación del incidente",
+              "Sospecha, descarte o confirmación",
+              "review"
+            ],
+            [
+              "Control y pruebas de retorno",
+              "Replay y casos legítimos vecinos",
+              "internal"
+            ],
+            [
+              "Liberación gobernada",
+              "Rollback o nueva versión",
+              "review"
+            ]
+          ]
+        ],
+        [
+          "05 · Cierre",
+          [
+            [
+              "Labels con procedencia",
+              "Alerta no equivale a fraude",
+              "internal"
+            ],
+            [
+              "Monitoreo posterior",
+              "Recurrencia, fricción y cobertura",
+              "internal"
+            ],
+            [
+              "Riesgo residual documentado",
+              "La corrección no prueba invulnerable",
+              "internal"
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          10,
+          13
+        ],
+        [
+          11,
+          14
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          13,
+          14
+        ]
+      ]
+    ]
+  ]
+}
