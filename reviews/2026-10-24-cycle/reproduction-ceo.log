@@ -1,0 +1,114 @@
+test_evpi_upper_bound_independent_quadrature (test_evsi.DecisionTests.test_evpi_upper_bound_independent_quadrature) ... ok
+test_gate_and_expensive_ablation (test_evsi.DecisionTests.test_gate_and_expensive_ablation) ... ok
+test_information_properties (test_evsi.DecisionTests.test_information_properties) ... ok
+test_invalid (test_evsi.DecisionTests.test_invalid) ... ok
+test_no_information (test_evsi.DecisionTests.test_no_information) ... ok
+test_uniform_predictive_oracle (test_evsi.DecisionTests.test_uniform_predictive_oracle) ... ok
+test_common_policy_can_lose (test_robust.RobustTests.test_common_policy_can_lose) ... ok
+test_delay_and_no_study (test_robust.RobustTests.test_delay_and_no_study) ... ok
+test_invalid (test_robust.RobustTests.test_invalid) ... ok
+test_robust_no_worse_than_stopping (test_robust.RobustTests.test_robust_no_worse_than_stopping) ... ok
+test_single_prior_reduces_to_original (test_robust.RobustTests.test_single_prior_reduces_to_original) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 1.328s
+
+OK
+Name              Stmts   Miss  Cover
+-------------------------------------
+src/__init__.py       0      0   100%
+src/evsi.py          46      0   100%
+src/robust.py        40      0   100%
+-------------------------------------
+TOTAL                86      0   100%
+All checks passed!
+Success: no issues found in 3 source files
+{
+  "selected": {
+    "n": 50,
+    "evsi": 5490.41839524532,
+    "experiment_cost": 350.0,
+    "net_value": 5140.41839524532,
+    "immediate_value": 0.0,
+    "increment": 5140.41839524532,
+    "action": "experimentar"
+  },
+  "baseline_immediate": {
+    "n": 0,
+    "evsi": 0.0,
+    "experiment_cost": 0.0,
+    "net_value": 0.0,
+    "immediate_value": 0.0,
+    "increment": 0.0
+  },
+  "baseline_fixed_n100": {
+    "n": 100,
+    "evsi": 5738.223773850293,
+    "experiment_cost": 600.0,
+    "net_value": 5138.223773850293,
+    "immediate_value": 0.0,
+    "increment": 5138.223773850293
+  },
+  "evpi": 6019.743743999996,
+  "mc_mean": 5153.613560613619,
+  "mc_standard_error": 18.87000190645772,
+  "design_runtime_seconds": 0.02526903500000799,
+  "python_peak_bytes": 100888,
+  "process_peak_rss_kib_linux": 109456,
+  "seed": 20261023,
+  "replicates": 200000,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "matplotlib": "3.10.8"
+}
+Executed notebook.ipynb top-to-bottom
+No event loop hook running.
+{"path": "06-strategy-innovation-and-leadership/20-ai-innovation-productivity-leadership/innovation-evsi-gate/notebook.ipynb", "cells": 42, "code_cells": 16, "code_lines": 146, "figures": 5, "mode": "ipython", "academic_metrics": {"sequential_value": 4796.377133033429, "fixed_best_value": 4601.805220780544, "horizon": 30, "states": 496}, "sha256": "b1dfea27737c35c897f8ce764a1c4dd72c91cd5a9c78cc87a0bef5072e69ebe4"}
+{
+  "selected_robust": {
+    "n": 50,
+    "objective": 120.45257966819702,
+    "scenario_values": [
+      4909.623761217213,
+      120.45257966819702,
+      19679.9210803936
+    ],
+    "worst_value": 120.45257966819702
+  },
+  "mc_checks": [
+    {
+      "prior": [
+        6,
+        4
+      ],
+      "exact": 4909.623761217213,
+      "mc_mean": 4875.670355302008,
+      "mc_se": 18.565476140716562
+    },
+    {
+      "prior": [
+        4,
+        6
+      ],
+      "exact": 120.45257966819702,
+      "mc_mean": 122.96698371966329,
+      "mc_se": 5.944914594205227
+    },
+    {
+      "prior": [
+        8,
+        2
+      ],
+      "exact": 19679.9210803936,
+      "mc_mean": 19646.33398901625,
+      "mc_se": 25.799498312098702
+    }
+  ],
+  "runtime_seconds": 0.21346680200002766,
+  "seed": 20261024,
+  "replicates_per_prior": 200000
+}
+Executed robust-notebook.ipynb with rich outputs
