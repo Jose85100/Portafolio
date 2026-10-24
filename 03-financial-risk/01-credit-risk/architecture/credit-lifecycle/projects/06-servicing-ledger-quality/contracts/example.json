@@ -1,0 +1,12 @@
+{
+  "loan_id": "synthetic-servicing-001",
+  "snapshot_id": "snapshot-design-001",
+  "currency": "COP",
+  "balance": 900000,
+  "dpd": null,
+  "reconciliation_status": "pending",
+  "reason_codes": [
+    "unmatched_payment"
+  ],
+  "calendar_version": "design-v1"
+}

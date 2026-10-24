@@ -1,0 +1,11 @@
+{
+  "intent_id": "synthetic-intent-001",
+  "loan_id": "synthetic-loan-001",
+  "idempotency_key": "design-effect-001",
+  "currency": "COP",
+  "amount": 1000000,
+  "state": "unknown",
+  "provider_reference": null,
+  "next_action": "query_status",
+  "reservation_id": "synthetic-res-001"
+}

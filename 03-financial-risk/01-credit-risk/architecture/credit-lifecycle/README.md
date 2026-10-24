@@ -1,11 +1,14 @@
 # Ciclo completo de crédito: arquitecturas, flujos y señales
 
-Corte **23 de octubre de 2026, Colombia**. Extensión del [mapa de referencia](../README.md) y de las [cuatro arquitecturas defensivas de fraude](../../fraud-and-anomaly-research/ai-enabled-fraud-defense/diagrams/README.md). Añade **nueve diagramas editables**: tres variantes de plataforma y seis vistas de proceso/datos. Junto con las cuatro vistas defensivas previas, hay trece vistas complementarias, no trece servicios ni productos implementados.
+Corte **23 de octubre de 2026, Colombia**. Extensión del [mapa de referencia](../README.md) y de las [cuatro arquitecturas defensivas de fraude](../../fraud-and-anomaly-research/ai-enabled-fraud-defense/diagrams/README.md). El mapa base contiene **nueve diagramas editables**: tres variantes de plataforma y seis vistas de proceso/datos. Se organiza ahora en [diez proyectos y treinta ideas](projects/README.md), con [ocho capas defensivas adicionales](defense-layers/README.md) y cuatro overlays editables. Con las cuatro vistas previas de fraude, quedan **17 vistas complementarias en tres archivos draw.io**, no 17 servicios ni plataformas implementadas.
 
 Las arquitecturas nuevas son **S1: diseño de referencia**. El repositorio sigue limitado a ejemplos y datos sintéticos; no conectar PII ni ejecutar autorizaciones reales. La profundidad se mide por decisiones, contratos y fallos cubiertos, no por número de cajas.
 
 | Lectura | Contenido |
 |---|---|
+| [Diez proyectos](projects/README.md) | Carpetas propias, 30 ideas, contratos sintéticos y ruta S1 → S2 |
+| [Revisión adversarial](projects/THREAT_MODEL.md) | 40 escenarios propuestos; teléfono, documento, fuentes, roles y efectos |
+| [Ocho capas defensivas](defense-layers/README.md) | 16 estudios transversales y cuatro vistas nuevas |
 | [Capas y variantes](ARCHITECTURES.md) | 15 responsabilidades y tres alternativas de despliegue con criterios para elegir |
 | [Proceso completo](PROCESS_FLOWS.md) | Ocho flujos con caminos alternativos, responsables y controles |
 | [Qué información puede captar un banco](DATA_SIGNALS.md) | IP, geolocalización, dispositivo, identidad, ingresos, crédito, pagos y comportamiento |

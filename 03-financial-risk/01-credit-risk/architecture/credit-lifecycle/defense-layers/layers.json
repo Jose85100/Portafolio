@@ -1,0 +1,459 @@
+{
+  "scope": "8 additional logical defense layers, S1; 16 proposed cross-layer studies, not executed.",
+  "layers": [
+    {
+      "id": "01-evidence-integrity",
+      "title": "Integridad, procedencia y vínculo de evidencia",
+      "status": "S1",
+      "implemented": false,
+      "goal": "Evitar que un archivo, teléfono, rostro o respuesta de proveedor favorable se use para afirmar algo que no verificó.",
+      "stages": [
+        "Captación",
+        "KYC",
+        "Formalización",
+        "Antes del desembolso"
+      ],
+      "owner": "Identidad/seguridad de canal y operaciones; el proveedor especializado aporta una verificación acotada.",
+      "controls": [
+        {
+          "name": "Separación de hechos",
+          "design": "Identidad reclamada, control del número, titularidad nominal, documento, vínculo con persona e intención conservan estados distintos."
+        },
+        {
+          "name": "Binding",
+          "design": "Caso/sujeto/sesión/versión/vigencia enlazados; el resultado de otro expediente no satisface la precondición."
+        },
+        {
+          "name": "Autenticidad y soporte",
+          "design": "OCR, hash, comparación facial y autenticidad de fuente tienen alcances diferentes; conservar inconcluso y ruta alternativa."
+        }
+      ],
+      "studies": [
+        {
+          "id": "PHONE-LINK",
+          "title": "Teléfono controlado con identidad reclamada distinta",
+          "design": "Proveedor simulado confirma posesión/OTP pero deja identidad vinculada sin corroborar. Contrastar con un titular legítimo que usa una línea compartida. La política no promociona el primer pase a identidad ni rechaza automáticamente el segundo caso.",
+          "metrics": "Usos indebidos del pase de teléfono, carga de revisión y falsos bloqueos.",
+          "status": "proposed",
+          "executed": false
+        },
+        {
+          "id": "DOCUMENT-LINK",
+          "title": "Documento modificado o reutilizado con OCR correcto",
+          "design": "Archivos totalmente ficticios marcados NO VÁLIDO: campos coherentes con origen no corroborado y evidencia de sujeto diferente. Separar lectura, autenticidad, vínculo y condiciones de efecto.",
+          "metrics": "Afirmaciones sin soporte, casos que avanzan sin evidencia y abstenciones justificadas.",
+          "status": "proposed",
+          "executed": false
+        }
+      ],
+      "projects": [
+        "02-provider-orchestration",
+        "04-durable-origination-workflow",
+        "10-formalization-collateral",
+        "05-disbursement-reconciliation"
+      ],
+      "residual_risks": [
+        "Un actor puede controlar una línea y aportar una identidad aparente consistente; OTP por sí solo no resuelve el vínculo.",
+        "La integridad de bytes no acredita un emisor real; fuentes comprometidas o sin cobertura mantienen riesgo residual."
+      ]
+    },
+    {
+      "id": "02-fraud-intelligence",
+      "title": "Inteligencia de fraude y contexto de amenaza",
+      "status": "S1",
+      "implemented": false,
+      "goal": "Interpretar patrones de abuso y dependencias con procedencia, confianza, vigencia y alternativa benigna.",
+      "stages": [
+        "Canales",
+        "Orquestación",
+        "Investigación",
+        "Monitoreo"
+      ],
+      "owner": "Equipo de fraude con privacidad/seguridad para alcance de fuentes; no un servicio de vigilancia de personas.",
+      "controls": [
+        {
+          "name": "Indicadores con procedencia",
+          "design": "Registrar origen, fecha, confianza, cobertura y motivo de uso; un indicador de terceros no es condena ni label."
+        },
+        {
+          "name": "Hipótesis alternativas",
+          "design": "Confrontar coordinación ilícita aparente con hogar compartido, nuevo dispositivo, viaje, asistencia y error operacional."
+        },
+        {
+          "name": "Dependencia de fuente",
+          "design": "Varias respuestas que dependen del mismo hecho no se convierten en evidencias independientes."
+        }
+      ],
+      "studies": [
+        {
+          "id": "INTEL-PROVENANCE",
+          "title": "Indicador dudoso propagado por varias fuentes",
+          "design": "Dataset ficticio incluye un indicador equivocado compartido por tres fuentes y luego corregido. Comparar agregación ingenua y linaje con confianza/estado.",
+          "metrics": "Falsos vínculos, duplicación de evidencia y propagación de corrección.",
+          "status": "proposed",
+          "executed": false
+        },
+        {
+          "id": "INTEL-EXPIRY",
+          "title": "Patrón obsoleto bajo nueva población",
+          "design": "Cambiar antigüedad y base de exposición de indicadores sintéticos; evaluar cohortes sin asumir que el patrón observado sigue activo.",
+          "metrics": "Alerta útil, carga de revisión, caducidad y daño en controles legítimos.",
+          "status": "proposed",
+          "executed": false
+        }
+      ],
+      "projects": [
+        "01-geo-device-context",
+        "02-provider-orchestration",
+        "08-risk-data-observability",
+        "09-purpose-bound-signal-governance"
+      ],
+      "residual_risks": [
+        "El permiso técnico de una fuente no habilita cualquier finalidad; solo fuentes y datos institucionalmente admisibles.",
+        "La ausencia de un indicador no demuestra legitimidad y la presencia no confirma autoría."
+      ]
+    },
+    {
+      "id": "03-adversarial-evaluation",
+      "title": "Evaluación adversarial y revisión de supuestos",
+      "status": "S1",
+      "implemented": false,
+      "goal": "Buscar fallos de interacción, rutas alternativas y familias no vistas antes de liberar un cambio.",
+      "stages": [
+        "Diseño",
+        "Calibración",
+        "Validación",
+        "Sombra"
+      ],
+      "owner": "Validación/seguridad con alcance aprobado y separación respecto al autor; la entrega actual es autorrevisión documental.",
+      "controls": [
+        {
+          "name": "Capacidad del actor",
+          "design": "Definir qué controla y qué no: campo, sesión, documento ficticio, evento o rol de prueba."
+        },
+        {
+          "name": "Familias reservadas",
+          "design": "Separar escenarios de desarrollo y test; incluir variaciones y casos legítimos cercanos."
+        },
+        {
+          "name": "Prueba de cadena",
+          "design": "Evaluar evidencia, política, fallback, revisión y efecto; un control local fuerte puede quedar omitido en otra ruta."
+        }
+      ],
+      "studies": [
+        {
+          "id": "ADV-CHAIN",
+          "title": "Control fuerte seguido por fallback débil",
+          "design": "Combinar fuente inconclusa, recuperación de sesión y revisión con evidencia obsoleta; verificar invariantes terminales en el emulador futuro.",
+          "metrics": "Avances indebidos, estado seguro, demora y cobertura de rutas.",
+          "status": "proposed",
+          "executed": false
+        },
+        {
+          "id": "ADV-HOLDOUT",
+          "title": "Familias no utilizadas para ajustar controles",
+          "design": "Reservar familias de escenarios sintéticos y evaluadores de referencia; fijar umbral antes del test y comparar genuinos por accesibilidad/dispositivo.",
+          "metrics": "Éxito del escenario adversarial por familia, falsos bloqueos e incertidumbre; sin garantía universal.",
+          "status": "proposed",
+          "executed": false
+        }
+      ],
+      "projects": [
+        "01-geo-device-context",
+        "02-provider-orchestration",
+        "03-credit-offer-policy",
+        "04-durable-origination-workflow",
+        "05-disbursement-reconciliation",
+        "06-servicing-ledger-quality",
+        "07-collections-treatment-design",
+        "08-risk-data-observability",
+        "09-purpose-bound-signal-governance",
+        "10-formalization-collateral"
+      ],
+      "residual_risks": [
+        "El corpus finito no prueba invulnerabilidad ni simula toda creatividad adversaria.",
+        "Una revisión del autor no es un pentest, evaluación externa ni certificación."
+      ]
+    },
+    {
+      "id": "04-model-abuse-defense",
+      "title": "Protección frente a sondeo y contraingeniería",
+      "status": "S1",
+      "implemented": false,
+      "goal": "Reducir abuso de interfaces, inferencias indebidas y extracción de información sin sacrificar explicación fiel y derechos.",
+      "stages": [
+        "API",
+        "Motor de decisión",
+        "Explicación",
+        "Observabilidad"
+      ],
+      "owner": "Seguridad de aplicación y model risk; cumplimiento/atención para requisitos de explicación.",
+      "controls": [
+        {
+          "name": "Superficie de respuesta",
+          "design": "Exponer información necesaria y razones fieles, separando respuesta al cliente de datos internos/secretos del modelo."
+        },
+        {
+          "name": "Intentos correlacionados",
+          "design": "Medir repetición por caso/actor/contexto con límites apropiados; contemplar reintentos legítimos y redes compartidas."
+        },
+        {
+          "name": "Robustez de política",
+          "design": "Buscar discontinuidades/inestabilidad con casos sintéticos; proteger integridad de variables y versión de política."
+        }
+      ],
+      "studies": [
+        {
+          "id": "MODEL-PROBING",
+          "title": "Sondeo acotado de un modelo de laboratorio",
+          "design": "Modelo propio sintético con presupuesto de consultas fijo; comparar salida mínima suficiente y salida con datos internos innecesarios. Evaluar estabilidad y capacidad de detectar abuso, sin extraer modelos de terceros.",
+          "metrics": "Información interna expuesta, alertas de abuso, costo y fricción de usuarios legítimos.",
+          "status": "proposed",
+          "executed": false
+        },
+        {
+          "id": "MODEL-EXPLANATION",
+          "title": "Explicación fiel bajo restricciones de información",
+          "design": "Comparar razones generadas desde reglas/atribuciones verificadas con texto libre en un corpus ficticio; comprobar que la reducción de detalle no invente la causa ni oculte errores revisables.",
+          "metrics": "Fidelidad de razón, discrepancias, campos secretos expuestos y capacidad de revisión.",
+          "status": "proposed",
+          "executed": false
+        }
+      ],
+      "projects": [
+        "01-geo-device-context",
+        "03-credit-offer-policy",
+        "08-risk-data-observability",
+        "09-purpose-bound-signal-governance"
+      ],
+      "residual_risks": [
+        "Ocultar un umbral no corrige un mal modelo ni elimina derechos de explicación/reclamación.",
+        "Rate limits pueden perjudicar oficinas o redes compartidas; deben evaluarse como política, no identidad."
+      ]
+    },
+    {
+      "id": "05-human-insider-controls",
+      "title": "Controles humanos, recuperación e intervención interna",
+      "status": "S1",
+      "implemented": false,
+      "goal": "Impedir que presión, urgencia, ingeniería social o privilegio interno sustituyan evidencia y atribución.",
+      "stages": [
+        "Soporte",
+        "Recuperación de cuenta",
+        "Analista/comité",
+        "Cambios de cuenta o términos"
+      ],
+      "owner": "Operaciones y seguridad; segregación de funciones según criticidad y política institucional.",
+      "controls": [
+        {
+          "name": "Atribución verificable",
+          "design": "Roles, finalidad de tarea, razones y evidencia para cada override; mínimo privilegio y trazabilidad."
+        },
+        {
+          "name": "Recuperación evaluada",
+          "design": "Cambiar teléfono/autenticador/destino reabre los controles que realmente pierden validez."
+        },
+        {
+          "name": "Excepciones gobernadas",
+          "design": "Ruta de emergencia explícita y revisada; no un permiso universal de bypass ni una aprobación por urgencia."
+        }
+      ],
+      "studies": [
+        {
+          "id": "HUMAN-OVERRIDE",
+          "title": "Solicitud urgente sin atribución suficiente",
+          "design": "Guiones ficticios de revisión de escritorio y roles de prueba; alternar rol, evidencia y vigencia sin contactar personas reales.",
+          "metrics": "Overrides inválidos, tiempo de resolución y rechazo de excepciones legítimas.",
+          "status": "proposed",
+          "executed": false
+        },
+        {
+          "id": "HUMAN-RECOVERY",
+          "title": "Cambio de contacto después de verificar identidad",
+          "design": "Evento sintético de cambio de número o cuenta con revisión/OTP favorable anterior; comprobar nueva vinculación y tratamiento de la evidencia previa.",
+          "metrics": "Precondiciones obsoletas aceptadas, trazabilidad y carga de nueva evidencia.",
+          "status": "proposed",
+          "executed": false
+        }
+      ],
+      "projects": [
+        "04-durable-origination-workflow",
+        "05-disbursement-reconciliation",
+        "07-collections-treatment-design",
+        "10-formalization-collateral"
+      ],
+      "residual_risks": [
+        "Dos revisores que comparten la misma premisa equivocada no garantizan independencia.",
+        "La colusión interna exige controles de acceso y auditoría además del score de cliente."
+      ]
+    },
+    {
+      "id": "06-network-coordination",
+      "title": "Análisis de coordinación y vínculos entre casos",
+      "status": "S1",
+      "implemented": false,
+      "goal": "Investigar redes de solicitudes, teléfonos, dispositivos y destinos sin propagar culpabilidad entre vecinos legítimos.",
+      "stages": [
+        "Originación",
+        "Fraude",
+        "Destino de fondos",
+        "Investigación"
+      ],
+      "owner": "Fraude/investigación con fuentes habilitadas y modelo de vinculación validado.",
+      "controls": [
+        {
+          "name": "Relaciones tipadas",
+          "design": "Compartir IP, teléfono, documento o beneficiario son relaciones distintas con confianza y caducidad."
+        },
+        {
+          "name": "Tiempo y disponibilidad",
+          "design": "Grafo al corte; ninguna relación futura entra en la decisión histórica."
+        },
+        {
+          "name": "Corroboración y deduplicación",
+          "design": "Un componente genera hipótesis de caso; no una decisión adversa para cada vecino por asociación."
+        }
+      ],
+      "studies": [
+        {
+          "id": "NETWORK-BENIGN",
+          "title": "Hogar/oficina compartidos frente a coordinación",
+          "design": "Generar grafos con grupos legítimos y patrones coordinados controlados; comparar conteos tipados y un challenger sin usar vecinos futuros.",
+          "metrics": "Vínculos falsos, captura del patrón, falsas alertas por entorno compartido y carga deduplicada.",
+          "status": "proposed",
+          "executed": false
+        },
+        {
+          "id": "NETWORK-DESTINATION",
+          "title": "Cuenta receptora común con distintas explicaciones",
+          "design": "Escenarios ficticios distinguen destino comercial autorizado, intermediario legítimo y destino inconsistente; comprobar titularidad/contexto y evitar clasificación por grado solamente.",
+          "metrics": "Precisión de hipótesis, evidencia faltante y falsas asociaciones.",
+          "status": "proposed",
+          "executed": false
+        }
+      ],
+      "projects": [
+        "01-geo-device-context",
+        "02-provider-orchestration",
+        "05-disbursement-reconciliation",
+        "08-risk-data-observability"
+      ],
+      "residual_risks": [
+        "La titularidad de una cuenta no prueba que la transacción sea libre de engaño.",
+        "Cambios de identificador y datos incompletos pueden romper vínculos o crear asociaciones falsas."
+      ]
+    },
+    {
+      "id": "07-continuous-assurance",
+      "title": "Vigilancia continua y detección de degradación",
+      "status": "S1",
+      "implemented": false,
+      "goal": "Detectar pérdida de cobertura, cambios de proveedor y controles omitidos mientras se conserva diagnóstico y rollback.",
+      "stages": [
+        "Producción futura",
+        "Monitoreo",
+        "Release",
+        "Validación"
+      ],
+      "owner": "MLOps/datos, fraude y model risk; diagnóstico previo a cualquier liberación.",
+      "controls": [
+        {
+          "name": "Métricas de sistema",
+          "design": "Registrar control ejecutado, fuente disponible, transición y resultado; no solo AUC o tasa de aprobación."
+        },
+        {
+          "name": "Canarios de prueba internos",
+          "design": "Fixtures sintéticos identificados y aislados del entrenamiento/estadísticas de clientes para comprobar rutas."
+        },
+        {
+          "name": "Cambio gobernado",
+          "design": "Versión desconocida o deriva abre investigación; no implica automáticamente reentrenar o relajar controles."
+        }
+      ],
+      "studies": [
+        {
+          "id": "ASSURE-CANARY",
+          "title": "Control omitido pese a servicio saludable",
+          "design": "Un emulador devuelve 200 y esquema válido pero omite una comprobación; canarios internos etiquetados verifican la ruta sin mezclarse con clientes.",
+          "metrics": "Omisiones detectadas, demora y contaminación de estadísticas por pruebas.",
+          "status": "proposed",
+          "executed": false
+        },
+        {
+          "id": "ASSURE-HORIZON",
+          "title": "Alarmas repetidas y cambio de cobertura",
+          "design": "Series sintéticas con múltiples canales, retraso de labels y referencias cambiantes; evaluar carga y error por horizonte.",
+          "metrics": "Falsas alarmas conjuntas, demora de detección, cobertura y madurez.",
+          "status": "proposed",
+          "executed": false
+        }
+      ],
+      "projects": [
+        "02-provider-orchestration",
+        "06-servicing-ledger-quality",
+        "08-risk-data-observability",
+        "09-purpose-bound-signal-governance"
+      ],
+      "residual_risks": [
+        "Un canario conocido no sustituye familias de evaluación no vistas.",
+        "Ausencia de alarma no prueba seguridad; los labels pueden madurar tarde."
+      ]
+    },
+    {
+      "id": "08-incident-response",
+      "title": "Respuesta, contención y aprendizaje de incidentes",
+      "status": "S1",
+      "implemented": false,
+      "goal": "Limitar impacto, preservar evidencia y corregir controles sin reescribir efectos ni convertir sospechas en labels confirmadas.",
+      "stages": [
+        "Detección",
+        "Operaciones",
+        "Pagos",
+        "Aprendizaje posterior"
+      ],
+      "owner": "Gestión de incidentes con fraude, seguridad, pagos, atención y jurídica según el caso.",
+      "controls": [
+        {
+          "name": "Contención proporcional",
+          "design": "Definir estado pendiente/revisión/ruta degradada y responsables; distinguir señal, sospecha y caso adjudicado."
+        },
+        {
+          "name": "Preservación y conciliación",
+          "design": "Conservar referencias/versiones y efectos; proteger acceso a evidencia y registrar correcciones."
+        },
+        {
+          "name": "Retorno controlado",
+          "design": "Corrección, replay, comparación con genuinos y liberación aprobada; actualizar taxonomía y estudios."
+        }
+      ],
+      "studies": [
+        {
+          "id": "RESP-TIMEOUT",
+          "title": "Incidente con pago ya liquidado",
+          "design": "Simulación de alerta tardía más pago confirmado; comprobar que la contención no borra un efecto ni libera exposición ficticiamente.",
+          "metrics": "Pérdida de trazabilidad, dobles efectos, pendientes por edad y tiempo de resolución.",
+          "status": "proposed",
+          "executed": false
+        },
+        {
+          "id": "RESP-LABEL",
+          "title": "Aprendizaje tras incidente sin envenenar labels",
+          "design": "Corpus distingue sospechas, casos descartados y adjudicados; comparar reentrenamiento ingenuo con taxonomía/maduración y evaluación congelada.",
+          "metrics": "Etiquetas incorrectas incorporadas, falso positivo posterior y calidad de trazabilidad.",
+          "status": "proposed",
+          "executed": false
+        }
+      ],
+      "projects": [
+        "04-durable-origination-workflow",
+        "05-disbursement-reconciliation",
+        "07-collections-treatment-design",
+        "08-risk-data-observability"
+      ],
+      "residual_risks": [
+        "La respuesta técnica no garantiza recuperación de dinero ni revierte por sí sola un pago.",
+        "La conservación de evidencia debe conciliarse con acceso, finalidad y obligaciones aplicables."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "case_id": "synthetic-workflow-001",
+  "aggregate_version": 4,
+  "state": "evidence_pending",
+  "event_id": "evt-design-001",
+  "command": "issue_offer",
+  "transition_status": "rejected",
+  "reason_codes": [
+    "evidence_not_ready"
+  ],
+  "policy_version": "design-v1"
+}
