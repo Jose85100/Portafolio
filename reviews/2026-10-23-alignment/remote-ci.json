@@ -1,0 +1,83 @@
+{
+  "queried_date": "2026-10-23",
+  "PR70": {
+    "sha": "789dbe2918d99abc8541ee79dc3933a45a0b5930",
+    "workflow_runs": [
+      {
+        "id": 39976400084,
+        "name": "Strategy Decision Engines",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 85,
+        "jobs_url": "https://api.github.com/repos/Jose85100/Portafolio/actions/runs/39976400084/jobs",
+        "logs_url": "https://api.github.com/repos/Jose85100/Portafolio/actions/runs/39976400084/logs",
+        "workflow_id": 382413862
+      },
+      {
+        "id": 39976400039,
+        "name": "Strategy Portfolio Regression",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 17,
+        "jobs_url": "https://api.github.com/repos/Jose85100/Portafolio/actions/runs/39976400039/jobs",
+        "logs_url": "https://api.github.com/repos/Jose85100/Portafolio/actions/runs/39976400039/logs",
+        "workflow_id": 382432955
+      },
+      {
+        "id": 39976400189,
+        "name": "Economics vintage audit",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 52,
+        "jobs_url": "https://api.github.com/repos/Jose85100/Portafolio/actions/runs/39976400189/jobs",
+        "logs_url": "https://api.github.com/repos/Jose85100/Portafolio/actions/runs/39976400189/logs",
+        "workflow_id": 382765029
+      },
+      {
+        "id": 39976400151,
+        "name": "Notebook Reliability",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 45,
+        "jobs_url": "https://api.github.com/repos/Jose85100/Portafolio/actions/runs/39976400151/jobs",
+        "logs_url": "https://api.github.com/repos/Jose85100/Portafolio/actions/runs/39976400151/logs",
+        "workflow_id": 382540307
+      },
+      {
+        "id": 39976400159,
+        "name": "Daily multi-domain MVPs",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 1,
+        "jobs_url": "https://api.github.com/repos/Jose85100/Portafolio/actions/runs/39976400159/jobs",
+        "logs_url": "https://api.github.com/repos/Jose85100/Portafolio/actions/runs/39976400159/logs",
+        "workflow_id": 394184122
+      },
+      {
+        "id": 39976400199,
+        "name": "Credit fraud loss engine",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 10,
+        "jobs_url": "https://api.github.com/repos/Jose85100/Portafolio/actions/runs/39976400199/jobs",
+        "logs_url": "https://api.github.com/repos/Jose85100/Portafolio/actions/runs/39976400199/logs",
+        "workflow_id": 392260814
+      }
+    ]
+  },
+  "PR69": {
+    "sha": "764942ebf602edacdcb38f2de040241f08e7a842",
+    "workflow_runs": [
+      {
+        "id": 39958628300,
+        "name": "C++ Quant Risk Platform",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 26,
+        "jobs_url": "https://api.github.com/repos/Jose85100/Portafolio/actions/runs/39958628300/jobs",
+        "logs_url": "https://api.github.com/repos/Jose85100/Portafolio/actions/runs/39958628300/logs",
+        "workflow_id": 382381787
+      }
+    ]
+  }
+}

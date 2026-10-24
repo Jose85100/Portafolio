@@ -1,0 +1,36 @@
+id,signal,source,intended_use,limitations,collection_condition
+01,IP pública de conexión,Servidor / proxy confiable,Vinculación a sesión; velocidades y seguridad,"VPN, NAT, CGNAT, red corporativa y cambio de IP",Observación técnica; finalidad/habilitación documentada; no GPS
+02,ASN y tipo de red,Enriquecimiento de IP,"Contexto residencial, móvil, hosting",Clasificación estimada y cambiante,Contrato/base actualizada; no titularidad de la conexión
+03,VPN/proxy/Tor,Base o API especializada,Verificación adicional ante combinación de señales,Falsos positivos; uso legítimo de privacidad,Tratar como indicador; no rechazo automático
+04,Geolocalización por IP,Base o API GeoIP,Coherencia regional aproximada de sesión,Radio grande; puede ubicar al intermediario,"Guardar método, radio y fecha; no inferir domicilio"
+05,Ubicación del dispositivo,API web/app del sistema,Verificación contextual puntual,"Permiso denegado, precisión variable, spoofing",Permiso de plataforma + habilitación/finalidad; alternativa
+06,ID de instalación/dispositivo,SDK o ID propio de alcance limitado,"Continuidad, granjas, dispositivo nuevo","Reset, colisiones y equipos compartidos",Sin prometer identificador permanente; validar SDK y alcance
+07,SO/navegador/app,Cabeceras y SDK,Compatibilidad e integridad de entorno,Client hints reducidos; atributos manipulables,Minimizar atributos; no equiparar modelo de móvil a solvencia
+08,Integridad de app/dispositivo,Atestación o SDK especializado,"Manipulación, emulador, app no genuina",Cobertura por plataforma; servicio indisponible,Guardar estado/versión; no extraer IMEI/MAC por defecto
+09,Zona horaria,Entorno de app/navegador,Consistencia débil frente a contexto,Configuración manual; viajes,"Señal débil, jamás prueba de fraude por sí sola"
+10,Idioma y configuración,Entorno de canal,"Servicio, accesibilidad y consistencia contextual",Preferencia personal; no nacionalidad,No usar como proxy de origen étnico o exclusión
+11,Velocidad de intentos,Eventos internos por ventana,"Abuso, bots y solicitudes coordinadas",Reintentos legítimos; proxies compartidos,Ventana al corte; deduplicar caso y correlacionar contexto
+12,Dinámica de formulario,Eventos de UI minimizados,Patrones de automatización o toma de cuenta,"Accesibilidad, aprendizaje y latencia",Tiempos/agregados; no contraseñas ni texto sensible digitado
+13,Email y verificación,Solicitante y verificación propia/API,Contacto y consistencia,Buzón accesible no prueba identidad civil,No acceder al contenido del correo
+14,Teléfono y posesión,"Solicitante, OTP o verificación telco",Contacto y autenticación contextual,SIM prestada/reciclada; OTP bajo engaño,"Separar posesión, identidad y canal de cobranza autorizado"
+15,SIM swap/portabilidad,Proveedor con acceso telco,Cambio reciente y riesgo de ATO,Cobertura por operador/país; cambios legítimos,Contrato/atributo habilitado; no disponible no significa sin cambio
+16,Campos de documento,Documento aportado / OCR,Identificación y vinculación,OCR puede equivocarse o transcribir un falso,"Fuente original, evidencia y corrección; no autenticidad por OCR"
+17,Autenticidad documental,Proveedor o verificación interna,"Alteración, vencimiento e inconsistencia",Falsos negativos ante documentos nuevos,Catálogo de documentos y versiones evaluadas
+18,Comparación facial,Captura y referencia autorizadas,Vínculo biométrico,Parecido no demuestra vida o voluntad,Dato sensible; tratamiento específico y alternativa aplicable
+19,Prueba de vida/inyección,Captura y motor especializado,Presentación y sustitución de medios,"Pruebas separadas, ataque no visto",Biometría y medios restringidos; no divulgar en logs
+20,Verificación entre fuentes,Fuentes habilitadas de identidad/KYB,Consistencia de atributos y existencia,Fuente desactualizada; homónimos,Acceso contractual/legal específico; resolver discrepancias
+21,Ingreso y gasto declarado,Formulario del solicitante,Capacidad de pago inicial,Declaración no verificada; ingresos irregulares,Origen y estado declarado explícitos
+22,Flujos bancarios autorizados,Banco propio o conexión financiera,"Recurrencia, volatilidad y conciliación",Transferencia o préstamo no equivalen a ingreso,Acceso autorizado por fuente; no asumir cobertura nacional
+23,Nómina/empleo/fiscal,Soporte del cliente o fuente habilitada,Corroboración de ingreso y empleo,"Retraso, tercerización y cobertura",Validar permiso y acceso; no acceso universal a DIAN/nómina
+24,Historia de buró,Operador de información contratado,Endeudamiento y comportamiento reportado,"Desfase, reclamaciones y población sin historia",Régimen aplicable; finalidad y calidad; no compartir sin habilitación
+25,Historia interna,Core/LOS/CRM propios,"Pago, relación y exposición vigente",Mezcla de cuentas y corte incorrecto,Acceso por finalidad; validación bitemporal
+26,Capacidad y endeudamiento,Variables derivadas de fuentes verificadas,Cupo/plazo y capacidad de servicio,Ingresos cero/faltantes; doble conteo de obligaciones,Modelo versionado con unidades y política de faltantes
+27,Cuenta destino y titularidad,Datos del cliente y verificación habilitada,Evitar desvío y mule accounts,Cuenta real no prueba intención legítima,Revalidar cambios antes del efecto; no buró de todos los bancos
+28,Aceptación/firma/pagaré,Expediente y proveedor formalización,Oferta aceptada e instrumentación,"Firma, custodia y exigibilidad son distintas","Preservar versión, evidencia y revisión jurídica del instrumento"
+29,Pagos e imputaciones,Core/pagos y conciliación,Saldo y flujo económico de obligación,Pago pendiente o mal imputado,Ledger de referencia; idempotencia y conciliación
+30,Mora/reestructuración,LMS y calendario de producto,Gestión temprana y evolución crediticia,Mora puede venir de error operacional,Definición de DPD y eventos verificados; no etiqueta automática de fraude
+31,Garantía y avalúo,Soporte/fuente habilitada y perito,Cobertura y recuperación potencial,Avalúo no es realización neta inmediata,"Vigencia, registro, gravamen y costos verificables"
+32,Facturación/ventas/POS,Comercio propio o conexión autorizada,Flujo de negocio y volatilidad,"Ventas brutas, devoluciones y estacionalidad",Contrato y finalidad; separar persona/comercio y moneda
+33,Autorizaciones y restricciones,Sistema de permisos y expediente,"Captación, uso y contacto habilitados",Aceptar un canal no autoriza todos los usos,Registro versionado y verificable; no confundir permiso técnico/jurídico
+34,Gestiones de cobranza,Sistema de casos y canal autorizado,"Promesas, acuerdos y resultados",Contacto no prueba pago; sesgo de selección,Canales/horarios/periodicidad; impedir hostigamiento a terceros
+35,Reclamaciones y correcciones,Atención y adjudicación interna,Rectificación y diagnóstico de daño,Reclamar no es señal adversa de solvencia,Acceso restringido; no penalizar ejercicio de derechos

@@ -1,0 +1,11 @@
+test_evpi_upper_bound_independent_quadrature (test_evsi.DecisionTests.test_evpi_upper_bound_independent_quadrature) ... ok
+test_gate_and_expensive_ablation (test_evsi.DecisionTests.test_gate_and_expensive_ablation) ... ok
+test_information_properties (test_evsi.DecisionTests.test_information_properties) ... ok
+test_invalid (test_evsi.DecisionTests.test_invalid) ... ok
+test_no_information (test_evsi.DecisionTests.test_no_information) ... ok
+test_uniform_predictive_oracle (test_evsi.DecisionTests.test_uniform_predictive_oracle) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.960s
+
+OK

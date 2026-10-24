@@ -1,0 +1,63 @@
+{
+  "renderer": "Shared geometry; native uncompressed mxGraph XML + custom SVG. draw.io GUI round-trip not performed.",
+  "drawio_sha256": "d61183b241e791dbcd9efcd52b5917475b83d38564455fbbfba2129cfb4442de",
+  "pages": [
+    {
+      "page": "01-credit-cycle",
+      "nodes": 15,
+      "edges": 14,
+      "svg_sha256": "f0402a2fcd2164ca6cb2af1b53ba3fe52e513865f7dd07a6221fd47edc73778a"
+    },
+    {
+      "page": "02-modular",
+      "nodes": 15,
+      "edges": 17,
+      "svg_sha256": "5d7677df889c622c02a71f19afe98ef2e0b0a9eb5907982a16f64882afe0bef7"
+    },
+    {
+      "page": "03-event-workflow",
+      "nodes": 15,
+      "edges": 16,
+      "svg_sha256": "9b910bc7a637c94d8ad1726bf6b8156d5c7182b622edc4765b8292582c65f5ea"
+    },
+    {
+      "page": "04-existing-core",
+      "nodes": 15,
+      "edges": 15,
+      "svg_sha256": "dceb0ed89b321ab9c9765b745b6cb0118046d8f33dff485b6cb73bfdfea5fcf5"
+    },
+    {
+      "page": "05-signal-capture",
+      "nodes": 15,
+      "edges": 15,
+      "svg_sha256": "01a3c308e1d22e1dfeba8129c05f9f3a5003a9d4fd61462968974b6292d150ea"
+    },
+    {
+      "page": "06-credit-decision",
+      "nodes": 15,
+      "edges": 16,
+      "svg_sha256": "9934ef37e57b95791a93dca8ad488d8687dfe21f964e4f6403eb380574274de8"
+    },
+    {
+      "page": "07-disbursement",
+      "nodes": 15,
+      "edges": 16,
+      "svg_sha256": "9b389085988e98e79f61a7b170a35115b2e7d4dc098f7bc622cee2f73b86cf4e"
+    },
+    {
+      "page": "08-servicing-collections",
+      "nodes": 15,
+      "edges": 16,
+      "svg_sha256": "22fac06689b31c4ddb71fabb4b9e867ef346c004547354c583b82ee9d425db49"
+    },
+    {
+      "page": "09-risk-data-models",
+      "nodes": 15,
+      "edges": 17,
+      "svg_sha256": "f54378855d511125604a37e03615b612e8af01eabf4e6bd80b648d15a141d172"
+    }
+  ],
+  "drawio_file": "credit-lifecycle.drawio",
+  "renderer_source": "03-financial-risk/01-credit-risk/fraud-and-anomaly-research/ai-enabled-fraud-defense/build_architectures.py",
+  "scope": "Design only; 9 pages; custom SVG renderer, not draw.io GUI exports."
+}

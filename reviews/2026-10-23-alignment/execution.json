@@ -1,0 +1,68 @@
+{
+  "notebooks": [
+    {
+      "path": "01-economics-and-econometrics/04-econometrics/05-instrumental-variables/weak-iv-inference-audit/notebook.ipynb",
+      "cells": 31,
+      "code_cells": 12,
+      "code_lines": 118,
+      "figures": 4,
+      "mode": "ipython",
+      "sha256": "a52a16d07243d9c60efd20cbaea98f9d49e4c1985ff22a11742e2f93e85145f6"
+    },
+    {
+      "path": "02-mathematics-statistics-and-quant/advanced-research/13-path-signatures-hidden-dynamics/notebook.ipynb",
+      "cells": 34,
+      "code_cells": 15,
+      "code_lines": 98,
+      "figures": 4,
+      "mode": "ipython",
+      "sha256": "3c43826afaa9de3428e2a35861e38c7f2a543a5f58d6606c2d1abaa44ab00ff4"
+    },
+    {
+      "path": "03-financial-risk/01-credit-risk/fraud-and-anomaly-research/01-identity-kyc-consistency/channel-conformal-audit/notebook.ipynb",
+      "cells": 31,
+      "code_cells": 12,
+      "code_lines": 90,
+      "figures": 4,
+      "mode": "ipython",
+      "sha256": "5576c93e915e867ddd327ecce147b3ab0731313ece40b0dd4c963215f4a5db58"
+    },
+    {
+      "path": "05-artificial-intelligence-and-computational-systems/02-machine-learning-engineering/02-conformal-risk-prediction/notebook.ipynb",
+      "cells": 33,
+      "code_cells": 13,
+      "code_lines": 92,
+      "figures": 3,
+      "mode": "ipython",
+      "sha256": "3930a9a6ee875bc25e1f61360ec5a7accb0b57bf213595b72ef44354c90c9ba6"
+    },
+    {
+      "path": "06-strategy-innovation-and-leadership/20-ai-innovation-productivity-leadership/innovation-evsi-gate/notebook.ipynb",
+      "cells": 33,
+      "code_cells": 13,
+      "code_lines": 89,
+      "figures": 4,
+      "mode": "ipython",
+      "sha256": "ece0b5570f1e94852964cb694b1671c4ba3195159db8e4a27c472acfb60032ec"
+    },
+    {
+      "path": "05-artificial-intelligence-and-computational-systems/03-deep-learning-and-foundation-models/structured-decision-architectures/01-typed-decision-cascade/notebook.ipynb",
+      "cells": 38,
+      "code_cells": 15,
+      "code_lines": 120,
+      "figures": 3,
+      "mode": "ipython",
+      "sha256": "d8bb556609248ca53c719d0e7571c8c56ea63c569fc90a8ab79f3112c654dc02"
+    },
+    {
+      "path": "05-artificial-intelligence-and-computational-systems/03-deep-learning-and-foundation-models/structured-decision-architectures/02-evidence-preserving-document-pipeline/notebook.ipynb",
+      "cells": 39,
+      "code_cells": 16,
+      "code_lines": 119,
+      "figures": 3,
+      "mode": "ipython",
+      "sha256": "6a37e529683dab2f29d2517a33eb45a4b8dcdf5f00d617f38f256462bf0d976d"
+    }
+  ],
+  "scope": "actual cell execution; synthetic data"
+}

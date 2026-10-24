@@ -1,0 +1,34 @@
+{
+  "scope": "Nine new S1 architecture/process/data views only; no APIs, personal data, procurement, model training or regression claim.",
+  "cutoff": "2026-10-23 America/Bogota",
+  "counts": {
+    "new_pages": 9,
+    "component_nodes": 135,
+    "connectors": 142,
+    "platform_variants": 3,
+    "process_flow_cards": 8,
+    "logical_responsibilities": 15,
+    "signals": 35,
+    "vendor_candidates": 24,
+    "sources": 33
+  },
+  "checks": {
+    "xml_and_native_geometries": true,
+    "edge_references_and_node_participation": true,
+    "unique_page_ids": true,
+    "deterministic_rebuild": true,
+    "manifest_hashes": true,
+    "source_ids_and_vendor_rows": true,
+    "signal_catalog_unique_ids": true,
+    "local_document_links": true,
+    "python_lint": true
+  },
+  "visual_qa": "All 9 SVGs rendered to 1540x1130 with Inkscape and inspected; final 01/09 revisions reinspected. Text/boxes/connectors are native in draw.io; raster images are local QA previews only.",
+  "limitations": [
+    "draw.io GUI round-trip not performed",
+    "Mermaid and KaTeX frontend not rendered; formulas and diagram syntax reviewed in source",
+    "Vendor capabilities are public first-party statements; Colombia coverage requires confirmation by product",
+    "Legal reference design is not institutional legal approval",
+    "CI status is external to this prepublication snapshot; consult PR head checks"
+  ]
+}

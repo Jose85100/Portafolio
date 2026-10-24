@@ -1,57 +1,31 @@
-# Path Signatures & Hidden Dynamics
+# Firmas de nivel 2: auditoría de orden y aliasing
 
-> **Estado: S1 — diseño de investigación.** Sin código implementado, resultados empíricos ni contribución inédita demostrada.
+**Estado S2 acotado**: el programa 13 pasa de diseño a un prototipo para caminos poligonales finitos. No es un sistema de detección de dinámicas ocultas validado.
 
-## Pregunta de investigación
+Desde esta carpeta, Python 3.12:
 
-¿Cuánta información dinámica recuperan firmas truncadas de trayectorias parcialmente observadas?
-
-## Hipótesis falsable
-
-Existe una región de supuestos y parámetros en la que el método estudiado aporta ventajas medibles sobre baselines definidos antes del experimento. Se reportarán también condiciones de fallo y casos negativos.
-
-## Formulación matemática y supuestos
-
-S(X)=(1,∫dX,∫_{t1<t2}dX_{t1}⊗dX_{t2},…); álgebra tensorial y equivalencia tree-like.
-
-**Obligatorio en desarrollo:** definir espacios, filtraciones si corresponde, condiciones de regularidad, identificabilidad, existencia, unicidad, estabilidad, resultados demostrables y contraejemplos. Ninguna garantía se presume sin demostración o referencia verificada.
-
-## Modelado estadístico
-
-Estudiar firmas/log-signatures, regularidad de rough paths y estabilidad ante muestreo.
-
-Separar incertidumbre de muestreo, incertidumbre paramétrica y error de especificación. Medir sesgo, consistencia cuando proceda, calibración, sensibilidad e intervalos mediante procedimientos adecuados para datos dependientes.
-
-## Métodos numéricos y simulación
-
-Trayectorias con iguales marginales pero distinto orden, ruido y muestreo irregular; clasificación y reconstrucción.
-
-**Protocolo:** generador sintético con verdad conocida; al menos dos comparadores; validación fuera de muestra o réplicas independientes; pruebas de robustez, ablaciones, complejidad temporal y espacial, control de semillas y reproducción automatizada.
-
-## Aplicación económico-financiera
-
-Flujos de caja, liquidez, microestructura y volatilidad.
-
-## Límites de interpretación
-
-La firma truncada no identifica trayectorias arbitrarias; dimensionalidad crece exponencialmente con el nivel.
-
-## Criterios de entrega
-
-1. **S1 — Investigación:** revisión de literatura trazable, formalización, hipótesis y diseño experimental preespecificado.
-2. **S2 — Prototipo:** `src/`, `tests/`, simuladores reproducibles y pruebas de invariantes/casos límite.
-3. **S3 — Validación:** benchmarks, incertidumbre, sensibilidad, errores numéricos y resultados generados automáticamente.
-4. **S4 — Evidencia externa:** datos públicos con licencia, réplica independiente, documentación de fallos y límites operativos.
-
-## Arquitectura futura (no implementada)
-
-```text
-theory/       # definiciones, pruebas, contraejemplos
-src/          # modelos y algoritmos
-experiments/  # simulación, comparadores y figuras
-tests/        # pruebas matemáticas y computacionales
-data/         # manifiestos de datos públicos
-docs/         # bibliografía, validación y limitaciones
+```bash
+bash run.sh
 ```
 
-**Integridad científica:** la combinación de teorías conocidas no demuestra originalidad; esta deberá establecerse frente al estado del arte.
+El comando instala dependencias fijadas, ejecuta lint, tipos, tests con cobertura, benchmark y notebook. El notebook se ejecuta realmente con IPython en proceso: el entorno restringe sockets del kernel Jupyter. No se simulan outputs; el ejecutor aborta ante cualquier error de celda. En un entorno con sockets el cuaderno también puede ejecutarse con Jupyter convencional.
+
+## Qué aporta
+
+El README previo planteaba comparar trayectorias con iguales marginales y distinto orden. Ahora hay recurrencia tensorial de nivel 2, composición de Chen, oráculo shoelace independiente y auditoría de aliasing. La contribución es evidencia reproducible local; la fórmula y propiedades son conocidas.
+
+800 trayectorias (400 pares reversos), semilla 422: sin ruido, firma 100% frente a 50% endpoint/momentos. Con ruido 1.0 baja a 70%. El error máximo contra shoelace fue 1.07e-14; el error geométrico al aproximar un círculo converge con orden 1.99987. Dos vueltas observadas en cuatro segmentos tienen área 0 frente a 6.28066 con 256 segmentos.
+
+- [Notebook ejecutado](notebook.ipynb): explicación, ecuaciones y salidas.
+- [Informe de 14 puntos](informe.md): diseño, resultados negativos, rúbrica y límites.
+- `src/signatures.py`: API tipada; `tests/`: identidades y edge cases.
+- `results/`: réplicas CSV, convergencia, recursos, cobertura y figura.
+- [Referencias](referencias.bib) y [verificación de fuentes](fuentes.md).
+
+El área shoelace iguala numéricamente a la firma y es más eficiente para área planar. No hay ventaja alegada sobre bibliotecas C++ optimizadas, ni aprendizaje supervisado, reconstrucción, datos operativos o validación externa. EL=83 no aplica a este componente; no se modifica quant-libraries.
+
+## Ampliación del notebook — 23 de octubre
+
+El notebook incorpora fórmulas, diccionario de variables en contexto, reconstrucción de cálculos, sensibilidad y casos negativos. `run.sh` conserva esta ampliación después de regenerar el estudio original. La extensión se mantiene en `scripts/deepen_20261023_notebooks.py` y `scripts/research_depth_experiments.py` desde la raíz; las celdas realmente se ejecutan y guardan sus salidas. [Revisión de alcance](../../../reviews/2026-10-23-alignment/README.md).
+
+[Revisión académica y criterios de cierre](ACADEMIC_REVIEW.md): fuentes publicadas, fórmulas en el notebook y extensiones experimentales.

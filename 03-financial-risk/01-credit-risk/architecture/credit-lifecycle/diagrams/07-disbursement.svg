@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1540" height="1130" viewBox="0 0 1540 1130"><title>07 · Formalización, desembolso y conciliación</title><desc>Arquitectura de investigación por capas; integraciones no desplegadas.</desc><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#42596d"/></marker></defs><rect width="1540" height="1130" fill="#ffffff"/><g font-family="DejaVu Sans,Arial,sans-serif" fill="#17334d">
+<text x="38" y="60" font-size="28" font-weight="bold">07 · Formalización, desembolso y conciliación</text>
+<text x="38" y="102" font-size="17">Una aceptación, una autorización y un efecto liquidado son estados diferentes.</text>
+<text x="38" y="148" font-size="14">DISEÑO S1 · Azul: interno | Violeta: proveedor candidato | Ámbar: revisión/estado</text>
+<rect x="25" y="180" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="223" font-size="17" font-weight="bold">01 · Acuerdo</text>
+<rect x="25" y="350" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="393" font-size="17" font-weight="bold">02 · Puerta</text>
+<rect x="25" y="520" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="563" font-size="17" font-weight="bold">03 ·</text>
+<text x="42" y="587" font-size="17" font-weight="bold">Intención</text>
+<rect x="25" y="690" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="733" font-size="17" font-weight="bold">04 · Estado</text>
+<rect x="25" y="860" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="903" font-size="17" font-weight="bold">05 ·</text>
+<text x="42" y="927" font-size="17" font-weight="bold">Registro</text>
+<polyline points="400,305 400,343.0 400,343.0 400,381" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="830,305 830,343.0 400,343.0 400,381" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1260,305 1260,343.0 400,343.0 400,381" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="400,475 400,513.0 400,513.0 400,551" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="830,475 830,513.0 400,513.0 400,551" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1260,475 1260,513.0 400,513.0 400,551" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="595,598 635,598" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1025,598 1065,598" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1260,645 1260,683.0 400,683.0 400,721" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1260,645 1260,683.0 830,683.0 830,721" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1260,645 1260,683.0 1260,683.0 1260,721" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="400,815 400,853.0 400,853.0 400,891" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="830,815 830,853.0 830,853.0 830,891" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1260,815 1260,853.0 400,853.0 400,891" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="595,938 635,938" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1025,938 1065,938" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="205" y="211" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="221" y="240" font-size="17" font-weight="bold">Oferta aceptada</text>
+<text x="221" y="265" font-size="15">Tasa, plazo, monto y vigencia</text>
+<rect x="635" y="211" width="390" height="94" rx="9" fill="#f2edfc" stroke="#8061ad" stroke-width="1.7"/>
+<text x="651" y="240" font-size="17" font-weight="bold">Firma e instrumento</text>
+<text x="651" y="265" font-size="15">Proveedor y evidencia aplicable</text>
+<rect x="1065" y="211" width="390" height="94" rx="9" fill="#fff4d9" stroke="#bd8730" stroke-width="1.7"/>
+<text x="1081" y="240" font-size="17" font-weight="bold">Garantías y condiciones</text>
+<text x="1081" y="265" font-size="15">Validación documental/jurídica</text>
+<rect x="205" y="381" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="221" y="410" font-size="17" font-weight="bold">Paquete de formalización</text>
+<text x="221" y="435" font-size="15">Identidad, oferta y contrato coherentes</text>
+<rect x="635" y="381" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="651" y="410" font-size="17" font-weight="bold">Cuenta destino</text>
+<text x="651" y="435" font-size="15">Titularidad y cambios revalidados</text>
+<rect x="1065" y="381" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="1081" y="410" font-size="17" font-weight="bold">Reserva de exposición</text>
+<text x="1081" y="435" font-size="15">Autoridad y control de concurrencia</text>
+<rect x="205" y="551" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="221" y="580" font-size="17" font-weight="bold">Orden autorizada</text>
+<text x="221" y="605" font-size="15">Decision_id y precondiciones</text>
+<rect x="635" y="551" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="651" y="580" font-size="17" font-weight="bold">Idempotencia durable</text>
+<text x="651" y="605" font-size="15">Clave única de la operación</text>
+<rect x="1065" y="551" width="390" height="94" rx="9" fill="#f2edfc" stroke="#8061ad" stroke-width="1.7"/>
+<text x="1081" y="580" font-size="17" font-weight="bold">Proveedor / riel de pago</text>
+<text x="1081" y="605" font-size="15">Estado, referencia y servicio exacto</text>
+<rect x="205" y="721" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="221" y="750" font-size="17" font-weight="bold">Confirmado o rechazado</text>
+<text x="221" y="775" font-size="15">Conservar respuesta verificable</text>
+<rect x="635" y="721" width="390" height="94" rx="9" fill="#fff4d9" stroke="#bd8730" stroke-width="1.7"/>
+<text x="651" y="750" font-size="17" font-weight="bold">Estado incierto</text>
+<text x="651" y="775" font-size="15">Consultar antes de reenviar</text>
+<rect x="1065" y="721" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="1081" y="750" font-size="17" font-weight="bold">Devolución o reverso</text>
+<text x="1081" y="775" font-size="15">Nuevo evento y reglas contables</text>
+<rect x="205" y="891" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="221" y="920" font-size="17" font-weight="bold">Core / ledger</text>
+<text x="221" y="945" font-size="15">Obligación, asiento y fecha efectiva</text>
+<rect x="635" y="891" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="651" y="920" font-size="17" font-weight="bold">Conciliación</text>
+<text x="651" y="945" font-size="15">Diferencias y pendientes por edad</text>
+<rect x="1065" y="891" width="390" height="94" rx="9" fill="#fff4d9" stroke="#bd8730" stroke-width="1.7"/>
+<text x="1081" y="920" font-size="17" font-weight="bold">Servicio y atención</text>
+<text x="1081" y="945" font-size="15">Confirmación correcta y reclamación</text>
+<text x="38" y="1072" font-size="16">Transversal: acceso mínimo · privacidad · auditoría · versiones · retención · responsables · rollback</text>
+<text x="38" y="1104" font-size="13">Portafolio · 23 octubre 2026 · Flechas: datos/decisiones propuestos · Véase ARCHITECTURES.md para alcance y fallos</text></g></svg>

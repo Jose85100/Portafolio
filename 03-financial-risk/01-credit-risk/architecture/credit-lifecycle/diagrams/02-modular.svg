@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1540" height="1130" viewBox="0 0 1540 1130"><title>02 · Plataforma modular con operación síncrona</title><desc>Arquitectura de investigación por capas; integraciones no desplegadas.</desc><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#42596d"/></marker></defs><rect width="1540" height="1130" fill="#ffffff"/><g font-family="DejaVu Sans,Arial,sans-serif" fill="#17334d">
+<text x="38" y="60" font-size="28" font-weight="bold">02 · Plataforma modular con operación síncrona</text>
+<text x="38" y="102" font-size="17">Una unidad de despliegue puede conservar límites claros de dominio.</text>
+<text x="38" y="148" font-size="14">DISEÑO S1 · Azul: interno | Violeta: proveedor candidato | Ámbar: revisión/estado</text>
+<rect x="25" y="180" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="223" font-size="17" font-weight="bold">01 · Acceso</text>
+<rect x="25" y="350" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="393" font-size="17" font-weight="bold">02 · Backend</text>
+<rect x="25" y="520" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="563" font-size="17" font-weight="bold">03 · Trabajo</text>
+<rect x="25" y="690" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="733" font-size="17" font-weight="bold">04 · Efectos</text>
+<rect x="25" y="860" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="903" font-size="17" font-weight="bold">05 ·</text>
+<text x="42" y="927" font-size="17" font-weight="bold">Gobierno</text>
+<polyline points="400,305 400,343.0 400,343.0 400,381" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="830,305 830,343.0 400,343.0 400,381" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="595,428 635,428" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1025,428 1065,428" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="400,475 400,513.0 400,513.0 400,551" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="830,475 830,513.0 830,513.0 830,551" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1260,475 1260,513.0 1260,513.0 1260,551" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="400,645 400,683.0 400,683.0 400,721" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="830,645 830,683.0 830,683.0 830,721" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1260,645 1260,683.0 1260,683.0 1260,721" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="595,768 635,768" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1025,768 1065,768" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="400,815 400,853.0 400,853.0 400,891" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="830,815 830,853.0 830,853.0 830,891" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1260,815 1260,853.0 1260,853.0 1260,891" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1025,938 1065,938" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1260,305 1260,343.0 1260,343.0 1260,381" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="205" y="211" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="221" y="240" font-size="17" font-weight="bold">Canales y API</text>
+<text x="221" y="265" font-size="15">Solicitud y autenticación contextual</text>
+<rect x="635" y="211" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="651" y="240" font-size="17" font-weight="bold">Identidad / permisos</text>
+<text x="651" y="265" font-size="15">Finalidad y acceso por tarea</text>
+<rect x="1065" y="211" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="1081" y="240" font-size="17" font-weight="bold">Control operacional</text>
+<text x="1081" y="265" font-size="15">Configuración y trazabilidad mínima</text>
+<rect x="205" y="381" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="221" y="410" font-size="17" font-weight="bold">Módulo LOS</text>
+<text x="221" y="435" font-size="15">Estado del expediente y tareas</text>
+<rect x="635" y="381" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="651" y="410" font-size="17" font-weight="bold">Módulo decisión</text>
+<text x="651" y="435" font-size="15">Reglas, modelos y políticas</text>
+<rect x="1065" y="381" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="1081" y="410" font-size="17" font-weight="bold">Módulo de integración</text>
+<text x="1081" y="435" font-size="15">Contratos, deadlines y respuestas</text>
+<rect x="205" y="551" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="221" y="580" font-size="17" font-weight="bold">Workers y tareas durables</text>
+<text x="221" y="605" font-size="15">OCR, esperas y revisión humana</text>
+<rect x="635" y="551" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="651" y="580" font-size="17" font-weight="bold">Modelos versionados</text>
+<text x="651" y="605" font-size="15">Features permitidas y calibración</text>
+<rect x="1065" y="551" width="390" height="94" rx="9" fill="#f2edfc" stroke="#8061ad" stroke-width="1.7"/>
+<text x="1081" y="580" font-size="17" font-weight="bold">Fuentes especializadas</text>
+<text x="1081" y="605" font-size="15">Buró, identidad, ingreso y firma</text>
+<rect x="205" y="721" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="221" y="750" font-size="17" font-weight="bold">Formalización y control</text>
+<text x="221" y="775" font-size="15">Condiciones antes del desembolso</text>
+<rect x="635" y="721" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="651" y="750" font-size="17" font-weight="bold">Core / LMS</text>
+<text x="651" y="775" font-size="15">Dueño de obligación y ledger</text>
+<rect x="1065" y="721" width="390" height="94" rx="9" fill="#f2edfc" stroke="#8061ad" stroke-width="1.7"/>
+<text x="1081" y="750" font-size="17" font-weight="bold">Rieles de pago</text>
+<text x="1081" y="775" font-size="15">Orden, estado y conciliación</text>
+<rect x="205" y="891" width="390" height="94" rx="9" fill="#fff4d9" stroke="#bd8730" stroke-width="1.7"/>
+<text x="221" y="920" font-size="17" font-weight="bold">Casos y reclamaciones</text>
+<text x="221" y="945" font-size="15">Resolución y trazabilidad</text>
+<rect x="635" y="891" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="651" y="920" font-size="17" font-weight="bold">Datos y auditoría</text>
+<text x="651" y="945" font-size="15">Snapshots y etiquetas maduras</text>
+<rect x="1065" y="891" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="1081" y="920" font-size="17" font-weight="bold">Operación y continuidad</text>
+<text x="1081" y="945" font-size="15">Capacidad, degradación y recuperación</text>
+<text x="38" y="1072" font-size="16">Transversal: acceso mínimo · privacidad · auditoría · versiones · retención · responsables · rollback</text>
+<text x="38" y="1104" font-size="13">Portafolio · 23 octubre 2026 · Flechas: datos/decisiones propuestos · Véase ARCHITECTURES.md para alcance y fallos</text></g></svg>

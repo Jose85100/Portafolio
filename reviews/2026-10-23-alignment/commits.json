@@ -1,0 +1,266 @@
+{
+  "start_inclusive": "2026-10-17T00:00:00-05:00",
+  "end_exclusive": "2026-10-24T00:00:00-05:00",
+  "refs": {
+    "origin/main": "634e8d95308d0937a0dc695977682ef700112581",
+    "origin/research/2026-10-23-multi-domain-cycle": "789dbe2918d99abc8541ee79dc3933a45a0b5930",
+    "origin/research/2026-10-23-christoffersen-sequential": "764942ebf602edacdcb38f2de040241f08e7a842"
+  },
+  "commits": [
+    {
+      "sha": "789dbe2918d99abc8541ee79dc3933a45a0b5930",
+      "committer_time": "2026-10-23T10:13:01-05:00",
+      "title": "research: five reproducible domain MVPs with independent review"
+    },
+    {
+      "sha": "764942ebf602edacdcb38f2de040241f08e7a842",
+      "committer_time": "2026-10-23T08:07:17-05:00",
+      "title": "research: add sequential Christoffersen decision guard"
+    },
+    {
+      "sha": "634e8d95308d0937a0dc695977682ef700112581",
+      "committer_time": "2026-10-22T13:42:12-05:00",
+      "title": "feat(economics): collateral liquidity choice MVP (#68)"
+    },
+    {
+      "sha": "7ac31ca365a1bfd12c48ed9596c626abffec18fd",
+      "committer_time": "2026-10-22T11:18:43-05:00",
+      "title": "Merge pull request #67 from Jose85100/research/2026-10-22-christoffersen-exact-cpp"
+    },
+    {
+      "sha": "0f948fba918503f9f51067c8b704ef200da24d11",
+      "committer_time": "2026-10-22T11:12:54-05:00",
+      "title": "Merge pull request #66 from Jose85100/research/2026-10-21-gauge-identifiability-certificate"
+    },
+    {
+      "sha": "28904dc5cf71a59b832197dbb25a542d993e88dc",
+      "committer_time": "2026-10-22T08:07:33-05:00",
+      "title": "research: add exact Christoffersen C++ oracle"
+    },
+    {
+      "sha": "722bc3645badbad181efb3cfc4a36ca33470993b",
+      "committer_time": "2026-10-21T22:12:44-05:00",
+      "title": "Merge main into gauge certificate and reconcile research maturity indexes"
+    },
+    {
+      "sha": "174e950f56ff8b96f007a8556ef7f24f39ac6e95",
+      "committer_time": "2026-10-21T22:08:35-05:00",
+      "title": "Merge pull request #64 from Jose85100/research/credit-fraud-four-designs-2026-10-21"
+    },
+    {
+      "sha": "39373096c91f3afd61a61d6682d931a86416c2a8",
+      "committer_time": "2026-10-21T22:08:11-05:00",
+      "title": "Merge pull request #63 from Jose85100/research/2026-10-21-christoffersen-permutation"
+    },
+    {
+      "sha": "8ef87eee6bdef84d0da2a6e82a4df94424bfe87d",
+      "committer_time": "2026-10-21T22:07:59-05:00",
+      "title": "Merge pull request #62 from Jose85100/research/2026-10-20-categorical-geometry-audit"
+    },
+    {
+      "sha": "e43a8ba37511b746d6b796835686f19bd34e84cb",
+      "committer_time": "2026-10-21T21:53:47-05:00",
+      "title": "feat(credit): deepen fraud models, notebook formulas and validation review"
+    },
+    {
+      "sha": "2de1d0571ce284fbbcb8befdc90d122091495862",
+      "committer_time": "2026-10-21T18:37:41-05:00",
+      "title": "feat(credit): add eight executed fraud notebooks, equations and research agendas"
+    },
+    {
+      "sha": "28975ec4c8edb7756af94b964c44cb5af50663e7",
+      "committer_time": "2026-10-21T17:55:18-05:00",
+      "title": "feat(credit): add fraud loss allocation engine, model benchmark and layered architecture"
+    },
+    {
+      "sha": "119220994b895bd600b183a9e5d88e23b186dc55",
+      "committer_time": "2026-10-21T15:18:32-05:00",
+      "title": "research: add scale-gauge identifiability certificate"
+    },
+    {
+      "sha": "4acf0381b4c39f1cd19fddd44b6e720c92e25466",
+      "committer_time": "2026-10-21T13:42:18-05:00",
+      "title": "feat(economics): certify quadratic price roots (#65)"
+    },
+    {
+      "sha": "c01779843c3efa815462507f6f24a2242364c05f",
+      "committer_time": "2026-10-21T12:32:45-05:00",
+      "title": "docs(credit): specify four fraud and anomaly research programs"
+    },
+    {
+      "sha": "22121119a5de6f517451a3f18bd2228c279d47a8",
+      "committer_time": "2026-10-21T08:14:02-05:00",
+      "title": "research: audit finite-sample Christoffersen calibration"
+    },
+    {
+      "sha": "e932e97c7ac0cadae0ceaaf8ec6e0591d36a709c",
+      "committer_time": "2026-10-21T07:08:20-05:00",
+      "title": "fix: align information geometry with calibrated continuous drift and resolve main integration"
+    },
+    {
+      "sha": "69983fbf12134130588b65d35b58dfceebae7661",
+      "committer_time": "2026-10-21T06:53:45-05:00",
+      "title": "Merge pull request #60 from Jose85100/research/2026-10-20-stage3-cpp"
+    },
+    {
+      "sha": "a7acdc1d43ec1a847a8f8255c9e5eb2e4f7ab0ca",
+      "committer_time": "2026-10-21T06:53:27-05:00",
+      "title": "Merge pull request #59 from Jose85100/research/2026-10-19-fractional-memory-audit"
+    },
+    {
+      "sha": "d26f474e2b526e5115127d89ccfac2b1c0153b4c",
+      "committer_time": "2026-10-20T15:07:37-05:00",
+      "title": "research: categorical Fisher-Rao geometry and matched-permutation audit (scoped S2)"
+    },
+    {
+      "sha": "6b7857acdbcfaddf56115df4e9da1725b1791062",
+      "committer_time": "2026-10-20T13:51:08-05:00",
+      "title": "feat(economics): couple interbank clearing and fire-sale price regimes (#61)"
+    },
+    {
+      "sha": "3f880ebeaf9cd04855c825f041d554d30aa7f81a",
+      "committer_time": "2026-10-20T08:17:58-05:00",
+      "title": "feat(risk): add bounded Stage3 C++ cashflow contract with Python parity and sanitizers"
+    },
+    {
+      "sha": "e15699a2b60594ecb8ef68799866c3ba39f4b18f",
+      "committer_time": "2026-10-19T15:14:31-05:00",
+      "title": "fix: include high-precision oracle dependency in shared notebook environment"
+    },
+    {
+      "sha": "d40d53d4c41325ac5a535ced98f9867ae6fe49b3",
+      "committer_time": "2026-10-19T15:12:43-05:00",
+      "title": "research: advance fractional systems to scoped S2 with tail-error audit"
+    },
+    {
+      "sha": "dd5dc42984ca98ecf3ccda47a21dfd4008afe0bb",
+      "committer_time": "2026-10-19T14:17:04-05:00",
+      "title": "Merge pull request #57 from Jose85100/research/2026-10-19-stage3-routing"
+    },
+    {
+      "sha": "c82cae1d18fcb4d54db4673853a8ade1785e6275",
+      "committer_time": "2026-10-19T14:16:55-05:00",
+      "title": "Merge pull request #56 from Jose85100/feat/economics-multiagent-research-review"
+    },
+    {
+      "sha": "b4a6e893017741b6f8a2d851502c223c9f567d2d",
+      "committer_time": "2026-10-19T14:16:45-05:00",
+      "title": "Merge pull request #55 from Jose85100/feat/economics-theory-refutation-labs"
+    },
+    {
+      "sha": "bdbcb1bbcc87ea68e49f2525b86126464cbbdd18",
+      "committer_time": "2026-10-19T13:47:58-05:00",
+      "title": "feat(economics): fire-sale price census and selection counterexamples (#58)"
+    },
+    {
+      "sha": "6affee07d09561b638d1b8788891c915487c6ee6",
+      "committer_time": "2026-10-19T09:08:12-05:00",
+      "title": "fix(ifrs9): pin historical Stage3 baseline and reconcile current engine with stable arithmetic"
+    },
+    {
+      "sha": "33d2c5bba2176656e8e243f58c2a37c0906077ee",
+      "committer_time": "2026-10-18T21:32:40-05:00",
+      "title": "fix(economics): scope reviewer to economics root"
+    },
+    {
+      "sha": "6a07b4ad9cff656eb4a5243a9df9bef81ef4684c",
+      "committer_time": "2026-10-18T21:32:27-05:00",
+      "title": "feat(economics): five research review agents and five critical teaching notebooks"
+    },
+    {
+      "sha": "60541ca119ed34b0381d022aad051e4edec7d8ab",
+      "committer_time": "2026-10-18T21:27:03-05:00",
+      "title": "feat(economics): falsification lab for DiD, Phillips and credit-tail risk"
+    },
+    {
+      "sha": "f1658d32226a517f2e7e88652120001eeea6f47d",
+      "committer_time": "2026-10-18T21:25:26-05:00",
+      "title": "Merge pull request #54 from Jose85100/feat/economics-depth-identification-lab"
+    },
+    {
+      "sha": "86deb3320b6b07da170355e7a67b8d735a9da5dc",
+      "committer_time": "2026-10-18T21:24:30-05:00",
+      "title": "feat(economics): deepen causal identification docs and reproducible OLS-IV lab"
+    },
+    {
+      "sha": "bbb913eaed732ec4c7531a56c5b0e785d8e748bc",
+      "committer_time": "2026-10-18T21:02:36-05:00",
+      "title": "Merge pull request #53 from Jose85100/research/2026-10-18-copula-tail-audit"
+    },
+    {
+      "sha": "f5380801cc1eef6728ca77e5a36ba8fa315b3009",
+      "committer_time": "2026-10-18T15:11:52-05:00",
+      "title": "feat(math): matched-rank copula tail audit and conditional Monte Carlo (program 04 S2)"
+    },
+    {
+      "sha": "2eb24941cd7fd7fd31a9bad05670a25361574413",
+      "committer_time": "2026-10-18T13:49:19-05:00",
+      "title": "feat(economics): sovereign clearing balance and stopping audit (#52)"
+    },
+    {
+      "sha": "e25c2ace7f0085fd20e25d00468535473e80f469",
+      "committer_time": "2026-10-18T11:33:32-05:00",
+      "title": "Merge pull request #50 from Jose85100/research/2026-10-18-survival-ecl"
+    },
+    {
+      "sha": "3cbb84e8275be697a6a7a53aac8b215a76c77f2f",
+      "committer_time": "2026-10-18T11:33:23-05:00",
+      "title": "Merge pull request #49 from Jose85100/research/risk-review-20261018"
+    },
+    {
+      "sha": "e2284f52d3f50e68f3795b69e2e45ccba9e4f3e8",
+      "committer_time": "2026-10-18T08:15:40-05:00",
+      "title": "risk: include inspected Stage3 comparison PNG"
+    },
+    {
+      "sha": "3dd03ef57def5cd3b4557de1d1e5d64396661410",
+      "committer_time": "2026-10-18T08:15:22-05:00",
+      "title": "risk: audit Stage3 future-PD attenuation and add stable cash-shortfall ECL"
+    },
+    {
+      "sha": "494fca04945c8c63023843711243ee6e5383e476",
+      "committer_time": "2026-10-17T22:27:40-05:00",
+      "title": "Profundizar Riesgo: corregir ES discreto y Stage 3, ampliar notebooks y contratos"
+    },
+    {
+      "sha": "f03f242222a0410f4558fb0522544afcd9ebb4f8",
+      "committer_time": "2026-10-17T22:09:25-05:00",
+      "title": "Merge pull request #48 from Jose85100/research/deepen-recent-notebooks-20261018"
+    },
+    {
+      "sha": "490952c9b1677c71e795fae48e1fdf790e37754e",
+      "committer_time": "2026-10-17T22:02:04-05:00",
+      "title": "research: deepen weekly economics and audit notebooks; verify executive engines and repair Markowitz"
+    },
+    {
+      "sha": "865c326139eeed4eb7523b3d2721b6776451be46",
+      "committer_time": "2026-10-17T21:37:39-05:00",
+      "title": "research: deepen six recent notebooks with derivations and executed experiments"
+    },
+    {
+      "sha": "41fc967f2965b00c7c27a911d3b4694cedfbc2cb",
+      "committer_time": "2026-10-17T20:04:37-05:00",
+      "title": "Merge pull request #47 from Jose85100/research/2026-10-17-ou-identification-audit"
+    },
+    {
+      "sha": "8c05ecafa9ff0dfa21b95c89d896b75e89bcf0df",
+      "committer_time": "2026-10-17T15:06:20-05:00",
+      "title": "feat(math): OU finite-step and noise-confounding audit (program 01 S2)"
+    },
+    {
+      "sha": "931aa473062f70a55c58c73bc56aaada23564ff4",
+      "committer_time": "2026-10-17T13:46:28-05:00",
+      "title": "feat(economics): rational Gambit families and convexification audit (#46)"
+    },
+    {
+      "sha": "b19c03599a1f7cbb88a17eaed65fdd590dbb009a",
+      "committer_time": "2026-10-17T09:51:04-05:00",
+      "title": "Merge pull request #45 from Jose85100/research/2026-10-17-es-packet-validation"
+    },
+    {
+      "sha": "3c9edc810442502ab5ac0131e57fd8409259780c",
+      "committer_time": "2026-10-17T08:06:03-05:00",
+      "title": "risk: validate bounded ES decision packets with rational invariants and mutation corpus"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+name: Daily multi-domain MVPs
+on:
+  pull_request:
+    paths:
+      - '01-economics-and-econometrics/04-econometrics/05-instrumental-variables/weak-iv-inference-audit/**'
+      - '02-mathematics-statistics-and-quant/advanced-research/13-path-signatures-hidden-dynamics/**'
+      - '03-financial-risk/01-credit-risk/fraud-and-anomaly-research/01-identity-kyc-consistency/channel-conformal-audit/**'
+      - '05-artificial-intelligence-and-computational-systems/02-machine-learning-engineering/02-conformal-risk-prediction/**'
+      - '06-strategy-innovation-and-leadership/20-ai-innovation-productivity-leadership/innovation-evsi-gate/**'
+      - 'scripts/deepen_20261023_notebooks.py'
+      - 'scripts/research_depth_experiments.py'
+      - 'scripts/academic_20261023.py'
+      - 'scripts/execute_research_depth.py'
+      - '.github/workflows/daily-multi-domain.yml'
+  workflow_dispatch:
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        project:
+          - '01-economics-and-econometrics/04-econometrics/05-instrumental-variables/weak-iv-inference-audit'
+          - '02-mathematics-statistics-and-quant/advanced-research/13-path-signatures-hidden-dynamics'
+          - '03-financial-risk/01-credit-risk/fraud-and-anomaly-research/01-identity-kyc-consistency/channel-conformal-audit'
+          - '05-artificial-intelligence-and-computational-systems/02-machine-learning-engineering/02-conformal-risk-prediction'
+          - '06-strategy-innovation-and-leadership/20-ai-innovation-productivity-leadership/innovation-evsi-gate'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Reproduce MVP and notebook
+        working-directory: ${{ matrix.project }}
+        run: bash run.sh

@@ -1,0 +1,73 @@
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.2
+[notice] To update, run: python -m pip install --upgrade pip
+test_bad_inputs (test_inference.InferenceTests.test_bad_inputs) ... ok
+test_baseline_and_relevance (test_inference.InferenceTests.test_baseline_and_relevance) ... ok
+test_baseline_edge_contracts (test_inference.InferenceTests.test_baseline_edge_contracts) ... ok
+test_degenerate_null (test_inference.InferenceTests.test_degenerate_null) ... ok
+test_invariance (test_inference.InferenceTests.test_invariance) ... ok
+test_reduced_form (test_inference.InferenceTests.test_reduced_form) ... ok
+test_reproducibility (test_inference.InferenceTests.test_reproducibility) ... ok
+test_size_and_exclusion (test_inference.InferenceTests.test_size_and_exclusion) ... ok
+test_zero_first_stage (test_inference.InferenceTests.test_zero_first_stage) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.267s
+
+OK
+Name               Stmts   Miss  Cover
+--------------------------------------
+src/inference.py      55      1    98%
+--------------------------------------
+TOTAL                 55      1    98%
+All checks passed!
+Success: no issues found in 3 source files
+[
+  {
+    "scenario": "Sin relevancia",
+    "ar_rejection": 0.049666666666666665,
+    "wald_rejection": 0.14166666666666666,
+    "ar_mc_se": 0.00396652193946993,
+    "wald_mc_se": 0.006366506687926072,
+    "paired_difference_se": 0.005702880057215155,
+    "median_first_stage_f": 0.4759762777211759,
+    "elapsed_seconds": 2.610367414999928,
+    "python_peak_bytes": 1517644
+  },
+  {
+    "scenario": "D\u00e9bil c=1",
+    "ar_rejection": 0.049666666666666665,
+    "wald_rejection": 0.116,
+    "ar_mc_se": 0.00396652193946993,
+    "wald_mc_se": 0.005846480422727279,
+    "paired_difference_se": 0.005733898222492699,
+    "median_first_stage_f": 1.0949800949587054,
+    "elapsed_seconds": 2.643785115000128,
+    "python_peak_bytes": 1540695
+  },
+  {
+    "scenario": "Fuerte c=10",
+    "ar_rejection": 0.049666666666666665,
+    "wald_rejection": 0.049666666666666665,
+    "ar_mc_se": 0.00396652193946993,
+    "wald_mc_se": 0.00396652193946993,
+    "paired_difference_se": 0.0036520924495079873,
+    "median_first_stage_f": 99.62854623015056,
+    "elapsed_seconds": 2.592914877000112,
+    "python_peak_bytes": 1548956
+  },
+  {
+    "scenario": "Exclusi\u00f3n inv\u00e1lida",
+    "ar_rejection": 0.8726666666666667,
+    "wald_rejection": 0.35333333333333333,
+    "ar_mc_se": 0.006086037450743451,
+    "wald_mc_se": 0.00872713944903844,
+    "paired_difference_se": 0.009147736270692578,
+    "median_first_stage_f": 1.0949800949587054,
+    "elapsed_seconds": 2.477634113000022,
+    "python_peak_bytes": 1599826
+  }
+]
+[{'n': 100, 'method': 'AR', 'calls': 100, 'seconds': 0.021432353999898623, 'python_peak_bytes': 27334}, {'n': 100, 'method': 'Wald', 'calls': 100, 'seconds': 0.021818252999992183, 'python_peak_bytes': 11209}, {'n': 1000, 'method': 'AR', 'calls': 100, 'seconds': 0.02512326300006862, 'python_peak_bytes': 50677}, {'n': 1000, 'method': 'Wald', 'calls': 100, 'seconds': 0.02187739999999394, 'python_peak_bytes': 40781}, {'n': 10000, 'method': 'AR', 'calls': 100, 'seconds': 0.025351414999931876, 'python_peak_bytes': 406253}, {'n': 10000, 'method': 'Wald', 'calls': 100, 'seconds': 0.02375603499990575, 'python_peak_bytes': 400781}]
+Executed 4 code cells in process.
+Executed 4 code cells in process.

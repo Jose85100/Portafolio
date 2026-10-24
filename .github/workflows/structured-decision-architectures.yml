@@ -1,0 +1,39 @@
+name: Structured decision architectures
+on:
+  pull_request:
+    paths:
+      - '05-artificial-intelligence-and-computational-systems/03-deep-learning-and-foundation-models/structured-decision-architectures/**'
+      - 'scripts/deepen_20261023_notebooks.py'
+      - 'scripts/research_depth_experiments.py'
+      - 'scripts/academic_20261023.py'
+      - 'scripts/execute_research_depth.py'
+      - '.github/workflows/structured-decision-architectures.yml'
+  workflow_dispatch:
+jobs:
+  contracts-and-notebooks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install notebook environment
+        run: python -m pip install -r 05-artificial-intelligence-and-computational-systems/03-deep-learning-and-foundation-models/structured-decision-architectures/requirements.txt
+      - name: Check new contracts
+        working-directory: 05-artificial-intelligence-and-computational-systems/03-deep-learning-and-foundation-models/structured-decision-architectures
+        run: python -m unittest discover -s tests -v
+      - name: Rebuild and execute seven expanded notebooks with kernels
+        env:
+          OPENBLAS_NUM_THREADS: '1'
+          OMP_NUM_THREADS: '1'
+        run: |
+          python scripts/deepen_20261023_notebooks.py
+          python scripts/execute_research_depth.py --mode kernel --qa-dir artifacts/research-depth
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: research-depth-notebooks-and-preview
+          path: |
+            artifacts/research-depth
+            reviews/2026-10-23-academic/execution.json
