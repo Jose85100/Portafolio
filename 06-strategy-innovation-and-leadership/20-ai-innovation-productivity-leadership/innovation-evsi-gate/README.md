@@ -35,3 +35,9 @@ El piloto es una muestra separada de la población futura fija; no consume despl
 El notebook incorpora fórmulas, diccionario de variables en contexto, reconstrucción de cálculos, sensibilidad y casos negativos. `run.sh` conserva esta ampliación después de regenerar el estudio original. La extensión se mantiene en `scripts/deepen_20261023_notebooks.py` y `scripts/research_depth_experiments.py` desde la raíz; las celdas realmente se ejecutan y guardan sus salidas. [Revisión de alcance](../../../reviews/2026-10-23-alignment/README.md).
 
 [Revisión académica y criterios de cierre](ACADEMIC_REVIEW.md): fuentes publicadas, fórmulas en el notebook y extensiones experimentales.
+
+## Ciclo 24-10-2026: prior incierto y demora
+
+`src/robust.py` añade una política terminal común conservadora y selección por peor valor esperado entre priors. No se escoge una regla distinta conociendo el prior verdadero. `robust-config.json` fija escenarios, descuento diario y observaciones por día. `bash run.sh` también produce `robust-notebook.ipynb`, resultados y figura `robust-*`.
+
+Sin demora, peor valor nominal86,72 → robusto120,45; valor nominal sacrificado5140,42 →4909,62. Con descuento diario0,2, el nominal da−363,95 bajo prior pesimista y el robusto elige detener (0). Son supuestos sintéticos, no tasas recomendadas. Familia de reglas restringida; no se certifica minimax global ni dominancia universal. Véase `informe-2026-10-24.md`.
