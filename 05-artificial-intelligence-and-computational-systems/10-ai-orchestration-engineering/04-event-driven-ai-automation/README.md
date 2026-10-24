@@ -1,6 +1,6 @@
 # Event-Driven AI Automation Platform
 
-**Estado:** S1 — diseño verificable, no motor implementado.
+**Estado:** diseño amplio S1 con un componente S2 ejecutado: [outbox y recibo semántico](mvp-outbox-idempotency/). No se declara plataforma operacional.
 
 ## 1. Mandato, decisión y pregunta
 
@@ -37,6 +37,6 @@ Python consumers/producers; Kafka/NATS opcional; SQL outbox/inbox; C++ workers o
 
 ## 6. Entregables y gates
 
-D1 arquitectura y amenaza; D2 contratos y modelo formal; D3 implementación; D4 pruebas y benchmarks; D5 validación independiente; D6 operación y runbook. G0 diseño → G1 modelo → G2 tests → G3 stress → G4 revisión → G5 operación. **D3–D6 pendientes**.
+D1 arquitectura y amenaza; D2 contratos y modelo formal; D3 implementación; D4 pruebas y benchmarks; D5 validación independiente; D6 operación y runbook. G0 diseño → G1 modelo → G2 tests → G3 stress → G4 revisión → G5 operación. **D3–D4 parciales** en el MVP de outbox; D5–D6 y el resto de la plataforma siguen pendientes.
 
 [Fundamentos compartidos](../fundamentals/README.md).
