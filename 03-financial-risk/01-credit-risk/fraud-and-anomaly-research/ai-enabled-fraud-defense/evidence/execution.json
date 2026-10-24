@@ -1,0 +1,39 @@
+{
+  "path": "03-financial-risk/01-credit-risk/fraud-and-anomaly-research/ai-enabled-fraud-defense/notebook.ipynb",
+  "cells": 32,
+  "code_cells": 14,
+  "code_lines": 171,
+  "figures": 3,
+  "mode": "ipython",
+  "academic_metrics": {
+    "joint_escape_independent": 0.0096,
+    "joint_escape_shared": 0.08,
+    "economic_saving_independent_cop": 1120.682,
+    "economic_saving_shared_cop": -287.31799999999976,
+    "critical_shared_fraction": 0.7959389204545454,
+    "queue_summary": {
+      "diferir_replay": {
+        "peak_manual": 0,
+        "peak_external": 632,
+        "max_wait": 2,
+        "final_unverified": 0,
+        "total_attempts": 15754
+      },
+      "error_permitido": {
+        "peak_manual": 0,
+        "peak_external": 0,
+        "max_wait": 0,
+        "final_unverified": 1337,
+        "total_attempts": 14000
+      },
+      "todo_revision": {
+        "peak_manual": 825,
+        "peak_external": 0,
+        "max_wait": 5,
+        "final_unverified": 0,
+        "total_attempts": 14000
+      }
+    }
+  },
+  "sha256": "0bb055f9c313056d45a92d7a53c3fbd1384b27f142d0f373587f202d46845573"
+}
