@@ -2,7 +2,7 @@
   "path": "03-financial-risk/01-credit-risk/fraud-and-anomaly-research/ai-enabled-fraud-defense/notebook.ipynb",
   "cells": 32,
   "code_cells": 14,
-  "code_lines": 171,
+  "code_lines": 172,
   "figures": 3,
   "mode": "ipython",
   "academic_metrics": {
@@ -35,5 +35,5 @@
       }
     }
   },
-  "sha256": "0bb055f9c313056d45a92d7a53c3fbd1384b27f142d0f373587f202d46845573"
+  "sha256": "5a9297d54a2c4dc9bd3f7320500df72c0accc700c51fd18253e4c31003acd083"
 }

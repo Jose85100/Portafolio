@@ -1,12 +1,13 @@
 {
   "scope": "New fraud defense extension only; no regression of unrelated notebooks or commercial APIs.",
   "notebook_format": "valid nbformat 4",
-  "execution": "32 cells; 14 code; 171 code lines; 3 real figure outputs; no cell errors",
+  "execution": "32 cells; 14 code; 172 code lines; 3 real figure outputs; no cell errors",
   "generator_source_match": true,
   "diagram_rebuild_deterministic": true,
   "local_markdown_links": "all resolve",
   "diagram_validation": "4 pages, 60 native nodes, 62 edge references and XML geometry validated",
   "visual_qa": "4 final SVG views rendered through Inkscape and inspected, plus all 3 notebook figures",
   "presentation_gap": "HTML structural check only; full Jupyter/KaTeX browser rendering and draw.io GUI round-trip not performed.",
-  "time_scope": "Research cutoff 2026-10-23; completion checks 2026-10-24 UTC."
+  "time_scope": "Research cutoff 2026-10-23; completion checks 2026-10-24 UTC.",
+  "ci_presentation_fix": "First kernel run computed all metrics but Agg omitted images; explicit inline backend added, CI now requires all 3 figures. Remote recheck pending."
 }
