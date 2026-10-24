@@ -1,0 +1,32 @@
+{
+  "renderer": "Shared geometry; native uncompressed mxGraph XML + custom SVG. draw.io GUI round-trip not performed.",
+  "drawio_sha256": "67d1031f2168d62a08a11b935b0cfbbc96dcde762b9e41ff0dd829a0eefe7483",
+  "pages": [
+    {
+      "page": "01-evidence-chain",
+      "nodes": 15,
+      "edges": 16,
+      "svg_sha256": "9da140f0f3a217663208ce8180be9964e951ea30a912c484a3dbc7351678287a"
+    },
+    {
+      "page": "02-intelligence-network",
+      "nodes": 15,
+      "edges": 14,
+      "svg_sha256": "a2e374ecac6a8beff3aec4ba3552c30ecc114d5cd416c770b1e55a9f6907092d"
+    },
+    {
+      "page": "03-adversarial-model-human",
+      "nodes": 15,
+      "edges": 14,
+      "svg_sha256": "be0848e59f6cca3ef594082524b0d84865958a7fa1df99444cb050464013c871"
+    },
+    {
+      "page": "04-assurance-response",
+      "nodes": 15,
+      "edges": 14,
+      "svg_sha256": "69a5d975a2c74b80326199e6422957ca5eec5c3a44c08aa7cdd580348bf0c810"
+    }
+  ],
+  "drawio_file": "defense-layers.drawio",
+  "scope": "4 defensive S1 overlays; custom SVG, no draw.io GUI round-trip."
+}

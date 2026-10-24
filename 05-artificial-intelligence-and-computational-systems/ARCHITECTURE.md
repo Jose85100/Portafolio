@@ -47,3 +47,7 @@ La línea de riesgo posee [cuatro diseños por capas y archivos draw.io](../03-f
 ## Aplicación al ciclo completo de crédito
 
 El [mapa crediticio ampliado](../03-financial-risk/01-credit-risk/architecture/credit-lifecycle/README.md) ubica captura de señales, variables, modelos y workflow entre LOS, core, pagos, monitoreo y cobranza. Compara backend modular, arquitectura por eventos y core existente con decisión desacoplada. IA conserva contratos, estado, calibración y trazabilidad; el dueño del proceso conserva atribuciones, finalidad y autorización de efectos. Son diseños S1; no conectan a fuentes reales ni cambian el alcance de los experimentos previos.
+
+## Estudios defensivos de la arquitectura de crédito
+
+El [programa de diez proyectos](../03-financial-risk/01-credit-risk/architecture/credit-lifecycle/projects/README.md) enlaza orquestación, decisiones, linaje y modelos existentes con problemas específicos de crédito. Las [ocho capas defensivas adicionales](../03-financial-risk/01-credit-risk/architecture/credit-lifecycle/defense-layers/README.md) añaden evaluación de supuestos atacables, sondeo de interfaces y controles humanos sin duplicar runtimes o motores. Las 30 ideas y 40 escenarios nuevos están formulados; la ejecución de los experimentos y la integración siguen pendientes.

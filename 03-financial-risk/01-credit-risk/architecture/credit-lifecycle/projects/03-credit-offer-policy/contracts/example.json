@@ -1,0 +1,12 @@
+{
+  "case_id": "synthetic-offer-001",
+  "currency": "COP",
+  "selected_offer_id": null,
+  "decision_status": "review",
+  "reason_codes": [
+    "income_evidence_incomplete"
+  ],
+  "snapshot_id": "snapshot-design-001",
+  "policy_version": "design-v1",
+  "expires_at": null
+}

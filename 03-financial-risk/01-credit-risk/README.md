@@ -25,3 +25,7 @@ Modelos y análisis para originación, seguimiento y gestión de cartera. Todo e
 | Notebooks | Convención de análisis reproducible y separación de ambientes | [guía](notebooks/README.md) |
 
 La ecuación base para una exposición individual es \(EL_i = PD_i \times LGD_i \times EAD_i\); a nivel de cartera, \(EL = \sum_i EL_i\). Cualquier extensión a ECL, capital económico o decisiones debe declarar horizonte, escenario, versión de modelo y población aplicable.
+
+## Programa de proyectos y capas defensivas
+
+[Diez proyectos](architecture/credit-lifecycle/projects/README.md) estructuran 30 ideas con contratos sintéticos y 40 escenarios adversariales propuestos. [Ocho capas adicionales](architecture/credit-lifecycle/defense-layers/README.md) incorporan integridad de evidencia, inteligencia de fraude, evaluación adversarial, protección frente a sondeo, controles humanos, coordinación, vigilancia y respuesta. Hay cuatro overlays draw.io nuevos; todas estas formulaciones conservan S1, sin pentest o vulnerabilidad real confirmados.
