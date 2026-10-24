@@ -1,6 +1,6 @@
 # Resultados del experimento acotado
 
-Ejecución real en un proceso IPython nuevo, celdas en orden, salidas guardadas; 32 celdas, 14 de código, 171 líneas y tres figuras. No se usó kernel local por la restricción ZeroMQ del entorno; el workflow nuevo usa kernel nbclient. [Hash y métricas](evidence/execution.json), [QA y límites de inspección](evidence/qa.json).
+Ejecución real en un proceso IPython nuevo, celdas en orden, salidas guardadas; 32 celdas, 14 de código, 172 líneas y tres figuras. No se usó kernel local por la restricción ZeroMQ del entorno; el workflow nuevo usa kernel nbclient. [Hash y métricas](evidence/execution.json), [QA y límites de inspección](evidence/qa.json).
 
 ## Dependencia de controles
 

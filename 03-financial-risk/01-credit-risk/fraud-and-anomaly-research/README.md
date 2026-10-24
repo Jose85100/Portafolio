@@ -16,7 +16,7 @@ Cuatro programas de investigación para solicitudes de crédito y KYC. Revisión
 
 ## Extensión: fraude con IA y defensa por capas
 
-[Arquitecturas, proveedores y agenda defensiva](ai-enabled-fraud-defense/README.md): cuatro diagramas editables en draw.io, ocho proveedores candidatos documentados, 16 ideas de experimentos y un notebook nuevo ejecutado (32 celdas, 171 líneas de código y tres figuras). Estudia dependencia entre controles y estrés de proveedores/colas con datos sintéticos. Los ocho notebooks originales conservan las cifras de su entrega; este cuaderno y el conformal posterior se registran por separado. Las arquitecturas son diseño, sin integraciones comerciales desplegadas.
+[Arquitecturas, proveedores y agenda defensiva](ai-enabled-fraud-defense/README.md): cuatro diagramas editables en draw.io, ocho proveedores candidatos documentados, 16 ideas de experimentos y un notebook nuevo ejecutado (32 celdas, 172 líneas de código y tres figuras). Estudia dependencia entre controles y estrés de proveedores/colas con datos sintéticos. Los ocho notebooks originales conservan las cifras de su entrega; este cuaderno y el conformal posterior se registran por separado. Las arquitecturas son diseño, sin integraciones comerciales desplegadas.
 
 ## Preguntas que cubre la línea
 

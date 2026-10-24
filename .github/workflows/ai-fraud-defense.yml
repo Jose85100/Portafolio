@@ -31,6 +31,8 @@ jobs:
         run: |
           python "$MODULE/build_notebook.py"
           python scripts/execute_research_depth.py --one "$MODULE/notebook.ipynb" --mode kernel --result "$GITHUB_WORKSPACE/fraud-artifacts/execution.json" --qa-dir "$GITHUB_WORKSPACE/fraud-artifacts"
+      - name: Require all three rendered figures
+        run: python -c 'import json, os, pathlib; p=pathlib.Path(os.environ["GITHUB_WORKSPACE"])/"fraud-artifacts/execution.json"; r=json.loads(p.read_text()); assert r["figures"] == 3, r'
       - uses: actions/upload-artifact@v4
         if: always()
         with:

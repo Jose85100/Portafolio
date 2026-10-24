@@ -38,7 +38,8 @@ La cola es FIFO discreta diaria; revisión consume una unidad/caso y es perfecta
 md("""## Data
 
 Generador propio, semillas explícitas, sin PII. En el primer experimento se generan directamente intentos de fraude para estimar tasas condicionales. La prevalencia de originación se introduce por separado en el costo. El segundo experimento contiene 14 cohortes de 1.000 casos y una caída con 40% de errores durante tres días, frente a 1% en el resto. Estos parámetros son supuestos de estrés.""")
-code("""import json
+code("""%matplotlib inline
+import json
 from collections import deque
 import numpy as np
 import pandas as pd
