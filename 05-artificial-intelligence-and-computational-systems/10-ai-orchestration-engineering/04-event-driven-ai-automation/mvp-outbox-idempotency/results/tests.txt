@@ -1,0 +1,14 @@
+test_already_ack_does_not_redeliver (test_engine.EngineTests.test_already_ack_does_not_redeliver) ... ok
+test_concurrent_provider_retry_serialized (test_engine.EngineTests.test_concurrent_provider_retry_serialized) ... ok
+test_hard_process_crash_commit_recovered (test_engine.EngineTests.test_hard_process_crash_commit_recovered) ... ok
+test_invalid_inputs (test_engine.EngineTests.test_invalid_inputs) ... ok
+test_key_only_negative_control (test_engine.EngineTests.test_key_only_negative_control) ... ok
+test_no_dedup_negative_control (test_engine.EngineTests.test_no_dedup_negative_control) ... ok
+test_outbox_enqueue_idempotent_and_conflict (test_engine.EngineTests.test_outbox_enqueue_idempotent_and_conflict) ... ok
+test_randomized_retry_invariant (test_engine.EngineTests.test_randomized_retry_invariant) ... ok
+test_semantic_conflict_rejected_and_not_applied (test_engine.EngineTests.test_semantic_conflict_rejected_and_not_applied) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.356s
+
+OK
