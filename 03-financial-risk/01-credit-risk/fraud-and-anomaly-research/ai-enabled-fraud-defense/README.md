@@ -38,3 +38,7 @@ Las soluciones consultadas ofrecen biometría, señales de dispositivo, comporta
 **Separación económica:** fraude, PD/LGD/EAD, coerción y lavado requieren etiquetas y tratamientos distintos. Un ledger de incidentes asignará cada flujo perdido una sola vez. No sumar pérdida de fraude e incumplimiento cuando contienen el mismo saldo.
 
 Los IDs `[S:...]` remiten a [sources.json](sources.json). Disponibilidad, precios, residencia, cobertura documental y requisitos legales locales siguen pendientes de diligencia; no se presenta un ranking ni una recomendación de compra.
+
+## Extensión al proceso completo de crédito
+
+El [mapa de ciclo de crédito](../../architecture/credit-lifecycle/README.md) añade nueve vistas editables, tres alternativas de plataforma, 35 señales y un catálogo consolidado de 24 proveedores candidatos. Conecta la defensa antifraude con oferta, capacidad, formalización, desembolso, LMS, cobranza y gobierno, conservando la separación entre fraude e incumplimiento legítimo. Las cifras de los experimentos de esta carpeta no cambian ni se atribuyen a las arquitecturas nuevas.

@@ -1,0 +1,27 @@
+name: Credit lifecycle architecture
+on:
+  pull_request:
+    paths:
+      - '03-financial-risk/01-credit-risk/architecture/credit-lifecycle/**'
+      - '03-financial-risk/01-credit-risk/fraud-and-anomaly-research/ai-enabled-fraud-defense/build_architectures.py'
+      - '.github/workflows/credit-lifecycle-architecture.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  reproduce-diagrams:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install ruff==0.17.2
+      - name: Lint and reproduce nine editable views
+        env:
+          MODULE: 03-financial-risk/01-credit-risk/architecture/credit-lifecycle
+        run: |
+          python -m ruff check "$MODULE/build_diagrams.py"
+          python "$MODULE/build_diagrams.py"
+          git diff --exit-code -- "$MODULE/diagrams"

@@ -43,3 +43,7 @@ Los resultados de hoy permanecen en la PR del ciclo mientras esté abierta. [Rev
 ## Arquitecturas de aplicación: defensa de fraude con IA
 
 La línea de riesgo posee [cuatro diseños por capas y archivos draw.io](../03-financial-risk/01-credit-risk/fraud-and-anomaly-research/ai-enabled-fraud-defense/diagrams/README.md). IA aporta aislamiento de extracción, contratos tipados, calibración, abstención y replay. Fraude posee tipologías, adjudicación y política económica; pagos conserva autorización de efectos; crédito conserva capacidad de pago. Los proveedores se evalúan como adaptadores especializados, sin crear una carpeta por marca ni duplicar el motor de pérdida. El nuevo notebook ejecutado estudia controles dependientes e indisponibilidad de proveedores, sin APIs comerciales.
+
+## Aplicación al ciclo completo de crédito
+
+El [mapa crediticio ampliado](../03-financial-risk/01-credit-risk/architecture/credit-lifecycle/README.md) ubica captura de señales, variables, modelos y workflow entre LOS, core, pagos, monitoreo y cobranza. Compara backend modular, arquitectura por eventos y core existente con decisión desacoplada. IA conserva contratos, estado, calibración y trazabilidad; el dueño del proceso conserva atribuciones, finalidad y autorización de efectos. Son diseños S1; no conectan a fuentes reales ni cambian el alcance de los experimentos previos.

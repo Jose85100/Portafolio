@@ -61,3 +61,7 @@ EL_{p,h}=\sum_{i \in p} EL_{i,h}.
 \]
 
 Las probabilidades están en \([0,1]\), `ead` y pérdida están en unidades monetarias no negativas, y cada corrida declara explícitamente `horizon_months`. La fórmula no sustituye la política IFRS 9 ni una metodología de capital regulatorio.
+
+## Extensión: ciclo de crédito institucional
+
+El [mapa de ciclo completo](credit-lifecycle/README.md) añade responsabilidades y variantes de plataforma, señales de IP/ubicación/dispositivo, proveedores, formalización/pagos, servicio/cobranza y gobierno. [Nueve páginas draw.io](credit-lifecycle/diagrams/README.md) complementan este flujo computacional del sandbox. Es diseño S1 de referencia; no amplía las interfaces operacionales ni habilita PII en este repositorio.
