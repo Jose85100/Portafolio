@@ -1,0 +1,10 @@
+test_envelope_exhaustive (test_guard.TestGuard.test_envelope_exhaustive) ... ok
+test_invalid_and_sparse (test_guard.TestGuard.test_invalid_and_sparse) ... ok
+test_leave_one_out_superuniform_with_contamination (test_guard.TestGuard.test_leave_one_out_superuniform_with_contamination) ... ok
+test_monotone_bound_and_score (test_guard.TestGuard.test_monotone_bound_and_score) ... ok
+test_oracle_and_identity (test_guard.TestGuard.test_oracle_and_identity) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.028s
+
+OK
