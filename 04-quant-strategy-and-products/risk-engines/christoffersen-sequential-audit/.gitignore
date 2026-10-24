@@ -1,0 +1,7 @@
+.venv/
+build/
+.mypy_cache/
+.ruff_cache/
+*.gcda
+*.gcno
+*.gcov

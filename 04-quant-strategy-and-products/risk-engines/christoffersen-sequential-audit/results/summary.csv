@@ -1,0 +1,4 @@
+name,exact_p,fixed_wrong,sequential_wrong,undecided,mean_sequential_draws
+clear_reject,0.0009852216748768472,0,0,0,2048
+boundary,0.0421455938697318,32,0,167,65536
+clear_non_reject,0.5037401933953658,0,0,0,256
