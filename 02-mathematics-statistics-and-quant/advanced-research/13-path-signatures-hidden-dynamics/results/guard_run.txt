@@ -1,0 +1,49 @@
+{
+  "seed": 20261024,
+  "cases": 8,
+  "methods": {
+    "fixed8": {
+      "wrong_signs": 0,
+      "abstentions": 4,
+      "max_area_error": 25.132741228718345,
+      "mean_final_segments": 8.0,
+      "total_seconds": 0.0013373099999967053
+    },
+    "plateau": {
+      "wrong_signs": 0,
+      "abstentions": 4,
+      "max_area_error": 25.132741228718345,
+      "mean_final_segments": 2052.0,
+      "total_seconds": 0.008069447999844215
+    },
+    "certified": {
+      "wrong_signs": 0,
+      "abstentions": 0,
+      "max_area_error": 2.5053242307488297,
+      "mean_final_segments": 30.0,
+      "total_seconds": 0.005940504000022884
+    },
+    "certified_budget8": {
+      "wrong_signs": 0,
+      "abstentions": 6,
+      "max_area_error": 25.132741228718345,
+      "mean_final_segments": 8.0,
+      "total_seconds": 0.0033030180000537257
+    }
+  },
+  "plateau_false_convergence": 4,
+  "irregular_trials": 200,
+  "irregular_enclosed": 200,
+  "irregular_wrong_sign": 0,
+  "irregular_certified": 114,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "invalid_bound_counterexample": {
+    "supplied_L": 6.2,
+    "actual_L": 43.982297150257104,
+    "certified_sign": -1,
+    "true_sign": 1,
+    "area": -2.82842712474619,
+    "radius": 2.4025000000000003
+  }
+}
