@@ -39,3 +39,7 @@ La calibración y el umbral se congelan antes de test. La salida tipada no acred
 IA desarrolla infraestructura y métodos. [Riesgo de fraude](../03-financial-risk/01-credit-risk/fraud-and-anomaly-research/) posee las etiquetas, la pérdida esperada, la capacidad de revisión y los criterios de uso crediticio. Economía posee identificación y explicaciones estructurales. Estrategia posee costos y decisiones de innovación. El motor MILP de riesgo no se copia dentro de IA.
 
 Los resultados de hoy permanecen en la PR del ciclo mientras esté abierta. [Revisión e inventario](../reviews/2026-10-23-alignment/README.md) distinguen evidencia guardada, ejecución nueva y validación pendiente.
+
+## Arquitecturas de aplicación: defensa de fraude con IA
+
+La línea de riesgo posee [cuatro diseños por capas y archivos draw.io](../03-financial-risk/01-credit-risk/fraud-and-anomaly-research/ai-enabled-fraud-defense/diagrams/README.md). IA aporta aislamiento de extracción, contratos tipados, calibración, abstención y replay. Fraude posee tipologías, adjudicación y política económica; pagos conserva autorización de efectos; crédito conserva capacidad de pago. Los proveedores se evalúan como adaptadores especializados, sin crear una carpeta por marca ni duplicar el motor de pérdida. El nuevo notebook ejecutado estudia controles dependientes e indisponibilidad de proveedores, sin APIs comerciales.

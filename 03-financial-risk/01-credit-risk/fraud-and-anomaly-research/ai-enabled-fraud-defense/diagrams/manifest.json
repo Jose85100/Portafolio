@@ -1,0 +1,30 @@
+{
+  "renderer": "Shared geometry; native uncompressed mxGraph XML + custom SVG. draw.io GUI round-trip not performed.",
+  "drawio_sha256": "7f1e465023c2ab35596f5ace9e5ba6a3ad19622976cd496233f987a8eefbcd3f",
+  "pages": [
+    {
+      "page": "01-kyc",
+      "nodes": 15,
+      "edges": 16,
+      "svg_sha256": "d11baa5752f700f8251e1d0955054498fdb0275b3f446d88012c4b6513005af0"
+    },
+    {
+      "page": "02-documents",
+      "nodes": 15,
+      "edges": 16,
+      "svg_sha256": "78e4ff9e23f857c12085f3b19b289f7763ed671c00d5dd83c2530113d1a2af9f"
+    },
+    {
+      "page": "03-session",
+      "nodes": 15,
+      "edges": 16,
+      "svg_sha256": "2a8d3685f751f68398e81a2f4b19a2eed7d0d868c2ce1de9d6cd7c04feaa280b"
+    },
+    {
+      "page": "04-network",
+      "nodes": 15,
+      "edges": 14,
+      "svg_sha256": "390ea7bec38611ec55374424d99d971fdfecae4240eacc8511eac2f85261a3c9"
+    }
+  ]
+}

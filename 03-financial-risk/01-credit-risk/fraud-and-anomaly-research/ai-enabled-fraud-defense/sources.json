@@ -1,0 +1,111 @@
+{
+  "checked_at": "2026-10-23",
+  "method": "Consulta de fuentes primarias públicas. No se evaluaron APIs comerciales.",
+  "sources": [
+    {
+      "id": "fincen",
+      "title": "FinCEN FIN-2024-Alert004",
+      "type": "autoridad, alerta, 2024",
+      "url": "https://www.fincen.gov/system/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf",
+      "scope": "Tipologías documentadas de medios sintéticos en verificación financiera; no prevalencia poblacional."
+    },
+    {
+      "id": "nist",
+      "title": "NIST SP 800-63A-4 §3.14",
+      "type": "estándar técnico, 2025",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63a.html#DigInject",
+      "scope": "Separación de captura, inyección y medios falsificados; referencia técnica, sin certificación propia ni obligación colombiana inferida."
+    },
+    {
+      "id": "fed",
+      "title": "Federal Reserve: Synthetic Identity Fraud Mitigation Toolkit",
+      "type": "recurso institucional",
+      "url": "https://fedpaymentsimprovement.org/resources/synthetic-identity-fraud-mitigation-toolkit/",
+      "scope": "Detección, mitigación y colaboración; no benchmark de proveedores."
+    },
+    {
+      "id": "iproov",
+      "title": "iProov: Product overview",
+      "type": "documentación comercial",
+      "url": "https://docs.iproov.com/getting-started/product-overview",
+      "scope": "Verificación de vida, comparación facial y perfil biométrico."
+    },
+    {
+      "id": "iproov-injection",
+      "title": "iProov: Liveness detection",
+      "type": "declaración comercial",
+      "url": "https://www.iproov.com/liveness-detection",
+      "scope": "El proveedor declara protección y evaluaciones frente a presentación e inyección; pedir informes y alcance por versión."
+    },
+    {
+      "id": "truora",
+      "title": "Truora: Document and Face Validation",
+      "type": "documentación comercial",
+      "url": "https://dev.truora.com/guides/documentandface/",
+      "scope": "Documento y comparación facial; no prueba de solvencia."
+    },
+    {
+      "id": "seon",
+      "title": "SEON: Fraud API",
+      "type": "documentación comercial",
+      "url": "https://docs.seon.io/api-reference/fraud-api",
+      "scope": "Señales de email, teléfono, IP y dispositivo mediante API."
+    },
+    {
+      "id": "socure",
+      "title": "Socure: Sigma Synthetic Fraud",
+      "type": "documentación comercial",
+      "url": "https://help.socure.com/riskos/docs/sigma-synthetic-fraud",
+      "scope": "Score para identidad sintética; no asumir calibración local."
+    },
+    {
+      "id": "biocatch",
+      "title": "BioCatch: Behavioral Biometrics",
+      "type": "declaración comercial",
+      "url": "https://www.biocatch.com/behavioral-biometrics-solution",
+      "scope": "Comportamiento para apertura, toma de cuenta, estafas y mulas."
+    },
+    {
+      "id": "feedzai",
+      "title": "Feedzai: RiskOps",
+      "type": "declaración comercial",
+      "url": "https://www.feedzai.com/riskops/",
+      "scope": "Orquestación de señales de fraude; cifras comerciales no adoptadas como rendimiento propio."
+    },
+    {
+      "id": "persona",
+      "title": "Persona: Workflows",
+      "type": "documentación comercial",
+      "url": "https://docs.withpersona.com/workflows",
+      "scope": "Orquestación mediante eventos y estados de verificación."
+    },
+    {
+      "id": "belvo",
+      "title": "Belvo: Income Verification",
+      "type": "documentación comercial",
+      "url": "https://belvo.com/products/income-verification/",
+      "scope": "Perfil de ingresos a partir de fuentes conectadas; confirmar país, banco y producto."
+    },
+    {
+      "id": "belvo-doc",
+      "title": "Belvo: Enrichment overview",
+      "type": "documentación comercial",
+      "url": "https://developers.belvo.com/developer_resources/enrichment-overview",
+      "scope": "Dependencia del histórico bancario disponible y de conectar la cuenta receptora de ingreso."
+    },
+    {
+      "id": "ffpp",
+      "title": "Rössler et al. FaceForensics++, ICCV 2019",
+      "type": "paper en proceedings",
+      "url": "https://openaccess.thecvf.com/content_ICCV_2019/papers/Rossler_FaceForensics_Learning_to_Detect_Manipulated_Facial_Images_ICCV_2019_paper.pdf",
+      "scope": "Benchmark de manipulación facial; no ensayo KYC. DOI: 10.1109/ICCV.2019.00009."
+    },
+    {
+      "id": "care",
+      "title": "Dou et al. CARE-GNN, CIKM 2020",
+      "type": "paper en proceedings",
+      "url": "https://penghao-bdsc.github.io/papers/cikm20.pdf",
+      "scope": "Camuflaje de atributos y relaciones en dos datasets; no evidencia de superioridad en originación local. DOI: 10.1145/3340531.3411903."
+    }
+  ]
+}
