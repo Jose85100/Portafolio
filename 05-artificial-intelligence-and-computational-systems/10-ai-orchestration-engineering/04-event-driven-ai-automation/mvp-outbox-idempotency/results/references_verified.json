@@ -1,0 +1,26 @@
+{
+  "checked_on": "2026-10-24",
+  "method": "Opened all five primary pages; verified titles and directly relevant sections. AWS same-key/different-intent, outbox post-publish crash, SQLite transaction atomicity. Nonexhaustive engineering prior art, not five research papers.",
+  "sources": [
+    {
+      "key": "featonby",
+      "url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/"
+    },
+    {
+      "key": "outbox",
+      "url": "https://microservices.io/patterns/data/transactional-outbox.html"
+    },
+    {
+      "key": "consumer",
+      "url": "https://microservices.io/patterns/communication-style/idempotent-consumer.html"
+    },
+    {
+      "key": "transactions",
+      "url": "https://www.sqlite.org/lang_transaction.html"
+    },
+    {
+      "key": "atomic",
+      "url": "https://www.sqlite.org/atomiccommit.html"
+    }
+  ]
+}

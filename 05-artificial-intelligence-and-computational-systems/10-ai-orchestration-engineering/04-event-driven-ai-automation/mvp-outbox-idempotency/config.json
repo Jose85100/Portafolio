@@ -1,0 +1,25 @@
+{
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "sizes": [
+    20,
+    100
+  ],
+  "ack_loss_probabilities": [
+    0,
+    0.35,
+    0.8
+  ],
+  "attempt_budget": 8,
+  "hypothesis": "key_hash has zero duplicate effects, zero missing effects and rejects all changed-payload probes; no_dedup duplicates >0 under ACK loss; key_only accepts changed payload",
+  "fault": "after provider COMMIT and before sender ACK; independent Bernoulli per attempt",
+  "dataset": "synthetic positive integer effects, two independent SQLite files"
+}
