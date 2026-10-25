@@ -1,0 +1,10 @@
+test_brute_force_oracle (test_loss.TestLoss.test_brute_force_oracle) ... ok
+test_invalid (test_loss.TestLoss.test_invalid) ... ok
+test_mass_moments (test_loss.TestLoss.test_mass_moments) ... ok
+test_partial_atom_and_deterministic (test_loss.TestLoss.test_partial_atom_and_deterministic) ... ok
+test_scale_permutation_and_zero (test_loss.TestLoss.test_scale_permutation_and_zero) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+OK
