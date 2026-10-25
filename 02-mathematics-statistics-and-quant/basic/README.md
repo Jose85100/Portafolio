@@ -90,3 +90,37 @@ El ejecutor usa un kernel limpio por notebook, guarda resultados después de una
 
 En cada sesión conserva tres cosas: una derivación en papel, una figura interpretada y una explicación de cuándo deja de ser válido el método.
 
+
+## Tercera etapa: desarrollos matemáticos paso a paso
+
+Estas once lecciones amplían el curso hasta **24 lecciones**. Cada una plantea una pregunta, declara prerrequisitos, desarrolla identidades o resultados, trabaja ejemplos y ofrece ejercicios con soluciones. Las demostraciones son introductorias y acotadas a los supuestos indicados; los teoremas citados se distinguen de los resultados demostrados.
+
+| Lección | Desarrollo principal | Leer antes |
+|---|---|---|
+| [14 · Desigualdades y valor absoluto](14-desigualdades-y-valor-absoluto.md) | Tabla de signos, desigualdad triangular y media aritmética–geométrica | 1, 8 |
+| [15 · Trigonometría y ciclos](15-trigonometria-y-ciclos.md) | Radianes, identidades, derivada del seno, amplitud y periodo | 2, 4 |
+| [16 · Reglas de derivación demostradas](16-reglas-de-derivacion-demostradas.md) | Producto, cociente, cadena, derivación implícita y elasticidad | 4 |
+| [17 · Técnicas de integración](17-tecnicas-de-integracion.md) | Sustitución, partes, impropias y condiciones de convergencia | 5, 16 |
+| [18 · Distribuciones continuas y momentos](18-distribuciones-continuas-y-momentos.md) | Normalización, acumulada, media, varianza y transformación inversa | 5, 6, 17 |
+| [19 · Covarianza y esperanza condicional](19-covarianza-y-esperanza-condicional.md) | Varianza de combinaciones y descomposición de varianza total | 3, 6, 18 |
+| [20 · Estimación y verosimilitud](20-estimacion-y-verosimilitud.md) | Estimadores Bernoulli y normal, concavidad, sesgo y fronteras | 7, 16 |
+| [21 · Mínimos cuadrados y proyecciones](21-minimos-cuadrados-y-proyecciones.md) | Ecuaciones normales, ortogonalidad y prueba de mínimo global | 3, 7, 11 |
+| [22 · Grandes números y límite central](22-ley-grandes-numeros-y-limite-central.md) | Ley débil mediante Chebyshev y contraste con el TCL citado | 7, 19 |
+| [23 · Convexidad y Jensen](23-convexidad-y-jensen.md) | Recta de soporte, mínimo global y prueba de Jensen diferenciable | 4, 11, 18 |
+| [24 · Bayes Beta–Bernoulli](24-bayes-beta-bernoulli.md) | Posterior conjugada, momentos y predicción | 6, 18, 20 |
+
+### Método de estudio de las derivaciones
+
+1. Escribe el dominio y las hipótesis antes de operar.
+2. Reproduce cada paso indicando qué identidad, propiedad o teorema lo permite.
+3. Comprueba una respuesta por una segunda vía: sustitución, derivación o ejemplo exacto.
+4. Busca un caso donde falle el supuesto: una frontera, una singularidad, dependencia o falta de momentos.
+5. Resuelve los ejercicios sin consultar la solución y explica qué significa el resultado.
+
+El [verificador de desarrollos](verificar_desarrollos.py) comprueba los ejemplos numéricos de las once lecciones, incluyendo residuos racionales exactos y momentos Beta. Se ejecutó correctamente con Python, sin dependencias externas:
+
+```bash
+python3 02-mathematics-statistics-and-quant/basic/verificar_desarrollos.py
+```
+
+Las pruebas numéricas complementan las demostraciones; no prueban resultados universales. Esta ampliación añade lecciones teóricas y su verificador; los ocho notebooks de la segunda etapa siguen disponibles como apoyo.
