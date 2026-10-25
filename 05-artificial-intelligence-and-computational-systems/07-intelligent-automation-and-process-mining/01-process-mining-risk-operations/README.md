@@ -1,6 +1,6 @@
 # Process Mining for Risk Operations
 
-> **Estado: propuesta técnica (S0/S1).** No se declara implementación, benchmark ejecutado ni desempeño demostrado.
+> **Estado:** diseño amplio S0/S1 con [un componente S2 de conformidad bajo orden parcial](mvp-partial-order-conformance/), ejecutado con logs sintéticos. El programa completo no se declara validado ni operacional.
 
 ## Pregunta de investigación
 

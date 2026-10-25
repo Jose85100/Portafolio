@@ -1,0 +1,327 @@
+{
+  "config": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "trace_lengths": [
+      4,
+      8,
+      12
+    ],
+    "cases_per_scenario": 10,
+    "max_realizations": 720,
+    "model": "single finite sequential reference",
+    "hypothesis": "bounds has zero incorrect definite decisions and decision rate >=0.5; arbitrary and optimistic each >0.1 incorrect rate in balanced five-scenario dataset",
+    "data": "synthetic stage labels; tied timestamps represented as unordered buckets; latent order withheld from methods",
+    "selection": [
+      {
+        "idea": "partial-order conformance bounds",
+        "decision": "selected",
+        "reason": "new pillar07 S1 gap, exact falsifiable small audit"
+      },
+      {
+        "idea": "outbox TTL and replay",
+        "decision": "deferred",
+        "reason": "would repeat pillar10 from24oct"
+      },
+      {
+        "idea": "probabilistic drift monitoring",
+        "decision": "deferred",
+        "reason": "close to conformal work23oct; prioritize domain rotation"
+      }
+    ]
+  },
+  "summary": [
+    {
+      "scenario": "all",
+      "method": "arbitrary",
+      "cases": 1200,
+      "definite": 1200,
+      "abstentions": 0,
+      "incorrect_definite": 252,
+      "incorrect_rate": 0.21,
+      "decision_rate": 1.0,
+      "selective_error_rate": 0.21
+    },
+    {
+      "scenario": "all",
+      "method": "optimistic",
+      "cases": 1200,
+      "definite": 1200,
+      "abstentions": 0,
+      "incorrect_definite": 240,
+      "incorrect_rate": 0.2,
+      "decision_rate": 1.0,
+      "selective_error_rate": 0.2
+    },
+    {
+      "scenario": "all",
+      "method": "bounds",
+      "cases": 1200,
+      "definite": 720,
+      "abstentions": 480,
+      "incorrect_definite": 0,
+      "incorrect_rate": 0.0,
+      "decision_rate": 0.6,
+      "selective_error_rate": 0.0
+    },
+    {
+      "scenario": "ordered_valid",
+      "method": "arbitrary",
+      "cases": 240,
+      "definite": 240,
+      "abstentions": 0,
+      "incorrect_definite": 0,
+      "incorrect_rate": 0.0,
+      "decision_rate": 1.0,
+      "selective_error_rate": 0.0
+    },
+    {
+      "scenario": "ordered_valid",
+      "method": "optimistic",
+      "cases": 240,
+      "definite": 240,
+      "abstentions": 0,
+      "incorrect_definite": 0,
+      "incorrect_rate": 0.0,
+      "decision_rate": 1.0,
+      "selective_error_rate": 0.0
+    },
+    {
+      "scenario": "ordered_valid",
+      "method": "bounds",
+      "cases": 240,
+      "definite": 240,
+      "abstentions": 0,
+      "incorrect_definite": 0,
+      "incorrect_rate": 0.0,
+      "decision_rate": 1.0,
+      "selective_error_rate": 0.0
+    },
+    {
+      "scenario": "ordered_invalid",
+      "method": "arbitrary",
+      "cases": 240,
+      "definite": 240,
+      "abstentions": 0,
+      "incorrect_definite": 0,
+      "incorrect_rate": 0.0,
+      "decision_rate": 1.0,
+      "selective_error_rate": 0.0
+    },
+    {
+      "scenario": "ordered_invalid",
+      "method": "optimistic",
+      "cases": 240,
+      "definite": 240,
+      "abstentions": 0,
+      "incorrect_definite": 0,
+      "incorrect_rate": 0.0,
+      "decision_rate": 1.0,
+      "selective_error_rate": 0.0
+    },
+    {
+      "scenario": "ordered_invalid",
+      "method": "bounds",
+      "cases": 240,
+      "definite": 240,
+      "abstentions": 0,
+      "incorrect_definite": 0,
+      "incorrect_rate": 0.0,
+      "decision_rate": 1.0,
+      "selective_error_rate": 0.0
+    },
+    {
+      "scenario": "tied_valid",
+      "method": "arbitrary",
+      "cases": 240,
+      "definite": 240,
+      "abstentions": 0,
+      "incorrect_definite": 123,
+      "incorrect_rate": 0.5125,
+      "decision_rate": 1.0,
+      "selective_error_rate": 0.5125
+    },
+    {
+      "scenario": "tied_valid",
+      "method": "optimistic",
+      "cases": 240,
+      "definite": 240,
+      "abstentions": 0,
+      "incorrect_definite": 0,
+      "incorrect_rate": 0.0,
+      "decision_rate": 1.0,
+      "selective_error_rate": 0.0
+    },
+    {
+      "scenario": "tied_valid",
+      "method": "bounds",
+      "cases": 240,
+      "definite": 0,
+      "abstentions": 240,
+      "incorrect_definite": 0,
+      "incorrect_rate": 0.0,
+      "decision_rate": 0.0,
+      "selective_error_rate": null
+    },
+    {
+      "scenario": "tied_invalid",
+      "method": "arbitrary",
+      "cases": 240,
+      "definite": 240,
+      "abstentions": 0,
+      "incorrect_definite": 129,
+      "incorrect_rate": 0.5375,
+      "decision_rate": 1.0,
+      "selective_error_rate": 0.5375
+    },
+    {
+      "scenario": "tied_invalid",
+      "method": "optimistic",
+      "cases": 240,
+      "definite": 240,
+      "abstentions": 0,
+      "incorrect_definite": 240,
+      "incorrect_rate": 1.0,
+      "decision_rate": 1.0,
+      "selective_error_rate": 1.0
+    },
+    {
+      "scenario": "tied_invalid",
+      "method": "bounds",
+      "cases": 240,
+      "definite": 0,
+      "abstentions": 240,
+      "incorrect_definite": 0,
+      "incorrect_rate": 0.0,
+      "decision_rate": 0.0,
+      "selective_error_rate": null
+    },
+    {
+      "scenario": "missing_invalid",
+      "method": "arbitrary",
+      "cases": 240,
+      "definite": 240,
+      "abstentions": 0,
+      "incorrect_definite": 0,
+      "incorrect_rate": 0.0,
+      "decision_rate": 1.0,
+      "selective_error_rate": 0.0
+    },
+    {
+      "scenario": "missing_invalid",
+      "method": "optimistic",
+      "cases": 240,
+      "definite": 240,
+      "abstentions": 0,
+      "incorrect_definite": 0,
+      "incorrect_rate": 0.0,
+      "decision_rate": 1.0,
+      "selective_error_rate": 0.0
+    },
+    {
+      "scenario": "missing_invalid",
+      "method": "bounds",
+      "cases": 240,
+      "definite": 240,
+      "abstentions": 0,
+      "incorrect_definite": 0,
+      "incorrect_rate": 0.0,
+      "decision_rate": 1.0,
+      "selective_error_rate": 0.0
+    }
+  ],
+  "scaling": [
+    {
+      "width": 1,
+      "mean_seconds": 8.19451999859666e-05,
+      "seconds_se": 1.34788734137791e-05,
+      "python_peak_bytes": 888,
+      "lower": 0,
+      "upper": 0,
+      "verdict": "conformant",
+      "realizations": 1,
+      "candidate_upper_bound": 1
+    },
+    {
+      "width": 2,
+      "mean_seconds": 8.386979998249444e-05,
+      "seconds_se": 2.416854969227708e-06,
+      "python_peak_bytes": 1032,
+      "lower": 0,
+      "upper": 2,
+      "verdict": "ambiguous",
+      "realizations": 2,
+      "candidate_upper_bound": 2
+    },
+    {
+      "width": 3,
+      "mean_seconds": 0.0002417810000224563,
+      "seconds_se": 1.9236494696332187e-05,
+      "python_peak_bytes": 1664,
+      "lower": 0,
+      "upper": 4,
+      "verdict": "ambiguous",
+      "realizations": 6,
+      "candidate_upper_bound": 6
+    },
+    {
+      "width": 4,
+      "mean_seconds": 0.0009352246000162267,
+      "seconds_se": 2.9795002477192593e-05,
+      "python_peak_bytes": 4592,
+      "lower": 0,
+      "upper": 6,
+      "verdict": "ambiguous",
+      "realizations": 24,
+      "candidate_upper_bound": 24
+    },
+    {
+      "width": 5,
+      "mean_seconds": 0.006114637000041512,
+      "seconds_se": 8.483617212372964e-05,
+      "python_peak_bytes": 21568,
+      "lower": 0,
+      "upper": 8,
+      "verdict": "ambiguous",
+      "realizations": 120,
+      "candidate_upper_bound": 120
+    },
+    {
+      "width": 6,
+      "mean_seconds": 0.04431834999998045,
+      "seconds_se": 0.000868563272533573,
+      "python_peak_bytes": 145640,
+      "lower": 0,
+      "upper": 10,
+      "verdict": "ambiguous",
+      "realizations": 720,
+      "candidate_upper_bound": 720
+    },
+    {
+      "width": 7,
+      "mean_seconds": 2.4295999992318684e-05,
+      "seconds_se": 4.129218154825649e-06,
+      "python_peak_bytes": 624,
+      "lower": null,
+      "upper": null,
+      "verdict": "budget_exceeded",
+      "realizations": 0,
+      "candidate_upper_bound": 5040
+    }
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "cpu_count": 9
+  },
+  "timing_note": "Bounds timed with tracemalloc, arbitrary without. Optimistic reuses bounds computation. Not a fair method-latency comparison; scaling is bounded-audit resource profile."
+}
