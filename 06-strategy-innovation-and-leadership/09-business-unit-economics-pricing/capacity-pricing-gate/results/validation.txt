@@ -1,0 +1,69 @@
+test_capacity_and_extremes (test_pricing.PricingTests.test_capacity_and_extremes) ... ok
+test_cvar_lp_oracle (test_pricing.PricingTests.test_cvar_lp_oracle) ... ok
+test_cvar_translation_homogeneity_monotonicity (test_pricing.PricingTests.test_cvar_translation_homogeneity_monotonicity) ... ok
+test_fractional_atom (test_pricing.PricingTests.test_fractional_atom) ... ok
+test_invalid (test_pricing.PricingTests.test_invalid) ... ok
+test_stop_and_nested_budget (test_pricing.PricingTests.test_stop_and_nested_budget) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.837s
+
+OK
+Name              Stmts   Miss  Cover
+-------------------------------------
+src/__init__.py       0      0   100%
+src/pricing.py       49      0   100%
+-------------------------------------
+TOTAL                49      0   100%
+All checks passed!
+Success: no issues found in 2 source files
+{
+  "constrained": {
+    "price": 18,
+    "expected_profit": 2143.0817905330564,
+    "cvar_shortfall": 477.13416179044214,
+    "scenario_profits": [
+      3200,
+      1178.607659206491,
+      -477.13416179044214
+    ]
+  },
+  "risk_neutral": {
+    "price": 22,
+    "expected_profit": 2725.894840743213,
+    "cvar_shortfall": 592.2560776980029,
+    "scenario_profits": [
+      4400,
+      698.9330095916546,
+      -592.2560776980029
+    ]
+  },
+  "plugin_prediction": {
+    "price": 20,
+    "expected_profit": 3800,
+    "cvar_shortfall": 0.0,
+    "scenario_profits": [
+      3800
+    ]
+  },
+  "plugin_actual": {
+    "price": 20,
+    "expected_profit": 2452.0,
+    "cvar_shortfall": 520.0,
+    "scenario_profits": [
+      3800,
+      1000.0,
+      -520.0
+    ]
+  },
+  "mc_mean": 2141.3922402160506,
+  "mc_se": 3.1104459994257114,
+  "replicates": 200000,
+  "selector_seconds": 0.0007848089999242802,
+  "selector_python_peak_bytes": 4832,
+  "seed": 20261025,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "numpy": "2.3.5"
+}
+Executed notebook.ipynb with rich outputs
