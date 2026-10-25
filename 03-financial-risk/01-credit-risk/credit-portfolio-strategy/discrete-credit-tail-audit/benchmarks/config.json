@@ -1,0 +1,1 @@
+{"confidence":0.99,"pd":0.02,"mc_seeds":30,"mc_draws":10000,"hypothesis":"concentrated portfolio normal ES underestimates lattice ES by >30%; DP PMF error vs brute force <=1e-12","cases":{"granular":[3,3,3,3,3,3,3,3,3,3],"concentrated":[100,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10]},"granular_count":100,"max_lattice":20000}
