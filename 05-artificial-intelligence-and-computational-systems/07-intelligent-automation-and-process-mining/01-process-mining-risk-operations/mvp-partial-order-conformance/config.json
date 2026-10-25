@@ -1,0 +1,39 @@
+{
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "trace_lengths": [
+    4,
+    8,
+    12
+  ],
+  "cases_per_scenario": 10,
+  "max_realizations": 720,
+  "model": "single finite sequential reference",
+  "hypothesis": "bounds has zero incorrect definite decisions and decision rate >=0.5; arbitrary and optimistic each >0.1 incorrect rate in balanced five-scenario dataset",
+  "data": "synthetic stage labels; tied timestamps represented as unordered buckets; latent order withheld from methods",
+  "selection": [
+    {
+      "idea": "partial-order conformance bounds",
+      "decision": "selected",
+      "reason": "new pillar07 S1 gap, exact falsifiable small audit"
+    },
+    {
+      "idea": "outbox TTL and replay",
+      "decision": "deferred",
+      "reason": "would repeat pillar10 from24oct"
+    },
+    {
+      "idea": "probabilistic drift monitoring",
+      "decision": "deferred",
+      "reason": "close to conformal work23oct; prioritize domain rotation"
+    }
+  ]
+}
