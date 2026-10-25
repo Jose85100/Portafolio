@@ -1,0 +1,182 @@
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.2
+[notice] To update, run: python -m pip install --upgrade pip
+test_contracts (test_rd.RDTests.test_contracts) ... ok
+test_exact_linear_jump (test_rd.RDTests.test_exact_linear_jump) ... ok
+test_invariance (test_rd.RDTests.test_invariance) ... ok
+test_latent_jump_not_cured (test_rd.RDTests.test_latent_jump_not_cured) ... ok
+test_matrix_oracle (test_rd.RDTests.test_matrix_oracle) ... ok
+test_population_curvature_bias (test_rd.RDTests.test_population_curvature_bias) ... ok
+test_seed (test_rd.RDTests.test_seed) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.054s
+
+OK
+Name        Stmts   Miss  Cover
+-------------------------------
+src/rd.py      37      0   100%
+-------------------------------
+TOTAL          37      0   100%
+All checks passed!
+Success: no issues found in 3 source files
+[
+  {
+    "scenario": "Smooth symmetric",
+    "h": 1.0,
+    "mean": 0.9986328872870012,
+    "bias": -0.0013671127129988936,
+    "sd": 0.04687920042657951,
+    "rmse": 0.04688350801206147,
+    "mean_mc_se": 0.0012104157502377472,
+    "paired_mse_difference": 0.0,
+    "paired_mse_se": 0.0,
+    "q025": 0.9035399801153821,
+    "q975": 1.0881634794397659
+  },
+  {
+    "scenario": "Smooth symmetric",
+    "h": 0.4,
+    "mean": 0.9988825880138763,
+    "bias": -0.0011174119861236927,
+    "sd": 0.0553503314296623,
+    "rmse": 0.05534316000609842,
+    "mean_mc_se": 0.0014291394122276204,
+    "paired_mse_difference": 0.0008648020359435802,
+    "paired_mse_se": 0.00011982997631913081,
+    "q025": 0.886560161376959,
+    "q975": 1.105872193015225
+  },
+  {
+    "scenario": "Smooth symmetric",
+    "h": 0.2,
+    "mean": 0.9975547561673109,
+    "bias": -0.002445243832688998,
+    "sd": 0.0775012037423315,
+    "rmse": 0.07751394395757025,
+    "mean_mc_se": 0.0020010724760338525,
+    "paired_mse_difference": 0.0038103481843403107,
+    "paired_mse_se": 0.00022535274041611617,
+    "q025": 0.8397941193968291,
+    "q975": 1.1480737455067318
+  },
+  {
+    "scenario": "Smooth symmetric",
+    "h": 0.08,
+    "mean": 0.9923603606560303,
+    "bias": -0.007639639343969616,
+    "sd": 0.12789218733557361,
+    "rmse": 0.1280775991202042,
+    "mean_mc_se": 0.003302162077738105,
+    "paired_mse_difference": 0.014205808072878702,
+    "paired_mse_se": 0.0006427206792965481,
+    "q025": 0.7463769740368805,
+    "q975": 1.2392886373133234
+  },
+  {
+    "scenario": "Asymmetric curvature",
+    "h": 1.0,
+    "mean": 0.33132618401352976,
+    "bias": -0.6686738159864702,
+    "sd": 0.0660276661841212,
+    "rmse": 0.6719236701088116,
+    "mean_mc_se": 0.001704827010133627,
+    "paired_mse_difference": 0.0,
+    "paired_mse_se": 0.0,
+    "q025": 0.1964790201257692,
+    "q975": 0.4589329858442778
+  },
+  {
+    "scenario": "Asymmetric curvature",
+    "h": 0.4,
+    "mean": 0.8920146132150297,
+    "bias": -0.10798538678497036,
+    "sd": 0.05672865245629903,
+    "rmse": 0.12197064541082911,
+    "mean_mc_se": 0.0014647275081068976,
+    "paired_mse_difference": -0.4366045801105609,
+    "paired_mse_se": 0.0021586115874900535,
+    "q025": 0.7751609897596307,
+    "q975": 0.996072556305095
+  },
+  {
+    "scenario": "Asymmetric curvature",
+    "h": 0.2,
+    "mean": 0.9706947391874913,
+    "bias": -0.029305260812508643,
+    "sd": 0.07762990899010852,
+    "rmse": 0.08295289916124175,
+    "mean_mc_se": 0.002004395631241918,
+    "paired_mse_difference": -0.44460023497323997,
+    "paired_mse_se": 0.0022694422673686797,
+    "q025": 0.8130282205194991,
+    "q975": 1.1195921316531285
+  },
+  {
+    "scenario": "Asymmetric curvature",
+    "h": 0.08,
+    "mean": 0.9880444079869812,
+    "bias": -0.011955592013018778,
+    "sd": 0.12792303883218395,
+    "rmse": 0.12843804151626118,
+    "mean_mc_se": 0.0033029586599552874,
+    "paired_mse_difference": -0.4349850879439623,
+    "paired_mse_se": 0.0023425233464394453,
+    "q025": 0.7423006812076445,
+    "q975": 1.2349863656792173
+  },
+  {
+    "scenario": "Continuity violated",
+    "h": 1.0,
+    "mean": 0.9313261840135298,
+    "bias": -0.06867381598647014,
+    "sd": 0.06602766618412116,
+    "rmse": 0.09525145284314995,
+    "mean_mc_se": 0.0017048270101336258,
+    "paired_mse_difference": 0.0,
+    "paired_mse_se": 0.0,
+    "q025": 0.7964790201257701,
+    "q975": 1.058932985844277
+  },
+  {
+    "scenario": "Continuity violated",
+    "h": 0.4,
+    "mean": 1.4920146132150296,
+    "bias": 0.49201461321502954,
+    "sd": 0.056728652456299045,
+    "rmse": 0.4952720204089564,
+    "mean_mc_se": 0.0014647275081068978,
+    "paired_mse_difference": 0.23622153493123896,
+    "paired_mse_se": 0.001572186053830792,
+    "q025": 1.375160989759631,
+    "q975": 1.5960725563050953
+  },
+  {
+    "scenario": "Continuity violated",
+    "h": 0.2,
+    "mean": 1.5706947391874913,
+    "bias": 0.5706947391874913,
+    "sd": 0.07762990899010852,
+    "rmse": 0.5759469337571341,
+    "mean_mc_se": 0.002004395631241918,
+    "paired_mse_difference": 0.32264203123551394,
+    "paired_mse_se": 0.0023821455150914053,
+    "q025": 1.4130282205194993,
+    "q975": 1.7195921316531284
+  },
+  {
+    "scenario": "Continuity violated",
+    "h": 0.08,
+    "mean": 1.5880444079869813,
+    "bias": 0.5880444079869812,
+    "sd": 0.12792303883218395,
+    "rmse": 0.6017886839189569,
+    "mean_mc_se": 0.0033029586599552874,
+    "paired_mse_difference": 0.3530767808241794,
+    "paired_mse_se": 0.003950583742531638,
+    "q025": 1.3423006812076443,
+    "q975": 1.8349863656792176
+  }
+]
+[{'n': 120, 'h': 1.0, 'calls': 100, 'seconds': 0.021843043999979272, 'python_peak_bytes': 7760}, {'n': 120, 'h': 0.4, 'calls': 100, 'seconds': 0.020800731000008454, 'python_peak_bytes': 3312}, {'n': 120, 'h': 0.2, 'calls': 100, 'seconds': 0.018712839000045278, 'python_peak_bytes': 3312}, {'n': 1200, 'h': 1.0, 'calls': 100, 'seconds': 0.017555634000018472, 'python_peak_bytes': 33096}, {'n': 1200, 'h': 0.4, 'calls': 100, 'seconds': 0.015235159000098975, 'python_peak_bytes': 22752}, {'n': 1200, 'h': 0.2, 'calls': 100, 'seconds': 0.01626500399993347, 'python_peak_bytes': 22752}, {'n': 12000, 'h': 1.0, 'calls': 100, 'seconds': 0.03413239100007104, 'python_peak_bytes': 314152}, {'n': 12000, 'h': 0.4, 'calls': 100, 'seconds': 0.02741156900003716, 'python_peak_bytes': 199016}, {'n': 12000, 'h': 0.2, 'calls': 100, 'seconds': 0.024324718000002576, 'python_peak_bytes': 186720}]
+Executed 8 code cells in process.
