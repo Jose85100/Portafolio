@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-25",
+  "method": "Opened primary arXiv abstract pages (titles, authors, identifiers and abstracts) and official IEEE task-force manifesto page. No exhaustive review or independent replication of papers. First two uncertain-conformance papers overlap; not counted as independent evidence. Non-www manifesto URL returned502; www URL worked.",
+  "sources": [
+    "https://arxiv.org/abs/2009.14452",
+    "https://arxiv.org/abs/1910.00089",
+    "https://arxiv.org/abs/2205.04827",
+    "https://arxiv.org/abs/1909.11567",
+    "https://www.tf-pm.org/resources/manifesto"
+  ]
+}
