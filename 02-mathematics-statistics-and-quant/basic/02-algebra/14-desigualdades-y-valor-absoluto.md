@@ -73,4 +73,4 @@ Para dos insumos positivos con suma fija s, su producto no supera s²/4; el máx
 
 **Límite de la conclusión:** una cota es una garantía superior, no una predicción del error observado. Para desigualdades estrictas, revisa cuidadosamente qué extremos se incluyen.
 
-**Conexión:** [integración numérica](notebooks/04-integracion-y-convergencia.ipynb) y [Taylor](10-sucesiones-series-y-taylor.md).
+**Conexión:** [integración numérica](../05-calculo-y-optimizacion/notebooks/04-integracion-y-convergencia.ipynb) y [Taylor](../05-calculo-y-optimizacion/10-sucesiones-series-y-taylor.md).

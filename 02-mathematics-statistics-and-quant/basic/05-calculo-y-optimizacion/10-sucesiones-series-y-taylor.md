@@ -1,6 +1,6 @@
 # 10. Sucesiones, series y aproximaciones de Taylor
 
-**Objetivo:** reconocer qué converge y qué error queda. Prerrequisitos: funciones y derivadas. [Notebook](notebooks/08-series-taylor-y-dinamica.ipynb).
+**Objetivo:** reconocer qué converge y qué error queda. Prerrequisitos: funciones y derivadas. [Notebook](../08-sistemas-dinamicos/notebooks/08-series-taylor-y-dinamica.ipynb).
 
 ## Una lista no es su suma
 
