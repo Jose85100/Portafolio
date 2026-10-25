@@ -1,16 +1,21 @@
 # Funciones y trigonometría
 
-Funciones, gráficas, composición, ondas y ciclos.
+Gráficas, ondas, crecimiento y transformación logística.
 
-[Volver al índice general](../README.md)
+[Índice general del curso](../README.md)
 
 ## Lecciones
 
-- [02 funciones](02-funciones.md)
-- [15 trigonometria y ciclos](15-trigonometria-y-ciclos.md)
+| Lección | Archivo |
+|---|---|
+| 2. Funciones: relaciones, gráficas y escalas | [Leer](02-funciones.md) |
+| 15. Trigonometría: ángulos, derivadas y ciclos | [Leer](15-trigonometria-y-ciclos.md) |
+| 29. Exponencial, logaritmo y función logística | [Leer](29-exponencial-logaritmo-y-logistica.md) |
 
-## Notebooks
+## Laboratorio
 
 - [01 algebra y funciones](notebooks/01-algebra-y-funciones.ipynb)
 
-Lee las lecciones según sus prerrequisitos. Los números de lección se conservan para mantener las referencias del curso.
+## Cómo trabajar la categoría
+
+Lee los prerrequisitos de cada lección: la numeración identifica archivos y no sustituye el orden conceptual. Reproduce una derivación sin mirar, resuelve los ejercicios y comprueba por sustitución o con un ejemplo independiente. Explica dónde deja de funcionar el argumento si cambian sus supuestos.

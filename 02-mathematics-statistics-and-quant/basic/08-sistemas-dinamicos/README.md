@@ -1,15 +1,21 @@
 # Sistemas dinámicos
 
-Recurrencias, equilibrio y estabilidad; laboratorio de series y dinámica.
+Recurrencias, ecuaciones diferenciales y cadenas de Markov.
 
-[Volver al índice general](../README.md)
+[Índice general del curso](../README.md)
 
 ## Lecciones
 
-- [13 ecuaciones en diferencias](13-ecuaciones-en-diferencias.md)
+| Lección | Archivo |
+|---|---|
+| 13. Ecuaciones en diferencias y estabilidad | [Leer](13-ecuaciones-en-diferencias.md) |
+| 38. Ecuaciones diferenciales: evolución, equilibrio y discretización | [Leer](38-ecuaciones-diferenciales.md) |
+| 39. Cadenas de Markov: transición y distribución estacionaria | [Leer](39-cadenas-de-markov.md) |
 
-## Notebooks
+## Laboratorio
 
 - [08 series taylor y dinamica](notebooks/08-series-taylor-y-dinamica.ipynb)
 
-Lee las lecciones según sus prerrequisitos. Los números de lección se conservan para mantener las referencias del curso.
+## Cómo trabajar la categoría
+
+Lee los prerrequisitos de cada lección: la numeración identifica archivos y no sustituye el orden conceptual. Reproduce una derivación sin mirar, resuelve los ejercicios y comprueba por sustitución o con un ejemplo independiente. Explica dónde deja de funcionar el argumento si cambian sus supuestos.
