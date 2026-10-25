@@ -4,7 +4,7 @@ import nbformat
 from nbclient import NotebookClient
 
 def main():
-    paths = sorted((Path(__file__).resolve().parent / "notebooks").glob("*.ipynb"))
+    paths = sorted(Path(__file__).resolve().parent.rglob("*.ipynb"))
     for path in paths:
         notebook = nbformat.read(path, as_version=4)
         nbformat.validate(notebook)

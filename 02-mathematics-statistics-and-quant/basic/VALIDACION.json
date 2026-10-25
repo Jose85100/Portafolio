@@ -10,60 +10,61 @@
   },
   "notebooks": [
     {
-      "path": "notebooks/01-algebra-y-funciones.ipynb",
+      "path": "03-funciones-y-trigonometria/notebooks/01-algebra-y-funciones.ipynb",
       "cells": 17,
       "executed_code_cells": 6,
       "errors": 0,
       "figures": 3
     },
     {
-      "path": "notebooks/02-vectores-y-sistemas.ipynb",
+      "path": "04-algebra-lineal/notebooks/02-vectores-y-sistemas.ipynb",
       "cells": 14,
       "executed_code_cells": 5,
       "errors": 0,
       "figures": 2
     },
     {
-      "path": "notebooks/03-derivadas-y-optimizacion.ipynb",
+      "path": "05-calculo-y-optimizacion/notebooks/03-derivadas-y-optimizacion.ipynb",
       "cells": 14,
       "executed_code_cells": 5,
       "errors": 0,
       "figures": 2
     },
     {
-      "path": "notebooks/04-integracion-y-convergencia.ipynb",
+      "path": "05-calculo-y-optimizacion/notebooks/04-integracion-y-convergencia.ipynb",
       "cells": 14,
       "executed_code_cells": 5,
       "errors": 0,
       "figures": 2
     },
     {
-      "path": "notebooks/05-bayes-y-distribuciones.ipynb",
+      "path": "06-probabilidad/notebooks/05-bayes-y-distribuciones.ipynb",
       "cells": 14,
       "executed_code_cells": 5,
       "errors": 0,
       "figures": 2
     },
     {
-      "path": "notebooks/06-muestreo-e-inferencia.ipynb",
+      "path": "07-estadistica/notebooks/06-muestreo-e-inferencia.ipynb",
       "cells": 14,
       "executed_code_cells": 5,
       "errors": 0,
       "figures": 2
     },
     {
-      "path": "notebooks/07-regresion-y-residuos.ipynb",
+      "path": "07-estadistica/notebooks/07-regresion-y-residuos.ipynb",
       "cells": 14,
       "executed_code_cells": 5,
       "errors": 0,
       "figures": 2
     },
     {
-      "path": "notebooks/08-series-taylor-y-dinamica.ipynb",
+      "path": "08-sistemas-dinamicos/notebooks/08-series-taylor-y-dinamica.ipynb",
       "cells": 17,
       "executed_code_cells": 6,
       "errors": 0,
       "figures": 3
     }
-  ]
+  ],
+  "organization_note": "Rutas actualizadas al organizar categorías; se conserva la evidencia de ejecución original."
 }

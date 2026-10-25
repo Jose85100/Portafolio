@@ -2,17 +2,32 @@
 
 Una ruta desde el álgebra elemental hasta la inferencia, para entender las herramientas del resto del portafolio. No exige cálculo previo; sí operar con fracciones y dedicar tiempo a resolver en papel.
 
+## Categorías
+
+Las lecciones se organizan en ocho carpetas. Cada categoría contiene su índice, las lecciones y, donde existen, una subcarpeta de notebooks. Se conservan las 24 lecciones y los ocho notebooks.
+
+| Carpeta | Contenido |
+|---|---|
+| [Fundamentos y razonamiento matemático](01-fundamentos/) | Conjuntos, lógica, cuantificadores y demostraciones. |
+| [Álgebra](02-algebra/) | Ecuaciones, porcentajes, logaritmos, valor absoluto y desigualdades. |
+| [Funciones y trigonometría](03-funciones-y-trigonometria/) | Funciones, gráficas, composición, ondas y ciclos. |
+| [Álgebra lineal](04-algebra-lineal/) | Vectores, matrices, sistemas y sensibilidad numérica. |
+| [Cálculo y optimización](05-calculo-y-optimizacion/) | Derivadas, integrales, series, Taylor, restricciones y convexidad. |
+| [Probabilidad](06-probabilidad/) | Combinatoria, distribuciones, momentos, dependencia y actualización bayesiana. |
+| [Estadística e inferencia](07-estadistica/) | Descripción, diagnóstico, estimación, regresión y resultados asintóticos. |
+| [Sistemas dinámicos](08-sistemas-dinamicos/) | Recurrencias, equilibrio y estabilidad; laboratorio de series y dinámica. |
+
 ## Ruta de aprendizaje
 
 | Orden | Módulo | Pregunta central |
 |---|---|---|
-| 1 | [Álgebra y lenguaje matemático](01-algebra.md) | ¿Cómo transformar una expresión sin cambiar su significado? |
-| 2 | [Funciones y geometría](02-funciones.md) | ¿Cómo representar una relación entre variables? |
-| 3 | [Álgebra lineal](03-algebra-lineal.md) | ¿Cómo trabajar con varias ecuaciones y exposiciones? |
-| 4 | [Cálculo diferencial](04-calculo-diferencial.md) | ¿Cómo medir cambios y encontrar extremos? |
-| 5 | [Cálculo integral](05-calculo-integral.md) | ¿Cómo acumular cantidades que varían? |
-| 6 | [Probabilidad](06-probabilidad.md) | ¿Cómo razonar bajo incertidumbre? |
-| 7 | [Estadística e inferencia](07-estadistica.md) | ¿Qué permiten concluir los datos y con qué límites? |
+| 1 | [Álgebra y lenguaje matemático](02-algebra/01-algebra.md) | ¿Cómo transformar una expresión sin cambiar su significado? |
+| 2 | [Funciones y geometría](03-funciones-y-trigonometria/02-funciones.md) | ¿Cómo representar una relación entre variables? |
+| 3 | [Álgebra lineal](04-algebra-lineal/03-algebra-lineal.md) | ¿Cómo trabajar con varias ecuaciones y exposiciones? |
+| 4 | [Cálculo diferencial](05-calculo-y-optimizacion/04-calculo-diferencial.md) | ¿Cómo medir cambios y encontrar extremos? |
+| 5 | [Cálculo integral](05-calculo-y-optimizacion/05-calculo-integral.md) | ¿Cómo acumular cantidades que varían? |
+| 6 | [Probabilidad](06-probabilidad/06-probabilidad.md) | ¿Cómo razonar bajo incertidumbre? |
+| 7 | [Estadística e inferencia](07-estadistica/07-estadistica.md) | ¿Qué permiten concluir los datos y con qué límites? |
 
 Lee en orden. Para cada módulo: explica la intuición con tus palabras, reproduce el ejemplo sin mirar, resuelve los ejercicios y contrasta el resultado con la solución. Una respuesta numérica sin unidades ni interpretación queda incompleta.
 
@@ -32,7 +47,7 @@ Los controles verifican ejemplos concretos, no sustituyen demostraciones. No req
 
 ## Cómo conecta con el portafolio
 
-Álgebra lineal y cálculo preparan para optimización de portafolios; probabilidad y estadística, para pérdida esperada, estimación y validación. Después continúa con [quant-libraries](../quant-libraries/) y [quantitative-methods](../quantitative-methods/). La investigación avanzada requiere más análisis, optimización y procesos estocásticos.
+Álgebra lineal y cálculo preparan para optimización de portafolios; probabilidad y estadística, para pérdida esperada, estimación y validación. Después continúa con [quant-libraries](../quant-libraries) y [quantitative-methods](../quantitative-methods). La investigación avanzada requiere más análisis, optimización y procesos estocásticos.
 
 ## Lecturas para profundizar
 
@@ -44,12 +59,12 @@ Después de los siete módulos iniciales:
 
 | Lección | Tema | Prerrequisito |
 |---|---|---|
-| 8 | [Conjuntos, lógica y demostraciones](08-conjuntos-logica-y-demostraciones.md) | Álgebra |
-| 9 | [Combinatoria](09-combinatoria.md) | Álgebra y probabilidad inicial |
-| 10 | [Sucesiones, series y Taylor](10-sucesiones-series-y-taylor.md) | Funciones y derivadas |
-| 11 | [Cálculo multivariable y restricciones](11-calculo-multivariable-y-restricciones.md) | Álgebra lineal y derivadas |
-| 12 | [Estadística robusta y diagnóstico](12-estadistica-robusta-y-diagnostico.md) | Estadística descriptiva |
-| 13 | [Ecuaciones en diferencias](13-ecuaciones-en-diferencias.md) | Sucesiones |
+| 8 | [Conjuntos, lógica y demostraciones](01-fundamentos/08-conjuntos-logica-y-demostraciones.md) | Álgebra |
+| 9 | [Combinatoria](06-probabilidad/09-combinatoria.md) | Álgebra y probabilidad inicial |
+| 10 | [Sucesiones, series y Taylor](05-calculo-y-optimizacion/10-sucesiones-series-y-taylor.md) | Funciones y derivadas |
+| 11 | [Cálculo multivariable y restricciones](05-calculo-y-optimizacion/11-calculo-multivariable-y-restricciones.md) | Álgebra lineal y derivadas |
+| 12 | [Estadística robusta y diagnóstico](07-estadistica/12-estadistica-robusta-y-diagnostico.md) | Estadística descriptiva |
+| 13 | [Ecuaciones en diferencias](08-sistemas-dinamicos/13-ecuaciones-en-diferencias.md) | Sucesiones |
 
 ## Laboratorio en notebooks
 
@@ -57,14 +72,14 @@ Los ocho notebooks guardan explicaciones, código editable, resultados, **18 fig
 
 | Notebook | Experimento y pregunta |
 |---|---|
-| [01 · Álgebra y funciones](notebooks/01-algebra-y-funciones.ipynb) | Crecimiento compuesto, logaritmos y raíces: ¿qué cambia al transformar una función? |
-| [02 · Vectores y sistemas](notebooks/02-vectores-y-sistemas.ipynb) | Sistemas casi singulares: ¿un residuo pequeño garantiza estabilidad? |
-| [03 · Derivadas y optimización](notebooks/03-derivadas-y-optimizacion.ipynb) | Diferencias finitas y restricciones: ¿un paso menor siempre mejora la derivada? |
-| [04 · Integración y convergencia](notebooks/04-integracion-y-convergencia.ipynb) | Trapecios y área con signo: ¿cómo medir el error? |
-| [05 · Bayes y distribuciones](notebooks/05-bayes-y-distribuciones.ipynb) | Tasas base y binomial: ¿qué significa una alerta? |
-| [06 · Muestreo e inferencia](notebooks/06-muestreo-e-inferencia.ipynb) | Simulación de intervalos t: ¿qué quiere decir cobertura del 95%? |
-| [07 · Regresión y residuos](notebooks/07-regresion-y-residuos.ipynb) | Mínimos cuadrados y un dato extremo: ¿cuánto puede cambiar la pendiente? |
-| [08 · Series, Taylor y dinámica](notebooks/08-series-taylor-y-dinamica.ipynb) | Aproximaciones y recurrencias: ¿tener equilibrio implica converger? |
+| [01 · Álgebra y funciones](03-funciones-y-trigonometria/notebooks/01-algebra-y-funciones.ipynb) | Crecimiento compuesto, logaritmos y raíces: ¿qué cambia al transformar una función? |
+| [02 · Vectores y sistemas](04-algebra-lineal/notebooks/02-vectores-y-sistemas.ipynb) | Sistemas casi singulares: ¿un residuo pequeño garantiza estabilidad? |
+| [03 · Derivadas y optimización](05-calculo-y-optimizacion/notebooks/03-derivadas-y-optimizacion.ipynb) | Diferencias finitas y restricciones: ¿un paso menor siempre mejora la derivada? |
+| [04 · Integración y convergencia](05-calculo-y-optimizacion/notebooks/04-integracion-y-convergencia.ipynb) | Trapecios y área con signo: ¿cómo medir el error? |
+| [05 · Bayes y distribuciones](06-probabilidad/notebooks/05-bayes-y-distribuciones.ipynb) | Tasas base y binomial: ¿qué significa una alerta? |
+| [06 · Muestreo e inferencia](07-estadistica/notebooks/06-muestreo-e-inferencia.ipynb) | Simulación de intervalos t: ¿qué quiere decir cobertura del 95%? |
+| [07 · Regresión y residuos](07-estadistica/notebooks/07-regresion-y-residuos.ipynb) | Mínimos cuadrados y un dato extremo: ¿cuánto puede cambiar la pendiente? |
+| [08 · Series, Taylor y dinámica](08-sistemas-dinamicos/notebooks/08-series-taylor-y-dinamica.ipynb) | Aproximaciones y recurrencias: ¿tener equilibrio implica converger? |
 
 ### Reproducir los notebooks
 
@@ -97,17 +112,17 @@ Estas once lecciones amplían el curso hasta **24 lecciones**. Cada una plantea 
 
 | Lección | Desarrollo principal | Leer antes |
 |---|---|---|
-| [14 · Desigualdades y valor absoluto](14-desigualdades-y-valor-absoluto.md) | Tabla de signos, desigualdad triangular y media aritmética–geométrica | 1, 8 |
-| [15 · Trigonometría y ciclos](15-trigonometria-y-ciclos.md) | Radianes, identidades, derivada del seno, amplitud y periodo | 2, 4 |
-| [16 · Reglas de derivación demostradas](16-reglas-de-derivacion-demostradas.md) | Producto, cociente, cadena, derivación implícita y elasticidad | 4 |
-| [17 · Técnicas de integración](17-tecnicas-de-integracion.md) | Sustitución, partes, impropias y condiciones de convergencia | 5, 16 |
-| [18 · Distribuciones continuas y momentos](18-distribuciones-continuas-y-momentos.md) | Normalización, acumulada, media, varianza y transformación inversa | 5, 6, 17 |
-| [19 · Covarianza y esperanza condicional](19-covarianza-y-esperanza-condicional.md) | Varianza de combinaciones y descomposición de varianza total | 3, 6, 18 |
-| [20 · Estimación y verosimilitud](20-estimacion-y-verosimilitud.md) | Estimadores Bernoulli y normal, concavidad, sesgo y fronteras | 7, 16 |
-| [21 · Mínimos cuadrados y proyecciones](21-minimos-cuadrados-y-proyecciones.md) | Ecuaciones normales, ortogonalidad y prueba de mínimo global | 3, 7, 11 |
-| [22 · Grandes números y límite central](22-ley-grandes-numeros-y-limite-central.md) | Ley débil mediante Chebyshev y contraste con el TCL citado | 7, 19 |
-| [23 · Convexidad y Jensen](23-convexidad-y-jensen.md) | Recta de soporte, mínimo global y prueba de Jensen diferenciable | 4, 11, 18 |
-| [24 · Bayes Beta–Bernoulli](24-bayes-beta-bernoulli.md) | Posterior conjugada, momentos y predicción | 6, 18, 20 |
+| [14 · Desigualdades y valor absoluto](02-algebra/14-desigualdades-y-valor-absoluto.md) | Tabla de signos, desigualdad triangular y media aritmética–geométrica | 1, 8 |
+| [15 · Trigonometría y ciclos](03-funciones-y-trigonometria/15-trigonometria-y-ciclos.md) | Radianes, identidades, derivada del seno, amplitud y periodo | 2, 4 |
+| [16 · Reglas de derivación demostradas](05-calculo-y-optimizacion/16-reglas-de-derivacion-demostradas.md) | Producto, cociente, cadena, derivación implícita y elasticidad | 4 |
+| [17 · Técnicas de integración](05-calculo-y-optimizacion/17-tecnicas-de-integracion.md) | Sustitución, partes, impropias y condiciones de convergencia | 5, 16 |
+| [18 · Distribuciones continuas y momentos](06-probabilidad/18-distribuciones-continuas-y-momentos.md) | Normalización, acumulada, media, varianza y transformación inversa | 5, 6, 17 |
+| [19 · Covarianza y esperanza condicional](06-probabilidad/19-covarianza-y-esperanza-condicional.md) | Varianza de combinaciones y descomposición de varianza total | 3, 6, 18 |
+| [20 · Estimación y verosimilitud](07-estadistica/20-estimacion-y-verosimilitud.md) | Estimadores Bernoulli y normal, concavidad, sesgo y fronteras | 7, 16 |
+| [21 · Mínimos cuadrados y proyecciones](07-estadistica/21-minimos-cuadrados-y-proyecciones.md) | Ecuaciones normales, ortogonalidad y prueba de mínimo global | 3, 7, 11 |
+| [22 · Grandes números y límite central](07-estadistica/22-ley-grandes-numeros-y-limite-central.md) | Ley débil mediante Chebyshev y contraste con el TCL citado | 7, 19 |
+| [23 · Convexidad y Jensen](05-calculo-y-optimizacion/23-convexidad-y-jensen.md) | Recta de soporte, mínimo global y prueba de Jensen diferenciable | 4, 11, 18 |
+| [24 · Bayes Beta–Bernoulli](06-probabilidad/24-bayes-beta-bernoulli.md) | Posterior conjugada, momentos y predicción | 6, 18, 20 |
 
 ### Método de estudio de las derivaciones
 
