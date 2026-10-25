@@ -1,87 +1,85 @@
 # Fundamentos de matemáticas y estadística
 
-Una ruta desde el álgebra elemental hasta la inferencia, para entender las herramientas del resto del portafolio. No exige cálculo previo; sí operar con fracciones y dedicar tiempo a resolver en papel.
+**40 lecciones en ocho categorías, ocho notebooks y 18 figuras.** Ruta de estudio para comprender las herramientas matemáticas del portafolio. Los ejemplos son analíticos o sintéticos; no representan desempeño real ni datos de clientes.
+
+El curso parte de álgebra elemental y avanza hacia proyecciones, inferencia, optimización y dinámica. Cada categoría tiene su propio índice. Las lecciones nuevas 25–40 desarrollan demostraciones, cálculos completos y ejercicios con solución. Los teoremas usados sin demostración general se identifican como tales.
 
 ## Categorías
 
-Las lecciones se organizan en ocho carpetas. Cada categoría contiene su índice, las lecciones y, donde existen, una subcarpeta de notebooks. Se conservan las 24 lecciones y los ocho notebooks.
+| Categoría | Lecciones | Contenido |
+|---|---:|---|
+| [Fundamentos y demostraciones](01-fundamentos/) | 3 | Números, conjuntos, lógica y validez de los argumentos. |
+| [Álgebra](02-algebra/) | 4 | Ecuaciones, desigualdades, polinomios y números complejos. |
+| [Funciones y trigonometría](03-funciones-y-trigonometria/) | 3 | Gráficas, ondas, crecimiento y transformación logística. |
+| [Álgebra lineal](04-algebra-lineal/) | 4 | Matrices, rango, bases, autovalores y QR. |
+| [Cálculo y optimización](05-calculo-y-optimizacion/) | 9 | Límites, derivadas, integrales, Taylor, convexidad y algoritmos. |
+| [Probabilidad](06-probabilidad/) | 7 | Modelos discretos y continuos, dependencia y Bayes. |
+| [Estadística e inferencia](07-estadistica/) | 7 | Estimación, regresión, incertidumbre, contrastes y bootstrap. |
+| [Sistemas dinámicos](08-sistemas-dinamicos/) | 3 | Recurrencias, ecuaciones diferenciales y cadenas de Markov. |
 
-| Carpeta | Contenido |
+## Orden de estudio sugerido
+
+1. **Fundamentos y álgebra:** lenguaje de conjuntos, números, fracciones, desigualdades y métodos de demostración.
+2. **Funciones:** composición, inversas, trigonometría, exponencial y logística. Los complejos requieren también trigonometría.
+3. **Álgebra lineal:** vectores, sistemas, bases, rango y formas cuadráticas.
+4. **Cálculo:** límites, derivadas, reglas de derivación e integración; después, series, cálculo multivariable y convexidad.
+5. **Probabilidad:** conteo, variables discretas, densidades, conjuntas, momentos y condicionales.
+6. **Estadística:** muestreo, verosimilitud, regresión, contrastes, potencia, multiplicidad y remuestreo. QR conecta regresión con álgebra lineal.
+7. **Métodos y dinámica:** bisección, Newton, gradiente, recurrencias, ecuaciones diferenciales y Markov.
+
+Este orden no exige terminar toda una categoría antes de abrir otra. Consulta los prerrequisitos al comienzo de cada archivo. Los números de las lecciones conservan su identidad histórica, no representan un único orden obligatorio.
+
+## Nuevos desarrollos: lecciones 25–40
+
+| Lección | Desarrollo principal |
 |---|---|
-| [Fundamentos y razonamiento matemático](01-fundamentos/) | Conjuntos, lógica, cuantificadores y demostraciones. |
-| [Álgebra](02-algebra/) | Ecuaciones, porcentajes, logaritmos, valor absoluto y desigualdades. |
-| [Funciones y trigonometría](03-funciones-y-trigonometria/) | Funciones, gráficas, composición, ondas y ciclos. |
-| [Álgebra lineal](04-algebra-lineal/) | Vectores, matrices, sistemas y sensibilidad numérica. |
-| [Cálculo y optimización](05-calculo-y-optimizacion/) | Derivadas, integrales, series, Taylor, restricciones y convexidad. |
-| [Probabilidad](06-probabilidad/) | Combinatoria, distribuciones, momentos, dependencia y actualización bayesiana. |
-| [Estadística e inferencia](07-estadistica/) | Descripción, diagnóstico, estimación, regresión y resultados asintóticos. |
-| [Sistemas dinámicos](08-sistemas-dinamicos/) | Recurrencias, equilibrio y estabilidad; laboratorio de series y dinámica. |
+| [25. Números reales, intervalos y completitud](01-fundamentos/25-numeros-reales-y-completitud.md) | Objetivo: distinguir racionales, reales, cotas y supremos. Antes: lecciones 1, 8 y 14. |
+| [26. Cómo construir y revisar una demostración](01-fundamentos/26-metodos-de-demostracion.md) | Objetivo: practicar implicación, contraposición, contradicción e inducción. Antes: lección 8. |
+| [27. Polinomios: raíces, factorización y multiplicidad](02-algebra/27-polinomios-raices-y-factorizacion.md) | Objetivo: deducir herramientas de resolución y reconocer cuándo una transformación añade soluciones. Antes: lecciones 1, 2 y 14. |
+| [28. Números complejos: álgebra y rotaciones](02-algebra/28-numeros-complejos.md) | Objetivo: operar con complejos y conectar forma cartesiana, polar y oscilaciones. Antes: álgebra y trigonometría. |
+| [29. Exponencial, logaritmo y función logística](03-funciones-y-trigonometria/29-exponencial-logaritmo-y-logistica.md) | Objetivo: derivar crecimiento continuo, duplicación y transformación logística. Antes: funciones, logaritmos y derivadas. |
+| [30. Espacios vectoriales, bases y rango](04-algebra-lineal/30-espacios-bases-y-rango.md) | Objetivo: construir bases, interpretar rango y relacionar soluciones con grados de libertad. Antes: vectores y sistemas lineales. |
+| [31. Autovalores, formas cuadráticas y matrices de covarianzas](04-algebra-lineal/31-autovalores-y-formas-cuadraticas.md) | Objetivo: calcular autovalores sencillos y entender positividad. Antes: matrices, determinantes y bases. |
+| [32. Límites y continuidad: definiciones y garantías](05-calculo-y-optimizacion/32-limites-continuidad-y-teoremas.md) | Objetivo: usar ε–δ y distinguir existencia de una raíz, de un extremo y de una derivada. Antes: desigualdades y funciones. |
+| [33. Buscar raíces y minimizar: tres algoritmos distintos](05-calculo-y-optimizacion/33-raices-y-descenso-de-gradiente.md) | Objetivo: derivar bisección, Newton y descenso de gradiente, con criterios de parada. Antes: límites, derivadas y convexidad. |
+| [34. Binomial, Poisson y geométrica: elegir el experimento](06-probabilidad/34-binomial-poisson-y-geometrica.md) | Objetivo: derivar tres distribuciones discretas y separar sus supuestos. Antes: combinatoria y esperanza. |
+| [35. Distribuciones conjuntas y transformaciones](06-probabilidad/35-distribuciones-conjuntas-y-transformaciones.md) | Objetivo: integrar una densidad conjunta y justificar cambios de variable. Antes: integración, momentos y probabilidad condicional. |
+| [36. Contrastes: errores, potencia y comparaciones múltiples](07-estadistica/36-contrastes-potencia-y-multiplicidad.md) | Objetivo: construir un contraste sencillo y derivar su potencia. Antes: muestreo, normal y estadística básica. |
+| [37. Bootstrap y método delta: incertidumbre de estadísticas transformadas](07-estadistica/37-bootstrap-y-metodo-delta.md) | Objetivo: derivar una aproximación analítica y entender qué reproduce el remuestreo. Antes: Taylor, inferencia y varianza. |
+| [38. Ecuaciones diferenciales: evolución, equilibrio y discretización](08-sistemas-dinamicos/38-ecuaciones-diferenciales.md) | Objetivo: resolver modelos lineales y logísticos e interpretar Euler. Antes: derivadas, integración y recurrencias. |
+| [39. Cadenas de Markov: transición y distribución estacionaria](08-sistemas-dinamicos/39-cadenas-de-markov.md) | Objetivo: construir una matriz estocástica, hallar un equilibrio probabilístico y distinguirlo de convergencia. Antes: probabilidad y matrices. |
+| [40. Ortogonalidad y QR: resolver sin formar una inversa](04-algebra-lineal/40-ortogonalidad-y-factorizacion-qr.md) | Objetivo: derivar Gram–Schmidt y resolver mínimos cuadrados mediante QR. Antes: bases, producto interno y mínimos cuadrados. |
 
-## Ruta de aprendizaje
+## Estudiar con profundidad
 
-| Orden | Módulo | Pregunta central |
-|---|---|---|
-| 1 | [Álgebra y lenguaje matemático](02-algebra/01-algebra.md) | ¿Cómo transformar una expresión sin cambiar su significado? |
-| 2 | [Funciones y geometría](03-funciones-y-trigonometria/02-funciones.md) | ¿Cómo representar una relación entre variables? |
-| 3 | [Álgebra lineal](04-algebra-lineal/03-algebra-lineal.md) | ¿Cómo trabajar con varias ecuaciones y exposiciones? |
-| 4 | [Cálculo diferencial](05-calculo-y-optimizacion/04-calculo-diferencial.md) | ¿Cómo medir cambios y encontrar extremos? |
-| 5 | [Cálculo integral](05-calculo-y-optimizacion/05-calculo-integral.md) | ¿Cómo acumular cantidades que varían? |
-| 6 | [Probabilidad](06-probabilidad/06-probabilidad.md) | ¿Cómo razonar bajo incertidumbre? |
-| 7 | [Estadística e inferencia](07-estadistica/07-estadistica.md) | ¿Qué permiten concluir los datos y con qué límites? |
+En cada sesión:
 
-Lee en orden. Para cada módulo: explica la intuición con tus palabras, reproduce el ejemplo sin mirar, resuelve los ejercicios y contrasta el resultado con la solución. Una respuesta numérica sin unidades ni interpretación queda incompleta.
+1. Escribe el dominio, la unidad y los supuestos.
+2. Justifica cada transformación; distingue equivalencia de implicación.
+3. Reproduce el ejemplo antes de consultar la solución.
+4. Busca un contraejemplo cuando se retira una hipótesis.
+5. Explica el resultado con palabras y comprueba su escala.
 
-## Convenciones
+Un ejemplo numérico ilustra; una demostración justifica una afirmación general bajo sus hipótesis. Una prueba automatizada complementa ambas, pero no las sustituye.
 
-$x$ es una variable; $a$ puede ser un parámetro fijo; $f(x)$ es el valor de una función, no una multiplicación. $\sum_{i=1}^n x_i$ suma las observaciones. $\mathbb{R}$ son los reales y $\in$ significa «pertenece». $\Rightarrow$ indica implicación; $\Leftrightarrow$, equivalencia. Un ejemplo ilustra; una demostración justifica para todos los casos bajo sus supuestos.
+### Notación esencial
 
-## Verificación computacional
+$x$ es una variable; $f(x)$ es un valor de función. $\sum_{i=1}^n x_i$ suma observaciones. $\mathbb R$ son los reales; $\in$ significa pertenencia. $\Rightarrow$ indica implicación y $\Leftrightarrow$ equivalencia. Para probabilidad, $E[X]$ es esperanza y $\operatorname{Var}(X)$ varianza cuando existen. Revisa siempre si una tasa está en fracción o porcentaje y a qué periodo corresponde.
 
-[verificar_ejemplos.py](verificar_ejemplos.py) reproduce cálculos de los siete módulos con la biblioteca estándar de Python:
+## Notebooks
 
-```bash
-python3 02-mathematics-statistics-and-quant/basic/verificar_ejemplos.py
-```
+Cada notebook está dentro de su categoría, en `notebooks/`. Contiene explicación, código, figuras, ejercicios, soluciones y comprobaciones.
 
-Los controles verifican ejemplos concretos, no sustituyen demostraciones. No requiere paquetes ni acceso a datos externos. Los casos económicos son didácticos.
-
-## Cómo conecta con el portafolio
-
-Álgebra lineal y cálculo preparan para optimización de portafolios; probabilidad y estadística, para pérdida esperada, estimación y validación. Después continúa con [quant-libraries](../quant-libraries) y [quantitative-methods](../quantitative-methods). La investigación avanzada requiere más análisis, optimización y procesos estocásticos.
-
-## Lecturas para profundizar
-
-Referencias bibliográficas, sin reproducir sus textos: OpenStax, *Algebra and Trigonometry 2e* y *Calculus*, volúmenes 1–3; Strang, *Introduction to Linear Algebra*, 6.ª edición; Blitzstein y Hwang, *Introduction to Probability*, 2.ª edición; OpenStax, *Introductory Statistics 2e*. Estas notas son una introducción propia, no un curso completo equivalente a esos libros.
-
-## Segunda etapa: ampliar el razonamiento
-
-Después de los siete módulos iniciales:
-
-| Lección | Tema | Prerrequisito |
-|---|---|---|
-| 8 | [Conjuntos, lógica y demostraciones](01-fundamentos/08-conjuntos-logica-y-demostraciones.md) | Álgebra |
-| 9 | [Combinatoria](06-probabilidad/09-combinatoria.md) | Álgebra y probabilidad inicial |
-| 10 | [Sucesiones, series y Taylor](05-calculo-y-optimizacion/10-sucesiones-series-y-taylor.md) | Funciones y derivadas |
-| 11 | [Cálculo multivariable y restricciones](05-calculo-y-optimizacion/11-calculo-multivariable-y-restricciones.md) | Álgebra lineal y derivadas |
-| 12 | [Estadística robusta y diagnóstico](07-estadistica/12-estadistica-robusta-y-diagnostico.md) | Estadística descriptiva |
-| 13 | [Ecuaciones en diferencias](08-sistemas-dinamicos/13-ecuaciones-en-diferencias.md) | Sucesiones |
-
-## Laboratorio en notebooks
-
-Los ocho notebooks guardan explicaciones, código editable, resultados, **18 figuras**, ejercicios con soluciones y comprobaciones. Contienen 118 celdas en total. Están pensados como tutoriales iniciales: anticipa el resultado, ejecuta y explica lo que observas.
-
-| Notebook | Experimento y pregunta |
+| Categoría | Notebook |
 |---|---|
-| [01 · Álgebra y funciones](03-funciones-y-trigonometria/notebooks/01-algebra-y-funciones.ipynb) | Crecimiento compuesto, logaritmos y raíces: ¿qué cambia al transformar una función? |
-| [02 · Vectores y sistemas](04-algebra-lineal/notebooks/02-vectores-y-sistemas.ipynb) | Sistemas casi singulares: ¿un residuo pequeño garantiza estabilidad? |
-| [03 · Derivadas y optimización](05-calculo-y-optimizacion/notebooks/03-derivadas-y-optimizacion.ipynb) | Diferencias finitas y restricciones: ¿un paso menor siempre mejora la derivada? |
-| [04 · Integración y convergencia](05-calculo-y-optimizacion/notebooks/04-integracion-y-convergencia.ipynb) | Trapecios y área con signo: ¿cómo medir el error? |
-| [05 · Bayes y distribuciones](06-probabilidad/notebooks/05-bayes-y-distribuciones.ipynb) | Tasas base y binomial: ¿qué significa una alerta? |
-| [06 · Muestreo e inferencia](07-estadistica/notebooks/06-muestreo-e-inferencia.ipynb) | Simulación de intervalos t: ¿qué quiere decir cobertura del 95%? |
-| [07 · Regresión y residuos](07-estadistica/notebooks/07-regresion-y-residuos.ipynb) | Mínimos cuadrados y un dato extremo: ¿cuánto puede cambiar la pendiente? |
-| [08 · Series, Taylor y dinámica](08-sistemas-dinamicos/notebooks/08-series-taylor-y-dinamica.ipynb) | Aproximaciones y recurrencias: ¿tener equilibrio implica converger? |
-
-### Reproducir los notebooks
+| Funciones y trigonometría | [01 algebra y funciones](03-funciones-y-trigonometria/notebooks/01-algebra-y-funciones.ipynb) |
+| Álgebra lineal | [02 vectores y sistemas](04-algebra-lineal/notebooks/02-vectores-y-sistemas.ipynb) |
+| Cálculo y optimización | [03 derivadas y optimizacion](05-calculo-y-optimizacion/notebooks/03-derivadas-y-optimizacion.ipynb) |
+| Cálculo y optimización | [04 integracion y convergencia](05-calculo-y-optimizacion/notebooks/04-integracion-y-convergencia.ipynb) |
+| Probabilidad | [05 bayes y distribuciones](06-probabilidad/notebooks/05-bayes-y-distribuciones.ipynb) |
+| Estadística e inferencia | [06 muestreo e inferencia](07-estadistica/notebooks/06-muestreo-e-inferencia.ipynb) |
+| Estadística e inferencia | [07 regresion y residuos](07-estadistica/notebooks/07-regresion-y-residuos.ipynb) |
+| Sistemas dinámicos | [08 series taylor y dinamica](08-sistemas-dinamicos/notebooks/08-series-taylor-y-dinamica.ipynb) |
 
 Desde la raíz del repositorio:
 
@@ -90,52 +88,26 @@ python3 -m pip install -r 02-mathematics-statistics-and-quant/basic/requirements
 python3 02-mathematics-statistics-and-quant/basic/ejecutar_notebooks.py
 ```
 
-El ejecutor usa un kernel limpio por notebook, guarda resultados después de una ejecución satisfactoria y falla ante errores o assertions. También son compatibles con el descubrimiento existente de `tests/test_notebooks.py`.
+El ejecutor encuentra los notebooks de forma recursiva y usa un kernel limpio por archivo. También los detecta el sistema existente de `tests/test_notebooks.py`.
 
-**Evidencia de esta entrega (25 de octubre de 2026):** las celdas se ejecutaron en orden en un espacio Python limpio por notebook, con semillas fijas y sin errores. El entorno bloqueó los sockets TCP e IPC del kernel, por lo que esta ejecución se hizo en proceso con captura de stdout y figuras Agg, en lugar de un kernel Jupyter. Se revisaron visualmente las 18 figuras. El [manifiesto](VALIDACION.json) registra método, versiones y conteos. La ejecución mediante kernel queda disponible con el comando anterior, pero no fue verificada aquí.
+**Evidencia original de los ocho notebooks:** se ejecutaron 118 celdas, con salidas guardadas y 18 figuras revisadas. El entorno bloqueó sockets TCP e IPC de Jupyter, por lo que la ejecución se realizó en proceso, con un espacio Python limpio por notebook y captura de stdout y figuras Agg. La ejecución mediante kernel no se verificó aquí. El [manifiesto](VALIDACION.json) conserva método, versiones y rutas; las lecciones 25–40 no añaden nuevos notebooks ni modifican sus resultados.
 
-### Plan sugerido
+## Comprobaciones matemáticas
 
-1. Sesiones 1–2: álgebra y funciones, notebook 01.
-2. Sesiones 3–4: álgebra lineal y cálculo diferencial, notebooks 02–03.
-3. Sesión 5: integración, notebook 04.
-4. Sesiones 6–7: combinatoria, probabilidad y estadística, notebooks 05–06.
-5. Sesión 8: diagnóstico robusto y regresión, notebook 07.
-6. Sesiones 9–10: series, cálculo multivariable y recurrencias, notebook 08.
-
-En cada sesión conserva tres cosas: una derivación en papel, una figura interpretada y una explicación de cuándo deja de ser válido el método.
-
-
-## Tercera etapa: desarrollos matemáticos paso a paso
-
-Estas once lecciones amplían el curso hasta **24 lecciones**. Cada una plantea una pregunta, declara prerrequisitos, desarrolla identidades o resultados, trabaja ejemplos y ofrece ejercicios con soluciones. Las demostraciones son introductorias y acotadas a los supuestos indicados; los teoremas citados se distinguen de los resultados demostrados.
-
-| Lección | Desarrollo principal | Leer antes |
-|---|---|---|
-| [14 · Desigualdades y valor absoluto](02-algebra/14-desigualdades-y-valor-absoluto.md) | Tabla de signos, desigualdad triangular y media aritmética–geométrica | 1, 8 |
-| [15 · Trigonometría y ciclos](03-funciones-y-trigonometria/15-trigonometria-y-ciclos.md) | Radianes, identidades, derivada del seno, amplitud y periodo | 2, 4 |
-| [16 · Reglas de derivación demostradas](05-calculo-y-optimizacion/16-reglas-de-derivacion-demostradas.md) | Producto, cociente, cadena, derivación implícita y elasticidad | 4 |
-| [17 · Técnicas de integración](05-calculo-y-optimizacion/17-tecnicas-de-integracion.md) | Sustitución, partes, impropias y condiciones de convergencia | 5, 16 |
-| [18 · Distribuciones continuas y momentos](06-probabilidad/18-distribuciones-continuas-y-momentos.md) | Normalización, acumulada, media, varianza y transformación inversa | 5, 6, 17 |
-| [19 · Covarianza y esperanza condicional](06-probabilidad/19-covarianza-y-esperanza-condicional.md) | Varianza de combinaciones y descomposición de varianza total | 3, 6, 18 |
-| [20 · Estimación y verosimilitud](07-estadistica/20-estimacion-y-verosimilitud.md) | Estimadores Bernoulli y normal, concavidad, sesgo y fronteras | 7, 16 |
-| [21 · Mínimos cuadrados y proyecciones](07-estadistica/21-minimos-cuadrados-y-proyecciones.md) | Ecuaciones normales, ortogonalidad y prueba de mínimo global | 3, 7, 11 |
-| [22 · Grandes números y límite central](07-estadistica/22-ley-grandes-numeros-y-limite-central.md) | Ley débil mediante Chebyshev y contraste con el TCL citado | 7, 19 |
-| [23 · Convexidad y Jensen](05-calculo-y-optimizacion/23-convexidad-y-jensen.md) | Recta de soporte, mínimo global y prueba de Jensen diferenciable | 4, 11, 18 |
-| [24 · Bayes Beta–Bernoulli](06-probabilidad/24-bayes-beta-bernoulli.md) | Posterior conjugada, momentos y predicción | 6, 18, 20 |
-
-### Método de estudio de las derivaciones
-
-1. Escribe el dominio y las hipótesis antes de operar.
-2. Reproduce cada paso indicando qué identidad, propiedad o teorema lo permite.
-3. Comprueba una respuesta por una segunda vía: sustitución, derivación o ejemplo exacto.
-4. Busca un caso donde falle el supuesto: una frontera, una singularidad, dependencia o falta de momentos.
-5. Resuelve los ejercicios sin consultar la solución y explica qué significa el resultado.
-
-El [verificador de desarrollos](verificar_desarrollos.py) comprueba los ejemplos numéricos de las once lecciones, incluyendo residuos racionales exactos y momentos Beta. Se ejecutó correctamente con Python, sin dependencias externas:
+Los verificadores solo requieren la biblioteca estándar de Python:
 
 ```bash
+python3 02-mathematics-statistics-and-quant/basic/verificar_ejemplos.py
 python3 02-mathematics-statistics-and-quant/basic/verificar_desarrollos.py
+python3 02-mathematics-statistics-and-quant/basic/verificar_ampliacion.py
 ```
 
-Las pruebas numéricas complementan las demostraciones; no prueban resultados universales. Esta ampliación añade lecciones teóricas y su verificador; los ocho notebooks de la segunda etapa siguen disponibles como apoyo.
+El último comprueba referencias de las lecciones 25–40: factorizaciones, raíces complejas, rango, autovectores, bisección, momentos discretos, potencia, bootstrap exacto, ecuaciones diferenciales, Markov y QR. Usa fracciones exactas cuando corresponde y tolerancias explícitas para cálculos aproximados. Las comprobaciones se limitan a sus ejemplos; no validan aplicaciones reales.
+
+## Conexión con el portafolio
+
+Continúa con [quant-libraries](../quant-libraries/) para contratos numéricos y con [quantitative-methods](../quantitative-methods/) para métodos aplicados. El material de investigación avanzada requiere más formación en análisis, procesos estocásticos y optimización.
+
+## Lecturas para profundizar
+
+Referencias bibliográficas, sin reproducir sus textos: OpenStax, *Algebra and Trigonometry 2e* y *Calculus*, volúmenes 1–3; Strang, *Introduction to Linear Algebra*, 6.ª edición; Blitzstein y Hwang, *Introduction to Probability*, 2.ª edición; OpenStax, *Introductory Statistics 2e*. Estas notas son material introductorio propio y no equivalen a completar esos libros.

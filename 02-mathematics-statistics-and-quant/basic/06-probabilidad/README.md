@@ -1,19 +1,25 @@
 # Probabilidad
 
-Combinatoria, distribuciones, momentos, dependencia y actualización bayesiana.
+Modelos discretos y continuos, dependencia y Bayes.
 
-[Volver al índice general](../README.md)
+[Índice general del curso](../README.md)
 
 ## Lecciones
 
-- [06 probabilidad](06-probabilidad.md)
-- [09 combinatoria](09-combinatoria.md)
-- [18 distribuciones continuas y momentos](18-distribuciones-continuas-y-momentos.md)
-- [19 covarianza y esperanza condicional](19-covarianza-y-esperanza-condicional.md)
-- [24 bayes beta bernoulli](24-bayes-beta-bernoulli.md)
+| Lección | Archivo |
+|---|---|
+| 6. Probabilidad: contar, condicionar y actualizar | [Leer](06-probabilidad.md) |
+| 9. Combinatoria: contar sin duplicar | [Leer](09-combinatoria.md) |
+| 18. Distribuciones continuas: densidad, acumulada y momentos | [Leer](18-distribuciones-continuas-y-momentos.md) |
+| 19. Covarianza y esperanza condicional | [Leer](19-covarianza-y-esperanza-condicional.md) |
+| 24. Actualización bayesiana: modelo Beta–Bernoulli | [Leer](24-bayes-beta-bernoulli.md) |
+| 34. Binomial, Poisson y geométrica: elegir el experimento | [Leer](34-binomial-poisson-y-geometrica.md) |
+| 35. Distribuciones conjuntas y transformaciones | [Leer](35-distribuciones-conjuntas-y-transformaciones.md) |
 
-## Notebooks
+## Laboratorio
 
 - [05 bayes y distribuciones](notebooks/05-bayes-y-distribuciones.ipynb)
 
-Lee las lecciones según sus prerrequisitos. Los números de lección se conservan para mantener las referencias del curso.
+## Cómo trabajar la categoría
+
+Lee los prerrequisitos de cada lección: la numeración identifica archivos y no sustituye el orden conceptual. Reproduce una derivación sin mirar, resuelve los ejercicios y comprueba por sustitución o con un ejemplo independiente. Explica dónde deja de funcionar el argumento si cambian sus supuestos.
