@@ -1,0 +1,218 @@
+{
+  "config": {
+    "seed": 20261025,
+    "replications": 1500,
+    "n": 1200,
+    "truth": 1.0,
+    "noise_sd": 0.3,
+    "bandwidths": [
+      1.0,
+      0.4,
+      0.2,
+      0.08
+    ],
+    "hypothesis": "Curvature4 with valid continuity: h0.2 RMSE <=0.5 times h1 RMSE; do not force confirmation. h0.08 variance ablation; latentjump0.6 falsifies identification.",
+    "scenarios": [
+      {
+        "name": "Smooth symmetric",
+        "curvature": 0,
+        "latent_jump": 0
+      },
+      {
+        "name": "Asymmetric curvature",
+        "curvature": 4,
+        "latent_jump": 0
+      },
+      {
+        "name": "Continuity violated",
+        "curvature": 4,
+        "latent_jump": 0.6
+      }
+    ]
+  },
+  "summary": [
+    {
+      "scenario": "Smooth symmetric",
+      "h": 1.0,
+      "mean": 0.9986328872870012,
+      "bias": -0.0013671127129988936,
+      "sd": 0.04687920042657951,
+      "rmse": 0.04688350801206147,
+      "mean_mc_se": 0.0012104157502377472,
+      "paired_mse_difference": 0.0,
+      "paired_mse_se": 0.0,
+      "q025": 0.9035399801153821,
+      "q975": 1.0881634794397659
+    },
+    {
+      "scenario": "Smooth symmetric",
+      "h": 0.4,
+      "mean": 0.9988825880138763,
+      "bias": -0.0011174119861236927,
+      "sd": 0.0553503314296623,
+      "rmse": 0.05534316000609842,
+      "mean_mc_se": 0.0014291394122276204,
+      "paired_mse_difference": 0.0008648020359435802,
+      "paired_mse_se": 0.00011982997631913081,
+      "q025": 0.886560161376959,
+      "q975": 1.105872193015225
+    },
+    {
+      "scenario": "Smooth symmetric",
+      "h": 0.2,
+      "mean": 0.9975547561673109,
+      "bias": -0.002445243832688998,
+      "sd": 0.0775012037423315,
+      "rmse": 0.07751394395757025,
+      "mean_mc_se": 0.0020010724760338525,
+      "paired_mse_difference": 0.0038103481843403107,
+      "paired_mse_se": 0.00022535274041611617,
+      "q025": 0.8397941193968291,
+      "q975": 1.1480737455067318
+    },
+    {
+      "scenario": "Smooth symmetric",
+      "h": 0.08,
+      "mean": 0.9923603606560303,
+      "bias": -0.007639639343969616,
+      "sd": 0.12789218733557361,
+      "rmse": 0.1280775991202042,
+      "mean_mc_se": 0.003302162077738105,
+      "paired_mse_difference": 0.014205808072878702,
+      "paired_mse_se": 0.0006427206792965481,
+      "q025": 0.7463769740368805,
+      "q975": 1.2392886373133234
+    },
+    {
+      "scenario": "Asymmetric curvature",
+      "h": 1.0,
+      "mean": 0.33132618401352976,
+      "bias": -0.6686738159864702,
+      "sd": 0.0660276661841212,
+      "rmse": 0.6719236701088116,
+      "mean_mc_se": 0.001704827010133627,
+      "paired_mse_difference": 0.0,
+      "paired_mse_se": 0.0,
+      "q025": 0.1964790201257692,
+      "q975": 0.4589329858442778
+    },
+    {
+      "scenario": "Asymmetric curvature",
+      "h": 0.4,
+      "mean": 0.8920146132150297,
+      "bias": -0.10798538678497036,
+      "sd": 0.05672865245629903,
+      "rmse": 0.12197064541082911,
+      "mean_mc_se": 0.0014647275081068976,
+      "paired_mse_difference": -0.4366045801105609,
+      "paired_mse_se": 0.0021586115874900535,
+      "q025": 0.7751609897596307,
+      "q975": 0.996072556305095
+    },
+    {
+      "scenario": "Asymmetric curvature",
+      "h": 0.2,
+      "mean": 0.9706947391874913,
+      "bias": -0.029305260812508643,
+      "sd": 0.07762990899010852,
+      "rmse": 0.08295289916124175,
+      "mean_mc_se": 0.002004395631241918,
+      "paired_mse_difference": -0.44460023497323997,
+      "paired_mse_se": 0.0022694422673686797,
+      "q025": 0.8130282205194991,
+      "q975": 1.1195921316531285
+    },
+    {
+      "scenario": "Asymmetric curvature",
+      "h": 0.08,
+      "mean": 0.9880444079869812,
+      "bias": -0.011955592013018778,
+      "sd": 0.12792303883218395,
+      "rmse": 0.12843804151626118,
+      "mean_mc_se": 0.0033029586599552874,
+      "paired_mse_difference": -0.4349850879439623,
+      "paired_mse_se": 0.0023425233464394453,
+      "q025": 0.7423006812076445,
+      "q975": 1.2349863656792173
+    },
+    {
+      "scenario": "Continuity violated",
+      "h": 1.0,
+      "mean": 0.9313261840135298,
+      "bias": -0.06867381598647014,
+      "sd": 0.06602766618412116,
+      "rmse": 0.09525145284314995,
+      "mean_mc_se": 0.0017048270101336258,
+      "paired_mse_difference": 0.0,
+      "paired_mse_se": 0.0,
+      "q025": 0.7964790201257701,
+      "q975": 1.058932985844277
+    },
+    {
+      "scenario": "Continuity violated",
+      "h": 0.4,
+      "mean": 1.4920146132150296,
+      "bias": 0.49201461321502954,
+      "sd": 0.056728652456299045,
+      "rmse": 0.4952720204089564,
+      "mean_mc_se": 0.0014647275081068978,
+      "paired_mse_difference": 0.23622153493123896,
+      "paired_mse_se": 0.001572186053830792,
+      "q025": 1.375160989759631,
+      "q975": 1.5960725563050953
+    },
+    {
+      "scenario": "Continuity violated",
+      "h": 0.2,
+      "mean": 1.5706947391874913,
+      "bias": 0.5706947391874913,
+      "sd": 0.07762990899010852,
+      "rmse": 0.5759469337571341,
+      "mean_mc_se": 0.002004395631241918,
+      "paired_mse_difference": 0.32264203123551394,
+      "paired_mse_se": 0.0023821455150914053,
+      "q025": 1.4130282205194993,
+      "q975": 1.7195921316531284
+    },
+    {
+      "scenario": "Continuity violated",
+      "h": 0.08,
+      "mean": 1.5880444079869813,
+      "bias": 0.5880444079869812,
+      "sd": 0.12792303883218395,
+      "rmse": 0.6017886839189569,
+      "mean_mc_se": 0.0033029586599552874,
+      "paired_mse_difference": 0.3530767808241794,
+      "paired_mse_se": 0.003950583742531638,
+      "q025": 1.3423006812076443,
+      "q975": 1.8349863656792176
+    }
+  ],
+  "costs": [
+    {
+      "scenario": "Smooth symmetric",
+      "seconds": 1.3337932250000222,
+      "python_peak_bytes": 2887036
+    },
+    {
+      "scenario": "Asymmetric curvature",
+      "seconds": 1.279031156999963,
+      "python_peak_bytes": 2247600
+    },
+    {
+      "scenario": "Continuity violated",
+      "seconds": 1.4293954219999705,
+      "python_peak_bytes": 2293456
+    }
+  ],
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  },
+  "hardware": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "cpu": "x86_64",
+  "source_sha256": "a0ec26723b19d302a203217d521fb7cb3bc203ce9ced4898404e36c99b61e5d5",
+  "data_sha256": "ae12919be25451699a0d74f3d180112b96c001612b98831a1584db8a1381c55e",
+  "timing_note": "Combined simulation/all bandwidths; tracemalloc Python allocation peak, not RSS."
+}
