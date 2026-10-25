@@ -1,0 +1,15 @@
+test_bounds_cover_every_realization_property (test_conformance.AuditTests.test_bounds_cover_every_realization_property) ... ok
+test_budget_refuses_no_fake_bounds (test_conformance.AuditTests.test_budget_refuses_no_fake_bounds) ... ok
+test_distance_properties (test_conformance.AuditTests.test_distance_properties) ... ok
+test_empty_trace (test_conformance.AuditTests.test_empty_trace) ... ok
+test_exact_trace (test_conformance.AuditTests.test_exact_trace) ... ok
+test_invalid_inputs (test_conformance.AuditTests.test_invalid_inputs) ... ok
+test_missing_event_definite (test_conformance.AuditTests.test_missing_event_definite) ... ok
+test_permutation_invariance (test_conformance.AuditTests.test_permutation_invariance) ... ok
+test_repeated_labels_unique_orders (test_conformance.AuditTests.test_repeated_labels_unique_orders) ... ok
+test_tie_is_not_certain (test_conformance.AuditTests.test_tie_is_not_certain) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.006s
+
+OK
