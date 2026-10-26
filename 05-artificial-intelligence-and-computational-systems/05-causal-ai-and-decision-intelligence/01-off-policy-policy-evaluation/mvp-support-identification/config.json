@@ -1,0 +1,92 @@
+{
+  "context": [
+    0.4,
+    0.2,
+    0.4
+  ],
+  "target": [
+    [
+      0.5,
+      0.5
+    ],
+    [
+      0.5,
+      0.5
+    ],
+    [
+      0.0,
+      1.0
+    ]
+  ],
+  "sizes": [
+    200,
+    2000
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39
+  ],
+  "delta": 0.05,
+  "threshold": 0.5,
+  "reward_range": [
+    0,
+    1
+  ],
+  "dataset": "synthetic randomized contextual bandit; IID fixed sample; two worlds differ only in context2 action1 reward",
+  "hypothesis": "support_bounds coverage>=.95, zero observed wrong definitive decisions; deficient width>=.4 in all runs; IPS mean high-world bias<=-.3 at n2000",
+  "selection": [
+    {
+      "idea": "support-deficient OPE identification audit",
+      "decision": "selected",
+      "reason": "new causal pilar05 S1 gap, paired indistinguishable worlds falsify point certainty"
+    },
+    {
+      "idea": "RAG citation version checks",
+      "decision": "deferred",
+      "reason": "recent legalRAG PR78; avoid overlap"
+    },
+    {
+      "idea": "outbox TTL replay",
+      "decision": "deferred",
+      "reason": "repeats pilar10 from24oct"
+    }
+  ]
+}
