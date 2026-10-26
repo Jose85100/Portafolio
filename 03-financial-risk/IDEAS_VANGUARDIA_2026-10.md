@@ -1,5 +1,7 @@
 # 03-financial-risk: 6 ideas de vanguardia por carpeta
 
+**Totales.** 42 ideas nuevas (12 de la primera revisión y 30 añadidas en 1.7–7.11) y 30 extensiones de proyectos existentes.
+
 **Alcance.** Repositorio `Jose85100/Portafolio`, carpeta `03-financial-risk`, 7 áreas. Revisé la estructura y los README de cada área. No auditamos el código de cada subcarpeta, así que cada idea se contrasta solo con lo que el README describe. Antes de implementar, conviene confirmar que no duplica un proyecto existente.
 
 **Convención de verificación.**
@@ -66,6 +68,38 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 - **Refutación.** La equidad depende de la definición (paridad demográfica, igualdad de oportunidades); ninguna es neutral. Las variables sustitutas pueden reconstruir atributos excluidos.
 - **Fuente.** [C].
 
+### 1.7 Scorecard federado entre entidades sin compartir datos crudos
+**Tipo:** Nueva
+- **Hipótesis.** Un modelo federado entre varias entidades alcanza un Gini cercano al centralizado sin mover datos de clientes.
+- **Método.** Entrenamiento federado (promedio de gradientes o de coeficientes) sobre particiones no independientes e idénticamente distribuidas; privacidad diferencial con presupuesto ε explícito.
+- **Validación.** Diferencia de Gini frente al modelo centralizado, con intervalos por bootstrap entre entidades; sensibilidad a ε.
+- **Refutación.** La heterogeneidad entre carteras (no IID) y el sesgo de selección de cada entidad pueden invalidar el promedio de modelos.
+- **Fuente.** arXiv:2601.11134 (aprendizaje federado en riesgo de crédito) [V, lead de búsqueda].
+
+### 1.8 Modelos de secuencia sobre historial de pagos
+**Tipo:** Nueva
+- **Hipótesis.** Un modelo de secuencia (transformador o red recurrente) sobre el historial mensual de pagos mejora el Gini de un GBM con variables agregadas.
+- **Método.** Entrada: serie de saldos, pagos y días de mora por cliente-mes. Comparación con GBM sobre agregados, con calibración posterior (isotónica).
+- **Validación.** Validación temporal estricta (sin fuga de información futura), Gini y calibración por ventana.
+- **Refutación.** La ganancia puede venir de fuga de información por construcción de la ventana; sin una partición temporal estricta el resultado no es válido.
+- **Fuente.** [C] (literatura de modelos secuenciales en crédito).
+
+### 1.9 Rezago de reporte de default como sesgo de definición
+**Tipo:** Nueva
+- **Hipótesis.** El rezago entre la fecha efectiva de incumplimiento y su registro en el sistema sesga la PD observada, y se corrige con un modelo de censura.
+- **Método.** Modelar el tiempo de reporte como variable latente y corregir la tasa de default con estimación de censura por intervalo.
+- **Validación.** Sesgo de la PD estimada frente a un escenario de reporte conocido en simulación; sensibilidad al rezago.
+- **Refutación.** Si el rezago depende del tipo de cliente o de la política de cobranza, la corrección puede transferir un sesgo nuevo.
+- **Fuente.** [C].
+
+### 1.10 Cópulas vine para dependencia entre sectores
+**Tipo:** Nueva
+- **Hipótesis.** Una cópula vine captura una dependencia entre sectores más rica que una cópula gaussiana de un factor.
+- **Método.** Selección de la estructura vine con criterio AIC y ajuste por máxima verosimilitud; simulación de pérdidas de cartera.
+- **Validación.** Dependencia de cola empírica frente a la simulada; comparación con la cópula gaussiana en pérdida al 99,9 %.
+- **Refutación.** Con pocos sectores y pocos eventos conjuntos, la estructura vine es inestable y su elección puede no ser robusta.
+- **Fuente.** [C] (Aas et al., 2009, para cópulas vine).
+
 ---
 
 ## 02 · Riesgo de mercado y de modelo (`02-market-and-model-risk`)
@@ -122,6 +156,38 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 - **Método.** Bootstrap por cosecha del diferencial de Gini; prueba de estabilidad de PSI por ventana móvil.
 - **Validación.** Intervalos de confianza del diferencial y consistencia entre ventanas.
 - **Refutación.** Los bootstrap sobre datos con dependencia temporal subestiman la varianza; se requiere bloqueo temporal (*block bootstrap*).
+- **Fuente.** [C].
+
+### 2.7 Control de riesgo conformal adaptativo para umbrales de cartera
+**Tipo:** Nueva
+- **Hipótesis.** Un control de riesgo conformal adaptativo mantiene la pérdida promedio objetivo aun con cambios de régimen.
+- **Método.** Control de riesgo conformal con actualización automática del nivel objetivo (Blot et al., 2025) aplicado a un umbral de pérdida de cartera.
+- **Validación.** Pérdida promedio realizada frente al objetivo y ancho de la regla de decisión.
+- **Refutación.** La garantía es asintótica; en muestras cortas la regla puede ser conservadora o volátil.
+- **Fuente.** Blot et al., *Automatically Adaptive Conformal Risk Control*, PMLR v258 (2025) [V, lead de búsqueda].
+
+### 2.8 Estrés path-dependent con firmas (signatures)
+**Tipo:** Nueva
+- **Hipótesis.** Un modelo de firmas captura dependencia de trayectoria (por ejemplo, la secuencia de caídas) que las pruebas de estrés puntuales no capturan.
+- **Método.** Calcular la firma truncada de la trayectoria de factores y regresarla contra la pérdida de cartera.
+- **Validación.** Error fuera de muestra frente a un modelo de factores sin memoria; pruebas en trayectorias de estrés históricas.
+- **Refutación.** El número de términos de la firma crece rápido; con truncamiento bajo puede perder la dependencia que se busca.
+- **Fuente.** arXiv:2603.04525 (signature de Volterra) y arXiv:2603.24154 (SigSwap) [V, leads de búsqueda].
+
+### 2.9 Volatilidad realizada (HAR) frente a GARCH
+**Tipo:** Nueva
+- **Hipótesis.** Un modelo HAR sobre volatilidad realizada pronostica mejor el riesgo de corto plazo que un GARCH(1,1) en datos intradía.
+- **Método.** Modelo HAR de Corsi (2009) sobre la varianza realizada diaria, con comparación de pronósticos.
+- **Validación.** Pérdida de pronóstico (QLIKE) y backtesting del VaR derivado.
+- **Refutación.** Requiere datos intradía que pueden no existir en mercados poco líquidos; el ruido de microestructura sesga la volatilidad realizada.
+- **Fuente.** Corsi (2009) [C].
+
+### 2.10 Estabilidad de explicaciones como control de validación
+**Tipo:** Nueva
+- **Hipótesis.** Un modelo de PD con explicaciones (SHAP) inestables entre ventanas no es auditable, aunque tenga buen Gini.
+- **Método.** Medir la estabilidad de los valores SHAP por variable entre cosechas (correlación de rangos) y entre semillas de entrenamiento.
+- **Validación.** Umbral de estabilidad definido antes del análisis; comparación entre modelos con Gini similar.
+- **Refutación.** Un SHAP estable puede ser igual de engañoso si las variables están correlacionadas; la estabilidad no implica causalidad.
 - **Fuente.** [C].
 
 ---
@@ -181,6 +247,22 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 - **Validación.** Predicción fuera de muestra con ventanas temporales y pruebas de robustez a la omisión de variables.
 - **Refutación.** La causalidad en series temporales es difícil de identificar; los efectos estimados pueden ser espurios si hay variables comunes no observadas.
 - **Fuente.** arXiv:2509.05922, "Predicting Market Troughs: A Machine Learning Approach with Causal Interpretation" [V].
+
+### 3.7 Run-off de depósitos con supervivencia y choque de tasas
+**Tipo:** Nueva
+- **Hipótesis.** Un modelo de supervivencia del saldo de depósitos, condicionado a un choque de tasas, da un run-off más realista que la tasa fija regulatoria.
+- **Método.** Modelo de riesgo proporcional con covariables de tasa y del tipo de depositante; estimación del saldo esperado a 30 días para el cálculo de LCR.
+- **Validación.** Calibración del run-off predicho frente a retiros observados en episodios de estrés; comparación con la tasa fija.
+- **Refutación.** Los depositantes pueden cambiar de comportamiento en episodios raros; un histórico sin crisis subestima el run-off.
+- **Fuente.** Marco de LCR de Basilea (chapter de BCBS) [V, lead de búsqueda]; modelo de riesgo proporcional de Cox [C].
+
+### 3.8 Curva de liquidez de activos con volumen intradía
+**Tipo:** Nueva
+- **Hipótesis.** El tiempo para liquidar una posición depende del volumen intradía disponible y se puede estimar como función del tamaño.
+- **Método.** Estimar la fracción diaria de volumen liberable por activo y construir una curva de tiempo de liquidación frente al monto a vender.
+- **Validación.** Error de la curva frente a ejecuciones reales en datos de mercado; sensibilidad a la fracción de participación.
+- **Refutación.** En crisis el volumen disponible cae; la curva de días normales subestima el tiempo de liquidación.
+- **Fuente.** [C] (modelos de impacto de Almgren y Chriss, 2000).
 
 ---
 
@@ -242,6 +324,54 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 - **Refutación.** La dualidad es fuerte solo bajo condiciones de convexidad que pueden no cumplirse.
 - **Fuente.** Altman (1999), *Constrained Markov Decision Processes* [C].
 
+### 4.7 Sesgo de selección en recuperaciones observadas
+**Tipo:** Nueva
+- **Hipótesis.** Las recuperaciones solo se observan en casos resueltos, y estimarlas sin corregir por selección subestima la pérdida.
+- **Método.** Modelo de selección tipo Heckman con ecuación de resolución y ecuación de recuperación, con restricción de exclusión.
+- **Validación.** Sesgo de la recuperación estimada en simulación con selección conocida; sensibilidad a la restricción de exclusión.
+- **Refutación.** La restricción de exclusión es difícil de justificar; sin ella la corrección depende de la forma distribucional.
+- **Fuente.** Heckman (1979) [C].
+
+### 4.8 Transporte óptimo para cambio de covariables entre cosechas
+**Tipo:** Nueva
+- **Hipótesis.** Un ajuste por transporte óptimo entre la cosecha histórica y la nueva corrige el cambio de covariables mejor que la reponderación simple.
+- **Método.** Estimar el mapa de transporte entre distribuciones de covariables y reponderar la PD estimada.
+- **Validación.** Error de calibración de la PD en una cosecha retenida con cambio conocido.
+- **Refutación.** Con muestras pequeñas el transporte es inestable; el resultado depende de la métrica de costo elegida.
+- **Fuente.** [C] (Villani, 2009, para transporte óptimo).
+
+### 4.9 Análisis de sensibilidad causal (Rosenbaum y E-value)
+**Tipo:** Nueva
+- **Hipótesis.** La conclusión causal de la política de aprobación es robusta a un nivel de confusión no observada moderado.
+- **Método.** Límites de Rosenbaum y E-value sobre el efecto estimado; reportar el nivel de confusión que anularía el resultado.
+- **Validación.** Confusión necesaria comparada con las variables observadas más fuertes (referencia empírica).
+- **Refutación.** El E-value no prueba ausencia de confusión; una confusión mayor que la observable sigue siendo posible.
+- **Fuente.** VanderWeele y Ding (2017), E-value [C].
+
+### 4.10 Contagio entre cosechas con procesos de Hawkes
+**Tipo:** Nueva
+- **Hipótesis.** El incumplimiento de una cosecha eleva la probabilidad de incumplimiento de cosechas relacionadas en un período corto.
+- **Método.** Proceso de Hawkes multivariado sobre eventos de mora por cosecha, con núcleo exponencial.
+- **Validación.** Residuos de Ogata y predicción de la intensidad fuera de muestra.
+- **Refutación.** La autoexcitación puede confundirse con un factor común no observado (un ciclo económico).
+- **Fuente.** Hawkes (1971) [C].
+
+### 4.11 Modelo de cura para clientes que nunca incumplen
+**Tipo:** Nueva
+- **Hipótesis.** Una fracción de clientes nunca incumple; un modelo de cura separa esa fracción del tiempo hasta incumplimiento.
+- **Método.** Modelo de mezcla de cura: probabilidad de cura logística y supervivencia condicional para los no curados.
+- **Validación.** Calibración de la supervivencia en horizontes de 12 y 24 meses; comparación con Kaplan-Meier sin cura.
+- **Refutación.** La cura no es identificable si el horizonte observado es corto; la fracción curada puede estar sobreestimada.
+- **Fuente.** [C] (modelos de mezcla de cura).
+
+### 4.12 Pilotos de política con bandits y arrepentimiento acotado
+**Tipo:** Nueva
+- **Hipótesis.** Un diseño adaptativo con bandits asigna pilotos de política de crédito con menos costo de oportunidad que un experimento A/B fijo.
+- **Método.** Muestreo de Thompson sobre las políticas candidatas, con cota de arrepentimiento y restricción de riesgo máximo por piloto.
+- **Validación.** Arrepentimiento acumulado en simulación frente a un A/B fijo; cumplimiento de la restricción de riesgo.
+- **Refutación.** El muestreo adaptativo puede sesgar la estimación del efecto final; hay que usar estimadores válidos tras la adaptación.
+- **Fuente.** [C] (Thompson, 1933; Lattimore y Szepesvári, 2020).
+
 ---
 
 ## 05 · Enterprise Risk Advisory (`05-enterprise-risk-advisory`)
@@ -298,6 +428,54 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 - **Método.** Probabilidad calibrada de alerta y umbral que minimiza el costo esperado \(C_{FN}\cdot FN + C_{FP}\cdot FP\).
 - **Validación.** Curva de costo frente a umbral y pruebas por cohorte.
 - **Refutación.** Los costos relativos son supuestos de negocio, no datos; el óptimo puede ser muy sensible a ellos.
+- **Fuente.** [C].
+
+### 5.7 Riesgo de transición climática con escenarios cortos NGFS
+**Tipo:** Nueva
+- **Hipótesis.** Los escenarios cortos de NGFS dan un efecto de transición en PD sectorial más visible en el horizonte de presupuesto que los escenarios de largo plazo.
+- **Método.** Traducir un choque de precio de carbono a cambios de PD por sector con una relación de elasticidad estimada.
+- **Validación.** Sensibilidad del efecto a la elasticidad; comparación de horizontes.
+- **Refutación.** La elasticidad sectorial se estima con poca historia; los escenarios no son pronósticos.
+- **Fuente.** ECB, Macroprudential Bulletin 2025/11, sobre escenarios cortos de NGFS [V, lead de búsqueda].
+
+### 5.8 Cargo de capital por riesgo de modelo con promedio bayesiano de modelos
+**Tipo:** Nueva
+- **Hipótesis.** La incertidumbre de especificación entre modelos alternativos se traduce en un cargo de capital cuantificable.
+- **Método.** Promedio bayesiano de modelos con pesos posteriores; capital adicional como el cuantil de la pérdida ponderada.
+- **Validación.** Cobertura del capital bajo modelos conocidos en simulación.
+- **Refutación.** Los pesos bayesianos dependen del prior y del conjunto de modelos elegido; un conjunto incompleto subestima el cargo.
+- **Fuente.** Hoeting et al. (1999), promedio bayesiano de modelos [C].
+
+### 5.9 Monitoreo secuencial de equidad con e-values
+**Tipo:** Nueva
+- **Hipótesis.** Un monitoreo secuencial con e-values detecta impacto dispar en decisiones automatizadas sin inflar el error tipo I.
+- **Método.** Test secuencial basado en e-values sobre la diferencia de tasas de aprobación entre grupos, actualizado con cada lote.
+- **Validación.** Error tipo I bajo nulo y potencia ante un sesgo inyectado.
+- **Refutación.** La prueba detecta diferencias, no causas; el impacto dispar puede venir de variables legítimas correlacionadas.
+- **Fuente.** Ramdas et al. (2023), e-values [C].
+
+### 5.10 Error de medición en RCSA
+**Tipo:** Nueva
+- **Hipótesis.** Las evaluaciones de RCSA contienen error de medición entre evaluadores que se estima con un modelo bayesiano jerárquico.
+- **Método.** Modelo de efectos aleatorios por evaluador y riesgo, con varianza de medición estimada.
+- **Validación.** Recuperación de la varianza de medición en simulación; intervalos de la calificación por riesgo.
+- **Refutación.** Si los evaluadores son los mismos para todos los riesgos, el error se confunde con el efecto del riesgo.
+- **Fuente.** [C].
+
+### 5.11 Subregistro de eventos operacionales con captura-recaptura
+**Tipo:** Nueva
+- **Hipótesis.** Los eventos operacionales no reportados se estiman con un método de captura-recaptura entre dos fuentes independientes de registro.
+- **Método.** Estimador de Lincoln-Petersen (o Chapman) sobre las dos fuentes, con intervalo de confianza.
+- **Validación.** Cobertura del intervalo en simulación con subregistro conocido.
+- **Refutación.** El método exige independencia entre fuentes; si ambas dependen del mismo proceso, subestima el subregistro.
+- **Fuente.** Chapman (1951) [C].
+
+### 5.12 Muestreo bayesiano adaptativo para pruebas de control
+**Tipo:** Nueva
+- **Hipótesis.** Un muestreo bayesiano adaptativo prueba la efectividad de un control con menos muestras que el muestreo estadístico fijo.
+- **Método.** Actualizar la probabilidad de falla del control por lote y detener la prueba cuando la posterior cruza un umbral.
+- **Validación.** Tamaño de muestra promedio frente al muestreo fijo, con error de decisión controlado.
+- **Refutación.** Un prior demasiado optimista reduce el tamaño de muestra pero aumenta el riesgo de aceptar un control defectuoso.
 - **Fuente.** [C].
 
 ---
@@ -358,6 +536,30 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 - **Refutación.** Las funciones con discontinuidades (como umbrales de pérdida) dan gradientes mal definidos.
 - **Fuente.** [C].
 
+### 6.7 Procedencia reproducible con hash de datos y semillas
+**Tipo:** Nueva
+- **Hipótesis.** Cada resultado del motor es reproducible bit a bit a partir de un registro de hash de datos, versión de código y semillas.
+- **Método.** Manifiesto de ejecución con hash de entradas, versión del código y semillas; verificación al re-ejecutar.
+- **Validación.** Reproducibilidad bit a bit entre máquinas y compiladores con la misma entrada.
+- **Refutación.** La reproducibilidad bit a bit no garantiza exactitud; un error sistemático se reproduce igual.
+- **Fuente.** [C].
+
+### 6.8 Recálculo incremental de sensibilidades
+**Tipo:** Nueva
+- **Hipótesis.** Al cambiar un solo exposición, el recálculo incremental de la pérdida y de las sensibilidades es más rápido que recalcular todo el portafolio.
+- **Método.** Actualizar sumas parciales de pérdida y de sensibilidades por exposición afectada; verificación contra el cálculo completo.
+- **Validación.** Igualdad con el cálculo completo dentro de tolerancia y tiempo de cómputo frente al total.
+- **Refutación.** Cuando la correlación cambia para muchas exposiciones a la vez, la ganancia desaparece.
+- **Fuente.** [C].
+
+### 6.9 Error de redondeo con precisión mixta
+**Tipo:** Nueva
+- **Hipótesis.** Usar precisión simple en la simulación y doble en la acumulación de pérdida reduce el costo sin degradar la cola de pérdida.
+- **Método.** Comparar el error de la cola al 99,9 % con precisión mixta frente a precisión doble completa.
+- **Validación.** Error relativo del cuantil frente a la referencia de precisión doble.
+- **Refutación.** En portafolios con exposiciones muy desiguales, la precisión simple puede perder masa de cola (el riesgo de underflow ya documentado en el repositorio).
+- **Fuente.** [C] (análisis de error de punto flotante, Higham, 2002).
+
 ---
 
 ## 07 · Riesgo financiero y de construcción (`07-financial-and-construction-risk-lab`)
@@ -416,6 +618,46 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 - **Refutación.** Los parámetros del proceso de demanda son el principal motor del valor, y suelen tener muy poca identificación.
 - **Fuente.** Longstaff & Schwartz (2001) [C].
 
+### 7.7 Asignación de cuadrillas con aprendizaje por refuerzo profundo
+**Tipo:** Nueva
+- **Hipótesis.** Una política aprendida por refuerzo profundo asigna cuadrillas bajo retrasos inesperados y reduce el atraso total frente a una regla fija.
+- **Método.** Entorno de simulación de obra con retrasos estocásticos; política de asignación con aprendizaje por refuerzo profundo.
+- **Validación.** Atraso total frente a una regla fija de prioridad en escenarios fuera de entrenamiento.
+- **Refutación.** La política puede especializarse en el simulador; sin validación en escenarios no vistos el resultado no se transfiere.
+- **Fuente.** Asignación de mano de obra con aprendizaje por refuerzo profundo en construcción, Universidad de Birmingham [V, lead de búsqueda].
+
+### 7.8 Detección de sobrecostos con transformadores sobre registros de obra
+**Tipo:** Nueva
+- **Hipótesis.** Un modelo de secuencia sobre registros diarios de obra anticipa sobrecostos mejor que un modelo sobre indicadores mensuales.
+- **Método.** Entrada: secuencia diaria de avance, costo y eventos; salida: probabilidad de sobrecosto a 60 días.
+- **Validación.** Validación por proyecto (no por fecha) para evitar fuga entre registros del mismo proyecto.
+- **Refutación.** Con pocos proyectos completados la red sobreajusta; la validación por proyecto puede dejar muy pocas muestras.
+- **Fuente.** [C].
+
+### 7.9 Detección de fraude en precios unitarios de obra
+**Tipo:** Nueva
+- **Hipótesis.** Los precios unitarios que se alejan de la distribución condicional por tipo de obra y región señalan sobrefacturación.
+- **Método.** Regresión cuantílica del precio unitario sobre tipo de obra y región; marcar valores por encima del cuantil 99.
+- **Validación.** Tasa de alarmas frente a una auditoría de muestra; sensibilidad al cuantil elegido.
+- **Refutación.** Un precio alto puede ser legítimo (ubicación, especificación); las alarmas requieren revisión humana.
+- **Fuente.** [C] (regresión cuantílica, Koenker y Bassett, 1978).
+
+### 7.10 Penalidades en contratos de obra con teoría de juegos
+**Tipo:** Nueva
+- **Hipótesis.** La penalidad óptima por retraso equilibra el incentivo del contratista con la cobertura del promotor.
+- **Método.** Modelo principal-agente con esfuerzo no observable y penalidad lineal o por tramos; equilibrio de Nash en el contrato.
+- **Validación.** Comparación de penalidades óptimas frente a penalidades fijas en simulación.
+- **Refutación.** La penalidad óptima puede ser impracticable legalmente; el modelo ignora la posibilidad de litigio.
+- **Fuente.** Holmström y Milgrom (1991), principal-agente multitarea [C].
+
+### 7.11 Rotación de mano de obra con modelo de Markov
+**Tipo:** Nueva
+- **Hipótesis.** La rotación de la mano de obra sigue una cadena de Markov con tasa dependiente de la etapa de la obra; su costo se estima con la matriz de transición.
+- **Método.** Estimar la matriz de transición mensual entre estados (activo, rotado, fuera) y el costo esperado por reposición.
+- **Validación.** Error de predicción de la plantilla frente a registros de nómina.
+- **Refutación.** La rotación depende de factores externos (mercado laboral) que la cadena no incorpora.
+- **Fuente.** [C].
+
 ---
 
 ## Notas de verificación y limitaciones
@@ -432,7 +674,7 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 
 **Criterio:** Nueva = no hay trabajo equivalente en el repositorio. Extensión = la idea se solapa con un proyecto existente y se presenta como extensión de ese proyecto, no como proyecto aparte.
 
-**Resumen:** 12 nuevas y 30 extensiones de proyectos existentes. Las extensiones se identifican en cada idea con la ruta del proyecto que amplían.
+**Resumen:** de la primera revisión, 12 nuevas y 30 extensiones de proyectos existentes. Las 30 ideas añadidas (1.7–7.11) se diseñaron para no solaparse con el repositorio y no están en esta tabla. Las extensiones se identifican en cada idea con la ruta del proyecto que amplían.
 
 | # | Idea | Tipo | Referencia en el repositorio |
 |---|---|---|---|
