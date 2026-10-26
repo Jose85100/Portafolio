@@ -341,3 +341,67 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 - **Búsqueda sobre la SFC:** no encontré documentación regulatoria reciente y específica para modelos de pérdida esperada en Colombia. Esa búsqueda debe repetirse con términos más precisos (circulares externas, Capítulo XXXI de la Circular Básica Contable y Financiera).
 - **Tratamiento de la literatura clásica:** las referencias marcadas [C] son conocidas pero no se verificaron en esta sesión. Deben citarse con su fuente original antes de cualquier uso formal.
 - **Prioridad sugerida:** 1.1 (conformal ECL), 2.2 (validación de IA bajo SR 26-2), 3.1 (regiones de insolvencia), 4.1 (bosques causales) y 6.3 (importancia para cola). Son las de mayor impacto por esfuerzo y las de mejor respaldo en la literatura reciente.
+
+---
+
+## Revisión de solapamientos con el repositorio
+
+**Criterio:** Nueva = no hay trabajo equivalente en el repositorio. Gap explícito = el propio repositorio declara la limitación. Parcial = hay un proyecto cercano que cubre parte de la idea. Duplicada = el mismo problema ya tiene proyecto.
+
+**Resumen:** 12 nuevas, 2 gaps explícitos, 5 duplicadas y 23 parciales. Las duplicadas deben integrarse como método en el proyecto existente, no como proyecto aparte.
+
+| # | Idea | Estado | Referencia en el repositorio |
+|---|---|---|---|
+| 1.1 | Conformal survival para ECL | Nueva | El conformal solo aparece en KYC (`channel-conformal-audit`) |
+| 1.2 | BOCPD para cosechas | Parcial | CUSUM en `fraud-and-anomaly-research/04-origination-process-anomalies` |
+| 1.3 | PD con Lévy-OU | Nueva | Sin referencias |
+| 1.4 | Cópulas t/Clayton y Wasserstein | Parcial | `credit-portfolio-strategy/copula-gaussiana-perdidas` |
+| 1.5 | Semi-Markov en roll rates | Parcial | `credit-risk-products/matrices-de-transicion-roll-rates` (Markov) |
+| 1.6 | Monotonía en GBM y equidad | Parcial | `scorecard-logistico-woe` ya fuerza monotonía en WoE; sin equidad |
+| 2.1 | Backtesting de ES (Acerbi–Székely) | **Gap explícito** | `weighted-expected-shortfall-audit`: "no se ejecuta backtesting Acerbi–Szekely" |
+| 2.2 | Validación de IA generativa (SR 26-2) | Parcial | `05/04-cyber-ai/ai-governance`; el repositorio no cita SR 11-7 ni SR 26-2 |
+| 2.3 | Escenarios con modelos generativos | Nueva | Sin referencias |
+| 2.4 | VaR con cobertura adaptativa | Nueva | Sin referencias |
+| 2.5 | Riesgo de modelo entre familias GARCH | Parcial | `garch-volatilidad-y-var` (solo GARCH(1,1)) |
+| 2.6 | Bootstrap de diferencial de Gini | Parcial | `validacion-de-modelo-psi-gini` |
+| 3.1 | Regiones de insolvencia con HJB | Nueva | `03_LIQUIDEZ_ESTOCASTICA.md` discute déficit, sin control óptimo |
+| 3.2 | LVaR con impacto | Parcial | `05_OPTIMIZACION_LIQUIDEZ.md` tiene costo de liquidación |
+| 3.3 | Hawkes en margin calls | Nueva | `04_ESPIRALES_LIQUIDEZ.md` usa impacto lineal sin autoexcitación |
+| 3.4 | Resiliencia del libro de órdenes | Nueva | Sin referencias |
+| 3.5 | CVaR con DRO | Parcial | `05_OPTIMIZACION_LIQUIDEZ.md` (CVaR con costos); DRO es nuevo |
+| 3.6 | ML causal para valles de mercado | Nueva | Sin referencias en mercado |
+| 4.1 | Bosques causales para aprobación | **Duplicada** | `04-advanced-research/01-causal-origination-policy` |
+| 4.2 | HMM para regímenes | Parcial | `04-advanced-research/02-nonstationary-credit-digital-twin` (método alternativo) |
+| 4.3 | RL offline para cobranza | **Duplicada** | `04-advanced-research/03-collections-dynamic-treatment-regimes` (mismo marco) |
+| 4.4 | SICR con conformal | Parcial | `04-advanced-research/04-ifrs9-forward-looking-ecl` |
+| 4.5 | Eisenberg–Noe | Parcial | `03/04_ESPIRALES_LIQUIDEZ.md` la menciona; `04-advanced-research/05-siar` |
+| 4.6 | Control con CMDP y Lagrange | **Duplicada** | `04-advanced-research/07-capital-constrained-portfolio-control` |
+| 5.1 | Brecha de MRM frente a SR 26-2 | Parcial | `04-cyber-ai/ai-governance`; sin SR 11-7 en el repositorio |
+| 5.2 | Umbral bayesiano en POT | Parcial | `03-operational-resilience/operational-extreme-tail` (sin prior sobre el umbral) |
+| 5.3 | XVA con aprendizaje diferencial | Parcial | `07-valuation-counterparty/xva` (sin diferencial) |
+| 5.4 | LLM para incidentes operacionales | Parcial | `fraud-and-anomaly-research/ai-enabled-fraud-defense` (LLM en fraude) |
+| 5.5 | Control continuo con conformal | Parcial | `08-assurance-risk-data/continuous-controls` |
+| 5.6 | Alertas AML con costo asimétrico | Parcial (probable solapamiento alto) | `05-financial-crime/aml-alert-prioritization` (verificar contenido) |
+| 6.1 | Proyección de Higham a PSD | **Gap explícito** | README del motor: "no certifica que C sea PSD" |
+| 6.2 | Monte Carlo multinivel | Nueva | Sin referencias |
+| 6.3 | Muestreo por importancia | Parcial | `discrete-credit-tail-audit` (verificar implementación) |
+| 6.4 | Sobol con aleatorización de Owen | Nueva | Sin referencias |
+| 6.5 | Pruebas de propiedades y paridad | Parcial | `weighted-tail-underflow-guard/tests` |
+| 6.6 | Diferenciación automática | Nueva | Sin referencias |
+| 7.1 | Cronograma con cópula | Parcial | `02-construction-enterprise-risk/02-schedule-cost-overrun` |
+| 7.2 | Bosques de cuantiles para costos | Nueva | Sin referencias en construcción |
+| 7.3 | Factores dinámicos y MIDAS | Parcial | `03-research-in-progress/04-bayesian-construction-nowcasting`; `06-materials-inflation` |
+| 7.4 | CUSUM para sobrecostos | Parcial | CUSUM solo en fraude; no en construcción |
+| 7.5 | Contagio promotor-contratista | **Duplicada** | `03-research-in-progress/05-network-contagion-contractors`, `06-construction-network-contagion`, `02/04-contractor-counterparty-risk` |
+| 7.6 | Opciones reales con LSM | **Duplicada** | `03-research-in-progress/07-real-options-staged-development` |
+
+### Prioridad sugerida tras la revisión
+1. **2.1 (backtesting de ES):** gap declarado por el propio repositorio, con literatura conocida.
+2. **6.1 (proyección PSD):** el README del motor pide justamente esta verificación.
+3. **1.1 (conformal survival para ECL):** nueva y de alto impacto para IFRS 9.
+4. **3.3 (Hawkes en margin calls):** complementa directamente `04_ESPIRALES_LIQUIDEZ.md`.
+5. **2.4 (VaR conformal adaptativo):** nueva y verificable con los backtests existentes.
+
+### Límites de esta revisión
+- Se revisaron títulos, README y palabras clave, no el código ni los resultados de cada subcarpeta. Las marcas "verificar" necesitan una lectura de código.
+- Las coincidencias por palabra clave pueden ser falsos positivos. Por eso, cada entrada de la tabla se contrastó con el texto del archivo referido cuando fue posible.
