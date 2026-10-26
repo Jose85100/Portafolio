@@ -1,0 +1,16 @@
+test_decision_boundaries (test_evaluation.EvaluationTests.test_decision_boundaries) ... ok
+test_empty_log_is_uninformative (test_evaluation.EvaluationTests.test_empty_log_is_uninformative) ... ok
+test_impossible_log_rejected (test_evaluation.EvaluationTests.test_impossible_log_rejected) ... ok
+test_invalid_inputs (test_evaluation.EvaluationTests.test_invalid_inputs) ... ok
+test_known_weighted_mean (test_evaluation.EvaluationTests.test_known_weighted_mean) ... ok
+test_missing_sample_not_structural (test_evaluation.EvaluationTests.test_missing_sample_not_structural) ... ok
+test_more_constant_observations_narrows_radius (test_evaluation.EvaluationTests.test_more_constant_observations_narrows_radius) ... ok
+test_observationally_identical_worlds (test_evaluation.EvaluationTests.test_observationally_identical_worlds) ... ok
+test_structural_nonidentification (test_evaluation.EvaluationTests.test_structural_nonidentification) ... ok
+test_target_supported_despite_logging_zero (test_evaluation.EvaluationTests.test_target_supported_despite_logging_zero) ... ok
+test_width_floor_property (test_evaluation.EvaluationTests.test_width_floor_property) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.062s
+
+OK
