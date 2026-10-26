@@ -21,7 +21,7 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 - **Método.** Análisis de supervivencia conformal para datos censurados a la derecha: dado un nivel \(\alpha\), construir \([L_{\text{low}}(x), L_{\text{up}}(x)]\) tal que \(P(T \in C(x)) \ge 1-\alpha\) bajo intercambiabilidad. Usar ponderación por probabilidad inversa de censura para el caso de censura general.
 - **Validación.** Cobertura empírica por estrato (no solo marginal) y ancho medio del intervalo. Comparar con el intervalo de Kaplan-Meier sin condicionar.
 - **Refutación.** La cobertura marginal no implica cobertura condicional; con cambio de covariables (originación nueva vs. cartera madura) la garantía se degrada sin ponderación por *covariate shift* (Tibshirani et al., 2019) [C].
-- **Fuente.** Davidov et al., *Conformalized Survival Analysis for General Right-Censored Data*, ICLR 2025 [V].
+- **Fuente.** Davidov et al., *Conformalized Survival Analysis for General Right-Censored Data*, ICLR 2025 [V, título y venue verificados]. Alternativa doblemente robusta: Sesia et al., ICML 2025, *Doubly Robust Conformalized Survival Analysis with Right-Censored Data* [V, título verificado].
 
 ### 1.2 Alerta temprana de quiebres en cosechas con BOCPD
 
@@ -39,7 +39,7 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 - **Método.** Modelo de PD como función de un factor latente \(X_t\) con dinámica OU conducida por un proceso de Lévy (saltos), con calibración por máxima verosimilitud aproximada.
 - **Validación.** Comparar Vasicek y LOU-Lévy con BIC, prueba de calibración por cosecha y error de estimación de cola en el percentil 99,5 de pérdida.
 - **Refutación.** Más parámetros implican mayor riesgo de sobreajuste; los saltos pueden absorber errores de especificación del factor macro.
-- **Fuente.** arXiv:2309.12384 [V].
+- **Fuente.** Georgiou y Yannacopoulos, arXiv:2309.12384 [V, resumen leído]. Es un resultado teórico: el texto no incluye calibración con datos. La idea exige trabajo empírico propio.
 
 ### 1.4 Copulas con dependencia de cola alternativa y robustez por Wasserstein
 
@@ -74,7 +74,7 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 - **Método.** Entrenamiento federado (promedio de gradientes o de coeficientes) sobre particiones no independientes e idénticamente distribuidas; privacidad diferencial con presupuesto ε explícito.
 - **Validación.** Diferencia de Gini frente al modelo centralizado, con intervalos por bootstrap entre entidades; sensibilidad a ε.
 - **Refutación.** La heterogeneidad entre carteras (no IID) y el sesgo de selección de cada entidad pueden invalidar el promedio de modelos.
-- **Fuente.** arXiv:2601.11134 (aprendizaje federado en riesgo de crédito) [V, lead de búsqueda].
+- **Fuente.** Amed, Sen y Banerjee (2026), *FSL-BDP: Federated Survival Learning with Bayesian Differential Privacy for Credit Risk Modeling*, arXiv:2601.11134 [V, resumen leído]. Usa LendingClub, SBA y Bondora. El resumen no reporta Gini ni AUC, así que la métrica de validación propuesta no es comparable con esa fuente sin recalcularla.
 
 ### 1.8 Modelos de secuencia sobre historial de pagos
 **Tipo:** Nueva
@@ -113,6 +113,8 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 - **Refutación.** Con colas pesadas y ventana corta, la potencia de cualquier prueba de ES es baja. Un resultado "pasa" puede ser solo falta de potencia.
 - **Fuente.** [C]; relevante para el marco FRTB (cambio a ES) [V, búsqueda sobre FRTB].
 
+**Resultado de simulación** (`03-financial-risk/IDEAS_SIMULATIONS/sim21_es_backtest.py`, N=250, α=0,025, 20 000 réplicas, valores críticos simulados al 5 %): el tamaño es 0,037 para Kupiec (conservador por discreción de conteos) y 0,050 para Z2. Poder frente a colas t(4): Kupiec 0,037 y Z2 0,167; frente a t(6): 0,047 y 0,152; frente a volatilidad 1,2 veces mayor: 0,632 y 0,775. **Conclusión:** Z2 gana poder, pero contra colas pesadas con 250 días sigue por debajo de 0,20. La refutación se confirma: el backtesting de ES tiene poca potencia en la muestra típica.
+
 ### 2.2 Validación de modelos de IA generativa bajo SR 26-2
 
 **Tipo:** Extensión de `05-enterprise-risk-advisory/04-cyber-ai/ai-governance`
@@ -140,6 +142,8 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 - **Refutación.** La garantía asintótica no es válida en muestras cortas; el ajuste puede volverse inestable tras un choque grande.
 - **Fuente.** [C].
 
+**Resultado de simulación** (`sim24_adaptive_var.py`, 1 000 días con cambio de σ de 1 a 2 en t=500, ventana de 250, γ=0,01, 500 réplicas): el VaR estático tiene tasa de excepción de 0,052 antes del quiebre y 0,079 después; el adaptativo (ACI) tiene 0,051 y 0,051. La racha máxima media de excepciones baja de 2,46 a 2,05. **Conclusión:** la ganancia es de calibración tras el quiebre, no de mejor pronóstico de volatilidad, porque el pronóstico de ventana sigue igual.
+
 ### 2.5 Riesgo de modelo como prima sobre familias GARCH
 
 **Tipo:** Extensión de `02-market-and-model-risk/garch-volatilidad-y-var`
@@ -164,7 +168,7 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 - **Método.** Control de riesgo conformal con actualización automática del nivel objetivo (Blot et al., 2025) aplicado a un umbral de pérdida de cartera.
 - **Validación.** Pérdida promedio realizada frente al objetivo y ancho de la regla de decisión.
 - **Refutación.** La garantía es asintótica; en muestras cortas la regla puede ser conservadora o volátil.
-- **Fuente.** Blot et al., *Automatically Adaptive Conformal Risk Control*, PMLR v258 (2025) [V, lead de búsqueda].
+- **Fuente.** Blot et al., *Automatically Adaptive Conformal Risk Control*, AISTATS 2025, PMLR v258; arXiv:2406.17819 [V, título y venue verificados].
 
 ### 2.8 Estrés path-dependent con firmas (signatures)
 **Tipo:** Nueva
@@ -172,7 +176,7 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 - **Método.** Calcular la firma truncada de la trayectoria de factores y regresarla contra la pérdida de cartera.
 - **Validación.** Error fuera de muestra frente a un modelo de factores sin memoria; pruebas en trayectorias de estrés históricas.
 - **Refutación.** El número de términos de la firma crece rápido; con truncamiento bajo puede perder la dependencia que se busca.
-- **Fuente.** arXiv:2603.04525 (signature de Volterra) y arXiv:2603.24154 (SigSwap) [V, leads de búsqueda].
+- **Fuente.** Hager, Harang, Pelizzari y Tindel (2026), *The Volterra Signature*, arXiv:2603.04525 [V, resumen leído]: evalúa predicción de volatilidad realizada del S&P 500, sin cifras en el resumen. Bloch (2026), *The Geometry of Risk: Path-Dependent Regulation and Anticipatory Hedging via the SigSwap*, arXiv:2603.24154 [V, resumen leído]: es teórico y no reporta experimentos, así que no sirve como evidencia empírica.
 
 ### 2.9 Volatilidad realizada (HAR) frente a GARCH
 **Tipo:** Nueva
@@ -225,10 +229,10 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 
 **Tipo:** Nueva
 - **Hipótesis.** La resiliencia (velocidad de recuperación de la profundidad del libro tras una orden grande) es un predictor de liquidez más robusto que el diferencial.
-- **Método.** Estimar la resiliencia con el modelo de decaimiento del impacto de orden de Bouchaud; compararla con la profundidad y el diferencial.
+- **Método.** Medir la fracción de tiempo en que el libro queda unilateral (sin mejor oferta o sin mejor demanda), como en Novotny (2026), y compararla con la profundidad y el diferencial en datos reales.
 - **Validación.** Correlación con el costo de ejecución realizado en datos de libro de órdenes.
 - **Refutación.** La resiliencia en mercados poco líquidos (como muchos de Latinoamérica) puede no ser estable en el tiempo.
-- **Fuente.** arXiv:2607.16970, "Herding and Liquidity in Order-Book Markets. II" [V, como lectura de punto de partida].
+- **Fuente.** Novotny (2026), *Herding and Liquidity in Order-Book Markets. II*, arXiv:2607.16970 [V, resumen leído]. Sus resultados son simulaciones de un modelo de agentes, no datos empíricos.
 
 ### 3.5 CVaR con optimización distribucionalmente robusta y costos de liquidación
 
@@ -246,7 +250,7 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 - **Método.** Aprendizaje automático con validación por tiempos de rezago y estimación causal de efectos (por ejemplo, doble aprendizaje automático, Chernozhukov et al., 2018) [C].
 - **Validación.** Predicción fuera de muestra con ventanas temporales y pruebas de robustez a la omisión de variables.
 - **Refutación.** La causalidad en series temporales es difícil de identificar; los efectos estimados pueden ser espurios si hay variables comunes no observadas.
-- **Fuente.** arXiv:2509.05922, "Predicting Market Troughs: A Machine Learning Approach with Causal Interpretation" [V].
+- **Fuente.** Rao y Rojas (2025), *Predicting Market Troughs: A Machine Learning Approach with Causal Interpretation*, arXiv:2509.05922 [V, resumen leído]: SVM con doble aprendizaje automático y AUC fuera de muestra de 0,89 en S&P 500. La interpretación causal requiere supuestos de no confusión que el resumen no discute.
 
 ### 3.7 Run-off de depósitos con supervivencia y choque de tasas
 **Tipo:** Nueva
@@ -491,6 +495,8 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 - **Refutación.** La proyección puede cambiar las marginales de Bernoulli; el README del motor ya advierte que la PSD no se certifica, y esta idea lo resuelve solo parcialmente.
 - **Fuente.** Higham (2002) [C].
 
+**Resultado de simulación** (`sim61_check.py`, n=30, PD 1–5 %, M=300 000, 3 semillas por caso): (A) ruido aditivo de media cero sobre la matriz verdadera, sin muestreo: el cuantil 99,9 % cambia −0,3 % a −0,1 % como máximo; la proyección de Higham no altera la cola cuando la matriz ya es PSD. (B) error muestral: con T=60 el cuantil se desvía +15,4 % (dispersión entre muestras de 8,1 %); con T=250, +1,7 %; con T=1000, +0,4 %. La pérdida esperada no cambia (lineal en PD, como predice la teoría). **Conclusión:** la hipótesis de la propuesta queda refutada: el efecto dominante es el error muestral de la correlación, no la proyección. La proyección de Higham frente a eig-clip solo cambia la cola en ~2,5 % cuando la matriz cruda es indefinida (ruido de 0,12 por entrada, `out61.txt`).
+
 ### 6.2 Monte Carlo multinivel para la cola de pérdida
 
 **Tipo:** Nueva
@@ -659,6 +665,30 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 - **Fuente.** [C].
 
 ---
+
+## Anexo formal: prioridades
+
+**Notación.** Pérdidas \(L_t\), pronósticos \(\widehat{\mathrm{VaR}}_t(\alpha)\) y \(\widehat{\mathrm{ES}}_t(\alpha)\) predecibles respecto a \(\mathcal F_{t-1}\); \(I_t=\mathbf 1\{L_t>\widehat{\mathrm{VaR}}_t\}\).
+
+**2.1 Test Z2 de Acerbi–Székely.** \(Z_2=1-\dfrac{1}{N\alpha}\sum_{t=1}^N I_t\,\dfrac{L_t}{\widehat{\mathrm{ES}}_t}\). Bajo \(H_0\) con \(\mathbb E[L_t\mid L_t>\widehat{\mathrm{VaR}}_t,\mathcal F_{t-1}]=\widehat{\mathrm{ES}}_t\), se cumple \(\mathbb E[I_t L_t/\widehat{\mathrm{ES}}_t]=\alpha\), luego \(\mathbb E[Z_2]=0\). Es una prueba de momento de un solo lado: rechaza si \(Z_2\) es muy negativo. Su poder depende de la masa de cola que el pronóstico subestima; con \(N=250\) y \(\alpha=0{,}025\) la potencia es baja frente a colas pesadas (simulación 2.1). *Supuesto no verificado:* la distribución asintótica de \(Z_2\) bajo dependencia temporal; por eso se usaron valores críticos simulados.
+
+**2.4 VaR con cobertura adaptativa (ACI).** \(\alpha_{t+1}=\alpha_t+\gamma(\alpha-\mathrm{err}_t)\), con \(\mathrm{err}_t=\mathbf 1\{L_t>\mathrm{VaR}_t(\alpha_t)\}\). Gibbs y Candès (2021) dan la cota \(\bigl|\tfrac1T\sum_t\mathrm{err}_t-\alpha\bigr|\le\dfrac{\max(\alpha_1,1-\alpha_1)+\gamma}{\gamma T}\) **sin supuestos distribucionales** [C, cota recordada, no verificada en el texto]. Es una garantía de cobertura de largo plazo, no condicional al régimen.
+
+**1.1 Cota inferior conformal para tiempo hasta evento con censura.** Datos \((Y_i,\delta_i,X_i)\) con \(Y_i=\min(T_i,C_i)\) y \(\delta_i=\mathbf 1\{T_i\le C_i\}\). Bajo censura independiente condicional a \(X\) y permutabilidad, Davidov et al. (2025) construyen \(\hat L(x)\) tal que \(\mathbb P(T\ge \hat L(X))\ge 1-\alpha\) con garantía **marginal**. *No verificado:* la forma exacta del puntaje y de los pesos IPCW, que están en el texto completo del artículo. La garantía condicional a \(X=x\) no se cumple en general y requiere ponderación por cambio de covariables (Tibshirani et al., 2019) [C].
+
+**3.3 Hawkes para llamadas de margen.** Intensidad \(\lambda_i(t)=\mu_i+\sum_j\int_0^{t}g_{ij}(t-s)\,dN_j(s)\), con núcleo exponencial \(g_{ij}(u)=\alpha_{ij}\beta e^{-\beta u}\). Verosimilitud \(\ell(\theta)=\sum_i\log\lambda_{k_i}(t_i)-\sum_i\int_0^T\lambda_i(s)\,ds\). Estacionariedad: radio de ramificación \(\rho(\alpha/\beta)<1\). Diagnóstico: residuos de Ogata. *No simulado en esta sesión.*
+
+**6.1 Proyección de Higham.** \(P(C)=\arg\min_{X\succeq0,\,\mathrm{diag}(X)=1}\|X-C\|_F\), calculada por proyecciones alternadas (Higham, 2002). Para la cartera \(L=\sum_i a_i\mathbf 1\{Z_i<\Phi^{-1}(PD_i)\}\), con \(Z\sim\mathcal N(0,C)\) y \(a_i=\mathrm{LGD}_i\mathrm{EAD}_i\): \(\mathbb E[L]=\sum_i a_i PD_i\) no depende de \(C\) (verificado numéricamente). La cola sí depende de \(C\). Resultado: la distorsión de la cola viene del error muestral de \(C\), no de la proyección.
+
+**Tabla de resultados de simulación**
+
+| Propuesta | Métrica | Resultado |
+|---|---|---|
+| 2.1 | Tamaño 5 % (Kupiec / Z2) | 0,037 / 0,050 |
+| 2.1 | Poder, colas t(4) (Kupiec / Z2) | 0,037 / 0,167 |
+| 2.4 | Tasa de excepción post-quiebre (estático / ACI) | 0,079 / 0,051 |
+| 6.1 | Δ cuantil 99,9 % con ruido de media cero, sin muestreo | −0,3 % a −0,1 % |
+| 6.1 | Δ cuantil 99,9 % con T=60 / 250 / 1000 | +15,4 % / +1,7 % / +0,4 % |
 
 ## Notas de verificación y limitaciones
 
