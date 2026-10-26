@@ -1,0 +1,175 @@
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.2
+[notice] To update, run: python -m pip install --upgrade pip
+All checks passed!
+Success: no issues found in 3 source files
+test_affine_covariance_and_control_residualization (test_confounding.ConfoundingTests.test_affine_covariance_and_control_residualization) ... ok
+test_bad_inputs_and_degeneracy (test_confounding.ConfoundingTests.test_bad_inputs_and_degeneracy) ... ok
+test_confusion_and_positive_effect_large_n (test_confounding.ConfoundingTests.test_confusion_and_positive_effect_large_n) ... ok
+test_independent_univariate_oracle (test_confounding.ConfoundingTests.test_independent_univariate_oracle) ... ok
+test_randomized_partial_regression_identity (test_confounding.ConfoundingTests.test_randomized_partial_regression_identity) ... ok
+test_reproducible_alignment_and_intervention (test_confounding.ConfoundingTests.test_reproducible_alignment_and_intervention) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.015s
+
+OK
+Name                 Stmts   Miss  Cover
+----------------------------------------
+src/confounding.py      74      0   100%
+----------------------------------------
+TOTAL                   74      0   100%
+Wrote JSON report to results/coverage.json
+{
+  "config": {
+    "seed": 20261025,
+    "sample_sizes": [
+      100,
+      500,
+      2000
+    ],
+    "replicates": 200,
+    "effects": [
+      0.0,
+      0.3
+    ],
+    "alpha": 0.05,
+    "loading_x": 0.8,
+    "loading_y": 0.8,
+    "noise_x_sd": 0.5,
+    "noise_y_sd": 0.5,
+    "proxy_noise_sd": 1.0,
+    "thresholds": {
+      "controlled_null_rejection_max": 0.1,
+      "controlled_power_min_at_n500": 0.8,
+      "controlled_bias_abs_max_at_n2000": 0.03
+    }
+  },
+  "regression_fits": 4800,
+  "independent_datasets": 1200,
+  "checks": {
+    "null_rejection_at_most_threshold": true,
+    "power_at_least_threshold_n500plus": true,
+    "bias_at_n2000_below_threshold": true
+  },
+  "omitted_population_slope_bias": 0.7191011235955056,
+  "proxy_population_slope_bias": 0.5614035087719299,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "hardware": "x86_64",
+  "selected_n500": [
+    {
+      "n": 500,
+      "effect": 0.0,
+      "method": "omitted",
+      "replicates": 200,
+      "rejection_rate": 1.0,
+      "mc_95_low": 0.9817246596448638,
+      "mc_95_high": 1,
+      "mean_slope": 0.7212384513537694,
+      "mean_bias_vs_structural": 0.7212384513537694,
+      "structural_ci_coverage": 0.0,
+      "median_seconds": 0.0006835925000245879,
+      "max_python_bytes": 47066
+    },
+    {
+      "n": 500,
+      "effect": 0.0,
+      "method": "observed_correct_lag",
+      "replicates": 200,
+      "rejection_rate": 0.045,
+      "mc_95_low": 0.020780422227004353,
+      "mc_95_high": 0.08370268807585404,
+      "mean_slope": -0.006266827561014102,
+      "mean_bias_vs_structural": -0.006266827561014102,
+      "structural_ci_coverage": 0.955,
+      "median_seconds": 0.0007074179999904118,
+      "max_python_bytes": 67267
+    },
+    {
+      "n": 500,
+      "effect": 0.0,
+      "method": "observed_wrong_lag",
+      "replicates": 200,
+      "rejection_rate": 1.0,
+      "mc_95_low": 0.9817246596448638,
+      "mc_95_high": 1,
+      "mean_slope": 0.7211119163580478,
+      "mean_bias_vs_structural": 0.7211119163580478,
+      "structural_ci_coverage": 0.0,
+      "median_seconds": 0.0007199669999522484,
+      "max_python_bytes": 67267
+    },
+    {
+      "n": 500,
+      "effect": 0.0,
+      "method": "noisy_proxy",
+      "replicates": 200,
+      "rejection_rate": 1.0,
+      "mc_95_low": 0.9817246596448638,
+      "mc_95_high": 1,
+      "mean_slope": 0.5569130988616614,
+      "mean_bias_vs_structural": 0.5569130988616614,
+      "structural_ci_coverage": 0.0,
+      "median_seconds": 0.0007096409999576281,
+      "max_python_bytes": 67267
+    },
+    {
+      "n": 500,
+      "effect": 0.3,
+      "method": "omitted",
+      "replicates": 200,
+      "rejection_rate": 1.0,
+      "mc_95_low": 0.9817246596448638,
+      "mc_95_high": 1,
+      "mean_slope": 1.020851398820747,
+      "mean_bias_vs_structural": 0.720851398820747,
+      "structural_ci_coverage": 0.0,
+      "median_seconds": 0.0006695915000136665,
+      "max_python_bytes": 47066
+    },
+    {
+      "n": 500,
+      "effect": 0.3,
+      "method": "observed_correct_lag",
+      "replicates": 200,
+      "rejection_rate": 1.0,
+      "mc_95_low": 0.9817246596448638,
+      "mc_95_high": 1,
+      "mean_slope": 0.3000801663211389,
+      "mean_bias_vs_structural": 8.01663211389092e-05,
+      "structural_ci_coverage": 0.96,
+      "median_seconds": 0.0006903974999659113,
+      "max_python_bytes": 67267
+    },
+    {
+      "n": 500,
+      "effect": 0.3,
+      "method": "observed_wrong_lag",
+      "replicates": 200,
+      "rejection_rate": 1.0,
+      "mc_95_low": 0.9817246596448638,
+      "mc_95_high": 1,
+      "mean_slope": 1.0208456645434019,
+      "mean_bias_vs_structural": 0.7208456645434018,
+      "structural_ci_coverage": 0.0,
+      "median_seconds": 0.0006893414999922243,
+      "max_python_bytes": 67267
+    },
+    {
+      "n": 500,
+      "effect": 0.3,
+      "method": "noisy_proxy",
+      "replicates": 200,
+      "rejection_rate": 1.0,
+      "mc_95_low": 0.9817246596448638,
+      "mc_95_high": 1,
+      "mean_slope": 0.8609644547516768,
+      "mean_bias_vs_structural": 0.5609644547516769,
+      "structural_ci_coverage": 0.0,
+      "median_seconds": 0.0006820810000363053,
+      "max_python_bytes": 67267
+    }
+  ]
+}
