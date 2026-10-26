@@ -1,0 +1,58 @@
+test_analytic_one_job (test_schedule.SchedulingTests.test_analytic_one_job) ... ok
+test_capacity_budget_dates (test_schedule.SchedulingTests.test_capacity_budget_dates) ... ok
+test_completion_before_start (test_schedule.SchedulingTests.test_completion_before_start) ... ok
+test_enumeration_guard (test_schedule.SchedulingTests.test_enumeration_guard) ... ok
+test_invalid (test_schedule.SchedulingTests.test_invalid) ... ok
+test_invariants (test_schedule.SchedulingTests.test_invariants) ... ok
+test_milp_oracle (test_schedule.SchedulingTests.test_milp_oracle) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 2.074s
+
+OK
+Name              Stmts   Miss  Cover
+-------------------------------------
+src/__init__.py       0      0   100%
+src/schedule.py      81      0   100%
+-------------------------------------
+TOTAL                81      0   100%
+All checks passed!
+Success: no issues found in 2 source files
+{
+  "exact": {
+    "starts": {
+      "platform": 1,
+      "analytics": 3,
+      "automation": 3,
+      "standalone": 0
+    },
+    "npv": 11.65596612253261,
+    "checked": 2500
+  },
+  "baseline": {
+    "starts": {
+      "standalone": 0,
+      "platform": 1,
+      "analytics": 3,
+      "automation": 3
+    },
+    "npv": 11.65596612253261,
+    "checked": 20
+  },
+  "increment": 0.0,
+  "dependency_relaxation": {
+    "starts": {
+      "analytics": 0,
+      "automation": 0,
+      "standalone": 1
+    },
+    "npv": 18.628099173553718,
+    "checked": 2500
+  },
+  "relaxed_schedule_feasible_original": false,
+  "seconds": 0.06543262900004265,
+  "python_peak_bytes": 2424,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+}
+Executed notebook.ipynb with rich outputs
