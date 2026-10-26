@@ -1,0 +1,26 @@
+min autovalor C_raw: -0.3382
+min autovalor C_higham: -3.30e-11
+dist Frobenius Higham vs crudo: 0.5729
+dist Frobenius Higham vs verdadera: 4.0983
+dist Frobenius eig-clip vs crudo: 0.6502
+verdadera (referencia)    E[L]=  1.5055  q99.9= 18.3257
+Higham                    E[L]=  1.5061  q99.9= 21.3322
+eig-clip                  E[L]=  1.5065  q99.9= 20.7993
+Diferencia cuantil Higham vs verdadera: +16.41 %
+Diferencia cuantil eig-clip vs Higham: -2.50 %
+
+# Error de Monte Carlo (5 semillas, M=300k)
+verdadera: media=18.289 sd=0.163
+Higham:    media=21.281 sd=0.114
+Diferencia relativa media Higham vs verdadera: +16.36 %
+
+# Sensibilidad al nivel de ruido pairwise
+ruido sd=0.04  min_eig_crudo=+0.034  dist_F(Higham,crudo)=0.000  q99.9 Higham vs verdadera=+15.53 %
+ruido sd=0.08  min_eig_crudo=-0.102  dist_F(Higham,crudo)=0.112  q99.9 Higham vs verdadera=+14.58 %
+ruido sd=0.12  min_eig_crudo=-0.298  dist_F(Higham,crudo)=0.418  q99.9 Higham vs verdadera=+14.37 %
+
+# Diagnostico: la distorsion viene del muestreo de la correlacion (T=60), no de la proyeccion
+min autovalor C_pair (muestral sin ruido): 1.10e-01
+T=   60  min_eig=+0.090  q99.9 muestral vs verdadera=-5.84 %
+T=  250  min_eig=+0.369  q99.9 muestral vs verdadera=+1.27 %
+T= 1000  min_eig=+0.523  q99.9 muestral vs verdadera=+4.89 %
