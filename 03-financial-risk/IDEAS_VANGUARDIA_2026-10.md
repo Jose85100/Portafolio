@@ -13,6 +13,8 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 ## 01 · Riesgo de crédito (`01-credit-risk`)
 
 ### 1.1 Intervalos de ECL con cobertura garantizada (conformal survival)
+
+**Tipo:** Nueva
 - **Hipótesis.** Los intervalos de pérdida lifetime pueden tener cobertura finita garantizada sin supuestos distribucionales fuertes.
 - **Método.** Análisis de supervivencia conformal para datos censurados a la derecha: dado un nivel \(\alpha\), construir \([L_{\text{low}}(x), L_{\text{up}}(x)]\) tal que \(P(T \in C(x)) \ge 1-\alpha\) bajo intercambiabilidad. Usar ponderación por probabilidad inversa de censura para el caso de censura general.
 - **Validación.** Cobertura empírica por estrato (no solo marginal) y ancho medio del intervalo. Comparar con el intervalo de Kaplan-Meier sin condicionar.
@@ -20,6 +22,8 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 - **Fuente.** Davidov et al., *Conformalized Survival Analysis for General Right-Censored Data*, ICLR 2025 [V].
 
 ### 1.2 Alerta temprana de quiebres en cosechas con BOCPD
+
+**Tipo:** Extensión de `fraud-and-anomaly-research/04-origination-process-anomalies` (método CUSUM, aplicado a cosechas)
 - **Hipótesis.** Un cambio en la tasa de mora de una cosecha se detecta antes que el DPD30 por encima de su umbral.
 - **Método.** Detección de puntos de cambio bayesiana en línea (Adams & MacKay, 2007) sobre la serie de mora por cosecha, con probabilidad posterior de *run length*.
 - **Validación.** Retardo medio de detección vs. falsas alarmas (ARL₀ y ARL₁) sobre datos sintéticos con cambios conocidos; luego sobre histórico.
@@ -27,6 +31,8 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 - **Fuente.** [C].
 
 ### 1.3 PD con procesos de Lévy-Ornstein-Uhlenbeck y saltos
+
+**Tipo:** Nueva
 - **Hipótesis.** Los saltos de calidad crediticia (choques macro abruptos) explican mejor la PD que un proceso gaussiano como el de Vasicek.
 - **Método.** Modelo de PD como función de un factor latente \(X_t\) con dinámica OU conducida por un proceso de Lévy (saltos), con calibración por máxima verosimilitud aproximada.
 - **Validación.** Comparar Vasicek y LOU-Lévy con BIC, prueba de calibración por cosecha y error de estimación de cola en el percentil 99,5 de pérdida.
@@ -34,6 +40,8 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 - **Fuente.** arXiv:2309.12384 [V].
 
 ### 1.4 Copulas con dependencia de cola alternativa y robustez por Wasserstein
+
+**Tipo:** Extensión de `credit-portfolio-strategy/copula-gaussiana-perdidas`
 - **Hipótesis.** La copula gaussiana subestima la pérdida conjunta de cola; una copula t o de Clayton con dependencia de cola superior da una pérdida de cola mayor.
 - **Método.** Comparar cópulas gaussiana, t y Clayton para la cartera. Robustez mediante optimización distribucionalmente robusta sobre una bola de Wasserstein alrededor de la cópula estimada (Esfahani & Kuhn, 2018) [C].
 - **Validación.** Pérdida al 99,9 % y dependencia de cola empírica (\(\lambda_U\)) con intervalos bootstrap. Prueba de la sensibilidad de la asignación de capital.
@@ -41,6 +49,8 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 - **Fuente.** [C].
 
 ### 1.5 Matriz de transición semi-Markov con tiempo de permanencia
+
+**Tipo:** Extensión de `credit-risk-products/matrices-de-transicion-roll-rates`
 - **Hipótesis.** Los roll rates son semi-Markov: la probabilidad de pasar de estado depende de cuánto tiempo se lleva en él, no solo del estado actual.
 - **Método.** Estimador de Aalen-Johansen para transiciones con tiempo de permanencia; comparar con la cadena de Markov en tiempo continuo.
 - **Validación.** Prueba de Markov (por ejemplo, test de Aalen-type sobre tiempos de permanencia) y error de predicción de saldos por estado a 12 meses.
@@ -48,6 +58,8 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 - **Fuente.** [C].
 
 ### 1.6 Auditoría de monotonía y equidad en scorecards con modelos de gradiente
+
+**Tipo:** Extensión de `credit-risk-products/scorecard-logistico-woe`
 - **Hipótesis.** Un modelo de gradiente con restricciones de monotonía iguala el Gini de la regresión logística sin violar la lógica de negocio ni introducir impacto dispar.
 - **Método.** Gradient boosting con restricciones monótonas por variable. Medir impacto dispar entre grupos protegidos sustitutos, con análisis de causalidad donde sea posible.
 - **Validación.** Gini, calibración por decil y prueba de la diferencia de Gini (DeLong). Métricas de equidad: impacto dispar y tasas de error por grupo.
@@ -59,6 +71,8 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 ## 02 · Riesgo de mercado y de modelo (`02-market-and-model-risk`)
 
 ### 2.1 Backtesting de Expected Shortfall con pruebas Z
+
+**Tipo:** Extensión de `02-market-and-model-risk/weighted-expected-shortfall-audit` (backtesting declarado pendiente)
 - **Hipótesis.** El ES puede validarse con pruebas de magnitud (no solo de conteo de excepciones), con potencia suficiente en muestras de 250 días.
 - **Método.** Pruebas Z de Acerbi & Székely (2014) sobre la distribución de pérdidas de excepción, junto con la prueba de Kupiec para VaR.
 - **Validación.** Potencia y tamaño (tipo I) por simulación Monte Carlo con colas t y sesgo de ES.
@@ -66,6 +80,8 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 - **Fuente.** [C]; relevante para el marco FRTB (cambio a ES) [V, búsqueda sobre FRTB].
 
 ### 2.2 Validación de modelos de IA generativa bajo SR 26-2
+
+**Tipo:** Extensión de `05-enterprise-risk-advisory/04-cyber-ai/ai-governance`
 - **Hipótesis.** Un marco de validación con desafiante (*challenger*), monitoreo de deriva y pruebas de robustez cubre los riesgos de un LLM usado en decisiones de riesgo.
 - **Método.** Matriz de riesgos del LLM: alucinación, deriva de datos y prompts, dependencia de proveedor. Pruebas: consistencia entre ejecuciones, pruebas adversarias y comparación contra un modelo estadístico de referencia.
 - **Validación.** Tasa de error sobre un conjunto de preguntas con respuesta verificada y estabilidad de la salida ante perturbaciones menores del prompt.
@@ -73,6 +89,8 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 - **Fuente.** Federal Reserve, carta SR 26-2, 17-abr-2026, que reemplaza SR 11-7 [V, sitio oficial de la Reserva Federal]. Aplica a bancos de más de 30 000 millones de dólares; la aplicabilidad a una entidad colombiana requiere análisis regulatorio propio.
 
 ### 2.3 Escenarios sintéticos con modelos generativos evaluados por hechos estilizados
+
+**Tipo:** Nueva
 - **Hipótesis.** Un generador de series (GAN temporal o modelo de difusión) produce escenarios de estrés que respetan los hechos estilizados (agrupamiento de volatilidad, colas pesadas, ausencia de autocorrelación en retornos).
 - **Método.** Entrenar TimeGAN (Yoon et al., 2019) o un modelo de difusión sobre retornos; evaluar con ACF de \(|r_t|\), índice de cola de Hill y pruebas de distribución.
 - **Validación.** Distancia de los hechos estilizados frente a la historia real y prueba de cobertura del VaR generado.
@@ -80,6 +98,8 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 - **Fuente.** [C].
 
 ### 2.4 VaR con cobertura adaptativa (conformal) bajo no estacionariedad
+
+**Tipo:** Nueva
 - **Hipótesis.** El VaR con cobertura adaptativa mantiene la tasa de excepciones objetivo aun con cambios de régimen.
 - **Método.** Inferencia conformal adaptativa (Gibbs & Candès, 2021), que actualiza el nivel de error \(\alpha_t\) según la excepción observada.
 - **Validación.** Tasa de excepciones frente a \(\alpha\) nominal, cobertura condicional por régimen y número de excepciones consecutivas.
@@ -87,6 +107,8 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 - **Fuente.** [C].
 
 ### 2.5 Riesgo de modelo como prima sobre familias GARCH
+
+**Tipo:** Extensión de `02-market-and-model-risk/garch-volatilidad-y-var`
 - **Hipótesis.** La diferencia de VaR entre GARCH, EGARCH y GJR-GARCH es una medida cuantificable del riesgo de modelo, y debe reportarse junto al VaR.
 - **Método.** Calcular VaR y ES con cada especificación; medir la dispersión (rango o desviación) y la prima de riesgo de modelo como el máximo de la diferencia.
 - **Validación.** Sobre datos sintéticos con la especificación conocida, verificar que la métrica identifica el modelo verdadero.
@@ -94,6 +116,8 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 - **Fuente.** [C].
 
 ### 2.6 Validación de PD con desafiante de gradiente y prueba de estabilidad de Gini
+
+**Tipo:** Extensión de `02-market-and-model-risk/validacion-de-modelo-psi-gini`
 - **Hipótesis.** La diferencia de Gini entre campeón (logística) y desafiante (gradiente) es estadísticamente significativa solo en algunas cosechas.
 - **Método.** Bootstrap por cosecha del diferencial de Gini; prueba de estabilidad de PSI por ventana móvil.
 - **Validación.** Intervalos de confianza del diferencial y consistencia entre ventanas.
@@ -105,6 +129,8 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 ## 03 · Liquidez y riesgo de mercado (`03-market-liquidity-research`)
 
 ### 3.1 Regiones de insolvencia con liquidez y crédito acoplados (HJB)
+
+**Tipo:** Nueva
 - **Hipótesis.** La insolvencia ocurre en regiones no lineales del espacio (liquidez, crédito), y el efecto conjunto es mayor que la suma de los efectos individuales.
 - **Método.** Control óptimo estocástico con ecuación de Hamilton-Jacobi-Bellman y un modelo acoplado de liquidez (LCR/NSFR de Basilea III) y crédito.
 - **Validación.** Trayectorias de la región de insolvencia frente a combinaciones de estrés; sensibilidad a parámetros; comparación con pruebas de estrés estándar.
@@ -112,6 +138,8 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 - **Fuente.** arXiv:2607.17381, "Determining Insolvency Regions in Banks" [V].
 
 ### 3.2 Liquidity-adjusted VaR con impacto de mercado
+
+**Tipo:** Extensión de `03-market-liquidity-research/05_OPTIMIZACION_LIQUIDEZ.md` (costos de liquidación)
 - **Hipótesis.** El VaR debe ajustarse por el costo de salir de la posición, que depende del tamaño y del horizonte de liquidación.
 - **Método.** Costo de liquidación con impacto temporal y permanente tipo Almgren-Chriss (2000) [C]; VaR ajustado con horizonte igual al tiempo de liquidación.
 - **Validación.** Sensibilidad del LVaR al tamaño de la posición y a la tasa de liquidación.
@@ -119,6 +147,8 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 - **Fuente.** [C] (Bangia et al., 1999, es el antecedente clásico de LVaR).
 
 ### 3.3 Contagio de *margin calls* con procesos de Hawkes
+
+**Tipo:** Nueva
 - **Hipótesis.** Las ventas forzadas se auto-excitan: una venta eleva la probabilidad de la siguiente en un período corto.
 - **Método.** Proceso de Hawkes multivariado para eventos de llamadas de margen, con intensidad \(\lambda_i(t)=\mu_i+\sum_j \int g_{ij}(t-s)\,dN_j(s)\). Calibración por máxima verosimilitud.
 - **Validación.** Prueba de bondad de ajuste (residuos de Ogata) y predicción de la cola de la intensidad.
@@ -126,6 +156,8 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 - **Fuente.** [C].
 
 ### 3.4 Resiliencia del libro de órdenes como medida de liquidez
+
+**Tipo:** Nueva
 - **Hipótesis.** La resiliencia (velocidad de recuperación de la profundidad del libro tras una orden grande) es un predictor de liquidez más robusto que el diferencial.
 - **Método.** Estimar la resiliencia con el modelo de decaimiento del impacto de orden de Bouchaud; compararla con la profundidad y el diferencial.
 - **Validación.** Correlación con el costo de ejecución realizado en datos de libro de órdenes.
@@ -133,6 +165,8 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 - **Fuente.** arXiv:2607.16970, "Herding and Liquidity in Order-Book Markets. II" [V, como lectura de punto de partida].
 
 ### 3.5 CVaR con optimización distribucionalmente robusta y costos de liquidación
+
+**Tipo:** Extensión de `03-market-liquidity-research/05_OPTIMIZACION_LIQUIDEZ.md` (CVaR con costos)
 - **Hipótesis.** Optimizar el CVaR con el conjunto de incertidumbre de Wasserstein es más estable que el CVaR con muestra histórica cuando hay pocas observaciones de cola.
 - **Método.** Programa DRO: \(\min_w \sup_{Q:\,W_p(Q,\hat P)\le\varepsilon}\mathrm{CVaR}_\alpha^Q(w^\top R - c(w))\). Con costos lineales por tramos.
 - **Validación.** Estabilidad de los pesos frente a remuestreo y pérdida fuera de muestra.
@@ -140,6 +174,8 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 - **Fuente.** Rockafellar & Uryasev (2000) para CVaR [C]; Esfahani & Kuhn (2018) para Wasserstein [C].
 
 ### 3.6 Alerta temprana de estrés de liquidez con causalidad
+
+**Tipo:** Nueva
 - **Hipótesis.** Un modelo de aprendizaje automático con interpretación causal identifica mejor los valles de mercado que la correlación simple.
 - **Método.** Aprendizaje automático con validación por tiempos de rezago y estimación causal de efectos (por ejemplo, doble aprendizaje automático, Chernozhukov et al., 2018) [C].
 - **Validación.** Predicción fuera de muestra con ventanas temporales y pruebas de robustez a la omisión de variables.
@@ -153,6 +189,8 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 
 ### 4.1 Efectos heterogéneos de la política de aprobación con bosques causales
+
+**Tipo:** Extensión de `04-advanced-research/01-causal-origination-policy`
 - **Hipótesis.** El efecto causal de aprobar un crédito varía por segmento, y un bosque causal lo estima con mejor precisión que un modelo de respuesta.
 - **Método.** Bosques causales (Wager & Athey, 2018) [C] con doble aprendizaje automático para el efecto de tratamiento; restricción de equidad en la asignación.
 - **Validación.** Curva de calibración del efecto (*calibration of CATE*) y evaluación de la política con estimador doblemente robusto.
@@ -160,6 +198,8 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 - **Fuente.** Relacionado con la literatura de aprendizaje automático causal aplicado a límites de crédito (arXiv:2508.02183) [V].
 
 ### 4.2 Detección de regímenes en el gemelo digital con cambio de estado oculto
+
+**Tipo:** Extensión de `04-advanced-research/02-nonstationary-credit-digital-twin`
 - **Hipótesis.** Un modelo de Markov oculto con dos o tres regímenes detecta la transición de estabilidad a fragilidad antes que los indicadores de cosecha.
 - **Método.** Modelo de Markov oculto con emisiones gaussianas o de Student-t; selección de número de regímenes por BIC o validación cruzada de verosimilitud.
 - **Validación.** Probabilidad de régimen fragil frente a choques conocidos en simulación.
@@ -167,6 +207,8 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 - **Fuente.** [C].
 
 ### 4.3 Política de cobranza con RL fuera de línea y evaluación off-policy
+
+**Tipo:** Extensión de `04-advanced-research/03-collections-dynamic-treatment-regimes`
 - **Hipótesis.** Una política de cobranza aprendida de datos históricos puede superar a la regla actual, con evaluación confiable fuera de línea.
 - **Método.** Aprendizaje por refuerzo fuera de línea (Q-learning conservador) y evaluación off-policy con estimador doblemente robusto.
 - **Validación.** Estimación del valor de la política en datos retenidos; sensibilidad a la cobertura de exploración.
@@ -174,6 +216,8 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 - **Fuente.** [C].
 
 ### 4.4 Staging SICR con conformal para la clasificación de etapa
+
+**Tipo:** Extensión de `04-advanced-research/04-ifrs9-forward-looking-ecl`
 - **Hipótesis.** Un umbral de SICR basado en un intervalo conformal de PD es más estable que un umbral puntual.
 - **Método.** Intervalo conformal de PD por cartera; cambio de etapa cuando el límite inferior supera el umbral.
 - **Validación.** Frecuencia de cambios de etapa y estabilidad temporal (flip rate).
@@ -181,6 +225,8 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 - **Fuente.** Vinculado a conformal survival (Davidov et al., 2025) [V].
 
 ### 4.5 Contagio con algoritmo de clearing de Eisenberg-Noe
+
+**Tipo:** Extensión de `04-advanced-research/05-siar-integrated-risk-contagion`
 - **Hipótesis.** La red de exposiciones interbancarias amplifica pérdidas más allá de los choques directos; el efecto se cuantifica con el algoritmo de pago de Eisenberg-Noe (2001) [C].
 - **Método.** Simulación de choques sobre la red con el algoritmo de punto fijo de pagos; medir el multiplicador de pérdida.
 - **Validación.** Pruebas de estrés por nodo y sensibilidad a la estructura de la red.
@@ -188,6 +234,8 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 - **Fuente.** [C].
 
 ### 4.6 Control de cartera con restricción de capital (proceso de decisión restringido)
+
+**Tipo:** Extensión de `04-advanced-research/07-capital-constrained-portfolio-control`
 - **Hipótesis.** La asignación de originación bajo restricción de capital y provisión se resuelve con un proceso de decisión de Markov restringido por multiplicadores de Lagrange.
 - **Método.** Programa de Lagrange: \(\max_\pi\,\mathbb{E}[\sum_t \gamma^t r_t]\) sujeto a \(\mathbb{E}[\sum_t \gamma^t c_t]\le b\).
 - **Validación.** Cumplimiento de la restricción de capital fuera de muestra y brecha de dualidad.
@@ -199,6 +247,8 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 ## 05 · Enterprise Risk Advisory (`05-enterprise-risk-advisory`)
 
 ### 5.1 Brecha de MRM frente a SR 26-2 como herramienta de consultoría
+
+**Tipo:** Extensión de `05-enterprise-risk-advisory/04-cyber-ai/ai-governance`
 - **Hipótesis.** Un inventario de controles que mapea cada requisito de la guía de MRM (SR 26-2) a evidencia verificable reduce hallazgos de auditoría.
 - **Método.** Matriz requisito → control → evidencia → prueba; priorizar brechas por severidad.
 - **Validación.** Concordancia entre evaluadores independientes y hallazgos en auditoría simulada.
@@ -206,6 +256,8 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 - **Fuente.** Federal Reserve, SR 26-2 [V].
 
 ### 5.2 Carga de cola operacional con umbral bayesiano
+
+**Tipo:** Extensión de `05-enterprise-risk-advisory/03-operational-resilience/operational-extreme-tail`
 - **Hipótesis.** La selección del umbral en la teoría de valores extremos (POT) es la fuente principal de incertidumbre en la pérdida operacional de cola, y debe modelarse explícitamente.
 - **Método.** Umbral como parámetro con prior; distribución posterior del cuantil 99,9 % promediando sobre el umbral.
 - **Validación.** Cobertura de intervalos de cuantil en simulación con cola conocida.
@@ -213,6 +265,8 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 - **Fuente.** Pickands (1975) y McNeil & Frey (2000) [C].
 
 ### 5.3 XVA con aprendizaje diferencial para sensibilidades
+
+**Tipo:** Extensión de `05-enterprise-risk-advisory/07-valuation-counterparty/xva`
 - **Hipótesis.** Un modelo de red neuronal entrenado con gradientes (aprendizaje diferencial, Huge & Savine, 2020) reduce el costo computacional de XVA y sus sensibilidades.
 - **Método.** Entrenar la red sobre valores y derivadas de la exposición; calcular CVA y sensibilidades.
 - **Validación.** Error de CVA frente a Monte Carlo completo y error de sensibilidades.
@@ -220,6 +274,8 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 - **Fuente.** [C].
 
 ### 5.4 Evaluación de LLM para clasificación de incidentes con métricas de calibración
+
+**Tipo:** Extensión de `01-credit-risk/fraud-and-anomaly-research/ai-enabled-fraud-defense` (uso de LLM)
 - **Hipótesis.** Un LLM clasifica incidentes operacionales con precisión comparable a un revisor humano, y sus probabilidades pueden calibrarse.
 - **Método.** Clasificación con LLM y calibración con regresión isotónica o escalamiento de temperatura; revisión humana sobre una muestra estratificada.
 - **Validación.** Concordancia (kappa de Cohen) con revisores humanos y error de calibración esperado (ECE).
@@ -227,6 +283,8 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 - **Fuente.** SR 26-2 como marco de gobierno de IA [V].
 
 ### 5.5 Pruebas de robustez para control continuo con conformal
+
+**Tipo:** Extensión de `05-enterprise-risk-advisory/08-assurance-risk-data/continuous-controls`
 - **Hipótesis.** Un control continuo con intervalos conformales de anomalía tiene una tasa de falsas alarmas controlada.
 - **Método.** Puntajes conformales sobre residuos de control; umbral por cuantil de calibración.
 - **Validación.** Tasa de falsas alarmas empírica frente a la nominal y potencia ante anomalías inyectadas.
@@ -234,6 +292,8 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 - **Fuente.** [C].
 
 ### 5.6 Priorización de alertas de AML con probabilidades calibradas y costo asimétrico
+
+**Tipo:** Extensión de `05-enterprise-risk-advisory/05-financial-crime/aml-alert-prioritization`
 - **Hipótesis.** Un umbral de alerta optimizado con costo asimétrico (falso negativo mucho más caro) reduce pérdidas sin aumentar la carga operativa.
 - **Método.** Probabilidad calibrada de alerta y umbral que minimiza el costo esperado \(C_{FN}\cdot FN + C_{FP}\cdot FP\).
 - **Validación.** Curva de costo frente a umbral y pruebas por cohorte.
@@ -245,6 +305,8 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 ## 06 · Motor de investigación cuantitativa (`06-quantitative-research-engine`)
 
 ### 6.1 Verificación de la matriz de correlación con proyección al cono PSD
+
+**Tipo:** Extensión de `06-quantitative-research-engine` (verificación PSD declarada pendiente)
 - **Hipótesis.** La matriz de correlación estimada se puede corregir al cono de semidefinidas positivas con la mínima distorsión (proyección de Higham, 2002), y el riesgo cambia poco.
 - **Método.** Proyección de Higham sobre la matriz de covarianza; medir la distancia de Frobenius y el cambio en la varianza de pérdida.
 - **Validación.** Cambio en la pérdida al 99 % frente a la distancia de proyección.
@@ -252,6 +314,8 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 - **Fuente.** Higham (2002) [C].
 
 ### 6.2 Monte Carlo multinivel para la cola de pérdida
+
+**Tipo:** Nueva
 - **Hipótesis.** El Monte Carlo multinivel (Giles, 2008) reduce el costo de estimar cuantiles de cola para un nivel de error dado.
 - **Método.** Estimadores de nivel con discretización de pasos finos y gruesos sobre la dinámica de factores.
 - **Validación.** Costo versus error frente a Monte Carlo estándar.
@@ -259,6 +323,8 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 - **Fuente.** Giles (2008) [C].
 
 ### 6.3 Muestreo por importancia con factor condicional para eventos raros
+
+**Tipo:** Extensión de `01-credit-risk/credit-portfolio-strategy/discrete-credit-tail-audit`
 - **Hipótesis.** El muestreo por importancia con desplazamiento del factor común (Glasserman & Li, 2005) reduce la varianza del estimador de pérdida extrema.
 - **Método.** Desplazar la media del factor latente hacia la región de pérdida alta, con pesos de verosimilitud.
 - **Validación.** Varianza del estimador frente a Monte Carlo ingenuo y cobertura del intervalo.
@@ -266,6 +332,8 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 - **Fuente.** Glasserman & Li (2005) [C].
 
 ### 6.4 Secuencias cuasi-Monte Carlo con aleatorización de Owen
+
+**Tipo:** Nueva
 - **Hipótesis.** Las secuencias de Sobol con aleatorización de Owen dan errores de cuantil menores que el Monte Carlo para la misma muestra.
 - **Método.** Sobol aleatorizado (Owen) con repeticiones independientes para estimar el error.
 - **Validación.** Error del cuantil frente al número de muestras y comparación con Monte Carlo puro.
@@ -273,6 +341,8 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 - **Fuente.** Owen (1998) [C].
 
 ### 6.5 Pruebas de paridad Python-C++ basadas en propiedades
+
+**Tipo:** Extensión de `02-market-and-model-risk/weighted-tail-underflow-guard/tests`
 - **Hipótesis.** Las pruebas basadas en propiedades (invariantes del motor) detectan discrepancias entre Python y C++ que las pruebas de casos fijos no detectan.
 - **Método.** Generar entradas aleatorias con reglas de propiedad (monotonía de la pérdida frente a PD, linealidad de E[L]) y comparar salidas.
 - **Validación.** Número de discrepancias encontradas frente a pruebas fijas existentes.
@@ -280,6 +350,8 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 - **Fuente.** [C].
 
 ### 6.6 Diferenciación automática para sensibilidades de capital
+
+**Tipo:** Nueva
 - **Hipótesis.** La diferenciación automática da sensibilidades de capital (Euler) exactas y más rápidas que diferencias finitas.
 - **Método.** Diferenciación automática sobre el estimador de pérdida y asignación de Euler; validación contra diferencias finitas con paso controlado.
 - **Validación.** Error relativo de la sensibilidad frente a diferencias finitas.
@@ -291,6 +363,8 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 ## 07 · Riesgo financiero y de construcción (`07-financial-and-construction-risk-lab`)
 
 ### 7.1 Simulación de cronograma y costo con dependencia por cópula
+
+**Tipo:** Extensión de `07-financial-and-construction-risk-lab/02-construction-enterprise-risk/02-schedule-cost-overrun`
 - **Hipótesis.** Modelar las duraciones de actividades con dependencia por cópula, y no como independientes, cambia la distribución del retraso total y del costo.
 - **Método.** Red de actividades con duraciones correlacionadas por cópula gaussiana o t; ruta crítica en cada simulación.
 - **Validación.** Diferencia entre el retraso con independencia y con dependencia; sensibilidad a la correlación.
@@ -298,6 +372,8 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 - **Fuente.** [C].
 
 ### 7.2 Regresión de cuantiles con bosques para costos de proyecto
+
+**Tipo:** Nueva
 - **Hipótesis.** Los bosques de cuantiles estiman el costo final con intervalos calibrados mejor que un modelo lineal con varianza constante.
 - **Método.** Bosques de regresión por cuantiles (Meinshausen, 2006) [C].
 - **Validación.** Cobertura de los intervalos por tipo de proyecto y ancho medio.
@@ -305,6 +381,8 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 - **Fuente.** [C].
 
 ### 7.3 Modelo de factores dinámicos para índices de costo de materiales
+
+**Tipo:** Extensión de `07-financial-and-construction-risk-lab/03-research-in-progress/04-bayesian-construction-nowcasting`
 - **Hipótesis.** Un modelo de factores dinámicos con datos mensuales de precios de insumos mejora el pronóstico de inflación de costos de construcción.
 - **Método.** Factores dinámicos (Giannone et al., 2008, para nowcasting) con datos mensuales y rezagos mixtos (MIDAS).
 - **Validación.** Error de pronóstico fuera de muestra frente a un modelo univariado y a un paseo aleatorio.
@@ -312,6 +390,8 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 - **Fuente.** [C].
 
 ### 7.4 Alerta temprana de sobrecostos con regla de parada en línea
+
+**Tipo:** Extensión del método CUSUM de `01-credit-risk/fraud-and-anomaly-research/04-origination-process-anomalies`, aplicado a construcción
 - **Hipótesis.** Una regla de parada secuencial (CUSUM) detecta el sobrecosto antes que el control mensual de avance.
 - **Método.** CUSUM sobre la diferencia entre costo real y costo planeado ajustado por avance; calibrar la alarma con ARL.
 - **Validación.** ARL₀ y ARL₁ frente a sobrecostos inyectados.
@@ -319,6 +399,8 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 - **Fuente.** [C].
 
 ### 7.5 Impacto de la liquidez del promotor sobre el riesgo de construcción
+
+**Tipo:** Extensión de `07-financial-and-construction-risk-lab/03-research-in-progress/05-network-contagion-contractors`
 - **Hipótesis.** La probabilidad de incumplimiento del contratista depende de la liquidez del promotor. Ese vínculo se cuantifica con un modelo de contagio entre contratista y promotor.
 - **Método.** Modelo de dos nodos con choques correlacionados y transferencia de pérdida por exposición; la estimación se hace con datos de pagos.
 - **Validación.** Pérdida conjunta en simulación frente al caso sin contagio.
@@ -326,6 +408,8 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 - **Fuente.** [C].
 
 ### 7.6 Valor de la flexibilidad (opciones reales) con aprendizaje por regresión
+
+**Tipo:** Extensión de `07-financial-and-construction-risk-lab/03-research-in-progress/07-real-options-staged-development`
 - **Hipótesis.** El valor de la opción de etapificar un proyecto se estima con la regresión de Longstaff-Schwartz (2001) con un error de aproximación menor que el de la cota inferior simple.
 - **Método.** Método de mínimos cuadrados de Monte Carlo para la opción de posponer o abandonar; comparar con árbol binomial.
 - **Validación.** Convergencia con el número de trayectorias y comparación con el árbol.
@@ -346,54 +430,54 @@ Estas ideas complementan los siete proyectos existentes sin duplicarlos.
 
 ## Revisión de solapamientos con el repositorio
 
-**Criterio:** Nueva = no hay trabajo equivalente en el repositorio. Gap explícito = el propio repositorio declara la limitación. Parcial = hay un proyecto cercano que cubre parte de la idea. Duplicada = el mismo problema ya tiene proyecto.
+**Criterio:** Nueva = no hay trabajo equivalente en el repositorio. Extensión = la idea se solapa con un proyecto existente y se presenta como extensión de ese proyecto, no como proyecto aparte.
 
-**Resumen:** 12 nuevas, 2 gaps explícitos, 5 duplicadas y 23 parciales. Las duplicadas deben integrarse como método en el proyecto existente, no como proyecto aparte.
+**Resumen:** 12 nuevas y 30 extensiones de proyectos existentes. Las extensiones se identifican en cada idea con la ruta del proyecto que amplían.
 
-| # | Idea | Estado | Referencia en el repositorio |
+| # | Idea | Tipo | Referencia en el repositorio |
 |---|---|---|---|
 | 1.1 | Conformal survival para ECL | Nueva | El conformal solo aparece en KYC (`channel-conformal-audit`) |
-| 1.2 | BOCPD para cosechas | Parcial | CUSUM en `fraud-and-anomaly-research/04-origination-process-anomalies` |
+| 1.2 | BOCPD para cosechas | Extensión | CUSUM en `fraud-and-anomaly-research/04-origination-process-anomalies` |
 | 1.3 | PD con Lévy-OU | Nueva | Sin referencias |
-| 1.4 | Cópulas t/Clayton y Wasserstein | Parcial | `credit-portfolio-strategy/copula-gaussiana-perdidas` |
-| 1.5 | Semi-Markov en roll rates | Parcial | `credit-risk-products/matrices-de-transicion-roll-rates` (Markov) |
-| 1.6 | Monotonía en GBM y equidad | Parcial | `scorecard-logistico-woe` ya fuerza monotonía en WoE; sin equidad |
-| 2.1 | Backtesting de ES (Acerbi–Székely) | **Gap explícito** | `weighted-expected-shortfall-audit`: "no se ejecuta backtesting Acerbi–Szekely" |
-| 2.2 | Validación de IA generativa (SR 26-2) | Parcial | `05/04-cyber-ai/ai-governance`; el repositorio no cita SR 11-7 ni SR 26-2 |
+| 1.4 | Cópulas t/Clayton y Wasserstein | Extensión | `credit-portfolio-strategy/copula-gaussiana-perdidas` |
+| 1.5 | Semi-Markov en roll rates | Extensión | `credit-risk-products/matrices-de-transicion-roll-rates` (Markov) |
+| 1.6 | Monotonía en GBM y equidad | Extensión | `scorecard-logistico-woe` ya fuerza monotonía en WoE; sin equidad |
+| 2.1 | Backtesting de ES (Acerbi–Székely) | Extensión (gap declarado) | `weighted-expected-shortfall-audit`: "no se ejecuta backtesting Acerbi–Szekely" |
+| 2.2 | Validación de IA generativa (SR 26-2) | Extensión | `05/04-cyber-ai/ai-governance`; el repositorio no cita SR 11-7 ni SR 26-2 |
 | 2.3 | Escenarios con modelos generativos | Nueva | Sin referencias |
 | 2.4 | VaR con cobertura adaptativa | Nueva | Sin referencias |
-| 2.5 | Riesgo de modelo entre familias GARCH | Parcial | `garch-volatilidad-y-var` (solo GARCH(1,1)) |
-| 2.6 | Bootstrap de diferencial de Gini | Parcial | `validacion-de-modelo-psi-gini` |
+| 2.5 | Riesgo de modelo entre familias GARCH | Extensión | `garch-volatilidad-y-var` (solo GARCH(1,1)) |
+| 2.6 | Bootstrap de diferencial de Gini | Extensión | `validacion-de-modelo-psi-gini` |
 | 3.1 | Regiones de insolvencia con HJB | Nueva | `03_LIQUIDEZ_ESTOCASTICA.md` discute déficit, sin control óptimo |
-| 3.2 | LVaR con impacto | Parcial | `05_OPTIMIZACION_LIQUIDEZ.md` tiene costo de liquidación |
+| 3.2 | LVaR con impacto | Extensión | `05_OPTIMIZACION_LIQUIDEZ.md` tiene costo de liquidación |
 | 3.3 | Hawkes en margin calls | Nueva | `04_ESPIRALES_LIQUIDEZ.md` usa impacto lineal sin autoexcitación |
 | 3.4 | Resiliencia del libro de órdenes | Nueva | Sin referencias |
-| 3.5 | CVaR con DRO | Parcial | `05_OPTIMIZACION_LIQUIDEZ.md` (CVaR con costos); DRO es nuevo |
+| 3.5 | CVaR con DRO | Extensión | `05_OPTIMIZACION_LIQUIDEZ.md` (CVaR con costos); DRO es nuevo |
 | 3.6 | ML causal para valles de mercado | Nueva | Sin referencias en mercado |
-| 4.1 | Bosques causales para aprobación | **Duplicada** | `04-advanced-research/01-causal-origination-policy` |
-| 4.2 | HMM para regímenes | Parcial | `04-advanced-research/02-nonstationary-credit-digital-twin` (método alternativo) |
-| 4.3 | RL offline para cobranza | **Duplicada** | `04-advanced-research/03-collections-dynamic-treatment-regimes` (mismo marco) |
-| 4.4 | SICR con conformal | Parcial | `04-advanced-research/04-ifrs9-forward-looking-ecl` |
-| 4.5 | Eisenberg–Noe | Parcial | `03/04_ESPIRALES_LIQUIDEZ.md` la menciona; `04-advanced-research/05-siar` |
-| 4.6 | Control con CMDP y Lagrange | **Duplicada** | `04-advanced-research/07-capital-constrained-portfolio-control` |
-| 5.1 | Brecha de MRM frente a SR 26-2 | Parcial | `04-cyber-ai/ai-governance`; sin SR 11-7 en el repositorio |
-| 5.2 | Umbral bayesiano en POT | Parcial | `03-operational-resilience/operational-extreme-tail` (sin prior sobre el umbral) |
-| 5.3 | XVA con aprendizaje diferencial | Parcial | `07-valuation-counterparty/xva` (sin diferencial) |
-| 5.4 | LLM para incidentes operacionales | Parcial | `fraud-and-anomaly-research/ai-enabled-fraud-defense` (LLM en fraude) |
-| 5.5 | Control continuo con conformal | Parcial | `08-assurance-risk-data/continuous-controls` |
-| 5.6 | Alertas AML con costo asimétrico | Parcial (probable solapamiento alto) | `05-financial-crime/aml-alert-prioritization` (verificar contenido) |
-| 6.1 | Proyección de Higham a PSD | **Gap explícito** | README del motor: "no certifica que C sea PSD" |
+| 4.1 | Bosques causales para aprobación | Extensión | `04-advanced-research/01-causal-origination-policy` |
+| 4.2 | HMM para regímenes | Extensión | `04-advanced-research/02-nonstationary-credit-digital-twin` (método alternativo) |
+| 4.3 | RL offline para cobranza | Extensión | `04-advanced-research/03-collections-dynamic-treatment-regimes` (mismo marco) |
+| 4.4 | SICR con conformal | Extensión | `04-advanced-research/04-ifrs9-forward-looking-ecl` |
+| 4.5 | Eisenberg–Noe | Extensión | `03/04_ESPIRALES_LIQUIDEZ.md` la menciona; `04-advanced-research/05-siar` |
+| 4.6 | Control con CMDP y Lagrange | Extensión | `04-advanced-research/07-capital-constrained-portfolio-control` |
+| 5.1 | Brecha de MRM frente a SR 26-2 | Extensión | `04-cyber-ai/ai-governance`; sin SR 11-7 en el repositorio |
+| 5.2 | Umbral bayesiano en POT | Extensión | `03-operational-resilience/operational-extreme-tail` (sin prior sobre el umbral) |
+| 5.3 | XVA con aprendizaje diferencial | Extensión | `07-valuation-counterparty/xva` (sin diferencial) |
+| 5.4 | LLM para incidentes operacionales | Extensión | `fraud-and-anomaly-research/ai-enabled-fraud-defense` (LLM en fraude) |
+| 5.5 | Control continuo con conformal | Extensión | `08-assurance-risk-data/continuous-controls` |
+| 5.6 | Alertas AML con costo asimétrico | Extensión (verificar) | `05-financial-crime/aml-alert-prioritization` (verificar contenido) |
+| 6.1 | Proyección de Higham a PSD | Extensión (gap declarado) | README del motor: "no certifica que C sea PSD" |
 | 6.2 | Monte Carlo multinivel | Nueva | Sin referencias |
-| 6.3 | Muestreo por importancia | Parcial | `discrete-credit-tail-audit` (verificar implementación) |
+| 6.3 | Muestreo por importancia | Extensión | `discrete-credit-tail-audit` (verificar implementación) |
 | 6.4 | Sobol con aleatorización de Owen | Nueva | Sin referencias |
-| 6.5 | Pruebas de propiedades y paridad | Parcial | `weighted-tail-underflow-guard/tests` |
+| 6.5 | Pruebas de propiedades y paridad | Extensión | `weighted-tail-underflow-guard/tests` |
 | 6.6 | Diferenciación automática | Nueva | Sin referencias |
-| 7.1 | Cronograma con cópula | Parcial | `02-construction-enterprise-risk/02-schedule-cost-overrun` |
+| 7.1 | Cronograma con cópula | Extensión | `02-construction-enterprise-risk/02-schedule-cost-overrun` |
 | 7.2 | Bosques de cuantiles para costos | Nueva | Sin referencias en construcción |
-| 7.3 | Factores dinámicos y MIDAS | Parcial | `03-research-in-progress/04-bayesian-construction-nowcasting`; `06-materials-inflation` |
-| 7.4 | CUSUM para sobrecostos | Parcial | CUSUM solo en fraude; no en construcción |
-| 7.5 | Contagio promotor-contratista | **Duplicada** | `03-research-in-progress/05-network-contagion-contractors`, `06-construction-network-contagion`, `02/04-contractor-counterparty-risk` |
-| 7.6 | Opciones reales con LSM | **Duplicada** | `03-research-in-progress/07-real-options-staged-development` |
+| 7.3 | Factores dinámicos y MIDAS | Extensión | `03-research-in-progress/04-bayesian-construction-nowcasting`; `06-materials-inflation` |
+| 7.4 | CUSUM para sobrecostos | Extensión | CUSUM solo en fraude; no en construcción |
+| 7.5 | Contagio promotor-contratista | Extensión | `03-research-in-progress/05-network-contagion-contractors`, `06-construction-network-contagion`, `02/04-contractor-counterparty-risk` |
+| 7.6 | Opciones reales con LSM | Extensión | `03-research-in-progress/07-real-options-staged-development` |
 
 ### Prioridad sugerida tras la revisión
 1. **2.1 (backtesting de ES):** gap declarado por el propio repositorio, con literatura conocida.
