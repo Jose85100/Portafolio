@@ -1,0 +1,115 @@
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.2
+[notice] To update, run: python -m pip install --upgrade pip
+test_anchor (test_screening.ScreeningTests.test_anchor) ... ok
+test_contracts (test_screening.ScreeningTests.test_contracts) ... ok
+test_exclusion_region (test_screening.ScreeningTests.test_exclusion_region) ... ok
+test_failure_paths_and_invalid_preferences (test_screening.ScreeningTests.test_failure_paths_and_invalid_preferences) ... ok
+test_first_best_without_ic_fails (test_screening.ScreeningTests.test_first_best_without_ic_fails) ... ok
+test_grid_properties_and_qp (test_screening.ScreeningTests.test_grid_properties_and_qp) ... ok
+test_strict_implementation_and_misspecification (test_screening.ScreeningTests.test_strict_implementation_and_misspecification) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.293s
+
+OK
+Name               Stmts   Miss  Cover
+--------------------------------------
+src/screening.py      80      0   100%
+--------------------------------------
+TOTAL                 80      0   100%
+All checks passed!
+Success: no issues found in 3 source files
+{
+  "config": {
+    "seed": 20261026,
+    "anchor": {
+      "low": 1,
+      "high": 2,
+      "p": 0.2,
+      "cost": 1
+    },
+    "probabilities": [
+      0.05,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.49,
+      0.5,
+      0.7,
+      0.9
+    ],
+    "costs": [
+      0.5,
+      1,
+      2
+    ],
+    "type_pairs": [
+      [
+        1,
+        2
+      ],
+      [
+        0.8,
+        2
+      ],
+      [
+        1,
+        1.5
+      ]
+    ],
+    "epsilon": 1e-06,
+    "solver_tolerance": 1e-07,
+    "hypothesis": "Anchor strict menu profit >=1.2*best uniform; IC/IR slack >=-1e-8; QP profit gap<=1e-7 on declared grid. No universal gain claimed.",
+    "stress_true_low": 0.8
+  },
+  "anchor": {
+    "weak_menu": [
+      0.75,
+      2.0,
+      0.75,
+      3.25
+    ],
+    "strict_menu": [
+      0.75,
+      2.0,
+      0.749999,
+      3.249998
+    ],
+    "weak_profit_truthful": 0.625,
+    "strict_profit": 0.6249988,
+    "uniform_type": "pooling",
+    "uniform_profit": 0.5,
+    "uniform_strict_profit": 0.499999,
+    "weak_adverse_tie_profit": 0.09375,
+    "strict_adverse_tie_profit": 0.6249988,
+    "misspecified_low_profit": 0.24999960000000004,
+    "informed_true_uniform_profit": 0.4,
+    "first_best_observable_type_profit": 0.8,
+    "strict_slacks": [
+      1.0000000000287557e-06,
+      0.7500019999999998,
+      1.2499990000000003,
+      9.99999999806711e-07
+    ]
+  },
+  "grid_count": 81,
+  "max_qp_profit_gap": 4.936051567483446e-13,
+  "max_quantity_error": 1.444968060759777e-06,
+  "minimum_slack": -4.440892098500626e-16,
+  "seconds": 0.6467606139999589,
+  "python_peak_bytes": 168709,
+  "hardware": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "data_sha256": "2ef1b49e1ee2df4575e058b9639f7faaeb0c5f30468da438b53a57703292420d",
+  "source_sha256": "37453ea3fc41b2368dab9ec7012cde5bc5bae2057b4fa4136afb5ee578de5431",
+  "timing_note": "Whole grid analytic/QP instrumented; peak Python allocations, not RSS. Deterministic calibration: no sampling confidence intervals."
+}
+[{'economies': 1, 'calls': 3, 'method': 'closed_form', 'seconds': 0.00011680300008265476, 'python_peak_bytes': 352}, {'economies': 1, 'calls': 3, 'method': 'numerical_QP', 'seconds': 0.01884208100000251, 'python_peak_bytes': 72971}, {'economies': 10, 'calls': 30, 'method': 'closed_form', 'seconds': 0.00010863800002880453, 'python_peak_bytes': 328}, {'economies': 10, 'calls': 30, 'method': 'numerical_QP', 'seconds': 0.1941689430000224, 'python_peak_bytes': 32873}, {'economies': 50, 'calls': 150, 'method': 'closed_form', 'seconds': 0.0005172870000933472, 'python_peak_bytes': 648}, {'economies': 50, 'calls': 150, 'method': 'numerical_QP', 'seconds': 1.1009484069998052, 'python_peak_bytes': 36486}]
+Executed 8 code cells in process.
