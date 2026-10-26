@@ -1,0 +1,323 @@
+{
+  "config": {
+    "context": [
+      0.4,
+      0.2,
+      0.4
+    ],
+    "target": [
+      [
+        0.5,
+        0.5
+      ],
+      [
+        0.5,
+        0.5
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "sizes": [
+      200,
+      2000
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "delta": 0.05,
+    "threshold": 0.5,
+    "reward_range": [
+      0,
+      1
+    ],
+    "dataset": "synthetic randomized contextual bandit; IID fixed sample; two worlds differ only in context2 action1 reward",
+    "hypothesis": "support_bounds coverage>=.95, zero observed wrong definitive decisions; deficient width>=.4 in all runs; IPS mean high-world bias<=-.3 at n2000",
+    "selection": [
+      {
+        "idea": "support-deficient OPE identification audit",
+        "decision": "selected",
+        "reason": "new causal pilar05 S1 gap, paired indistinguishable worlds falsify point certainty"
+      },
+      {
+        "idea": "RAG citation version checks",
+        "decision": "deferred",
+        "reason": "recent legalRAG PR78; avoid overlap"
+      },
+      {
+        "idea": "outbox TTL replay",
+        "decision": "deferred",
+        "reason": "repeats pilar10 from24oct"
+      }
+    ]
+  },
+  "summary": [
+    {
+      "regime": "deficient",
+      "n": 200,
+      "method": "ips_truncated",
+      "runs": 80,
+      "mean_bias": -0.19600000000000004,
+      "rmse": 0.2815781419073576,
+      "coverage": null,
+      "mean_width": null,
+      "wrong_decision_rate": 0.5,
+      "decision_rate": 1
+    },
+    {
+      "regime": "deficient",
+      "n": 200,
+      "method": "snips_supported",
+      "runs": 80,
+      "mean_bias": -0.0053376408251828,
+      "rmse": 0.20517846091171196,
+      "coverage": null,
+      "mean_width": null,
+      "wrong_decision_rate": 0.5,
+      "decision_rate": 1
+    },
+    {
+      "regime": "deficient",
+      "n": 200,
+      "method": "midpoint_imputation",
+      "runs": 80,
+      "mean_bias": 0.0030158688249112774,
+      "rmse": 0.2015267630127684,
+      "coverage": null,
+      "mean_width": null,
+      "wrong_decision_rate": 0.5,
+      "decision_rate": 1
+    },
+    {
+      "regime": "deficient",
+      "n": 200,
+      "method": "support_bounds",
+      "runs": 80,
+      "mean_bias": null,
+      "rmse": null,
+      "coverage": 1,
+      "mean_width": 0.7266575870440048,
+      "wrong_decision_rate": 0,
+      "decision_rate": 0
+    },
+    {
+      "regime": "deficient",
+      "n": 2000,
+      "method": "ips_truncated",
+      "runs": 80,
+      "mean_bias": -0.19840000000000005,
+      "rmse": 0.28185976122887785,
+      "coverage": null,
+      "mean_width": null,
+      "wrong_decision_rate": 0.5,
+      "decision_rate": 1
+    },
+    {
+      "regime": "deficient",
+      "n": 2000,
+      "method": "snips_supported",
+      "runs": 80,
+      "mean_bias": -0.01112167733134026,
+      "rmse": 0.2007456003275885,
+      "coverage": null,
+      "mean_width": null,
+      "wrong_decision_rate": 0.5,
+      "decision_rate": 1
+    },
+    {
+      "regime": "deficient",
+      "n": 2000,
+      "method": "midpoint_imputation",
+      "runs": 80,
+      "mean_bias": 0.0006550624340677061,
+      "rmse": 0.20011905384579906,
+      "coverage": null,
+      "mean_width": null,
+      "wrong_decision_rate": 0.5,
+      "decision_rate": 1
+    },
+    {
+      "regime": "deficient",
+      "n": 2000,
+      "method": "support_bounds",
+      "runs": 80,
+      "mean_bias": null,
+      "rmse": null,
+      "coverage": 1,
+      "mean_width": 0.5130679019509937,
+      "wrong_decision_rate": 0,
+      "decision_rate": 0
+    },
+    {
+      "regime": "full_overlap",
+      "n": 200,
+      "method": "ips_truncated",
+      "runs": 80,
+      "mean_bias": 0.0023749999999999613,
+      "rmse": 0.04018706259482024,
+      "coverage": null,
+      "mean_width": null,
+      "wrong_decision_rate": 0,
+      "decision_rate": 1
+    },
+    {
+      "regime": "full_overlap",
+      "n": 200,
+      "method": "snips_supported",
+      "runs": 80,
+      "mean_bias": 0.004849333398495907,
+      "rmse": 0.03450852791715645,
+      "coverage": null,
+      "mean_width": null,
+      "wrong_decision_rate": 0,
+      "decision_rate": 1
+    },
+    {
+      "regime": "full_overlap",
+      "n": 200,
+      "method": "midpoint_imputation",
+      "runs": 80,
+      "mean_bias": 0.0030158688249112752,
+      "rmse": 0.024759568057712806,
+      "coverage": null,
+      "mean_width": null,
+      "wrong_decision_rate": 0,
+      "decision_rate": 1
+    },
+    {
+      "regime": "full_overlap",
+      "n": 200,
+      "method": "support_bounds",
+      "runs": 80,
+      "mean_bias": null,
+      "rmse": null,
+      "coverage": 1,
+      "mean_width": 0.4325090567750149,
+      "wrong_decision_rate": 0,
+      "decision_rate": 0
+    },
+    {
+      "regime": "full_overlap",
+      "n": 2000,
+      "method": "ips_truncated",
+      "runs": 80,
+      "mean_bias": 0.0030124999999999644,
+      "rmse": 0.014313018549558292,
+      "coverage": null,
+      "mean_width": null,
+      "wrong_decision_rate": 0,
+      "decision_rate": 1
+    },
+    {
+      "regime": "full_overlap",
+      "n": 2000,
+      "method": "snips_supported",
+      "runs": 80,
+      "mean_bias": 0.0013703980077021706,
+      "rmse": 0.010126484963254424,
+      "coverage": null,
+      "mean_width": null,
+      "wrong_decision_rate": 0,
+      "decision_rate": 1
+    },
+    {
+      "regime": "full_overlap",
+      "n": 2000,
+      "method": "midpoint_imputation",
+      "runs": 80,
+      "mean_bias": 0.0006550624340677096,
+      "rmse": 0.006901862946902379,
+      "coverage": null,
+      "mean_width": null,
+      "wrong_decision_rate": 0,
+      "decision_rate": 1
+    },
+    {
+      "regime": "full_overlap",
+      "n": 2000,
+      "method": "support_bounds",
+      "runs": 80,
+      "mean_bias": null,
+      "rmse": null,
+      "coverage": 1,
+      "mean_width": 0.14608161070427686,
+      "wrong_decision_rate": 0,
+      "decision_rate": 1
+    }
+  ],
+  "resources": [
+    {
+      "n": 200,
+      "mean_seconds": 0.0006488172062603326,
+      "seconds_se": 3.359566209703388e-05,
+      "max_python_peak_bytes": 1528
+    },
+    {
+      "n": 2000,
+      "mean_seconds": 0.00531013203751769,
+      "seconds_se": 0.00020339188065544427,
+      "max_python_peak_bytes": 1248
+    }
+  ],
+  "oracle_identification": {
+    "deficient": [
+      0.28,
+      0.68
+    ],
+    "full_world0": [
+      0.28,
+      0.28
+    ],
+    "full_world1": [
+      0.68,
+      0.68
+    ]
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "cpu_count": 9
+  },
+  "notes": "Conditional cell-Hoeffding with known design. Worlds paired;320 runs are not independent worlds. No intervals or coverage claimed for point baselines. Resource trace measures evaluator only, excluding generator and output serialization."
+}

@@ -1,6 +1,6 @@
 # Off-Policy Decision Evaluation
 
-> **Estado: propuesta técnica (S0/S1).** No se declara implementación, benchmark ejecutado ni desempeño demostrado.
+> **Estado:** diseño amplio S0/S1 con [un componente S2 de diagnóstico de soporte e identificación OPE](mvp-support-identification/), ejecutado con bandits sintéticos. El programa completo sigue parcial, sin validación operacional.
 
 ## Pregunta de investigación
 

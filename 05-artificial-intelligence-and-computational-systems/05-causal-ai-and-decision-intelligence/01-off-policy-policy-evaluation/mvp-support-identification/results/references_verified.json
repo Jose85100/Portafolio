@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-26",
+  "verified_primary_pages": [
+    "https://arxiv.org/abs/2006.09438",
+    "https://arxiv.org/abs/1103.4601",
+    "https://proceedings.mlr.press/v37/swaminathan15.html",
+    "https://proceedings.mlr.press/v48/jiang16.html",
+    "https://papers.nips.cc/paper/2015/hash/39027dfad5138c9ca0c474d71db915c3-Abstract.html"
+  ],
+  "method": "Opened two arXiv pages, two official PMLR proceedings pages and NeurIPS proceedings page; title/authors/year and abstracts verified. Nonexhaustive review; no claim of replicating the cited algorithms. Hoeffding DOI verified from primary publisher search metadata; publisher open403, original paper mirror PDF opened (image PDF, no extracted text).",
+  "hoeffding_original_mirror": "https://www.cs.rpi.edu/academics/courses/spring06/random/hoefding.pdf"
+}
