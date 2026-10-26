@@ -1,0 +1,7 @@
+q verdadera (media 4 semillas): 14.196
+A) ruido sd=0.00 (sin muestreo): q medio=14.150  dif vs verdadera=-0.32 %
+A) ruido sd=0.04 (sin muestreo): q medio=14.176  dif vs verdadera=-0.14 %
+A) ruido sd=0.08 (sin muestreo): q medio=14.161  dif vs verdadera=-0.24 %
+B) T=   60 (muestral, 5 muestras): q medio=16.376  dif=+15.36 %  dispersion entre muestras=8.07 %
+B) T=  250 (muestral, 5 muestras): q medio=14.433  dif=+1.67 %  dispersion entre muestras=4.60 %
+B) T= 1000 (muestral, 5 muestras): q medio=14.251  dif=+0.39 %  dispersion entre muestras=2.67 %
