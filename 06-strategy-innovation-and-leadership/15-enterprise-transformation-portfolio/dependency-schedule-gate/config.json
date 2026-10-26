@@ -1,0 +1,55 @@
+{
+  "budgets": [
+    8,
+    8,
+    8,
+    8
+  ],
+  "people_capacity": 2,
+  "discount_per_period": 0.1,
+  "jobs": [
+    {
+      "name": "platform",
+      "cost": 4,
+      "benefit": 0,
+      "duration": 2,
+      "people": 1
+    },
+    {
+      "name": "analytics",
+      "cost": 3,
+      "benefit": 14,
+      "duration": 1,
+      "people": 1,
+      "dependencies": [
+        "platform"
+      ]
+    },
+    {
+      "name": "automation",
+      "cost": 3,
+      "benefit": 9,
+      "duration": 1,
+      "people": 1,
+      "dependencies": [
+        "platform"
+      ]
+    },
+    {
+      "name": "standalone",
+      "cost": 5,
+      "benefit": 10,
+      "duration": 1,
+      "people": 2
+    },
+    {
+      "name": "controls",
+      "cost": 2,
+      "benefit": 1,
+      "duration": 1,
+      "people": 1
+    }
+  ],
+  "units": "synthetic monetary units; period arbitrary, all cost at start, one benefit at completion; budgets expire and do not accumulate",
+  "hypothesis": "exact feasible NPV >= feasible greedy; original ambition +0.5 is tested and may be refuted"
+}
