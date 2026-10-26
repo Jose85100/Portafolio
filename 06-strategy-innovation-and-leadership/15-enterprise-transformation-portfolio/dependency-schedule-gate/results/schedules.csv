@@ -1,0 +1,9 @@
+policy,job,start,end,cost,benefit,people
+greedy,platform,1,3,4,0,1
+greedy,analytics,3,4,3,14,1
+greedy,automation,3,4,3,9,1
+greedy,standalone,0,1,5,10,2
+exact,platform,1,3,4,0,1
+exact,analytics,3,4,3,14,1
+exact,automation,3,4,3,9,1
+exact,standalone,0,1,5,10,2
