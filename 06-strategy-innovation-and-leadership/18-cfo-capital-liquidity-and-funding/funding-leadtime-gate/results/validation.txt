@@ -1,0 +1,28 @@
+test_fixed_request_closed_form_oracle (test_funding.FundingTests.test_fixed_request_closed_form_oracle) ... ok
+test_identity_and_principal_not_income (test_funding.FundingTests.test_identity_and_principal_not_income) ... ok
+test_lead_late_and_zero (test_funding.FundingTests.test_lead_late_and_zero) ... ok
+test_monitor_start_and_fee (test_funding.FundingTests.test_monitor_start_and_fee) ... ok
+test_observation_nonanticipativity (test_funding.FundingTests.test_observation_nonanticipativity) ... ok
+test_policy_and_invalid (test_funding.FundingTests.test_policy_and_invalid) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+Name              Stmts   Miss  Cover
+-------------------------------------
+src/__init__.py       0      0   100%
+src/funding.py       80      0   100%
+-------------------------------------
+TOTAL                80      0   100%
+All checks passed!
+Success: no issues found in 2 source files
+{
+  "seconds": 0.000850910999986354,
+  "python_peak_bytes": 14248,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+}
+selected 6 0 0.74
+baseline 0.5 0.132
+Executed notebook.ipynb with rich outputs
