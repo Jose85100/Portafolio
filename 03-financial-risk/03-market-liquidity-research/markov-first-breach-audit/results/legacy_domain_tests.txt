@@ -1,0 +1,16 @@
+test_cash_overflow_rejected (test_laboratorio.TailConventionTests.test_cash_overflow_rejected) ... ok
+test_construction_hinge_oracle_parity (test_laboratorio.TailConventionTests.test_construction_hinge_oracle_parity) ... ok
+test_counts_are_not_boolean_or_float (test_laboratorio.TailConventionTests.test_counts_are_not_boolean_or_float) ... ok
+test_large_representable_tail_mean (test_laboratorio.TailConventionTests.test_large_representable_tail_mean) ... ok
+test_var_generalized_inverse_not_linear_interpolation (test_laboratorio.TailConventionTests.test_var_generalized_inverse_not_linear_interpolation) ... ok
+test_es_discrete_fractional_tail (test_laboratorio.TestMarketLiquidity.test_es_discrete_fractional_tail) ... ok
+test_interaction (test_laboratorio.TestMarketLiquidity.test_interaction) ... ok
+test_invalid (test_laboratorio.TestMarketLiquidity.test_invalid) ... ok
+test_liquidity_first_breach (test_laboratorio.TestMarketLiquidity.test_liquidity_first_breach) ... ok
+test_margin_call_monotonicity (test_laboratorio.TestMarketLiquidity.test_margin_call_monotonicity) ... ok
+test_reproducible_stress (test_laboratorio.TestMarketLiquidity.test_reproducible_stress) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.051s
+
+OK

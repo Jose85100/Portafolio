@@ -1,0 +1,1 @@
+{"initial_cash":6,"horizon":20,"increments":[1,-2],"initial_regime":[0.8,0.2],"models":{"iid":[[0.8,0.2],[0.8,0.2]],"persistent":[[0.95,0.05],[0.2,0.8]]},"target":0.05,"maximum_buffer":40,"seeds":30,"draws":20000,"hypothesis":"persistent first-breach probability exceeds IID by>=0.10 and exceeds its own terminal-negative probability by>=0.02","scaling_horizons":[20,50,100]}
