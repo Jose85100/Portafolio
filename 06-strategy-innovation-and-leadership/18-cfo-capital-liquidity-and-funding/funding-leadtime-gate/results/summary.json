@@ -1,0 +1,223 @@
+{
+  "selected": {
+    "threshold": 6,
+    "breach_probability": 0,
+    "expected_cost": 0.74,
+    "outcomes": [
+      {
+        "request_period": 2,
+        "funding_period": 4,
+        "first_breach": null,
+        "cash": [
+          7.0,
+          6.0,
+          6.5,
+          7.5,
+          16.34
+        ],
+        "debt": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          8.0
+        ],
+        "observed_cash": [
+          8,
+          7.0,
+          6.0,
+          6.5,
+          15.5
+        ],
+        "costs": 0.66,
+        "reconciliation_error": 0.0
+      },
+      {
+        "request_period": 1,
+        "funding_period": 3,
+        "first_breach": null,
+        "cash": [
+          6.0,
+          3.5,
+          1.5,
+          7.34,
+          5.18
+        ],
+        "debt": [
+          0.0,
+          0.0,
+          0.0,
+          8.0,
+          8.0
+        ],
+        "observed_cash": [
+          8,
+          6.0,
+          3.5,
+          9.5,
+          7.34
+        ],
+        "costs": 0.8200000000000001,
+        "reconciliation_error": 1.1102230246251565e-16
+      },
+      {
+        "request_period": 1,
+        "funding_period": 3,
+        "first_breach": null,
+        "cash": [
+          4.0,
+          1.5,
+          0.5,
+          7.34,
+          6.18
+        ],
+        "debt": [
+          0.0,
+          0.0,
+          0.0,
+          8.0,
+          8.0
+        ],
+        "observed_cash": [
+          8,
+          4.0,
+          1.5,
+          8.5,
+          7.34
+        ],
+        "costs": 0.8200000000000001,
+        "reconciliation_error": 2.220446049250313e-16
+      }
+    ]
+  },
+  "baseline_reactive2": {
+    "threshold": 2,
+    "breach_probability": 0.5,
+    "expected_cost": 0.132,
+    "outcomes": [
+      {
+        "request_period": null,
+        "funding_period": null,
+        "first_breach": null,
+        "cash": [
+          7.0,
+          6.0,
+          7.0,
+          8.0,
+          9.0
+        ],
+        "debt": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "observed_cash": [
+          8,
+          7.0,
+          6.0,
+          7.0,
+          8.0
+        ],
+        "costs": 0.0,
+        "reconciliation_error": 0.0
+      },
+      {
+        "request_period": null,
+        "funding_period": null,
+        "first_breach": 4,
+        "cash": [
+          6.0,
+          4.0,
+          2.0,
+          0.0,
+          -2.0
+        ],
+        "debt": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "observed_cash": [
+          8,
+          6.0,
+          4.0,
+          2.0,
+          0.0
+        ],
+        "costs": 0.0,
+        "reconciliation_error": 0.0
+      },
+      {
+        "request_period": 2,
+        "funding_period": 4,
+        "first_breach": 3,
+        "cash": [
+          4.0,
+          2.0,
+          0.5,
+          -0.5,
+          6.34
+        ],
+        "debt": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          8.0
+        ],
+        "observed_cash": [
+          8,
+          4.0,
+          2.0,
+          0.5,
+          7.5
+        ],
+        "costs": 0.66,
+        "reconciliation_error": 0.0
+      }
+    ]
+  },
+  "out_of_design_stress": {
+    "threshold": 6,
+    "breach_probability": 1,
+    "expected_cost": 0.8200000000000001,
+    "outcomes": [
+      {
+        "request_period": 1,
+        "funding_period": 3,
+        "first_breach": 1,
+        "cash": [
+          4.0,
+          -0.5,
+          -4.5,
+          -0.6600000000000001,
+          -4.82
+        ],
+        "debt": [
+          0.0,
+          0.0,
+          0.0,
+          8.0,
+          8.0
+        ],
+        "observed_cash": [
+          8,
+          4.0,
+          -0.5,
+          3.5,
+          -0.6600000000000001
+        ],
+        "costs": 0.8200000000000001,
+        "reconciliation_error": 0.0
+      }
+    ]
+  },
+  "seconds": 0.000850910999986354,
+  "python_peak_bytes": 14248,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+}
