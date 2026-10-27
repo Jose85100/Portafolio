@@ -1,0 +1,91 @@
+{
+  "config": {
+    "seed": 20261026,
+    "anchor": {
+      "low": 1,
+      "high": 2,
+      "p": 0.2,
+      "cost": 1
+    },
+    "probabilities": [
+      0.05,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.49,
+      0.5,
+      0.7,
+      0.9
+    ],
+    "costs": [
+      0.5,
+      1,
+      2
+    ],
+    "type_pairs": [
+      [
+        1,
+        2
+      ],
+      [
+        0.8,
+        2
+      ],
+      [
+        1,
+        1.5
+      ]
+    ],
+    "epsilon": 1e-06,
+    "solver_tolerance": 1e-07,
+    "hypothesis": "Anchor strict menu profit >=1.2*best uniform; IC/IR slack >=-1e-8; QP profit gap<=1e-7 on declared grid. No universal gain claimed.",
+    "stress_true_low": 0.8
+  },
+  "anchor": {
+    "weak_menu": [
+      0.75,
+      2.0,
+      0.75,
+      3.25
+    ],
+    "strict_menu": [
+      0.75,
+      2.0,
+      0.749999,
+      3.249998
+    ],
+    "weak_profit_truthful": 0.625,
+    "strict_profit": 0.6249988,
+    "uniform_type": "pooling",
+    "uniform_profit": 0.5,
+    "uniform_strict_profit": 0.499999,
+    "weak_adverse_tie_profit": 0.09375,
+    "strict_adverse_tie_profit": 0.6249988,
+    "misspecified_low_profit": 0.24999960000000004,
+    "informed_true_uniform_profit": 0.4,
+    "first_best_observable_type_profit": 0.8,
+    "strict_slacks": [
+      1.0000000000287557e-06,
+      0.7500019999999998,
+      1.2499990000000003,
+      9.99999999806711e-07
+    ]
+  },
+  "grid_count": 81,
+  "max_qp_profit_gap": 4.936051567483446e-13,
+  "max_quantity_error": 1.444968060759777e-06,
+  "minimum_slack": -4.440892098500626e-16,
+  "seconds": 1.1890274570000656,
+  "python_peak_bytes": 169155,
+  "hardware": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "data_sha256": "2ef1b49e1ee2df4575e058b9639f7faaeb0c5f30468da438b53a57703292420d",
+  "source_sha256": "37453ea3fc41b2368dab9ec7012cde5bc5bae2057b4fa4136afb5ee578de5431",
+  "timing_note": "Whole grid analytic/QP instrumented; peak Python allocations, not RSS. Deterministic calibration: no sampling confidence intervals."
+}
