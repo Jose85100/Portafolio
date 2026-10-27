@@ -1,0 +1,10 @@
+test_bivariate_orthant_oracle (test_factor.TestFactor.test_bivariate_orthant_oracle) ... ok
+test_independence_identity (test_factor.TestFactor.test_independence_identity) ... ok
+test_mass_mean_and_permutation (test_factor.TestFactor.test_mass_mean_and_permutation) ... ok
+test_single_name_and_endpoints (test_factor.TestFactor.test_single_name_and_endpoints) ... ok
+test_stability_and_validation (test_factor.TestFactor.test_stability_and_validation) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.250s
+
+OK

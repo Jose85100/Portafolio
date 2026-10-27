@@ -1,0 +1,1 @@
+{"confidence":0.99,"pd":0.02,"rho":0.2,"stress_rho":0.95,"orders":[16,32,64,128],"reference_order":256,"cdf_tolerance":0.00001,"es_tolerance":0.01,"mc_seeds":20,"mc_draws":20000,"granular_count":100,"hypothesis":"factor rho0.2 granular ES99 exceeds independence by>=50%; last two quadrature orders stable and analytic orthant error<=1e-12"}
