@@ -1,6 +1,6 @@
 # Mechanism Design for Financial Inclusion
 
-> **Estado: formulación de investigación.** No se han estimado modelos, demostrado teoremas específicos ni obtenido resultados empíricos en este directorio.
+> **Estado del programa: formulación (S1).** El componente estático `screening-menu-audit` alcanza S2 local con código, tests y comparación numérica; no resuelve todavía la hipótesis de pagos contingentes al flujo. No se han obtenido resultados empíricos.
 
 ## Pregunta de investigación
 
@@ -58,3 +58,7 @@ Sin microdatos de contratos y resultados, no afirmar efectividad causal en origi
 3. Dataset versionado, contratos y vintages.
 4. Solver/estimador, simulación y pruebas automatizadas.
 5. Backtesting, análisis de robustez y reporte reproducible.
+
+## Componente estático S2: incentivos y participación
+
+[screening-menu-audit](screening-menu-audit/) implementa un menú de dos tipos con solución analítica, oráculo QP, baseline de contrato único optimizado y falsaciones de ejecución/especificación. Este avance es **S2 del componente estático**; no resuelve todavía la hipótesis principal sobre flujos inciertos, riesgo moral y pagos contingentes. El programa completo conserva esas brechas de formulación.
