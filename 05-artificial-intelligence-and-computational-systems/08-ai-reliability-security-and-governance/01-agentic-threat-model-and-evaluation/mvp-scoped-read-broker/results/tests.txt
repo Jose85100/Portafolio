@@ -1,0 +1,15 @@
+test_closed_broker_denied (test_broker.BrokerTests.test_closed_broker_denied) ... ok
+test_fifo_nonblocking_denial (test_broker.BrokerTests.test_fifo_nonblocking_denial) ... ok
+test_internal_symlink_utility_tradeoff (test_broker.BrokerTests.test_internal_symlink_utility_tradeoff) ... ok
+test_no_descriptor_leak_on_denials (test_broker.BrokerTests.test_no_descriptor_leak_on_denials) ... ok
+test_no_escape_in_all_fixtures (test_broker.BrokerTests.test_no_escape_in_all_fixtures) ... ok
+test_oversized_and_binary_rejected (test_broker.BrokerTests.test_oversized_and_binary_rejected) ... ok
+test_parent_descriptor_preserves_granted_object (test_broker.BrokerTests.test_parent_descriptor_preserves_granted_object) ... ok
+test_prefix_traversal_negative_control (test_broker.BrokerTests.test_prefix_traversal_negative_control) ... ok
+test_resolve_race_negative_control (test_broker.BrokerTests.test_resolve_race_negative_control) ... ok
+test_schema_fails_closed (test_broker.BrokerTests.test_schema_fails_closed) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.015s
+
+OK

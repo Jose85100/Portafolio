@@ -1,0 +1,49 @@
+{
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "cases": [
+    "safe",
+    "nested",
+    "internal_alias",
+    "traversal",
+    "prefix_sibling",
+    "symlink_file",
+    "symlink_dir",
+    "race_parent",
+    "race_leaf",
+    "hardlink",
+    "wrong_tool",
+    "overbudget"
+  ],
+  "max_read_bytes": 4096,
+  "max_path_depth": 16,
+  "max_path_characters": 256,
+  "hypothesis": "anchored_fd has zero outside-canary reads in seven escape scenarios; resolve_then_open leaks under two deterministic check/use interleavings; anchored utility denial limited to internal alias",
+  "threat_model": "untrusted read requests and symlink replacements in temporary fixtures; trusted root grant; no hostile mounts/kernel/hardlink creation-unlink races",
+  "dataset": "entirely synthetic temporary directories; no LLM, network, user files or real credentials",
+  "selection": [
+    {
+      "idea": "anchored read-only tool broker with TOCTOU audit",
+      "decision": "selected",
+      "reason": "new pilar08 S1 gap and deterministic executable security boundary"
+    },
+    {
+      "idea": "LLM judge holdout re-evaluation",
+      "decision": "deferred",
+      "reason": "already implemented project in same pillar"
+    },
+    {
+      "idea": "memory TTL replay",
+      "decision": "deferred",
+      "reason": "close to outbox from24oct"
+    }
+  ]
+}

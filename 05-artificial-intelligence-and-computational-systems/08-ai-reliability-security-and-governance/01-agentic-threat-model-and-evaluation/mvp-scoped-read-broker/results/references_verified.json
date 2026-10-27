@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-27",
+  "method": "Opened five primary documentation pages; titles and relevant authorization/TOCTOU/dir_fd/O_NOFOLLOW/path-resolution guidance verified. Engineering prior art, not five research papers or an exhaustive review.",
+  "sources": [
+    "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html",
+    "https://cwe.mitre.org/data/definitions/367.html",
+    "https://docs.python.org/3.12/library/os.html",
+    "https://man7.org/linux/man-pages/man2/open.2.html",
+    "https://man7.org/linux/man-pages/man7/path_resolution.7.html"
+  ]
+}
