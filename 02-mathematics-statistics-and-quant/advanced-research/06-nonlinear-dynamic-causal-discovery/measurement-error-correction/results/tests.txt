@@ -1,0 +1,9 @@
+test_bad_inputs_and_abstentions (test_moments.MomentTests.test_bad_inputs_and_abstentions) ... ok
+test_population_oracles (test_moments.MomentTests.test_population_oracles) ... ok
+test_units_translation_and_target_linearity_randomized (test_moments.MomentTests.test_units_translation_and_target_linearity_randomized) ... ok
+test_zero_noise_matches_ols (test_moments.MomentTests.test_zero_noise_matches_ols) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.018s
+
+OK
