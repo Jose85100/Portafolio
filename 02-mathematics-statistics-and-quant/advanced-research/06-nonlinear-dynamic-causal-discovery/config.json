@@ -1,0 +1,1 @@
+{"seed":20261025,"sample_sizes":[100,500,2000],"replicates":200,"effects":[0.0,0.3],"alpha":0.05,"loading_x":0.8,"loading_y":0.8,"noise_x_sd":0.5,"noise_y_sd":0.5,"proxy_noise_sd":1.0,"thresholds":{"controlled_null_rejection_max":0.10,"controlled_power_min_at_n500":0.80,"controlled_bias_abs_max_at_n2000":0.03}}

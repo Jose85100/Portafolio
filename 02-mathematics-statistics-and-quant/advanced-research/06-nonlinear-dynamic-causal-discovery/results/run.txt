@@ -1,0 +1,153 @@
+{
+  "config": {
+    "seed": 20261025,
+    "sample_sizes": [
+      100,
+      500,
+      2000
+    ],
+    "replicates": 200,
+    "effects": [
+      0.0,
+      0.3
+    ],
+    "alpha": 0.05,
+    "loading_x": 0.8,
+    "loading_y": 0.8,
+    "noise_x_sd": 0.5,
+    "noise_y_sd": 0.5,
+    "proxy_noise_sd": 1.0,
+    "thresholds": {
+      "controlled_null_rejection_max": 0.1,
+      "controlled_power_min_at_n500": 0.8,
+      "controlled_bias_abs_max_at_n2000": 0.03
+    }
+  },
+  "regression_fits": 4800,
+  "independent_datasets": 1200,
+  "checks": {
+    "null_rejection_at_most_threshold": true,
+    "power_at_least_threshold_n500plus": true,
+    "bias_at_n2000_below_threshold": true
+  },
+  "omitted_population_slope_bias": 0.7191011235955056,
+  "proxy_population_slope_bias": 0.5614035087719299,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "hardware": "x86_64",
+  "selected_n500": [
+    {
+      "n": 500,
+      "effect": 0.0,
+      "method": "omitted",
+      "replicates": 200,
+      "rejection_rate": 1.0,
+      "mc_95_low": 0.9817246596448638,
+      "mc_95_high": 1,
+      "mean_slope": 0.7212384513537694,
+      "mean_bias_vs_structural": 0.7212384513537694,
+      "structural_ci_coverage": 0.0,
+      "median_seconds": 0.0007211285000039425,
+      "max_python_bytes": 47066
+    },
+    {
+      "n": 500,
+      "effect": 0.0,
+      "method": "observed_correct_lag",
+      "replicates": 200,
+      "rejection_rate": 0.045,
+      "mc_95_low": 0.020780422227004353,
+      "mc_95_high": 0.08370268807585404,
+      "mean_slope": -0.006266827561014102,
+      "mean_bias_vs_structural": -0.006266827561014102,
+      "structural_ci_coverage": 0.955,
+      "median_seconds": 0.0007301675000235264,
+      "max_python_bytes": 67267
+    },
+    {
+      "n": 500,
+      "effect": 0.0,
+      "method": "observed_wrong_lag",
+      "replicates": 200,
+      "rejection_rate": 1.0,
+      "mc_95_low": 0.9817246596448638,
+      "mc_95_high": 1,
+      "mean_slope": 0.7211119163580478,
+      "mean_bias_vs_structural": 0.7211119163580478,
+      "structural_ci_coverage": 0.0,
+      "median_seconds": 0.0007213289999867811,
+      "max_python_bytes": 67267
+    },
+    {
+      "n": 500,
+      "effect": 0.0,
+      "method": "noisy_proxy",
+      "replicates": 200,
+      "rejection_rate": 1.0,
+      "mc_95_low": 0.9817246596448638,
+      "mc_95_high": 1,
+      "mean_slope": 0.5569130988616614,
+      "mean_bias_vs_structural": 0.5569130988616614,
+      "structural_ci_coverage": 0.0,
+      "median_seconds": 0.0007271279999940816,
+      "max_python_bytes": 67267
+    },
+    {
+      "n": 500,
+      "effect": 0.3,
+      "method": "omitted",
+      "replicates": 200,
+      "rejection_rate": 1.0,
+      "mc_95_low": 0.9817246596448638,
+      "mc_95_high": 1,
+      "mean_slope": 1.020851398820747,
+      "mean_bias_vs_structural": 0.720851398820747,
+      "structural_ci_coverage": 0.0,
+      "median_seconds": 0.0006809234999991531,
+      "max_python_bytes": 47066
+    },
+    {
+      "n": 500,
+      "effect": 0.3,
+      "method": "observed_correct_lag",
+      "replicates": 200,
+      "rejection_rate": 1.0,
+      "mc_95_low": 0.9817246596448638,
+      "mc_95_high": 1,
+      "mean_slope": 0.3000801663211389,
+      "mean_bias_vs_structural": 8.01663211389092e-05,
+      "structural_ci_coverage": 0.96,
+      "median_seconds": 0.0006950349999783612,
+      "max_python_bytes": 67267
+    },
+    {
+      "n": 500,
+      "effect": 0.3,
+      "method": "observed_wrong_lag",
+      "replicates": 200,
+      "rejection_rate": 1.0,
+      "mc_95_low": 0.9817246596448638,
+      "mc_95_high": 1,
+      "mean_slope": 1.0208456645434019,
+      "mean_bias_vs_structural": 0.7208456645434018,
+      "structural_ci_coverage": 0.0,
+      "median_seconds": 0.0006911740000532518,
+      "max_python_bytes": 67267
+    },
+    {
+      "n": 500,
+      "effect": 0.3,
+      "method": "noisy_proxy",
+      "replicates": 200,
+      "rejection_rate": 1.0,
+      "mc_95_low": 0.9817246596448638,
+      "mc_95_high": 1,
+      "mean_slope": 0.8609644547516768,
+      "mean_bias_vs_structural": 0.5609644547516769,
+      "structural_ci_coverage": 0.0,
+      "median_seconds": 0.0006933375000244268,
+      "max_python_bytes": 67267
+    }
+  ]
+}

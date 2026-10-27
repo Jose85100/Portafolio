@@ -1,0 +1,11 @@
+test_affine_covariance_and_control_residualization (test_confounding.ConfoundingTests.test_affine_covariance_and_control_residualization) ... ok
+test_bad_inputs_and_degeneracy (test_confounding.ConfoundingTests.test_bad_inputs_and_degeneracy) ... ok
+test_confusion_and_positive_effect_large_n (test_confounding.ConfoundingTests.test_confusion_and_positive_effect_large_n) ... ok
+test_independent_univariate_oracle (test_confounding.ConfoundingTests.test_independent_univariate_oracle) ... ok
+test_randomized_partial_regression_identity (test_confounding.ConfoundingTests.test_randomized_partial_regression_identity) ... ok
+test_reproducible_alignment_and_intervention (test_confounding.ConfoundingTests.test_reproducible_alignment_and_intervention) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.016s
+
+OK
