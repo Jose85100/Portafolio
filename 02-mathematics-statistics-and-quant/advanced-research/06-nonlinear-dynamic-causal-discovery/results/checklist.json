@@ -1,0 +1,26 @@
+{
+  "artifacts": {
+    "README.md": true,
+    "src/confounding.py": true,
+    "tests/test_confounding.py": true,
+    "results/replicates.csv": true,
+    "results/summary.csv": true,
+    "results/audit.png": true,
+    "notebook.ipynb": true,
+    "referencias.bib": true,
+    "informe.md": true,
+    "requirements.txt": true,
+    "run.sh": true,
+    "MVP.md": true,
+    "config.json": true
+  },
+  "all_present": true,
+  "tests": "6 passed",
+  "lint": "passed",
+  "mypy": "src passed",
+  "coverage": "100% of74 statements src.confounding only",
+  "figure_review": "audit.png inspected legible; identical plot embedded notebook",
+  "notebook": "5 cells sequentially executed IPython in-process, separate kernel not tested",
+  "sources": "5 primary references verified, blocked endpoints documented",
+  "maturity": "S2 linear Gaussian component, nonlinear programme incomplete"
+}
