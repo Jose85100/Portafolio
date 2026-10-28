@@ -1,0 +1,58 @@
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.2
+[notice] To update, run: python -m pip install --upgrade pip
+All checks passed!
+Success: no issues found in 2 source files
+test_invalid_tolerance_and_degenerate_y (test_joint_gate.JointGateTests.test_invalid_tolerance_and_degenerate_y) ... ok
+test_regressor_gate_accepts_impossible_joint_model (test_joint_gate.JointGateTests.test_regressor_gate_accepts_impossible_joint_model) ... ok
+test_units_and_independent_schur_oracle (test_joint_gate.JointGateTests.test_units_and_independent_schur_oracle) ... ok
+test_valid_models_preserved_and_boundary_oracle (test_joint_gate.JointGateTests.test_valid_models_preserved_and_boundary_oracle) ... ok
+test_bad_inputs_and_abstentions (test_moments.MomentTests.test_bad_inputs_and_abstentions) ... ok
+test_population_oracles (test_moments.MomentTests.test_population_oracles) ... ok
+test_units_translation_and_target_linearity_randomized (test_moments.MomentTests.test_units_translation_and_target_linearity_randomized) ... ok
+test_zero_noise_matches_ols (test_moments.MomentTests.test_zero_noise_matches_ols) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.152s
+
+OK
+Name                Stmts   Miss  Cover
+---------------------------------------
+src/joint_gate.py      19      0   100%
+---------------------------------------
+TOTAL                  19      0   100%
+Wrote JSON report to results/joint_coverage.json
+{
+  "config": {
+    "research_date": "2026-10-28",
+    "effects": [
+      0.0,
+      0.3
+    ],
+    "assumed_variances": [
+      0.0,
+      0.5,
+      0.9,
+      1.0,
+      1.1,
+      1.15,
+      1.2,
+      1.24,
+      1.5
+    ],
+    "condition_cap": 100.0,
+    "joint_psd_tolerance": 1e-10,
+    "latency_repeats": 20,
+    "hypothesis": "joint gate rejects all cases accepted by old gate with negative independent Schur residual; true variance1 preserves coefficients; compatibility does not certify variance truth"
+  },
+  "population_cases": 18,
+  "method_rows": 36,
+  "impossible_accepted_baseline": 4,
+  "impossible_accepted_joint": 0,
+  "true_variance_coefficients_preserved": true,
+  "false_variance_0.5_passes_both": true,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "interpretation": "Necessary moment compatibility, not causal confidence or proof of external variance"
+}
