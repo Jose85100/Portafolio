@@ -16,3 +16,7 @@ Resultados regenerados: n2000,β0,RMSE≈.10082 frente a≈.55987 de OLSproxy so
 - `src/`, `tests/`, `config.json`, `results/` con CSV/JSON/figura y logs.
 
 Comparaciones condicionales a aceptación; se usa el mismo subconjunto para baselines. Abstenciones se informan aparte, sin convertirlo en riesgo operativo incondicional. No se emiten CI/p-valores ajustados. El oráculo Z observado utiliza información privilegiada. ComponenteS2 sintético, sin validación externa; EL83 no aplica.
+
+## Incremento nuevo28oct2026:PSD conjunto
+
+`bash run_joint.sh` comprueba la covarianza latente completa,además del bloque de regresores. En18casos poblacionales,el gate anterior acepta cuatro matrices imposibles y el conjunto ninguna. Una varianza falsa compatible sigue pasando: no se interpreta aceptación como causalidad. [Notebook nuevo](notebook_joint.ipynb),[informe14puntos](informe_joint.md),[alcance](MVP_joint.md),[fuentes reabiertas](fuentes_joint.md). El intervalo27sin entregaGit no se reconstruye ni cuenta como entregado.
