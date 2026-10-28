@@ -1,0 +1,100 @@
+test_all_fixture_outcomes (test_temporal.TemporalTests.test_all_fixture_outcomes) ... ok
+test_conflict_has_no_citation (test_temporal.TemporalTests.test_conflict_has_no_citation) ... ok
+test_fingerprint_detects_changed_payload (test_temporal.TemporalTests.test_fingerprint_detects_changed_payload) ... ok
+test_future_evidence_negative_control (test_temporal.TemporalTests.test_future_evidence_negative_control) ... ok
+test_input_order_invariance_property (test_temporal.TemporalTests.test_input_order_invariance_property) ... ok
+test_invalid_intervals_dates_duplicates (test_temporal.TemporalTests.test_invalid_intervals_dates_duplicates) ... ok
+test_transaction_boundary_exclusive (test_temporal.TemporalTests.test_transaction_boundary_exclusive) ... ok
+test_unknown_key_and_modes (test_temporal.TemporalTests.test_unknown_key_and_modes) ... ok
+test_valid_boundary_exclusive (test_temporal.TemporalTests.test_valid_boundary_exclusive) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.005s
+
+OK
+{
+  "config": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "intervals": "[start,end), date-granularity, None=end-unbounded",
+    "hypothesis": "bitemporal gate zero wrong definite citations and zero future leaks; latest and valid_only have >0 future leaks; conflict returns no citation",
+    "data": "synthetic version rectangles with retroactive correction, expiry and conflicting overlap; no legal/regulatory statements",
+    "selection": [
+      {
+        "idea": "bitemporal evidence gate",
+        "decision": "selected",
+        "reason": "new pilar06 S1 gap, prevents knowledge-time leakage before RAG retrieval"
+      },
+      {
+        "idea": "retrieval LRU cache",
+        "decision": "deferred",
+        "reason": "routing/cache project already implemented"
+      },
+      {
+        "idea": "memory TTL",
+        "decision": "deferred",
+        "reason": "near outbox prior cycle"
+      }
+    ]
+  },
+  "summary": [
+    {
+      "mode": "latest",
+      "queries": 56,
+      "answers": 56,
+      "wrong_definite": 48,
+      "contract_matches": 8,
+      "future_leaks": 24,
+      "knowledge_violations": 24,
+      "validity_violations": 32,
+      "not_found": 0,
+      "ambiguous": 0,
+      "mean_seconds": 0.0003254045892820808,
+      "max_python_peak_bytes": 1916
+    },
+    {
+      "mode": "valid_only",
+      "queries": 56,
+      "answers": 56,
+      "wrong_definite": 40,
+      "contract_matches": 16,
+      "future_leaks": 24,
+      "knowledge_violations": 32,
+      "validity_violations": 0,
+      "not_found": 0,
+      "ambiguous": 0,
+      "mean_seconds": 0.0003582459464236568,
+      "max_python_peak_bytes": 1836
+    },
+    {
+      "mode": "bitemporal",
+      "queries": 56,
+      "answers": 32,
+      "wrong_definite": 0,
+      "contract_matches": 56,
+      "future_leaks": 0,
+      "knowledge_violations": 0,
+      "validity_violations": 0,
+      "not_found": 16,
+      "ambiguous": 8,
+      "mean_seconds": 0.0003813603928587587,
+      "max_python_peak_bytes": 1828
+    }
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "cpu_count": 9
+  },
+  "notes": "Finite deterministic synthetic fixture audit, not independent samples or deployed RAG accuracy. Timing includes metadata validation and tracemalloc, excludes corpus construction/notebook. Hash is not source authentication."
+}
+Executed and saved 4 code cells via IPython in-process
