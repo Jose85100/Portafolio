@@ -1,0 +1,27 @@
+{
+  "cash": 6,
+  "horizon": 20,
+  "initial": [
+    0.8,
+    0.2
+  ],
+  "nominal_stress_probabilities": [
+    0.05,
+    0.8
+  ],
+  "bounds": [
+    [
+      0.03,
+      0.07
+    ],
+    [
+      0.7,
+      0.9
+    ]
+  ],
+  "buffers": 41,
+  "target": 0.05,
+  "hypothesis": "upper risk minus nominal risk>=0.05 at cash6 and robust minimum buffer exceeds nominal by>=3 units",
+  "data": "synthetic stress intervals, not estimated confidence regions",
+  "grid_note": "initial0..30 did not attain robust target; extended to0..40 because worst20flows*2=40 bounds required reserve, without changing hypothesis"
+}
