@@ -1,0 +1,10 @@
+test_analytical_two_day_and_boundary (test_model.TestBand.test_analytical_two_day_and_boundary) ... ok
+test_buffer_monotonicity_and_no_ambiguity_effect_at_h1 (test_model.TestBand.test_buffer_monotonicity_and_no_ambiguity_effect_at_h1) ... ok
+test_contains_static_grid_and_nested_sets (test_model.TestBand.test_contains_static_grid_and_nested_sets) ... ok
+test_invalid (test_model.TestBand.test_invalid) ... ok
+test_singleton_matches_independent_forward_dp (test_model.TestBand.test_singleton_matches_independent_forward_dp) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.076s
+
+OK
