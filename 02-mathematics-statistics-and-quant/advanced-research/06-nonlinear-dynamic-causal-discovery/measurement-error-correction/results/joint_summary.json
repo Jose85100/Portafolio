@@ -1,0 +1,34 @@
+{
+  "config": {
+    "research_date": "2026-10-28",
+    "effects": [
+      0.0,
+      0.3
+    ],
+    "assumed_variances": [
+      0.0,
+      0.5,
+      0.9,
+      1.0,
+      1.1,
+      1.15,
+      1.2,
+      1.24,
+      1.5
+    ],
+    "condition_cap": 100.0,
+    "joint_psd_tolerance": 1e-10,
+    "latency_repeats": 20,
+    "hypothesis": "joint gate rejects all cases accepted by old gate with negative independent Schur residual; true variance1 preserves coefficients; compatibility does not certify variance truth"
+  },
+  "population_cases": 18,
+  "method_rows": 36,
+  "impossible_accepted_baseline": 4,
+  "impossible_accepted_joint": 0,
+  "true_variance_coefficients_preserved": true,
+  "false_variance_0.5_passes_both": true,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "interpretation": "Necessary moment compatibility, not causal confidence or proof of external variance"
+}

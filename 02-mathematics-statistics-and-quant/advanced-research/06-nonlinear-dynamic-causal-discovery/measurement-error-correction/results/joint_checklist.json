@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-28",
+  "artifacts": {
+    "README.md": true,
+    "MVP.md": true,
+    "MVP_joint.md": true,
+    "src/joint_gate.py": true,
+    "tests/test_joint_gate.py": true,
+    "run_joint.sh": true,
+    "config_joint.json": true,
+    "notebook_joint.ipynb": true,
+    "informe_joint.md": true,
+    "referencias.bib": true,
+    "fuentes_joint.md": true,
+    "requirements.txt": true,
+    "results/joint_cases.csv": true,
+    "results/joint_audit.png": true
+  },
+  "all_present": true,
+  "tests": "8pass,4new",
+  "coverage": "100%19new core statements only",
+  "lint": "pass",
+  "mypy": "2new modules pass",
+  "notebook": "4cells sequentially executed fresh IPython namespace; no separate kernel claim",
+  "figure": "joint_audit.png visually inspected legible",
+  "maturity": "S2local,not operational",
+  "unpublished27": "no Git evidence recovered; not counted as delivered"
+}
