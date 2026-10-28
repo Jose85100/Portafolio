@@ -1,0 +1,1 @@
+{"seed":20261028,"low_values":[0.5,1,1.5],"high_values":[2,3],"tax_cost_values":[0,0.25,0.5,1,2],"anchor":{"low":1,"high":2,"tax_cost":0.5},"hypothesis":"For all30 declared cases budget-aware welfare >= no-policy and naive; analytic/oracle welfare gap <=1e-8. Anchor naive subsidy harms net welfare relative to no intervention. Deterministic theoretical audit, no empirical claim."}

@@ -58,3 +58,7 @@ Matriz espacial y endogeneidad de políticas condicionan identificación.
 3. Dataset versionado, contratos y vintages.
 4. Solver/estimador, simulación y pruebas automatizadas.
 5. Backtesting, análisis de robustez y reporte reproducible.
+
+## Componente base S2: provisión y financiación
+
+El [núcleo de bien público y coste fiscal](../../02-microeconomics/10-public-goods-fiscal-audit/) implementa una pieza microeconómica previa a la competencia regional: provisión voluntaria, subsidio y financiación en un equilibrio previsto. Ese componente tiene código, tests y contraste numérico; **no implementa aún regiones, competencia fiscal o spillovers**, por lo que este programa conserva S1 y su hipótesis principal no se considera validada.

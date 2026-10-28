@@ -1,0 +1,60 @@
+{
+  "config": {
+    "seed": 20261028,
+    "low_values": [
+      0.5,
+      1,
+      1.5
+    ],
+    "high_values": [
+      2,
+      3
+    ],
+    "tax_cost_values": [
+      0,
+      0.25,
+      0.5,
+      1,
+      2
+    ],
+    "anchor": {
+      "low": 1,
+      "high": 2,
+      "tax_cost": 0.5
+    },
+    "hypothesis": "For all30 declared cases budget-aware welfare >= no-policy and naive; analytic/oracle welfare gap <=1e-8. Anchor naive subsidy harms net welfare relative to no intervention. Deterministic theoretical audit, no empirical claim."
+  },
+  "case_count": 30,
+  "anchor": {
+    "low": 1,
+    "high": 2,
+    "tax_cost": 0.5,
+    "G_no_policy": 1,
+    "G_naive": 2,
+    "G_aware": 1.2909944487358058,
+    "welfare_no_policy": 1.0794415416798357,
+    "welfare_naive": 0.9625035326709953,
+    "welfare_aware": 1.1139745949736775,
+    "matching_share": 0.1270166537925832,
+    "public_budget": 0.16397779494322265,
+    "G_oracle": 1.290994448781462,
+    "oracle_welfare_gap": 0.0,
+    "analytic_seconds": 7.4939999876733054e-06,
+    "oracle_seconds": 0.003533934999950361
+  },
+  "max_oracle_welfare_gap": 6.661338147750939e-16,
+  "min_gain_vs_no_policy": 0.0,
+  "min_gain_vs_naive": 0.0,
+  "seconds": 0.27730540000004567,
+  "python_peak_bytes": 21272,
+  "hardware": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "source_sha256": "db1c49fd88af018dc2b29542ead50dea5c3559582dcc25a6523a2598ed748cc4",
+  "data_sha256": "aca6d584a47dbc7a44ff01be649ec6463f1fa19b6505c1d52507e10327e74881",
+  "timing_note": "Per-arm scalar times measured once, prefix totals are batch aggregation not repeated runs; peak is whole experiment Python allocations, not RSS. No tax estimation or operational benchmark."
+}
