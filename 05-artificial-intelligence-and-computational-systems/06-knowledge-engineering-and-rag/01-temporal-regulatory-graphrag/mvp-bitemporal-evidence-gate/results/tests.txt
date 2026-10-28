@@ -1,0 +1,14 @@
+test_all_fixture_outcomes (test_temporal.TemporalTests.test_all_fixture_outcomes) ... ok
+test_conflict_has_no_citation (test_temporal.TemporalTests.test_conflict_has_no_citation) ... ok
+test_fingerprint_detects_changed_payload (test_temporal.TemporalTests.test_fingerprint_detects_changed_payload) ... ok
+test_future_evidence_negative_control (test_temporal.TemporalTests.test_future_evidence_negative_control) ... ok
+test_input_order_invariance_property (test_temporal.TemporalTests.test_input_order_invariance_property) ... ok
+test_invalid_intervals_dates_duplicates (test_temporal.TemporalTests.test_invalid_intervals_dates_duplicates) ... ok
+test_transaction_boundary_exclusive (test_temporal.TemporalTests.test_transaction_boundary_exclusive) ... ok
+test_unknown_key_and_modes (test_temporal.TemporalTests.test_unknown_key_and_modes) ... ok
+test_valid_boundary_exclusive (test_temporal.TemporalTests.test_valid_boundary_exclusive) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.006s
+
+OK

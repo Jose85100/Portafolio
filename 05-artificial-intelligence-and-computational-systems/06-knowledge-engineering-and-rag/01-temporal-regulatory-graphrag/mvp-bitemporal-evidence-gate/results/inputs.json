@@ -1,0 +1,2378 @@
+[
+  {
+    "case": "before_recorded",
+    "key": "synthetic-rule-0",
+    "valid_on": "2026-01-15",
+    "known_on": "2025-12-31",
+    "expected_status": "not_found",
+    "expected_version": null,
+    "versions": [
+      {
+        "key": "synthetic-rule-0",
+        "version_id": "s0-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-0: threshold=10",
+        "source": "synthetic://synthetic-rule-0/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-0",
+        "version_id": "s0-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-0: threshold=12",
+        "source": "synthetic://synthetic-rule-0/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-0",
+        "version_id": "s0-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-0: threshold=20",
+        "source": "synthetic://synthetic-rule-0/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 0
+  },
+  {
+    "case": "old_knowledge",
+    "key": "synthetic-rule-0",
+    "valid_on": "2026-01-15",
+    "known_on": "2026-02-15",
+    "expected_status": "ok",
+    "expected_version": "s0-v1",
+    "versions": [
+      {
+        "key": "synthetic-rule-0",
+        "version_id": "s0-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-0: threshold=10",
+        "source": "synthetic://synthetic-rule-0/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-0",
+        "version_id": "s0-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-0: threshold=12",
+        "source": "synthetic://synthetic-rule-0/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-0",
+        "version_id": "s0-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-0: threshold=20",
+        "source": "synthetic://synthetic-rule-0/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 0
+  },
+  {
+    "case": "retro_corrected",
+    "key": "synthetic-rule-0",
+    "valid_on": "2026-01-15",
+    "known_on": "2026-04-01",
+    "expected_status": "ok",
+    "expected_version": "s0-v2a",
+    "versions": [
+      {
+        "key": "synthetic-rule-0",
+        "version_id": "s0-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-0: threshold=10",
+        "source": "synthetic://synthetic-rule-0/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-0",
+        "version_id": "s0-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-0: threshold=12",
+        "source": "synthetic://synthetic-rule-0/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-0",
+        "version_id": "s0-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-0: threshold=20",
+        "source": "synthetic://synthetic-rule-0/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 0
+  },
+  {
+    "case": "future_valid_old_knowledge",
+    "key": "synthetic-rule-0",
+    "valid_on": "2026-02-15",
+    "known_on": "2026-02-20",
+    "expected_status": "ok",
+    "expected_version": "s0-v1",
+    "versions": [
+      {
+        "key": "synthetic-rule-0",
+        "version_id": "s0-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-0: threshold=10",
+        "source": "synthetic://synthetic-rule-0/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-0",
+        "version_id": "s0-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-0: threshold=12",
+        "source": "synthetic://synthetic-rule-0/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-0",
+        "version_id": "s0-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-0: threshold=20",
+        "source": "synthetic://synthetic-rule-0/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 0
+  },
+  {
+    "case": "new_valid_new_knowledge",
+    "key": "synthetic-rule-0",
+    "valid_on": "2026-02-15",
+    "known_on": "2026-04-01",
+    "expected_status": "ok",
+    "expected_version": "s0-v2b",
+    "versions": [
+      {
+        "key": "synthetic-rule-0",
+        "version_id": "s0-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-0: threshold=10",
+        "source": "synthetic://synthetic-rule-0/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-0",
+        "version_id": "s0-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-0: threshold=12",
+        "source": "synthetic://synthetic-rule-0/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-0",
+        "version_id": "s0-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-0: threshold=20",
+        "source": "synthetic://synthetic-rule-0/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 0
+  },
+  {
+    "case": "expired",
+    "key": "synthetic-rule-0",
+    "valid_on": "2027-01-15",
+    "known_on": "2026-04-01",
+    "expected_status": "not_found",
+    "expected_version": null,
+    "versions": [
+      {
+        "key": "synthetic-rule-0",
+        "version_id": "s0-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-0: threshold=10",
+        "source": "synthetic://synthetic-rule-0/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-0",
+        "version_id": "s0-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-0: threshold=12",
+        "source": "synthetic://synthetic-rule-0/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-0",
+        "version_id": "s0-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-0: threshold=20",
+        "source": "synthetic://synthetic-rule-0/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 0
+  },
+  {
+    "case": "conflict",
+    "key": "synthetic-rule-0",
+    "valid_on": "2026-02-15",
+    "known_on": "2026-04-01",
+    "expected_status": "ambiguous",
+    "expected_version": null,
+    "versions": [
+      {
+        "key": "synthetic-rule-0",
+        "version_id": "s0-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-0: threshold=10",
+        "source": "synthetic://synthetic-rule-0/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-0",
+        "version_id": "s0-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-0: threshold=12",
+        "source": "synthetic://synthetic-rule-0/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-0",
+        "version_id": "s0-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-0: threshold=20",
+        "source": "synthetic://synthetic-rule-0/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-0",
+        "version_id": "s0-v3",
+        "text": "SYNTHETIC ONLY synthetic-rule-0: threshold=99",
+        "source": "synthetic://synthetic-rule-0/v3",
+        "valid_from": "2026-02-01",
+        "valid_to": null,
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 0
+  },
+  {
+    "case": "before_recorded",
+    "key": "synthetic-rule-1",
+    "valid_on": "2026-01-15",
+    "known_on": "2025-12-31",
+    "expected_status": "not_found",
+    "expected_version": null,
+    "versions": [
+      {
+        "key": "synthetic-rule-1",
+        "version_id": "s1-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-1: threshold=11",
+        "source": "synthetic://synthetic-rule-1/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-1",
+        "version_id": "s1-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-1: threshold=13",
+        "source": "synthetic://synthetic-rule-1/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-1",
+        "version_id": "s1-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-1: threshold=21",
+        "source": "synthetic://synthetic-rule-1/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 1
+  },
+  {
+    "case": "old_knowledge",
+    "key": "synthetic-rule-1",
+    "valid_on": "2026-01-15",
+    "known_on": "2026-02-15",
+    "expected_status": "ok",
+    "expected_version": "s1-v1",
+    "versions": [
+      {
+        "key": "synthetic-rule-1",
+        "version_id": "s1-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-1: threshold=11",
+        "source": "synthetic://synthetic-rule-1/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-1",
+        "version_id": "s1-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-1: threshold=13",
+        "source": "synthetic://synthetic-rule-1/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-1",
+        "version_id": "s1-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-1: threshold=21",
+        "source": "synthetic://synthetic-rule-1/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 1
+  },
+  {
+    "case": "retro_corrected",
+    "key": "synthetic-rule-1",
+    "valid_on": "2026-01-15",
+    "known_on": "2026-04-01",
+    "expected_status": "ok",
+    "expected_version": "s1-v2a",
+    "versions": [
+      {
+        "key": "synthetic-rule-1",
+        "version_id": "s1-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-1: threshold=11",
+        "source": "synthetic://synthetic-rule-1/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-1",
+        "version_id": "s1-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-1: threshold=13",
+        "source": "synthetic://synthetic-rule-1/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-1",
+        "version_id": "s1-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-1: threshold=21",
+        "source": "synthetic://synthetic-rule-1/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 1
+  },
+  {
+    "case": "future_valid_old_knowledge",
+    "key": "synthetic-rule-1",
+    "valid_on": "2026-02-15",
+    "known_on": "2026-02-20",
+    "expected_status": "ok",
+    "expected_version": "s1-v1",
+    "versions": [
+      {
+        "key": "synthetic-rule-1",
+        "version_id": "s1-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-1: threshold=11",
+        "source": "synthetic://synthetic-rule-1/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-1",
+        "version_id": "s1-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-1: threshold=13",
+        "source": "synthetic://synthetic-rule-1/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-1",
+        "version_id": "s1-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-1: threshold=21",
+        "source": "synthetic://synthetic-rule-1/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 1
+  },
+  {
+    "case": "new_valid_new_knowledge",
+    "key": "synthetic-rule-1",
+    "valid_on": "2026-02-15",
+    "known_on": "2026-04-01",
+    "expected_status": "ok",
+    "expected_version": "s1-v2b",
+    "versions": [
+      {
+        "key": "synthetic-rule-1",
+        "version_id": "s1-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-1: threshold=11",
+        "source": "synthetic://synthetic-rule-1/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-1",
+        "version_id": "s1-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-1: threshold=13",
+        "source": "synthetic://synthetic-rule-1/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-1",
+        "version_id": "s1-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-1: threshold=21",
+        "source": "synthetic://synthetic-rule-1/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 1
+  },
+  {
+    "case": "expired",
+    "key": "synthetic-rule-1",
+    "valid_on": "2027-01-15",
+    "known_on": "2026-04-01",
+    "expected_status": "not_found",
+    "expected_version": null,
+    "versions": [
+      {
+        "key": "synthetic-rule-1",
+        "version_id": "s1-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-1: threshold=11",
+        "source": "synthetic://synthetic-rule-1/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-1",
+        "version_id": "s1-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-1: threshold=13",
+        "source": "synthetic://synthetic-rule-1/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-1",
+        "version_id": "s1-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-1: threshold=21",
+        "source": "synthetic://synthetic-rule-1/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 1
+  },
+  {
+    "case": "conflict",
+    "key": "synthetic-rule-1",
+    "valid_on": "2026-02-15",
+    "known_on": "2026-04-01",
+    "expected_status": "ambiguous",
+    "expected_version": null,
+    "versions": [
+      {
+        "key": "synthetic-rule-1",
+        "version_id": "s1-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-1: threshold=11",
+        "source": "synthetic://synthetic-rule-1/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-1",
+        "version_id": "s1-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-1: threshold=13",
+        "source": "synthetic://synthetic-rule-1/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-1",
+        "version_id": "s1-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-1: threshold=21",
+        "source": "synthetic://synthetic-rule-1/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-1",
+        "version_id": "s1-v3",
+        "text": "SYNTHETIC ONLY synthetic-rule-1: threshold=100",
+        "source": "synthetic://synthetic-rule-1/v3",
+        "valid_from": "2026-02-01",
+        "valid_to": null,
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 1
+  },
+  {
+    "case": "before_recorded",
+    "key": "synthetic-rule-2",
+    "valid_on": "2026-01-15",
+    "known_on": "2025-12-31",
+    "expected_status": "not_found",
+    "expected_version": null,
+    "versions": [
+      {
+        "key": "synthetic-rule-2",
+        "version_id": "s2-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-2: threshold=12",
+        "source": "synthetic://synthetic-rule-2/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-2",
+        "version_id": "s2-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-2: threshold=14",
+        "source": "synthetic://synthetic-rule-2/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-2",
+        "version_id": "s2-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-2: threshold=22",
+        "source": "synthetic://synthetic-rule-2/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 2
+  },
+  {
+    "case": "old_knowledge",
+    "key": "synthetic-rule-2",
+    "valid_on": "2026-01-15",
+    "known_on": "2026-02-15",
+    "expected_status": "ok",
+    "expected_version": "s2-v1",
+    "versions": [
+      {
+        "key": "synthetic-rule-2",
+        "version_id": "s2-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-2: threshold=12",
+        "source": "synthetic://synthetic-rule-2/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-2",
+        "version_id": "s2-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-2: threshold=14",
+        "source": "synthetic://synthetic-rule-2/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-2",
+        "version_id": "s2-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-2: threshold=22",
+        "source": "synthetic://synthetic-rule-2/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 2
+  },
+  {
+    "case": "retro_corrected",
+    "key": "synthetic-rule-2",
+    "valid_on": "2026-01-15",
+    "known_on": "2026-04-01",
+    "expected_status": "ok",
+    "expected_version": "s2-v2a",
+    "versions": [
+      {
+        "key": "synthetic-rule-2",
+        "version_id": "s2-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-2: threshold=12",
+        "source": "synthetic://synthetic-rule-2/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-2",
+        "version_id": "s2-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-2: threshold=14",
+        "source": "synthetic://synthetic-rule-2/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-2",
+        "version_id": "s2-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-2: threshold=22",
+        "source": "synthetic://synthetic-rule-2/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 2
+  },
+  {
+    "case": "future_valid_old_knowledge",
+    "key": "synthetic-rule-2",
+    "valid_on": "2026-02-15",
+    "known_on": "2026-02-20",
+    "expected_status": "ok",
+    "expected_version": "s2-v1",
+    "versions": [
+      {
+        "key": "synthetic-rule-2",
+        "version_id": "s2-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-2: threshold=12",
+        "source": "synthetic://synthetic-rule-2/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-2",
+        "version_id": "s2-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-2: threshold=14",
+        "source": "synthetic://synthetic-rule-2/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-2",
+        "version_id": "s2-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-2: threshold=22",
+        "source": "synthetic://synthetic-rule-2/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 2
+  },
+  {
+    "case": "new_valid_new_knowledge",
+    "key": "synthetic-rule-2",
+    "valid_on": "2026-02-15",
+    "known_on": "2026-04-01",
+    "expected_status": "ok",
+    "expected_version": "s2-v2b",
+    "versions": [
+      {
+        "key": "synthetic-rule-2",
+        "version_id": "s2-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-2: threshold=12",
+        "source": "synthetic://synthetic-rule-2/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-2",
+        "version_id": "s2-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-2: threshold=14",
+        "source": "synthetic://synthetic-rule-2/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-2",
+        "version_id": "s2-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-2: threshold=22",
+        "source": "synthetic://synthetic-rule-2/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 2
+  },
+  {
+    "case": "expired",
+    "key": "synthetic-rule-2",
+    "valid_on": "2027-01-15",
+    "known_on": "2026-04-01",
+    "expected_status": "not_found",
+    "expected_version": null,
+    "versions": [
+      {
+        "key": "synthetic-rule-2",
+        "version_id": "s2-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-2: threshold=12",
+        "source": "synthetic://synthetic-rule-2/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-2",
+        "version_id": "s2-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-2: threshold=14",
+        "source": "synthetic://synthetic-rule-2/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-2",
+        "version_id": "s2-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-2: threshold=22",
+        "source": "synthetic://synthetic-rule-2/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 2
+  },
+  {
+    "case": "conflict",
+    "key": "synthetic-rule-2",
+    "valid_on": "2026-02-15",
+    "known_on": "2026-04-01",
+    "expected_status": "ambiguous",
+    "expected_version": null,
+    "versions": [
+      {
+        "key": "synthetic-rule-2",
+        "version_id": "s2-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-2: threshold=12",
+        "source": "synthetic://synthetic-rule-2/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-2",
+        "version_id": "s2-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-2: threshold=14",
+        "source": "synthetic://synthetic-rule-2/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-2",
+        "version_id": "s2-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-2: threshold=22",
+        "source": "synthetic://synthetic-rule-2/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-2",
+        "version_id": "s2-v3",
+        "text": "SYNTHETIC ONLY synthetic-rule-2: threshold=101",
+        "source": "synthetic://synthetic-rule-2/v3",
+        "valid_from": "2026-02-01",
+        "valid_to": null,
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 2
+  },
+  {
+    "case": "before_recorded",
+    "key": "synthetic-rule-3",
+    "valid_on": "2026-01-15",
+    "known_on": "2025-12-31",
+    "expected_status": "not_found",
+    "expected_version": null,
+    "versions": [
+      {
+        "key": "synthetic-rule-3",
+        "version_id": "s3-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-3: threshold=13",
+        "source": "synthetic://synthetic-rule-3/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-3",
+        "version_id": "s3-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-3: threshold=15",
+        "source": "synthetic://synthetic-rule-3/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-3",
+        "version_id": "s3-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-3: threshold=23",
+        "source": "synthetic://synthetic-rule-3/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 3
+  },
+  {
+    "case": "old_knowledge",
+    "key": "synthetic-rule-3",
+    "valid_on": "2026-01-15",
+    "known_on": "2026-02-15",
+    "expected_status": "ok",
+    "expected_version": "s3-v1",
+    "versions": [
+      {
+        "key": "synthetic-rule-3",
+        "version_id": "s3-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-3: threshold=13",
+        "source": "synthetic://synthetic-rule-3/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-3",
+        "version_id": "s3-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-3: threshold=15",
+        "source": "synthetic://synthetic-rule-3/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-3",
+        "version_id": "s3-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-3: threshold=23",
+        "source": "synthetic://synthetic-rule-3/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 3
+  },
+  {
+    "case": "retro_corrected",
+    "key": "synthetic-rule-3",
+    "valid_on": "2026-01-15",
+    "known_on": "2026-04-01",
+    "expected_status": "ok",
+    "expected_version": "s3-v2a",
+    "versions": [
+      {
+        "key": "synthetic-rule-3",
+        "version_id": "s3-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-3: threshold=13",
+        "source": "synthetic://synthetic-rule-3/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-3",
+        "version_id": "s3-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-3: threshold=15",
+        "source": "synthetic://synthetic-rule-3/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-3",
+        "version_id": "s3-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-3: threshold=23",
+        "source": "synthetic://synthetic-rule-3/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 3
+  },
+  {
+    "case": "future_valid_old_knowledge",
+    "key": "synthetic-rule-3",
+    "valid_on": "2026-02-15",
+    "known_on": "2026-02-20",
+    "expected_status": "ok",
+    "expected_version": "s3-v1",
+    "versions": [
+      {
+        "key": "synthetic-rule-3",
+        "version_id": "s3-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-3: threshold=13",
+        "source": "synthetic://synthetic-rule-3/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-3",
+        "version_id": "s3-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-3: threshold=15",
+        "source": "synthetic://synthetic-rule-3/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-3",
+        "version_id": "s3-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-3: threshold=23",
+        "source": "synthetic://synthetic-rule-3/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 3
+  },
+  {
+    "case": "new_valid_new_knowledge",
+    "key": "synthetic-rule-3",
+    "valid_on": "2026-02-15",
+    "known_on": "2026-04-01",
+    "expected_status": "ok",
+    "expected_version": "s3-v2b",
+    "versions": [
+      {
+        "key": "synthetic-rule-3",
+        "version_id": "s3-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-3: threshold=13",
+        "source": "synthetic://synthetic-rule-3/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-3",
+        "version_id": "s3-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-3: threshold=15",
+        "source": "synthetic://synthetic-rule-3/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-3",
+        "version_id": "s3-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-3: threshold=23",
+        "source": "synthetic://synthetic-rule-3/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 3
+  },
+  {
+    "case": "expired",
+    "key": "synthetic-rule-3",
+    "valid_on": "2027-01-15",
+    "known_on": "2026-04-01",
+    "expected_status": "not_found",
+    "expected_version": null,
+    "versions": [
+      {
+        "key": "synthetic-rule-3",
+        "version_id": "s3-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-3: threshold=13",
+        "source": "synthetic://synthetic-rule-3/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-3",
+        "version_id": "s3-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-3: threshold=15",
+        "source": "synthetic://synthetic-rule-3/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-3",
+        "version_id": "s3-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-3: threshold=23",
+        "source": "synthetic://synthetic-rule-3/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 3
+  },
+  {
+    "case": "conflict",
+    "key": "synthetic-rule-3",
+    "valid_on": "2026-02-15",
+    "known_on": "2026-04-01",
+    "expected_status": "ambiguous",
+    "expected_version": null,
+    "versions": [
+      {
+        "key": "synthetic-rule-3",
+        "version_id": "s3-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-3: threshold=13",
+        "source": "synthetic://synthetic-rule-3/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-3",
+        "version_id": "s3-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-3: threshold=15",
+        "source": "synthetic://synthetic-rule-3/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-3",
+        "version_id": "s3-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-3: threshold=23",
+        "source": "synthetic://synthetic-rule-3/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-3",
+        "version_id": "s3-v3",
+        "text": "SYNTHETIC ONLY synthetic-rule-3: threshold=102",
+        "source": "synthetic://synthetic-rule-3/v3",
+        "valid_from": "2026-02-01",
+        "valid_to": null,
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 3
+  },
+  {
+    "case": "before_recorded",
+    "key": "synthetic-rule-4",
+    "valid_on": "2026-01-15",
+    "known_on": "2025-12-31",
+    "expected_status": "not_found",
+    "expected_version": null,
+    "versions": [
+      {
+        "key": "synthetic-rule-4",
+        "version_id": "s4-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-4: threshold=14",
+        "source": "synthetic://synthetic-rule-4/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-4",
+        "version_id": "s4-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-4: threshold=16",
+        "source": "synthetic://synthetic-rule-4/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-4",
+        "version_id": "s4-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-4: threshold=24",
+        "source": "synthetic://synthetic-rule-4/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 4
+  },
+  {
+    "case": "old_knowledge",
+    "key": "synthetic-rule-4",
+    "valid_on": "2026-01-15",
+    "known_on": "2026-02-15",
+    "expected_status": "ok",
+    "expected_version": "s4-v1",
+    "versions": [
+      {
+        "key": "synthetic-rule-4",
+        "version_id": "s4-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-4: threshold=14",
+        "source": "synthetic://synthetic-rule-4/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-4",
+        "version_id": "s4-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-4: threshold=16",
+        "source": "synthetic://synthetic-rule-4/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-4",
+        "version_id": "s4-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-4: threshold=24",
+        "source": "synthetic://synthetic-rule-4/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 4
+  },
+  {
+    "case": "retro_corrected",
+    "key": "synthetic-rule-4",
+    "valid_on": "2026-01-15",
+    "known_on": "2026-04-01",
+    "expected_status": "ok",
+    "expected_version": "s4-v2a",
+    "versions": [
+      {
+        "key": "synthetic-rule-4",
+        "version_id": "s4-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-4: threshold=14",
+        "source": "synthetic://synthetic-rule-4/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-4",
+        "version_id": "s4-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-4: threshold=16",
+        "source": "synthetic://synthetic-rule-4/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-4",
+        "version_id": "s4-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-4: threshold=24",
+        "source": "synthetic://synthetic-rule-4/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 4
+  },
+  {
+    "case": "future_valid_old_knowledge",
+    "key": "synthetic-rule-4",
+    "valid_on": "2026-02-15",
+    "known_on": "2026-02-20",
+    "expected_status": "ok",
+    "expected_version": "s4-v1",
+    "versions": [
+      {
+        "key": "synthetic-rule-4",
+        "version_id": "s4-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-4: threshold=14",
+        "source": "synthetic://synthetic-rule-4/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-4",
+        "version_id": "s4-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-4: threshold=16",
+        "source": "synthetic://synthetic-rule-4/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-4",
+        "version_id": "s4-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-4: threshold=24",
+        "source": "synthetic://synthetic-rule-4/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 4
+  },
+  {
+    "case": "new_valid_new_knowledge",
+    "key": "synthetic-rule-4",
+    "valid_on": "2026-02-15",
+    "known_on": "2026-04-01",
+    "expected_status": "ok",
+    "expected_version": "s4-v2b",
+    "versions": [
+      {
+        "key": "synthetic-rule-4",
+        "version_id": "s4-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-4: threshold=14",
+        "source": "synthetic://synthetic-rule-4/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-4",
+        "version_id": "s4-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-4: threshold=16",
+        "source": "synthetic://synthetic-rule-4/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-4",
+        "version_id": "s4-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-4: threshold=24",
+        "source": "synthetic://synthetic-rule-4/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 4
+  },
+  {
+    "case": "expired",
+    "key": "synthetic-rule-4",
+    "valid_on": "2027-01-15",
+    "known_on": "2026-04-01",
+    "expected_status": "not_found",
+    "expected_version": null,
+    "versions": [
+      {
+        "key": "synthetic-rule-4",
+        "version_id": "s4-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-4: threshold=14",
+        "source": "synthetic://synthetic-rule-4/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-4",
+        "version_id": "s4-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-4: threshold=16",
+        "source": "synthetic://synthetic-rule-4/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-4",
+        "version_id": "s4-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-4: threshold=24",
+        "source": "synthetic://synthetic-rule-4/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 4
+  },
+  {
+    "case": "conflict",
+    "key": "synthetic-rule-4",
+    "valid_on": "2026-02-15",
+    "known_on": "2026-04-01",
+    "expected_status": "ambiguous",
+    "expected_version": null,
+    "versions": [
+      {
+        "key": "synthetic-rule-4",
+        "version_id": "s4-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-4: threshold=14",
+        "source": "synthetic://synthetic-rule-4/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-4",
+        "version_id": "s4-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-4: threshold=16",
+        "source": "synthetic://synthetic-rule-4/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-4",
+        "version_id": "s4-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-4: threshold=24",
+        "source": "synthetic://synthetic-rule-4/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-4",
+        "version_id": "s4-v3",
+        "text": "SYNTHETIC ONLY synthetic-rule-4: threshold=103",
+        "source": "synthetic://synthetic-rule-4/v3",
+        "valid_from": "2026-02-01",
+        "valid_to": null,
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 4
+  },
+  {
+    "case": "before_recorded",
+    "key": "synthetic-rule-5",
+    "valid_on": "2026-01-15",
+    "known_on": "2025-12-31",
+    "expected_status": "not_found",
+    "expected_version": null,
+    "versions": [
+      {
+        "key": "synthetic-rule-5",
+        "version_id": "s5-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-5: threshold=15",
+        "source": "synthetic://synthetic-rule-5/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-5",
+        "version_id": "s5-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-5: threshold=17",
+        "source": "synthetic://synthetic-rule-5/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-5",
+        "version_id": "s5-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-5: threshold=25",
+        "source": "synthetic://synthetic-rule-5/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 5
+  },
+  {
+    "case": "old_knowledge",
+    "key": "synthetic-rule-5",
+    "valid_on": "2026-01-15",
+    "known_on": "2026-02-15",
+    "expected_status": "ok",
+    "expected_version": "s5-v1",
+    "versions": [
+      {
+        "key": "synthetic-rule-5",
+        "version_id": "s5-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-5: threshold=15",
+        "source": "synthetic://synthetic-rule-5/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-5",
+        "version_id": "s5-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-5: threshold=17",
+        "source": "synthetic://synthetic-rule-5/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-5",
+        "version_id": "s5-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-5: threshold=25",
+        "source": "synthetic://synthetic-rule-5/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 5
+  },
+  {
+    "case": "retro_corrected",
+    "key": "synthetic-rule-5",
+    "valid_on": "2026-01-15",
+    "known_on": "2026-04-01",
+    "expected_status": "ok",
+    "expected_version": "s5-v2a",
+    "versions": [
+      {
+        "key": "synthetic-rule-5",
+        "version_id": "s5-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-5: threshold=15",
+        "source": "synthetic://synthetic-rule-5/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-5",
+        "version_id": "s5-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-5: threshold=17",
+        "source": "synthetic://synthetic-rule-5/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-5",
+        "version_id": "s5-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-5: threshold=25",
+        "source": "synthetic://synthetic-rule-5/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 5
+  },
+  {
+    "case": "future_valid_old_knowledge",
+    "key": "synthetic-rule-5",
+    "valid_on": "2026-02-15",
+    "known_on": "2026-02-20",
+    "expected_status": "ok",
+    "expected_version": "s5-v1",
+    "versions": [
+      {
+        "key": "synthetic-rule-5",
+        "version_id": "s5-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-5: threshold=15",
+        "source": "synthetic://synthetic-rule-5/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-5",
+        "version_id": "s5-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-5: threshold=17",
+        "source": "synthetic://synthetic-rule-5/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-5",
+        "version_id": "s5-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-5: threshold=25",
+        "source": "synthetic://synthetic-rule-5/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 5
+  },
+  {
+    "case": "new_valid_new_knowledge",
+    "key": "synthetic-rule-5",
+    "valid_on": "2026-02-15",
+    "known_on": "2026-04-01",
+    "expected_status": "ok",
+    "expected_version": "s5-v2b",
+    "versions": [
+      {
+        "key": "synthetic-rule-5",
+        "version_id": "s5-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-5: threshold=15",
+        "source": "synthetic://synthetic-rule-5/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-5",
+        "version_id": "s5-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-5: threshold=17",
+        "source": "synthetic://synthetic-rule-5/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-5",
+        "version_id": "s5-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-5: threshold=25",
+        "source": "synthetic://synthetic-rule-5/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 5
+  },
+  {
+    "case": "expired",
+    "key": "synthetic-rule-5",
+    "valid_on": "2027-01-15",
+    "known_on": "2026-04-01",
+    "expected_status": "not_found",
+    "expected_version": null,
+    "versions": [
+      {
+        "key": "synthetic-rule-5",
+        "version_id": "s5-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-5: threshold=15",
+        "source": "synthetic://synthetic-rule-5/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-5",
+        "version_id": "s5-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-5: threshold=17",
+        "source": "synthetic://synthetic-rule-5/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-5",
+        "version_id": "s5-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-5: threshold=25",
+        "source": "synthetic://synthetic-rule-5/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 5
+  },
+  {
+    "case": "conflict",
+    "key": "synthetic-rule-5",
+    "valid_on": "2026-02-15",
+    "known_on": "2026-04-01",
+    "expected_status": "ambiguous",
+    "expected_version": null,
+    "versions": [
+      {
+        "key": "synthetic-rule-5",
+        "version_id": "s5-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-5: threshold=15",
+        "source": "synthetic://synthetic-rule-5/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-5",
+        "version_id": "s5-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-5: threshold=17",
+        "source": "synthetic://synthetic-rule-5/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-5",
+        "version_id": "s5-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-5: threshold=25",
+        "source": "synthetic://synthetic-rule-5/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-5",
+        "version_id": "s5-v3",
+        "text": "SYNTHETIC ONLY synthetic-rule-5: threshold=104",
+        "source": "synthetic://synthetic-rule-5/v3",
+        "valid_from": "2026-02-01",
+        "valid_to": null,
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 5
+  },
+  {
+    "case": "before_recorded",
+    "key": "synthetic-rule-6",
+    "valid_on": "2026-01-15",
+    "known_on": "2025-12-31",
+    "expected_status": "not_found",
+    "expected_version": null,
+    "versions": [
+      {
+        "key": "synthetic-rule-6",
+        "version_id": "s6-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-6: threshold=16",
+        "source": "synthetic://synthetic-rule-6/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-6",
+        "version_id": "s6-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-6: threshold=18",
+        "source": "synthetic://synthetic-rule-6/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-6",
+        "version_id": "s6-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-6: threshold=26",
+        "source": "synthetic://synthetic-rule-6/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 6
+  },
+  {
+    "case": "old_knowledge",
+    "key": "synthetic-rule-6",
+    "valid_on": "2026-01-15",
+    "known_on": "2026-02-15",
+    "expected_status": "ok",
+    "expected_version": "s6-v1",
+    "versions": [
+      {
+        "key": "synthetic-rule-6",
+        "version_id": "s6-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-6: threshold=16",
+        "source": "synthetic://synthetic-rule-6/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-6",
+        "version_id": "s6-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-6: threshold=18",
+        "source": "synthetic://synthetic-rule-6/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-6",
+        "version_id": "s6-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-6: threshold=26",
+        "source": "synthetic://synthetic-rule-6/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 6
+  },
+  {
+    "case": "retro_corrected",
+    "key": "synthetic-rule-6",
+    "valid_on": "2026-01-15",
+    "known_on": "2026-04-01",
+    "expected_status": "ok",
+    "expected_version": "s6-v2a",
+    "versions": [
+      {
+        "key": "synthetic-rule-6",
+        "version_id": "s6-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-6: threshold=16",
+        "source": "synthetic://synthetic-rule-6/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-6",
+        "version_id": "s6-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-6: threshold=18",
+        "source": "synthetic://synthetic-rule-6/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-6",
+        "version_id": "s6-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-6: threshold=26",
+        "source": "synthetic://synthetic-rule-6/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 6
+  },
+  {
+    "case": "future_valid_old_knowledge",
+    "key": "synthetic-rule-6",
+    "valid_on": "2026-02-15",
+    "known_on": "2026-02-20",
+    "expected_status": "ok",
+    "expected_version": "s6-v1",
+    "versions": [
+      {
+        "key": "synthetic-rule-6",
+        "version_id": "s6-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-6: threshold=16",
+        "source": "synthetic://synthetic-rule-6/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-6",
+        "version_id": "s6-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-6: threshold=18",
+        "source": "synthetic://synthetic-rule-6/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-6",
+        "version_id": "s6-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-6: threshold=26",
+        "source": "synthetic://synthetic-rule-6/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 6
+  },
+  {
+    "case": "new_valid_new_knowledge",
+    "key": "synthetic-rule-6",
+    "valid_on": "2026-02-15",
+    "known_on": "2026-04-01",
+    "expected_status": "ok",
+    "expected_version": "s6-v2b",
+    "versions": [
+      {
+        "key": "synthetic-rule-6",
+        "version_id": "s6-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-6: threshold=16",
+        "source": "synthetic://synthetic-rule-6/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-6",
+        "version_id": "s6-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-6: threshold=18",
+        "source": "synthetic://synthetic-rule-6/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-6",
+        "version_id": "s6-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-6: threshold=26",
+        "source": "synthetic://synthetic-rule-6/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 6
+  },
+  {
+    "case": "expired",
+    "key": "synthetic-rule-6",
+    "valid_on": "2027-01-15",
+    "known_on": "2026-04-01",
+    "expected_status": "not_found",
+    "expected_version": null,
+    "versions": [
+      {
+        "key": "synthetic-rule-6",
+        "version_id": "s6-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-6: threshold=16",
+        "source": "synthetic://synthetic-rule-6/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-6",
+        "version_id": "s6-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-6: threshold=18",
+        "source": "synthetic://synthetic-rule-6/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-6",
+        "version_id": "s6-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-6: threshold=26",
+        "source": "synthetic://synthetic-rule-6/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 6
+  },
+  {
+    "case": "conflict",
+    "key": "synthetic-rule-6",
+    "valid_on": "2026-02-15",
+    "known_on": "2026-04-01",
+    "expected_status": "ambiguous",
+    "expected_version": null,
+    "versions": [
+      {
+        "key": "synthetic-rule-6",
+        "version_id": "s6-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-6: threshold=16",
+        "source": "synthetic://synthetic-rule-6/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-6",
+        "version_id": "s6-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-6: threshold=18",
+        "source": "synthetic://synthetic-rule-6/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-6",
+        "version_id": "s6-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-6: threshold=26",
+        "source": "synthetic://synthetic-rule-6/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-6",
+        "version_id": "s6-v3",
+        "text": "SYNTHETIC ONLY synthetic-rule-6: threshold=105",
+        "source": "synthetic://synthetic-rule-6/v3",
+        "valid_from": "2026-02-01",
+        "valid_to": null,
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 6
+  },
+  {
+    "case": "before_recorded",
+    "key": "synthetic-rule-7",
+    "valid_on": "2026-01-15",
+    "known_on": "2025-12-31",
+    "expected_status": "not_found",
+    "expected_version": null,
+    "versions": [
+      {
+        "key": "synthetic-rule-7",
+        "version_id": "s7-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-7: threshold=17",
+        "source": "synthetic://synthetic-rule-7/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-7",
+        "version_id": "s7-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-7: threshold=19",
+        "source": "synthetic://synthetic-rule-7/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-7",
+        "version_id": "s7-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-7: threshold=27",
+        "source": "synthetic://synthetic-rule-7/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 7
+  },
+  {
+    "case": "old_knowledge",
+    "key": "synthetic-rule-7",
+    "valid_on": "2026-01-15",
+    "known_on": "2026-02-15",
+    "expected_status": "ok",
+    "expected_version": "s7-v1",
+    "versions": [
+      {
+        "key": "synthetic-rule-7",
+        "version_id": "s7-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-7: threshold=17",
+        "source": "synthetic://synthetic-rule-7/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-7",
+        "version_id": "s7-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-7: threshold=19",
+        "source": "synthetic://synthetic-rule-7/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-7",
+        "version_id": "s7-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-7: threshold=27",
+        "source": "synthetic://synthetic-rule-7/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 7
+  },
+  {
+    "case": "retro_corrected",
+    "key": "synthetic-rule-7",
+    "valid_on": "2026-01-15",
+    "known_on": "2026-04-01",
+    "expected_status": "ok",
+    "expected_version": "s7-v2a",
+    "versions": [
+      {
+        "key": "synthetic-rule-7",
+        "version_id": "s7-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-7: threshold=17",
+        "source": "synthetic://synthetic-rule-7/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-7",
+        "version_id": "s7-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-7: threshold=19",
+        "source": "synthetic://synthetic-rule-7/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-7",
+        "version_id": "s7-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-7: threshold=27",
+        "source": "synthetic://synthetic-rule-7/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 7
+  },
+  {
+    "case": "future_valid_old_knowledge",
+    "key": "synthetic-rule-7",
+    "valid_on": "2026-02-15",
+    "known_on": "2026-02-20",
+    "expected_status": "ok",
+    "expected_version": "s7-v1",
+    "versions": [
+      {
+        "key": "synthetic-rule-7",
+        "version_id": "s7-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-7: threshold=17",
+        "source": "synthetic://synthetic-rule-7/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-7",
+        "version_id": "s7-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-7: threshold=19",
+        "source": "synthetic://synthetic-rule-7/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-7",
+        "version_id": "s7-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-7: threshold=27",
+        "source": "synthetic://synthetic-rule-7/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 7
+  },
+  {
+    "case": "new_valid_new_knowledge",
+    "key": "synthetic-rule-7",
+    "valid_on": "2026-02-15",
+    "known_on": "2026-04-01",
+    "expected_status": "ok",
+    "expected_version": "s7-v2b",
+    "versions": [
+      {
+        "key": "synthetic-rule-7",
+        "version_id": "s7-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-7: threshold=17",
+        "source": "synthetic://synthetic-rule-7/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-7",
+        "version_id": "s7-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-7: threshold=19",
+        "source": "synthetic://synthetic-rule-7/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-7",
+        "version_id": "s7-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-7: threshold=27",
+        "source": "synthetic://synthetic-rule-7/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 7
+  },
+  {
+    "case": "expired",
+    "key": "synthetic-rule-7",
+    "valid_on": "2027-01-15",
+    "known_on": "2026-04-01",
+    "expected_status": "not_found",
+    "expected_version": null,
+    "versions": [
+      {
+        "key": "synthetic-rule-7",
+        "version_id": "s7-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-7: threshold=17",
+        "source": "synthetic://synthetic-rule-7/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-7",
+        "version_id": "s7-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-7: threshold=19",
+        "source": "synthetic://synthetic-rule-7/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-7",
+        "version_id": "s7-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-7: threshold=27",
+        "source": "synthetic://synthetic-rule-7/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 7
+  },
+  {
+    "case": "conflict",
+    "key": "synthetic-rule-7",
+    "valid_on": "2026-02-15",
+    "known_on": "2026-04-01",
+    "expected_status": "ambiguous",
+    "expected_version": null,
+    "versions": [
+      {
+        "key": "synthetic-rule-7",
+        "version_id": "s7-v1",
+        "text": "SYNTHETIC ONLY synthetic-rule-7: threshold=17",
+        "source": "synthetic://synthetic-rule-7/v1",
+        "valid_from": "2026-01-01",
+        "valid_to": null,
+        "known_from": "2026-01-01",
+        "known_to": "2026-03-01"
+      },
+      {
+        "key": "synthetic-rule-7",
+        "version_id": "s7-v2a",
+        "text": "SYNTHETIC ONLY synthetic-rule-7: threshold=19",
+        "source": "synthetic://synthetic-rule-7/v2a",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-02-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-7",
+        "version_id": "s7-v2b",
+        "text": "SYNTHETIC ONLY synthetic-rule-7: threshold=27",
+        "source": "synthetic://synthetic-rule-7/v2b",
+        "valid_from": "2026-02-01",
+        "valid_to": "2027-01-01",
+        "known_from": "2026-03-01",
+        "known_to": null
+      },
+      {
+        "key": "synthetic-rule-7",
+        "version_id": "s7-v3",
+        "text": "SYNTHETIC ONLY synthetic-rule-7: threshold=106",
+        "source": "synthetic://synthetic-rule-7/v3",
+        "valid_from": "2026-02-01",
+        "valid_to": null,
+        "known_from": "2026-03-01",
+        "known_to": null
+      }
+    ],
+    "seed": 7
+  }
+]
