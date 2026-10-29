@@ -1,0 +1,37 @@
+test_binomial_oracle_and_total_mass (test_quorum.QuorumTests.test_binomial_oracle_and_total_mass) ... ok
+test_closed_form_common_cause (test_quorum.QuorumTests.test_closed_form_common_cause) ... ok
+test_false_pass_and_infeasible (test_quorum.QuorumTests.test_false_pass_and_infeasible) ... ok
+test_invalid (test_quorum.QuorumTests.test_invalid) ... ok
+test_mandatory_and_deterministic (test_quorum.QuorumTests.test_mandatory_and_deterministic) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.009s
+
+OK
+Name              Stmts   Miss  Cover
+-------------------------------------
+src/__init__.py       0      0   100%
+src/quorum.py        66      0   100%
+-------------------------------------
+TOTAL                66      0   100%
+All checks passed!
+Success: no issues found in 2 source files
+{
+  "selected_exact": {
+    "standbys": 2,
+    "cost": 2,
+    "availability": 0.9139
+  },
+  "baseline_independent": {
+    "standbys": 0,
+    "cost": 0,
+    "availability": 0.8512000000000001
+  },
+  "actual_baseline_availability": 0.76,
+  "independence_error": 0.09120000000000006,
+  "seconds": 0.003469881000000896,
+  "python_peak_bytes": 32863,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+}
+Executed notebook.ipynb with rich outputs

@@ -1,0 +1,18 @@
+{
+  "selected_exact": {
+    "standbys": 2,
+    "cost": 2,
+    "availability": 0.9139
+  },
+  "baseline_independent": {
+    "standbys": 0,
+    "cost": 0,
+    "availability": 0.8512000000000001
+  },
+  "actual_baseline_availability": 0.76,
+  "independence_error": 0.09120000000000006,
+  "seconds": 0.0032705899999427857,
+  "python_peak_bytes": 32863,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+}
