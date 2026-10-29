@@ -1,0 +1,9 @@
+test_edges (test_moments.Tests.test_edges) ... ok
+test_merge_identity (test_moments.Tests.test_merge_identity) ... ok
+test_partitions_and_translation (test_moments.Tests.test_partitions_and_translation) ... ok
+test_units_and_order (test_moments.Tests.test_units_and_order) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.108s
+
+OK
