@@ -1,0 +1,5 @@
+disruption_weight,feasible,standbys,cost,availability
+0.1,True,0,0,0.855
+0.2,True,2,2,0.9139
+0.4,True,2,2,0.8777999999999999
+0.8,False,,,
