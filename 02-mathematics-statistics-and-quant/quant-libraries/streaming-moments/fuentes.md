@@ -1,0 +1,2 @@
+# Verificación 2026-10-29
+Cinco fuentes primarias: Welford y Chan metadata/abstract editorial por búsqueda (apertura DOI403/redirect); Pébay página Sandia y PDF OSTI; Higham página del autor y portada SIAM; NumPy documentación oficial abierta. Ver referencias.bib. No se afirma lectura integral de libros ni artículos con paywall. Formulaciones implementadas son clásicas; contribución incremental es API reusable y auditoría reproducible de particiones/representabilidad en este repositorio.
