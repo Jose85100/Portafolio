@@ -1,6 +1,6 @@
 # Strategic Monetary Transmission
 
-> **Estado: formulación de investigación.** No se han estimado modelos, demostrado teoremas específicos ni obtenido resultados empíricos en este directorio.
+> **Estado del programa: formulación (S1).** El benchmark `inflation-bias-audit` aporta un componente lineal-cuadrático S2 local; no implementa todavía el juego de Markov heterogéneo del programa ni proporciona resultados empíricos.
 
 ## Pregunta de investigación
 
@@ -58,3 +58,8 @@ Equilibrios múltiples, problemas de identificación y observación limitada de 
 3. Dataset versionado, contratos y vintages.
 4. Solver/estimador, simulación y pruebas automatizadas.
 5. Backtesting, análisis de robustez y reporte reproducible.
+
+
+## Componente S2: expectativas y compromiso
+
+[inflation-bias-audit](inflation-bias-audit/) contrasta compromiso contingente y discreción con expectativas racionales. Una alternativa con menor pérdida aparente se rechaza por expectativas inconsistentes. Es un benchmark estático previo, no una validación de la hipótesis principal sobre liquidez, inversión y heterogeneidad.
