@@ -1,0 +1,59 @@
+test_invalid_and_single_action (test_incentives.IncentiveTests.test_invalid_and_single_action) ... ok
+test_limited_liability_and_transfer_identity (test_incentives.IncentiveTests.test_limited_liability_and_transfer_identity) ... ok
+test_omitted_action_counterexample (test_incentives.IncentiveTests.test_omitted_action_counterexample) ... ok
+test_response_participation_and_adverse_ties (test_incentives.IncentiveTests.test_response_participation_and_adverse_ties) ... ok
+test_two_action_analytic_boundary (test_incentives.IncentiveTests.test_two_action_analytic_boundary) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+OK
+Name                Stmts   Miss  Cover
+---------------------------------------
+src/__init__.py         0      0   100%
+src/incentives.py      61      0   100%
+---------------------------------------
+TOTAL                  61      0   100%
+All checks passed!
+Success: no issues found in 2 source files
+{
+  "selected": {
+    "deferred": 0.9,
+    "target": {
+      "name": "prudent",
+      "success_bonus": 10.0,
+      "failure_bonus": 0.9999999999999998,
+      "expected_bonus": 9.549999999999999,
+      "manager_utility": 8.549999999999999,
+      "gross_profit": 18.5,
+      "net_profit": 8.950000000000001
+    },
+    "ic_margin": 0.29999999999999893,
+    "participation_surplus": 8.549999999999999,
+    "implemented": "prudent"
+  },
+  "baseline_immediate": {
+    "name": "volume_chasing",
+    "success_bonus": 15.0,
+    "failure_bonus": 15.0,
+    "expected_bonus": 15.0,
+    "manager_utility": 15.0,
+    "gross_profit": -7.5,
+    "net_profit": -22.5
+  },
+  "omitted_action_stress": {
+    "name": "unmodeled",
+    "success_bonus": 30.0,
+    "failure_bonus": 2.999999999999999,
+    "expected_bonus": 29.73,
+    "manager_utility": 29.73,
+    "gross_profit": -1.0,
+    "net_profit": -30.73
+  },
+  "analytic_minimum_for_margin": 0.8642857142857142,
+  "seconds": 0.00031390700007705163,
+  "python_peak_bytes": 3772,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+}
+Executed notebook.ipynb with rich outputs
