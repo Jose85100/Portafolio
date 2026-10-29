@@ -1,0 +1,2 @@
+# MVP
+Qué: resumen escalar estable y fusionable para varianza de streams finitos. Comando: `bash run.sh` desde esta carpeta. Produce CSV/JSON/PNG, notebook con outputs, tests/cobertura/lint/tipos. Hipótesis local error<=1e-10 para offsets<=1e12 y fixture mod4 verificada. No cubre overflow, entradas originales perdidas por redondeo, distribución empírica ni varianza ponderada. Umbral no es garantía universal.
