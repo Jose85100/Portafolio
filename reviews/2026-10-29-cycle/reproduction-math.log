@@ -1,0 +1,20 @@
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.2
+[notice] To update, run: python -m pip install --upgrade pip
+test_edges (test_moments.Tests.test_edges) ... ok
+test_merge_identity (test_moments.Tests.test_merge_identity) ... ok
+test_partitions_and_translation (test_moments.Tests.test_partitions_and_translation) ... ok
+test_units_and_order (test_moments.Tests.test_units_and_order) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.108s
+
+OK
+Wrote JSON report to results/coverage.json
+Name             Stmts   Miss  Cover
+------------------------------------
+src/moments.py      35      0   100%
+------------------------------------
+TOTAL               35      0   100%
+All checks passed!
+Success: no issues found in 1 source file
