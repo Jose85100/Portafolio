@@ -1,6 +1,6 @@
 # Temporal Regulatory GraphRAG
 
-> **Estado: propuesta técnica (S0/S1).** No se declara implementación, benchmark ejecutado ni desempeño demostrado.
+> **Estado:** diseño amplio S0/S1 con [un gate bitemporal de evidencia S2](mvp-bitemporal-evidence-gate/), ejecutado en políticas sintéticas. No se declara GraphRAG completo, interpretación legal ni operación.
 
 ## Pregunta de investigación
 
