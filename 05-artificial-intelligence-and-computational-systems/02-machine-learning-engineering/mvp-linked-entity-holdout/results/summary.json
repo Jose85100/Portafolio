@@ -1,0 +1,30 @@
+{
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "results": {
+    "row": {
+      "leaked_total": 108,
+      "component_opportunities": 144,
+      "train_min": 18,
+      "train_max": 18,
+      "mean_ns": 384267.75,
+      "peak_bytes": 6724
+    },
+    "primary": {
+      "leaked_total": 70,
+      "component_opportunities": 144,
+      "train_min": 17,
+      "train_max": 20,
+      "mean_ns": 353421.25,
+      "peak_bytes": 5120
+    },
+    "component": {
+      "leaked_total": 0,
+      "component_opportunities": 144,
+      "train_min": 18,
+      "train_max": 18,
+      "mean_ns": 262558.9166666667,
+      "peak_bytes": 4104
+    }
+  }
+}

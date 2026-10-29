@@ -1,0 +1,230 @@
+[
+  {
+    "record_id": "r00a",
+    "identities": [
+      "a0"
+    ]
+  },
+  {
+    "record_id": "r00b",
+    "identities": [
+      "a0",
+      "b0"
+    ]
+  },
+  {
+    "record_id": "r00c",
+    "identities": [
+      "b0"
+    ]
+  },
+  {
+    "record_id": "r01a",
+    "identities": [
+      "a1"
+    ]
+  },
+  {
+    "record_id": "r01b",
+    "identities": [
+      "a1",
+      "b1"
+    ]
+  },
+  {
+    "record_id": "r01c",
+    "identities": [
+      "b1"
+    ]
+  },
+  {
+    "record_id": "r02a",
+    "identities": [
+      "a2"
+    ]
+  },
+  {
+    "record_id": "r02b",
+    "identities": [
+      "a2",
+      "b2"
+    ]
+  },
+  {
+    "record_id": "r02c",
+    "identities": [
+      "b2"
+    ]
+  },
+  {
+    "record_id": "r03a",
+    "identities": [
+      "a3"
+    ]
+  },
+  {
+    "record_id": "r03b",
+    "identities": [
+      "a3",
+      "b3"
+    ]
+  },
+  {
+    "record_id": "r03c",
+    "identities": [
+      "b3"
+    ]
+  },
+  {
+    "record_id": "r04a",
+    "identities": [
+      "a4"
+    ]
+  },
+  {
+    "record_id": "r04b",
+    "identities": [
+      "a4",
+      "b4"
+    ]
+  },
+  {
+    "record_id": "r04c",
+    "identities": [
+      "b4"
+    ]
+  },
+  {
+    "record_id": "r05a",
+    "identities": [
+      "a5"
+    ]
+  },
+  {
+    "record_id": "r05b",
+    "identities": [
+      "a5",
+      "b5"
+    ]
+  },
+  {
+    "record_id": "r05c",
+    "identities": [
+      "b5"
+    ]
+  },
+  {
+    "record_id": "r06a",
+    "identities": [
+      "a6"
+    ]
+  },
+  {
+    "record_id": "r06b",
+    "identities": [
+      "a6",
+      "b6"
+    ]
+  },
+  {
+    "record_id": "r06c",
+    "identities": [
+      "b6"
+    ]
+  },
+  {
+    "record_id": "r07a",
+    "identities": [
+      "a7"
+    ]
+  },
+  {
+    "record_id": "r07b",
+    "identities": [
+      "a7",
+      "b7"
+    ]
+  },
+  {
+    "record_id": "r07c",
+    "identities": [
+      "b7"
+    ]
+  },
+  {
+    "record_id": "r08a",
+    "identities": [
+      "a8"
+    ]
+  },
+  {
+    "record_id": "r08b",
+    "identities": [
+      "a8",
+      "b8"
+    ]
+  },
+  {
+    "record_id": "r08c",
+    "identities": [
+      "b8"
+    ]
+  },
+  {
+    "record_id": "r09a",
+    "identities": [
+      "a9"
+    ]
+  },
+  {
+    "record_id": "r09b",
+    "identities": [
+      "a9",
+      "b9"
+    ]
+  },
+  {
+    "record_id": "r09c",
+    "identities": [
+      "b9"
+    ]
+  },
+  {
+    "record_id": "r10a",
+    "identities": [
+      "a10"
+    ]
+  },
+  {
+    "record_id": "r10b",
+    "identities": [
+      "a10",
+      "b10"
+    ]
+  },
+  {
+    "record_id": "r10c",
+    "identities": [
+      "b10"
+    ]
+  },
+  {
+    "record_id": "r11a",
+    "identities": [
+      "a11"
+    ]
+  },
+  {
+    "record_id": "r11b",
+    "identities": [
+      "a11",
+      "b11"
+    ]
+  },
+  {
+    "record_id": "r11c",
+    "identities": [
+      "b11"
+    ]
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "key": "groups",
+    "url": "https://scikit-learn.org/stable/modules/cross_validation.html",
+    "verified": "2026-10-29",
+    "method": "web open primary source accessible",
+    "scope": "Grouped cross validation"
+  },
+  {
+    "key": "pitfalls",
+    "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+    "verified": "2026-10-29",
+    "method": "web open primary source accessible",
+    "scope": "Common pitfalls and data leakage"
+  },
+  {
+    "key": "hash",
+    "url": "https://docs.python.org/3/library/hashlib.html",
+    "verified": "2026-10-29",
+    "method": "web open primary source accessible",
+    "scope": "hashlib"
+  },
+  {
+    "key": "leakage",
+    "url": "https://arxiv.org/abs/2207.07048",
+    "verified": "2026-10-29",
+    "method": "web open primary source accessible",
+    "scope": "Leakage and the Reproducibility Crisis in ML-based Science"
+  },
+  {
+    "key": "components",
+    "url": "https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.components.connected_components.html",
+    "verified": "2026-10-29",
+    "method": "web open primary source accessible",
+    "scope": "connected_components"
+  }
+]
