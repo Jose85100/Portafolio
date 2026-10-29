@@ -7,3 +7,5 @@
 - **Madurez:** componenteS2, no se certifica todo el programaS3/S4/M2 ni operación.
 - **Notebook:** IPython en proceso con namespace nuevo; celdas realmente ejecutadas, aborta errores. No se afirma kernel Jupyter separado.
 - **Trazabilidad:** diseño26 reconstruido desde historial después de pérdida del worktree. Resultados regenerados27; no byteidentidad con archivos antiguos. PR84 corresponde a otra entrega, investigación25.
+
+El incremento28está documentado en MVP_joint.md y se reproduce con bash run_joint.sh;no sustituye el experimento26.

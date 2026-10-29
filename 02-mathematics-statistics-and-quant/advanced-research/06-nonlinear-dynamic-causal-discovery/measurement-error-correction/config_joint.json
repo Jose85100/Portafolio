@@ -1,0 +1,1 @@
+{"research_date":"2026-10-28","effects":[0.0,0.3],"assumed_variances":[0.0,0.5,0.9,1.0,1.1,1.15,1.2,1.24,1.5],"condition_cap":100.0,"joint_psd_tolerance":1e-10,"latency_repeats":20,"hypothesis":"joint gate rejects all cases accepted by old gate with negative independent Schur residual; true variance1 preserves coefficients; compatibility does not certify variance truth"}
