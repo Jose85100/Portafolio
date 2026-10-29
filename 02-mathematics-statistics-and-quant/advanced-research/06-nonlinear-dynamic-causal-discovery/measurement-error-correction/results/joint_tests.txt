@@ -1,0 +1,13 @@
+test_invalid_tolerance_and_degenerate_y (test_joint_gate.JointGateTests.test_invalid_tolerance_and_degenerate_y) ... ok
+test_regressor_gate_accepts_impossible_joint_model (test_joint_gate.JointGateTests.test_regressor_gate_accepts_impossible_joint_model) ... ok
+test_units_and_independent_schur_oracle (test_joint_gate.JointGateTests.test_units_and_independent_schur_oracle) ... ok
+test_valid_models_preserved_and_boundary_oracle (test_joint_gate.JointGateTests.test_valid_models_preserved_and_boundary_oracle) ... ok
+test_bad_inputs_and_abstentions (test_moments.MomentTests.test_bad_inputs_and_abstentions) ... ok
+test_population_oracles (test_moments.MomentTests.test_population_oracles) ... ok
+test_units_translation_and_target_linearity_randomized (test_moments.MomentTests.test_units_translation_and_target_linearity_randomized) ... ok
+test_zero_noise_matches_ols (test_moments.MomentTests.test_zero_noise_matches_ols) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.152s
+
+OK
