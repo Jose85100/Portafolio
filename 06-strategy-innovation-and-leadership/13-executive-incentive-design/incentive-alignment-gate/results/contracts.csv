@@ -1,0 +1,7 @@
+deferred,implemented,ic_margin,target_utility,actual_principal_net,actual_bonus
+0,volume_chasing,-6.0,9.0,-22.5,15.0
+0.25,volume_chasing,-4.25,8.875,-20.625,13.125
+0.5,volume_chasing,-2.5,8.75,-18.75,11.25
+0.75,volume_chasing,-0.75,8.625,-16.875,9.375
+0.9,prudent,0.29999999999999893,8.549999999999999,8.950000000000001,9.549999999999999
+1,prudent,1.0,8.5,9.0,9.5

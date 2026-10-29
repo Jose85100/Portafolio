@@ -1,0 +1,4 @@
+alternative_failure,feasible,deferred,ic_margin
+0.1,False,,
+0.3,False,,
+0.5,True,0.9,0.29999999999999893
