@@ -1,0 +1,44 @@
+test_assignment_validation (test_splitter.Tests.test_assignment_validation) ... ok
+test_cut_detection (test_splitter.Tests.test_cut_detection) ... ok
+test_duplicate_tokens (test_splitter.Tests.test_duplicate_tokens) ... ok
+test_empty (test_splitter.Tests.test_empty) ... ok
+test_invalid (test_splitter.Tests.test_invalid) ... ok
+test_no_leak (test_splitter.Tests.test_no_leak) ... ok
+test_one_component (test_splitter.Tests.test_one_component) ... ok
+test_permutation (test_splitter.Tests.test_permutation) ... ok
+test_transitive (test_splitter.Tests.test_transitive) ... ok
+test_unknown (test_splitter.Tests.test_unknown) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.003s
+
+OK
+All checks passed!
+Success: no issues found in 1 source file
+{
+  "row": {
+    "leaked_total": 108,
+    "component_opportunities": 144,
+    "train_min": 18,
+    "train_max": 18,
+    "mean_ns": 384267.75,
+    "peak_bytes": 6724
+  },
+  "primary": {
+    "leaked_total": 70,
+    "component_opportunities": 144,
+    "train_min": 17,
+    "train_max": 20,
+    "mean_ns": 353421.25,
+    "peak_bytes": 5120
+  },
+  "component": {
+    "leaked_total": 0,
+    "component_opportunities": 144,
+    "train_min": 18,
+    "train_max": 18,
+    "mean_ns": 262558.9166666667,
+    "peak_bytes": 4104
+  }
+}
+Executed and saved 4 code cells via IPython in-process
