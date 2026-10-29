@@ -1,0 +1,81 @@
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.2
+[notice] To update, run: python -m pip install --upgrade pip
+test_anchor_and_budget (test_public_good.PublicGoodTests.test_anchor_and_budget) ... ok
+test_contracts (test_public_good.PublicGoodTests.test_contracts) ... ok
+test_oracle_and_dominance_properties (test_public_good.PublicGoodTests.test_oracle_and_dominance_properties) ... ok
+test_transfer_is_not_resource_gain (test_public_good.PublicGoodTests.test_transfer_is_not_resource_gain) ... ok
+test_zero_cost_and_no_subsidy_corner (test_public_good.PublicGoodTests.test_zero_cost_and_no_subsidy_corner) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.014s
+
+OK
+Name                 Stmts   Miss  Cover
+----------------------------------------
+src/public_good.py      35      1    97%
+----------------------------------------
+TOTAL                   35      1    97%
+All checks passed!
+Success: no issues found in 3 source files
+{
+  "config": {
+    "seed": 20261028,
+    "low_values": [
+      0.5,
+      1,
+      1.5
+    ],
+    "high_values": [
+      2,
+      3
+    ],
+    "tax_cost_values": [
+      0,
+      0.25,
+      0.5,
+      1,
+      2
+    ],
+    "anchor": {
+      "low": 1,
+      "high": 2,
+      "tax_cost": 0.5
+    },
+    "hypothesis": "For all30 declared cases budget-aware welfare >= no-policy and naive; analytic/oracle welfare gap <=1e-8. Anchor naive subsidy harms net welfare relative to no intervention. Deterministic theoretical audit, no empirical claim."
+  },
+  "case_count": 30,
+  "anchor": {
+    "low": 1,
+    "high": 2,
+    "tax_cost": 0.5,
+    "G_no_policy": 1,
+    "G_naive": 2,
+    "G_aware": 1.2909944487358058,
+    "welfare_no_policy": 1.0794415416798357,
+    "welfare_naive": 0.9625035326709953,
+    "welfare_aware": 1.1139745949736775,
+    "matching_share": 0.1270166537925832,
+    "public_budget": 0.16397779494322265,
+    "G_oracle": 1.290994448781462,
+    "oracle_welfare_gap": 0.0,
+    "analytic_seconds": 7.643999992978934e-06,
+    "oracle_seconds": 0.0034220759999925576
+  },
+  "max_oracle_welfare_gap": 6.661338147750939e-16,
+  "min_gain_vs_no_policy": 0.0,
+  "min_gain_vs_naive": 0.0,
+  "seconds": 0.14350824200005263,
+  "python_peak_bytes": 29656,
+  "hardware": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "source_sha256": "6e4efb1929a6b3fef0d113356aa7794c60cf20d5baa546c20cc35d72b804b070",
+  "data_sha256": "61ae9e2ad4bde5f14798d96434c40a4fd7c11194de406648f9f5384680a52683",
+  "timing_note": "Per-arm scalar times measured once, prefix totals are batch aggregation not repeated runs; peak is whole experiment Python allocations, not RSS. No tax estimation or operational benchmark."
+}
+Executed 6 code cells in process.
