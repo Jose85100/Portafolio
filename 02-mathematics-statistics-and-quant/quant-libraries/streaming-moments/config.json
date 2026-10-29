@@ -1,0 +1,1 @@
+{"date":"2026-10-29","sizes":[128,4096],"offsets":[0.0,100000000.0,1000000000000.0,10000000000000000.0],"seed":20261029,"dataset":"deterministic offset+(i mod 4); no external data","oracle":"Decimal.from_float precision80","threshold":1e-10,"ddof":0,"hardware":"recorded at runtime; CPU single process","cost":"local CPU diagnostic only, no monetary estimate"}
