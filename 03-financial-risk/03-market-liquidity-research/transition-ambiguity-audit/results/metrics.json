@@ -1,0 +1,49 @@
+{
+  "config": {
+    "cash": 6,
+    "horizon": 20,
+    "initial": [
+      0.8,
+      0.2
+    ],
+    "nominal_stress_probabilities": [
+      0.05,
+      0.8
+    ],
+    "bounds": [
+      [
+        0.03,
+        0.07
+      ],
+      [
+        0.7,
+        0.9
+      ]
+    ],
+    "buffers": 41,
+    "target": 0.05,
+    "hypothesis": "upper risk minus nominal risk>=0.05 at cash6 and robust minimum buffer exceeds nominal by>=3 units",
+    "data": "synthetic stress intervals, not estimated confidence regions",
+    "grid_note": "initial0..30 did not attain robust target; extended to0..40 because worst20flows*2=40 bounds required reserve, without changing hypothesis"
+  },
+  "selected": {
+    "cash": 6,
+    "lower": 0.12504179531622292,
+    "nominal": 0.25722509658919335,
+    "upper": 0.4605330392353987,
+    "largest_static_corner": 0.4605330392353988,
+    "adaptive_minus_static_corner": -1.1102230246251565e-16,
+    "visited_states": 228
+  },
+  "nominal_buffer": 22,
+  "robust_buffer": 34,
+  "seconds": 5.304753339000172,
+  "peak_tracemalloc_bytes": 584334,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "logical_cpus": 9,
+  "baseline_sha256": "332b5edbf18721bdbdf1414afe41050f79b1f9135c19524a56a9af3e5c4f9b50",
+  "maximum_adaptive_static_gap": 1.1102230246251565e-16,
+  "two_day_oracle_error": 0.0,
+  "hypothesis_passed": true
+}
