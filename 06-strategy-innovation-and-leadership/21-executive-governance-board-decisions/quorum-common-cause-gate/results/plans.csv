@@ -1,0 +1,4 @@
+standbys,cost,exact_availability,independent_marginal,states
+0,0,0.76,0.8512000000000001,32
+1,1,0.76,0.93328,64
+2,2,0.9139,0.947644,128
