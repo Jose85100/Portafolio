@@ -1,0 +1,1 @@
+{"periods":12,"conditional_default":0.02,"conditional_prepayment":0.1,"conditional_ead":100,"lgd":0.45,"period_discount_rate":0.005,"prepayment_grid":[0,0.02,0.05,0.1,0.2],"hypothesis":"ignoring competing prepayment overstates expected loss by>=20% relative to joint-exit model","data":"synthetic probabilities, not estimated borrower hazards"}
