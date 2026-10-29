@@ -1,0 +1,15 @@
+test_assignment_validation (test_splitter.Tests.test_assignment_validation) ... ok
+test_cut_detection (test_splitter.Tests.test_cut_detection) ... ok
+test_duplicate_tokens (test_splitter.Tests.test_duplicate_tokens) ... ok
+test_empty (test_splitter.Tests.test_empty) ... ok
+test_invalid (test_splitter.Tests.test_invalid) ... ok
+test_no_leak (test_splitter.Tests.test_no_leak) ... ok
+test_one_component (test_splitter.Tests.test_one_component) ... ok
+test_permutation (test_splitter.Tests.test_permutation) ... ok
+test_transitive (test_splitter.Tests.test_transitive) ... ok
+test_unknown (test_splitter.Tests.test_unknown) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.003s
+
+OK
