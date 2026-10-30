@@ -27,3 +27,13 @@ Aplicación de modelos cuantitativos a precios y decisiones financieras condicio
 ## Estándar
 
 Usar calendarios de publicación, datos punto-en-el-tiempo, ventanas sin fuga de información y benchmarks transparentes. El objetivo es análisis de mercados y decisiones financieras; la investigación de riesgo sistémico y cumplimiento prudencial se mantiene en `03-financial-risk`.
+
+## Aporte innovador y contraste con la base
+
+Aplicar la [metodología común](../METODOLOGIA_BASE_E_INNOVACION.md). Los aportes siguientes son hipótesis por demostrar, no reclamos de novedad confirmados. Para cada idea se especifican baseline, contribución incremental y prueba de falsación.
+
+- **1. Modelo mensual univariado o último dato publicado.** Base: Nowcast de frecuencias mixtas con vintages y retrasos reales. **Innovación a probar:** Validar error y revisión en pseudo-tiempo real contra benchmark autorregresivo. **Prueba decisiva:** undefined
+- **2. Expectativas de tasas como descomposición completa.** Base: Separar prima por plazo, liquidez y expectativas con incertidumbre de identificación. **Innovación a probar:** Probar estabilidad y capacidad explicativa en vencimientos/períodos reservados. **Prueba decisiva:** undefined
+- **3. Correlación macro-activo contemporánea.** Base: Respuesta dinámica a sorpresas de anuncio con diseño de evento/proyecciones locales. **Innovación a probar:** Placebos, ventanas alternativas y control de anticipación deben respaldar interpretación causal. **Prueba decisiva:** undefined
+- **4. Cobertura fija o hedge ratio incondicional.** Base: Hedge condicionado a régimen macro y covarianza variable con costos. **Innovación a probar:** Comparar error de exposición y costo neto contra benchmark fijo en ventanas out-of-sample. **Prueba decisiva:** undefined
+- **5. Proyección de deuda con tasa fija y crecimiento exógeno.** Base: Refinanciación, moneda, vencimientos y tasa endógenos modelados conjuntamente. **Innovación a probar:** Separar métricas de sostenibilidad y rollover; probar escenarios y sensibilidad paramétrica. **Prueba decisiva:** undefined
