@@ -27,3 +27,13 @@ Cuantificación de decisiones de capital, valoración empresarial e inversión e
 ## Entregables
 
 Modelo de flujos con supuestos auditables, escenarios, fuentes, sensibilidad, caso base y comparación con decisión sin proyecto. Mantener separadas valoración, estructuración, debida diligencia y aprobación.
+
+## Aporte innovador y contraste con la base
+
+Aplicar la [metodología común](../METODOLOGIA_BASE_E_INNOVACION.md). Los aportes siguientes son hipótesis por demostrar, no reclamos de novedad confirmados. Para cada idea se especifican baseline, contribución incremental y prueba de falsación.
+
+- **1. Ratio de apalancamiento objetivo estático.** Base: Estructura de capital dinámica con distress, impuestos, covenants y volatilidad de caja. **Innovación a probar:** Comparar costo de capital/violaciones frente a ratio fijo bajo escenarios y datos reservados. **Prueba decisiva:** undefined
+- **2. VPN determinístico con una tasa única.** Base: Opciones reales de esperar, expandir o abandonar bajo incertidumbre y reversibilidad. **Innovación a probar:** Identificar cuándo cambia la decisión y comparar valor incremental con VPN base. **Prueba decisiva:** undefined
+- **3. Reserva contingente fija por porcentaje de CAPEX.** Base: Riesgos conjuntos de costo, calendario, demanda y desembolsos por fase. **Innovación a probar:** Evaluar calibración de reservas y probabilidad de déficit contra contingencia fija. **Prueba decisiva:** undefined
+- **4. Ranking de proyectos por TIR o VPN individual.** Base: Cartera de inversiones con presupuesto, dependencia, capacidad y restricciones estratégicas. **Innovación a probar:** Comparar valor agregado alcanzable y sensibilidad frente al ranking proyecto-a-proyecto. **Prueba decisiva:** undefined
+- **5. Sinergia agregada como porcentaje fijo de ingresos.** Base: Curva de captura con calendario, costo de integración y probabilidad de ejecución. **Innovación a probar:** Contrastar valor realizado versus stand-alone y escenarios de sinergia fija, evitando doble conteo. **Prueba decisiva:** undefined
