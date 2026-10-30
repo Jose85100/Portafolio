@@ -1,0 +1,30 @@
+{
+  "config": {
+    "dataset": "synthetic constant intensities, not fitted loans",
+    "horizon_years": 1,
+    "default_hazard": 0.24,
+    "prepay_hazard": 1.2,
+    "ead": 100,
+    "lgd": 0.45,
+    "discount_forces": [
+      0.06,
+      0.0,
+      0.2
+    ],
+    "partitions": [
+      1,
+      2,
+      4,
+      12,
+      52,
+      360
+    ],
+    "seed": null,
+    "hypothesis": "annual endpoint loss underestimates exact integrated loss by >2% at rho .06",
+    "hardware": "recorded in inherited results/metrics.json",
+    "units": "hazards and discount force year^-1; duration years; exposure money"
+  },
+  "seconds": 0.02499261100001604,
+  "peak_bytes": 68308,
+  "hypothesis": true
+}

@@ -9,10 +9,12 @@ import tracemalloc
 from dataclasses import asdict
 from fractions import Fraction
 from pathlib import Path
+
 import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+
 from src.model import project
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -43,14 +45,14 @@ def run() -> None:
     for p in cfg["prepayment_grid"]:
         result = project([d] * n, [p] * n, [e] * n, lgd, r)
         rows.append(
-            dict(
-                conditional_prepayment=p,
-                default_probability=result.default_probability,
-                prepayment_probability=result.prepayment_probability,
-                active_probability=result.active_probability,
-                expected_loss=result.expected_loss,
-                mass_error=result.maximum_mass_error,
-            )
+            {
+                "conditional_prepayment": p,
+                "default_probability": result.default_probability,
+                "prepayment_probability": result.prepayment_probability,
+                "active_probability": result.active_probability,
+                "expected_loss": result.expected_loss,
+                "mass_error": result.maximum_mass_error,
+            }
         )
     active = Fraction(1)
     oracle = Fraction(0)
@@ -70,22 +72,22 @@ def run() -> None:
     save(out / "joint_periods.csv", [asdict(x) for x in joint.periods])
     save(out / "baseline_periods.csv", [asdict(x) for x in baseline.periods])
     overstated = baseline.expected_loss / joint.expected_loss - 1
-    meta = dict(
-        config=cfg,
-        baseline_expected_loss=baseline.expected_loss,
-        joint_expected_loss=joint.expected_loss,
-        baseline_default_probability=baseline.default_probability,
-        joint_default_probability=joint.default_probability,
-        relative_baseline_overstatement=overstated,
-        rational_oracle_loss=float(oracle),
-        rational_oracle_error=abs(joint.expected_loss - float(oracle)),
-        hypothesis_passed=overstated >= 0.2,
-        seconds=seconds,
-        peak_tracemalloc_bytes=peak,
-        python=sys.version,
-        platform=platform.platform(),
-        logical_cpus=__import__("os").cpu_count(),
-    )
+    meta = {
+        "config": cfg,
+        "baseline_expected_loss": baseline.expected_loss,
+        "joint_expected_loss": joint.expected_loss,
+        "baseline_default_probability": baseline.default_probability,
+        "joint_default_probability": joint.default_probability,
+        "relative_baseline_overstatement": overstated,
+        "rational_oracle_loss": float(oracle),
+        "rational_oracle_error": abs(joint.expected_loss - float(oracle)),
+        "hypothesis_passed": overstated >= 0.2,
+        "seconds": seconds,
+        "peak_tracemalloc_bytes": peak,
+        "python": sys.version,
+        "platform": platform.platform(),
+        "logical_cpus": __import__("os").cpu_count(),
+    }
     (out / "metrics.json").write_text(json.dumps(meta, indent=2))
     fig, axes = plt.subplots(1, 2, figsize=(10, 3.8))
     axes[0].bar(

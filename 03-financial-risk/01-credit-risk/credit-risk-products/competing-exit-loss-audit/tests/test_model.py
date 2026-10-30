@@ -1,6 +1,7 @@
 import math
 import unittest
 from fractions import Fraction
+
 from src.model import project
 
 
