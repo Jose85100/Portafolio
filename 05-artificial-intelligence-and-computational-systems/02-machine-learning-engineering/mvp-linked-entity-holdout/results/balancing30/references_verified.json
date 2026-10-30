@@ -1,0 +1,37 @@
+[
+  {
+    "key": "groups30",
+    "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GroupShuffleSplit.html",
+    "verified": "2026-10-30",
+    "method": "web open official primary source",
+    "scope": "GroupShuffleSplit"
+  },
+  {
+    "key": "kfold30",
+    "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GroupKFold.html",
+    "verified": "2026-10-30",
+    "method": "web open official primary source",
+    "scope": "GroupKFold"
+  },
+  {
+    "key": "components30",
+    "url": "https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.components.connected_components.html",
+    "verified": "2026-10-30",
+    "method": "web open official primary source",
+    "scope": "connected_components"
+  },
+  {
+    "key": "leakage30",
+    "url": "https://arxiv.org/abs/2207.07048",
+    "verified": "2026-10-30",
+    "method": "web open official primary source",
+    "scope": "Leakage and the Reproducibility Crisis in ML-based Science"
+  },
+  {
+    "key": "dp30",
+    "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/resources/lecture-21-dp-iii-parenthesization-edit-distance-knapsack/",
+    "verified": "2026-10-30",
+    "method": "web open official primary source",
+    "scope": "MIT6.006 Lecture21 Dynamic Programming III Knapsack"
+  }
+]

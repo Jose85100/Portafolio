@@ -9,3 +9,21 @@ Salidas: results/inputs.json, raw.csv, summary.json y leakage.svg; notebook.ipyn
 Todas políticas ordenan grupos por SHA256(seed:clave), reservan mitad de grupos. El baseline fila conserva18/36 train; primaria17–20/36; componente18/36 por grupos artificialmente iguales. Baselines difieren en unidad de partición: no son óptimos contra los que probar superioridad predictiva. Coste solo splitter incluyendo validación compartida; no incluye I/O/auditoría ni entrenamiento. Links se suministran antes del split, sin etiquetas. El uso de información del futuro para generarlos invalidaría una evaluación temporal.
 
 Madurez local: prototipo experimental ejecutado, no validado en datos reales ni operacional; no se equipara S2 a M2. Sin cambios en shared, contratos ni aplicaciones riesgo. Ver informe.md (14 puntos) y referencias.bib. Cobertura de líneas no medida; no C++.
+
+## Extensión acumulativa30: tamaños desiguales
+
+El negativo explícito29 (componentes iguales) se aborda en la misma línea. `bash run_balancing.sh` instala el entorno fijado, ejecuta todos los tests29+30, lint/tipos,50 comparaciones sintéticas+6 mediciones de escala y notebook_balancing.ipynb (6celdas ejecutadas IPython en proceso). No modifica las salidas29. Derivación y unidades en derivacion30.md; matriz prior_art30.md, research-log.md y roadmap.md. Código src/balancing.py aplica DP subset-sum clásica con guardias; no es una nueva técnica ML.
+
+Resultados:20/25 mejoras,5 empates,0 empeoramientos;0 cortes para ambas políticas. Desviación media3.5067→2.0133 filas. Negativo gigante:13.5 filas irreducibles. Experimentos sintéticos sin labels; no AUC ni escalabilidad industrial. La selección basada en tamaños usa solo metadata del snapshot; no resolver temporalidad ni calidad de vínculos. Madurez local experimental ejecutada, no validada/operacional. Ver informe_balancing30.md y results/balancing30/.
+
+```mermaid
+flowchart TD
+    A["Snapshot: filas y vínculos declarados"] --> B["Componentes29"]
+    B --> C{"Dos o más componentes y dentro de guardias"}
+    C -->|No| D["Error explícito: no holdout factible admitido"]
+    C -->|Sí| E["DP de masas alcanzables"]
+    E --> F["Asignación indivisible y auditoría de cortes"]
+    F --> G["Reportar desviación residual y decidir utilidad"]
+```
+
+La última decisión es humana: el código no acepta automáticamente un split útil por tener0 cortes.
