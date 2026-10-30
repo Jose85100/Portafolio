@@ -16,7 +16,7 @@
       "oracle": 2.75,
       "abs_error": 4.440892098500626e-16,
       "intended_error": 1.4999999999999996,
-      "ns": 222606,
+      "ns": 539590,
       "python_peak_bytes": 272
     },
     {
@@ -27,13 +27,13 @@
       "oracle": 2.75,
       "abs_error": 5.329070518200751e-15,
       "intended_error": 1.5000000000000053,
-      "ns": 15700102,
+      "ns": 9210744,
       "python_peak_bytes": 336
     }
   ],
   "environment": {
     "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
-    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
     "numpy": "2.3.5",
     "processor": "x86_64"
   },
