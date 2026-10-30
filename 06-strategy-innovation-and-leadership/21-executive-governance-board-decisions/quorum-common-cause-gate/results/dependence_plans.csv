@@ -1,0 +1,4 @@
+name,q1,q2,cost,lower_joint,independent_joint,upper_joint,lower_availability,nominal_availability,upper_availability,oct29_engine_nominal
+availability_A,0.7,0.7,2,0.3999999999999999,0.48999999999999994,0.7,0.836,0.8531,0.893,0.8531
+availability_B,0.8,0.8,3,0.6000000000000001,0.6400000000000001,0.8,0.874,0.8816,0.912,0.8816
+availability_C,0.9,0.9,4,0.8,0.81,0.9,0.912,0.9139,0.931,0.9139

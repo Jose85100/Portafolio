@@ -1,0 +1,30 @@
+{
+  "nominal_choice": {
+    "name": "availability_A",
+    "cost": 2,
+    "lower_availability": 0.836,
+    "nominal_availability": 0.8531,
+    "upper_availability": 0.893
+  },
+  "robust_choice": {
+    "name": "availability_B",
+    "cost": 3,
+    "lower_availability": 0.874,
+    "nominal_availability": 0.8816,
+    "upper_availability": 0.912
+  },
+  "critical_nominal_q": 0.6882472016116852,
+  "critical_robust_q": 0.7368421052631577,
+  "original29_q09_bounds": {
+    "lower_joint": 0.8,
+    "independent_joint": 0.81,
+    "upper_joint": 0.9,
+    "lower_availability": 0.912,
+    "nominal_availability": 0.9139,
+    "upper_availability": 0.931
+  },
+  "seconds": 9.416999995437436e-05,
+  "python_peak_bytes": 1160,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39"
+}
