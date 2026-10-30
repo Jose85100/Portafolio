@@ -1,50 +1,53 @@
-# CICLO29oct2026 — pérdida con salidas competidoras
+# CICLO30 — continuación del motor de salidas competidoras
 
 ## 1. Título
-Default, prepago y población activa en pérdida esperada descontada.
+Calendario explícito e integración del descuento dentro del intervalo de default.
 
 ## 2. Hipótesis y novedad incremental
-H: omitir prepago en el escenario suministrado supera la pérdida conjunta al menos20% respecto de esta. Umbral fijado antes de ejecutar. Aporte local: motor pequeño de flujo de probabilidad con contrato de EAD condicional y comparación racional independiente. No nueva teoría de riesgos competidores ni sistemaIFRS9 certificado.
+H preespecificada: descontar todos los defaults al cierre anual subestima más del2% la pérdida integrada con λd=.24/año, λp=1.2/año, ρ=.06/año, horizonte1año. Innovación incremental local: añadir contrato dimensional y eliminar aproximación temporal bajo intensidades/EAD constantes por tramo. No es una fórmula mundialmente nueva, estimador nuevo ni validación empírica. Se conserva íntegro el núcleo discreto29 y su semántica.
 
-## 3. Estado del arte
-Cinco referencias verificadas: Deng/Quigley/VanOrder2000 sobre terminaciones hipotecarias; Putter/Fiocco/Geskus2007 sobre multiestado; Austin/Lee/Fine2016 y Andersen etal2012 sobre incidencia vs riesgo condicional; Fine/Gray1999 sobre subdistribución. ReferenciasBibTeX y detalle de accesos enprior-art. Algunos textos completos bloquearon acceso automático; se verificaron metadatos/DOI y abstract disponibles, no lectura exhaustiva. No se ajusta ninguno de sus modelos de regresión.
+## 3. Estado del arte y atribución
+Cinco referencias DOI en referencias.bib y matriz `benchmarks/prior-art.md`: Deng2000 motiva competencia hipotecaria; Putter2007, Austin2016 y Andersen2012 separan hazard e incidencia; FineGray1999 es un enfoque de regresión explícitamente NO implementado. Revisión focal de metadatos/abstracts, no exhaustiva ni lectura completa de textos restringidos. Las identidades supervivencia/incidencia son conocidas; nuestra integración de descuento es derivación elemental bajo supuestos, adaptada al motor local. No se atribuyen cifras propias a la bibliografía.
 
-## 4. Brecha y alternativas
-Se compararon fondeo de liquidez, correlación de cartera y salidas competidoras. Elegimos tercero para rotar fuera de liquidez y cerrar alcance mínimo. El engineIFRS existente declara aproximación anual sin prepago explícito; no se afirma que esté contablemente mal. Nuestro baseline es el caso contrafactual sin prepago, no un supuesto bug. Igual período en ambas proyecciones; ninguna conversión automática de unidades.
+## 4. Brecha y tres alternativas
+La iteración29 señalaba falta de calendario explícito. Se compararon integración temporal, ajuste empírico a cohortes y selección PD/prepago; elegida primera por verdad verificable y sin inventar datos. Decisiones/roadmap en research-log.md. Base0b2e582 contiene PR105; único PR abierto al inicio107 de coordinación. Cambios exclusivos dentro de la misma carpeta existente, sin duplicar producto ni tocar IFRS/shared.
 
-## 5. Diseño/config
-12períodos uniformes, d=.02,p=.10, EAD100,LGD.45,r=.005 porperíodo. Cinco valoresp=[0,.02,.05,.10,.20]. Todos los demás parámetros fijos. Datos sintéticos,no clientes. El calendario se expresa en períodos genéricos; si se usa anual o mensual, toda probabilidad y tasa debe corresponder a esa unidad. No se infiere PD12m mensualizando por división. EAD es condicional en activo/default, no un saldo esperado ya reducido por prepago.
+## 5. Diseño y config
+`benchmarks/calendar_config.json`: intensidades anuales .24/1.2, un año, EAD100 monetaria condicional, LGD.45, fuerza de descuento continua0/.06/.20 por año. 1,2,4,12,52,360 intervalos;18 escenarios exactos, sinMC. Datos sintéticos sin semilla porque no hay aleatoriedad; CPU/Python/plataforma en results/metrics.json, dependencias directas en requirements y entorno reproducible run.sh. Cada tramo puede tener intensidad/EAD propia, siempre constante dentro de ese tramo. No implica independencia de causas latentes identificables; el modelo especifica intensidades causa dadas activo.
 
-## 6. Método y contrato
-S₀=1; Dₜ=Sₜ₋₁dₜ; Pₜ=Sₜ₋₁pₜ; Sₜ=Sₜ₋₁(1−dₜ−pₜ). Son probabilidades discretas de eventos mutuamente excluyentes dados los activos al inicio, no dos intensidades independientes continuas. Exigimos d,p≥0 y d+p≤1. Incidencia de default=ΣDₜ,incidencia prepago=ΣPₜ. InvarianteΣD+ΣP+S=1. EL=ΣDₜ×EADₜ×LGD/(1+r)^t. EAD puede variar porperíodo; LGD y tasa son escalares en esteMVP. Tasa∈[0,1],LGD∈[0,1], EAD finita≥0,1..360períodos. No se añade ordendefault-antes-prepago: los resultados del mismo período ya vienen como probabilidades exclusivas. La recurrencia financiera es O(H); el diagnóstico de masa usa sumas compensadas de todos los prefijos y cuesta O(H²) en esta implementación pequeña. Memoria O(H) para guardar cronograma.
+## 6. Implementación, fórmula original y propuesta
+`src/model.py` original: Dᵢ=Sᵢ₋₁dᵢ y pérdida al cierre; conserva probabilidades discretas suministradas. Nueva API `src/calendar.py`: duracionesΔ en años; intensidadesλd,λp y fuerzaρ en año⁻¹. k=λd+λp. ODE dS/du=−kS implica S(u)=Sᵢ₋₁exp(−ku), dᵢ=λd/k[1−exp(−kΔ)] y pᵢ análoga, con salida0 si k0. No convertir cada probabilidad por separado ni dividir PDanual entre12.
 
-## 7. Tests y benchmark
-Cinco tests: oráculo independiente Fraction a12períodos; fórmula cerrada sinprepago y ablación1período; masa/absorción/EAD0; monotonicidad manteniendo probabilidades condicionales fijas,descuento y escala; entradas inválidas. Cobertura realmente medida solo núcleo, no todo experimento. Ruffsrc/tests/benchmarks y mypyestricto núcleo. Comparación determinista de5escenarios y cronogramas24filas, sinMC. Oráculo usa aritmética racional completa, no valores copiados del método flotante. Tiempo/memoria/CPU/versiones enmetrics. No C++ modificado,sanitizers no aplican.
+La pérdida exacta del tramo es Sᵢ₋₁EᵢL exp(−ρtᵢ₋₁) × λd/(k+ρ)[1−exp(−(k+ρ)Δ)]. Surge de integrar λd exp(−ku)exp(−ρu)du. El baseline usa exactamente la misma masaDᵢ y exp(−ρtᵢ). `integrated`, `exact` y `endpoint` corresponden a integral, término exacto y término al cierre. `expm1` evita cancelación con exponentes pequeños. El caso k+ρ0 da pérdida0 pues λd0. Derivación completa LaTeX y ecuación-código en calendar_notebook.ipynb. Tiempo/memoria O(H) nueva API; original conserva su diagnóstico O(H²).
 
-## 8. Resultados
-|Modelo|Default acumulado|EL descontada|
-|---|---:|---:|
-|Sin prepago|0,2152832763|9,3913606004|
-|Salidas conjuntas|0,1307214740|5,7373789444|
-El baseline supera al conjunto63,6872985%,H cumple20%. Oráculo racional EL5,737378944381397,error observado≈2,66e−15. Diferencia no estima ajuste contable real. El contraste matemático separa dos universos activos manteniendo igual PDcondicional,LGD/EAD/descuento. Sensibilidad guardada completa enCSV.
+## 7. Tests/benchmarks reales
+11 tests:5 heredados y6 nuevos. Nuevos: fórmula cerrada, invariancia por partición y masa, negativos tasa0/hazard0, refinamiento, entradas inválidas y límitesLGD/overflow. Barrido determinista18casos, sin estimación de incertidumbre. Cobertura medida únicamente ambos núcleos85sentencias100%; no cobertura total del notebook ni del benchmark. Ruff y mypy estricto2núcleos pasan. No C/C++ modificado: CMake/sanitizers no aplican. No se añade lenguaje sin utilidad científica.
 
-## 9. Análisis crítico y ablaciones negativas
-Con p0 coincide supervivencia1−PD y ambos modelos; con H1,prepago y default del mismo período no compiten por una población previamente reducida: masa de default sigue d₁. No se muestra una falsa mejora en esos casos. Prepago total en primerperíodo elimina defaults posteriores. La disminución deEL al aumentar prepago se refiere a PD y EAD condicionales fijos; en datos reales la selección puede elevar el riesgo del grupo remanente. El baseline es válido para un mundo sin esa salida, pero no estima incidencia conjunta en nuestroDGP conp>.0.
+## 8. Resultados, tabla y figura
+|Calendario, ρ=.06/año|Pérdida integrada|Pérdida al cierre|Sesgo relativo del cierre|
+|---|---:|---:|---:|
+|1 intervalo/año|5.593462846931|5.389757800769|−3.641841%|
+|12 intervalos/año|5.593462846931|5.579211946515|−0.254778%|
+|360 intervalos/año|5.593462846931|5.592996427253|−0.008339%|
+H cumple>2% en el escenario preespecificado. Incidencia default.127178706886 y prepago.635893534432 se conservan al particionar. Diferencia exacta anual-mensual observada≈1.78e−15; no es error certificado universal. 18 filas crudas en results/calendar.csv, figura results/calendar.png, métricas en calendar_metrics.json. Ejecución inicial del barrido≈.037s y68308bytes tracemalloc, sensible al entorno; reproducción puede variar. No equivale a memoriaRSS ni coste de infraestructura. Original29 también se vuelve a ejecutar y conserva números.
 
-## 10. Limitaciones y riesgos
-No hay ajuste a datos, censura o identificabilidad de hazards. Probabilidades suministradas pueden estar mal calibradas o usar otra unidad. EAD ya ponderada por salidas produciría dobleconteo; el contrato lo prohíbe. No modela revolving,drawdowns,recobros,cures,modificaciones,escenariosmacro o correlación. No implementa staging/SICR/POCI o reglas deIFRS9/SFC. No se utiliza para gastos/reintegros/provisiones reales. Literatura estadística de otros dominios justifica identidades, no desempeño bancario.
+## 9. Análisis crítico y negativos
+Con ρ0, exacto y cierre coinciden: no hay ganancia temporal. Con λd0 pérdida0. Con tasas positivas, descuento al cierre es menor pues exp(−ρΔ)≤exp(−ρu) para u∈[0,Δ]. Esta desigualdad bajo supuestos no demuestra superioridad predictiva. Al refinar el calendario exacto es invariante solo si no se cambian funciones de intensidad/EAD. EADamortizable continua no se representa exactamente con valores constantes. El negativo29 de mismo default al primer bucket es de otra semántica discreta: no se lo reinterpreta como propiedad de intensidades continuas.
 
-## 11. Reproducir
-`bash run.sh` instala versionesdirectas y ejecuta todo. OpcionalSKIP_INSTALL1 con entorno listo. Venv por defecto; transitivas sinlocktotal. Notebook realmente ejecutado enIPython secuencial conoutputs capturados; figura inspeccionada separada, sin renderHTML completo afirmado. No hay credenciales,datos de clientes o serviciosLLM externos.
+## 10. Limitaciones/sesgos
+Intensidades suministradas, no calibradas, sin censura ni cohortes; no datos reales ni inferencia causal. Descuento continuo no es tasa efectiva anual sin conversiónρ=log(1+r), que el llamador debe hacer explícita. EAD condicional no incorpora ya supervivencia; no se modela variación dentro del tramo ni incertidumbre, recuperaciones, revolving o selección. El dominio puede incluir λ≥0 grandes, pero este pequeño prototipo no certifica exactitud para todo extremo de coma flotante. No cumple por sí solo IFRS9/SFC ni recomienda provisiones reales. Sin ampliación de madurez del programa; componente sintético verificado, no validado ni operacional, sin equivalencia automáticaS2/M2.
 
-## 12. Referencias
-Cinco entradas reales conDOI/URL enreferencias.bib. Prior-art registra fuentesoriginales,indexación y bloqueos. No se inventan citas ni se atribuyen nuestras cifras a artículos; revisiónfocal,no exhaustiva.
+## 11. Comando exacto
+Desde esta carpeta: `bash run.sh`. Instala versiones directas en .venv, ejecuta tests, cobertura, lint, tipos, ambos experimentos y ambos notebooks. Entorno ya listo: `SKIP_INSTALL=1 bash run.sh`. Notebook capturado de ejecución real IPython secuencial, validado nbformat; no se afirma ejecución de kernelZMQ ni renderHTML completo. Figura independiente inspeccionada visualmente. Transitivas sin lock completo, límite explícito.
 
-## 13. Rúbrica
-Autoevaluación: novedad2/5,rigor4,reproducibilidad4,código4,claridad4,impacto3,honestidad5,MVP4. Componente sintético, no madurez de programa. Revisión independiente/publicación solo se afirman posteriormente con evidencia.
+## 12. Referencias BibTeX
+`referencias.bib` conserva5entradas verificadas y matriz ampliada. Revalidación30: Wiley/PubMed para Putter y Deng; PubMed26858290 y22253319 para Austin y Andersen; editorial TaylorFrancis para FineGray. Referencias definen contexto/identidades, no nuestra tasa sintética ni recomendaciones bancarias. No promesa de prioridad mundial.
 
-## 14. Siguiente iteración
-Siguiente iteración recomendada: ajustar conjuntamente default y prepago con cohortes temporales y validar que EAD sea condicional. Tareas: competing-exit-loss-audit añadir EAD amortizable y prueba de calendario; ifrs9-investigacion-cuantitativa definir contrato explícito de prepago antes de integrar; credit-portfolio-strategy investigar selección de sobrevivientes sin afirmar causalidad.
+## 13. Rúbrica y artefactos
+Autoevaluación1–5: novedad2, rigor4, reproducibilidad4, código4, claridad4, impacto3, honestidad5, MVP4. Checklist real: src tipado; tests; run.sh; config; requirements; instrucciones reproducibles de entorno;18CSV+JSON+figura; notebook29 y calendar_notebook ejecutados; README; MVP; informe14p;5refs; matrizpriorart; research-log/roadmap. Estado: implementado y ejecutado; revisión independiente y publicación se documentan al obtener dictamen/enlace. No afirmarCI completa verde sin verificar.
 
-## Checklist
-Código/comando/tests/baseline numérico/CSVJSONfigura/notebookejecutado/README/informe/cinco referencias/MVP/config/entorno presentes. No se simulan ejecución, revisión o publicación.
+## 14. Próxima iteración
+Siguiente iteración recomendada: mantener esta línea y añadir EAD continua sin cambiar las intensidades. Tres tareas concretas: `src/calendar.py` integrar EAD lineal por tramo; `tests/test_calendar.py` verificar invariancia con fechas irregulares; `benchmarks/calendar_config.json` definir origen/licencia y separación temporal antes de ajustar a datos reales. Criterios continuar/ajustar/cerrar en research-log.md.
+
+## Evidencia de revisión independiente30
+Revisor separado reprodujo `SKIP_INSTALL=1 bash run.sh` con exit0 y11tests; comprobó integral, unidades/año, duracionesaños, expm1, masas y comparadorfin con mismo calendario. Dictamen: sin bloqueantes del núcleo. Figura inspeccionada sin recorte; la revisión de PR/CI queda identificada por enlace al publicar y no equivale a validación externa.

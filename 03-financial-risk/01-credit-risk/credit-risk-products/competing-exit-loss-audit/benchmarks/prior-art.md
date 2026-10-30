@@ -11,3 +11,16 @@ Main022f6bd y PR abiertos0 antes de la publicación accidental del duplicado99 (
 Cinco referencias reales verificadas por títulos/autores/DOI en fuentes primarias o registros bibliográficos oficiales: Deng2000Wiley/Wharton (default y prepago conjuntos); Putter2007Wiley (multiestado); Austin2016PubMed con abstract recuperado; Andersen2012OUP/PubMed indexados; Fine/Gray1999editorial indexada. PMC/eScholarship presentaron controles automáticos y algunos enlacesOUP/Wiley no abrieron: no se afirma lectura íntegra. Putter fue online2006 y aparece en volumen2007. Novedad local, no revisión exhaustiva ni teoría nueva.
 
 Literatura de supervivencia aporta identidades generales, no recomendaciones médicas ni evidencia de crédito. No ajustamos Fine-Gray, Cox, opciones de hipoteca o datos censurados. Se usan probabilidades discretas suministradas, no intensidades continuas ni coeficientes de subdistribución. Deng demuestra pertinencia del problema, no valida nuestros parámetros sintéticos.
+
+## Revisión acumulativa30 — matriz de atribución
+Verificación de metadatos/abstract focal, no revisión exhaustiva. El notebook deriva la adaptación; no se atribuye a estos artículos nuestra implementación exacta de descuento.
+
+| Referencia | Aporte pertinente | Qué se reutiliza | Diferencia/atribución |
+|---|---|---|---|
+| Deng2000 DOI10.1111/1468-0262.00110 | Default/prepago hipotecarios conjuntos | Motivación económica | No ajustamos heterogeneidad ni modelo de opciones; adaptación sintética |
+| Putter2007 DOI10.1002/sim.2712 | Multiestado y probabilidades de transición | Relación supervivencia/incidencia | Identidad conocida; integración por tramos local |
+| Austin2016 DOI10.1161/CIRCULATIONAHA.115.017719 | Interpretación riesgo e incidencia | Evitar confundir hazard con incidencia | Sin estimación clínica ni regresión |
+| Andersen2012 DOI10.1093/ije/dyr213 | Riesgos competidores | Marco de causas excluyentes | No evidencia crediticia ni nuevo estimador |
+| FineGray1999 DOI10.1080/01621459.1999.10474144 | Regresión subdistribución | Contraste de enfoques | NO implementado; no confundir hazard causa con subdistribución |
+
+Consulta30: Wiley DOI y PubMed17031868 volvieron a confirmar Deng y Putter; tres restantes se revalidan por registros editoriales/PubMed. Identidades y modelo propios son reproducción/adaptación, no prioridad científica. Descuento continuo dentro del tramo es integración elemental bajo hipótesis declaradas, no novedad de la literatura mundial.

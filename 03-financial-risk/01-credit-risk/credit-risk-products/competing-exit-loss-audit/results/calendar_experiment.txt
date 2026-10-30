@@ -1,0 +1,31 @@
+{
+  "config": {
+    "dataset": "synthetic constant intensities, not fitted loans",
+    "horizon_years": 1,
+    "default_hazard": 0.24,
+    "prepay_hazard": 1.2,
+    "ead": 100,
+    "lgd": 0.45,
+    "discount_forces": [
+      0.06,
+      0.0,
+      0.2
+    ],
+    "partitions": [
+      1,
+      2,
+      4,
+      12,
+      52,
+      360
+    ],
+    "seed": null,
+    "hypothesis": "annual endpoint loss underestimates exact integrated loss by >2% at rho .06",
+    "hardware": "recorded in inherited results/metrics.json",
+    "units": "hazards and discount force year^-1; duration years; exposure money"
+  },
+  "seconds": 0.02499261100001604,
+  "peak_bytes": 68308,
+  "hypothesis": true
+}
+[{'discount_force': 0.06, 'intervals': 1, 'relative_endpoint_bias': -0.0364184140910887, 'default_probability': 0.12717870688631303, 'prepayment_probability': 0.6358935344315652, 'survival': 0.23692775868212176, 'exact_loss': 5.593462846931305, 'endpoint_loss': 5.389757800768641}, {'discount_force': 0.06, 'intervals': 2, 'relative_endpoint_bias': -0.01668047321532473, 'default_probability': 0.12717870688631305, 'prepayment_probability': 0.6358935344315653, 'survival': 0.2369277586821218, 'exact_loss': 5.593462846931306, 'endpoint_loss': 5.500161239732154}, {'discount_force': 0.06, 'intervals': 4, 'relative_endpoint_bias': -0.007926760085220641, 'default_probability': 0.12717870688631303, 'prepayment_probability': 0.6358935344315652, 'survival': 0.2369277586821217, 'exact_loss': 5.593462846931305, 'endpoint_loss': 5.549124808898085}, {'discount_force': 0.06, 'intervals': 12, 'relative_endpoint_bias': -0.002547777791102601, 'default_probability': 0.12717870688631303, 'prepayment_probability': 0.6358935344315652, 'survival': 0.23692775868212168, 'exact_loss': 5.593462846931304, 'endpoint_loss': 5.579211946514535}, {'discount_force': 0.06, 'intervals': 52, 'relative_endpoint_bias': -0.0005794732764434762, 'default_probability': 0.1271787068863129, 'prepayment_probability': 0.6358935344315645, 'survival': 0.23692775868212101, 'exact_loss': 5.5934628469313, 'endpoint_loss': 5.590221584688724}, {'discount_force': 0.06, 'intervals': 360, 'relative_endpoint_bias': -8.338656942741274e-05, 'default_probability': 0.1271787068863133, 'prepayment_probability': 0.6358935344315666, 'survival': 0.2369277586821233, 'exact_loss': 5.593462846931318, 'endpoint_loss': 5.592996427253293}, {'discount_force': 0.0, 'intervals': 1, 'relative_endpoint_bias': 0.0, 'default_probability': 0.12717870688631303, 'prepayment_probability': 0.6358935344315652, 'survival': 0.23692775868212176, 'exact_loss': 5.723041809884086, 'endpoint_loss': 5.723041809884086}, {'discount_force': 0.0, 'intervals': 2, 'relative_endpoint_bias': 0.0, 'default_probability': 0.12717870688631305, 'prepayment_probability': 0.6358935344315653, 'survival': 0.2369277586821218, 'exact_loss': 5.723041809884087, 'endpoint_loss': 5.723041809884087}, {'discount_force': 0.0, 'intervals': 4, 'relative_endpoint_bias': 0.0, 'default_probability': 0.12717870688631303, 'prepayment_probability': 0.6358935344315652, 'survival': 0.2369277586821217, 'exact_loss': 5.723041809884086, 'endpoint_loss': 5.723041809884086}, {'discount_force': 0.0, 'intervals': 12, 'relative_endpoint_bias': 0.0, 'default_probability': 0.12717870688631303, 'prepayment_probability': 0.6358935344315652, 'survival': 0.23692775868212168, 'exact_loss': 5.723041809884085, 'endpoint_loss': 5.723041809884085}, {'discount_force': 0.0, 'intervals': 52, 'relative_endpoint_bias': 0.0, 'default_probability': 0.1271787068863129, 'prepayment_probability': 0.6358935344315645, 'survival': 0.23692775868212101, 'exact_loss': 5.72304180988408, 'endpoint_loss': 5.72304180988408}, {'discount_force': 0.0, 'intervals': 360, 'relative_endpoint_bias': 2.220446049250313e-16, 'default_probability': 0.1271787068863133, 'prepayment_probability': 0.6358935344315666, 'survival': 0.2369277586821233, 'exact_loss': 5.723041809884099, 'endpoint_loss': 5.7230418098841}, {'discount_force': 0.2, 'intervals': 1, 'relative_endpoint_bias': -0.11724066378807962, 'default_probability': 0.12717870688631303, 'prepayment_probability': 0.6358935344315652, 'survival': 0.23692775868212176, 'exact_loss': 5.307936306864858, 'endpoint_loss': 4.685630330903174}, {'discount_force': 0.2, 'intervals': 2, 'relative_endpoint_bias': -0.054795418148071096, 'default_probability': 0.12717870688631305, 'prepayment_probability': 0.6358935344315653, 'survival': 0.2369277586821218, 'exact_loss': 5.307936306864858, 'endpoint_loss': 5.01708571742687}, {'discount_force': 0.2, 'intervals': 4, 'relative_endpoint_bias': -0.026249531946461957, 'default_probability': 0.12717870688631303, 'prepayment_probability': 0.6358935344315652, 'survival': 0.2369277586821217, 'exact_loss': 5.307936306864857, 'endpoint_loss': 5.1686054632080225}, {'discount_force': 0.2, 'intervals': 12, 'relative_endpoint_bias': -0.00847540448596118, 'default_probability': 0.12717870688631303, 'prepayment_probability': 0.6358935344315652, 'survival': 0.23692775868212168, 'exact_loss': 5.307936306864858, 'endpoint_loss': 5.262949399678459}, {'discount_force': 0.2, 'intervals': 52, 'relative_endpoint_bias': -0.0019307026853147002, 'default_probability': 0.1271787068863129, 'prepayment_probability': 0.6358935344315645, 'survival': 0.23692775868212101, 'exact_loss': 5.3079363068648515, 'endpoint_loss': 5.297688259983708}, {'discount_force': 0.2, 'intervals': 360, 'relative_endpoint_bias': -0.00027793719128510475, 'default_probability': 0.1271787068863133, 'prepayment_probability': 0.6358935344315666, 'survival': 0.2369277586821233, 'exact_loss': 5.30793630686487, 'endpoint_loss': 5.30646103395622}]

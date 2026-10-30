@@ -21,3 +21,8 @@ El baseline supera la pérdida conjunta63,687%, manteniendo PD/EAD/LGD/descuento
 EAD está condicionada a estar activo/default; si un EAD ya incorpora prepago/supervivencia, volver a multiplicarlos duplica el ajuste. No convertir PD anual a mensual directamente: todos los parámetros deben compartir período. El modelo no ordena default y prepago artificialmente dentro del período; exige que las probabilidades de salida sumen≤1.
 
 Ablaciones: sin prepago ambos modelos coinciden; con un solo período el prepago no cambia masa de default del mismo período bajo esta convención. Mantener PD fija a mayor prepago es una hipótesis fuerte, no evidencia de selección real de clientes. Referencias y análisis14p en informe.md. Prototipo sintético de componente, no producto operacional.
+
+## Extensión acumulativa30: calendario e integración temporal
+En la MISMA línea se añade `src/calendar.py`, con intensidades anuales por tramo y duraciones en años. La API29 sigue siendo discreta y no cambia de interpretación. `calendar_notebook.ipynb` enseña derivación LaTeX, unidades y correspondencia fórmula-código, con outputs reales y negativos.
+
+Mismo año e intensidades.24/1.2, EAD100, LGD.45 y fuerza de descuento.06: pérdida integrada5.593462846931 frente a5.389757800769 al cierreanual (subestimación3.641841%). Al subdividir en12intervalos, pérdida exacta conserva5.593462846931 y cierre5.579211946515. Con descuento0 ambos coinciden. 18casosCSV, figura y11tests; cobertura de los dos núcleos100%85sentencias medida. `bash run.sh` reproduce ambas iteraciones; informe29.md conserva historia y informe.md documenta30. Es adaptación verificada de fórmulas conocidas, sin validación empírica ni madurez operacional.
