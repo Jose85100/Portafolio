@@ -27,3 +27,13 @@ Análisis de valoración, financiación y flujos de bienes inmuebles y créditos
 ## Datos y límites
 
 Documentar georreferenciación, privacidad, fechas de avalúo, sesgo de selección y diferencias entre precio anunciado y transado. No presentar estimaciones automatizadas como avalúos oficiales.
+
+## Aporte innovador y contraste con la base
+
+Aplicar la [metodología común](../METODOLOGIA_BASE_E_INNOVACION.md). Los aportes siguientes son hipótesis por demostrar, no reclamos de novedad confirmados. Para cada idea se especifican baseline, contribución incremental y prueba de falsación.
+
+- **1. AVM de punto único hedónico.** Base: Valor probabilístico espacial con cuantiles, fecha y liquidez explícitos. **Innovación a probar:** Validar cobertura de intervalos y error por zona/tipo contra regresión hedónica. **Prueba decisiva:** undefined
+- **2. Tasa de prepago histórica agregada.** Base: Opción de refinanciación condicionada a incentivos, fricciones y tasas. **Innovación a probar:** Comparar error de cashflow/prepago y valor de opción frente a CPR histórica. **Prueba decisiva:** undefined
+- **3. Cap rate estático sobre renta estabilizada.** Base: Flujos netos probabilísticos con vacancia, mantenimiento y renovación. **Innovación a probar:** Validar error de NOI y sensibilidad de VPN frente a capitalización estática. **Prueba decisiva:** undefined
+- **4. Ratio precio-ingreso como indicador único.** Base: Accesibilidad por cuota, arriendo, ingreso y escenarios de crédito. **Innovación a probar:** Probar poder descriptivo por segmento y documentar límites causales del indicador. **Prueba decisiva:** undefined
+- **5. Yield del inmueble como valoración tokenizada.** Base: Descuento por derechos, iliquidez y concentración frente al activo no tokenizado. **Innovación a probar:** Comparar escenarios de salida y waterfall con valuación tradicional; explicitar supuestos legales. **Prueba decisiva:** undefined

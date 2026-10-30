@@ -27,3 +27,13 @@ Estas líneas amplían los MVP existentes de Markowitz, Black–Litterman, parid
 ## Estándar de desarrollo
 
 Cada estudio debe declarar universo y frecuencia, fuentes/licencia de datos, supuestos, restricciones, benchmark simple, validación temporal sin fuga de información, métricas de costos y límites de interpretación. Entregar notebook reproducible, módulo Python y datos sintéticos cuando no haya datos públicos adecuados.
+
+## Aporte innovador y contraste con la base
+
+Aplicar la [metodología común](../METODOLOGIA_BASE_E_INNOVACION.md). Los aportes siguientes son hipótesis por demostrar, no reclamos de novedad confirmados. Para cada idea se especifican baseline, contribución incremental y prueba de falsación.
+
+- **1. Optimización estática por periodo y matching de duración.** Base: Integrar metas y pasivos con decisiones de aporte y gasto en una política multi-periodo. **Innovación a probar:** Medir incumplimiento de metas fuera de muestra frente a LDI estático y política 60/40; probar shocks de tasas e inflación. **Prueba decisiva:** undefined
+- **2. Covarianza histórica y shrinkage como estimadores convencionales.** Base: Construir cartera robusta a conjuntos explícitos de error en medias, correlaciones y colas. **Innovación a probar:** Comparar estabilidad de pesos y arrepentimiento neto frente a shrinkage, igual ponderación y óptimo ex post. **Prueba decisiva:** undefined
+- **3. Media-varianza con activos líquidos y costos simples.** Base: Incorporar llamadas de capital, flujos privados e iliquidez en una optimización factible por fecha. **Innovación a probar:** Verificar caja en cada periodo y comparar ventas forzadas/costo con una cartera sin compromisos bajo estrés. **Prueba decisiva:** undefined
+- **4. Rebalanceo por retorno antes de impuestos.** Base: Incorporar impuestos, lotes de costo, diferimiento y costos de operación a una regla única de rebalanceo. **Innovación a probar:** Comparar retorno neto de impuestos y tracking error con rebalanceo convencional en datos y reglas tributarias documentados. **Prueba decisiva:** undefined
+- **5. Escenarios macro con probabilidades fijas.** Base: Optimizar contra incertidumbre en probabilidades y dependencia entre escenarios. **Innovación a probar:** Probar reducción de déficit de metas en escenarios no usados para calibrar sin sacrificar demasiado desempeño central. **Prueba decisiva:** undefined

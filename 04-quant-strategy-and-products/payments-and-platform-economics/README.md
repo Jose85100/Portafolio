@@ -27,3 +27,13 @@ Modelos cuantitativos para redes de pago, adquirencia y plataformas con varios l
 ## Métricas
 
 Incluir tasa de aprobación, costo por transacción, latencia, disponibilidad, tiempo de liquidación, retención y margen por segmento. Definir claramente denominadores y ventana de medición.
+
+## Aporte innovador y contraste con la base
+
+Aplicar la [metodología común](../METODOLOGIA_BASE_E_INNOVACION.md). Los aportes siguientes son hipótesis por demostrar, no reclamos de novedad confirmados. Para cada idea se especifican baseline, contribución incremental y prueba de falsación.
+
+- **1. Tarifa plana y costo medio contable.** Base: Tarifa marginal por segmento con elasticidad de aceptación y abandono. **Innovación a probar:** Medir margen y retención frente a tarifa plana con holdout o piloto controlado. **Prueba decisiva:** undefined
+- **2. Ruteo fijo por proveedor o costo anunciado.** Base: Decisión con probabilidad de autorización, latencia, tarifa y capacidad. **Innovación a probar:** Comparar costo exitoso y disponibilidad con ruta fija bajo datos y fallas reservados. **Prueba decisiva:** undefined
+- **3. Liquidación bruta o neteo sin optimización conjunta.** Base: Neteo condicionado por liquidez, límites bilaterales y horarios. **Innovación a probar:** Cuantificar ahorro de liquidez sin aumentar retrasos/incumplimientos en escenarios de red. **Prueba decisiva:** undefined
+- **4. Subsidio a un lado de plataforma por regla manual.** Base: Precio bilateral con adopción endógena y elasticidades estimadas. **Innovación a probar:** Validar crecimiento sostenible de ambas partes y contribución total frente al subsidio actual. **Prueba decisiva:** undefined
+- **5. Monetización abstracta de datos transaccionales.** Base: Uso agregado con consentimiento que resuelve caso de valor concreto y costo de gobernanza. **Innovación a probar:** Demostrar beneficio neto y minimizar datos frente a alternativa sin compartir información. **Prueba decisiva:** undefined

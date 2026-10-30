@@ -25,7 +25,7 @@ Laboratorio cuantitativo aplicado a estrategias, inversión, valoración, tesore
 | [Datos alternativos y NLP](alternative-data-and-nlp/) | Textos, información alternativa y señales cuantamentales. |
 | [Pagos y economía de plataformas](payments-and-platform-economics/) | Tarifas, ruteo, liquidación e incentivos de redes de pago. |
 
-Cada área tiene cinco ideas de investigación descritas con método, pregunta cuantitativa y aporte esperado: **18 áreas y 90 ideas**. Son propuestas; no se presentan como modelos ya construidos.
+Cada área tiene cinco ideas de investigación descritas con pregunta, método y aporte esperado: **18 áreas y 90 ideas**. Las propuestas siguen la [metodología base y marco de innovación](METODOLOGIA_BASE_E_INNOVACION.md), alineado con las puertas S0–S4 de investigación. Cada tema explicita su baseline, hipótesis de innovación y prueba de falsación. La novedad se trata como hipótesis hasta contrastarla con literatura y evidencia.
 
 ## Proyectos existentes
 

@@ -27,3 +27,13 @@ Esta carpeta convierte métodos cuantitativos en componentes ejecutables, reutil
 ## Contratos de ingeniería
 
 Definir unidades, moneda, calendarios, tolerancias numéricas, manejo de datos faltantes y errores; fijar contratos de entrada/salida y casos de referencia. Medir precisión, convergencia, latencia y reproducibilidad. No presentar motores de demostración como producción o como sustituto de validación independiente.
+
+## Aporte innovador y contraste con la base
+
+Aplicar la [metodología común](../METODOLOGIA_BASE_E_INNOVACION.md). Los aportes siguientes son hipótesis por demostrar, no reclamos de novedad confirmados. Para cada idea se especifican baseline, contribución incremental y prueba de falsación.
+
+- **1. Simulación con generadores independientes por clase de activo.** Base: Escenarios sincronizados, versionados y reproducibles con invariantes y shocks acoplados. **Innovación a probar:** Verificar repetibilidad, momentos/correlaciones objetivo y paridad entre implementaciones de referencia. **Prueba decisiva:** undefined
+- **2. Asignación proporcional de presupuesto de capital.** Base: Atribución marginal con reconciliación matemática y restricciones por unidad o producto. **Innovación a probar:** Comprobar suma de contribuciones, estabilidad ante perturbaciones y utilidad frente a regla pro-rata. **Prueba decisiva:** undefined
+- **3. Haircuts estáticos y calendario de margen fijo.** Base: Simular haircut, disputa, demora y liquidación como estados conjuntos de colateral. **Innovación a probar:** Comparar costo y déficit de garantía contra política fija en saltos, gaps y retrasos extremos. **Prueba decisiva:** undefined
+- **4. Pricing por reglas manuales con métricas aisladas.** Base: Optimización conjunta de precio, plazo, cupo y elegibilidad con fronteras comerciales explícitas. **Innovación a probar:** Comparar margen ajustado por capital y tasa de aceptación con la regla vigente; comprobar restricciones en todos los casos. **Prueba decisiva:** undefined
+- **5. Heurísticas de caja por prioridad fija.** Base: Optimización de pagos/fondeo con restricciones temporales, costos y contingencias. **Innovación a probar:** Medir costo y retrasos frente a FIFO y regla actual, incluyendo factibilidad y sensibilidad ante pagos faltantes. **Prueba decisiva:** undefined
