@@ -33,3 +33,24 @@ La causa común afecta a3miembros simultáneamente. Las reservas tienen disponib
 Con disrupción0,8, el menú no alcanza meta. Rol obligatorio0,95 impone cota≤0,95: meta0,97inviable. Si el mínimo se eleva a4, tampoco se arregla con este menú. No se reduce el requisito para forzar éxito. Ausencias reales, independencia de reservas, conflictos, agendas ycalidad no están calibrados.
 
 Notebook realmente ejecutado en IPython en proceso con namespace fresco ycaptura rich; noQA kernelJupyter. PNG inspeccionado; interfaz notebook completa no inspeccionada.
+
+## Continuidad30oct: las reservas también fallan
+
+Se profundiza esta misma herramienta, sin crear otra demo. `src/reserve_ambiguity.py` mantiene el evento29 y reemplaza independencia de2reservas durante disrupción por cotas sharp clásicas. Para marginalesq1/q2:
+
+\[
+\max(0,q_1+q_2-1)\le p_{11}\le\min(q_1,q_2),\quad
+P(E)=r[(1-s)+sp_{11}].
+\]
+
+El notebook existente conserva elcaso29 y añade una derivación desde la tabla2×2, oracles, ablations separadas, fronteras de decisión y preguntas para el lector. `bash run.sh` reproduce ambas iteraciones.
+
+| Opción hipotética para el mismo par autorizado | q1=q2 en shock | Costo | Pnominal | Cota inferior |
+|---|---:|---:|---:|---:|
+|A|0,7|2|0,8531|0,836|
+|B|0,8|3|0,8816|0,874|
+|C|0,9|4|0,9139|0,912|
+
+Nominal eligeA ypuede incumplir0,85; robustoeligeB pagando1unidad adicional. La garantía cubre solo elpar ylasmarginales dadas: elrolobligatorio sigue independiente condicionalmente. Dependencia positiva perfecta conq0,7da0,893, superior alnominal; elpeorcaso amplio incluye dependencia negativa. No se afirma que toda correlación dañe disponibilidad.
+
+Resultados30en `results/dependence_*`, `reserve_couplings.csv`, `config_dependence.json`. Suite acumulada10tests,100%133statements núcleo, LPindependiente yrecuperación delmotor29. Véanse `matriz_prior_art.md`, `RESEARCH_LOG.md`, `ROADMAP.md` e `informe-2026-10-30.md`.6referencias verificadas con cobertura explícita. ComponenteS2 sintético; no certificar un programa operativo.
