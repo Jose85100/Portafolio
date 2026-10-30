@@ -1,0 +1,18 @@
+{
+  "README.md": true,
+  "MVP.md": true,
+  "informe_scale.md": true,
+  "notebook_scale.ipynb": true,
+  "src/scaled.py": true,
+  "tests/test_scaled.py": true,
+  "src/benchmark_scale.py": true,
+  "config_scale.json": true,
+  "requirements.txt": true,
+  "run.sh": true,
+  "results/scale_raw.csv": true,
+  "results/scale_summary.json": true,
+  "results/scale_audit.png": true,
+  "referencias.bib": true,
+  "prior_art.md": true,
+  "RESEARCH_LOG.md": true
+}

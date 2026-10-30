@@ -1,5 +1,6 @@
 Name             Stmts   Miss  Cover
 ------------------------------------
 src/moments.py      35      0   100%
+src/scaled.py       43      2    95%
 ------------------------------------
-TOTAL               35      0   100%
+TOTAL               78      2    97%

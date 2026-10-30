@@ -2,8 +2,12 @@ test_edges (test_moments.Tests.test_edges) ... ok
 test_merge_identity (test_moments.Tests.test_merge_identity) ... ok
 test_partitions_and_translation (test_moments.Tests.test_partitions_and_translation) ... ok
 test_units_and_order (test_moments.Tests.test_units_and_order) ... ok
+test_edges (test_scaled.ScaledTests.test_edges) ... ok
+test_extremes (test_scaled.ScaledTests.test_extremes) ... ok
+test_sample_sd_overflow (test_scaled.ScaledTests.test_sample_sd_overflow) ... ok
+test_sensitivity_and_properties (test_scaled.ScaledTests.test_sensitivity_and_properties) ... ok
 
 ----------------------------------------------------------------------
-Ran 4 tests in 0.108s
+Ran 8 tests in 0.130s
 
 OK
