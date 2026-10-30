@@ -27,3 +27,13 @@ Esta línea optimiza decisiones de balance, fondeo y liquidez económica. No rep
 ## Entregables
 
 Curvas y escenarios con unidades explícitas, libro de supuestos, comparación de políticas de balance y pruebas de sensibilidad. Diferenciar análisis económico de cumplimiento prudencial.
+
+## Aporte innovador y contraste con la base
+
+Aplicar la [metodología común](../METODOLOGIA_BASE_E_INNOVACION.md). Los aportes siguientes son hipótesis por demostrar, no reclamos de novedad confirmados. Para cada idea se especifican baseline, contribución incremental y prueba de falsación.
+
+- **1. Gap de duración o cobertura agregada por banda.** Base: Optimización de flujos multi-periodo por moneda, liquidez y costo. **Innovación a probar:** Comparar faltantes de caja y valor económico frente a duration matching bajo shocks comunes. **Prueba decisiva:** undefined
+- **2. FTP plano por producto/plazo.** Base: Precio marginal de fondos que incorpora plazo, opcionalidad y costo de liquidez. **Innovación a probar:** Validar atribución consistente de margen y cambios de incentivos frente a FTP plano. **Prueba decisiva:** undefined
+- **3. Selección por costo unitario más bajo.** Base: Mezcla multi-fuente con concentración, renovaciones, capacidad y escenarios de mercado. **Innovación a probar:** Medir costo total y brechas de refinanciación frente a mezcla mínima y estrategia vigente. **Prueba decisiva:** undefined
+- **4. Curvas históricas de prepago/retiro agregadas.** Base: Modelos conductuales condicionados a tasas, antigüedad y fricciones con incertidumbre explícita. **Innovación a probar:** Comparar pronóstico de flujos por cohorte y estabilidad de valor del balance fuera de muestra. **Prueba decisiva:** undefined
+- **5. Buffer fijo y regla FIFO intradía.** Base: Optimización de pagos, neteo y fondeo con ventanas y penalidades de demora. **Innovación a probar:** Comparar costo y puntualidad frente a buffer/FIFO, verificando factibilidad de liquidación. **Prueba decisiva:** undefined

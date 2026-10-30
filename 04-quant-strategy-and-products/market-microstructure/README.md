@@ -27,3 +27,13 @@ Estudios sobre cómo las órdenes se convierten en transacciones reales. El foco
 ## Datos y cautelas
 
 Usar snapshots con timestamp y reglas de limpieza reproducibles. Los datos agregados o retrasados limitan inferencias sobre prioridad de cola y latencia. No afirmar rentabilidad potencial sin costos completos.
+
+## Aporte innovador y contraste con la base
+
+Aplicar la [metodología común](../METODOLOGIA_BASE_E_INNOVACION.md). Los aportes siguientes son hipótesis por demostrar, no reclamos de novedad confirmados. Para cada idea se especifican baseline, contribución incremental y prueba de falsación.
+
+- **1. Impacto lineal o raíz cuadrada universal.** Base: Impacto condicionado por profundidad, volatilidad, activo y participación en volumen. **Innovación a probar:** Comparar error de costo ejecutado fuera de muestra contra benchmark universal por activo y régimen. **Prueba decisiva:** undefined
+- **2. TWAP/VWAP fijo como regla de ejecución.** Base: Control de urgencia que equilibra impacto, riesgo de precio e incompletitud. **Innovación a probar:** Trazar costo total versus fill rate frente a TWAP/VWAP en simulación y datos de ejecución reservados. **Prueba decisiva:** undefined
+- **3. Order flow firmado como único proxy de toxicidad.** Base: Separar spread, impacto permanente y markout condicional al estado de mercado. **Innovación a probar:** Demostrar calibración de markout y señal incremental sobre spread/proxy simple. **Prueba decisiva:** undefined
+- **4. Mejor precio visible como regla de ruteo.** Base: Ruteo que optimiza precio ejecutable, fill, latencia, tarifas y confiabilidad. **Innovación a probar:** Comparar ahorro neto y tasa de ejecución ante fallas y datos retrasados con best-price routing. **Prueba decisiva:** undefined
+- **5. Arrival price con una sola referencia.** Base: Benchmark de calidad de ejecución ajustado por tamaño, latencia, moneda y liquidez. **Innovación a probar:** Validar comparabilidad entre venues/proveedores y sensibilidad a benchmark alternativo. **Prueba decisiva:** undefined

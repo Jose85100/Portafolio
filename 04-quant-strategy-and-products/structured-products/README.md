@@ -27,3 +27,13 @@ Ideas para diseñar productos con pagos, tarifas e incentivos transparentes. Cad
 ## Evaluación
 
 Publicar fórmula de pago y tarifas, ejemplos numéricos, costos, escenarios adversos, sensibilidad a comportamiento y condiciones de salida. No confundir innovación de producto con recomendación comercial.
+
+## Aporte innovador y contraste con la base
+
+Aplicar la [metodología común](../METODOLOGIA_BASE_E_INNOVACION.md). Los aportes siguientes son hipótesis por demostrar, no reclamos de novedad confirmados. Para cada idea se especifican baseline, contribución incremental y prueba de falsación.
+
+- **1. Tasa escalonada definida solo por saldo/plazo.** Base: Regla por metas que incorpora permanencia, costo de fondeo y necesidad de liquidez. **Innovación a probar:** Experimento o simulación de comportamiento debe mejorar ahorro neto/retención sin elevar retiros dañinos. **Prueba decisiva:** undefined
+- **2. Cuota fija o periodo de gracia estándar.** Base: Cuota ligada a ingresos con amortización mínima y límites explícitos de extensión. **Innovación a probar:** Comparar costo total, mora y plazo frente a cuota fija en trayectorias de ingresos diversas. **Prueba decisiva:** undefined
+- **3. Retención fija sobre ventas o anticipo convencional.** Base: Repago variable con tope de costo total y tratamiento estacional de ingresos. **Innovación a probar:** Probar menor déficit de caja del comercio sin aumentar costo efectivo ni dependencia de ventas futuras. **Prueba decisiva:** undefined
+- **4. Cobertura genérica de tasa/FX con prima uniforme.** Base: Cobertura modular ajustada a flujo y tolerancia de caja del comercio. **Innovación a probar:** Comparar costo, riesgo residual y comprensibilidad con producto estándar bajo shocks y riesgo de base. **Prueba decisiva:** undefined
+- **5. Barrido fijo de excedentes o ahorro manual.** Base: Reserva automática que pronostica pagos próximos y mantiene colchón mínimo. **Innovación a probar:** Medir rendimiento adicional sin aumentar sobregiros, rechazos ni falta de liquidez frente a regla fija. **Prueba decisiva:** undefined

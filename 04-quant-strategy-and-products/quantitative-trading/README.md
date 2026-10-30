@@ -27,3 +27,13 @@
 ## Requisitos mínimos
 
 Backtest sin look-ahead, datos versionados, costos y slippage parametrizados, benchmark ingenuo, validación fuera de muestra y análisis de sensibilidad. Toda estrategia se trata como hipótesis hasta replicarse con datos independientes.
+
+## Aporte innovador y contraste con la base
+
+Aplicar la [metodología común](../METODOLOGIA_BASE_E_INNOVACION.md). Los aportes siguientes son hipótesis por demostrar, no reclamos de novedad confirmados. Para cada idea se especifican baseline, contribución incremental y prueba de falsación.
+
+- **1. Señales aisladas y portafolio equal-weight.** Base: Ensamble cross-sectional regularizado con señales alternativas disponibles punto-en-tiempo. **Innovación a probar:** Ablation y walk-forward deben demostrar retorno neto incremental frente a equal-weight y señal individual. **Prueba decisiva:** undefined
+- **2. Bandas fijas de reversión y tamaño estático.** Base: Umbrales que responden a inventario, volatilidad, liquidez y costo de salida. **Innovación a probar:** Comparar retorno neto, inventario extremo y drawdown frente a bandas fijas y benchmark buy-and-hold. **Prueba decisiva:** undefined
+- **3. Pesos fijos o selección por Sharpe histórico.** Base: Ensamble con actualización bayesiana por régimen y presupuesto de riesgo compartido. **Innovación a probar:** Probar mejora neta fuera de muestra y descartar ganancia si depende de un único periodo/régimen. **Prueba decisiva:** undefined
+- **4. Estudio de evento descriptivo sin costo de ejecución.** Base: Regla de entrada/salida condicionada por sorpresa, hora y liquidez observable. **Innovación a probar:** Exigir poder predictivo incremental y PnL neto tras spread/slippage en eventos no usados en diseño. **Prueba decisiva:** undefined
+- **5. Ratio de cobertura fijo o mínima varianza incondicional.** Base: Cobertura condicional a flujo, carry, base y costo de rebalanceo. **Innovación a probar:** Demostrar menor error presupuestal neto de costos frente a no cubrir y hedge ratio fijo. **Prueba decisiva:** undefined
