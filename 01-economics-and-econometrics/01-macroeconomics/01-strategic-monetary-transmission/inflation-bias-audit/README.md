@@ -1,31 +1,9 @@
-# Sesgo inflacionario y consistencia de expectativas
+# Auditoría acumulativa de sesgo inflacionario y delegación
 
-Nuevo componente pequeño del programa de transmisión monetaria: contrasta compromiso contingente al shock, discreción con expectativas racionales y una alternativa ingenua que congela expectativas. Se exige consistencia antes de ordenar pérdidas.
-
-**S2 local**, no del programa completo. Modelo lineal-cuadrático clásico, parámetros supuestos y sin evidencia macro real. Compromiso supone capacidad creíble y sin coste de fijar una regla antes de expectativas; no se implementa la institución que lo garantiza.
+S2 del componente estático; programa general S1. Ciclo29 se conserva y ciclo30 extiende el mismo código con delegación conservadora. No evidencia empírica ni teoría nueva.
 
 ## Reproducir
 
-Desde esta carpeta, Python 3.11+, venv y PyPI:
+Desde esta carpeta: `bash run.sh`. Requiere Python3.11+, venv y acceso a PyPI para dependencias fijadas. Instala, ejecuta tests/cobertura/lint/tipos, reproduce ambos experimentos y notebook narrativo con outputs visibles. Alternativa contenedor: usar imagen Python3.11, copiar carpeta, ejecutar el mismo comando; no imagen certificada.
 
-```bash
-bash run.sh
-```
-
-Ejecuta tests/cobertura, ruff/mypy, 54 casos con dos estados exactos y notebook en IPython limpio en proceso, sin kernel/socket. No simulación larga ni incertidumbre Monte Carlo inventada.
-
-## Resultado sintético
-
-Ancla α=λ=k=σ=1:
-
-| Régimen | Pérdida esperada | Residuo RE |
-|---|---:|---:|
-| Compromiso contingente |0,75|0|
-| Discreción consistente |1,25|0|
-| Naive: expectativas congeladas |0,50|0,50|
-
-La pérdida ingenua menor **no es una mejora de equilibrio**: genera inflación media 0,5 mientras supone expectativa cero. En los dos regímenes consistentes, producto medio cero; diferencia de pérdida exacta 0,5(λαk)². Cuando k=0, desaparece la diferencia. No se compara compromiso flexible con una regla rígida de inflación cero.
-
-![Resultados y admisibilidad](results/comparison.png)
-
-Se guardan casos y estados crudos, oráculo de mejor respuesta, hashes/versiones, figura, notebook ejecutado, cinco referencias reales e informe de 14 puntos con tres ideas comparadas. No reputación repetida, delegación, tipos de interés, agentes heterogéneos, calibración o recomendación para bancos centrales reales.
+`results/delegation.csv`, `delegation-summary.json`, `delegation.png` y `notebook.ipynb` contienen evidencia nueva. `results/cases.csv` y comparación anterior conservan baseline29. Fórmulas, unidades, sensibilidad y controles negativos están explicados en notebook e informe. `delegation-config.json` registra malla, fuente sintética y seed no aplicable; versiones fijadas en requirements y registradas por experimento anterior. Baseline justo: misma pérdida social λ y mismos shocks; solo cambia peso delegado q. Tres ideas, matriz prior art y clasificación de aporte en informe. No contrato institucional implementado, no estimación/calibración, no agentes heterogéneos o Markov.

@@ -1,0 +1,53 @@
+{
+  "cases": 144,
+  "anchor": {
+    "alpha": 1,
+    "weight": 1,
+    "target": 1,
+    "sigma": 1,
+    "q": 0.3085712007847549,
+    "baseline": 1.25,
+    "optimal": 0.8674056499645886,
+    "zero_weight": 1.0,
+    "oracle_loss_error": 0.0,
+    "state_error": 0.0
+  },
+  "max_oracle_loss_error": 3.552713678800501e-15,
+  "max_state_error": 4.440892098500626e-15,
+  "seconds": 0.311073016000023,
+  "python_peak_bytes": 107128,
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "data_sha256": "ee8346ab509441cbfb6bee752eda9888a3efa49d82faa6dcb1b07eeb607b806b",
+  "source_sha256": "de97a917490bb88f0b531b848db79f248febc63afbbcc5685742d177efec9bf0",
+  "config": {
+    "alpha": [
+      0.5,
+      1,
+      2
+    ],
+    "social_weight": [
+      0,
+      0.5,
+      1,
+      2
+    ],
+    "target": [
+      0,
+      0.5,
+      1
+    ],
+    "sigma": [
+      0,
+      0.5,
+      1,
+      3
+    ],
+    "data": "synthetic two equiprobable shocks \u00b1sigma; exact expectations",
+    "seed": null,
+    "hardware": "recorded platform, CPU; no accelerator",
+    "versions": "requirements.txt and results/summary.json",
+    "maturity": "S2 component, S1 program",
+    "scope": "one-period RE; credible costless delegation, social evaluation unchanged"
+  }
+}
