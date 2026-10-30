@@ -59,6 +59,16 @@ Fuente meteorológica y dato satelital → calidad/homogeneidad y metadatos → 
 
 La revisión de Ingels et al. declara una búsqueda en Scopus y resume brechas en modelos prospectivos, no estacionariedad, asequibilidad, multi-riesgo y aplicaciones geográficas. No afirmamos indexación bibliométrica independiente de cada referencia.
 
+## Evidencia sintética de esta ejecución
+
+Con semilla 20261029 y corte temporal 70/30, la prima pura de burn fue 7.29 miles COP sintéticos por exposición-periodo; el pronóstico condicional fue 30.15, mientras que el pago promedio realizado en test fue 40.79. El modelo condicional reconoció parte de la deriva pero **subestimó el pago futuro** en esta trayectoria. Este resultado negativo muestra que la tendencia lineal y escala residual constante no bastan para tarificar un cambio de régimen. No se presenta como estimación real ni evidencia de superioridad.
+
+Las métricas de basis risk para el contrato de referencia en test fueron correlación pérdida-pago 0.886, shortfall medio 6.61 y pago excedente medio 4.70 (miles COP sintéticos). El contrato alternativo seleccionado en train (trigger 580, agotamiento 300) tuvo shortfall test 6.61 y pago excedente 4.70 en este DGP. La selección requiere replicaciones y validación externa antes de interpretación.
+
+![Cambio del índice](results/01_shift.png)
+![Riesgo de base](results/03_basis.png)
+![Asequibilidad](results/04_affordability.png)
+
 ## Reproducibilidad
 
 Instalar `requirements.txt` y ejecutar `notebook.ipynb`. `src/pricing.py` implementa payout y principios de prima acotados para pruebas unitarias. Semilla fija en el notebook. DGP sintético, sin PII ni datos de asegurados.
