@@ -1,0 +1,21 @@
+{
+  "rows": 42,
+  "chosen_cases": 6,
+  "chosen_statuses": {
+    "ok": 2,
+    "variance_overflow": 2,
+    "variance_underflow": 2
+  },
+  "chosen_max_relative_sd_error": 1.7763568394002505e-15,
+  "baseline_failures": {
+    "kernel29": 4,
+    "numpy_two_pass": 4
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "numpy": "2.3.5"
+  },
+  "timing": "5 calls median; no tracemalloc during timing; memory separate Python allocations only, not RSS; no claim of throughput improvement"
+}
