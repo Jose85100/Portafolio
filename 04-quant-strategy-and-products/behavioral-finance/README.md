@@ -27,3 +27,13 @@ Análisis de cómo atención, creencias, hábitos y presentación de opciones af
 ## Diseño responsable
 
 Predefinir hipótesis y métricas; reportar tamaños de efecto e incertidumbre; proteger datos; facilitar salida de intervenciones; evaluar efectos adversos y diferencias entre grupos. Distinguir correlación, predicción e impacto causal.
+
+## Aporte innovador y contraste con la base
+
+Aplicar la [metodología común](../METODOLOGIA_BASE_E_INNOVACION.md). Los aportes siguientes son hipótesis por demostrar, no reclamos de novedad confirmados. Para cada idea se especifican baseline, contribución incremental y prueba de falsación.
+
+- **1. Volumen de noticias o búsquedas como proxy agregado.** Base: Medida de atención que separa exposición, sorpresa y tono. **Innovación a probar:** Probar capacidad incremental sobre volatilidad/volumen base y usar shocks exógenos si se afirma causalidad. **Prueba decisiva:** undefined
+- **2. Ahorro voluntario sin default como control.** Base: Arquitectura de elección con metas/compromiso y salida sencilla. **Innovación a probar:** Ensayo aleatorio debe mostrar ahorro neto mayor sin deteriorar liquidez ni aumentar sobregiros. **Prueba decisiva:** undefined
+- **3. Divulgación estándar y test de conocimiento genérico.** Base: Presentación experimental de tasa, cuota, costo total y calendario. **Innovación a probar:** Medir comprensión y elección correcta contra disclosure base sin reducir visibilidad de costos. **Prueba decisiva:** undefined
+- **4. Expectativas racionales como benchmark único.** Base: Modelo de creencias/atención medido con encuestas y datos de mercado. **Innovación a probar:** Comprobar mejora predictiva estable; distinguir evidencia predictiva de causalidad conductual. **Prueba decisiva:** undefined
+- **5. Recordatorio uniforme enviado por calendario.** Base: Intervención temporal alineada a fechas de ingreso y elección de flexibilidad. **Innovación a probar:** Comparar puntualidad y bienestar/liquidez contra control; registrar presión, reclamos y deuda adicional. **Prueba decisiva:** undefined
