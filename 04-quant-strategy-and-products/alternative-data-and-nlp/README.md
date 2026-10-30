@@ -27,3 +27,13 @@ Uso de textos y fuentes alternativas para medir información económica y financ
 ## Salvaguardas metodológicas
 
 Guardar fecha de publicación y captura, deduplicar documentos, separar entrenamiento y evaluación temporalmente, probar contra un benchmark sin texto y revisar permisos de uso. No inferir identidad ni atributos sensibles.
+
+## Aporte innovador y contraste con la base
+
+Aplicar la [metodología común](../METODOLOGIA_BASE_E_INNOVACION.md). Los aportes siguientes son hipótesis por demostrar, no reclamos de novedad confirmados. Para cada idea se especifican baseline, contribución incremental y prueba de falsación.
+
+- **1. Keywords/sentiment genérico de documentos.** Base: Extracción temporal de cambios en guía, riesgo y demanda con trazabilidad textual. **Innovación a probar:** Evaluación humana etiquetada y señal incremental sobre sorpresa numérica convencional. **Prueba decisiva:** undefined
+- **2. Indicadores oficiales rezagados sin texto.** Base: Texto de alta frecuencia integrado en modelo mixto con disponibilidad archivada. **Innovación a probar:** Validar nowcast pseudo-real-time contra modelo oficial-only; controlar revisiones y cobertura. **Prueba decisiva:** undefined
+- **3. Fundamentales cuantitativos sin señales de revisión textual.** Base: Cambios semánticos de expectativas junto a sorpresas fundamentales. **Innovación a probar:** Ablation debe probar incrementalidad neta de costos frente a consenso/resultados base. **Prueba decisiva:** undefined
+- **4. Mapa de proveedores estructurado y estático.** Base: Grafo de exposición extraído de texto con confianza y validación manual. **Innovación a probar:** Medir precisión/recall y utilidad ante shocks frente a mapa estructurado incompleto. **Prueba decisiva:** undefined
+- **5. Monitoreo de métricas promedio de modelo.** Base: Auditoría de deriva por fuente, periodo, sector, lenguaje y subgroup pertinente. **Innovación a probar:** Medir detección temprana y falsos positivos; comprobar qué intervención corrige deriva. **Prueba decisiva:** undefined
