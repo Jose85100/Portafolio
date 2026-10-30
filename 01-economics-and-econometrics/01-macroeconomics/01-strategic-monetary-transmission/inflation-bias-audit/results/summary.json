@@ -49,9 +49,9 @@
   },
   "max_loss_gap_identity_error": 4.440892098500626e-16,
   "max_best_response_oracle_error": 1.4187990338143663e-08,
-  "seconds": 0.20681969999998273,
-  "python_peak_bytes": 235526,
-  "hardware": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "seconds": 0.19710965999996688,
+  "python_peak_bytes": 233702,
+  "hardware": "Linux-6.18.57-x86_64-with-glibc2.39",
   "versions": {
     "python": "3.12.14",
     "numpy": "2.3.5",

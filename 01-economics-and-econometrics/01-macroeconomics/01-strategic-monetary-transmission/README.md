@@ -63,3 +63,9 @@ Equilibrios múltiples, problemas de identificación y observación limitada de 
 ## Componente S2: expectativas y compromiso
 
 [inflation-bias-audit](inflation-bias-audit/) contrasta compromiso contingente y discreción con expectativas racionales. Una alternativa con menor pérdida aparente se rechaza por expectativas inconsistentes. Es un benchmark estático previo, no una validación de la hipótesis principal sobre liquidez, inversión y heterogeneidad.
+
+## Extensión acumulativa 2026-10-30 y roadmap
+
+El mismo `inflation-bias-audit` incorpora delegación conservadora: peso delegado q distinto del peso social λ, con tradeoff sesgo/estabilización y controles negativos. No nueva carpeta ni promoción de madurez global. Registro en [research-log](inflation-bias-audit/research-log.md).
+
+Próximos pasos: (1) añadir coste explícito de nombramiento en `inflation-bias-audit/src/delegation.py`; (2) robustez a α mal especificado en `inflation-bias-audit/src/run_delegation.py`; (3) formalizar estado, restricciones e información del modelo Markov en este README antes de intentar conectar agentes heterogéneos.

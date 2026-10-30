@@ -1,97 +1,83 @@
-# Sesgo inflacionario: objetivo y consistencia de expectativas
+# Informe crítico acumulativo30 — 2026-10-30
 
-29 de octubre de 2026. `main` inspeccionado en `022f6bd`, sin PR abiertos al inicio. Los trabajos del 28 están integrados; en particular el bien público se conservó mediante PR #97. Este componente es nuevo, en rama/worktree propios.
+## 1. Título y decisión
 
-## 1. Título
+Delegación conservadora: cuánto sesgo reducir sin sacrificar excesivamente estabilización. Extensión del programa Strategic Monetary Transmission y de su MVP29; no nueva carpeta ni sustitución de pruebas previas. Decisión interna del modelo: elegir peso delegado q minimizando pérdida social común. No recomendación para un banco central real.
 
-Auditoría de compromiso, discreción y alternativas incompatibles con expectativas racionales.
+## 2. Hipótesis y clasificación de aporte
 
-## 2. Tres ideas y novedad incremental
+H1: la raíz monotónica q* produce J(q*)≤J(λ)+1e−10 para toda la malla; coincide con oráculo independiente y promedio de estados≤1e−10. H2 negativa: q0 empeora si k0 y σ>0. Contribución **computacional acumulativa/educativa**, especialización explícita de teoría clásica, no innovación teórica o prioridad mundial. La novedad respecto al repositorio es evaluar objetivos delegados con un objetivo social fijo, conservando consistencia RE y código29.
 
-| Idea | Brecha | Decisión |
-|---|---|---|
-| IV con errores HAC | Independencia en contrastes anteriores | Diferir: calibración temporal adicional |
-| Bien público dinámico | Financiación solo en equilibrio previsto | Diferir: requiere nuevo juego fiscal |
-| Sesgo monetario y admisibilidad RE | Separar valor del objetivo de consistencia del régimen | **Elegida:** nuevo benchmark macro pequeño con identidad exacta |
+## 3. Estado del arte: matriz verificada
 
-La teoría es clásica; la contribución al repositorio es un control explícito de expectativas antes de comparar pérdidas, junto con oráculo numérico y falsación. No prioridad mundial. Hipótesis previa: residuos RE de los dos regímenes factibles ≤1e−12, identidad de pérdida, error de mejor respuesta ≤1e−6 y caso ingenuo aparentemente mejor pero inconsistente.
+Referencias y metadatos contrastados 2026-10-30 en editor/autor; BibTeX íntegro en referencias.bib. No se afirma reproducir todo artículo.
 
-## 3. Literatura real
+|Referencia|Mecanismo previo|Aquí se reutiliza|Fuera de alcance|
+|---|---|---|---|
+|Kydland–Prescott1977, DOI10.1086/260580, Chicago|Inconsistencia temporal|Baseline compromiso/discreción29|Planes dinámicos generales|
+|Barro–Gordon1983, DOI10.1086/261167, Chicago|Sesgo bajo tasa natural|BR y expectativas RE|Estimación de política|
+|Barro–Gordon1983, DOI10.1016/0304-3932(83)90051-X, ScienceDirect|Reputación repetida|Motiva alternativa no elegida|Equilibrio reputacional|
+|Rogoff1985, DOI10.2307/1885679, Oxford|Ganancia inflacionaria/coste estabilización|Tradeoff de peso conservador|Modelo completo del artículo|
+|Walsh1995, URL people.ucsc.edu/~walshc/Select.htm|Contratos monetarios|Contraste institucional|Transferencias e incentivos contractuales|
 
-Kydland–Prescott (1977) plantea inconsistencia temporal; Barro–Gordon (1983, teoría positiva) analiza sesgo monetario en modelo de tasa natural. Su trabajo de reglas y reputación (1983) introduce mecanismos repetidos, no implementados aquí. Rogoff (1985) estudia delegación y compromiso, también distintos del supuesto simple usado. Walsh (1995) modela contratos para banqueros centrales; aquí no se implementan esos contratos.
+URLs verificadas en referencias.bib; título/autores/año/volumen/páginas/DOI cuando existe. Walsh usa URL del autor, no DOI inventado. Lectura de metadatos y mecanismo general, sin atribuir como nuevo un teorema clásico.
 
-Cinco referencias reales verificadas el 29 de octubre mediante Chicago, ScienceDirect, Oxford y página académica del autor en UCSC. DOI/URL y metadatos en `referencias.bib`. No se afirma lectura íntegra o revisión exhaustiva. No se atribuyen a este código reputación o instituciones de los artículos citados.
+## 4. Brecha y selección entre tres ideas
 
-## 4. Brecha y alcance S2
+Aprendizaje adaptativo: útil, pero cambia hipótesis RE y abre dinámica. Reputación repetida: conecta credibilidad, pero exige juego repetido y multiplicidad. **Delegación estática**: seleccionada porque cierra una fricción dejada por29 con menor alcance y permite comparar objetivos sin inconsistencia. Aún supone nombramiento creíble sin coste; no resuelve instituciones. El programa general heterogéneo/Markov sigue S1, componente estático S2, sin equivalencia automática S2/M2.
 
-El programa S1 de transmisión monetaria plantea anticipación estratégica y sistemas de Markov heterogéneos. Una búsqueda acotada no encontró esta auditoría específica de sesgo inflacionario en sus README/código/notebooks. Este componente aporta un benchmark lineal-cuadrático previo, sin implementar el programa completo ni su hipótesis de liquidez y heterogeneidad. S2 local, no promoción del dominio entero.
+## 5. Diseño, configuración y derivación
 
-## 5. Modelo, secuencia y datos
+Fuente: estados sintéticos ε∈{−σ,+σ} equiprobables, expectativas exactas. Sin muestreo/seed, no error Monte Carlo. α∈{.5,1,2}, λ∈{0,.5,1,2}, k∈{0,.5,1}, σ∈{0,.5,1,3}:144casos. config previa29 conservada; delegation-config.json registra extensión, plataforma/versión/costes/hash en resultados. Python3.12.14, CPU genérica Linux-6.18.57-x86_64-with-glibc2.39; CPU exacta no identificada, sin acelerador.
 
-Oferta: y=α(π−πe)+ε. Objetivo del banco: L=0,5[π²+λ(y−k)²], con k un objetivo por encima del producto natural. El privado fija πe antes de ε; el banco observa el shock y elige inflación. En discreción, el privado anticipa esa mejor respuesta. En compromiso se asume una regla contingente creíble sin coste, fijada antes de expectativas: no hay mecanismo institucional endógeno que la garantice.
+Original: y=α(π−πe)+ε, banco y sociedad minimizan Lλ=.5[π²+λ(y−k)²]. Modificación: banco Lq, sociedad sigue Lλ. πe=qαk, π=qαk−qαε/(1+qα²), y=ε/(1+qα²). Entonces J(q)=.5[(qαk)²+λk²+σ²((qα)²+λ)/(1+qα²)²]. Derivación LaTeX paso a paso en notebook, incluyendo factores y unidades normalizadas. Condición de primer orden equivalente F(q)=q k²(1+α²q)³+σ²(q−λ)=0. F' = k²(1+α²q)²(1+4α²q)+σ²>0 salvo k=σ=0. Signos en extremos garantizan raíz única en[0,λ]; J'>0 fuera de λ, por tanto mínimo global q≥0. Casos degenerados: k0→qλ; σ0,k>0→q0; ambos0 se elige baseline entre indiferentes. No se presupone convexidad global de J.
 
-α en {0,5;1;1,5}, λ en {0,5;1;2}, k en {0;0,5;1}, σ en {0;1}: 54 escenarios. ε toma ±σ con probabilidad 0,5; se calculan expectativas exactamente. σ=0 repite un mismo estado con peso 0,5, no dos observaciones independientes. Tres regímenes producen 324 registros. Datos sintéticos propios, sin clientes o fuentes externas; hashes, configuración, plataforma y versiones guardados. No tasas calibradas ni previsiones reales.
+## 6. Implementación
 
-## 6. Derivación y oráculo
+src/delegation.py tipado y modular; brentq raíz xtol1e−14; scipy bounded minimiza directamente J como oráculo con extremos explícitos. `state_average` reutiliza **policies y loss de29**, verificando fórmula agregada contra estados bajo objetivo social. src/run_delegation.py genera CSV, JSON, figura y hashes. No C++ añadido: duplicar este solver escalar no aporta; no CMake/sanitizers aplicables al cambio Python.
 
-Mejor respuesta condicional: πBR=λα(απe+k−ε)/(1+λα²). Exigir πe=Eπ implica πe=λαk=b. Así, πD=b−λαε/(1+λα²). Bajo compromiso óptimo dentro de reglas afines, πC=−λαε/(1+λα²), con expectativa cero. Ambas generan y=ε/(1+λα²).
+## 7. Tests y benchmarks reales
 
-Por media cero del shock, ELD−ELC=0,5b². Esta identidad pertenece al modelo especificado; no prueba una ganancia empírica. La regla comprometida responde a shocks: no es inflación rígida cero. Compromiso impide reoptimizar después del shock, por lo que no debe pasar el test de mejor respuesta discrecional ex post.
+`bash run.sh` local exit0:7tests total (3nuevos,4previos); cobertura medida65/67statements97%, monetario28/29 y delegación37/38. Se cubren144combinaciones/invariantes deterministas; no se etiqueta property-based aleatoria. Ruff limpio, mypy5src limpio con ignore-missing-imports; no tipado de scipy garantizado. Suite común8/8 independiente, log common-suite30.log. Oráculo, límites degenerados, NaN/inf y no empeoramiento incluidos. Rama de fallo del solver no simulada. No RSS ni coste operacional medidos.
 
-Un optimizador escalar independiente minimiza la misma pérdida dada πe y ε y contrasta la mejor respuesta de discreción. No resuelve un juego repetido o credibilidad. La alternativa ingenua fija πe=0 y usa la mejor respuesta unilateral; cuando k>0, genera Eπ>0 y falla la restricción de expectativas racionales.
+## 8. Resultados, tablas y figuras
 
-## 7. Tests, coste y ejecución
+|Ancla α=λ=k=σ=1|Peso q|Pérdida social esperada|
+|---|---:|---:|
+|Discreción baseline|1|1.25|
+|Delegación óptima|0.308571201|0.867405650|
+|Extremo q0|0|1.0|
+|Compromiso creíble de29|regla contingente|.75|
 
-`bash run.sh` instala dependencias directas fijadas, corre tests con cobertura, ruff/mypy, grilla y notebook. Tests verifican ancla, identidad exacta en veinte economías reproducibles, oráculo condicional, control k=0 y contratos. Son propiedades parametrizadas, no una suite Hypothesis inexistente. Semilla solo para tests; no se presentan bandas Monte Carlo para expectativas exactas.
+Ganancia delegación frente baseline30.60755%; aún peor que compromiso asumido. Máximo error oráculo 3.55e-15, fórmula/estados 4.44e-15, umbral1e−10 pasa. results/delegation.csv crudo, delegation-summary.json, delegation.png. Barrido instrumentado 0.3111s, pico Python 107128bytes: hardware/medición específica, no intervalo estadístico ni benchmark entre lenguajes. Sensibilidad de figuras evalúaσ0..4; dominio de tests usa malla finita. Figura inspeccionada visualmente: etiquetas/leyendas legibles.
 
-Resultado ejecutado: **4/4 tests pasan**, cobertura de sentencias ejecutables del núcleo **28/29 (97%)**, ruff sin hallazgos y mypy sin errores en tres archivos `src` (imports sin stubs ignorados). Suite común **8/8**, sin medir cobertura. Notebook: **seis celdas de código** ejecutadas con PNG persistido e inspeccionado legible; no se probó un frontend completo de Jupyter.
+## 9. Análisis crítico y ablations negativas
 
-Tiempo y pico de asignaciones Python se miden para el experimento completo, incluidos oráculos escalares; no son RSS, coste por régimen o latencia operacional. CPU AMD EPYC 9V74 80-Core Processor, 9 procesadores lógicos visibles; tiempos sujetos a carga concurrente. No se estudia alta dimensión: modelo deliberadamente pequeño. No hay C/C++, por lo que ctest/sanitizers no aplican. Suite común económica ejecutada con registro, sin medir su cobertura.
+Si k0, q0 genera J=.5 frente baseline .25 para α=λ=σ1: el consejo universal de endurecer es falso. Si σ0,k1, q0 da .5 frente baseline1: sin shocks, el tradeoff desaparece. Evaluar Lq en lugar de Lλ sería baseline injusto y no se hace. Compromiso29 es una cota útil pero requiere capacidad distinta. La reducción de pérdida en parámetros conocidos no demuestra una recomendación robusta a α mal medido.
 
-Notebook ejecutado secuencialmente en IPython limpio en proceso, sin kernel/socket; captura outputs y aborta ante error. Validación nbformat e inspección de PNG no certifican todos los frontends.
+## 10. Limitaciones y sesgos
 
-## 8. Resultados reales
+Lineal-cuadrático, un periodo, información perfecta del shock al banco, privados RE, preferencias/α conocidos, nombramiento creíble y sin coste. No fricción de selección/captura ni validación empírica, identificación causal, heterogeneidad, tasas financieras o sistema bancario. No credibilidad endógena, reputación o gobernanza real. Todo normalizado, no datos o porcentajes macro. No claim regulatorio. El muestreo de parámetros no prueba robustez fuera del dominio; resultado analítico depende de supuestos declarados.
 
-Ancla α=λ=k=σ=1:
+## 11. Comando exacto y presentación
 
-| Régimen | Pérdida esperada | Residuo RE | Producto medio |
-|---|---:|---:|---:|
-| Compromiso |0,75|0|0|
-| Discreción |1,25|0|0|
-| Naive, inconsistente |0,50|0,50|0,50|
+Desde la raíz del repositorio:
 
-La diferencia factible es 0,50 unidades de pérdida, exactamente 0,5(λαk)². La aparente pérdida menor de naive no se cuenta como mejora factible, porque su expectativa supuesta cero contradice inflación media 0,5. En los 54 casos, error máximo de identidad de pérdida 4.44e-16; diferencia máxima de BR frente a oráculo 1.42e-08. Valores completos constan en CSV/JSON.
+```bash
+cd 01-economics-and-econometrics/01-macroeconomics/01-strategic-monetary-transmission/inflation-bias-audit
+bash run.sh
+```
 
-![Pérdidas y expectativas](results/comparison.png)
-
-## 9. Falsaciones y control negativo
-
-Naive demuestra por qué minimizar una función no certifica un equilibrio: obtiene una ganancia media de producto que solo existe bajo expectativas congeladas incorrectamente. Un agente racional anticipa la política y esa sorpresa sistemática desaparece. El componente no afirma que ningún shock monetario tenga efectos reales: los shocks y sorpresas siguen moviendo producto en el modelo.
-
-Cuando k=0, compromiso y discreción coinciden y no hay ventaja estricta. Si no existe compromiso creíble o éste tiene costes, la comparación cambia. No se presenta compromiso como implementable automáticamente ni se atribuye dominancia de una regla rígida a esta auditoría.
-
-## 10. Limitaciones y madurez
-
-S2 del componente, no del programa entero ni equivalente automático a M2. Oferta lineal, objetivo cuadrático y parámetros conocidos; sin agentes heterogéneos, mercados de crédito, tipo de interés, tipo de cambio, reputación, aprendizaje o calibración real. Solo dos estados exactos con media cero. No recomendación para un banco central real ni causalidad observacional.
-
-## 11. Cómo correr
-
-Desde la carpeta: `bash run.sh`. Python 3.11+, venv y PyPI. Dependencias directas fijadas, no lock transitivo por hash. `PYTHON` permite seleccionar intérprete. Notebook en proceso sin kernel/socket, explícito en metadatos.
+Instala pins en .venv y ejecuta todo. notebook.ipynb:8celdas de código secuenciales en IPython limpio en proceso, errores abortan, outputs guardados y nbformat validado. Figura vista; no frontend completo de notebook inspeccionado. Para inspección humana abrir notebook.ipynb en JupyterLab. Método explícito sin kernel/socket; no afirmar ejecución nbclient. Config, hashes y logs incluidos; tiempo/pico pueden variar al reproducir.
 
 ## 12. Referencias BibTeX
 
-Cinco entradas en `referencias.bib`: Kydland–Prescott, dos Barro–Gordon, Rogoff y Walsh. DOI o URL primarios verificados; §3 distingue el benchmark de mecanismos no implementados. No se inventan citas ni resultados.
+referencias.bib: cinco entradas reales con DOI/URL de sección3. La bibliografía del ciclo29 permanece vigente y fue revalidada para30; no inventar cinco nuevas referencias decorativas. No se descargaron datos de terceros; salidas generadas determinísticamente desdeconfig y fuente versionada.
 
-## 13. Rúbrica de autor, 1–5
+## 13. Rúbrica 1–5 y checklist
 
-| Novedad | Rigor | Reproducibilidad | Código | Claridad | Impacto | Honestidad | MVP |
-|---:|---:|---:|---:|---:|---:|---:|---:|
-|2|4|4|4|4|3|5|4|
+Autoevaluación (no puntuación independiente): novedad2, rigor4, reproducibilidad4, código4, claridad4, impacto3, honestidad5, MVP4. La deducción es exacta dentro de modelo; falta coste institucional y datos, razón de no5en rigor/impacto. Checklist cumplido local: src✓ tests✓ baseline numérico✓ CSV/JSON✓ PNG✓ notebook ejecutado✓ informe14p✓ config✓5refsBibTeX✓pins✓ comando único✓ MVP✓ README✓ registro/roadmap✓. CMake/ctest/sanitizers N/A Python. Revisión independiente solicitada, ver informe consolidado del coordinador para dictamen y enlacePR; publicación no equivale a validación operacional ni S4.
 
-Autoevaluación; la teoría clásica y ausencia de datos reales impiden máximos de novedad/impacto. El revisor independiente del ciclo reprodujo `bash run.sh` completo con salida cero, leyó la mejor respuesta y políticas del núcleo y no identificó bloqueantes. No equivale a validación empírica externa.
+## 14. Siguiente iteración
 
-## 14. Siguiente iteración recomendada
-
-1. `01-macroeconomics/01-strategic-monetary-transmission/inflation-bias-audit`: coste de compromiso e instituciones que hagan la regla compatible con incentivos.
-2. `01-macroeconomics/01-strategic-monetary-transmission`: expectativas aprendidas frente a RE, conservando explícita la diferencia de régimen.
-3. `01-macroeconomics/01-strategic-monetary-transmission`: identificar parámetros y heterogeneidad con datos aprobados, sin trasladar resultados sintéticos a política real.
+Continuar si se incluye coste explícito de nombramiento; ajustar si el coste supera ganancia social; cerrar esta variante si ningún q mejora baseline dentro de incertidumbre de parámetros. Tres tareas concretas: src/delegation.py incluir coste institucional; src/run_delegation.py medir arrepentimiento bajo α mal especificado; README del programa formalizar estado e información para futura conexión Markov. Preservar expectativas consistentes, objetivo social común y controles negativos al ampliar.
