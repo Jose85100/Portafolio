@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-30",
+  "parent": "cycle29 linked-entity-holdout PR102",
+  "question": "balance row mass without cutting supplied identity components",
+  "hypothesis": "exact deviation never exceeds feasible count baseline; zero cuts",
+  "threshold": "all25 fixed cases noninferior, zero cuts",
+  "sources": [
+    "synthetic fixtures src/balancing_experiment.py"
+  ],
+  "seeds": {
+    "count_baseline": 0,
+    "randomized_tests": 30,
+    "exact": "none; deterministic tie to lower mass"
+  },
+  "ratio_units": "train fraction of rows; numerator/denominator integer",
+  "limits": {
+    "max_rows": 2000,
+    "max_components": 100
+  },
+  "versions": {
+    "python": "3.12.14",
+    "nbformat": "5.10.4",
+    "ipython": "9.6.0",
+    "ruff": "0.14.1",
+    "mypy": "1.18.2"
+  },
+  "hardware": "local CPU x86_64; platform saved summary; no GPU",
+  "ideas": [
+    {
+      "idea": "row mass DP",
+      "decision": "chosen: explicit negative29 unequal groups gap"
+    },
+    {
+      "idea": "missing/false identity links",
+      "decision": "next: needs adjudicated fixture"
+    },
+    {
+      "idea": "temporal split",
+      "decision": "later: needs information availability policy"
+    }
+  ]
+}

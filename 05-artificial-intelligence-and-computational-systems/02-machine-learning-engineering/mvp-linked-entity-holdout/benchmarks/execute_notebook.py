@@ -11,7 +11,7 @@ import nbformat
 from IPython.core.interactiveshell import InteractiveShell
 from IPython.utils.capture import capture_output
 
-p = Path("notebook.ipynb").resolve()
+p = Path(sys.argv[1] if len(sys.argv) > 1 else "notebook.ipynb").resolve()
 sys.path.insert(0, str(p.parent))
 nb = nbformat.read(p, as_version=4)
 shell = InteractiveShell.instance()
