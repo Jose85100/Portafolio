@@ -1,3 +1,9 @@
+test_closed_form (test_calendar.CalendarTests.test_closed_form) ... ok
+test_invalid (test_calendar.CalendarTests.test_invalid) ... ok
+test_invalid_bounds (test_calendar.CalendarTests.test_invalid_bounds) ... ok
+test_negative_zero_discount (test_calendar.CalendarTests.test_negative_zero_discount) ... ok
+test_partition_and_mass (test_calendar.CalendarTests.test_partition_and_mass) ... ok
+test_refinement (test_calendar.CalendarTests.test_refinement) ... ok
 test_invalid (test_model.TestProjection.test_invalid) ... ok
 test_mass_absorbing_and_zero_exposure (test_model.TestProjection.test_mass_absorbing_and_zero_exposure) ... ok
 test_monotone_prepay_discount_and_scaling (test_model.TestProjection.test_monotone_prepay_discount_and_scaling) ... ok
@@ -5,6 +11,6 @@ test_rational_oracle (test_model.TestProjection.test_rational_oracle) ... ok
 test_zero_competing_exit_and_one_period (test_model.TestProjection.test_zero_competing_exit_and_one_period) ... ok
 
 ----------------------------------------------------------------------
-Ran 5 tests in 0.001s
+Ran 11 tests in 0.004s
 
 OK

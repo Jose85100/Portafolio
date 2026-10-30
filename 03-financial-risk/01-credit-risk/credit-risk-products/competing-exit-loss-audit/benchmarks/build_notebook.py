@@ -1,7 +1,8 @@
 """Build and really execute a small probability-flow notebook in IPython."""
 
-from pathlib import Path
 import sys
+from pathlib import Path
+
 import nbformat as nbf
 from IPython.core.interactiveshell import InteractiveShell
 from IPython.utils.capture import capture_output
