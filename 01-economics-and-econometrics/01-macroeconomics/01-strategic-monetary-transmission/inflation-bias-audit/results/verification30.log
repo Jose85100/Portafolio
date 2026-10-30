@@ -1,0 +1,141 @@
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.2
+[notice] To update, run: python -m pip install --upgrade pip
+test_invalid (test_delegation.DelegationTest.test_invalid) ... ok
+test_negative_controls (test_delegation.DelegationTest.test_negative_controls) ... ok
+test_state_formula_and_oracle_grid (test_delegation.DelegationTest.test_state_formula_and_oracle_grid) ... ok
+test_anchor (test_monetary.MonetaryTests.test_anchor) ... ok
+test_contracts (test_monetary.MonetaryTests.test_contracts) ... ok
+test_exact_identity_and_oracle_properties (test_monetary.MonetaryTests.test_exact_identity_and_oracle_properties) ... ok
+test_zero_target_control (test_monetary.MonetaryTests.test_zero_target_control) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.061s
+
+OK
+Name                Stmts   Miss  Cover
+---------------------------------------
+src/delegation.py      38      1    97%
+src/monetary.py        29      1    97%
+---------------------------------------
+TOTAL                  67      2    97%
+All checks passed!
+Success: no issues found in 5 source files
+{
+  "config": {
+    "seed": 20261029,
+    "alpha_values": [
+      0.5,
+      1,
+      1.5
+    ],
+    "weight_values": [
+      0.5,
+      1,
+      2
+    ],
+    "target_values": [
+      0,
+      0.5,
+      1
+    ],
+    "shock_scales": [
+      0,
+      1
+    ],
+    "anchor": {
+      "alpha": 1,
+      "weight": 1,
+      "target": 1,
+      "shock_scale": 1
+    },
+    "hypothesis": "On54 exact two-state cases: RE residual commitment/discretion<=1e-12; loss gap=0.5*(weight*alpha*target)^2; scalar best-response oracle discrepancy<=1e-6. Anchor naive loss appears lower but RE residual>0, so reject as equilibrium comparison."
+  },
+  "case_count": 54,
+  "state_regime_records": 324,
+  "anchor": {
+    "alpha": 1,
+    "weight": 1,
+    "target": 1,
+    "shock_scale": 1,
+    "commitment_loss": 0.75,
+    "discretion_loss": 1.25,
+    "naive_loss_inconsistent": 0.5,
+    "commitment_re_residual": 0.0,
+    "discretion_re_residual": 0.0,
+    "naive_re_residual": 0.5,
+    "commitment_mean_output": 0.0,
+    "discretion_mean_output": 0.0,
+    "naive_mean_output": 0.5,
+    "loss_gap_identity_error": 0.0,
+    "max_best_response_oracle_error": 4.92471741164735e-09
+  },
+  "max_loss_gap_identity_error": 4.440892098500626e-16,
+  "max_best_response_oracle_error": 1.4187990338143663e-08,
+  "seconds": 0.20564183100003675,
+  "python_peak_bytes": 232790,
+  "hardware": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "source_sha256": "9d40bd8060f0d97f6dc49cdc23e3c29eef32455d1f548d54e6bd74c4e7bfd971",
+  "data_sha256": "fa0ad551a68ad9a3d0064770b8e4bd78ec09182bf3c59911be5547e3cfddf875",
+  "note": "Exact equiprobable \u00b1sigma states; sigma0 repeats same zero state with probability0.5 each. No sampled uncertainty. Whole experiment instrumented Python allocation peak, not RSS or per-regime runtime."
+}
+{
+  "cases": 144,
+  "anchor": {
+    "alpha": 1,
+    "weight": 1,
+    "target": 1,
+    "sigma": 1,
+    "q": 0.3085712007847549,
+    "baseline": 1.25,
+    "optimal": 0.8674056499645886,
+    "zero_weight": 1.0,
+    "oracle_loss_error": 0.0,
+    "state_error": 0.0
+  },
+  "max_oracle_loss_error": 3.552713678800501e-15,
+  "max_state_error": 4.440892098500626e-15,
+  "seconds": 0.32854330300000356,
+  "python_peak_bytes": 106504,
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "data_sha256": "ee8346ab509441cbfb6bee752eda9888a3efa49d82faa6dcb1b07eeb607b806b",
+  "source_sha256": "de97a917490bb88f0b531b848db79f248febc63afbbcc5685742d177efec9bf0",
+  "config": {
+    "alpha": [
+      0.5,
+      1,
+      2
+    ],
+    "social_weight": [
+      0,
+      0.5,
+      1,
+      2
+    ],
+    "target": [
+      0,
+      0.5,
+      1
+    ],
+    "sigma": [
+      0,
+      0.5,
+      1,
+      3
+    ],
+    "data": "synthetic two equiprobable shocks \u00b1sigma; exact expectations",
+    "seed": null,
+    "hardware": "recorded platform, CPU; no accelerator",
+    "versions": "requirements.txt and results/summary.json",
+    "maturity": "S2 component, S1 program",
+    "scope": "one-period RE; credible costless delegation, social evaluation unchanged"
+  }
+}
+Executed8code cells in process.
