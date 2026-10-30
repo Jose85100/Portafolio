@@ -12,4 +12,5 @@ fi
 "$PYTHON" -m ruff check --isolated src tests benchmarks
 "$PYTHON" -m mypy src --strict --no-incremental
 "$PYTHON" -m benchmarks.run
+"$PYTHON" -m benchmarks.dependence_run
 "$PYTHON" -m benchmarks.notebook

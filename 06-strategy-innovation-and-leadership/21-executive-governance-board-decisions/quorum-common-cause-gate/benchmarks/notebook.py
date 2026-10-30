@@ -21,6 +21,8 @@ def main():
         nbf.v4.new_code_cell("display(pd.read_csv('results/sensitivity.csv'))\ndisplay(pd.read_csv('results/scaling.csv'))\nassert summary['baseline_independent']['availability']>=cfg['target']>summary['actual_baseline_availability']\nassert summary['selected_exact']['availability']>=cfg['target']"),
         nbf.v4.new_markdown_cell('## Decisión\nContinuar solo como prueba de resiliencia con2reservas elegibles si reglas vigentes ysupuestos lo permiten. Ajustar calendario/modos remotos si haycorrelación de ausencias. Detener propuesta cuando menú no alcanza meta. No asesoría legal, cambio de estatutos, evidencia de calidad decisional ni probabilidad de aprobación. ComponenteS2 sintético, programa21S1sinrecertificar.')
     ]
+    from benchmarks.tutorial_cells import extension_cells
+    nb.cells.extend(extension_cells())
     shell = InteractiveShell.instance()
     shell.reset(new_session=True)
     previous = Path.cwd()
