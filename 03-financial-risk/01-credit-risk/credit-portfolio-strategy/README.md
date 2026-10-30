@@ -22,6 +22,7 @@ flowchart TD
 | [Distribución de pérdidas con cópula gaussiana](copula-gaussiana-perdidas) | ¿Cómo cambia la cola al introducir dependencia? | Factor común, VaR y ES |
 | [Monitor de límites de apetito](monitor-de-limites-de-apetito) | ¿Qué límites requieren escalamiento? | Utilización y semáforo auditable |
 | [Asignación de cartera por RAROC](asignacion-de-capital-raroc) | ¿Qué mezcla maximiza eficiencia de capital? | Programación lineal fraccional; comparación contra utilidad |
+| [Tarifación paramétrica climática](climate-parametric-pricing) | ¿Cómo tarifar índices climáticos con cambio de distribución y riesgo de base? | Burn analysis, tendencia condicional, TVaR, basis risk y asequibilidad |
 
 ## Contrato de datos y reproducibilidad
 
