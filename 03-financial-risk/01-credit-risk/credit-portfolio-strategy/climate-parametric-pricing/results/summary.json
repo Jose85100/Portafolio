@@ -1,0 +1,12 @@
+{
+  "n":1200,
+  "train_n":840,
+  "test_n":360,
+  "burn_train":7.292220532,
+  "conditional_forecast":30.1532317033,
+  "realized_test":40.7922054763,
+  "selected_trigger_train":580,
+  "selected_exhaustion_train":300,
+  "replications":80,
+  "warning":"Synthetic experiment; no empirical climate or insurance inference."
+}
