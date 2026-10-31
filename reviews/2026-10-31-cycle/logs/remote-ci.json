@@ -1,0 +1,135 @@
+[
+  {
+    "number": 118,
+    "head": "7f52589a72216dfbebfb4461ad8de4fc94714126",
+    "branch": "research/2026-10-31-mathematics",
+    "url": "https://github.com/Jose85100/Portafolio/pull/118",
+    "draft": false,
+    "runs": [
+      {
+        "id": 41183084122,
+        "name": "Notebook Reliability",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/Jose85100/Portafolio/actions/runs/41183084122",
+        "head_sha": "7f52589a72216dfbebfb4461ad8de4fc94714126"
+      }
+    ]
+  },
+  {
+    "number": 119,
+    "head": "f291dde24046deee38e91f469a3e88db1f8c07a1",
+    "branch": "research/2026-10-31-risk",
+    "url": "https://github.com/Jose85100/Portafolio/pull/119",
+    "draft": false,
+    "runs": [
+      {
+        "id": 41183100862,
+        "name": "Notebook Reliability",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/Jose85100/Portafolio/actions/runs/41183100862",
+        "head_sha": "f291dde24046deee38e91f469a3e88db1f8c07a1"
+      }
+    ]
+  },
+  {
+    "number": 120,
+    "head": "a7381888bae54aa96523a7cc1cf56e6c122a8935",
+    "branch": "research/2026-10-31-economics",
+    "url": "https://github.com/Jose85100/Portafolio/pull/120",
+    "draft": false,
+    "runs": [
+      {
+        "id": 41183164489,
+        "name": "Notebook Reliability",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/Jose85100/Portafolio/actions/runs/41183164489",
+        "head_sha": "a7381888bae54aa96523a7cc1cf56e6c122a8935"
+      },
+      {
+        "id": 41183164448,
+        "name": "Economics vintage audit",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/Jose85100/Portafolio/actions/runs/41183164448",
+        "head_sha": "a7381888bae54aa96523a7cc1cf56e6c122a8935"
+      },
+      {
+        "id": 41183160807,
+        "name": "Economics vintage audit",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/Jose85100/Portafolio/actions/runs/41183160807",
+        "head_sha": "a7381888bae54aa96523a7cc1cf56e6c122a8935"
+      }
+    ]
+  },
+  {
+    "number": 121,
+    "head": "6b33375ac679c91c4152779968304f541b2fa4ed",
+    "branch": "research/2026-10-31-ai",
+    "url": "https://github.com/Jose85100/Portafolio/pull/121",
+    "draft": false,
+    "runs": [
+      {
+        "id": 41183258886,
+        "name": "Notebook Reliability",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/Jose85100/Portafolio/actions/runs/41183258886",
+        "head_sha": "6b33375ac679c91c4152779968304f541b2fa4ed"
+      }
+    ]
+  },
+  {
+    "number": 122,
+    "head": "c1936cb174081a865ea72e1178e4fbebec50b900",
+    "branch": "research/2026-10-31-ceo",
+    "url": "https://github.com/Jose85100/Portafolio/pull/122",
+    "draft": false,
+    "runs": [
+      {
+        "id": 41183346645,
+        "name": "Strategy Decision Engines",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/Jose85100/Portafolio/actions/runs/41183346645",
+        "head_sha": "c1936cb174081a865ea72e1178e4fbebec50b900"
+      },
+      {
+        "id": 41183347237,
+        "name": "Strategy Portfolio Regression",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/Jose85100/Portafolio/actions/runs/41183347237",
+        "head_sha": "c1936cb174081a865ea72e1178e4fbebec50b900"
+      },
+      {
+        "id": 41183346654,
+        "name": "Notebook Reliability",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/Jose85100/Portafolio/actions/runs/41183346654",
+        "head_sha": "c1936cb174081a865ea72e1178e4fbebec50b900"
+      },
+      {
+        "id": 41183344065,
+        "name": "Strategy Portfolio Regression",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/Jose85100/Portafolio/actions/runs/41183344065",
+        "head_sha": "c1936cb174081a865ea72e1178e4fbebec50b900"
+      },
+      {
+        "id": 41183344085,
+        "name": "Strategy Decision Engines",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/Jose85100/Portafolio/actions/runs/41183344085",
+        "head_sha": "c1936cb174081a865ea72e1178e4fbebec50b900"
+      }
+    ]
+  }
+]

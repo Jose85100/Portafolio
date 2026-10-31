@@ -1,0 +1,22 @@
+test_constant_reduces_to_original (test_affine.AffineTests.test_constant_reduces_to_original) ... ok
+test_decimal_oracle_small_large (test_affine.AffineTests.test_decimal_oracle_small_large) ... ok
+test_invalid (test_affine.AffineTests.test_invalid) ... ok
+test_negative_direction_and_zero (test_affine.AffineTests.test_negative_direction_and_zero) ... ok
+test_partition_invariance_irregular (test_affine.AffineTests.test_partition_invariance_irregular) ... ok
+test_properties_multiple_seeds (test_affine.AffineTests.test_properties_multiple_seeds) ... ok
+test_closed_form (test_calendar.CalendarTests.test_closed_form) ... ok
+test_invalid (test_calendar.CalendarTests.test_invalid) ... ok
+test_invalid_bounds (test_calendar.CalendarTests.test_invalid_bounds) ... ok
+test_negative_zero_discount (test_calendar.CalendarTests.test_negative_zero_discount) ... ok
+test_partition_and_mass (test_calendar.CalendarTests.test_partition_and_mass) ... ok
+test_refinement (test_calendar.CalendarTests.test_refinement) ... ok
+test_invalid (test_model.TestProjection.test_invalid) ... ok
+test_mass_absorbing_and_zero_exposure (test_model.TestProjection.test_mass_absorbing_and_zero_exposure) ... ok
+test_monotone_prepay_discount_and_scaling (test_model.TestProjection.test_monotone_prepay_discount_and_scaling) ... ok
+test_rational_oracle (test_model.TestProjection.test_rational_oracle) ... ok
+test_zero_competing_exit_and_one_period (test_model.TestProjection.test_zero_competing_exit_and_one_period) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.003s
+
+OK
