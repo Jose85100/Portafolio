@@ -1,0 +1,86 @@
+{
+  "accurate:count30": {
+    "runs": 12,
+    "runs_with_true_leakage": 0,
+    "mean_exposed_rows": 0.0,
+    "mean_deviation_rows": 3.1666666666666665,
+    "max_declared_cuts": 0
+  },
+  "accurate:balanced30": {
+    "runs": 12,
+    "runs_with_true_leakage": 0,
+    "mean_exposed_rows": 0.0,
+    "mean_deviation_rows": 0.0,
+    "max_declared_cuts": 0
+  },
+  "accurate:truth_oracle": {
+    "runs": 12,
+    "runs_with_true_leakage": 0,
+    "mean_exposed_rows": 0.0,
+    "mean_deviation_rows": 0.0,
+    "max_declared_cuts": 0
+  },
+  "missing:count30": {
+    "runs": 12,
+    "runs_with_true_leakage": 10,
+    "mean_exposed_rows": 14.0,
+    "mean_deviation_rows": 1.5,
+    "max_declared_cuts": 0
+  },
+  "missing:balanced30": {
+    "runs": 12,
+    "runs_with_true_leakage": 12,
+    "mean_exposed_rows": 8.0,
+    "mean_deviation_rows": 0.0,
+    "max_declared_cuts": 0
+  },
+  "missing:truth_oracle": {
+    "runs": 12,
+    "runs_with_true_leakage": 0,
+    "mean_exposed_rows": 0.0,
+    "mean_deviation_rows": 0.0,
+    "max_declared_cuts": 0
+  },
+  "overmerged:count30": {
+    "runs": 12,
+    "runs_with_true_leakage": 0,
+    "mean_exposed_rows": 0.0,
+    "mean_deviation_rows": 4.0,
+    "max_declared_cuts": 0
+  },
+  "overmerged:balanced30": {
+    "runs": 12,
+    "runs_with_true_leakage": 0,
+    "mean_exposed_rows": 0.0,
+    "mean_deviation_rows": 4.0,
+    "max_declared_cuts": 0
+  },
+  "overmerged:truth_oracle": {
+    "runs": 12,
+    "runs_with_true_leakage": 0,
+    "mean_exposed_rows": 0.0,
+    "mean_deviation_rows": 0.0,
+    "max_declared_cuts": 1
+  },
+  "mixed:count30": {
+    "runs": 12,
+    "runs_with_true_leakage": 8,
+    "mean_exposed_rows": 18.666666666666668,
+    "mean_deviation_rows": 1.3333333333333333,
+    "max_declared_cuts": 0
+  },
+  "mixed:balanced30": {
+    "runs": 12,
+    "runs_with_true_leakage": 12,
+    "mean_exposed_rows": 28.0,
+    "mean_deviation_rows": 0.0,
+    "max_declared_cuts": 0
+  },
+  "mixed:truth_oracle": {
+    "runs": 12,
+    "runs_with_true_leakage": 0,
+    "mean_exposed_rows": 0.0,
+    "mean_deviation_rows": 0.0,
+    "max_declared_cuts": 4
+  }
+}
