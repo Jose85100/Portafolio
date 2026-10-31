@@ -1,3 +1,9 @@
+test_binary_covariance (test_dynamic.DynamicTests.test_binary_covariance) ... ok
+test_oracle_orders (test_dynamic.DynamicTests.test_oracle_orders) ... ok
+test_range_and_invalid (test_dynamic.DynamicTests.test_range_and_invalid) ... ok
+test_state_and_rescale (test_dynamic.DynamicTests.test_state_and_rescale) ... ok
+test_subnormal (test_dynamic.DynamicTests.test_subnormal) ... ok
+test_zero_prefix_and_constant (test_dynamic.DynamicTests.test_zero_prefix_and_constant) ... ok
 test_edges (test_moments.Tests.test_edges) ... ok
 test_merge_identity (test_moments.Tests.test_merge_identity) ... ok
 test_partitions_and_translation (test_moments.Tests.test_partitions_and_translation) ... ok
@@ -8,6 +14,6 @@ test_sample_sd_overflow (test_scaled.ScaledTests.test_sample_sd_overflow) ... ok
 test_sensitivity_and_properties (test_scaled.ScaledTests.test_sensitivity_and_properties) ... ok
 
 ----------------------------------------------------------------------
-Ran 8 tests in 0.130s
+Ran 14 tests in 0.133s
 
 OK
