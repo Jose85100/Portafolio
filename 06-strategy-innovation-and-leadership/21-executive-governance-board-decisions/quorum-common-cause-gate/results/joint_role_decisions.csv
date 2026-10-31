@@ -1,0 +1,13 @@
+target,method,selected
+0.85,nominal,A
+0.85,restricted30,B
+0.85,joint31,B
+0.872,nominal,B
+0.872,restricted30,B
+0.872,joint31,C
+0.9,nominal,C
+0.9,restricted30,C
+0.9,joint31,C
+0.97,nominal,infeasible
+0.97,restricted30,infeasible
+0.97,joint31,infeasible

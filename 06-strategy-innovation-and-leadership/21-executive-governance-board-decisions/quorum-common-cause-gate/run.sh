@@ -13,4 +13,5 @@ fi
 "$PYTHON" -m mypy src --strict --no-incremental
 "$PYTHON" -m benchmarks.run
 "$PYTHON" -m benchmarks.dependence_run
+"$PYTHON" -m benchmarks.joint_role_run
 "$PYTHON" -m benchmarks.notebook
