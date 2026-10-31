@@ -81,3 +81,32 @@ Autoevaluación (no puntuación independiente): novedad2, rigor4, reproducibilid
 ## 14. Siguiente iteración
 
 Continuar si se incluye coste explícito de nombramiento; ajustar si el coste supera ganancia social; cerrar esta variante si ningún q mejora baseline dentro de incertidumbre de parámetros. Tres tareas concretas: src/delegation.py incluir coste institucional; src/run_delegation.py medir arrepentimiento bajo α mal especificado; README del programa formalizar estado e información para futura conexión Markov. Preservar expectativas consistentes, objetivo social común y controles negativos al ampliar.
+
+
+# Ciclo31 — Ambigüedad de varianza y delegación minimax regret
+
+1. **Título/programa.** Auditoría acumulativa de transmisión monetaria estática:29 expectativas,30 delegación conocida,31 decisión con intervalo de varianza. Pregunta central: qué reglas mejoran pérdida social respetando información y expectativas.
+2. **Hipótesis/novedad incremental.** Mejora técnica/utilidad, no causal: minimizar peor regret no empeora plug-in medio a1e−10 y coincide con oráculo independiente a1e−8. Criterios fijados antes de interpretar; experimento diseñado, no datos empíricos. Clasificación adaptación de ingeniería/auditoría, no innovación teórica.
+3. **Estado del arte.** Seis fuentes primarias verificadas en prior-art31.md; referencias.bib. Minimax regret y delegación conservadora son conocidos. No afirmar novedad disciplinar por combinarlos.
+4. **Brecha/tres ideas.** Credibilidad endógena: alto valor pero exige otro juego; identificación empírica: alto valor pero falta diseño/dataset; ambigüedad de varianza: elegida por reutilización, alcance completo y evidencia exacta factible. No selección por nombre novedoso. Falta intervalo empírico.
+5. **Diseño/config.** ambiguity-config.json:144combinaciones α∈{0,5;1;2},λ∈{0,5;1;2},k∈{0;0,5;1;2},intervalos[0,1],[0,04;4],[1,16],[1,1]. Seed no aplica a expectativa exacta. Hardware/versiones/hash reales en JSON. Parámetros normalizados, no tasas calibradas.
+6. **Implementación/teoría.** src/ambiguity.py tipado reutiliza social_loss/optimal_weight. Fórmula original J=A+vB; propuesta minq maxv[J−minzJ]. Derivación completa de convexidad en v, monotonía q*(v) y raíz de regrets en derivacion31.md/notebook. Conserva juego, RE y evaluación social; pierde optimalidad puntual cuando v se conoce. Un intervalo que excluye verdad elimina garantía. Sin lenguaje adicional porque duplicar solver escalar no mejora decisión.
+7. **Tests/benchmarks.** bash run.sh exit0:12 unitarios (5nuevos/7regresión), casos inválidos/degenerados, propiedades27regímenes×31puntos interiores, oracle; Ruff/mypy7archivos pasan. Cobertura medida src.ambiguity25/25sentencias100%; total92/90=98% redondeado. No cobertura de ramas reclamada. Común8tests aparte. Escalar SciPy bounded + búsqueda ternaria150iteraciones objetiva independiente;30repeticiones instrumentadas por método, sin instalación/carga. Malla de parámetros prueba regímenes, no escalabilidad de datos porque problema es escalar fijo.
+8. **Resultados/tablas/figuras.** results/ambiguity.csv144filas, ambiguity-runtime.csv60filas, JSON y ambiguity.png; notebook11celdas de código acumuladas ejecutadas secuencialmente IPython en proceso fresco, sin kernel/socket aislado. Máximo gap oráculo 2.665e-15;81mejoras estrictas63empates0peores frente a plug-in. Ancla α=λ=k=1,v∈[0,04;4]:
+
+| Método | q | Peor regret social |
+|---|---:|---:|
+| Plug-in varianza media | 0.415808387049 | 0.078845294455 |
+| Minimax regret | 0.353851617373 | 0.055577749247 |
+
+Reducción ancla 29.510%. Barrido instrumentado6.7035s/picoPython218998bytes; tiempo no portable. Medianas robusto0.000977858s/14566bytes versus plug-in3.42115e-05s/833bytes. Coste adicional explícito. Figuras: regret frente a v (mecanismo/no dominancia puntual) y q frente amplitud (sensibilidad), ejes/unidades/escenario etiquetados.
+9. **Análisis crítico/fallos.** Primera corrida falló umbral1e−8: boundedSciPy gap1,5446e−8 ante objetivo con kink; se mantuvo umbral y añadió refinamiento ternario independiente, sin cambiar parámetros ni conclusión. No ocultar esta adaptación exploratoria de implementación. Negativo: v=2,02 conocido favorece plug-in informado con regret0; robusto tiene regret positivo. Intervalo colapsado recupera30; k0 recuperaλ. Peor regret no equivale a peor pérdida absoluta.
+10. **Limitaciones/sesgos.** LQ, α fijo, shock media0, varianza única fuente de ambigüedad, sin coste político/nombramiento creíble; datos sintéticos exactos; no inferencia, identificación, causalidad ni consejo de política. Uncertainty no estadística: no barras de confianza inventadas. No certificación de visualización en todos frontends. S2 componente mejorado con evidencia; programa S1, no S3 ni equivalencia M2.
+11. **Comando exacto.** Desde carpeta inflation-bias-audit: `bash run.sh`. Crea venv, instala requirements fijadas y reproduce tests/lint/tipos/experimentos/notebook; requiere Python3.11+,PyPI. Resultados de timing varían. `python3 -m unittest discover -s 01-economics-and-econometrics/computational-economics/tests -v` desde raíz suite común.
+12. **Referencias BibTeX.** referencias.bib contiene6entradas y URLs/DOI reales; alcance verificable en matriz. No se derivan conclusiones empíricas de artículos cuyo texto completo no fue auditado.
+13. **Rúbricas1–5.** Original: novedad2,rigor4,reproducibilidad4,código4,claridad4,impacto3,honestidad5,MVP4. Ampliada:profundidadteórica4,aportedefendible3,calidadexperimental4,utilidad3,reproducibilidad4,honestidad5. Autoevaluación, no evaluación externa;2novedad refleja métodos clásicos.
+14. **Siguiente iteración.** Definir contrato de datos con período/licencia e intervalo de varianza identificable; evaluar error en α manteniendo el mismo programa; luego modelar credibilidad del nombramiento. No prometer mejora real con incertidumbre arbitraria.
+
+**Qué sabemos/construimos/podemos hacer:** ahora la misma herramienta distingue una elección puntual de una decisión robusta a intervalo explícito, calcula coste del compromiso y revela dónde fracasa dominancia. No sabemos si ese intervalo describe economía real.
+
+**Checklist:** README,src,tests,benchmarks,resultsCSV/JSON/figura,notebookejecutado,config,requirementsfijadas,informe,MVP,6BibTeX,derivación,priorart,registro/roadmap presentes. Revisión independiente y publicación se registran aparte por coordinador; este informe no las simula.

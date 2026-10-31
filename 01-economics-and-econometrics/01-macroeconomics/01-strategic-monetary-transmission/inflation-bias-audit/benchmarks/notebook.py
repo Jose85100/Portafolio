@@ -90,6 +90,43 @@ $J'(q)=\alpha^2[q k^2+\sigma^2(q-\lambda)/(1+\alpha^2q)^3]$. Multiplicar por el 
         ),
     ]
 )
+cells.extend(
+    [
+        n.v4.new_markdown_cell(r"""# Ciclo31 — Delegación con ambigüedad de varianza
+
+## Pregunta y tres candidatos
+¿Puede elegirse q sin fingir conocer σ²? Candidatos: credibilidad endógena (relevante pero cambia juego/instituciones), identificación empírica de α (sin datos/licencia/modelo de medición), minimax regret de varianza (seleccionado: conserva políticas y evaluación social, cierra una brecha concreta y es contrastable con oráculo). Clasificación: adaptación de ingeniería y auditoría de decisión robusta clásica, no descubrimiento disciplinar. Sin distribución subjetiva sobre v.
+
+## Fórmula original, propuesta y unidades
+Antes $J(q;v)=A(q)+vB(q)$ con $A=[(q\alpha k)^2+\lambda k^2]/2$, $B=[(q\alpha)^2+\lambda]/[2(1+q\alpha^2)^2]$ y $v=\sigma^2$. Ahora $R(q,v)=J(q,v)-\min_zJ(z,v)$ y elegimos $q_R=\arg\min_{0\le q\le\lambda}\max_{v\in[\ell,u]}R(q,v)$. v tiene unidades de shock²; R es pérdida social normalizada. λ permanece fijo para todos los métodos. La varianza es ambigua para quien nombra al banco, no modifica su reacción óptima tras observar ε; expectativa media sigue qαk.
+
+## Derivación exacta del algoritmo
+1. El mínimo de funciones afines en v es cóncavo: $m(v)=\inf_z[A(z)+vB(z)]$. Luego $R(q,v)=A(q)+vB(q)-m(v)$ es convexo en v y su máximo en intervalo compacto está en extremos. No hace falta una malla adversarial para certificar el intervalo.
+2. La raíz previa $F(q,v)=qk^2(1+\alpha^2q)^3+v(q-\lambda)=0$ es creciente en q; implícitamente $dq^*/dv=(\lambda-q^*)/F_q\ge0$. Casos degenerados se tratan por convención explícita.
+3. Sea $q_\ell=q^*(\ell)\le q_u=q^*(u)$. Fuera de ese intervalo, moverse hacia él mejora ambos extremos. Dentro, $R(q,\ell)$ crece y $R(q,u)$ decrece por el signo de J'.
+4. La diferencia continua pasa de no positiva a no negativa. La raíz que iguala regrets minimiza su máximo. Si coinciden pesos extremos se devuelve ese peso. La validez depende de α>0,λ,k≥0 e intervalo finito no negativo, de nuestra pérdida LQ y de nombramiento creíble sin coste. No prueba que minimax regret sea la preferencia correcta de una sociedad real.
+"""),
+        n.v4.new_code_cell(
+            'from src.ambiguity import robust_weight,regret,worst_regret\nz=json.loads((root/"results/ambiguity-summary.json").read_text())\nq=robust_weight(1,1,1,.04,4)\nprint("Ancla",z["anchor"])\nprint("q robusto",q,"regrets extremos",regret(q,1,1,1,.04),regret(q,1,1,1,4))\nassert abs(regret(q,1,1,1,.04)-regret(q,1,1,1,4))<1e-10'
+        ),
+        n.v4.new_markdown_cell(
+            "## Experimento confirmatorio y baseline competitivo\nAntes de interpretar: exigir gap de regret frente al optimizador escalar independiente <1e−8 y no empeorar peor regret frente a plug-in a varianza media con tolerancia1e−10. Malla factorial fijada en ambiguity-config.json, 144escenarios exactos. Plug-in es óptimo bajo la creencia puntual media; no es un competidor universalmente malo. El oráculo informado v tiene regret0 pero conoce información que ambos métodos desconocen; se usa referencia, no baseline factible."
+        ),
+        n.v4.new_code_cell(
+            'print("Casos",z["cases"],"mejoras estrictas",z["improved"],"gap oráculo",z["max_oracle_regret_error"])\nassert z["max_oracle_regret_error"]<1e-8\nfor v in np.linspace(.04,4,41):\n assert regret(q,1,1,1,float(v))<=worst_regret(q,1,1,1,.04,4)+1e-10\ndisplay(Image(filename=str(root/"results/ambiguity.png")))'
+        ),
+        n.v4.new_markdown_cell(
+            "## Ablation negativa y pérdida de garantías\nMinimax regret reduce el peor arrepentimiento, no domina pérdida social para cada v ni minimiza el peor nivel absoluto de pérdida. Si la varianza real coincide con el punto plug-in, éste tiene regret0 y robusto paga el precio de ambigüedad. Si el intervalo colapsa se recupera exactamente q* previo. Si k0 no hay sesgo, ambos eligen λ. No se preserva optimalidad puntual salvo degeneraciones. Un intervalo que excluye la verdad invalida la garantía; ni cobertura estadística ni distribución de v están estimadas."
+        ),
+        n.v4.new_code_cell(
+            'v=2.02\nqp=optimal_weight(1,1,1,v**.5)\nprint("Negativo en varianza media",regret(q,1,1,1,v),"frente a",regret(qp,1,1,1,v))\nassert regret(q,1,1,1,v)>regret(qp,1,1,1,v)\nassert robust_weight(1,1,1,1,1)==optimal_weight(1,1,1,1)\nassert robust_weight(1,1,0,.04,4)==1\nprint("Tiempos 30 repeticiones",z["runtime"])'
+        ),
+        n.v4.new_markdown_cell(
+            "## Discusión calculada, literatura y continuidad\nHerramienta reutilizable: robust_weight/worst_regret, añade restricción informativa explícita a la línea29–30, sin duplicar el motor monetario. No datos reales, no inferencia causal, no calibración o diseño institucional. Matriz prior-art31.md conecta5fuentes monetarias primarias y Manski2004 como criterio general (su teorema de tratamientos no se transfiere a este modelo). S2 local permanece; no S3 por malla sintética. Próximo hito: intervalo de varianza identificado con datos/licencia y separación de exploración/confirmación; después credibilidad institucional. Ejecución real IPython secuencial en proceso fresco, sin kernel/socket aislado."
+        ),
+    ]
+)
+
 nb = n.v4.new_notebook(
     cells=cells,
     metadata={
