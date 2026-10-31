@@ -1,0 +1,233 @@
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.2
+[notice] To update, run: python -m pip install --upgrade pip
+test_degeneracies (test_ambiguity.AmbiguityTests.test_degeneracies) ... ok
+test_invalid (test_ambiguity.AmbiguityTests.test_invalid) ... ok
+test_known_variance (test_ambiguity.AmbiguityTests.test_known_variance) ... ok
+test_negative_price_of_robustness (test_ambiguity.AmbiguityTests.test_negative_price_of_robustness) ... ok
+test_oracle_and_interior_envelope (test_ambiguity.AmbiguityTests.test_oracle_and_interior_envelope) ... ok
+test_invalid (test_delegation.DelegationTest.test_invalid) ... ok
+test_negative_controls (test_delegation.DelegationTest.test_negative_controls) ... ok
+test_state_formula_and_oracle_grid (test_delegation.DelegationTest.test_state_formula_and_oracle_grid) ... ok
+test_anchor (test_monetary.MonetaryTests.test_anchor) ... ok
+test_contracts (test_monetary.MonetaryTests.test_contracts) ... ok
+test_exact_identity_and_oracle_properties (test_monetary.MonetaryTests.test_exact_identity_and_oracle_properties) ... ok
+test_zero_target_control (test_monetary.MonetaryTests.test_zero_target_control) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.216s
+
+OK
+Name                Stmts   Miss  Cover
+---------------------------------------
+src/ambiguity.py       25      0   100%
+src/delegation.py      38      1    97%
+src/monetary.py        29      1    97%
+---------------------------------------
+TOTAL                  92      2    98%
+All checks passed!
+Success: no issues found in 7 source files
+{
+  "config": {
+    "seed": 20261029,
+    "alpha_values": [
+      0.5,
+      1,
+      1.5
+    ],
+    "weight_values": [
+      0.5,
+      1,
+      2
+    ],
+    "target_values": [
+      0,
+      0.5,
+      1
+    ],
+    "shock_scales": [
+      0,
+      1
+    ],
+    "anchor": {
+      "alpha": 1,
+      "weight": 1,
+      "target": 1,
+      "shock_scale": 1
+    },
+    "hypothesis": "On54 exact two-state cases: RE residual commitment/discretion<=1e-12; loss gap=0.5*(weight*alpha*target)^2; scalar best-response oracle discrepancy<=1e-6. Anchor naive loss appears lower but RE residual>0, so reject as equilibrium comparison."
+  },
+  "case_count": 54,
+  "state_regime_records": 324,
+  "anchor": {
+    "alpha": 1,
+    "weight": 1,
+    "target": 1,
+    "shock_scale": 1,
+    "commitment_loss": 0.75,
+    "discretion_loss": 1.25,
+    "naive_loss_inconsistent": 0.5,
+    "commitment_re_residual": 0.0,
+    "discretion_re_residual": 0.0,
+    "naive_re_residual": 0.5,
+    "commitment_mean_output": 0.0,
+    "discretion_mean_output": 0.0,
+    "naive_mean_output": 0.5,
+    "loss_gap_identity_error": 0.0,
+    "max_best_response_oracle_error": 4.92471741164735e-09
+  },
+  "max_loss_gap_identity_error": 4.440892098500626e-16,
+  "max_best_response_oracle_error": 1.4187990338143663e-08,
+  "seconds": 0.3055995739999844,
+  "python_peak_bytes": 234230,
+  "hardware": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "source_sha256": "9d40bd8060f0d97f6dc49cdc23e3c29eef32455d1f548d54e6bd74c4e7bfd971",
+  "data_sha256": "fa0ad551a68ad9a3d0064770b8e4bd78ec09182bf3c59911be5547e3cfddf875",
+  "note": "Exact equiprobable \u00b1sigma states; sigma0 repeats same zero state with probability0.5 each. No sampled uncertainty. Whole experiment instrumented Python allocation peak, not RSS or per-regime runtime."
+}
+{
+  "cases": 144,
+  "anchor": {
+    "alpha": 1,
+    "weight": 1,
+    "target": 1,
+    "sigma": 1,
+    "q": 0.3085712007847549,
+    "baseline": 1.25,
+    "optimal": 0.8674056499645886,
+    "zero_weight": 1.0,
+    "oracle_loss_error": 0.0,
+    "state_error": 0.0
+  },
+  "max_oracle_loss_error": 3.552713678800501e-15,
+  "max_state_error": 4.440892098500626e-15,
+  "seconds": 0.39241837899999155,
+  "python_peak_bytes": 107128,
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "data_sha256": "ee8346ab509441cbfb6bee752eda9888a3efa49d82faa6dcb1b07eeb607b806b",
+  "source_sha256": "de97a917490bb88f0b531b848db79f248febc63afbbcc5685742d177efec9bf0",
+  "config": {
+    "alpha": [
+      0.5,
+      1,
+      2
+    ],
+    "social_weight": [
+      0,
+      0.5,
+      1,
+      2
+    ],
+    "target": [
+      0,
+      0.5,
+      1
+    ],
+    "sigma": [
+      0,
+      0.5,
+      1,
+      3
+    ],
+    "data": "synthetic two equiprobable shocks \u00b1sigma; exact expectations",
+    "seed": null,
+    "hardware": "recorded platform, CPU; no accelerator",
+    "versions": "requirements.txt and results/summary.json",
+    "maturity": "S2 component, S1 program",
+    "scope": "one-period RE; credible costless delegation, social evaluation unchanged"
+  }
+}
+{
+  "cases": 144,
+  "anchor": {
+    "alpha": 1,
+    "weight": 1,
+    "target": 1,
+    "low": 0.04,
+    "high": 4,
+    "robust_q": 0.35385161737254117,
+    "plugin_q": 0.4158083870487712,
+    "robust_regret": 0.055577749247420205,
+    "plugin_regret": 0.07884529445492416,
+    "oracle_regret": 0.055577749247420205,
+    "oracle_error": 0.0
+  },
+  "max_oracle_regret_error": 2.6645352591003757e-15,
+  "improved": 81,
+  "seconds": 5.8233935419999625,
+  "python_peak_bytes": 213432,
+  "hardware": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "config": {
+    "date": "2026-10-31",
+    "source": "Designed exact model, no empirical dataset",
+    "seed": null,
+    "alpha": [
+      0.5,
+      1,
+      2
+    ],
+    "weight": [
+      0.5,
+      1,
+      2
+    ],
+    "target": [
+      0,
+      0.5,
+      1,
+      2
+    ],
+    "variance_intervals": [
+      [
+        0,
+        1
+      ],
+      [
+        0.04,
+        4
+      ],
+      [
+        1,
+        16
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "threshold_max_regret_gap": 1e-08,
+    "anchor": [
+      1,
+      1,
+      1,
+      0.04,
+      4
+    ]
+  },
+  "data_sha256": "ec7c399b6d259657f5567c30ff3f35e0b3931963f89aedd123654b64b9b66c95",
+  "source_sha256": "5fa3007304aa4a08bc3940cc6d9c19605b939ac0ac9aea836857eeda59182044",
+  "runtime": {
+    "robust": {
+      "median_seconds": 0.0011202029999992646,
+      "peak_bytes": 14616
+    },
+    "plugin": {
+      "median_seconds": 3.4280999983593574e-05,
+      "peak_bytes": 833
+    }
+  }
+}
+Executed11code cells in process.

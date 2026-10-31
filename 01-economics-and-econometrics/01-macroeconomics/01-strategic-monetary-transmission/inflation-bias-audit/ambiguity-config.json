@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-31",
+  "source": "Designed exact model, no empirical dataset",
+  "seed": null,
+  "alpha": [
+    0.5,
+    1,
+    2
+  ],
+  "weight": [
+    0.5,
+    1,
+    2
+  ],
+  "target": [
+    0,
+    0.5,
+    1,
+    2
+  ],
+  "variance_intervals": [
+    [
+      0,
+      1
+    ],
+    [
+      0.04,
+      4
+    ],
+    [
+      1,
+      16
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "threshold_max_regret_gap": 1e-08,
+  "anchor": [
+    1,
+    1,
+    1,
+    0.04,
+    4
+  ]
+}

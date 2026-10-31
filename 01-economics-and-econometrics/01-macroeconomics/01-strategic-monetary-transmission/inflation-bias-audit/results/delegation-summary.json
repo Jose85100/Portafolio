@@ -14,7 +14,7 @@
   },
   "max_oracle_loss_error": 3.552713678800501e-15,
   "max_state_error": 4.440892098500626e-15,
-  "seconds": 0.311073016000023,
+  "seconds": 0.42857465000003003,
   "python_peak_bytes": 107128,
   "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
   "python": "3.12.14",
