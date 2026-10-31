@@ -1,0 +1,117 @@
+{
+  "oracle_cases": 125,
+  "lp_objectives": 250,
+  "max_error": 2.220446049250313e-16,
+  "plans": [
+    {
+      "name": "A",
+      "q1": 0.7,
+      "q2": 0.7,
+      "cost": 2,
+      "lower": 0.83,
+      "upper": 0.9,
+      "restricted_lower30": 0.836,
+      "nominal": 0.8531,
+      "shock_lower": 0.34999999999999964,
+      "shock_upper": 0.7
+    },
+    {
+      "name": "B",
+      "q1": 0.8,
+      "q2": 0.8,
+      "cost": 3,
+      "lower": 0.87,
+      "upper": 0.92,
+      "restricted_lower30": 0.874,
+      "nominal": 0.8816,
+      "shock_lower": 0.5499999999999998,
+      "shock_upper": 0.8
+    },
+    {
+      "name": "C",
+      "q1": 0.9,
+      "q2": 0.9,
+      "cost": 4,
+      "lower": 0.91,
+      "upper": 0.9400000000000001,
+      "restricted_lower30": 0.912,
+      "nominal": 0.9139,
+      "shock_lower": 0.75,
+      "shock_upper": 0.9
+    }
+  ],
+  "decisions": [
+    {
+      "target": 0.85,
+      "method": "nominal",
+      "selected": "A"
+    },
+    {
+      "target": 0.85,
+      "method": "restricted30",
+      "selected": "B"
+    },
+    {
+      "target": 0.85,
+      "method": "joint31",
+      "selected": "B"
+    },
+    {
+      "target": 0.872,
+      "method": "nominal",
+      "selected": "B"
+    },
+    {
+      "target": 0.872,
+      "method": "restricted30",
+      "selected": "B"
+    },
+    {
+      "target": 0.872,
+      "method": "joint31",
+      "selected": "C"
+    },
+    {
+      "target": 0.9,
+      "method": "nominal",
+      "selected": "C"
+    },
+    {
+      "target": 0.9,
+      "method": "restricted30",
+      "selected": "C"
+    },
+    {
+      "target": 0.9,
+      "method": "joint31",
+      "selected": "C"
+    },
+    {
+      "target": 0.97,
+      "method": "nominal",
+      "selected": "infeasible"
+    },
+    {
+      "target": 0.97,
+      "method": "restricted30",
+      "selected": "infeasible"
+    },
+    {
+      "target": 0.97,
+      "method": "joint31",
+      "selected": "infeasible"
+    }
+  ],
+  "timings_n100_median_seconds": {
+    "closed": 0.00047142900007202115,
+    "lp8": 0.24370797899996433
+  },
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "memory_scope": "tracemalloc Python allocations; not native HiGHS/RSS",
+  "data": "designed synthetic benchmark; no attendance observations",
+  "seed": null
+}

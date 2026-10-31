@@ -23,6 +23,8 @@ def main():
     ]
     from benchmarks.tutorial_cells import extension_cells
     nb.cells.extend(extension_cells())
+    from benchmarks.joint_role_cells import joint_cells
+    nb.cells.extend(joint_cells())
     shell = InteractiveShell.instance()
     shell.reset(new_session=True)
     previous = Path.cwd()

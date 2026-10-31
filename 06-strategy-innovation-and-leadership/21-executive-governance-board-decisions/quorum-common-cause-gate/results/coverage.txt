@@ -1,7 +1,8 @@
 Name                       Stmts   Miss  Cover
 ----------------------------------------------
 src/__init__.py                0      0   100%
+src/joint_role.py             22      0   100%
 src/quorum.py                 66      0   100%
 src/reserve_ambiguity.py      67      0   100%
 ----------------------------------------------
-TOTAL                        133      0   100%
+TOTAL                        155      0   100%
