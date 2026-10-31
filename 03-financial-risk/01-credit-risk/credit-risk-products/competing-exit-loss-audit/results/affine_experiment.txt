@@ -1,0 +1,46 @@
+{
+  "anchor": {
+    "exact_loss": 3.8955123843562323,
+    "midpoint_loss": 3.3560777081587836,
+    "endpoint_loss": 1.1186925693862613,
+    "constant_start_loss": 5.593462846931305,
+    "default_probability": 0.12717870688631303,
+    "prepayment_probability": 0.6358935344315652,
+    "survival": 0.23692775868212176
+  },
+  "cases": 36,
+  "max_abs_error_vs_simpson2048": 1.0558665053395089e-10,
+  "timings": {
+    "closed_form": {
+      "median_seconds": 5.0700199994935246e-06,
+      "samples_seconds": [
+        5.350240001007478e-06,
+        5.425340000329015e-06,
+        4.79479999967225e-06,
+        4.7625599995626545e-06,
+        5.0700199994935246e-06,
+        4.780579999987822e-06,
+        5.41494000003695e-06
+      ],
+      "peak_python_bytes": 752
+    },
+    "simpson2048": {
+      "median_seconds": 0.00044398681999950894,
+      "samples_seconds": [
+        0.0004481556999996883,
+        0.00045537953999996716,
+        0.00044815648000053445,
+        0.00044297189999952023,
+        0.00044297851999999696,
+        0.00044398681999950894,
+        0.0004430914800002483
+      ],
+      "peak_python_bytes": 984
+    }
+  },
+  "python": "3.12.14",
+  "hardware": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "data": "designed deterministic synthetic grid; no sampling uncertainty",
+  "hypothesis": "max absolute error <1e-8 money versus direct Simpson2048; no worse than midpoint within1e-8",
+  "passed": true
+}
