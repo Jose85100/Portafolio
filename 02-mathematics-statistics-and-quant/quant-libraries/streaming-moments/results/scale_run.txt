@@ -2,9 +2,9 @@
   "rows": 42,
   "chosen_cases": 6,
   "chosen_statuses": {
-    "ok": 2,
+    "variance_underflow": 2,
     "variance_overflow": 2,
-    "variance_underflow": 2
+    "ok": 2
   },
   "chosen_max_relative_sd_error": 1.7763568394002505e-15,
   "baseline_failures": {
