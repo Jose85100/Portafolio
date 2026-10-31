@@ -54,3 +54,10 @@ El notebook existente conserva elcaso29 y añade una derivación desde la tabla2
 Nominal eligeA ypuede incumplir0,85; robustoeligeB pagando1unidad adicional. La garantía cubre solo elpar ylasmarginales dadas: elrolobligatorio sigue independiente condicionalmente. Dependencia positiva perfecta conq0,7da0,893, superior alnominal; elpeorcaso amplio incluye dependencia negativa. No se afirma que toda correlación dañe disponibilidad.
 
 Resultados30en `results/dependence_*`, `reserve_couplings.csv`, `config_dependence.json`. Suite acumulada10tests,100%133statements núcleo, LPindependiente yrecuperación delmotor29. Véanse `matriz_prior_art.md`, `RESEARCH_LOG.md`, `ROADMAP.md` e `informe-2026-10-30.md`.6referencias verificadas con cobertura explícita. ComponenteS2 sintético; no certificar un programa operativo.
+
+
+## Continuidad31: el rol obligatorio también puede depender
+
+Misma carpeta, evento y comando `bash run.sh`. Nuevo `src/joint_role.py`: cotas puntuales para la intersección de tres eventos. `benchmarks/joint_role_run.py` contrasta un LP de ocho variables y guarda testigos. `derivacion-2026-10-31.md` y el notebook acumulativo explican la transformación30→31. Configuración: `config_joint_role.json`; resultados: `results/joint_role_*`; informe de14 puntos: `informe-2026-10-31.md`.
+
+PlanB: cota anterior0,874 → nueva cota0,870. La meta original0,85 sigue eligiendoB. La frontera diseñada0,872 cambia deB(costo3) aC(costo4). Sin datos reales ni garantía fuera de marginales, regímenes y evento documentados. Costos abstractos; no se certifica cumplimiento legal o calidad decisional. Adaptación y auditoría de una cota clásica; componenteS2 sintético, no programa validado u operacional. Quince tests acumulados y cobertura medida100% de155 statements del núcleo; revisión independiente local realizada.

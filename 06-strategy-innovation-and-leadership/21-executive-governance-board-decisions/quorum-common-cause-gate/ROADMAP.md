@@ -9,3 +9,11 @@
 | ¿La disponibilidad reduce latencia de decisión? | Registros aprobados de cancelación yplazos | Validación temporal separada y límites causales explícitos | Asistencia no prueba calidad de decisión |
 
 Siguiente iteración recomendada: LP sobreR,B1,B2 yrecuperación delcaso30 como restricción anidada, antes de ampliar el menú.
+
+
+## Actualización del31 de octubre
+
+- Cerrado: dependencia conjunta R/B1/B2, cotas puntuales, LP de ocho variables, testigos y fronteras. Revisión independiente registrada en informe31.
+- Hito siguiente: intervalos marginales con monotonía y recuperación de puntos. No atribuir cobertura estadística real hasta contar con datos autorizados.
+- Hito posterior: estimación y validación temporal con datos autorizados de asistencia, y reglas de elegibilidad documentadas por el responsable. Medir disponibilidad y calidad como resultados distintos.
+- Conservar resultados negativos y comparación de conjuntos de ambigüedad. Continuar esta línea antes de crear otra carpeta.

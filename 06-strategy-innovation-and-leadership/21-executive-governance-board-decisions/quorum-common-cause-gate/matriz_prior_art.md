@@ -13,3 +13,18 @@
 **Contribución30:** adaptación operativa acumulativa: sustituir el supuesto de independencia de reservas durante disrupción por una clase sharp de acoplamientos y seleccionar el plan de menor costo que cumple la cota inferior. Derivación especializada del evento y testLP independiente; no se reclama un nuevo teorema, copula, algoritmo de frontera o prioridad mundial.
 
 Verificación: las cinco fuentes originales se verificaron29oct en metadata indexada de editores y registros Chicago/Stanford/HebrewUniversity; se conservan sus DOI/URLs. Nelsen se verificó30oct en Springer (autor, edición2, año2006, DOI y capítulos). AEA/ScienceDirect devolvieron403 el29; no se leyó íntegramente toda literatura. La revisión no es exhaustiva. `referencias.bib` contiene6entradas reales, con fechas de cobertura explícitas aquí.
+
+
+## Extensión31: rol obligatorio dependiente
+
+| Fuente real verificada el31 de octubre | Problema, supuestos y evidencia consultada | Diferencia concreta y uso |
+|---|---|---|
+| Nelsen2006, DOI10.1007/0-387-28678-0, Springer | Dependencia y cópulas; edición2 y capítulos verificados en editor. Sin lectura completa bajo suscripción | Cotas puntuales conocidas de tres eventos; especialización a disponibilidad, no nueva cópula global |
+| SciPy linprog, URL oficial en BibTeX | LP con igualdades y no negatividad; API y HiGHS documentados | Oráculo de ocho variables, testigos guardados y contraste de precisión/costo |
+| Adams/Hermalin/Weisbach2010, DOI10.1257/jel.48.1.58, AEA | Endogeneidad de composición y acciones; resumen y metadatos recuperados mediante búsqueda primaria. Apertura directa403 | Contexto: disponibilidad no mide eficacia ni causalidad de gobierno |
+| Fama/Jensen1983, DOI10.1086/467037, UChicago | Separación de propiedad y control; metadatos de editor y registro institucional | Contexto del control; no fuente de probabilidades o calibración |
+| Schwartz-Ziv/Weisbach2013, DOI10.1016/j.jfineco.2012.04.011, Hebrew University | Actas reales y actividad supervisora; resumen y metadatos institucionales | Nuestro escenario sintético no reproduce esas observaciones ni calidad de voto |
+| Hong2013, DOI10.1016/j.csda.2012.10.006, ScienceDirect | Suma de Bernoulli independientes; resumen primario vía búsqueda, apertura403; reporte del autor en VirginiaTech | Baseline de independencia conservado; no presentamos DFFT como método propio |
+| Marshall/Olkin1967, DOI10.1080/01621459.1967.10482885, editor/Stanford | Modelos de shocks; resumen/editor y reporte del autor1966 | Contexto de causa común29; no ajustamos una distribución exponencial ni hacemos una prueba empírica |
+
+Cobertura: siete fuentes reales, metadatos/resúmenes/documentación según tabla. No revisión exhaustiva de textos integrales ni búsqueda global de novedad. Se preservan referencias29/30; las fórmulas31 son cotas clásicas y el aporte es una herramienta auditable dentro del repositorio.
