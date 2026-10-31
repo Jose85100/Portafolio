@@ -20,3 +20,15 @@
 - Evidencia:10tests totales,100%133statements núcleo, reconstrucción exacta del29 y notebook17celdas/6code/2PNG con derivaciónLaTeX.
 - Clasificación: adaptación de cota conocida al instrumento ejecutivo existente; no teoría nueva ni calibración empírica.
 - Pendiente: dependencia del rol obligatorio, error de marginales y autorización real de reservas.
+
+
+## 31 de octubre de2026 — Dependencia conjunta del rol y las reservas
+Pregunta central: ¿qué disponibilidad puede certificarse con supuestos auditables, separada de la calidad decisional?
+
+| Idea candidata | Brecha y relevancia | Diferencia y valor como herramienta | Viabilidad y evidencia necesaria | Decisión |
+|---|---|---|---|---|
+| Dependencia conjunta R/B1/B2 | La garantía30 excluía el fallo correlacionado del rol; relevante para resiliencia | LP de ocho masas y cotas conocidas que cubren esa brecha | Alta: derivación, oráculo, testigos extremos y frontera de decisión | Elegida por el pendiente explícito30 y contraste verificable |
+| Marginales intervalares | Parámetros estimados con error; crítica para garantías reales | Robustez paramétrica y futura integración de datos autorizados | Técnica viable; cobertura estadística requiere muestras inexistentes | Próximo hito; no inventar intervalos calibrados |
+| Quórum proporcional y elegibilidad | Mínimo fijo3 no representa necesariamente una regla real | Generalizar evento y autorización | Requiere reglas adicionales y validación del responsable | Pospuesta para preservar el contrato del mismo evento |
+
+Mapa acumulado: causa común de principales29 → dependencia entre reservas30 → dependencia conjunta del rol31. Clasificación: adaptación de ingeniería y auditoría de supuestos, no nuevo método disciplinar. H31: ampliar el conjunto factible nunca eleva la cota y puede cambiar la decisión en la brecha; umbral de precisión1e-10 frente al LP. Negativos: meta0,85 no cambia, r=1 recupera30 y meta0,97 es inviable. El umbral adicional0,872 es un benchmark diseñado, no evidencia empírica ni ajuste oculto. Resultados y revisión en informe-2026-10-31.md.

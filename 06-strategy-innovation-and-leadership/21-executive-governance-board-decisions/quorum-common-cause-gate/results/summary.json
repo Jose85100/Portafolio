@@ -11,8 +11,8 @@
   },
   "actual_baseline_availability": 0.76,
   "independence_error": 0.09120000000000006,
-  "seconds": 0.0031936440000208677,
-  "python_peak_bytes": 32863,
+  "seconds": 0.003220350999981747,
+  "python_peak_bytes": 32841,
   "python": "3.12.14",
   "platform": "Linux-6.18.57-x86_64-with-glibc2.39"
 }

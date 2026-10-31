@@ -23,7 +23,7 @@
     "nominal_availability": 0.9139,
     "upper_availability": 0.931
   },
-  "seconds": 9.416999995437436e-05,
+  "seconds": 0.00010108200001468504,
   "python_peak_bytes": 1160,
   "python": "3.12.14",
   "platform": "Linux-6.18.57-x86_64-with-glibc2.39"
