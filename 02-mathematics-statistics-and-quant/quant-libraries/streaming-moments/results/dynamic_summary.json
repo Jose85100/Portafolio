@@ -1,0 +1,14 @@
+{
+  "cases": 45,
+  "max_relative_error": 4.1297366123530497e-16,
+  "gate": true,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "numpy": "2.3.5",
+  "hardware": "x86_64",
+  "timing_scope": "compute+input normalization only; imports/install excluded; 5 repeats; tracemalloc separate, Python heap not RSS",
+  "median_ns": {
+    "dynamic": 195744.0,
+    "numpy_scaled": 21532.0
+  }
+}

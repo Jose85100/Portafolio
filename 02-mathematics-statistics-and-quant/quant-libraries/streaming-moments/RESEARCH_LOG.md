@@ -16,3 +16,7 @@
 3 config_scale.json/results: repeticiones30+,RSS de procesos separados y distribución de timings antes de presupuesto de rendimiento. No prometido/ejecutado todavía.
 
 Continuar adaptador explícito; ajustar ante normalization_failure; cerrar afirmación de superioridad universal. No ascenso de programasadvanced-research, sin equivalencia automáticaS2/M2. Nuevo lenguaje no justificado: núcleo simplePython; cross-tests EL83 existentes se conservan sin cambios.
+
+##31oct2026: pregunta y contribución
+¿Podemos seleccionar escala sin inspección futura preservando SD representable? Elegida autoescala frente a merge/ponderación (comparación en informe_dynamic.md punto4). Mapa:29cancelación→30rango externo→31rango online/subnormal. Hipótesis45fixtures≤1e−12aprobada; negativos de redondeo y NumPy más rápido conservados. Derivación original/propuesta/propiedades: derivacion_dynamic.md. Adaptación de ingeniería conocida, no contribución científica original.
+Decisión: continuar; no reemplazar implementación30ni declarar superioridad. Próximo hito src/dynamic.py merge entre escalas con contrato y pruebas contra Decimal; segundo src/benchmark_dynamic.py órdenes y nmayores antes presupuesto productivo; tercero compensación de pérdida bajo reescalado con coste explícito. Todo pendiente, sin inflar madurez.

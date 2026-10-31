@@ -1,0 +1,1 @@
+{"seeds":[31,32,33],"n":128,"exponents":[-1070,-700,0,700,1020],"repeats":5,"dataset":"synthetic uniform; floats received are oracle input","source":"numpy default_rng","gate":"relative SD error <=1e-12 on configured fixtures; subnormal tolerance separately tested <=4 ulp"}

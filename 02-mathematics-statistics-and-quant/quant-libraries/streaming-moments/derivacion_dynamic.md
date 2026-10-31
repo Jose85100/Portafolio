@@ -1,0 +1,12 @@
+# Escala dinámica: identidad, unidades y límites
+Sea x en unidades U, n entero, e un exponente entero y y=x/2^e sin unidades. El núcleo Welford desplazado29 conserva origen a, media relativa b y M2=Σ(y−ȳ)². Su recurrencia conocida es δ=(y−a)−b, b'=b+δ/(n+1), M2'=M2+δ((y−a)−b'). No proponemos una fórmula estadística inédita.
+
+La limitación30 era necesitar e externo y rechazar un flujo con escalas muy distintas. Proponemos seleccionar e_t=max_{i≤t,x_i≠0} frexp(x_i).exponent; ceros iniciales no fijan escala. Así |y_i|≤1 para el máximo observado. Cuando llega una escala mayor e', definimos c=2^(e−e')≤1. Paso1: y'_i=cy_i. Paso2: a'=ca y b'=cb por linealidad de la media. Paso3: cada diferencia centrada se multiplica por c; entonces M2'=c²M2. Paso4: insertar el nuevo y con el núcleo existente. Esto justifica `ldexp(origin,shift)`, `ldexp(mean_offset,shift)`, `ldexp(m2,2*shift)` en `DynamicMoments.push`.
+
+$$a'=2^{e-e'}a,\quad b'=2^{e-e'}b,\quad M_2'=2^{2(e-e')}M_2.$$
+$$V_d=2^{2e}\frac{M_2}{n-d},\qquad SD_d=2^e\sqrt{M_2/(n-d)},\quad d\in\{0,1\},\ n>d.$$
+Varianza tiene unidades U²; SD U; conteo, e, y y M2 normalizado sin unidades. Estas identidades son exactas en reales; no constituyen cota de error en máquina. El estado ocupa un número constante de escalares, procesa una pasada; no promete merge entre escalas (API sin merge). No cambian `Moments` ni `scaled_moments`.
+
+Dominio finito binary64, n pequeño frente a2^53. Escala seleccionada puede ser1024 (frexp del mayor finito); no materializamos2^e, sino ldexp. En estado normalizado no hay grandes diferencias; no prueba estabilidad universal. Escalado binario exacto mientras representable: al reescalar puede perderse M2 diminuto o un dato bajo el mínimo subnormal. `rounded_to_zero` cuenta tales componentes/observaciones detectadas; no es cota ni conteo de toda información perdida. Cuantización sin llegar a cero sigue posible.
+
+Casos límite: cero/constante→SD0; n≤d error; NaN/inf error; SD no representable→std_underflow/std_overflow; varianza no representable pero SD sí→variance_underflow/variance_overflow. Flujo [0,minsubnormal] tiene SD exacta minsubnormal/2 y redondea0: la salida se abstiene, no inventa éxito. [-minsubnormal,minsubnormal] SD=minsubnormal. Datos redondeados antes de entrada no se recuperan. Bajo orden adverso se acepta redondeo dependiente del orden; no afirmar asociatividad exacta. Sin parámetros aprendidos ni evidencia empírica.
