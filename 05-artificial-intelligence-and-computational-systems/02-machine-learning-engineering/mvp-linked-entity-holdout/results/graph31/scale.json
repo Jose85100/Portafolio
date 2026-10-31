@@ -1,0 +1,22 @@
+[
+  {
+    "rows": 28,
+    "audit_ns": 718120,
+    "peak_bytes": 4936
+  },
+  {
+    "rows": 280,
+    "audit_ns": 4927756,
+    "peak_bytes": 52888
+  },
+  {
+    "rows": 2800,
+    "audit_ns": 48625464,
+    "peak_bytes": 574104
+  },
+  {
+    "rows": 28000,
+    "audit_ns": 595494906,
+    "peak_bytes": 4982096
+  }
+]
