@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-31",
+  "method": "web tool open of primary sources; not runtime network fetching",
+  "sources": [
+    {
+      "key": "audit31leakage",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10499856/",
+      "scope": "full text PMC; DOI direct403"
+    },
+    {
+      "key": "audit31groups",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GroupShuffleSplit.html",
+      "scope": "official documentation"
+    },
+    {
+      "key": "audit31pairs",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.cluster.pair_confusion_matrix.html",
+      "scope": "official documentation"
+    },
+    {
+      "key": "audit31components",
+      "url": "https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.components.connected_components.html",
+      "scope": "official documentation"
+    },
+    {
+      "key": "audit31metrics",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_recall_fscore_support.html",
+      "scope": "official documentation"
+    }
+  ]
+}
