@@ -1,0 +1,132 @@
+{
+  "economics": {
+    "path": "01-economics-and-econometrics/01-macroeconomics/01-strategic-monetary-transmission/inflation-bias-audit",
+    "required_present": [
+      "README.md",
+      "MVP.md",
+      "requirements.txt",
+      "referencias.bib",
+      "src",
+      "tests",
+      "results"
+    ],
+    "bib_entries": 6,
+    "notebooks": [
+      {
+        "path": "notebook.ipynb",
+        "code_cells": 11,
+        "outputs": 14
+      }
+    ]
+  },
+  "math": {
+    "path": "02-mathematics-statistics-and-quant/quant-libraries/streaming-moments",
+    "required_present": [
+      "README.md",
+      "MVP.md",
+      "requirements.txt",
+      "referencias.bib",
+      "src",
+      "tests",
+      "results"
+    ],
+    "bib_entries": 8,
+    "notebooks": [
+      {
+        "path": "notebook_dynamic.ipynb",
+        "code_cells": 6,
+        "outputs": 6
+      },
+      {
+        "path": "notebook_scale.ipynb",
+        "code_cells": 4,
+        "outputs": 4
+      },
+      {
+        "path": "notebook.ipynb",
+        "code_cells": 4,
+        "outputs": 4
+      }
+    ]
+  },
+  "risk": {
+    "path": "03-financial-risk/01-credit-risk/credit-risk-products/competing-exit-loss-audit",
+    "required_present": [
+      "README.md",
+      "MVP.md",
+      "requirements.txt",
+      "referencias.bib",
+      "src",
+      "tests",
+      "results"
+    ],
+    "bib_entries": 5,
+    "notebooks": [
+      {
+        "path": "calendar_notebook.ipynb",
+        "code_cells": 3,
+        "outputs": 4
+      },
+      {
+        "path": "notebook.ipynb",
+        "code_cells": 3,
+        "outputs": 4
+      },
+      {
+        "path": "affine_notebook.ipynb",
+        "code_cells": 4,
+        "outputs": 5
+      }
+    ]
+  },
+  "ai": {
+    "path": "05-artificial-intelligence-and-computational-systems/02-machine-learning-engineering/mvp-linked-entity-holdout",
+    "required_present": [
+      "README.md",
+      "MVP.md",
+      "requirements.txt",
+      "referencias.bib",
+      "src",
+      "tests",
+      "results"
+    ],
+    "bib_entries": 15,
+    "notebooks": [
+      {
+        "path": "notebook_graph_audit.ipynb",
+        "code_cells": 6,
+        "outputs": 7
+      },
+      {
+        "path": "notebook_balancing.ipynb",
+        "code_cells": 6,
+        "outputs": 6
+      },
+      {
+        "path": "notebook.ipynb",
+        "code_cells": 4,
+        "outputs": 4
+      }
+    ]
+  },
+  "ceo": {
+    "path": "06-strategy-innovation-and-leadership/21-executive-governance-board-decisions/quorum-common-cause-gate",
+    "required_present": [
+      "README.md",
+      "MVP.md",
+      "requirements.txt",
+      "referencias.bib",
+      "src",
+      "tests",
+      "results"
+    ],
+    "bib_entries": 7,
+    "notebooks": [
+      {
+        "path": "notebook.ipynb",
+        "code_cells": 9,
+        "outputs": 19
+      }
+    ]
+  }
+}
