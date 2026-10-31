@@ -1,0 +1,17 @@
+test_degeneracies (test_ambiguity.AmbiguityTests.test_degeneracies) ... ok
+test_invalid (test_ambiguity.AmbiguityTests.test_invalid) ... ok
+test_known_variance (test_ambiguity.AmbiguityTests.test_known_variance) ... ok
+test_negative_price_of_robustness (test_ambiguity.AmbiguityTests.test_negative_price_of_robustness) ... ok
+test_oracle_and_interior_envelope (test_ambiguity.AmbiguityTests.test_oracle_and_interior_envelope) ... ok
+test_invalid (test_delegation.DelegationTest.test_invalid) ... ok
+test_negative_controls (test_delegation.DelegationTest.test_negative_controls) ... ok
+test_state_formula_and_oracle_grid (test_delegation.DelegationTest.test_state_formula_and_oracle_grid) ... ok
+test_anchor (test_monetary.MonetaryTests.test_anchor) ... ok
+test_contracts (test_monetary.MonetaryTests.test_contracts) ... ok
+test_exact_identity_and_oracle_properties (test_monetary.MonetaryTests.test_exact_identity_and_oracle_properties) ... ok
+test_zero_target_control (test_monetary.MonetaryTests.test_zero_target_control) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.100s
+
+OK

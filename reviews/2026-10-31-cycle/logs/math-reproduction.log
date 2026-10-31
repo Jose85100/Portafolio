@@ -1,0 +1,32 @@
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.2
+[notice] To update, run: python -m pip install --upgrade pip
+test_binary_covariance (test_dynamic.DynamicTests.test_binary_covariance) ... ok
+test_oracle_orders (test_dynamic.DynamicTests.test_oracle_orders) ... ok
+test_range_and_invalid (test_dynamic.DynamicTests.test_range_and_invalid) ... ok
+test_state_and_rescale (test_dynamic.DynamicTests.test_state_and_rescale) ... ok
+test_subnormal (test_dynamic.DynamicTests.test_subnormal) ... ok
+test_zero_prefix_and_constant (test_dynamic.DynamicTests.test_zero_prefix_and_constant) ... ok
+test_edges (test_moments.Tests.test_edges) ... ok
+test_merge_identity (test_moments.Tests.test_merge_identity) ... ok
+test_partitions_and_translation (test_moments.Tests.test_partitions_and_translation) ... ok
+test_units_and_order (test_moments.Tests.test_units_and_order) ... ok
+test_edges (test_scaled.ScaledTests.test_edges) ... ok
+test_extremes (test_scaled.ScaledTests.test_extremes) ... ok
+test_sample_sd_overflow (test_scaled.ScaledTests.test_sample_sd_overflow) ... ok
+test_sensitivity_and_properties (test_scaled.ScaledTests.test_sensitivity_and_properties) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.133s
+
+OK
+Wrote JSON report to results/coverage.json
+Name             Stmts   Miss  Cover
+------------------------------------
+src/dynamic.py      50      0   100%
+src/moments.py      35      0   100%
+src/scaled.py       43      2    95%
+------------------------------------
+TOTAL              128      2    98%
+All checks passed!
+Success: no issues found in 3 source files

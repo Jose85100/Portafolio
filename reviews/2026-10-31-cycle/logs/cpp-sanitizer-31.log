@@ -1,0 +1,37 @@
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspace/scratch/6c8b818bd733/build-risk31-san
+[ 12%] Building CXX object CMakeFiles/credit_risk.dir/apps/credit.cpp.o
+[ 25%] Building CXX object CMakeFiles/market_risk.dir/apps/market.cpp.o
+[ 37%] Linking CXX executable market_risk
+[ 37%] Built target market_risk
+[ 50%] Linking CXX executable credit_risk
+[ 62%] Building CXX object CMakeFiles/liquidity_risk.dir/apps/liquidity.cpp.o
+[ 62%] Built target credit_risk
+[ 75%] Building CXX object CMakeFiles/quant_tests.dir/tests/tests.cpp.o
+[ 87%] Linking CXX executable liquidity_risk
+[ 87%] Built target liquidity_risk
+[100%] Linking CXX executable quant_tests
+[100%] Built target quant_tests
+Test project /workspace/scratch/6c8b818bd733/build-risk31-san
+    Start 1: risk_tests
+1/1 Test #1: risk_tests .......................***Failed    0.01 sec
+==110==Can't open /proc/109/task for reading.
+==109==LeakSanitizer has encountered a fatal error.
+==109==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==109==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+
+0% tests passed, 1 tests failed out of 1
+
+Total Test time (real) =   0.01 sec
+
+The following tests FAILED:
+	  1 - risk_tests (Failed)
+Errors while running CTest

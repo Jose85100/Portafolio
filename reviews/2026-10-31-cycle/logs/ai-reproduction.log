@@ -1,0 +1,36 @@
+test_bruteforce_optimum (test_balancing.BalanceTests.test_bruteforce_optimum) ... ok
+test_budget (test_balancing.BalanceTests.test_budget) ... ok
+test_component_budget (test_balancing.BalanceTests.test_component_budget) ... ok
+test_degenerate (test_balancing.BalanceTests.test_degenerate) ... ok
+test_equivalent_fraction (test_balancing.BalanceTests.test_equivalent_fraction) ... ok
+test_fixture_invalid (test_balancing.BalanceTests.test_fixture_invalid) ... ok
+test_giant_negative (test_balancing.BalanceTests.test_giant_negative) ... ok
+test_odd_tie_lower_mass (test_balancing.BalanceTests.test_odd_tie_lower_mass) ... ok
+test_permutation (test_balancing.BalanceTests.test_permutation) ... ok
+test_prior_baseline_unchanged (test_balancing.BalanceTests.test_prior_baseline_unchanged) ... ok
+test_ratio_validation (test_balancing.BalanceTests.test_ratio_validation) ... ok
+test_incomplete_truth_abstains (test_graph_audit.GraphAuditTests.test_incomplete_truth_abstains) ... ok
+test_invalid_assignment (test_graph_audit.GraphAuditTests.test_invalid_assignment) ... ok
+test_missing_links_counterexample (test_graph_audit.GraphAuditTests.test_missing_links_counterexample) ... ok
+test_overmerge_is_not_missing_link (test_graph_audit.GraphAuditTests.test_overmerge_is_not_missing_link) ... ok
+test_perfect (test_graph_audit.GraphAuditTests.test_perfect) ... ok
+test_random_partitions_against_pair_oracle (test_graph_audit.GraphAuditTests.test_random_partitions_against_pair_oracle) ... ok
+test_singleton_no_pairs (test_graph_audit.GraphAuditTests.test_singleton_no_pairs) ... ok
+test_assignment_validation (test_splitter.Tests.test_assignment_validation) ... ok
+test_cut_detection (test_splitter.Tests.test_cut_detection) ... ok
+test_duplicate_tokens (test_splitter.Tests.test_duplicate_tokens) ... ok
+test_empty (test_splitter.Tests.test_empty) ... ok
+test_invalid (test_splitter.Tests.test_invalid) ... ok
+test_no_leak (test_splitter.Tests.test_no_leak) ... ok
+test_one_component (test_splitter.Tests.test_one_component) ... ok
+test_permutation (test_splitter.Tests.test_permutation) ... ok
+test_transitive (test_splitter.Tests.test_transitive) ... ok
+test_unknown (test_splitter.Tests.test_unknown) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 0.043s
+
+OK
+All checks passed!
+Success: no issues found in 3 source files
+Executed and saved 6 code cells via IPython in-process

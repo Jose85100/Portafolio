@@ -1,0 +1,8 @@
+test_empty (test_model.TestEL.test_empty) ... ok
+test_example (test_model.TestEL.test_example) ... ok
+test_invalid (test_model.TestEL.test_invalid) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
