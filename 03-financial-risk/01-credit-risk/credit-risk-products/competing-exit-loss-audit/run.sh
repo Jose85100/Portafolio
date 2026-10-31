@@ -7,12 +7,16 @@ if [[ -z "${PYTHON:-}" ]]; then
 fi
 if [[ "${SKIP_INSTALL:-0}" != "1" ]]; then "$PYTHON" -m pip install -r requirements.txt; fi
 mkdir -p results
-"$PYTHON" -m coverage run --source=src.model,src.calendar -m unittest discover -s tests -v > results/tests.txt 2>&1
+"$PYTHON" -m coverage run --source=src.model,src.calendar,src.affine -m unittest discover -s tests -v > results/tests.txt 2>&1
 "$PYTHON" -m coverage json -o results/coverage.json
 "$PYTHON" -m coverage report > results/coverage.txt
 "$PYTHON" -m ruff check src tests benchmarks > results/lint.txt
-"$PYTHON" -m mypy --config-file mypy.ini src/model.py src/calendar.py > results/types.txt
+"$PYTHON" -m mypy --config-file mypy.ini src/model.py src/calendar.py src/affine.py > results/types.txt
 "$PYTHON" -m src.experiment > results/experiment.txt
 "$PYTHON" -m src.calendar_experiment > results/calendar_experiment.txt
 "$PYTHON" benchmarks/build_notebook.py
 "$PYTHON" benchmarks/build_calendar_notebook.py
+"$PYTHON" -m src.affine_experiment > results/affine_experiment.txt
+"$PYTHON" benchmarks/build_affine_notebook.py
+"$PYTHON" -m pip freeze > results/environment31.txt
+uname -a >> results/environment31.txt

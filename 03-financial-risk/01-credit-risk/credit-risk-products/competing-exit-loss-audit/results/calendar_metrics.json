@@ -24,7 +24,7 @@
     "hardware": "recorded in inherited results/metrics.json",
     "units": "hazards and discount force year^-1; duration years; exposure money"
   },
-  "seconds": 0.02499261100001604,
+  "seconds": 0.030183894000003875,
   "peak_bytes": 68308,
   "hypothesis": true
 }

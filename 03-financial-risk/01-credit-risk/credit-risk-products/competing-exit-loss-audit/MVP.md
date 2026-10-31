@@ -13,3 +13,5 @@
 - Baseline justo comparte masas/calendario y solo descuenta al cierre. Sesgo anual−3.641841% en escenario sintético; descuento0coincide.
 - 11tests y100%85sentencias en ambos núcleos; rúbrica, matrizpriorart y roadmap en informe.md y research-log.md.
 - No cubre EAD continua amortizable, ajuste de hazards, censura o validación bancaria. Tipo: reproducción/adaptación incremental local. No se convierte S2/M2 automáticamente.
+
+31oct: herramienta `project_affine` añade extremos EADcondicionales en dinero por tramo; `bash run.sh`produce `results/affine.csv`, `affine_metrics.json`, `affine.png`, notebookejecutado. Quéno: saldoaleatorio/censura/calibración/provisiones/operación. `informe31.md` distingue madurezcomponenteS2sintético deM2revisión ymadurezprograma.
