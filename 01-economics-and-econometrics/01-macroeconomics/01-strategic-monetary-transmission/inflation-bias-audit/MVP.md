@@ -7,3 +7,7 @@ Qué no cubre: elección endógena de autoridades, nombramiento/captura, costes 
 ## Incremento31
 
 Herramienta minimax regret sobre intervalo conocido de varianza: `bash run.sh`, salida CSV/JSON/PNG y notebook. No identifica intervalo ni incorpora credibilidad endógena. S2 local; prueba de mecanismo sintético. Fórmula/casos límite en derivacion31.md.
+
+## Incremento1nov
+
+`bash run.sh` conecta intervalo de varianzaGaussiano estimado al solver31 y audita calibración/ruptura. SalidasCSV/JSON/PNG/CSV.gz/notebook con15codeceldas acumuladas. No estimaα,novalidaeconomíareal,no garantiza coberturabajononnormalidadoruptura.S2local permanece.
