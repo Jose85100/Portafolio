@@ -12,3 +12,10 @@
 1. Contrato de datos/identificación de v: fuente oficial/licencia/vintage/unidades y validación temporal.
 2. Robustez a α: demostrar reducción o detectar contraejemplo; no reutilizar garantía de v sin prueba.
 3. Credibilidad del nombramiento: especificar juego y comprobar RE antes de medir bienestar.
+
+- 2026-11-01: se elige auditoríaestadística de intervalo estimado frente a dato macro real sinidentificaciónyambigüedadα/vsinprueba. Conserva31 y añade pivotechi²/testinvariantes/abstención. H1normalcobertura90,46%conWilson95%[88,57%;92,07%]supera85%;H2cero violacionescondicionales. Negativos t5yruptura temporal, robusto no domina promedio normal. Adaptacióndeingeniería/auditoría,nocienciaoriginal.
+
+## Roadmap actualizado1nov
+1. Intervalononnormal competitivo,supuestosdekurtosis yseparaciónexploración/confirmación.
+2. Detectorcambioregimen conlag real,sin pasarfuturetruthtomodelo.
+3. Contrato macroreal fuente/licencia/vintage yidentificacióndeshocks/α,despuésvalidacióntemporalempírica. NingúnMVPdehoycierraesebloqueo.
