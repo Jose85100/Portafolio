@@ -15,8 +15,13 @@ test_mass_absorbing_and_zero_exposure (test_model.TestProjection.test_mass_absor
 test_monotone_prepay_discount_and_scaling (test_model.TestProjection.test_monotone_prepay_discount_and_scaling) ... ok
 test_rational_oracle (test_model.TestProjection.test_rational_oracle) ... ok
 test_zero_competing_exit_and_one_period (test_model.TestProjection.test_zero_competing_exit_and_one_period) ... ok
+test_discrete_payment_is_not_slope (test_term_structure.TermTests.test_discrete_payment_is_not_slope) ... ok
+test_flat_force_reduces_to_affine (test_term_structure.TermTests.test_flat_force_reduces_to_affine) ... ok
+test_invalid_and_tail_validation (test_term_structure.TermTests.test_invalid_and_tail_validation) ... ok
+test_partition_and_mass_multiple_seeds (test_term_structure.TermTests.test_partition_and_mass_multiple_seeds) ... ok
+test_zero_and_discount_monotonicity (test_term_structure.TermTests.test_zero_and_discount_monotonicity) ... ok
 
 ----------------------------------------------------------------------
-Ran 17 tests in 0.009s
+Ran 22 tests in 0.011s
 
 OK
