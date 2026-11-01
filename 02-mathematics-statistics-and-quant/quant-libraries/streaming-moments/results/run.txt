@@ -16,7 +16,7 @@
       "oracle": 2.75,
       "abs_error": 4.440892098500626e-16,
       "intended_error": 1.4999999999999996,
-      "ns": 220902,
+      "ns": 545364,
       "python_peak_bytes": 272
     },
     {
@@ -27,7 +27,7 @@
       "oracle": 2.75,
       "abs_error": 5.329070518200751e-15,
       "intended_error": 1.5000000000000053,
-      "ns": 9317417,
+      "ns": 8912035,
       "python_peak_bytes": 336
     }
   ],
