@@ -32,3 +32,16 @@ Pregunta central: ¿qué disponibilidad puede certificarse con supuestos auditab
 | Quórum proporcional y elegibilidad | Mínimo fijo3 no representa necesariamente una regla real | Generalizar evento y autorización | Requiere reglas adicionales y validación del responsable | Pospuesta para preservar el contrato del mismo evento |
 
 Mapa acumulado: causa común de principales29 → dependencia entre reservas30 → dependencia conjunta del rol31. Clasificación: adaptación de ingeniería y auditoría de supuestos, no nuevo método disciplinar. H31: ampliar el conjunto factible nunca eleva la cota y puede cambiar la decisión en la brecha; umbral de precisión1e-10 frente al LP. Negativos: meta0,85 no cambia, r=1 recupera30 y meta0,97 es inviable. El umbral adicional0,872 es un benchmark diseñado, no evidencia empírica ni ajuste oculto. Resultados y revisión en informe-2026-10-31.md.
+
+
+## 1 de noviembre de2026 — Incertidumbre de las marginales
+
+Pregunta central: certificar disponibilidad con supuestos auditables, separada de eficacia de gobierno. Se leyeron informe, código, fórmulas, notebook, negativos y roadmap31. Base `fff631e`; cero PR abiertos al inicio, ciclos anteriores integrados.
+
+| Candidata | Brecha y relevancia | Diferencia frente a lo existente y valor | Viabilidad y evidencia necesaria | Decisión |
+|---|---|---|---|---|
+| Cajas marginales y del peso de shock |31 aún suponía parámetros conocidos; importa para robustez ejecutiva | Certificado condicionado a intervalos, recuperación puntual y costo de protección | Alta: derivación por monotonía, LP independiente, testigos y sensibilidad; no exige inventar datos | Elegida por pendiente explícito y cierre verificable |
+| Asociación positiva restringida | Cotas amplias pueden ser conservadoras | Reducir ambigüedad de dependencia con restricciones observadas | Falta evidencia para excluir acoplamientos; riesgo de confianza falsa | Pospuesta hasta contar con restricciones justificadas |
+| Quórum proporcional y elegibilidad | Evento numérico no sustituye reglas reales | Motor de reglas y validación por responsables | Requiere especificación autorizada; cambiaría el evento actual | Pospuesta para mantener comparación justa |
+
+Mapa: causa común29 → reservas dependientes30 → rol conjunto31 → incertidumbre paramétrica01nov. Clasificación: adaptación de ingeniería y auditoría, no fórmula disciplinar original. H: un certificado puntual puede fallar con perturbaciones admisibles; la envolvente coincide con LP dentro de1e-10 y recupera puntos dentro de1e-12. Resultado: B pasa de0,870 a0,8476; C logra0,8896 al mismo umbral0,85 y cuesta una unidad adicional. Negativos: caja puntual no cambia31; certeza total da1; meta0,97 es inviable. Los intervalos son supuestos, sin afirmación de cobertura estadística. Informe y dictamen distinguen ejecución, revisión y publicación.

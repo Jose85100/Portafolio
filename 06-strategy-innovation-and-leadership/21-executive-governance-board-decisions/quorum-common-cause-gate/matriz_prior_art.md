@@ -28,3 +28,17 @@ Verificación: las cinco fuentes originales se verificaron29oct en metadata inde
 | Marshall/Olkin1967, DOI10.1080/01621459.1967.10482885, editor/Stanford | Modelos de shocks; resumen/editor y reporte del autor1966 | Contexto de causa común29; no ajustamos una distribución exponencial ni hacemos una prueba empírica |
 
 Cobertura: siete fuentes reales, metadatos/resúmenes/documentación según tabla. No revisión exhaustiva de textos integrales ni búsqueda global de novedad. Se preservan referencias29/30; las fórmulas31 son cotas clásicas y el aporte es una herramienta auditable dentro del repositorio.
+
+
+## Extensión del1 de noviembre: caja supuesta no es confianza estadística
+
+| Referencia | Problema y supuestos | Evidencia consultada el1 de noviembre | Diferencia concreta del incremento |
+|---|---|---|---|
+| Nelsen2006, DOI10.1007/0-387-28678-0 | Dependencia y cotas clásicas, no calibración de nuestro comité | Editor Springer: edición, autor y capítulos; no lectura integral bajo suscripción | Optimización monotónica de la cota especializada sobre una caja supuesta; no teorema original |
+| SciPy linprog, URL versionada1.17 en BibTeX | LP con igualdades/desigualdades y no negatividad | Documentación oficial1.17 coincide con versión ejecutada | Oráculo de ocho masas con marginales intervalares y objetivo completo normal/shock |
+| Fama/Jensen1983, DOI10.1086/467037 | Propiedad y control, sin probabilidades de asistencia de este escenario | Registro institucional UChicago verificado; texto integral no disponible allí | Contexto; disponibilidad no certifica efectividad del control |
+| Schwartz-Ziv/Weisbach2013, DOI10.1016/j.jfineco.2012.04.011 | Actas observadas y funciones supervisoras | Resumen y metadatos institucionales Hebrew University | No reproducimos datos ni hacemos inferencia de calidad con asistencia sintética |
+| Marshall/Olkin1967, DOI10.1080/01621459.1967.10482885 | Causas comunes y modelo de shocks | Registro del autor Stanford; reporte antecedente1966, artículo1967 preservado en BibTeX | Contexto de la línea29; no ajustamos su distribución ni reclamamos observaciones reales |
+| Adams et al.2010 y Hong2013, DOI en BibTeX | Gobierno/endogeneidad e independencia de Bernoulli, respectivamente | Referencias verificadas en ciclos previos y preservadas; no nueva revisión integral hoy | Contexto y baselines acumulativos, no fuente de las anchuras asumidas |
+
+Cinco fuentes primarias/editoriales o documentación oficial comprobadas en esta iteración; siete referencias acumuladas reales. No se sustituye evidencia empírica por metadatos ni se afirma revisión exhaustiva de novedad. La fórmula de caja es una adaptación de cotas conocidas; la contribución local es herramienta, semántica de incertidumbre, testigos y comparación ejecutada.
