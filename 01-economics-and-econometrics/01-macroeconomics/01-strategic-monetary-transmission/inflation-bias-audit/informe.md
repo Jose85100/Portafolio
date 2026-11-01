@@ -112,3 +112,51 @@ Reducción ancla 29.510%. Barrido instrumentado6.7035s/picoPython218998bytes; ti
 **Checklist:** README,src,tests,benchmarks,resultsCSV/JSON/figura,notebookejecutado,config,requirementsfijadas,informe,MVP,6BibTeX,derivación,priorart,registro/roadmap presentes. Revisión independiente y publicación se registran aparte por coordinador; este informe no las simula.
 
 **Revisión independiente31:** revisor científico reprodujo bash run.sh con exit0,12tests y11celdas; auditó derivación de extremos/monotonía/igualación y figura, sin bloqueantes en ese alcance. Dictamen consolidado en reviews/2026-10-31-cycle. CI remota se consulta por separado.
+
+
+# Ciclo 1 de noviembre: intervalo estimado, calibración y fallo temporal
+
+1. **Título y programa acumulativo.** La auditoría de transmisión monetaria conserva expectativas racionales (29), delegación (30) y varianza ambigua (31). Ahora pregunta cuándo los datos históricos permiten sustentar la garantía de regret. El incremento conecta inferencia con decisión; no pretende identificar una economía real.
+2. **Hipótesis y aporte.** H1: el límite inferior Wilson al 95% de la cobertura gaussiana IID agrupada será ≥0,85, para confianza nominal 0,90. H2: habrá cero violaciones del bound, con tolerancia 1e−10, entre muestras cuyo intervalo contiene la varianza futura. Umbrales y diseño se fijaron en config antes de interpretar resultados. Clasificación: auditoría y adaptación de ingeniería de métodos clásicos. No se formuló una hipótesis de dominancia de pérdida promedio.
+3. **Estado del arte.** La matriz prior-art1101.md verifica seis fuentes primarias pertinentes: NIST, SciPy chi², SciPy t, Wilson, Rogoff y Manski. referencias.bib conserva diez entradas acumuladas. Se distingue consulta de fórmulas/resúmenes/metadatos de lectura integral. No se acredita novedad disciplinar ni exhaustividad bibliográfica.
+4. **Brecha y tres candidatas.** Usar datos macro reales tiene alta relevancia, pero faltan una definición identificable de shocks, licencia y medición de α. La ambigüedad conjunta α,v podría ampliar la herramienta, pero no se ha demostrado una reducción a extremos. Se elige auditar un intervalo estimado con generador explícito: reutiliza el solver, permite falsación y cierra un incremento verificable. La ausencia de identificación empírica permanece visible.
+5. **Diseño y datos.** estimated-interval-config.json fija semillas 104729, 130363 y 155921; n=16,64,256; varianza histórica 0,25,1,4; 40 réplicas por semilla y celda; tres regímenes: normal IID, t5 IID y ruptura de varianza futura ×4. Son 3240 simulaciones y 362880 shocks históricos crudos en CSV.gz, con hash y versiones en JSON. La decisión usa t=1..n. Solo el evaluador conoce v futuro para calcular la pérdida esperada exacta; no hay ruido de simulación de evaluación. data-contract1101.md distingue estos fixtures del contrato empírico pendiente.
+6. **Implementación y fórmulas.** src/variance_interval.py aporta una API tipada con dataclass inmutable; el runner conecta sus extremos con src/ambiguity.py. El intervalo conocido del ciclo31 se reemplaza por C(X), obtenido del pivote (n−1)s²/v~chi². derivacion1101.md y el notebook desarrollan la inversión paso a paso, unidades y supuestos. La intersección con [0,16] exige que la verdad esté en ese dominio; una intersección vacía produce abstención. En el evento v∈C(X), R(qR,v)≤sup(z∈C)R(qR,z). La probabilidad nominal de ese evento requiere normalidad IID y estabilidad hacia el futuro. No es una probabilidad posterior de v después de observar C. Las barras Wilson miden incertidumbre Monte Carlo de cobertura, una cantidad distinta.
+7. **Tests y benchmarks ejecutados.** `bash run.sh` termina con exit0: 18 tests (seis nuevos y doce regresiones), Ruff y mypy sobre nueve archivos src. Cobertura medida del núcleo nuevo: 39/39 sentencias, 100%; acumulada:129/131, 98% redondeado. No se afirma cobertura de ramas. Se comprueban traslación, permutación y escala en veinte muestras, amplitud con confianza, cero, abstención, overflow y entradas inválidas. El oráculo de cuantiles usa gammaincinv: identidad distinta dentro de SciPy, sin independencia total de software. La suite común de economía pasa ocho tests por separado. El benchmark contiene 180 mediciones, treinta por tamaño y método; excluye instalación, importación y generación, y mide tiempo y pico Python, no RSS ni coste financiero real.
+8. **Resultados y figuras.** Cobertura gaussiana IID agrupada: 0.90462963, intervalo Wilson95% [0.88565011,0.92074089]. H1 se cumple. H2 registra cero violaciones entre muestras cubiertas. estimated-interval.png contiene dos paneles inspeccionados: cobertura con Wilson frente a n y diferencia de regret medio. El notebook acumulativo tiene quince celdas de código ejecutadas desde el inicio mediante IPython en un proceso fresco; se guardan outputs, tablas y figuras. No se afirma ejecución mediante kernel aislado ni QA completa de frontend Jupyter.
+
+| Régimen | n | Cobertura futura | Regret medio plug-in | Regret medio robusto | Violaciones del bound sin condicionar |
+|---|---:|---:|---:|---:|---:|
+|iid_gaussian|16|0.911111|0.00296466|0.00351167|32|
+|iid_gaussian|64|0.900000|0.00081931|0.00079469|36|
+|iid_gaussian|256|0.902778|0.00017939|0.00018187|35|
+|iid_student_t5|16|0.800000|0.00572418|0.00483306|72|
+|iid_student_t5|64|0.705556|0.00204000|0.00203409|106|
+|iid_student_t5|256|0.680556|0.00062254|0.00062861|115|
+|variance_break_x4|16|0.016667|0.10617334|0.07859189|354|
+|variance_break_x4|64|0.000000|0.09893925|0.09214306|360|
+|variance_break_x4|256|0.000000|0.09354652|0.09189236|360|
+
+Cada punto agrupa 360 réplicas y tres varianzas. El oráculo informado tiene regret0 por definición, pero conoce v futuro: solo es una cota inferior. Plug-in y robusto utilizan la misma muestra, el mismo objetivo social y el dominio declarado. No hubo abstenciones en la malla; los tests cubren ese estado de la API.
+
+| n | Método | Mediana segundos | Pico bytes Python |
+|---|---|---:|---:|
+|16|plugin|0.0000941|1776|
+|16|interval_robust|0.0014719|16418|
+|64|plugin|0.0000959|2544|
+|64|interval_robust|0.0013063|16217|
+|256|plugin|0.0000985|5752|
+|256|interval_robust|0.0013414|17802|
+
+9. **Análisis crítico y negativos.** Con t5 y la misma varianza, la cobertura cae de 0,80 a 0,70556 y 0,68056 al aumentar n. Bajo ruptura ×4 pasa de 0,01667 a cero para n64/256. La optimización sigue ejecutándose: robustez de optimización no repara un intervalo mal calibrado. Para normal IID con n16, el regret medio robusto 0,00351167 supera al plug-in 0,00296466; con n256 también hay un pequeño perjuicio. Se conservan esos resultados y todas las configuraciones. Las violaciones no condicionadas bajo normalidad son compatibles con confianza del 90%, que no significa garantía del 100%.
+10. **Limitaciones, sesgos y madurez.** Los shocks son sintéticos con α=λ=k=1; no se estiman parámetros macro, dependencia serial ni credibilidad política. El supuesto externo v∈[0,16] no se aprende de los datos. El control temporal usa un DGP diseñado, no observaciones empíricas fuera de muestra. El componente sigue S2 y el programa S1; Monte Carlo no acredita S3 ni equivalencia con M2. No se añade otro lenguaje sin un cuello de cómputo demostrado; se conservan fórmulas, notebooks y motores anteriores.
+11. **Comando exacto.** Desde inflation-bias-audit: `bash run.sh`. Requiere Python3.11+, venv y acceso a PyPI para las dependencias fijadas en requirements.txt; instala y reproduce código, tests, benchmarks y notebook. Desde la raíz, la suite común es `python3 -m unittest discover -s 01-economics-and-econometrics/computational-economics/tests -v`. Los tiempos dependen del host.
+12. **Referencias BibTeX.** referencias.bib contiene diez entradas con URLs/DOI; prior-art1101.md registra seis fuentes pertinentes verificadas en este incremento y el alcance de la consulta. No se trasladan teoremas de elección de tratamientos a política monetaria.
+13. **Rúbricas 1–5, autoevaluación.** Original: novedad2, rigor4, reproducibilidad4, código4, claridad4, impacto3, honestidad5, MVP4. Ampliada: profundidad teórica4, aporte defendible3, calidad experimental4, utilidad4, reproducibilidad4, honestidad5. El aporte novedoso es modesto y estas valoraciones no sustituyen revisión externa.
+14. **Siguiente iteración.** Contrastar un intervalo competitivo para no normalidad con supuestos de momentos y conjunto confirmatorio fijado; evaluar detección de cambios usando únicamente información disponible; después obtener una fuente macro con licencia y una definición identificable de shocks/α.
+
+**Qué sabemos, construimos y podemos hacer ahora.** La herramienta transforma datos históricos en una decisión y separa cobertura estadística de garantía de optimización. Permite reproducir contraejemplos de colas y cambio temporal. Todavía no sabemos qué intervalo representa una economía real.
+
+**Checklist de artefactos.** README, MVP, src, tests, benchmarks, CSV/JSON/PNG/CSV.gz, notebook ejecutado, config, dependencias fijadas, BibTeX, derivación, matriz de prior art, contrato de datos, informe14p y registro/roadmap presentes.
+
+**Revisión independiente.** El revisor1101 reprodujo `bash run.sh` con exit0,18 tests y15 celdas de código. Inspeccionó la derivación pivotal, inversión, recorte y separación entre cobertura y bound; contrastó NIST y examinó los dos paneles. No encontró bloqueantes científicos dentro de ese alcance. Publicación y CI se informan por separado en el consolidado.

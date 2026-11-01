@@ -127,6 +127,38 @@ Antes $J(q;v)=A(q)+vB(q)$ con $A=[(q\alpha k)^2+\lambda k^2]/2$, $B=[(q\alpha)^2
     ]
 )
 
+cells.extend(
+    [
+        n.v4.new_markdown_cell(
+            "# Ciclo1nov: ¿qué ocurre cuando el intervalo se estima?\n\n## Pregunta, candidatos y línea acumulativa\n31oct asumió un intervalo conocido. Comparamos: (a) identificar intervalo con datos macro reales (relevancia alta pero sin modelo de medición/licencia y α no identificado), (b) auditar intervalo estimado bajo un experimento generador explícito (elegido: conecta inferencia a decisión y permite falsar cobertura), (c) ambigüedad conjunta α,v (valiosa pero garantía de extremos aún no demostrada). Aporte: auditoría reproducible de una conexión estadística clásica; no método científico nuevo. El programa mantiene S2 del componente/S1 global.\n\n## Notación, fuente y derivación\nSean observaciones históricas $X_1,\\dots,X_n\\overset{iid}{\\sim}N(\\mu,v)$, n≥2, v>0. Estimamos la media para no regalar información: $s^2=\\sum_i(X_i-\\bar X)^2/(n-1)$. μ y X son shocks normalizados; v,s² son unidades de shock². Bajo normalidad exacta, $Z=(n-1)s^2/v\\sim\\chi^2_{n-1}$ (NIST). Para nivel c y δ=1−c,\n$P(\\chi^2_{\\delta/2,n-1}\\le Z\\le\\chi^2_{1-\\delta/2,n-1})=c$.\nComo v y cuantiles son positivos, invertir desigualdades produce\n$\\ell=(n-1)s^2/\\chi^2_{1-\\delta/2,n-1}$,\n$u=(n-1)s^2/\\chi^2_{\\delta/2,n-1}$.\nNo usar directamente `chi2.interval` como intervalo de v: proporciona cuantiles de Z y falta invertir/escalar.\n\n## Adaptación a la API monetaria y propiedades\nOriginal31: $q_R=\\arg\\min_q\\max_{v\\in[\\ell,u]}R(q,v)$ para extremos conocidos. Propuesta1nov: reemplazarlos por intervalo estimado $C(X)$ y conservar el mismo solver. El dominio previo era v∈[0,16]; intersectamos C con él, asumiendo explícitamente que la verdad pertenece al dominio. Si intersección vacía, abstención, sin forzar valor. La intersección conserva el evento de cobertura para v dentro del dominio; no justifica el dominio a partir de datos. Varianza constante0 tiene pivote degenerado, se trata [0,0]. Overflow produce error.\nEn el evento $v\\in C(X)$, la reducción31 garantiza $R(q_R(X),v)\\le B(X)=\\max_{z\\in C(X)}R(q_R(X),z)$. Bajo IIDnormal y mismo régimen futuro esto tiene cobertura frecuente c. No es P(v∈C observado)=c, ni promesa de pérdida media menor que plug-in. Para colas no normales, correlación o ruptura temporal, la ley pivotal deja de aplicar aunque el código corra. s² tiene invariancia a traslación/permutación y escala cuadrática; las cotas la conservan antes del clipping.\n\n## Diseño fijado antes de interpretar\nConfig estimada versionada, tres seeds independientes, n16/64/256 y v0,25/1/4;40réplicas por seed/celda;3regímenes. H1(calibración): límite inferior Wilson95% de cobertura IIDnormal agrupada≥0,85 para nominal0,90. H2(ingeniería): cero violaciones del bound en muestras cuyo intervalo cubre verdad a1e−10. No hipótesis de dominancia promedio. Escenario adverso t5 reescalado para varianza v: $X=\\sqrt{3v/5}T_5$, pues Var(T5)=5/3. Ruptura: entrenamiento v, futuro4v; el dato futuro jamás entra en ajuste/decisión. Ecuación de pérdida esperada se evalúa exactamente a v futuro: sin ruido de evaluación, no observación empírica fuera de muestra.\n"
+        ),
+        n.v4.new_code_cell(
+            'from src.variance_interval import gaussian_variance_interval,wilson_interval\ne=json.loads((root/"results/estimated-interval-summary.json").read_text())\nrng=np.random.default_rng(104729)\nx=rng.normal(size=32)\nci=gaussian_variance_interval(x.tolist(),.9)\nprint("Un ejemplo generado: intervalo",ci)\nassert ci is not None\nqc=robust_weight(1,1,1,ci.low,ci.high)\nprint("Peso q",qc,"bound",worst_regret(qc,1,1,1,ci.low,ci.high))'
+        ),
+        n.v4.new_markdown_cell(
+            "## Datos y baselines justos\nRawshocks comprimidos sin pérdida CSV.gz guardan sample_id y tiempo; estimated-interval.csv guarda decisión/métricas por muestra. Misma muestra y α=λ=k=1 para ambos: plug-in óptimo a s² (proyectado al dominio) versus solver robusto al intervalo90%. Oráculo informado de v futuro tiene regret0 pero información extra: referencia inferior, nunca competidor factible. Estimación estadística depende de distribución; regret monetario depende aquí solo de segundos momentos. Seeds/hashes/toolchain en JSON; datos totalmente sintéticos."
+        ),
+        n.v4.new_code_cell(
+            'print("Casos",e["cases"],"shocks",e["raw_shocks"])\nprint("Cobertura normal",e["normal_coverage"],"Wilson95%",e["normal_wilson95"])\nassert e["normal_wilson95"][0]>=.85\nassert e["conditional_bound_violations"]==0\nfor a in e["aggregates"]:\n print(a["regime"],"n",a["n"],"cobertura",round(a["coverage"],4),"regret plug-in/robusto",round(a["mean_plugin_regret"],6),round(a["mean_robust_regret"],6),"violaciones",a["bound_violations"])'
+        ),
+        n.v4.new_markdown_cell(
+            "## Mecanismo, sensibilidad y falsación temporal\nEl gráfico distingue cobertura de garantía: barras Wilson95% miden incertidumbre MonteCarlo de indicadores, no intervalo macro de v. La línea nominal solo rige IIDnormal estacionario. Más n estrecha intervalos pero no corrige una ruptura de régimen. Diferencia de regret positiva significa que robusto paga mayor pérdida relativa media; no ocultar ese negativo."
+        ),
+        n.v4.new_code_cell(
+            'display(Image(filename=str(root/"results/estimated-interval.png")))\nrows_est=list(csv.DictReader((root/"results/estimated-interval.csv").open()))\ncovered_rows=[r for r in rows_est if r["covered"]=="1"]\nassert all(r["guarantee_violation"]=="0" for r in covered_rows)\nprint("Muestras cubiertas",len(covered_rows),"sin violaciones condicionales")'
+        ),
+        n.v4.new_markdown_cell(
+            "## Casos límite y coste\nIntervalo vacío produce abstención. Una muestra constante produce[0,0] y no acredita verdad positiva. Si todos los datos se multiplican por a, varianza/cotas escalan a² antes del tope; desplazar todos datos no cambia nada. Clipping16 requiere hipótesis externa sobre dominio; no conclusión empírica. Benchmarks30réplicas por n/método en CSV separado, excluyen instalación/importación/generación, reportan picoPython,noRSS. No multilenguaje añadido: esta capa escalar estadística no tiene cuelloC++ demostrado."
+        ),
+        n.v4.new_code_cell(
+            'zero=gaussian_variance_interval([0.,0.,0.])\nassert zero is not None and zero.low==zero.high==0\nassert gaussian_variance_interval([-1e4,1e4]) is None\nprint("Cero y abstención verificados; hashes",e["data_sha256"],e["source_sha256"])'
+        ),
+        n.v4.new_markdown_cell(
+            "## Conclusión y siguiente hito\nLa herramienta ahora conecta datos históricos simulados a una decisión con su restricción de información, y permite ver por qué robustez de optimización no corrige un intervalo mal calibrado. Las tablas calculadas y figura determinan qué hipótesis sobreviven; no se eleva S2 a S3 por MonteCarlo sintético. Falta contrato macro real y validación temporal sobre dato con licencia, identificación de α y credibilidad institucional. Estado actual: adaptación de ingeniería/auditoría; sin prioridad disciplinar. Se conservan teoría, notebooks y módulos29–31."
+        ),
+    ]
+)
+
 nb = n.v4.new_notebook(
     cells=cells,
     metadata={
