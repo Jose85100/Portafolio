@@ -1,0 +1,13 @@
+test_bs_limits (test_numerical_core.Invariants.test_bs_limits) ... ok
+test_kl_nonnegative_and_boundary (test_numerical_core.Invariants.test_kl_nonnegative_and_boundary) ... ok
+test_mc_vs_bs_confidence (test_numerical_core.Invariants.test_mc_vs_bs_confidence) ... ok
+test_quantile_monotonic (test_numerical_core.Invariants.test_quantile_monotonic) ... ok
+test_reject_nonfinite (test_numerical_core.Invariants.test_reject_nonfinite) ... ok
+test_sde_deterministic_order (test_numerical_core.Invariants.test_sde_deterministic_order) ... ok
+test_sde_seed (test_numerical_core.Invariants.test_sde_seed) ... ok
+test_wasserstein_metric_basics (test_numerical_core.Invariants.test_wasserstein_metric_basics) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.023s
+
+OK
