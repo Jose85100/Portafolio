@@ -6,6 +6,8 @@ Proyectos de riesgo de crédito, modelado cuantitativo, portafolios, estrategia 
 
 La organización parte de la pregunta científica y el dominio, no de la herramienta. Consulta el [mapa de investigación y migración](RESEARCH_ARCHITECTURE.md) y la [matriz de madurez](PROJECT_MATURITY.md): un README o una propuesta no se presenta como producto terminado.
 
+Los ciclos acumulativos del [31 de octubre](reviews/2026-10-31-cycle/README.md) y del [1 de noviembre de 2026](reviews/2026-11-01-cycle/README.md) documentan los incrementos de cinco programas, sus fórmulas, notebooks, resultados negativos, reproducción y revisión independiente. Cada informe distingue ejecución local, publicación de PR, CI y merge; la evidencia sintética no acredita validación empírica ni madurez de un dominio completo.
+
 | Dominio | Contenido |
 |---|---|
 | [01 · Economics & Econometrics](01-economics-and-econometrics) | 35 laboratorios de macro, micro, teoría de juegos, econometría y macrofinanzas, con experimentos estructurales específicos y sensibilidad reproducible. |
