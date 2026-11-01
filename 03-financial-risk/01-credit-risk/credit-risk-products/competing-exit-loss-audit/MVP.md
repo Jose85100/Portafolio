@@ -15,3 +15,5 @@
 - No cubre EAD continua amortizable, ajuste de hazards, censura o validación bancaria. Tipo: reproducción/adaptación incremental local. No se convierte S2/M2 automáticamente.
 
 31oct: herramienta `project_affine` añade extremos EADcondicionales en dinero por tramo; `bash run.sh`produce `results/affine.csv`, `affine_metrics.json`, `affine.png`, notebookejecutado. Quéno: saldoaleatorio/censura/calibración/provisiones/operación. `informe31.md` distingue madurezcomponenteS2sintético deM2revisión ymadurezprograma.
+
+1nov: APIreutilizable `project_term_structure` acepta fuerzas de descuento por evento y endpointsEADcon saltos. `bash run.sh` instala/reproduce CSV/JSON/figura y notebookejecutado,22tests. No cubre defaultatómico/prioridad de pagos, curvasnegativas, calibración ni operación. Fuerzaplana recupera31; diferencia suave/discreto se etiqueta cambio de contrato.
