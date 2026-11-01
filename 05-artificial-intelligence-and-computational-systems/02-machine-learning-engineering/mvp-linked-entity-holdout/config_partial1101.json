@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-01",
+  "dataset": "same synthetic four28-row regimes as graph31; no external data",
+  "source": "src.graph_experiment.corpus",
+  "seeds": [0,1,2,3,4,5,6,7,8,9,10,11],
+  "regimes": ["accurate","missing","overmerged","mixed"],
+  "fractions": [0,0.25,0.5,0.75,1],
+  "sampling": ["shuffled","train_first"],
+  "scale_multipliers": [1,10,100,1000],
+  "hypothesis": "Sharp exposure bounds for all equivalence completions of a completely adjudicated subset",
+  "type": "technical correctness, not prevalence or prediction",
+  "thresholds": "5508 exhaustive configurations: bounds equal min/max enumerated exposure;480 benchmark rows: actual truth inside interval; full adjudication equals full auditor",
+  "assumptions": "adjudicated subset has complete correct equivalence including distinct known classes; unknowns may attach or form new classes; observed graph not trusted as truth",
+  "cost": "elapsed_ns+tracemalloc, compute only;3 repeats each scale; separate installation and IO",
+  "selection": "fixed coverage and selection regimes before benchmark interpretation; no statistical confidence claims",
+  "hardware_versions": "results/partial1101/environment.json and versions.txt"
+}

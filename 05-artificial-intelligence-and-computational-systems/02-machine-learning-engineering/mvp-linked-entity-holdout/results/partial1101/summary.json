@@ -1,0 +1,92 @@
+{
+  "shuffled:0": {
+    "runs": 48,
+    "mean_width_rows": 28,
+    "mean_trivial_width_rows": 28,
+    "strictly_sharper_runs": 0,
+    "detected_runs": 0,
+    "abstain_runs": 48,
+    "conditional_zero_runs": 0
+  },
+  "shuffled:0.25": {
+    "runs": 48,
+    "mean_width_rows": 26.1875,
+    "mean_trivial_width_rows": 26.1875,
+    "strictly_sharper_runs": 0,
+    "detected_runs": 21,
+    "abstain_runs": 27,
+    "conditional_zero_runs": 0
+  },
+  "shuffled:0.5": {
+    "runs": 48,
+    "mean_width_rows": 24,
+    "mean_trivial_width_rows": 24,
+    "strictly_sharper_runs": 0,
+    "detected_runs": 23,
+    "abstain_runs": 25,
+    "conditional_zero_runs": 0
+  },
+  "shuffled:0.75": {
+    "runs": 48,
+    "mean_width_rows": 21.020833333333332,
+    "mean_trivial_width_rows": 21.395833333333332,
+    "strictly_sharper_runs": 5,
+    "detected_runs": 24,
+    "abstain_runs": 24,
+    "conditional_zero_runs": 0
+  },
+  "shuffled:1": {
+    "runs": 48,
+    "mean_width_rows": 0,
+    "mean_trivial_width_rows": 0,
+    "strictly_sharper_runs": 0,
+    "detected_runs": 24,
+    "abstain_runs": 0,
+    "conditional_zero_runs": 24
+  },
+  "train_first:0": {
+    "runs": 48,
+    "mean_width_rows": 28,
+    "mean_trivial_width_rows": 28,
+    "strictly_sharper_runs": 0,
+    "detected_runs": 0,
+    "abstain_runs": 48,
+    "conditional_zero_runs": 0
+  },
+  "train_first:0.25": {
+    "runs": 48,
+    "mean_width_rows": 28,
+    "mean_trivial_width_rows": 28,
+    "strictly_sharper_runs": 0,
+    "detected_runs": 0,
+    "abstain_runs": 48,
+    "conditional_zero_runs": 0
+  },
+  "train_first:0.5": {
+    "runs": 48,
+    "mean_width_rows": 27,
+    "mean_trivial_width_rows": 28,
+    "strictly_sharper_runs": 12,
+    "detected_runs": 0,
+    "abstain_runs": 48,
+    "conditional_zero_runs": 0
+  },
+  "train_first:0.75": {
+    "runs": 48,
+    "mean_width_rows": 15.625,
+    "mean_trivial_width_rows": 21.395833333333332,
+    "strictly_sharper_runs": 36,
+    "detected_runs": 24,
+    "abstain_runs": 24,
+    "conditional_zero_runs": 0
+  },
+  "train_first:1": {
+    "runs": 48,
+    "mean_width_rows": 0,
+    "mean_trivial_width_rows": 0,
+    "strictly_sharper_runs": 0,
+    "detected_runs": 24,
+    "abstain_runs": 0,
+    "conditional_zero_runs": 24
+  }
+}
