@@ -48,6 +48,36 @@ class DynamicMoments:
             lost,
         )
 
+    def merge(self, other: "DynamicMoments") -> "DynamicMoments":
+        """Merge disjoint summaries after rebasing both to a common unit.
+
+        Counts must describe disjoint observations; overlap is not detectable.
+        Floating point reduction is not bitwise associative.
+        """
+        if self.state.n == 0:
+            return other
+        if other.state.n == 0:
+            return self
+        exponents = [item.exponent for item in (self, other) if item.initialized]
+        target = max(exponents) if exponents else 0
+
+        def rebase(item: "DynamicMoments") -> tuple[Moments, int, int]:
+            shift = item.exponent - target
+            old = [item.state.origin, item.state.mean_offset, item.state.m2]
+            new = [ldexp(old[0], shift), ldexp(old[1], shift), ldexp(old[2], 2 * shift)]
+            lost = sum(a != 0 and b == 0 for a, b in zip(old, new))
+            return (Moments(item.state.n, *new), int(shift != 0), lost)
+
+        left, left_rescales, left_lost = rebase(self)
+        right, right_rescales, right_lost = rebase(other)
+        return DynamicMoments(
+            left.merge(right),
+            target,
+            self.initialized or other.initialized,
+            self.rescales + other.rescales + left_rescales + right_rescales,
+            self.rounded_to_zero + other.rounded_to_zero + left_lost + right_lost,
+        )
+
     def result(self, ddof: int = 0) -> ScaleResult:
         variance = self.state.variance(ddof)
         try:
