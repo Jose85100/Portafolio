@@ -1,0 +1,74 @@
+[
+  {
+    "rows": 28,
+    "repeat": 0,
+    "elapsed_ns": 571592,
+    "peak_bytes": 4608
+  },
+  {
+    "rows": 28,
+    "repeat": 1,
+    "elapsed_ns": 422558,
+    "peak_bytes": 4608
+  },
+  {
+    "rows": 28,
+    "repeat": 2,
+    "elapsed_ns": 410719,
+    "peak_bytes": 4608
+  },
+  {
+    "rows": 280,
+    "repeat": 0,
+    "elapsed_ns": 3234427,
+    "peak_bytes": 49680
+  },
+  {
+    "rows": 280,
+    "repeat": 1,
+    "elapsed_ns": 3071352,
+    "peak_bytes": 49680
+  },
+  {
+    "rows": 280,
+    "repeat": 2,
+    "elapsed_ns": 3004520,
+    "peak_bytes": 49680
+  },
+  {
+    "rows": 2800,
+    "repeat": 0,
+    "elapsed_ns": 30559673,
+    "peak_bytes": 522256
+  },
+  {
+    "rows": 2800,
+    "repeat": 1,
+    "elapsed_ns": 34440003,
+    "peak_bytes": 522256
+  },
+  {
+    "rows": 2800,
+    "repeat": 2,
+    "elapsed_ns": 52558057,
+    "peak_bytes": 522256
+  },
+  {
+    "rows": 28000,
+    "repeat": 0,
+    "elapsed_ns": 460835882,
+    "peak_bytes": 4436008
+  },
+  {
+    "rows": 28000,
+    "repeat": 1,
+    "elapsed_ns": 383296327,
+    "peak_bytes": 4435296
+  },
+  {
+    "rows": 28000,
+    "repeat": 2,
+    "elapsed_ns": 422482107,
+    "peak_bytes": 4435296
+  }
+]
