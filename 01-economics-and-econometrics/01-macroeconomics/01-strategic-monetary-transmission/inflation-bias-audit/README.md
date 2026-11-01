@@ -11,3 +11,7 @@ Desde esta carpeta: `bash run.sh`. Requiere Python3.11+, venv y acceso a PyPI pa
 ## Ciclo31 — varianza ambigua
 
 Mismo `bash run.sh`: ahora reproduce también `src.run_ambiguity`. Artefactos `results/ambiguity.csv`, `ambiguity-runtime.csv`, `ambiguity-summary.json`, `ambiguity.png`, derivacion31.md y prior-art31.md. 144regímenes exactos;81mejoras63empates en peor regret frente a plug-in. Mayor coste y pérdida de optimalidad puntual explícitos. Ver informe ciclo31 y notebook acumulativo.
+
+## Ciclo1nov — intervalo estimado y fallo temporal
+
+Mismo `bash run.sh`: añade `src.run_estimated_interval`,3240réplicas en3regímenes. `results/estimated-interval.csv`, `estimated-shocks.csv.gz`, `estimated-interval-summary.json`, `estimated-interval-aggregate.csv`, `estimated-interval-runtime.csv`, `estimated-interval.png`. Derivación en derivacion1101.md/notebook,fuentesenprior-art1101.md,contratoen data-contract1101.md. CoberturaIIDnormal90,46%; ruptura temporal sin cobertura a n64/256. No evidencia macroreal ni dominancia promedio.

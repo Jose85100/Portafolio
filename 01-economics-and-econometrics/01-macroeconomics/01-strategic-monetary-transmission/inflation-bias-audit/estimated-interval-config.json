@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-01",
+  "dataset": "Generated synthetic shocks, no empirical macroeconomic data",
+  "license": "Repository license for generated fixtures; no third-party dataset",
+  "seeds": [
+    104729,
+    130363,
+    155921
+  ],
+  "n": [
+    16,
+    64,
+    256
+  ],
+  "historical_variance": [
+    0.25,
+    1,
+    4
+  ],
+  "repetitions_per_seed_cell": 40,
+  "regimes": [
+    "iid_gaussian",
+    "iid_student_t5",
+    "variance_break_x4"
+  ],
+  "confidence": 0.9,
+  "thresholds": {
+    "normal_coverage_wilson_low_min": 0.85,
+    "conditional_guarantee_tolerance": 1e-10
+  },
+  "alpha": 1,
+  "weight": 1,
+  "target": 1,
+  "training_time": "t=1..n",
+  "decision_time": "t=n+1",
+  "future_truth": "historical variance except break x4; never passed to fitting or decision",
+  "audit_variance_domain": [
+    0,
+    16
+  ],
+  "toolchain": "requirements.txt; recorded in results/estimated-interval-summary.json"
+}
