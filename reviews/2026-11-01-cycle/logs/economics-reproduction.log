@@ -1,0 +1,412 @@
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.2
+[notice] To update, run: python -m pip install --upgrade pip
+test_degeneracies (test_ambiguity.AmbiguityTests.test_degeneracies) ... ok
+test_invalid (test_ambiguity.AmbiguityTests.test_invalid) ... ok
+test_known_variance (test_ambiguity.AmbiguityTests.test_known_variance) ... ok
+test_negative_price_of_robustness (test_ambiguity.AmbiguityTests.test_negative_price_of_robustness) ... ok
+test_oracle_and_interior_envelope (test_ambiguity.AmbiguityTests.test_oracle_and_interior_envelope) ... ok
+test_invalid (test_delegation.DelegationTest.test_invalid) ... ok
+test_negative_controls (test_delegation.DelegationTest.test_negative_controls) ... ok
+test_state_formula_and_oracle_grid (test_delegation.DelegationTest.test_state_formula_and_oracle_grid) ... ok
+test_anchor (test_monetary.MonetaryTests.test_anchor) ... ok
+test_contracts (test_monetary.MonetaryTests.test_contracts) ... ok
+test_exact_identity_and_oracle_properties (test_monetary.MonetaryTests.test_exact_identity_and_oracle_properties) ... ok
+test_zero_target_control (test_monetary.MonetaryTests.test_zero_target_control) ... ok
+test_independent_quantile_oracle (test_variance_interval.VarianceIntervalTests.test_independent_quantile_oracle) ... ok
+test_invalid_inputs (test_variance_interval.VarianceIntervalTests.test_invalid_inputs) ... ok
+test_shift_scale_and_permutation_invariants (test_variance_interval.VarianceIntervalTests.test_shift_scale_and_permutation_invariants) ... ok
+test_wider_confidence_and_clipping (test_variance_interval.VarianceIntervalTests.test_wider_confidence_and_clipping) ... ok
+test_wilson (test_variance_interval.VarianceIntervalTests.test_wilson) ... ok
+test_zero_and_abstention (test_variance_interval.VarianceIntervalTests.test_zero_and_abstention) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.249s
+
+OK
+Name                       Stmts   Miss  Cover
+----------------------------------------------
+src/ambiguity.py              25      0   100%
+src/delegation.py             38      1    97%
+src/monetary.py               29      1    97%
+src/variance_interval.py      39      0   100%
+----------------------------------------------
+TOTAL                        131      2    98%
+All checks passed!
+Success: no issues found in 9 source files
+{
+  "config": {
+    "seed": 20261029,
+    "alpha_values": [
+      0.5,
+      1,
+      1.5
+    ],
+    "weight_values": [
+      0.5,
+      1,
+      2
+    ],
+    "target_values": [
+      0,
+      0.5,
+      1
+    ],
+    "shock_scales": [
+      0,
+      1
+    ],
+    "anchor": {
+      "alpha": 1,
+      "weight": 1,
+      "target": 1,
+      "shock_scale": 1
+    },
+    "hypothesis": "On54 exact two-state cases: RE residual commitment/discretion<=1e-12; loss gap=0.5*(weight*alpha*target)^2; scalar best-response oracle discrepancy<=1e-6. Anchor naive loss appears lower but RE residual>0, so reject as equilibrium comparison."
+  },
+  "case_count": 54,
+  "state_regime_records": 324,
+  "anchor": {
+    "alpha": 1,
+    "weight": 1,
+    "target": 1,
+    "shock_scale": 1,
+    "commitment_loss": 0.75,
+    "discretion_loss": 1.25,
+    "naive_loss_inconsistent": 0.5,
+    "commitment_re_residual": 0.0,
+    "discretion_re_residual": 0.0,
+    "naive_re_residual": 0.5,
+    "commitment_mean_output": 0.0,
+    "discretion_mean_output": 0.0,
+    "naive_mean_output": 0.5,
+    "loss_gap_identity_error": 0.0,
+    "max_best_response_oracle_error": 4.92471741164735e-09
+  },
+  "max_loss_gap_identity_error": 4.440892098500626e-16,
+  "max_best_response_oracle_error": 1.4187990338143663e-08,
+  "seconds": 0.20809729500001595,
+  "python_peak_bytes": 234134,
+  "hardware": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "source_sha256": "9d40bd8060f0d97f6dc49cdc23e3c29eef32455d1f548d54e6bd74c4e7bfd971",
+  "data_sha256": "fa0ad551a68ad9a3d0064770b8e4bd78ec09182bf3c59911be5547e3cfddf875",
+  "note": "Exact equiprobable \u00b1sigma states; sigma0 repeats same zero state with probability0.5 each. No sampled uncertainty. Whole experiment instrumented Python allocation peak, not RSS or per-regime runtime."
+}
+{
+  "cases": 144,
+  "anchor": {
+    "alpha": 1,
+    "weight": 1,
+    "target": 1,
+    "sigma": 1,
+    "q": 0.3085712007847549,
+    "baseline": 1.25,
+    "optimal": 0.8674056499645886,
+    "zero_weight": 1.0,
+    "oracle_loss_error": 0.0,
+    "state_error": 0.0
+  },
+  "max_oracle_loss_error": 3.552713678800501e-15,
+  "max_state_error": 4.440892098500626e-15,
+  "seconds": 0.44746674400005304,
+  "python_peak_bytes": 107128,
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "data_sha256": "ee8346ab509441cbfb6bee752eda9888a3efa49d82faa6dcb1b07eeb607b806b",
+  "source_sha256": "de97a917490bb88f0b531b848db79f248febc63afbbcc5685742d177efec9bf0",
+  "config": {
+    "alpha": [
+      0.5,
+      1,
+      2
+    ],
+    "social_weight": [
+      0,
+      0.5,
+      1,
+      2
+    ],
+    "target": [
+      0,
+      0.5,
+      1
+    ],
+    "sigma": [
+      0,
+      0.5,
+      1,
+      3
+    ],
+    "data": "synthetic two equiprobable shocks \u00b1sigma; exact expectations",
+    "seed": null,
+    "hardware": "recorded platform, CPU; no accelerator",
+    "versions": "requirements.txt and results/summary.json",
+    "maturity": "S2 component, S1 program",
+    "scope": "one-period RE; credible costless delegation, social evaluation unchanged"
+  }
+}
+{
+  "cases": 144,
+  "anchor": {
+    "alpha": 1,
+    "weight": 1,
+    "target": 1,
+    "low": 0.04,
+    "high": 4,
+    "robust_q": 0.35385161737254117,
+    "plugin_q": 0.4158083870487712,
+    "robust_regret": 0.055577749247420205,
+    "plugin_regret": 0.07884529445492416,
+    "oracle_regret": 0.055577749247420205,
+    "oracle_error": 0.0
+  },
+  "max_oracle_regret_error": 2.6645352591003757e-15,
+  "improved": 81,
+  "seconds": 5.738952960000006,
+  "python_peak_bytes": 209638,
+  "hardware": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "config": {
+    "date": "2026-10-31",
+    "source": "Designed exact model, no empirical dataset",
+    "seed": null,
+    "alpha": [
+      0.5,
+      1,
+      2
+    ],
+    "weight": [
+      0.5,
+      1,
+      2
+    ],
+    "target": [
+      0,
+      0.5,
+      1,
+      2
+    ],
+    "variance_intervals": [
+      [
+        0,
+        1
+      ],
+      [
+        0.04,
+        4
+      ],
+      [
+        1,
+        16
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "threshold_max_regret_gap": 1e-08,
+    "anchor": [
+      1,
+      1,
+      1,
+      0.04,
+      4
+    ]
+  },
+  "data_sha256": "ec7c399b6d259657f5567c30ff3f35e0b3931963f89aedd123654b64b9b66c95",
+  "source_sha256": "5fa3007304aa4a08bc3940cc6d9c19605b939ac0ac9aea836857eeda59182044",
+  "runtime": {
+    "robust": {
+      "median_seconds": 0.0011210240000139038,
+      "peak_bytes": 14846
+    },
+    "plugin": {
+      "median_seconds": 3.939000001196291e-05,
+      "peak_bytes": 833
+    }
+  }
+}
+{
+  "config": {
+    "date": "2026-11-01",
+    "dataset": "Generated synthetic shocks, no empirical macroeconomic data",
+    "license": "Repository license for generated fixtures; no third-party dataset",
+    "seeds": [
+      104729,
+      130363,
+      155921
+    ],
+    "n": [
+      16,
+      64,
+      256
+    ],
+    "historical_variance": [
+      0.25,
+      1,
+      4
+    ],
+    "repetitions_per_seed_cell": 40,
+    "regimes": [
+      "iid_gaussian",
+      "iid_student_t5",
+      "variance_break_x4"
+    ],
+    "confidence": 0.9,
+    "thresholds": {
+      "normal_coverage_wilson_low_min": 0.85,
+      "conditional_guarantee_tolerance": 1e-10
+    },
+    "alpha": 1,
+    "weight": 1,
+    "target": 1,
+    "training_time": "t=1..n",
+    "decision_time": "t=n+1",
+    "future_truth": "historical variance except break x4; never passed to fitting or decision",
+    "audit_variance_domain": [
+      0,
+      16
+    ],
+    "toolchain": "requirements.txt; recorded in results/estimated-interval-summary.json"
+  },
+  "cases": 3240,
+  "raw_shocks": 362880,
+  "normal_coverage": 0.9046296296296297,
+  "normal_wilson95": [
+    0.8856501117406567,
+    0.92074089027082
+  ],
+  "conditional_bound_violations": 0,
+  "aggregates": [
+    {
+      "regime": "iid_gaussian",
+      "n": 16,
+      "trials": 360,
+      "coverage": 0.9111111111111111,
+      "coverage_wilson_low": 0.8772085654944877,
+      "coverage_wilson_high": 0.9363325877303643,
+      "abstentions": 0,
+      "mean_plugin_regret": 0.002964656204913009,
+      "mean_robust_regret": 0.003511672662738942,
+      "bound_violations": 32
+    },
+    {
+      "regime": "iid_gaussian",
+      "n": 64,
+      "trials": 360,
+      "coverage": 0.9,
+      "coverage_wilson_low": 0.8646631029127309,
+      "coverage_wilson_high": 0.9268904515763144,
+      "abstentions": 0,
+      "mean_plugin_regret": 0.0008193074949244313,
+      "mean_robust_regret": 0.0007946927694995831,
+      "bound_violations": 36
+    },
+    {
+      "regime": "iid_gaussian",
+      "n": 256,
+      "trials": 360,
+      "coverage": 0.9027777777777778,
+      "coverage_wilson_low": 0.8677881892943747,
+      "coverage_wilson_high": 0.9292622648786221,
+      "abstentions": 0,
+      "mean_plugin_regret": 0.0001793919291875168,
+      "mean_robust_regret": 0.0001818688145840587,
+      "bound_violations": 35
+    },
+    {
+      "regime": "iid_student_t5",
+      "n": 16,
+      "trials": 360,
+      "coverage": 0.8,
+      "coverage_wilson_low": 0.7556097539054759,
+      "coverage_wilson_high": 0.8380554119613081,
+      "abstentions": 0,
+      "mean_plugin_regret": 0.005724176021516431,
+      "mean_robust_regret": 0.004833064517825099,
+      "bound_violations": 72
+    },
+    {
+      "regime": "iid_student_t5",
+      "n": 64,
+      "trials": 360,
+      "coverage": 0.7055555555555556,
+      "coverage_wilson_low": 0.6565012420648282,
+      "coverage_wilson_high": 0.7502693345475979,
+      "abstentions": 0,
+      "mean_plugin_regret": 0.0020399996833137066,
+      "mean_robust_regret": 0.0020340883456014245,
+      "bound_violations": 106
+    },
+    {
+      "regime": "iid_student_t5",
+      "n": 256,
+      "trials": 360,
+      "coverage": 0.6805555555555556,
+      "coverage_wilson_low": 0.6307018482563682,
+      "coverage_wilson_high": 0.7265966312004926,
+      "abstentions": 0,
+      "mean_plugin_regret": 0.0006225375411751672,
+      "mean_robust_regret": 0.0006286092897400447,
+      "bound_violations": 115
+    },
+    {
+      "regime": "variance_break_x4",
+      "n": 16,
+      "trials": 360,
+      "coverage": 0.016666666666666666,
+      "coverage_wilson_low": 0.007660296215625657,
+      "coverage_wilson_high": 0.03587915877677807,
+      "abstentions": 0,
+      "mean_plugin_regret": 0.10617333710170268,
+      "mean_robust_regret": 0.07859188582033665,
+      "bound_violations": 354
+    },
+    {
+      "regime": "variance_break_x4",
+      "n": 64,
+      "trials": 360,
+      "coverage": 0.0,
+      "coverage_wilson_low": 0.0,
+      "coverage_wilson_high": 0.010558056888693507,
+      "abstentions": 0,
+      "mean_plugin_regret": 0.09893925041211915,
+      "mean_robust_regret": 0.09214306014942303,
+      "bound_violations": 360
+    },
+    {
+      "regime": "variance_break_x4",
+      "n": 256,
+      "trials": 360,
+      "coverage": 0.0,
+      "coverage_wilson_low": 0.0,
+      "coverage_wilson_high": 0.010558056888693507,
+      "abstentions": 0,
+      "mean_plugin_regret": 0.09354652113174128,
+      "mean_robust_regret": 0.09189235881126288,
+      "bound_violations": 360
+    }
+  ],
+  "hardware": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "data_sha256": "211248b4061c793c5d61c2c2b2d69c063243fe20bf034f0401fe251013572a7d",
+  "source_sha256": "1907a6274fe2b7908a7c0211fd5d0cd358465e4e676fee4354fc1acabc51d027",
+  "execution_method": "Exact loss conditional on simulated training data; no simulated evaluation noise"
+}
+Executed15code cells in process.

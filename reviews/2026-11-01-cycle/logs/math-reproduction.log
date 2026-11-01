@@ -1,0 +1,34 @@
+test_binary_covariance (test_dynamic.DynamicTests.test_binary_covariance) ... ok
+test_oracle_orders (test_dynamic.DynamicTests.test_oracle_orders) ... ok
+test_range_and_invalid (test_dynamic.DynamicTests.test_range_and_invalid) ... ok
+test_state_and_rescale (test_dynamic.DynamicTests.test_state_and_rescale) ... ok
+test_subnormal (test_dynamic.DynamicTests.test_subnormal) ... ok
+test_zero_prefix_and_constant (test_dynamic.DynamicTests.test_zero_prefix_and_constant) ... ok
+test_empty_identity (test_merge.MergeTests.test_empty_identity) ... ok
+test_fixtures (test_merge.MergeTests.test_fixtures) ... ok
+test_mixed_scale_loss (test_merge.MergeTests.test_mixed_scale_loss) ... ok
+test_partitions_and_reduction (test_merge.MergeTests.test_partitions_and_reduction) ... ok
+test_zero_chunk_scale (test_merge.MergeTests.test_zero_chunk_scale) ... ok
+test_edges (test_moments.Tests.test_edges) ... ok
+test_merge_identity (test_moments.Tests.test_merge_identity) ... ok
+test_partitions_and_translation (test_moments.Tests.test_partitions_and_translation) ... ok
+test_units_and_order (test_moments.Tests.test_units_and_order) ... ok
+test_edges (test_scaled.ScaledTests.test_edges) ... ok
+test_extremes (test_scaled.ScaledTests.test_extremes) ... ok
+test_sample_sd_overflow (test_scaled.ScaledTests.test_sample_sd_overflow) ... ok
+test_sensitivity_and_properties (test_scaled.ScaledTests.test_sensitivity_and_properties) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.229s
+
+OK
+Wrote JSON report to results/coverage.json
+Name             Stmts   Miss  Cover
+------------------------------------
+src/dynamic.py      66      0   100%
+src/moments.py      35      0   100%
+src/scaled.py       43      2    95%
+------------------------------------
+TOTAL              144      2    99%
+All checks passed!
+Success: no issues found in 3 source files
