@@ -33,3 +33,16 @@ La última decisión es humana: el código no acepta automáticamente un split �
 `bash run_graph_audit.sh` instala y reproduce28 tests (21 regresión+7 nuevos), lint/tipos,144 escenarios/políticas registrados, escala del auditor28–28000 filas y notebook_graph_audit.ipynb ejecutado6 celdas con2 figuras visibles. Salidas `results/graph31/` CSV/JSON/PNG/logs. Reúso entorno: `PYTHON="$PWD/.venv/bin/python" SKIP_INSTALL=1 bash run_graph_audit.sh`.
 
 Una segunda partición adjudicada completa permite distinguir fragmentación y sobre-unión. **Cero cortes declarados no garantiza cero fuga adjudicada**: en faltantes DP30 tiene0 cortes declarados y fuga verdadera12/12; en mixto logra balance perfecto pero expone28/28 filas. No es certificación de ML ni datos reales. El oráculo conoce verdad privilegiada y puede cortar el grafo declarado; no es baseline desplegable. Ver informe_graph31.md, derivacion31.md, prior_art31.md. No se cambian contratos/shared ni se elimina notebook anterior. Auditoría de ingeniería sobre la misma línea, sin claim de algoritmo nuevo.
+
+## Incremento1nov: adjudicación parcial con cotas y abstención
+
+El mismo programa acepta ahora equivalencia **completa entre filas adjudicadas de un subconjunto**, incluidas identidades distintas; no solo enlaces positivos incompletos. `bash run_partial_audit.sh` instala dependencias fijadas, ejecuta36 tests (28 regresión+8 nuevos), Ruff/tipos,480 comparaciones, escala del auditor y notebook_partial_audit.ipynb (6 celdas ejecutadas,2 figuras visibles). Datos sintéticos, sin AUC ni afirmación de independencia empírica. Salidas `results/partial1101/` CSV/JSON/PNG/logs; deriva fórmula y extremos alcanzables en derivacion1101.md, derivaciones también en notebook.
+
+Bajo el contrato, calcula [L,H] de filas expuestas sobre todas las completaciones posibles;5508 configuraciones pequeñas verificadas contra enumeración independiente. A75% de cobertura, train-first obtiene anchura media15.625 filas frente21.395833 de baseline seguro, pero mantiene24/48 abstenciones. En otros regímenes no mejora la cota: resultado negativo conservado. Sin adjudicación devuelve[0,n], no extrapola; si la adjudicación es errónea las cotas pueden fallar. Madurez local experimental, no operación/validación empírica. Auditor31 permanece intacto y se recupera en el caso completo. Ver informe_partial1101.md, prior_art1101.md y roadmap.
+
+```mermaid
+flowchart TD
+    A["Split congelado del snapshot observado"] --> B["Equivalencia adjudicada parcial y externa"]
+    B --> C["Extremos de exposición sobre completaciones"]
+    C --> D["Detectar, cero condicionado o abstenerse"]
+```
