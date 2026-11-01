@@ -29,3 +29,6 @@ Mismo año e intensidades.24/1.2, EAD100, LGD.45 y fuerza de descuento.06: pérd
 
 ## Incremento31octubre: EADafín
 Mismo `bash run.sh` instala y reproduce extensión de `src/affine.py`,17tests y `affine_notebook.ipynb` con derivación y outputs reales. `informe31.md` reúne14p,3ideas,5fuentes y límites. Nueva salida `results/affine.csv`, JSON, figura y CSVconvergencia/escalabilidad; no se elimina evidencia29/30. Permite amortización dentro de tramos irregulares; no calibra riesgos ni demuestra originalidad científica.
+
+## 1 de noviembre: pagos discretos y curva por eventos
+`bash run.sh` reproduce `src/term_structure.py`,22tests y `term_notebook.ipynb`. Composición de la integral31 con supervivencia y descuento acumulados, permite saltos EAD sin interpolar pagos. `informe1101.md` reúne derivación, tres ideas, seis referencias y límites. Salidas `results/term_grid.csv`, `term_metrics.json`, `term_convergence.csv`, `term_scaling.csv`, `term.png`; evidencia sintética, no modelo calibrado.
