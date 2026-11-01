@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-01",
+  "method": "actual web-tool open, scope explicit, no fabricated runtime HTTP tests",
+  "sources": [
+    {
+      "key": "partial1101entity",
+      "url": "https://arxiv.org/abs/2008.04443",
+      "scope": "abstract and metadata, v3 available; not exhaustive PDF"
+    },
+    {
+      "key": "partial1101identification",
+      "url": "https://www.annualreviews.org/content/journals/10.1146/annurev.economics.050708.143401",
+      "scope": "publisher abstract; conceptual only"
+    },
+    {
+      "key": "partial1101leakage",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10499856/",
+      "scope": "primary full text"
+    },
+    {
+      "key": "partial1101pairs",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.cluster.pair_confusion_matrix.html",
+      "scope": "official docs"
+    },
+    {
+      "key": "partial1101components",
+      "url": "https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.components.connected_components.html",
+      "scope": "official docs"
+    }
+  ]
+}
