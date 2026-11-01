@@ -17,3 +17,11 @@ Siguiente iteración recomendada: LP sobreR,B1,B2 yrecuperación delcaso30 como 
 - Hito siguiente: intervalos marginales con monotonía y recuperación de puntos. No atribuir cobertura estadística real hasta contar con datos autorizados.
 - Hito posterior: estimación y validación temporal con datos autorizados de asistencia, y reglas de elegibilidad documentadas por el responsable. Medir disponibilidad y calidad como resultados distintos.
 - Conservar resultados negativos y comparación de conjuntos de ambigüedad. Continuar esta línea antes de crear otra carpeta.
+
+
+## Actualización del1 de noviembre
+
+- Cerrado: caja rectangular de r/q1/q2/s, fórmula especializada, LP con desigualdades marginales y recuperación del caso puntual. Mantener semántica de garantía condicional, sin porcentaje estadístico inventado.
+- Hito siguiente: contrato de datos temporal y procedimiento de cobertura simultánea para todos los parámetros usados en la selección del menú; exigir fuente, permisos, población y tratamiento de faltantes antes de validación empírica.
+- Alternativa verificable sin datos: restricciones conjuntas supuestas entre parámetros, demostrar que su subconjunto no puede empeorar el certificado, contrastar LP y conservar casos donde no reduce conservadurismo. Etiquetar explícitamente el carácter hipotético.
+- No cambiar reglas de quórum o elegibilidad sin especificación autorizada. No medir calidad decisional con disponibilidad.
