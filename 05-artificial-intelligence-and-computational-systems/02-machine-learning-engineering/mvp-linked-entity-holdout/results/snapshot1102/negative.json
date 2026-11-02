@@ -1,0 +1,6 @@
+{
+  "gate_status": "metadata-eligible",
+  "claimed_upper": 0,
+  "actual_exposure": 8,
+  "scope": "outside trust assumptions: declarations and dates can lie; digest does not authenticate"
+}

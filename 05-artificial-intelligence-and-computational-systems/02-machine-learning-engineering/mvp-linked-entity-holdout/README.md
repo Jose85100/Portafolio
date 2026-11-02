@@ -46,3 +46,18 @@ flowchart TD
     B --> C["Extremos de exposición sobre completaciones"]
     C --> D["Detectar, cero condicionado o abstenerse"]
 ```
+
+## Incremento2nov: semántica y disponibilidad del snapshot
+
+`bash run_snapshot_gate.sh` instala dependencias fijadas y reproduce46 tests (36 regresión+10 nuevos), Ruff/tipos,144 casos/6 políticas (864 CSV),12 mediciones de coste y notebook_snapshot_gate.ipynb ejecutado con6 celdas y2 figuras visibles. `src/snapshot_gate.py` añade un contrato local sobre adjudicación: fuente/esquema, equivalencia completa en subconjunto, effective_at/available_at≤cutoff con UTC; bloquea incompatibilidades **sin calcular cotas**. No modifica shared ni contratos de otros programas.
+
+Resultados de conformidad sintética: gate y referencia as-of coinciden en144/144,8 admisiones elegibles y0 falsos admitidos/rechazados. Solo fecha efectiva admite4 snapshots no disponibles; solo semántica admite10 incompatibles. No es nuevo algoritmo ML ni estudio empírico. Un hash canónico vincula entradas/asignación/corte, y verify_manifest detecta modificaciones sin actualizar digest; **no autentica fuente ni fechas**. Negativo conservado: declaraciones falsas pueden pasar y dar cota0 frente8 filas expuestas reales.
+
+Salida `results/snapshot1102/` CSV/JSON/PNG/manifests/logs, derivacion1102.md (fórmulas también en notebook), prior_art1102.md cinco fuentes verificadas e informe_snapshot1102.md14p. Notebook ejecutado IPython en proceso, no kernel aislado ni frontend Jupyter completo. Prototipo experimental, sin validación empírica/operación ni garantía de temporalidad del pipeline de features. El pilarML continúa para cerrar la precondición bloqueante1101; rotación y datos reales siguen pendientes.
+
+```mermaid
+flowchart TD
+    A["Snapshot adjudicado con fuente y dos fechas"] --> B{"Metadatos prospectivos elegibles"}
+    B -->|No| C["Bloqueo con motivos, sin cotas"]
+    B -->|Sí| D["Auditor parcial1nov y manifiesto canónico"]
+```
