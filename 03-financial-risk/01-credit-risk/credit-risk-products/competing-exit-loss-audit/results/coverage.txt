@@ -2,8 +2,8 @@ Name                    Stmts   Miss  Cover
 -------------------------------------------
 src/affine.py              42      1    98%
 src/calendar.py            38      0   100%
-src/dated_contract.py      56      0   100%
+src/dated_contract.py      59      0   100%
 src/model.py               47      0   100%
 src/term_structure.py      27      0   100%
 -------------------------------------------
-TOTAL                     210      1    99%
+TOTAL                     213      1    99%

@@ -41,7 +41,10 @@ def convert_rate(rate: float, original: Basis, target: Basis) -> float:
     """Preserve integrated force per actual day when changing time unit."""
     if not math.isfinite(rate) or rate < 0:
         raise ValueError('finite nonnegative force required')
-    return rate * denominator(target) / denominator(original)
+    converted = rate * (denominator(target) / denominator(original))
+    if not math.isfinite(converted):
+        raise ValueError('converted force exceeds finite float range')
+    return converted
 
 
 def project_dated(

@@ -27,6 +27,6 @@ test_partition_and_mass_multiple_seeds (test_term_structure.TermTests.test_parti
 test_zero_and_discount_monotonicity (test_term_structure.TermTests.test_zero_and_discount_monotonicity) ... ok
 
 ----------------------------------------------------------------------
-Ran 27 tests in 0.021s
+Ran 27 tests in 0.019s
 
 OK
