@@ -68,3 +68,10 @@ PlanB: cota anterior0,874 → nueva cota0,870. La meta original0,85 sigue eligie
 Mismo comando `bash run.sh` y carpeta. `src/interval_role.py` añade intervalos de probabilidades y selección por certificado de caja; reutiliza el motor31. `config_intervals.json` declara escenarios, semilla nula, fuentes/entorno y ausencia de cobertura estadística. Derivación en `derivacion-2026-11-01.md` y notebook acumulativo; resultados CSV/JSON/PNG `results/interval_*`; informe14 puntos en `informe-2026-11-01.md`.
 
 B tenía cota puntual0,870; con r±0,01, q1/q2±0,02 y shock±0,01, la cota cae a0,8476. Al mismo umbral0,85, C cuesta una unidad más y certifica0,8896 dentro de la caja asumida. No hay intervalos de confianza estimados ni observaciones: no significa95% de seguridad estadística. Se conservan recuperación puntual, inviabilidad y costos de robustez. Adaptación de ingeniería, componenteS2 sintético; no operación o validación empresarial. Reproducción, revisión y CI se registran por separado en el informe.
+
+
+## Continuidad del2 de noviembre: información conjunta requerida
+
+Mismo comando `bash run.sh`. `src/pair_assurance.py` añade certificado con un piso supuesto de coasistencia del par y calcula el mínimo requerido para conservar una opción. Reutiliza intervalos y caja01nov. Configuración `config_pair_assurance.json`, derivación LaTeX `derivacion-2026-11-02.md`, notebook acumulativo y resultados `results/pair_*`; informe14 puntos en `informe-2026-11-02.md`.
+
+B tiene cota de caja0,8476. Si una restricción válida garantizara coasistencia del par durante shock≥0,65, su certificado sería0,8665 y permitiría conservar costo3 frente a4 deC. El mínimo requerido para la meta0,85 es4/7≈0,57143. Esto es una **pregunta para evidencia futura**, no evidencia obtenida, ahorro realizado o confianza95%. Piso redundante no aporta; incompatible se rechaza. C sigue siendo la opción certificada sin esa restricción adicional. Adaptación de ingeniería, componenteS2 sintético; no programa validado u operacional.

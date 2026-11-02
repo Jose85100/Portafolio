@@ -42,3 +42,18 @@ Cobertura: siete fuentes reales, metadatos/resúmenes/documentación según tabl
 | Adams et al.2010 y Hong2013, DOI en BibTeX | Gobierno/endogeneidad e independencia de Bernoulli, respectivamente | Referencias verificadas en ciclos previos y preservadas; no nueva revisión integral hoy | Contexto y baselines acumulativos, no fuente de las anchuras asumidas |
 
 Cinco fuentes primarias/editoriales o documentación oficial comprobadas en esta iteración; siete referencias acumuladas reales. No se sustituye evidencia empírica por metadatos ni se afirma revisión exhaustiva de novedad. La fórmula de caja es una adaptación de cotas conocidas; la contribución local es herramienta, semántica de incertidumbre, testigos y comparación ejecutada.
+
+
+## Incremento del2 de noviembre: restricción de momento y requisito de evidencia
+
+| Fuente | Problema y supuestos | Verificación de esta iteración | Diferencia concreta |
+|---|---|---|---|
+| Bertsimas/Popescu2005, DOI10.1137/S1052623401399903 | Optimización de probabilidades con información de momentos; marco general convexo/semidefinido | Editor SIAM y PDF alojado por autorMIT: autores, título, volumen15(3), páginas780–804 y DOI; introducción/formulación consultadas, no auditoría integral de todos sus teoremas | Nuestro problema binario finito usa LP de ocho masas y una restricción de segundo momento; no reproduce su algoritmo general ni lo presenta como novedad propia |
+| Nelsen2006, DOI10.1007/0-387-28678-0 | Cotas de dependencia clásicas y cópulas | Springer: metadatos, edición y capítulos verificados; no texto integral bajo suscripción | Cota especializada sobre R y el evento del par, con derivación y recuperación |
+| SciPy1.17 linprog, URL versionada en BibTeX | LP con desigualdades, igualdades y no negatividad | API oficial verificada, versión coincide con instalación fijada | Alternativa competitiva sobre misma caja/piso; testigos y precisión/costo contrastados |
+| Fama/Jensen1983, DOI10.1086/467037 | Separación de propiedad y control | Registro institucional UChicago comprobado; sin texto integral allí | Contexto: un certificado de asistencia no prueba efectividad del control |
+| Schwartz-Ziv/Weisbach2013, DOI10.1016/j.jfineco.2012.04.011 | Actas observadas y supervisión de juntas | Resumen y metadatos Hebrew University comprobados | No se reproducen observaciones ni calidad decisional en este escenario sintético |
+| Marshall/Olkin1967, DOI10.1080/01621459.1967.10482885 | Causas comunes mediante modelos de shocks | Registro autorStanford comprobado; antecedente1966 distinguido del artículo1967 | Contexto de la línea29; no se calibra su distribución |
+| Adams2010 y Hong2013, DOI preservados | Gobierno/endogeneidad y suma de indicadores independientes | Referencias verificadas en ciclos anteriores, sin nueva lectura integral hoy | Contexto y baselines acumulativos; no justifican el piso0,65 |
+
+Ocho referencias reales acumuladas; seis fuentes primarias/editoriales o documentación verificadas en este incremento. La evidencia bibliográfica no convierte el piso hipotético en un hecho observado. La diferencia local es una herramienta de decisión auditada; no se afirma novedad mundial ni revisión exhaustiva de toda la literatura.

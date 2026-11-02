@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-02",
+  "base_configuration": "config_intervals.json",
+  "data": "hypothetical pair-assurance scenario, no observed attendance or approved empirical floor",
+  "floors": {
+    "A": 0.0,
+    "B": 0.65,
+    "C": 0.0
+  },
+  "target": 0.85,
+  "question": "What supplied lower pair co-attendance constraint would retain cheaper B under the same marginal box?",
+  "hypothesis": "Intersecting the assumed box with a feasible pair-floor constraint cannot lower its certificate; analytic lower matches independent LP within1e-10; floor0 recovers01nov within1e-12",
+  "evidence_status": "No floor is statistically estimated; B=.65 is a scenario only. Threshold required is a research/data requirement, not evidence obtained.",
+  "seed": null,
+  "deterministic": true,
+  "experimental_plan": "all3^4 boxes built from point0, [.2,.8], point1; floor0 and feasiblehalf/fulluppercap; minLP for each; 101 nestedfloors forB;3 options; 30 warm compute measurements",
+  "units": "probability of co-attendance during shock per session; abstract option cost",
+  "sources": [
+    "https://docs.scipy.org/doc/scipy-1.17.0/reference/generated/scipy.optimize.linprog.html",
+    "https://link.springer.com/book/10.1007/0-387-28678-0"
+  ],
+  "versions": "requirements.txt; actual versions in results/pair_summary.json",
+  "hardware": "Linux x86_64; platform recorded; CPU model and RAM not measured",
+  "limits": [
+    "fixed quorum3 and mandatoryR",
+    "risk marginal same in both regimes",
+    "pair floor conditional on shock only",
+    "arbitrary R-pair dependence and hypothetical rectangular marginal bounds",
+    "no simultaneous coverage or business validation claimed"
+  ]
+}
