@@ -26,6 +26,8 @@ class DatedTests(unittest.TestCase):
         self.assertAlmostEqual(r.exact_loss,direct.exact_loss,places=14)
 
     def test_unit_conversion_invariance(self):
+        self.assertAlmostEqual(convert_rate(1e306,'ACT/365F','ACT/360')/1e306,360/365)
+        with self.assertRaises(ValueError):convert_rate(1.7976931348623157e308,'ACT/360','ACT/365F')
         a=project_dated(self.items,self.sources,self.valuation,'ACT/365F')
         scale=lambda v:convert_rate(v,'ACT/365F','ACT/360')
         adjusted=[replace(i,default_hazard=scale(i.default_hazard),prepay_hazard=scale(i.prepay_hazard),discount_force=scale(i.discount_force)) for i in self.items]
