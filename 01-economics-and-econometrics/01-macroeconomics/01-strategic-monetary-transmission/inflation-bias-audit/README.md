@@ -15,3 +15,7 @@ Mismo `bash run.sh`: ahora reproduce también `src.run_ambiguity`. Artefactos `r
 ## Ciclo1nov — intervalo estimado y fallo temporal
 
 Mismo `bash run.sh`: añade `src.run_estimated_interval`,3240réplicas en3regímenes. `results/estimated-interval.csv`, `estimated-shocks.csv.gz`, `estimated-interval-summary.json`, `estimated-interval-aggregate.csv`, `estimated-interval-runtime.csv`, `estimated-interval.png`. Derivación en derivacion1101.md/notebook,fuentesenprior-art1101.md,contratoen data-contract1101.md. CoberturaIIDnormal90,46%; ruptura temporal sin cobertura a n64/256. No evidencia macroreal ni dominancia promedio.
+
+## Ciclo2nov: cobertura bajo cuarto momento acotado
+
+Mismo `bash run.sh`, añade `src.run_moment_interval`. Reutiliza los fixtures1nov porhash. `moment-config.json`, `derivacion1102.md`, `prior-art1102.md`; CSV/JSON y `results/moment-interval.png` muestran cobertura, amplitud y coste decisorio. K9 es un supuesto externo, no estimación de kurtosis. Cobertura t5 mejora a costa de intervalos amplios y mayor regret medio; ruptura temporal sigue sin garantía.
