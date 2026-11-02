@@ -25,3 +25,11 @@ Siguiente iteración recomendada: LP sobreR,B1,B2 yrecuperación delcaso30 como 
 - Hito siguiente: contrato de datos temporal y procedimiento de cobertura simultánea para todos los parámetros usados en la selección del menú; exigir fuente, permisos, población y tratamiento de faltantes antes de validación empírica.
 - Alternativa verificable sin datos: restricciones conjuntas supuestas entre parámetros, demostrar que su subconjunto no puede empeorar el certificado, contrastar LP y conservar casos donde no reduce conservadurismo. Etiquetar explícitamente el carácter hipotético.
 - No cambiar reglas de quórum o elegibilidad sin especificación autorizada. No medir calidad decisional con disponibilidad.
+
+
+## Actualización del2 de noviembre
+
+- Incremento ejecutable: certificado con piso conjunto supuesto, factibilidad explícita, recuperación de caja, LP independiente y requisito mínimo de piso para cada opción. Informe02nov registra evidencia y revisión.
+- Próximo hito prioritario: contrato de evidencia conjunta, con población, régimen shock, calendario, permisos y vigencia. Diseñar cobertura simultánea para todas las restricciones de selección antes de llamar confianza a una cota.
+- Alternativa sin datos: restricciones parciales acopladas y escenarios donde el supuesto es falso; cuantificar pérdida de protección y conservar negativos. No estrechar conjuntos sin etiquetar su carácter hipotético.
+- Futuro resultado ejecutivo: medir latencia de decisiones con registros autorizados, separada de disponibilidad. No usar quórum para inferir calidad de gobierno o legalidad.

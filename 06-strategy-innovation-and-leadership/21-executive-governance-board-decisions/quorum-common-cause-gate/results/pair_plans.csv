@@ -1,0 +1,4 @@
+plan,cost,box_lower01nov,supplied_floor,new_lower,lp_lower,required_floor,feasible_target
+A,2,0.8056,0.0,0.8056,0.8056,0.5714285714285712,False
+B,3,0.8476,0.65,0.8665,0.8664999999999999,0.5714285714285712,True
+C,4,0.8896,0.0,0.8896000000000001,0.8896,0.0,True

@@ -27,6 +27,8 @@ def main():
     nb.cells.extend(joint_cells())
     from benchmarks.interval_cells import interval_cells
     nb.cells.extend(interval_cells())
+    from benchmarks.pair_cells import pair_cells
+    nb.cells.extend(pair_cells())
     shell = InteractiveShell.instance()
     shell.reset(new_session=True)
     previous = Path.cwd()
