@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-02",
+  "cutoff": "2026-11-02T12:00:00+00:00",
+  "dataset": "synthetic eight-row identity snapshot, fixed split4/4",
+  "source": "src.snapshot_experiment.run; no personal or external data",
+  "seed": null,
+  "design": "exhaustive144cases:2semantics*2schemas*2source-states*3effective-lags*3availability-lags*2timezone-encodings",
+  "hypothesis": "Prospective metadata gate agrees exactly with an independent integer policy oracle, blocks future availability and insufficient semantics, and preserves eligible partial auditor outputs",
+  "threshold": "144/144 oracle agreement,0 false admissions/rejections,72/72 UTC-offset manifest invariance; inherited5508 bound-oracle configs still pass",
+  "classification": "engineering adaptation/audit; existing point-in-time discipline, not new ML algorithm",
+  "scale_rows": [28,280,2800,28000],
+  "performance": "3repeats eachscale, perf_counter_ns/tracemalloc compute including hashing+audit; install/IO/notebook excluded",
+  "trust": "source and availability/effectivity declarations assumed honest; no signature/ledger validation, mutable identities or feature pipeline audit",
+  "hardware_versions": "results/snapshot1102/environment.json and versions.txt"
+}

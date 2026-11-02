@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-02",
+  "method": "actual web-tool open of primary URLs",
+  "sources": [
+    {
+      "key": "snapshot1102prov",
+      "url": "https://www.w3.org/TR/prov-dm/",
+      "scope": "primary recommendation page; not complete conformance audit"
+    },
+    {
+      "key": "snapshot1102datetime",
+      "url": "https://docs.python.org/3/library/datetime.html",
+      "scope": "official aware/naive/offset documentation"
+    },
+    {
+      "key": "snapshot1102feast",
+      "url": "https://docs.feast.dev/getting-started/concepts/point-in-time-joins",
+      "scope": "official as-of conceptual docs; no Feast integration or availability guarantee"
+    },
+    {
+      "key": "snapshot1102leakage",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10499856/",
+      "scope": "primary full-text page"
+    },
+    {
+      "key": "snapshot1102entity",
+      "url": "https://arxiv.org/abs/2008.04443",
+      "scope": "abstract and metadata, not exhaustive PDF"
+    }
+  ]
+}
