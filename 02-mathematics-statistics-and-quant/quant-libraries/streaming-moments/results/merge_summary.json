@@ -10,10 +10,10 @@
   "hardware": "x86_64",
   "timing_scope": "merge_left/tree exclude precomputed chunk summary; merge_tree_full/serial/NumPy include input scan; no parallel speedup claim; 5 repeats; imports/install excluded; tracemalloc separate Python heap not RSS",
   "median_ns": {
-    "serial_dynamic": 872578.0,
-    "merge_left": 20976.5,
-    "merge_tree": 20626.5,
-    "merge_tree_full": 857780.5,
-    "numpy_scaled": 64367.0
+    "serial_dynamic": 1026547.0,
+    "merge_left": 23080.0,
+    "merge_tree": 21728.0,
+    "merge_tree_full": 1150098.0,
+    "numpy_scaled": 95398.5
   }
 }
