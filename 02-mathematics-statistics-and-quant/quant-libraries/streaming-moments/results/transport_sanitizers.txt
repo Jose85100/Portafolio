@@ -1,0 +1,27 @@
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspace/scratch/6c8b818bd733/wt-math1102/02-mathematics-statistics-and-quant/quant-libraries/streaming-moments/.build-san
+[ 25%] Building CXX object CMakeFiles/moments_consumer.dir/src/cpp/consumer.cpp.o
+[ 50%] Building CXX object CMakeFiles/moments_cpp_tests.dir/src/cpp/test_core.cpp.o
+[ 75%] Linking CXX executable moments_cpp_tests
+[100%] Linking CXX executable moments_consumer
+[100%] Built target moments_cpp_tests
+[100%] Built target moments_consumer
+Test project /workspace/scratch/6c8b818bd733/wt-math1102/02-mathematics-statistics-and-quant/quant-libraries/streaming-moments/.build-san
+    Start 1: moments_core
+1/1 Test #1: moments_core .....................   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.01 sec
+Linking CXX executable moments_cpp_tests
+Built target moments_cpp_tests
+Linking CXX executable moments_consumer
+Built target moments_consumer
+Test project /workspace/scratch/6c8b818bd733/wt-math1102/02-mathematics-statistics-and-quant/quant-libraries/streaming-moments/.build-san
+    Start 1: moments_core
+1/1 Test #1: moments_core .....................   Passed    0.01 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.01 sec
