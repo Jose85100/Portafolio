@@ -32,3 +32,6 @@ Mismo `bash run.sh` instala y reproduce extensión de `src/affine.py`,17tests y 
 
 ## 1 de noviembre: pagos discretos y curva por eventos
 `bash run.sh` reproduce `src/term_structure.py`,22tests y `term_notebook.ipynb`. Composición de la integral31 con supervivencia y descuento acumulados, permite saltos EAD sin interpolar pagos. `informe1101.md` reúne derivación, tres ideas, seis referencias y límites. Salidas `results/term_grid.csv`, `term_metrics.json`, `term_convergence.csv`, `term_scaling.csv`, `term.png`; evidencia sintética, no modelo calibrado.
+
+## 2 de noviembre: fechas y disponibilidad declarada
+`bash run.sh` añade `src/dated_contract.py` y `dated_notebook.ipynb`: ACT/365F o ACT/360 explícitos, conversión de fuerzas y sellos temporales de EAD/hazards/descuento. Fixture enteramente sintético, sin afirmar datos reales autorizados. Produce `results/dated_grid.csv`, `dated_availability.csv`, `dated_scaling.csv`, `dated_metrics.json` y `dated.png`;27 tests acumulados. `informe1102.md` explica derivación, tres ideas, literatura y límites: el gate revisa metadata declarada, no autenticidad/licencia.

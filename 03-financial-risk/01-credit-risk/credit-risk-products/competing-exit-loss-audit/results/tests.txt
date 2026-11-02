@@ -10,6 +10,11 @@ test_invalid_bounds (test_calendar.CalendarTests.test_invalid_bounds) ... ok
 test_negative_zero_discount (test_calendar.CalendarTests.test_negative_zero_discount) ... ok
 test_partition_and_mass (test_calendar.CalendarTests.test_partition_and_mass) ... ok
 test_refinement (test_calendar.CalendarTests.test_refinement) ... ok
+test_future_availability_not_future_forecast (test_dated_contract.DatedTests.test_future_availability_not_future_forecast) ... ok
+test_invalid_calendar (test_dated_contract.DatedTests.test_invalid_calendar) ... ok
+test_invalid_provenance (test_dated_contract.DatedTests.test_invalid_provenance) ... ok
+test_leap_and_direct_oracle (test_dated_contract.DatedTests.test_leap_and_direct_oracle) ... ok
+test_unit_conversion_invariance (test_dated_contract.DatedTests.test_unit_conversion_invariance) ... ok
 test_invalid (test_model.TestProjection.test_invalid) ... ok
 test_mass_absorbing_and_zero_exposure (test_model.TestProjection.test_mass_absorbing_and_zero_exposure) ... ok
 test_monotone_prepay_discount_and_scaling (test_model.TestProjection.test_monotone_prepay_discount_and_scaling) ... ok
@@ -22,6 +27,6 @@ test_partition_and_mass_multiple_seeds (test_term_structure.TermTests.test_parti
 test_zero_and_discount_monotonicity (test_term_structure.TermTests.test_zero_and_discount_monotonicity) ... ok
 
 ----------------------------------------------------------------------
-Ran 22 tests in 0.011s
+Ran 27 tests in 0.019s
 
 OK

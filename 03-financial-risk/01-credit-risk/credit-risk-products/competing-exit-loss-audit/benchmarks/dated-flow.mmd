@@ -1,0 +1,6 @@
+flowchart TD
+ A["Fixture sintético: fechas y sellos"] --> B["Validar roles e instante UTC"]
+ B --> C["ACT/365F o ACT/360 explícito"]
+ C --> D["Motor por eventos conservado"]
+ D --> E["Pérdida y masas verificables"]
+ B --> F["Rechazo de fuente declarada futura"]
