@@ -11,3 +11,7 @@ Herramienta minimax regret sobre intervalo conocido de varianza: `bash run.sh`, 
 ## Incremento1nov
 
 `bash run.sh` conecta intervalo de varianzaGaussiano estimado al solver31 y audita calibración/ruptura. SalidasCSV/JSON/PNG/CSV.gz/notebook con15codeceldas acumuladas. No estimaα,novalidaeconomíareal,no garantiza coberturabajononnormalidadoruptura.S2local permanece.
+
+## Incremento2nov
+
+`bash run.sh`: intervalo de varianza por pares bajoKexterno y Chebyshev, conectado a delegación31. SalidasCSV/JSON/PNG,notebook18codeceldas acumuladas; no recomienda despliegue ni valida datosmacro. S2local. No cubre dependencia serial o K desconocido; resultados negativos de utilidad preservados.
