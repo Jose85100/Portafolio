@@ -160,3 +160,46 @@ Cada punto agrupa 360 réplicas y tres varianzas. El oráculo informado tiene re
 **Checklist de artefactos.** README, MVP, src, tests, benchmarks, CSV/JSON/PNG/CSV.gz, notebook ejecutado, config, dependencias fijadas, BibTeX, derivación, matriz de prior art, contrato de datos, informe14p y registro/roadmap presentes.
 
 **Revisión independiente.** El revisor1101 reprodujo `bash run.sh` con exit0,18 tests y15 celdas de código. Inspeccionó la derivación pivotal, inversión, recorte y separación entre cobertura y bound; contrastó NIST y examinó los dos paneles. No encontró bloqueantes científicos dentro de ese alcance. Publicación y CI se informan por separado en el consolidado.
+
+
+# Ciclo2 de noviembre: garantía bajo colas y coste de la información perdida
+
+1. **Título y programa.** Misma auditoría monetaria acumulativa: después de expectativas, delegación, ambigüedad e intervalos estimados, se estudia si una cota bajo cuarto momento acotado puede corregir calibración bajo t5. La pregunta central sigue siendo elegir políticas respetando información y restricciones.
+2. **Hipótesis y aporte.** H1: con K9 externo y confianza90%, el límite inferior Wilson95% de cobertura será≥0,85 en cada celda IIDnormal/t5. H2: cero violaciones de regret bound a1e−10 entre muestras cubiertas. Umbrales, K y escenarios fijados en moment-config.json antes de interpretar. No hipótesis de mejor regret medio. Clasificación: adaptación de ingeniería y auditoría, no intervalo estadístico original.
+3. **Estado del arte.** Seis fuentes primarias consultadas, matriz en prior-art1102.md,14entradas BibTeX acumuladas. Chebyshev, diferencias de observaciones independientes, cuarto momento y minimax regret son clásicos. La evidencia de software/fixture no acredita una nueva teoría monetaria.
+4. **Brecha y selección de tres ideas.** Bootstrap ofrece flexibilidad pero aquí no trae garantía finita bajo colas. Detección temporal es relevante pero no resuelve t5 estacionario y requiere protocolo propio. La cota con cuarto momento acotado fue seleccionada por continuidad, derivación cerrada y posibilidad de medir el coste de una garantía. No se descartan las demás por falta de valor.
+5. **Diseño y configuración.** Se reutilizan exactamente los3240fixtures y362880shocks versionados del1nov: tres semillas, n16/64/256, tres varianzas y regímenes normal/t5/ruptura×4. SHA256 del CSV.gz coincide con1nov: `211248b4061c793c5d61c2c2b2d69c063243fe20bf034f0401fe251013572a7d`. No se duplica dataset. K9 es válido para normalK3 y t5K9; no se estima usando la misma muestra. Pasado disponible al decidir, varianza futura solo al evaluador. Dataset sintético, sin afirmación empírica. Sensibilidad K1/3/9/30 para n256 se etiqueta exploratoria y no selecciona el método confirmado.
+6. **Implementación y teoría.** src/moment_interval.py API tipada, dataclass inmutable y errores explícitos. Original1nov: pivotechi² normal. Propuesta: W=(X2−X1)²/2 por pares disjuntos, m=⌊n/2⌋, vhat=mediaW. Derivación en derivacion1102.md/notebook: EW=v, VarW=(μ4+v²)/2≤(K+1)v²/2, Chebyshev da a=√((K+1)/(2mδ)), intervalo[vhat/(1+a),vhat/(1−a)] si a<1. Si a≥1, extremo superior∞ antes del dominio externo[0,16]. Una intersección vacía produce abstención. Conserva traslación/escala antes del clipping e intercambio dentro de pares; no permutación arbitraria. Último dato impar se descarta. Garantía exigeIID, K verdadero, estabilidad futura y v dentro del dominio; no teorema de cambio temporal.
+7. **Tests y benchmarks.** `bash run.sh` exit0:24tests, seis nuevos y18regresiones, Ruff/mypy11archivos src. Cobertura medida nuevo núcleo32/32sentencias100%; acumulada161/163=99%redondeado, sin cobertura de ramas afirmada. Oráculos exactos: ley de tres puntos con varianza1/kurtosis9 verifica VarW5 mediante enumeración; las256muestras Rademacher de longitud8 verifican cobertura discreta sin MonteCarlo. Tests de pares/escala/traslación/cola impar, confianza, degeneración, abstención, no finitos y overflow. Runtime90filas,30repeticiones por n, excluye instalación/importación/carga; picoPython,noRSS. Los baselines1nov se regeneran bajo el mismo comando/host, con tablas de coste separadas.
+8. **Resultados y artefactos.** moment-cases.csv3240filas, agregados9filas, sensibilidad8filas, runtime90filas, JSON y figura3paneles. Notebook acumulativo18codeceldas ejecutadas desdeinicioIPython en proceso fresco, outputs persistidos, figura inspeccionada. No kernel aislado ni QAfrontendJupyter completo afirmados. H1 pasa todas celdas IID; H2cero violaciones condicionales. No hubo abstenciones en la malla, pero su API se prueba.
+
+| Régimen | n | CoberturaK9 | Coberturachi² | Amplitud mediaK9 | Regret medioK9 | Regret mediochi² |
+|---|---:|---:|---:|---:|---:|---:|
+|iid_gaussian|16|0.997222|0.911111|15.471699|0.05835402|0.00351167|
+|iid_gaussian|64|1.000000|0.900000|15.239658|0.06128280|0.00079469|
+|iid_gaussian|256|1.000000|0.902778|3.588177|0.00366245|0.00018187|
+|iid_student_t5|16|0.991667|0.800000|15.522512|0.05758870|0.00483306|
+|iid_student_t5|64|0.977778|0.705556|15.204638|0.06165518|0.00203409|
+|iid_student_t5|256|0.986111|0.680556|3.625047|0.00402571|0.00062861|
+|variance_break_x4|16|1.000000|0.016667|15.485132|0.04176477|0.07859189|
+|variance_break_x4|64|1.000000|0.000000|15.224380|0.03683802|0.09214306|
+|variance_break_x4|256|0.000000|0.000000|3.643366|0.04869734|0.09189236|
+
+Cada celda agrupa360réplicas. Wilson95% completo está en JSON/CSV, no se dibujan barras de incertidumbre inexistentes. CotaK9 ychi² comparten datos, restricciones y objetivo social; chi² usa eficientemente toda muestra bajo su supuesto fuerte. Plug-in con s² también figura en los resultados, normalmente competitivo. Oráculo informado de v tiene regret0 pero información extra; no baseline factible.
+
+| n | Mediana segundos K9+decisión | Pico bytes Python |
+|---|---:|---:|
+|16|0.0013766|15814|
+|64|0.0019010|16008|
+|256|0.0014179|11558|
+
+9. **Análisis crítico y resultados negativos.** En t5n256, cobertura sube de0,68056 a0,98611, pero regret medio pasa de0,00062861 a0,00402571. En n16/64 muchas cotas superiores son16 porque Chebyshev no da cota finita: amplitud≈15 y perjuicio decisorio grande frente a chi² en escenarios IID. No presentar cobertura cercana a1 como éxito completo. Bajo ruptura, n16/64cubren por amplitud extrema; n256cobertura0. Esto no detecta ni resuelve cambios de régimen. K3sobre t5 invalida premisa aunque una simulación parezca cubrir. La garantía es útil para auditoría, no una recomendación de desplegar este intervalo como mejor decisión.
+10. **Limitaciones y madurez.** Fixtures conocidos reutilizados: contraste pareado reduce ruido pero no es confirmación externa independiente; hipótesis técnica nueva fijada antes de ejecutarse. K externo difícil de justificar en macro, α=λ=k=1 y dominio normalizadov≤16, sin datos macro licenciados/calibración/identificación/credibilidad institucional. Dependencia serial no modelada: pares adyacentes correlacionados invalidan cálculo. S2local del componente/S1del programa se conservan; no equivalenciaS2/M2 ni S3por simulación. Python es adecuado a API escalar, sin duplicación multilenguaje sin razón.
+11. **Comando exacto.** Desde inflation-bias-audit: `bash run.sh`. Crea venv, instala requirements.txt fijado y reproduce toda cadena, tests/lint/tipos y notebook. Requiere Python3.11+,PyPI. Desde raíz, suite común: `python3 -m unittest discover -s 01-economics-and-econometrics/computational-economics/tests -v` (ocho tests). README conserva instrucciones reproducibles; timing dependiente del host.
+12. **Referencias BibTeX.** referencias.bib14entradas; prior-art1102.md registra seis fuentes verificadas y diferencia concreta. DocumentaciónSciPy recuperada1.18, ejecución fijada1.17: no nuevaAPI de kurtosis utilizada; se declara discrepancia en lugar de ocultarla. Sin claim de novedad mundial.
+13. **Rúbricas1–5 autoevaluadas.** Original: novedad2, rigor4, reproducibilidad4, código4, claridad4, impacto3, honestidad5,MVP4. Ampliada: profundidadteórica4, aporte defendible3, calidadexperimental4, utilidad3, reproducibilidad4,honestidad5. Utilidad limitada por conservadurismo; no subir puntuación por más tests o páginas.
+14. **Siguiente iteración.** Comparar una cota de momentos menos conservadora y bootstrap competitivo con supuestos explícitos; fijar nuevas semillas para confirmación posterior, sin alterar estas cifras; diseñar dependencia temporal y justificarK/dominio antes de datos macro reales.
+
+**Qué sabemos, construimos y podemos hacer.** Ahora existe una conexión matemática verificable desde un supuesto de cuarto momento a una decisión y puede medirse cuánto cuesta su garantía. Sabemos que ampliar cobertura puede empeorar decisiones. No sabemos justificar K9 para una economía real ni resolver ruptura temporal.
+
+**Checklist.** README,src,tests,benchmarks,CSV/JSON/PNG,notebook ejecutado,config,dependencias fijadas,informe,MVP,BibTeX,derivación,matriz,registro/roadmap están presentes. Rawdataset previo se reutiliza porhash. Revisión independiente/publicación/CI se registran separadas; no se simulan.

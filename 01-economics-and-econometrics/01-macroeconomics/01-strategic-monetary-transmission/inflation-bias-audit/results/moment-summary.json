@@ -1,0 +1,225 @@
+{
+  "config": {
+    "date": "2026-11-02",
+    "data": "Reuse results/estimated-shocks.csv.gz and estimated-interval.csv from1nov, same 3240 fixtures",
+    "confidence": 0.9,
+    "kurtosis_bound": 9,
+    "thresholds": {
+      "valid_iid_coverage_wilson_low_min": 0.85,
+      "conditional_bound_tolerance": 1e-10
+    },
+    "selection": "Fixed before results; no parameter optimization",
+    "scenarios": "IIDnormal K3 and IIDt5 K9 satisfy external bound; variancebreak does not satisfy future stationarity",
+    "sensitivity_k": [
+      1,
+      3,
+      9,
+      30
+    ],
+    "audit_domain": [
+      0,
+      16
+    ]
+  },
+  "cases": 3240,
+  "aggregates": [
+    {
+      "regime": "iid_gaussian",
+      "n": 16,
+      "trials": 360,
+      "coverage": 0.9972222222222222,
+      "wilson_low": 0.9844355578194421,
+      "wilson_high": 0.9995094856079123,
+      "abstentions": 0,
+      "gaussian_coverage": 0.9111111111111111,
+      "mean_width": 15.471699036030845,
+      "gaussian_width": 2.626510229916685,
+      "mean_regret": 0.05835402114808201,
+      "gaussian_regret": 0.003511672662738942,
+      "plugin_regret": 0.002964656204913009
+    },
+    {
+      "regime": "iid_gaussian",
+      "n": 64,
+      "trials": 360,
+      "coverage": 1.0,
+      "wilson_low": 0.9894419431113063,
+      "wilson_high": 0.9999999999999999,
+      "abstentions": 0,
+      "gaussian_coverage": 0.9,
+      "mean_width": 15.239657680441367,
+      "gaussian_width": 1.0596178385649782,
+      "mean_regret": 0.061282804356249006,
+      "gaussian_regret": 0.0007946927694995831,
+      "plugin_regret": 0.0008193074949244313
+    },
+    {
+      "regime": "iid_gaussian",
+      "n": 256,
+      "trials": 360,
+      "coverage": 1.0,
+      "wilson_low": 0.9894419431113063,
+      "wilson_high": 0.9999999999999999,
+      "abstentions": 0,
+      "gaussian_coverage": 0.9027777777777778,
+      "mean_width": 3.588176614223203,
+      "gaussian_width": 0.5159840167324465,
+      "mean_regret": 0.0036624452131726617,
+      "gaussian_regret": 0.0001818688145840587,
+      "plugin_regret": 0.0001793919291875168
+    },
+    {
+      "regime": "iid_student_t5",
+      "n": 16,
+      "trials": 360,
+      "coverage": 0.9916666666666667,
+      "wilson_low": 0.9757892964950321,
+      "wilson_high": 0.9971619475644193,
+      "abstentions": 0,
+      "gaussian_coverage": 0.8,
+      "mean_width": 15.52251157653695,
+      "gaussian_width": 2.373480299393709,
+      "mean_regret": 0.05758869661122944,
+      "gaussian_regret": 0.004833064517825099,
+      "plugin_regret": 0.005724176021516431
+    },
+    {
+      "regime": "iid_student_t5",
+      "n": 64,
+      "trials": 360,
+      "coverage": 0.9777777777777777,
+      "wilson_low": 0.9567691737312188,
+      "wilson_high": 0.988697571908474,
+      "abstentions": 0,
+      "gaussian_coverage": 0.7055555555555556,
+      "mean_width": 15.204638124267028,
+      "gaussian_width": 1.0876937022134543,
+      "mean_regret": 0.06165517717712008,
+      "gaussian_regret": 0.0020340883456014245,
+      "plugin_regret": 0.0020399996833137066
+    },
+    {
+      "regime": "iid_student_t5",
+      "n": 256,
+      "trials": 360,
+      "coverage": 0.9861111111111112,
+      "wilson_low": 0.9679041504124477,
+      "wilson_high": 0.9940532942791003,
+      "abstentions": 0,
+      "gaussian_coverage": 0.6805555555555556,
+      "mean_width": 3.625047413098768,
+      "gaussian_width": 0.5271046009314702,
+      "mean_regret": 0.004025710714143648,
+      "gaussian_regret": 0.0006286092897400447,
+      "plugin_regret": 0.0006225375411751672
+    },
+    {
+      "regime": "variance_break_x4",
+      "n": 16,
+      "trials": 360,
+      "coverage": 1.0,
+      "wilson_low": 0.9894419431113063,
+      "wilson_high": 0.9999999999999999,
+      "abstentions": 0,
+      "gaussian_coverage": 0.016666666666666666,
+      "mean_width": 15.485132219785767,
+      "gaussian_width": 2.6755795846655133,
+      "mean_regret": 0.041764774019458085,
+      "gaussian_regret": 0.07859188582033665,
+      "plugin_regret": 0.10617333710170268
+    },
+    {
+      "regime": "variance_break_x4",
+      "n": 64,
+      "trials": 360,
+      "coverage": 1.0,
+      "wilson_low": 0.9894419431113063,
+      "wilson_high": 0.9999999999999999,
+      "abstentions": 0,
+      "gaussian_coverage": 0.0,
+      "mean_width": 15.224380344755595,
+      "gaussian_width": 1.0744995405427604,
+      "mean_regret": 0.036838021387064414,
+      "gaussian_regret": 0.09214306014942303,
+      "plugin_regret": 0.09893925041211915
+    },
+    {
+      "regime": "variance_break_x4",
+      "n": 256,
+      "trials": 360,
+      "coverage": 0.0,
+      "wilson_low": 0.0,
+      "wilson_high": 0.010558056888693507,
+      "abstentions": 0,
+      "gaussian_coverage": 0.0,
+      "mean_width": 3.6433664629051097,
+      "gaussian_width": 0.5224175304079981,
+      "mean_regret": 0.048697339820808476,
+      "gaussian_regret": 0.09189235881126288,
+      "plugin_regret": 0.09354652113174128
+    }
+  ],
+  "sensitivity": [
+    {
+      "k": 1,
+      "regime": "iid_gaussian",
+      "n": 256,
+      "coverage": 0.9777777777777777,
+      "mean_width": 1.0607215802116836
+    },
+    {
+      "k": 1,
+      "regime": "iid_student_t5",
+      "n": 256,
+      "coverage": 0.9083333333333333,
+      "mean_width": 1.076041075106817
+    },
+    {
+      "k": 3,
+      "regime": "iid_gaussian",
+      "n": 256,
+      "coverage": 1.0,
+      "mean_width": 1.6389837746961824
+    },
+    {
+      "k": 3,
+      "regime": "iid_student_t5",
+      "n": 256,
+      "coverage": 0.9638888888888889,
+      "mean_width": 1.6626548341316412
+    },
+    {
+      "k": 9,
+      "regime": "iid_gaussian",
+      "n": 256,
+      "coverage": 1.0,
+      "mean_width": 3.588176614223203
+    },
+    {
+      "k": 9,
+      "regime": "iid_student_t5",
+      "n": 256,
+      "coverage": 0.9861111111111112,
+      "mean_width": 3.625047413098768
+    },
+    {
+      "k": 30,
+      "regime": "iid_gaussian",
+      "n": 256,
+      "coverage": 1.0,
+      "mean_width": 15.167199389750257
+    },
+    {
+      "k": 30,
+      "regime": "iid_student_t5",
+      "n": 256,
+      "coverage": 0.9972222222222222,
+      "mean_width": 15.15517164850751
+    }
+  ],
+  "conditional_violations": 0,
+  "hardware": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "numpy": "2.3.5",
+  "data_sha256": "211248b4061c793c5d61c2c2b2d69c063243fe20bf034f0401fe251013572a7d",
+  "source_sha256": "9279c0ebe353cd43c7b2f7c1497ff068026364edde3aeda8cd590e49a2a4afe5"
+}

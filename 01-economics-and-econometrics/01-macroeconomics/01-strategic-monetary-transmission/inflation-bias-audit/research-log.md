@@ -19,3 +19,10 @@
 1. Intervalononnormal competitivo,supuestosdekurtosis yseparaciónexploración/confirmación.
 2. Detectorcambioregimen conlag real,sin pasarfuturetruthtomodelo.
 3. Contrato macroreal fuente/licencia/vintage yidentificacióndeshocks/α,despuésvalidacióntemporalempírica. NingúnMVPdehoycierraesebloqueo.
+
+- 2026-11-02: seleccionado intervalo de cuarto momento frente a bootstrap/detección temporal. Derivación por pares yChebyshev, K9externo; mismos3240fixtures. H1cobertura/H2boundcondicional pasan. Negativo central: t5n256cobertura0,98611vs0,68056,pero regret0,00402571vs0,00062861; garantía amplia puede empeorar decisión. Ruptura sigue fuera del teorema y falla n256. Adaptación/auditoría clásica, no ciencia original.
+
+## Hitos siguientes2nov
+1. Intervalo competitivo menos conservador, supuestos explícitos, nuevas semillas confirmatorias.
+2. Dependencia temporal: especificar proceso y demostrar o refutar fórmula de VarW/media antes de usarla.
+3. JustificarK y dominio con contrato macro real/licencia/identificación; no afirmar satisfacción por simulación.
