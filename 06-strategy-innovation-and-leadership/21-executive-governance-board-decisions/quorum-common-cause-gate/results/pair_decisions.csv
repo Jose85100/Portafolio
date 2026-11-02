@@ -1,0 +1,6 @@
+scenario,target,selected
+none,0.85,C
+configured_hypothetical,0.85,B
+same_floor_all_plans,0.85,A
+redundant_focus_floor,0.85,C
+higher_target,0.97,infeasible
