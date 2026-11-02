@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-02",
+  "data": "Reuse results/estimated-shocks.csv.gz and estimated-interval.csv from1nov, same 3240 fixtures",
+  "confidence": 0.9,
+  "kurtosis_bound": 9,
+  "thresholds": {
+    "valid_iid_coverage_wilson_low_min": 0.85,
+    "conditional_bound_tolerance": 1e-10
+  },
+  "selection": "Fixed before results; no parameter optimization",
+  "scenarios": "IIDnormal K3 and IIDt5 K9 satisfy external bound; variancebreak does not satisfy future stationarity",
+  "sensitivity_k": [
+    1,
+    3,
+    9,
+    30
+  ],
+  "audit_domain": [
+    0,
+    16
+  ]
+}
