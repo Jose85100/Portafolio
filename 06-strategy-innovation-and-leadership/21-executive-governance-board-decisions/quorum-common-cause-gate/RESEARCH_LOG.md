@@ -45,3 +45,18 @@ Pregunta central: certificar disponibilidad con supuestos auditables, separada d
 | Quórum proporcional y elegibilidad | Evento numérico no sustituye reglas reales | Motor de reglas y validación por responsables | Requiere especificación autorizada; cambiaría el evento actual | Pospuesta para mantener comparación justa |
 
 Mapa: causa común29 → reservas dependientes30 → rol conjunto31 → incertidumbre paramétrica01nov. Clasificación: adaptación de ingeniería y auditoría, no fórmula disciplinar original. H: un certificado puntual puede fallar con perturbaciones admisibles; la envolvente coincide con LP dentro de1e-10 y recupera puntos dentro de1e-12. Resultado: B pasa de0,870 a0,8476; C logra0,8896 al mismo umbral0,85 y cuesta una unidad adicional. Negativos: caja puntual no cambia31; certeza total da1; meta0,97 es inviable. Los intervalos son supuestos, sin afirmación de cobertura estadística. Informe y dictamen distinguen ejecución, revisión y publicación.
+
+
+## 2 de noviembre de2026 — Requisito de información conjunta para una decisión
+
+Pregunta central: certificar disponibilidad bajo supuestos auditables, separada de calidad de gobierno. Leídos informe, fórmulas, código, resultados negativos, notebook y roadmap01nov; base `85c51286`, cero PR abiertos al inicio. Misma carpeta y evento; propiedad exclusiva del componente, sin contratos globales.
+
+| Candidata | Brecha y relevancia | Diferencia y valor como herramienta | Viabilidad y evidencia necesaria | Selección |
+|---|---|---|---|---|
+| Piso de coasistencia del par | La caja admite dependencia extrema que información conjunta podría excluir | LP con restricción de momento; requisito mínimo para mantener opción más barata | Alta: prueba de factibilidad, recuperación, monotonía, LP/testigos y sensibilidad; escenario explícitamente supuesto | Elegida: cierra alternativa verificable del roadmap sin fingir datos |
+| Calibración temporal y cobertura simultánea | Parámetros no estimados; necesario para validación real | Pasar de sensibilidad a garantía estadística con población definida | No hay muestra ni permisos; no se puede afirmar cobertura | Preparar contrato; no inventar recolección |
+| Latencia decisional y elegibilidad | Disponibilidad no mide eficacia ni reglas reales | Validar resultado ejecutivo y reglas autorizadas | Sin registros de plazos o especificación de reglas | Pospuesta; no cambiar objetivo para aparentar impacto |
+
+Mapa: causa común29 → reservas dependientes30 → rol conjunto31 → caja01nov → restricción conjunta hipotética02nov. Aporte: adaptación de ingeniería y auditoría de cotas clásicas, no originalidad disciplinar. Hipótesis: intersección factible no empeora el certificado; fórmula/LP concuerdan dentro de1e-10 y piso0 recupera01nov dentro de1e-12. Umbrales declarados en config antes de interpretar resultados.
+
+Resultado diseñado: B tiene base0,8476 y certificado0,8665 si se suministra piso0,65; mínimo requerido4/7. Sin ese supuesto nuevo C sigue siendo la opción robusta. Negativos: piso redundante0,55 no aporta, piso incompatible0,99 se rechaza y meta0,97 no puede repararse. No se obtuvo evidencia empírica del piso ni se atribuye cobertura estadística. Registro final de ejecución/revisión/publicación en informe02nov.

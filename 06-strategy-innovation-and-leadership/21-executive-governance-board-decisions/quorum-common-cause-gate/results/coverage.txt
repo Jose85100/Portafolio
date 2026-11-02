@@ -3,7 +3,8 @@ Name                       Stmts   Miss  Cover
 src/__init__.py                0      0   100%
 src/interval_role.py          35      0   100%
 src/joint_role.py             22      0   100%
+src/pair_assurance.py         26      0   100%
 src/quorum.py                 66      0   100%
 src/reserve_ambiguity.py      67      0   100%
 ----------------------------------------------
-TOTAL                        190      0   100%
+TOTAL                        216      0   100%
