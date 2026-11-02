@@ -17,3 +17,5 @@
 31oct: herramienta `project_affine` añade extremos EADcondicionales en dinero por tramo; `bash run.sh`produce `results/affine.csv`, `affine_metrics.json`, `affine.png`, notebookejecutado. Quéno: saldoaleatorio/censura/calibración/provisiones/operación. `informe31.md` distingue madurezcomponenteS2sintético deM2revisión ymadurezprograma.
 
 1nov: APIreutilizable `project_term_structure` acepta fuerzas de descuento por evento y endpointsEADcon saltos. `bash run.sh` instala/reproduce CSV/JSON/figura y notebookejecutado,22tests. No cubre defaultatómico/prioridad de pagos, curvasnegativas, calibración ni operación. Fuerzaplana recupera31; diferencia suave/discreto se etiqueta cambio de contrato.
+
+2nov: `project_dated` valida fechas civiles y disponibilidad declarada antes de usar el motor existente. `bash run.sh` instala/reproduce lectura de `benchmarks/dated_fixture.json`,27 tests, CSV/JSON/figura y notebook ejecutado. No cubre ACT/ACT, festivos, intradía, verdad de la procedencia o autorización real; no mejora precisión del baseline numérico, añade contrato temporal verificable.
