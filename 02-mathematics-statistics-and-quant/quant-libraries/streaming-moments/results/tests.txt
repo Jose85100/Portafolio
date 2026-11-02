@@ -17,8 +17,12 @@ test_edges (test_scaled.ScaledTests.test_edges) ... ok
 test_extremes (test_scaled.ScaledTests.test_extremes) ... ok
 test_sample_sd_overflow (test_scaled.ScaledTests.test_sample_sd_overflow) ... ok
 test_sensitivity_and_properties (test_scaled.ScaledTests.test_sensitivity_and_properties) ... ok
+test_boundaries_and_ddof (test_transport.TransportTests.test_boundaries_and_ddof) ... ok
+test_cross_oracle (test_transport.TransportTests.test_cross_oracle) ... ok
+test_invalid_both_languages (test_transport.TransportTests.test_invalid_both_languages) ... ok
+test_roundtrip_exact (test_transport.TransportTests.test_roundtrip_exact) ... ok
 
 ----------------------------------------------------------------------
-Ran 19 tests in 0.163s
+Ran 23 tests in 0.371s
 
 OK

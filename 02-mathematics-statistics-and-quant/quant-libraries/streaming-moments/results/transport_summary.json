@@ -1,0 +1,20 @@
+{
+  "scenarios": 24,
+  "rows": 72,
+  "gate": true,
+  "max_cpp_relative_sd_error": 4.545312815251244e-16,
+  "max_python_cpp_discrepancy": 0.0,
+  "minimum_payload_reduction_n1024": 132.55421686746988,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "hardware": "x86_64",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "cmake": "cmake version 4.1.2",
+  "cost_scope": "python_merge excludes precomputed summaries; cpp_ipc includes export, process startup, parse/merge/output/import; NumPy includes input scan but is offline. No speedup claim. Imports/install excluded; memory Python heap only, child RSS unmeasured",
+  "median_ns": {
+    "python_merge": 6905.5,
+    "cpp_ipc": 1743063.0,
+    "numpy_scaled": 55693.5
+  }
+}
