@@ -8,7 +8,7 @@
   "hardware": "x86_64",
   "timing_scope": "compute+input normalization only; imports/install excluded; 5 repeats; tracemalloc separate, Python heap not RSS",
   "median_ns": {
-    "dynamic": 196186.0,
-    "numpy_scaled": 21322.0
+    "dynamic": 351387.0,
+    "numpy_scaled": 33130.0
   }
 }
