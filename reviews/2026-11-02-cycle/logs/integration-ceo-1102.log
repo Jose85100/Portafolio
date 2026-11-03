@@ -1,0 +1,32 @@
+test_baseline_uses_config_centers_and_reports_infeasibility (test_interval_role.IntervalRoleTests.test_baseline_uses_config_centers_and_reports_infeasibility) ... ok
+test_inequality_lp_oracle_and_witnesses (test_interval_role.IntervalRoleTests.test_inequality_lp_oracle_and_witnesses) ... ok
+test_nested_boxes_cannot_improve_certificate (test_interval_role.IntervalRoleTests.test_nested_boxes_cannot_improve_certificate) ... ok
+test_point_recovery_and_order (test_interval_role.IntervalRoleTests.test_point_recovery_and_order) ... ok
+test_same_target_changes_decision_and_infeasibility (test_interval_role.IntervalRoleTests.test_same_target_changes_decision_and_infeasibility) ... ok
+test_validation_and_ties (test_interval_role.IntervalRoleTests.test_validation_and_ties) ... ok
+test_decision_boundary_and_negative (test_joint_role.JointRoleTests.test_decision_boundary_and_negative) ... ok
+test_exact_recovery_role_certain_and_no_shock (test_joint_role.JointRoleTests.test_exact_recovery_role_certain_and_no_shock) ... ok
+test_invalid_and_ties (test_joint_role.JointRoleTests.test_invalid_and_ties) ... ok
+test_lp_oracle_grid_and_witness (test_joint_role.JointRoleTests.test_lp_oracle_grid_and_witness) ... ok
+test_restriction_and_monotonicity (test_joint_role.JointRoleTests.test_restriction_and_monotonicity) ... ok
+test_asymmetric_box_and_configurable_target (test_pair_assurance.PairAssuranceTests.test_asymmetric_box_and_configurable_target) ... ok
+test_infeasibility_and_zero_shock (test_pair_assurance.PairAssuranceTests.test_infeasibility_and_zero_shock) ... ok
+test_invalid_inputs_and_ties (test_pair_assurance.PairAssuranceTests.test_invalid_inputs_and_ties) ... ok
+test_lp_oracle_and_feasible_witnesses (test_pair_assurance.PairAssuranceTests.test_lp_oracle_and_feasible_witnesses) ... ok
+test_minimum_threshold_and_no_gain_region (test_pair_assurance.PairAssuranceTests.test_minimum_threshold_and_no_gain_region) ... ok
+test_recovery_and_nested_constraint_monotonicity (test_pair_assurance.PairAssuranceTests.test_recovery_and_nested_constraint_monotonicity) ... ok
+test_binomial_oracle_and_total_mass (test_quorum.QuorumTests.test_binomial_oracle_and_total_mass) ... ok
+test_closed_form_common_cause (test_quorum.QuorumTests.test_closed_form_common_cause) ... ok
+test_false_pass_and_infeasible (test_quorum.QuorumTests.test_false_pass_and_infeasible) ... ok
+test_invalid (test_quorum.QuorumTests.test_invalid) ... ok
+test_mandatory_and_deterministic (test_quorum.QuorumTests.test_mandatory_and_deterministic) ... ok
+test_cheapest_false_pass_and_robust_choice (test_reserve_ambiguity.ReserveAmbiguityTests.test_cheapest_false_pass_and_robust_choice) ... ok
+test_existing29_engine_recovers_nominal (test_reserve_ambiguity.ReserveAmbiguityTests.test_existing29_engine_recovers_nominal) ... ok
+test_invalid_and_coupling (test_reserve_ambiguity.ReserveAmbiguityTests.test_invalid_and_coupling) ... ok
+test_lp_oracle_sharp_bounds (test_reserve_ambiguity.ReserveAmbiguityTests.test_lp_oracle_sharp_bounds) ... ok
+test_threshold_and_positive_dependence_counterexample (test_reserve_ambiguity.ReserveAmbiguityTests.test_threshold_and_positive_dependence_counterexample) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.773s
+
+OK
