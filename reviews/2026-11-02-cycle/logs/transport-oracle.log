@@ -1,0 +1,1 @@
+{"seed": 1102, "cases": 1000, "max_relative_sd_normal": 4.0100094030890283e-16, "max_ulp_sd": 3.0, "scope": "finite synthetic inputs; not a universal floating-point guarantee"}
