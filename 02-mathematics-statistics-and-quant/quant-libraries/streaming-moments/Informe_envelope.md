@@ -59,7 +59,18 @@ Ver `referencias.bib`, claves `rfc8785`, `rfc8259`, `nistfips1804`, `pythonjson3
 
 ## 13. Rúbrica original (1–5)
 
-Novedad 1; rigor 3; reproducibilidad 4; código 3; claridad 3; impacto 2; honestidad 5. Puntuaciones internas de este prototipo, no revisión externa.
+|Dimensión original|Puntuación|Justificación resumida|
+|---|---:|---|
+|Novedad|1|Adaptación de ingeniería/semántica; no nueva contribución científica|
+|Rigor|3|Invariantes explícitos y pruebas, alcance acotado a JSON local y fixtures|
+|Reproducibilidad|4|Comando integral, pins y outputs guardados; falta re-review independiente final|
+|Código|3|Módulo tipado y testeado, con una API Python local|
+|Claridad|3|Derivación/documentación y notebook ejecutado, sin contrato multi-runtime|
+|Impacto|2|Utilidad limitada hasta integrar productor instrumentado|
+|Honestidad|5|Declara límites de hash, procedencia y comparación de rendimiento|
+|MVP|4|Código, tests, CSV/JSON/figura, notebook, refs, config y comando completo|
+
+Puntuaciones internas de este prototipo, no certificación externa.
 
 ## 14. Siguiente iteración
 
@@ -73,4 +84,11 @@ Qué sabemos: el wire numérico no trae historial. Qué construimos: un wrapper 
 
 ## Rúbrica expandida (1–5)
 
-Profundidad teórica 2; aporte defendible 2 (ingeniería declarativa, no ciencia); calidad experimental 3; utilidad 3; reproducibilidad 3 (pendiente rerun independiente); honestidad 5.
+|Dimensión expandida|Puntuación|Justificación resumida|
+|---|---:|---|
+|Profundidad teórica|2|La ecuación heredada se explica; no se deriva un método nuevo|
+|Aporte defendible|2|Adaptación de ingeniería con semántica explícita; no aporte científico original|
+|Calidad experimental|3|Baseline con checks equivalentes y resultados contados; escenarios sintéticos pequeños|
+|Utilidad|3|Evita convertir desconocido en cero y preserva el wire; falta productor real|
+|Reproducibilidad|3|Run integral y CI remota exitosa; re-review independiente del head actual pendiente|
+|Honestidad|5|Conserva resultado negativo de tamaño/latencia y alcance no autenticado|
