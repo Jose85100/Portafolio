@@ -25,7 +25,7 @@ El laboratorio desarrolla Welford desplazado, escalado, autoescala y fusión Cha
 
 Para valores `x` con unidad U, el normalizador usa `y=x/2^e`; `a` y `b` están en unidades de `y`, y `Q=Σ(y−(a+b))²`. La varianza calculada sigue siendo `s_d²=2^(2e) Q/(n−d)`, `d∈{0,1}`, `n>d`; su unidad es U². El sobre no cambia `n,e,a,b,Q` ni el estimador. No hay nueva derivación estadística.
 
-H1 fijada antes del experimento: 12/12 payloads y categorías diagnósticas round-trip exactos. H2: una mutación de payload o metadata sin recalcular digest falla. El benchmark compara envelope estructurado contra un JSON sidecar plano con **la misma información y ambos hashes**; no se predice superioridad temporal."""),
+H1 fijada antes del experimento: 12/12 escenarios y 60/60 registros por método preservan exactamente payload y todos los claims. H2: una mutación de payload o metadata sin recalcular digest falla. El benchmark compara envelope estructurado contra un JSON sidecar plano con **la misma información, ambos hashes y las mismas validaciones semánticas**; los timings describen las implementaciones locales, no una superioridad general."""),
     code("""import json
 from pathlib import Path
 from IPython.display import display, Image
@@ -63,10 +63,13 @@ else:
     raise AssertionError('Metadata mutation passed')
 summary = json.loads(Path('results/envelope_summary.json').read_text())
 assert summary['all_payload_roundtrips_exact'] and summary['all_metadata_states_preserved']
+assert summary['payload_exact_records_per_method'] == {'envelope': 60, 'sidecar': 60}
+assert summary['metadata_exact_records_per_method'] == {'envelope': 60, 'sidecar': 60}
+assert summary['metadata_exact_scenarios_per_method'] == {'envelope': 12, 'sidecar': 12}
 summary"""),
     md("""## Comparación, ablaciones y resultados
 
-Ambos métodos guardan los mismos campos; el sidecar plano es un baseline competitivo, no un strawman. Se reportan tamaño UTF-8 y tiempos locales, que pueden favorecer cualquiera. Ablación V1 solo no conserva status; quitar el digest del envelope no detecta metadata alterada; reemplazar `null` por cero destruye distinción. Los casos son sintéticos y no demuestran que una implementación de ingestión real reporte correctamente sus contadores."""),
+Ambos métodos guardan los mismos campos, comparten el validador semántico de metadata y verifican payload y registro; el sidecar plano es baseline con checks equivalentes. Se reportan tamaño UTF-8 y tiempos locales, que pueden favorecer cualquiera. Ablación V1 solo no conserva status; quitar el digest del envelope no detecta metadata alterada; reemplazar `null` por cero destruye distinción. Los casos son sintéticos y no demuestran que una implementación de ingestión real reporte correctamente sus contadores."""),
     code("""print(json.dumps(summary, indent=2))
 display(Image(filename='results/envelope_audit.png'))"""),
     md("""## Fallos, conclusión y siguiente experimento

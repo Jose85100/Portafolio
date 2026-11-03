@@ -28,15 +28,22 @@ El digest de documento emplea `json.dumps(sort_keys=True,separators=(',',':'),en
 
 ## 7. Tests y benchmark real
 
-El ciclo `bash run.sh` conserva suites previas, compila C++ Release+CTest y ASan/UBSan (LeakSanitizer desactivado con `ASAN_OPTIONS=detect_leaks=0`, por incompatibilidad conocida del entorno), ejecuta cobertura, Ruff, mypy, benchmarks y notebooks. Este incremento añade 9 pruebas (32 Python en total). Los resultados/logs reales se guardan bajo `results/`. El benchmark contrasta JSON envelope con sidecar JSON plano que lleva la misma información y ambos digests; no hay supuesto de que uno sea más rápido.
+El ciclo `bash run.sh` conserva suites previas, compila C++ Release+CTest y ASan/UBSan (LeakSanitizer desactivado con `ASAN_OPTIONS=detect_leaks=0`, por incompatibilidad conocida del entorno), ejecuta cobertura, Ruff, mypy, benchmarks y notebooks. Este incremento añade 11 pruebas (34 Python en total). Los resultados/logs reales se guardan bajo `results/`. El benchmark contrasta JSON envelope con sidecar plano: ambos usan el mismo validador de metadatos, parsean el mismo MOMENTS_V1, verifican payload/registro SHA-256 y comprueban exactamente claims, sin suponer que uno sea más rápido.
 
 ## 8. Resultados/tabla/figura
 
-`results/envelope_summary.json` reporta 12 escenarios, 60 round-trips por serialización, preservación exacta del payload y estados; los tamaños/tiempos son mediciones locales descriptivas. En la corrida final el envelope dio mediana 490 bytes y 43,601 ns; el sidecar 460 bytes y 15,639 ns. No es evidencia de superioridad: el baseline fue más compacto/rápido en este escenario. `results/envelope_audit.png` muestra ambos. No se extrapola a otros runtimes ni escala productiva.
+`results/envelope_summary.json` deriva sus indicadores contando aserciones por escenario y réplica: 12 escenarios y 60 round-trips por método, cada uno con payload y claims exactos. Los tamaños/tiempos son mediciones locales descriptivas bajo validaciones equivalentes.
+
+|Formato|Mediana bytes UTF-8|Mediana round-trip ns|P95 round-trip ns|Payload exacto|Claims exactos|
+|---|---:|---:|---:|---:|---:|
+|Envelope|490|42,510|77,498|60/60|60/60; 12/12 escenarios|
+|Sidecar plano|466|27,086|58,388|60/60|60/60; 12/12 escenarios|
+
+El sidecar quedó más compacto y rápido en esta corrida; el tiempo sólo caracteriza estas dos implementaciones Python en el host documentado. `results/envelope_audit.png` muestra ambos. No se extrapola a otros runtimes ni escala productiva.
 
 ## 9. Análisis crítico y ablation negativa
 
-El baseline sidecar almacena los mismos claims con hashes, por lo que no se afirma superioridad. Ablation V1-solo pierde status semántico de diagnósticos; el sobre suma bytes y cómputo de hash. Si se omite digest de envelope, los cambios de metadata no se detectan; si se reemplaza unknown-null por cero, la semántica cambia y tests fallan. RFC8785 sería necesario para contrato determinista cross-language; se dejó fuera explícitamente. No se midió con un productor/consumidor de otro lenguaje.
+El baseline sidecar almacena los mismos claims con hashes y ejecuta las mismas validaciones semánticas; sus pruebas fuerzan también el rechazo de estados incoherentes aunque se recalcule el digest. No se afirma superioridad. Ablation V1-solo pierde status semántico de diagnósticos; el sobre suma bytes y cómputo de hash. Si se omite digest de envelope, los cambios de metadata no se detectan; si se reemplaza unknown-null por cero, la semántica cambia y tests fallan. RFC8785 sería necesario para contrato determinista cross-language; se dejó fuera explícitamente. No se midió con un productor/consumidor de otro lenguaje.
 
 ## 10. Limitaciones, sesgos y madurez
 
