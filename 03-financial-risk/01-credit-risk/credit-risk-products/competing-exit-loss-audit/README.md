@@ -35,3 +35,15 @@ Mismo `bash run.sh` instala y reproduce extensión de `src/affine.py`,17tests y 
 
 ## 2 de noviembre: fechas y disponibilidad declarada
 `bash run.sh` añade `src/dated_contract.py` y `dated_notebook.ipynb`: ACT/365F o ACT/360 explícitos, conversión de fuerzas y sellos temporales de EAD/hazards/descuento. Fixture enteramente sintético, sin afirmar datos reales autorizados. Produce `results/dated_grid.csv`, `dated_availability.csv`, `dated_scaling.csv`, `dated_metrics.json` y `dated.png`;27 tests acumulados. `informe1102.md` explica derivación, tres ideas, literatura y límites: el gate revisa metadata declarada, no autenticidad/licencia.
+
+## 3 de noviembre: LGD afín y producto temporal EAD × LGD
+`bash run.sh` añade `src/affine_lgd.py`,32 tests acumulados y `lgd_notebook.ipynb`. Integra ambas trayectorias por evento y conserva el caso LGD constante; deriva por qué producto de medias temporales puede subestimar o sobreestimar. Salidas `lgd_grid.csv`, `lgd_convergence.csv`, `lgd_scaling.csv`, `lgd_metrics.json`, `lgd.png`. `informe1103.md` incluye14p, tres ideas, matriz de fuentes, fórmulas y límites. Escenarios sintéticos, no estimación de recuperaciones ni fórmula regulatoria nueva; aún no conecta selloLGD al adaptador fechado.
+
+
+### Cierre verificado del incremento3nov
+
+Revisión independiente del núcleo `788073c`: `bash run.sh` exit0,32 tests, Ruff, mypy en seis módulos, notebook LGD5/5 celdas e inspección de figura. Contraste adicional del revisor:500 casos determinísticos frente a SciPy `quad`, error máximo1.819e-12; sin bloqueantes dentro del alcance afín. No equivale a validación empírica de recuperaciones.
+
+[Notebook Reliability, run41601261984](https://github.com/Jose85100/Portafolio/actions/runs/41601261984) terminó en `success` para ese head de código. [PR136](https://github.com/Jose85100/Portafolio/pull/136) permanece abierto, sin merge; los checks de commits posteriores se observan por separado. El [informe1103](informe1103.md#cierre-de-revisión-y-publicación--3-de-noviembre-de-2026) distingue ejecución, revisión, CI y publicación.
+
+CRE35 se cita únicamente como fuente oficial contextual de archivo histórico (archived/historical), versión publicada27-mar-2020/efectiva1-ene-2023. No se presenta como norma vigente ni como evidencia de cumplimiento regulatorio.
