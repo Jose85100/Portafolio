@@ -1,0 +1,118 @@
+{
+  "consulted_on": "2026-11-02",
+  "scope": "Five published domain heads; no claim about future commits or the full repository",
+  "domains": [
+    {
+      "domain": "economics",
+      "pr": 131,
+      "sha": "672d52147c27288e5f3182844ac6c7c108ad1ea4",
+      "runs": [
+        {
+          "id": 41459948320,
+          "name": "Economics vintage audit",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/Jose85100/Portafolio/actions/runs/41459948320"
+        },
+        {
+          "id": 41459947507,
+          "name": "Notebook Reliability",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/Jose85100/Portafolio/actions/runs/41459947507"
+        },
+        {
+          "id": 41459942707,
+          "name": "Economics vintage audit",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/Jose85100/Portafolio/actions/runs/41459942707"
+        }
+      ]
+    },
+    {
+      "domain": "math",
+      "pr": 132,
+      "sha": "9237ec81fe05e3676f07c13a0716150006a88c2b",
+      "runs": [
+        {
+          "id": 41460011057,
+          "name": "Notebook Reliability",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/Jose85100/Portafolio/actions/runs/41460011057"
+        }
+      ]
+    },
+    {
+      "domain": "risk",
+      "pr": 130,
+      "sha": "ce5230a0ccdfc507cbbf46e9c4b8586bd49da56c",
+      "runs": [
+        {
+          "id": 41459843707,
+          "name": "Notebook Reliability",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/Jose85100/Portafolio/actions/runs/41459843707"
+        }
+      ]
+    },
+    {
+      "domain": "ai",
+      "pr": 133,
+      "sha": "7f1f6fa7008961aed57b1c2bb334651cb8d02fed",
+      "runs": [
+        {
+          "id": 41460207204,
+          "name": "Notebook Reliability",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/Jose85100/Portafolio/actions/runs/41460207204"
+        }
+      ]
+    },
+    {
+      "domain": "ceo",
+      "pr": 134,
+      "sha": "369e12da42b303bed765fdde1406b48c8e0bb66a",
+      "runs": [
+        {
+          "id": 41460283388,
+          "name": "Strategy Portfolio Regression",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/Jose85100/Portafolio/actions/runs/41460283388"
+        },
+        {
+          "id": 41460283447,
+          "name": "Notebook Reliability",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/Jose85100/Portafolio/actions/runs/41460283447"
+        },
+        {
+          "id": 41460283145,
+          "name": "Strategy Decision Engines",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/Jose85100/Portafolio/actions/runs/41460283145"
+        },
+        {
+          "id": 41460240244,
+          "name": "Strategy Portfolio Regression",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/Jose85100/Portafolio/actions/runs/41460240244"
+        },
+        {
+          "id": 41460240341,
+          "name": "Strategy Decision Engines",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/Jose85100/Portafolio/actions/runs/41460240341"
+        }
+      ]
+    }
+  ]
+}
