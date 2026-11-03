@@ -89,9 +89,16 @@ Ver `referencias.bib`; ocho fuentes en matriz `prior-art1103.md`, incluyendo Kyd
 
 ## 14. Madurez y rúbricas
 
-**Madurez:** implementación local S2 (prototipo reproducible); programa general conserva S1/S2 local según el estándar económico, sin elevar a S3/S4. Revisión científica independiente de esta recuperación e integración global aún pendientes hasta reproducirlas; el componente no debe marcarse como revisado antes de ese dictamen.
+**Madurez:** incremento local S2 (prototipo reproducible); el programa conserva S1/S2 local según el estándar económico, sin elevar a S3. El dictamen y la CI se registran separadamente abajo; no se afirma validación empírica ni S4.
 
-Rúbrica original 1–5: novedad incremental **2**; rigor **3**; reproducibilidad **4** (pendiente verificación independiente); código **4**; claridad **4**; impacto potencial **2**; honestidad **5**; cierre MVP **4**. Rúbrica ampliada: profundidad teórica **3**; aporte defendible **2** (adaptación/auditoría); calidad experimental **3** (DGP controlado, H1 fallida y buen baseline, aún pocas réplicas); utilidad **3**; reproducibilidad **4** local/independiente pendiente; honestidad **5**.
+## Estado de reproducción, revisión, CI y publicación
+
+- **Implementado y reproducido localmente:** `bash run.sh` en worktree aislado; 32/32 tests acumulativos, cobertura medida 94% acumulada y 85% en `src/dependent_interval.py`, Ruff y mypy sin incidencias. Notebook acumulativo (18 celdas de código) y focal (4 celdas) ejecutados con outputs visibles mediante IPython in-process.
+- **Revisado independientemente:** `revisor_indep1103`, 2026-11-03. Reprodujo el comando en worktree aislado; auditó la derivación AR(1), blanqueo GLS para rho conocido, tabla Wilson/H1, sensibilidad y figura. Dictamen: sin bloqueantes. El alcance sigue siendo evidencia sintética. [Registro consolidado del dictamen](../../../../reviews/2026-11-03-cycle/README.md#revisión-independiente).
+- **CI remoto:** `Economics vintage audit` run [#41674562614](https://github.com/Jose85100/Portafolio/actions/runs/41674562614) y `Notebook Reliability` run [#41674562661](https://github.com/Jose85100/Portafolio/actions/runs/41674562661) concluyeron `SUCCESS` sobre el head `6c9a8d6c4378c7a00ac7394f90d1c1d6f1bfd105` el 2026-11-03.
+- **Publicación:** PR [#139](https://github.com/Jose85100/Portafolio/pull/139) permanece abierto, listo para revisión y sin merge. CI y dictamen no convierten S2 local en S3, no validan datos reales y no elevan la madurez del programa completo.
+
+Rúbrica original 1–5: novedad incremental **2**; rigor **3**; reproducibilidad **4** (comando local reproducido y dictamen independiente sin bloqueantes); código **4**; claridad **4**; impacto potencial **2**; honestidad **5**; cierre MVP **4**. Rúbrica ampliada: profundidad teórica **3**; aporte defendible **2** (adaptación/auditoría); calidad experimental **3** (DGP controlado, H1 fallida y buen baseline, aún pocas réplicas); utilidad **3**; reproducibilidad **4** (reproducción local, revisión independiente y CI sobre el commit de código); honestidad **5**.
 
 **Qué sabemos:** bajo AR(1) gaussiano conocido-\(\rho\), los incrementos requieren corrección \(1-\rho\) y tienen cuadrados serialmente correlacionados. **Qué construimos:** módulo typed con intervalo Chebyshev y GLS chi-cuadrado, tests y experimento comparativo con outputs. **Qué podemos hacer ahora:** medir el costo de una alternativa que tolera persistencia bajo supuestos explícitos y ver cuándo la cobertura extra de Chebyshev no compensa su ancho; aún no aplicarla como inferencia macro real.
 
