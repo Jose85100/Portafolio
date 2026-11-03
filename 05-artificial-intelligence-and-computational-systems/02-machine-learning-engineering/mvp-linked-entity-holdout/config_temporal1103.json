@@ -1,0 +1,11 @@
+{
+  "question": "Does full-replacement point-in-time selection resurrect an obsolete revision if validity is filtered before transaction-time availability?",
+  "synthetic_histories": 36,
+  "availability_cutoff_days": [0, 9],
+  "identity_at_days": [2, 6, 10],
+  "seed": 1103,
+  "data_source": "deterministically generated synthetic revision histories; no external data",
+  "hardware_recorded_at_runtime": true,
+  "python_requirement": "3.12+",
+  "dependency_file": "requirements.txt"
+}
