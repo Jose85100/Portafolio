@@ -47,7 +47,11 @@ El baseline sidecar almacena los mismos claims con hashes y ejecuta las mismas v
 
 ## 10. Limitaciones, sesgos y madurez
 
-El benchmark es sintético y pequeño; la latencia `perf_counter_ns` incluye serializar/verificar/parsing en proceso y no IPC. Las pruebas detectan cambios sin recomputar hashes, no atacantes que puedan recomputarlos. No hay autenticación, autorización, secreto, persistencia, fuente real, prueba de particiones disjuntas o robustez ante volumen adversarial. MADUREZ: incremento local ejecutado/reproducible; la revisión independiente está pendiente y no se declara M2 del dominio ni S2 del programa.
+El benchmark es sintético y pequeño; la latencia `perf_counter_ns` incluye serializar/verificar/parsing en proceso y no IPC. Las pruebas detectan cambios sin recomputar hashes, no atacantes que puedan recomputarlos. No hay autenticación, autorización, secreto, persistencia, fuente real, prueba de particiones disjuntas o robustez ante volumen adversarial.
+
+**Madurez según `PROJECT_MATURITY.md`: M2 a nivel de este componente** (tests, contrato preservado, integridad, reproducibilidad y revisión técnica satisfechos). Evidencia: `bash run.sh` pasó con 34 pruebas, Ruff/mypy, CTest y ASan/UBSan; la revisión independiente final del head `d540b21` no encontró bloqueantes; Notebook Reliability pasó en el head de código `c49344b`. Los commits `d540b21` y el siguiente sólo cambian documentación; no se reporta CI nueva para esos commits. Esto no certifica el dominio 02 completo como M2, ni promueve el programa a S2, ni acredita M3/operación.
+
+El PR #137 sigue abierto, listo para revisión y sin merge.
 
 ## 11. Comando exacto
 
@@ -63,7 +67,7 @@ Ver `referencias.bib`, claves `rfc8785`, `rfc8259`, `nistfips1804`, `pythonjson3
 |---|---:|---|
 |Novedad|1|Adaptación de ingeniería/semántica; no nueva contribución científica|
 |Rigor|3|Invariantes explícitos y pruebas, alcance acotado a JSON local y fixtures|
-|Reproducibilidad|4|Comando integral, pins y outputs guardados; falta re-review independiente final|
+|Reproducibilidad|4|Comando integral, pins y outputs; rerun independiente aprobado y CI del head de código exitoso|
 |Código|3|Módulo tipado y testeado, con una API Python local|
 |Claridad|3|Derivación/documentación y notebook ejecutado, sin contrato multi-runtime|
 |Impacto|2|Utilidad limitada hasta integrar productor instrumentado|
@@ -90,5 +94,5 @@ Qué sabemos: el wire numérico no trae historial. Qué construimos: un wrapper 
 |Aporte defendible|2|Adaptación de ingeniería con semántica explícita; no aporte científico original|
 |Calidad experimental|3|Baseline con checks equivalentes y resultados contados; escenarios sintéticos pequeños|
 |Utilidad|3|Evita convertir desconocido en cero y preserva el wire; falta productor real|
-|Reproducibilidad|3|Run integral y CI remota exitosa; re-review independiente del head actual pendiente|
+|Reproducibilidad|4|Run integral; re-review final sin bloqueantes en d540b21 y CI de código exitoso en c49344b|
 |Honestidad|5|Conserva resultado negativo de tamaño/latencia y alcance no autenticado|
