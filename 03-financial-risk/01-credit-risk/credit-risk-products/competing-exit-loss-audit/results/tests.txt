@@ -4,6 +4,11 @@ test_invalid (test_affine.AffineTests.test_invalid) ... ok
 test_negative_direction_and_zero (test_affine.AffineTests.test_negative_direction_and_zero) ... ok
 test_partition_invariance_irregular (test_affine.AffineTests.test_partition_invariance_irregular) ... ok
 test_properties_multiple_seeds (test_affine.AffineTests.test_properties_multiple_seeds) ... ok
+test_constant_lgd_recovers_prior_engine (test_affine_lgd.LossPathTests.test_constant_lgd_recovers_prior_engine) ... ok
+test_covariance_identity_and_negative_direction (test_affine_lgd.LossPathTests.test_covariance_identity_and_negative_direction) ... ok
+test_moment_decimal_oracle (test_affine_lgd.LossPathTests.test_moment_decimal_oracle) ... ok
+test_partition_properties_multi_seed (test_affine_lgd.LossPathTests.test_partition_properties_multi_seed) ... ok
+test_zero_and_invalid (test_affine_lgd.LossPathTests.test_zero_and_invalid) ... ok
 test_closed_form (test_calendar.CalendarTests.test_closed_form) ... ok
 test_invalid (test_calendar.CalendarTests.test_invalid) ... ok
 test_invalid_bounds (test_calendar.CalendarTests.test_invalid_bounds) ... ok
@@ -27,6 +32,6 @@ test_partition_and_mass_multiple_seeds (test_term_structure.TermTests.test_parti
 test_zero_and_discount_monotonicity (test_term_structure.TermTests.test_zero_and_discount_monotonicity) ... ok
 
 ----------------------------------------------------------------------
-Ran 27 tests in 0.019s
+Ran 32 tests in 0.016s
 
 OK

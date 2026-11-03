@@ -1,0 +1,47 @@
+{
+  "anchor": {
+    "exact_loss": 5.400376882535036,
+    "product_of_means_loss": 4.95448708344685,
+    "midpoint_product_loss": 3.7289752312875373,
+    "constant_start_lgd_loss": 6.925355349966636,
+    "default_probability": 0.12717870688631303,
+    "prepayment_probability": 0.6358935344315652,
+    "survival": 0.23692775868212176
+  },
+  "cases": 27,
+  "max_absolute_error": 1.318767317570746e-11,
+  "max_partition_error": 1.865174681370263e-14,
+  "hypothesis": "absolute error<1e-8 money vs same-DGP Simpson4096; constant LGD recovers prior engine",
+  "passed": true,
+  "timings": {
+    "closed_form": {
+      "median_seconds": 1.0886519999075971e-05,
+      "samples_seconds": [
+        2.3926959997879748e-05,
+        9.121079997385096e-06,
+        1.0886519999075971e-05,
+        9.96311999642785e-06,
+        1.1079559999416234e-05,
+        1.126707999901555e-05,
+        8.900759999050934e-06
+      ],
+      "peak_python_bytes": 1112
+    },
+    "simpson4096": {
+      "median_seconds": 0.0016668851199983692,
+      "samples_seconds": [
+        0.001606941119998737,
+        0.0016715243999988162,
+        0.001654657839999345,
+        0.0016551634000006744,
+        0.0016668851199983692,
+        0.0016873529600024994,
+        0.0016701587600027779
+      ],
+      "peak_python_bytes": 1064
+    }
+  },
+  "python": "3.12.14",
+  "hardware": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "interpretation": "temporal covariance under deterministic default-time weighting, not estimated stochastic dependence"
+}
