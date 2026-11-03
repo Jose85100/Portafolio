@@ -1,0 +1,22 @@
+{
+  "seed": 831103,
+  "scenarios": 12,
+  "repetitions_per_method": 5,
+  "records": 120,
+  "all_payload_roundtrips_exact": true,
+  "all_metadata_states_preserved": true,
+  "methods": {
+    "envelope": {
+      "median_utf8_bytes": 490.0,
+      "median_roundtrip_ns": 43601.0,
+      "p95_roundtrip_ns": 166682
+    },
+    "sidecar": {
+      "median_utf8_bytes": 460.0,
+      "median_roundtrip_ns": 15639.0,
+      "p95_roundtrip_ns": 23656
+    }
+  },
+  "interpretation": "synthetic local serialization benchmark; no throughput superiority claim",
+  "baseline_semantics": "flat JSON sidecar with same fields, SHA-256 payload digest, and SHA-256 record digest"
+}

@@ -9,6 +9,10 @@ API: `from src.moments import summarize`; `summarize(iterable).variance(ddof=0)`
 
 Madurez: prototipo matemático acotado, ejecutado; no promoción de programas advanced-research ni equivalencia automática S2/M2. Revisión independiente se registra en PR.
 
+## Incremento 3nov: estado explícito del envelope de auditoría
+
+`bash run.sh` conserva los incrementos previos y añade `src/audit_envelope.py`, sin modificar `MOMENTS_V1` ni su consumidor C++20. `tracked` exige contadores completos, `partial` conserva desconocidos como `null`, y `unknown` impide convertir diagnósticos ausentes en ceros. Se adjuntan `source_id` y `partition_id` declarados; no prueban identidad ni disjunción. SHA-256 detecta cambios si no se recalcula, pero no autentica al productor. El JSON usa ordenado localmente en Python y no afirma JCS/RFC 8785. Ver `derivacion_envelope.md`, `notebook_envelope.ipynb` ejecutado, `Informe_envelope.md`, `prior_art_envelope.md`, `config_envelope.json` y `results/envelope_*`. Baseline JSON sidecar guarda mismos campos; en esta corrida fue más compacto y rápido, sin generalizar ese resultado. Prototipo local, no operacional; revisión independiente pendiente.
+
 ## Extensión acumulativa30: escala externa y estados de rango
 `bash run.sh` ahora reproduce29 y30; resultados29 se regeneran, sin borrar sus fixtures. `scaled_moments(iterable, exponent, ddof=0)` en src/scaled.py usa el mismo núcleo29 con unidad2^e declarada. Devuelve varianza y SD físicas por separado: puede devolver SDfinita con variance=None y status variance_overflow/variance_underflow. Estado std_overflow si SD tampoco cabe. Escala mala: normalization_failure; n cuenta observaciones procesadas hasta fallo, no cardinalidad total del iterable. No consumir remanente tras rechazo.
 
