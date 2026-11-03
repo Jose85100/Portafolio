@@ -11,5 +11,12 @@
   "hypothesis": "For every n-rho cell, the two-sided Wilson 95% lower bound of exact GLS interval coverage is at least 0.80; this is an engineering screening threshold, not a theorem test.",
   "threshold": 0.8,
   "regime": "stationary Gaussian AR(1), known rho, unknown mean and marginal variance",
-  "toolchain": "Python 3.12+, versions recorded in summary.json; pinned requirements.txt"
+  "hardware": "Linux 6.18.57 x86_64; AMD EPYC 9V74 80-Core Processor; 9 logical CPUs exposed; no accelerator",
+  "software_versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "toolchain": "requirements.txt pins; benchmark excludes installation and import time"
 }

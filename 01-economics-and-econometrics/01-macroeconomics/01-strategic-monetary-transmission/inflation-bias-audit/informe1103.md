@@ -69,7 +69,7 @@ Tiempo/espacio instrumentados por llamada, n=256/rho=.9 (30 repeticiones, muestr
 
 ## 9. Figuras y resultado positivo/negativo
 
-`results/dependent-interval.png` presenta (i) cobertura con bandas Wilson95 y umbrales nominal90%/cribado80%, (ii) radio relativo Chebyshev y frontera de abstención. Outputs crudos: `dependent-samples.csv`, `dependent-interval.csv`, `dependent-aggregate.csv`, `dependent-runtime.csv`, `dependent-sensitivity.csv`, `dependent-summary.json`. Positivo: la fórmula por pares corrige sesgo en esperanza y el error Monte Carlo agregado queda cerca de \(v=1\); el baseline iid pierde cobertura severa con alta persistencia. Negativo: H1 Wilson/GLS falla en dos celdas y el intervalo Chebyshev es ancho; ninguna de estas simulaciones valida uso en datos reales.
+`results/dependent-interval.png` presenta (i) cobertura con bandas Wilson95 y umbrales nominal90%/cribado80%, (ii) radio relativo Chebyshev y frontera de abstención. Outputs crudos: `dependent-samples.csv`, `dependent-interval.csv`, `dependent-aggregate.csv`, `dependent-runtime.csv`, `dependent-sensitivity.csv`, `dependent-summary.json`; logs guardados: `dependent-run.log`, `dependent-test.log`, `dependent-lint.log`, `dependent-types.log`, `dependent-notebook.log`. Positivo: la fórmula por pares corrige sesgo en esperanza y el error Monte Carlo agregado queda cerca de \(v=1\); el baseline iid pierde cobertura severa con alta persistencia. Negativo: H1 Wilson/GLS falla en dos celdas y el intervalo Chebyshev es ancho; ninguna de estas simulaciones valida uso en datos reales.
 
 ## 10. Análisis crítico, fallos y ablations
 

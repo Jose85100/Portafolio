@@ -1,0 +1,79 @@
+{
+  "config": {
+    "date": "2026-11-03-recovered",
+    "question": "Can the monetary-policy variance input be audited under persistent but stationary Gaussian shocks?",
+    "data": "Synthetic stationary Gaussian AR(1); no empirical macroeconomic dataset",
+    "license": "Generated data; no third-party dataset",
+    "seeds": [
+      1103,
+      1104,
+      1105
+    ],
+    "n": [
+      64,
+      256
+    ],
+    "rho": [
+      0.0,
+      0.5,
+      0.9,
+      0.95
+    ],
+    "repetitions_per_seed_cell": 30,
+    "confidence": 0.9,
+    "hypothesis": "For every n-rho cell, the two-sided Wilson 95% lower bound of exact GLS interval coverage is at least 0.80; this is an engineering screening threshold, not a theorem test.",
+    "threshold": 0.8,
+    "regime": "stationary Gaussian AR(1), known rho, unknown mean and marginal variance",
+    "hardware": "Linux 6.18.57 x86_64; AMD EPYC 9V74 80-Core Processor; 9 logical CPUs exposed; no accelerator",
+    "software_versions": {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "matplotlib": "3.10.8"
+    },
+    "toolchain": "requirements.txt pins; benchmark excludes installation and import time"
+  },
+  "samples": 720,
+  "estimator_rows": 2160,
+  "threshold_failures_for_gls_h1": [
+    {
+      "n": 64,
+      "rho": 0.0,
+      "method": "gls_chisquare",
+      "trials": 90,
+      "coverage": 0.8777777777777778,
+      "coverage_wilson_low": 0.7942625758951103,
+      "coverage_wilson_high": 0.9303638403451762,
+      "mean_estimate": 1.0302778730563742,
+      "mean_absolute_error": 0.15526936467232005,
+      "mean_interval_width": 0.6325269674395735,
+      "abstentions": 0
+    },
+    {
+      "n": 256,
+      "rho": 0.9,
+      "method": "gls_chisquare",
+      "trials": 90,
+      "coverage": 0.8666666666666667,
+      "coverage_wilson_low": 0.7812606949930235,
+      "coverage_wilson_high": 0.9220531795931369,
+      "mean_estimate": 0.9839294349783425,
+      "mean_absolute_error": 0.07322619730649677,
+      "mean_interval_width": 0.2899420252249651,
+      "abstentions": 0
+    }
+  ],
+  "h1_screen_pass": false,
+  "gls_min_cell_wilson_low": 0.7812606949930235,
+  "paired_min_cell_wilson_low": 0.9397159168824657,
+  "hardware": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "config_sha256": "6fb9babd33a2795795c545a281e21a85c886f690358836b2828606ef1e6b4b28",
+  "source_sha256": "3d87b0b41a6ad347455e20e949931d3eca534589982838b8fcb70c4c7dcabbb3",
+  "data_status": "synthetic; not empirical evidence"
+}
