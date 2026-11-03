@@ -51,7 +51,7 @@ def select_full_replacements(
     """
     known_by_as_of = _utc(as_of)
     target_time = _utc(identity_at)
-    latest: dict[str, tuple[datetime, Revision]] = {}
+    latest: dict[str, tuple[datetime, list[Revision]]] = {}
     seen_ids: set[tuple[str, str]] = set()
     for revision in revisions:
         key = (revision.identity, revision.revision_id)
@@ -66,12 +66,15 @@ def select_full_replacements(
         if available <= known_by_as_of:
             prior = latest.get(revision.identity)
             if prior is None or available > prior[0]:
-                latest[revision.identity] = (available, revision)
+                latest[revision.identity] = (available, [revision])
             elif available == prior[0]:
-                raise ValueError("ambiguous latest revisions share available_at")
+                prior[1].append(revision)
 
     selected: list[Selection] = []
-    for identity, (_, revision) in sorted(latest.items()):
+    for identity, (_, candidates) in sorted(latest.items()):
+        if len(candidates) != 1:
+            raise ValueError("ambiguous latest revisions share available_at")
+        revision = candidates[0]
         start = _utc(revision.effective_at)
         end = _utc(revision.valid_until) if revision.valid_until is not None else None
         active = start <= target_time and (end is None or target_time < end)

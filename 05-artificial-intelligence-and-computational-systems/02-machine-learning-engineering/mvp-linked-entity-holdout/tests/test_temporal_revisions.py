@@ -52,6 +52,17 @@ class TemporalRevisionTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "ambiguous"):
             select_full_replacements(tied, as_of="2026-01-04T00:00:00Z", identity_at="2026-01-06T00:00:00Z")
 
+    def test_superseded_older_tie_is_order_invariant(self) -> None:
+        older_tie = [
+            Revision("x", "r0a", "2026-01-01T00:00:00Z", "2026-01-01T00:00:00Z", None, "old-a"),
+            Revision("x", "r0b", "2026-01-01T00:00:00Z", "2026-01-01T00:00:00Z", None, "old-b"),
+            Revision("x", "r1", "2026-01-03T00:00:00Z", "2026-01-03T00:00:00Z", None, "new"),
+        ]
+        forward = select_full_replacements(older_tie, as_of="2026-01-04T00:00:00Z", identity_at="2026-01-04T00:00:00Z")
+        reverse = select_full_replacements(list(reversed(older_tie)), as_of="2026-01-04T00:00:00Z", identity_at="2026-01-04T00:00:00Z")
+        self.assertEqual(forward, reverse)
+        self.assertEqual(forward[0].revision_id, "r1")
+
     def test_multiple_identities_sorted(self) -> None:
         two = self.history + [Revision("a", "r0", "2026-01-01T00:00:00Z", "2026-01-01T00:00:00Z", None, "a")]
         selected = select_full_replacements(two, as_of="2026-01-04T00:00:00Z", identity_at="2026-01-06T00:00:00Z")

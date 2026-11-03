@@ -52,10 +52,11 @@ test_latest_revision_can_be_future_effective_and_does_not_fallback (test_tempora
 test_multiple_identities_sorted (test_temporal_revisions.TemporalRevisionTests.test_multiple_identities_sorted) ... ok
 test_naive_timestamp_rejected (test_temporal_revisions.TemporalRevisionTests.test_naive_timestamp_rejected) ... ok
 test_select_latest_then_interval_does_not_revive_expired_open_revision (test_temporal_revisions.TemporalRevisionTests.test_select_latest_then_interval_does_not_revive_expired_open_revision) ... ok
+test_superseded_older_tie_is_order_invariant (test_temporal_revisions.TemporalRevisionTests.test_superseded_older_tie_is_order_invariant) ... ok
 test_tie_at_latest_availability_rejected (test_temporal_revisions.TemporalRevisionTests.test_tie_at_latest_availability_rejected) ... ok
 test_utc_offsets_compare_as_instants (test_temporal_revisions.TemporalRevisionTests.test_utc_offsets_compare_as_instants) ... ok
 
 ----------------------------------------------------------------------
-Ran 56 tests in 1.505s
+Ran 57 tests in 2.152s
 
 OK
