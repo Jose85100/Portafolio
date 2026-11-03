@@ -30,6 +30,20 @@ Verificación: las cinco fuentes originales se verificaron29oct en metadata inde
 Cobertura: siete fuentes reales, metadatos/resúmenes/documentación según tabla. No revisión exhaustiva de textos integrales ni búsqueda global de novedad. Se preservan referencias29/30; las fórmulas31 son cotas clásicas y el aporte es una herramienta auditable dentro del repositorio.
 
 
+## Extensión del3 de noviembre: inferencia antes de elegir
+
+| Referencia primaria o fuente | Problema, supuestos y evidencia | Diferencia y uso concreto |
+|---|---|---|
+| Clopper & Pearson1934, DOI10.1093/biomet/26.4.404 | Límites de confianza binomiales; observaciones Bernoulli IID y parámetro constante | Fórmula exacta discreta de cada plan; no propuesta original del repositorio |
+| Hoeffding1963, DOI10.1080/01621459.1963.10500830 | Concentración para variables acotadas independientes | Baseline competitivo unilateral con mismo error por menú; su generalidad puede costar holgura |
+| Holm1979, DOI10.2307/4615733 | Control de error familiar en múltiples hipótesis y procedimiento step-down | Contexto de multiplicidad; **no** se implementa Holm. Se mantiene Bonferroni por transparencia de límites simultáneos |
+| Hong2013, DOI10.1016/j.csda.2012.10.006 | Distribución de suma de Bernoulli con probabilidades distintas | Método relacionado con agregación de resultados, no se usa como fuente de observaciones |
+| Schwartz-Ziv & Weisbach2013, DOI10.1016/j.jfineco.2012.04.011 | Actas observadas de juntas y su actividad | Recuerda que asistencia y calidad/actividad no son equivalentes; datos no usados |
+| Repositorio, incrementos29oct–2nov | Modelo exacto, dependencias, cajas y restricciones supuestas | Herramienta persistente del mismo evento; este ciclo añade solo la capa de incertidumbre binomial para menú fijo |
+
+Los DOI de Clopper–Pearson y Hoeffding se contrastaron contra páginas de editor en Oxford Academic y Taylor & Francis el3nov; Holm mediante registro de la revista/JSTOR. Cobertura: metadata y abstract/metadata disponibles; no se leyó íntegramente cada paper ni se hizo búsqueda exhaustiva de novedad. Implementación usa `scipy.stats.beta`/`binom` con SciPy1.17 fijado; documentación oficial SciPy se incluye en BibTeX. El oráculo bisección es código de contraste del proyecto, no evidencia independiente de publicación.
+
+
 ## Extensión del1 de noviembre: caja supuesta no es confianza estadística
 
 | Referencia | Problema y supuestos | Evidencia consultada el1 de noviembre | Diferencia concreta del incremento |
