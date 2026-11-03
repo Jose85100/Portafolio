@@ -4,7 +4,7 @@ cd "$(dirname "$0")"
 PYTHON="${PYTHON:-python3}"
 "$PYTHON" -m venv .venv
 .venv/bin/python -m pip install --quiet -r requirements.txt
-.venv/bin/python -m coverage run --source=src.monetary,src.delegation,src.ambiguity,src.variance_interval,src.moment_interval -m unittest discover -s tests -v
+.venv/bin/python -m coverage run --source=src.monetary,src.delegation,src.ambiguity,src.variance_interval,src.moment_interval,src.dependent_interval -m unittest discover -s tests -v
 .venv/bin/python -m coverage report
 .venv/bin/python -m ruff check src tests benchmarks
 .venv/bin/python -m mypy src --ignore-missing-imports
@@ -13,4 +13,6 @@ PYTHON="${PYTHON:-python3}"
 .venv/bin/python -m src.run_ambiguity
 .venv/bin/python -m src.run_estimated_interval
 .venv/bin/python -m src.run_moment_interval
+.venv/bin/python -m src.run_dependent_interval
+.venv/bin/python benchmarks/dependent_notebook.py
 .venv/bin/python benchmarks/notebook.py
