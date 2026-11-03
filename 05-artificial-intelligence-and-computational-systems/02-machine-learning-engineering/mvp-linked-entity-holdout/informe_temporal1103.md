@@ -16,8 +16,17 @@ Estado: rama de dominio local candidata a PR; revisión independiente y PR remot
 10. **Límites/sesgos:** 36 fixtures diseñadas, dependencias sintéticas, una regla de negocio asumida, no casos empíricos, entidad adjudicada no validada. Timestamps no autenticados; hash/tie error no prueban honestidad. `latest` no representa histories con deltas, distintas autoridades, múltiples afirmaciones paralelas o reglas retroactivas alternativas. La comparación no demuestra reducción de leakage final, AUC, ni causalidad.
 11. **Comando:** `bash run_temporal_revisions.sh` desde `05-artificial-intelligence-and-computational-systems/02-machine-learning-engineering/mvp-linked-entity-holdout/`.
 12. **Referencias BibTeX:** `referencias.bib`, keys clifford_isakowitz_1992, jensen_snodgrass_1996, torp_jensen_snodgrass_2000, sklearn_timeseries_split_2026, sklearn_leakage_pitfalls_2026, kapoor_narayanan_2023_temporal. Matriz en `prior_art_temporal1103.md`.
-13. **Rúbrica (1–5):** novedad 2 (adaptación); rigor 4 dentro de la semántica asumida; reproducibilidad 4 (comando depende de acceso inicial a pip); código 4 (tipado y casos); claridad 4; impacto potencial 3 (bloqueado por datos source); honestidad MVP 5 (diseño sintético etiquetado).
+13. **Rúbrica original (1–5):** novedad 2 (adaptación, no método nuevo); rigor 4 (derivación consistente dentro del contrato asumido); reproducibilidad 4 (un comando, deps fijadas y logs; requiere pip al instalar desde cero); código 4 (módulo tipado y errores explícitos); claridad 4 (contrato, ablation y límites documentados); impacto 3 (útil si el productor confirma full replacement); honestidad 5 (sintéticos etiquetados, ninguna afirmación empírica); completitud MVP 4 (código, test, benchmark, notebook, figura, docs y deps ejecutados; fuente real e integración operacional pendientes).
 14. **Siguiente iteración:** contrato con owner de fuente y fixture real anonimizada, medir cutoffs bajo correcciones tardías/concurrentes y decidir si history es replacement o event/delta; no escalar until semantics approved.
+
+## Rúbrica ampliada de investigación (1–5)
+
+- Profundidad teórica: **3** — distingue availability/transaction time de interval-valid y deriva el selector; no formaliza todos los casos bitemporales ni prueba teorema general.
+- Aporte defendible: **3** — contraejemplo reproducible y adaptación de ingeniería acotada; diferencia incremental al repo identificable, pero no hay claim de originalidad disciplinar.
+- Calidad experimental: **4** — 1,080 consultas, seis políticas, oráculo separado, ablation adversarial y sensibilidad de cutoff; la grilla sintética determinista no permite inferencia externa.
+- Utilidad: **3** — puede bloquear una clase concreta de resurrección temporal si el dueño de datos confirma semántica full replacement; sin esa confirmación no debe entrar como gate productivo.
+- Reproducibilidad: **4** — comando, config, deps, CSV/JSON, versionado y outputs en notebook; requiere entorno Python y acceso inicial a pip.
+- Honestidad: **5** — declara que sus etiquetas vienen del DGP, separa regla asumida de evidencia, registra negative/control baselines y acota fuente, reloj y madurez.
 
 ## Cartera acumulativa, fórmulas y decisiones
 
