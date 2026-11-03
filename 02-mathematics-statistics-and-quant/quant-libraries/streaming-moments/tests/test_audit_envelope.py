@@ -1,6 +1,9 @@
+from hashlib import sha256
+import json
 import unittest
 
 from src.audit_envelope import create_envelope, dumps_envelope, loads_envelope, verify_envelope
+from src.benchmark_envelope import baseline_sidecar, verify_sidecar
 from src.dynamic import DynamicMoments
 from src.transport import export_state
 
@@ -72,6 +75,24 @@ class AuditEnvelopeTests(unittest.TestCase):
     def test_invalid_diagnostic_state_type_rejected(self):
         with self.assertRaises(ValueError):
             create_envelope(sample_wire(), source_id="x", partition_id="y", diagnostic_state=[])
+
+    def test_sidecar_preserves_same_declared_claims(self):
+        counts = {"rounded_to_zero": None, "normalization_failures": 0, "rebase_events": None}
+        record = baseline_sidecar(sample_wire(), "source", "partition", "partial", counts)
+        observed = verify_sidecar(record)
+        self.assertEqual(observed["payload"], sample_wire())
+        self.assertEqual(observed["diagnostic_counts"], counts)
+        self.assertEqual(observed["partition_claim"], "declared_unverified")
+
+    def test_sidecar_rejects_semantically_invalid_claim_even_with_recomputed_digest(self):
+        counts = {"rounded_to_zero": 0, "normalization_failures": 0, "rebase_events": 0}
+        document = json.loads(baseline_sidecar(sample_wire(), "source", "partition", "tracked", counts))
+        document["diagnostic_state"] = "unknown"
+        unsigned = {key: value for key, value in document.items() if key != "record_sha256"}
+        canonical = json.dumps(unsigned, sort_keys=True, separators=(",", ":"), ensure_ascii=False, allow_nan=False)
+        unsigned["record_sha256"] = sha256(canonical.encode("utf-8")).hexdigest()
+        with self.assertRaises(ValueError):
+            verify_sidecar(json.dumps(unsigned, sort_keys=True, separators=(",", ":"), ensure_ascii=False))
 
 
 if __name__ == "__main__":

@@ -34,6 +34,44 @@ def _validate_text(value: object, name: str) -> str:
     return value
 
 
+def validate_audit_metadata(
+    source_id: object,
+    partition_id: object,
+    partition_claim: object,
+    state: object,
+    counts: object,
+) -> dict[str, Any]:
+    """Apply the shared semantic validation used by either JSON layout."""
+    source = _validate_text(source_id, "source_id")
+    partition = _validate_text(partition_id, "partition_id")
+    if partition_claim != "declared_unverified":
+        raise ValueError("partition claims are labels, not verified disjointness")
+    if type(state) is not str or state not in DIAGNOSTIC_STATES:
+        raise ValueError("diagnostic state must be tracked, partial, or unknown")
+    if not isinstance(counts, Mapping) or set(counts) != set(COUNTERS):
+        raise ValueError("diagnostic counts have incorrect fields")
+    copied: dict[str, int | None] = {}
+    for name in COUNTERS:
+        value = counts[name]
+        if value is not None and (type(value) is not int or value < 0):
+            raise ValueError(f"{name} must be a non-negative integer or null")
+        copied[name] = value
+    nonnull = sum(value is not None for value in copied.values())
+    if state == "tracked" and nonnull != len(COUNTERS):
+        raise ValueError("tracked diagnostics require all counters")
+    if state == "unknown" and nonnull:
+        raise ValueError("unknown diagnostics must remain null, never imply zero")
+    if state == "partial" and (nonnull == 0 or nonnull == len(COUNTERS)):
+        raise ValueError("partial diagnostics require a proper non-empty subset")
+    return {
+        "source_id": source,
+        "partition_id": partition,
+        "partition_claim": "declared_unverified",
+        "diagnostic_state": state,
+        "diagnostic_counts": copied,
+    }
+
+
 def create_envelope(
     payload: str,
     *,
@@ -50,37 +88,30 @@ def create_envelope(
     if type(payload) is not str:
         raise ValueError("payload must be text")
     import_state(payload)  # reject malformed/unsupported V1 wire strings
-    source = _validate_text(source_id, "source_id")
-    partition = _validate_text(partition_id, "partition_id")
-    if type(diagnostic_state) is not str or diagnostic_state not in DIAGNOSTIC_STATES:
-        raise ValueError("diagnostic_state must be tracked, partial, or unknown")
     supplied = dict(diagnostic_counts or {})
     if set(supplied) - set(COUNTERS):
         raise ValueError("unknown diagnostic counter")
-    counts: dict[str, int | None] = {}
-    for name in COUNTERS:
-        value = supplied.get(name)
-        if value is not None and (type(value) is not int or value < 0):
-            raise ValueError(f"{name} must be a non-negative integer or null")
-        counts[name] = value
-    nonnull = sum(value is not None for value in counts.values())
-    if diagnostic_state == "tracked" and nonnull != len(COUNTERS):
-        raise ValueError("tracked diagnostics require all counters")
-    if diagnostic_state == "unknown" and nonnull:
-        raise ValueError("unknown diagnostics must remain null, never imply zero")
-    if diagnostic_state == "partial" and (nonnull == 0 or nonnull == len(COUNTERS)):
-        raise ValueError("partial diagnostics require a proper non-empty subset")
+    metadata = validate_audit_metadata(
+        source_id,
+        partition_id,
+        "declared_unverified",
+        diagnostic_state,
+        {name: supplied.get(name) for name in COUNTERS},
+    )
 
     document: dict[str, Any] = {
         "schema": SCHEMA,
         "payload": payload,
         "payload_sha256": _digest(payload.encode("ascii")),
         "provenance": {
-            "source_id": source,
-            "partition_id": partition,
+            "source_id": metadata["source_id"],
+            "partition_id": metadata["partition_id"],
             "partition_claim": "declared_unverified",
         },
-        "diagnostics": {"state": diagnostic_state, "counts": counts},
+        "diagnostics": {
+            "state": metadata["diagnostic_state"],
+            "counts": metadata["diagnostic_counts"],
+        },
     }
     document["envelope_sha256"] = _digest(_canonical_bytes(document))
     return document
@@ -110,24 +141,16 @@ def verify_envelope(document: Mapping[str, Any]) -> str:
         "source_id", "partition_id", "partition_claim"
     }:
         raise ValueError("malformed provenance declaration")
-    _validate_text(provenance["source_id"], "source_id")
-    _validate_text(provenance["partition_id"], "partition_id")
-    if provenance["partition_claim"] != "declared_unverified":
-        raise ValueError("partition claims are labels, not verified disjointness")
     diagnostics = document.get("diagnostics")
     if not isinstance(diagnostics, dict) or set(diagnostics) != {"state", "counts"}:
         raise ValueError("malformed diagnostics declaration")
-    state, counts = diagnostics["state"], diagnostics["counts"]
-    if type(state) is not str or state not in DIAGNOSTIC_STATES or not isinstance(counts, dict) or set(counts) != set(COUNTERS):
-        raise ValueError("malformed diagnostics fields")
-    vals = list(counts.values())
-    if any(value is not None and (type(value) is not int or value < 0) for value in vals):
-        raise ValueError("diagnostic counters must be non-negative integers or null")
-    nonnull = sum(value is not None for value in vals)
-    if (state == "tracked" and nonnull != len(COUNTERS)) or (
-        state == "unknown" and nonnull != 0
-    ) or (state == "partial" and nonnull in (0, len(COUNTERS))):
-        raise ValueError("diagnostic state does not match available counters")
+    validate_audit_metadata(
+        provenance["source_id"],
+        provenance["partition_id"],
+        provenance["partition_claim"],
+        diagnostics["state"],
+        diagnostics["counts"],
+    )
     return payload
 
 
