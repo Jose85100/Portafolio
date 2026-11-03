@@ -1,0 +1,13 @@
+{
+  "checked_on": "2026-11-03",
+  "method": "primary publisher, institutional repository, or official documentation search/open; not an exhaustive review",
+  "references": [
+    {"key": "clifford_isakowitz_1992", "url": "https://archive.nyu.edu/jspui/handle/2451/14356", "verified": "NYU repository metadata/title/authors/date/abstract"},
+    {"key": "jensen_snodgrass_1996", "url": "https://www.sciencedirect.com/science/article/pii/0306437996000178", "verified": "Publisher title/authors/journal/volume/pages/DOI 10.1016/0306-4379(96)00017-8"},
+    {"key": "torp_jensen_snodgrass_2000", "url": "https://www.vldb.org/vldb_journal/index.php/component/article_manager/article/685", "verified": "VLDB Journal page and Arizona author record; DOI 10.1007/s007780050008"},
+    {"key": "sklearn_timeseries_split_2026", "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html", "verified": "official scikit-learn API documentation"},
+    {"key": "sklearn_leakage_pitfalls_2026", "url": "https://scikit-learn.org/stable/common_pitfalls.html", "verified": "official scikit-learn leakage guidance"},
+    {"key": "kapoor_narayanan_2023_temporal", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10499856/", "verified": "PMC full-text metadata and DOI 10.1016/j.patter.2023.100804"}
+  ],
+  "correction": "An initial DOI draft for Effective Timestamping was wrong; final DOI was corrected to 10.1007/s007780050008 using institutional/publisher-adjacent records."
+}
