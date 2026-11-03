@@ -1,0 +1,122 @@
+{
+  "base": "85c51286db5a817b30c0d97793c331851bde94c0",
+  "head": "41c220edf49afaf1f19598b8a01d96d6d1e0aa47",
+  "runs": [
+    {
+      "name": "economics",
+      "exit": 0,
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "01-economics-and-econometrics/01-macroeconomics/01-strategic-monetary-transmission/inflation-bias-audit"
+    },
+    {
+      "name": "math",
+      "exit": 0,
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "02-mathematics-statistics-and-quant/quant-libraries/streaming-moments"
+    },
+    {
+      "name": "risk",
+      "exit": 0,
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "03-financial-risk/01-credit-risk/credit-risk-products/competing-exit-loss-audit"
+    },
+    {
+      "name": "ai",
+      "exit": 0,
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "05-artificial-intelligence-and-computational-systems/02-machine-learning-engineering/mvp-linked-entity-holdout"
+    },
+    {
+      "name": "ceo",
+      "exit": 0,
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "06-strategy-innovation-and-leadership/21-executive-governance-board-decisions/quorum-common-cause-gate"
+    },
+    {
+      "name": "common-economics",
+      "exit": 0,
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "01-economics-and-econometrics/computational-economics"
+    },
+    {
+      "name": "common-numerical",
+      "exit": 0,
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "02-mathematics-statistics-and-quant/numerical-core"
+    },
+    {
+      "name": "common-el",
+      "exit": 0,
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "python",
+        "-v",
+        "-p",
+        "test_*.py"
+      ],
+      "cwd": "02-mathematics-statistics-and-quant/quant-libraries"
+    }
+  ],
+  "math_cpp_build": "integration-math-cpp-1102.log",
+  "math_sanitizer": "integration-math-sanitizers-1102.log"
+}

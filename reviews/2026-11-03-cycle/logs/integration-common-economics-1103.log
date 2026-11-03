@@ -1,0 +1,14 @@
+$ python3 -m unittest discover -s 01-economics-and-econometrics/computational-economics/tests -v
+test_best_response (test_econlab.EconLabTests.test_best_response) ... ok
+test_bootstrap_interval (test_econlab.EconLabTests.test_bootstrap_interval) ... ok
+test_credit_loss (test_econlab.EconLabTests.test_credit_loss) ... ok
+test_credit_loss_validation (test_econlab.EconLabTests.test_credit_loss_validation) ... ok
+test_markov_conservation (test_econlab.EconLabTests.test_markov_conservation) ... ok
+test_ols_degenerate (test_econlab.EconLabTests.test_ols_degenerate) ... ok
+test_ols_exact (test_econlab.EconLabTests.test_ols_exact) ... ok
+test_simulation_reproducible (test_econlab.EconLabTests.test_simulation_reproducible) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 1.846s
+
+OK
