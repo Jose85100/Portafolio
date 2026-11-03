@@ -1,0 +1,194 @@
+$ bash run_temporal_revisions.sh
+Collecting nbformat==5.10.4 (from -r requirements.txt (line 1))
+  Using cached nbformat-5.10.4-py3-none-any.whl.metadata (3.6 kB)
+Collecting ipython==9.6.0 (from -r requirements.txt (line 2))
+  Using cached ipython-9.6.0-py3-none-any.whl.metadata (4.4 kB)
+Collecting ruff==0.14.1 (from -r requirements.txt (line 3))
+  Using cached ruff-0.14.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (25 kB)
+Collecting mypy==1.18.2 (from -r requirements.txt (line 4))
+  Using cached mypy-1.18.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.2 kB)
+Collecting matplotlib==3.10.7 (from -r requirements.txt (line 6))
+  Using cached matplotlib-3.10.7-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (11 kB)
+Collecting fastjsonschema>=2.15 (from nbformat==5.10.4->-r requirements.txt (line 1))
+  Using cached fastjsonschema-2.22.3-py3-none-any.whl.metadata (2.1 kB)
+Collecting jsonschema>=2.6 (from nbformat==5.10.4->-r requirements.txt (line 1))
+  Using cached jsonschema-4.26.0-py3-none-any.whl.metadata (7.6 kB)
+Collecting jupyter-core!=5.0.*,>=4.12 (from nbformat==5.10.4->-r requirements.txt (line 1))
+  Using cached jupyter_core-5.9.1-py3-none-any.whl.metadata (1.5 kB)
+Collecting traitlets>=5.1 (from nbformat==5.10.4->-r requirements.txt (line 1))
+  Using cached traitlets-5.16.1-py3-none-any.whl.metadata (10 kB)
+Collecting decorator (from ipython==9.6.0->-r requirements.txt (line 2))
+  Using cached decorator-5.3.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting ipython-pygments-lexers (from ipython==9.6.0->-r requirements.txt (line 2))
+  Using cached ipython_pygments_lexers-1.1.1-py3-none-any.whl.metadata (1.1 kB)
+Collecting jedi>=0.16 (from ipython==9.6.0->-r requirements.txt (line 2))
+  Using cached jedi-0.20.1-py2.py3-none-any.whl.metadata (23 kB)
+Collecting matplotlib-inline (from ipython==9.6.0->-r requirements.txt (line 2))
+  Using cached matplotlib_inline-0.2.2-py3-none-any.whl.metadata (2.4 kB)
+Collecting pexpect>4.3 (from ipython==9.6.0->-r requirements.txt (line 2))
+  Using cached pexpect-4.9.0-py2.py3-none-any.whl.metadata (2.5 kB)
+Collecting prompt_toolkit<3.1.0,>=3.0.41 (from ipython==9.6.0->-r requirements.txt (line 2))
+  Using cached prompt_toolkit-3.0.53-py3-none-any.whl.metadata (6.4 kB)
+Collecting pygments>=2.4.0 (from ipython==9.6.0->-r requirements.txt (line 2))
+  Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting stack_data (from ipython==9.6.0->-r requirements.txt (line 2))
+  Using cached stack_data-0.6.3-py3-none-any.whl.metadata (18 kB)
+Collecting typing_extensions>=4.6.0 (from mypy==1.18.2->-r requirements.txt (line 4))
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting mypy_extensions>=1.0.0 (from mypy==1.18.2->-r requirements.txt (line 4))
+  Using cached mypy_extensions-1.2.0-py3-none-any.whl.metadata (1.1 kB)
+Collecting pathspec>=0.9.0 (from mypy==1.18.2->-r requirements.txt (line 4))
+  Using cached pathspec-1.1.1-py3-none-any.whl.metadata (14 kB)
+Collecting contourpy>=1.0.1 (from matplotlib==3.10.7->-r requirements.txt (line 6))
+  Using cached contourpy-1.4.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+Collecting cycler>=0.10 (from matplotlib==3.10.7->-r requirements.txt (line 6))
+  Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib==3.10.7->-r requirements.txt (line 6))
+  Using cached fonttools-4.68.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (139 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib==3.10.7->-r requirements.txt (line 6))
+  Using cached kiwisolver-1.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.2 kB)
+Collecting numpy>=1.23 (from matplotlib==3.10.7->-r requirements.txt (line 6))
+  Using cached numpy-2.5.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Collecting packaging>=20.0 (from matplotlib==3.10.7->-r requirements.txt (line 6))
+  Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pillow>=8 (from matplotlib==3.10.7->-r requirements.txt (line 6))
+  Using cached pillow-13.0.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+Collecting pyparsing>=3 (from matplotlib==3.10.7->-r requirements.txt (line 6))
+  Using cached pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+Collecting python-dateutil>=2.7 (from matplotlib==3.10.7->-r requirements.txt (line 6))
+  Using cached python_dateutil-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting parso<0.9.0,>=0.8.7 (from jedi>=0.16->ipython==9.6.0->-r requirements.txt (line 2))
+  Using cached parso-0.8.7-py2.py3-none-any.whl.metadata (8.2 kB)
+Collecting attrs>=22.2.0 (from jsonschema>=2.6->nbformat==5.10.4->-r requirements.txt (line 1))
+  Using cached attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+Collecting jsonschema-specifications>=2023.03.6 (from jsonschema>=2.6->nbformat==5.10.4->-r requirements.txt (line 1))
+  Using cached jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+Collecting referencing>=0.28.4 (from jsonschema>=2.6->nbformat==5.10.4->-r requirements.txt (line 1))
+  Using cached referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting rpds-py>=0.25.0 (from jsonschema>=2.6->nbformat==5.10.4->-r requirements.txt (line 1))
+  Using cached rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+Collecting platformdirs>=2.5 (from jupyter-core!=5.0.*,>=4.12->nbformat==5.10.4->-r requirements.txt (line 1))
+  Using cached platformdirs-4.14.3-py3-none-any.whl.metadata (5.4 kB)
+Collecting ptyprocess>=0.5 (from pexpect>4.3->ipython==9.6.0->-r requirements.txt (line 2))
+  Using cached ptyprocess-0.7.0-py2.py3-none-any.whl.metadata (1.3 kB)
+Collecting wcwidth>=0.1.4 (from prompt_toolkit<3.1.0,>=3.0.41->ipython==9.6.0->-r requirements.txt (line 2))
+  Using cached wcwidth-0.9.4-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (23 kB)
+Collecting tzdata (from python-dateutil>=2.7->matplotlib==3.10.7->-r requirements.txt (line 6))
+  Using cached tzdata-2026.6-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting executing>=1.2.0 (from stack_data->ipython==9.6.0->-r requirements.txt (line 2))
+  Using cached executing-2.3.0-py3-none-any.whl.metadata (9.1 kB)
+Collecting asttokens>=2.1.0 (from stack_data->ipython==9.6.0->-r requirements.txt (line 2))
+  Using cached asttokens-3.0.2-py3-none-any.whl.metadata (5.7 kB)
+Collecting pure-eval (from stack_data->ipython==9.6.0->-r requirements.txt (line 2))
+  Using cached pure_eval-0.2.4-py3-none-any.whl.metadata (6.4 kB)
+Using cached nbformat-5.10.4-py3-none-any.whl (78 kB)
+Using cached ipython-9.6.0-py3-none-any.whl (616 kB)
+Using cached ruff-0.14.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.1 MB)
+Using cached mypy-1.18.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (13.3 MB)
+Using cached matplotlib-3.10.7-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (8.7 MB)
+Using cached contourpy-1.4.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (383 kB)
+Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Using cached fastjsonschema-2.22.3-py3-none-any.whl (28 kB)
+Using cached fonttools-4.68.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.4 MB)
+Using cached jedi-0.20.1-py2.py3-none-any.whl (4.9 MB)
+Using cached jsonschema-4.26.0-py3-none-any.whl (90 kB)
+Using cached jupyter_core-5.9.1-py3-none-any.whl (29 kB)
+Using cached kiwisolver-1.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.5 MB)
+Using cached mypy_extensions-1.2.0-py3-none-any.whl (5.1 kB)
+Using cached numpy-2.5.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.7 MB)
+Using cached packaging-26.3-py3-none-any.whl (129 kB)
+Using cached pathspec-1.1.1-py3-none-any.whl (57 kB)
+Using cached pexpect-4.9.0-py2.py3-none-any.whl (63 kB)
+Using cached pillow-13.0.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)
+Using cached prompt_toolkit-3.0.53-py3-none-any.whl (392 kB)
+Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Using cached pyparsing-3.3.3-py3-none-any.whl (126 kB)
+Using cached python_dateutil-4.0.0-py3-none-any.whl (92 kB)
+Using cached traitlets-5.16.1-py3-none-any.whl (86 kB)
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Using cached decorator-5.3.1-py3-none-any.whl (10 kB)
+Using cached ipython_pygments_lexers-1.1.1-py3-none-any.whl (8.1 kB)
+Using cached matplotlib_inline-0.2.2-py3-none-any.whl (9.5 kB)
+Using cached stack_data-0.6.3-py3-none-any.whl (24 kB)
+Using cached asttokens-3.0.2-py3-none-any.whl (28 kB)
+Using cached attrs-26.1.0-py3-none-any.whl (67 kB)
+Using cached executing-2.3.0-py3-none-any.whl (29 kB)
+Using cached jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+Using cached parso-0.8.7-py2.py3-none-any.whl (107 kB)
+Using cached platformdirs-4.14.3-py3-none-any.whl (35 kB)
+Using cached ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+Using cached referencing-0.37.0-py3-none-any.whl (26 kB)
+Using cached rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (371 kB)
+Using cached wcwidth-0.9.4-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (785 kB)
+Using cached pure_eval-0.2.4-py3-none-any.whl (11 kB)
+Using cached tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+Installing collected packages: pure-eval, ptyprocess, wcwidth, tzdata, typing_extensions, traitlets, ruff, rpds-py, pyparsing, pygments, platformdirs, pillow, pexpect, pathspec, parso, packaging, numpy, mypy_extensions, kiwisolver, fonttools, fastjsonschema, executing, decorator, cycler, attrs, asttokens, stack_data, referencing, python-dateutil, prompt_toolkit, mypy, matplotlib-inline, jupyter-core, jedi, ipython-pygments-lexers, contourpy, matplotlib, jsonschema-specifications, ipython, jsonschema, nbformat
+Successfully installed asttokens-3.0.2 attrs-26.1.0 contourpy-1.4.0 cycler-0.12.1 decorator-5.3.1 executing-2.3.0 fastjsonschema-2.22.3 fonttools-4.68.0 ipython-9.6.0 ipython-pygments-lexers-1.1.1 jedi-0.20.1 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 jupyter-core-5.9.1 kiwisolver-1.5.1 matplotlib-3.10.7 matplotlib-inline-0.2.2 mypy-1.18.2 mypy_extensions-1.2.0 nbformat-5.10.4 numpy-2.5.4 packaging-26.3 parso-0.8.7 pathspec-1.1.1 pexpect-4.9.0 pillow-13.0.0 platformdirs-4.14.3 prompt_toolkit-3.0.53 ptyprocess-0.7.0 pure-eval-0.2.4 pygments-2.21.0 pyparsing-3.3.3 python-dateutil-4.0.0 referencing-0.37.0 rpds-py-2026.9.1 ruff-0.14.1 stack_data-0.6.3 traitlets-5.16.1 typing_extensions-4.16.0 tzdata-2026.6 wcwidth-0.9.4
+
+[notice] A new release of pip is available: 25.0.1 -> 26.3
+[notice] To update, run: python -m pip install --upgrade pip
+test_bruteforce_optimum (test_balancing.BalanceTests.test_bruteforce_optimum) ... ok
+test_budget (test_balancing.BalanceTests.test_budget) ... ok
+test_component_budget (test_balancing.BalanceTests.test_component_budget) ... ok
+test_degenerate (test_balancing.BalanceTests.test_degenerate) ... ok
+test_equivalent_fraction (test_balancing.BalanceTests.test_equivalent_fraction) ... ok
+test_fixture_invalid (test_balancing.BalanceTests.test_fixture_invalid) ... ok
+test_giant_negative (test_balancing.BalanceTests.test_giant_negative) ... ok
+test_odd_tie_lower_mass (test_balancing.BalanceTests.test_odd_tie_lower_mass) ... ok
+test_permutation (test_balancing.BalanceTests.test_permutation) ... ok
+test_prior_baseline_unchanged (test_balancing.BalanceTests.test_prior_baseline_unchanged) ... ok
+test_ratio_validation (test_balancing.BalanceTests.test_ratio_validation) ... ok
+test_incomplete_truth_abstains (test_graph_audit.GraphAuditTests.test_incomplete_truth_abstains) ... ok
+test_invalid_assignment (test_graph_audit.GraphAuditTests.test_invalid_assignment) ... ok
+test_missing_links_counterexample (test_graph_audit.GraphAuditTests.test_missing_links_counterexample) ... ok
+test_overmerge_is_not_missing_link (test_graph_audit.GraphAuditTests.test_overmerge_is_not_missing_link) ... ok
+test_perfect (test_graph_audit.GraphAuditTests.test_perfect) ... ok
+test_random_partitions_against_pair_oracle (test_graph_audit.GraphAuditTests.test_random_partitions_against_pair_oracle) ... ok
+test_singleton_no_pairs (test_graph_audit.GraphAuditTests.test_singleton_no_pairs) ... ok
+test_all_one_side (test_partial_audit.PartialTests.test_all_one_side) ... ok
+test_complete_exact (test_partial_audit.PartialTests.test_complete_exact) ... ok
+test_empty_adjudication_abstains (test_partial_audit.PartialTests.test_empty_adjudication_abstains) ... ok
+test_full_distinct_zero (test_partial_audit.PartialTests.test_full_distinct_zero) ... ok
+test_sharper_than_universe (test_partial_audit.PartialTests.test_sharper_than_universe) ... ok
+test_sharpness_exhaustive_completions (test_partial_audit.PartialTests.test_sharpness_exhaustive_completions) ... ok
+test_validation (test_partial_audit.PartialTests.test_validation) ... ok
+test_wrong_adjudication_not_detectable (test_partial_audit.PartialTests.test_wrong_adjudication_not_detectable) ... ok
+test_backdating_cannot_be_authenticated (test_snapshot_gate.SnapshotTests.test_backdating_cannot_be_authenticated) ... ok
+test_boundary_and_original_exact (test_snapshot_gate.SnapshotTests.test_boundary_and_original_exact) ... ok
+test_future_effective (test_snapshot_gate.SnapshotTests.test_future_effective) ... ok
+test_hash_binds_assignment_source_and_times (test_snapshot_gate.SnapshotTests.test_hash_binds_assignment_source_and_times) ... ok
+test_invalid_ids_assignment (test_snapshot_gate.SnapshotTests.test_invalid_ids_assignment) ... ok
+test_late_availability_not_event_time (test_snapshot_gate.SnapshotTests.test_late_availability_not_event_time) ... ok
+test_manifest_integrity_not_authenticity (test_snapshot_gate.SnapshotTests.test_manifest_integrity_not_authenticity) ... ok
+test_naive_and_invalid_dates (test_snapshot_gate.SnapshotTests.test_naive_and_invalid_dates) ... ok
+test_offset_canonical_and_order (test_snapshot_gate.SnapshotTests.test_offset_canonical_and_order) ... ok
+test_semantics_source_version_abstain (test_snapshot_gate.SnapshotTests.test_semantics_source_version_abstain) ... ok
+test_assignment_validation (test_splitter.Tests.test_assignment_validation) ... ok
+test_cut_detection (test_splitter.Tests.test_cut_detection) ... ok
+test_duplicate_tokens (test_splitter.Tests.test_duplicate_tokens) ... ok
+test_empty (test_splitter.Tests.test_empty) ... ok
+test_invalid (test_splitter.Tests.test_invalid) ... ok
+test_no_leak (test_splitter.Tests.test_no_leak) ... ok
+test_one_component (test_splitter.Tests.test_one_component) ... ok
+test_permutation (test_splitter.Tests.test_permutation) ... ok
+test_transitive (test_splitter.Tests.test_transitive) ... ok
+test_unknown (test_splitter.Tests.test_unknown) ... ok
+test_duplicate_revision_id_rejected (test_temporal_revisions.TemporalRevisionTests.test_duplicate_revision_id_rejected) ... ok
+test_future_available_revision_is_invisible_at_cutoff (test_temporal_revisions.TemporalRevisionTests.test_future_available_revision_is_invisible_at_cutoff) ... ok
+test_half_open_interval (test_temporal_revisions.TemporalRevisionTests.test_half_open_interval) ... ok
+test_invalid_interval_rejected (test_temporal_revisions.TemporalRevisionTests.test_invalid_interval_rejected) ... ok
+test_latest_revision_can_be_future_effective_and_does_not_fallback (test_temporal_revisions.TemporalRevisionTests.test_latest_revision_can_be_future_effective_and_does_not_fallback) ... ok
+test_multiple_identities_sorted (test_temporal_revisions.TemporalRevisionTests.test_multiple_identities_sorted) ... ok
+test_naive_timestamp_rejected (test_temporal_revisions.TemporalRevisionTests.test_naive_timestamp_rejected) ... ok
+test_select_latest_then_interval_does_not_revive_expired_open_revision (test_temporal_revisions.TemporalRevisionTests.test_select_latest_then_interval_does_not_revive_expired_open_revision) ... ok
+test_superseded_older_tie_is_order_invariant (test_temporal_revisions.TemporalRevisionTests.test_superseded_older_tie_is_order_invariant) ... ok
+test_tie_at_latest_availability_rejected (test_temporal_revisions.TemporalRevisionTests.test_tie_at_latest_availability_rejected) ... ok
+test_utc_offsets_compare_as_instants (test_temporal_revisions.TemporalRevisionTests.test_utc_offsets_compare_as_instants) ... ok
+
+----------------------------------------------------------------------
+Ran 57 tests in 1.857s
+
+OK
+All checks passed!
+Success: no issues found in 2 source files
+Executed and saved 4 code cells via IPython in-process
