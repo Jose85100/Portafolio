@@ -35,3 +35,6 @@ Mismo `bash run.sh` instala y reproduce extensión de `src/affine.py`,17tests y 
 
 ## 2 de noviembre: fechas y disponibilidad declarada
 `bash run.sh` añade `src/dated_contract.py` y `dated_notebook.ipynb`: ACT/365F o ACT/360 explícitos, conversión de fuerzas y sellos temporales de EAD/hazards/descuento. Fixture enteramente sintético, sin afirmar datos reales autorizados. Produce `results/dated_grid.csv`, `dated_availability.csv`, `dated_scaling.csv`, `dated_metrics.json` y `dated.png`;27 tests acumulados. `informe1102.md` explica derivación, tres ideas, literatura y límites: el gate revisa metadata declarada, no autenticidad/licencia.
+
+## 3 de noviembre: LGD afín y producto temporal EAD × LGD
+`bash run.sh` añade `src/affine_lgd.py`,32 tests acumulados y `lgd_notebook.ipynb`. Integra ambas trayectorias por evento y conserva el caso LGD constante; deriva por qué producto de medias temporales puede subestimar o sobreestimar. Salidas `lgd_grid.csv`, `lgd_convergence.csv`, `lgd_scaling.csv`, `lgd_metrics.json`, `lgd.png`. `informe1103.md` incluye14p, tres ideas, matriz de fuentes, fórmulas y límites. Escenarios sintéticos, no estimación de recuperaciones ni fórmula regulatoria nueva; aún no conecta selloLGD al adaptador fechado.
