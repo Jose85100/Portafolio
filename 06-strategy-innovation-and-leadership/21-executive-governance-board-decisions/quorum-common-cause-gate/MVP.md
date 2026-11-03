@@ -9,6 +9,16 @@
 - Negativos:1reserva no ayuda en el evento crítico; peso shock0,8/meta0,97/mínimo4 dan inviabilidad del menú.
 - Checklist: src✓ comando✓ tests✓ baseline✓ CSV/JSON/PNG✓ notebookoutputs✓5refs✓ informe14p✓ README/MVP/entorno✓ carpeta21✓ madurezlocal✓. Revisión y publicación separadas, sinmerge automático.
 
+## Incremento acumulativo del3 de noviembre
+
+- Pregunta: al estimar las tasas de quórum por conteos binarios, ¿CP+Bonferroni o Hoeffding con el mismo error familiar elige una opción de menor costo en un menú fijo?
+- Código: `src/coattendance_gate.py`; oráculo por bisección y suma binomial; benchmark y grilla reproducibles en `benchmarks/coattendance_run.py`.
+- Config/datos: `config_coattendance.json`; 3 conteos sintéticos de200 sesiones. 606 celdas exactas por método,230 comparaciones de oráculo,14.400 réplicas simuladas con3 semillas y una ablación de deriva.
+- Salidas nuevas: `results/coattendance_{synthetic_counts,decision,oracle_230,exact_coverage,mc_trials,runtime,summary}.csv/json` y `results/coattendance_gate.png`.
+- Notebook acumulativo: añade derivación de CP, corrección de multiplicidad, baseline justo, comparación ejecutada y fallo ante deriva. El PNG se genera e inserta con outputs.
+- Límites: menú/sesiones/costos son sintéticos; el nominal de95% requiere Bernoulli IID estacionario por opción y menú preespecificado. Deriva/datos faltantes/selección exploratoria invalidan el argumento; no evidencia legal ni empírica.
+- Madurez: extensión de ingeniería de componente S2 sintético. No es contribución matemática original, validación operativa ni certificación del programa21.
+
 ## Extensión acumulativa30oct
 - Mismo evento/componente/notebook; mantiene módulo ytests29.
 - Nuevo: acoplamiento arbitrario delpar de reservas en shock, marginales distintas yselección por cota sharp inferior.

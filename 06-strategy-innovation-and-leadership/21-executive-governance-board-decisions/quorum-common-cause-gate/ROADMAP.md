@@ -10,6 +10,16 @@
 
 Siguiente iteración recomendada: LP sobreR,B1,B2 yrecuperación delcaso30 como restricción anidada, antes de ampliar el menú.
 
+## Actualización tras el3 de noviembre
+
+| Hito posterior | Criterio verificable | Bloqueo / riesgo |
+|---|---|---|
+| Definir protocolo de captura para disponibilidad real | Evento y población preespecificados, autorizaciones, fechas, faltantes, cambios de menú y fuente auditable | Sin acceso/permiso a asistencias reales, no convertir el ejercicio en validación |
+| Auditar deriva y dependencia temporal | Comparar IID, ventanas y límites secuenciales en observaciones autorizadas; retener el ejemplo .7→.5 como prueba negativa | No seleccionar umbrales después de observar la serie |
+| Revisar costo y elegibilidad con responsables | Costos, restricciones y autoridad de reserva documentados antes de ejecutar la optimización | No cambiar reglas ni extrapolar costos abstractos |
+
+La simulación3nov no cierra esos hitos. CP+Bonferroni sólo vale para menú fijo, series Bernoulli estacionarias por opción y procedimiento expuesto; el contraste con Hoeffding no valida la superioridad de uno en todo régimen.
+
 
 ## Actualización del31 de octubre
 

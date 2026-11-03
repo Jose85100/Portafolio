@@ -65,8 +65,8 @@
   "oracle_cases": 153,
   "max_error": 1.1102230246251565e-16,
   "timing_n100_median_seconds": {
-    "closed_lower": 0.00018612899998515786,
-    "lp8_lower": 0.30852788300001066
+    "closed_lower": 0.00018519099990044197,
+    "lp8_lower": 0.2307129470000291
   },
   "python": "3.12.14",
   "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
