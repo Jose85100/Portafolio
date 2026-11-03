@@ -1,0 +1,4 @@
+$ set -e; mkdir -p /tmp/el-integrated1103; cc -std=c11 -O2 -Wall -Wextra -pedantic 02-mathematics-statistics-and-quant/quant-libraries/c/main.c -lm -o /tmp/el-integrated1103/el-c; /tmp/el-integrated1103/el-c; g++ -std=c++20 -O2 -Wall -Wextra -pedantic 02-mathematics-statistics-and-quant/quant-libraries/cpp/main.cpp -o /tmp/el-integrated1103/el-cpp; /tmp/el-integrated1103/el-cpp; python3 02-mathematics-statistics-and-quant/quant-libraries/python/model.py
+EL=83.0000000000
+EL=83.0000000000
+EL=83.0000000000

@@ -29,6 +29,10 @@ La [revisión del 12–17 de octubre de 2026](reviews/2026-10-12-week/README.md)
 
 El [informe del ciclo multiagente](reviews/2026-10-23-cycle/README.md) reúne cinco MVP de economía, matemáticas, riesgo, IA y estrategia, con resultados sintéticos, comandos de reproducción y revisión independiente. La evidencia corresponde a cada componente; no eleva la madurez de dominios completos.
 
+## Ciclo de I+D+i del 3 de noviembre de 2026
+
+El [informe consolidado](reviews/2026-11-03-cycle/README.md) registra cinco incrementos reproducidos y revisados en PR abiertos (#136–#140), con evidencia local y CI separadas, resultados negativos y límites de madurez. Ningún PR se fusionó. La corrida anterior se detuvo por límite temporal de uso de agentes; los cuatro frentes perdidos se reconstruyeron y ejecutaron de nuevo en worktrees aislados.
+
 ## Cuatro tipos de proyecto
 
 - **Notebooks (128; inventario al 23 de octubre de 2026)** — archivos `.ipynb` con versión ingenua, diagnóstico, mejoras, robustez y límites. Los datos son **sintéticos con verdad conocida**, así que el notebook comprueba si el método recupera la verdad; las cifras de las conclusiones se **calculan desde los datos** (celdas «Lectura») y una sección final de `assert` hace fallar el notebook si un hallazgo deja de cumplirse. Cuando una hipótesis inicial resultó falsa, el notebook lo dice y muestra la corrección. La excepción es el [análisis factorial múltiple](02-mathematics-statistics-and-quant/quantitative-methods/analisis-factorial-multiple-mfa), que usa **datos reales y abiertos** del Banco Mundial.
