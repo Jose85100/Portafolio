@@ -1,0 +1,12 @@
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspace/scratch/6c8b818bd733/wt-math1103/02-mathematics-statistics-and-quant/quant-libraries/streaming-moments/.build-san
+[ 50%] Built target moments_consumer
+[100%] Built target moments_cpp_tests
+Test project /workspace/scratch/6c8b818bd733/wt-math1103/02-mathematics-statistics-and-quant/quant-libraries/streaming-moments/.build-san
+    Start 1: moments_core
+1/1 Test #1: moments_core .....................   Passed    0.01 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.01 sec
