@@ -1,0 +1,9 @@
+test_duplicate_and_conflict_block (tests.test_delta_replay.ReplayTests.test_duplicate_and_conflict_block) ... ok
+test_event_order_irrelevant (tests.test_delta_replay.ReplayTests.test_event_order_irrelevant) ... ok
+test_late_unlink_retroactive_correction_respects_cutoff (tests.test_delta_replay.ReplayTests.test_late_unlink_retroactive_correction_respects_cutoff) ... ok
+test_timezone_naive_rejected (tests.test_delta_replay.ReplayTests.test_timezone_naive_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
