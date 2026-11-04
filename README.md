@@ -31,7 +31,11 @@ El [informe del ciclo multiagente](reviews/2026-10-23-cycle/README.md) reúne ci
 
 ## Ciclo de I+D+i del 3 de noviembre de 2026
 
-El [informe consolidado](reviews/2026-11-03-cycle/README.md) registra cinco incrementos reproducidos y revisados en PR abiertos (#136–#140), con evidencia local y CI separadas, resultados negativos y límites de madurez. Ningún PR se fusionó. La corrida anterior se detuvo por límite temporal de uso de agentes; los cuatro frentes perdidos se reconstruyeron y ejecutaron de nuevo en worktrees aislados.
+El [informe consolidado](reviews/2026-11-03-cycle/README.md) registra cinco incrementos reproducidos y revisados. Tras su publicación, los PR #135 (informe) y #136 (Riesgo) se fusionaron el 3-nov; #137–#140 permanecen abiertos. Los resultados sintéticos y la madurez por componente están separados de la evidencia empírica.
+
+## Ciclo de I+D+i del 4 de noviembre de 2026
+
+El [informe del ciclo](reviews/2026-11-04-cycle/README.md) reúne cinco incrementos ejecutados y revisados en Economía, Matemáticas, Riesgo, IA y Estrategia. Los cinco PR están abiertos, listos y sin merge automático; IA está apilada sobre #138. Tras corregir los entornos de notebook en CEO y Python del test focal en Economía, todos los checks remotos de los cinco frentes terminaron en SUCCESS. Los resultados son sintéticos y no elevan la madurez de los dominios completos.
 
 ## Cuatro tipos de proyecto
 
