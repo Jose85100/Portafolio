@@ -1,0 +1,47 @@
+{
+  "abstain_all": {
+    "admitted": 0,
+    "false_admit": 0,
+    "false_reject": 570,
+    "queries": 1080
+  },
+  "availability_only_ablation": {
+    "admitted": 1080,
+    "false_admit": 510,
+    "false_reject": 0,
+    "queries": 1080
+  },
+  "ignore_availability_ablation": {
+    "admitted": 360,
+    "false_admit": 72,
+    "false_reject": 282,
+    "queries": 1080
+  },
+  "latest_available_then_validity": {
+    "admitted": 570,
+    "false_admit": 0,
+    "false_reject": 0,
+    "queries": 1080
+  },
+  "oracle": {
+    "admitted": 570,
+    "false_admit": 0,
+    "false_reject": 0,
+    "queries": 1080
+  },
+  "validity_first_ablation": {
+    "admitted": 1080,
+    "false_admit": 510,
+    "false_reject": 0,
+    "queries": 1080
+  },
+  "design": {
+    "histories": 36,
+    "queries": 1080,
+    "output_rows": 6480,
+    "synthetic": true,
+    "seeds": [
+      1103
+    ]
+  }
+}
