@@ -1,0 +1,5 @@
+{"n_per_arm": 5, "seconds": 0.0002111179999246815, "outcomes": 36, "net_evsi": -0.2353584843455394}
+{"n_per_arm": 10, "seconds": 0.0004404939998039481, "outcomes": 121, "net_evsi": 0.4303514458978839}
+{"n_per_arm": 20, "seconds": 0.0018242109999846434, "outcomes": 441, "net_evsi": 1.2136804745987035}
+{"n_per_arm": 40, "seconds": 0.006728629000008368, "outcomes": 1681, "net_evsi": 1.9322427916582825}
+{"n_per_arm": 80, "seconds": 0.030373000000054162, "outcomes": 6561, "net_evsi": 2.467448187888813}
