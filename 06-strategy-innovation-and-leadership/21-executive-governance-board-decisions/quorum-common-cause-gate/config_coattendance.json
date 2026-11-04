@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-03",
+  "source": "synthetic co-attendance counts generated for a designed decision-rule comparison; no observed committee data",
+  "seed": 20261103,
+  "target": 0.56,
+  "family_alpha": 0.05,
+  "fixed_menu": [
+    {"name": "A", "cost": 1, "successes": 110, "trials": 200},
+    {"name": "B", "cost": 2, "successes": 130, "trials": 200},
+    {"name": "C", "cost": 3, "successes": 150, "trials": 200}
+  ],
+  "inference": {
+    "confidence": 0.95,
+    "multiplicity": "Bonferroni across the fixed menu of 3 plans",
+    "assumptions": ["independent Bernoulli sessions within each plan", "stationary success probability within each plan", "menu fixed before observing counts", "synthetic counts are not data or empirical evidence"],
+    "ablation": "same per-family error budget, fair one-sided Hoeffding bound",
+    "abstain": "if no plan has a lower bound at least target; never clip lower bounds to force feasibility"
+  },
+  "experiments": {
+    "exact_coverage_cells": 606,
+    "oracle_comparisons": 230,
+    "monte_carlo_rows": 14400,
+    "monte_carlo_seeds": [31, 47, 83],
+    "stationary_probability": 0.6,
+    "drift_pre_probability": 0.7,
+    "drift_post_probability": 0.5,
+    "sessions_per_run": 200,
+    "drift_break": 100
+  },
+  "versions": {"python": "3.12", "numpy": "2.3.5", "scipy": "1.17.0", "direct_dependencies": "requirements.txt"},
+  "hardware": "Linux x86_64; runtime platform and Python recorded in results; CPU/RAM not experimentally isolated",
+  "units": "quorum success probability per hypothetical scheduled session; option cost is abstract",
+  "hypothesis": "For this fixed synthetic menu, exact simultaneous binomial bounds choose B at target 0.56 while same-budget Hoeffding chooses C; exact binomial coverage and an independent tail-inversion oracle agree numerically. Under drift, stationary coverage assumptions fail.",
+  "sources": ["Clopper & Pearson (1934), doi:10.1093/biomet/26.4.404", "Hoeffding (1963), doi:10.1080/01621459.1963.10500830", "Bonferroni inequality (classical union bound)"]
+}

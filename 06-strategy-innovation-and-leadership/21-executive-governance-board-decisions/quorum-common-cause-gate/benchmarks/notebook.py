@@ -29,6 +29,8 @@ def main():
     nb.cells.extend(interval_cells())
     from benchmarks.pair_cells import pair_cells
     nb.cells.extend(pair_cells())
+    from benchmarks.coattendance_cells import coattendance_cells
+    nb.cells.extend(coattendance_cells())
     shell = InteractiveShell.instance()
     shell.reset(new_session=True)
     previous = Path.cwd()
@@ -42,7 +44,7 @@ def main():
             with capture_output() as output:
                 result = shell.run_cell(cell.source, store_history=False)
             if result.error_before_exec or result.error_in_exec:
-                raise RuntimeError('notebook execution failed')
+                raise RuntimeError(f'notebook execution failed in code cell {count}: {result.error_before_exec or result.error_in_exec}')
             cell.execution_count = count
             cell.outputs = []
             for name in ('stdout', 'stderr'):

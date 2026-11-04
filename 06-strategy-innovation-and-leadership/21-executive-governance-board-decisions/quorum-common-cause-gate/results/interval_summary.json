@@ -36,8 +36,8 @@
   "point_selection": "B",
   "coverage_claim": "none: assumed deterministic boxes, no observed data",
   "timing_n100_median_seconds": {
-    "closed": 0.0019822179999664513,
-    "lp8_intervals": 0.285953116000087
+    "closed": 0.0016055529999903229,
+    "lp8_intervals": 0.24009622900007344
   },
   "python": "3.12.14",
   "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
