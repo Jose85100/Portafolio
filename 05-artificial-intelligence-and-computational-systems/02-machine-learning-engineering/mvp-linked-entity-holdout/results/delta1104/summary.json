@@ -1,0 +1,39 @@
+{
+  "synthetic": true,
+  "seed": 1104,
+  "rows": [
+    {
+      "events": 3,
+      "correct_admits": 0,
+      "oracle_admits": 0,
+      "false_admits": 1,
+      "false_rejects": 0,
+      "median_ns": 4897
+    },
+    {
+      "events": 30,
+      "correct_admits": 0,
+      "oracle_admits": 0,
+      "false_admits": 10,
+      "false_rejects": 0,
+      "median_ns": 32790
+    },
+    {
+      "events": 300,
+      "correct_admits": 0,
+      "oracle_admits": 0,
+      "false_admits": 100,
+      "false_rejects": 0,
+      "median_ns": 307213
+    },
+    {
+      "events": 3000,
+      "correct_admits": 0,
+      "oracle_admits": 0,
+      "false_admits": 1000,
+      "false_rejects": 0,
+      "median_ns": 3274910
+    }
+  ],
+  "claim": "controlled semantics only; not empirical ML leakage measurement"
+}
