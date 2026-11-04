@@ -64,7 +64,7 @@ for n in (1, 10, 100, 1000):
         )
     )
 with (OUT / "raw.csv").open("w", newline="") as f:
-    w = csv.DictWriter(f, fieldnames=rows[0])
+    w = csv.DictWriter(f, fieldnames=rows[0], lineterminator="\n")
     w.writeheader()
     w.writerows(rows)
 summary = {

@@ -6,7 +6,7 @@
 4. **Brecha:** el gate anterior solo aceptaba snapshot/full replacement, sin reconstruir cambios incrementales.
 5. **Diseño/config:** ledger sintético 3 eventos/arista, semilla 1104, 1/10/100/1000 aristas; query y corte fijados en `config_delta1104.json`; no datos personales.
 6. **Implementación/fórmula:** `src/delta_replay.py`; para cada arista `x`, filtrar `A_e<=c, V_e<=t`, luego escoger `e* = argmax V_e`; estado activo si `action(e*)=link`. Ties contradictorios y event_id repetido bloquean. Se conservan disponibilidad y eficacia separadas.
-7. **Tests/benchmarks:** `bash run_delta_audit.sh`: 4 tests, Ruff, mypy strict, benchmark; notebook 2/2 code cells. Sin property-based ni cobertura reportada.
+7. **Tests/benchmarks:** `bash run_delta_audit.sh`: 7 tests (incluye invarianza al corte y permutaciones de conflictos), Ruff, mypy strict, benchmark; notebook 2/2 code cells. Sin property-based ni cobertura reportada.
 8. **Resultados/figura:** raw/summary en `results/delta1104`; baseline de última llegada re-activa falsamente todos los vínculos en contrajemplo; error: 1, 10, 100, 1000 falsas admisiones en 3, 30, 300, 3000 eventos. Replay mediano local: 4,597; 29,554; 373,784; 4,635,865 ns. PNG de costo log-log; benchmark sintético no es dato real.
 9. **Análisis crítico:** prueba refuta el orden de llegada como sustituto de vigencia; no demuestra que ese bug prevalezca en pipeline real.
 10. **Límites/sesgos:** timestamps se tratan como confiables; no autentica fuente, equivale pares a identidad relacional, no modela esquema/correcciones complejas, no mide leakage predictivo.

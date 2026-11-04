@@ -31,22 +31,31 @@ def replay(events: list[Delta], *, identity_at: str, cutoff: str) -> set[str]:
     are rejected so the source ledger must be deduplicated before inference.
     """
     t, c = _time(identity_at), _time(cutoff)
-    ids = [e.event_id for e in events]
-    if len(set(ids)) != len(ids):
-        raise ValueError("duplicate event_id")
-    latest: dict[str, tuple[datetime, Action]] = {}
+    latest: dict[str, tuple[datetime, set[Action]]] = {}
+    seen_ids: set[str] = set()
     for e in events:
+        # Availability is the first gate: post-cutoff payload fields cannot affect
+        # a historical query. The timestamp itself must remain parseable.
+        available = _time(e.available_at)
+        if available > c:
+            continue
         if e.action not in ("link", "unlink") or not e.edge or not e.event_id:
             raise ValueError("invalid event")
-        effective, available = _time(e.effective_at), _time(e.available_at)
-        if available > c or effective > t:
+        if e.event_id in seen_ids:
+            raise ValueError("duplicate event_id")
+        seen_ids.add(e.event_id)
+        effective = _time(e.effective_at)
+        if effective > t:
             continue
         old = latest.get(e.edge)
         if old is None or effective > old[0]:
-            latest[e.edge] = (effective, e.action)
-        elif effective == old[0] and e.action != old[1]:
+            latest[e.edge] = (effective, {e.action})
+        elif effective == old[0]:
+            old[1].add(e.action)
+    for _, actions in latest.values():
+        if len(actions) > 1:
             raise ValueError("conflicting effective-time tie")
-    return {edge for edge, (_, action) in latest.items() if action == "link"}
+    return {edge for edge, (_, actions) in latest.items() if "link" in actions}
 
 
 def snapshot_first(events: list[Delta], *, identity_at: str, cutoff: str) -> set[str]:
