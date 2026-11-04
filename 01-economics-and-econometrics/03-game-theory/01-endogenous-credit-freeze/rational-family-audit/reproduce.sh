@@ -16,8 +16,8 @@ CC=gcc CXX=g++ AR=ar RANLIB=ranlib LDSHARED='g++ -shared' .venv/bin/python -m pi
 .venv/bin/python -m unittest discover -s ../../../computational-economics/tests -v 2>&1 | tee results/common_tests.log
 .venv/bin/python benchmarks/run.py | tee results/benchmark.log
 .venv/bin/python benchmarks/notebook.py
-.venv/bin/python benchmarks/execute_robustness_notebook.py | tee results/robustness-notebook.log
+.venv/bin/python benchmarks/execute_robustness_notebook.py
 .venv/bin/python -m pip freeze > environment-lock.txt
 
-python -m unittest tests.test_epsilon_robustness -v
-python -m src.run_robustness
+.venv/bin/python -m unittest tests.test_epsilon_robustness -v
+.venv/bin/python -m src.run_robustness
