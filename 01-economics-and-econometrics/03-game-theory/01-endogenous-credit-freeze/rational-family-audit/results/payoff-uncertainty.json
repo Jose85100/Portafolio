@@ -1,0 +1,35 @@
+{
+  "config": {
+    "seed": 20261104,
+    "source": "designed 2x2 coordination game; synthetic; no empirical data",
+    "payoffs_A": [
+      [
+        1,
+        -1
+      ],
+      [
+        -1,
+        1
+      ]
+    ],
+    "profile": [
+      0.5,
+      0.5
+    ],
+    "deltas": [
+      0,
+      0.005,
+      0.01,
+      0.02,
+      0.05,
+      0.1
+    ],
+    "baseline": "nominal regret, delta=0",
+    "interpreter": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39"
+  },
+  "rows": 6,
+  "max_bound": 0.1,
+  "runtime_ns": 82995,
+  "scope": "exact worst case for independent cellwise box errors; one designed game"
+}
