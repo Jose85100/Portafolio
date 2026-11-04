@@ -1,0 +1,14 @@
+{
+  "question": "How sensitive is Chan merge output to a fixed reduction tree in binary64?",
+  "hypothesis": "For 3 seeds and n in {256,4096}, the balanced result stays within max(4 ulp,1e-12 relative) of Decimal SD of the same float64 observations.",
+  "data": "synthetic Gaussian draws centered at 1e8 with scale 0.01; NumPy not used; random.Random Gaussian generator",
+  "seeds": [1104, 1105, 1106],
+  "sizes": [256, 4096],
+  "chunk_size": 32,
+  "methods": ["left_fold", "reverse_fold", "balanced_pairwise"],
+  "baseline": "same DynamicMoments summaries merged sequentially in original/reverse order",
+  "hardware": "captured by run log; runtime measurements are environment-specific",
+  "python": "project pinned requirements.txt",
+  "tolerance": "max(4 ulp(oracle), 1e-12 * abs(oracle))",
+  "seed_protocol": "Python random.Random(seed); fixed before execution"
+}
