@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-04",
+  "base_main": "a1aaa5682f9b89e1a9ef2af3ff3400b78a514337",
+  "integration_branch_local_only": "research/2026-11-04-integration",
+  "domain_commands_exit_0": {
+    "economics": "bash reproduce.sh",
+    "mathematics": "MATH_ENV=.venv bash run.sh",
+    "risk": "bash run.sh",
+    "ai": "bash run_delta_audit.sh",
+    "ceo": "bash run.sh"
+  },
+  "common_tests_integrated": {
+    "economics": {
+      "passed": 8,
+      "total": 8
+    },
+    "numerical_core": {
+      "passed": 8,
+      "total": 8
+    },
+    "expected_loss_python": {
+      "passed": 3,
+      "total": 3
+    },
+    "expected_loss_outputs": {
+      "python": "EL=83.0000000000",
+      "c": "EL=83.0000000000",
+      "cpp": "EL=83.0000000000"
+    },
+    "r_julia_matlab_octave": "not installed/run"
+  },
+  "ctest": {
+    "risk_engine_common": "1/1 pass",
+    "math_release": "1/1 pass",
+    "math_asan_ubsan": "1/1 pass",
+    "leaksanitizer": "not run"
+  },
+  "remote_ci_head_status": {
+    "economics_pr145": {
+      "head": "e804c1ed0d20472f3954b6cda98c66090d84e739",
+      "notebook_reliability": "success run 41801250158",
+      "economics_rational_family_audit": "success run 41801250299",
+      "other_existing_economics_audits": "success: credit 41801250082, mixed 41801250242, strategic form 41801250232, polyhedral 41801250104, vintage 41801250188"
+    },
+    "math_pr144": {
+      "notebook_reliability": "success"
+    },
+    "risk_pr143": {
+      "notebook_reliability": "success"
+    },
+    "ai_pr141": {
+      "notebook_reliability": "success"
+    },
+    "ceo_pr142": {
+      "head": "0058438063a05c2022226a619750a8431082177c",
+      "notebook_reliability": "success run 41800782896",
+      "strategy_decision_engines": "success run 41800782881",
+      "strategy_portfolio_regression": "success run 41800783337"
+    }
+  },
+  "pr_state": {
+    "141": "open ready, base PR138, unmerged",
+    "142": "open ready, head 0058438063a05c2022226a619750a8431082177c, unmerged",
+    "143": "open ready, unmerged",
+    "144": "open ready, unmerged",
+    "145": "open ready, head e804c1ed0d20472f3954b6cda98c66090d84e739, unmerged"
+  },
+  "review": "independent review no blockers on all five final heads; Economics focused audit failure fixed via project venv and clean checkout reproduction; all recorded CI runs successful",
+  "synthetic_evidence_only": true
+}

@@ -1,0 +1,54 @@
+test_binary_covariance (test_dynamic.DynamicTests.test_binary_covariance) ... ok
+test_oracle_orders (test_dynamic.DynamicTests.test_oracle_orders) ... ok
+test_range_and_invalid (test_dynamic.DynamicTests.test_range_and_invalid) ... ok
+test_state_and_rescale (test_dynamic.DynamicTests.test_state_and_rescale) ... ok
+test_subnormal (test_dynamic.DynamicTests.test_subnormal) ... ok
+test_zero_prefix_and_constant (test_dynamic.DynamicTests.test_zero_prefix_and_constant) ... ok
+test_empty_identity (test_merge.MergeTests.test_empty_identity) ... ok
+test_fixtures (test_merge.MergeTests.test_fixtures) ... ok
+test_mixed_scale_loss (test_merge.MergeTests.test_mixed_scale_loss) ... ok
+test_partitions_and_reduction (test_merge.MergeTests.test_partitions_and_reduction) ... ok
+test_zero_chunk_scale (test_merge.MergeTests.test_zero_chunk_scale) ... ok
+test_edges (test_moments.Tests.test_edges) ... ok
+test_merge_identity (test_moments.Tests.test_merge_identity) ... ok
+test_partitions_and_translation (test_moments.Tests.test_partitions_and_translation) ... ok
+test_units_and_order (test_moments.Tests.test_units_and_order) ... ok
+test_disjoint_partition_oracle (test_reduction.ReductionTests.test_disjoint_partition_oracle) ... ok
+test_identity_and_singleton (test_reduction.ReductionTests.test_identity_and_singleton) ... ok
+test_reproducible_given_same_order (test_reduction.ReductionTests.test_reproducible_given_same_order) ... ok
+test_edges (test_scaled.ScaledTests.test_edges) ... ok
+test_extremes (test_scaled.ScaledTests.test_extremes) ... ok
+test_sample_sd_overflow (test_scaled.ScaledTests.test_sample_sd_overflow) ... ok
+test_sensitivity_and_properties (test_scaled.ScaledTests.test_sensitivity_and_properties) ... ok
+test_boundaries_and_ddof (test_transport.TransportTests.test_boundaries_and_ddof) ... ok
+test_cross_oracle (test_transport.TransportTests.test_cross_oracle) ... ok
+test_invalid_both_languages (test_transport.TransportTests.test_invalid_both_languages) ... ok
+test_roundtrip_exact (test_transport.TransportTests.test_roundtrip_exact) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.252s
+
+OK
+Wrote JSON report to results/coverage.json
+Name                Stmts   Miss  Cover
+---------------------------------------
+src/cpp_bridge.py      13      1    92%
+src/dynamic.py         66      0   100%
+src/moments.py         35      0   100%
+src/scaled.py          43      2    95%
+src/transport.py       31      2    94%
+---------------------------------------
+TOTAL                 188      5    97%
+All checks passed!
+Success: no issues found in 5 source files
+test_disjoint_partition_oracle (tests.test_reduction.ReductionTests.test_disjoint_partition_oracle) ... ok
+test_identity_and_singleton (tests.test_reduction.ReductionTests.test_identity_and_singleton) ... ok
+test_reproducible_given_same_order (tests.test_reduction.ReductionTests.test_reproducible_given_same_order) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.012s
+
+OK
+All checks passed!
+Success: no issues found in 2 source files
+{"all_within_declared_tolerance": true, "chunk_size": 32, "data": "synthetic Gaussian around 1e8; known scale 0.01; not empirical", "max_tree_spread_sd": 6.938893903907228e-18, "methods": ["left", "reverse", "balanced"], "oracle_error_abs_max": 5.204170427930421e-18, "oracle_error_abs_median": 8.673617379884035e-19, "oracle_error_abs_min": 0.0, "rows": 18, "seeds": [1104, 1105, 1106], "sizes": [256, 4096]}

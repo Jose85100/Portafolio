@@ -1,0 +1,16 @@
+test_conflict_at_final_maximum_blocks_in_any_order (tests.test_delta_replay.ReplayTests.test_conflict_at_final_maximum_blocks_in_any_order) ... ok
+test_cutoff_invariance_for_future_duplicate_or_malformed_payload (tests.test_delta_replay.ReplayTests.test_cutoff_invariance_for_future_duplicate_or_malformed_payload) ... ok
+test_duplicate_and_conflict_block (tests.test_delta_replay.ReplayTests.test_duplicate_and_conflict_block) ... ok
+test_event_order_irrelevant (tests.test_delta_replay.ReplayTests.test_event_order_irrelevant) ... ok
+test_late_unlink_retroactive_correction_respects_cutoff (tests.test_delta_replay.ReplayTests.test_late_unlink_retroactive_correction_respects_cutoff) ... ok
+test_superseded_conflicting_tie_does_not_block (tests.test_delta_replay.ReplayTests.test_superseded_conflicting_tie_does_not_block) ... ok
+test_timezone_naive_rejected (tests.test_delta_replay.ReplayTests.test_timezone_naive_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.000s
+
+OK
+All checks passed!
+Success: no issues found in 1 source file
+{"claim": "controlled semantics only; not empirical ML leakage measurement", "rows": [{"correct_admits": 0, "events": 3, "false_admits": 1, "false_rejects": 0, "median_ns": 4797, "oracle_admits": 0}, {"correct_admits": 0, "events": 30, "false_admits": 10, "false_rejects": 0, "median_ns": 31418, "oracle_admits": 0}, {"correct_admits": 0, "events": 300, "false_admits": 100, "false_rejects": 0, "median_ns": 330970, "oracle_admits": 0}, {"correct_admits": 0, "events": 3000, "false_admits": 1000, "false_rejects": 0, "median_ns": 3465209, "oracle_admits": 0}], "seed": 1104, "synthetic": true}
+Executed and saved 2 code cells via IPython in-process
