@@ -1,13 +1,13 @@
 {
   "date": "2026-11-04",
   "base_main": "a1aaa5682f9b89e1a9ef2af3ff3400b78a514337",
-  "integration_branch_local_only": "research/2026-11-04-integration",
+  "integration_branch_local_only": "research/2026-11-04-integration at aac4972; includes final CEO notebook-path fix and final Economics venv runner",
   "domain_commands_exit_0": {
-    "economics": "bash reproduce.sh",
+    "economics": "bash reproduce.sh (final venv runner)",
     "mathematics": "MATH_ENV=.venv bash run.sh",
     "risk": "bash run.sh",
     "ai": "bash run_delta_audit.sh",
-    "ceo": "bash run.sh"
+    "ceo": "bash run.sh (final notebook cwd fix)"
   },
   "common_tests_integrated": {
     "economics": {
@@ -65,6 +65,6 @@
     "144": "open ready, unmerged",
     "145": "open ready, head e804c1ed0d20472f3954b6cda98c66090d84e739, unmerged"
   },
-  "review": "independent review no blockers on all five final heads; Economics focused audit failure fixed via project venv and clean checkout reproduction; all recorded CI runs successful",
+  "review": "independent review no blockers on all five final heads; Economics focal CI fix reproduced from clean checkout; CEO notebook path fix reproduced using actual CI working directory",
   "synthetic_evidence_only": true
 }
