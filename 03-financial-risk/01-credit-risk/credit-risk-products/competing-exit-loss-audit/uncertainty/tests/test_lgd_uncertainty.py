@@ -1,5 +1,6 @@
 import math
 import unittest
+from decimal import Decimal, localcontext
 from src.lgd_uncertainty import Scenario, evaluate, _exp_moment
 
 class MomentsTests(unittest.TestCase):
@@ -22,6 +23,16 @@ class MomentsTests(unittest.TestCase):
         self.assertAlmostEqual(_exp_moment(1e-9,1,0),1-0.5e-9,places=12)
         self.assertAlmostEqual(_exp_moment(1e-9,1,1),.5-1e-9/3,places=12)
         self.assertAlmostEqual(_exp_moment(1e-9,1,2),1/3-1e-9/4,places=12)
+    def test_exp_moment_near_series_boundary_against_decimal(self):
+        with localcontext() as ctx:
+            ctx.prec = 60
+            for x in (Decimal("0.001"), Decimal("0.0011"), Decimal("0.002"), Decimal("0.499"), Decimal("0.5")):
+                for k in (0, 1, 2):
+                    exact = Decimal(math.factorial(k)) / x**(k+1) * (Decimal(1) - (-x).exp() * sum(x**j / Decimal(math.factorial(j)) for j in range(k+1)))
+                    got = _exp_moment(float(x), 1.0, k)
+                    rel = abs(Decimal(str(got)) - exact) / abs(exact)
+                    self.assertLess(float(rel), 2e-12, (x,k,rel))
+
     def test_input_validation(self):
         with self.assertRaises(ValueError): evaluate(Scenario(-1,2,1,.2,.1,2,2))
 

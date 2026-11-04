@@ -33,7 +33,7 @@ def _exp_moment(rate: float, horizon: float, power: int) -> float:
     if rate == 0.0:
         return horizon ** (power + 1) / (power + 1)
     x = rate * horizon
-    if x < 1e-3:
+    if x < 0.5:
         # Taylor expansion of integral t^k exp(-rate*t) dt; avoid cancellation.
         total = horizon ** (power + 1) / (power + 1)
         term = 1.0
@@ -85,6 +85,6 @@ def write_results(s: Scenario, output_dir: Path) -> LossMoments:
     (output_dir / "summary.json").write_text(json.dumps({"scenario": asdict(s), "moments": asdict(result), "evidence": "synthetic exact model"}, indent=2) + "\n")
     import csv
     with (output_dir / "comparison.csv").open("w", newline="") as f:
-        w=csv.DictWriter(f, fieldnames=["metric","value"]); w.writeheader()
+        w=csv.DictWriter(f, fieldnames=["metric","value"], lineterminator="\n"); w.writeheader()
         for key,value in asdict(result).items(): w.writerow({"metric":key,"value":value})
     return result

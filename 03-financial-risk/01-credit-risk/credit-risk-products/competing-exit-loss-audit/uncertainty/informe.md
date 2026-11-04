@@ -14,3 +14,5 @@
 12. **BibTeX.** `referencias.bib`: cinco referencias de competing risk/Beta/estándar contextual; vínculos en README. CRE35 es archivo histórico y no asesoría normativa.
 13. **Rúbrica 1–5 (autoevaluación).** Original: novedad 1, rigor 3, reproducibilidad 3, código 3, claridad 3, impacto 2, honestidad 5, MVP 3. Ampliada: profundidad 3, aporte defendible 2, calidad experimental 3, utilidad 3, reproducibilidad 3, honestidad 5.
 14. **Siguiente iteración.** Validar independencia y distribución LGD en cohortes autorizadas con censura explícita; detener claims de varianza de cartera si existe dependencia temporal/covariada no modelada.
+
+**Revisión adversarial antes del cierre.** El revisor detectó cancelación en la forma cerrada de \(\int t^2e^{-ht}dt\) cerca de la frontera Taylor/formula cerrada. Se amplió la serie estable a \(hT<0.5\) y se añadieron casos Decimal de 60 dígitos en \(x=0.001,0.0011,0.002,0.499,0.5\), potencias 0–2; error relativo medido <2e-12 en los casos probados. No es una garantía formal para todo float. Suite después de corrección: 6 tests pasan.
