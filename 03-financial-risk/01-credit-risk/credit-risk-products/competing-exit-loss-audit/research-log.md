@@ -36,3 +36,11 @@ Base2370925, cinco dominios2nov integrados y ceroPR abiertos al iniciar. Revisad
 Mapa:29masas→30descuento→31EADafín→1101eventos→1102fechas/sellos→1103productoEAD×LGD. Se conserva API original y LGDconstante. Herror<1e-8 se sostiene en27 casos; negativo relevante: productodemedias puede sobreestimar o subestimar según pendientes y coincide si alguna trayectoria constante. No originalidad científica acreditada. LGD representa pérdida a fecha de default, no doble descuento de recuperación.
 
 Roadmap: fuenteLGD explícita antes de conectar al adaptador de fechas; contrato/licencia de recuperaciones antes de calibrar; cross-check externo antes de curvas no afines. Continuar con invariantes/recuperación del caso previo; ajustar si semánticaLGD no corresponde; no usar como modelo real sin datos/revisión.
+
+## 4 de noviembre de 2026 — incertidumbre paramétrica de LGD
+
+Base `a1aaa56` con PR135/136 ya integrados; se releen informes 1103, README, código y roadmap. Tres candidatas: Beta-LGD independiente con momentos exactos (elegida, admite oráculo cerrado sin datos), LGD dependiente del tiempo/default (aplazada por falta de identificación) y workout censurado (aplazado por datos/autorización ausentes). Expande el producto EAD×LGD del 3-nov; no abre programa independiente ni cambia contratos compartidos.
+
+La hipótesis técnica es que sustituir G~Beta por E[G] reduce la varianza total cuando Var(G)>0 y G independiente del tiempo de default. Se implementa expansión exacta para EAD afín y hazards competidores constantes. El plug-in conserva la media; suprime la varianza de severidad. Negativo de ablación: con concentración Beta creciente y media fija, la diferencia se aproxima a cero.
+
+MVP en `uncertainty/`: 5 tests pasan; el escenario fijo da E[L]=11.989958599649365, SD completa=30.032915911546965, SD plug-in=28.23831658603103. Simpson n=4096 verifica la media con error absoluto2.49e-14. Sensibilidad/figura inspeccionada. Sólo simulación determinista/modelo, sin parámetros estimados. Referencias oficiales/editoriales se comprobaron por búsqueda el4-nov; matriz bajo `uncertainty/prior-art.md`. Estado M1 local hasta revisión, no ascender programa. Siguiente: validar dependencia LGD/default con cohortes autorizadas y censura declarada.

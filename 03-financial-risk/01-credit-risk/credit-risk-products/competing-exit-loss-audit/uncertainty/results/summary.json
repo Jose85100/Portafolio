@@ -1,0 +1,21 @@
+{
+  "scenario": {
+    "ead_start": 100.0,
+    "ead_end": 160.0,
+    "horizon": 1.0,
+    "hazard_default": 0.18,
+    "hazard_prepay": 0.12,
+    "lgd_alpha": 3.0,
+    "lgd_beta": 2.0
+  },
+  "moments": {
+    "default_probability": 0.15550906759096927,
+    "expected_loss": 11.989958599649365,
+    "loss_variance": 901.9760381500508,
+    "loss_sd": 30.032915911546965,
+    "plugin_variance": 797.4025236129152,
+    "lgd_mean": 0.6,
+    "lgd_variance": 0.040000000000000036
+  },
+  "evidence": "synthetic exact model"
+}
