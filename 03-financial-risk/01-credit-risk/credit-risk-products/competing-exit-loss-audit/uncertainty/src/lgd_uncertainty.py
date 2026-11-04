@@ -73,7 +73,7 @@ def evaluate(s: Scenario) -> LossMoments:
     lm2 = s.lgd_alpha * (s.lgd_alpha + 1) / ((s.lgd_alpha + s.lgd_beta) * (s.lgd_alpha + s.lgd_beta + 1))
     loss_mean = lm * ead_first
     variance = max(0.0, lm2*ead_second - loss_mean**2)
-    # Deliberately misleading baseline: replaces uncertain LGD by its mean,
+    # Plug-in baseline: replaces uncertain LGD by its mean,
     # retaining default-time uncertainty but dropping LGD parameter variance.
     plugin_var = max(0.0, lm*lm*ead_second - loss_mean**2)
     return LossMoments(p_default, loss_mean, variance, math.sqrt(variance), plugin_var, lm, lm2-lm*lm)
