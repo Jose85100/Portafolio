@@ -69,3 +69,7 @@ flowchart TD
     B -->|No| C["Bloqueo con motivos, sin cotas"]
     B -->|Sí| D["Auditor parcial1nov y manifiesto canónico"]
 ```
+
+## Incremento delta bitemporal — 4 de noviembre de 2026
+
+El [MVP de replay delta](MVP_delta1104.md) amplía el gate de revisiones completas con eventos `link/unlink` y separa tiempo efectivo de disponibilidad. El informe conserva la semántica sintética y el contraejemplo al orden por llegada.

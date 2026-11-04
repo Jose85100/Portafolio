@@ -1,0 +1,12 @@
+test_conflict_at_final_maximum_blocks_in_any_order (tests.test_delta_replay.ReplayTests.test_conflict_at_final_maximum_blocks_in_any_order) ... ok
+test_cutoff_invariance_for_future_duplicate_or_malformed_payload (tests.test_delta_replay.ReplayTests.test_cutoff_invariance_for_future_duplicate_or_malformed_payload) ... ok
+test_duplicate_and_conflict_block (tests.test_delta_replay.ReplayTests.test_duplicate_and_conflict_block) ... ok
+test_event_order_irrelevant (tests.test_delta_replay.ReplayTests.test_event_order_irrelevant) ... ok
+test_late_unlink_retroactive_correction_respects_cutoff (tests.test_delta_replay.ReplayTests.test_late_unlink_retroactive_correction_respects_cutoff) ... ok
+test_superseded_conflicting_tie_does_not_block (tests.test_delta_replay.ReplayTests.test_superseded_conflicting_tie_does_not_block) ... ok
+test_timezone_naive_rejected (tests.test_delta_replay.ReplayTests.test_timezone_naive_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.000s
+
+OK
