@@ -19,3 +19,14 @@ Mismo `bash run.sh`: añade `src.run_estimated_interval`,3240réplicas en3regím
 ## Ciclo2nov: cobertura bajo cuarto momento acotado
 
 Mismo `bash run.sh`, añade `src.run_moment_interval`. Reutiliza los fixtures1nov porhash. `moment-config.json`, `derivacion1102.md`, `prior-art1102.md`; CSV/JSON y `results/moment-interval.png` muestran cobertura, amplitud y coste decisorio. K9 es un supuesto externo, no estimación de kurtosis. Cobertura t5 mejora a costa de intervalos amplios y mayor regret medio; ruptura temporal sigue sin garantía.
+
+## Ciclo3nov: dependencia estacionaria AR(1)
+
+El mismo `bash run.sh` añade `src.run_dependent_interval` y genera `notebook-dependent.ipynb`. El incremento compara (i) intervalo Chebyshev del promedio de diferencias cuadradas, con covarianza exacta bajo Gaussianidad conjunta, (ii) GLS chi-cuadrado exacto con rho conocido y (iii) intervalo iid mal especificado como control negativo. Los seeds `[1103,1104,1105]`, 30 réplicas por seed/celda y ocho combinaciones n/rho están en `dependent-config.json`. Dos celdas no alcanzan el límite Wilson95 predefinido para el baseline GLS; ese resultado negativo no refuta su pivote exacto y permanece visible en `informe1103.md`. Datos sintéticos únicamente; detalle de derivación, fuentes y límites en `derivacion1103.md` y `prior-art1103.md`.
+
+### Verificación y estado de publicación — 3 nov 2026
+
+- **Local reproducido:** `bash run.sh`; 32/32 pruebas, Ruff, mypy y notebooks acumulativo (18 celdas de código) y focal (4 celdas) completados. Cobertura medida: 94% acumulada y 85% en `dependent_interval.py`.
+- **Revisión independiente:** `revisor_indep1103` reprodujo el comando en worktree aislado y auditó derivación AR(1)/GLS con rho conocido, resultados Wilson/H1, sensibilidad y figura; dictamen del 3-nov: sin bloqueantes, evidencia sintética. [Registro consolidado de revisión](../../../../reviews/2026-11-03-cycle/README.md#revisión-independiente).
+- **CI remoto:** [Economics vintage audit #41674562614](https://github.com/Jose85100/Portafolio/actions/runs/41674562614) y [Notebook Reliability #41674562661](https://github.com/Jose85100/Portafolio/actions/runs/41674562661): `SUCCESS`, ambos sobre el commit de código `6c9a8d6c4378c7a00ac7394f90d1c1d6f1bfd105`. Esta actualización posterior es sólo documental.
+- **Publicación:** [PR #139](https://github.com/Jose85100/Portafolio/pull/139) abierto y sin merge. Madurez económica local S2; no se eleva a S3 ni se afirma validación empírica. El estado de CI no eleva por sí solo la madurez del programa.

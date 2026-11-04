@@ -26,3 +26,15 @@
 1. Intervalo competitivo menos conservador, supuestos explícitos, nuevas semillas confirmatorias.
 2. Dependencia temporal: especificar proceso y demostrar o refutar fórmula de VarW/media antes de usarla.
 3. JustificarK y dominio con contrato macro real/licencia/identificación; no afirmar satisfacción por simulación.
+
+- 2026-11-03 recuperación: se amplía el mismo programa a shocks gaussianos AR(1) con rho conocido. Candidatas: incrementos corregidos + Chebyshev (seleccionada), GLS/Prais–Winsten (baseline exacto y más informativo), HAC/bootstrap/rho estimado (diferido por incertidumbre del primer paso). Se deriva Var(vhat_pair)/v² y se guarda una abstención cuando el radio Chebyshev no admite límite superior. Corrida sintética fija 3 seeds × 8 celdas ×30=720 muestras; H1 screening Wilson inferior GLS≥.80 falla en n64/rho0 y n256/rho.9. Resultado no refuta el pivote GLS; paired-chebyshev cubre más con intervalo medio más ancho (1.3458 vs .4585). El baseline iid cae a cobertura .144–.400 en rho .9/.95. No datos reales, no aporte original. Los antiguos conteos 79/90,77/90,78/90 mencionados por una corrida previa quedan marcados como evidencia histórica no recuperada, no reproducida y distinta de estos outputs.
+
+## Mapa y estado 3nov
+
+Se conserva el mapa 29–2nov; nuevo nodo: dependencia temporal bajo AR(1) conocido, con tres artefactos generados y tests. El código y corridas focales pasan localmente; S2 sigue siendo la madurez local, sin afirmar S3/M2 hasta revisión independiente e integración.
+
+## Roadmap después del 3nov
+
+1. Estimar rho y contrastar inferencia con incertidumbre de primer paso en `src/dependent_interval.py`.
+2. Implementar HAC/bootstrap con elección del bloque preespecificada y seeds confirmatorios en `benchmarks/`.
+3. Especificar fuente/vintage/licencia/identificación de shocks antes de any análisis empírico, en `data-contract1101.md`.
