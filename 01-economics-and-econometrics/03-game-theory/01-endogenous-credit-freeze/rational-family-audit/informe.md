@@ -159,3 +159,29 @@ son prueba formal ni validación S3. No hay datos reales, estimación causal, se
 política óptima ni métricas de bienestar social. No generalizar resultados a sistemas
 bancarios ni a más tipos/agentes. La independencia de implementación no implica
 independencia de todos los primitives reutilizados: modelo/exportador son compartidos.
+
+## Extensión 2026-11-04 — sensibilidad del equilibrio a error de pagos
+
+### Pregunta, brecha y candidatas
+
+El MVP anterior certifica regret racional exactamente cero en el juego declarado, pero esa igualdad puede ser frágil al redondeo/calibración de utilidades. Se compararon: (i) cota exacta de regret bajo errores de caja por celda (elegida; implementable y falsable con enumeración de vértices), (ii) perturbación del prior privado (pospuesta porque requiere recalcular todas las matrices Bayesianas y discutir información), y (iii) variación del set de acciones/señales (pospuesta por ser cambio del juego, no sensibilidad de la solución).
+
+### Fórmula, hipótesis y propiedades
+
+Para pagos de jugador $A_{ij}$, estrategia propia $p_i$, estrategia rival $q_j$, y desviación pura $a$, regret nominal es $g_a=\sum_jq_j[A_{aj}-\sum_ip_iA_{ij}]$. Si cada entrada admite error independiente $\epsilon_{ij}\in[-\delta,\delta]$, el error máximo en la diferencia esperada es la función soporte de la caja: $\delta\sum_{ij}q_j|\mathbf1(i=a)-p_i|$. Por tanto $\epsilon$-regret robusto es $R_\delta=\max(0,\max_a[g_a+\delta\sum_{ij}q_j|\mathbf1(i=a)-p_i|])$. Es exacto para incertidumbre rectangular e independiente por celda; sería sólo cota conservadora si errores compartidos/correlacionados. El perfil sigue siendo mezcla conductual; no se modifica el equilibrio ni el payoff medio.
+
+H1: el cálculo analítico coincide, a tolerancia 1e-12, con enumerar las 2^4 esquinas de la caja en 60 matrices diseñadas con semilla 4. La afirmación queda falsada por cualquier discrepancia. La utilidad es un certificado de fragilidad, no una predicción de probabilidad del error.
+
+### Experimento y resultado
+
+Juego de coordinación sintético con pagos [[1,-1],[-1,1]], estrategia mixta (1/2,1/2) por jugador. Baseline nominal: regret 0. Para deltas 0,.005,.01,.02,.05,.1, la cota exacta es igual a delta. Se comparó cada caso aleatorio con el oráculo de 16 vértices; 60/60 coincidieron. Cuatro tests locales cubren caso exacto, límite cero, caja y entradas inválidas. El generador guardó seis filas CSV, JSON y figura; tiempo total observado 104547 ns en una llamada de corrida y no constituye benchmark de rendimiento. La figura muestra unidades de utilidad; no representa muestra empírica.
+
+### Interpretación, negativo y límites
+
+El resultado muestra que un equilibrio exacto puede perder certificación con perturbaciones de pagos arbitrariamente pequeñas: no significa que el comportamiento económico cambie ni que la cota sea probabilística. Sin estructura de covarianza, el peor caso rectangular puede ser deliberadamente conservador. La extensión es adaptación de ingeniería/auditoría (no una novedad científica); conecta el regret racional exacto del solver con incertidumbre de calibración. Se conserva el resultado negativo de que certificación nominal cero no implica robustez positiva.
+
+### Artefactos/reproducción/madurez
+
+Desde la carpeta del programa: `python -m unittest tests.test_epsilon_robustness -v && python -m src.run_robustness`. El comando acumulativo `bash reproduce.sh` ahora incluye ambos. Código tipado: `src/epsilon_robustness.py`; tests contra todas las esquinas: `tests/test_epsilon_robustness.py`; configuración reproducible dentro de `src/run_robustness.py`; salidas bajo `results/payoff-uncertainty.*`; notebook suplementario `notebook_robustness.ipynb`. Referencias y matriz de prior art existentes en `referencias.bib` e `informe.md` (Gambit, Harsanyi, resultados de Nash y racionalidad); no se agregan afirmaciones regulatorias.
+
+**Madurez:** componente local mantiene S2; extensión experimental adicional, no promoción de programa. S3 pendiente: incertidumbre estructurada correlacionada/paramétrica, más juegos y validación del DGP. Dataset diseñado sin licencia externa; semilla 4 en test, 20261104 en config; Python 3.12.14; Linux x86_64. Fórmulas y reporte describen incertidumbre sobre utilidad en unidades adimensionales.
