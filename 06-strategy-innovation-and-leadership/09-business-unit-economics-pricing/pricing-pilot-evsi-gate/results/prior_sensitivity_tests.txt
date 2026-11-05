@@ -1,0 +1,15 @@
+test_cost_gate (test_evsi.Tests.test_cost_gate) ... ok
+test_cost_monotonic (test_evsi.Tests.test_cost_monotonic) ... ok
+test_evsi_nonnegative (test_evsi.Tests.test_evsi_nonnegative) ... ok
+test_more_info_not_lower (test_evsi.Tests.test_more_info_not_lower) ... ok
+test_predictive_mass (test_evsi.Tests.test_predictive_mass) ... ok
+test_reject_invalid (test_evsi.Tests.test_reject_invalid) ... ok
+test_expected_value_converges_to_baseline_at_high_concentration (test_prior_sensitivity.PriorSensitivityTests.test_expected_value_converges_to_baseline_at_high_concentration) ... ok
+test_means_preserved_evsi_tends_down_with_concentration (test_prior_sensitivity.PriorSensitivityTests.test_means_preserved_evsi_tends_down_with_concentration) ... ok
+test_nonpositive_concentration_rejected (test_prior_sensitivity.PriorSensitivityTests.test_nonpositive_concentration_rejected) ... ok
+test_pilot_cost_can_reverse_gate_without_changing_evsi (test_prior_sensitivity.PriorSensitivityTests.test_pilot_cost_can_reverse_gate_without_changing_evsi) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.022s
+
+OK
