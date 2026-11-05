@@ -46,6 +46,7 @@ test_transitive (test_splitter.Tests.test_transitive) ... ok
 test_unknown (test_splitter.Tests.test_unknown) ... ok
 test_duplicate_revision_id_rejected (test_temporal_revisions.TemporalRevisionTests.test_duplicate_revision_id_rejected) ... ok
 test_future_available_revision_is_invisible_at_cutoff (test_temporal_revisions.TemporalRevisionTests.test_future_available_revision_is_invisible_at_cutoff) ... ok
+test_future_malformed_payload_and_duplicate_id_are_noninterfering (test_temporal_revisions.TemporalRevisionTests.test_future_malformed_payload_and_duplicate_id_are_noninterfering) ... ok
 test_half_open_interval (test_temporal_revisions.TemporalRevisionTests.test_half_open_interval) ... ok
 test_invalid_interval_rejected (test_temporal_revisions.TemporalRevisionTests.test_invalid_interval_rejected) ... ok
 test_latest_revision_can_be_future_effective_and_does_not_fallback (test_temporal_revisions.TemporalRevisionTests.test_latest_revision_can_be_future_effective_and_does_not_fallback) ... ok
@@ -57,6 +58,6 @@ test_tie_at_latest_availability_rejected (test_temporal_revisions.TemporalRevisi
 test_utc_offsets_compare_as_instants (test_temporal_revisions.TemporalRevisionTests.test_utc_offsets_compare_as_instants) ... ok
 
 ----------------------------------------------------------------------
-Ran 57 tests in 2.152s
+Ran 58 tests in 1.447s
 
 OK

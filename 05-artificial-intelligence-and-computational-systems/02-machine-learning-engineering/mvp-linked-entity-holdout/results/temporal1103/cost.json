@@ -1,6 +1,6 @@
 {
   "n": 1080,
-  "median_ns": 77527,
-  "p95_ns": 113502,
-  "max_peak_bytes": 2118
+  "median_ns": 71005,
+  "p95_ns": 96673,
+  "max_peak_bytes": 1618
 }
