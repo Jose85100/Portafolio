@@ -60,3 +60,20 @@ Pregunta central: certificar disponibilidad bajo supuestos auditables, separada 
 Mapa: causa común29 → reservas dependientes30 → rol conjunto31 → caja01nov → restricción conjunta hipotética02nov. Aporte: adaptación de ingeniería y auditoría de cotas clásicas, no originalidad disciplinar. Hipótesis: intersección factible no empeora el certificado; fórmula/LP concuerdan dentro de1e-10 y piso0 recupera01nov dentro de1e-12. Umbrales declarados en config antes de interpretar resultados.
 
 Resultado diseñado: B tiene base0,8476 y certificado0,8665 si se suministra piso0,65; mínimo requerido4/7. Sin ese supuesto nuevo C sigue siendo la opción robusta. Negativos: piso redundante0,55 no aporta, piso incompatible0,99 se rechaza y meta0,97 no puede repararse. No se obtuvo evidencia empírica del piso ni se atribuye cobertura estadística. Registro final de ejecución/revisión/publicación en informe02nov.
+
+
+## 3 de noviembre de 2026 — límites simultáneos para seleccionar por costo
+
+Continuidad: leer historial29oct–2nov, derivaciones, casos negativos, y pendientes de datos y deriva. La pregunta central sigue siendo disponibilidad auditable del comité; se deja de asumir que el vector de probabilidades de cada plan es conocido. El evento, el costo abstracto y la elegibilidad no cambian.
+
+| Candidata | Brecha / diferencia / valor | Factibilidad y evidencia | Decisión |
+|---|---|---|---|
+| Clopper–Pearson unilateral + Bonferroni para menú fijado | Cierra el salto desde probabilidades supuestas a conteos y protege la selección entre varias opciones | Alta: inversión beta, cobertura binomial exacta, cola por bisección independiente, y prueba de ruptura | Elegida; incremento acotado y conectable |
+| Bootstrap por bloques para series de reuniones | Podría tolerar dependencia temporal mejor que IID | Requiere una serie observada extensa, diseño de bloque y validación fuera de muestra no disponibles | Pospuesta; no simular permiso ni datos |
+| Secuencia e-process / confianza anytime | Permitiría monitoreo continuo sin fijar horizonte | Más compleja; la organización necesitaría protocolo secuencial predefinido y control de cambios | Pospuesta para no mezclar selección secuencial con menú fijo |
+
+Hipótesis técnica falsable preespecificada: con menú sintético fijo, presupuesto familiar0,05 y meta0,56, CP+Bonferroni selecciona B mientras Hoeffding con la misma corrección selecciona C; cada límite coincide con una inversión/coverage oracle dentro de1e-10. Una ruptura de régimen debe exhibir caída de cobertura al interpretar el historial como estacionario. No se afirma superioridad universal de CP: es un método clásico, exacto discreto bajo el modelo y puede ser conservador.
+
+Configuración sintética: A(110/200,costo1), B(130/200,costo2), C(150/200,costo3). Cada conteo fue diseñado, no observado. Cobertura exacta en seis n por101 probabilidades (606 celdas por método);230 comparaciones CP frente a suma binomial independiente;14.400 réplicas Monte Carlo, tres semillas, mitad estacionaria p=.6 y mitad con ruptura .7→.5 a la mitad de 200 sesiones. La cobertura en deriva se calcula contra la tasa vigente .5 para revelar que el supuesto IID estacionario no se conserva. Las semillas miden error de simulación, no confianza empírica.
+
+Clasificación: adaptación de ingeniería / análisis ejecutivo de método clásico, no contribución metodológica original. Matriz de prior art ampliada con Clopper–Pearson1934, Hoeffding1963, Holm1979 y artículos de gobierno, asistencia y distribuciones previos. El texto de Holm se cita como contexto de control familiar, no se implementa su procedimiento step-down; aquí se usa únicamente la cota de unión Bonferroni.

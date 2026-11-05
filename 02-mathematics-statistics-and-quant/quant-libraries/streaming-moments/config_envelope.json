@@ -1,0 +1,26 @@
+{
+  "question": "Can a sidecar preserve diagnostic coverage and declared provenance for MOMENTS_V1 without changing the numeric wire contract?",
+  "hypothesis": "Across 12 deterministic synthetic states, all payload bytes and the distinctions tracked/partial/unknown round-trip exactly; any payload or metadata mutation is rejected.",
+  "threshold": "12/12 exact payload and metadata scenarios; 60/60 exact round-trips per method; reject the two tested mutation classes.",
+  "baseline": "Flat Python JSON sidecar with the same claims, shared semantic validation and payload/record SHA-256 digests.",
+  "data": "No external dataset. Deterministic synthetic summaries created from values using seed 831103.",
+  "seed": 831103,
+  "scenario_count": 12,
+  "repetitions": 5,
+  "hardware": {
+    "os": "Linux 6.18.57 x86_64, glibc 2.39",
+    "cpu": "AMD EPYC 9V74 80-Core Processor",
+    "logical_cpus_visible": 9,
+    "compiler": "g++ 13.3.0",
+    "cmake": "4.1.2"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8",
+    "nbformat": "5.10.4",
+    "pins": "requirements.txt",
+    "cpp_contract": "MOMENTS_V1 unchanged"
+  },
+  "format_scope": "Local Python JSON serialization with sorted keys; not claimed RFC 8785/JCS canonicalization."
+}

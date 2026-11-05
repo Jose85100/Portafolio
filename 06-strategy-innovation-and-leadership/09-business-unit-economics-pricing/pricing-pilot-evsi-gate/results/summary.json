@@ -1,0 +1,11 @@
+{
+  "n_per_arm": 20,
+  "pilot_cost": 1,
+  "baseline_action": "price_A",
+  "baseline_value": 55.00000000000001,
+  "expected_value_after_sample": 57.21368047459871,
+  "evsi": 2.2136804745987035,
+  "net_evsi": 1.2136804745987035,
+  "predictive_mass": 1.0000000000000044,
+  "decision": "pilot"
+}
