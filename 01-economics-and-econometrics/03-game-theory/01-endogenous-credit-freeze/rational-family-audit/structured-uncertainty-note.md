@@ -18,4 +18,4 @@ El término de shock es `Σ_j q_j θ_j(1−Σ_i p_i)=0`, ya que `Σ_i p_i=1`. Po
 
 ## Estado
 
-Código exploratorio en `src/uncertainty_structures.py`; dos pruebas pasan, incluida enumeración de los cuatro vértices en un juego 2×2. Datos/ejemplo sintéticos. Aporte: adaptación de ingeniería y resultado de cancelación verificable, no una contribución científica original. No declarar S2 completo hasta cerrar notebook ejecutado, figura/CSV/JSON reproducibles, referencias específicas, informe de ablations y revisión independiente.
+Código en `src/uncertainty_structures.py`; pruebas focales incluyen los cuatro vértices y entradas no finitas. Datos/ejemplo sintéticos. Aporte: adaptación de ingeniería y resultado de cancelación verificable, no una contribución científica original. `informe_structured.md` registra la ablación negativa y límites; el nivel S del programa depende de revisión independiente y alcance del estándar.
