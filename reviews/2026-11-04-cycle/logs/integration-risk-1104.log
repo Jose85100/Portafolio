@@ -1,0 +1,12 @@
+test_beta_degenerate_limit_variance_removed (test_lgd_uncertainty.MomentsTests.test_beta_degenerate_limit_variance_removed) ... ok
+test_constant_ead_and_zero_prepay (test_lgd_uncertainty.MomentsTests.test_constant_ead_and_zero_prepay) ... ok
+test_exp_moment_near_series_boundary_against_decimal (test_lgd_uncertainty.MomentsTests.test_exp_moment_near_series_boundary_against_decimal) ... ok
+test_exponential_integrals_match_limits (test_lgd_uncertainty.MomentsTests.test_exponential_integrals_match_limits) ... ok
+test_input_validation (test_lgd_uncertainty.MomentsTests.test_input_validation) ... ok
+test_zero_default_hazard (test_lgd_uncertainty.MomentsTests.test_zero_default_hazard) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+{"mean_loss": 11.989958599649365, "sd_uncertain": 30.032915911546954, "sd_plugin_variance": 28.23831658603102, "simpson_error": 2.4868995751603507e-14}

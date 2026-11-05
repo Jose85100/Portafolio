@@ -1,0 +1,47 @@
+test_degeneracies (test_ambiguity.AmbiguityTests.test_degeneracies) ... ok
+test_invalid (test_ambiguity.AmbiguityTests.test_invalid) ... ok
+test_known_variance (test_ambiguity.AmbiguityTests.test_known_variance) ... ok
+test_negative_price_of_robustness (test_ambiguity.AmbiguityTests.test_negative_price_of_robustness) ... ok
+test_oracle_and_interior_envelope (test_ambiguity.AmbiguityTests.test_oracle_and_interior_envelope) ... ok
+test_invalid (test_delegation.DelegationTest.test_invalid) ... ok
+test_negative_controls (test_delegation.DelegationTest.test_negative_controls) ... ok
+test_state_formula_and_oracle_grid (test_delegation.DelegationTest.test_state_formula_and_oracle_grid) ... ok
+test_exact_gls_interval_contains_estimate (test_dependent_interval.DependentIntervalTests.test_exact_gls_interval_contains_estimate) ... ok
+test_gls_whitening_matches_dense_gls_residual_variance (test_dependent_interval.DependentIntervalTests.test_gls_whitening_matches_dense_gls_residual_variance) ... ok
+test_iid_baseline_rejects_bad_data_and_confidence (test_dependent_interval.DependentIntervalTests.test_iid_baseline_rejects_bad_data_and_confidence) ... ok
+test_insufficient_and_nonfinite_series_rejected (test_dependent_interval.DependentIntervalTests.test_insufficient_and_nonfinite_series_rejected) ... ok
+test_pair_estimator_corrects_known_ar1_persistence (test_dependent_interval.DependentIntervalTests.test_pair_estimator_corrects_known_ar1_persistence) ... ok
+test_pair_variance_coefficient_matches_closed_form_at_rho_zero (test_dependent_interval.DependentIntervalTests.test_pair_variance_coefficient_matches_closed_form_at_rho_zero) ... ok
+test_paired_interval_has_nonzero_width_and_contains_point_estimate (test_dependent_interval.DependentIntervalTests.test_paired_interval_has_nonzero_width_and_contains_point_estimate) ... ok
+test_rho_outside_stationary_domain_is_rejected (test_dependent_interval.DependentIntervalTests.test_rho_outside_stationary_domain_is_rejected) ... ok
+test_exact_discrete_coverage (test_moment_interval.MomentIntervalTests.test_exact_discrete_coverage) ... ok
+test_exact_pair_moments (test_moment_interval.MomentIntervalTests.test_exact_pair_moments) ... ok
+test_invalid (test_moment_interval.MomentIntervalTests.test_invalid) ... ok
+test_pair_invariances_and_odd_tail (test_moment_interval.MomentIntervalTests.test_pair_invariances_and_odd_tail) ... ok
+test_uninformative_and_finite_upper (test_moment_interval.MomentIntervalTests.test_uninformative_and_finite_upper) ... ok
+test_zero_and_abstain (test_moment_interval.MomentIntervalTests.test_zero_and_abstain) ... ok
+test_anchor (test_monetary.MonetaryTests.test_anchor) ... ok
+test_contracts (test_monetary.MonetaryTests.test_contracts) ... ok
+test_exact_identity_and_oracle_properties (test_monetary.MonetaryTests.test_exact_identity_and_oracle_properties) ... ok
+test_zero_target_control (test_monetary.MonetaryTests.test_zero_target_control) ... ok
+test_independent_quantile_oracle (test_variance_interval.VarianceIntervalTests.test_independent_quantile_oracle) ... ok
+test_invalid_inputs (test_variance_interval.VarianceIntervalTests.test_invalid_inputs) ... ok
+test_shift_scale_and_permutation_invariants (test_variance_interval.VarianceIntervalTests.test_shift_scale_and_permutation_invariants) ... ok
+test_wider_confidence_and_clipping (test_variance_interval.VarianceIntervalTests.test_wider_confidence_and_clipping) ... ok
+test_wilson (test_variance_interval.VarianceIntervalTests.test_wilson) ... ok
+test_zero_and_abstention (test_variance_interval.VarianceIntervalTests.test_zero_and_abstention) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.144s
+
+OK
+........
+----------------------------------------------------------------------
+Ran 8 tests in 0.087s
+
+OK
+Name                        Stmts   Miss  Cover
+-----------------------------------------------
+src/dependent_interval.py      73     11    85%
+-----------------------------------------------
+TOTAL                          73     11    85%

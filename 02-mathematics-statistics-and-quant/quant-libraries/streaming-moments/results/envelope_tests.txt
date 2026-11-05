@@ -1,0 +1,39 @@
+test_disjointness_cannot_be_asserted_as_verified (test_audit_envelope.AuditEnvelopeTests.test_disjointness_cannot_be_asserted_as_verified) ... ok
+test_invalid_diagnostic_state_type_rejected (test_audit_envelope.AuditEnvelopeTests.test_invalid_diagnostic_state_type_rejected) ... ok
+test_invalid_v1_payload_rejected (test_audit_envelope.AuditEnvelopeTests.test_invalid_v1_payload_rejected) ... ok
+test_malformed_diagnostic_zero_cannot_be_marked_unknown (test_audit_envelope.AuditEnvelopeTests.test_malformed_diagnostic_zero_cannot_be_marked_unknown) ... ok
+test_metadata_tampering_is_rejected (test_audit_envelope.AuditEnvelopeTests.test_metadata_tampering_is_rejected) ... ok
+test_partial_requires_some_but_not_all_fields (test_audit_envelope.AuditEnvelopeTests.test_partial_requires_some_but_not_all_fields) ... ok
+test_payload_tampering_is_rejected (test_audit_envelope.AuditEnvelopeTests.test_payload_tampering_is_rejected) ... ok
+test_roundtrip_preserves_original_wire_and_unknown_is_null (test_audit_envelope.AuditEnvelopeTests.test_roundtrip_preserves_original_wire_and_unknown_is_null) ... ok
+test_sidecar_preserves_same_declared_claims (test_audit_envelope.AuditEnvelopeTests.test_sidecar_preserves_same_declared_claims) ... ok
+test_sidecar_rejects_semantically_invalid_claim_even_with_recomputed_digest (test_audit_envelope.AuditEnvelopeTests.test_sidecar_rejects_semantically_invalid_claim_even_with_recomputed_digest) ... ok
+test_tracked_zero_is_distinct_from_unknown (test_audit_envelope.AuditEnvelopeTests.test_tracked_zero_is_distinct_from_unknown) ... ok
+test_binary_covariance (test_dynamic.DynamicTests.test_binary_covariance) ... ok
+test_oracle_orders (test_dynamic.DynamicTests.test_oracle_orders) ... ok
+test_range_and_invalid (test_dynamic.DynamicTests.test_range_and_invalid) ... ok
+test_state_and_rescale (test_dynamic.DynamicTests.test_state_and_rescale) ... ok
+test_subnormal (test_dynamic.DynamicTests.test_subnormal) ... ok
+test_zero_prefix_and_constant (test_dynamic.DynamicTests.test_zero_prefix_and_constant) ... ok
+test_empty_identity (test_merge.MergeTests.test_empty_identity) ... ok
+test_fixtures (test_merge.MergeTests.test_fixtures) ... ok
+test_mixed_scale_loss (test_merge.MergeTests.test_mixed_scale_loss) ... ok
+test_partitions_and_reduction (test_merge.MergeTests.test_partitions_and_reduction) ... ok
+test_zero_chunk_scale (test_merge.MergeTests.test_zero_chunk_scale) ... ok
+test_edges (test_moments.Tests.test_edges) ... ok
+test_merge_identity (test_moments.Tests.test_merge_identity) ... ok
+test_partitions_and_translation (test_moments.Tests.test_partitions_and_translation) ... ok
+test_units_and_order (test_moments.Tests.test_units_and_order) ... ok
+test_edges (test_scaled.ScaledTests.test_edges) ... ok
+test_extremes (test_scaled.ScaledTests.test_extremes) ... ok
+test_sample_sd_overflow (test_scaled.ScaledTests.test_sample_sd_overflow) ... ok
+test_sensitivity_and_properties (test_scaled.ScaledTests.test_sensitivity_and_properties) ... ok
+test_boundaries_and_ddof (test_transport.TransportTests.test_boundaries_and_ddof) ... ok
+test_cross_oracle (test_transport.TransportTests.test_cross_oracle) ... ok
+test_invalid_both_languages (test_transport.TransportTests.test_invalid_both_languages) ... ok
+test_roundtrip_exact (test_transport.TransportTests.test_roundtrip_exact) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 0.255s
+
+OK

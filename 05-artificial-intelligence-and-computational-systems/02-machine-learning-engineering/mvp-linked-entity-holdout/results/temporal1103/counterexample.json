@@ -1,0 +1,21 @@
+{
+  "latest_then_interval": {
+    "identity": "x",
+    "revision_id": "r1",
+    "value": "new",
+    "status": "not-effective-at-identity-time",
+    "available_at": "2026-01-04T00:00:00+00:00",
+    "effective_at": "2026-01-06T00:00:00+00:00",
+    "valid_until": "2026-01-10T00:00:00+00:00"
+  },
+  "filter_interval_then_latest": {
+    "identity": "x",
+    "revision_id": "r0",
+    "value": "old",
+    "status": "eligible",
+    "available_at": "2026-01-01T00:00:00+00:00",
+    "effective_at": "2026-01-01T00:00:00+00:00",
+    "valid_until": null
+  },
+  "interpretation": "A full replacement history selects r1 as the latest available revision; at identity_at=day 2 it is outside its valid interval, so it is ineligible. Filtering first improperly revives r0."
+}

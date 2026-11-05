@@ -61,3 +61,7 @@ Lotes1/2/4 miden throughput4x4, no escalabilidad dimensional. Memoria `tracemall
 `informe.md` documenta resultados ejecutados, costes, controles negativos, literatura
 parcial y fallos de entorno. `notebook.ipynb` conserva tablas/figura ejecutadas; `MVP.md`
 delimita madurez. No hay datos bancarios reales, modelo continuo ni validación S3.
+
+## Extensión 4-nov — caja de incertidumbre de pagos
+
+`python -m unittest tests.test_epsilon_robustness -v && python -m src.run_robustness` calcula y grafica el epsilon-regret robusto con errores independientes por celda. El baseline nominal conserva equilibrio exacto para delta=0; el oráculo prueba todas las esquinas de caja. Artefactos: `results/payoff-uncertainty.csv`, `.json`, `.png`, notebook suplementario. Datos sintéticos, sin promesa de robustez para errores correlacionados.

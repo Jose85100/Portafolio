@@ -16,4 +16,5 @@ fi
 "$PYTHON" -m benchmarks.joint_role_run
 "$PYTHON" -m benchmarks.interval_run
 "$PYTHON" -m benchmarks.pair_run
+"$PYTHON" -m benchmarks.coattendance_run
 "$PYTHON" -m benchmarks.notebook

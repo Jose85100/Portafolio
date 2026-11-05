@@ -1,0 +1,4 @@
+plan,abstract_cost,quorum_successes,synthetic_trials,empirical_data
+A,1,110,200,False
+B,2,130,200,False
+C,3,150,200,False
