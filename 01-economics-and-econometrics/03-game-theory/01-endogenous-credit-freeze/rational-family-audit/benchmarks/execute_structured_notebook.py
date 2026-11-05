@@ -1,16 +1,21 @@
 """Create and execute a small self-contained narrative notebook in process."""
 
 import contextlib
-import base64
 import io
 import json
 import sys
 from pathlib import Path
+from IPython.core.interactiveshell import InteractiveShell
+from IPython.utils.capture import capture_output
 
 root = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(root))
+
+
 def md(s: str) -> dict[str, object]:
     return {"cell_type": "markdown", "metadata": {}, "source": s}
+
+
 codes = [
     "from src.uncertainty_structures import shared_opponent_shock_regret\nfrom src.epsilon_robustness import robust_regret\nA=[[1.,-1.],[-.4,.7]]; p=[.3,.7]; q=[.6,.4]\nfor d in (0,.05,.1,.2):\n    print(d, shared_opponent_shock_regret(A,p,q,d), robust_regret(A,p,q,d).robust_regret)\nassert shared_opponent_shock_regret(A,p,q,.2)==shared_opponent_shock_regret(A,p,q,0)",
     "import csv\nfrom pathlib import Path\nrows=list(csv.DictReader(Path('results/structured_uncertainty/comparison.csv').open()))\nprint('rows=',len(rows),'last=',rows[-1])\nassert len(rows)==4",
@@ -42,23 +47,23 @@ for source in codes:
             ],
         }
     )
-png = root / "results/structured_uncertainty/comparison.png"
-if not png.is_file():
-    raise FileNotFoundError(png)
+source = "from IPython.display import Image, display\ndisplay(Image(filename='results/structured_uncertainty/comparison.png'))"
+InteractiveShell.instance()
+with capture_output(display=True) as captured:
+    exec(source, ns)
+if len(captured.outputs) != 1 or "image/png" not in captured.outputs[0].data:
+    raise RuntimeError("figure cell did not display a PNG")
 cells.append(
     {
         "cell_type": "code",
         "metadata": {},
         "execution_count": len(codes) + 1,
-        "source": "from IPython.display import Image, display\ndisplay(Image(filename='results/structured_uncertainty/comparison.png'))",
+        "source": source,
         "outputs": [
             {
                 "output_type": "display_data",
                 "metadata": {},
-                "data": {
-                    "image/png": base64.b64encode(png.read_bytes()).decode("ascii"),
-                    "text/plain": "Regret under shared and independent shocks",
-                },
+                "data": captured.outputs[0].data,
             }
         ],
     }
@@ -84,4 +89,4 @@ nb = {
 (root / "notebook_structured.ipynb").write_text(
     json.dumps(nb, indent=1, ensure_ascii=False) + "\n"
 )
-print("executed", len(codes), "cells in process; outputs saved")
+print("executed", len(codes) + 1, "cells in process; outputs saved")
