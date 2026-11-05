@@ -4,4 +4,4 @@ Pregunta: ¿un shock de payoff común a todas las acciones propias cambia el reg
 
 Tres candidatas comparadas: shock común por estado (seleccionada); incertidumbre de prior bayesiano (pospuesta por alcance de identificación); más de dos acciones (pospuesta por necesitar otro oráculo). La extensión es auditoría/adaptación de ingeniería, no novedad científica atribuida.
 
-Reproducir: `python3 benchmarks/structured_uncertainty.py` desde la raíz del proyecto existente. Produce CSV, JSON y PNG en `results/structured_uncertainty/`. Juego diseñado y sintético. Limitación: matriz 2×2 y un perfil; no estimación empírica. Madurez del incremento: prototipo local; no elevar nivel S del programa.
+Reproducir: `bash run_structured_uncertainty.sh` desde esta carpeta. Produce CSV, JSON y PNG en `results/structured_uncertainty/` y `notebook_structured.ipynb` ejecutado con tabla y figura visibles. Juego diseñado y sintético. Limitación: matriz 2×2 y un perfil; no estimación empírica. Madurez del incremento: prototipo local; no elevar nivel S del programa.
