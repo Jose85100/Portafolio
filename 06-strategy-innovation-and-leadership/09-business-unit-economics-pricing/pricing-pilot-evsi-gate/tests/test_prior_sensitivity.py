@@ -15,6 +15,12 @@ class PriorSensitivityTests(unittest.TestCase):
         rows = concentration_grid(p, 20, 1, [1,1000])
         self.assertLess(rows[-1]["evsi"], rows[0]["evsi"])
 
+    def test_high_concentration_negative_residual_is_reported(self):
+        p = [Price("A",100,11,9), Price("B",180,5,15)]
+        row = concentration_grid(p,20,1,[100])[0]
+        self.assertGreaterEqual(row["evsi"], -row["roundoff_bound"])
+        self.assertTrue(row["evsi_negative_roundoff"])
+
     def test_nonpositive_concentration_rejected(self):
         with self.assertRaises(ValueError): concentration_grid([Price("A",1,1,1),Price("B",2,1,1)],1,0,[0])
 
