@@ -1,0 +1,90 @@
+{
+  "synthetic": true,
+  "hypothesis": "EVSI decreases as common prior concentration grows at fixed means and sample size",
+  "rows": [
+    {
+      "concentration_multiplier": 0.25,
+      "n_per_arm": 20,
+      "pilot_cost": 1,
+      "baseline_action": "A",
+      "baseline_value": 55.00000000000001,
+      "expected_value_after_sample": 64.52397017568533,
+      "evsi": 9.523970175685328,
+      "net_evsi": 8.523970175685328,
+      "predictive_mass": 1.0000000000000009,
+      "decision": "pilot"
+    },
+    {
+      "concentration_multiplier": 0.5,
+      "n_per_arm": 20,
+      "pilot_cost": 1,
+      "baseline_action": "A",
+      "baseline_value": 55.00000000000001,
+      "expected_value_after_sample": 60.245229392982175,
+      "evsi": 5.245229392982168,
+      "net_evsi": 4.245229392982168,
+      "predictive_mass": 1.0000000000000138,
+      "decision": "pilot"
+    },
+    {
+      "concentration_multiplier": 1,
+      "n_per_arm": 20,
+      "pilot_cost": 1,
+      "baseline_action": "A",
+      "baseline_value": 55.00000000000001,
+      "expected_value_after_sample": 57.21368047459871,
+      "evsi": 2.2136804745987035,
+      "net_evsi": 1.2136804745987035,
+      "predictive_mass": 1.0000000000000044,
+      "decision": "pilot"
+    },
+    {
+      "concentration_multiplier": 2,
+      "n_per_arm": 20,
+      "pilot_cost": 1,
+      "baseline_action": "A",
+      "baseline_value": 55.00000000000001,
+      "expected_value_after_sample": 55.549009995304324,
+      "evsi": 0.549009995304317,
+      "net_evsi": -0.45099000469568296,
+      "predictive_mass": 1.0000000000000357,
+      "decision": "launch_now_or_close"
+    },
+    {
+      "concentration_multiplier": 4,
+      "n_per_arm": 20,
+      "pilot_cost": 1,
+      "baseline_action": "A",
+      "baseline_value": 55.00000000000001,
+      "expected_value_after_sample": 55.03629674284506,
+      "evsi": 0.03629674284505313,
+      "net_evsi": -0.9637032571549469,
+      "predictive_mass": 0.9999999999999595,
+      "decision": "launch_now_or_close"
+    },
+    {
+      "concentration_multiplier": 10,
+      "n_per_arm": 20,
+      "pilot_cost": 1,
+      "baseline_action": "A",
+      "baseline_value": 55.00000000000001,
+      "expected_value_after_sample": 55.00000052739119,
+      "evsi": 5.273911796166431e-07,
+      "net_evsi": -0.9999994726088204,
+      "predictive_mass": 1.0000000000000535,
+      "decision": "launch_now_or_close"
+    },
+    {
+      "concentration_multiplier": 100,
+      "n_per_arm": 20,
+      "pilot_cost": 1,
+      "baseline_action": "A",
+      "baseline_value": 55.00000000000001,
+      "expected_value_after_sample": 54.9999999998154,
+      "evsi": -1.8460610817783163e-10,
+      "net_evsi": -1.000000000184606,
+      "predictive_mass": 0.9999999999966444,
+      "decision": "launch_now_or_close"
+    }
+  ]
+}
