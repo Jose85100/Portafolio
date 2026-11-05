@@ -15,5 +15,12 @@ def concentration_grid(prices: list[Price], n: int, cost: float, multipliers: li
     for k in multipliers:
         adjusted = [replace(p, alpha=p.alpha*k, beta=p.beta*k) for p in prices]
         result = evaluate(adjusted, n, cost)
-        rows.append({"concentration_multiplier": k, **result})
+        # Jensen implies EVSI >= 0 in exact arithmetic. Keep the raw value visible.
+        # This scale-aware diagnostic flags sub-nanounit summation residuals.
+        bound = 1e-11 * max(1.0, abs(result["baseline_value"]))
+        if result["evsi"] < -bound:
+            raise ArithmeticError("negative EVSI exceeds the declared rounding bound")
+        rows.append({"concentration_multiplier": k, **result,
+                     "roundoff_bound": bound,
+                     "evsi_negative_roundoff": result["evsi"] < 0})
     return rows

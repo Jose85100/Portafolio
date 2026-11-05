@@ -12,7 +12,9 @@
       "evsi": 9.523970175685328,
       "net_evsi": 8.523970175685328,
       "predictive_mass": 1.0000000000000009,
-      "decision": "pilot"
+      "decision": "pilot",
+      "roundoff_bound": 5.500000000000001e-10,
+      "evsi_negative_roundoff": false
     },
     {
       "concentration_multiplier": 0.5,
@@ -24,7 +26,9 @@
       "evsi": 5.245229392982168,
       "net_evsi": 4.245229392982168,
       "predictive_mass": 1.0000000000000138,
-      "decision": "pilot"
+      "decision": "pilot",
+      "roundoff_bound": 5.500000000000001e-10,
+      "evsi_negative_roundoff": false
     },
     {
       "concentration_multiplier": 1,
@@ -36,7 +40,9 @@
       "evsi": 2.2136804745987035,
       "net_evsi": 1.2136804745987035,
       "predictive_mass": 1.0000000000000044,
-      "decision": "pilot"
+      "decision": "pilot",
+      "roundoff_bound": 5.500000000000001e-10,
+      "evsi_negative_roundoff": false
     },
     {
       "concentration_multiplier": 2,
@@ -48,7 +54,9 @@
       "evsi": 0.549009995304317,
       "net_evsi": -0.45099000469568296,
       "predictive_mass": 1.0000000000000357,
-      "decision": "launch_now_or_close"
+      "decision": "launch_now_or_close",
+      "roundoff_bound": 5.500000000000001e-10,
+      "evsi_negative_roundoff": false
     },
     {
       "concentration_multiplier": 4,
@@ -60,7 +68,9 @@
       "evsi": 0.03629674284505313,
       "net_evsi": -0.9637032571549469,
       "predictive_mass": 0.9999999999999595,
-      "decision": "launch_now_or_close"
+      "decision": "launch_now_or_close",
+      "roundoff_bound": 5.500000000000001e-10,
+      "evsi_negative_roundoff": false
     },
     {
       "concentration_multiplier": 10,
@@ -72,7 +82,9 @@
       "evsi": 5.273911796166431e-07,
       "net_evsi": -0.9999994726088204,
       "predictive_mass": 1.0000000000000535,
-      "decision": "launch_now_or_close"
+      "decision": "launch_now_or_close",
+      "roundoff_bound": 5.500000000000001e-10,
+      "evsi_negative_roundoff": false
     },
     {
       "concentration_multiplier": 100,
@@ -84,7 +96,9 @@
       "evsi": -1.8460610817783163e-10,
       "net_evsi": -1.000000000184606,
       "predictive_mass": 0.9999999999966444,
-      "decision": "launch_now_or_close"
+      "decision": "launch_now_or_close",
+      "roundoff_bound": 5.500000000000001e-10,
+      "evsi_negative_roundoff": true
     }
   ]
 }

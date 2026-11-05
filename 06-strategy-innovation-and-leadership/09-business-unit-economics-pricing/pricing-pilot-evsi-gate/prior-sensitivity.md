@@ -8,6 +8,9 @@ For Beta(a,b), preserve mean m=a/(a+b) while multiplying concentration κ=a+b by
 
 ## Reproduction and evidence
 
-`PYTHONPATH=src python -m unittest discover -s tests -v`; `PYTHONPATH=src python src/run_prior_sensitivity.py`. The latter emits CSV, JSON and PNG. All ten old+new tests pass. Data are synthetic; economics are abstract contribution units/customer. Five references are in `referencias.bib`; this is sensitivity auditing/adaptation of classical EVSI, not a new formula or empirical pricing recommendation. Limitations: two independent arms, fixed margins, no repeat purchases, delay or capacity effects.
+`PYTHONPATH=src python -m unittest discover -s tests -v`; `PYTHONPATH=src python src/run_prior_sensitivity.py`. The latter emits CSV, JSON and PNG. All eleven old+new tests pass. Data are synthetic; economics are abstract contribution units/customer. Five references are in `referencias.bib`; this is sensitivity auditing/adaptation of classical EVSI, not a new formula or empirical pricing recommendation. Limitations: two independent arms, fixed margins, no repeat purchases, delay or capacity effects.
 
 Notebook `notebooks/prior_sensitivity.ipynb` executed in order via `scripts/execute_prior_notebook.py` (IPython in-process): the local sandbox blocks Jupyter kernel network-interface discovery before cell execution. The notebook has visible table and PNG outputs; remote CI kernel execution remains unverified.
+
+### Numerical roundoff at high concentration
+Theoretical EVSI is nonnegative because the maximum of conditional expected values is convex. At c=100 the existing floating Beta-Binomial enumeration returns a raw EVSI about -1.85e-10, while predictive mass differs from one by 3.36e-12. We retain the raw value, flag `evsi_negative_roundoff=true`, and enforce a declared diagnostic bound `1e-11 * max(1, |baseline_value|)` (5.5e-10 in this fixture). This is numerical tolerance, not evidence of negative information value or a general accuracy guarantee.
