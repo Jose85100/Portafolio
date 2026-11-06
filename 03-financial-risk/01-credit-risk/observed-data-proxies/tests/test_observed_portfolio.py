@@ -13,7 +13,7 @@ def record(**updates):
     x = dict(fecha_corte="2025-01-31T00:00:00", deptoresidencia="Bogota",
              cantidad_creditos_al_dia="80", cantidad_creditos_con_mora="15",
              cantidad_creditos_mora_mayor="5", total_creditos="100",
-             indicador_cartera_vencida="4.2")
+             indicador_cartera_vencida="4.2", epoca_cartera="AMORTIZACION")
     x.update(updates)
     return x
 
@@ -35,6 +35,10 @@ class ObservedDataTests(unittest.TestCase):
     def test_duplicate_grain(self):
         with self.assertRaises(ValueError):
             m.build([record(), record()], date(2025, 1, 31))
+
+    def test_phase_is_part_of_unique_grain(self):
+        result = m.build([record(), record(epoca_cartera="ESTUDIOS")], date(2025, 1, 31))
+        self.assertEqual(len(result), 2)
 
     def test_fractional_count(self):
         with self.assertRaises(ValueError):
