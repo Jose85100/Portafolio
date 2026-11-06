@@ -27,7 +27,7 @@
 
 1. **Completado y ejecutado:** fuente real ICETEX -> descarga -> validación/filtrado explícito -> CSV + manifest + artefacto de CI.
 2. **Completado y ejecutado:** UCI -> microdatos observados -> regresión logística -> métricas reales -> artefacto de CI.
-3. **Implementado después del run citado, a revalidar:** señales de mora agregada ponderadas por créditos; documentación de motivos de rechazo.
+3. **Verificado en [run 42148884390](https://github.com/Jose85100/Portafolio/actions/runs/42148884390):** 19 periodos observados y 56 filas de señales de mora >90 días ponderadas por número de créditos, separadas por etapa y total; cuatro pruebas nuevas. Las 68 exclusiones corresponden a **fallas de conciliación de conteos**, documentadas en cuarentena. El archivo de señales está disponible como artefacto temporal de esa ejecución.
 4. **Pendiente:** versionado persistente de datasets brutos y publicaciones, SQL/Spark, join point-in-time al motor IFRS 9, etiquetas nacionales PD/LGD/EAD, calibración y aprobación independiente.
 
 **No convertir el dataset del ICETEX en etiqueta individual de PD.** No deben sumarse porcentajes regionales sin usar sus denominadores de crédito. Conservar explícitamente `epoca_cartera` y fechas de publicación.
