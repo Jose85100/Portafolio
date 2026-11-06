@@ -1,0 +1,17 @@
+name: Observed SFC and BanRep mart contracts
+on:
+  pull_request:
+    paths:
+      - 'data-governance/observed-financial-marts/**'
+      - '.github/workflows/observed-financial-marts.yml'
+  workflow_dispatch:
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run data validation and mart invariants
+        run: python -m unittest discover -s data-governance/observed-financial-marts/tests -v
