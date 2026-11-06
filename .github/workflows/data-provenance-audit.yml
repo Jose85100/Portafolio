@@ -1,0 +1,46 @@
+name: Repository-wide data provenance audit
+on:
+  pull_request:
+    paths:
+      - 'tools/data_provenance_audit.py'
+      - 'tests/test_data_provenance_audit.py'
+      - 'data-governance/provenance-migration/**'
+      - '.github/workflows/data-provenance-audit.yml'
+  workflow_dispatch:
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate scanner
+        run: python -m unittest discover -s tests -p 'test_data_provenance_audit.py' -v
+      - name: Inventory every tracked code file and notebook
+        run: python tools/data_provenance_audit.py --repo . --output-dir output/data-provenance
+      - name: Validate inventory and matrix
+        run: |
+          python - <<'PY'
+          import csv, json
+          from pathlib import Path
+          p=Path('output/data-provenance')
+          summary=json.loads((p/'summary.json').read_text())
+          with (p/'file_inventory.csv').open() as f:
+              rows=list(csv.DictReader(f))
+          with Path('data-governance/provenance-migration/migration_matrix.csv').open() as f:
+              matrix=list(csv.DictReader(f))
+          assert summary['tracked_code_files_inspected'] == len(rows)
+          assert summary['tracked_code_files_inspected'] > 0
+          assert len(matrix) >= 25
+          assert all(x['verified_observed_integration'] == 'NOT_VERIFIED' for x in rows)
+          print('Inspected:', len(rows), 'Mapped areas:', len(matrix))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: repository-data-provenance-inventory
+          path: output/data-provenance/
+          if-no-files-found: warn
+          retention-days: 30
