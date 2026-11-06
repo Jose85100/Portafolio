@@ -12,7 +12,7 @@ SOURCE_ID = "dugh-vkir"
 API = "https://www.datos.gov.co/resource/dugh-vkir.json"
 FIELDS = ("fecha_corte", "deptoresidencia", "cantidad_creditos_al_dia",
           "cantidad_creditos_con_mora", "cantidad_creditos_mora_mayor",
-          "total_creditos", "indicador_cartera_vencida")
+          "total_creditos", "indicador_cartera_vencida", "epoca_cartera")
 
 
 def normalized(row, as_of):
@@ -29,10 +29,11 @@ def normalized(row, as_of):
     if total == 0 or current + short + long != total:
         raise ValueError("Count reconciliation failed")
     dept = str(row["deptoresidencia"]).strip()
-    if not dept:
-        raise ValueError("Missing department")
+    stage = str(row.get("epoca_cartera", "")).strip()
+    if not dept or not stage:
+        raise ValueError("Missing department or portfolio phase")
     raw = row.get("indicador_cartera_vencida")
-    return dict(fecha_corte=cut.isoformat(), departamento=dept,
+    return dict(fecha_corte=cut.isoformat(), departamento=dept, epoca_cartera=stage,
                 creditos_total=total, creditos_mora_mayor_90d=long,
                 proporcion_mora_mayor_90d=long / total,
                 proporcion_cualquier_mora=(short + long) / total,
@@ -42,10 +43,10 @@ def normalized(row, as_of):
 
 def build(rows, as_of):
     result = [v for x in rows if (v := normalized(x, as_of)) is not None]
-    keys = [(x["fecha_corte"], x["departamento"]) for x in result]
+    keys = [(x["fecha_corte"], x["departamento"], x["epoca_cartera"]) for x in result]
     if len(set(keys)) != len(keys):
-        raise ValueError("Duplicate grain: date x department")
-    return sorted(result, key=lambda x: (x["fecha_corte"], x["departamento"]))
+        raise ValueError("Duplicate grain: date x department x phase")
+    return sorted(result, key=lambda x: (x["fecha_corte"], x["departamento"], x["epoca_cartera"]))
 
 
 def run(as_of, output, limit=5000):
@@ -54,18 +55,26 @@ def run(as_of, output, limit=5000):
     url = API + "?" + urllib.parse.urlencode({
         "$select": ",".join(FIELDS), "$order": "fecha_corte,deptoresidencia",
         "$limit": limit})
-    with urllib.request.urlopen(url, timeout=30) as stream:
-        raw = json.load(stream)
-    if not isinstance(raw, list):
-        raise ValueError("Unexpected API response")
-    if len(raw) >= limit:
-        raise ValueError("Potential truncation: paginate or increase limit before publishing")
+    raw = []
+    offset = 0
+    while True:
+        page_url = url + "&" + urllib.parse.urlencode({"$offset": offset})
+        with urllib.request.urlopen(page_url, timeout=30) as stream:
+            page = json.load(stream)
+        if not isinstance(page, list):
+            raise ValueError("Unexpected API response")
+        raw.extend(page)
+        if len(page) < limit:
+            break
+        offset += len(page)
+        if offset > 5000000:
+            raise ValueError("Unexpectedly large extraction: review API query")
     records = build(raw, as_of)
     dest = pathlib.Path(output)
     dest.mkdir(parents=True, exist_ok=True)
     csvpath = dest / "delinquency_observed.csv"
     with csvpath.open("w", newline="", encoding="utf-8") as stream:
-        fields = ["fecha_corte", "departamento", "creditos_total",
+        fields = ["fecha_corte", "departamento", "epoca_cartera", "creditos_total",
                   "creditos_mora_mayor_90d", "proporcion_mora_mayor_90d",
                   "proporcion_cualquier_mora", "indicador_cartera_vencida_fuente",
                   "evidencia", "es_pd_individual"]
@@ -74,7 +83,7 @@ def run(as_of, output, limit=5000):
         writer.writerows(records)
     manifest = dict(dataset=SOURCE_ID, url=url, as_of=as_of.isoformat(),
                     extracted_at=datetime.now(timezone.utc).isoformat(),
-                    rows=len(records), grain="date x department",
+                    rows=len(records), grain="date x department x portfolio phase",
                     evidence="OBSERVED_AGGREGATE_NOT_PD",
                     sha256=hashlib.sha256(csvpath.read_bytes()).hexdigest(),
                     caveat="Date cutoff is not historical publication-vintage validation")
