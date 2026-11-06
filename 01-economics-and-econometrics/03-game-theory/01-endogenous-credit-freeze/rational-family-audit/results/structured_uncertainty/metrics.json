@@ -1,0 +1,63 @@
+{
+  "config": {
+    "seed": 1105,
+    "game": {
+      "payoffs": [
+        [
+          1.0,
+          -1.0
+        ],
+        [
+          -0.4,
+          0.7
+        ]
+      ],
+      "own_strategy": [
+        0.3,
+        0.7
+      ],
+      "opponent_strategy": [
+        0.6,
+        0.4
+      ]
+    },
+    "deltas": [
+      0.0,
+      0.05,
+      0.1,
+      0.2
+    ],
+    "source": "designed synthetic 2x2 game; no empirical data",
+    "python": "3.12 compatible",
+    "hardware": "CPU only; platform recorded at run"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "rows": [
+    {
+      "delta": 0.0,
+      "nominal_regret": 0.11199999999999999,
+      "shared_state_shock_regret": 0.11199999999999999,
+      "independent_cell_box_regret": 0.11199999999999999
+    },
+    {
+      "delta": 0.05,
+      "nominal_regret": 0.11199999999999999,
+      "shared_state_shock_regret": 0.11199999999999999,
+      "independent_cell_box_regret": 0.182
+    },
+    {
+      "delta": 0.1,
+      "nominal_regret": 0.11199999999999999,
+      "shared_state_shock_regret": 0.11199999999999999,
+      "independent_cell_box_regret": 0.252
+    },
+    {
+      "delta": 0.2,
+      "nominal_regret": 0.11199999999999999,
+      "shared_state_shock_regret": 0.11199999999999999,
+      "independent_cell_box_regret": 0.39199999999999996
+    }
+  ],
+  "conclusion": "shared opponent-state shocks cancel in deviation regret; cellwise independent shocks need not"
+}

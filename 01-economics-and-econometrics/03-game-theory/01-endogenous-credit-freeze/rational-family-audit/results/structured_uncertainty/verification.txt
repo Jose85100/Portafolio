@@ -1,0 +1,8 @@
+2026-11-05 UTC — validation on Linux, Python 3.12.14.
+Command: bash run_structured_uncertainty.sh
+Result: exit 0; 3 focused unittest cases passed; Ruff passed; MyPy passed (1 file); CSV/JSON/PNG and in-process executed notebook generated.
+Command: bash reproduce.sh
+Result: exit 0; 17+9+10+12+12+8+4 = 72 existing project tests passed across suites; Ruff and MyPy passed; legacy notebook executed 2 cells in a fresh process.
+Command: .venv/bin/python -m unittest discover -s /workspace/scratch/d7de5daeb3ec/repo/wt-econ1105/01-economics-and-econometrics/computational-economics/tests -v
+Result: exit 0; 8 common suite tests passed.
+Scope: local execution, not remote CI or empirical validation. In-process notebook executor records visible streams and embeds actual comparison PNG; it does not launch an independent Jupyter kernel.
