@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-05",
+  "base": "5e0fb124462ed07b775b24a61226b1c9f51aca66",
+  "integration": "temporary local worktree /tmp/cycle-integration-20261105; four domain heads merged locally, no remote merge",
+  "merge_heads": {
+    "math": "research/2026-11-05-math-reconcile",
+    "ai": "research/2026-11-05-ai",
+    "ceo": "research/2026-11-05-ceo",
+    "economics": "research/2026-11-05-economics"
+  },
+  "commands": {
+    "economics": "bash run_structured_uncertainty.sh (3 focal tests; notebook PNG captured) + python3 -m unittest discover -s 01-economics-and-econometrics/computational-economics/tests -v from repository root: 8/8",
+    "mathematics": "MATH_ENV=.venv bash run.sh: 37 accumulated tests + 3 focal; Ruff/mypy; CMake Release/CTest; ASan/UBSan; benchmark and notebook passed after making the provisioned .venv visible at the integrated component path",
+    "ai": "PYTHON=<provisioned env>/bin/python SKIP_INSTALL=1 bash run_temporal_revisions.sh: 58 tests; Ruff/mypy; four notebook code cells passed",
+    "ceo": "bash run.sh: 11 tests; benchmark, CSV/JSON/PNG and three notebook code cells passed"
+  },
+  "first_attempt_adjustments": [
+    "Math benchmark expects .venv/bin/cmake relative to the component checkout; linked the existing provisioned venv and reran full command successfully.",
+    "Economics common suite was first invoked from the MVP subdirectory; reran from repository root successfully."
+  ],
+  "risk": "no current-day Risk increment; not included in integration"
+}
