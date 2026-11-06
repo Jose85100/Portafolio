@@ -97,7 +97,8 @@ def run(as_of, output, limit=5000):
     manifest = dict(dataset=SOURCE_ID, url=url, as_of=as_of.isoformat(),
                     extracted_at=datetime.now(timezone.utc).isoformat(),
                     rows=len(records), rejected_rows=len(rejected), rejected_fraction=invalid_rate, source_rows=len(raw), grain="date x department x portfolio phase",
-                    evidence="OBSERVED_ICETEX_EDUCATION_AGGREGATE_NOT_PD",\n                    provider="ICETEX",
+                    evidence="OBSERVED_ICETEX_EDUCATION_AGGREGATE_NOT_PD",
+                    provider="ICETEX",
                     sha256=hashlib.sha256(csvpath.read_bytes()).hexdigest(),
                     caveat="Date cutoff is not historical publication-vintage validation")
     (dest / "manifest.json").write_text(json.dumps(manifest, indent=2))
