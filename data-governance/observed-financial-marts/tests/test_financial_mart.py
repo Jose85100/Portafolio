@@ -42,7 +42,7 @@ class RealDataContractTests(unittest.TestCase):
 
     def test_rate_count_reconciliation(self):
         with self.assertRaisesRegex(ValueError, "inconsistent"):
-            m.compute([sfc(2025, 6)], [rate("2025-03", "")])
+            m.compute([sfc(2025, 6)], [{**rate("2025-03", ""), "observaciones_ibr": "4"}])
 
     def test_nonfinite_and_invalid_denominator(self):
         with self.assertRaises(ValueError):
