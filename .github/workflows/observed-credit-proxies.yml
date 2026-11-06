@@ -28,6 +28,10 @@ jobs:
           python 03-financial-risk/01-credit-risk/observed-data-proxies/src/observed_portfolio.py \
             --as-of 2026-11-05 --limit 5000 --output output/observed-credit
           test -s output/observed-credit/delinquency_observed.csv
+          python 03-financial-risk/01-credit-risk/observed-data-proxies/src/portfolio_signals.py \
+            --source output/observed-credit/delinquency_observed.csv \
+            --output output/observed-credit/portfolio_signals.csv
+          test -s output/observed-credit/portfolio_signals.csv
           python - <<'PY'
           import csv, json
           from pathlib import Path
