@@ -6,6 +6,7 @@ import json
 import pathlib
 import urllib.parse
 import urllib.request
+from collections import Counter
 from datetime import date, datetime, timezone
 
 SOURCE_ID = "dugh-vkir"
@@ -83,6 +84,8 @@ def run(as_of, output, limit=5000):
     dest.mkdir(parents=True, exist_ok=True)
     (dest / "rejected_records.json").write_text(json.dumps(rejected, indent=2, ensure_ascii=False))
     invalid_rate = len(rejected) / len(raw) if raw else 1.0
+    reason_counts = dict(sorted(Counter(item["reason"] for item in rejected).items()))
+    print("Source record rejection reasons:", json.dumps(reason_counts, sort_keys=True))
     if invalid_rate > 0.10 or not records:
         raise ValueError(f"Quality gate failed: {len(rejected)} invalid in {len(raw)} rows; {invalid_rate:.2%}")
     csvpath = dest / "delinquency_observed.csv"
@@ -96,7 +99,7 @@ def run(as_of, output, limit=5000):
         writer.writerows(records)
     manifest = dict(dataset=SOURCE_ID, url=url, as_of=as_of.isoformat(),
                     extracted_at=datetime.now(timezone.utc).isoformat(),
-                    rows=len(records), rejected_rows=len(rejected), rejected_fraction=invalid_rate, source_rows=len(raw), grain="date x department x portfolio phase",
+                    rows=len(records), rejected_rows=len(rejected), rejected_fraction=invalid_rate, rejection_reasons=reason_counts, source_rows=len(raw), grain="date x department x portfolio phase",
                     evidence="OBSERVED_ICETEX_EDUCATION_AGGREGATE_NOT_PD",
                     provider="ICETEX",
                     sha256=hashlib.sha256(csvpath.read_bytes()).hexdigest(),
