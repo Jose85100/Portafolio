@@ -36,3 +36,15 @@
 El conector de Drive disponible en esta conversación permitió consultar los originales, pero no instala credenciales OAuth en GitHub Actions por sí solo. Para ejecutar la descarga desde GitHub se necesitará **un mecanismo autorizado de identidad** (token de corta vida o workload identity con permisos mínimos, sin guardar tokens en el repo). Hasta entonces, el ejecutor se usa en entorno autorizado y el CI de GitHub solamente prueba contratos con fixtures. No se asume integración continua de extremo a extremo en producción.
 
 **Gobierno:** Master_DATOS mantiene raw y vintages; Portafolio conserva código, referencias, hashes y resultados derivados. La descarga nueva no altera Drive y no incluye operaciones de escritura.
+
+## Backtesting empírico de VaR y ES (implementación adicional)
+
+Se implementó `src/observed_market_var.py`: rentabilidades logarítmicas con `adjusted_close`, ventana móvil de 250 observaciones exclusivamente anteriores a cada día, VaR histórico al 99 %, ES empírico de cola y prueba de cobertura incondicional de Kupiec. El cálculo exploratorio se reprodujo directamente sobre la misma SQLite real de Drive (no es ejecución certificada de GitHub Actions sobre el archivo privado).
+
+| Instrumento | Backtests diarios | Excepciones | Frecuencia | Último VaR 99 % | Último ES 99 % | Kupiec p |
+|---|---:|---:|---:|---:|---:|---:|
+| SPY | 8.210 | 117 | 1,425 % | 2,057 % | 2,470 % | 0,000274 |
+| QQQ | 6.668 | 96 | 1,440 % | 3,348 % | 3,934 % | 0,000710 |
+| AAPL | 11.277 | 156 | 1,383 % | 5,127 % | 6,360 % | 0,000110 |
+
+**Interpretación:** Para estos activos y esta especificación, la hipótesis de una tasa de excepciones del 1 % es rechazada por Kupiec al 5 %. Un modelo construido con datos observados **no es automáticamente un modelo bien calibrado**. La muestra incluye regímenes heterogéneos y los precios ajustados/no ajustes corporativos requieren revisión. No se aplicaron umbrales Basel de traffic light, independencia de excepciones ni validación condicional; agregar Christoffersen, ES backtests y ventanas/regímenes como siguiente iteración. Las cifras de VaR/ES son pérdidas aproximadas en retorno logarítmico, no porcentajes monetarios P&L ni precios actuales.
