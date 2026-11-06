@@ -54,21 +54,25 @@ def select_full_replacements(
     latest: dict[str, tuple[datetime, list[Revision]]] = {}
     seen_ids: set[tuple[str, str]] = set()
     for revision in revisions:
+        available = _utc(revision.available_at)
+        # Data unavailable at the query cutoff is outside this query's input
+        # contract. Do not let its payload, identifiers, or duplicate IDs
+        # affect the historical answer.
+        if available > known_by_as_of:
+            continue
         key = (revision.identity, revision.revision_id)
         if not revision.identity or not revision.revision_id or key in seen_ids:
             raise ValueError("identity and unique revision_id required")
         seen_ids.add(key)
-        available = _utc(revision.available_at)
         effective = _utc(revision.effective_at)
         end = _utc(revision.valid_until) if revision.valid_until is not None else None
         if end is not None and end <= effective:
             raise ValueError("valid_until must be later than effective_at")
-        if available <= known_by_as_of:
-            prior = latest.get(revision.identity)
-            if prior is None or available > prior[0]:
-                latest[revision.identity] = (available, [revision])
-            elif available == prior[0]:
-                prior[1].append(revision)
+        prior = latest.get(revision.identity)
+        if prior is None or available > prior[0]:
+            latest[revision.identity] = (available, [revision])
+        elif available == prior[0]:
+            prior[1].append(revision)
 
     selected: list[Selection] = []
     for identity, (_, candidates) in sorted(latest.items()):

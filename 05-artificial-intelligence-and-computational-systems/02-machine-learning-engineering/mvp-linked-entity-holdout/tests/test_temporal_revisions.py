@@ -21,6 +21,12 @@ class TemporalRevisionTests(unittest.TestCase):
         selected = select_full_replacements(self.history, as_of="2026-01-02T23:59:59Z", identity_at="2026-01-06T00:00:00Z")
         self.assertEqual(selected[0].revision_id, "r0")
 
+    def test_future_malformed_payload_and_duplicate_id_are_noninterfering(self) -> None:
+        future = Revision("x", "r0", "2026-01-05T00:00:00Z", "not-a-time", "also-not-a-time", "future")
+        selected = select_full_replacements(self.history, as_of="2026-01-02T00:00:00Z", identity_at="2026-01-06T00:00:00Z")
+        with_future = select_full_replacements(self.history + [future], as_of="2026-01-02T00:00:00Z", identity_at="2026-01-06T00:00:00Z")
+        self.assertEqual(with_future, selected)
+
     def test_half_open_interval(self) -> None:
         at_end = select_full_replacements(self.history, as_of="2026-01-04T00:00:00Z", identity_at="2026-01-09T00:00:00Z")
         self.assertEqual(at_end[0].status, "not-effective-at-identity-time")
