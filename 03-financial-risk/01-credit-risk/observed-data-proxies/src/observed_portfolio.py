@@ -1,4 +1,4 @@
-"""Fetch observable Colombian aggregate credit data; never treat arrears share as PD."""
+"""Fetch observable ICETEX observed education-credit data; never treat arrears share as PD."""
 import argparse
 import csv
 import hashlib
@@ -53,7 +53,7 @@ def run(as_of, output, limit=5000):
     if not 0 < limit < 50001:
         raise ValueError("Invalid limit")
     url = API + "?" + urllib.parse.urlencode({
-        "$select": ",".join(FIELDS), "$order": "fecha_corte,deptoresidencia",
+        "$select": ",".join(FIELDS), "$order": "fecha_corte,deptoresidencia,epoca_cartera",
         "$limit": limit})
     raw = []
     offset = 0
@@ -97,7 +97,7 @@ def run(as_of, output, limit=5000):
     manifest = dict(dataset=SOURCE_ID, url=url, as_of=as_of.isoformat(),
                     extracted_at=datetime.now(timezone.utc).isoformat(),
                     rows=len(records), rejected_rows=len(rejected), rejected_fraction=invalid_rate, source_rows=len(raw), grain="date x department x portfolio phase",
-                    evidence="OBSERVED_AGGREGATE_NOT_PD",
+                    evidence="OBSERVED_ICETEX_EDUCATION_AGGREGATE_NOT_PD",\n                    provider="ICETEX",
                     sha256=hashlib.sha256(csvpath.read_bytes()).hexdigest(),
                     caveat="Date cutoff is not historical publication-vintage validation")
     (dest / "manifest.json").write_text(json.dumps(manifest, indent=2))
