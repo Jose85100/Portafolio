@@ -1,0 +1,1 @@
+{"seed":1105,"game":{"payoffs":[[1.0,-1.0],[-0.4,0.7]],"own_strategy":[0.3,0.7],"opponent_strategy":[0.6,0.4]},"deltas":[0.0,0.05,0.1,0.2],"source":"designed synthetic 2x2 game; no empirical data","python":"3.12 compatible","hardware":"CPU only; platform recorded at run"}
