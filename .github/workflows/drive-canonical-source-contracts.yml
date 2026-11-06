@@ -7,6 +7,7 @@ on:
       - 'data-governance/observed-financial-marts/src/market_sqlite_profile.py'
       - 'data-governance/observed-financial-marts/tests/test_drive_source_profiles.py'
       - 'data-governance/observed-financial-marts/src/run_canonical_sources.py'
+      - 'data-governance/observed-financial-marts/src/observed_market_var.py'
       - '.github/workflows/drive-canonical-source-contracts.yml'
   workflow_dispatch:
 jobs:
