@@ -42,3 +42,22 @@ Produce `observed_funding_quarters.csv` (derivado) y `observed_alm_report.json` 
 2. Añadir productos y entidades SFC después de resolver colisiones y jerarquía de renglones.
 3. Obtener escalera de vencimientos, concentración de depósitos, tasas efectivas contractuales, buffer de HQLA y comportamiento de retiros con licencia, para un ALM bancario y liquidez de nivel institución.
 4. Estimar escenarios condicionados a regímenes macro y validar contra periodos de estrés reales, sin etiquetar las reglas hipotéticas como predictivas.
+
+## Sensibilidad del saldo observado de CDT al benchmark DTF
+
+Se añadió `src/observed_funding_rates.py`, usando el mismo corte SFC (30-06-2026) y DTF mensual BanRep de **marzo 2026 (9,798387 %)**, tres meses antes. El saldo de CDT de la SFC es **COP 892.440.174.013.316**. Con un **shock hipotético de +100 puntos básicos** y suponiendo repricing instantáneo de todo el stock, el incremento anualizado *ilustrativo* de costo es:
+
+| Transmisión hipotética de shock | Δ costo anualizado COP |
+|---|---:|
+| 0 % | 0 |
+| 50 % | 4.462.200.870.067 |
+| 100 % | 8.924.401.740.133 |
+
+Fórmula: `Δ Costo = Stock_CDT × (shock_bps/10000) × pass_through`. Esto **no es gasto de intereses observado** ni costo efectivo de fondeo, ni predicción de comportamiento de depositantes. El modelo no contiene estructura real de vencimiento o repricing, garantías, valoración económica o transfer pricing. Los números se calcularon localmente a partir de los dos CSV canónicos de Drive y el archivo de ejecución se conserva en el entorno de investigación, no en Git.
+
+```bash
+python 04-quant-strategy-and-products/treasury-and-alm/observed-funding-research/src/observed_funding_rates.py \
+  --sfc /private/sfc_agregado_nacional_mensual_desde_municipios.csv \
+  --rates /private/banrep_tasas_mensuales.csv \
+  --out /private/derived-alm/funding_rates.json
+```
