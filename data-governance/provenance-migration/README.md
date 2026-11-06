@@ -43,3 +43,13 @@ El campo `verified_observed_integration` vale por defecto `NOT_VERIFIED`, inclus
 ## Interpretación y limitaciones
 
 El escáner cuantifica **referencias de código**, no archivos que ya poseen observaciones válidas. Si CI termina exitosamente, el total de candidatos será auditable. Los README pueden contradecir ejecuciones posteriores: hay que contrastar resultados contra commits y artefactos. La matriz es una primera capa de mapeo con 34 rutas/áreas, no prueba de cobertura completa por subcarpeta. El estado real de datos debe trazarse en la segunda fase con verificación de datasets y resultados por proyecto.
+
+## Inventario de datos existentes en Drive — Master_DATOS
+
+Se revisó [Master_DATOS](https://drive.google.com/drive/folders/1mcy86SL7qLssZFwbVvpjyFP15ckeuzFt), con áreas ATLAS_ECONOMICO_COLOMBIA, ATLAS_EMPRESAS, SHADOW_RISK, INVESTMENT_OS y gobierno de datos. Consultar [registro de fuentes Drive](drive_master_data_sources.csv): contiene IDs de origen, ruta, variable, consumidor, estado de inspección y validación pendiente. Los estados `CONTENT_READ` prueban acceso al contenido y `LISTED` únicamente existencia/metadata, no aprobación estadística.
+
+**Política:** Master_DATOS mantiene los raws canónicos; Portafolio versiona código, contratos y referencias. No copiar tablas extensas o archivos potencialmente restringidos a Git. Respetar publicación-vintage, permisos, hashes y gobierno de datos documentado en Drive. El origen oficial de cada fuente debe verificarse independientemente del nombre del archivo.
+
+**Dos archivos comprobados por contenido:** series de tasas mensuales BanRep (columnas `mes, dtf_promedio, ibr_promedio, tib_promedio, observaciones_*`) y agregado nacional SFC (fecha, depósitos, CDT, cartera, vivienda, oficinas). Ninguno equivale a una PD individual o una ECL por contrato.
+
+**Pendiente para convertir el inventario en integración:** validar esquemas y unidades por dataset, leer manifiestos, definir credenciales de solo lectura de Drive fuera del repo, registrar source_id y hashes para cada carga, construir mart por grano, correr pruebas y luego ejecutar notebooks existentes con origen observado. El mapeo no prueba modificación de modelos.
