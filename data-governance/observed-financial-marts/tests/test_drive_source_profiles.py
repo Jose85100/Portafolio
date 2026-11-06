@@ -43,6 +43,16 @@ class CanonicalDataTests(unittest.TestCase):
             self.assertEqual(report["duplicate_business_keys"],1)
             self.assertEqual(report["conflicting_duplicate_keys"],1)
 
+    def test_historical_var_has_no_lookahead(self):
+        module=load("observed_market_var")
+        sample=[100.0]
+        for i in range(410):
+            sample.append(sample[-1] * (1.01 if i % 7 else .96))
+        r1=module.backtest(sample)
+        self.assertEqual(r1["coverage"],len(sample)-1-250)
+        self.assertGreaterEqual(r1["last_es"],r1["last_var"])
+        self.assertFalse(r1["production_approved"])
+
     def test_market_profile_with_real_schema_fixture(self):
         module=load("market_sqlite_profile")
         with tempfile.TemporaryDirectory() as td:
