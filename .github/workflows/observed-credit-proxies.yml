@@ -14,3 +14,34 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m unittest discover -s 03-financial-risk/01-credit-risk/observed-data-proxies/tests -v
+  observed-ingestion:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    needs: offline-tests
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch actual public observations and validate schema
+        run: |
+          python 03-financial-risk/01-credit-risk/observed-data-proxies/src/observed_portfolio.py \
+            --as-of 2026-11-05 --limit 5000 --output output/observed-credit
+          test -s output/observed-credit/delinquency_observed.csv
+          python - <<'PY'
+          import csv, json
+          from pathlib import Path
+          path = Path('output/observed-credit/delinquency_observed.csv')
+          rows = list(csv.DictReader(path.open()))
+          manifest = json.loads(Path('output/observed-credit/manifest.json').read_text())
+          assert rows and manifest['rows'] == len(rows)
+          assert all(r['evidencia'] == 'OBSERVADO_AGREGADO' for r in rows)
+          print('Validated actual rows:', len(rows))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: observed-colombia-credit-snapshot
+          path: output/observed-credit/
+          retention-days: 30
+          if-no-files-found: warn
