@@ -59,3 +59,9 @@ Los modelos de `01-economics-and-econometrics`, `03-financial-risk` y `04-quant-
 2. Conector autorizado de solo lectura a Drive con caché local y control de permisos; CI en GitHub solo valida el pipeline sin publicar raw.
 3. Sensibilidades de cartera/depósitos al ciclo y curvas, con especificación de estacionariedad, factores omitidos, ventanas de estimación y backtesting OOT.
 4. Incorporar el panel SFC por producto/mora y el panel bancario para stress; no inferir PD de saldos agregados.
+
+## Investigación y fuentes pendientes
+
+- [Notebook de diagnóstico con datos observados](notebooks/observed_macro_credit_diagnostics.ipynb) — carga exportaciones canónicas mediante variables de entorno, grafica el crecimiento y el ratio cartera/depósitos y mide correlación con tasas históricas. Requiere pandas y matplotlib y archivos autorizados; no incluye outputs precalculados.
+- [Contratos de datos adicionales y brechas](DATA_GAPS.md) — objetivos de PD/LGD/EAD, escenarios, activos de mercado, pensiones, clima, economía regional y RAG, con fuentes y restricciones por grano.
+- GitHub Actions realiza unit tests offline; los resultados empíricos exploratorios de este README provienen de la lectura efectiva de los CSV en Drive, no de una ejecución certificada del nuevo notebook.
