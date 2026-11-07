@@ -1,8 +1,8 @@
 # CICLO_DIARIO I+D+i — 7 de noviembre de 2026
 
-## Estado de cierre: checkpoint incompleto
+## Estado de cierre: checkpoint incompleto con un incremento CEO ejecutado
 
-Esta corrida no alcanzó a producir incrementos de dominio que puedan reproducirse, revisar y publicar. No se atribuyen MVP, resultados, madurez ni contribuciones a los cinco frentes. El checkpoint conserva el diagnóstico para retomar sin duplicar el trabajo ya integrado.
+La corrida original no produjo incrementos. En la continuación se implementó y ejecutó localmente una auditoría incremental de demora EVSI en CEO, publicada en esta misma rama. No satisface todavía el contrato integral de MVP: faltan notebook, figura, BibTeX, benchmarks extensos y revisión independiente. Los otros cuatro dominios no recibieron incrementos nuevos. El checkpoint conserva el diagnóstico para retomar sin duplicar el trabajo ya integrado.
 
 ## Base revisada
 
@@ -22,7 +22,7 @@ Se inició coordinación y se asignaron cinco rutas exclusivas. Los agentes alca
 | Matemáticas | No entregado | Pendiente | Sin rama/PR del ciclo |
 | Riesgo | No entregado | Pendiente | Sin rama/PR del ciclo |
 | IA | No entregado | Pendiente | Sin rama/PR del ciclo |
-| CEO/Estrategia | No entregado | Pendiente | Sin rama/PR del ciclo |
+| CEO/Estrategia | Incremento parcial EVSI-delay: 5 tests locales OK, JSON reproducible; no MVP completo | Pendiente | Publicado en rama de informe, PR #157 |
 
 ## Preselección para la siguiente corrida
 
@@ -41,3 +41,11 @@ Estas son rutas candidatas para evaluar, no tres ideas ya puntuadas ni selecció
 Para cerrar el ciclo deben existir cinco incrementos pequeños ejecutados en ramas aisladas, un propietario por archivo, reproducción por un revisor independiente, integración local desde el `main` vigente y un informe actualizado con resultados, fallos, rúbricas, referencias y enlaces a PR. Un checkpoint, propuesta o lista de ideas no satisface el contrato MVP.
 
 **Siguiente iteración recomendada:** retomar los cinco candidatos solo después de comparar prior art y estado integrado; tareas concretas: (1) `01-economics-and-econometrics/03-game-theory/01-endogenous-credit-freeze/rational-family-audit`, (2) `02-mathematics-statistics-and-quant/quant-libraries/streaming-moments`, (3) `03-financial-risk/03-market-liquidity-research/transition-ambiguity-audit`.
+
+## Continuación verificable — auditoría EVSI de demora
+
+- Ruta: `06-strategy-innovation-and-leadership/09-business-unit-economics-pricing/pricing-pilot-evsi-gate/delay-audit/`.
+- Código tipado con biblioteca estándar, cinco pruebas unitarias y README de reproducción.
+- Comando local ejecutado: `python3 -m unittest discover -s tests -v && python3 src/evsi_delay.py` (desde `delay-audit/`). Resultado: 5/5 OK, inmediata 550, piloto 553.401467652197, ganancia 3.401467652197, masa 1.0000000000000215.
+- Estos valores corresponden a una simulación determinista de priors Beta; no a ingresos observados. El archivo JSON se genera con el comando, no se declara ejecutado en CI remota.
+- Bloqueantes: falta notebook ejecutado, figura, bibliografía verificada >=5, sensibilidad integral, benchmark de tiempo/memoria, dictamen independiente y los cuatro dominios restantes. No hay merge automático.
