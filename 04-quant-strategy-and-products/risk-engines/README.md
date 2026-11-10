@@ -52,3 +52,11 @@ Desde la raíz del repo, en Linux con Python 3.12/g++/gcov/make:
 ```bash
 bash 04-quant-strategy-and-products/risk-engines/weighted-tail-audit/run.sh
 ```
+
+## Atribución de ES por componente — MVP de investigación
+
+[ES Attribution Audit](es-attribution-audit/) reparte el ES de escenarios finitos entre pérdidas aditivas por factor usando masa fraccionaria en la cuantil. Incluye prueba contra expansión de pesos enteros, baseline prorrata, ablaciones, sensibilidad y escenarios sintéticos reproducibles. No estima riesgo regulatorio ni se calibró con historia SFC/BanRep.
+
+```bash
+bash 04-quant-strategy-and-products/risk-engines/es-attribution-audit/run.sh
+```
