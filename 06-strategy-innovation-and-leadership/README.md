@@ -59,3 +59,7 @@ Dos colecciones de cinco notebooks extensos cada una, con datos sintéticos de v
 ## Notebook de la revisión semanal
 
 [Experimentos ejecutados](weekly-decision-audit.ipynb): Sensibilidad y fronteras de decisión de los 15 motores, con inputs sintéticos nuevos y restricciones verificadas.
+
+## Finanzas corporativas, FP&A y evidencia de decisiones
+
+[Nueva colección](corporate-finance-and-fpa/): seis carpetas S1 para presupuesto y proyecciones, caja y tesorería, fondeo y estructura de capital, DCF y múltiplos, M&A e inversiones, y asignación de capital/portafolios. Incluye una matriz de evidencia existente y una ficha para registrar responsabilidad personal, análisis y decisión apoyada sin atribuir experiencia no documentada. Las especificaciones no se cuentan como motores implementados.
