@@ -23,3 +23,12 @@ Revisión de índices oficiales: 2026-11-10. Este registro es un punto de partid
 Cada regla debe incluir: rule_id, fuente oficial, artículo/numeral, jurisdicción, supervisor, tipo de entidad, perímetro individual/consolidado, publicación, vigencia_desde, vigencia_hasta, versión, hash del documento, interpretación, responsable, prueba y evidencia. Datos normativos no verificados bloquean la etiqueta de resultado regulatorio.
 
 La revisión presente verifica índices y páginas de referencia, no todos los numerales de cada marco. SREP se mantiene como línea comparativa internacional pendiente de fuente supervisora específica. SAC, privacidad y riesgo de modelos requieren completar sus fuentes concretas antes de codificar obligaciones.
+
+## Fuentes añadidas: SAGRILAFT y SREP
+
+- [Supersociedades: SAGRILAFT](https://supersociedades.gov.co/web/asuntos-economicos-societarios/sagrilaft): portal con referencia a la CBJ de julio de 2026; revisar consolidado y aplicabilidad antes de parametrizar.
+- [Supersociedades: Capítulo X](https://supersociedades.gov.co/web/nuestra-entidad/cap-10-autocontrol-y-gesti%C3%B3n-del-riesgo-integral).
+- [EBA: revisión SREP junio 2026](https://www.eba.europa.eu/publications-and-media/press-releases/eba-reaches-another-important-milestone-enhancing-supervisory-efficiency-its-revised-srep-guidelines): anuncia aplicación desde enero de 2027; no tratar publicación y entrada en aplicación como la misma fecha.
+- [EBA: información ICAAP/ILAAP](https://www.eba.europa.eu/guidelines-icaap-and-ilaap-information).
+
+La fuente supervisora de SREP queda identificada con esta ampliación; falta mapear sus numerales a evidencias y verificar la versión por fecha.
