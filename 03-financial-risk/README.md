@@ -11,6 +11,7 @@ Crédito, mercado, liquidez, riesgo sistémico, IFRS 9 y stress testing integrad
 5. [Enterprise Risk Advisory](05-enterprise-risk-advisory/): 56 diseños metodológicos agrupados en ocho prácticas, con fundamentos separados.
 6. [Motor de investigación cuantitativa](06-quantitative-research-engine/): arquitectura y referencias numéricas de crédito.
 7. [Riesgo corporativo y construcción](07-financial-and-construction-risk-lab/): baselines Python/C++, experimentos y 45 carpetas preservadas con solapamientos documentados.
+8. [Sistemas regulatorios y motores de riesgo](08-regulatory-risk-systems/): doce dominios, fundamentos, arquitectura, 36 ideas y seis funciones numéricas de investigación con ocho pruebas locales. Incluye SARC, SARM, SARL, SARO, IFRS 9, SARAS, SIAR/SARE/MGR, capital, SARLAFT, BCP, KRIs, conducta y reporte; los dominios mantienen estado S1.
 
 Los proyectos ejecutables de las dos primeras áreas incluyen notebooks; IFRS 9 conserva su notebook dentro de `notebooks/`. Los diseños de investigación no se cuentan como implementaciones. Los productos en C++ están en [04 · risk-engines](../04-quant-strategy-and-products/risk-engines/).
 
