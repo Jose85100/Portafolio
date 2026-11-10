@@ -19,6 +19,9 @@ Fundamentos, arquitectura y motores de investigación conectados con el portafol
 | [ISO 31000, COSO ERM, KRIs y modelos](11-erm-kri-model-governance/) | Gobierno, apetito, validación y escalamiento | S1: diseño |
 | [Conducta, datos y reporte regulatorio](12-conduct-data-reporting/) | SAC, calidad, privacidad y trazabilidad de reportes | S1: diseño |
 
+| [SAGRILAFT](13-sagrilaft/) | Aplicabilidad, contrapartes y beneficiarios finales | S1: diseño |
+| [SREP](14-srep-supervisory-review/) | Revisión supervisora comparada y evidencia | S1: diseño |
+
 Los dominios son diseños S1; seis funciones numéricas transversales tienen pruebas locales acotadas. No hay certificación regulatoria, integración productiva ni validación empírica. No se eleva la madurez de los proyectos enlazados.
 
 ## Navegación
@@ -30,3 +33,7 @@ Los dominios son diseños S1; seis funciones numéricas transversales tienen pru
 - [Agenda de implementación](ROADMAP.md): etapas, aceptación y extensiones multilenguaje.
 
 SARC, SARM, SARL y SARO se conservan como nombres de dominios y referencias históricas; su correspondencia jurídica debe consultarse en la estructura SIAR/CBF vigente y por tipo de entidad. No trasladar automáticamente normas SFC a Supersolidaria, ni SREP europeo a Colombia.
+
+## Cobertura adicional explícita
+
+[Mapa de Basilea III/IV, RWA, SREP, ICAAP, ILAAP, ISO 31000, COSO ERM, BCP, KRIs, SARLAFT y SAGRILAFT](COVERAGE.md). Catálogo actualizado: 14 dominios; los motores numéricos entregados siguen siendo seis funciones ilustrativas.
