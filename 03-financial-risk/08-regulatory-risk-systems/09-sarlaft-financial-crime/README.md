@@ -31,3 +31,16 @@ Reutilizar [componentes existentes](../../05-enterprise-risk-advisory/05-financi
 - Entregar notebook con fórmulas, gráficos de sensibilidad, resultados calculados y límites; Python como referencia y C++ solo si un benchmark justifica migración.
 
 **Responsables objetivo:** dueño de riesgo define políticas; datos mantiene contratos; ingeniería implementa; validación independiente cuestiona métodos; cumplimiento verifica aplicabilidad; comité decide excepciones. Ninguna alerta constituye una decisión automática de cumplimiento.
+
+## SARLAFT y SAGRILAFT: separación de regímenes
+
+El nombre es **SARLAFT**. La fuente SFC se registra en [cumplimiento LA/FT/FPADM](https://www.superfinanciera.gov.co/publicaciones/10116062/cumplimiento-tecnico-laftfpadm/). [SAGRILAFT](../13-sagrilaft/) tiene carpeta propia y fuentes Supersociedades. Compartir componentes de identidad, beneficiarios finales, segmentación y casos no permite intercambiar sujetos obligados, requisitos ni reportes.
+
+### Motores específicos propuestos
+
+- Segmentación point-in-time con variables permitidas, explicación y estabilidad temporal.
+- Resolución de entidades y grafos de beneficiarios finales, con procedencia de cada enlace.
+- Monitoreo por escenarios y priorización de casos según capacidad de revisión.
+- Gestor de diligencias, decisiones, evidencias y vencimientos.
+
+Son diseños. No se ha implementado envío de ROS ni conexión UIAF; toda decisión y reporte requiere proceso autorizado y revisión humana. La calidad del modelo debe medirse con etiquetas incompletas, falsos positivos y costo operativo, evitando interpretar alerta como prueba de delito.
