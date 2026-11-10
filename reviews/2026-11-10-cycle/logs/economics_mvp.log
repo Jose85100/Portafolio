@@ -1,0 +1,30 @@
+test_equal_loadings_cancel (test_robust_regret.RegretTests.test_equal_loadings_cancel) ... ok
+test_heterogeneous_loading_exact_support (test_robust_regret.RegretTests.test_heterogeneous_loading_exact_support) ... ok
+test_invalid_inputs_rejected (test_robust_regret.RegretTests.test_invalid_inputs_rejected) ... ok
+test_matches_independent_vertex_oracle (test_robust_regret.RegretTests.test_matches_independent_vertex_oracle) ... ok
+test_rectangular_baseline_is_more_conservative (test_robust_regret.RegretTests.test_rectangular_baseline_is_more_conservative) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+All checks passed!
+Success: no issues found in 1 source file
+{
+  "nominal_regret": 0.11199999999999999,
+  "heterogeneous_factor_slope": 0.7,
+  "analytic_threshold_delta": 0.19714285714285718,
+  "decision_threshold": 0.25,
+  "delta_0_2": {
+    "equal": 0.11199999999999999,
+    "heterogeneous": 0.252,
+    "independent_cell_rectangular": 0.512
+  },
+  "data_status": "Designed synthetic 2x2 game; no empirical observations or fitted parameters.",
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+  },
+  "interpretation": "Synthetic sensitivity only; no empirical inference or equilibrium claim."
+}
+executed 2 code cells in-process; table, JSON summary, and figure outputs saved
