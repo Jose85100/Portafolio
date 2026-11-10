@@ -11,6 +11,8 @@ Este estudio compara intervalos conformes simétricos con calibración congelada
 
 Una banda predictiva construida con errores pasados puede perder cobertura cuando cambia la escala de los errores. Una banda congelada es estable y fácil de auditar, pero conserva un cuantil obsoleto. Una ventana móvil sustituye gradualmente observaciones antiguas por nuevas. Esa adaptación reduce el retraso si el cambio persiste, aunque aumenta variabilidad y puede perseguir ruido. Esta tensión importa en monitoreo, pero una simulación estilizada no habilita recomendaciones de riesgo. Separar reacción de garantía teórica es central: una mejor cobertura experimental en un escenario no implica cobertura nominal general.
 
+Antes de escoger esta pregunta se compararon tres ideas: (A) ACI online bajo cambios arbitrarios, relevante y respaldada por teoría publicada, pero más costosa de implementar con rigor; (B) ventana móvil tras un salto de escala, elegida por permitir verdad conocida, baseline congelado, oráculo y prueba negativa reproducible; (C) conformalización de un modelo GARCH con residuos dependientes, más cercana al uso financiero, pero sin evidencia temporal licenciada ni una especificación validada en este paquete. B aporta un benchmark docente ejecutable; A queda como comparador futuro y C como ruta de validación realista.
+
 \newpage
 ## Página 3 — Pregunta e hipótesis
 
@@ -70,3 +72,5 @@ La literatura contiene validez conforme clásica, adaptación a cambios y métod
 ## Página 14 — Limitaciones, madurez y decisión
 
 Estado S2. No hay datos externos, dependencia temporal, observación de precios, prueba de cobertura condicional, corrección de selección ni validación independiente. El resultado es un benchmark de simulación bajo supuestos explícitos. Próximo paso: añadir AR/GARCH, cambios reversibles y colas pesadas; comparar con Adaptive Conformal Inference y métodos de conformalización de series; construir bandas de incertidumbre entre réplicas y cuantificar demora. Solo una replicación externa con partición temporal, licencia clara y evaluación de fallos permitiría considerar S4. No usar para límites regulatorios, capital, pricing ni decisiones de crédito.
+
+La carpeta 21 se mantiene separada: 05 trata memoria fraccional y estimación/propiedades de memoria; `streaming-moments` trata estabilidad y composición numérica de momentos. Sus hipótesis y oráculos no miden cobertura predictiva ni adaptación a drift. La matriz de selección completa, con brecha, relevancia, diferencia, utilidad, viabilidad y evidencia para tres ideas, está en `prior_art.md`.
