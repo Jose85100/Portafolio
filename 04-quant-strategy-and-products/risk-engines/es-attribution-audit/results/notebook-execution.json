@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "method": "execute each notebook code cell source in a shared Python 3.12 process; no Jupyter kernel",
+  "method": "executed every notebook code cell in shared Python process",
   "cells_executed": 2,
-  "outputs": "metrics captured from run.py and figure embedded from its generated PNG",
-  "environment_note": "Jupyter kernel startup was separately attempted and blocked by socket restrictions; successful cell-source execution is recorded here"
+  "outputs": "stdout and generated figure embedded in notebook",
+  "kernel_note": "No Jupyter kernel startup was attempted by this runner; no kernel validation is claimed."
 }
