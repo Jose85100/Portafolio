@@ -31,6 +31,28 @@ Los proyectos ejecutables de las dos primeras áreas incluyen notebooks; IFRS 9 
 [56 proyectos especificados en ocho líneas de servicio](05-enterprise-risk-advisory/). Incluyen gobierno, capital, liquidez, operacional, resiliencia, ciber, IA, fraude, cumplimiento, seguros, clima, contraparte, controles y datos de riesgo. **Diseños metodológicos pendientes de implementación.**
 
 
+## Cobertura: regulación prudencial, gestión integral y continuidad
+
+**Competencia objetivo:** gestión integral de riesgos, capital y resiliencia: Basilea III y sus reformas finales (habitualmente denominadas Basilea IV), activos ponderados por riesgo (RWA), revisión supervisora (SREP), evaluación interna de suficiencia de capital y liquidez (ICAAP/ILAAP), ISO 31000, COSO ERM, continuidad del negocio (BCP) e indicadores clave de riesgo (KRIs).
+
+Esta matriz amplía el alcance de investigación del portafolio. Las conexiones señalan proyectos relacionados; no acreditan implementaciones completas, certificaciones ni experiencia operativa con cada marco.
+
+| Tema | Conexión con el portafolio | Desarrollo y evidencia pendientes |
+|---|---|---|
+| Basilea III y reformas finales / Basilea IV | Enterprise Risk Advisory; riesgo de crédito, mercado y operación | Mapa de requisitos por jurisdicción y versión, cálculo reproducible y conciliación de capital |
+| RWA | Crédito y optimización de cartera con restricciones de capital | Motor de RWA con exposiciones, clasificación, ponderaciones, mitigantes, trazabilidad y pruebas de reconciliación |
+| SREP | Gobierno, apetito de riesgo y reportes ejecutivos | Expediente de revisión supervisora, matriz de hallazgos, evidencia y seguimiento de acciones |
+| ICAAP | Capital, estrés integrado y asignación de recursos | Evaluación de riesgos materiales, proyección de capital, escenarios y acciones de gestión |
+| ILAAP | Liquidez, fondeo, balance y resiliencia | Proyecciones de liquidez, estrés, capacidad de respuesta y plan de contingencia de fondeo |
+| ISO 31000 | Gobierno y evaluación integral de riesgos | Mapa de principios, proceso, responsables y evidencia de aplicación |
+| COSO ERM | Estrategia, apetito de riesgo y control de gestión | Relación entre objetivos, riesgos, respuestas, desempeño y supervisión |
+| BCP | Resiliencia y planificación de recuperación | Análisis de impacto de negocio, dependencias críticas, objetivos de recuperación y ejercicios documentados |
+| KRIs | Apetito de riesgo y reportes al comité/consejo | Diccionario de indicadores, fórmulas, fuentes, periodicidad, umbrales, responsables y escalamiento |
+
+**Estado al 10 de noviembre de 2026:** cobertura temática parcial; verificación específica e implementación pendientes por marco. Cada avance debe adjuntar código o documentación verificable, datos y supuestos, pruebas y limitaciones. Los ejercicios de capital y liquidez deben distinguir métricas regulatorias de aproximaciones de investigación y de provisiones IFRS 9.
+
+Antes de implementar requisitos regulatorios se documentarán la fuente oficial, la versión vigente, la jurisdicción y el tipo de entidad. SREP, ICAAP e ILAAP se estudiarán con su contexto supervisor; su inclusión no presupone aplicación automática en Colombia.
+
 ## Revisión técnica de riesgo — 18 de octubre de 2026 UTC
 
 La [revisión y evidencia](REVIEW_2026-10-18.md) registra errores reproducidos, cambios de contrato, cobertura y límites. Incluye:
