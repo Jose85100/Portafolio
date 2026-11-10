@@ -1,17 +1,19 @@
-# Auditoría EVSI con demora de lanzamiento — incremento del 7-nov-2026
+# Auditoría CEO de EVSI con demora — corte 2026-11-10
 
-**Pregunta:** ¿Cuándo sigue justificándose un piloto de precios si la decisión posterior consume parte del horizonte comercial?
+**Pregunta:** ¿Cuándo comprar información de un piloto antes de decidir precios si la prueba retrasa la acción comercial y consume horizonte?
 
 **Clasificación:** adaptación de ingeniería de una decisión bayesiana conocida, no contribución científica original ni evidencia comercial.
 
-Modelo: para brazo j, p_j ~ Beta(alpha_j,beta_j), K_j ~ BetaBinomial(n,alpha_j,beta_j). El margen esperado por oportunidad tras observar k es m_j(alpha_j+k)/(alpha_j+beta_j+n). Se suman exactamente las (n+1)^2 probabilidades predictivas conjuntas para obtener E[max_j E(m_j p_j|K)]. La decisión inmediata vale H max_j E(m_j p_j); el piloto vale (H-d) E[max_j E(m_j p_j|K)] - c. No se contabilizan ventas durante la demora ni costo de muestra distinto de c.
+Modelo: cada brazo de precio tiene tasa de conversión desconocida `p_j ~ Beta(alpha_j,beta_j)`, margen de contribución por conversión `m_j` en unidades abstractas y conteo `K_j ~ BetaBinomial(n,alpha_j,beta_j)`. El margen esperado por periodo tras observar k es `m_j(alpha_j+k)/(alpha_j+beta_j+n)`. Se enumeran exactamente los `(n+1)^2` resultados conjuntos para obtener `q=E[max_j E(m_j p_j|K)]`. Inmediato=`H*m0`, donde `m0=max_j E(m_j*p_j)`; piloto demorado=`(H-d)*q-c`. Se elige piloto solo si la diferencia es estrictamente positiva; empate favorece actuar ahora. Aquí `c` está en las mismas unidades de valor agregado del horizonte.
 
-**Hipótesis falsable:** la demora reduce estrictamente el valor del piloto si su margen posterior esperado es positivo; el umbral de decisión se cruza cuando d supera H-(H*m0+c)/post. La hipótesis es matemática bajo estos supuestos, no causal.
+**Hallazgo del escenario base:** con n=10 por brazo, horizonte H=100 y costo abstracto c=2, el umbral de demora piloto-vs-ahora es `d*=H-(H*m0+c)/q`. La regla EVSI simple sin demora puede recomendar un piloto que el gate con horizonte rechaza. Los valores concretos están en `results/summary.json`; no son cifras de una empresa.
 
-**Reproducción desde esta carpeta:** Python 3.11+ (solo biblioteca estándar). `python3 -m unittest discover -s tests -v && python3 src/evsi_delay.py --output results/result.json`.
+**Reproducción completa desde esta carpeta:** Python 3.11+, dependencias de `requirements.txt`. Ejecutar `bash run.sh`; ejecuta pruebas, Ruff, compilación sintáctica, cálculo exacto y Monte Carlo, genera CSV/JSON/figura y notebook reproducido, y valida el contrato de resultados. `python3 src/evsi_delay.py` conserva el CLI mínimo del corte previo.
 
-**Ejecución local observada:** 5/5 tests OK; caso simulado H=100,d=5,c=2,n=10: inmediata=550, piloto=553.401467652197, ganancia neta=3.401467652197; masa predictiva=1.0000000000000215. Sin comparación empírica, CI remota, revisión independiente ni notebook ejecutado. Valores monetarios arbitrarios por oportunidad, no COP. Este componente no debe promoverse a M2.
+**Evidencia:** escenario enteramente sintético; salida exacta y benchmark Monte Carlo independiente incluido. La suma predictiva en doble precisión se compara con uno en `results/numerical_audit.json`; a concentración 1000× la masa es 0.9999999999694 y EVSI cruda es −3.36e−8, flaggeada como redondeo dentro de tolerancia; no se renormaliza ni trunca silenciosamente. No hay datos comerciales, CI remota ni validación independiente; no se declara M2/M3.
 
-**Limitaciones:** márgenes constantes, priors independientes, no demanda endógena, no elasticidad precio, no retención, sin incertidumbre de costos, piloto sin ventas y sin descuento temporal. La diferencia entre políticas es resultado del diseño simulado.
+**Opciones comparadas:** (1) lanzar/continuar inmediatamente con el mejor margen prior; (2) piloto por EVSI estático, sin costo de demora; (3) piloto con horizonte finito y cargo de demora explícito. Se selecciona (3) como regla CEO por coherencia de horizonte; (1) es el baseline de acción; (2) es una ablación negativa y deliberadamente omite el valor comercial perdido. Sensibilidad de concentración del prior y duración del piloto están tabuladas.
 
-**Siguiente trabajo:** comparación contra EVSI sin demora y simulación Monte Carlo, análisis de umbral de demora, sensibilidad de priors, notebook narrativo y validación de fuentes primarias antes de declarar MVP contractual completo.
+**Limitaciones:** margen constante, priors Beta independientes, dos brazos, asignación equilibrada, no demanda endógena, no elasticidad/modelo de precio, retención, incertidumbre en costos, ventas durante piloto ni descuento temporal. La demora consume periodos completamente; si el piloto vende mientras aprende, esta es una aproximación conservadora potencialmente sesgada. Los arm-specific margins son contribución condicionada a conversión, no precios observados; el precio nominal no se incluye porque no aparece en la función de utilidad.
+
+**Archivos:** `MVP.md` fija uso/restricciones; `derivacion.md` presenta derivación; `informe.md` contiene informe ejecutivo en 14 secciones-página; `prior-art.md` compara al menos cinco referencias; `notebook.ipynb` se ejecuta al invocar el único comando; `results/` guarda outputs reproducibles. Contrato config y decisión se tipan en `src/evsi_delay.py`.
