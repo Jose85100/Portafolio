@@ -1,0 +1,6 @@
+{
+  "scenario_count": 9,
+  "mc_abs_difference": 0.009662094889154815,
+  "ablation_decision_flip": true,
+  "pilot_vs_launch_break_even_delay_periods": 5.5818123389639
+}

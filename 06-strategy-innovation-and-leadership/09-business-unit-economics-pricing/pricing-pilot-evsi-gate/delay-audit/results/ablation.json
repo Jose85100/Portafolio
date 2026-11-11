@@ -1,0 +1,10 @@
+{
+  "baseline": "pricing-pilot-evsi-gate EVSI minus pilot cost; ignores foregone horizon",
+  "comparison_cost": 0.0,
+  "delay_periods": 10,
+  "baseline_decision": "pilot",
+  "baseline_net_evsi": 0.34633123844416414,
+  "delay_aware_decision": "immediate",
+  "delay_aware_net_gain": -23.830188540023983,
+  "interpretation": "Negative ablation exposes a decision flip caused by omitting delay; no commercial claim."
+}

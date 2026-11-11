@@ -1,0 +1,131 @@
+make: Entering directory '/workspace/scratch/d7de5daeb3ec/repo/wt-integration-1110/02-mathematics-statistics-and-quant/advanced-research/21-online-conformal-volatility'
+python -m unittest discover -s tests -v
+test_bad_bounds (test_online_conformal.ConformalTests.test_bad_bounds) ... ok
+test_constant_zero_and_seed (test_online_conformal.ConformalTests.test_constant_zero_and_seed) ... ok
+test_coverage_exact (test_online_conformal.ConformalTests.test_coverage_exact) ... ok
+test_invalid_alpha_and_empty (test_online_conformal.ConformalTests.test_invalid_alpha_and_empty) ... ok
+test_order_statistic (test_online_conformal.ConformalTests.test_order_statistic) ... ok
+test_scaling_reacts (test_online_conformal.ConformalTests.test_scaling_reacts) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.024s
+
+OK
+python run_study.py
+{
+  "negative_break_4x": {
+    "fixed_coverage": {
+      "mean": 0.5834090909090909,
+      "sd": 0.022908132052539366
+    },
+    "rolling_coverage": {
+      "mean": 0.8841818181818182,
+      "sd": 0.0028883832364747213
+    },
+    "fixed_mean_width": {
+      "mean": 3.3315647829856148,
+      "sd": 0.26131857994187035
+    },
+    "rolling_mean_width": {
+      "mean": 8.42174393389718,
+      "sd": 0.161485008561274
+    },
+    "fixed_postbreak_coverage": {
+      "mean": 0.31725000000000003,
+      "sd": 0.024149419132650885
+    },
+    "rolling_postbreak_coverage": {
+      "mean": 0.8713750000000001,
+      "sd": 0.005463026976200107
+    },
+    "oracle_coverage": {
+      "mean": 0.8991590909090907,
+      "sd": 0.006936415057470231
+    },
+    "oracle_mean_width": {
+      "mean": 8.672864578471398,
+      "sd": 1.8225036628030615e-15
+    },
+    "oracle_postbreak_coverage": {
+      "mean": 0.8972916666666668,
+      "sd": 0.008315221545859454
+    }
+  },
+  "scale_break_2x": {
+    "fixed_coverage": {
+      "mean": 0.7310454545454547,
+      "sd": 0.027628107240632138
+    },
+    "rolling_coverage": {
+      "mean": 0.8893863636363637,
+      "sd": 0.003143221128151991
+    },
+    "fixed_mean_width": {
+      "mean": 3.3315647829856148,
+      "sd": 0.26131857994187035
+    },
+    "rolling_mean_width": {
+      "mean": 5.00419020743521,
+      "sd": 0.09320876480790076
+    },
+    "fixed_postbreak_coverage": {
+      "mean": 0.5879166666666668,
+      "sd": 0.03284121376620277
+    },
+    "rolling_postbreak_coverage": {
+      "mean": 0.8809166666666668,
+      "sd": 0.005904329861306119
+    },
+    "oracle_coverage": {
+      "mean": 0.8991590909090907,
+      "sd": 0.006936415057470231
+    },
+    "oracle_mean_width": {
+      "mean": 5.084093028759095,
+      "sd": 9.112518314015307e-16
+    },
+    "oracle_postbreak_coverage": {
+      "mean": 0.8972916666666668,
+      "sd": 0.008315221545859454
+    }
+  },
+  "stationary": {
+    "fixed_coverage": {
+      "mean": 0.9012954545454545,
+      "sd": 0.024223151978614056
+    },
+    "rolling_coverage": {
+      "mean": 0.9000909090909092,
+      "sd": 0.002434884932968835
+    },
+    "fixed_mean_width": {
+      "mean": 3.3315647829856148,
+      "sd": 0.26131857994187035
+    },
+    "rolling_mean_width": {
+      "mean": 3.3215035014882757,
+      "sd": 0.0671070090700826
+    },
+    "fixed_postbreak_coverage": {
+      "mean": 0.9000416666666666,
+      "sd": 0.02406660318551184
+    },
+    "rolling_postbreak_coverage": {
+      "mean": 0.9005416666666667,
+      "sd": 0.004311305347707307
+    },
+    "oracle_coverage": {
+      "mean": 0.8991590909090907,
+      "sd": 0.006936415057470231
+    },
+    "oracle_mean_width": {
+      "mean": 3.289707253902944,
+      "sd": 9.112518314015307e-16
+    },
+    "oracle_postbreak_coverage": {
+      "mean": 0.8972916666666668,
+      "sd": 0.008315221545859454
+    }
+  }
+}
+make: Leaving directory '/workspace/scratch/d7de5daeb3ec/repo/wt-integration-1110/02-mathematics-statistics-and-quant/advanced-research/21-online-conformal-volatility'

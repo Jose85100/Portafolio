@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-10",
+  "base_main": "46842674d08c8d2380170f0036b02e3bf10c435e",
+  "integration_worktree": "temporary merge of five domain PR branches plus CEO/report branch",
+  "merge_conflicts": 0,
+  "commands": {
+    "economics_mvp": {
+      "log": "reviews/2026-11-10-cycle/logs/economics_mvp.log",
+      "status": "passed",
+      "tests": 5
+    },
+    "mathematics_mvp": {
+      "log": "reviews/2026-11-10-cycle/logs/mathematics_mvp.log",
+      "status": "passed",
+      "tests": 6
+    },
+    "risk_mvp": {
+      "log": "reviews/2026-11-10-cycle/logs/risk_mvp.log",
+      "status": "passed",
+      "tests": 4
+    },
+    "ai_mvp": {
+      "log": "reviews/2026-11-10-cycle/logs/ai_mvp.log",
+      "status": "passed",
+      "tests": 9
+    },
+    "ceo_mvp": {
+      "log": "reviews/2026-11-10-cycle/logs/ceo_mvp.log",
+      "status": "passed",
+      "tests": 11
+    },
+    "common_economics": {
+      "log": "reviews/2026-11-10-cycle/logs/common_economics.log",
+      "status": "passed",
+      "tests": 8
+    }
+  },
+  "lint_types": {
+    "economics": "ruff,mypy passed",
+    "math": "clean venv, make check passed",
+    "risk": "ruff,mypy strict passed",
+    "ai": "ruff,mypy passed",
+    "ceo": "ruff,py_compile passed"
+  },
+  "notebooks": "real code cells executed in shared in-process Python runners; Jupyter kernel sockets unavailable for some projects and limitation documented",
+  "remote_ci": "no GitHub status checks were present at verification time",
+  "note": "logs record the local integrated reproduction; all generated artifacts stayed within the temporary integration worktree unless already part of a domain PR"
+}

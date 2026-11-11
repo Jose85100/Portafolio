@@ -1,0 +1,25 @@
+test_arm_rejects_invalid_parameters (test_evsi_delay.TestEVSI.test_arm_rejects_invalid_parameters) ... ok
+test_delay_aware_rule_can_reverse_evsi_rule (test_evsi_delay.TestEVSI.test_delay_aware_rule_can_reverse_evsi_rule) ... ok
+test_delay_cost_identity_and_threshold (test_evsi_delay.TestEVSI.test_delay_cost_identity_and_threshold) ... ok
+test_delay_monotonic (test_evsi_delay.TestEVSI.test_delay_monotonic) ... ok
+test_exact_evsi_nonnegative_with_rounding_flag (test_evsi_delay.TestEVSI.test_exact_evsi_nonnegative_with_rounding_flag) ... ok
+test_full_delay (test_evsi_delay.TestEVSI.test_full_delay) ... ok
+test_high_concentration_roundoff_is_exposed_not_clipped (test_evsi_delay.TestEVSI.test_high_concentration_roundoff_is_exposed_not_clipped) ... ok
+test_integer_design_inputs_required (test_evsi_delay.TestEVSI.test_integer_design_inputs_required) ... ok
+test_invalid (test_evsi_delay.TestEVSI.test_invalid) ... ok
+test_mass (test_evsi_delay.TestEVSI.test_mass) ... ok
+test_zero_information (test_evsi_delay.TestEVSI.test_zero_information) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.009s
+
+OK
+All checks passed!
+{
+  "scenario_count": 9,
+  "mc_abs_difference": 0.009662094889154815,
+  "ablation_decision_flip": true,
+  "pilot_vs_launch_break_even_delay_periods": 5.5818123389639
+}
+Executed all notebook code cells; outputs stored in notebook.ipynb
+PASS: 8 required results; synthetic-only provenance

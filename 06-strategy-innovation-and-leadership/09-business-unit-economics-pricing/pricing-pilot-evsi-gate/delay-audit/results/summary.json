@@ -1,0 +1,234 @@
+{
+  "synthetic": true,
+  "config": {
+    "synthetic": true,
+    "description": "Illustrative two-price pilot; abstract contribution units per customer opportunity, not currency or observed commerce",
+    "prior": {
+      "arm_a": {
+        "alpha": 11,
+        "beta": 9,
+        "margin": 10
+      },
+      "arm_b": {
+        "alpha": 9,
+        "beta": 11,
+        "margin": 12
+      }
+    },
+    "n_per_arm": 10,
+    "horizon_periods": 100,
+    "delay_periods": [
+      0,
+      2,
+      5,
+      10,
+      15,
+      20,
+      30,
+      50,
+      100
+    ],
+    "pilot_cost": 2,
+    "prior_concentration_multipliers": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4,
+      10
+    ],
+    "monte_carlo_replications": 20000,
+    "seed": 20261110,
+    "decision_rule": "pilot only when delayed expected value > immediate expected value; tie favors immediate",
+    "units": "abstract contribution units per customer opportunity times horizon; no empirical data"
+  },
+  "delay_scenarios": [
+    {
+      "immediate_value": 550.0,
+      "pilot_value": 582.6331238444178,
+      "net_gain": 32.63312384441781,
+      "no_delay_pilot_value": 582.6331238444178,
+      "evsi": 34.63312384441781,
+      "delay_cost_vs_no_delay": 0.0,
+      "predictive_mass": 1.0000000000000215,
+      "decision": "pilot",
+      "posterior_best_margin": 5.846331238444178,
+      "delay": 0,
+      "horizon": 100,
+      "roundoff_mass_error": 2.1538326677728037e-14,
+      "evsi_negative_roundoff": false
+    },
+    {
+      "immediate_value": 550.0,
+      "pilot_value": 570.9404613675295,
+      "net_gain": 20.94046136752945,
+      "no_delay_pilot_value": 582.6331238444178,
+      "evsi": 34.63312384441781,
+      "delay_cost_vs_no_delay": 11.692662476888357,
+      "predictive_mass": 1.0000000000000215,
+      "decision": "pilot",
+      "posterior_best_margin": 5.846331238444178,
+      "delay": 2,
+      "horizon": 100,
+      "roundoff_mass_error": 2.1538326677728037e-14,
+      "evsi_negative_roundoff": false
+    },
+    {
+      "immediate_value": 550.0,
+      "pilot_value": 553.401467652197,
+      "net_gain": 3.4014676521969704,
+      "no_delay_pilot_value": 582.6331238444178,
+      "evsi": 34.63312384441781,
+      "delay_cost_vs_no_delay": 29.231656192220893,
+      "predictive_mass": 1.0000000000000215,
+      "decision": "pilot",
+      "posterior_best_margin": 5.846331238444178,
+      "delay": 5,
+      "horizon": 100,
+      "roundoff_mass_error": 2.1538326677728037e-14,
+      "evsi_negative_roundoff": false
+    },
+    {
+      "immediate_value": 550.0,
+      "pilot_value": 524.169811459976,
+      "net_gain": -25.830188540023983,
+      "no_delay_pilot_value": 582.6331238444178,
+      "evsi": 34.63312384441781,
+      "delay_cost_vs_no_delay": 58.463312384441785,
+      "predictive_mass": 1.0000000000000215,
+      "decision": "immediate",
+      "posterior_best_margin": 5.846331238444178,
+      "delay": 10,
+      "horizon": 100,
+      "roundoff_mass_error": 2.1538326677728037e-14,
+      "evsi_negative_roundoff": false
+    },
+    {
+      "immediate_value": 550.0,
+      "pilot_value": 494.9381552677552,
+      "net_gain": -55.06184473224482,
+      "no_delay_pilot_value": 582.6331238444178,
+      "evsi": 34.63312384441781,
+      "delay_cost_vs_no_delay": 87.69496857666267,
+      "predictive_mass": 1.0000000000000215,
+      "decision": "immediate",
+      "posterior_best_margin": 5.846331238444178,
+      "delay": 15,
+      "horizon": 100,
+      "roundoff_mass_error": 2.1538326677728037e-14,
+      "evsi_negative_roundoff": false
+    },
+    {
+      "immediate_value": 550.0,
+      "pilot_value": 465.7064990755343,
+      "net_gain": -84.29350092446572,
+      "no_delay_pilot_value": 582.6331238444178,
+      "evsi": 34.63312384441781,
+      "delay_cost_vs_no_delay": 116.92662476888357,
+      "predictive_mass": 1.0000000000000215,
+      "decision": "immediate",
+      "posterior_best_margin": 5.846331238444178,
+      "delay": 20,
+      "horizon": 100,
+      "roundoff_mass_error": 2.1538326677728037e-14,
+      "evsi_negative_roundoff": false
+    },
+    {
+      "immediate_value": 550.0,
+      "pilot_value": 407.2431866910925,
+      "net_gain": -142.7568133089075,
+      "no_delay_pilot_value": 582.6331238444178,
+      "evsi": 34.63312384441781,
+      "delay_cost_vs_no_delay": 175.38993715332535,
+      "predictive_mass": 1.0000000000000215,
+      "decision": "immediate",
+      "posterior_best_margin": 5.846331238444178,
+      "delay": 30,
+      "horizon": 100,
+      "roundoff_mass_error": 2.1538326677728037e-14,
+      "evsi_negative_roundoff": false
+    },
+    {
+      "immediate_value": 550.0,
+      "pilot_value": 290.3165619222089,
+      "net_gain": -259.6834380777911,
+      "no_delay_pilot_value": 582.6331238444178,
+      "evsi": 34.63312384441781,
+      "delay_cost_vs_no_delay": 292.3165619222089,
+      "predictive_mass": 1.0000000000000215,
+      "decision": "immediate",
+      "posterior_best_margin": 5.846331238444178,
+      "delay": 50,
+      "horizon": 100,
+      "roundoff_mass_error": 2.1538326677728037e-14,
+      "evsi_negative_roundoff": false
+    },
+    {
+      "immediate_value": 550.0,
+      "pilot_value": -2.0,
+      "net_gain": -552.0,
+      "no_delay_pilot_value": 582.6331238444178,
+      "evsi": 34.63312384441781,
+      "delay_cost_vs_no_delay": 584.6331238444178,
+      "predictive_mass": 1.0000000000000215,
+      "decision": "immediate",
+      "posterior_best_margin": 5.846331238444178,
+      "delay": 100,
+      "horizon": 100,
+      "roundoff_mass_error": 2.1538326677728037e-14,
+      "evsi_negative_roundoff": false
+    }
+  ],
+  "pilot_vs_launch_break_even_delay_periods": 5.5818123389639,
+  "posterior_best_margin_per_period": 5.846331238444178,
+  "immediate_best_margin_per_period": 5.5,
+  "negative_ablation": {
+    "baseline": "pricing-pilot-evsi-gate EVSI minus pilot cost; ignores foregone horizon",
+    "comparison_cost": 0.0,
+    "delay_periods": 10,
+    "baseline_decision": "pilot",
+    "baseline_net_evsi": 0.34633123844416414,
+    "delay_aware_decision": "immediate",
+    "delay_aware_net_gain": -23.830188540023983,
+    "interpretation": "Negative ablation exposes a decision flip caused by omitting delay; no commercial claim."
+  },
+  "monte_carlo": {
+    "replications": 20000,
+    "seed": 20261110,
+    "exact_expected_best_margin": 5.846331238444178,
+    "monte_carlo_mean": 5.855993333333333,
+    "absolute_difference": 0.009662094889154815,
+    "mc_standard_error": 0.003994216863524324,
+    "purpose": "implementation cross-check; simulation is not an empirical validation"
+  },
+  "numerical_audit": [
+    {
+      "concentration_multiplier": 1,
+      "predictive_mass": 1.0000000000000107,
+      "mass_error": 1.0658141036401503e-14,
+      "raw_evsi": 34.63312384441781,
+      "negative_roundoff_flag": false
+    },
+    {
+      "concentration_multiplier": 10,
+      "predictive_mass": 1.0000000000000924,
+      "mass_error": 9.237055564881302e-14,
+      "raw_evsi": 1.3640374137137314,
+      "negative_roundoff_flag": false
+    },
+    {
+      "concentration_multiplier": 100,
+      "predictive_mass": 1.0000000000010452,
+      "mass_error": 1.0451639553821224e-12,
+      "raw_evsi": 1.150283424067311e-09,
+      "negative_roundoff_flag": false
+    },
+    {
+      "concentration_multiplier": 1000,
+      "predictive_mass": 0.9999999999694346,
+      "mass_error": -3.056543906865272e-11,
+      "raw_evsi": -3.362208644830389e-08,
+      "negative_roundoff_flag": true
+    }
+  ]
+}
