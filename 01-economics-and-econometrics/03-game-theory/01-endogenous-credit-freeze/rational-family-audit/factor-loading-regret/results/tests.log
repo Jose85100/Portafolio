@@ -1,0 +1,10 @@
+test_equal_loadings_cancel (test_robust_regret.RegretTests.test_equal_loadings_cancel) ... ok
+test_heterogeneous_loading_exact_support (test_robust_regret.RegretTests.test_heterogeneous_loading_exact_support) ... ok
+test_invalid_inputs_rejected (test_robust_regret.RegretTests.test_invalid_inputs_rejected) ... ok
+test_matches_independent_vertex_oracle (test_robust_regret.RegretTests.test_matches_independent_vertex_oracle) ... ok
+test_rectangular_baseline_is_more_conservative (test_robust_regret.RegretTests.test_rectangular_baseline_is_more_conservative) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK

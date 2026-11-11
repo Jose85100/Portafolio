@@ -1,0 +1,16 @@
+delta,structure,regret,threshold_exceeded
+0.0,equal,0.11199999999999999,False
+0.0,heterogeneous,0.11199999999999999,False
+0.0,independent_cell_rectangular,0.11199999999999999,False
+0.05,equal,0.11199999999999999,False
+0.05,heterogeneous,0.147,False
+0.05,independent_cell_rectangular,0.212,False
+0.1,equal,0.11199999999999999,False
+0.1,heterogeneous,0.182,False
+0.1,independent_cell_rectangular,0.312,True
+0.2,equal,0.11199999999999999,False
+0.2,heterogeneous,0.252,True
+0.2,independent_cell_rectangular,0.512,True
+0.3,equal,0.11199999999999999,False
+0.3,heterogeneous,0.32199999999999995,True
+0.3,independent_cell_rectangular,0.712,True

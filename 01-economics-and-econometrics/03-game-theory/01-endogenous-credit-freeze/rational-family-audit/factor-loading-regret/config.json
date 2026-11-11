@@ -1,0 +1,11 @@
+{
+  "question": "How does action-specific exposure to a common opponent-state factor change a mixed-regret certificate?",
+  "hypothesis": "For u_ij=A_ij+lambda_i*f_j and |f_j|<=delta, worst-case regret rises by delta*max_a |lambda_a-p.lambda| when q sums to one, and is invariant when loadings are equal.",
+  "threshold": "Numerical exactness tolerance 1e-12; report the first delta at which the worst-case regret exceeds the predeclared 0.25 decision threshold, if any.",
+  "game": {"payoffs": [[1.0, -1.0], [-0.4, 0.7]], "own_strategy": [0.3, 0.7], "opponent_strategy": [0.6, 0.4]},
+  "loadings": {"equal": [1.0, 1.0], "heterogeneous": [0.0, 1.0]},
+  "deltas": [0.0, 0.05, 0.1, 0.2, 0.3],
+  "decision_threshold": 0.25,
+  "seed": 1110,
+  "data": "Designed synthetic 2x2 game; no empirical observations or fitted parameters."
+}
