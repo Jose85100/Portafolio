@@ -1,0 +1,9 @@
+test_additivity_translation_homogeneity_and_permutation (test_es_attribution.AttributionTests.test_additivity_translation_homogeneity_and_permutation) ... ok
+test_analytic_fractional_boundary (test_es_attribution.AttributionTests.test_analytic_fractional_boundary) ... ok
+test_rejects_invalid_inputs (test_es_attribution.AttributionTests.test_rejects_invalid_inputs) ... ok
+test_weighted_replication_oracle (test_es_attribution.AttributionTests.test_weighted_replication_oracle) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.005s
+
+OK
