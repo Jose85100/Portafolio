@@ -1,0 +1,72 @@
+{
+  "experiment": "deterministic_manifest_mutation_simulation",
+  "seed_cases": 40,
+  "rows": 240,
+  "data_status": "synthetic adversarial fixtures; not empirical observations",
+  "summary": [
+    {
+      "mode": "clean",
+      "n": 40,
+      "baseline_accept": 40,
+      "hash_only_accept": 40,
+      "full_accept": 40,
+      "expected_accept": 40
+    },
+    {
+      "mode": "payload_tamper",
+      "n": 40,
+      "baseline_accept": 40,
+      "hash_only_accept": 0,
+      "full_accept": 0,
+      "expected_accept": 0
+    },
+    {
+      "mode": "missing_payload",
+      "n": 40,
+      "baseline_accept": 40,
+      "hash_only_accept": 0,
+      "full_accept": 0,
+      "expected_accept": 0
+    },
+    {
+      "mode": "missing_dependency",
+      "n": 40,
+      "baseline_accept": 40,
+      "hash_only_accept": 40,
+      "full_accept": 0,
+      "expected_accept": 0
+    },
+    {
+      "mode": "cycle",
+      "n": 40,
+      "baseline_accept": 40,
+      "hash_only_accept": 40,
+      "full_accept": 0,
+      "expected_accept": 0
+    },
+    {
+      "mode": "rehash_after_tamper",
+      "n": 40,
+      "baseline_accept": 40,
+      "hash_only_accept": 40,
+      "full_accept": 40,
+      "expected_accept": 0
+    }
+  ]
+}
+test_canonical_order_independent (test_core.VerifierTests.test_canonical_order_independent) ... ok
+test_clean_and_tampered (test_core.VerifierTests.test_clean_and_tampered) ... ok
+test_hash_determinism_and_one_byte_sensitivity (test_core.VerifierTests.test_hash_determinism_and_one_byte_sensitivity) ... ok
+test_malformed_dependency_fails_closed (test_core.VerifierTests.test_malformed_dependency_fails_closed) ... ok
+test_malformed_manifest (test_core.VerifierTests.test_malformed_manifest) ... ok
+test_missing_kind_dependency_and_cycle (test_core.VerifierTests.test_missing_kind_dependency_and_cycle) ... ok
+test_non_object_manifest_fails_closed (test_core.VerifierTests.test_non_object_manifest_fails_closed) ... ok
+test_path_traversal_and_missing_payload (test_core.VerifierTests.test_path_traversal_and_missing_payload) ... ok
+test_symlink_cannot_escape_bundle (test_core.VerifierTests.test_symlink_cannot_escape_bundle) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.004s
+
+OK
+All checks passed!
+Success: no issues found in 3 source files
