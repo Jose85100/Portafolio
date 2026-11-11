@@ -1,0 +1,8 @@
+{
+  "seed": 20261110,
+  "scenarios": 5000,
+  "alpha": 0.975,
+  "weights": "unit; finite synthetic scenario measure",
+  "components": ["COP_FX", "TES_RATE", "EQUITY"],
+  "generator": "Box-Muller independent normals plus shared crisis indicator; illustrative stresses, not observed market data"
+}
