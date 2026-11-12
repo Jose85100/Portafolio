@@ -1,0 +1,56 @@
+{
+  "experiment": "deterministic_manifest_mutation_simulation",
+  "seed_cases": 40,
+  "rows": 240,
+  "data_status": "synthetic adversarial fixtures; not empirical observations",
+  "summary": [
+    {
+      "mode": "clean",
+      "n": 40,
+      "baseline_accept": 40,
+      "hash_only_accept": 40,
+      "full_accept": 40,
+      "expected_accept": 40
+    },
+    {
+      "mode": "payload_tamper",
+      "n": 40,
+      "baseline_accept": 40,
+      "hash_only_accept": 0,
+      "full_accept": 0,
+      "expected_accept": 0
+    },
+    {
+      "mode": "missing_payload",
+      "n": 40,
+      "baseline_accept": 40,
+      "hash_only_accept": 0,
+      "full_accept": 0,
+      "expected_accept": 0
+    },
+    {
+      "mode": "missing_dependency",
+      "n": 40,
+      "baseline_accept": 40,
+      "hash_only_accept": 40,
+      "full_accept": 0,
+      "expected_accept": 0
+    },
+    {
+      "mode": "cycle",
+      "n": 40,
+      "baseline_accept": 40,
+      "hash_only_accept": 40,
+      "full_accept": 0,
+      "expected_accept": 0
+    },
+    {
+      "mode": "rehash_after_tamper",
+      "n": 40,
+      "baseline_accept": 40,
+      "hash_only_accept": 40,
+      "full_accept": 40,
+      "expected_accept": 0
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "status": "success",
+  "method": "executed every notebook code cell in shared Python process",
+  "cells_executed": 2,
+  "outputs": "stdout and generated figure embedded in notebook",
+  "kernel_note": "No Jupyter kernel startup was attempted by this runner; no kernel validation is claimed."
+}

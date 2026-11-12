@@ -1,0 +1,9 @@
+{
+  "replications": 20000,
+  "seed": 20261110,
+  "exact_expected_best_margin": 5.846331238444178,
+  "monte_carlo_mean": 5.855993333333333,
+  "absolute_difference": 0.009662094889154815,
+  "mc_standard_error": 0.003994216863524324,
+  "purpose": "implementation cross-check; simulation is not an empirical validation"
+}
