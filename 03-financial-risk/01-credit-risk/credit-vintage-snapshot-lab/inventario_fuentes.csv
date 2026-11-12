@@ -1,0 +1,11 @@
+﻿dominio,tabla_candidata,catalogo_esquema,granularidad,clave_primaria,fecha_evento,fecha_disponibilidad,confirmada,observaciones
+creditos_originacion,,,,,,,NO,Pendiente de inventario Athena
+panel_mensual,,,,,,,NO,Pendiente de inventario Athena
+clientes,,,,,,,NO,Pendiente de inventario Athena
+comercios,,,,,,,NO,Pendiente de inventario Athena
+transacciones,,,,,,,NO,Pendiente de inventario Athena
+buro,,,,,,,NO,Pendiente de inventario Athena
+avances_tarjeta,,,,,,,NO,Pendiente de inventario Athena
+geografia_contexto,,,,,,,NO,Pendiente de inventario Athena
+politicas,,,,,,,NO,Pendiente de inventario Athena
+calendario,,,,,,,NO,Pendiente de inventario Athena
