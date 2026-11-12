@@ -44,3 +44,8 @@ D1 diagnóstico; D2 metodología; D3 código y pruebas; D4 validación independi
 ## 7. Restricciones y gobierno
 
 Los datos sintéticos validan cálculos, no desempeño real. Verificar regulación por jurisdicción y tipo de entidad; no confundir capital económico, regulatorio y contable. Seguir [arquitectura transversal](../../00-architecture/README.md).
+
+
+## Aplicación con datos observados
+
+[Notebook reproducible](aplicacion-observada.ipynb): análisis con fuentes públicas, supuestos y posiciones hipotéticas; incluye sensibilidad, controles y límites. El caso no valida un modelo institucional.

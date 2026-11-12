@@ -69,3 +69,8 @@ Paquetes futuros: `src/` (estimación/simulación), `tests/` (unitarios e invari
 **Gate A:** problema y métricas aprobados; **B:** datos auditables; **C:** baseline reproducible; **D:** modelo avanzado con pruebas; **E:** validación independiente y stress; **F:** decisión ejecutiva con evidencia y dueño. No promover de gate por documentación solamente.
 
 **Fases:** descubrimiento → baseline → modelado → stress/validación → piloto controlado → transferencia y monitoreo. Registrar versionado, reproducibilidad y resultados negativos.
+
+
+## Aplicación con datos públicos
+
+[Notebook de solvencia agregada y escenarios](aplicacion-observada.ipynb): evalúa una sensibilidad hipotética sobre componentes SFC agregados. No es un ICAAP institucional ni una prueba de cumplimiento.

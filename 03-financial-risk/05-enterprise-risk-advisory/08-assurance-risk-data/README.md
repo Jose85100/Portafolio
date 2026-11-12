@@ -15,3 +15,6 @@ Se mantienen los tres proyectos existentes y se incorporan cuatro líneas nuevas
 - **Nuevo S1:** [Grafo de linaje y dependencia de modelos](risk-model-lineage-graph/)
 - **Nuevo S1:** [Aseguramiento estadístico continuo](continuous-assurance-statistics/)
 - **Nuevo S1:** [Medición causal del valor de transformación](risk-transformation-value/)
+
+
+[Estado de aplicaciones y datos pendientes](BRECHAS_APLICACION.md).
