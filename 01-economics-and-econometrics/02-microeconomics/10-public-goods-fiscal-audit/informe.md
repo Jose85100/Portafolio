@@ -40,7 +40,7 @@ El subsidio para implementar G≥G0 es s=1−θH/(1+G); presupuesto B=sG. Las tr
 
 Con z=1+G, condición interior: (1+λ)z²−(θL+θH)z−λθH=0. La raíz positiva y la cota G≥G0 dan la solución cerrada. W''=−(θL+θH)/(1+G)²−2λθH/(1+G)³<0, por lo que es óptimo global del modelo restringido. No se trata de una prueba de política óptima real.
 
-Baseline principal: no intervenir. Comparador ingenuo: GFB=θL+θH−1, eficiente cuando λ=0. Oráculo: optimización escalar acotada entre G0 y GFB con extremos incluidos explícitamente. Parámetros conocidos e idénticos para todas las políticas; no selección retrospectiva de datos reales.
+Baseline principal: no intervenir. Comparador ingenuo: GFB=θL+θH−1, eficiente cuando λ=0. Oráculo: optimización escalar acotada entre G0 y GFB con extremos incluidos explícitamente. Parámetros conocidos e idénticos para todas las políticas, definidos antes de la evaluación.
 
 ## 7. Tests, costes y ejecución
 

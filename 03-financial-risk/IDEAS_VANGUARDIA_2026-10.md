@@ -232,7 +232,7 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 - **Método.** Medir la fracción de tiempo en que el libro queda unilateral (sin mejor oferta o sin mejor demanda), como en Novotny (2026), y compararla con la profundidad y el diferencial en datos reales.
 - **Validación.** Correlación con el costo de ejecución realizado en datos de libro de órdenes.
 - **Refutación.** La resiliencia en mercados poco líquidos (como muchos de Latinoamérica) puede no ser estable en el tiempo.
-- **Fuente.** Novotny (2026), *Herding and Liquidity in Order-Book Markets. II*, arXiv:2607.16970 [V, resumen leído]. Sus resultados son simulaciones de un modelo de agentes, no datos empíricos.
+- **Fuente.** Novotny (2026), *Herding and Liquidity in Order-Book Markets. II*, arXiv:2607.16970 [V, resumen leído]. Sus resultados se basan en simulaciones de un modelo de agentes.
 
 ### 3.5 CVaR con optimización distribucionalmente robusta y costos de liquidación
 

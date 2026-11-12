@@ -1,7 +1,7 @@
 # Ciclo2nov: ¿reparar la cobertura bajo colas vale su coste?
 
 ## Candidatas y alcance
-Intervalo bootstrap: flexible, pero cobertura finita no acreditada con colas. Detector de ruptura: relevante, necesita protocolo temporal y no resuelve colas estacionarias. Cota con cuarto momento acotado: seleccionada, deriva una garantía transparente para t5 y permite medir su precio. Clasificación: adaptación de ingeniería y auditoría, no contribución estadística original. Reutilizamos exactamente los3240fixtures del1nov, sin otra carpeta ni datos reales.
+Intervalo bootstrap: flexible, pero cobertura finita no acreditada con colas. Detector de ruptura: relevante, necesita protocolo temporal y no resuelve colas estacionarias. Cota con cuarto momento acotado: seleccionada, deriva una garantía transparente para t5 y permite medir su precio. Clasificación: adaptación de ingeniería y auditoría, no contribución estadística original. Reutilizamos exactamente los 3.240 casos de prueba del 1 de noviembre, dentro del mismo proyecto y con insumos simulados.
 
 ## Fórmula original y limitación
 El pivote $\chi^2$ del1nov requiere normalidad IID. La t5 tiene varianza finita y kurtosis de Pearson9 (NIST), de modo que falla esa ley pivotal aunque el objetivo monetario siga dependiendo de v. Propuesta: estimador por diferencias de pares disjuntos, no una kurtosis ajustada sobre la misma muestra.

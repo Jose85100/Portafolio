@@ -39,7 +39,7 @@ Cinco comandos completos independientes exit0:Math4+IA10+CEO5+Economía4+Riesgo5
 |Riesgo|EL sinprepago9.39136 vs salidasconjuntas5.73738;default21.528%vs13.072%|Sinprepago es contrafactual válido, no bug ni certificación IFRS9; cambiar prepago altera modelo|
 
 ## 9. Dictamen independiente
-Sin bloqueantes identificados dentro del alcance. Núcleos leídos: recurrencias Welford/Chan con origen; componentes transitivos y asignación por grupo; enumeración mezcla Bernoulli por régimen y rol obligatorio; mejor respuesta LQ y expectativas racionales; conservación de masa default/prepago/activo y pérdida descontada. Oráculos independientes en tests/experimentos no se confunden con datos reales.
+Sin bloqueantes identificados dentro del alcance. Núcleos leídos: recurrencias Welford/Chan con origen; componentes transitivos y asignación por grupo; enumeración mezcla Bernoulli por régimen y rol obligatorio; mejor respuesta LQ y expectativas racionales; conservación de masa default/prepago/activo y pérdida descontada. Los tests utilizan oráculos independientes como referencias de los experimentos controlados.
 
 ## 10. Limitaciones y madurez
 Componentes prototipo locales, sin elevar dominios completos. Holdout no infiere enlaces, no garantiza evaluación temporal ni desempeño. Quórum no significa voto/aprobación/calidad y reservas autorizadas son supuesto, no recomendación legal. Macro compromiso requiere credibilidad externa; no estimación DSGE. Crédito usa EAD condicional no ponderada dos veces y descuento fin de período; no norma regulatoria validada. Streaming no certifica overflow arbitrario o representabilidad.

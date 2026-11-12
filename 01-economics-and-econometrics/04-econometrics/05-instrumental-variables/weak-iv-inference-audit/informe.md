@@ -30,7 +30,7 @@ Se verificaron títulos, autores, años y enlaces identificadores mediante búsq
 
 DGP: z,v,e independientes N(0,1); u=0,8v+0,6e; x=cz/√n+v; y=x+u+γz. n=250, 3.000 réplicas, semillas 20261023…20264022, c∈{0,1,10}, γ=0; control negativo c=1, γ=0,2. Los registros se generan mediante simulación y se regeneran por semilla y el CSV guarda todos los p-valores y decisiones; hash SHA256 en JSON. Licencia de datos sintéticos: producción local del experimento, sin restricciones de terceros.
 
-Comparación pareada: cada método recibe los mismos vectores. Entre escenarios válidos se usan idénticos shocks; bajo H0, y−β0x=u, por eso las decisiones AR son exactamente idénticas, no tres validaciones independientes. La inferencia causal requiere exclusión y exogeneidad impuestas en simulación, no contrastadas en datos reales.
+Comparación pareada: cada método recibe los mismos vectores. Entre escenarios válidos se usan idénticos shocks; bajo H0, y−β0x=u, por eso las decisiones AR son exactamente idénticas, no tres validaciones independientes. La inferencia causal requiere contrastar en una aplicación empírica los supuestos de exclusión y exogeneidad que se imponen en la simulación.
 
 Hardware y versiones se guardan en `results/summary.json`; tiempos corresponden a entorno Linux del ciclo y no a producción. Memoria medida con tracemalloc es asignación Python, no RSS ni memoria total de BLAS.
 
