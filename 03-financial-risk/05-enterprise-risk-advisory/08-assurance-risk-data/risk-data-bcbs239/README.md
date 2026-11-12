@@ -69,3 +69,8 @@ Paquetes futuros: `src/` (estimación/simulación), `tests/` (unitarios e invari
 **Gate A:** problema y métricas aprobados; **B:** datos auditables; **C:** baseline reproducible; **D:** modelo avanzado con pruebas; **E:** validación independiente y stress; **F:** decisión ejecutiva con evidencia y dueño. No promover de gate por documentación solamente.
 
 **Fases:** descubrimiento → baseline → modelado → stress/validación → piloto controlado → transferencia y monitoreo. Registrar versionado, reproducibilidad y resultados negativos.
+
+
+## Aplicación con datos públicos
+
+[Notebook ejecutable](aplicacion-observada.ipynb): Perfil descriptivo de cobertura y unicidad para datos agregados de calidad de cartera SFC; no certifica cumplimiento BCBS 239. Los cambios de cobertura pueden reflejar cambios de reporte, entidades o fuente. Las pruebas describen un extracto público; no evalúan controles, integridad ni cumplimiento de una entidad.
