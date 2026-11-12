@@ -1,7 +1,7 @@
 # Incertidumbre de reservas actuariales
 
 **Práctica:** Seguros, clima y conducta  
-**Madurez:** S1, diseño científico y de producto; no implementación, resultados, ni conformidad regulatoria.
+**Madurez:** S1 para el programa completo, con una aplicación retrospectiva acotada; no conformidad regulatoria.
 
 ## 1. Mandato y pregunta falsable
 
@@ -44,3 +44,8 @@ D1 diagnóstico; D2 metodología; D3 código y pruebas; D4 validación independi
 ## 7. Restricciones y gobierno
 
 Los datos sintéticos validan cálculos, no desempeño real. Verificar regulación por jurisdicción y tipo de entidad; no confundir capital económico, regulatorio y contable. Seguir [arquitectura transversal](../../00-architecture/README.md).
+
+
+## Aplicación histórica: sensibilidad de factores
+
+[Notebook de incertidumbre condicional CAS](aplicacion-cas-incertidumbre.ipynb). Compara factores de todos los pares observados contra los tres pares recientes; también remuestrea cada edad con 1.000 réplicas y semilla fija. El rango es variación de parámetros condicionada al triángulo, no intervalo predictivo ni incertidumbre total. Los pares se remuestrean independientemente por edad y el último factor dispone de un solo par. Se contrasta con pagos posteriores observados a edad 10; una cartera y un único corte no demuestran cobertura. La fuente CAS/S&P y la descarga con SHA-256 se documentan en [reservas actuariales](../insurance-reserving/README.md).

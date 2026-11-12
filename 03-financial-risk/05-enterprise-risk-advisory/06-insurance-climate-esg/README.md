@@ -15,3 +15,17 @@ Se mantienen los tres proyectos existentes y se incorporan cuatro líneas nuevas
 - **Nuevo S1:** [Incertidumbre de reservas actuariales](actuarial-reserve-uncertainty/)
 - **Nuevo S1:** [Alertas tempranas de daño al consumidor](conduct-harm-early-warning/)
 - **Nuevo S1:** [Dependencia espacial de pérdidas climáticas](climate-insurance-dependence/)
+
+## Cobertura de aplicaciones y datos pendientes
+
+| Tema | Evidencia disponible y alcance |
+|---|---|
+| [Riesgo climático](climate-risk/) | Registros agregados UNGRD; las filas no necesariamente son eventos únicos. |
+| [Amenaza climática y crédito](climate-hazard-credit/) | Señal de precipitación NASA POWER para ciudades; no estima pérdida o default. |
+| [Reservas actuariales](insurance-reserving/) | Triángulo observado de pagos CAS/NAIC con corte histórico de 2007 y evaluación posterior a edad 10. |
+| [Incertidumbre de reservas](actuarial-reserve-uncertainty/) | Sensibilidad y bootstrap condicional de factores para el mismo triángulo; no intervalo de predicción ni incertidumbre total. |
+| [Dependencia clima-seguro](climate-insurance-dependence/) | **Pendiente:** siniestros asegurados fechados y georreferenciados, exposición y amenaza comparables; lluvia aislada no identifica dependencia de pérdidas. |
+| [Alerta de daño de conducta](conduct-harm-early-warning/) | **Pendiente:** quejas y daños trazables por fecha, población expuesta y resolución; no inferir tasas de daño a partir de quejas sin denominador. |
+| [Riesgo de conducta](conduct-risk/) | **Pendiente:** incidentes y controles de conducta, exposición y resultados; quejas agregadas por sí solas no prueban incumplimiento o daño. |
+
+Los casos CAS usan un solo grupo y un corte histórico; la fuente CAS/S&P exige atribución y los resultados no demuestran suficiencia de reservas vigentes.
