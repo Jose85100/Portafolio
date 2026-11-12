@@ -4,23 +4,23 @@ Uso de textos y fuentes alternativas para medir información económica y financ
 
 ## Cinco ideas
 
-1. **Extracción de sorpresas en reportes corporativos**
+1. **[Extracción de sorpresas en reportes corporativos](01-extraccion-de-sorpresas-en-reportes-corporativos/README.md)**
    - Identificar cambios en guía, riesgos, demanda, márgenes y lenguaje frente al reporte anterior.
    - Combinar extracción estructurada con embeddings o clasificadores y evaluar señal en ventanas de evento sin usar texto publicado después.
 
-2. **Nowcast de actividad a partir de textos y anuncios**
+2. **[Nowcast de actividad a partir de textos y anuncios](02-nowcast-de-actividad-a-partir-de-textos-y-anuncios/README.md)**
    - Construir indicadores de demanda, inversión, empleo o precios desde comunicados, vacantes y noticias económicas.
    - Contrastar con estadísticas oficiales usando vintages, cobertura geográfica y retrasos de publicación.
 
-3. **Señal cuantamental de revisiones de expectativas**
+3. **[Señal cuantamental de revisiones de expectativas](03-senal-cuantamental-de-revisiones-de-expectativas/README.md)**
    - Combinar métricas contables y de mercado con cambios textuales en expectativas de analistas o empresas.
    - Medir información incremental frente a señales financieras básicas y controlar sesgo de cobertura y supervivencia.
 
-4. **Índice de riesgo de cadena de suministro**
+4. **[Índice de riesgo de cadena de suministro](04-indice-de-riesgo-de-cadena-de-suministro/README.md)**
    - Extraer menciones de escasez, proveedores, logística y concentración en reportes públicos para mapear exposición por sector.
    - Verificar contra eventos observados y construir intervalos de confianza por baja frecuencia o ambigüedad textual.
 
-5. **Auditoría de sesgo y deriva en señales textuales**
+5. **[Auditoría de sesgo y deriva en señales textuales](05-auditoria-de-sesgo-y-deriva-en-senales-textuales/README.md)**
    - Medir cómo cambian vocabulario, fuentes y desempeño del modelo en periodos de crisis, cambios de idioma o sector.
    - Comparar reglas transparentes y modelos NLP; registrar procedencia, derechos de uso y pruebas de fuga de información.
 
@@ -30,10 +30,10 @@ Guardar fecha de publicación y captura, deduplicar documentos, separar entrenam
 
 ## Aporte innovador y contraste con la base
 
-Aplicar la [metodología común](../METODOLOGIA_BASE_E_INNOVACION.md). Los aportes siguientes son hipótesis por demostrar, no reclamos de novedad confirmados. Para cada idea se especifican baseline, contribución incremental y prueba de falsación.
+Aplicar la [metodología común](../METODOLOGIA_BASE_E_INNOVACION.md). Los aportes siguientes son hipótesis por demostrar, no reclamos de novedad confirmados. Cada idea incluye una referencia y una contribución propuesta; falta precisar su prueba de falsación.
 
-- **1. Keywords/sentiment genérico de documentos.** Base: Extracción temporal de cambios en guía, riesgo y demanda con trazabilidad textual. **Innovación a probar:** Evaluación humana etiquetada y señal incremental sobre sorpresa numérica convencional. **Prueba decisiva:** undefined
-- **2. Indicadores oficiales rezagados sin texto.** Base: Texto de alta frecuencia integrado en modelo mixto con disponibilidad archivada. **Innovación a probar:** Validar nowcast pseudo-real-time contra modelo oficial-only; controlar revisiones y cobertura. **Prueba decisiva:** undefined
-- **3. Fundamentales cuantitativos sin señales de revisión textual.** Base: Cambios semánticos de expectativas junto a sorpresas fundamentales. **Innovación a probar:** Ablation debe probar incrementalidad neta de costos frente a consenso/resultados base. **Prueba decisiva:** undefined
-- **4. Mapa de proveedores estructurado y estático.** Base: Grafo de exposición extraído de texto con confianza y validación manual. **Innovación a probar:** Medir precisión/recall y utilidad ante shocks frente a mapa estructurado incompleto. **Prueba decisiva:** undefined
-- **5. Monitoreo de métricas promedio de modelo.** Base: Auditoría de deriva por fuente, periodo, sector, lenguaje y subgroup pertinente. **Innovación a probar:** Medir detección temprana y falsos positivos; comprobar qué intervención corrige deriva. **Prueba decisiva:** undefined
+- **1. Keywords/sentiment genérico de documentos.** Base: Extracción temporal de cambios en guía, riesgo y demanda con trazabilidad textual. **Innovación a probar:** Evaluación humana etiquetada y señal incremental sobre sorpresa numérica convencional. **Prueba decisiva:** pendiente de definir.
+- **2. Indicadores oficiales rezagados sin texto.** Base: Texto de alta frecuencia integrado en modelo mixto con disponibilidad archivada. **Innovación a probar:** Validar nowcast pseudo-real-time contra modelo oficial-only; controlar revisiones y cobertura. **Prueba decisiva:** pendiente de definir.
+- **3. Fundamentales cuantitativos sin señales de revisión textual.** Base: Cambios semánticos de expectativas junto a sorpresas fundamentales. **Innovación a probar:** Ablation debe probar incrementalidad neta de costos frente a consenso/resultados base. **Prueba decisiva:** pendiente de definir.
+- **4. Mapa de proveedores estructurado y estático.** Base: Grafo de exposición extraído de texto con confianza y validación manual. **Innovación a probar:** Medir precisión/recall y utilidad ante shocks frente a mapa estructurado incompleto. **Prueba decisiva:** pendiente de definir.
+- **5. Monitoreo de métricas promedio de modelo.** Base: Auditoría de deriva por fuente, periodo, sector, lenguaje y subgroup pertinente. **Innovación a probar:** Medir detección temprana y falsos positivos; comprobar qué intervención corrige deriva. **Prueba decisiva:** pendiente de definir.

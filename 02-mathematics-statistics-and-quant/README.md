@@ -13,6 +13,9 @@ Los proyectos históricos permanecen temporalmente en sus rutas originales duran
 
 ## Contenido
 
+- [Fundamentos matemáticos](basic/): proyectos sobre conceptos y métodos básicos.
+- [Núcleo numérico](numerical-core/): herramientas y componentes numéricos compartidos.
+
 - [Quantitative methods](quantitative-methods/): regularización, ARIMA, gradient boosting vs logit, Monte Carlo de opciones, validación cruzada temporal y análisis factorial múltiple (datos reales del Banco Mundial).
 - [Quant libraries](quant-libraries/): pérdida esperada de crédito con un contrato numérico común en Python, C, C++, R, MATLAB/Octave y Julia.
 

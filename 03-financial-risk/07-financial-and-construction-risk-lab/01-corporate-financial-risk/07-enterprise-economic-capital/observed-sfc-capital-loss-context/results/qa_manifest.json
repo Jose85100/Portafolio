@@ -1,0 +1,26 @@
+{
+  "solvency_aggregate_rows_in_snapshot": 22,
+  "periods": 22,
+  "complete_entity_periods": 1142,
+  "partial_entity_periods_excluded": 5,
+  "max_entity_ratio_reconciliation_abs_pp": 0.0093709372,
+  "sha256": {
+    "sfc_solvency_api_response_ephemeral_hash": "4da1af109c5f6f767dda5d015fd12ef1825c4dc28ef9ade07bdb46c1e00dd205",
+    "sfc_solvency_aggregate_snapshot": "9b7360ba104dd336df12a2f06a49f4625c2f545c6f59a2abb60949ac5d25143b",
+    "sfc_pnl_extracted_csv": "747a5de7bf8df97883f963b4f8bd20bb5e8e3b4a3cecf77ec34429b0ddea0e1f",
+    "sfc_pnl_source_workbook": "7f74655b7cff09c00f1d00b6fe56ed562ea167d3b2b5467781e1df35ee678133"
+  },
+  "online_source_verified": false,
+  "checks": {
+    "source_hashes_match": true,
+    "pnl_solvency_quarter_join_complete": true,
+    "no_duplicate_quarterly_aggregate_period": true,
+    "institution_ratio_reconciliation_under_0_02pp": true,
+    "sep_2024_matches_banrep_18_6pct_within_0_15pp": true
+  },
+  "output_sha256": {
+    "results/quarterly_capital_and_impairment_context.csv": "fa1a1747003c243f75598b054a0f73379a501b89fff02e217fcdeed373d82937",
+    "results/summary.json": "4da5fb8d78f0363958520271b3a45eceab26ecf589525b5eb89eb0ddebde1678",
+    "figures/solvency_and_impairment_context.png": "f632da358dd8f25752ea4da2c236b6c6608978824baf2506597a12d01ad9e264"
+  }
+}

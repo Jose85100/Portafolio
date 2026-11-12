@@ -26,3 +26,9 @@ Posterior predictive checks y prior sensitivity. Separación temporal de entrena
 
 ## Productos esperados
 Metodología, código, pruebas, escenarios, reporte de validación y dashboard de decisiones.
+
+## Contexto público observado (no es validación)
+
+El [perfil de concentración DNP/SGR](../../02-construction-enterprise-risk/11-portfolio-project-concentration/observed-dnp-sgr-project-concentration/README.md) publica agrupaciones observadas por sector, departamento y entidad ejecutora, útiles para describir dimensiones jerárquicas candidatas y cobertura de proyectos públicos. Sus valores y categorías no son resultados de pérdida o default. No permite estimar pooling de riesgo entre obras ni validar el modelo jerárquico.
+
+**Estado de madurez:** la propuesta continúa S1; el companion citado aporta contexto observable, pero no implementa ni valida el modelo descrito.

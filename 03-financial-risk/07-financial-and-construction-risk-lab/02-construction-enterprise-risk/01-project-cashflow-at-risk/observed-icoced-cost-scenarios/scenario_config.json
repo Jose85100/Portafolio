@@ -1,0 +1,14 @@
+{
+  "currency": "COP millions",
+  "horizon_months": 24,
+  "opening_cash": 10.0,
+  "monthly_collections": 116.0,
+  "base_monthly_project_costs": 100.0,
+  "monthly_debt_service": 15.0,
+  "liquidity_floor": 0.0,
+  "material_component": "Concreto común",
+  "cost_share_proxy_source": "DANE ICOCED Anexo 7.2 published 2021 base weight; not project bill-of-quantities share",
+  "cost_multiplier": "(1 - concrete_weight) + concrete_weight * (index_t / index_window_start)",
+  "scenario_sampling": "all 24-month rolling windows in the 57-month official sector index series; overlapping and descriptive",
+  "collection_and_debt_paths": "flat synthetic assumptions, held fixed across scenarios"
+}

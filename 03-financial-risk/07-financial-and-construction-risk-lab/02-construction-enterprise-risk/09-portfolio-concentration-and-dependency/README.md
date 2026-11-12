@@ -2,6 +2,10 @@
 
 **Maturity:** research specification, not a calibrated implementation.
 
+## Public observed context
+
+The [DNP/SGR concentration companion](../11-portfolio-project-concentration/observed-dnp-sgr-project-concentration/README.md) describes the distribution of reported public-investment value by sector, department and executing entity. It provides an observed baseline for concentration diagnostics, but it does not identify dependencies or losses across projects and cannot calibrate this portfolio model.
+
 ## Research question
 Copula and shared factor project losses, diversification and tail concentration. Determine when this model materially improves risk decisions relative to transparent baselines.
 

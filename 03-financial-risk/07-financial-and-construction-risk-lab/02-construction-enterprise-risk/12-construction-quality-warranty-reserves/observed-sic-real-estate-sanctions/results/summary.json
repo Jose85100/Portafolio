@@ -1,0 +1,88 @@
+{
+  "purpose": "Context on final consumer-protection sanctions; not a warranty-claim, defect-rate, reserve, or paid-loss dataset.",
+  "observation_utc": "2026-11-11T19:11:51.433498+00:00",
+  "source_dataset_id": "73dx-n59j",
+  "source_url": "https://www.datos.gov.co/Comercio-Industria-y-Turismo/Sanciones-impuestas-en-firme-por-la-SIC/73dx-n59j",
+  "filter": "sector='Inmuebles'",
+  "selected_fields": [
+    "res_sancion",
+    "fecha_emitida",
+    "conducta"
+  ],
+  "source_rows": 142,
+  "unique_resolution_ids": 126,
+  "rows_missing_resolution_or_date": 0,
+  "resolution_date_conflicts": 0,
+  "period": [
+    "2013",
+    "2026"
+  ],
+  "resolutions_with_quality_labeled_conduct": 16,
+  "quality_label_is_substring_rule_not_warranty_classification": true,
+  "records_by_conduct_allow_multiple_conducts_per_resolution": [
+    {
+      "conduct": "Inobservancia de órdenes e instrucciones impartidas",
+      "source_rows": 83,
+      "unique_resolutions": 82
+    },
+    {
+      "conduct": "Información y publicidad engañosa",
+      "source_rows": 21,
+      "unique_resolutions": 19
+    },
+    {
+      "conduct": "Calidad",
+      "source_rows": 16,
+      "unique_resolutions": 8
+    },
+    {
+      "conduct": "Información engañosa",
+      "source_rows": 6,
+      "unique_resolutions": 6
+    },
+    {
+      "conduct": "Calidad e información engañosa",
+      "source_rows": 4,
+      "unique_resolutions": 3
+    },
+    {
+      "conduct": "Calidad, información y publicidad engañosa",
+      "source_rows": 3,
+      "unique_resolutions": 3
+    },
+    {
+      "conduct": "Publicidad engañosa",
+      "source_rows": 3,
+      "unique_resolutions": 1
+    },
+    {
+      "conduct": "Publicidad engañosa y protección contractual",
+      "source_rows": 3,
+      "unique_resolutions": 3
+    },
+    {
+      "conduct": "Calidad, falta de información, publicidad engañosa",
+      "source_rows": 1,
+      "unique_resolutions": 1
+    },
+    {
+      "conduct": "Calidad, idoneidad y seguridad",
+      "source_rows": 1,
+      "unique_resolutions": 1
+    },
+    {
+      "conduct": "Seguridad de producto",
+      "source_rows": 1,
+      "unique_resolutions": 1
+    }
+  ],
+  "raw_response_sha256": "2542d4518e8d21ad85c607d771db9d0114ff6a0674f3589539fdc1a53ac2331c",
+  "limitations": [
+    "Sector Inmuebles is not a cohort of construction projects or a denominator of dwellings delivered.",
+    "Rows may repeat one resolution across multiple conduct labels; unique resolutions are counted annually, while conduct table is non-exclusive.",
+    "A conduct containing Calidad is not necessarily a warranty claim or a defect requiring repair.",
+    "The source contains final administrative sanctions, not all complaints, warranty notices, claims, repair costs, payouts, recoveries, or actuarial losses.",
+    "The sanction table includes names and case identifiers; only three selected fields are processed and no case IDs or names are written to outputs.",
+    "The API is mutable; this extract is a single observed vintage and not a complete census of quality defects."
+  ]
+}

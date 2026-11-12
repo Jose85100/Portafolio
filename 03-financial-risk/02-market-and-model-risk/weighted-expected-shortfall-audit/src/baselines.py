@@ -47,7 +47,7 @@ HISTORICO = repo_function(
     "03-financial-risk/02-market-and-model-risk/var-es-tres-metodos/main.py", "historico_legacy_conditional"
 )
 CONSTRUCTION = repo_function(
-    "03-financial-risk/07-financial-and-construction-risk-lab/python/src/risk_models.py", "empirical_var_es"
+    "03-financial-risk/07-financial-and-construction-risk-lab/04-modelos-compartidos/python/src/risk_models.py", "empirical_var_es"
 )
 
 
@@ -67,7 +67,7 @@ def strict_tail_es(losses: ArrayLike, alpha: float) -> float:
     return float(tail.mean()) if len(tail) else float("nan")
 
 
-LIQUIDITY = repo_function("03-financial-risk/03-market-liquidity-research/python/laboratorio.py", "tail_risk")
+LIQUIDITY = repo_function("03-financial-risk/03-market-liquidity-research/laboratorio-integrado/python/laboratorio.py", "tail_risk")
 
 
 def liquidity_es(losses: ArrayLike, alpha: float) -> float:

@@ -1,0 +1,61 @@
+{
+  "source": {
+    "dataset_id": "rvii-eis8",
+    "title": "Distribución de cartera por producto",
+    "publisher": "Superintendencia Financiera de Colombia (SFC)",
+    "dataset_url": "https://www.datos.gov.co/en/en/Public-Finance/Distribuci-n-de-cartera-por-producto/rvii-eis8",
+    "api_url": "https://www.datos.gov.co/resource/rvii-eis8.csv?$limit=200000",
+    "metadata_url": "https://www.datos.gov.co/api/views/rvii-eis8.json",
+    "official_description": "Saldo mensual por entidad, modalidad, producto, altura de mora y calificación de riesgo.",
+    "canonical_drive_file_id": "1FcdcUTlIHhV92TN8pEikcz0DX0896HBW",
+    "canonical_drive_path": "Master_DATOS/04_SHADOW_RISK/01_RAW/01_RAW/2026-10-02_respaldo_local_pesados/docs/macro_2026_data/sfc_datasets/rvii-eis8.csv.gz",
+    "drive_raw_is_not_copied_into_repository": true,
+    "api_retrieved_at_utc": "2026-11-11T01:58:12+00:00",
+    "socrata_rows_updated_at_utc": "2026-10-23T14:57:52Z (metadata observed 2026-11-10)",
+    "raw_csv_sha256": "94e767a38e182ca9a6b0d188eea1617be2afe061ed6841c97e523c6d0168fa2d",
+    "raw_csv_bytes": 36147754,
+    "raw_file_integrity_note": "Hash identifies the exact CSV input used for this build. The archived Drive gzip was not byte-compared; this does not assert byte identity with that archive."
+  },
+  "snapshot": {
+    "source_rows": 112602,
+    "source_columns": 34,
+    "rows_after_product_total_filter_renglon_5": 87859,
+    "derived_rows": 4480,
+    "products": 32,
+    "monthly_cuts": 140,
+    "first_cut": "2015-01-31",
+    "last_cut": "2026-08-31",
+    "null_cells_source": 0,
+    "duplicate_detail_key_rows_source": 2004,
+    "exact_duplicate_rows_source": 0,
+    "duplicate_product_total_key_rows": 0,
+    "zero_gross_entity_product_month_rows": 1198,
+    "negative_grade_balance_cells": 0,
+    "share_product_month_coverage_98_to_102_pct": 86.05,
+    "derived_csv_sha256": "45c116db15aac1912ebf17d6fa4ce69ed328a4a3f71be00d440fcf5d0d782690",
+    "derived_csv_bytes": 1101609
+  },
+  "grain": "One row per reporting month × SFC product/modality code (unicap), aggregated by summing reporting-entity product-total lines (renglon=5).",
+  "transformations": {
+    "product_total_filter": "renglon == 5; excludes lower-level product lines to prevent double counting.",
+    "main_proxy": "100 × (saldo_D + saldo_E) / (saldo_A + saldo_B + saldo_C + saldo_D + saldo_E).",
+    "coverage_guardrail": "100 × (saldo_A + ... + saldo_E) / saldo_bruto.",
+    "auxiliary": "Raw aggregate balances by A-E, gross balance, number of reporting entities, and source rows are retained in the derived CSV.",
+    "delinquency_bands": "Not used; overlapping delinquency-height columns are excluded.",
+    "amount_units": "Source balances are kept in source units; no currency/unit conversion is applied. Ratios are unit invariant."
+  },
+  "interpretation": {
+    "claim": "Descriptive portfolio mix proxy: the share of balances assigned to SFC risk grades D or E among balances assigned any A-E grade, by product and month.",
+    "not_validated": [
+      "account-level probability of default",
+      "default transition or roll rate",
+      "LGD, EAD or expected loss",
+      "origination scorecard",
+      "provision adequacy",
+      "causal effect or future loss"
+    ],
+    "comparability": "Use within-product historical monitoring only. Product definitions, rating practices, reporting entities and their mix can vary over time and across products; the ratios are not directly rank-comparable across modalities.",
+    "denominator": "Rated balance A-E, not gross balance. The separate coverage field shows rated balance divided by gross balance; where it is materially below 100%, the proxy covers only a subset of gross portfolio.",
+    "integrity": "The raw hash binds this build to its exact input. The Drive canonical file ID/path are recorded for lineage. At runtime the script also validates schema, the composite detail key, numeric saldos, and uniqueness of the derived month-product grain. Drive archive byte equality is not claimed."
+  }
+}

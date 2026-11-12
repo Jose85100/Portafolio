@@ -1,0 +1,38 @@
+{
+  "source": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?page=0&type=daily_treasury_yield_curve",
+  "source_provider": "U.S. Department of the Treasury",
+  "series": "Daily Treasury Par Yield Curve Rates, 10 Yr",
+  "yield_unit": "percent per annum",
+  "source_files": [
+    {
+      "file": "daily-treasury-yield-curve-2024.csv",
+      "sha256": "6775840b76cd7fd41121f61d6f6c60184eca6b2ba49954ec7372c463cbeef34d",
+      "bytes": 19098
+    },
+    {
+      "file": "daily-treasury-yield-curve-2025.csv",
+      "sha256": "cf2fa3da7f160384b63d2ead698532b1d76cd9f789ce4911e2304db85b14e6d5",
+      "bytes": 20155
+    },
+    {
+      "file": "daily-treasury-yield-curve-2026-11-10.csv",
+      "sha256": "782e0953ac34dd4c9751bc061feae3b1a2e18f0be8c7c181a3d2a472d1bdcbe5",
+      "bytes": 17606
+    }
+  ],
+  "first_date": "2024-01-02",
+  "last_date": "2026-11-10",
+  "yield_observations": 715,
+  "daily_changes": 714,
+  "modified_duration_assumption_years": 8.0,
+  "notional_usd": 1000000.0,
+  "initial_training_observations": 500,
+  "holdout_observations": 214,
+  "holdout_start": "2026-01-06",
+  "holdout_end": "2026-11-10",
+  "limitations": [
+    "constant-maturity par yield changes are a risk-factor proxy, not bond total returns",
+    "first-order duration P&L omits convexity, carry, roll-down, cash flows and basis risk",
+    "the holdout tests historical coverage with low power at 99 percent; it does not establish production fitness"
+  ]
+}

@@ -209,7 +209,7 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 
 ### 3.2 Liquidity-adjusted VaR con impacto de mercado
 
-**Tipo:** Extensión de `03-market-liquidity-research/05_OPTIMIZACION_LIQUIDEZ.md` (costos de liquidación)
+**Tipo:** Extensión de `03-market-liquidity-research/05-optimizacion-de-liquidez/README.md` (costos de liquidación)
 - **Hipótesis.** El VaR debe ajustarse por el costo de salir de la posición, que depende del tamaño y del horizonte de liquidación.
 - **Método.** Costo de liquidación con impacto temporal y permanente tipo Almgren-Chriss (2000) [C]; VaR ajustado con horizonte igual al tiempo de liquidación.
 - **Validación.** Sensibilidad del LVaR al tamaño de la posición y a la tasa de liquidación.
@@ -236,7 +236,7 @@ Cada idea incluye: hipótesis, formulación mínima, validación y refutación (
 
 ### 3.5 CVaR con optimización distribucionalmente robusta y costos de liquidación
 
-**Tipo:** Extensión de `03-market-liquidity-research/05_OPTIMIZACION_LIQUIDEZ.md` (CVaR con costos)
+**Tipo:** Extensión de `03-market-liquidity-research/05-optimizacion-de-liquidez/README.md` (CVaR con costos)
 - **Hipótesis.** Optimizar el CVaR con el conjunto de incertidumbre de Wasserstein es más estable que el CVaR con muestra histórica cuando hay pocas observaciones de cola.
 - **Método.** Programa DRO: \(\min_w \sup_{Q:\,W_p(Q,\hat P)\le\varepsilon}\mathrm{CVaR}_\alpha^Q(w^\top R - c(w))\). Con costos lineales por tramos.
 - **Validación.** Estabilidad de los pesos frente a remuestreo y pérdida fuera de muestra.

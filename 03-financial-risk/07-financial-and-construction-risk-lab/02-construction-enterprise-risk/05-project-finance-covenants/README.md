@@ -20,3 +20,7 @@ Covenants por escenario, riesgo de refinanciación, waterfalls. Evaluar incertid
 
 ## Entregables previstos
 Dataset versionado, diccionario de variables, metodología reproducible, motor Python, tests unitarios, validación out-of-time, escenarios y reporte ejecutivo con límites.
+
+## Aplicación observada acotada
+
+El companion [sensibilidad de covenant con DTF observada](observed-dtf-covenant-sensitivity/README.md) combina cambios interanuales de DTF del Banco de la República con supuestos transparentes de saldo, CFADS, servicio de deuda y umbral DSCR. Ilustra holgura bajo transmisión mecánica de tasa; los términos del proyecto son hipotéticos y no validan esta especificación con contratos u outcomes reales. La reproducción usa el derivado DTF descrito en Tesorería y ALM.

@@ -47,3 +47,7 @@ El comparador de construcción vivo ya integra masa fraccionaria y coincide con 
 El extractor AST incluye ahora el cierre de helpers de la función elegida y sus primitivas numéricas explícitas; sigue excluyendo demos de nivel superior. Las pruebas contrastan el código actual. Para repetir un benchmark histórico se debe usar su versión de fuentes registrada.
 
 El comparador histórico ingenuo se conserva con nombre explícito `historico_legacy_conditional`; la API actual `historico` ya usa masa fraccionaria. Las pruebas verifican ambas semánticas por separado.
+
+## Aplicación con un factor de mercado observado
+
+El [companion de Treasury a 10 años](observed-treasury-rate-proxy/) ejecuta el ES con masa fraccionaria sobre cambios oficiales de rendimiento convertidos en P&L proxy por duración fija. Demuestra el cálculo del motor en una serie observada, pero no usa posiciones ni P&L reales; no constituye backtest ni validación de cartera.

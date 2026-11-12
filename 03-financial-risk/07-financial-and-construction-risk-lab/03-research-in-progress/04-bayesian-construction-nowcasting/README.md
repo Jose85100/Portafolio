@@ -26,3 +26,9 @@ Filtros Kalman/partículas, calibración y drift. Separación temporal de entren
 
 ## Productos esperados
 Metodología, código, pruebas, escenarios, reporte de validación y dashboard de decisiones.
+
+## Contexto público observado (no es validación)
+
+El [flujo CEED de iniciaciones y culminaciones](../../02-construction-enterprise-risk/07-real-estate-inventory-and-pricing/observed-dane-ceed-housing-supply-flow/README.md) ofrece una serie agregada de actividad residencial útil como referencia temporal. No observa avance físico-financiero contemporáneo por proyecto ni permite evaluar un nowcast de obras.
+
+**Estado de madurez:** la propuesta continúa S1; el companion citado aporta contexto observable, pero no implementa ni valida el modelo descrito.

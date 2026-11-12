@@ -1,0 +1,128 @@
+{
+  "source_last_updated_utc": "2026-10-20T22:44:37+00:00",
+  "retrieved_at_utc": "2026-11-11T18:20:51.257924+00:00",
+  "raw_response_sha256_not_persisted": "c9a4e7d319cf181f28ddf1fe7357e7f55409bd87700cea517079307b9a0429fa",
+  "raw_rows": 35010,
+  "unique_bpin_all_statuses": 33256,
+  "included_unique_projects": 32012,
+  "included_statuses": [
+    "EN EJECUCIÓN",
+    "TERMINADO"
+  ],
+  "department_project_coverage_pct": 83.57178558040735,
+  "department_value_coverage_pct": 78.28800395475325,
+  "concentration": {
+    "sector": {
+      "categories": 25,
+      "hhi_value_share_0_10000": 1881.9359354131002,
+      "top5_value_share_pct": 76.35482269723566,
+      "top_categories_by_value": [
+        {
+          "category": "TRANSPORTE",
+          "project_count": 10218,
+          "value_total_reported": 42842736930331.49,
+          "value_share_pct": 36.53223000248133
+        },
+        {
+          "category": "EDUCACIÓN",
+          "project_count": 3422,
+          "value_total_reported": 17921961819331.957,
+          "value_share_pct": 15.282152313102884
+        },
+        {
+          "category": "VIVIENDA, CIUDAD Y TERRITORIO",
+          "project_count": 4555,
+          "value_total_reported": 14913254772660.33,
+          "value_share_pct": 12.716611787112878
+        },
+        {
+          "category": "CIENCIA, TECNOLOGÍA E INNOVACIÓN",
+          "project_count": 1186,
+          "value_total_reported": 7327849446261.903,
+          "value_share_pct": 6.248496258063968
+        },
+        {
+          "category": "AGRICULTURA Y DESARROLLO RURAL",
+          "project_count": 2073,
+          "value_total_reported": 6538404487613.488,
+          "value_share_pct": 5.575332336474608
+        }
+      ]
+    },
+    "department_unambiguous": {
+      "categories": 33,
+      "hhi_value_share_0_10000": 458.9922063162603,
+      "top5_value_share_pct": 34.47450776010659,
+      "top_categories_by_value": [
+        {
+          "category": "META",
+          "project_count": 1270,
+          "value_total_reported": 9585263267342.463,
+          "value_share_pct": 10.440175551288286
+        },
+        {
+          "category": "CESAR",
+          "project_count": 1208,
+          "value_total_reported": 6870235565167.079,
+          "value_share_pct": 7.482993776855848
+        },
+        {
+          "category": "ANTIOQUIA",
+          "project_count": 2224,
+          "value_total_reported": 5243398414539.52,
+          "value_share_pct": 5.711058570467058
+        },
+        {
+          "category": "CASANARE",
+          "project_count": 969,
+          "value_total_reported": 5191433247052.264,
+          "value_share_pct": 5.654458615308032
+        },
+        {
+          "category": "CORDOBA",
+          "project_count": 1605,
+          "value_total_reported": 4761171079728.648,
+          "value_share_pct": 5.185821246187367
+        }
+      ]
+    },
+    "executing_entity": {
+      "categories": 1823,
+      "hhi_value_share_0_10000": 81.20619821606755,
+      "top5_value_share_pct": 13.568911617652557,
+      "top_categories_by_value": [
+        {
+          "category": "DEPARTAMENTO DEL CESAR",
+          "project_count": 283,
+          "value_total_reported": 3878812061694.649,
+          "value_share_pct": 3.307483707323721
+        },
+        {
+          "category": "Corporación Autónoma Regional del Río Grande de La Magdalena - CORMAGDALENA",
+          "project_count": 6,
+          "value_total_reported": 3576924725407.73,
+          "value_share_pct": 3.0500627675269882
+        },
+        {
+          "category": "DEPARTAMENTO DEL META",
+          "project_count": 301,
+          "value_total_reported": 3112734623737.87,
+          "value_share_pct": 2.6542453951062086
+        },
+        {
+          "category": "AGENCIA PARA LA INFRAESTRUCTURA DEL META - AIM",
+          "project_count": 116,
+          "value_total_reported": 2796559824701.04,
+          "value_share_pct": 2.3846414597137358
+        },
+        {
+          "category": "DEPARTAMENTO DE BOLIVAR",
+          "project_count": 129,
+          "value_total_reported": 2547747996017.3203,
+          "value_share_pct": 2.1724782879819036
+        }
+      ]
+    }
+  },
+  "interpretation": "Perfil descriptivo del universo público SGR; no identifica dependencia estadística, concentración de contratistas/compradores, pérdida ni exposición de un portafolio institucional."
+}

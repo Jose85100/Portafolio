@@ -1,0 +1,109 @@
+{
+  "source_page": "https://www.superfinanciera.gov.co/publicaciones/10108220/informes-y-cifrascifrasestablecimientos-de-creditoinformacion-periodicamensualindicadores-de-riesgo-de-liquidez-indicador-de-riesgo-de-liquidez-irl-10108220/",
+  "source_snapshot_url": "https://www.superfinanciera.gov.co/loader.php?idFile=1055598&lFuncion=descargar&lServicio=Tools2&lTipo=descargas",
+  "source_snapshot": "data/raw/sfc_irl_historico.xlsx",
+  "sha256": "52b24483f73b7a7402b26708826b417d5169ec2604c2aaacb5007a5ba72296e0",
+  "vintage_downloaded": "2026-11-10",
+  "observation_period_start": "2020-03-31",
+  "observation_period_end": "2022-12-31",
+  "monthly_cuts": 34,
+  "grain_entity_level": "reporting entity × month",
+  "grain_type_level": "entity type × month",
+  "entity_observations": 1438,
+  "type_observations": 102,
+  "entities_per_cut_min": 40,
+  "entities_per_cut_max": 44,
+  "entity_rows_missing_values_skipped": 3,
+  "type_rows_missing_values_skipped": 0,
+  "duplicate_entity_month_keys": 0,
+  "duplicate_type_month_keys": 0,
+  "type_sheet_date_normalizations_to_month_end": [
+    {
+      "source_date": "2022-10-30",
+      "analysis_period": "2022-10-31",
+      "entity_type": "Bancos"
+    },
+    {
+      "source_date": "2022-10-30",
+      "analysis_period": "2022-10-31",
+      "entity_type": "Compañías de Financiamiento"
+    },
+    {
+      "source_date": "2022-10-30",
+      "analysis_period": "2022-10-31",
+      "entity_type": "Cooperativas Financieras"
+    }
+  ],
+  "max_formula_reconciliation_error_ratio": 0.000499594466241593,
+  "formula_reconciliation_tolerance_ratio": 0.00051,
+  "reconciliation_within_tolerance": 1438,
+  "reconciliation_observations": 1438,
+  "source_sheet_dimensions": {
+    "Por Tipo": [
+      107,
+      6
+    ],
+    "Por Entidad": [
+      1609,
+      6
+    ],
+    "Descripción": [
+      31,
+      10
+    ]
+  },
+  "minimum_regulatory_ratio": 1.0,
+  "latest_cut_entity_distribution": {
+    "entities": 44,
+    "min_irl_pct": 112.7775125462607,
+    "p10_irl_pct": 146.5691512810165,
+    "median_irl_pct": 213.0534235405585,
+    "p90_irl_pct": 560.4938840479203,
+    "max_irl_pct": 1684.677229208068,
+    "entities_below_100pct": 0
+  },
+  "latest_cut_by_type": {
+    "Bancos": {
+      "irl_pct": 183.6648634958545,
+      "alm_thousand_cop": 111537484170.14001,
+      "rln_30d_thousand_cop": 60728809009.6
+    },
+    "Compañías de Financiamiento": {
+      "irl_pct": 275.6033849535578,
+      "alm_thousand_cop": 1603321320.62,
+      "rln_30d_thousand_cop": 581749502.4200001
+    },
+    "Cooperativas Financieras": {
+      "irl_pct": 188.7902052791368,
+      "alm_thousand_cop": 654330997.8399999,
+      "rln_30d_thousand_cop": 346591602.5
+    }
+  },
+  "source_description_excerpt": [
+    "Indicador de riesgo de liquidez - IRL",
+    "Establecimientos de crédito",
+    "Introducción",
+    "En ese informe se presentan datos de los establecimientos de crédito, desagregada por tipo de entidad, entidad, activos liquidos de mercado, requerimiento de liquidez neto e indicador de riesgo de liquidez.",
+    "Fuente: Formato 458 - Informe 64 (Semanal)",
+    "Industrias incluidas:",
+    "- Establecimientos bancarios",
+    "- Compañías de financiamiento",
+    "- Cooperativas financieras",
+    "Metodología:",
+    "El Indicador de Riesgo de Liquidez (IRL) se obtiene a través de la siguiente ecuación:",
+    "Siendo:",
+    "ALMPromedioMes: Promedio aritmético de los ALM correspondientes a cada mes",
+    "RLNPromedioMes: Promedio aritmético del RLN a 30 días correspondientes a cada mes",
+    "Notas:",
+    "- El IRL es equivalente al Indicador de Riesgo de Liquidez en Razón para la banda de 30 días. El mínimo regulatorio para este indicador es el 100%.",
+    "- Los ALM son los Activos Liquidos de Mercado con los que cuenta una entidad para hacer frente a sus necesidades de liquidez.",
+    "- El RLN es el Requerimiento de Liquidez Neto, correspondiente a los requerimientos estimados para la entidad para la banda de 30 días.",
+    "En la hoja Por Tipo,  se realiza la agrupación para cada corte semanal tanto de los ALM como de los RLN, por cada tipo de entidad. La estimación del IRL se realiza a través de promedios aritméticos (ver fórmula)."
+  ],
+  "limitations": [
+    "The source snapshot ends in 2022-12 and is a historical vintage, not a current feed.",
+    "IRL is an official prudential coverage ratio, not a probability of illiquidity, realized cash shortfall, or market-liquidity cost.",
+    "Percentiles are unweighted and reflect only reporting entities in each monthly cut; entity mix changes over time.",
+    "This bank-sector measure does not validate corporate liquidity or the stochastic first-breach simulation without internal cash flows and liability data."
+  ]
+}

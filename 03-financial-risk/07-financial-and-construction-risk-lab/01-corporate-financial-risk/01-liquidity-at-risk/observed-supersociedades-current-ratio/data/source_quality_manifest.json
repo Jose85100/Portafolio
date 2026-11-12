@@ -1,0 +1,45 @@
+{
+  "provider": "Superintendencia de Sociedades; official source file hosted at supersociedades.gov.co",
+  "cohort_source": "https://www.supersociedades.gov.co/documents/80312/9178350/Base_1000_empresas_2024.xlsx",
+  "account_data_source": "Superintendencia de Sociedades NIIF financial statements via Datos Abiertos Colombia",
+  "account_dataset_id": "pfdp-zks5",
+  "account_dataset_page": "https://www.datos.gov.co/Economy-and-Finances/Estados-Financieros-NIIF-Estado-de-Situaci-n-Finan/pfdp-zks5",
+  "snapshot_date": "2026-11-11",
+  "financial_cut": "2024-12-31",
+  "cohort_vintage": "2025 report, 2024 financial cut",
+  "cohort_size": 1000,
+  "cohort_workbook_sha256": "ad251b172ffc047bfe5f03d47cd33d88a9c593bffaf5d240f34548c17f4843d0",
+  "account_concepts": [
+    "Activos corrientes totales",
+    "Pasivos corrientes totales"
+  ],
+  "api_filters": "fecha_corte=2024-12-31; periodo=Periodo Actual; id_taxonomia=411; matched NITs from official 1,000-company workbook",
+  "data_processing": "Join NIT in memory only. Require point_entrada to align with the cohort workbook basis; exclude ambiguous generic group matches. Collapse exact filing/concept/value duplicates. If multiple aligned filings remain, retain the greatest codigo_instancia. No entity-level input/output is written to repository.",
+  "qa": {
+    "cohort_entities": 1000,
+    "nits_queried": 1000,
+    "source_rows_returned": 1994,
+    "matched_entities_with_both_accounts_and_aligned_basis": 642,
+    "entities_without_both_accounts_or_aligned_basis": 358,
+    "explicit_basis_matches": 612,
+    "generic_group_basis_matches": 30,
+    "ambiguous_generic_group_basis_exclusions": 12,
+    "exact_duplicate_rows_collapsed_or_repeated_values": 0,
+    "conflicting_values_within_filing_concept": 0,
+    "api_response_sha256": "e95946cf0976228241161c03d73c7450b470d3ad6ce499a3989adb3214c6052d",
+    "api_response_bytes": 323280
+  },
+  "output_sha256": "513f9301e167240371a1378297562b31349d0a90723190d48f40fd6dfebac6f0",
+  "figure_sha256": "e9b2dd914eb0c691ce44a18bc2c5fd65c1d72cdbf1bc2761823bf831aeeb96e5",
+  "outputs_contain_entity_identifiers": false,
+  "units": "Supersociedades guidance requires NIIF reports in thousands of COP; ratios are unit-free. Absolute amounts are not released.",
+  "limitations": [
+    "Top 1,000 entities are selected by operating revenue, not a representative sample of all Colombian companies.",
+    "Only entities matched across the two official sources and with both positive current-account values enter the ratio statistics; coverage is disclosed by macro-sector.",
+    "The cross-source match and selection of latest basis-aligned filing instance are analytical rules, not institutionally approved linkage or entity-level validation.",
+    "Current ratio is a static balance-sheet measure and does not capture timing, cash-flow volatility, liquidity buffers, committed facilities, or shortfalls.",
+    "Sector medians and ratio-of-sums are descriptive context, not liquidity-at-risk, a forecast, a PD, a solvency opinion, or individual-company performance.",
+    "Supersociedades cohort data are 2024 year-end from the 2025 report."
+  ],
+  "unit_guidance_source": "https://www.supersociedades.gov.co/web/asuntos-economicos-societarios/preguntas-frecuentes"
+}

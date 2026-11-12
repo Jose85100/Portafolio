@@ -1,6 +1,6 @@
 # Optimización de coberturas
 
-**Estado:** investigación diseñada; implementación pendiente. **No calibrado ni validado.**
+**Estado:** diseño con sensibilidad reproducible de mercado bajo coberturas ideales; no es optimización calibrada ni validada.
 
 ## Pregunta y alcance
 Optimización de costo y riesgo de FX/tasas. ¿En qué condiciones se materializa el riesgo y qué acciones de mitigación generan valor ajustado por riesgo?
@@ -26,3 +26,7 @@ Eficacia fuera de muestra, costos y basis risk. Separación temporal de entrenam
 
 ## Productos esperados
 Metodología, código, pruebas, escenarios, reporte de validación y dashboard de decisiones.
+
+## Evidence gap
+
+The neighboring TRM/DTF companion uses hypothetical balances; there are no observed exposures, executed hedges, hedge costs, or outcome records to optimize against. The new [observed-factor hedge scenario](observed-banrep-hedge-scenarios/README.md) demonstrates how observed market changes would scale under explicitly idealized hedge ratios. It is a sensitivity, not an optimization or validation. See [DATA_GAP.md](DATA_GAP.md) for the evidence needed to close the application gap.

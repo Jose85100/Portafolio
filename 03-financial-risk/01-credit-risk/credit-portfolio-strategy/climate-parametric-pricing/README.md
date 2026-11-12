@@ -40,6 +40,10 @@ Una póliza indexada puede mitigar faltantes de flujo de caja en un productor/ne
 
 Fuente meteorológica y dato satelital → calidad/homogeneidad y metadatos → índice contractual versionado → simulación condicional por escenario → motor de pérdida y basis risk → tarificación técnica → límites de acumulación/capital/reaseguro → explicación/cotización → observación del índice, liquidación y monitoreo de deriva. Registrar revisiones, faltantes, latencia, cambios de sensor, punto geográfico, regla de disputa y fallback.
 
+## Evidencia climática con datos externos
+
+El companion [NASA POWER para diez ciudades](observed-nasa-power-climate-index/) procesa precipitación diaria cuadriculada del producto NASA y compara anualidades completas. Es señal climática descriptiva con checks y hashes, no medición IDEAM ni calibración actuarial. Se descargó además un [catálogo oficial IDEAM de estaciones candidatas](observed-ideam-station-catalog/), pero el catálogo no contiene observaciones históricas; el conteo descargado también difiere del total publicado por la página institucional. El [registro de brecha](DATA_GAP_IDEAM.md) detalla el acceso pendiente a series fechadas y los datos de exposición/pérdidas necesarios. No se presenta prima observada ni basis risk validado.
+
 ## Criterios de avance y falsación
 
 - Contrastar tarifa contra benchmark en validación temporal y espacial fuera de muestra.

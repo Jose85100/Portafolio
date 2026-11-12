@@ -19,6 +19,13 @@ Investigación aplicada en sistemas inteligentes, ingeniería de datos, aprendiz
 
 El código existente permanece íntegro bajo [Data Engineering](data-engineering/): `risk-data-platform`, `shared`, contratos y diseños. Los workflows CI se actualizan a la ruta nueva.
 
+## Aplicaciones con datos observados
+
+- [Risk Data Platform](data-engineering/risk-data-platform/): snapshot público de ICETEX con controles de calidad, cuarentena de cortes no conciliados, manifiesto/hash y publicación atómica. Valida el flujo de ingestión y gobernanza a nivel agregado; no convierte la mora observada en PD o ECL.
+- [Holdout de entidades vinculadas](02-machine-learning-engineering/mvp-linked-entity-holdout/): datos WDI prueban que agrupar por país mantiene la entidad fuera de ambos lados del split; no valida desempeño predictivo ni resolución de clientes/empresas.
+
+Ambos casos mantienen junto a la aplicación observada su laboratorio controlado para estudiar propiedades bajo condiciones conocidas.
+
 ## Priorización
 
 1. Reliability y feature-store point-in-time como cimientos transversales.

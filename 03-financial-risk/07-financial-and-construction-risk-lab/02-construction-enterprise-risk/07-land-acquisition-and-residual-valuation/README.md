@@ -26,3 +26,9 @@ Riesgo normativo, licencias y sensibilidad de precios. Separación temporal de e
 
 ## Productos esperados
 Metodología, código, pruebas, escenarios, reporte de validación y dashboard de decisiones.
+
+## Contexto observado DANE: variación de avalúos residenciales
+
+Se añadió el companion [DANE IVP residencial 2024–2025](observed-dane-ivp-residential-valuation/README.md), con resultados oficiales para 22 ciudades. Aporta una referencia contextual para supuestos de valor de salida/collateral: la variación IVP 2025 osciló entre 2,23% (Quibdó) y 6,48% (Manizales), frente al 3,45% nacional publicado por DANE.
+
+Esta evidencia **no cierra la validación del residual de suelo**: el IVP mide valoración de predios urbanos habitacionales, excluye Bogotá y no es un índice de lotes, oferta, transacciones ni absorción. El proyecto sigue requiriendo comparables de suelo por microzona y resultados autorizados de adquisición/venta enlazados con costos, norma y edificabilidad.

@@ -1,0 +1,11 @@
+{
+  "input_sha256": {
+    "01-corporate-financial-risk/03-credit-spread-and-refinancing-risk/observed-banrep-commercial-credit-cost/data/banrep_series_15129_monthly.csv": "b56f377c08c43df8aa03a255c9ee1c3376d0fe36ae6cbf6a1638b2986876449d"
+  },
+  "output_sha256": {
+    "dscr_historical_sensitivity.png": "656ff7a81e27a7f13726d8d1f9ad86cd19cdc658c89e62afdcfcf995e7eddd29",
+    "dscr_rate_sensitivity.png": "6eed7871e7c0fd90c02e90c2810ee8030ebe1840ca1750f6e46e0cc2a85d01cc",
+    "monthly_sensitivity.csv": "3f7dd892d1d70bd3c9ff46cef77f2d4487c6b391ce93c1b964f9debedcae2689",
+    "summary.json": "c57a6d8238f089b6fbf41e98ef5d1161b79ce1b5349f8e1e982cc38d0cce6474"
+  }
+}

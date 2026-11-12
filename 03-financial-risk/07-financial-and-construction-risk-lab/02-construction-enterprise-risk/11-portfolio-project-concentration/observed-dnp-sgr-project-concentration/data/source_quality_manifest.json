@@ -1,0 +1,52 @@
+{
+  "source": "DNP-ProyectosSGR / Socrata resource mzgh-shtp",
+  "source_url": "https://www.datos.gov.co/Econom-a-y-Finanzas/DNP-ProyectosSGR/mzgh-shtp",
+  "api_endpoint": "https://www.datos.gov.co/resource/mzgh-shtp.json",
+  "metadata_endpoint": "https://www.datos.gov.co/api/views/mzgh-shtp.json",
+  "license": "Creative Commons Attribution-ShareAlike 4.0 International",
+  "retrieved_at_utc": "2026-11-11T18:20:51.257924+00:00",
+  "source_last_updated_utc": "2026-10-20T22:44:37+00:00",
+  "query": {
+    "$select": "codigobpin,valortotal,sector,departamento,entidadejecutora,estado,ejecucionfisica,ejecucionfinanciera",
+    "$order": "codigobpin",
+    "$limit": "50000"
+  },
+  "selected_columns": [
+    "codigobpin",
+    "valortotal",
+    "sector",
+    "departamento",
+    "entidadejecutora",
+    "estado",
+    "ejecucionfisica",
+    "ejecucionfinanciera"
+  ],
+  "raw_response_sha256_not_persisted": "c9a4e7d319cf181f28ddf1fe7357e7f55409bd87700cea517079307b9a0429fa",
+  "raw_response_bytes_not_persisted": 8216281,
+  "raw_response_rows": 35010,
+  "unique_bpin": 33256,
+  "duplicate_bpin_groups": 1427,
+  "exact_duplicate_groups": 1222,
+  "extra_duplicate_rows": 1754,
+  "conflicting_value_counts_by_field": {
+    "departamento": 205
+  },
+  "status_counts_unique_bpin": {
+    "DESAPROBADO": 1244,
+    "EN EJECUCIÓN": 5681,
+    "TERMINADO": 26331
+  },
+  "included_statuses": [
+    "EN EJECUCIÓN",
+    "TERMINADO"
+  ],
+  "included_unique_projects_before_value_qa": 32012,
+  "included_projects_analyzed": 32012,
+  "included_projects_missing_value": 0,
+  "included_projects_negative_value": 0,
+  "execution_values_outside_0_100_not_used": 205,
+  "department_unambiguous_projects_analyzed": 26753,
+  "department_missing_or_ambiguous_projects_excluded": 5259,
+  "output_unit": "ValorTotal reportado por DNP; el companion no lo reinterpreta como asignación SGR ni pérdida.",
+  "privacy": "No se conservan BPIN, nombres de proyectos ni filas individuales; el snapshot contiene únicamente agregados por categoría."
+}

@@ -1,0 +1,17 @@
+{
+  "source": "Supersociedades Base de Datos Insolvencia, corte publicado 2026-11-06",
+  "source_url": "https://supersociedades.gov.co/documents/58444/9506465/Base-Soporte-Insolvencia-2026-CORTE-NOVIEMBRE.xlsx/5d402ff7-9bb8-a3a5-ca4e-e160c3847567?t=1793997727640&version=1.1",
+  "retrieved_at_utc": "2026-11-11T19:18:21.591256+00:00",
+  "source_sha256": "b82a38af56481e11a7dc8d604f4dbebcbf6991bc9207fdd365da1e45575fb91f",
+  "records": 5767,
+  "unique_nro_in_memory": 5767,
+  "missing_nro": 0,
+  "duplicate_nro": 0,
+  "records_missing_assets": 710,
+  "records_missing_liabilities": 771,
+  "process_values_outside_expected_labels": {
+    "COMERCIO": 1
+  },
+  "outputs_exclude_company_names_tax_ids_case_numbers_and_row_level_records": true,
+  "interpretation": "Administrative inventory of records in insolvency procedures; not defaults, counterpart exposures, PD, LGD, EAD, recoveries, or loss outcomes."
+}

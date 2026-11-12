@@ -1,0 +1,70 @@
+{
+  "source": "IDEAM Catálogo Nacional de Estaciones, datos abiertos resource hp9r-jxuu",
+  "source_url": "https://www.datos.gov.co/d/hp9r-jxuu",
+  "catalog_snapshot_date": "2026-11-11",
+  "catalog_file": "ideam_station_catalog_2026-11-11.csv",
+  "catalog_sha256": "e377d9b8644ff2f1c720296d55a4534544f02a50eba88e45422c97d39de13095",
+  "rows_downloaded": 10000,
+  "rows_after_exact_duplicate_removal": 9868,
+  "duplicate_full_rows_removed": 132,
+  "duplicate_station_codes_remaining": 0,
+  "catalog_page_reported_rows": 9685,
+  "api_limit_requested": 10000,
+  "candidate_rain_categories": [
+    "Agrometeorológica",
+    "Climatológica Ordinaria",
+    "Climatológica Principal",
+    "Pluviográfica",
+    "Pluviométrica"
+  ],
+  "candidate_rows_with_valid_colombia_coordinates": 6401,
+  "city_centroids": {
+    "Barrancabermeja": {
+      "latitude": 7.0653,
+      "longitude": -73.8547
+    },
+    "Barranquilla": {
+      "latitude": 10.9639,
+      "longitude": -74.7964
+    },
+    "Bogotá": {
+      "latitude": 4.711,
+      "longitude": -74.0721
+    },
+    "Bucaramanga": {
+      "latitude": 7.1193,
+      "longitude": -73.1227
+    },
+    "Cali": {
+      "latitude": 3.4516,
+      "longitude": -76.532
+    },
+    "Cartagena": {
+      "latitude": 10.391,
+      "longitude": -75.4794
+    },
+    "Medellín": {
+      "latitude": 6.2442,
+      "longitude": -75.5812
+    },
+    "Neiva": {
+      "latitude": 2.9273,
+      "longitude": -75.2819
+    },
+    "Pasto": {
+      "latitude": 1.2136,
+      "longitude": -77.2811
+    },
+    "Villavicencio": {
+      "latitude": 4.142,
+      "longitude": -73.6266
+    }
+  },
+  "interpretation": "Catalog-only proximity screening. No station time series, approval/quality flags, data completeness, property coordinates, exposure, damage, or payout data were obtained.",
+  "limits": [
+    "nearest station to city centroid is not necessarily nearest to an insured site",
+    "distance does not establish terrain or hydrological representativeness",
+    "catalog operational status does not prove period-specific observations exist",
+    "download was capped at 10000 rows; confirm completeness against current catalog before relying on ranks"
+  ]
+}

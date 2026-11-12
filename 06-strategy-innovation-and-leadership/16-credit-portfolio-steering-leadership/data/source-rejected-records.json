@@ -1,0 +1,478 @@
+[
+  {
+    "source_row": 895,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "AMAZONAS",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 896,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "AMAZONAS",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 897,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "ANTIOQUIA",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 898,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "ANTIOQUIA",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 899,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "ARAUCA",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 900,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "ARAUCA",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 901,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "ATLANTICO",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 902,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "ATLANTICO",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 903,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "BOLIVAR",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 904,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "BOLIVAR",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 905,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "BOYACA",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 906,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "BOYACA",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 907,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "CALDAS",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 908,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "CALDAS",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 909,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "CAQUETA",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 910,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "CAQUETA",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 911,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "CASANARE",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 912,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "CASANARE",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 913,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "CAUCA",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 914,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "CAUCA",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 915,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "CESAR",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 916,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "CESAR",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 917,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "CHOCO",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 918,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "CHOCO",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 919,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "CORDOBA",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 920,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "CORDOBA",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 921,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "CUNDINAMARCA",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 922,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "CUNDINAMARCA",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 923,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "DISTRITO CAPITAL",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 924,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "DISTRITO CAPITAL",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 925,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "EXTRANJERO",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 927,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "GUAINIA",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 928,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "GUAINIA",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 929,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "GUAVIARE",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 930,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "GUAVIARE",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 931,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "HUILA",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 932,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "HUILA",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 933,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "LA GUAJIRA",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 934,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "LA GUAJIRA",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 935,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "MAGDALENA",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 936,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "MAGDALENA",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 937,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "META",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 938,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "META",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 939,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "NARINO",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 940,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "NARINO",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 942,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "NORTE DE SANTANDER",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 943,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "NORTE DE SANTANDER",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 944,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "PUTUMAYO",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 945,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "PUTUMAYO",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 946,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "QUINDIO",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 947,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "QUINDIO",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 948,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "RISARALDA",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 949,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "RISARALDA",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 950,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "SAN ANDRES",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 951,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "SAN ANDRES",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 952,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "SANTANDER",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 953,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "SANTANDER",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 954,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "SIN INFO",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 956,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "SUCRE",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 957,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "SUCRE",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 958,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "TOLIMA",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 959,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "TOLIMA",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 960,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "VALLE DEL CAUCA",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 961,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "VALLE DEL CAUCA",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 962,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "VAUPES",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 963,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "VAUPES",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 964,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "VICHADA",
+    "epoca_cartera": "AMORTIZACION",
+    "reason": "Count reconciliation failed"
+  },
+  {
+    "source_row": 965,
+    "fecha_corte": "2025-06-30T00:00:00.000",
+    "departamento": "VICHADA",
+    "epoca_cartera": "ESTUDIOS",
+    "reason": "Count reconciliation failed"
+  }
+]

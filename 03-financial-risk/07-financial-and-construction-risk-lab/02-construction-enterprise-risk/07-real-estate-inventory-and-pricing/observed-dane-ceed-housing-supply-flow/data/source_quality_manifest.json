@@ -1,0 +1,38 @@
+{
+  "source": {
+    "provider": "Departamento Administrativo Nacional de Estadística (DANE)",
+    "operation": "Censo de Edificaciones (CEED)",
+    "source_page": "https://www.dane.gov.co/index.php/estadisticas-por-tema/construccion/censo-de-edificaciones",
+    "source_file": "anex-CEED-IItrim2026.xlsx",
+    "source_url": "https://www.dane.gov.co/files/operaciones/CEED/anex-CEED-IItrim2026.xlsx",
+    "source_sheet_starts_completions": "Anexo M",
+    "source_sheet_crosscheck": "Anexo O",
+    "snapshot_date": "2026-11-11",
+    "coverage": "23 areas of coverage; 2020Q3–2026Q2",
+    "source_bytes": 3396493,
+    "source_sha256": "fdc1661d5979136c0d0df622b85fcca40fc82e516921e0b879710b143e65e625",
+    "quarters": 24,
+    "source_rows_reconcile_across_annexes": true,
+    "required_attribution": "Fuente: Departamento Administrativo Nacional de Estadística (DANE), www.dane.gov.co.",
+    "limitations": [
+      "Starts and completions are quarterly flows; their difference is not unsold stock or a measure of absorption.",
+      "The published aggregate workbook does not provide unsold completed units or time-on-market.",
+      "The CEED microdata catalog documents unit sales and sale prices but its microdata file is distributed separately; it is not used in this companion.",
+      "The 23-area coverage is not national coverage; areas and methods may change over time.",
+      "VIS/No VIS series are aggregates and cannot validate project-level demand, pricing, discount policy or losses.",
+      "Workbook-specific redistribution terms are not explicit in the cited release page; source attribution is included and the workbook/microdata are not stored in this repository."
+    ]
+  },
+  "summary": {
+    "latest_quarter": "2026Q2",
+    "started": 43565,
+    "completed": 42037,
+    "completed_vis": 26306,
+    "completed_nonvis": 15731,
+    "completed_to_starts_ratio": 0.964926,
+    "completed_yoy_change_pct": -2.6132,
+    "trailing_four_quarter_completions": 178779,
+    "prior_trailing_four_quarter_completions": 186432,
+    "trailing_four_quarter_yoy_change_pct": -4.105
+  }
+}

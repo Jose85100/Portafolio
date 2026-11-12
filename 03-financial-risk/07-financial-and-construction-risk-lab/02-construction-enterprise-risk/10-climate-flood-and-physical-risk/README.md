@@ -1,6 +1,6 @@
 # Riesgo climático físico
 
-**Estado:** investigación diseñada; implementación pendiente. **No calibrado ni validado.**
+**Estado:** diseño con companion de contexto de emergencias reportadas UNGRD 2025. **No calibrado ni validado.**
 
 ## Pregunta y alcance
 Amenazas por ubicación y vulnerabilidad del activo. ¿En qué condiciones se materializa el riesgo y qué acciones de mitigación generan valor ajustado por riesgo?
@@ -26,3 +26,7 @@ Incertidumbre espacial y riesgo de cola. Separación temporal de entrenamiento/p
 
 ## Productos esperados
 Metodología, código, pruebas, escenarios, reporte de validación y dashboard de decisiones.
+
+## Evidencia pública disponible
+
+La [companion UNGRD 2025](UNGRD_2025_COMPANION.md) agrega filas del registro de inundaciones, crecientes súbitas, avenidas torrenciales y movimientos en masa por departamento/municipio. Solo 2 de 6.506 filas tienen coordenada distinta de cero; el campo etiquetado DIVIPOLA es inconsistente entre filas. Por ello este insumo permite inspeccionar cobertura de reportes, pero no validar localización, frecuencia de amenaza, exposición física o pérdidas de un proyecto. Se evita sumar impactos de filas que pueden representar actualizaciones repetidas.

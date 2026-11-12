@@ -19,3 +19,9 @@ Build a deterministic baseline, then stochastic scenario engine and parameter es
 
 ## Model risk and acceptance gates
 No deployment without independently reproducible inputs, unit and integration tests, documented limitations, backtesting and governance approval. **Status: design only.**
+
+## Contexto público observado (no es validación)
+
+El [intervalo entre radicación y acto ANLA](../../02-construction-enterprise-risk/08-permit-regulatory-and-legal-delay/observed-anla-infrastructure-evaluation-actions/README.md) y el [conteo SECOP de suspensiones/reanudaciones](../../02-construction-enterprise-risk/02-schedule-cost-overrun/observed-secop-work-suspensions/README.md) describen procesos administrativos separados. No enlazan intervención, proyecto y fecha real de entrega; no identifican efecto causal de una acción del contratista.
+
+**Estado de madurez:** la propuesta continúa S1; el companion citado aporta contexto observable, pero no implementa ni valida el modelo descrito.

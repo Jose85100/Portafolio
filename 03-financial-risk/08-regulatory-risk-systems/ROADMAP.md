@@ -2,11 +2,11 @@
 
 ## Entregado
 
-Doce dominios documentados y seis funciones numéricas de referencia con pruebas: RWA ponderado ilustrativo, ECL con hazard condicional, ES empírico, trayectoria de caja, pérdida operacional anual simulada y clasificación de KRI. No son motores regulatorios completos.
+**Catorce dominios** documentados y seis funciones numéricas de referencia con pruebas: RWA ponderado ilustrativo, ECL con hazard condicional, ES empírico, trayectoria de caja, pérdida operacional anual simulada y clasificación de KRI. No son motores regulatorios completos.
 
 ## Siguiente etapa por dominio
 
-Cada una de las doce carpetas contiene tres líneas: 36 ideas de investigación. Convertir cada línea en un experimento con baseline, hipótesis refutable, datos, fórmula, notebook y criterio de cierre; no contar ideas como implementaciones.
+Cada una de las catorce carpetas de dominio contiene tres líneas: **42 ideas de investigación**. Convertir cada línea en un experimento con baseline, hipótesis refutable, datos, fórmula, notebook y criterio de cierre; no contar ideas como implementaciones.
 
 ## Orden de implementación
 
@@ -19,7 +19,7 @@ Cada una de las doce carpetas contiene tres líneas: 36 ideas de investigación.
 
 ## Criterio de promoción
 
-S1: especificación y fuentes. S2 acotado: código reproducible, pruebas con casos manuales y notebook ejecutado. Validación empírica requiere muestra representativa, diseño temporal y revisión independiente. Operación requiere monitoreo, permisos, auditoría y recuperación. Las funciones entregadas no promocionan por sí solas los doce programas a S2.
+S1: especificación y fuentes. S2 acotado: código reproducible, pruebas con casos manuales y notebook ejecutado. Validación empírica requiere muestra representativa, diseño temporal y revisión independiente. Operación requiere monitoreo, permisos, auditoría y recuperación. Las funciones entregadas no promocionan por sí solas los catorce dominios a S2.
 
 ## Extensiones propuestas
 

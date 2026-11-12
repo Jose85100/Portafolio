@@ -52,3 +52,7 @@ Desde la raíz del repo, en Linux con Python 3.12/g++/gcov/make:
 ```bash
 bash 04-quant-strategy-and-products/risk-engines/weighted-tail-audit/run.sh
 ```
+
+## Ideas de investigación
+
+[Explorar las cinco propuestas por tema](IDEAS.md). Cada propuesta está en estado de idea y cuenta con su propia carpeta.
