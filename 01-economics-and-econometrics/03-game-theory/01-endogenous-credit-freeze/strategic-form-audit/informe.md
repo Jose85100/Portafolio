@@ -25,8 +25,7 @@ contrato de exportación exacta, contraste externo y falsación del chequeo ex a
 Mismo modelo: theta binario, prior pi interior, dos señales binarias condicionalmente
 independientes con precisión q≥.5; u_i=a_i(theta+alpha*a_j-c). Jugadores neutrales al
 riesgo, parámetros comunes conocidos, mezclas independientes entre jugadores. Sin
-presupuesto, riesgo sistémico dinámico ni borrower welfare. No hay datos observados,
-estimando causal, identificación ni selección de equilibrio. Payoffs sintéticos exactos
+presupuesto, riesgo sistémico dinámico ni borrower welfare. El componente usa juegos finitos simulados; el estimando causal, la identificación y la selección de equilibrio quedan para una etapa posterior. Payoffs sintéticos exactos
 con Fraction(str(param)); esto representa decimales, no incertidumbre paramétrica.
 
 Cuatro planes contingentes por jugador. A/B se calculan sumando theta,s0,s1, no usando
@@ -124,5 +123,5 @@ sus referencias compartidas no estuvieron disponibles, sin impedir este flujo lo
 No se ejecutó un solver racional externo, no se verificó un parser Gambit real y no
 se mide memoria nativa. Benchmarks pequeños y selectivos, mismos primitives NumPy/SciPy
 en parte de los baselines: independencia de implementación no significa independencia
-de todos los componentes numéricos. No datos reales, inferencia causal, validación
-out-of-sample ni estimación estructural. **Madurez componente S2, programa S2 parcial**.
+de todos los componentes numéricos. El experimento utiliza escenarios simulados; la inferencia causal, la validación
+out-of-sample y la estimación estructural requieren una etapa posterior. **Madurez componente S2, programa S2 parcial**.

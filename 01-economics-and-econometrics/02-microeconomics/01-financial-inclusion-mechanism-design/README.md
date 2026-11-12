@@ -1,6 +1,6 @@
 # Mechanism Design for Financial Inclusion
 
-> **Estado del programa: formulación (S1).** El componente estático `screening-menu-audit` alcanza S2 local con código, tests y comparación numérica; no resuelve todavía la hipótesis de pagos contingentes al flujo. No se han obtenido resultados empíricos.
+> **Estado del programa: formulación (S1).** El componente estático `screening-menu-audit` alcanza S2 local con código, tests y comparación numérica; no resuelve todavía la hipótesis de pagos contingentes al flujo. La evaluación empírica es una etapa posterior del programa.
 
 ## Pregunta de investigación
 

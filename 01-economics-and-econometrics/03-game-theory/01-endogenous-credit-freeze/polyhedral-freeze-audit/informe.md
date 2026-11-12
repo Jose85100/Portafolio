@@ -58,7 +58,7 @@ Acción de renovar a_i∈{0,1}, u_i=a_i(theta+alpha*a_j-c).
 Estrategia de comportamiento x_i=(P(a_i=1|s_i=0),P(a_i=1|s_i=1)).
 Randomización independiente entre agentes dada información; sin dispositivo público
 correlacionador. Agentes bayesianos y parámetros conocidos son supuestos, no estimados.
-No datos reales, causalidad, equilibrio macroeconómico o probabilidad identificada de selección.
+El estudio utiliza escenarios simulados; la causalidad, el equilibrio macroeconómico y la probabilidad de selección requieren investigación adicional.
 Payoff de prestamistas no es bienestar social.
 
 Para cada tipo, ganancia de renovar D_s=b_s+A_s*x_oponente. Un patrón ternario

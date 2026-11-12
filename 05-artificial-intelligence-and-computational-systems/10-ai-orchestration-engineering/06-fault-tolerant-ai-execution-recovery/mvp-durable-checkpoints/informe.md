@@ -27,7 +27,7 @@ Garcia-Molina y Salem (1987) establecen compensaciones en sagas; Helland (2007) 
 - Los fallos no matan realmente el proceso; se inyectan excepciones después de commits y se abre nueva conexión. No hay prueba de durabilidad frente a corte eléctrico.
 - Tiempos dependen de filesystem, cache, SQLite y máquina; no extrapolar a cargas operativas.
 - `tracemalloc` mide asignaciones Python, no toda la memoria nativa de SQLite.
-- No hay datos reales, privacidad sensible ni interacción con modelos fundacionales.
+- El experimento utiliza escenarios simulados; la privacidad de datos sensibles y la interacción con modelos fundacionales quedan fuera de su alcance.
 - SQLite no modela red, concurrencia, aislamiento distribuido ni ataques. Incluir autenticación, autorización, secretos y límites de recursos antes de M3.
 
 ## Seguridad, sesgos y gobernanza

@@ -72,8 +72,8 @@ solve() certifica como aislados; el oracle omite soportes singulares.
  "benchmark_games":[10,50,100],"repetitions":3}
 ```
 
-No datos reales, estimación, equilibrio macroeconómico, causalidad ni selección
-identificada. Regret interim requiere ningún tipo quiera desviarse; no basta regret
+El ejercicio usa escenarios simulados; la estimación, el equilibrio macroeconómico, la causalidad y la selección
+identificada quedan para una etapa posterior. Regret interim requiere ningún tipo quiera desviarse; no basta regret
 ex ante agregado. Outcomes son expectativas finitas, no simulación Monte Carlo
 de crisis. Payoffs de prestamistas NO son bienestar social. Los seeds sólo generan
 configuraciones del oracle, no una distribución empírica de parámetros.

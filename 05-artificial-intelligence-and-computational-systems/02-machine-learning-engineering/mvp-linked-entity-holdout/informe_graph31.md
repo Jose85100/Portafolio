@@ -67,7 +67,7 @@ referencias.bib conserva las anteriores y añade audit31leakage, audit31groups, 
 
 ## 13. Rúbricas y madurez
 
-Escala1–5, autoevaluación provisional fundada en alcance, no evaluación externa por pares: novedad2 (conceptos conocidos), rigor4 (derivación/oráculo), reproducibilidad4 (pipeline/outputs, sin kernel aislado), código4 (API/tests), claridad4, impacto3 (diagnóstico útil, no datos reales), honestidad5, MVP4. Rúbrica adicional: profundidad teórica3, aporte defendible3, calidad experimental3 (diseño controlado sin datos reales), utilidad4, reproducibilidad4, honestidad5. No inflar originalidad por número de tests. Componente experimental ejecutado y revisado técnicamente dentro del alcance; no validado empíricamente, operacional ni elevación M2 del dominio. Publicación/CI/merge separados en informe consolidado31.
+Escala1–5, autoevaluación provisional fundada en alcance, no evaluación externa por pares: novedad2 (conceptos conocidos), rigor4 (derivación/oráculo), reproducibilidad4 (pipeline/outputs, sin kernel aislado), código4 (API/tests), claridad4, impacto3 (diagnóstico útil, evaluación en simulación), honestidad5, MVP4. Rúbrica adicional: profundidad teórica3, aporte defendible3, calidad experimental3 (diseño controlado con escenarios simulados), utilidad4, reproducibilidad4, honestidad5. No inflar originalidad por número de tests. Componente experimental ejecutado y revisado técnicamente dentro del alcance; no validado empíricamente, operacional ni elevación M2 del dominio. Publicación/CI/merge separados en informe consolidado31.
 
 ## 14. Siguiente iteración y decisión
 

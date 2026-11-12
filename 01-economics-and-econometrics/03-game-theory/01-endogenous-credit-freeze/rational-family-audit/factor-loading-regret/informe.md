@@ -12,7 +12,7 @@
 
 6. **Supuestos y existencia.** Payoffs/loadings finitos; delta no negativa; `p,q` son vectores de probabilidad. `Σq=1` da la forma simplificada; código valida esta condición. Existencia de mezcla es asumida como entrada; no se resuelve equilibrio. El soporte es exacto en las condiciones anteriores. Para factores acoplados entre columnas, límites elipsoidales, más acciones o múltiples factores la fórmula deberá generalizarse.
 
-7. **Datos y procedencia.** `config.json` fija una matriz 2×2 diseñada y mezclas no estimadas. No hay fuente de datos, observaciones, licencia, vintage ni hash de datos porque no se usan datos empíricos. La semilla `1110` se conserva por trazabilidad, aunque el cálculo es determinista. Python 3.12; dependencias fijadas en `requirements.txt`; `summary.json` anota la plataforma de ejecución.
+7. **Datos y procedencia.** `config.json` fija una matriz 2×2 diseñada y mezclas no estimadas. Los insumos son parámetros diseñados y no corresponden a un conjunto externo; su configuración queda registrada en el archivo de entrada. La semilla `1110` se conserva por trazabilidad, aunque el cálculo es determinista. Python 3.12; dependencias fijadas en `requirements.txt`; `summary.json` anota la plataforma de ejecución.
 
 8. **Baseline y oráculo.** Baseline nominal: `R(0)`. Baseline estructural: cargas iguales, que preserva el valor nominal incluso si `δ>0`. Comparador adverso: error rectangular independiente `|ε_ij|≤δ`; su soporte por acción es `2δ Σq`, de modo que la envolvente suma `2δ` al nominal si `q` suma uno. Función de soporte analítica actúa como oráculo; test compara igualdad de cargas y carga heterogénea con la expresión cerrada. No es un oráculo de equilibrio.
 

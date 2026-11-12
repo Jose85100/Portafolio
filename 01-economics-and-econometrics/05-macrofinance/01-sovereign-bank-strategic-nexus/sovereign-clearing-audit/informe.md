@@ -48,7 +48,7 @@ valor fijo supuesto; no existe decisión de venta, precio endógeno, colateral, 
 bailout ni incumplimiento estratégico. Haircut h exógeno, no probabilidad estimada.
 Es un mecanismo de clearing estático, **no equilibrio Nash ni modelo macro dinámico**.
 
-No se usan datos observados, TES ni balances de bancos colombianos. No hay estimando
+El ejercicio usa balances y redes simulados; la aplicación a TES o bancos colombianos requiere fuentes específicas. No hay estimando
 causal, identificación de h, selección de equilibrio ni validación out-of-sample.
 Redes, cash y exposiciones son sintéticos y conocidos por construcción. La consolidación
 excluye al emisor soberano: no se presenta como contabilidad nacional o bienestar social.

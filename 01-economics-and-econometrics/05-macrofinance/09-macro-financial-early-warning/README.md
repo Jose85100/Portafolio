@@ -12,7 +12,7 @@ P(crisis|X)=sigmoid(X beta)
 AUC, Brier, calibración y drift. Definir unidad de observación, muestra, identificación, variables de control, errores estándar y alternativas. Comparar modelos parsimoniosos y estructurales; reportar incertidumbre y falsaciones.
 
 ## Datos y trazabilidad
-Primera versión con datos sintéticos reproducibles. Futuras fuentes públicas posibles: Banco de la República, DANE, Superfinanciera, BIS, World Bank y FRED, según la variable y licencias. No se han descargado ni validado series reales. Guardar fecha de consulta, frecuencia, transformaciones, unidades y vintages.
+La primera etapa utiliza datos simulados reproducibles para estudiar el mecanismo. La ampliación empírica puede incorporar fuentes como Banco de la República, DANE, Superfinanciera, BIS, World Bank y FRED, según su pertinencia y licencia. Registrar fecha de consulta, frecuencia, transformaciones, unidades y versiones.
 
 ## Notebook
 [Laboratorio reproducible](notebooks/01-estimation-and-robustness.ipynb): DGP sintético, OLS baseline, validación fuera de muestra, bootstrap y perturbación de ruido. **La ecuación económica es el objetivo de investigación; el notebook todavía no estima el modelo estructural completo.**

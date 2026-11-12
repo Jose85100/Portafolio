@@ -52,7 +52,7 @@ limitación y el comando conserva la comprobación cuando la herramienta está d
 - `n=30, k=4` es un oracle de ingeniería, no una ventana regulatoria típica.
 - El coste combinatorio impide enumerar directamente `C(250,k)`; se impone un máximo de cinco millones de estados.
 - Solo prueba independencia de primer orden y condiciona en el conteo; no prueba cobertura incondicional.
-- No incorpora estimación del VaR, datos reales, horizontes solapados ni severidad de pérdidas.
+- El estudio utiliza escenarios controlados; la estimación de VaR, los horizontes solapados y la severidad de pérdidas requieren extensiones adicionales.
 - Los desacuerdos se buscan deliberadamente cerca de 5%; no estiman su frecuencia en un portafolio real.
 - `std::mt19937_64` asegura repetibilidad local del baseline, no identidad garantizada entre todas las bibliotecas.
 - El pico RSS incluye C++ y carga del entorno; falta una medición aislada de memoria por algoritmo.

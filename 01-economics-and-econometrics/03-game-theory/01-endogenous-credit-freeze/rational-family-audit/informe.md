@@ -29,8 +29,8 @@ Dos prestamistas, theta binario con prior interior pi; señales privadas binaria
 independientes dado theta, precisión q. u_i=a_i(theta+alpha*a_j-c), agentes neutrales
 al riesgo, parámetros comunes conocidos y mezclas independientes entre jugadores.
 No restricciones de balance, colateral ni prestatarios explícitos. Payoff de prestamista
-no es bienestar social. Sin datos reales, estimación estructural, identificación causal,
-selección de equilibrio ni probabilidades empíricas de congelación.
+no es bienestar social. El estudio utiliza juegos simulados; la estimación estructural, identificación causal,
+selección de equilibrio y probabilidades empíricas de congelación requieren investigación posterior.
 
 Matrices ex ante obtenidas por suma sobre ocho estados, con Fraction(str(parámetros)).
 Se representan decimales racionales exactos, no incertidumbre económica. Cuatro planes
@@ -155,8 +155,8 @@ sus referencias compartidas no fueron accesibles. Visualización: revisión del 
 no se afirma QA interactivo o de viewport estrecho.
 
 **S2 del componente; programa S2 parcial, continuo/empírico S1**. Trece escenarios no
-son prueba formal ni validación S3. No hay datos reales, estimación causal, selección,
-política óptima ni métricas de bienestar social. No generalizar resultados a sistemas
+son prueba formal ni validación S3. El estudio utiliza juegos simulados; la estimación causal, selección,
+política óptima y métricas de bienestar social quedan fuera de esta entrega. No generalizar resultados a sistemas
 bancarios ni a más tipos/agentes. La independencia de implementación no implica
 independencia de todos los primitives reutilizados: modelo/exportador son compartidos.
 
