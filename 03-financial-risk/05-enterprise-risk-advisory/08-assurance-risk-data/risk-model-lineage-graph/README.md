@@ -44,3 +44,8 @@ D1 diagnóstico; D2 metodología; D3 código y pruebas; D4 validación independi
 ## 7. Restricciones y gobierno
 
 Los datos sintéticos validan cálculos, no desempeño real. Verificar regulación por jurisdicción y tipo de entidad; no confundir capital económico, regulatorio y contable. Seguir [arquitectura transversal](../../00-architecture/README.md).
+
+
+## Caso aplicado con datos públicos
+
+[Linaje SFC y alcance de un cambio](aplicacion-linaje-sfc.ipynb): verifica la huella de la fuente, documenta la relación con un extracto y comprueba dos consumidores. El grafo es parcial y manual; no certifica BCBS 239 ni mide criticidad institucional.

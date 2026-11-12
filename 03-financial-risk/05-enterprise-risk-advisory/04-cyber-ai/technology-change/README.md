@@ -69,3 +69,16 @@ Paquetes futuros: `src/` (estimación/simulación), `tests/` (unitarios e invari
 **Gate A:** problema y métricas aprobados; **B:** datos auditables; **C:** baseline reproducible; **D:** modelo avanzado con pruebas; **E:** validación independiente y stress; **F:** decisión ejecutiva con evidencia y dueño. No promover de gate por documentación solamente.
 
 **Fases:** descubrimiento → baseline → modelado → stress/validación → piloto controlado → transferencia y monitoreo. Registrar versionado, reproducibilidad y resultados negativos.
+
+
+## Aplicación observada
+
+[Notebook: Cambio tecnológico: horizonte de remediación CISA KEV](01_cisa_kev_priorizacion.ipynb). **Decisión:** explorar el plazo indicado en un catálogo de vulnerabilidades explotadas para diseñar un proceso interno de priorización. El análisis cuenta CVE en el catálogo, no activos afectados ni vulnerabilidades pendientes de una organización.
+
+
+**Complemento de calidad:** El notebook controla plazos faltantes o negativos y compara la mediana por año de inclusión en el catálogo.
+
+
+### Ampliación metodológica
+
+El notebook incorpora variantes, métricas y bibliografía primaria con supuestos y alcance explícitos. Las proporciones y probabilidades condicionales del ejercicio no acreditan desempeño de una entidad.

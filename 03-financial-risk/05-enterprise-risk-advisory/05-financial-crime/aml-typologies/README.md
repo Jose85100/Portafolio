@@ -69,3 +69,14 @@ Paquetes futuros: `src/` (estimación/simulación), `tests/` (unitarios e invari
 **Gate A:** problema y métricas aprobados; **B:** datos auditables; **C:** baseline reproducible; **D:** modelo avanzado con pruebas; **E:** validación independiente y stress; **F:** decisión ejecutiva con evidencia y dueño. No promover de gate por documentación solamente.
 
 **Fases:** descubrimiento → baseline → modelado → stress/validación → piloto controlado → transferencia y monitoreo. Registrar versionado, reproducibilidad y resultados negativos.
+
+
+## Aplicación con datos públicos
+
+[Programas de sanciones OFAC: composición del listado](aplicacion_observada.ipynb). El programa es una etiqueta de sanción, no una tipología de lavado. Una persona puede tener alias o identificadores múltiples; el conteo no representa casos ni probabilidad de delito. La lista de Estados Unidos no determina obligaciones de una entidad colombiana.
+
+Ejecutar desde esta carpeta: `python -m jupyter nbconvert --execute --to notebook --inplace aplicacion_observada.ipynb`. Requiere Python con pandas, matplotlib, Jupyter y nbclient; los archivos de entrada están en el repositorio.
+
+### Variante y literatura incorporadas
+
+El notebook descompone etiquetas de programas y cuenta designaciones por programa. Como las etiquetas se solapan, las proporciones no suman 100 % ni estiman delitos. Fuentes: [formatos de datos OFAC](https://ofac.treasury.gov/faqs/topic/1641) y [marco de cumplimiento OFAC](https://ofac.treasury.gov/system/files/126/framework_ofac_cc.pdf).
