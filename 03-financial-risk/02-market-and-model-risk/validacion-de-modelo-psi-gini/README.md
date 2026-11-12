@@ -36,3 +36,8 @@ PD media predicha 0.1553 vs tasa observada 0.1505
 ## Companion con datos observados
 
 El laboratorio de Gini, calibración y PSI de scores sigue siendo sintético. La [aplicación SFC de mezcla de calificaciones](observed-sfc-grade-composition/) calcula un PSI descriptivo sobre la composición de saldos A–E para crédito rotativo. Esta señal observada **no es PSI de scores ni valida discriminación o calibración**; para esas métricas se necesitan scores versionados enlazados a outcomes de default maduros y una partición temporal autorizada.
+
+
+## Aplicación observada externa
+
+[Benchmark de Gini, calibración y PSI con UCI](observed-uci350/README.md): regresión independiente y prueba aleatoria del mismo periodo, no validación temporal.
