@@ -44,3 +44,16 @@ D1 diagnóstico; D2 metodología; D3 código y pruebas; D4 validación independi
 ## 7. Restricciones y gobierno
 
 Los datos sintéticos validan cálculos, no desempeño real. Verificar regulación por jurisdicción y tipo de entidad; no confundir capital económico, regulatorio y contable. Seguir [arquitectura transversal](../../00-architecture/README.md).
+
+
+## Aplicación con datos observados y supuestos
+
+[Notebook reproducible](aplicacion-datos-observados.ipynb). Usa datos públicos y documenta los supuestos y límites; no acredita validación institucional. Requiere Python, pandas, matplotlib, Jupyter y un clon del repositorio.
+
+
+**Robustez del notebook:** Incluye sensibilidad por presupuesto y proporción de deuda que reprecia; las frecuencias históricas usan ventanas solapadas.
+
+
+## Literatura y variantes aplicadas
+
+El notebook compara ventanas anuales diciembre a diciembre no solapadas y resume superaciones históricas. Referencia: [FSB/BCBS, Stress Testing Principles (2018)](https://www.fsb.org/2018/10/stress-testing-principles/). Las frecuencias no son probabilidades futuras ni un escenario de inviabilidad institucional.

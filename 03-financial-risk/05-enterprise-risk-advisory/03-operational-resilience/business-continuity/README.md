@@ -69,3 +69,16 @@ Paquetes futuros: `src/` (estimación/simulación), `tests/` (unitarios e invari
 **Gate A:** problema y métricas aprobados; **B:** datos auditables; **C:** baseline reproducible; **D:** modelo avanzado con pruebas; **E:** validación independiente y stress; **F:** decisión ejecutiva con evidencia y dueño. No promover de gate por documentación solamente.
 
 **Fases:** descubrimiento → baseline → modelado → stress/validación → piloto controlado → transferencia y monitoreo. Registrar versionado, reproducibilidad y resultados negativos.
+
+
+## Aplicación observada
+
+[Notebook: Continuidad de negocio: reportes de amenazas físicas](01_contexto_ungrd.ipynb). **Decisión:** orientar la selección de escenarios de continuidad para instalaciones en Colombia. Los datos resumen filas administrativas de 2025 para cuatro grupos de amenazas hidrológicas y geológicas. Las cifras son reportes, no eventos únicos ni interrupciones de una empresa.
+
+
+**Complemento de calidad:** El notebook comprueba unicidad y consistencia de las categorías y calcula su participación en los reportes del agregado.
+
+
+### Ampliación metodológica
+
+El notebook incorpora variantes, métricas y bibliografía primaria con supuestos y alcance explícitos. Las proporciones y probabilidades condicionales del ejercicio no acreditan desempeño de una entidad.

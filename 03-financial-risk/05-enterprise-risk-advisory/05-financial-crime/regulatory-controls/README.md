@@ -69,3 +69,14 @@ Paquetes futuros: `src/` (estimación/simulación), `tests/` (unitarios e invari
 **Gate A:** problema y métricas aprobados; **B:** datos auditables; **C:** baseline reproducible; **D:** modelo avanzado con pruebas; **E:** validación independiente y stress; **F:** decisión ejecutiva con evidencia y dueño. No promover de gate por documentación solamente.
 
 **Fases:** descubrimiento → baseline → modelado → stress/validación → piloto controlado → transferencia y monitoreo. Registrar versionado, reproducibilidad y resultados negativos.
+
+
+## Aplicación con datos públicos
+
+[Control de integridad del listado de sanciones OFAC](aplicacion_observada.ipynb). -0- es un marcador de ausencia de la fuente. El chequeo mide completitud en un corte, no precisión de identidad, cobertura, eficacia del control ni cumplimiento legal; no se utilizan datos de clientes ni se ejecuta screening.
+
+Ejecutar desde esta carpeta: `python -m jupyter nbconvert --execute --to notebook --inplace aplicacion_observada.ipynb`. Requiere Python con pandas, matplotlib, Jupyter y nbclient; los archivos de entrada están en el repositorio.
+
+### Variante y literatura incorporadas
+
+El notebook añade patrones conjuntos de presencia y ausencia de campos. La ausencia por sí sola no prueba falla de control: no se disponen de búsquedas, alertas ni resultados verificados. Véanse el [marco de cumplimiento OFAC](https://ofac.treasury.gov/system/files/126/framework_ofac_cc.pdf) y su [guía sobre falsos positivos](https://ofac.treasury.gov/media/16166/download?inline=).

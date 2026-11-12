@@ -69,3 +69,16 @@ Paquetes futuros: `src/` (estimación/simulación), `tests/` (unitarios e invari
 **Gate A:** problema y métricas aprobados; **B:** datos auditables; **C:** baseline reproducible; **D:** modelo avanzado con pruebas; **E:** validación independiente y stress; **F:** decisión ejecutiva con evidencia y dueño. No promover de gate por documentación solamente.
 
 **Fases:** descubrimiento → baseline → modelado → stress/validación → piloto controlado → transferencia y monitoreo. Registrar versionado, reproducibilidad y resultados negativos.
+
+
+## Aplicación con datos observados y supuestos
+
+[Notebook reproducible](aplicacion-datos-observados.ipynb). Usa datos públicos y documenta los supuestos y límites; no acredita validación institucional. Requiere Python, pandas, matplotlib, Jupyter y un clon del repositorio.
+
+
+**Robustez del notebook:** Incluye controles de unicidad, saldos y participaciones, y comparación transversal de productos; la concentración corresponde a oferentes.
+
+
+## Literatura y variantes aplicadas
+
+El notebook añade el número equivalente de oferentes (10.000 / HHI) y verifica la cota de igualdad. Referencias: [FSB, Risk Appetite Framework (2013)](https://www.fsb.org/2013/11/cos_131118/) y [DOJ, definición de HHI](https://www.justice.gov/atr/herfindahl-hirschman-index). Los oferentes observados no representan los deudores de una cartera propia.
