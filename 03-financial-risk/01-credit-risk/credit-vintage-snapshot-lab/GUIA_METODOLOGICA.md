@@ -4,7 +4,7 @@ El objetivo es observar si una política de originación distingue cohortes o se
 
 ## Unidad, tiempo y evento
 
-La unidad inicial es la cuenta identificada por `(loan_key, merchant_key)`; el cliente se identifica con `client_id`. La cohorte es el mes de originación `corte_origen`. El contrato de ejemplo toma los cortes MOB 1, 2 y 3, y define evento como **días de mora estrictamente mayores a 30** en cualquiera de ellos. Así, 30 días no es evento y 31 sí. Es distinto del uso habitual de «30+» como ≥30; confirmar la convención contractual antes de usar resultados.
+La unidad inicial es la cuenta identificada por `(id_credito, id_comercio)`; el cliente se identifica con `id_cliente`. La cohorte es el mes de originación `corte_origen`. El contrato de ejemplo toma los cortes MOB 1, 2 y 3, y define evento como **días de mora estrictamente mayores a 30** en cualquiera de ellos. Así, 30 días no es evento y 31 sí. Es distinto del uso habitual de «30+» como ≥30; confirmar la convención contractual antes de usar resultados.
 
 Una cuenta es evaluable en MOB 3 si tiene una observación única y DPD conocido en cada MOB 1–3. La falta de una fila, el DPD nulo o una salida sin información posterior no significan que el cliente haya pagado: se reportan como no evaluables. Un corte mensual tampoco garantiza detectar mora que ocurrió y se curó entre cortes. Definir origen de MOB, fechas de corte, cancelaciones, castigos, migraciones y fecha de disponibilidad antes de la extracción.
 
