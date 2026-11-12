@@ -1,6 +1,6 @@
 # Real-Time Causal Nowcasting
 
-> **Estado: S2 parcial — prototipo de evaluación sintética.** [Vintage Audit](vintage-audit/) implementa evaluación as-of con OLS, tests y benchmark. El modelo de factores/MIDAS y la identificación causal siguen en S1; no hay resultados empíricos ni teoremas demostrados.
+> **Estado: S2 parcial — prototipo de evaluación sintética.** [Vintage Audit](vintage-audit/) implementa evaluación as-of con OLS, tests y benchmark. El modelo de factores/MIDAS y la identificación causal siguen en S1; la evaluación empírica y la demostración de teoremas permanecen como etapas posteriores.
 
 ## Pregunta de investigación
 

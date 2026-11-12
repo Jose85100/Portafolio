@@ -9,7 +9,7 @@ Suponemos Xᵢ|p IID Bernoulli(p). El parámetro p es desconocido y le asignamos
 $$\pi(p)=\frac{p^{\alpha-1}(1-p)^{\beta-1}}{B(\alpha,\beta)},\quad0<p<1.$$
 La constante:
 $$B(\alpha,\beta)=\int_0^1p^{\alpha-1}(1-p)^{\beta-1}dp$$
-normaliza la densidad. α y β son elecciones explícitas de modelación; no son datos observados.
+normaliza la densidad. α y β son elecciones explícitas de modelación; son supuestos del caso didáctico.
 
 ## 2. Multiplicar y normalizar
 

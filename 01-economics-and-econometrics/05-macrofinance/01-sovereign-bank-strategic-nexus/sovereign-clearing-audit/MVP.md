@@ -7,7 +7,7 @@
   Python3.12/venv y entorno documentado en README.
 - **Qué produce:**18 tests pasando, lint/types, cobertura medida, CSV/JSON/figura,
   notebook ejecutado con ecuaciones/cálculos, referencias y análisis crítico.
-- **Qué NO cubre:** doom loop dinámico, datos reales, causalidad, colateral, precios
+- **Desarrollo posterior:** evaluación empírica, doom loop dinámico, causalidad, colateral, precios
   endógenos, garantías, intervalos con redondeo dirigido o un solver eficiente para
   redes casi cerradas; éstas pueden rechazarse por presupuesto explícito.
 - **Madurez:** componente estático S1→S2; programa Sovereign–Bank Strategic Nexus S2

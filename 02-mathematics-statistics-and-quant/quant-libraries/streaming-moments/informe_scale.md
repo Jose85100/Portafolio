@@ -13,7 +13,7 @@ Matriz prior_art.md: Welford, Chan, Pébay, Higham, NumPy, Python. Seis referenc
 29 usa M2 centrado: evita cancelación pero puede overflow/underflow con entradas finitas. Inf/0 en varianza no informa si SD aún es recuperable. NumPy+mismaescala es baseline fuerte del mismo problema; no comparar sólo contra variante deliberadamente débil.
 
 ##5 Diseño/configuración
-config_scale.json: x=unit*(1+i mod4), tamaños128/4096, e nominal y deltas−1000,−400,0,400,1000 cuando e admisible[−1074,1023].42filas totales incluyendo cuatro métodos; ventanas malas se registran. Decimal80.from_float, sin datos empíricos ni causalidad. CPU/versions runtime en scale_summary.json. Dependencias directas fijadas, no lock transitivo.
+config_scale.json: x=unit*(1+i mod4), tamaños128/4096, e nominal y deltas−1000,−400,0,400,1000 cuando e admisible[−1074,1023].42filas totales incluyendo cuatro métodos; ventanas malas se registran. Decimal80.from_float; evaluación numérica determinista, con análisis causal fuera de alcance. CPU/versions runtime en scale_summary.json. Dependencias directas fijadas, no lock transitivo.
 
 ##6 Derivación e implementación
 Definir s=2^e>0, yi=xi/s. Entonces \bar x=s\bar y y

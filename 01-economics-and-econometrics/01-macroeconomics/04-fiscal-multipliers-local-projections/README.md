@@ -1,6 +1,6 @@
 # Fiscal multipliers — local projections and identification
 
-**Estado:** diseño econométrico avanzado + notebook sintético existente. No hay estimación causal sobre datos observados.
+**Estado:** diseño econométrico avanzado + notebook sintético existente. La estimación causal con datos observados constituye una etapa posterior.
 
 ## 1. Pregunta y estimando
 Sea `g_t` una innovación fiscal y `y_t` el logaritmo del producto real. Se busca la respuesta causal dinámica de `y` a una innovación de política fiscal exógena. Para cada horizonte `h=0,...,H`:

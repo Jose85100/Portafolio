@@ -40,7 +40,7 @@ nb.cells = [
         "paired=pd.read_csv('results/paired_bootstrap.csv')\ndisplay(paired[(paired.cost_bps==10)&(paired.metric=='sharpe')])\ndisplay(pd.read_csv('results/scaling.csv'))\nc=json.load(open('results/coverage.json'))\ndisplay(c['totals'])"
     ),
     nbformat.v4.new_markdown_cell(
-        "## Conclusión\nLa contribución defendible es la corrección numérica y un benchmark auditable del intercambio entre costos y riesgo. No hay un algoritmo nuevo para la literatura. Sin datos reales, impacto, impuestos, ejecución, liquidez ni validación independiente. Consulte informe.md y referencias.bib."
+        "## Conclusión\nLa contribución defendible es la corrección numérica y un benchmark auditable del intercambio entre costos y riesgo. No hay un algoritmo nuevo para la literatura. El benchmark utiliza escenarios simulados; impacto, impuestos, ejecución, liquidez y validación independiente requieren una etapa adicional. Consulte informe.md y referencias.bib."
     ),
 ]
 # Execute real cells in-process: this restricted environment blocks kernel TCP sockets.

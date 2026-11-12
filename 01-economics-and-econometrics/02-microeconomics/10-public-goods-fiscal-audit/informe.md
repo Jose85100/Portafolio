@@ -74,7 +74,7 @@ Control contable: la suma antes de pagar impuestos sobrestima bienestar por B. E
 
 ## 10. Madurez, riesgos y límites
 
-S2 local del componente; sin elevar un dominio completo ni equiparar S2 con M2. Modelo estático conocido y muy pequeño, parámetros supuestos, sin datos reales. No hay competencia regional, equidad distributiva, incertidumbre o equilibrio fuera del Nash previsto. La pérdida λB no proviene de un modelo tributario estimado. Riesgo principal: usar el óptimo sintético como recomendación fiscal real. No se hace esa afirmación.
+S2 local del componente; sin elevar un dominio completo ni equiparar S2 con M2. Modelo estático conocido y muy pequeño, con parámetros supuestos y evaluación mediante simulación. No hay competencia regional, equidad distributiva, incertidumbre o equilibrio fuera del Nash previsto. La pérdida λB no proviene de un modelo tributario estimado. Riesgo principal: usar el óptimo sintético como recomendación fiscal real. No se hace esa afirmación.
 
 ## 11. Cómo correr
 
@@ -90,7 +90,7 @@ Cinco entradas completas en `referencias.bib`: Samuelson, Bergstrom–Blume–Va
 |---:|---:|---:|---:|---:|---:|---:|---:|
 |2|4|4|4|4|3|5|4|
 
-Autoevaluación. Método clásico y sin datos empíricos no merece máxima novedad o impacto. El revisor independiente del ciclo reprodujo `bash run.sh` completo con salida cero, revisó la contabilidad, solución analítica y oráculo y no identificó bloqueantes. No equivale a validación empírica externa.
+Autoevaluación. El método clásico se evalúa mediante un caso controlado; la novedad y el impacto requieren valoración empírica adicional. El revisor independiente del ciclo reprodujo `bash run.sh` completo con salida cero, revisó la contabilidad, solución analítica y oráculo y no identificó bloqueantes. No equivale a validación empírica externa.
 
 ## 14. Siguiente iteración recomendada
 

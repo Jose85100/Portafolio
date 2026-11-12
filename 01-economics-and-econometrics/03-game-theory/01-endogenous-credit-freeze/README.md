@@ -1,6 +1,6 @@
 # Endogenous Credit Freeze
 
-> **Estado: S2 parcial.** [Bayesian Freeze Audit](bayesian-freeze-audit/) implementa un juego bayesiano finito de dos prestamistas con tests, oracle y benchmark. El juego global continuo y la identificación empírica siguen en S1; no hay resultados empíricos.
+> **Estado: S2 parcial.** [Bayesian Freeze Audit](bayesian-freeze-audit/) implementa un juego bayesiano finito de dos prestamistas con tests, oracle y benchmark. El juego global continuo y la identificación empírica siguen en S1; la evaluación empírica permanece como etapa posterior.
 
 ## Pregunta de investigación
 

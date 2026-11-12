@@ -33,7 +33,7 @@ python3 -m unittest tests.test_notebooks          # (desde la raíz del repo) ej
 
 ## Datos
 
-Simulación con semilla fija y verdad conocida; sin datos reales ni confidenciales.
+Simulación reproducible con semilla fija y resultados de referencia conocidos; los registros se generan para el experimento.
 
 ## Límites
 

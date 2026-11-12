@@ -1,6 +1,6 @@
 # Sovereign–Bank Strategic Nexus
 
-> **Estado: S2 parcial.** [Sovereign Clearing Audit](sovereign-clearing-audit/) implementa pagos; [Fire-Sale Price Audit](fire-sale-price-audit/) añade precio endógeno; [Coupled Clearing Audit](coupled-clearing-audit/) conecta ambos; [Collateral Liquidity Choice](collateral-liquidity-choice/) incorpora una decisión estática y acotada entre venta y préstamo colateralizado. El juego dinámico, garantías públicas e identificación siguen S1. No hay resultados empíricos ni teoremas nuevos del programa completo.
+> **Estado: S2 parcial.** [Sovereign Clearing Audit](sovereign-clearing-audit/) implementa pagos; [Fire-Sale Price Audit](fire-sale-price-audit/) añade precio endógeno; [Coupled Clearing Audit](coupled-clearing-audit/) conecta ambos; [Collateral Liquidity Choice](collateral-liquidity-choice/) incorpora una decisión estática y acotada entre venta y préstamo colateralizado. El juego dinámico, garantías públicas e identificación siguen S1. La evaluación empírica y los teoremas del programa completo permanecen como etapas posteriores.
 
 ## Pregunta de investigación
 

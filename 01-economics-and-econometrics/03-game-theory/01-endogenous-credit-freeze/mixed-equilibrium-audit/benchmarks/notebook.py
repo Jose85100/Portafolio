@@ -9,7 +9,7 @@ root = Path(__file__).resolve().parents[1]
 nb = nbf.v4.new_notebook(cells=[
     nbf.v4.new_markdown_cell('# Mixed Freeze Audit — S2\nPregunta: ¿excluir estrategias mixtas altera el conjunto de resultados? Mismo juego de dos prestamistas: u_i=a_i(theta+alpha*a_j-c). Enumeramos 81 soportes. Los casos degenerados se rechazan; no afirmamos listar un continuo de equilibrios.'),
     nbf.v4.new_code_cell("import csv, json\nfrom pathlib import Path\nfor row in csv.DictReader(Path('results/equilibria.csv').open()): print(row)\nprint(json.loads(Path('results/summary.json').read_text()))"),
-    nbf.v4.new_markdown_cell('Hipótesis principal: aparecen al menos dos equilibrios adicionales. Contraste negativo: no se presupone que los límites extremos de congelación aumenten. No hay datos empíricos ni probabilidades de selección estimadas.'),
+    nbf.v4.new_markdown_cell('Hipótesis principal: aparecen al menos dos equilibrios adicionales. Contraste negativo: no se presupone que los límites extremos de congelación aumenten. El análisis se basa en un juego diseñado; la estimación empírica de probabilidades de selección queda para una etapa posterior.'),
     nbf.v4.new_code_cell("from IPython.display import Image, display\ndisplay(Image(filename='results/comparison.png'))"),
     nbf.v4.new_code_cell("print(Path('results/coverage.txt').read_text())\nprint(Path('results/negative.csv').read_text())")])
 nb.metadata.kernelspec = dict(display_name='Python 3', language='python', name='python3')

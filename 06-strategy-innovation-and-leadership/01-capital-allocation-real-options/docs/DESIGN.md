@@ -38,7 +38,7 @@ Un aumento del valor de esperar puede retrasar proyectos con NPV inmediato posit
 
 ## Riesgos metodológicos
 
-- Los parámetros se introducen manualmente; no existe una calibración a datos reales.
+- Los parámetros se introducen manualmente como supuestos; la calibración empírica corresponde a una etapa posterior.
 - Los resultados cambian si los escenarios o las probabilidades están mal especificados.
 - No hay optimización multiobjetivo, evaluación de incertidumbre paramétrica ni análisis causal identificado.
 - No hay integración productiva ni controles de autorización para decisiones de negocio.

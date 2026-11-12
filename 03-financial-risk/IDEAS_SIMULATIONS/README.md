@@ -1,6 +1,6 @@
 # Simulaciones de las propuestas prioritarias
 
-Scripts reproducibles con semilla fija (NumPy 2.x, SciPy 1.x). Son diagnósticos de diseño, no calibraciones con datos reales.
+Scripts reproducibles con semilla fija (NumPy 2.x, SciPy 1.x). Son diagnósticos de diseño basados en simulaciones; la calibración empírica constituye una etapa posterior.
 
 | Script | Propuesta | Salida |
 |---|---|---|

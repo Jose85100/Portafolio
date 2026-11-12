@@ -2,6 +2,10 @@
 
 Proyectos de riesgo de crédito, modelado cuantitativo, portafolios, estrategia y ciencia de datos aplicada a finanzas y economía. El repositorio combina **notebooks extensos con pruebas automáticas**, **motores de decisión en Python** y una **plataforma de riesgo en C++**.
 
+## Enfoque de los desarrollos
+
+Cada proyecto presenta su pregunta, mecanismo, método y etapa de desarrollo. Los laboratorios conceptuales utilizan simulaciones y parámetros definidos para examinar comportamientos, contrastar alternativas y comprobar cálculos. Las aplicaciones con fuentes observadas documentan procedencia, fecha, transformaciones y límites. Ambos enfoques pueden evolucionar: cada incorporación de datos o validación amplía la evidencia y se registra en la versión correspondiente.
+
 ## Arquitectura de investigación
 
 La organización parte de la pregunta científica y el dominio, no de la herramienta. Consulta el [mapa de investigación y migración](RESEARCH_ARCHITECTURE.md) y la [matriz de madurez](PROJECT_MATURITY.md): un README o una propuesta no se presenta como producto terminado.

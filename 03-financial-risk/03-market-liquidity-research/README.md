@@ -24,7 +24,7 @@ Requiere NumPy. Cada simulación fija una semilla para reproducibilidad. Las fó
 
 ## Diseño de validación
 
-Comparar contra baselines, registrar supuestos, hacer validación temporal, stress out-of-distribution, sensibilidad a parámetros, error Monte Carlo y coherencia de unidades. Separar riesgo de liquidez de financiación (cash-flow shortfall) de liquidez de mercado (impacto y profundidad). Un modelo sin datos reales puede demostrar propiedades numéricas, no poder predictivo.
+Comparar contra baselines, registrar supuestos, hacer validación temporal, stress out-of-distribution, sensibilidad a parámetros, error Monte Carlo y coherencia de unidades. Separar riesgo de liquidez de financiación (cash-flow shortfall) de liquidez de mercado (impacto y profundidad). Una simulación controlada permite estudiar propiedades numéricas; el desempeño predictivo requiere evaluación con datos pertinentes y separación temporal.
 
 
 ## Experimentos ejecutados y contrato numérico
