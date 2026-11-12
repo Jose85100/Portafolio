@@ -69,3 +69,10 @@ Paquetes futuros: `src/` (estimación/simulación), `tests/` (unitarios e invari
 **Gate A:** problema y métricas aprobados; **B:** datos auditables; **C:** baseline reproducible; **D:** modelo avanzado con pruebas; **E:** validación independiente y stress; **F:** decisión ejecutiva con evidencia y dueño. No promover de gate por documentación solamente.
 
 **Fases:** descubrimiento → baseline → modelado → stress/validación → piloto controlado → transferencia y monitoreo. Registrar versionado, reproducibilidad y resultados negativos.
+
+
+## Aplicación con datos públicos
+
+[Notebook ejecutable](aplicacion-observada.ipynb): Evaluación descriptiva de excepciones de un proxy de retorno TES existente, no validación de un modelo institucional. El conteo no prueba independencia ni calibración fuera de muestra por sí solo. La fuente representa una aproximación de rendimiento, sin posiciones reales ni precios ejecutables.
+
+La comprobación de la aplicación detecta seis excepciones marcadas en las que la pérdida y el VaR son iguales a la precisión publicada del CSV. Podrían reflejar una comparación anterior al redondeo; se requieren los valores originales de mayor precisión para verificarlo. El conteo guardado no debe tratarse como reconciliado independientemente en esos casos.
