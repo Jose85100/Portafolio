@@ -1,0 +1,15 @@
+{
+  "source": "UCI Machine Learning Repository: Default of Credit Card Clients",
+  "doi": "https://doi.org/10.24432/C55S3H",
+  "creator": "I-Cheng Yeh",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "download_url": "https://archive.ics.uci.edu/static/public/350/default+of+credit+card+clients.zip",
+  "retrieved_on": "2026-11-12",
+  "filename": "default-of-credit-card-clients.xls",
+  "sha256": "30c6be3abd8dcfd3e6096c828bad8c2f011238620f5369220bd60cfc82700933",
+  "original_zip_sha256": "56c885f84457f6680f8438f02bfcdac9579323d8a94465ee5f26e32baa727602",
+  "rows": 30000,
+  "geography": "Taiwan",
+  "data_period": "2005",
+  "target": "default payment next month"
+}
