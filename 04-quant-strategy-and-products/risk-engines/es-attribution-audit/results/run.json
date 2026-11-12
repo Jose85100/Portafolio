@@ -1,0 +1,8 @@
+{
+  "command": "python run.py",
+  "status": "success",
+  "python": "3.12",
+  "notebook_kernel_execution": "blocked by environment socket policy; outputs captured from successful run.py execution and embedded in notebook",
+  "seed": 20261110,
+  "synthetic_scenarios": 5000
+}

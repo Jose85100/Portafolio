@@ -1,0 +1,14 @@
+{
+  "experiment_id": "evidence-integrity-2026-11-10",
+  "schema": "evidence-bundle/v1",
+  "hash": "SHA-256",
+  "required_kinds": ["dataset", "model", "approval"],
+  "mutation_modes": ["clean", "payload_tamper", "missing_payload", "missing_dependency", "cycle", "rehash_after_tamper"],
+  "replicates_per_mode": 40,
+  "acceptance_thresholds": {
+    "clean_bundle_acceptance": 1.0,
+    "detect_post_manifest_payload_mutation": 1.0,
+    "detect_missing_dependency_or_cycle": 1.0
+  },
+  "data_status": "deterministic synthetic fixtures, not empirical data"
+}
