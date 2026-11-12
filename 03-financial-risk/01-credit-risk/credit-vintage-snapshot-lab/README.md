@@ -4,7 +4,7 @@ Una política de originación necesita saber qué ocurrió durante los primeros 
 
 ![Flujo de backtesting de onboarding](docs/flujo-onboarding.svg)
 
-> **Estado:** plantillas y demostraciones didácticas; no hay cartera real ni validación institucional incluida. Los valores simulados se identifican en los notebooks y no representan desempeño de clientes. La política, las fuentes y las reglas deben validarse antes de una ejecución real.
+> **Estado:** construcción metodológica con plantillas y demostraciones didácticas. Los valores simulados se identifican en los notebooks y sirven para explicar los cálculos. La aplicación a una cartera requiere validar la política, las fuentes, las reglas y los resultados de la entidad.
 
 ## Recorrido
 
