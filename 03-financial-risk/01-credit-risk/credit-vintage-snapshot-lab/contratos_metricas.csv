@@ -1,6 +1,6 @@
-﻿metrica,unidad,numerador,denominador,ventana,umbral_dpd,regla_maduracion,observaciones
-EVER30_MOB3,cuentas,cuentas con max(DPD)>=30 en MOB 0..3,cuentas de cohorte con MOB3 observable,MOB0-3,>=30,MOB3 cerrado,Validar si MOB0 debe incluirse
-EVER60_MOB3,cuentas,cuentas con max(DPD)>=60 en MOB 0..3,cuentas de cohorte con MOB3 observable,MOB0-3,>=60,MOB3 cerrado,
-EVER90_MOB3,cuentas,cuentas con max(DPD)>=90 en MOB 0..3,cuentas de cohorte con MOB3 observable,MOB0-3,>=90,MOB3 cerrado,
-OVER30_CUENTAS,cuentas,cuentas con DPD>=30 al corte,cuentas observables al corte,corte mensual,>=30,No aplica,No equivale a EVER
-OVER30_SALDO,COP,saldo de cuentas DPD>=30,saldo total observado,corte mensual,>=30,No aplica,Definir castigos y saldo cero
+metrica,unidad,numerador,denominador,ventana,umbral_dpd,regla_maduracion,observaciones
+EVER_MOB3_CUENTAS,cuentas,cuentas maduras con max(DPD)>30 en MOB 1..3,"cuentas con MOB 1,2,3 y DPD observado",MOB 1-3,>30,"MOB 1,2,3 completos",MOB 0 opcional; episodios intrames pueden no observarse
+EVER_MOB3_CLIENTES,clientes,clientes maduros con alguna cuenta representada EVER>30,clientes con todas sus cuentas representadas maduras,MOB 1-3,>30,todas las cuentas representadas completas,no identifica cuentas ausentes del extracto
+EVER_MOB3_SALDO,COP,saldo capital MOB3 de cuentas maduras con EVER>30 y saldo válido,saldo capital MOB3 de cuentas maduras con saldo válido,MOB 1-3,>30,"MOB 1,2,3 completos",saldo no nulo y no negativo; no es pérdida; cobertura separada
+OVER30_CUENTAS,cuentas,cuentas con DPD>30 al corte,cuentas con DPD observado al corte,corte mensual,>30,no aplica,fotografía; no equivale a EVER
+OVER30_SALDO,COP,saldo de cuentas con DPD>30 al corte,saldo válido al corte,corte mensual,>30,no aplica,"definir castigos, saldos inválidos y población"
