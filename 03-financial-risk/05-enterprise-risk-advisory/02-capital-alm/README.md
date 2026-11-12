@@ -15,3 +15,6 @@ Se mantienen los tres proyectos existentes y se incorporan cuatro líneas nuevas
 - **Nuevo S1:** [ALM estocástico multihorizonte](stochastic-balance-sheet-alm/)
 - **Nuevo S1:** [Optimización de colchones de liquidez](contingent-liquidity-optimization/)
 - **Nuevo S1:** [Retroalimentación capital-liquidez](capital-liquidity-feedback/)
+
+
+[Estado de aplicaciones y datos pendientes](BRECHAS_APLICACION.md).

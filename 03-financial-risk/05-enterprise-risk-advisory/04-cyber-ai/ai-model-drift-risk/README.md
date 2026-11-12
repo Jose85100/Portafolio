@@ -44,3 +44,8 @@ D1 diagnóstico; D2 metodología; D3 código y pruebas; D4 validación independi
 ## 7. Restricciones y gobierno
 
 Los datos sintéticos validan cálculos, no desempeño real. Verificar regulación por jurisdicción y tipo de entidad; no confundir capital económico, regulatorio y contable. Seguir [arquitectura transversal](../../00-architecture/README.md).
+
+
+## Benchmark ejecutable con datos observados
+
+[Notebook UCI](benchmark-uci-observado.ipynb): clasificación sobre el conjunto Wisconsin Diagnostic (CC BY 4.0), con partición fija y cambio de mezcla seleccionado sobre observaciones de prueba, PSI y KS descriptivo. La aplicación es una evaluación metodológica; no evalúa producción, una entidad ni uso clínico.

@@ -15,3 +15,6 @@ Se mantienen los tres proyectos existentes y se incorporan cuatro líneas nuevas
 - **Nuevo S1:** [Propagación de fallas en redes operativas](resilience-network-percolation/)
 - **Nuevo S1:** [Tiempo estocástico de recuperación](recovery-time-stochastic/)
 - **Nuevo S1:** [Efectividad causal de controles](control-effectiveness-causal/)
+
+
+[Inventario de aplicaciones y brechas de evidencia](EVIDENCE_GAPS.md).

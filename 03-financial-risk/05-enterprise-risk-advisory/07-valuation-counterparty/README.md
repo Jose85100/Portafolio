@@ -15,3 +15,6 @@ Se mantienen los tres proyectos existentes y se incorporan cuatro líneas nuevas
 - **Nuevo S1:** [Dinámica de colateral y llamadas de margen](collateral-margin-dynamics/)
 - **Nuevo S1:** [Bandas de incertidumbre de valoración](pricing-uncertainty-bounds/)
 - **Nuevo S1:** [Redes de pagos y liquidez intradía](intraday-payment-network/)
+
+
+[Estado de aplicaciones y datos pendientes](BRECHAS_APLICACION.md).
