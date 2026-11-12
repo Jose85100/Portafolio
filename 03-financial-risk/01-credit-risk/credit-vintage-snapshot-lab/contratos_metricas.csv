@@ -1,0 +1,6 @@
+﻿metrica,unidad,numerador,denominador,ventana,umbral_dpd,regla_maduracion,observaciones
+EVER30_MOB3,cuentas,cuentas con max(DPD)>=30 en MOB 0..3,cuentas de cohorte con MOB3 observable,MOB0-3,>=30,MOB3 cerrado,Validar si MOB0 debe incluirse
+EVER60_MOB3,cuentas,cuentas con max(DPD)>=60 en MOB 0..3,cuentas de cohorte con MOB3 observable,MOB0-3,>=60,MOB3 cerrado,
+EVER90_MOB3,cuentas,cuentas con max(DPD)>=90 en MOB 0..3,cuentas de cohorte con MOB3 observable,MOB0-3,>=90,MOB3 cerrado,
+OVER30_CUENTAS,cuentas,cuentas con DPD>=30 al corte,cuentas observables al corte,corte mensual,>=30,No aplica,No equivale a EVER
+OVER30_SALDO,COP,saldo de cuentas DPD>=30,saldo total observado,corte mensual,>=30,No aplica,Definir castigos y saldo cero
