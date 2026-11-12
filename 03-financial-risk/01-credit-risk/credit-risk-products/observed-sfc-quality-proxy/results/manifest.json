@@ -1,0 +1,104 @@
+{
+  "source_url": "https://www.superfinanciera.gov.co/loader.php?idFile=1070109&lFuncion=descargar&lServicio=Tools2&lTipo=descargas",
+  "source_snapshot": "data/raw/sfc_calidad_cartera_historico.xlsx",
+  "sha256": "ee6bfe42fa1fff45716c2cc517c9099fbea15a1faac03d8f5109eed9aa5487be",
+  "methodology_source_url": "https://www.superfinanciera.gov.co/loader.php?idFile=1005086&lFuncion=descargar&lServicio=Tools2&lTipo=descargas",
+  "methodology_snapshot": "data/raw/sfc_metodologia_calidad_cartera.xls",
+  "methodology_sha256": "3d620d021637ab316f37ced98026665c0a9bbcdc10a2f17470508eeb560cd4bf",
+  "downloaded_on": "2026-11-10",
+  "source_cutoff": "2023-12-31",
+  "source_sheets": [
+    "ICV Cartera Comercial",
+    "ICV Cartera de Consumo",
+    "ICV Cartera de Vivienda",
+    "ICV Cartera de Microcrédito"
+  ],
+  "source_sheet_dimensions": {
+    "ICV Cartera Comercial": [
+      81,
+      161
+    ],
+    "ICV Cartera de Consumo": [
+      81,
+      161
+    ],
+    "ICV Cartera de Vivienda": [
+      81,
+      161
+    ],
+    "ICV Cartera de Microcrédito": [
+      81,
+      161
+    ]
+  },
+  "grain": "entity × modality × month",
+  "period_start": "2011-01-31",
+  "period_end": "2023-12-31",
+  "observations": 21050,
+  "periods_per_sheet": 156,
+  "source_entity_rows_per_modality": {
+    "Comercial": 70,
+    "Consumo": 70,
+    "Vivienda": 70,
+    "Microcrédito": 70
+  },
+  "blank_cells_omitted_per_modality": {
+    "Comercial": 4461,
+    "Consumo": 4081,
+    "Vivienda": 6765,
+    "Microcrédito": 7323
+  },
+  "duplicate_keys": 0,
+  "invalid_ratios_outside_zero_one": 0,
+  "formula_and_interpretation": {
+    "source_indicator": "SFC Indicador de Calidad de Cartera por Vencimiento (ICV)",
+    "conceptual_formula": "saldo de cartera vencida y leasing vencido / saldo de cartera bruta y leasing bruto × 100",
+    "housing_methodology_note": "SFC methodology defines housing delinquency indicators separately for 1–4 months and >4 months; the historic workbook supplies one ICV series per modality, retained as reported without reclassification.",
+    "reported_value": "Ratio as provided in SFC workbook; no local numerator/denominator reconstruction",
+    "derived_summaries": "unweighted entity-level median and percentiles per modality and month"
+  },
+  "limitations": [
+    "ICV is an aggregate stock ratio and does not identify borrower default probability (PD), loan transitions, or vintage performance.",
+    "Entity-level percentiles are unweighted and can change with reporting population, mergers, entries, and exits.",
+    "The historical workbook ends at 2023-12; use as a historical official benchmark, not a current monitoring feed.",
+    "Accounting/perimeter and SFC reporting changes can affect comparability; the source file does not provide point-in-time revisions."
+  ],
+  "latest_distribution": [
+    {
+      "modality": "Comercial",
+      "latest_period": "2023-12-31",
+      "entities_latest": 41,
+      "median_icv_pct_latest": 4.732615427847973,
+      "p25_icv_pct_latest": 3.105943706683135,
+      "p75_icv_pct_latest": 7.95833312157382,
+      "median_change_12m_percentage_points": 1.6016056847714832
+    },
+    {
+      "modality": "Consumo",
+      "latest_period": "2023-12-31",
+      "entities_latest": 42,
+      "median_icv_pct_latest": 7.306859815942126,
+      "p25_icv_pct_latest": 5.6954520159700515,
+      "p75_icv_pct_latest": 10.378903754256566,
+      "median_change_12m_percentage_points": 2.405632860568465
+    },
+    {
+      "modality": "Vivienda",
+      "latest_period": "2023-12-31",
+      "entities_latest": 27,
+      "median_icv_pct_latest": 2.1973312080085954,
+      "p25_icv_pct_latest": 0.6738117594363612,
+      "p75_icv_pct_latest": 3.1156198566602784,
+      "median_change_12m_percentage_points": 0.19629715971307338
+    },
+    {
+      "modality": "Microcrédito",
+      "latest_period": "2023-12-31",
+      "entities_latest": 21,
+      "median_icv_pct_latest": 11.4162042660566,
+      "p25_icv_pct_latest": 8.422287613858606,
+      "p75_icv_pct_latest": 17.092871529372015,
+      "median_change_12m_percentage_points": 2.8501050120291467
+    }
+  ]
+}

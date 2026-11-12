@@ -1,0 +1,29 @@
+{
+  "source_name": "DANE, Índice de Costos de la Construcción de Edificaciones (ICOCED), Anexo 7.2",
+  "source_url": "https://www.dane.gov.co/files/operaciones/ICOCED/anex-ICOCED-sep2026.xlsx",
+  "source_landing_page": "https://www.dane.gov.co/index.php/estadisticas-por-tema/precios-y-costos/indice-de-costos-de-la-construccion-de-edificaciones-icoced/indice-de-costos-de-la-construccion-de-edificaciones-icoced-historicos",
+  "source_snapshot": "2026-09 reported update, retrieved 2026-11-10",
+  "source_workbook_sha256": "c858c33819bbc2fc6db3e80aa971be07991e06aa2914330f7ae0da95e4d1b63b",
+  "reused_derived_input_path": "03-financial-risk/07-financial-and-construction-risk-lab/02-construction-enterprise-risk/06-materials-inflation-and-supply-chain/results/icoced_material_series_bogota.csv",
+  "reused_derived_input_sha256": "b2e0b7bb52b8b7b588bc7c0bafefc4e54510906694da34a35b3c692de85a4daa",
+  "reused_derived_input_rows": 171,
+  "selection": {
+    "geographic_domain": "Bogotá_Cundinamarca AR",
+    "cost_group": "Materiales",
+    "input": "Concreto común",
+    "period_start": "2022-01",
+    "period_end": "2026-09",
+    "observations": 57,
+    "published_2021_base_weight_pct": 10.112,
+    "published_index_base": "December 2021 = 100"
+  },
+  "scenario_application": {
+    "horizon_months": 24,
+    "rolling_overlapping_windows": 34,
+    "project_cashflows_are_synthetic": true,
+    "project_bom_is_observed": false,
+    "raw_workbook_copied_into_this_companion": false,
+    "derived_series_copied_into_this_companion": false
+  },
+  "file_role": "official sector-level input path for synthetic project cost scenarios; not project invoices or realized costs"
+}

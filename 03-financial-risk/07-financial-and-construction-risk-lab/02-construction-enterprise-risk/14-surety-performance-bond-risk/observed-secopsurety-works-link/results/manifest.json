@@ -1,0 +1,12 @@
+{
+  "script_sha256": "e59fd22c455c6ab6fefe4db0c40e7d412580acb409d4cad71d83b0f56c277f0a",
+  "summary_sha256": "188057a3e1e1c3e77033c9f487b08775aef72a5ce549f33df38c451e16b56327",
+  "status_csv_sha256": "03848d56892e6d2acb98f4b437a1f59e801a49e0e5849433a4dd8b6f9f32c5a0",
+  "figure_sha256": "314fcb170c575c2cc2d419b1d7d5eb8e3d5c324debeee43c0ac0462b246d9f42",
+  "extract_utc": "2026-11-11T19:00:30.611945+00:00",
+  "source_ids": {
+    "contracts": "jbjy-vk9h",
+    "guarantees": "gjp9-cutm"
+  },
+  "raw_source_rows_retained": false
+}

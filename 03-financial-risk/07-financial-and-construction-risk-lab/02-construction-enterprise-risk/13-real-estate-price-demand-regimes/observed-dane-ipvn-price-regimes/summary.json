@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.dane.gov.co/files/operaciones/IPVN/anex-IPVN-IItrim2026.xlsx",
+  "source_sha256": "acde19eaf0108b0046c0df926c5047194cb7c2145177f3de45d5738d6fd4b3db",
+  "source_vintage": "DANE IPVN, 2026-II release",
+  "period_start": "2004Q1",
+  "period_end": "2026Q2",
+  "n_quarters": 90,
+  "unit": "quarter-over-quarter percentage variation (%)",
+  "descriptive_high_growth_threshold_total_pct": 2.845,
+  "threshold_reference_period": "2004Q1-2019Q4",
+  "threshold_reference_n": 64,
+  "evaluation_period": "2020Q1-2026Q2",
+  "evaluation_n": 26,
+  "latest_total_pct": 2.41,
+  "latest_apartments_pct": 2.37,
+  "latest_houses_pct": 3.68,
+  "latest_above_historical_q75": false,
+  "latest_classification": "Post-2019 total quarterly change strictly above the 2004Q1-2019Q4 75th percentile; descriptive flag, not a fitted or predictive regime."
+}

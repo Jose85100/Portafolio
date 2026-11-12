@@ -1,6 +1,8 @@
 # Crédito de contrapartes
 
-**Estado:** investigación diseñada; implementación pendiente. **No calibrado ni validado.**
+**Estado:** diseño de investigación con companion público de contexto de insolvencia. **No calibrado ni validado.**
+
+El companion [Supersociedades: procesos de insolvencia](observed-supersociedades-insolvency-context/README.md) agrega el corte oficial por proceso y macrosector y conserva controles de esquema y hash. Describe el entorno concursal; no mide exposiciones, incumplimientos de obligaciones de nuestra cartera o recuperaciones, ni estima PD/LGD/EAD. La brecha de outcomes institucionales sigue abierta ([contrato de datos y validación](DATA_GAP.md)).
 
 ## Pregunta y alcance
 PD/LGD/EAD para cuentas por cobrar y anticipos. ¿En qué condiciones se materializa el riesgo y qué acciones de mitigación generan valor ajustado por riesgo?
@@ -26,3 +28,7 @@ Calibración temporal, concentración y recuperación. Separación temporal de e
 
 ## Productos esperados
 Metodología, código, pruebas, escenarios, reporte de validación y dashboard de decisiones.
+
+## Evidence gap
+
+Aggregate company accounts do not link a focal exposure to counterparty default and recovery outcomes. See [DATA_GAP.md](DATA_GAP.md).

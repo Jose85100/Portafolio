@@ -1,0 +1,16 @@
+{
+  "built_utc": "2026-11-11T18:33:54.145479+00:00",
+  "snapshot_csv_sha256": "b56f377c08c43df8aa03a255c9ee1c3376d0fe36ae6cbf6a1638b2986876449d",
+  "result_sha256": "6255c1501935046b0d0d2f73ad346ebbc9b4225cc95ab02949d1ef579e136df5",
+  "rows": 293,
+  "unique_periods": 293,
+  "coverage": [
+    "2002-05",
+    "2026-09"
+  ],
+  "qa": {
+    "row_count_matches_manifest": true,
+    "periods_unique_and_ascending": true,
+    "all_rates_between_0_and_100": true
+  }
+}

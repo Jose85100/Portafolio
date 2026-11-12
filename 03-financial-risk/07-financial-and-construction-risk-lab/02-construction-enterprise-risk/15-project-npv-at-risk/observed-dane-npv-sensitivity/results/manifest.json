@@ -1,0 +1,26 @@
+{
+  "method": "rolling, overlapping 8-quarter historical changes applied to a fixed hypothetical cash-flow schedule",
+  "source_inputs_sha256": {
+    "ipvn": "5bcc2c7cce6a1f51a4a05069497a75ab794937fa9ac5922b22da4f081574cb8c",
+    "icoced": "b2e0b7bb52b8b7b588bc7c0bafefc4e54510906694da34a35b3c692de85a4daa"
+  },
+  "upstream_raw_source_sha256": {
+    "dane_icoced_xlsx": "c858c33819bbc2fc6db3e80aa971be07991e06aa2914330f7ae0da95e4d1b63b",
+    "dane_ipvn_xlsx": "acde19eaf0108b0046c0df926c5047194cb7c2145177f3de45d5738d6fd4b3db"
+  },
+  "script_sha256": "17748dc53f783f8e8bf6a9baa4a163cd9fea2bd4ca3a262c1a8776b31891e21e",
+  "output_sha256": {
+    "results/historical_window_npvs.csv": "58a0bb9eb05f88f52d2f6b2d48413fbaad675a397aff5dcfdea06343f4cc2d72",
+    "results/discount_sensitivity.csv": "7efb56258295aba50c6e1a7093eec32752be9cd309ec16837a13a3c27ce2be11",
+    "results/summary.json": "747d78640483aabb6b1fcc5f83358c01bb50cec197a79be4a87c42c1875e779a",
+    "figures/historical_window_npv.png": "ab43c95bde186f429b0702d927bc81fa90467c5ae547c066dad678c0400ed07e",
+    "figures/observed_factor_windows.png": "aab91a8292f5e6b53a511c0359a4e927860366423f5f5724bbb5c54ac72456b2",
+    "figures/discount_rate_sensitivity.png": "4bdd2cd874f5125babb4d7d46ac344ce2273fdba5a616b3465828f6778546c94"
+  },
+  "qa": {
+    "input_hashes_match": true,
+    "complete_aligned_windows": 11,
+    "window_horizon_quarters": 8,
+    "no_probability_or_var_estimated": true
+  }
+}

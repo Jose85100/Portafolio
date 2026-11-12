@@ -1,0 +1,36 @@
+{
+  "source": "World Bank World Development Indicators API, Colombia",
+  "vintage": "last updated 2026-10-08",
+  "indicator": "SL.GDP.PCAP.EM.KD",
+  "indicator_definition": "GDP divided by total employment, expressed in constant 2021 international dollars (PPP)",
+  "source_manifest": {
+    "file": "wdi-colombia-gdp-per-person-employed.json",
+    "sha256": "76cf7f6961d2959014ec2170f64e5d2634ea16eae85177a0687b78ae83b6b185",
+    "raw_bytes": 15489,
+    "response_rows": 66,
+    "nonmissing_observations": 35,
+    "first_year": 1991,
+    "last_year": 2025,
+    "last_updated": "2026-10-08",
+    "metadata_file": "wdi-indicator-metadata.json",
+    "metadata_sha256": "3da99ea8c5e123bfbf9c16dcfdf092608b9c0118916cde7a4ef744353cc09f62",
+    "indicator_name": "GDP per person employed (constant 2021 PPP $)",
+    "source_organization": "Staff estimates, World Bank (WB), note: Estimates are based on employment, population, GDP, and PPP data obtained from International Labour Organization, United Nations Population Division, Eurostat, OECD, and World Bank., type: estimates based on external database;\nInternational Labour Organization (ILO);\nUnited Nations (UN), publisher: UN Population Division;\nEurostat (ESTAT);\nOrganisation for Economic Co-operation and Development (OECD);\nWorld Development Indicators database, World Bank (WB)"
+  },
+  "observations": 35,
+  "coverage": "1991–2025",
+  "growth_measure": "100*ln(level_t/level_(t-1))",
+  "period_cagr_pct": {
+    "1991-2025": 1.3181342030432752,
+    "2010-2019": 1.933441427996918,
+    "2020-2025": 1.2145731531958193
+  },
+  "level_change_pct_1991_2025": 56.086104172486294,
+  "interpretation": "observed growth in GDP per employed person; not a total-factor-productivity estimate or causal effect",
+  "limitations": [
+    "WDI labels the indicator as staff estimates based on external databases from ILO, UN Population Division, Eurostat, OECD and World Bank",
+    "output per employed person combines capital deepening, worker composition, hours worked, sector shifts, utilization and measurement effects; it is not TFP",
+    "annual frequency and revised source inputs limit real-time use; the historical WDI vintage is not a point-in-time panel",
+    "this single-country series describes realized outcomes but cannot identify the effect of AI, policy or any other intervention"
+  ]
+}

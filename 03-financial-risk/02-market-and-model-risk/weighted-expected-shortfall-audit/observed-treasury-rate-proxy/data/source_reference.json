@@ -1,0 +1,30 @@
+{
+  "source": "U.S. Department of the Treasury, Daily Treasury Par Yield Curve Rates",
+  "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?page=0&type=daily_treasury_yield_curve",
+  "series": "10-year constant-maturity par yield",
+  "yield_unit": "percent per annum",
+  "yield_source_period": ["2024-01-02", "2026-11-10"],
+  "yield_observations": 715,
+  "official_yield_file_hashes": {
+    "daily-treasury-yield-curve-2024.csv": "6775840b76cd7fd41121f61d6f6c60184eca6b2ba49954ec7372c463cbeef34d",
+    "daily-treasury-yield-curve-2025.csv": "cf2fa3da7f160384b63d2ead698532b1d76cd9f789ce4911e2304db85b14e6d5",
+    "daily-treasury-yield-curve-2026-11-10.csv": "782e0953ac34dd4c9751bc061feae3b1a2e18f0be8c7c181a3d2a472d1bdcbe5"
+  },
+  "derived_input_path": "03-financial-risk/02-market-and-model-risk/pruebas-de-estres-escenarios/data/official/daily_rate_shocks.csv",
+  "derived_input_sha256": "32b89153d1df625432e740d1d35b123722753d19c7bd6be21c4300e4c4f8ffa4",
+  "derived_input_rows": 714,
+  "derived_input_period": ["2024-01-03", "2026-11-10"],
+  "derivation": {
+    "modified_duration_years": 8.0,
+    "notional_usd": 10000000.0,
+    "loss_usd": "modified_duration × change_in_10y_yield_decimal × notional",
+    "yield_change_bp": "difference between consecutive official 10-year par-yield observations"
+  },
+  "application": {
+    "alpha": 0.975,
+    "scenario_weighting": "equal probability per observed yield-change interval",
+    "raw_yield_data_copied_into_this_companion": false,
+    "derived_input_copied_into_this_companion": false
+  },
+  "file_role": "single-factor duration-based P&L proxy, not observed bond or portfolio losses"
+}

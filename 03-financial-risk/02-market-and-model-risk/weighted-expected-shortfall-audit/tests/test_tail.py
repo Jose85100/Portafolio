@@ -122,7 +122,7 @@ def test_actual_liquidity_baseline(x, alpha):
 def test_current_historical_api_matches_shared_fixtures():
     import csv
     from pathlib import Path
-    path=Path(__file__).resolve().parents[3]/'07-financial-and-construction-risk-lab/tests/fixtures/tail_contract.csv'
+    path=Path(__file__).resolve().parents[3]/'07-financial-and-construction-risk-lab/04-modelos-compartidos/tests/fixtures/tail_contract.csv'
     for row in csv.DictReader(path.open()):
         losses=list(map(float,row['losses'].split(';')))
         if len(losses)<2:continue

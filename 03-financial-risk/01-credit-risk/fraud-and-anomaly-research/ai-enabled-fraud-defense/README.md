@@ -41,4 +41,4 @@ Los IDs `[S:...]` remiten a [sources.json](sources.json). Disponibilidad, precio
 
 ## Extensión al proceso completo de crédito
 
-El [mapa de ciclo de crédito](../../architecture/credit-lifecycle/README.md) añade nueve vistas editables, tres alternativas de plataforma, 35 señales y un catálogo consolidado de 24 proveedores candidatos. Conecta la defensa antifraude con oferta, capacidad, formalización, desembolso, LMS, cobranza y gobierno, conservando la separación entre fraude e incumplimiento legítimo. Las cifras de los experimentos de esta carpeta no cambian ni se atribuyen a las arquitecturas nuevas.
+El [mapa de ciclo de crédito](../../credit-risk-platform/architecture/credit-lifecycle/README.md) añade nueve vistas editables, tres alternativas de plataforma, 35 señales y un catálogo consolidado de 24 proveedores candidatos. Conecta la defensa antifraude con oferta, capacidad, formalización, desembolso, LMS, cobranza y gobierno, conservando la separación entre fraude e incumplimiento legítimo. Las cifras de los experimentos de esta carpeta no cambian ni se atribuyen a las arquitecturas nuevas.

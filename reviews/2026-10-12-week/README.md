@@ -66,6 +66,6 @@ El inventario también registra **197 hojas documentales sin ejecutable local** 
 - [Inventario documental](documentary_inventory.csv): hojas sin código local, con criterio estructural.
 - [Validación y entorno](validation.json): resultados y límites de cada capa.
 - [Commits incluidos en la revisión](commit_scope.txt): historial del snapshot auditado.
-- [Sensibilidad de los 15 motores ejecutivos](../../06-strategy-innovation-and-leadership/weekly-decision-audit.ipynb).
+- [Sensibilidad de los 15 motores ejecutivos](../../06-strategy-innovation-and-leadership/auditoria-de-decisiones-ejecutivas/weekly-decision-audit.ipynb).
 - [Recuperación durable](../../05-artificial-intelligence-and-computational-systems/10-ai-orchestration-engineering/06-fault-tolerant-ai-execution-recovery/mvp-durable-checkpoints/notebook.ipynb).
 - [Convergencia del núcleo numérico](../../02-mathematics-statistics-and-quant/numerical-core/notebook.ipynb).

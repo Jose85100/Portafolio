@@ -1,0 +1,1035 @@
+departamento,municipio,event_group,report_rows
+AMAZONAS,EL ENCANTO,Inundación,1
+AMAZONAS,LA CHORRERA,Inundación,1
+AMAZONAS,LETICIA,Inundación,1
+AMAZONAS,PUERTO ALEGRIA,Inundación,1
+AMAZONAS,PUERTO ARICA,Inundación,1
+AMAZONAS,PUERTO NARIÑO,Inundación,2
+AMAZONAS,TARAPACA,Inundación,1
+ANTIOQUIA,ABEJORRAL,Movimiento en masa,1
+ANTIOQUIA,ALEJANDRIA,Inundación,1
+ANTIOQUIA,AMAGA,Movimiento en masa,1
+ANTIOQUIA,AMALFI,Avenida torrencial,1
+ANTIOQUIA,AMALFI,Creciente súbita,1
+ANTIOQUIA,ANGELOPOLIS,Creciente súbita,1
+ANTIOQUIA,ANGELOPOLIS,Movimiento en masa,4
+ANTIOQUIA,ANGOSTURA,Inundación,1
+ANTIOQUIA,ANGOSTURA,Movimiento en masa,1
+ANTIOQUIA,ANORI,Creciente súbita,1
+ANTIOQUIA,ANORI,Inundación,1
+ANTIOQUIA,ANORI,Movimiento en masa,4
+ANTIOQUIA,ANZA,Creciente súbita,1
+ANTIOQUIA,ANZA,Movimiento en masa,3
+ANTIOQUIA,APARTADO,Inundación,1
+ANTIOQUIA,APARTADO,Movimiento en masa,1
+ANTIOQUIA,ARBOLETES,Inundación,3
+ANTIOQUIA,ARGELIA,Movimiento en masa,4
+ANTIOQUIA,ARMENIA,Movimiento en masa,1
+ANTIOQUIA,BELLO,Movimiento en masa,2
+ANTIOQUIA,BETULIA,Creciente súbita,1
+ANTIOQUIA,BETULIA,Movimiento en masa,2
+ANTIOQUIA,BRICEÑO,Movimiento en masa,1
+ANTIOQUIA,CACERES,Inundación,2
+ANTIOQUIA,CAICEDO,Movimiento en masa,3
+ANTIOQUIA,CALDAS,Inundación,1
+ANTIOQUIA,CALDAS,Movimiento en masa,1
+ANTIOQUIA,CAREPA,Inundación,1
+ANTIOQUIA,CAROLINA,Movimiento en masa,3
+ANTIOQUIA,CAUCASIA,Inundación,3
+ANTIOQUIA,CAÑASGORDAS,Movimiento en masa,2
+ANTIOQUIA,CHIGORODO,Inundación,2
+ANTIOQUIA,CISNEROS,Movimiento en masa,1
+ANTIOQUIA,CIUDAD BOLIVAR,Movimiento en masa,4
+ANTIOQUIA,COCORNA,Avenida torrencial,1
+ANTIOQUIA,COCORNA,Creciente súbita,3
+ANTIOQUIA,COCORNA,Inundación,1
+ANTIOQUIA,COCORNA,Movimiento en masa,2
+ANTIOQUIA,CONCORDIA,Inundación,1
+ANTIOQUIA,CONCORDIA,Movimiento en masa,1
+ANTIOQUIA,COPACABANA,Inundación,1
+ANTIOQUIA,COPACABANA,Movimiento en masa,3
+ANTIOQUIA,DABEIBA,Avenida torrencial,2
+ANTIOQUIA,DABEIBA,Inundación,1
+ANTIOQUIA,DEPARTAMENTO,Inundación,1
+ANTIOQUIA,DON MATIAS,Inundación,1
+ANTIOQUIA,EBEJICO,Movimiento en masa,1
+ANTIOQUIA,EL BAGRE,Creciente súbita,1
+ANTIOQUIA,EL BAGRE,Inundación,6
+ANTIOQUIA,EL CARMEN DE VIBORAL,Inundación,1
+ANTIOQUIA,EL CARMEN DE VIBORAL,Movimiento en masa,2
+ANTIOQUIA,EL SANTUARIO,Inundación,1
+ANTIOQUIA,ENVIGADO,Inundación,1
+ANTIOQUIA,ENVIGADO,Movimiento en masa,1
+ANTIOQUIA,FREDONIA,Inundación,1
+ANTIOQUIA,FRONTINO,Movimiento en masa,5
+ANTIOQUIA,GOMEZ PLATA,Inundación,1
+ANTIOQUIA,GOMEZ PLATA,Movimiento en masa,1
+ANTIOQUIA,GRANADA,Movimiento en masa,1
+ANTIOQUIA,GUARNE,Movimiento en masa,1
+ANTIOQUIA,HELICONIA,Avenida torrencial,1
+ANTIOQUIA,HELICONIA,Movimiento en masa,1
+ANTIOQUIA,ITAGUI,Avenida torrencial,1
+ANTIOQUIA,ITUANGO,Avenida torrencial,1
+ANTIOQUIA,ITUANGO,Movimiento en masa,2
+ANTIOQUIA,JARDIN,Movimiento en masa,2
+ANTIOQUIA,JERICO,Inundación,2
+ANTIOQUIA,JERICO,Movimiento en masa,1
+ANTIOQUIA,LA CEJA,Movimiento en masa,1
+ANTIOQUIA,LA PINTADA,Inundación,2
+ANTIOQUIA,LA UNION,Movimiento en masa,1
+ANTIOQUIA,LIBORINA,Avenida torrencial,1
+ANTIOQUIA,MACEO,Creciente súbita,1
+ANTIOQUIA,MARINILLA,Movimiento en masa,1
+ANTIOQUIA,MEDELLIN,Inundación,2
+ANTIOQUIA,MEDELLIN,Movimiento en masa,8
+ANTIOQUIA,MONTEBELLO,Creciente súbita,1
+ANTIOQUIA,MONTEBELLO,Movimiento en masa,2
+ANTIOQUIA,MURINDO,Creciente súbita,1
+ANTIOQUIA,MURINDO,Inundación,2
+ANTIOQUIA,MUTATA,Creciente súbita,1
+ANTIOQUIA,NECHI,Inundación,1
+ANTIOQUIA,NECOCLI,Creciente súbita,1
+ANTIOQUIA,NECOCLI,Inundación,1
+ANTIOQUIA,NECOCLI,Movimiento en masa,1
+ANTIOQUIA,PEQUE,Inundación,1
+ANTIOQUIA,PEÑOL,Movimiento en masa,1
+ANTIOQUIA,PUEBLORRICO,Movimiento en masa,2
+ANTIOQUIA,PUERTO BERRIO,Creciente súbita,1
+ANTIOQUIA,PUERTO BERRIO,Inundación,2
+ANTIOQUIA,PUERTO NARE,Inundación,2
+ANTIOQUIA,PUERTO TRIUNFO,Inundación,1
+ANTIOQUIA,RIONEGRO,Creciente súbita,1
+ANTIOQUIA,RIONEGRO,Inundación,3
+ANTIOQUIA,SABANALARGA,Avenida torrencial,2
+ANTIOQUIA,SABANALARGA,Movimiento en masa,2
+ANTIOQUIA,SABANETA,Movimiento en masa,1
+ANTIOQUIA,SALGAR,Inundación,1
+ANTIOQUIA,SALGAR,Movimiento en masa,3
+ANTIOQUIA,SAN CARLOS,Movimiento en masa,3
+ANTIOQUIA,SAN JOSE DE LA MONTAÑA,Movimiento en masa,1
+ANTIOQUIA,SAN JUAN DE URABA,Inundación,1
+ANTIOQUIA,SAN LUIS,Inundación,3
+ANTIOQUIA,SAN LUIS,Movimiento en masa,5
+ANTIOQUIA,SAN PEDRO DE URABA,Movimiento en masa,1
+ANTIOQUIA,SAN ROQUE,Inundación,1
+ANTIOQUIA,SAN VICENTE,Movimiento en masa,5
+ANTIOQUIA,SANTA ROSA DE OSOS,Creciente súbita,1
+ANTIOQUIA,SANTA ROSA DE OSOS,Movimiento en masa,2
+ANTIOQUIA,SANTAFE DE ANTIOQUIA,Movimiento en masa,2
+ANTIOQUIA,SONSON,Movimiento en masa,1
+ANTIOQUIA,TAMESIS,Movimiento en masa,1
+ANTIOQUIA,TARAZA,Inundación,1
+ANTIOQUIA,TARAZA,Movimiento en masa,1
+ANTIOQUIA,TARSO,Movimiento en masa,2
+ANTIOQUIA,TITIRIBI,Movimiento en masa,2
+ANTIOQUIA,TURBO,Inundación,3
+ANTIOQUIA,URAMITA,Creciente súbita,1
+ANTIOQUIA,URRAO,Inundación,2
+ANTIOQUIA,VALDIVIA,Movimiento en masa,1
+ANTIOQUIA,VALPARAISO,Creciente súbita,1
+ANTIOQUIA,VENECIA,Inundación,4
+ANTIOQUIA,VENECIA,Movimiento en masa,1
+ANTIOQUIA,VIGIA DEL FUERTE,Inundación,3
+ANTIOQUIA,YARUMAL,Creciente súbita,1
+ANTIOQUIA,YOLOMBO,Movimiento en masa,1
+ANTIOQUIA,YONDO,Inundación,5
+ANTIOQUIA,YONDO,Movimiento en masa,1
+ANTIOQUIA,ZARAGOZA,Inundación,4
+ARAUCA,ARAUCA,Inundación,7
+ARAUCA,ARAUQUITA,Creciente súbita,1
+ARAUCA,ARAUQUITA,Inundación,2
+ARAUCA,CRAVO NORTE,Inundación,1
+ARAUCA,FORTUL,Inundación,1
+ARAUCA,PUERTO RONDON,Inundación,1
+ARAUCA,SARAVENA,Inundación,2
+ARAUCA,TAME,Inundación,1
+ATLANTICO,BARRANQUILLA,Creciente súbita,1
+ATLANTICO,LURUACO,Inundación,1
+ATLANTICO,PIOJO,Inundación,1
+BOLIVAR,ALTOS DEL ROSARIO,Movimiento en masa,1
+BOLIVAR,ARENAL,Inundación,1
+BOLIVAR,ARJONA,Inundación,1
+BOLIVAR,ARROYOHONDO,Inundación,1
+BOLIVAR,CALAMAR,Inundación,1
+BOLIVAR,CARTAGENA,Inundación,1
+BOLIVAR,CARTAGENA,Movimiento en masa,2
+BOLIVAR,CICUCO,Inundación,2
+BOLIVAR,CLEMENCIA,Movimiento en masa,1
+BOLIVAR,DEPARTAMENTO,Inundación,5
+BOLIVAR,EL CARMEN DE BOLIVAR,Creciente súbita,1
+BOLIVAR,EL CARMEN DE BOLIVAR,Movimiento en masa,1
+BOLIVAR,HATILLO DE LOBA,Inundación,1
+BOLIVAR,MAHATES,Inundación,1
+BOLIVAR,MARIA LA BAJA,Inundación,1
+BOLIVAR,MONTECRISTO,Inundación,1
+BOLIVAR,MONTECRISTO,Movimiento en masa,1
+BOLIVAR,MORALES,Inundación,1
+BOLIVAR,PINILLOS,Inundación,1
+BOLIVAR,REGIDOR,Inundación,1
+BOLIVAR,SAN JACINTO,Inundación,1
+BOLIVAR,SAN JACINTO DEL CAUCA,Inundación,1
+BOLIVAR,SAN PABLO,Inundación,1
+BOLIVAR,SIMITI,Inundación,5
+BOLIVAR,ZAMBRANO,Inundación,1
+BOYACA,BELEN,Creciente súbita,1
+BOYACA,CHIQUINQUIRA,Inundación,1
+BOYACA,DEPARTAMENTO,Inundación,2
+BOYACA,DUITAMA,Inundación,4
+BOYACA,DUITAMA,Movimiento en masa,1
+BOYACA,FIRAVITOBA,Inundación,1
+BOYACA,NOBSA,Inundación,2
+BOYACA,PAEZ,Avenida torrencial,1
+BOYACA,PUERTO BOYACA,Inundación,1
+BOYACA,QUIPAMA,Movimiento en masa,1
+BOYACA,RAMIRIQUI,Movimiento en masa,1
+BOYACA,SAMACA,Inundación,2
+BOYACA,SAN JOSE DE PARE,Movimiento en masa,1
+BOYACA,SAN LUIS DE GACENO,Inundación,1
+BOYACA,SAN PABLO DE BORBUR,Movimiento en masa,2
+BOYACA,SANTA MARIA,Creciente súbita,1
+BOYACA,SANTA MARIA,Movimiento en masa,1
+BOYACA,SATIVASUR,Movimiento en masa,1
+BOYACA,SOGAMOSO,Inundación,1
+BOYACA,TIBANA,Movimiento en masa,2
+BOYACA,TIBASOSA,Inundación,1
+BOYACA,TINJACA,Inundación,1
+BOYACA,TUNJA,Inundación,3
+BOYACA,TUTA,Inundación,1
+CALDAS,AGUADAS,Inundación,2
+CALDAS,AGUADAS,Movimiento en masa,3
+CALDAS,ANSERMA,Inundación,1
+CALDAS,ANSERMA,Movimiento en masa,6
+CALDAS,ARANZAZU,Inundación,1
+CALDAS,ARANZAZU,Movimiento en masa,5
+CALDAS,CHINCHINA,Creciente súbita,1
+CALDAS,CHINCHINA,Inundación,2
+CALDAS,CHINCHINA,Movimiento en masa,5
+CALDAS,DEPARTAMENTO,Inundación,1
+CALDAS,FILADELFIA,Inundación,1
+CALDAS,FILADELFIA,Movimiento en masa,15
+CALDAS,LA DORADA,Inundación,2
+CALDAS,LA MERCED,Movimiento en masa,2
+CALDAS,MANIZALES,Movimiento en masa,1
+CALDAS,MANZANARES,Inundación,1
+CALDAS,MANZANARES,Movimiento en masa,5
+CALDAS,MARMATO,Creciente súbita,1
+CALDAS,MARMATO,Inundación,1
+CALDAS,MARMATO,Movimiento en masa,5
+CALDAS,MARQUETALIA,Avenida torrencial,2
+CALDAS,MARQUETALIA,Movimiento en masa,4
+CALDAS,MARULANDA,Movimiento en masa,1
+CALDAS,NEIRA,Avenida torrencial,1
+CALDAS,NEIRA,Movimiento en masa,14
+CALDAS,NORCASIA,Movimiento en masa,1
+CALDAS,PACORA,Inundación,1
+CALDAS,PACORA,Movimiento en masa,9
+CALDAS,PENSILVANIA,Avenida torrencial,1
+CALDAS,PENSILVANIA,Inundación,1
+CALDAS,PENSILVANIA,Movimiento en masa,18
+CALDAS,RIOSUCIO,Movimiento en masa,3
+CALDAS,RISARALDA,Inundación,2
+CALDAS,RISARALDA,Movimiento en masa,1
+CALDAS,SALAMINA,Movimiento en masa,1
+CALDAS,SAMANA,Movimiento en masa,7
+CALDAS,SAN JOSE,Movimiento en masa,2
+CALDAS,SUPIA,Inundación,1
+CALDAS,SUPIA,Movimiento en masa,1
+CALDAS,VICTORIA,Creciente súbita,2
+CALDAS,VICTORIA,Movimiento en masa,2
+CALDAS,VILLAMARIA,Movimiento en masa,7
+CAQUETA,ALBANIA,Inundación,1
+CAQUETA,CARTAGENA DEL CHAIRA,Inundación,1
+CAQUETA,CURILLO,Inundación,1
+CAQUETA,DEPARTAMENTO,Inundación,1
+CAQUETA,FLORENCIA,Movimiento en masa,3
+CAQUETA,LA MONTAÑITA,Creciente súbita,1
+CAQUETA,MILAN,Inundación,1
+CAQUETA,MORELIA,Inundación,1
+CAQUETA,PUERTO RICO,Inundación,1
+CAQUETA,SAN JOSE DEL FRAGUA,Inundación,1
+CAQUETA,SAN VICENTE DEL CAGUAN,Inundación,1
+CAQUETA,SAN VICENTE DEL CAGUAN,Movimiento en masa,2
+CAQUETA,SOLANO,Inundación,1
+CAQUETA,SOLITA,Inundación,1
+CAQUETA,VALPARAISO,Inundación,1
+CASANARE,AGUAZUL,Creciente súbita,1
+CASANARE,AGUAZUL,Movimiento en masa,3
+CASANARE,CHAMEZA,Movimiento en masa,1
+CASANARE,DEPARTAMENTO,Inundación,1
+CASANARE,HATO COROZAL,Inundación,2
+CASANARE,MONTERREY,Creciente súbita,2
+CASANARE,MONTERREY,Inundación,1
+CASANARE,MONTERREY,Movimiento en masa,1
+CASANARE,NUNCHIA,Inundación,1
+CASANARE,OROCUE,Inundación,2
+CASANARE,PAZ DE ARIPORO,Inundación,1
+CASANARE,PORE,Inundación,1
+CASANARE,RECETOR,Creciente súbita,1
+CASANARE,RECETOR,Movimiento en masa,1
+CASANARE,SABANALARGA,Movimiento en masa,1
+CASANARE,SACAMA,Creciente súbita,1
+CASANARE,SACAMA,Movimiento en masa,2
+CASANARE,SAN LUIS DE PALENQUE,Inundación,1
+CASANARE,TAMARA,Movimiento en masa,3
+CASANARE,TAURAMENA,Inundación,1
+CASANARE,TAURAMENA,Movimiento en masa,1
+CASANARE,TRINIDAD,Inundación,1
+CASANARE,VILLANUEVA,Inundación,1
+CASANARE,YOPAL,Creciente súbita,1
+CASANARE,YOPAL,Inundación,1
+CAUCA,ALMAGUER,Creciente súbita,1
+CAUCA,ARGELIA,Movimiento en masa,2
+CAUCA,BALBOA,Movimiento en masa,4
+CAUCA,BOLIVAR,Creciente súbita,1
+CAUCA,BOLIVAR,Movimiento en masa,2
+CAUCA,BUENOS AIRES,Movimiento en masa,2
+CAUCA,CAJIBIO,Movimiento en masa,4
+CAUCA,CALDONO,Creciente súbita,1
+CAUCA,CALDONO,Movimiento en masa,3
+CAUCA,CORINTO,Movimiento en masa,1
+CAUCA,EL TAMBO,Creciente súbita,1
+CAUCA,EL TAMBO,Movimiento en masa,2
+CAUCA,FLORENCIA,Movimiento en masa,1
+CAUCA,GUACHENE,Inundación,1
+CAUCA,GUAPI,Movimiento en masa,1
+CAUCA,INZA,Movimiento en masa,1
+CAUCA,LA SIERRA,Movimiento en masa,6
+CAUCA,LOPEZ DE MICAY,Creciente súbita,1
+CAUCA,LOPEZ DE MICAY,Inundación,2
+CAUCA,LOPEZ DE MICAY,Movimiento en masa,1
+CAUCA,MERCADERES,Creciente súbita,2
+CAUCA,MIRANDA,Inundación,2
+CAUCA,MORALES,Movimiento en masa,1
+CAUCA,PADILLA,Creciente súbita,1
+CAUCA,PADILLA,Inundación,1
+CAUCA,PAEZ,Creciente súbita,1
+CAUCA,PATIA,Inundación,1
+CAUCA,PATIA,Movimiento en masa,6
+CAUCA,PIAMONTE,Inundación,1
+CAUCA,PIENDAMO,Creciente súbita,1
+CAUCA,PIENDAMO,Inundación,1
+CAUCA,PIENDAMO,Movimiento en masa,2
+CAUCA,POPAYAN,Avenida torrencial,1
+CAUCA,PUERTO TEJADA,Inundación,1
+CAUCA,PURACE,Inundación,1
+CAUCA,PURACE,Movimiento en masa,1
+CAUCA,ROSAS,Movimiento en masa,2
+CAUCA,SAN SEBASTIAN,Movimiento en masa,3
+CAUCA,SANTA ROSA,Avenida torrencial,1
+CAUCA,SANTA ROSA,Creciente súbita,1
+CAUCA,SANTA ROSA,Inundación,1
+CAUCA,SANTA ROSA,Movimiento en masa,1
+CAUCA,SANTANDER DE QUILICHAO,Avenida torrencial,1
+CAUCA,SILVIA,Avenida torrencial,1
+CAUCA,SILVIA,Movimiento en masa,2
+CAUCA,SOTARA,Creciente súbita,1
+CAUCA,SOTARA,Movimiento en masa,5
+CAUCA,SUAREZ,Inundación,2
+CAUCA,SUAREZ,Movimiento en masa,6
+CAUCA,SUCRE,Movimiento en masa,4
+CAUCA,TIMBIO,Avenida torrencial,1
+CAUCA,TIMBIQUI,Inundación,3
+CAUCA,TORIBIO,Movimiento en masa,2
+CESAR,AGUACHICA,Inundación,2
+CESAR,AGUSTIN CODAZZI,Inundación,1
+CESAR,BECERRIL,Avenida torrencial,1
+CESAR,CHIMICHAGUA,Inundación,1
+CESAR,CURUMANI,Movimiento en masa,1
+CESAR,GONZALEZ,Inundación,1
+CESAR,LA JAGUA DE IBIRICO,Inundación,1
+CESAR,LA PAZ,Inundación,1
+CESAR,MANAURE,Inundación,1
+CESAR,VALLEDUPAR,Inundación,2
+CHOCO,ACANDI,Creciente súbita,1
+CHOCO,ACANDI,Inundación,1
+CHOCO,ALTO BAUDO,Inundación,1
+CHOCO,ATRATO,Inundación,3
+CHOCO,BAGADO,Creciente súbita,1
+CHOCO,BAGADO,Inundación,1
+CHOCO,BAGADO,Movimiento en masa,3
+CHOCO,BAJO BAUDO,Creciente súbita,1
+CHOCO,BAJO BAUDO,Inundación,6
+CHOCO,BELEN DE BAJIRA,Inundación,1
+CHOCO,BOJAYA,Inundación,3
+CHOCO,BOJAYA,Movimiento en masa,1
+CHOCO,CANTON DE SAN PABLO,Inundación,1
+CHOCO,CARMEN DEL DARIEN,Inundación,5
+CHOCO,CERTEGUI,Inundación,1
+CHOCO,CONDOTO,Inundación,1
+CHOCO,DEPARTAMENTO,Inundación,4
+CHOCO,EL CARMEN DE ATRATO,Movimiento en masa,3
+CHOCO,EL LITORAL DEL SAN JUAN,Inundación,2
+CHOCO,ISTMINA,Inundación,4
+CHOCO,JURADO,Inundación,2
+CHOCO,LLORO,Creciente súbita,1
+CHOCO,LLORO,Inundación,2
+CHOCO,LLORO,Movimiento en masa,1
+CHOCO,MEDIO ATRATO,Inundación,1
+CHOCO,MEDIO BAUDO,Creciente súbita,1
+CHOCO,MEDIO BAUDO,Inundación,5
+CHOCO,MEDIO SAN JUAN,Inundación,3
+CHOCO,NOVITA,Creciente súbita,1
+CHOCO,NOVITA,Inundación,1
+CHOCO,NOVITA,Movimiento en masa,1
+CHOCO,QUIBDO,Inundación,5
+CHOCO,QUIBDO,Movimiento en masa,3
+CHOCO,RIO IRO,Inundación,2
+CHOCO,RIO QUITO,Inundación,4
+CHOCO,RIO QUITO,Movimiento en masa,1
+CHOCO,RIOSUCIO,Creciente súbita,1
+CHOCO,RIOSUCIO,Inundación,6
+CHOCO,SAN JOSE DEL PALMAR,Movimiento en masa,6
+CHOCO,SIPI,Inundación,2
+CHOCO,TADO,Creciente súbita,1
+CHOCO,TADO,Inundación,1
+CHOCO,UNGUIA,Inundación,3
+CHOCO,UNION PANAMERICANA,Inundación,1
+CORDOBA,AYAPEL,Inundación,1
+CORDOBA,BUENAVISTA,Inundación,3
+CORDOBA,CANALETE,Inundación,2
+CORDOBA,CIENAGA DE ORO,Inundación,1
+CORDOBA,COTORRA,Inundación,1
+CORDOBA,LORICA,Inundación,1
+CORDOBA,LOS CORDOBAS,Inundación,1
+CORDOBA,MOMIL,Inundación,2
+CORDOBA,MONTELIBANO,Inundación,1
+CORDOBA,MONTERIA,Inundación,4
+CORDOBA,MONTERIA,Movimiento en masa,2
+CORDOBA,MOÑITOS,Inundación,1
+CORDOBA,PUERTO ESCONDIDO,Inundación,1
+CORDOBA,PUERTO LIBERTADOR,Inundación,1
+CORDOBA,PURISIMA,Inundación,1
+CORDOBA,SAHAGUN,Inundación,3
+CORDOBA,SAN ANTERO,Inundación,1
+CORDOBA,SAN BERNARDO DEL VIENTO,Inundación,2
+CORDOBA,TIERRALTA,Inundación,1
+CORDOBA,TIERRALTA,Movimiento en masa,1
+CUNDINAMARCA,ANOLAIMA,Movimiento en masa,3
+CUNDINAMARCA,APULO,Movimiento en masa,2
+CUNDINAMARCA,ARBELAEZ,Inundación,1
+CUNDINAMARCA,BITUIMA,Movimiento en masa,2
+CUNDINAMARCA,"BOGOTA, D.C.",Inundación,2
+CUNDINAMARCA,BOJACA,Movimiento en masa,1
+CUNDINAMARCA,CABRERA,Movimiento en masa,1
+CUNDINAMARCA,CACHIPAY,Inundación,1
+CUNDINAMARCA,CACHIPAY,Movimiento en masa,1
+CUNDINAMARCA,CAJICA,Inundación,6
+CUNDINAMARCA,CAJICA,Movimiento en masa,1
+CUNDINAMARCA,CAPARRAPI,Inundación,1
+CUNDINAMARCA,CAQUEZA,Creciente súbita,1
+CUNDINAMARCA,CAQUEZA,Inundación,3
+CUNDINAMARCA,CAQUEZA,Movimiento en masa,9
+CUNDINAMARCA,CHAGUANI,Movimiento en masa,1
+CUNDINAMARCA,CHIA,Inundación,1
+CUNDINAMARCA,CHIPAQUE,Movimiento en masa,3
+CUNDINAMARCA,CHOACHI,Inundación,1
+CUNDINAMARCA,CHOACHI,Movimiento en masa,3
+CUNDINAMARCA,CHOCONTA,Creciente súbita,1
+CUNDINAMARCA,CHOCONTA,Inundación,1
+CUNDINAMARCA,CHOCONTA,Movimiento en masa,1
+CUNDINAMARCA,COGUA,Inundación,1
+CUNDINAMARCA,DEPARTAMENTO,Inundación,1
+CUNDINAMARCA,EL PEÑON,Movimiento en masa,1
+CUNDINAMARCA,EL ROSAL,Movimiento en masa,1
+CUNDINAMARCA,FOMEQUE,Avenida torrencial,1
+CUNDINAMARCA,FOMEQUE,Movimiento en masa,3
+CUNDINAMARCA,FOSCA,Movimiento en masa,4
+CUNDINAMARCA,FUSAGASUGA,Inundación,1
+CUNDINAMARCA,FUSAGASUGA,Movimiento en masa,1
+CUNDINAMARCA,GACHALA,Creciente súbita,1
+CUNDINAMARCA,GACHALA,Movimiento en masa,2
+CUNDINAMARCA,GIRARDOT,Inundación,3
+CUNDINAMARCA,GIRARDOT,Movimiento en masa,1
+CUNDINAMARCA,GUACHETA,Inundación,1
+CUNDINAMARCA,GUACHETA,Movimiento en masa,1
+CUNDINAMARCA,GUADUAS,Inundación,1
+CUNDINAMARCA,GUAYABETAL,Avenida torrencial,1
+CUNDINAMARCA,GUAYABETAL,Creciente súbita,2
+CUNDINAMARCA,GUAYABETAL,Inundación,1
+CUNDINAMARCA,GUAYABETAL,Movimiento en masa,4
+CUNDINAMARCA,GUTIERREZ,Creciente súbita,2
+CUNDINAMARCA,GUTIERREZ,Inundación,1
+CUNDINAMARCA,GUTIERREZ,Movimiento en masa,2
+CUNDINAMARCA,JERUSALEN,Inundación,1
+CUNDINAMARCA,LA CALERA,Inundación,1
+CUNDINAMARCA,LA CALERA,Movimiento en masa,1
+CUNDINAMARCA,LA MESA,Creciente súbita,1
+CUNDINAMARCA,LA PALMA,Creciente súbita,1
+CUNDINAMARCA,LA PALMA,Inundación,1
+CUNDINAMARCA,LA PALMA,Movimiento en masa,4
+CUNDINAMARCA,LA VEGA,Movimiento en masa,2
+CUNDINAMARCA,LENGUAZAQUE,Movimiento en masa,1
+CUNDINAMARCA,MACHETA,Movimiento en masa,1
+CUNDINAMARCA,MADRID,Inundación,2
+CUNDINAMARCA,MANTA,Movimiento en masa,1
+CUNDINAMARCA,MEDINA,Movimiento en masa,2
+CUNDINAMARCA,NARIÑO,Inundación,1
+CUNDINAMARCA,NARIÑO,Movimiento en masa,1
+CUNDINAMARCA,NILO,Creciente súbita,3
+CUNDINAMARCA,NILO,Inundación,1
+CUNDINAMARCA,NILO,Movimiento en masa,1
+CUNDINAMARCA,NIMAIMA,Movimiento en masa,1
+CUNDINAMARCA,NOCAIMA,Inundación,3
+CUNDINAMARCA,NOCAIMA,Movimiento en masa,3
+CUNDINAMARCA,PACHO,Creciente súbita,1
+CUNDINAMARCA,PACHO,Movimiento en masa,3
+CUNDINAMARCA,PAIME,Movimiento en masa,1
+CUNDINAMARCA,PARATEBUENO,Movimiento en masa,2
+CUNDINAMARCA,PASCA,Inundación,1
+CUNDINAMARCA,PUERTO SALGAR,Inundación,1
+CUNDINAMARCA,QUEBRADANEGRA,Inundación,1
+CUNDINAMARCA,QUETAME,Avenida torrencial,1
+CUNDINAMARCA,QUETAME,Movimiento en masa,1
+CUNDINAMARCA,QUIPILE,Inundación,1
+CUNDINAMARCA,QUIPILE,Movimiento en masa,2
+CUNDINAMARCA,RICAURTE,Inundación,1
+CUNDINAMARCA,SAN ANTONIO DEL TEQUENDAMA,Inundación,1
+CUNDINAMARCA,SAN ANTONIO DEL TEQUENDAMA,Movimiento en masa,3
+CUNDINAMARCA,SAN CAYETANO,Movimiento en masa,1
+CUNDINAMARCA,SAN FRANCISCO,Movimiento en masa,3
+CUNDINAMARCA,SASAIMA,Creciente súbita,1
+CUNDINAMARCA,SASAIMA,Movimiento en masa,2
+CUNDINAMARCA,SIBATE,Inundación,1
+CUNDINAMARCA,SIBATE,Movimiento en masa,1
+CUNDINAMARCA,SILVANIA,Avenida torrencial,1
+CUNDINAMARCA,SILVANIA,Creciente súbita,2
+CUNDINAMARCA,SILVANIA,Inundación,3
+CUNDINAMARCA,SILVANIA,Movimiento en masa,2
+CUNDINAMARCA,SIMIJACA,Inundación,1
+CUNDINAMARCA,SOACHA,Inundación,5
+CUNDINAMARCA,SOACHA,Movimiento en masa,4
+CUNDINAMARCA,SOPO,Creciente súbita,1
+CUNDINAMARCA,SUBACHOQUE,Inundación,1
+CUNDINAMARCA,SUESCA,Inundación,1
+CUNDINAMARCA,SUPATA,Inundación,1
+CUNDINAMARCA,TOCAIMA,Creciente súbita,2
+CUNDINAMARCA,TOCAIMA,Inundación,3
+CUNDINAMARCA,TOCAIMA,Movimiento en masa,3
+CUNDINAMARCA,TOPAIPI,Movimiento en masa,3
+CUNDINAMARCA,UBALA,Movimiento en masa,1
+CUNDINAMARCA,UBAQUE,Movimiento en masa,2
+CUNDINAMARCA,UBATE,Inundación,1
+CUNDINAMARCA,UNE,Inundación,2
+CUNDINAMARCA,UNE,Movimiento en masa,1
+CUNDINAMARCA,VERGARA,Movimiento en masa,1
+CUNDINAMARCA,VIANI,Movimiento en masa,1
+CUNDINAMARCA,VILLAPINZON,Inundación,1
+CUNDINAMARCA,VILLETA,Creciente súbita,1
+CUNDINAMARCA,VILLETA,Inundación,1
+CUNDINAMARCA,VILLETA,Movimiento en masa,6
+CUNDINAMARCA,VIOTA,Avenida torrencial,1
+CUNDINAMARCA,VIOTA,Creciente súbita,3
+CUNDINAMARCA,VIOTA,Inundación,3
+CUNDINAMARCA,VIOTA,Movimiento en masa,2
+CUNDINAMARCA,YACOPI,Inundación,1
+CUNDINAMARCA,YACOPI,Movimiento en masa,11
+CUNDINAMARCA,ZIPACON,Movimiento en masa,1
+GUAINIA,INIRIDA,Inundación,1
+GUAVIARE,CALAMAR,Inundación,1
+GUAVIARE,EL RETORNO,Inundación,1
+GUAVIARE,MIRAFLORES,Inundación,1
+GUAVIARE,SAN JOSE DEL GUAVIARE,Inundación,2
+HUILA,ACEVEDO,Creciente súbita,1
+HUILA,ACEVEDO,Movimiento en masa,10
+HUILA,AIPE,Creciente súbita,1
+HUILA,AIPE,Inundación,2
+HUILA,AIPE,Movimiento en masa,3
+HUILA,ALGECIRAS,Creciente súbita,5
+HUILA,ALGECIRAS,Movimiento en masa,21
+HUILA,ALTAMIRA,Creciente súbita,2
+HUILA,ALTAMIRA,Movimiento en masa,3
+HUILA,BARAYA,Creciente súbita,4
+HUILA,BARAYA,Movimiento en masa,3
+HUILA,CAMPOALEGRE,Inundación,5
+HUILA,CAMPOALEGRE,Movimiento en masa,6
+HUILA,COLOMBIA,Creciente súbita,10
+HUILA,COLOMBIA,Movimiento en masa,10
+HUILA,ELIAS,Creciente súbita,1
+HUILA,ELIAS,Inundación,1
+HUILA,ELIAS,Movimiento en masa,8
+HUILA,GARZON,Avenida torrencial,1
+HUILA,GARZON,Creciente súbita,2
+HUILA,GARZON,Movimiento en masa,23
+HUILA,GIGANTE,Creciente súbita,3
+HUILA,GIGANTE,Inundación,2
+HUILA,GIGANTE,Movimiento en masa,5
+HUILA,GUADALUPE,Creciente súbita,1
+HUILA,GUADALUPE,Inundación,1
+HUILA,GUADALUPE,Movimiento en masa,6
+HUILA,HOBO,Inundación,1
+HUILA,HOBO,Movimiento en masa,1
+HUILA,IQUIRA,Creciente súbita,3
+HUILA,IQUIRA,Movimiento en masa,9
+HUILA,ISNOS,Movimiento en masa,2
+HUILA,LA ARGENTINA,Movimiento en masa,3
+HUILA,LA PLATA,Creciente súbita,2
+HUILA,LA PLATA,Inundación,3
+HUILA,LA PLATA,Movimiento en masa,27
+HUILA,NATAGA,Inundación,1
+HUILA,NATAGA,Movimiento en masa,12
+HUILA,NEIVA,Creciente súbita,1
+HUILA,NEIVA,Inundación,2
+HUILA,NEIVA,Movimiento en masa,6
+HUILA,OPORAPA,Creciente súbita,1
+HUILA,OPORAPA,Inundación,2
+HUILA,OPORAPA,Movimiento en masa,19
+HUILA,PAICOL,Creciente súbita,2
+HUILA,PAICOL,Movimiento en masa,5
+HUILA,PALERMO,Inundación,4
+HUILA,PALERMO,Movimiento en masa,9
+HUILA,PALESTINA,Creciente súbita,3
+HUILA,PALESTINA,Movimiento en masa,10
+HUILA,PITAL,Inundación,2
+HUILA,PITAL,Movimiento en masa,6
+HUILA,PITALITO,Avenida torrencial,4
+HUILA,PITALITO,Creciente súbita,6
+HUILA,PITALITO,Inundación,1
+HUILA,PITALITO,Movimiento en masa,25
+HUILA,RIVERA,Creciente súbita,2
+HUILA,RIVERA,Inundación,1
+HUILA,RIVERA,Movimiento en masa,5
+HUILA,SALADOBLANCO,Creciente súbita,1
+HUILA,SALADOBLANCO,Movimiento en masa,13
+HUILA,SAN AGUSTIN,Avenida torrencial,1
+HUILA,SAN AGUSTIN,Creciente súbita,1
+HUILA,SAN AGUSTIN,Movimiento en masa,8
+HUILA,SANTA MARIA,Movimiento en masa,15
+HUILA,SUAZA,Creciente súbita,6
+HUILA,SUAZA,Inundación,1
+HUILA,SUAZA,Movimiento en masa,12
+HUILA,TARQUI,Creciente súbita,3
+HUILA,TARQUI,Movimiento en masa,4
+HUILA,TELLO,Creciente súbita,1
+HUILA,TELLO,Movimiento en masa,12
+HUILA,TERUEL,Movimiento en masa,14
+HUILA,TESALIA,Inundación,2
+HUILA,TESALIA,Movimiento en masa,4
+HUILA,TIMANA,Avenida torrencial,1
+HUILA,TIMANA,Inundación,1
+HUILA,TIMANA,Movimiento en masa,8
+HUILA,VILLAVIEJA,Creciente súbita,1
+HUILA,VILLAVIEJA,Inundación,1
+HUILA,YAGUARA,Inundación,2
+HUILA,YAGUARA,Movimiento en masa,4
+LA GUAJIRA,BARRANCAS,Inundación,2
+LA GUAJIRA,FONSECA,Inundación,2
+LA GUAJIRA,HATONUEVO,Inundación,1
+LA GUAJIRA,MAICAO,Inundación,2
+LA GUAJIRA,MANAURE,Inundación,3
+LA GUAJIRA,RIOHACHA,Creciente súbita,1
+LA GUAJIRA,RIOHACHA,Inundación,2
+LA GUAJIRA,SAN JUAN DEL CESAR,Inundación,3
+LA GUAJIRA,SAN JUAN DEL CESAR,Movimiento en masa,1
+LA GUAJIRA,URIBIA,Inundación,3
+MAGDALENA,ARIGUANI,Inundación,1
+MAGDALENA,CIENAGA,Inundación,1
+MAGDALENA,EL BANCO,Inundación,1
+MAGDALENA,PLATO,Inundación,1
+MAGDALENA,SANTA BARBARA DE PINTO,Inundación,1
+MAGDALENA,SANTA MARTA,Creciente súbita,3
+MAGDALENA,SANTA MARTA,Inundación,2
+MAGDALENA,ZONA BANANERA,Inundación,1
+META,ACACIAS,Creciente súbita,2
+META,ACACIAS,Movimiento en masa,3
+META,CABUYARO,Inundación,1
+META,CASTILLA LA NUEVA,Creciente súbita,1
+META,CASTILLA LA NUEVA,Inundación,1
+META,CUBARRAL,Creciente súbita,2
+META,CUBARRAL,Inundación,1
+META,CUBARRAL,Movimiento en masa,2
+META,CUMARAL,Creciente súbita,1
+META,CUMARAL,Inundación,3
+META,DEPARTAMENTO,Inundación,1
+META,EL CALVARIO,Avenida torrencial,1
+META,EL CALVARIO,Movimiento en masa,5
+META,EL CASTILLO,Inundación,4
+META,EL CASTILLO,Movimiento en masa,1
+META,EL DORADO,Creciente súbita,3
+META,EL DORADO,Inundación,3
+META,FUENTE DE ORO,Creciente súbita,1
+META,FUENTE DE ORO,Inundación,1
+META,GRANADA,Creciente súbita,1
+META,GRANADA,Inundación,5
+META,GUAMAL,Avenida torrencial,1
+META,GUAMAL,Creciente súbita,6
+META,GUAMAL,Inundación,3
+META,GUAMAL,Movimiento en masa,1
+META,LA MACARENA,Inundación,2
+META,LA URIBE,Inundación,3
+META,LEJANIAS,Inundación,4
+META,MAPIRIPAN,Inundación,2
+META,MESETAS,Creciente súbita,1
+META,MESETAS,Inundación,3
+META,PUERTO CONCORDIA,Inundación,1
+META,PUERTO GAITAN,Inundación,2
+META,PUERTO LLERAS,Inundación,4
+META,PUERTO LOPEZ,Creciente súbita,1
+META,PUERTO LOPEZ,Inundación,3
+META,PUERTO RICO,Inundación,2
+META,RESTREPO,Creciente súbita,3
+META,RESTREPO,Movimiento en masa,1
+META,SAN CARLOS DE GUAROA,Inundación,1
+META,SAN JUAN DE ARAMA,Creciente súbita,2
+META,SAN JUAN DE ARAMA,Inundación,2
+META,SAN JUANITO,Creciente súbita,1
+META,SAN JUANITO,Movimiento en masa,3
+META,SAN MARTIN,Inundación,1
+META,VILLAVICENCIO,Creciente súbita,5
+META,VILLAVICENCIO,Inundación,7
+META,VILLAVICENCIO,Movimiento en masa,3
+META,VISTAHERMOSA,Creciente súbita,1
+META,VISTAHERMOSA,Movimiento en masa,1
+NARIÑO,ALBAN,Movimiento en masa,2
+NARIÑO,ANCUYA,Movimiento en masa,2
+NARIÑO,ARBOLEDA,Movimiento en masa,3
+NARIÑO,BELEN,Movimiento en masa,1
+NARIÑO,BUESACO,Movimiento en masa,1
+NARIÑO,CHACHAGUI,Movimiento en masa,2
+NARIÑO,CONSACA,Movimiento en masa,1
+NARIÑO,CORDOBA,Inundación,2
+NARIÑO,CUASPUD,Movimiento en masa,1
+NARIÑO,CUMBAL,Movimiento en masa,1
+NARIÑO,EL PEÑOL,Movimiento en masa,1
+NARIÑO,EL ROSARIO,Movimiento en masa,1
+NARIÑO,EL TABLON DE GOMEZ,Movimiento en masa,1
+NARIÑO,EL TAMBO,Inundación,1
+NARIÑO,EL TAMBO,Movimiento en masa,6
+NARIÑO,FRANCISCO PIZARRO,Inundación,1
+NARIÑO,GUAITARILLA,Movimiento en masa,1
+NARIÑO,ILES,Movimiento en masa,1
+NARIÑO,IPIALES,Movimiento en masa,1
+NARIÑO,LA CRUZ,Movimiento en masa,1
+NARIÑO,LA UNION,Inundación,2
+NARIÑO,LA UNION,Movimiento en masa,5
+NARIÑO,MAGUI PAYAN,Inundación,1
+NARIÑO,MALLAMA,Movimiento en masa,2
+NARIÑO,PASTO,Avenida torrencial,1
+NARIÑO,PASTO,Inundación,1
+NARIÑO,PASTO,Movimiento en masa,2
+NARIÑO,POLICARPA,Movimiento en masa,1
+NARIÑO,PROVIDENCIA,Avenida torrencial,1
+NARIÑO,PUERRES,Avenida torrencial,1
+NARIÑO,PUERRES,Movimiento en masa,2
+NARIÑO,RICAURTE,Avenida torrencial,1
+NARIÑO,RICAURTE,Movimiento en masa,2
+NARIÑO,ROBERTO PAYAN,Inundación,1
+NARIÑO,SAMANIEGO,Movimiento en masa,2
+NARIÑO,SAN ANDRES DE TUMACO,Inundación,2
+NARIÑO,SAN BERNARDO,Movimiento en masa,2
+NARIÑO,SAN LORENZO,Avenida torrencial,1
+NARIÑO,SAN LORENZO,Movimiento en masa,1
+NARIÑO,SAN PABLO,Creciente súbita,1
+NARIÑO,SAN PABLO,Movimiento en masa,1
+NARIÑO,TAMINANGO,Movimiento en masa,2
+NARIÑO,TANGUA,Movimiento en masa,1
+NARIÑO,TUQUERRES,Movimiento en masa,2
+NARIÑO,YACUANQUER,Inundación,2
+NORTE DE SANTANDER,ABREGO,Creciente súbita,1
+NORTE DE SANTANDER,ABREGO,Movimiento en masa,2
+NORTE DE SANTANDER,ARBOLEDAS,Movimiento en masa,1
+NORTE DE SANTANDER,BOCHALEMA,Creciente súbita,1
+NORTE DE SANTANDER,BOCHALEMA,Movimiento en masa,2
+NORTE DE SANTANDER,BUCARASICA,Creciente súbita,1
+NORTE DE SANTANDER,BUCARASICA,Movimiento en masa,2
+NORTE DE SANTANDER,CHINACOTA,Movimiento en masa,3
+NORTE DE SANTANDER,CHITAGA,Creciente súbita,1
+NORTE DE SANTANDER,CHITAGA,Movimiento en masa,2
+NORTE DE SANTANDER,CONVENCION,Avenida torrencial,1
+NORTE DE SANTANDER,CUCUTA,Inundación,2
+NORTE DE SANTANDER,CUCUTA,Movimiento en masa,2
+NORTE DE SANTANDER,DEPARTAMENTO,Inundación,1
+NORTE DE SANTANDER,EL TARRA,Inundación,1
+NORTE DE SANTANDER,EL TARRA,Movimiento en masa,1
+NORTE DE SANTANDER,EL ZULIA,Inundación,2
+NORTE DE SANTANDER,GRAMALOTE,Movimiento en masa,1
+NORTE DE SANTANDER,HACARI,Creciente súbita,1
+NORTE DE SANTANDER,HACARI,Movimiento en masa,5
+NORTE DE SANTANDER,HERRAN,Movimiento en masa,1
+NORTE DE SANTANDER,LA ESPERANZA,Movimiento en masa,5
+NORTE DE SANTANDER,LOS PATIOS,Inundación,2
+NORTE DE SANTANDER,LOS PATIOS,Movimiento en masa,1
+NORTE DE SANTANDER,MUTISCUA,Movimiento en masa,5
+NORTE DE SANTANDER,PAMPLONA,Movimiento en masa,4
+NORTE DE SANTANDER,PAMPLONITA,Creciente súbita,1
+NORTE DE SANTANDER,PAMPLONITA,Movimiento en masa,1
+NORTE DE SANTANDER,SALAZAR,Creciente súbita,1
+NORTE DE SANTANDER,SALAZAR,Movimiento en masa,2
+NORTE DE SANTANDER,SAN CALIXTO,Avenida torrencial,1
+NORTE DE SANTANDER,SAN CALIXTO,Creciente súbita,2
+NORTE DE SANTANDER,SAN CALIXTO,Movimiento en masa,5
+NORTE DE SANTANDER,SAN CAYETANO,Creciente súbita,1
+NORTE DE SANTANDER,SAN CAYETANO,Inundación,1
+NORTE DE SANTANDER,SAN CAYETANO,Movimiento en masa,1
+NORTE DE SANTANDER,SANTIAGO,Movimiento en masa,3
+NORTE DE SANTANDER,SARDINATA,Movimiento en masa,2
+NORTE DE SANTANDER,TEORAMA,Creciente súbita,1
+NORTE DE SANTANDER,TEORAMA,Inundación,1
+NORTE DE SANTANDER,TEORAMA,Movimiento en masa,1
+NORTE DE SANTANDER,TIBU,Inundación,4
+NORTE DE SANTANDER,TIBU,Movimiento en masa,1
+NORTE DE SANTANDER,TOLEDO,Creciente súbita,2
+NORTE DE SANTANDER,TOLEDO,Inundación,1
+NORTE DE SANTANDER,TOLEDO,Movimiento en masa,13
+NORTE DE SANTANDER,VILLA CARO,Movimiento en masa,1
+NORTE DE SANTANDER,VILLA DEL ROSARIO,Creciente súbita,2
+NORTE DE SANTANDER,VILLA DEL ROSARIO,Inundación,3
+NORTE DE SANTANDER,VILLA DEL ROSARIO,Movimiento en masa,1
+PUTUMAYO,COLON,Avenida torrencial,3
+PUTUMAYO,MOCOA,Inundación,4
+PUTUMAYO,MOCOA,Movimiento en masa,4
+PUTUMAYO,PUERTO ASIS,Inundación,3
+PUTUMAYO,PUERTO GUZMAN,Inundación,2
+PUTUMAYO,PUERTO LEGUIZAMO,Inundación,1
+PUTUMAYO,SAN FRANCISCO,Movimiento en masa,1
+PUTUMAYO,SANTIAGO,Inundación,1
+PUTUMAYO,SANTIAGO,Movimiento en masa,1
+PUTUMAYO,SIBUNDOY,Movimiento en masa,3
+PUTUMAYO,VILLAGARZON,Creciente súbita,1
+PUTUMAYO,VILLAGARZON,Inundación,2
+QUINDIO,ARMENIA,Creciente súbita,1
+QUINDIO,ARMENIA,Inundación,1
+QUINDIO,BUENAVISTA,Movimiento en masa,2
+QUINDIO,CALARCA,Inundación,3
+QUINDIO,CALARCA,Movimiento en masa,2
+QUINDIO,CIRCASIA,Inundación,1
+QUINDIO,CIRCASIA,Movimiento en masa,2
+QUINDIO,CORDOBA,Avenida torrencial,1
+QUINDIO,CORDOBA,Movimiento en masa,6
+QUINDIO,FILANDIA,Movimiento en masa,2
+QUINDIO,GENOVA,Movimiento en masa,17
+QUINDIO,MONTENEGRO,Inundación,1
+QUINDIO,MONTENEGRO,Movimiento en masa,6
+QUINDIO,PIJAO,Movimiento en masa,5
+QUINDIO,QUIMBAYA,Creciente súbita,1
+QUINDIO,SALENTO,Movimiento en masa,1
+RISARALDA,APIA,Inundación,1
+RISARALDA,APIA,Movimiento en masa,2
+RISARALDA,BALBOA,Movimiento en masa,1
+RISARALDA,BELEN DE UMBRIA,Avenida torrencial,1
+RISARALDA,BELEN DE UMBRIA,Creciente súbita,1
+RISARALDA,BELEN DE UMBRIA,Inundación,1
+RISARALDA,BELEN DE UMBRIA,Movimiento en masa,1
+RISARALDA,DOSQUEBRADAS,Inundación,2
+RISARALDA,DOSQUEBRADAS,Movimiento en masa,6
+RISARALDA,GUATICA,Movimiento en masa,2
+RISARALDA,LA CELIA,Movimiento en masa,4
+RISARALDA,MARSELLA,Movimiento en masa,1
+RISARALDA,MISTRATO,Movimiento en masa,4
+RISARALDA,PEREIRA,Inundación,5
+RISARALDA,PEREIRA,Movimiento en masa,10
+RISARALDA,PUEBLO RICO,Creciente súbita,1
+RISARALDA,PUEBLO RICO,Inundación,1
+RISARALDA,PUEBLO RICO,Movimiento en masa,4
+RISARALDA,QUINCHIA,Movimiento en masa,3
+RISARALDA,SANTA ROSA DE CABAL,Inundación,1
+RISARALDA,SANTA ROSA DE CABAL,Movimiento en masa,3
+RISARALDA,SANTUARIO,Movimiento en masa,2
+SAN ANDRES,SAN ANDRES,Inundación,1
+SANTANDER,AGUADA,Creciente súbita,1
+SANTANDER,BARRANCABERMEJA,Inundación,2
+SANTANDER,CEPITA,Creciente súbita,1
+SANTANDER,CHIPATA,Inundación,1
+SANTANDER,CIMITARRA,Inundación,1
+SANTANDER,CONFINES,Creciente súbita,1
+SANTANDER,CONFINES,Movimiento en masa,1
+SANTANDER,CONTRATACION,Movimiento en masa,1
+SANTANDER,COROMORO,Avenida torrencial,1
+SANTANDER,CURITI,Inundación,1
+SANTANDER,DEPARTAMENTO,Inundación,2
+SANTANDER,EL CARMEN DE CHUCURI,Creciente súbita,1
+SANTANDER,EL CARMEN DE CHUCURI,Movimiento en masa,1
+SANTANDER,EL PLAYON,Movimiento en masa,1
+SANTANDER,ENCISO,Movimiento en masa,4
+SANTANDER,FLORIAN,Movimiento en masa,2
+SANTANDER,FLORIDABLANCA,Creciente súbita,1
+SANTANDER,FLORIDABLANCA,Inundación,1
+SANTANDER,GALAN,Avenida torrencial,3
+SANTANDER,GAMBITA,Creciente súbita,1
+SANTANDER,GIRON,Inundación,1
+SANTANDER,GUACA,Movimiento en masa,1
+SANTANDER,GUADALUPE,Movimiento en masa,2
+SANTANDER,GUEPSA,Inundación,1
+SANTANDER,LA BELLEZA,Creciente súbita,1
+SANTANDER,LA BELLEZA,Movimiento en masa,2
+SANTANDER,LA PAZ,Movimiento en masa,2
+SANTANDER,LEBRIJA,Creciente súbita,1
+SANTANDER,LEBRIJA,Movimiento en masa,1
+SANTANDER,LOS SANTOS,Movimiento en masa,1
+SANTANDER,MACARAVITA,Movimiento en masa,1
+SANTANDER,MALAGA,Inundación,1
+SANTANDER,MALAGA,Movimiento en masa,2
+SANTANDER,MATANZA,Movimiento en masa,2
+SANTANDER,MOLAGAVITA,Creciente súbita,1
+SANTANDER,OCAMONTE,Movimiento en masa,1
+SANTANDER,ONZAGA,Avenida torrencial,1
+SANTANDER,PALMAR,Creciente súbita,2
+SANTANDER,PIEDECUESTA,Creciente súbita,1
+SANTANDER,PIEDECUESTA,Inundación,1
+SANTANDER,PINCHOTE,Creciente súbita,2
+SANTANDER,PUERTO WILCHES,Creciente súbita,1
+SANTANDER,PUERTO WILCHES,Inundación,2
+SANTANDER,RIONEGRO,Creciente súbita,3
+SANTANDER,SABANA DE TORRES,Movimiento en masa,1
+SANTANDER,SAN ANDRES,Creciente súbita,2
+SANTANDER,SAN ANDRES,Movimiento en masa,1
+SANTANDER,SAN GIL,Movimiento en masa,1
+SANTANDER,SAN JOAQUIN,Creciente súbita,1
+SANTANDER,SAN JOSE DE MIRANDA,Movimiento en masa,1
+SANTANDER,SAN MIGUEL,Movimiento en masa,1
+SANTANDER,SAN VICENTE DE CHUCURI,Creciente súbita,1
+SANTANDER,SAN VICENTE DE CHUCURI,Inundación,1
+SANTANDER,SANTA BARBARA,Movimiento en masa,1
+SANTANDER,SIMACOTA,Inundación,1
+SANTANDER,SIMACOTA,Movimiento en masa,2
+SANTANDER,SUAITA,Movimiento en masa,1
+SANTANDER,SUCRE,Movimiento en masa,3
+SANTANDER,SURATA,Inundación,1
+SANTANDER,VALLE DE SAN JOSE,Movimiento en masa,1
+SANTANDER,VELEZ,Movimiento en masa,2
+SUCRE,COLOSO,Inundación,1
+SUCRE,COROZAL,Creciente súbita,1
+SUCRE,COVEÑAS,Creciente súbita,1
+SUCRE,COVEÑAS,Inundación,3
+SUCRE,EL ROBLE,Inundación,1
+SUCRE,GALERAS,Inundación,1
+SUCRE,GUARANDA,Inundación,2
+SUCRE,MAJAGUAL,Inundación,1
+SUCRE,SAMPUES,Inundación,1
+SUCRE,SAN BENITO ABAD,Inundación,1
+SUCRE,SAN MARCOS,Inundación,1
+SUCRE,SAN ONOFRE,Inundación,2
+SUCRE,SAN ONOFRE,Movimiento en masa,1
+SUCRE,SAN PEDRO,Inundación,1
+SUCRE,SINCELEJO,Creciente súbita,1
+SUCRE,SINCELEJO,Inundación,1
+SUCRE,TOLU VIEJO,Inundación,1
+TOLIMA,ALVARADO,Movimiento en masa,1
+TOLIMA,AMBALEMA,Inundación,1
+TOLIMA,ARMERO,Inundación,2
+TOLIMA,ARMERO,Movimiento en masa,2
+TOLIMA,ATACO,Creciente súbita,1
+TOLIMA,ATACO,Movimiento en masa,4
+TOLIMA,CAJAMARCA,Movimiento en masa,4
+TOLIMA,CARMEN DE APICALA,Inundación,2
+TOLIMA,CASABIANCA,Movimiento en masa,2
+TOLIMA,CHAPARRAL,Inundación,3
+TOLIMA,CHAPARRAL,Movimiento en masa,4
+TOLIMA,COELLO,Movimiento en masa,2
+TOLIMA,DOLORES,Movimiento en masa,8
+TOLIMA,FALAN,Creciente súbita,1
+TOLIMA,FALAN,Movimiento en masa,4
+TOLIMA,FRESNO,Movimiento en masa,4
+TOLIMA,GUAMO,Movimiento en masa,1
+TOLIMA,HERVEO,Inundación,1
+TOLIMA,HERVEO,Movimiento en masa,5
+TOLIMA,HONDA,Inundación,1
+TOLIMA,IBAGUE,Creciente súbita,6
+TOLIMA,IBAGUE,Inundación,2
+TOLIMA,IBAGUE,Movimiento en masa,12
+TOLIMA,LIBANO,Inundación,2
+TOLIMA,LIBANO,Movimiento en masa,7
+TOLIMA,MARIQUITA,Movimiento en masa,3
+TOLIMA,MELGAR,Creciente súbita,1
+TOLIMA,MELGAR,Inundación,1
+TOLIMA,MELGAR,Movimiento en masa,2
+TOLIMA,NATAGAIMA,Inundación,1
+TOLIMA,ORTEGA,Creciente súbita,3
+TOLIMA,ORTEGA,Inundación,4
+TOLIMA,ORTEGA,Movimiento en masa,9
+TOLIMA,PALOCABILDO,Movimiento en masa,8
+TOLIMA,PLANADAS,Creciente súbita,1
+TOLIMA,PLANADAS,Movimiento en masa,8
+TOLIMA,PURIFICACION,Inundación,1
+TOLIMA,PURIFICACION,Movimiento en masa,1
+TOLIMA,RIOBLANCO,Creciente súbita,1
+TOLIMA,RIOBLANCO,Inundación,2
+TOLIMA,RIOBLANCO,Movimiento en masa,8
+TOLIMA,RONCESVALLES,Avenida torrencial,1
+TOLIMA,RONCESVALLES,Movimiento en masa,4
+TOLIMA,ROVIRA,Inundación,1
+TOLIMA,ROVIRA,Movimiento en masa,6
+TOLIMA,SALDAÑA,Inundación,1
+TOLIMA,SAN ANTONIO,Inundación,1
+TOLIMA,SAN ANTONIO,Movimiento en masa,1
+TOLIMA,SANTA ISABEL,Avenida torrencial,1
+TOLIMA,SANTA ISABEL,Movimiento en masa,7
+TOLIMA,SUAREZ,Movimiento en masa,1
+TOLIMA,VALLE DE SAN JUAN,Movimiento en masa,1
+TOLIMA,VENADILLO,Inundación,1
+TOLIMA,VENADILLO,Movimiento en masa,1
+TOLIMA,VILLAHERMOSA,Movimiento en masa,6
+TOLIMA,VILLARRICA,Creciente súbita,1
+TOLIMA,VILLARRICA,Inundación,1
+TOLIMA,VILLARRICA,Movimiento en masa,1
+VALLE DEL CAUCA,ANDALUCIA,Inundación,5
+VALLE DEL CAUCA,ANSERMANUEVO,Inundación,2
+VALLE DEL CAUCA,ANSERMANUEVO,Movimiento en masa,2
+VALLE DEL CAUCA,ARGELIA,Movimiento en masa,2
+VALLE DEL CAUCA,BOLIVAR,Inundación,1
+VALLE DEL CAUCA,BOLIVAR,Movimiento en masa,1
+VALLE DEL CAUCA,BUENAVENTURA,Creciente súbita,2
+VALLE DEL CAUCA,CAICEDONIA,Inundación,2
+VALLE DEL CAUCA,CAICEDONIA,Movimiento en masa,2
+VALLE DEL CAUCA,CALI,Creciente súbita,2
+VALLE DEL CAUCA,CALI,Inundación,4
+VALLE DEL CAUCA,CALI,Movimiento en masa,15
+VALLE DEL CAUCA,CALIMA,Movimiento en masa,3
+VALLE DEL CAUCA,CANDELARIA,Inundación,1
+VALLE DEL CAUCA,CARTAGO,Inundación,5
+VALLE DEL CAUCA,CARTAGO,Movimiento en masa,1
+VALLE DEL CAUCA,DAGUA,Creciente súbita,2
+VALLE DEL CAUCA,DAGUA,Inundación,2
+VALLE DEL CAUCA,DAGUA,Movimiento en masa,3
+VALLE DEL CAUCA,DEPARTAMENTO,Inundación,1
+VALLE DEL CAUCA,EL AGUILA,Creciente súbita,1
+VALLE DEL CAUCA,EL AGUILA,Movimiento en masa,4
+VALLE DEL CAUCA,EL CERRITO,Inundación,1
+VALLE DEL CAUCA,EL CERRITO,Movimiento en masa,4
+VALLE DEL CAUCA,FLORIDA,Inundación,1
+VALLE DEL CAUCA,GINEBRA,Creciente súbita,1
+VALLE DEL CAUCA,GINEBRA,Inundación,1
+VALLE DEL CAUCA,GINEBRA,Movimiento en masa,6
+VALLE DEL CAUCA,GUACARI,Inundación,2
+VALLE DEL CAUCA,GUADALAJARA DE BUGA,Creciente súbita,2
+VALLE DEL CAUCA,GUADALAJARA DE BUGA,Movimiento en masa,2
+VALLE DEL CAUCA,JAMUNDI,Avenida torrencial,1
+VALLE DEL CAUCA,JAMUNDI,Creciente súbita,1
+VALLE DEL CAUCA,JAMUNDI,Inundación,4
+VALLE DEL CAUCA,JAMUNDI,Movimiento en masa,6
+VALLE DEL CAUCA,LA CUMBRE,Creciente súbita,1
+VALLE DEL CAUCA,LA CUMBRE,Inundación,5
+VALLE DEL CAUCA,LA CUMBRE,Movimiento en masa,1
+VALLE DEL CAUCA,LA UNION,Inundación,3
+VALLE DEL CAUCA,LA UNION,Movimiento en masa,1
+VALLE DEL CAUCA,LA VICTORIA,Inundación,1
+VALLE DEL CAUCA,PRADERA,Movimiento en masa,1
+VALLE DEL CAUCA,RIOFRIO,Inundación,1
+VALLE DEL CAUCA,ROLDANILLO,Inundación,1
+VALLE DEL CAUCA,SAN PEDRO,Creciente súbita,2
+VALLE DEL CAUCA,SAN PEDRO,Inundación,3
+VALLE DEL CAUCA,SEVILLA,Creciente súbita,1
+VALLE DEL CAUCA,SEVILLA,Inundación,2
+VALLE DEL CAUCA,SEVILLA,Movimiento en masa,1
+VALLE DEL CAUCA,TORO,Inundación,2
+VALLE DEL CAUCA,TORO,Movimiento en masa,1
+VALLE DEL CAUCA,TRUJILLO,Creciente súbita,2
+VALLE DEL CAUCA,TRUJILLO,Inundación,3
+VALLE DEL CAUCA,TRUJILLO,Movimiento en masa,1
+VALLE DEL CAUCA,TULUA,Creciente súbita,2
+VALLE DEL CAUCA,TULUA,Inundación,1
+VALLE DEL CAUCA,ULLOA,Movimiento en masa,1
+VALLE DEL CAUCA,VERSALLES,Inundación,1
+VALLE DEL CAUCA,VIJES,Inundación,1
+VALLE DEL CAUCA,YOTOCO,Creciente súbita,1
+VALLE DEL CAUCA,YOTOCO,Inundación,1
+VALLE DEL CAUCA,YOTOCO,Movimiento en masa,1
+VALLE DEL CAUCA,YUMBO,Creciente súbita,2
+VALLE DEL CAUCA,YUMBO,Inundación,2
+VALLE DEL CAUCA,ZARZAL,Inundación,2
+VAUPES,DEPARTAMENTO,Inundación,1
+VAUPES,MITU,Inundación,2
+VICHADA,CUMARIBO,Inundación,4
+VICHADA,DEPARTAMENTO,Inundación,1
+VICHADA,LA PRIMAVERA,Inundación,4
+VICHADA,PUERTO CARREÑO,Inundación,2
+VICHADA,SANTA ROSALIA,Inundación,3

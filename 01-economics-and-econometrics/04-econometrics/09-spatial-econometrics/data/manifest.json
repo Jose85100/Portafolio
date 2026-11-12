@@ -1,0 +1,19 @@
+{
+  "source": "DANE, Cuentas Nacionales Departamentales — Valor agregado por municipio, Base 2015",
+  "source_page": "https://www.dane.gov.co/index.php/estadisticas-por-tema/cuentas-nacionales/cuentas-nacionales-departamentales",
+  "drive_file_id": "1JcmDYMPOH60ZElvBvfK5waRnBp3cH6yl",
+  "drive_snapshot_modified": "2026-10-08T18:16:04.269Z",
+  "snapshot_file": "codex_dane_vam_canonical_snapshot.xlsx",
+  "snapshot_bytes": 2130279,
+  "source_path_policy": "Ruta recibida por --source; no se persiste en el manifiesto",
+  "snapshot_sha256": "083bb4b8501db9572867faf7ed71bc5fd9fbd9e269f576dbc1fb2379ade2281d",
+  "workbook_sheet": "Cuadro 1",
+  "workbook_grain": "DIVIPOLA municipality × annual period",
+  "unit": "COP billions, current prices (precios corrientes), base 2015",
+  "coverage": "2011–2023; 2024p shown separately as provisional",
+  "municipality_rows": 1123,
+  "zero_value_reported_rows": [
+    "27493",
+    "94663"
+  ]
+}

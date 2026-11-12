@@ -1,0 +1,46 @@
+[
+  {
+    "fecha_corte":"2026-08-31",
+    "unicap":"1",
+    "producto":"CRÉDITO ROTATIVO",
+    "entidades":18,
+    "saldo_total":5478144551806.4501953125,
+    "hhi_10000":2214.8932038446,
+    "numero_efectivo_entidades":4.5148903715,
+    "participacion_top1":0.3267982132,
+    "participacion_top5":0.9011385661
+  },
+  {
+    "fecha_corte":"2026-08-31",
+    "unicap":"2",
+    "producto":"TARJETAS DE CRÉDITO",
+    "entidades":29,
+    "saldo_total":44876970575456.5703125,
+    "hhi_10000":1222.4983967148,
+    "numero_efectivo_entidades":8.1799698281,
+    "participacion_top1":0.2172447278,
+    "participacion_top5":0.7047634011
+  },
+  {
+    "fecha_corte":"2026-08-31",
+    "unicap":"4",
+    "producto":"LIBRANZA",
+    "entidades":31,
+    "saldo_total":82914648490425.6875,
+    "hhi_10000":1039.1405242871,
+    "numero_efectivo_entidades":9.6233375239,
+    "participacion_top1":0.1813383466,
+    "participacion_top5":0.6065728024
+  },
+  {
+    "fecha_corte":"2026-08-31",
+    "unicap":"9",
+    "producto":"VIVIENDA VIS PESOS",
+    "entidades":23,
+    "saldo_total":36834400281475.078125,
+    "hhi_10000":1740.3121461539,
+    "numero_efectivo_entidades":5.7460956197,
+    "participacion_top1":0.2828141678,
+    "participacion_top5":0.8526746226
+  }
+]

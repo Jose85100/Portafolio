@@ -2,6 +2,21 @@
 
 MVP offline ejecutable del pilar02. Pregunta: ¿agrupar solo la clave primaria deja cadenas de identidad entre entrenamiento y test? Cierre transitivo de vínculos explícitos y holdout determinista por componentes; algoritmo conocido, integración incremental local. No entrena modelos ni infiere vínculos.
 
+## Aplicación observada: entidades país en WDI
+
+La edición controlada conserva grafos con vínculos y verdad conocida para estudiar cortes, sobre-unión y vínculo faltante. Como contraste con datos observados, `official_application.py` aplica las políticas de partición a 4.334 observaciones país–indicador del World Development Indicators (WDI), reutilizando el snapshot oficial ya versionado en el [proyecto MFA](../../../02-mathematics-statistics-and-quant/quantitative-methods/analisis-factorial-multiple-mfa/datos/manifest.json). El grano del experimento es un indicador de una economía; ISO3 es una identidad oficial conocida, no inferida.
+
+En 100 semillas deterministas, el split aleatorio por fila separó observaciones de los **171 países elegibles en train y test en las 100 corridas**, afectando las 4.334 filas. La partición por componente de país produjo **cero países divididos y cero filas expuestas** en las 100 corridas. El resultado demuestra una propiedad de integridad de la partición sobre un conjunto real multiobservación; no mide AUC, fuga de etiquetas ni rendimiento predictivo, porque WDI aquí no incluye un target de modelo.
+
+La decisión de uso es agrupar por la entidad que debe permanecer fuera del holdout antes de comparar modelos. Para evaluar solicitantes, empresas o grupos económicos todavía se requieren etiquetas y vínculos autorizados a ese grano. El snapshot WDI fue consultado para 2015–2022, pero la extracción heredada no conservó su timestamp ni vintage; sus hashes y alcance están en el [manifiesto del companion](results/official-wdi/manifest.json). El umbral de cobertura del 85% deja 171 de 217 economías y no elimina sesgo por faltantes.
+
+- [Runner reproducible](official_application.py)
+- [Resultados por semilla](results/official-wdi/seed_results.csv) · [Resumen](results/official-wdi/summary.json)
+- [Figura de cortes por identidad](results/official-wdi/wdi-country-split-leakage.png)
+- [Fuente WDI](https://databank.worldbank.org/source/world-development-indicators)
+
+Desde la raíz de este proyecto, reproduce la aplicación con `python3 official_application.py` (Matplotlib opcional para la figura).
+
 Desde esta carpeta: `bash run.sh` instala dependencias fijadas en .venv, ejecuta tests/lint/tipos, benchmark y notebook. Python3.12+ y acceso pip inicial requeridos. Reuso auditado: `PYTHON=/workspace/scratch/6c8b818bd733/ia28-env/bin/python SKIP_INSTALL=1 bash run.sh`.
 
 Salidas: results/inputs.json, raw.csv, summary.json y leakage.svg; notebook.ipynb con outputs visibles. Notebook ejecutado mediante IPython secuencial en proceso; no kernel Jupyter independiente. Números deterministas: filas108/144 componentes cortados; clave primaria70/144; componente0/144. 12 seeds sobre el mismo corpus no son12 datasets independientes; sin intervalos inferenciales.

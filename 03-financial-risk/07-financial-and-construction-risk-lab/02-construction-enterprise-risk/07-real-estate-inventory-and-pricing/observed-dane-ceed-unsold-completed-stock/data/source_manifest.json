@@ -1,0 +1,24 @@
+{
+  "source_url": "https://www.dane.gov.co/files/operaciones/VISNoVIS/anex-VISNoVIS-SerieTipoBaseInicCulm-IItrim2026.xlsb",
+  "source_sha256": "ea6874aa320de5a68f73a811e5429a888d9ce8ebba5c4bd4c211405cfbdd7706",
+  "source_filename": "ceed_inic_culm.xlsb",
+  "source_sheet": "Saldos",
+  "source_fields": [
+    "PERIODO",
+    "VENTA_SN",
+    "VIS_SN",
+    "TIP_SALDO"
+  ],
+  "filter": "VENTA_SN == 1 (viviendas construidas para venta)",
+  "aggregation": "sum TIP_SALDO by PERIODO and VIS_SN",
+  "coverage": "23 CEED urban/metropolitan areas; not national coverage",
+  "periods": 24,
+  "period_start": "2020-3",
+  "period_end": "2026-2",
+  "latest_period_units": {
+    "No_VIS": 1293,
+    "VIS": 936
+  },
+  "historical_bulletin_check": "2024-1 and 2024-4 match DANE IV-2024 bulletin; 2024-2 differs by +14 total and 2024-3 by +8 total; see historical_bulletin_checks.csv",
+  "redistribution_note": "Derived aggregate only; source workbook is not included."
+}

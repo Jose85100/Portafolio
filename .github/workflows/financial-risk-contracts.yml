@@ -4,13 +4,13 @@ on:
     paths:
       - '03-financial-risk/01-credit-risk/credit-risk-products/ifrs9-investigacion-cuantitativa/**'
       - '03-financial-risk/03-market-liquidity-research/**'
-      - '03-financial-risk/07-financial-and-construction-risk-lab/tests/fixtures/**'
+      - '03-financial-risk/07-financial-and-construction-risk-lab/04-modelos-compartidos/tests/fixtures/**'
       - '.github/workflows/financial-risk-contracts.yml'
   pull_request:
     paths:
       - '03-financial-risk/01-credit-risk/credit-risk-products/ifrs9-investigacion-cuantitativa/**'
       - '03-financial-risk/03-market-liquidity-research/**'
-      - '03-financial-risk/07-financial-and-construction-risk-lab/tests/fixtures/**'
+      - '03-financial-risk/07-financial-and-construction-risk-lab/04-modelos-compartidos/tests/fixtures/**'
       - '.github/workflows/financial-risk-contracts.yml'
 jobs:
   contracts:
@@ -27,4 +27,4 @@ jobs:
       - name: IFRS 9 input and cash-flow contracts
         run: python -m unittest discover -s 03-financial-risk/01-credit-risk/credit-risk-products/ifrs9-investigacion-cuantitativa/tests -v
       - name: Market-liquidity risk and shared tail fixtures
-        run: python -m unittest discover -s 03-financial-risk/03-market-liquidity-research/tests -v
+        run: python -m unittest discover -s 03-financial-risk/03-market-liquidity-research/laboratorio-integrado/tests -v

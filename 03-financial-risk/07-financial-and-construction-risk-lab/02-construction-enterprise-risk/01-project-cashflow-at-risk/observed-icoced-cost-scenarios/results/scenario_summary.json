@@ -1,0 +1,43 @@
+{
+  "source_snapshot_sha256": "c858c33819bbc2fc6db3e80aa971be07991e06aa2914330f7ae0da95e4d1b63b",
+  "reused_derived_input_sha256": "b2e0b7bb52b8b7b588bc7c0bafefc4e54510906694da34a35b3c692de85a4daa",
+  "source_period": [
+    "2022-01",
+    "2026-09"
+  ],
+  "input_series": "Concreto común",
+  "geography": "Bogotá_Cundinamarca AR",
+  "published_sector_reference_weight_pct": 10.112,
+  "historical_index_observations": 57,
+  "project_cash_flows": {
+    "currency": "COP millions",
+    "horizon_months": 24,
+    "opening_cash": 10.0,
+    "monthly_collections": 116.0,
+    "base_monthly_project_costs": 100.0,
+    "monthly_debt_service": 15.0,
+    "liquidity_floor": 0.0
+  },
+  "cash_flows_are_synthetic": true,
+  "project_specific_cost_bom_available": false,
+  "rolling_overlapping_scenarios": 34,
+  "baseline_no_escalation_terminal_cash_cop_millions": 34.0,
+  "historical_scenario_windows_with_buffer_breach": 10,
+  "share_of_overlapping_scenario_windows_with_breach_pct_not_probability": 29.411764705882355,
+  "nearest_rank_p95_peak_shortfall_cop_millions_scenario_only": 10.012949676784373,
+  "maximum_peak_shortfall_cop_millions_scenario_only": 11.148776400912979,
+  "worst_scenario_window": {
+    "start": "2022-12",
+    "end": "2024-11",
+    "index_change_pct": 21.060374582696785
+  },
+  "method": "24-month rolling ICOCED index paths; concrete component multiplied by its published 2021 sector-basket weight; other costs, collections and debt held flat and synthetic",
+  "interpretation": "sector input sensitivity on a synthetic project profile; not observed project cashflow, realized cost overrun, forecast or calibrated CaR",
+  "limitations": [
+    "ICOCED is a representative sector cost index, not a project invoice, procurement quote or contractual escalator.",
+    "The 10.112% published 2021 basket weight is not this synthetic or any real project's bill of quantities.",
+    "The 34 rolling windows overlap and do not form independent draws; their fraction is not a probability of breach.",
+    "Collections, debt service, non-concrete costs, cash opening and liquidity floor are fixed illustrative assumptions.",
+    "No inference is made about any work, developer, lender, contractor or project outcome."
+  ]
+}

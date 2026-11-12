@@ -26,3 +26,9 @@ Incertidumbre de parámetros y estabilidad de solución. Separación temporal de
 
 ## Productos esperados
 Metodología, código, pruebas, escenarios, reporte de validación y dashboard de decisiones.
+
+## Contexto público observado (no es validación)
+
+El [análisis DNP/SGR](../../02-construction-enterprise-risk/11-portfolio-project-concentration/observed-dnp-sgr-project-concentration/README.md) permite contextualizar concentración de valor de proyectos públicos. El valor total reportado no es capital en riesgo ni pérdida esperada; no valida la asignación robusta propuesta.
+
+**Estado de madurez:** la propuesta continúa S1; el companion citado aporta contexto observable, pero no implementa ni valida el modelo descrito.

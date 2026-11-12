@@ -1,0 +1,41 @@
+{
+  "source_url": "https://www.dane.gov.co/files/operaciones/ICOCED/anex-ICOCED-sep2026.xlsx",
+  "source_snapshot": "data/raw/dane_icoced_sep2026.xlsx",
+  "sha256": "c858c33819bbc2fc6db3e80aa971be07991e06aa2914330f7ae0da95e4d1b63b",
+  "source_sheet": "Anexo 7.2",
+  "source_sheet_dimensions": [
+    19955,
+    1135
+  ],
+  "snapshot_downloaded_from_dane": "2026-11-10",
+  "reported_update_in_workbook": "2026-09-30",
+  "extraction": {
+    "domain": "Bogotá_Cundinamarca AR",
+    "cost_group": "Materiales",
+    "inputs": [
+      "Acero corrugado",
+      "Cemento",
+      "Concreto común"
+    ],
+    "grain": "input × geographic domain × month",
+    "period_start": "2022-01",
+    "period_end": "2026-09",
+    "observations": 171,
+    "expected_observations": 171,
+    "source_rows_for_targets": 3,
+    "duplicate_series_keys": 0,
+    "duplicate_observations": 0,
+    "missing_or_nonnumeric_month_cells_skipped": 0
+  },
+  "transformations": [
+    "Read Anexo 7.2 rows for Bogotá_Cundinamarca AR and cost group Materiales.",
+    "Select Acero corrugado, Cemento and Concreto común; no weights or data are imputed.",
+    "Read each monthly block's published index and monthly percentage change.",
+    "Compute sample standard deviation, 95th percentile, extrema, and index change from the first observed month."
+  ],
+  "limitations": [
+    "ICOCED measures cost variation using a representative basket; it is not a transaction price or a project-specific cost index.",
+    "Fixed 2021 weights and the selected inputs may not match a project's bill of quantities, procurement terms, or location.",
+    "The results do not estimate budget overrun, lead times, supplier risk, or causal pass-through."
+  ]
+}

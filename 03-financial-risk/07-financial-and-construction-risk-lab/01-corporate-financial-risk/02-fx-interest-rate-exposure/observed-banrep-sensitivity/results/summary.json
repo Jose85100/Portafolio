@@ -1,0 +1,61 @@
+{
+  "purpose": "Observed market-factor context for hypothetical exposures; not an entity exposure assessment or model validation",
+  "source_trm": {
+    "publisher": "Banco de la República",
+    "series_id": 1,
+    "name": "Tasa Representativa del Mercado (TRM)",
+    "unit": "COP/USD",
+    "api": "https://suameca.banrep.gov.co/estadisticas-economicas-back/rest/estadisticaEconomicaRestService/consultaInformacionSerieXTipoDato?idSerie=1&tipoDato=0&cantDatos=5000",
+    "official_series_page": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/1/tasa_cambio_peso_colombiano_trm_dolar_usd/",
+    "snapshot_sha256": "d5068f3801b18a5530d291d6a2d0587e5ceb580d52879de5ae363168999edf77",
+    "snapshot_metadata_start": "27 de noviembre  de  1991",
+    "snapshot_metadata_end": "12 de noviembre  de  2026",
+    "monthly_sampling": "last available daily observation in each month"
+  },
+  "source_dtf": {
+    "publisher": "Banco de la República via Atlas Económico; governed derived file",
+    "drive_id": "1Hpu_qk99U_-Hf0H3svT2GvVYWtb9EfpE",
+    "derived_file": "../../../../../04-quant-strategy-and-products/treasury-and-alm/sensibilidad-fondeo-dtf/data/dtf_monthly_derived.csv",
+    "derived_sha256": "56e4e436cd7add0aac50dd8e1c29007fa173ed8e07e4b484633d19faa33c79ec",
+    "method": "monthly mean, only complete months through 2026-09"
+  },
+  "hypothetical_exposures": {
+    "usd_liability": 1000000,
+    "usd_liability_unit": "USD",
+    "cop_floating_rate_balance": 100000000000,
+    "cop_balance_unit": "COP",
+    "assumption": "Constant outstanding principal, no hedges, taxes, amortization, accrued interest or cash-flow timing"
+  },
+  "formulas": {
+    "fx_monthly_revaluation_cop": "USD 1,000,000 * (TRM_month_end_t - TRM_month_end_t-1)",
+    "dtf_annualized_cost_change_cop": "COP 100,000,000,000 * (DTF_t - DTF_t-12) / 100; DTF changes are percentage points"
+  },
+  "aligned_window": {
+    "start": "2013-03",
+    "end": "2026-09",
+    "months": 163
+  },
+  "latest_aligned_observation": {
+    "month": "2026-09",
+    "trm_cop_usd": 3341.23,
+    "hypothetical_usd_liability_cop": 3341230000.0,
+    "fx_monthly_revaluation_cop_millions": 138.44,
+    "dtf_percent_ea": 10.19966667,
+    "dtf_12m_change_percentage_points": 1.4403333369999984,
+    "dtf_annualized_cost_change_cop_millions": 1440.3333369999987
+  },
+  "observed_sensitivity_range": {
+    "fx_monthly_change_cop_millions_min": -311.17,
+    "fx_monthly_change_cop_millions_max": 524.95,
+    "dtf_12m_change_pp_min": -3.7570967730000007,
+    "dtf_12m_change_pp_max": 10.458571423999999
+  },
+  "ibr": "Not used: this application isolates a DTF-indexed hypothetical peso liability. IBR-based repricing requires a specified tenor, reset convention, spread, day count and a separately governed IBR vintage.",
+  "limitations": [
+    "TRM and DTF are public market reference series, not a company's realized FX or interest cash flows.",
+    "The FX and DTF sensitivities are separate and must not be summed as a joint loss; no joint shock distribution or correlation model is estimated.",
+    "Static principal, immediate pass-through and no hedge assumptions are illustrative. No entity exposure, hedge effectiveness, covenant breach or decision threshold is validated.",
+    "The snapshot is a point-in-time extraction; source metadata may include observations dated after the local download date because of publication/time-zone timing. Use each observation date as published.",
+    "The DTF raw SDMX source bytes are not preserved in this repository; lineage and derived-file hash are documented in the treasury-and-ALM README."
+  ]
+}

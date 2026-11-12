@@ -1,0 +1,48 @@
+{
+  "edition": "world-bank-mfa-2015-2022",
+  "manifest_generated_on": "2026-11-10",
+  "historical_source_extraction_timestamp_recorded": false,
+  "provider": "World Bank",
+  "dataset": "World Development Indicators",
+  "api": "https://api.worldbank.org/v2/country/all/indicator/{indicator_code}",
+  "query_window": "2015:2022",
+  "grain": "latest available country-indicator value within query window",
+  "official_economy_metadata_rows": 217,
+  "api_codes_in_long_file_including_aggregates": 261,
+  "indicator_observations": 6270,
+  "indicators": 26,
+  "themes": {
+    "economia": 6,
+    "salud": 5,
+    "educacion_digital": 5,
+    "sociedad": 5,
+    "ambiente_energia": 5
+  },
+  "analysis_population": {
+    "minimum_indicator_coverage": 0.85,
+    "economies_analyzed": 171,
+    "economies_excluded_below_threshold": 46,
+    "complete_cases": 107,
+    "imputed_cells": 112,
+    "analysis_cells": 4446,
+    "imputed_share": 0.0251911831
+  },
+  "files": {
+    "indicadores_wb_largo.csv": {
+      "sha256": "01f64eb57e57df13ff15103f82a02a1d8e8665528bb483e717991f2f0a5d0d02",
+      "bytes": 411741
+    },
+    "paises_meta.csv": {
+      "sha256": "d7dee25d2ee20334ddcb409246c86ef6217b8e37f0d0ecd6847a6875eb86b081",
+      "bytes": 12088
+    }
+  },
+  "attribution": "World Bank, World Development Indicators; include indicator names, codes, retrieval window and source notes when reusing.",
+  "license_note": "World Bank open data is generally CC BY 4.0; check indicator-level metadata and upstream-source conditions for each series.",
+  "known_limitations": [
+    "the downloader stores the last observation within 2015-2022 rather than a synchronized single-year panel",
+    "historical API retrieval timestamp and revision vintage were not recorded by the legacy extraction",
+    "missingness is non-random across income and region groups",
+    "the cross-section is descriptive; it does not identify causal effects or current country performance"
+  ]
+}

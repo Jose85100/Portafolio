@@ -1,10 +1,28 @@
-# Pruebas de estrés y estrés inverso
+# Pruebas de estrés: laboratorio y aplicación observada
 
-Pruebas de estrés de un portafolio con sensibilidades lineales a factores (acciones, tasas, tipo de cambio, spreads de crédito). Evalúa escenarios históricos e hipotéticos y resuelve el estrés inverso: qué choque de acciones produce una pérdida objetivo.
+El laboratorio controlado demuestra estrés multifactor y estrés inverso cuando se conocen las sensibilidades y los escenarios. La aplicación con datos oficiales añade un contraste observado para riesgo de tasa.
 
-## Datos
+## Aplicación oficial: choques diarios de tasa
 
-Datos **sintéticos** generados con semilla fija (`numpy.random.default_rng`). No hay datos de clientes, de empresas ni confidenciales. Los resultados son **ilustrativos del método**, no evidencia de desempeño real.
+Con la serie del U.S. Treasury de 2024-01-02 a 2026-11-10, el mayor aumento diario del rendimiento a 10 años fue 19 pb, equivalente a una pérdida lineal de USD 152.000 (1,52%) sobre USD 10 millones con duración fija de ocho años. El estrés inverso de 10% requiere 125 pb en un día; no ocurrió en esta muestra.
+
+Es una aplicación observada de un factor. La curva a plazo constante no mide un bono concreto; la aproximación omite convexidad, carry, roll-down y escenarios conjuntos. La ausencia de un choque tan grande en 2024–2026 no permite descartarlo.
+
+- [Informe y límites de la aplicación](reports/official-application-2026-11-10.md)
+- [Runner reproducible](official_application.py)
+- [Resultados observados](data/official/stress_summary.json)
+- [Figura de choques históricos](reports/figures/treasury-historical-stress.png)
+- [Datos oficiales y semántica](../var-es-tres-metodos/data/README.md)
+
+Para reproducir desde la raíz de este proyecto:
+
+```bash
+MPLCONFIGDIR=/tmp/mplconfig MPLBACKEND=Agg python3 official_application.py
+```
+
+## Laboratorio controlado multifactor
+
+Escenarios con sensibilidades lineales para acciones, tasas, USD/COP y spreads muestran cómo se agregan contribuciones y cómo se resuelve un estrés inverso bajo esos supuestos. El escenario de crisis y sus sensibilidades sirven para estudiar la mecánica; esta edición no los presenta como una reconstrucción histórica.
 
 ## Cómo ejecutar
 

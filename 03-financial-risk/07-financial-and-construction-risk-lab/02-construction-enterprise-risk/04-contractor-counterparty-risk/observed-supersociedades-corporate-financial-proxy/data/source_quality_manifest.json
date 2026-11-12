@@ -1,0 +1,37 @@
+{
+  "provider": "Superintendencia de Sociedades de Colombia",
+  "dataset": "10.000 Empresas mas Grandes del País",
+  "dataset_id": "6cat-2gcs",
+  "dataset_page": "https://www.datos.gov.co/Comercio-Industria-y-Turismo/10-000-Empresas-mas-Grandes-del-Pa-s/6cat-2gcs",
+  "source_csv_api": "https://www.datos.gov.co/resource/6cat-2gcs.json",
+  "snapshot_date": "2026-11-11",
+  "years": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "rows": 50000,
+  "source_fields": [
+    "a_o_de_corte",
+    "macrosector",
+    "ingresos_operacionales",
+    "ganancia_p_rdida",
+    "total_activos",
+    "total_pasivos",
+    "total_patrimonio"
+  ],
+  "source_sha256": "e155639f3c83b0a2a5aed37b812430008121d6e3485263d309eb40689831f557",
+  "source_bytes": 9528442,
+  "output_contains_company_identifiers": false,
+  "units": "Billones de COP, as displayed by source; rounded source values",
+  "limitations": [
+    "Annual top-10,000-company rankings are selected samples, not a stable panel or census; entrants/exits can drive changes.",
+    "Aggregate accounting ratios are not default, PD, LGD, liquidity, or credit quality measures.",
+    "The source displays values rounded to two decimals in COP billions; firm-level ratios near zero equity can be unstable.",
+    "Rows with non-positive assets or revenue are excluded from their respective ratio denominator; counts are disclosed.",
+    "No construction-company-only classification, contractor matching, outcome, or project linkage is asserted.",
+    "Source metadata identifies Supersociedades as owner; license/reuse terms are not explicit in the catalog."
+  ]
+}

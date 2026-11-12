@@ -1,0 +1,108 @@
+{
+  "source": "Banco de la República, Estadísticas Económicas, serie 15274",
+  "series": "Tasa de interés Cero Cupón, Títulos de Tesorería (TES), pesos - 10 años",
+  "series_id": 15274,
+  "source_url": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/220002/tasas_interes_cero_cupon_tes/",
+  "methodology_url": "https://www.banrep.gov.co/en/node/41443",
+  "source_method": "SEN and MEC operations; Banco de la República Nelson-Siegel zero-coupon curve",
+  "raw_sha256": "335739330f675690c418a06d464b97a39f8b7326a2d3c7b6711647e58cd33f1b",
+  "raw_bytes": 312499,
+  "source_observations": 5801,
+  "yield_intervals": 5800,
+  "period": [
+    "2003-01-02",
+    "2026-11-06"
+  ],
+  "yield_unit": "percent per annum",
+  "yield_change_unit": "basis points per consecutive observation",
+  "duration_years_assumed": 8.0,
+  "notional_cop_assumed": 1000000000.0,
+  "loss_proxy_formula": "D_mod * (delta_yield_basis_points / 10000) * notional_COP",
+  "alpha": 0.975,
+  "scenario_probability": "equal per consecutive observed yield-change interval",
+  "tail_mass_observations": 145.0,
+  "fully_included_worst_observations": 145,
+  "fraction_of_next_boundary_observation": 0.0,
+  "var_loss_proxy_cop": 25600000.000000022,
+  "es_loss_proxy_cop": 56761379.31034482,
+  "independent_var_cop": 25600000.000000022,
+  "independent_es_cop": 56761379.31034483,
+  "engine_matches_independent_calculation": true,
+  "max_calendar_gap_days": 6,
+  "intervals_with_gap_gt_3_days": 311,
+  "review_flag_threshold_bp_not_excluded": 100.0,
+  "intervals_flagged_for_manual_source_review": 34,
+  "top_10_abs_yield_changes_bp": [
+    {
+      "prior_date": "2004-12-24",
+      "date": "2004-12-27",
+      "yield_change_bp": 514.0,
+      "loss_proxy_cop": 411200000.0
+    },
+    {
+      "prior_date": "2004-12-23",
+      "date": "2004-12-24",
+      "yield_change_bp": -511.0000000000001,
+      "loss_proxy_cop": -408800000.0000001
+    },
+    {
+      "prior_date": "2003-04-16",
+      "date": "2003-04-21",
+      "yield_change_bp": -405.9999999999999,
+      "loss_proxy_cop": -324799999.99999994
+    },
+    {
+      "prior_date": "2003-04-09",
+      "date": "2003-04-10",
+      "yield_change_bp": -348.99999999999983,
+      "loss_proxy_cop": -279199999.9999998
+    },
+    {
+      "prior_date": "2003-04-10",
+      "date": "2003-04-11",
+      "yield_change_bp": 325.0,
+      "loss_proxy_cop": 260000000.0
+    },
+    {
+      "prior_date": "2003-04-25",
+      "date": "2003-04-28",
+      "yield_change_bp": -325.0,
+      "loss_proxy_cop": -260000000.0
+    },
+    {
+      "prior_date": "2007-12-24",
+      "date": "2007-12-26",
+      "yield_change_bp": 320.0,
+      "loss_proxy_cop": 256000000.0
+    },
+    {
+      "prior_date": "2003-04-22",
+      "date": "2003-04-23",
+      "yield_change_bp": 319.0000000000001,
+      "loss_proxy_cop": 255200000.0000001
+    },
+    {
+      "prior_date": "2007-12-21",
+      "date": "2007-12-24",
+      "yield_change_bp": -319.00000000000006,
+      "loss_proxy_cop": -255200000.00000003
+    },
+    {
+      "prior_date": "2003-03-28",
+      "date": "2003-03-31",
+      "yield_change_bp": -228.99999999999991,
+      "loss_proxy_cop": -183199999.9999999
+    }
+  ],
+  "max_loss_proxy_cop": 411200000.0,
+  "mean_loss_proxy_cop": -21655.172413793083,
+  "derived_csv_sha256": "a6f8bc1db3a730ccc24ce99b52a26bbb149afde6584613af4d89354c5ab48e22",
+  "interpretation": "Empirical VaR/ES on a one-factor linear price-loss proxy for a hypothetical long TES exposure, not actual asset or portfolio P&L and not a backtest.",
+  "limitations": [
+    "The 10Y yield is a Nelson-Siegel zero-coupon curve point estimated by BanRep from SEN/MEC operations, not a specific bond total-return series.",
+    "Duration and notional are scenario assumptions; the snapshot has no holdings, portfolio weights, hedge positions, actual P&L or model forecasts.",
+    "Linear duration omits convexity, coupon cash flows, carry, roll-down, curve-shape/basis exposure, transaction costs and liquidity.",
+    "Intervals are between consecutive published observations; calendar gaps vary and equal probability is assigned per interval without horizon adjustment.",
+    "Historical empirical tail depends on the selected vintage and serial dependence; it is not a forecast or evidence of model calibration."
+  ]
+}

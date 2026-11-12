@@ -1,0 +1,26 @@
+{
+  "source_name": "Superintendencia Financiera de Colombia, Rentabilidades de los Fondos de Inversión Colectiva (FIC)",
+  "dataset_id": "qhpu-8ixx",
+  "dataset_url": "https://www.datos.gov.co/Hacienda-y-Cr-dito-P-blico/Rentabilidades-de-los-Fondos-de-Inversi-n-Colecti/qhpu-8ixx",
+  "sfc_reference_url": "https://www.superfinanciera.gov.co/ReporteInformacionFIC/faces/reporte/consultaReporte.xhtml",
+  "canonical_file_path": "/Users/admin/Desktop/Datos Riesgo Colombia/01_fuentes/Datos datos.gov.co/raw/sfc_fic_rentabilidad_diaria.csv",
+  "canonical_metadata_path": "/Users/admin/Desktop/Datos Riesgo Colombia/01_fuentes/Datos datos.gov.co/raw/sfc_fic_rentabilidad_diaria.metadata.json",
+  "downloaded_utc": "2026-10-11T15:45:42+00:00",
+  "query_window_start": "2018-01-01",
+  "rows": 36900,
+  "first_observation": "2018-01-01",
+  "latest_observation": "2026-10-07",
+  "sha256": "8ba05a76fbb86a5803419673d2c5427b77f42fea7dd96953fcae01bd50813c68",
+  "query": {
+    "$select": "fecha_corte,nombre_tipo_entidad,nombre_subtipo_patrimonio,sum(valor_fondo_cierre_dia_t) as valor_fondos,sum(numero_inversionistas) as inversionistas,sum(rentabilidad_anual*valor_fondo_cierre_dia_t) as rent_anual_por_valor,sum(rentabilidad_mensual*valor_fondo_cierre_dia_t) as rent_mensual_por_valor,sum(aportes_recibidos) as aportes,sum(retiros_redenciones) as retiros,count(*) as registros",
+    "$group": "fecha_corte,nombre_tipo_entidad,nombre_subtipo_patrimonio",
+    "ventana": "fecha_corte",
+    "desde": "2018-01-01"
+  },
+  "file_role": "external query snapshot aggregated by date, entity type and FIC subtype; not unaggregated F-523 rows",
+  "selection": {
+    "entity_type": "SF-SOCIEDAD FIDUCIARIA",
+    "subtype": "FIC DE MERCADO MONETARIO"
+  },
+  "raw_copy_in_product": false
+}

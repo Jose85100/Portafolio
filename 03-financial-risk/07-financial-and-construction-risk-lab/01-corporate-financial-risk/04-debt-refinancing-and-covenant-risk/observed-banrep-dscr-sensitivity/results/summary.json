@@ -1,0 +1,23 @@
+{
+  "source_series": "BanRep 15129, weighted average effective annual rate on commercial preferential/corporate bank lending",
+  "source_file": "01-corporate-financial-risk/03-credit-spread-and-refinancing-risk/observed-banrep-commercial-credit-cost/data/banrep_series_15129_monthly.csv",
+  "source_sha256": "b56f377c08c43df8aa03a255c9ee1c3376d0fe36ae6cbf6a1638b2986876449d",
+  "source_manifest": "01-corporate-financial-risk/03-credit-spread-and-refinancing-risk/observed-banrep-commercial-credit-cost/data/source_manifest.json",
+  "observations": 293,
+  "period_start": "2002-05",
+  "period_end": "2026-09",
+  "latest_observed_rate_pct": 14.13,
+  "hypothetical_principal_cop": 10000000000,
+  "hypothetical_annual_cfads_cop": 2000000000,
+  "debt_service_assumption": "interest-only, annualized principal × observed effective annual rate; excludes principal amortization, fees, taxes, spread, and compounding schedule",
+  "latest_annual_interest_sensitivity_cop": 1413000000.0,
+  "latest_dscr_sensitivity": 1.415428,
+  "historical_rate_median_pct": 9.6,
+  "historical_rate_p90_pct": 14.47,
+  "break_even_rate_pct_for_dscr_1_2": 16.666666666666668,
+  "descriptive_months_below_dscr_threshold": {
+    "1.2": 14,
+    "1.5": 50
+  },
+  "interpretation": "Illustrative sensitivity only. Historical rates are not a forecast, issuer quote, covenant observation, or breach probability."
+}

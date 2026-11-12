@@ -1,6 +1,6 @@
 # Seguridad y pérdida operacional
 
-**Estado:** investigación diseñada; implementación pendiente. **No calibrado ni validado.**
+**Estado:** especificación de modelo pendiente de implementación; incluye un companion de contexto sectorial observado. **No calibrado ni validado.**
 
 ## Pregunta y alcance
 Frecuencia-severidad de eventos HSE y pérdidas operativas. ¿En qué condiciones se materializa el riesgo y qué acciones de mitigación generan valor ajustado por riesgo?
@@ -13,6 +13,8 @@ Especificar unidades, granularidad, horizonte, estados observables/latentes, sup
 
 ## Datos y estimación
 Requeridos según proyecto: ERP y cuentas contables, presupuestos originales y revisados, cronogramas, actas de avance, órdenes de compra, proveedores, ventas y desistimientos, contratos, deuda y covenants, datos geográficos, indicadores públicos DANE/BanRep/Camacol cuando proceda. Registrar disponibilidad histórica, calidad, fechas de observación y permisos de uso. Para series escasas usar regularización o pooling jerárquico y reportar incertidumbre.
+
+Como referencia pública, el [companion Minsalud de seguridad laboral](observed-minsalud-workplace-safety/README.md) compara accidentes sucedidos y afiliaciones-mes por sector en T3 2026. No equivale a resultados HSE por obra ni calibra el modelo de frecuencia-severidad.
 
 ## Validación y experimentación
 Subregistro, zero inflation y EVT. Separación temporal de entrenamiento/prueba, benchmarks simples, backtesting, calibración de probabilidades, sensibilidad, stress y reverse stress. No presentar precisión predictiva hasta medirla con datos reales.

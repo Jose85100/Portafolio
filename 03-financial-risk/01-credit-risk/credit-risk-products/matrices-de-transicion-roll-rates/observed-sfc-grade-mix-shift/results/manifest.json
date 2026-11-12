@@ -1,0 +1,22 @@
+{
+  "source_dataset": "SFC rvii-eis8, Distribución de cartera por producto",
+  "source_url": "https://www.datos.gov.co/en/en/Public-Finance/Distribuci-n-de-cartera-por-producto/rvii-eis8",
+  "source_api_url": "https://www.datos.gov.co/resource/rvii-eis8.csv?$limit=200000",
+  "upstream_raw_sha256": "94e767a38e182ca9a6b0d188eea1617be2afe061ed6841c97e523c6d0168fa2d",
+  "upstream_retrieved_at_utc": "2026-11-11T01:58:12+00:00",
+  "upstream_cutoff": "2026-08-31",
+  "input_file": "sfc_product_risk_grade_mix_monthly.csv",
+  "input_sha256": "45c116db15aac1912ebf17d6fa4ce69ed328a4a3f71be00d440fcf5d0d782690",
+  "input_rows": 4480,
+  "input_products": 32,
+  "input_date_start": "2015-01-31",
+  "input_date_end": "2026-08-31",
+  "output_latest_cut": "2026-08-31",
+  "method": "Same-product difference in published D+E share against the calendar cut 12 months earlier; exact date match required.",
+  "limits": [
+    "Repeated aggregate snapshots do not track the same borrowers or accounts.",
+    "D+E is an SFC risk-grade mix, not a universal default label or delinquency transition.",
+    "Changes combine underlying performance, portfolio composition, reporting coverage, and entity mix.",
+    "This descriptive signal does not estimate or validate a transition matrix or IFRS 9 PD."
+  ]
+}

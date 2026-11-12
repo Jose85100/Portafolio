@@ -2,6 +2,10 @@
 
 **Estado:** investigación diseñada; implementación pendiente. **No calibrado ni validado.**
 
+## Aplicación observada: cambio de precios del IPVN
+
+El companion [observed-dane-ipvn-price-regimes](observed-dane-ipvn-price-regimes/README.md) compara la variación trimestral nacional del IPVN publicada por DANE (2004-I–2026-II). Es una referencia sectorial de precios; no observa absorción ni resultados de obra, y no valida el modelo de regímenes propuesto abajo. La fuente, el hash, la reproducción, la lectura del último trimestre y las limitaciones están documentadas en su ficha.
+
 ## Pregunta y alcance
 Markov switching para precios, inventario y velocidad de ventas. ¿En qué condiciones se materializa el riesgo y qué acciones de mitigación generan valor ajustado por riesgo?
 

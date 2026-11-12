@@ -1,8 +1,12 @@
 # Observed Credit Data & Proxy Registry — Colombia
 
-**Status: ingesta y benchmark ejecutados con datos reales en GitHub Actions run #42148884390. 1.240 filas observadas del ICETEX aceptadas y 68 en cuarentena; 30.000 registros de UCI utilizados para benchmark. No son modelos productivos ni datos persistidos en un warehouse.**
+**Edición observada 2026-11-10:** snapshot público del ICETEX conservado con hash y transformación reproducible. La fuente entregó 1.308 filas; 68 fallaron conciliación. Se excluyó el corte completo 2025-06-30, incluidos tres registros que sí conciliaban, y quedaron 1.237 filas de 18 fechas completas. El benchmark UCI de 30.000 titulares sigue como evidencia individual de Taiwán con target de incumplimiento del siguiente mes; no es una calibración colombiana ni una ECL IFRS 9.
 
-This module introduces observed external aggregate signals alongside synthetic research datasets. **It never relabels aggregate delinquency prevalence as individual PD.**
+This module provides observed public credit data for aggregate monitoring and an individual-level foreign benchmark. **It never relabels aggregate delinquency prevalence as individual PD.**
+
+La [edición de datos públicos 2026-11-10](data/README.md) incluye snapshot bruto, CSV curado, manifiesto SHA-256 y cuarentena. Las figuras ejecutivas se calculan desde el snapshot observado, no desde la cartera simulada del laboratorio IFRS 9.
+
+El [informe observado](reports/2026-11-10-official-observed-evidence.md) presenta cuatro visualizaciones de cortes completos, ponderadas por conteos y denominadores, y documenta la falla del corte 2025-06-30. La serie se limita a cartera educativa ICETEX; no se interpreta como PD ni ECL.
 
 ## Reproducible run (online environment)
 
@@ -39,7 +43,7 @@ Existing locations:
 
 ## Data governance
 
-Downloaded raw datasets remain outside Git, with licenses and attribution checked. No customer PII. UCI Taiwan is CC BY 4.0 (DOI 10.24432/C55S3H). The official source indicator is preserved as a raw field because its scale and balance-denominator differ from the derived >90d count share.
+The frozen public ICETEX aggregate snapshot is versioned under [`data/`](data/README.md), with attribution, last-update date, source hash, exclusions and transformation rules. It contains no loan-level identifiers. UCI Taiwan remains CC BY 4.0 (DOI 10.24432/C55S3H). The official source indicator is preserved as a raw field because its scale and balance denominator differ from the derived >90-day count share.
 
 ## Roadmap
 
@@ -55,4 +59,4 @@ Downloaded raw datasets remain outside Git, with licenses and attribution checke
 
 ## Evidencia validada y señales
 
-[Reporte de la ejecución 2026-11-05](reports/2026-11-05-observed-evidence.md). [GitHub Actions #42148884390](https://github.com/Jose85100/Portafolio/actions/runs/42148884390) completó las tres tareas: pruebas, ingesta ICETEX, entrenamiento UCI. El pipeline produjo 19 periodos y 56 filas de señales ponderadas por número de créditos (por etapa y total). Los artefactos de ejecución son temporales (30 días): preservar snapshots autorizados y sus licencias en un almacenamiento versionado antes del vencimiento.
+[Reporte histórico de la ejecución 2026-11-05](reports/2026-11-05-observed-evidence.md). [GitHub Actions #42148884390](https://github.com/Jose85100/Portafolio/actions/runs/42148884390) completó pruebas, ingesta ICETEX y benchmark UCI. Ese run produjo 19 periodos porque conservó tres filas conciliadas del corte que luego se identificó como incompleto; la versión congelada actual excluye la fecha completa para no presentar un corte parcial.

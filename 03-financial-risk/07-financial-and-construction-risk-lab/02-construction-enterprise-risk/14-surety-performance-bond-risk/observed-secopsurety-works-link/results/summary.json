@@ -1,0 +1,334 @@
+{
+  "purpose": "Administrative linkage coverage only; not proof of enforceable guarantee, claim, payout, recovery, or loss.",
+  "observation_utc": "2026-11-11T19:00:30.611945+00:00",
+  "work_contract_rows": 50154,
+  "unique_work_contract_ids": 50154,
+  "work_contract_rows_missing_id": 0,
+  "guarantee_source_rows": 48949,
+  "guarantee_rows_with_missing_contract_id": 0,
+  "guarantee_rows_linked_to_work_contracts": 4584,
+  "unique_work_contracts_with_any_guarantee_row": 1076,
+  "share_work_contract_ids_with_any_guarantee_row_pct": 2.1454,
+  "unique_work_contracts_with_at_least_one_accepted_status_row": 379,
+  "share_work_contract_ids_with_at_least_one_accepted_status_row_pct": 0.7557,
+  "linked_rows_by_status_and_subtype": [
+    {
+      "status": "Pendiente",
+      "guarantee_subtype": "No Definido",
+      "matched_source_rows": 1872
+    },
+    {
+      "status": "Aceptada",
+      "guarantee_subtype": "No Definido",
+      "matched_source_rows": 1621
+    },
+    {
+      "status": "Expirada",
+      "guarantee_subtype": "No Definido",
+      "matched_source_rows": 590
+    },
+    {
+      "status": "Rechazada",
+      "guarantee_subtype": "No Definido",
+      "matched_source_rows": 298
+    },
+    {
+      "status": "Borrador Listo",
+      "guarantee_subtype": "No Definido",
+      "matched_source_rows": 56
+    },
+    {
+      "status": "Borrador",
+      "guarantee_subtype": "No Definido",
+      "matched_source_rows": 40
+    },
+    {
+      "status": "Aceptada",
+      "guarantee_subtype": "Garantia Bancaria",
+      "matched_source_rows": 36
+    },
+    {
+      "status": "Pendiente",
+      "guarantee_subtype": "Garantia Bancaria",
+      "matched_source_rows": 29
+    },
+    {
+      "status": "Archivada",
+      "guarantee_subtype": "No Definido",
+      "matched_source_rows": 10
+    },
+    {
+      "status": "Pendiente",
+      "guarantee_subtype": "Carta de Credito",
+      "matched_source_rows": 9
+    },
+    {
+      "status": "Rechazada",
+      "guarantee_subtype": "Carta de Credito",
+      "matched_source_rows": 7
+    },
+    {
+      "status": "Borrador Listo",
+      "guarantee_subtype": "Garantia Bancaria",
+      "matched_source_rows": 5
+    },
+    {
+      "status": "Cancelada",
+      "guarantee_subtype": "No Definido",
+      "matched_source_rows": 5
+    },
+    {
+      "status": "Expirada",
+      "guarantee_subtype": "Carta de Credito",
+      "matched_source_rows": 4
+    },
+    {
+      "status": "Aceptada",
+      "guarantee_subtype": "Carta de Credito",
+      "matched_source_rows": 1
+    },
+    {
+      "status": "Expirada",
+      "guarantee_subtype": "Garantia Bancaria",
+      "matched_source_rows": 1
+    }
+  ],
+  "source_manifest": {
+    "contracts": {
+      "api": "https://www.datos.gov.co/resource/jbjy-vk9h.json",
+      "where": "tipo_de_contrato='Obra'",
+      "selected_fields": [
+        "id_contrato"
+      ],
+      "rows_reported_by_count_query": 50154,
+      "rows_received": 50154,
+      "count_query_sha256": "a0bbbeaedebb5f73d6a8467cfceed2ee31ef93af99646002165b3e884fea6f9f",
+      "count_query_headers": {
+        "status": 200,
+        "etag": "W/\"Zm94dHJvdC44NzA0Nl8zNl8yNTIxWW8zYlJtQVRqTnREYVB3dVRIa0hHTTNoWHNj--gziijV7m8IoecjxS7TzIzdIsOCCjKO---gzip\"",
+        "last_modified": "Tue, 10 Nov 2026 07:20:43 GMT"
+      },
+      "pages": [
+        {
+          "offset": 0,
+          "rows": 5000,
+          "bytes": 189861,
+          "sha256": "e71982fbbc523d581fcd2ae3a310bf7e2c4bfb88bc67d994cb99a1ed4489f6c8",
+          "status": 200,
+          "etag": "W/\"Zm94dHJvdC44NzA0Nl8zNl8yNTIxc19pZ1NLUlZCWm52ZEVYODlLaUduVWVoV0dB---gzipVLSu5XmKqc8YzyY39fTPNYX2gV0--gzip--gzip\"",
+          "last_modified": "Tue, 10 Nov 2026 07:20:43 GMT"
+        },
+        {
+          "offset": 5000,
+          "rows": 5000,
+          "bytes": 189816,
+          "sha256": "9fa63e73b0cadecac8ace98975f13cc78b3d2df744ef5f8d38e3559c54d78e1a",
+          "status": 200,
+          "etag": "W/\"Zm94dHJvdC44NzA0Nl8zNl8yNTIxaUNPenBrTVNTdnV6YWEyS2FPY2w0alhRNUFj---gzipijHMwEvOuJVB2wO1dtJSwrpWbS0--gzip--gzip\"",
+          "last_modified": "Tue, 10 Nov 2026 07:20:43 GMT"
+        },
+        {
+          "offset": 10000,
+          "rows": 5000,
+          "bytes": 189877,
+          "sha256": "5f2e319b4f5ca02b254b62480f3f2bed7adfae32717625f7e5a223a86fea37bd",
+          "status": 200,
+          "etag": "W/\"Zm94dHJvdC44NzA0Nl8zNl8yNTIxdHkxd01pek95QW83a2QxN1lsOHVsR1NzY2hz---gzip5uVo6x3xNiuwTgBc99JRshaV1gs--gzip--gzip\"",
+          "last_modified": "Tue, 10 Nov 2026 07:20:43 GMT"
+        },
+        {
+          "offset": 15000,
+          "rows": 5000,
+          "bytes": 189826,
+          "sha256": "d04c96dddeae7be3e4fcc186b2ddc4162bbb206c3b71f7918389df54293a057e",
+          "status": 200,
+          "etag": "W/\"Zm94dHJvdC44NzA0Nl8zNl8yNTIxNWVKMlBHXzlkM0FuQnR2QlQydWY0eV9WcXB3---gziplF5BasT-KoelSmrvaJSC9nu_iMc--gzip--gzip\"",
+          "last_modified": "Tue, 10 Nov 2026 07:20:43 GMT"
+        },
+        {
+          "offset": 20000,
+          "rows": 5000,
+          "bytes": 189845,
+          "sha256": "4bb65cc9ea443ff52df08694442df0d015a65d077e7c80a899f8b317e3e6aec2",
+          "status": 200,
+          "etag": "W/\"Zm94dHJvdC44NzA0Nl8zNl8yNTIxcGRhT0ZuU0xoaTYzZU5FUDE1ZTRWQ1NZeUZZ---gzips1eV4vX4xLyTz68w6qzotEvZrrg--gzip--gzip\"",
+          "last_modified": "Tue, 10 Nov 2026 07:20:43 GMT"
+        },
+        {
+          "offset": 25000,
+          "rows": 5000,
+          "bytes": 189849,
+          "sha256": "307652815d519bf5749fb3a8f603f99f51f87db087dad05dc6e97491a596c8c8",
+          "status": 200,
+          "etag": "W/\"Zm94dHJvdC44NzA0Nl8zNl8yNTIxMHhrQzVfS24tMm9iRlNPV1BiVlpxeVNtcGkw---gzipZOmONOwSnuO_Kd2i7TAIPm2MAR0--gzip--gzip\"",
+          "last_modified": "Tue, 10 Nov 2026 07:20:43 GMT"
+        },
+        {
+          "offset": 30000,
+          "rows": 5000,
+          "bytes": 189883,
+          "sha256": "d82e8b937af1c1a275a0bf56cf5935040e3777d6616078201a386146307a15e4",
+          "status": 200,
+          "etag": "W/\"Zm94dHJvdC44NzA0Nl8zNl8yNTIxamZEaW1uTUg1OFVNVk90T3NVcm1Fejd1TzJz---gzip3-sN4QklTyHs5Bf1FplR6qsg6wo--gzip--gzip\"",
+          "last_modified": "Tue, 10 Nov 2026 07:20:43 GMT"
+        },
+        {
+          "offset": 35000,
+          "rows": 5000,
+          "bytes": 189828,
+          "sha256": "cd3de306400e0133817271955e10152ad80b0d60ded698ad21f7407d50ee8baa",
+          "status": 200,
+          "etag": "W/\"Zm94dHJvdC44NzA0Nl8zNl8yNTIxT3VrOWJSQTRnRTM2aUtvVEdGeVNmSnBQRUh3---gzipFiy421s0LWfCkLoLgsYds2Y_Hjo--gzip--gzip\"",
+          "last_modified": "Tue, 10 Nov 2026 07:20:43 GMT"
+        },
+        {
+          "offset": 40000,
+          "rows": 5000,
+          "bytes": 189819,
+          "sha256": "626490afeaab1bbb420644fab8c1b5cbd797601ac5264467d2304f92d3705ebc",
+          "status": 200,
+          "etag": "W/\"Zm94dHJvdC44NzA0Nl8zNl8yNTIxN1BxZDluX3ZCbzVPejJFci0zaTVfVFJFTUNB---gzipVG5ibcuO5zaFO1Rco00oBCDEO3M--gzip--gzip\"",
+          "last_modified": "Tue, 10 Nov 2026 07:20:43 GMT"
+        },
+        {
+          "offset": 45000,
+          "rows": 5000,
+          "bytes": 189848,
+          "sha256": "4411534c4b97d1ea8c4f68de32f5e906b4a29fd28fa3bfc33b7acfde7b55ee04",
+          "status": 200,
+          "etag": "W/\"Zm94dHJvdC44NzA0Nl8zNl8yNTIxLTJNR1gyN3ltUnlkWU01aVBIUENXTEVJM1ZR---gzipnOPv-Tl7NwfEIJ4cgplLoq287Vs--gzip--gzip\"",
+          "last_modified": "Tue, 10 Nov 2026 07:20:43 GMT"
+        },
+        {
+          "offset": 50000,
+          "rows": 154,
+          "bytes": 5852,
+          "sha256": "7c90df31fa726556c07d49448dd29ccc6b4658e91de8a857543d5f81c531a8cc",
+          "status": 200,
+          "etag": "W/\"Zm94dHJvdC44NzA0Nl8zNl8yNTIxNWJpV3ZzU2U0cWxkVFU4UDRLaEJXeFFjWE1V---gzipAjos3U_mPsWtcdPzpnhKUfQIS5A--gzip--gzip\"",
+          "last_modified": "Tue, 10 Nov 2026 07:20:43 GMT"
+        }
+      ],
+      "combined_page_bytes_sha256": "2ad61d71eecedee7f63f1748022aeb866b3c18d03e8ef59076df88e90882f947"
+    },
+    "guarantees": {
+      "api": "https://www.datos.gov.co/resource/gjp9-cutm.json",
+      "where": null,
+      "selected_fields": [
+        "id_contrato",
+        "tipopoliza",
+        "subtipopoliza",
+        "estado"
+      ],
+      "rows_reported_by_count_query": 48949,
+      "rows_received": 48949,
+      "count_query_sha256": "5594f0b0b6ad7c92c4bafef232af350d165869aa8e081d10fe472f51c7f2639d",
+      "count_query_headers": {
+        "status": 200,
+        "etag": "W/\"Z29sZi40MTkxMl8yXzY4NldyenRfU2wwOFJnVmFsYUlFbU1CbXh0cU93Yw-GXgHM92M_9_tOuVizbE7Ady46mw--gzip--gzip\"",
+        "last_modified": "Tue, 27 Oct 2026 09:13:58 GMT"
+      },
+      "pages": [
+        {
+          "offset": 0,
+          "rows": 5000,
+          "bytes": 612287,
+          "sha256": "8cc510f22457ae3f9bb1eea15082e3cfc30ed6e98218bcd24cc1c84b59ba2382",
+          "status": 200,
+          "etag": "W/\"Z29sZi40MTkxMl8yXzY4NnZtalZUVTA4UHNXQ2pqVGl0ZEw0RlkwZHdvSQ---gzipuGxhV61pIqJbej_bLikYugV9-h--gzip--gzip\"",
+          "last_modified": "Tue, 27 Oct 2026 09:13:58 GMT"
+        },
+        {
+          "offset": 5000,
+          "rows": 5000,
+          "bytes": 612170,
+          "sha256": "7bd38e4c16f4cac11e4eea0c07aa1a70a5e616bf6fd632b6381d870ca49fe991",
+          "status": 200,
+          "etag": "W/\"Z29sZi40MTkxMl8yXzY4NnJTdy1CZGVicnVhN21HQUJGTUtvNEZMOEpBVQ---gzioZ_GToqsSmA7YSfLjqwWPK0cOl8--gzip--gzip\"",
+          "last_modified": "Tue, 27 Oct 2026 09:13:58 GMT"
+        },
+        {
+          "offset": 10000,
+          "rows": 5000,
+          "bytes": 612051,
+          "sha256": "3091341783f645d3d429f133804a9e92beb0dfac319ec9e1b36b20fdd1015b60",
+          "status": 200,
+          "etag": "W/\"Z29sZi40MTkxMl8yXzY4Nkl5enZPa21xSHA3WDd0RmRkV1ZkNE55SkxDOA---gzimIosyT2wHG4Mctc9dqqFg6QCKkk--gzip--gzip\"",
+          "last_modified": "Tue, 27 Oct 2026 09:13:58 GMT"
+        },
+        {
+          "offset": 15000,
+          "rows": 5000,
+          "bytes": 612219,
+          "sha256": "44f10c95c955bc7ff1e79ec232b0dce13703bbad95853aaac1bb48eeecb5edc0",
+          "status": 200,
+          "etag": "W/\"Z29sZi40MTkxMl8yXzY4NkRManBOWVcyODd6NjdTS1VVOWZKcWtyWGJpUQ---gzijxFo0__VyBtjxYhU6tbFIh9APLD--gzip--gzip\"",
+          "last_modified": "Tue, 27 Oct 2026 09:13:58 GMT"
+        },
+        {
+          "offset": 20000,
+          "rows": 5000,
+          "bytes": 612203,
+          "sha256": "d68e0efe9e5a86babf672ba4801725001c9d389574dd2d5dbb141cb48e6f7a0d",
+          "status": 200,
+          "etag": "W/\"Z29sZi40MTkxMl8yXzY4NjZKZFY5Vjk3VEtrWkRhcVNGaTFEaXVhd3Nocw---gzim26uxActcg2L-_Tx435Jz7tvB9W--gzip--gzip\"",
+          "last_modified": "Tue, 27 Oct 2026 09:13:58 GMT"
+        },
+        {
+          "offset": 25000,
+          "rows": 5000,
+          "bytes": 612321,
+          "sha256": "2ace3a7c83355fece4642905ec9cdb43d4993d18d6c18facc0b75795ea27d777",
+          "status": 200,
+          "etag": "W/\"Z29sZi40MTkxMl8yXzY4NnRrUnB4TC1mQUVWcUs0aDZENEoyNnM1amJEVQ---gzinhTKwXoNtq5VwSTqSo6Cr2gch0I--gzip--gzip\"",
+          "last_modified": "Tue, 27 Oct 2026 09:13:58 GMT"
+        },
+        {
+          "offset": 30000,
+          "rows": 5000,
+          "bytes": 615297,
+          "sha256": "ff02a7ef5ad1bb3a3839dc117d018d04750a32baa509213a32bdad52a3ec23cb",
+          "status": 200,
+          "etag": "W/\"Z29sZi40MTkxMl8yXzY4Nm5FakxQcUstbFlhbXA0TGpSb0dCT3NLblJ0dw---gziqYm4PKkZdE685h8f148fK4rgkFO--gzip--gzip\"",
+          "last_modified": "Tue, 27 Oct 2026 09:13:58 GMT"
+        },
+        {
+          "offset": 35000,
+          "rows": 5000,
+          "bytes": 616832,
+          "sha256": "fd574fc3d1005858601f1e01896134e53826815c42f8ce0198fcefeaec9960cb",
+          "status": 200,
+          "etag": "W/\"Z29sZi40MTkxMl8yXzY4NkNieGRwN3FXYzdfME1qQkxyeVJ3VGFtVElHZw---gzirp8BDz4tKrmDN5XoZdtwFXnqb1p--gzip--gzip\"",
+          "last_modified": "Tue, 27 Oct 2026 09:13:58 GMT"
+        },
+        {
+          "offset": 40000,
+          "rows": 5000,
+          "bytes": 616747,
+          "sha256": "8de656ca72d5305dcc371721eaa2f41654245ae96cc19d15a7e5d08bf4b83fc9",
+          "status": 200,
+          "etag": "W/\"Z29sZi40MTkxMl8yXzY4Nnp5dXBDRGRZX0NzVTg3SmUwTTItLVlZc1c2Yw---gzigRmVqWlZQ31c097jx8Xu9wD44y---gzip--gzip\"",
+          "last_modified": "Tue, 27 Oct 2026 09:13:58 GMT"
+        },
+        {
+          "offset": 45000,
+          "rows": 3949,
+          "bytes": 487008,
+          "sha256": "8eea5efcba3aa13ff2a8a9030ba7fdcece6b31853fcdc73f2492f981a9f706f0",
+          "status": 200,
+          "etag": "W/\"Z29sZi40MTkxMl8yXzY4NjM5Q1VqUnRKQTBxVnI3NnFEVkxiQjNseUVQdw---gzih69hPR3h8432SVUW3KyD-E-iEPN--gzip--gzip\"",
+          "last_modified": "Tue, 27 Oct 2026 09:13:58 GMT"
+        }
+      ],
+      "combined_page_bytes_sha256": "570fe0444bd78d07fa93c6d72b817f961d4e0de355cfab0df28ceb1d17d63c35"
+    }
+  },
+  "limitations": [
+    "The guarantee endpoint includes multiple instrument subtypes; not every row is a performance bond or works guarantee.",
+    "There is no stable policy/version key in the selected fields; source rows can include revisions or multiple guarantees per contract.",
+    "An accepted administrative status does not establish legal sufficiency, current validity, covered obligation, claim, payout, or recovery.",
+    "No work-level contract outcomes, construction completion, contractor default, claim, paid loss, or recovery data are included.",
+    "The endpoints are mutable; row counts and match rates describe this extraction vintage only.",
+    "IDs are processed in memory and never written to repository outputs; no policy numbers, personal names, beneficiaries, or insurer names are requested."
+  ]
+}

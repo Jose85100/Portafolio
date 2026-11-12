@@ -1,0 +1,26 @@
+{
+  "source_name": "Superintendencia Financiera de Colombia, Distribución de cartera por producto",
+  "dataset_id": "rvii-eis8",
+  "dataset_url": "https://www.datos.gov.co/en/en/Public-Finance/Distribuci-n-de-cartera-por-producto/rvii-eis8",
+  "metadata_url": "https://www.datos.gov.co/api/views/rvii-eis8.json",
+  "source_description": "Monthly balance by reporting entity, product, delinquency age and risk grade.",
+  "source_snapshot_latest_cut": "2026-08-31",
+  "source_snapshot_retrieved_utc": "2026-11-11T01:58:12+00:00",
+  "source_raw_sha256": "94e767a38e182ca9a6b0d188eea1617be2afe061ed6841c97e523c6d0168fa2d",
+  "source_raw_rows": 112602,
+  "reused_derived_input_path": "03-financial-risk/01-credit-risk/credit-risk-products/perdida-esperada-pd-lgd-ead/observed-sfc-product-risk-mix/data/processed/sfc_product_risk_grade_mix_monthly.csv",
+  "reused_derived_input_sha256": "45c116db15aac1912ebf17d6fa4ce69ed328a4a3f71be00d440fcf5d0d782690",
+  "reused_derived_input_rows": 4480,
+  "reused_derived_input_grain": "month × SFC product code; balances summed across reporting entities from product-total lines",
+  "selection": {
+    "product_code": 1,
+    "product_name": "CRÉDITO ROTATIVO",
+    "baseline_period": ["2018-01-31", "2019-12-31"],
+    "comparison_period": ["2024-09-30", "2026-08-31"],
+    "months_per_period": 24,
+    "rating_grade_columns": ["saldo_A", "saldo_B", "saldo_C", "saldo_D", "saldo_E"],
+    "minimum_rated_balance_coverage_pct": 95.0
+  },
+  "raw_source_copied_into_this_companion": false,
+  "derived_input_copied_into_this_companion": false
+}

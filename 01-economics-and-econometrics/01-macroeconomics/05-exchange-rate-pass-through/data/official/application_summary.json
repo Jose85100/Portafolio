@@ -1,0 +1,183 @@
+{
+  "data_source": "DANE monthly chained CPI index and Banco de la República daily TRM SDMX snapshot",
+  "data_vintage": "DANE October 2026 release; BanRep SDMX extract prepared 2026-11-10",
+  "source_files": [
+    {
+      "file": "dane-ipc-empalme-2003-oct2026.xlsx",
+      "sha256": "4e8366bf2d03d4bdc15d14b1b21b12a6eec6c3695926abd503a430858ef74e2e",
+      "raw_bytes": 40540,
+      "monthly_observations": 286,
+      "first_month": "2003-01",
+      "last_month": "2026-10",
+      "sheet": "IndicesIPC",
+      "base": "December 2018 = 100",
+      "vintage": "October 2026 release"
+    },
+    {
+      "file": "banrep-trm-daily-2003-2026-11-10.xml",
+      "sha256": "a266cbff71efbe48756773670b33e481973d193d239f67b403a5f541408db323",
+      "raw_bytes": 1580305,
+      "daily_observations": 8401,
+      "first_day": "20030101",
+      "last_day": "20251231",
+      "monthly_periods": 276,
+      "series_id": "DF_TRM_DAILY_HIST",
+      "frequency": "D"
+    }
+  ],
+  "transformations": {
+    "cpi": "100*log(IPC_t/IPC_(t-1)); DANE chained index, December 2018=100",
+    "fx": "100*log(monthly mean TRM_t/monthly mean TRM_(t-1)); COP per USD",
+    "monthly_mean": "arithmetic mean of daily official TRM observations within month"
+  },
+  "observations_in_regression": 272,
+  "regression_start": "2003-05",
+  "regression_end": "2025-12",
+  "r_squared": 0.4947249621324672,
+  "method": "OLS, Newey-West HAC maxlags=6; month-of-year fixed effects and linear time trend",
+  "specification": "monthly CPI log change = current plus 3 lagged monthly log TRM changes + month effects + linear trend + error",
+  "coefficients": {
+    "intercept_pp": {
+      "estimate": 0.7352480675288751,
+      "hac_se": 0.07223147880194118,
+      "pvalue": 2.4594254225550485e-24,
+      "ci95_low": 0.593676970527002,
+      "ci95_high": 0.8768191645307482
+    },
+    "current_devaluation": {
+      "estimate": 0.00018394744395521098,
+      "hac_se": 0.004822815954137452,
+      "pvalue": 0.9695751922636261,
+      "ci95_low": -0.009268598130219371,
+      "ci95_high": 0.009636493018129794
+    },
+    "lag1_devaluation": {
+      "estimate": 0.008700879592987166,
+      "hac_se": 0.004616971205087394,
+      "pvalue": 0.059491598450224066,
+      "ci95_low": -0.0003482176866426174,
+      "ci95_high": 0.01774997687261695
+    },
+    "lag2_devaluation": {
+      "estimate": 0.004885118605970636,
+      "hac_se": 0.006212463667399582,
+      "pvalue": 0.431667388555694,
+      "ci95_low": -0.007291086437396167,
+      "ci95_high": 0.017061323649337438
+    },
+    "lag3_devaluation": {
+      "estimate": 0.0023438954277382263,
+      "hac_se": 0.006457784735153088,
+      "pvalue": 0.7166373237317833,
+      "ci95_low": -0.01031313007307436,
+      "ci95_high": 0.01500092092855081
+    },
+    "linear_trend_per_decade": {
+      "estimate": 0.06747714195492806,
+      "hac_se": 0.0480272319693511,
+      "pvalue": 0.16002820647934568,
+      "ci95_low": -0.0266545029821508,
+      "ci95_high": 0.16160878689200692
+    },
+    "month_02": {
+      "estimate": 0.14634527103451422,
+      "hac_se": 0.053994154736023814,
+      "pvalue": 0.006720393329158057,
+      "ci95_low": 0.040518672376224765,
+      "ci95_high": 0.2521718696928037
+    },
+    "month_03": {
+      "estimate": -0.21054971015335763,
+      "hac_se": 0.07304497395251072,
+      "pvalue": 0.00394574751286967,
+      "ci95_low": -0.353715228351945,
+      "ci95_high": -0.06738419195477025
+    },
+    "month_04": {
+      "estimate": -0.3067912726838762,
+      "hac_se": 0.07446251013068504,
+      "pvalue": 3.7874586255029206e-05,
+      "ci95_low": -0.4527351107384678,
+      "ci95_high": -0.16084743462928458
+    },
+    "month_05": {
+      "estimate": -0.43116709241860857,
+      "hac_se": 0.08931318405335556,
+      "pvalue": 1.3819789476029492e-06,
+      "ci95_low": -0.6062177165077826,
+      "ci95_high": -0.2561164683294346
+    },
+    "month_06": {
+      "estimate": -0.593184648040136,
+      "hac_se": 0.08524995886795138,
+      "pvalue": 3.446940743501168e-12,
+      "ci95_low": -0.7602714971048418,
+      "ci95_high": -0.4260977989754303
+    },
+    "month_07": {
+      "estimate": -0.6283884155828364,
+      "hac_se": 0.08043285802891438,
+      "pvalue": 5.602752338283143e-15,
+      "ci95_low": -0.7860339204931319,
+      "ci95_high": -0.4707429106725409
+    },
+    "month_08": {
+      "estimate": -0.6357253847130973,
+      "hac_se": 0.08537456818564988,
+      "pvalue": 9.598809840553723e-14,
+      "ci95_low": -0.8030564635526302,
+      "ci95_high": -0.46839430587356434
+    },
+    "month_09": {
+      "estimate": -0.5731901777861934,
+      "hac_se": 0.08092857597610696,
+      "pvalue": 1.4140589762428414e-12,
+      "ci95_low": -0.7318072720194765,
+      "ci95_high": -0.41457308355291034
+    },
+    "month_10": {
+      "estimate": -0.7211985380373778,
+      "hac_se": 0.07918533907470834,
+      "pvalue": 8.412508136069614e-20,
+      "ci95_low": -0.8763989507273984,
+      "ci95_high": -0.5659981253473572
+    },
+    "month_11": {
+      "estimate": -0.618059743986787,
+      "hac_se": 0.061964684697021724,
+      "pvalue": 1.973161280322382e-23,
+      "ci95_low": -0.7395082943063298,
+      "ci95_high": -0.49661119366724416
+    },
+    "month_12": {
+      "estimate": -0.4223904045930073,
+      "hac_se": 0.05266408286345216,
+      "pvalue": 1.0534607025953934e-15,
+      "ci95_low": -0.5256101102842066,
+      "ci95_high": -0.31917069890180805
+    }
+  },
+  "four_month_sum_current_and_lags": {
+    "estimate": 0.01611384107065124,
+    "hac_se": 0.0160006642218435,
+    "ci95_low": -0.015247460804162019,
+    "ci95_high": 0.047475142945464496
+  },
+  "sensitivity_without_linear_trend": {
+    "r_squared": 0.4813563751732033,
+    "four_month_sum_current_and_lags": {
+      "estimate": 0.019963384836983122,
+      "hac_se": 0.018013646414349615,
+      "ci95_low": -0.015343362135142119,
+      "ci95_high": 0.055270131809108364
+    }
+  },
+  "interpretation": "conditional monthly association in a distributed-lag regression; not causal identification",
+  "limitations": [
+    "DANE chained index spans methodological base changes; the published series is an official link series, not a constant basket throughout the full sample",
+    "TRM is a reference rate, not an importer-specific transaction price; monthly averaging suppresses within-month timing",
+    "monthly regressions do not identify exogenous exchange-rate shocks; omitted costs, expectations, demand, administered prices and monetary responses remain",
+    "HAC standard errors address covariance dependence under assumptions, not endogeneity or structural breaks",
+    "current-vintage historical data do not reproduce the information set available to decision makers at each date"
+  ]
+}

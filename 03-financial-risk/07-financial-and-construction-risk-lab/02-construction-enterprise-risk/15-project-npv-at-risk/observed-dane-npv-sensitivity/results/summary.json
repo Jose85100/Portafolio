@@ -1,0 +1,84 @@
+{
+  "purpose": "Descriptive historical-factor sensitivity for a hypothetical project; not a forecast, loss distribution, or project validation.",
+  "historical_windows": 11,
+  "window_horizon_quarters": 8,
+  "window_coverage": [
+    "2022Q1",
+    "2026Q2"
+  ],
+  "latest_observed_window": {
+    "window_start": "2024Q3",
+    "window_end": "2026Q2",
+    "revenue_price_change_pct": 19.7007,
+    "concrete_index_change_pct": 2.2344,
+    "nominal_sale_proceeds_cop_bn": 53.8653,
+    "pv_costs_cop_bn": 35.573,
+    "pv_sale_proceeds_cop_bn": 42.9411,
+    "npv_cop_bn": 7.3681
+  },
+  "illustrative_project_assumptions": {
+    "base_sale_proceeds_at_quarter_8_cop_bn": 45.0,
+    "nonmaterial_cost_per_quarter_cop_bn": 2.0,
+    "concrete_cost_tranche_per_quarter_cop_bn": 3.0,
+    "discount_rate_effective_annual": 0.12,
+    "discount_rate_is_assumption_not_observed_wacc": true
+  },
+  "base_npv_no_price_shocks_cop_bn": 0.587562,
+  "historical_window_npv_min_median_max_cop_bn": [
+    5.153923,
+    7.236689,
+    8.224094
+  ],
+  "lowest_modeled_npv_window": {
+    "window_start": "2022Q4",
+    "window_end": "2024Q3",
+    "revenue_price_change_pct": 22.6657,
+    "concrete_index_change_pct": 22.716,
+    "nominal_sale_proceeds_cop_bn": 55.1996,
+    "pv_costs_cop_bn": 38.8508,
+    "pv_sale_proceeds_cop_bn": 44.0048,
+    "npv_cop_bn": 5.1539
+  },
+  "highest_modeled_npv_window": {
+    "window_start": "2023Q2",
+    "window_end": "2025Q1",
+    "revenue_price_change_pct": 23.1528,
+    "concrete_index_change_pct": 7.1959,
+    "nominal_sale_proceeds_cop_bn": 55.4187,
+    "pv_costs_cop_bn": 35.9554,
+    "pv_sale_proceeds_cop_bn": 44.1795,
+    "npv_cop_bn": 8.2241
+  },
+  "input_sha256": {
+    "ipvn": "5bcc2c7cce6a1f51a4a05069497a75ab794937fa9ac5922b22da4f081574cb8c",
+    "icoced": "b2e0b7bb52b8b7b588bc7c0bafefc4e54510906694da34a35b3c692de85a4daa"
+  },
+  "upstream_source_sha256": {
+    "dane_icoced_xlsx": "c858c33819bbc2fc6db3e80aa971be07991e06aa2914330f7ae0da95e4d1b63b",
+    "dane_ipvn_xlsx": "acde19eaf0108b0046c0df926c5047194cb7c2145177f3de45d5738d6fd4b3db"
+  },
+  "quality": {
+    "common_complete_quarters": [
+      "2022Q1",
+      "2022Q2",
+      "2022Q3",
+      "2022Q4",
+      "2023Q1",
+      "2023Q2",
+      "2023Q3",
+      "2023Q4",
+      "2024Q1",
+      "2024Q2",
+      "2024Q3",
+      "2024Q4",
+      "2025Q1",
+      "2025Q2",
+      "2025Q3",
+      "2025Q4",
+      "2026Q1",
+      "2026Q2"
+    ],
+    "observed_windows_are_overlapping_descriptive_scenarios": true,
+    "probability_or_var_estimated": false
+  }
+}

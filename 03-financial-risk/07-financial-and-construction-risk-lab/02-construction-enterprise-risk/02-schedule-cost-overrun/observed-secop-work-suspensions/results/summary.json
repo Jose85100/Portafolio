@@ -1,0 +1,67 @@
+{
+  "cutoff": "2026-11-11",
+  "counts_by_year_and_type": [
+    {
+      "approval_year": 2020,
+      "event_type": "Reanudacion",
+      "reported_rows": 6582
+    },
+    {
+      "approval_year": 2020,
+      "event_type": "Suspension",
+      "reported_rows": 8385
+    },
+    {
+      "approval_year": 2021,
+      "event_type": "Reanudacion",
+      "reported_rows": 9291
+    },
+    {
+      "approval_year": 2021,
+      "event_type": "Suspension",
+      "reported_rows": 10987
+    },
+    {
+      "approval_year": 2022,
+      "event_type": "Reanudacion",
+      "reported_rows": 18260
+    },
+    {
+      "approval_year": 2022,
+      "event_type": "Suspension",
+      "reported_rows": 21290
+    },
+    {
+      "approval_year": 2023,
+      "event_type": "Reanudacion",
+      "reported_rows": 39672
+    },
+    {
+      "approval_year": 2023,
+      "event_type": "Suspension",
+      "reported_rows": 48001
+    },
+    {
+      "approval_year": 2024,
+      "event_type": "Reanudacion",
+      "reported_rows": 36696
+    },
+    {
+      "approval_year": 2024,
+      "event_type": "Suspension",
+      "reported_rows": 40683
+    },
+    {
+      "approval_year": 2025,
+      "event_type": "Reanudacion",
+      "reported_rows": 34199
+    },
+    {
+      "approval_year": 2025,
+      "event_type": "Suspension",
+      "reported_rows": 40391
+    }
+  ],
+  "total_reported_rows": 314437,
+  "warning": "Raw source rows may duplicate contract events. Dataset is not filtered to public works, so no construction-only rate, suspension duration, delay or loss is estimated."
+}

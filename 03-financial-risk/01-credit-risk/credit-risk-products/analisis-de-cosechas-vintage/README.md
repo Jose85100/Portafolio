@@ -12,6 +12,10 @@ El grano analítico es **cuenta–mes desde originación**, con `vintage_id`, `o
 
 Datos **sintéticos** generados con semilla fija (`numpy.random.default_rng`). No hay datos de clientes, de empresas ni confidenciales. Los resultados son **ilustrativos del método**, no evidencia de desempeño real.
 
+## Evidencia observada y brecha
+
+La auditoría de fuentes públicas confirma que no hay aquí datos con cuenta persistente, originación y seguimiento de default para construir cosechas observadas. La [ficha de brecha](DATA_GAP.md) especifica qué campos y controles se necesitan. La companion SFC de saldos por producto es contexto agregado; no valida curvas de vintage.
+
 ## Cómo ejecutar
 
 ```bash

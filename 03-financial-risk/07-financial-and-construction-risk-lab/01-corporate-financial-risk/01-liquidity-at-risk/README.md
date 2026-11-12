@@ -20,3 +20,7 @@ Backtesting de déficits, sensibilidad de correlación, escenarios de refinancia
 
 ## Entregables previstos
 Dataset versionado, diccionario de variables, metodología reproducible, motor Python, tests unitarios, validación out-of-time, escenarios y reporte ejecutivo con límites.
+
+## Evidence gap
+
+An official, descriptive current-ratio proxy for the matched 2024 top-1,000-company cohort is available in [the Supersociedades companion](observed-supersociedades-current-ratio/README.md). It improves sector-level balance-sheet context but does not measure the target cash shortfall distribution. No observed account-level shortfall outcomes, dated receipts/payments, or committed-liquidity panel are available. Residual requirements are in [DATA_GAP.md](DATA_GAP.md).

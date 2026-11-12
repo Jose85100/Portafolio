@@ -26,3 +26,7 @@ Correlación de shocks comunes y tail dependence. Separación temporal de entren
 
 ## Productos esperados
 Metodología, código, pruebas, escenarios, reporte de validación y dashboard de decisiones.
+
+## Aplicación observada acotada
+
+El companion [concentración descriptiva de proyectos SGR](observed-dnp-sgr-project-concentration/README.md) calcula participaciones de `ValorTotal` por sector, departamento con asignación única y entidad ejecutora, deduplicando por BPIN. Describe concentración en el universo público DNP/SGR y su calidad de registro; no mide contratistas, dependencia, pérdidas ni la exposición de un portafolio institucional.

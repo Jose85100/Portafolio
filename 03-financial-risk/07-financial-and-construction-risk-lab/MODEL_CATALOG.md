@@ -12,9 +12,9 @@ No empirical calibration, out-of-time validation, or independent model review ha
 Run from repository root:
 
 ```bash
-python -m unittest discover -s 03-financial-risk/07-financial-and-construction-risk-lab/python/tests -p 'test_*.py' -v
+python -m unittest discover -s 03-financial-risk/07-financial-and-construction-risk-lab/04-modelos-compartidos/python/tests -p 'test_*.py' -v
 python -m unittest discover -s 03-financial-risk/07-financial-and-construction-risk-lab/02-construction-enterprise-risk/01-project-cashflow-at-risk/tests -p 'test_*.py' -v
-cmake -S 03-financial-risk/07-financial-and-construction-risk-lab/cpp -B build/construction-risk
+cmake -S 03-financial-risk/07-financial-and-construction-risk-lab/04-modelos-compartidos/cpp -B build/construction-risk
 cmake --build build/construction-risk
 ctest --test-dir build/construction-risk --output-on-failure
 ```

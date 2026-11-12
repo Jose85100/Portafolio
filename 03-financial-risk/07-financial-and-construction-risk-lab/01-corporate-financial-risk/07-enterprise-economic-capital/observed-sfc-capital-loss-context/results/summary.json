@@ -1,0 +1,36 @@
+{
+  "purpose": "Official aggregate context for regulatory solvency and accounting impairment; not an economic-capital estimate.",
+  "scope": "Credit institutions excluding IOEs; solvency is aggregated from complete entity records, P&L is SFC's 'Todos los EC sin IOEs' series.",
+  "period": [
+    "2021-03",
+    "2026-06"
+  ],
+  "quarters": 22,
+  "latest": {
+    "period": "2026-06",
+    "weighted_aggregate_total_solvency_pct": 17.1562161064,
+    "technical_capital_cop_trillions": 132.75307764096908,
+    "net_impairment_expense_ytd_cop_trillions": 7.986458173644,
+    "net_impairment_expense_quarter_cop_trillions": 3.9783910913799994,
+    "net_profit_ytd_cop_trillions": 10.18370858959,
+    "entities_with_complete_components": 57
+  },
+  "independent_cross_check": {
+    "period": "2024-09",
+    "computed_aggregate_solvency_pct": 18.6493151872,
+    "BanRep_published_aggregate_solvency_pct_rounded": 18.6
+  },
+  "source_sha256": {
+    "sfc_solvency_api_response_ephemeral_hash": "4da1af109c5f6f767dda5d015fd12ef1825c4dc28ef9ade07bdb46c1e00dd205",
+    "sfc_solvency_aggregate_snapshot": "9b7360ba104dd336df12a2f06a49f4625c2f545c6f59a2abb60949ac5d25143b",
+    "sfc_pnl_extracted_csv": "747a5de7bf8df97883f963b4f8bd20bb5e8e3b4a3cecf77ec34429b0ddea0e1f",
+    "sfc_pnl_source_workbook": "7f74655b7cff09c00f1d00b6fe56ed562ea167d3b2b5467781e1df35ee678133"
+  },
+  "limitations": [
+    "Net impairment expense is an accounting flow proxy net of recoveries, not a realized tail-loss distribution.",
+    "Solvency is a regulatory capital ratio; it does not identify expected loss, unexpected loss, VaR, or risk dependence.",
+    "No corporate/institutional exposure and loss-factor panel is observed; no portfolio-specific economic capital is inferred.",
+    "The SFC P&L snapshot is monthly year-to-date; this comparison selects quarter-end cumulative amounts and does not difference them into quarterly loss events.",
+    "Entities lacking one or more required capital components are excluded from that quarter's weighted ratio; counts are included in the output."
+  ]
+}

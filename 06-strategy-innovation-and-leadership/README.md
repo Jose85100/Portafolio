@@ -51,6 +51,7 @@ Dos colecciones de cinco notebooks extensos cada una, con datos sintéticos de v
 ## Executive fintech leadership: ampliación 2026
 
 - [Seis programas de investigación ejecutiva, proyectos 16–21](EXECUTIVE_PROGRAM_INDEX.md): Head Credit Risk, VP Risk/CRO, CFO, CEO, innovación y gobierno.
+- [Credit Portfolio Steering Leadership](16-credit-portfolio-steering-leadership/): conserva su motor S1 en diseño y agrega un companion de datos agregados ICETEX para priorizar revisión humana de cartera educativa; no valida crédito MCA/digital ni estima PD.
 - [Sistema continuo de aprendizaje y matriz de evidencia](EXECUTIVE_LEARNING_SYSTEM.md).
 - Los 15 motores existentes tienen un nuevo protocolo individual de investigación, validación, escenarios y decisión ejecutiva en `docs/EXECUTIVE_RESEARCH_AND_VALIDATION.md`.
 - **Madurez:** 01–15 conservan sus prototipos existentes; 16–21 son diseños S1, no implementaciones ni resultados empíricos validados.
@@ -58,7 +59,7 @@ Dos colecciones de cinco notebooks extensos cada una, con datos sintéticos de v
 
 ## Notebook de la revisión semanal
 
-[Experimentos ejecutados](weekly-decision-audit.ipynb): Sensibilidad y fronteras de decisión de los 15 motores, con inputs sintéticos nuevos y restricciones verificadas.
+[Experimentos ejecutados](auditoria-de-decisiones-ejecutivas/): Sensibilidad y fronteras de decisión de los 15 motores, con inputs sintéticos nuevos y restricciones verificadas.
 
 ## Finanzas corporativas, FP&A y evidencia de decisiones
 

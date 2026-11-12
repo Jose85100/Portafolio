@@ -1,0 +1,31 @@
+{
+  "source": "https://www.dane.gov.co/files/operaciones/ELIC/anex-ELIC-SerieTipoBaseMun-ago2026.xlsx",
+  "sha256": "da11bbfcdeafa05c8f16c81c09d351582e20680aef90b4a9e8bd8aa2394e4943",
+  "vintage": "DANE ELIC, August 2026; page updated 2026-10-15",
+  "sheet": "elic",
+  "rows_read": 343545,
+  "period_start": "2019-01",
+  "period_end": "2026-08",
+  "months": 92,
+  "coverage_codes_included": [
+    "1000+",
+    "302",
+    "77",
+    "88"
+  ],
+  "grain_source": "month × municipality DIVIPOLA × trámite × land class × modality × destination × housing type × VIS/NVIS × stratum",
+  "derived_grain": "month × destination; month × municipality × destination",
+  "filter": "months 2019-01 through 2026-08; aggregate the coverage cohorts 77, 88, 302 and 1000+ into the national total",
+  "latest_checks_m2": {
+    "total": 1322000,
+    "housing": 1010109,
+    "nonhousing": 311891,
+    "area_by_coverage_cohort": {
+      "77": 894497,
+      "1000+": 223968,
+      "302": 180222,
+      "88": 23313
+    }
+  },
+  "note": "Licensing/supply signal only; not sales, presales, cancellations, demand or project-level outcomes."
+}

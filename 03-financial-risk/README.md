@@ -5,15 +5,19 @@ Crédito, mercado, liquidez, riesgo sistémico, IFRS 9 y stress testing integrad
 ## Estructura
 
 1. [Crédito](01-credit-risk/): [productos de crédito](01-credit-risk/credit-risk-products/) y [estrategia de cartera](01-credit-risk/credit-portfolio-strategy/): scoring, IFRS 9, cosechas, concentración, cópula, capital y apetito de riesgo. Incluye [fraude, anomalías y minimización de pérdida](01-credit-risk/fraud-and-anomaly-research/), con cuatro especialistas S1 y un motor S2 acotado a datos sintéticos.
-2. [Mercado y modelos](02-market-and-model-risk/): VaR/ES, backtesting, GARCH, pruebas de estrés y validación (PSI/Gini).
+2. [Mercado y modelos](02-market-and-model-risk/): VaR/ES, backtesting, GARCH, pruebas de estrés y validación (PSI/Gini), con un companion observado de PSI para mezcla de calificaciones SFC que no sustituye PSI de score.
 3. [Liquidez de mercado](03-market-liquidity-research/): ES dinámico y EVT, regímenes de volatilidad, liquidez estocástica, espirales de liquidez y optimización de liquidez.
 4. [Investigación avanzada](04-advanced-research/): siete propuestas metodológicas de crédito, IFRS 9, SIAR y control de cartera.
 5. [Enterprise Risk Advisory](05-enterprise-risk-advisory/): 56 diseños metodológicos agrupados en ocho prácticas, con fundamentos separados.
 6. [Motor de investigación cuantitativa](06-quantitative-research-engine/): arquitectura y referencias numéricas de crédito.
 7. [Riesgo corporativo y construcción](07-financial-and-construction-risk-lab/): baselines Python/C++, experimentos y 45 carpetas preservadas con solapamientos documentados.
-8. [Sistemas regulatorios y motores de riesgo](08-regulatory-risk-systems/): doce dominios, fundamentos, arquitectura, 36 ideas y seis funciones numéricas de investigación con ocho pruebas locales. Incluye SARC, SARM, SARL, SARO, IFRS 9, SARAS, SIAR/SARE/MGR, capital, SARLAFT, BCP, KRIs, conducta y reporte; los dominios mantienen estado S1.
+8. [Sistemas regulatorios y motores de riesgo](08-regulatory-risk-systems/): catorce dominios, fundamentos, arquitectura y seis funciones numéricas de investigación con ocho pruebas locales. Incluye SARC, SARM, SARL, SARO, IFRS 9, SARAS, SIAR/SARE/MGR, capital, SARLAFT, BCP, KRIs, conducta, reporte, SAGRILAFT y SREP; los dominios mantienen estado S1.
 
 Los proyectos ejecutables de las dos primeras áreas incluyen notebooks; IFRS 9 conserva su notebook dentro de `notebooks/`. Los diseños de investigación no se cuentan como implementaciones. Los productos en C++ están en [04 · risk-engines](../04-quant-strategy-and-products/risk-engines/).
+
+## Aplicaciones observadas y brechas
+
+El portafolio tiene companions observadas o proxy en crédito, mercado, liquidez y construcción; su existencia no equivale a validación institucional del modelo. Consulta el [registro de cierre de brechas](OBSERVED_APPLICATION_GAP_REGISTER.md) para identificar qué proyectos tienen aplicación, cuáles requieren datos por cliente/contrato/obra y qué entregables siguen siendo especificaciones S1. El inventario verificable de 45 rutas corporativas y de construcción tiene 45 rutas con companion, benchmark externo o contexto público observado enlazado; ninguna de las 45 tiene validación con resultados individuales de obra o empresa. Las propuestas S1 conservan su estado de investigación; la evaluación causal utiliza un benchmark externo de empleo y requiere datos de construcción para validar su aplicación al dominio.
 
 ## Agenda de investigación avanzada — siete proyectos
 
@@ -61,6 +65,6 @@ La [revisión y evidencia](REVIEW_2026-10-18.md) registra errores reproducidos, 
 - Corrección de ES en construcción y alineación de VaR/ES Python/C++/mercado-liquidez.
 - Contratos de datos para ECL, pesos de escenario y validación de PD.
 - Stage 3 financiado con recuperaciones esperadas explícitas, separado de la aproximación de default futuro de Stage 1/2.
-- [Notebook de mercado y financiación](03-market-liquidity-research/notebook.ipynb) y [notebook de construcción](07-financial-and-construction-risk-lab/notebook.ipynb).
+- [Notebook de mercado y financiación](03-market-liquidity-research/laboratorio-integrado/notebook.ipynb) y [notebook de construcción](07-financial-and-construction-risk-lab/04-modelos-compartidos/notebook.ipynb).
 
 No se elevan los diseños a productos ni se certifica implementación contable o prudencial completa.

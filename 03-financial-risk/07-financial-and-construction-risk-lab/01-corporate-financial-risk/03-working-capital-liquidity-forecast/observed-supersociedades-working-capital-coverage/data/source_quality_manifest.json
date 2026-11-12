@@ -1,0 +1,99 @@
+{
+  "cohort_source": "https://www.supersociedades.gov.co/documents/80312/9178350/Base_1000_empresas_2024.xlsx",
+  "cohort_vintage": "Supersociedades 2025 report, 2024 financial cut",
+  "cohort_rows": 1000,
+  "cohort_sha256": "ad251b172ffc047bfe5f03d47cd33d88a9c593bffaf5d240f34548c17f4843d0",
+  "snapshot_date": "2026-11-11",
+  "data_sources": {
+    "balance_sheet": "https://www.datos.gov.co/Economy-and-Finances/Estados-Financieros-NIIF-Estado-de-Situaci-n-Finan/pfdp-zks5",
+    "income_statement": "https://www.datos.gov.co/resource/prwj-nzxa.json",
+    "unit_guidance": "https://www.supersociedades.gov.co/web/asuntos-economicos-societarios/preguntas-frecuentes"
+  },
+  "join_and_selection": "NIT and report basis are processed in memory only. Exact cohort basis is required; generic group labels with multiple report bases are excluded. Latest codigo_instancia within the aligned basis is retained for each dataset/year. No entity-level rows or identifiers are persisted.",
+  "units": "All three NIIF account fields are reported in thousands of COP per official FAQ; only coverage counts and unit-free DIO days are released.",
+  "derived_metric": "Median inventory-days (DIO) = ((2023-12-31 current inventory + 2024-12-31 current inventory)/2) / 2024 cost of sales * 365. Included only when all three same-basis observations are present and average inventory and cost of sales are positive. No DSO, DPO, CCC, forecast, or LaR is derived.",
+  "quality_by_source": {
+    "bs_2023": {
+      "dataset_id": "pfdp-zks5",
+      "financial_year": 2023,
+      "taxonomy_id": 369,
+      "concepts_requested": {
+        "receivables": "Cuentas comerciales por cobrar y otras cuentas por cobrar corrientes",
+        "inventories": "Inventarios corrientes",
+        "payables": "Cuentas por pagar comerciales y otras cuentas por pagar corrientes"
+      },
+      "source_rows_returned": 3100,
+      "entities_with_aligned_basis_and_report": 615,
+      "entities_without_aligned_basis_or_report": 385,
+      "ambiguous_generic_basis_exclusions": 17,
+      "conflicting_filing_concept_keys": 0,
+      "exact_duplicate_rows_collapsed": 0,
+      "selected_basis_counts": {
+        "10 NIIF Plenas - Individual Grupo 1": 314,
+        "20 NIIF Plenas - Separado Grupo 1": 174,
+        "40 NIIF Pymes - Individual Grupo 2": 98,
+        "50 NIIF Pymes - Separado Grupo 2": 29
+      },
+      "response_sha256": "df6422f85d522fad1b03099a973cb09c86afd08ec5b8a0835adacbf8147a0876",
+      "response_bytes": 584292
+    },
+    "bs_2024": {
+      "dataset_id": "pfdp-zks5",
+      "financial_year": 2024,
+      "taxonomy_id": 411,
+      "concepts_requested": {
+        "receivables": "Cuentas comerciales por cobrar y otras cuentas por cobrar corrientes",
+        "inventories": "Inventarios corrientes",
+        "payables": "Cuentas por pagar comerciales y otras cuentas por pagar corrientes"
+      },
+      "source_rows_returned": 2909,
+      "entities_with_aligned_basis_and_report": 642,
+      "entities_without_aligned_basis_or_report": 358,
+      "ambiguous_generic_basis_exclusions": 12,
+      "conflicting_filing_concept_keys": 0,
+      "exact_duplicate_rows_collapsed": 0,
+      "selected_basis_counts": {
+        "10 NIIF Plenas - Individual Grupo 1": 325,
+        "20 NIIF Plenas - Separado Grupo 1": 184,
+        "40 NIIF Pymes - Individual Grupo 2": 103,
+        "50 NIIF Pymes - Separado Grupo 2": 30
+      },
+      "response_sha256": "723d51d795c52b61e3d4e457f4bbd2fe8bccaf684ba2e6b4e724096709874dcf",
+      "response_bytes": 548027
+    },
+    "is_2024": {
+      "dataset_id": "prwj-nzxa",
+      "financial_year": 2024,
+      "taxonomy_id": 411,
+      "concepts_requested": {
+        "revenue": "Ingresos de actividades ordinarias",
+        "cost_of_sales": "Costo de ventas"
+      },
+      "source_rows_returned": 1970,
+      "entities_with_aligned_basis_and_report": 639,
+      "entities_without_aligned_basis_or_report": 361,
+      "ambiguous_generic_basis_exclusions": 12,
+      "conflicting_filing_concept_keys": 0,
+      "exact_duplicate_rows_collapsed": 0,
+      "selected_basis_counts": {
+        "10 NIIF Plenas - Individual Grupo 1": 325,
+        "20 NIIF Plenas - Separado Grupo 1": 181,
+        "40 NIIF Pymes - Individual Grupo 2": 103,
+        "50 NIIF Pymes - Separado Grupo 2": 30
+      },
+      "response_sha256": "c47caf0a2032b1b27a39f7516ce4cfce8171d77cdc6901754c23bd101e60be64",
+      "response_bytes": 317283
+    }
+  },
+  "output_sha256": "c0dce33e69ccd4ca4a7bef66d8c4d44095aabfff2153e829af5f7d3bef08f514",
+  "figure_sha256": "f949b744f7f24d982aaab0f1abf7be2b3677286f2c83310e3f45ae84f2fffca9",
+  "dio_figure_sha256": "bf9a6184df799b69ba1b714bcb11621570c8c28a18f6d69a5c83aeb531da0692",
+  "outputs_contain_entity_or_filing_identifiers": false,
+  "semantic_gaps": [
+    "Revenue is total ordinary operating revenue, not credit sales; therefore exact DSO cannot be derived.",
+    "Cost of sales is not supplier purchases; payables days/DPO cannot be derived without assumptions that are not validated here.",
+    "Receivables and payables concepts include other accounts, so they are broader than pure trade balances.",
+    "The DIO component is a stock-to-flow accounting measure, not an observed inventory depletion/turnover series or a cash-cycle measure.",
+    "No observed cash collection/payment dates, forecast vintages, committed liquidity, or shortfall outcomes are present; no CCC, cash forecast, or LaR is estimated."
+  ]
+}

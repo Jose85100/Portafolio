@@ -1,0 +1,25 @@
+{
+  "source_dataset_id": "qhpu-8ixx",
+  "source_sha256": "8ba05a76fbb86a5803419673d2c5427b77f42fea7dd96953fcae01bd50813c68",
+  "source_downloaded_utc": "2026-10-11T15:45:42+00:00",
+  "series_selection": {
+    "entity_type": "SF-SOCIEDAD FIDUCIARIA",
+    "subtype": "FIC DE MERCADO MONETARIO"
+  },
+  "first_date": "2018-01-01",
+  "latest_date": "2026-10-07",
+  "observations": 3202,
+  "latest_underlying_fic_records": 15,
+  "latest_fund_value_cop": 11505053787373.553,
+  "latest_reported_investor_count_sum_not_unique": 1771,
+  "latest_value_weighted_reported_annual_effective_return_pct": 8.887229680861553,
+  "annual_effective_return_pct_quantiles": {
+    "0.0": 0.49865044388197555,
+    "0.1": 1.5878389792612766,
+    "0.5": 4.351766962092231,
+    "0.9": 12.374255482351687,
+    "1.0": 15.01746790762959
+  },
+  "method": "sum(reported annual effective rate × fund value) / sum(fund value)",
+  "interpretation": "Descriptive subtype-level weighted reported rate; not a portfolio time series or performance attribution."
+}

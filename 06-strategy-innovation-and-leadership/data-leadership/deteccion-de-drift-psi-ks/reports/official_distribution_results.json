@@ -1,0 +1,50 @@
+{
+  "edition": "DANE CPI temporal distribution comparison",
+  "source": "DANE, IPC total nacional, Índices, serie de empalme; base diciembre 2018 = 100",
+  "source_url": "https://www.dane.gov.co/files/operaciones/IPC/oct2026/anex-IPC-Indices-oct2026.xlsx",
+  "publication_date": "2026-11-09",
+  "source_snapshot": "dane-ipc-indices-oct2026.xlsx",
+  "source_sha256": "4e8366bf2d03d4bdc15d14b1b21b12a6eec6c3695926abd503a430858ef74e2e",
+  "derived_csv_sha256": "00e9b259fd321bede2d20f38214159a14abc5576e4cdfecd8c1905f916a82385",
+  "source_index_period": [
+    "2003-01",
+    "2026-10"
+  ],
+  "proxy_definition": "Cambio mensual porcentual del índice nacional total: 100 * (IPC_t / IPC_(t-1) - 1).",
+  "reference_window": [
+    "2010-01",
+    "2019-12"
+  ],
+  "comparison_window": [
+    "2020-01",
+    "2026-10"
+  ],
+  "reference_n_months": 120,
+  "comparison_n_months": 82,
+  "reference_mean_pct": 0.315090585881034,
+  "comparison_mean_pct": 0.5401275070128934,
+  "reference_median_pct": 0.2532971747678525,
+  "comparison_median_pct": 0.46370158269420925,
+  "psi": 0.7062596404710753,
+  "psi_heuristic_band": "alto (>=0.25)",
+  "psi_method": {
+    "bins": "deciles of reference window; unique cutpoints after ties",
+    "n_bins": 10,
+    "pseudocount_per_bin": 0.5,
+    "thresholds": {
+      "0.10": "heuristic indication",
+      "0.25": "heuristic large shift"
+    }
+  },
+  "ks_statistic_d": 0.3323170731707317,
+  "ks_p_value": null,
+  "ks_reason_no_p_value": "Monthly observations are serially dependent; the iid two-sample KS p-value is not used for inference.",
+  "interpretation": "Descriptive change in one national time series' distribution between fixed periods; not model drift or predictive degradation.",
+  "limitations": [
+    "Windows differ in duration (120 vs 82 months) and macroeconomic regimes; the contrast does not attribute causes.",
+    "Inflation is a derived proxy from a rounded, revised official index; measurement and methodological revisions may affect values.",
+    "PSI bin cutoffs and smoothing are heuristics, sensitive to binning and window choice; they are not calibrated alerts.",
+    "KS D is descriptive here; serial dependence invalidates iid p-value interpretation, so no p-value is reported.",
+    "This does not measure model performance, population stability of customers, or suitability for operational monitoring."
+  ]
+}

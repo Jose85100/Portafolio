@@ -1,0 +1,17 @@
+{
+  "source_name": "Banco de la República, Resumen de cierres del SEN, septiembre de 2026",
+  "vintage": "2026-09",
+  "official_url": "https://www.banrep.gov.co/sites/default/files/sen-resumencierresseptiembre2026.zip",
+  "official_index_url": "https://www.banrep.gov.co/es/sistemas-pago/sen/resumen-cierres",
+  "master_drive_path": "Master_DATOS/04_SHADOW_RISK/01_RAW/banrep_sen_resumen_cierres_2026-09.zip",
+  "drive_file_id": "1MTGnmDemBMinnLags7jnvJhpMjS4F_fZ",
+  "drive_url": "https://drive.google.com/file/d/1MTGnmDemBMinnLags7jnvJhpMjS4F_fZ/view",
+  "manifest_drive_path": "Master_DATOS/04_SHADOW_RISK/02_PROCESSED/liquidez_sen.manifest.json",
+  "manifest_drive_file_id": "1Whh-iLj8Iwt_aSYKaUpCJy01f51bNf1V",
+  "sha256": "4d21cf3193331340da312cb67b07a6192234d131317089d4ab54048b217acae5",
+  "size_bytes": 176652,
+  "observed_through": "2026-09-30",
+  "ingested_at": "2026-10-10T17:02:31.474Z",
+  "consulted_at": "2026-11-10",
+  "raw_copy_in_product": false
+}

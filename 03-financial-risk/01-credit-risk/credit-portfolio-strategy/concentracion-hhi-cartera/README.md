@@ -1,8 +1,19 @@
 # Concentración de cartera con HHI
 
-Medición de concentración por deudor y por sector con el índice Herfindahl-Hirschman, número efectivo de contrapartes, participación de los mayores deudores y comparación con límites de apetito.
+Este proyecto tiene dos ediciones complementarias. El laboratorio controlado muestra cómo el HHI responde a distribuciones conocidas por deudor y sector. La edición oficial aplica la misma estadística a los saldos de los establecimientos por producto y contrasta su uso con datos observados de la Superintendencia Financiera de Colombia.
 
-## Datos
+## Aplicación oficial: concentración de acreedores por producto
+
+El snapshot de Datos Abiertos de la SFC contiene 9.288 filas de saldo bruto clasificadas como `TOTAL` en 32 cortes mensuales, del 2024-01-31 al 2026-08-31. La edición calcula HHI, número efectivo de entidades, top 1 y top 5 por producto y fecha. En agosto de 2026 el HHI es 2.215 en crédito rotativo, 1.222 en tarjetas, 1.039 en libranza y 1.740 en vivienda VIS en pesos.
+
+Esta aplicación mide concentración **entre entidades acreedoras**, no entre deudores o sectores. Es evidencia oficial para seguimiento de concentración del sistema por producto; no valida límites internos de un banco, EL, PD ni concentración de contrapartes dentro de una entidad.
+
+- [Informe ejecutivo de la aplicación observada](reports/official-application-2026-11-10.md)
+- [Fuente, extracción, controles y licencia/atribución](data/README.md)
+- [Runner reproducible](official_application.py)
+- [Serie HHI observada](reports/figures/sfc-lender-hhi-trend.png)
+
+## Laboratorio controlado
 
 Datos **sintéticos** generados con semilla fija (`numpy.random.default_rng`). No hay datos de clientes, de empresas ni confidenciales. Los resultados son **ilustrativos del método**, no evidencia de desempeño real.
 

@@ -1,0 +1,163 @@
+{
+  "source": "Banco de la República, Estadísticas Económicas, serie 15274",
+  "series": "Tasa de interés Cero Cupón, Títulos de Tesorería (TES), pesos - 10 años",
+  "source_url": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/220002/tasas_interes_cero_cupon_tes/",
+  "source_methodology_url": "https://www.banrep.gov.co/en/node/41443",
+  "raw_sha256": "335739330f675690c418a06d464b97a39f8b7326a2d3c7b6711647e58cd33f1b",
+  "source_period": [
+    "2003-01-02",
+    "2026-11-06"
+  ],
+  "holdout_start_date": "2019-01-02",
+  "holdout_end_date": "2026-11-06",
+  "estimation_window_intervals": 1000,
+  "holdout_observation_intervals": 1913,
+  "levels": [
+    0.95,
+    0.975,
+    0.99
+  ],
+  "methods": [
+    "historical",
+    "gaussian"
+  ],
+  "modified_duration_years_assumed": 8.0,
+  "notional_cop_assumed": 1000000000.0,
+  "intervals_with_abs_yield_change_gt_100bp_in_holdout": 2,
+  "metrics": [
+    {
+      "holdout_observations": 1913,
+      "exceptions": 146,
+      "expected_exceptions": 95.65000000000009,
+      "exception_rate": 0.07631991636173549,
+      "kupiec_uc_lr": 24.198009881602502,
+      "kupiec_uc_pvalue": 8.692205330687852e-07,
+      "christoffersen_ind_lr": 65.62743860967566,
+      "christoffersen_ind_pvalue": 5.44750315174897e-16,
+      "transition_counts": {
+        "n00": 1662,
+        "n01": 104,
+        "n10": 104,
+        "n11": 42
+      },
+      "method": "historical",
+      "confidence_level": 0.95,
+      "mean_var_proxy_cop": 13288865.656037632,
+      "mean_realized_loss_proxy_cop": 255096.7067433351,
+      "source_exceptions_over_100bp": 1
+    },
+    {
+      "holdout_observations": 1913,
+      "exceptions": 91,
+      "expected_exceptions": 95.65000000000009,
+      "exception_rate": 0.04756926293779404,
+      "kupiec_uc_lr": 0.24170121844861114,
+      "kupiec_uc_pvalue": 0.6229800962520822,
+      "christoffersen_ind_lr": 25.14476775649888,
+      "christoffersen_ind_pvalue": 5.318375456997031e-07,
+      "transition_counts": {
+        "n00": 1747,
+        "n01": 74,
+        "n10": 74,
+        "n11": 17
+      },
+      "method": "gaussian",
+      "confidence_level": 0.95,
+      "mean_var_proxy_cop": 15881860.517869085,
+      "mean_realized_loss_proxy_cop": 255096.7067433351,
+      "source_exceptions_over_100bp": 1
+    },
+    {
+      "holdout_observations": 1913,
+      "exceptions": 77,
+      "expected_exceptions": 47.825000000000045,
+      "exception_rate": 0.040250914793518035,
+      "kupiec_uc_lr": 15.45231611347856,
+      "kupiec_uc_pvalue": 8.46131871462961e-05,
+      "christoffersen_ind_lr": 27.62837291540238,
+      "christoffersen_ind_pvalue": 1.47006528342405e-07,
+      "transition_counts": {
+        "n00": 1773,
+        "n01": 62,
+        "n10": 62,
+        "n11": 15
+      },
+      "method": "historical",
+      "confidence_level": 0.975,
+      "mean_var_proxy_cop": 17567381.076842647,
+      "mean_realized_loss_proxy_cop": 255096.7067433351,
+      "source_exceptions_over_100bp": 1
+    },
+    {
+      "holdout_observations": 1913,
+      "exceptions": 62,
+      "expected_exceptions": 47.825000000000045,
+      "exception_rate": 0.03240982749607946,
+      "kupiec_uc_lr": 3.9466492822408554,
+      "kupiec_uc_pvalue": 0.04696479509738937,
+      "christoffersen_ind_lr": 26.48231540692798,
+      "christoffersen_ind_pvalue": 2.659617872027643e-07,
+      "transition_counts": {
+        "n00": 1800,
+        "n01": 50,
+        "n10": 50,
+        "n11": 12
+      },
+      "method": "gaussian",
+      "confidence_level": 0.975,
+      "mean_var_proxy_cop": 18888057.27016987,
+      "mean_realized_loss_proxy_cop": 255096.7067433351,
+      "source_exceptions_over_100bp": 1
+    },
+    {
+      "holdout_observations": 1913,
+      "exceptions": 21,
+      "expected_exceptions": 19.130000000000017,
+      "exception_rate": 0.01097752221641401,
+      "kupiec_uc_lr": 0.17896251826601883,
+      "kupiec_uc_pvalue": 0.6722663560347208,
+      "christoffersen_ind_lr": 10.631957524537427,
+      "christoffersen_ind_pvalue": 0.0011114999685071921,
+      "transition_counts": {
+        "n00": 1873,
+        "n01": 18,
+        "n10": 18,
+        "n11": 3
+      },
+      "method": "historical",
+      "confidence_level": 0.99,
+      "mean_var_proxy_cop": 26513748.039728194,
+      "mean_realized_loss_proxy_cop": 255096.7067433351,
+      "source_exceptions_over_100bp": 1
+    },
+    {
+      "holdout_observations": 1913,
+      "exceptions": 38,
+      "expected_exceptions": 19.130000000000017,
+      "exception_rate": 0.01986408782017773,
+      "kupiec_uc_lr": 14.609599663440122,
+      "kupiec_uc_pvalue": 0.00013223919728423062,
+      "christoffersen_ind_lr": 15.9471284913066,
+      "christoffersen_ind_pvalue": 6.5136514184629e-05,
+      "transition_counts": {
+        "n00": 1842,
+        "n01": 32,
+        "n10": 32,
+        "n11": 6
+      },
+      "method": "gaussian",
+      "confidence_level": 0.99,
+      "mean_var_proxy_cop": 22383410.66680637,
+      "mean_realized_loss_proxy_cop": 255096.7067433351,
+      "source_exceptions_over_100bp": 1
+    }
+  ],
+  "scope": "One-factor, first-order fixed-duration P&L proxy on the BanRep COP TES 10Y yield curve; not a specific TES bond return, portfolio P&L, or production VaR validation.",
+  "limitations": [
+    "BanRep's yield is an estimated Nelson-Siegel zero-coupon curve point, not total return.",
+    "Duration and notional are assumptions; convexity, carry, roll-down, curve shape, basis, liquidity, and transaction costs are omitted.",
+    "Historical source anomalies before the holdout are not adjudicated by this test; see the source companion. Holdout observations over 100 bp are flagged and retained.",
+    "Exception tests have limited power and p-values are diagnostics, not acceptance criteria.",
+    "No actual positions, forecast record, institutional limits, or realized portfolio P&L are available."
+  ]
+}

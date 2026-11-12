@@ -19,3 +19,6 @@ Build a deterministic baseline, then stochastic scenario engine and parameter es
 
 ## Model risk and acceptance gates
 No deployment without independently reproducible inputs, unit and integration tests, documented limitations, backtesting and governance approval. **Status: design only.**
+
+## Public-data application
+An observed-data companion applies BanRep's aggregate commercial preferential/corporate bank-loan rate history to transparent hypothetical refinancing-cost scenarios. This provides Colombian market context but **does not estimate corporate bond spreads or issuer-specific funding costs**. See [`observed-banrep-commercial-credit-cost`](observed-banrep-commercial-credit-cost/README.md) for the source, reproducible runner, QA/hash, sensitivity and governance boundary. [`DATA_GAP.md`](DATA_GAP.md) records the remaining issuer-level spread gap and minimum data contract.

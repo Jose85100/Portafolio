@@ -1,0 +1,88 @@
+{
+  "source": "U.S. Department of the Treasury, Daily Treasury Par Yield Curve Rates",
+  "series": "10-year constant-maturity par yield",
+  "official_yield_source_files_sha256": {
+    "daily-treasury-yield-curve-2024.csv": "6775840b76cd7fd41121f61d6f6c60184eca6b2ba49954ec7372c463cbeef34d",
+    "daily-treasury-yield-curve-2025.csv": "cf2fa3da7f160384b63d2ead698532b1d76cd9f789ce4911e2304db85b14e6d5",
+    "daily-treasury-yield-curve-2026-11-10.csv": "782e0953ac34dd4c9751bc061feae3b1a2e18f0be8c7c181a3d2a472d1bdcbe5"
+  },
+  "derived_input_sha256": "32b89153d1df625432e740d1d35b123722753d19c7bd6be21c4300e4c4f8ffa4",
+  "period": [
+    "2024-01-03",
+    "2026-11-10"
+  ],
+  "yield_intervals": 714,
+  "duration_years_assumed": 8.0,
+  "notional_usd_assumed": 10000000.0,
+  "scenario_probability": "equal per observed consecutive yield-change interval",
+  "alpha": 0.975,
+  "var_loss_proxy_usd": 88000.00000000025,
+  "es_loss_proxy_usd": 110408.96358543418,
+  "tail_probability": 0.025000000000000022,
+  "tail_equivalent_observations": 17.850000000000016,
+  "fully_included_worst_observations": 17,
+  "fraction_of_next_boundary_observation": 0.8500000000000156,
+  "max_observed_loss_proxy_usd": 151999.9999999996,
+  "mean_loss_proxy_usd": 1154.06162464986,
+  "top_10_loss_proxy_intervals": [
+    {
+      "date": "2024-04-10",
+      "yield_change_bp": 18.99999999999995,
+      "loss_proxy_usd": 151999.9999999996
+    },
+    {
+      "date": "2024-02-02",
+      "yield_change_bp": 16.000000000000014,
+      "loss_proxy_usd": 128000.00000000012
+    },
+    {
+      "date": "2024-11-06",
+      "yield_change_bp": 16.000000000000014,
+      "loss_proxy_usd": 128000.00000000012
+    },
+    {
+      "date": "2026-09-23",
+      "yield_change_bp": 15.000000000000036,
+      "loss_proxy_usd": 120000.00000000028
+    },
+    {
+      "date": "2024-06-07",
+      "yield_change_bp": 14.999999999999948,
+      "loss_proxy_usd": 119999.99999999956
+    },
+    {
+      "date": "2025-04-07",
+      "yield_change_bp": 14.000000000000057,
+      "loss_proxy_usd": 112000.00000000044
+    },
+    {
+      "date": "2024-02-05",
+      "yield_change_bp": 13.999999999999968,
+      "loss_proxy_usd": 111999.99999999974
+    },
+    {
+      "date": "2026-03-20",
+      "yield_change_bp": 13.999999999999968,
+      "loss_proxy_usd": 111999.99999999974
+    },
+    {
+      "date": "2024-02-13",
+      "yield_change_bp": 13.999999999999968,
+      "loss_proxy_usd": 111999.99999999974
+    },
+    {
+      "date": "2024-10-04",
+      "yield_change_bp": 12.99999999999999,
+      "loss_proxy_usd": 103999.99999999993
+    }
+  ],
+  "engine_matches_independent_equal_mass_calculation": true,
+  "interpretation": "historical expected shortfall over a one-factor, constant-duration P&L proxy; not actual bond or portfolio losses",
+  "limitations": [
+    "The input is a first-order duration estimate from changes in one 10-year par yield, not marked-to-market instrument P&L.",
+    "Assumes modified duration 8 years and USD 10 million notional; neither is an observed holding.",
+    "Omits convexity, coupon cash flows, carry, roll-down, curve shape, basis, FX and portfolio diversification.",
+    "The 2024-01 to 2026-11 sample omits 2008 and 2020 crisis regimes; empirical tail is uncertain at 714 intervals.",
+    "This demonstrates the weighted-ES calculation on an observed-factor proxy and is not a regulatory backtest or production model validation."
+  ]
+}

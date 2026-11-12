@@ -15,7 +15,9 @@ El grano es **cuenta–fecha de corte**. Entradas mínimas: `product_code`, `pd_
 
 ## Datos
 
-Datos **sintéticos** generados con semilla fija (`numpy.random.default_rng`). No hay datos de clientes, de empresas ni confidenciales. Los resultados son **ilustrativos del método**, no evidencia de desempeño real.
+La simulación del laboratorio usa datos **sintéticos** generados con semilla fija (`numpy.random.default_rng`). No hay datos de clientes, de empresas ni confidenciales. Sus resultados son **ilustrativos del método**, no evidencia de desempeño real.
+
+Como contexto observado separado, este proyecto incluye la [companion SFC de mezcla de calificación por producto](observed-sfc-product-risk-mix/README.md). Calcula la participación de saldos D/E dentro de saldos calificados A–E y reporta su cobertura frente al saldo bruto. Es un agregado descriptivo de cartera, no PD de originación ni transición entre estados, y no calibra ni valida el cálculo EL de este laboratorio. Reproducción, hash, fuente y límites están documentados en la companion.
 
 ## Cómo ejecutar
 

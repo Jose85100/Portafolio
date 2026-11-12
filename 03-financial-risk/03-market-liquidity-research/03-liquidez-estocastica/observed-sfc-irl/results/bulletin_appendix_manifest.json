@@ -1,0 +1,73 @@
+{
+  "source_page": "https://www.superfinanciera.gov.co/publicaciones/10116287/resultados-del-sistema-financiero-colombiano-agosto-de-2026/",
+  "monthly_report_index": "https://www.superfinanciera.gov.co/publicaciones/60765/informes-y-cifrasinformesinforme-actualidad-del-sistema-financiero-colombiano-60765/",
+  "source_pdf_url": "https://www.superfinanciera.gov.co/loader.php?idFile=1083642&lFuncion=descargar&lServicio=Tools2&lTipo=descargas",
+  "snapshot": "data/raw/sfc_resultados_sistema_financiero_2026-08.pdf",
+  "sha256": "e38b879140f70d523b655af2aa72c12531f802473604d99bddc15fc57f8b985d",
+  "report_vintage": "Agosto 2026",
+  "report_page_number_1based": 20,
+  "source_cui_f_as_of": "2026-09-25",
+  "extraction_date": "2026-11-10",
+  "source_table": "Tabla 12. Componentes IRL",
+  "source_graph": "Gráfica 11. Evolución IRL",
+  "source_grain": "entity type × three published cut dates; no individual entities",
+  "periods": [
+    "2025-08-31",
+    "2026-07-31",
+    "2026-08-31"
+  ],
+  "entity_types": [
+    "Bancos",
+    "Compañías de Financiamiento",
+    "Cooperativas Financieras",
+    "Establecimientos de crédito"
+  ],
+  "observation_count": 12,
+  "expected_observation_count": 12,
+  "dates_are_non_contiguous": true,
+  "source_method": "PDF text extraction of ALM and RLN table; IRL reconstructed as ALM/RLN × 100.",
+  "units": "ALM and RLN in COP millions; IRL ratio dimensionless, displayed as percent.",
+  "latest_graph_ratio_cross_checks": {
+    "Bancos": {
+      "table_ratio_pct": 178.75656356469295,
+      "chart_label_pct": 178.8,
+      "difference_pp": -0.043436435307057764
+    },
+    "Compañías de Financiamiento": {
+      "table_ratio_pct": 719.4806808201481,
+      "chart_label_pct": 719.5,
+      "difference_pp": -0.019319179851891022
+    },
+    "Cooperativas Financieras": {
+      "table_ratio_pct": 238.20167275568116,
+      "chart_label_pct": 238.2,
+      "difference_pp": 0.0016727556811702016
+    },
+    "Establecimientos de crédito": {
+      "table_ratio_pct": 186.48507570050504,
+      "chart_label_pct": 186.5,
+      "difference_pp": -0.014924299494964544
+    }
+  },
+  "aggregate_component_rounding_checks": {
+    "2025-08-31": {
+      "alm_total_minus_sum_types_million_cop": -1,
+      "rln_total_minus_sum_types_million_cop": 0
+    },
+    "2026-07-31": {
+      "alm_total_minus_sum_types_million_cop": 0,
+      "rln_total_minus_sum_types_million_cop": 0
+    },
+    "2026-08-31": {
+      "alm_total_minus_sum_types_million_cop": 1,
+      "rln_total_minus_sum_types_million_cop": 0
+    }
+  },
+  "disclaimer": "Addendum only. Do not connect these three cut dates as a continuous monthly series or overwrite the historical XLS snapshot through Dec-2022.",
+  "limitations": [
+    "The historical SFC XLS ends Dec-2022; this PDF contains only three later component snapshots, not the missing monthly series.",
+    "The new bulletin is type-level, not entity-level; entity percentiles cannot be extended.",
+    "IRL is a reported prudential coverage ratio, not cash shortfall or probability of illiquidity.",
+    "CUIF values are subject to SFC review; the bulletin states figures through Sep-25-2026."
+  ]
+}

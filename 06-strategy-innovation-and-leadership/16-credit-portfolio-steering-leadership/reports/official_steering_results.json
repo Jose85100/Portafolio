@@ -1,0 +1,273 @@
+{
+  "decision_question": "Which department × portfolio-phase cohorts should be reviewed first by a human collections/portfolio committee?",
+  "admissible_decision": "Use observed overdue case volume as a workload queue, then review prevalence relative to phase aggregate as a separate severity signal; no automatic limit, originations, or policy changes.",
+  "source": "ICETEX, Comportamiento de Cartera y Crédito (datos.gov.co dataset dugh-vkir)",
+  "source_url": "https://www.datos.gov.co/Educaci-n/Comportamiento-de-Cartera-y-Cr-dito-/dugh-vkir",
+  "source_last_updated": "2026-10-15",
+  "snapshot_as_of": "2026-11-10",
+  "source_raw_sha256": "b91afdd83dd9738fb0dcd9606f67ecbdff2fd0da2af31138d9aeb68f83867a7e",
+  "validated_table_sha256": "c856d4e8ac26b63347d18e722f5467a7f9421dce9b01ab79d3aad4ca5f13ffcf",
+  "grain": "date x department x portfolio phase",
+  "quality_scope": {
+    "source_rows": 1308,
+    "validated_rows": 1240,
+    "rejected_rows": 68,
+    "rejected_cut": [
+      "2025-06-30"
+    ],
+    "complete_dates": 18,
+    "departments_per_cut": 34,
+    "latest_complete_cut": "2026-09-30"
+  },
+  "proxy_definition": "Prevalencia observada = créditos con mora >90 días / créditos totales por departamento × fase; carga observada = conteo absoluto de créditos con mora >90 días.",
+  "latest_phase_baseline": {
+    "AMORTIZACION": 0.134806975258582,
+    "ESTUDIOS": 0.026317115256243938
+  },
+  "top5_workload_by_phase": {
+    "AMORTIZACION": [
+      {
+        "departamento": "CORDOBA",
+        "creditos_total": 16270,
+        "creditos_mora_mayor_90d": 4936,
+        "prevalencia_mora_90d": 0.303380454824831,
+        "exceso_vs_baseline_pp": 16.8573479566249
+      },
+      {
+        "departamento": "DISTRITO CAPITAL",
+        "creditos_total": 46624,
+        "creditos_mora_mayor_90d": 3949,
+        "prevalencia_mora_90d": 0.08469886753603295,
+        "exceso_vs_baseline_pp": -5.0108107722549065
+      },
+      {
+        "departamento": "ATLANTICO",
+        "creditos_total": 22570,
+        "creditos_mora_mayor_90d": 3930,
+        "prevalencia_mora_90d": 0.1741249446167479,
+        "exceso_vs_baseline_pp": 3.9317969358165894
+      },
+      {
+        "departamento": "SUCRE",
+        "creditos_total": 13645,
+        "creditos_mora_mayor_90d": 3691,
+        "prevalencia_mora_90d": 0.2705020153902528,
+        "exceso_vs_baseline_pp": 13.56950401316708
+      },
+      {
+        "departamento": "BOLIVAR",
+        "creditos_total": 11882,
+        "creditos_mora_mayor_90d": 2493,
+        "prevalencia_mora_90d": 0.2098131627672109,
+        "exceso_vs_baseline_pp": 7.500618750862889
+      }
+    ],
+    "ESTUDIOS": [
+      {
+        "departamento": "ATLANTICO",
+        "creditos_total": 18038,
+        "creditos_mora_mayor_90d": 953,
+        "prevalencia_mora_90d": 0.0528329083046901,
+        "exceso_vs_baseline_pp": 2.651579304844616
+      },
+      {
+        "departamento": "DISTRITO CAPITAL",
+        "creditos_total": 25562,
+        "creditos_mora_mayor_90d": 729,
+        "prevalencia_mora_90d": 0.028518895235114625,
+        "exceso_vs_baseline_pp": 0.22017799788706868
+      },
+      {
+        "departamento": "BOLIVAR",
+        "creditos_total": 11800,
+        "creditos_mora_mayor_90d": 357,
+        "prevalencia_mora_90d": 0.03025423728813559,
+        "exceso_vs_baseline_pp": 0.3937122031891654
+      },
+      {
+        "departamento": "SUCRE",
+        "creditos_total": 11428,
+        "creditos_mora_mayor_90d": 295,
+        "prevalencia_mora_90d": 0.025813790689534478,
+        "exceso_vs_baseline_pp": -0.050332456670946005
+      },
+      {
+        "departamento": "ANTIOQUIA",
+        "creditos_total": 8779,
+        "creditos_mora_mayor_90d": 288,
+        "prevalencia_mora_90d": 0.032805558719671946,
+        "exceso_vs_baseline_pp": 0.6488443463428007
+      }
+    ]
+  },
+  "high_rate_review_candidates_by_phase": {
+    "AMORTIZACION": [
+      {
+        "departamento": "CORDOBA",
+        "creditos_total": 16270,
+        "creditos_mora_mayor_90d": 4936,
+        "prevalencia_mora_90d": 0.303380454824831,
+        "exceso_vs_baseline_pp": 16.8573479566249
+      },
+      {
+        "departamento": "SUCRE",
+        "creditos_total": 13645,
+        "creditos_mora_mayor_90d": 3691,
+        "prevalencia_mora_90d": 0.2705020153902528,
+        "exceso_vs_baseline_pp": 13.56950401316708
+      },
+      {
+        "departamento": "LA GUAJIRA",
+        "creditos_total": 2903,
+        "creditos_mora_mayor_90d": 677,
+        "prevalencia_mora_90d": 0.2332070272132277,
+        "exceso_vs_baseline_pp": 9.840005195464569
+      },
+      {
+        "departamento": "MAGDALENA",
+        "creditos_total": 4564,
+        "creditos_mora_mayor_90d": 1059,
+        "prevalencia_mora_90d": 0.23203330411919368,
+        "exceso_vs_baseline_pp": 9.722632886061167
+      },
+      {
+        "departamento": "CESAR",
+        "creditos_total": 3783,
+        "creditos_mora_mayor_90d": 842,
+        "prevalencia_mora_90d": 0.2225746761829236,
+        "exceso_vs_baseline_pp": 8.776770092434157
+      }
+    ],
+    "ESTUDIOS": [
+      {
+        "departamento": "CASANARE",
+        "creditos_total": 902,
+        "creditos_mora_mayor_90d": 51,
+        "prevalencia_mora_90d": 0.0565410199556541,
+        "exceso_vs_baseline_pp": 3.0223904699410165
+      },
+      {
+        "departamento": "ATLANTICO",
+        "creditos_total": 18038,
+        "creditos_mora_mayor_90d": 953,
+        "prevalencia_mora_90d": 0.0528329083046901,
+        "exceso_vs_baseline_pp": 2.651579304844616
+      },
+      {
+        "departamento": "ARAUCA",
+        "creditos_total": 566,
+        "creditos_mora_mayor_90d": 29,
+        "prevalencia_mora_90d": 0.05123674911660778,
+        "exceso_vs_baseline_pp": 2.491963386036384
+      },
+      {
+        "departamento": "LA GUAJIRA",
+        "creditos_total": 4340,
+        "creditos_mora_mayor_90d": 191,
+        "prevalencia_mora_90d": 0.044009216589861753,
+        "exceso_vs_baseline_pp": 1.7692101333617816
+      },
+      {
+        "departamento": "MAGDALENA",
+        "creditos_total": 4776,
+        "creditos_mora_mayor_90d": 205,
+        "prevalencia_mora_90d": 0.042922948073701846,
+        "exceso_vs_baseline_pp": 1.6605832817457908
+      }
+    ]
+  },
+  "denominator_sensitivity_minimum_total_credits": {
+    "AMORTIZACION": {
+      "0": {
+        "top5": [
+          "CORDOBA",
+          "DISTRITO CAPITAL",
+          "ATLANTICO",
+          "SUCRE",
+          "BOLIVAR"
+        ],
+        "same_as_unfiltered": true
+      },
+      "100": {
+        "top5": [
+          "CORDOBA",
+          "DISTRITO CAPITAL",
+          "ATLANTICO",
+          "SUCRE",
+          "BOLIVAR"
+        ],
+        "same_as_unfiltered": true
+      },
+      "500": {
+        "top5": [
+          "CORDOBA",
+          "DISTRITO CAPITAL",
+          "ATLANTICO",
+          "SUCRE",
+          "BOLIVAR"
+        ],
+        "same_as_unfiltered": true
+      },
+      "1000": {
+        "top5": [
+          "CORDOBA",
+          "DISTRITO CAPITAL",
+          "ATLANTICO",
+          "SUCRE",
+          "BOLIVAR"
+        ],
+        "same_as_unfiltered": true
+      }
+    },
+    "ESTUDIOS": {
+      "0": {
+        "top5": [
+          "ATLANTICO",
+          "DISTRITO CAPITAL",
+          "BOLIVAR",
+          "SUCRE",
+          "ANTIOQUIA"
+        ],
+        "same_as_unfiltered": true
+      },
+      "100": {
+        "top5": [
+          "ATLANTICO",
+          "DISTRITO CAPITAL",
+          "BOLIVAR",
+          "SUCRE",
+          "ANTIOQUIA"
+        ],
+        "same_as_unfiltered": true
+      },
+      "500": {
+        "top5": [
+          "ATLANTICO",
+          "DISTRITO CAPITAL",
+          "BOLIVAR",
+          "SUCRE",
+          "ANTIOQUIA"
+        ],
+        "same_as_unfiltered": true
+      },
+      "1000": {
+        "top5": [
+          "ATLANTICO",
+          "DISTRITO CAPITAL",
+          "BOLIVAR",
+          "SUCRE",
+          "ANTIOQUIA"
+        ],
+        "same_as_unfiltered": true
+      }
+    }
+  },
+  "tradeoff": "Absolute cases prioritize review workload and favor large segments; rate above a phase baseline highlights relative severity and can elevate smaller segments. Keep both views rather than compressing them into an unvalidated score.",
+  "limitations": [
+    "ICETEX student lending is not MCA, digital lending, or the Colombian banking system; results are an external public proxy, not validation of those portfolios.",
+    "Aggregate stock prevalence is not borrower PD, a transition probability, LGD, causal treatment effect, or collection effectiveness.",
+    "Counts do not include exposure balance or loss severity, and department is residence geography rather than lender controllable risk segment.",
+    "The 2025-06-30 cut is omitted because source counts failed reconciliation; the 18 remaining cuts are complete but not publication-vintage backtests.",
+    "Top-five and denominator sensitivity are triage aids; confirm data quality, business capacity, representative cohorts, and operational causes before action."
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "provider": "Unidad Nacional para la Gestión del Riesgo de Desastres (UNGRD)",
+  "dataset": "Emergencias UNGRD V2",
+  "dataset_id": "2343-nuqp",
+  "dataset_page": "https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/Emergencias-UNGRD-V2/2343-nuqp",
+  "api_csv": "https://www.datos.gov.co/resource/2343-nuqp.csv?$limit=20000",
+  "metadata_api": "https://www.datos.gov.co/api/views/2343-nuqp.json",
+  "downloaded_at": "2026-11-11",
+  "source_update_date": "2026-09-22",
+  "source_bytes": 6565780,
+  "source_sha256": "287df83aa1b05e1a80324b200ff4445f8dc240d2a80d65f725ab6b8e01d291ed",
+  "source_columns": 61,
+  "qa": {
+    "rows": 6506,
+    "duplicate_full_rows": 0,
+    "date_min": "2025-01-01",
+    "date_max": "2025-12-31",
+    "all_records_year": 2025,
+    "event_types": 30,
+    "relevant_event_rows": 2309,
+    "relevant_event_rows_by_type": {
+      "Avenida torrencial": 55,
+      "Creciente súbita": 260,
+      "Movimiento en masa": 1273,
+      "Inundación": 721
+    },
+    "coordinates_zero_or_blank_rows": 6504,
+    "coordinates_nonzero_rows": 2,
+    "department_municipality_pairs": 955,
+    "reported_divipola_distinct_values": 4074,
+    "reported_divipola_non_5_digit_rows": 242,
+    "department_municipality_pairs_with_multiple_reported_codes": 696,
+    "max_reported_codes_for_one_department_municipality_pair": 118,
+    "relevant_municipality_event_groups": 1034,
+    "unique_emergency_codes": 6505,
+    "duplicate_emergency_codes": 1,
+    "duplicate_date_place_type_combinations": 557
+  },
+  "event_group_mapping": {
+    "INUNDACION": "Inundación",
+    "CRECIENTE SUBITA": "Creciente súbita",
+    "AVENIDA TORRENCIAL": "Avenida torrencial",
+    "MOVIMIENTO EN MASA": "Movimiento en masa"
+  },
+  "outputs_exclude_free_text": true,
+  "reported_impact_fields_aggregated": false,
+  "scope": "Municipality/name-level report-row inventory in 2025; not unique event counts, property-level exposure, hazard probability, insured loss, or causal attribution.",
+  "limitations": [
+    "The dataset version V2 describes the 2025 annual report and future vintages; this snapshot contains 2025 only.",
+    "The source says it has 61 columns; the API returned 61 columns and 6506 rows, while the portal's rounded row indicator was 13K at access time.",
+    "Coordinates are zero/blank on 6504 of 6506 records; the field labelled DIVIPOLA is internally inconsistent and is not used as a geographic key.",
+    "One emergency code is repeated and date/place/type combinations recur; updates or distinct same-day incidents cannot be separated because there is no stable incident key.",
+    "The script does not sum affected people, dwellings, roads, or hectares because repeated report updates could double-count cumulative impact.",
+    "Reported impact fields are present but not treated as project-level or insured losses.",
+    "No exposures, building locations, construction attributes, or insurance payouts are linked."
+  ]
+}

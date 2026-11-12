@@ -1,0 +1,109 @@
+{
+  "provider": "Agencia Nacional de Contratación Pública - Colombia Compra Eficiente",
+  "dataset": "SECOP II - Contratos Electrónicos",
+  "dataset_id": "jbjy-vk9h",
+  "api": "https://www.datos.gov.co/resource/jbjy-vk9h.json",
+  "extracted_on": "2026-11-11",
+  "source_last_updated": "2026-11-11 (Socrata metadata rowsUpdatedAt)",
+  "population": "Contracts whose tipo_de_contrato is exactly 'Obra' and fecha_de_firma is from 2020-01-01 inclusive to 2026-01-01 exclusive",
+  "grain": "One record per contract in SECOP II; source endpoint aggregated server-side to signature-year totals",
+  "source_fields_used": [
+    "tipo_de_contrato",
+    "fecha_de_firma",
+    "dias_adicionados"
+  ],
+  "excluded_source_fields": "Supplier names/documents/IDs, legal-representative details, bank/account data, contract addresses and free-text objects were not selected or downloaded.",
+  "queries": {
+    "all_contracts": {
+      "$select": "date_extract_y(fecha_de_firma) as anio,count(*) as contratos,sum(dias_adicionados) as dias_extendidos",
+      "$where": "tipo_de_contrato='Obra' AND fecha_de_firma >= '2020-01-01T00:00:00' AND fecha_de_firma < '2026-01-01T00:00:00'",
+      "$group": "anio",
+      "$order": "anio"
+    },
+    "positive_extension_days": {
+      "$select": "date_extract_y(fecha_de_firma) as anio,count(*) as contratos_con_extension,sum(dias_adicionados) as dias_extendidos",
+      "$where": "tipo_de_contrato='Obra' AND fecha_de_firma >= '2020-01-01T00:00:00' AND fecha_de_firma < '2026-01-01T00:00:00' AND dias_adicionados > 0",
+      "$group": "anio",
+      "$order": "anio"
+    }
+  },
+  "snapshot_files": {
+    "all": {
+      "file": "contracts_by_signature_year.json",
+      "bytes": 378,
+      "sha256": "f789bb55846fbdc0be9b0bd1228e60f62ca86e40e3a59e120daf99f68ff64e2e"
+    },
+    "extended": {
+      "file": "extended_contracts_by_signature_year.json",
+      "bytes": 461,
+      "sha256": "4bbb8a516fb4714e31bd55739fb640009145aaa24435bc428dad8312238aa2af"
+    }
+  },
+  "contracts_in_period": 38329,
+  "contracts_with_positive_extension_days": 11175,
+  "period_share_with_positive_extension_days": 0.2915546974875421,
+  "annual_rows": [
+    {
+      "signature_year": 2020,
+      "works_contracts": 2763,
+      "contracts_with_positive_extension_days": 556,
+      "share_with_positive_extension_days": 0.20123054650741948,
+      "extension_days_total": 66036,
+      "extension_days_per_all_contracts": 23.90010857763301,
+      "extension_days_per_extended_contract": 118.76978417266187
+    },
+    {
+      "signature_year": 2021,
+      "works_contracts": 5401,
+      "contracts_with_positive_extension_days": 1410,
+      "share_with_positive_extension_days": 0.26106276615441587,
+      "extension_days_total": 160099,
+      "extension_days_per_all_contracts": 29.642473615997037,
+      "extension_days_per_extended_contract": 113.54539007092198
+    },
+    {
+      "signature_year": 2022,
+      "works_contracts": 5960,
+      "contracts_with_positive_extension_days": 1501,
+      "share_with_positive_extension_days": 0.2518456375838926,
+      "extension_days_total": 124413,
+      "extension_days_per_all_contracts": 20.874664429530203,
+      "extension_days_per_extended_contract": 82.88674217188542
+    },
+    {
+      "signature_year": 2023,
+      "works_contracts": 7965,
+      "contracts_with_positive_extension_days": 1808,
+      "share_with_positive_extension_days": 0.22699309478970495,
+      "extension_days_total": 160645,
+      "extension_days_per_all_contracts": 20.16886377903327,
+      "extension_days_per_extended_contract": 88.85232300884955
+    },
+    {
+      "signature_year": 2024,
+      "works_contracts": 6502,
+      "contracts_with_positive_extension_days": 1821,
+      "share_with_positive_extension_days": 0.2800676714856967,
+      "extension_days_total": 160240,
+      "extension_days_per_all_contracts": 24.64472470009228,
+      "extension_days_per_extended_contract": 87.99560680944536
+    },
+    {
+      "signature_year": 2025,
+      "works_contracts": 9738,
+      "contracts_with_positive_extension_days": 4079,
+      "share_with_positive_extension_days": 0.4188745122201684,
+      "extension_days_total": 431060,
+      "extension_days_per_all_contracts": 44.26576299034709,
+      "extension_days_per_extended_contract": 105.67786222113263
+    }
+  ],
+  "interpretation": "Administrative snapshot indicator of reported contract-term extensions; not delay, non-performance, default, fraud, vendor quality, payment risk, or causal evidence.",
+  "limits": [
+    "Cohorts have unequal exposure time: later signed contracts have had less time to be amended.",
+    "The dataset is updated after signature and may reflect current contract state; amendment history is not reconstructed here.",
+    "A reported extension can have legitimate causes and is not an adverse outcome by itself.",
+    "No contractor identity or contract-level panel was downloaded; vendor concentration/performance cannot be assessed.",
+    "The open dataset's license field is blank; this companion stores aggregate API responses and records source attribution, not a claim about legal reuse of all fields."
+  ]
+}
