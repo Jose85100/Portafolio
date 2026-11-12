@@ -6,9 +6,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from vintage_core import build_vintage, summarize_vintage
 
 
-def row(loan, client, mob, dpd, balance=100, cohort='2024-01'):
-    return dict(loan_key=loan, merchant_key='m', client_id=client, corte_origen=cohort,
-                mob=mob, dpd=dpd, saldo_capital_cop=balance, fecha_disponibilidad=f'2024-0{mob+1}-28')
+def row(loan, client, mob, dias_mora, saldo=100, cohort='2024-01'):
+    return dict(id_credito=loan, id_comercio='m', id_cliente=client, corte_origen=cohort,
+                mob=mob, dias_mora=dias_mora, saldo_capital_cop=saldo, fecha_disponibilidad=f'2024-0{mob+1}-28')
 
 
 class VintageTest(unittest.TestCase):
@@ -27,9 +27,9 @@ class VintageTest(unittest.TestCase):
         data = pd.DataFrame([row('a','1',1,31),row('a','1',2,0),row('a','1',3,0),
                              row('b','1',1,0),row('b','1',3,0)])
         accounts,clients=build_vintage(data)
-        self.assertEqual(accounts.eligible.sum(),1)
-        self.assertFalse(clients.iloc[0].eligible)
-        self.assertTrue(pd.isna(clients.iloc[0].ever30))
+        self.assertEqual(accounts.es_evaluable.sum(),1)
+        self.assertFalse(clients.iloc[0].es_evaluable)
+        self.assertTrue(pd.isna(clients.iloc[0].evento_mora_mayor_30))
 
     def test_missing_balance_does_not_remove_count(self):
         data=pd.DataFrame([row('a','1',1,31),row('a','1',2,0),row('a','1',3,0,None)])
@@ -40,19 +40,19 @@ class VintageTest(unittest.TestCase):
     def test_duplicate_rejected_and_asof_censors(self):
         data=pd.DataFrame([row('a','1',1,0),row('a','1',2,0),row('a','1',3,0)])
         with self.assertRaises(ValueError): build_vintage(pd.concat([data,data.iloc[[0]]]))
-        a,_=build_vintage(data,as_of='2024-03-31');self.assertFalse(a.iloc[0].eligible)
+        a,_=build_vintage(data,fecha_asof='2024-03-31');self.assertFalse(a.iloc[0].es_evaluable)
 
     def test_client_aggregates_all_represented_accounts(self):
         data=pd.DataFrame([row('a','1',1,31),row('a','1',2,0),row('a','1',3,0,100),
                            row('b','1',1,0),row('b','1',2,0),row('b','1',3,0,300)])
         _,clients=build_vintage(data)
-        self.assertTrue(clients.iloc[0].eligible); self.assertTrue(clients.iloc[0].ever30)
-        self.assertEqual(clients.iloc[0].balance,400)
+        self.assertTrue(clients.iloc[0].es_evaluable); self.assertTrue(clients.iloc[0].evento_mora_mayor_30)
+        self.assertEqual(clients.iloc[0].saldo,400)
         self.assertEqual(summarize_vintage(clients).iloc[0].ever_saldo,1)
 
     def test_invalid_data_and_cohort_conflicts_rejected(self):
         data=pd.DataFrame([row('a','1',1,0),row('a','1',2,0),row('a','1',3,0)])
-        for column,value in [('dpd',-1),('dpd','unknown'),('mob',1.5)]:
+        for column,value in [('dias_mora',-1),('dias_mora','unknown'),('mob',1.5)]:
             bad=data.copy();bad[column]=bad[column].astype(object);bad.loc[1,column]=value
             with self.assertRaises(ValueError): build_vintage(bad)
         bad=data.copy();bad.loc[1,'corte_origen']='2024-02'
@@ -60,13 +60,13 @@ class VintageTest(unittest.TestCase):
 
     def test_negative_balance_and_absent_asof_are_not_zero(self):
         data=pd.DataFrame([row('a','1',1,0),row('a','1',2,0),row('a','1',3,0,-1)])
-        a,_=build_vintage(data);self.assertTrue(a.iloc[0].eligible);self.assertFalse(a.iloc[0].balance_valid)
-        with self.assertRaises(ValueError):build_vintage(data.drop(columns='fecha_disponibilidad'),as_of='2024-04-30')
+        a,_=build_vintage(data);self.assertTrue(a.iloc[0].es_evaluable);self.assertFalse(a.iloc[0].saldo_valido)
+        with self.assertRaises(ValueError):build_vintage(data.drop(columns='fecha_disponibilidad'),fecha_asof='2024-04-30')
 
     def test_mob_zero_optional_and_zero_denominator(self):
         data=pd.DataFrame([row('a','1',0,31),row('a','1',1,0),row('a','1',2,0),row('a','1',3,0,0)])
-        a,_=build_vintage(data);self.assertFalse(a.iloc[0].ever30)
-        a,_=build_vintage(data,include_mob0=True); self.assertTrue(a.iloc[0].ever30)
+        a,_=build_vintage(data);self.assertFalse(a.iloc[0].evento_mora_mayor_30)
+        a,_=build_vintage(data,incluir_mob0=True); self.assertTrue(a.iloc[0].evento_mora_mayor_30)
         self.assertTrue(pd.isna(summarize_vintage(a).iloc[0].ever_saldo))
 
 if __name__=='__main__': unittest.main()
