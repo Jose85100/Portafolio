@@ -18,3 +18,5 @@ python scripts/execute_notebooks.py --output artifacts/uci350 03-financial-risk/
 ```
 
 [Notebook ejecutado](notebook.ipynb). En la ejecución inicial, la muestra retenida de 7.500 registros dio AUC 0,7432 y Brier 0,1399. Las métricas reflejan esta partición y no constituyen un criterio institucional de aceptación. La etiqueta no es EVER >30 a MOB 3 y la evaluación no corrige sesgo de aprobación, cambios de política ni estabilidad temporal.
+
+Como comparación exploratoria, el notebook ajusta una logística numérica estandarizada con las mismas variables y calcula 500 réplicas bootstrap pareadas sobre prueba. En este corte, el intervalo percentil 95 % de AUC para WoE es [0,7294; 0,7582] y para la diferencia de AUC frente a la logística numérica es [0,0277; 0,0463]. Los intervalos son condicionales a los modelos ya ajustados y no incluyen incertidumbre de reentrenamiento ni cambios de periodo. También se muestran umbrales ilustrativos de alerta y sus compromisos, sin recomendar una política de aprobación.
