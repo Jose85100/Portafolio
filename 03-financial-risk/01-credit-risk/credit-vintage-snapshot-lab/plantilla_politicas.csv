@@ -1,1 +1,1 @@
-﻿policy_id,fecha_inicio,fecha_fin,fecha_disponibilidad,estrategia_originacion,regla,umbral,version_modelo,segmento
+﻿id_politica,fecha_inicio,fecha_fin,fecha_disponibilidad,estrategia_originacion,regla,umbral,version_modelo,segmento

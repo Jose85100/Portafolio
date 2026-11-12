@@ -25,6 +25,8 @@ Por defecto, una cuenta tiene evento si presenta **DPD > 30** en alguno de los c
 
 Las convenciones se deben acordar con el dueño del indicador: `>30` frente a `≥30`, origen de MOB, unidad cuenta/cliente, saldo, cancelaciones y castigos. Conciliar el panel contra originación: las cuentas ausentes por completo del panel no aparecen en el universo calculado. Los cortes mensuales pueden omitir episodios intrames.
 
+Las [equivalencias de campos](EQUIVALENCIAS_CAMPOS.md) documentan los nombres anteriores y el contrato nuevo para integrar fuentes.
+
 La [guía metodológica](GUIA_METODOLOGICA.md) explica fórmulas, segmentos, disponibilidad temporal, controles y limitaciones. Los [contratos de métricas](contratos_metricas.csv), [diccionario](diccionario_variables.csv) y `plantilla_*.csv` describen el intercambio esperado; las plantillas de datos contienen encabezados, no información real.
 
 ## Ejecutar

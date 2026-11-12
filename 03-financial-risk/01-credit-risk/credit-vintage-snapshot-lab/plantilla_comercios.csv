@@ -1,1 +1,1 @@
-﻿merchant_key,client_id,fecha_referencia,municipio_dane,departamento_dane,ciiu,mcc,antiguedad_comercio_meses,cantidad_terminales,canal_principal,fecha_disponibilidad
+﻿id_comercio,id_cliente,fecha_referencia,municipio_dane,departamento_dane,ciiu,mcc,antiguedad_comercio_meses,cantidad_terminales,canal_principal,fecha_disponibilidad

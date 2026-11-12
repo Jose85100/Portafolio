@@ -14,10 +14,10 @@ def demo_panel():
     rows = []
     for loan, client, cohort, dpds, balances in samples:
         start = pd.Period(cohort, freq='M')
-        for mob, (dpd, bal) in enumerate(zip(dpds, balances), 1):
+        for mob, (dias_mora, bal) in enumerate(zip(dpds, balances), 1):
             date = (start + mob).end_time.normalize()
-            rows.append({'loan_key': loan, 'merchant_key': 'M1', 'client_id': client,
-                         'corte_origen': cohort, 'mob': mob, 'dpd': dpd,
+            rows.append({'id_credito': loan, 'id_comercio': 'M1', 'id_cliente': client,
+                         'corte_origen': cohort, 'mob': mob, 'dias_mora': dias_mora,
                          'saldo_capital_cop': bal, 'fecha_corte': date,
                          'fecha_disponibilidad': date})
     return pd.DataFrame(rows)
