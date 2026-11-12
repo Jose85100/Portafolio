@@ -49,4 +49,4 @@ Desde la raíz del repositorio, con Python, pandas y matplotlib:
 python3 03-financial-risk/07-financial-and-construction-risk-lab/02-construction-enterprise-risk/05-project-finance-covenants/observed-dtf-covenant-sensitivity/build_application.py
 ```
 
-El runner lee el CSV DTF conservado en Tesorería y genera `results/dtf_covenant_sensitivity.csv`, `results/summary.json` y la figura. Balance, CFADS, servicio base y covenant se declaran al inicio del script para que el caso didáctico se pueda modificar deliberadamente; no son datos observados.
+El runner lee el CSV DTF conservado en Tesorería y genera `results/dtf_covenant_sensitivity.csv`, `results/summary.json` y la figura. Balance, CFADS, servicio base y covenant se declaran al inicio del script para que el caso didáctico se pueda modificar deliberadamente; son supuestos del caso didáctico.

@@ -49,7 +49,7 @@ El entorno bloquea sockets del kernel Jupyter: nbclient intentado y falló con O
 Cinco entradas reales en referencias.bib; identificadores 1904.06019, 2202.13415, 2107.07511, 2106.00170 y1604.04173. Se conservan años originales de preprint (no se confunden con año editorial).
 
 ## 13. Rúbrica 1–5
-Novedad2 (adaptación auditada), rigor4 (supuestos y falsificación explícitos), reproducibilidad4 (semillas/código/outputs, kernel aislado pendiente), código4 (núcleo probado/tipado), claridad4, impacto3 (muestra fallo concreto, sin datos reales), honestidad5, MVP4 (ejecución in-process, evaluación empírica pendiente). Autoevaluación, no certificación externa.
+Novedad2 (adaptación auditada), rigor4 (supuestos y falsificación explícitos), reproducibilidad4 (semillas/código/outputs, kernel aislado pendiente), código4 (núcleo probado/tipado), claridad4, impacto3 (muestra fallo concreto, con escenarios simulados), honestidad5, MVP4 (ejecución in-process, evaluación empírica pendiente). Autoevaluación, no certificación externa.
 
 ## 14. Siguiente iteración
 Siguiente iteración recomendada: estimar pesos y evaluar utilidad cuando la razón de densidades deja de ser oráculo.

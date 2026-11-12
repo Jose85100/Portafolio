@@ -74,7 +74,7 @@ RequierePython 3.12+pip; instala requirements.txt fijado para notebook. Núcleo 
 Cinco entradas verificadas en referencias.bib: arXiv 2009.14452,1910.00089,2205.04827,1909.11567 y Process Mining Manifesto oficial. DOI arXiv para los preprints, URL primaria para manifesto. Registro con fecha 25-10-2026. La doc oficial itertools también se consultó para semántica de enumeración; no se presenta como investigación original.
 
 ## 13. Rúbrica 1–5
-Novedad 2 (adaptación de bounds conocidos), rigor 4 (extremos exactos, límites explícitos, controles y revisión), reproducibilidad 4 (inputs/semillas/outputs, notebook in-process), código 4 (núcleo tipado y 10 tests), claridad 4, impacto 3 (evita auditorías de orden injustificadas, sin datos reales), honestidad 5, MVP 4 (completo acotado, kernel aislado/validez empírica pendientes). Autoevaluación, no certificación independiente.
+Novedad 2 (adaptación de bounds conocidos), rigor 4 (extremos exactos, límites explícitos, controles y revisión), reproducibilidad 4 (inputs/semillas/outputs, notebook in-process), código 4 (núcleo tipado y 10 tests), claridad 4, impacto 3 (evita auditorías de orden injustificadas, con escenarios simulados), honestidad 5, MVP 4 (completo acotado, kernel aislado/validez empírica pendientes). Autoevaluación, no certificación independiente.
 
 ## 14. Siguiente iteración
 Siguiente iteración recomendada: evaluar resolución de timestamps y variantes de referencia con logs públicos sin esconder los casos ambiguos.

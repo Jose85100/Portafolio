@@ -4,7 +4,7 @@
 
 Dependencia parcial y EVSI/EVPI ya tienen experimentos ejecutados dentro de los notebooks. La calibración jerárquica por proveedor y la estimación con evidencia institucional siguen pendientes.
 
-Los dos notebooks de esta carpeta ejecutan Bayes, calibración y asignación económica. Las tres extensiones siguientes son ideas formuladas, aún sin ajustar sobre datos reales.
+Los dos notebooks de esta carpeta ejecutan Bayes, calibración y asignación económica. Las tres extensiones siguientes presentan formulaciones cuya calibración empírica corresponde a una etapa posterior.
 
 ## 1. Dependencia entre fuentes y evidencia incremental
 

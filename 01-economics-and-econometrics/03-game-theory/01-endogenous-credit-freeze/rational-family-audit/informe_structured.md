@@ -9,7 +9,7 @@
 7. **Pruebas/benchmark.** `tests/test_uncertainty_structures.py` enumera cuatro esquinas de la caja estructurada y contrasta la caja independiente. `benchmarks/structured_uncertainty.py` guarda CSV/JSON/PNG. No se declara cobertura si no se midió para esta extensión.
 8. **Resultados.** En el escenario diseñado, regret compartido = 0.112 para δ≤.2; la caja independiente crece de 0.112 a 0.392. Véase `results/structured_uncertainty/` para cifras exactas y figura.
 9. **Análisis crítico y ablación negativa.** Cambiar la estructura rectangular a shock compartido elimina la penalización del error; esto muestra sensibilidad al conjunto de incertidumbre, no superioridad del modelo compartido. Si el shock depende de la acción propia, la cancelación desaparece.
-10. **Límites/sesgos.** Un juego diseñado, sin datos empíricos ni identificación del mecanismo común; no inferir que shocks reales sean compartidos. No se mide desempeño fuera de muestra.
+10. **Límites/sesgos.** Un juego diseñado mediante parámetros supuestos, con identificación del mecanismo común pendiente; no inferir que shocks reales sean compartidos. No se mide desempeño fuera de muestra.
 11. **Comando exacto.** Desde esta carpeta: `bash run_structured_uncertainty.sh`.
 12. **Referencias.** `references_structured.bib` contiene BibTeX; matriz en `prior_art_structured.md`.
 13. **Rúbrica original 1–5 (autoevaluación).** Novedad 2; rigor 3; reproducibilidad 3; código 3; claridad 3; impacto 2; honestidad 5; MVP 3.

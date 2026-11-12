@@ -25,7 +25,7 @@ Los componentes compartidos están reunidos en [plataforma de riesgo de crédito
 | Arquitectura | Linaje reproducible de datos sintéticos a métricas | [arquitectura y flujos](credit-risk-platform/architecture/README.md) |
 | Datos | Modelo relacional PostgreSQL, calidad y auditoría | [documentación](credit-risk-platform/database/README.md) · [DDL](credit-risk-platform/database/001_credit_risk_schema.sql) |
 | Contratos | Esquemas de entrada/salida para Python, SQL y motores | [contratos versionados](credit-risk-platform/contracts/README.md) |
-| C++ | Interfaces tipadas, sin conectividad ni datos reales | [cabecera de dominio](credit-risk-platform/cpp/include/credit_risk/contracts.hpp) |
+| C++ | Interfaces tipadas y escenarios de prueba controlados; conectividad como etapa posterior | [cabecera de dominio](credit-risk-platform/cpp/include/credit_risk/contracts.hpp) |
 | Notebooks | Convención de análisis reproducible y separación de ambientes | [guía](credit-risk-platform/notebooks/README.md) |
 
 La ecuación base para una exposición individual es \(EL_i = PD_i \times LGD_i \times EAD_i\); a nivel de cartera, \(EL = \sum_i EL_i\). Cualquier extensión a ECL, capital económico o decisiones debe declarar horizonte, escenario, versión de modelo y población aplicable.

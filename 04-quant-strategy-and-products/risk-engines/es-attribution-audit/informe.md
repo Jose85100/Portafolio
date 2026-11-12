@@ -16,7 +16,7 @@ Se compararon tres ideas. Un generador multiactivo con correlación sería útil
 
 ## 4. Fuentes y disciplina de datos
 
-La SFC publicó la Circular Básica Financiera CE 004/2026 y un índice con administración de riesgos; su versión fue modificada el 8 de octubre de 2026. Basilea MAR33 define ES unilateral 97,5% y un ajuste de horizontes de liquidez para el IMA. BanRep define metodología TRM con base en Resolución Externa 1/2018, art. 40, y documenta su fuente estadística. Estas referencias informan límites y futuro linaje de datos; **el experimento no descargó ni usó datos empíricos**. No se atribuye conformidad SFC, Basilea, LCR/NSFR o IFRS 9.
+La SFC publicó la Circular Básica Financiera CE 004/2026 y un índice con administración de riesgos; su versión fue modificada el 8 de octubre de 2026. Basilea MAR33 define ES unilateral 97,5% y un ajuste de horizontes de liquidez para el IMA. BanRep define metodología TRM con base en Resolución Externa 1/2018, art. 40, y documenta su fuente estadística. Estas referencias informan límites y futuro linaje de datos; **el experimento utiliza escenarios simulados**. No se atribuye conformidad SFC, Basilea, LCR/NSFR o IFRS 9.
 
 ## 5. Modelo y derivación
 

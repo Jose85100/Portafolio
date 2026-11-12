@@ -29,7 +29,7 @@ Que el bloque de regresores $C=Cov(X,Z)$ sea definido positivo no basta. Si C es
 ### Supuestos clave
 Momentos suministrados/poblacionales, error independiente y varianza externa declarada. PSD es una condición necesaria de compatibilidad; no prueba que esa varianza sea cierta. Float64 con tolerancia1e-10, sin redondeo dirigido.
 ## Datos
-Sin datos empíricos ni MonteCarlo:dosβ(0,.3),nueve varianzas declaradas,18casos exactos. Comparación contra gate26y oráculo independiente Schur."""),
+Estudio analítico determinista: dos valores de β (0 y 0,3), nueve varianzas declaradas y 18 casos exactos; la evaluación empírica y Monte Carlo quedan para otra etapa. Comparación contra gate26y oráculo independiente Schur."""),
     code(
         "import json,csv\nfrom pathlib import Path\nfrom IPython.display import display,Image\nsummary=json.loads(Path('results/joint_summary.json').read_text())\nsummary"
     ),

@@ -12,7 +12,7 @@ Tres ideas de investigación; **ninguna ejecutada en esta entrega**. Registro es
 \hat V_{IPW}(\pi)=N^{-1}\sum_i R_i1[A_i=\pi(X_i)]/p(A_i\mid X_i)
 \]
 
-**Diseño y comparador:** Laboratorio con política de asignación conocida, confusión observada y un caso sin positividad; comparar naïve, ponderación y verdad generada. No extrapolar el estimador a datos reales sin supuestos.
+**Diseño y comparador:** Laboratorio con política de asignación conocida, confusión observada y un caso sin positividad; comparar naïve, ponderación y verdad generada. Una aplicación empírica requiere verificar los supuestos del estimador.
 
 **Métricas e incertidumbre:** Sesgo, varianza, pesos extremos, soporte y recuperación neta estimada.
 

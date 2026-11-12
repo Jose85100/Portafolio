@@ -59,7 +59,7 @@ no se atribuye a esa corrida una ejecución de kernel que no ocurrió.
   porcentuales. No se hizo barrido de semillas, n, p11 o niveles VaR.
 - El costo reportado aprovecha caché por conteo y no representa latencia de un servicio distribuido.
 - La regla aleatorizada requiere gobernanza de semillas, trazabilidad y política para resultados marginales.
-- No hay datos reales ni afirmación de cumplimiento regulatorio.
+- La evaluación utiliza escenarios simulados; el cumplimiento regulatorio requiere una revisión específica.
 
 ## Conclusión
 

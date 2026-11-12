@@ -67,7 +67,7 @@ referencias.bib añade snapshot1102prov,datetime,feast,leakage,entity; URLs/fech
 
 ## 13. Rúbricas y madurez
 
-Autoevaluación provisional1–5: novedad2 (contrato/as-of conocido), rigor4 (reglas/oráculo/regresiones), reproducibilidad4 (sin kernel aislado), código4,claridad4,impacto3 (sin datos reales),honestidad5,MVP4. Adicional: profundidad teórica3,aporte defendible3,calidad experimental3,utilidad4,reproducibilidad4,honestidad5. No sustituyen dictamen independiente. Experimental ejecutado; revisión/publicación/CI separadas en consolidado, no operacional ni validado en negocio, no equivalencia automática S2/M2.
+Autoevaluación provisional1–5: novedad2 (contrato/as-of conocido), rigor4 (reglas/oráculo/regresiones), reproducibilidad4 (sin kernel aislado), código4,claridad4,impacto3 (con escenarios simulados),honestidad5,MVP4. Adicional: profundidad teórica3,aporte defendible3,calidad experimental3,utilidad4,reproducibilidad4,honestidad5. No sustituyen dictamen independiente. Experimental ejecutado; revisión/publicación/CI separadas en consolidado, no operacional ni validado en negocio, no equivalencia automática S2/M2.
 
 ## 14. Siguiente iteración y decisión
 

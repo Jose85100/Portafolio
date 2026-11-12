@@ -10,7 +10,7 @@ Economía teórica, econometría avanzada y simulación computacional con énfas
 - [Econometría](04-econometrics/) — 2 programas
 - [Macrofinanzas](05-macrofinance/) — 2 programas
 
-**Total: 12 programas de investigación: nueve en S1 y tres con componentes en S2.** Los documentos describen hipótesis, modelos, identificación, fuentes potenciales, validación y límites. Real-Time Causal Nowcasting, Endogenous Credit Freeze y Sovereign–Bank Strategic Nexus incluyen prototipos sintéticos ejecutables; no hay resultados empíricos de esos programas. Los componentes dinámicos/empíricos no implementados siguen S1.
+**Total: 12 programas de investigación: nueve en S1 y tres con componentes en S2.** Los documentos describen hipótesis, modelos, identificación, fuentes potenciales, validación y límites. Real-Time Causal Nowcasting, Endogenous Credit Freeze y Sovereign–Bank Strategic Nexus incluyen prototipos sintéticos ejecutables; la evaluación empírica de esos programas permanece como etapa posterior. Los componentes dinámicos/empíricos no implementados siguen S1.
 
 ## Infraestructura compartida
 

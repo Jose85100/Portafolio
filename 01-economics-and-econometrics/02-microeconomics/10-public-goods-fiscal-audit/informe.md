@@ -40,7 +40,7 @@ El subsidio para implementar G≥G0 es s=1−θH/(1+G); presupuesto B=sG. Las tr
 
 Con z=1+G, condición interior: (1+λ)z²−(θL+θH)z−λθH=0. La raíz positiva y la cota G≥G0 dan la solución cerrada. W''=−(θL+θH)/(1+G)²−2λθH/(1+G)³<0, por lo que es óptimo global del modelo restringido. No se trata de una prueba de política óptima real.
 
-Baseline principal: no intervenir. Comparador ingenuo: GFB=θL+θH−1, eficiente cuando λ=0. Oráculo: optimización escalar acotada entre G0 y GFB con extremos incluidos explícitamente. Parámetros conocidos e idénticos para todas las políticas; no selección retrospectiva de datos reales.
+Baseline principal: no intervenir. Comparador ingenuo: GFB=θL+θH−1, eficiente cuando λ=0. Oráculo: optimización escalar acotada entre G0 y GFB con extremos incluidos explícitamente. Parámetros conocidos e idénticos para todas las políticas, definidos antes de la evaluación.
 
 ## 7. Tests, costes y ejecución
 
@@ -74,7 +74,7 @@ Control contable: la suma antes de pagar impuestos sobrestima bienestar por B. E
 
 ## 10. Madurez, riesgos y límites
 
-S2 local del componente; sin elevar un dominio completo ni equiparar S2 con M2. Modelo estático conocido y muy pequeño, parámetros supuestos, sin datos reales. No hay competencia regional, equidad distributiva, incertidumbre o equilibrio fuera del Nash previsto. La pérdida λB no proviene de un modelo tributario estimado. Riesgo principal: usar el óptimo sintético como recomendación fiscal real. No se hace esa afirmación.
+S2 local del componente; sin elevar un dominio completo ni equiparar S2 con M2. Modelo estático conocido y muy pequeño, con parámetros supuestos y evaluación mediante simulación. No hay competencia regional, equidad distributiva, incertidumbre o equilibrio fuera del Nash previsto. La pérdida λB no proviene de un modelo tributario estimado. Riesgo principal: usar el óptimo sintético como recomendación fiscal real. No se hace esa afirmación.
 
 ## 11. Cómo correr
 
@@ -90,7 +90,7 @@ Cinco entradas completas en `referencias.bib`: Samuelson, Bergstrom–Blume–Va
 |---:|---:|---:|---:|---:|---:|---:|---:|
 |2|4|4|4|4|3|5|4|
 
-Autoevaluación. Método clásico y sin datos empíricos no merece máxima novedad o impacto. El revisor independiente del ciclo reprodujo `bash run.sh` completo con salida cero, revisó la contabilidad, solución analítica y oráculo y no identificó bloqueantes. No equivale a validación empírica externa.
+Autoevaluación. El método clásico se evalúa mediante un caso controlado; la novedad y el impacto requieren valoración empírica adicional. El revisor independiente del ciclo reprodujo `bash run.sh` completo con salida cero, revisó la contabilidad, solución analítica y oráculo y no identificó bloqueantes. No equivale a validación empírica externa.
 
 ## 14. Siguiente iteración recomendada
 

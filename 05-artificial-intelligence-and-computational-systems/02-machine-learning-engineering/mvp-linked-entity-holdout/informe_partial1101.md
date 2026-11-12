@@ -69,7 +69,7 @@ referencias.bib añade5 claves partial1101entity,identification,leakage,pairs,co
 
 ## 13. Rúbricas y madurez
 
-Autoevaluación provisional1–5: novedad2 (derivación útil local, originalidad no acreditada), rigor4 (deducción+oráculo), reproducibilidad4 (sin kernel aislado), código4, claridad4, impacto3 (sin datos reales), honestidad5, MVP4. Rúbrica adicional: profundidad teórica4, aporte defendible3, calidad experimental3, utilidad4, reproducibilidad4, honestidad5. No sustituye dictamen independiente. Experimental ejecutado, revisión/publicación/CI separadas en consolidado; no validado empíricamente ni operacional, sin elevar madurez del dominio ni equiparar S2/M2.
+Autoevaluación provisional1–5: novedad2 (derivación útil local, originalidad no acreditada), rigor4 (deducción+oráculo), reproducibilidad4 (sin kernel aislado), código4, claridad4, impacto3 (con escenarios simulados), honestidad5, MVP4. Rúbrica adicional: profundidad teórica4, aporte defendible3, calidad experimental3, utilidad4, reproducibilidad4, honestidad5. No sustituye dictamen independiente. Experimental ejecutado, revisión/publicación/CI separadas en consolidado; no validado empíricamente ni operacional, sin elevar madurez del dominio ni equiparar S2/M2.
 
 ## 14. Siguiente iteración y decisión
 
