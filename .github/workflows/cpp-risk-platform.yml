@@ -17,6 +17,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          sparse-checkout: 04-quant-strategy-and-products/risk-engines
       - name: Configure
         run: cmake -S 04-quant-strategy-and-products/risk-engines -B build/quant -DCMAKE_BUILD_TYPE=${{ matrix.build_type }}
       - name: Build
