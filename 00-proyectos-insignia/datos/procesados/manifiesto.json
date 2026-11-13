@@ -1,0 +1,80 @@
+{
+  "fecha_extraccion": "2026-11-12",
+  "fecha_construccion": "2026-11-12",
+  "fuentes": {
+    "rvii-eis8": {
+      "id": "rvii-eis8",
+      "filas": 112602,
+      "nombre": "SFC - Cartera por calificación y mora por entidad y producto",
+      "url": "https://www.datos.gov.co/resource/rvii-eis8.json"
+    },
+    "yvb2-ppaa": {
+      "id": "yvb2-ppaa",
+      "filas": 732673,
+      "nombre": "SFC - Tasas de interés activas y montos desembolsados semanales",
+      "url": "https://www.datos.gov.co/resource/yvb2-ppaa.json"
+    },
+    "pare-7x5i": {
+      "nombre": "SFC - Interés bancario corriente por modalidad",
+      "url": "https://www.datos.gov.co/resource/pare-7x5i.json?$limit=1000"
+    },
+    "banrep-59": {
+      "nombre": "BanRep - Tasa de política monetaria",
+      "url": "https://suameca.banrep.gov.co/estadisticas-economicas-back/rest/estadisticaEconomicaRestService/consultaInformacionSerieXTipoDato?idSerie=59&tipoDato=0&cantDatos=20000"
+    },
+    "dane-geih": {
+      "nombre": "DANE - GEIH anexo sep-2026, Total nacional",
+      "url": "https://www.dane.gov.co/files/operaciones/GEIH/anex-GEIH-sep2026.xlsx"
+    },
+    "dane-ipc": {
+      "nombre": "DANE - IPC total nacional (derivado del repositorio)",
+      "ruta": "02-mathematics-statistics-and-quant/quantitative-methods/arima-pronostico/reports/dane_ipc_monthly_extracted.csv"
+    },
+    "dane-ise": {
+      "nombre": "DANE - ISE, variación anual (derivado del repositorio)",
+      "ruta": "01-economics-and-econometrics/01-macroeconomics/06-macro-regime-switching/reports/ise_sign_regimes_monthly.csv"
+    }
+  },
+  "crudos_sha256": {
+    "banrep_tpm_59.json": "435cfdf67e4b6411fe00041d44e724fdc03c9051cb54402a7f2ccacb7e22f053",
+    "geih_sep2026.xlsx": "45ed0fd4c6f147ebd9844fa51492ae822d515bc407ed973aa8ae5f1c61f59c76",
+    "pare_usura.json": "35e32965c3d25142c26ef757fad24beb8138741aa931534a4b61d71157527f2f",
+    "rvii_0.json": "e0f30ab75c89f718bf5009e671e0119e07247a956119a52ddbcaac344909bab6",
+    "rvii_100000.json": "926548d016fda9409921ab6e1a4f4e9a2dae3353062b76a00f47de23c236e774",
+    "rvii_50000.json": "c6cf996996bf360ec8ee3e9a1968ab4e1e05eb362cec8dcb314c1d2c5f5c6bbb",
+    "yvb2_0.json": "66c900f1e177e85012ed2bf680fa0ab4745fef0cf4505e4889b1fe5313b45caa",
+    "yvb2_100000.json": "88a26c36f78a14d5079a4bff1808ed204eaae5ada382440143a6948e1b51ec35",
+    "yvb2_150000.json": "f2db46795a32a3fb194f0092fcac54879878fef7807b089cac16cc70c45cf428",
+    "yvb2_200000.json": "b97bf884d6a9fff4a1739c96c067dd41a59903a3166a12c0dbad2d2c556994fd",
+    "yvb2_250000.json": "4dd40b27bfedec2eb36d7f02dfc903a25b12ed79c073ed7662a118b4e4fc624c",
+    "yvb2_300000.json": "7945b5b758014dacda5b3f56dc2bb09bbc4fe4f9736a2052541d19e284923db2",
+    "yvb2_350000.json": "8f4f4b1313c4b3690ec62adcfca1ebe45678ebbd5e5c8f46df7ee603479ef0df",
+    "yvb2_400000.json": "38427066a00fd4b7aa692a80b207c7e2d788c627cb6f001844454cdf7c4d3488",
+    "yvb2_450000.json": "c6826b0e983059c6b96768583e8a88267ca12d7e514addda4551cec8626ed791",
+    "yvb2_50000.json": "fce2801c8a8366f9f704a72103d796b94d29142b972aaec04d6f54daa7dc3dbb",
+    "yvb2_500000.json": "15ef8d288e95d1e7a8e7c154684c760bff2e3ce70fc5bc958faab4bef13d48a7",
+    "yvb2_550000.json": "531232a17b83099028323bef56a3115a6e9f47e582c0ba62d3c99327df3747eb",
+    "yvb2_600000.json": "b26b6eb579fd493fe850cf222a0f01970fc5486e7d67e7891717f645e6d2b6d7",
+    "yvb2_650000.json": "c580d3d74a674a6acb841788be5fc9f80b8f1231e35e74322ab286dc4ea9b7a5",
+    "yvb2_700000.json": "1c64c4bc451b2a831e94193e68a7e7537896ea20fd5226558da9849091129b44",
+    "yvb2_750000.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  "procesados": {
+    "cartera_sfc_mensual.csv.gz": {
+      "filas": 86661,
+      "sha256": "7a6c0fd4c9ad98437b8a4b382e5230dd08a542d07244640ca20e42087cf231ed"
+    },
+    "tasas_desembolsos_semanal.csv.gz": {
+      "filas": 679336,
+      "sha256": "62684e234a31e45b81fa673389cc09d9aa8759768ad75f456304fa602368f269"
+    },
+    "usura_por_modalidad.csv": {
+      "filas": 396,
+      "sha256": "acdedfea691320aead4e8b5e39543c933ec53606be17de0ef84c27fc2efd0b78"
+    },
+    "macro_mensual.csv": {
+      "filas": 263,
+      "sha256": "3a7199da44aa355a788ce9cdf2c0638bf4deb7c6f683873ddf6cc59d43df3a10"
+    }
+  }
+}

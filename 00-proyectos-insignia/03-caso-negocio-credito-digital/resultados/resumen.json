@@ -1,0 +1,27 @@
+{
+  "tpm": 12.25,
+  "usura_vigente": 28.335,
+  "roe_tarjeta_depositos": 0.18453976413266418,
+  "roe_max_mayorista": 0.010435618046615216,
+  "plan_meta_clientes": 800000,
+  "tir_por_escala": {
+    "200000|Solo tarjeta": -0.052324861485646745,
+    "200000|Tarjeta + cruce libre inversión": 0.035867435746452125,
+    "400000|Solo tarjeta": 0.021643556235349193,
+    "400000|Tarjeta + cruce libre inversión": 0.1564881004907015,
+    "800000|Solo tarjeta": 0.11605054952303773,
+    "800000|Tarjeta + cruce libre inversión": 0.23718818193867608,
+    "1200000|Solo tarjeta": 0.15515079918845642,
+    "1200000|Tarjeta + cruce libre inversión": 0.2703185327022777,
+    "2000000|Solo tarjeta": 0.1901041523634046,
+    "2000000|Tarjeta + cruce libre inversión": 0.29962375164558197
+  },
+  "plan": {
+    "capital_aportado": 501029665128.6981,
+    "saldo_final": 4158750926762.0156,
+    "mes_equilibrio": 24.0,
+    "roe_anio5": 0.18098790678589516,
+    "tir_anual": 0.23718818193867608
+  },
+  "prob_roe_sobre_ke_tarjeta": 0.447
+}

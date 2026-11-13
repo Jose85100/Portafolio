@@ -1,0 +1,42 @@
+{
+  "icv90_ultimo": 0.02844588312621116,
+  "mes_ultimo": "2026-08",
+  "rezagos": {
+    "tpm": 9,
+    "inflacion": 15,
+    "crec": 12
+  },
+  "coeficientes": {
+    "const": -0.53454,
+    "ylag": 0.86605,
+    "tpm": 0.00334,
+    "inflacion": 0.00498,
+    "crec": 0.0029,
+    "covid": -0.00951
+  },
+  "pico_por_escenario": {
+    "Base": 0.03728,
+    "Adverso": 0.03989,
+    "Severo": 0.04269
+  },
+  "perdida_incremental_billones": {
+    "Libranza": 0.1445,
+    "Libre inversión": 1.1204,
+    "Rotativo": 0.0348,
+    "Tarjeta de crédito": 0.3921,
+    "Vehículo": 0.1742,
+    "Total": 1.866
+  },
+  "alerta_temprana": {
+    "beta": 0.3446953493201726,
+    "t": 6.935658806166757,
+    "n": 4092
+  },
+  "estado_apetito": {
+    "Libranza": "Ámbar",
+    "Libre inversión": "Verde",
+    "Tarjeta de crédito": "Verde",
+    "Vehículo": "Verde",
+    "Rotativo": "Verde"
+  }
+}

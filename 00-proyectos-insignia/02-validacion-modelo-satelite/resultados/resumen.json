@@ -1,0 +1,19 @@
+{
+  "dictamen": "No aprobado para estrés de capital ni fijación de límites; aprobado con restricciones para monitoreo descriptivo",
+  "hallazgos_altos": 4,
+  "hallazgos_total": 8,
+  "rmse_fuera_de_tiempo_pb": {
+    "desarrollador": 223.9,
+    "ar1": 149.3,
+    "estatico": 49.6,
+    "paseo_aleatorio": 162.8,
+    "remediado": 59.6
+  },
+  "rmse_rodante_12m_pb": {
+    "ar1": 109.6,
+    "desarrollador": 135.1,
+    "estatico": 107.4,
+    "paseo_aleatorio": 103.0,
+    "remediado": 71.2
+  }
+}
