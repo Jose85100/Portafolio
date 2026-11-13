@@ -41,3 +41,7 @@ Aplicar la [metodología común](../METODOLOGIA_BASE_E_INNOVACION.md). Los aport
 - **3. Selección por costo unitario más bajo.** Base: Mezcla multi-fuente con concentración, renovaciones, capacidad y escenarios de mercado. **Innovación a probar:** Medir costo total y brechas de refinanciación frente a mezcla mínima y estrategia vigente. **Prueba decisiva:** pendiente de definir.
 - **4. Curvas históricas de prepago/retiro agregadas.** Base: Modelos conductuales condicionados a tasas, antigüedad y fricciones con incertidumbre explícita. **Innovación a probar:** Comparar pronóstico de flujos por cohorte y estabilidad de valor del balance fuera de muestra. **Prueba decisiva:** pendiente de definir.
 - **5. Buffer fijo y regla FIFO intradía.** Base: Optimización de pagos, neteo y fondeo con ventanas y penalidades de demora. **Innovación a probar:** Comparar costo y puntualidad frente a buffer/FIFO, verificando factibilidad de liquidación. **Prueba decisiva:** pendiente de definir.
+
+## Laboratorio empírico de fondeo colombiano
+
+[Investigación de fondeo observado](observed-funding-research/REPORT_OBSERVED_2026-11-05.md): saldos agregados SFC, escenarios hipotéticos de retiro y sensibilidad ilustrativa de CDT frente a DTF. No representa LCR, NSFR ni costos observados de captación.
