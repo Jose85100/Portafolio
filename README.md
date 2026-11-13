@@ -1,6 +1,39 @@
-# Jose Gabriel Orosco Jiménez — Portafolio de proyectos
+# Jose Gabriel Orosco Jiménez
 
-Proyectos de riesgo de crédito, modelado cuantitativo, portafolios, estrategia y ciencia de datos aplicada a finanzas y economía. El repositorio combina **notebooks extensos con pruebas automáticas**, **motores de decisión en Python** y una **plataforma de riesgo en C++**.
+**Riesgo Financiero y Ciencia de Datos | Innovación Financiera | Economía**
+
+Soy economista y profesional en Innovación y Economía de Datos de la Universidad Sergio Arboleda, y trabajo donde se cruzan el riesgo financiero, los datos y la estrategia. Hoy estoy en riesgo de crédito en Bold.co: lidero el esquema regulatorio y el visto bueno de reportes, los controles de cartera y portafolio, y el backtesting y análisis de la cartera; con esos controles, un cierre que tomaba una semana se hace en un día. Trabajo con modelos de provisiones bajo la normativa de la SFC, NIIF 9 y el SIAR, evalúo scores de riesgo, automatizo validaciones con herramientas analíticas y agentes, y apoyo la estructura y asignación de capital junto al portfolio manager. Antes, en KPMG, validé modelos de riesgo financiero y de valoración de derivados, diseñé pruebas de estrés, análisis de sensibilidad y escenarios macrofinancieros, y participé en consultoría y auditoría de liquidez y ALM, riesgo operacional, cumplimiento, riesgo tecnológico, riesgo climático y marcos de apetito de riesgo.
+
+Fuera de esos cargos fundé Axioma Capital & Credit, donde definí la visión, el producto y la arquitectura de una plataforma de analítica de riesgo con datos públicos de Colombia, y Colombia Risk, una iniciativa independiente de investigación y cooperación técnica, académica, pública y privada; en las dos orquesté equipos, iniciativas y procesos. Desde 2022 sostengo una agenda propia de investigación aplicada sobre cómo medir, explicar y anticipar el riesgo financiero y crediticio en Colombia, que empezó en el Laboratorio de Análisis y Pronósticos Económicos de la universidad y llevó a una publicación arbitrada en *Suma de Negocios*. Este repositorio es la evidencia técnica de ese trabajo: datos oficiales, código reproducible, pruebas automáticas y límites declarados.
+
+[LinkedIn](https://www.linkedin.com/in/jose-gabriel-orosco0386/) · [Artículo en Suma de Negocios (2025)](https://revistasumadenegocios.konradlorenz.edu.co/vol16-num-35-2025-estimacion-de-la-incertidumbre-en-ecopetrol-aplicacion-de-pnl-y-modelos-bert-para-la-caracterizacion-empresarial/) · [Working papers en SSRN](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=12423708) · [Estudios en Colombia Risk](https://colombiarisk.com/conocimiento/#tecnico)
+
+## Experiencia y conocimiento
+
+| Área | Dónde la he ejercido | Evidencia en este repositorio |
+|---|---|---|
+| Riesgo de crédito, provisiones y gobierno regulatorio (SFC, NIIF 9, SIAR, SARC) | Bold.co: monitoreo de cartera de originación a cobranza, provisiones, reportes regulatorios, controles y backtesting | [Estrés y apetito de riesgo en consumo](00-proyectos-insignia/01-riesgo-estres-consumo) · [IFRS 9 con evidencia pública](03-financial-risk/01-credit-risk/credit-risk-products/ifrs9-investigacion-cuantitativa) |
+| Validación de modelos y riesgo de modelo | KPMG: validación técnica de modelos de riesgo financiero y de valoración de derivados, código de validación y regresión | [Validación independiente de un modelo satélite](00-proyectos-insignia/02-validacion-modelo-satelite) · [Gini, calibración y PSI](03-financial-risk/02-market-and-model-risk/validacion-de-modelo-psi-gini) |
+| Pruebas de estrés y escenarios macrofinancieros | KPMG: diseño y ejecución de pruebas de estrés, sensibilidad y escenarios | [Escenarios a 24 meses](00-proyectos-insignia/01-riesgo-estres-consumo) · [VaR y Expected Shortfall](03-financial-risk/02-market-and-model-risk/var-es-tres-metodos) |
+| Liquidez, ALM, capital y apetito de riesgo (IRL, LCR, NSFR, IRRBB, RAF) | KPMG: consultoría y auditoría; Bold.co: estructura y asignación de capital | [Capital, tesorería y ALM](03-financial-risk/05-enterprise-risk-advisory/02-capital-alm) · [RAROC](03-financial-risk/01-credit-risk/credit-portfolio-strategy/asignacion-de-capital-raroc) |
+| Riesgo operacional, cumplimiento y tecnológico (SARO, SARLAFT, SARTEC) | KPMG: consultoría y auditoría | [Advisory empresarial de riesgo](03-financial-risk/05-enterprise-risk-advisory) |
+| Estrategia, producto y construcción de empresa | Axioma Capital & Credit y Colombia Risk: visión, producto, estructuración comercial y financiera | [Caso de inversión en crédito digital](00-proyectos-insignia/03-caso-negocio-credito-digital) · [Venture capital](06-strategy-innovation-and-leadership/venture-capital) |
+| Econometría, inferencia causal e investigación aplicada | Laboratorio de Análisis y Pronósticos Económicos; agenda propia desde 2022; publicación en *Suma de Negocios* | [Techo de usura y racionamiento de crédito](00-proyectos-insignia/04-usura-racionamiento-credito) · [Econometría](01-economics-and-econometrics/04-econometrics) |
+| Datos, automatización e IA aplicada al riesgo | Bold.co: validaciones automatizadas con agentes y N8N; Axioma: plataforma de datos públicos | [Capa de datos oficiales](00-proyectos-insignia/datos) · [Plataforma de datos de riesgo](05-artificial-intelligence-and-computational-systems/data-engineering/risk-data-platform) |
+
+**Herramientas.** Python (pandas, statsmodels, linearmodels, scikit-learn, PyTorch), R, SQL, C++17, Julia, MATLAB; Git con integración continua y pruebas automáticas; Power BI, N8N, Google Cloud Platform.
+**Formación.** Pregrado en Economía, énfasis en Finanzas Privadas, y pregrado en Innovación y Economía de Datos, énfasis en Advanced AI and Data Analytics (Universidad Sergio Arboleda); Diplomado en Programación y Codificación (Pontificia Universidad Javeriana).
+
+## Proyectos insignia
+
+Cuatro proyectos construidos sobre la misma [capa de datos oficiales](00-proyectos-insignia/datos) (SFC, Banco de la República y DANE), cada uno pensado para una decisión real. Ver la [presentación del conjunto](00-proyectos-insignia).
+
+| Proyecto | La decisión que informa |
+|---|---|
+| [01 · Estrés macro y apetito de riesgo en consumo](00-proyectos-insignia/01-riesgo-estres-consumo) | Qué explicó el deterioro de 2023–2024, qué lo anticipaba, cuánto costaría un nuevo ciclo y qué límites fijar por producto. |
+| [02 · Validación independiente del modelo satélite](00-proyectos-insignia/02-validacion-modelo-satelite) | Si ese modelo puede usarse para estrés y límites: pruebas fuera de muestra, retadores, estabilidad, hallazgos con severidad y un modelo remediado. |
+| [03 · Caso de inversión en crédito digital de consumo](00-proyectos-insignia/03-caso-negocio-credito-digital) | Si conviene entrar, con qué producto, qué fondeo, a qué escala y con cuánto capital. |
+| [04 · ¿Raciona crédito el techo de usura?](00-proyectos-insignia/04-usura-racionamiento-credito) | Evidencia causal sobre una regla de política: amontonamiento bajo el techo y estudio de eventos con falsación. |
 
 ## Por dónde empezar
 
@@ -8,10 +41,10 @@ Los trabajos principales para cada perfil profesional. El catálogo completo est
 
 | Perfil | Trabajos principales |
 |---|---|
-| **Riesgo de crédito y dirección de riesgo** | [IFRS 9 con evidencia pública](03-financial-risk/01-credit-risk/credit-risk-products/ifrs9-investigacion-cuantitativa) ([brief](output/pdf/ifrs9-ecl-executive-brief.pdf)) · [Pérdida esperada PD, LGD, EAD](03-financial-risk/01-credit-risk/credit-risk-products/perdida-esperada-pd-lgd-ead) · [Scorecard logístico WoE/IV](03-financial-risk/01-credit-risk/credit-risk-products/scorecard-logistico-woe) · [Matrices de transición y roll rates](03-financial-risk/01-credit-risk/credit-risk-products/matrices-de-transicion-roll-rates) · [Plataforma de datos de riesgo](05-artificial-intelligence-and-computational-systems/data-engineering/risk-data-platform) ([brief](output/pdf/risk-data-platform-executive-brief.pdf)) |
-| **Estrategia, capital y finanzas** | [Venture capital: cap table, cohortes LTV/CAC, fondo, DCF](06-strategy-innovation-and-leadership/venture-capital) · [Gestión de portafolios](04-quant-strategy-and-products/asset-management) · [Capital, tesorería y ALM: ICAAP, ILAAP, asignación de Euler](03-financial-risk/05-enterprise-risk-advisory/02-capital-alm) · [Asignación de cartera por RAROC](03-financial-risk/01-credit-risk/credit-portfolio-strategy/asignacion-de-capital-raroc) |
-| **Quant, riesgo de modelos y validación** | [VaR y Expected Shortfall con tres métodos](03-financial-risk/02-market-and-model-risk/var-es-tres-metodos) ([brief](output/pdf/var-es-official-application-brief.pdf)) · [Backtesting Kupiec y Christoffersen](03-financial-risk/02-market-and-model-risk/backtesting-var-kupiec-christoffersen) · [Validación de modelo: Gini, calibración, PSI](03-financial-risk/02-market-and-model-risk/validacion-de-modelo-psi-gini) · [Pérdidas con cópula gaussiana](03-financial-risk/01-credit-risk/credit-portfolio-strategy/copula-gaussiana-perdidas) · [Plataforma de riesgo en C++17](04-quant-strategy-and-products/risk-engines) |
-| **Investigación académica** | [Econometría: DiD, IV, RDD, panel, cuantílica](01-economics-and-econometrics/04-econometrics) · [Congelamiento endógeno del crédito](01-economics-and-econometrics/03-game-theory/01-endogenous-credit-freeze) · [Macrofinanzas: riesgo soberano, liquidez y ciclo de crédito](01-economics-and-econometrics/05-macrofinance) · [Inflación y actividad observadas (IPC e ISE)](01-economics-and-econometrics/01-macroeconomics/03-inflation-expectations-phillips) |
+| **Riesgo de crédito y dirección de riesgo** | [Estrés y apetito de riesgo en consumo](00-proyectos-insignia/01-riesgo-estres-consumo) · [IFRS 9 con evidencia pública](03-financial-risk/01-credit-risk/credit-risk-products/ifrs9-investigacion-cuantitativa) ([brief](output/pdf/ifrs9-ecl-executive-brief.pdf)) · [Pérdida esperada PD, LGD, EAD](03-financial-risk/01-credit-risk/credit-risk-products/perdida-esperada-pd-lgd-ead) · [Scorecard logístico WoE/IV](03-financial-risk/01-credit-risk/credit-risk-products/scorecard-logistico-woe) · [Matrices de transición y roll rates](03-financial-risk/01-credit-risk/credit-risk-products/matrices-de-transicion-roll-rates) · [Plataforma de datos de riesgo](05-artificial-intelligence-and-computational-systems/data-engineering/risk-data-platform) ([brief](output/pdf/risk-data-platform-executive-brief.pdf)) |
+| **Estrategia, capital y finanzas** | [Caso de inversión en crédito digital](00-proyectos-insignia/03-caso-negocio-credito-digital) · [Venture capital: cap table, cohortes LTV/CAC, fondo, DCF](06-strategy-innovation-and-leadership/venture-capital) · [Gestión de portafolios](04-quant-strategy-and-products/asset-management) · [Capital, tesorería y ALM: ICAAP, ILAAP, asignación de Euler](03-financial-risk/05-enterprise-risk-advisory/02-capital-alm) · [Asignación de cartera por RAROC](03-financial-risk/01-credit-risk/credit-portfolio-strategy/asignacion-de-capital-raroc) |
+| **Quant, riesgo de modelos y validación** | [Validación independiente del modelo satélite](00-proyectos-insignia/02-validacion-modelo-satelite) · [VaR y Expected Shortfall con tres métodos](03-financial-risk/02-market-and-model-risk/var-es-tres-metodos) ([brief](output/pdf/var-es-official-application-brief.pdf)) · [Backtesting Kupiec y Christoffersen](03-financial-risk/02-market-and-model-risk/backtesting-var-kupiec-christoffersen) · [Validación de modelo: Gini, calibración, PSI](03-financial-risk/02-market-and-model-risk/validacion-de-modelo-psi-gini) · [Pérdidas con cópula gaussiana](03-financial-risk/01-credit-risk/credit-portfolio-strategy/copula-gaussiana-perdidas) · [Plataforma de riesgo en C++17](04-quant-strategy-and-products/risk-engines) |
+| **Investigación académica** | [Techo de usura y racionamiento de crédito](00-proyectos-insignia/04-usura-racionamiento-credito) · [Econometría: DiD, IV, RDD, panel, cuantílica](01-economics-and-econometrics/04-econometrics) · [Congelamiento endógeno del crédito](01-economics-and-econometrics/03-game-theory/01-endogenous-credit-freeze) · [Macrofinanzas: riesgo soberano, liquidez y ciclo de crédito](01-economics-and-econometrics/05-macrofinance) · [Inflación y actividad observadas (IPC e ISE)](01-economics-and-econometrics/01-macroeconomics/03-inflation-expectations-phillips) |
 
 ## Arquitectura de investigación
 
@@ -71,8 +104,6 @@ La misma estructura de dos ediciones ya se extendió a otros proyectos aplicados
 - [Asignación observada de fondos de pensiones](04-quant-strategy-and-products/asset-management/observed-pension-allocation): composición por clase en cuatro perfiles FPO al 31 de julio de 2026; valida ingestión y agregación de pesos, no optimizadores, retornos ni riesgo económico.
 - [Tasa reportada en FIC de mercado monetario](04-quant-strategy-and-products/asset-management/metricas-de-desempeno-y-atribucion/observed-fic-performance): serie SFC agregada y ponderada por valor, 2018–2026; describe la tasa EA reportada del subtipo, no retornos diarios ni desempeño de una cartera.
 
-El [archivo de revisiones de I+D](reviews) conserva iteraciones, métodos, decisiones, reproducción y estado de publicación de cada componente.
-
 | Dominio | Contenido |
 |---|---|
 | [01 · Economics & Econometrics](01-economics-and-econometrics) | 35 laboratorios de macro, micro, teoría de juegos, econometría y macrofinanzas, con experimentos estructurales específicos y sensibilidad reproducible. |
@@ -86,15 +117,11 @@ El [archivo de revisiones de I+D](reviews) conserva iteraciones, métodos, decis
 
 La nueva línea [07 · Legal Tech](07-legal-tech) contiene doce propuestas M0 de RAG jurídico, filtros temporales, validación de citas, agentes y especificaciones de skills para Colombia. Incluye arquitectura, contratos y evaluación propuesta; todavía no hay componentes ejecutables.
 
-## Revisión semanal
-
-La [revisión del 12–17 de octubre de 2026](reviews/2026-10-12-week/README.md) registra cobertura, desarrollo, resultados y límites. Incluye 35 laboratorios económicos con modelos específicos, ampliación de auditorías y notebooks de sensibilidad para los motores ejecutivos, recuperación durable y núcleo numérico.
-
 ## Formatos de trabajo
 
-- **Notebooks (232; inventario al 12 de noviembre de 2026)** — archivos `.ipynb` para derivaciones, diagnósticos, sensibilidad y reproducibilidad. Su base de evidencia varía por proyecto: incluye conjuntos públicos observados, datos controlados para verificar propiedades matemáticas y experimentos de método. Cada conclusión debe leerse junto a la fuente y los límites declarados en su README; las cifras empíricas se calculan desde los datos y no se atribuyen a una cartera real cuando el ejercicio no la observa.
-- **`main.py` (40)** — la versión corta y ejecutable de cada notebook.
-- **Motores de decisión (15)** — proyectos 01–15 de la carpeta 06, cada uno con `src/`, `tests/` y `docs/`.
+- **Notebooks** — archivos `.ipynb` para derivaciones, diagnósticos, sensibilidad y reproducibilidad. Su base de evidencia varía por proyecto: incluye conjuntos públicos observados, datos controlados para verificar propiedades matemáticas y experimentos de método. Cada conclusión debe leerse junto a la fuente y los límites declarados en su README; las cifras empíricas se calculan desde los datos y no se atribuyen a una cartera real cuando el ejercicio no la observa.
+- **`main.py`** — la versión corta y ejecutable de cada notebook.
+- **Motores de decisión** — proyectos 01–15 de la carpeta 06, cada uno con `src/`, `tests/` y `docs/`.
 - **Plataforma C++17** — simulación de pérdidas de crédito, riesgo de mercado y flujos de liquidez, con CMake y pruebas.
 
 ## Cómo reproducir
@@ -131,14 +158,4 @@ Cuando una aplicación use un proxy, su ficha definirá el constructo aproximado
 
 ## Otros proyectos
 
-| Proyecto | Área | Descripción | Estado |
-|---|---|---|---|
-| [JoseData](https://github.com/Jose85100/JoseData) | Ciencia de datos y econometría | Ejercicios y proyectos de machine learning, econometría y optimización de portafolios. | Público |
-| Soluciones analíticas | Modelado cuantitativo | Notas analíticas con derivación formal y código de verificación. | En revisión |
-| InvesmentOs | Portafolios y riesgo | Herramienta reproducible para guardar precios, monitorear riesgo y proponer una asignación. | En revisión |
-
-Los proyectos marcados como "En revisión" se publicarán cuando termine la revisión de datos sensibles y credenciales.
-
-La [revisión del 17–23 de octubre](reviews/2026-10-23-alignment/README.md) distingue inventario, ejecución nueva y evidencia histórica; incluye dos arquitecturas de decisiones estructuradas en IA y ampliaciones de los cinco MVP del día.
-
-La [revisión académica de los desarrollos del 23 de octubre](reviews/2026-10-23-academic/README.md) vincula 16 referencias publicadas, siete ampliaciones ejecutadas y 24 ideas adicionales con criterios de cierre.
+- [JoseData](https://github.com/Jose85100/JoseData): ejercicios y proyectos de machine learning, econometría y optimización de portafolios.
