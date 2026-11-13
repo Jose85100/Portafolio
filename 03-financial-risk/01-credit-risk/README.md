@@ -7,6 +7,7 @@ Modelos y análisis para originación, seguimiento y gestión de cartera. El mat
 ## Áreas
 
 - [Productos de crédito](credit-risk-products/): scorecard, pérdida esperada, roll rates, cosechas, segmentación e investigación IFRS 9.
+- [Backtesting de onboarding de tarjeta](credit-vintage-snapshot-lab/): EVER >30 a MOB 3 en número y saldo, y seis preguntas de decisión (puente a pérdida, cohorte frente a ciclo, economía por segmento, valor del TPV y rechazados, avance como señal o causa, prueba controlada), con plantillas y demostración simulada.
 - [Fraude y anomalías](fraud-and-anomaly-research/): cuatro especialistas S1 de KYC, redes, ingresos y proceso, más un motor S2 acotado de comparación sintética y asignación por pérdida bajo capacidad.
 - [Estrategia de cartera](credit-portfolio-strategy/): concentración, cópula de pérdidas, capital, límites de apetito y Vasicek.
 

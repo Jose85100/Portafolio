@@ -70,29 +70,34 @@ def build_vintage(panel: pd.DataFrame, horizonte: int = 3, *, incluir_mob0=False
     if (data[columna_saldo].notna() & vals.isna()).any():
         raise ValueError('Saldo no numérico: revisar datos')
     data['_balance'] = vals
-    required_mobs = set(range(0 if incluir_mob0 else 1, horizonte + 1))
-    rows = []
-    for key, g in data.groupby(GROUP, sort=False, dropna=False):
-        considered = g[g.mob.isin(required_mobs)]
-        observed = set(considered.loc[considered.dias_mora.notna(), 'mob'].astype(int))
-        mobs_faltantes = sorted(required_mobs - observed)
-        es_evaluable = not mobs_faltantes
-        h = g.loc[g.mob.eq(horizonte), '_balance']
-        saldo = float(h.iloc[0]) if len(h) and pd.notna(h.iloc[0]) else np.nan
-        valid = es_evaluable and np.isfinite(saldo) and saldo >= 0
-        event = bool((considered.dias_mora > 30).any()) if es_evaluable else pd.NA
-        rows.append(dict(zip(GROUP, key)) | {'id_cliente': g.id_cliente.iloc[0], 'es_evaluable': es_evaluable,
-                     'evento_mora_mayor_30': event, 'saldo': saldo, 'saldo_valido': valid,
-                     'mobs_faltantes': ','.join(map(str, mobs_faltantes))})
-    accounts = pd.DataFrame(rows)
-    clients = []
-    for (cohort, client), g in accounts.groupby(['corte_origen', 'id_cliente'], dropna=False, sort=False):
-        es_evaluable = bool(g.es_evaluable.all())
-        valid = es_evaluable and bool(g.saldo_valido.all())
-        clients.append({'corte_origen': cohort, 'id_cliente': client, 'numero_cuentas': len(g),
-                        'es_evaluable': es_evaluable, 'evento_mora_mayor_30': bool(g.evento_mora_mayor_30.any()) if es_evaluable else pd.NA,
-                        'saldo': float(g.saldo.sum()) if valid else np.nan, 'saldo_valido': valid})
-    return accounts, pd.DataFrame(clients)
+    required_mobs = sorted(range(0 if incluir_mob0 else 1, horizonte + 1))
+    # Vectorizado: una pasada por grupos en lugar de un bucle por cuenta.
+    data['_k'] = data.groupby(GROUP, sort=False, dropna=False).ngroup()
+    keys = data.drop_duplicates('_k').sort_values('_k')[GROUP + ['id_cliente']].reset_index(drop=True)
+    considered = data[data.mob.isin(required_mobs)]
+    seen = considered[considered.dias_mora.notna()]
+    observed = (pd.crosstab(seen._k, seen.mob.astype(int)).reindex(index=keys.index, columns=required_mobs, fill_value=0) > 0)
+    missing = ~observed.to_numpy()
+    es_evaluable = ~missing.any(axis=1)
+    mobs_faltantes = [','.join(str(m) for m, flag in zip(required_mobs, row) if flag) for row in missing]
+    any_event = considered.dias_mora.gt(30).groupby(considered._k).any().reindex(keys.index, fill_value=False).to_numpy()
+    at_h = data.loc[data.mob.eq(horizonte)].set_index('_k')._balance
+    saldo = at_h.reindex(keys.index).astype(float).to_numpy()
+    valid = es_evaluable & np.isfinite(saldo) & (np.nan_to_num(saldo, nan=-1) >= 0)
+    accounts = keys.assign(es_evaluable=es_evaluable,
+                           evento_mora_mayor_30=pd.Series([bool(e) if ok else pd.NA for e, ok in zip(any_event, es_evaluable)], dtype=object),
+                           saldo=saldo, saldo_valido=valid, mobs_faltantes=mobs_faltantes)
+    accounts = accounts[GROUP + ['id_cliente', 'es_evaluable', 'evento_mora_mayor_30', 'saldo', 'saldo_valido', 'mobs_faltantes']]
+    grouped = accounts.assign(_e=any_event & es_evaluable, _s=np.where(valid, saldo, 0.0)).groupby(
+        ['corte_origen', 'id_cliente'], sort=False, dropna=False)
+    agg = grouped.agg(numero_cuentas=('es_evaluable', 'size'), es_evaluable=('es_evaluable', 'all'),
+                      _all_valid=('saldo_valido', 'all'), _any=('_e', 'any'), _sum=('_s', 'sum')).reset_index()
+    agg['es_evaluable'] = agg.es_evaluable.astype(bool)
+    agg['evento_mora_mayor_30'] = pd.Series([bool(e) if ok else pd.NA for e, ok in zip(agg._any, agg.es_evaluable)], dtype=object)
+    agg['saldo_valido'] = agg.es_evaluable & agg._all_valid.astype(bool)
+    agg['saldo'] = np.where(agg.saldo_valido, agg._sum.astype(float), np.nan)
+    clients = agg[['corte_origen', 'id_cliente', 'numero_cuentas', 'es_evaluable', 'evento_mora_mayor_30', 'saldo', 'saldo_valido']]
+    return accounts, clients
 
 
 def summarize_vintage(ledger: pd.DataFrame, *, group_columns=('corte_origen',)) -> pd.DataFrame:

@@ -1,0 +1,1 @@
+﻿id_solicitud,id_cliente,id_comercio,fecha_solicitud,corte_origen,tipo_persona,estrategia_originacion,departamento_dane,municipio_dane,score_buro,version_score,tpv_mensual_cop,meses_historia_tpv,decision,motivo_rechazo,version_politica,cupo_ofrecido_cop,id_credito,fecha_disponibilidad
