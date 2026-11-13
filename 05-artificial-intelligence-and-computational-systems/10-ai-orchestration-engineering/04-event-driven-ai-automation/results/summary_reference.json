@@ -1,0 +1,80 @@
+{
+  "experiment": "event-inbox-replay-v1",
+  "source": "local 270-run experiment, 2026-10-14",
+  "n_per_cell": 30,
+  "metrics": "mean absolute_error, replay_delta, p95_delivery_us, elapsed_ms",
+  "cells": [
+    [
+      "low_duplicate",
+      "naive",
+      1183.2,
+      7494.7667,
+      2.3035,
+      0.8589
+    ],
+    [
+      "low_duplicate",
+      "inbox",
+      0,
+      0,
+      46.0925,
+      5.1966
+    ],
+    [
+      "low_duplicate",
+      "inbox_no_retry",
+      610.4333,
+      0,
+      44.6737,
+      4.8001
+    ],
+    [
+      "burst_duplicate",
+      "naive",
+      4264.6667,
+      10492.9,
+      2.4292,
+      1.4495
+    ],
+    [
+      "burst_duplicate",
+      "inbox",
+      0,
+      0,
+      45.9212,
+      6.6148
+    ],
+    [
+      "burst_duplicate",
+      "inbox_no_retry",
+      952.5667,
+      0,
+      43.0056,
+      5.9228
+    ],
+    [
+      "high_fault",
+      "naive",
+      2474.3,
+      8699.2,
+      2.393,
+      1.1371
+    ],
+    [
+      "high_fault",
+      "inbox",
+      0,
+      0,
+      49.3106,
+      6.9731
+    ],
+    [
+      "high_fault",
+      "inbox_no_retry",
+      3740.3,
+      0,
+      49.1574,
+      5.5967
+    ]
+  ]
+}

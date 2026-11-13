@@ -1,0 +1,17 @@
+name: Event Inbox Branch Verification
+on:
+  push:
+    branches:
+      - 'research/**'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify local research MVP
+        run: |
+          cd 05-artificial-intelligence-and-computational-systems/10-ai-orchestration-engineering/04-event-driven-ai-automation
+          bash reproduce.sh
