@@ -36,10 +36,24 @@ Cada notebook nuevo tiene una sección *Con datos de la entidad*, que con las pl
 | 9 | [Score, TPV y rechazados](09_score_tpv_y_rechazados.ipynb) | Pregunta 4 |
 | 10 | [Avances: señal o causa](10_avances_senal_o_causa.ipynb) | Pregunta 5 |
 | 11 | [Prueba controlada y memo](11_prueba_controlada_y_memo.ipynb) | Pregunta 6 y memo al comité |
+| 12 | [Benchmark de mercado](12_benchmark_mercado_tarjetas.ipynb) | ¿Estamos mejor o peor que el mercado, y contra quién nos comparamos? |
 
-El cálculo vive en dos módulos con pruebas unitarias: `vintage_core.py` (EVER y sus denominadores, vectorizado) y `decision_core.py` (puente, bandas, hazard, mezcla/tasa, economía, valor de vida, corte, discriminación, PSI, swap set, inferencia de rechazados, Mantel-Haenszel, DiD, RD, potencia y asignación). `demo_inputs.demo_cartera()` genera la cartera simulada con su verdad.
+El cálculo vive en tres módulos con pruebas unitarias: `vintage_core.py` (EVER y sus denominadores, vectorizado), `mercado_publico.py` (descarga y limpieza de datos públicos, mora por altura, castigo anual, HHI, percentil en el mercado y conversión de cosecha a stock) y `decision_core.py` (puente, bandas, hazard, mezcla/tasa, economía, valor de vida, corte, discriminación, PSI, swap set, inferencia de rechazados, Mantel-Haenszel, DiD, RD, potencia y asignación). `demo_inputs.demo_cartera()` genera la cartera simulada con su verdad.
 
 Los gráficos generados a partir de datos didácticos llevan una identificación explícita. Para usar un extracto propio, revisar el modo y los parámetros de cada notebook, mantener los datos sensibles fuera de Git y adaptar el contrato de entrada. Las consultas Athena son propuestas: **no se ejecutaron contra una fuente institucional**.
+
+## Benchmark de mercado con datos públicos
+
+El notebook 12 es el único que usa **datos reales**: los publicados por la Superintendencia Financiera en datos.gov.co, agregados por entidad y mes, sin información de personas. `mercado_publico.py` los descarga (`python mercado_publico.py`) y deja una copia en `datos_publicos/`, que es la que leen el notebook y la integración continua.
+
+| Fuente SFC | Qué aporta al benchmark |
+|---|---|
+| `h2jg-r3zg` Tarjetas de crédito y débito | tarjetas vigentes y canceladas por tipo de persona, compras y avances (número y monto), intereses, castigos, saldo y cupo no utilizado |
+| `rvii-eis8` Distribución de cartera por producto | saldo por altura de mora y calificación, con tarjeta separada por ingreso hasta 2 SMMLV y superior |
+| `w9zh-vetq` Tasas activas por tipo de crédito | tasa y monto semanales por producto, tipo de persona, clase de deudor (nuevo o existente) y municipio |
+| `pare-7x5i` Tasa de interés bancario corriente | techo de usura |
+
+Ninguna fuente pública trae cosechas, aprobación ni desempeño por score. El notebook explica cómo leer la mora de stock junto con las curvas EVER, por qué el crecimiento mueve la mora de stock en un sentido que depende de la curva y por qué el castigo cambia el orden entre emisores. Los indicadores propios se cargan en `plantilla_benchmark_entidad.csv`.
 
 ## Contrato inicial de la métrica
 

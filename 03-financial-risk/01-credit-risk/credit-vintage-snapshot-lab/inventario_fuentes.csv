@@ -15,3 +15,5 @@ solicitudes,,,,,,,NO,Pendiente de inventario Athena; requerido para notebooks 07
 bureau_retro,,,,,,,NO,Pendiente de inventario Athena; requerido para notebooks 07–11
 economia_segmento,,,,,,,NO,Pendiente de inventario Athena; requerido para notebooks 07–11
 experimentos,,,,,,,NO,Pendiente de inventario Athena; requerido para notebooks 07–11
+benchmark_mercado_sfc,"datos.gov.co: h2jg-r3zg, rvii-eis8, w9zh-vetq, pare-7x5i",pública,entidad × mes,fecha_corte,mensual (rezago ~2 meses),,SI,Descarga reproducible con mercado_publico.py; copia en datos_publicos/
+benchmark_entidad,,,mes,fecha_corte,,,NO,Indicadores propios con las definiciones del notebook 12

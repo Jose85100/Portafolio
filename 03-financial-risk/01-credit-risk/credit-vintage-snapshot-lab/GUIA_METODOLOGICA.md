@@ -62,6 +62,14 @@ Los notebooks 07–11 convierten el EVER en decisiones. Cada método declara su 
 
 **Prueba controlada (11).** Tamaño para dos proporciones con potencia 80 % y α 5 %, efecto de diseño si se asigna por grupos, métrica en el MOB donde actúa el mecanismo, guardarraíles y regla de detención. Para el swap-in, una prueba de precisión con su costo de información. Asignación por hash con sal registrada y balance por diferencias estandarizadas. Toda cifra del memo cita su supuesto.
 
+## Benchmark de mercado (12)
+
+Los datos públicos de la SFC son de **stock** (saldo y mora al corte) y **flujo** (compras, avances, castigos, desembolsos); no hay cosechas públicas. Definiciones: $ICV_k$ = saldo con mora mayor a $k$ días / saldo, con la cartera de consumo vencida a partir de 30 días; tasa de castigo = castigos de capital de 12 meses / saldo promedio de 12 meses, solo con 12 meses consecutivos; **mora ajustada** = (mora >30 + castigos 12 m) / (saldo + castigos 12 m), que evita premiar a quien castiga rápido.
+
+Controles: llave por código SFC y no por nombre (fusiones y marcas nuevas); conciliación del saldo entre el formato de tarjetas (incluye empresariales) y la distribución de cartera (solo consumo); cuadre vigente + vencido = saldo. Se comparan solo emisores con cartera de consumo comparable.
+
+Cosecha y stock se relacionan por $S=\sum_a w_a\sum_{k\le a}e_k(1-\rho)^{a-k}/\sum_a w_a$, con $e_k$ la entrada a mora a la edad $k$, $\rho$ la salida mensual de la mora (castigo o cura) y $w_a=(1+g)^{-a}$ el peso de las cosechas cuando la originación crece a tasa $g$. El crecimiento pesa más las cosechas jóvenes: baja el stock si la mora por edad sube con la edad (salida lenta) y lo sube si la mora entra temprano y sale rápido. La hipótesis inicial de que crecer siempre diluye la mora resultó falsa; por eso el benchmark de stock no reemplaza la comparación de curvas. El contraste con el buró (TransUnion, mora 60+ por saldo) valida dirección y orden de magnitud: universo y definiciones difieren.
+
 ## Gobierno y reproducibilidad
 
 Registrar fuente, esquema, fecha de extracción y disponibilidad, hash, versión de política, unidad monetaria, reglas de saldo y población. Las plantillas vacías solo verifican el flujo de ausencia de datos. Los ejemplos ilustrativos, si existen, se identifican como tales y no se mezclan con evidencia de cartera. No subir identificadores o información sensible al repositorio.

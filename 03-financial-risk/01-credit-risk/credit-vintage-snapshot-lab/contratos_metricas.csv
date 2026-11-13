@@ -12,3 +12,6 @@ TASA_MALOS_EQUILIBRIO,fracción,valor medio de un bueno,valor medio de un bueno 
 GINI_SCORE,índice,2·AUC − 1,no aplica,EVER30@MOB3,>30,cohortes maduras,truncado por el corte: describe aprobados
 PSI_SCORE,índice,Σ (q−p)·ln(q/p),no aplica,mensual,no aplica,no aplica,"<0,10 estable; 0,10–0,25 vigilar; >0,25 material"
 EFECTO_POLITICA_DID,pp,δ de tratado×post,no aplica,EVER30@MOB3,>30,cohortes maduras,tendencias paralelas; errores agrupados por cohorte
+ICV30_MERCADO,saldo,"saldo con mora >30 días (rvii-eis8, tarjeta)",saldo de tarjeta de consumo,corte mensual,>30,stock,fuente pública SFC; no es cosecha
+MORA_AJUSTADA_CASTIGO,saldo,mora >30 + castigos de capital 12 m,saldo + castigos 12 m,12 meses,>30,12 meses consecutivos,corrige el efecto de castigar rápido
+TASA_CASTIGO_ANUAL,saldo,castigos de capital 12 m (h2jg-r3zg),saldo promedio 12 m,12 meses,n/a,12 meses consecutivos,h2jg incluye tarjeta empresarial
