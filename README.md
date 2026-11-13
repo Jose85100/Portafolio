@@ -9,9 +9,9 @@ Este repositorio es la evidencia técnica de ese trabajo: proyectos con datos of
 
 ## Áreas de interés
 
-El trabajo de este repositorio se organiza y se analiza como un portafolio: cuatro áreas, cada una con un proyecto insignia que la representa y con trabajos complementarios que la respaldan.
+Abordo varios temas de manera disciplinar, combinando economía, finanzas, estadística, ciencia de datos y regulación, con un propósito aplicado: que el trabajo se pueda ejecutar dentro de las entidades. Cada área tiene un proyecto insignia que muestra cómo se llevaría a la práctica.
 
-| Área | Enfoque | Contexto de aplicación | Proyecto insignia |
+| Área | Enfoque | Entidades donde se ejecuta | Proyecto insignia |
 |---|---|---|---|
 | **Riesgo y crédito** | Gestión de cartera, provisiones, pruebas de estrés, apetito de riesgo y gobierno regulatorio | Fintech de crédito y pagos, bancos y financieras vigiladas por la SFC, cooperativas, consultoría y auditoría de riesgo | [Estrés y apetito de riesgo en consumo](00-proyectos-insignia/01-riesgo-estres-consumo) |
 | **Estrategia, capital y finanzas** | Casos de inversión, economía unitaria, fondeo, capital y crecimiento de negocios financieros | Fintech y startups de datos o riesgo, unidades de innovación de entidades financieras, venture studios | [Caso de inversión en crédito digital](00-proyectos-insignia/03-caso-negocio-credito-digital) |
