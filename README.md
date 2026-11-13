@@ -7,14 +7,16 @@ Construyo modelos y dirijo iniciativas financieras con datos y análisis cuantit
 
 Este repositorio es la evidencia técnica de ese trabajo: proyectos con datos oficiales, código reproducible, pruebas automáticas y límites declarados.
 
-## Qué busco
+## Áreas de interés
 
-| Línea | Cargos | Dónde |
-|---|---|---|
-| **Dirección de riesgo y crédito** | Senior o Lead de riesgo de crédito, Gerente o Head de riesgo, Director de riesgo; CRO como meta | Fintech de crédito y pagos, bancos y financieras vigiladas por la SFC, cooperativas, consultoras y auditoras de riesgo |
-| **Estrategia, capital y finanzas** | CEO o cofundador, Managing Director, Head de estrategia, capital o portafolio; CFO de empresa temprana | Fintech y startups de datos o riesgo, unidades de innovación de entidades financieras, venture studios |
-| **Quant y riesgo técnico** | Senior Quantitative Risk, Model Risk y Model Validation, Risk Analytics Lead, investigación cuantitativa de riesgo | Bancos, fintech, firmas de validación de modelos, aseguradoras, gestores de activos |
-| **Académica** | Maestrías en inferencia causal, econometría, economía de datos o finanzas cuantitativas; becas y asistencias de investigación | Universidades y programas de investigación |
+El trabajo de este repositorio se organiza y se analiza como un portafolio: cuatro áreas, cada una con un proyecto insignia que la representa y con trabajos complementarios que la respaldan.
+
+| Área | Enfoque | Contexto de aplicación | Proyecto insignia |
+|---|---|---|---|
+| **Riesgo y crédito** | Gestión de cartera, provisiones, pruebas de estrés, apetito de riesgo y gobierno regulatorio | Fintech de crédito y pagos, bancos y financieras vigiladas por la SFC, cooperativas, consultoría y auditoría de riesgo | [Estrés y apetito de riesgo en consumo](00-proyectos-insignia/01-riesgo-estres-consumo) |
+| **Estrategia, capital y finanzas** | Casos de inversión, economía unitaria, fondeo, capital y crecimiento de negocios financieros | Fintech y startups de datos o riesgo, unidades de innovación de entidades financieras, venture studios | [Caso de inversión en crédito digital](00-proyectos-insignia/03-caso-negocio-credito-digital) |
+| **Quant y riesgo técnico** | Modelos cuantitativos de riesgo, validación, riesgo de modelo y analítica | Bancos, fintech, firmas de validación de modelos, aseguradoras, gestores de activos | [Validación independiente de un modelo satélite](00-proyectos-insignia/02-validacion-modelo-satelite) |
+| **Investigación académica** | Inferencia causal, econometría, economía de datos y finanzas cuantitativas | Universidades y programas de investigación | [¿Raciona crédito el techo de usura?](00-proyectos-insignia/04-usura-racionamiento-credito) |
 
 ## Experiencia
 
