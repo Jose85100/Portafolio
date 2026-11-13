@@ -32,10 +32,14 @@ Abordo varios temas de manera disciplinar, combinando economía, finanzas, estad
 - Auditoría y consultoría en liquidez y ALM (IRL, LCR, NSFR, IRRBB), riesgo operacional (SARO), cumplimiento (SARLAFT), riesgo tecnológico (SARTEC) y marco de apetito al riesgo (RAF).
 
 **[Axioma Capital & Credit](https://axiomafund.com)** — CEO y Fundador · *junio 2025 – abril 2026*
-- Fundación y dirección de la compañía con un equipo: producto y arquitectura de una plataforma de analítica de riesgo y datos públicos para Colombia.
+- Creación y dirección de la compañía y su equipo. Liderazgo de producto y arquitectura de una plataforma tecnológica de analítica de riesgo y datos públicos para Colombia, con motores de analítica territorial, perfilamiento, huella digital y otras capacidades.
+- Orquestación del equipo de producto, datos y desarrollo; diseño de portales por rol (empresa, inversionista y analista), de un motor de escenarios financieros y de los controles de seguridad y de cambios.
+- Propósito: democratizar el crédito y ampliar el acceso a la estructuración de capital de personas, empresas y proyectos de la economía real.
 
 **[Colombia Risk](https://colombiarisk.com)** — Fundador y Presidente · *junio 2023 – abril 2026*
-- Red de cooperación técnica, académica, privada y pública, con Axioma como partner fundador; documentos de trabajo sobre teoría de juegos y diseño de mecanismos aplicados a crédito, scoring e inclusión financiera.
+- Creación y presidencia de una red de cooperación técnica que articula actores académicos, privados y públicos, con un enfoque que ve el riesgo como oportunidad.
+- Coordinación de documentos académicos, análisis de coyuntura y contenidos educativos; impulso de estudios de caso, identificación de oportunidades y desarrollo de proyectos.
+- Estructuración comercial y financiera de la iniciativa (oferta, pricing y modelo pre-seed) y observatorio de datos públicos.
 
 **Innovación Financiera y Data Science** — Consultor independiente e investigador · *junio 2022 – diciembre 2025*
 - Agenda de investigación propia sobre riesgo financiero, macroeconomía y datos, de la formulación teórica a la implementación computacional; paneles reproducibles de cartera, macroeconomía y clima municipal desde fuentes públicas.
