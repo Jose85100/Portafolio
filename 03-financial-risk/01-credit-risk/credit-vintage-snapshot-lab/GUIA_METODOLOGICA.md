@@ -44,6 +44,24 @@ Comparar perfiles con clustering para variables mixtas y criterios de estabilida
 
 Modelos supervisados y anomalías requieren cohortes maduras, separación temporal y por cliente cuando corresponda, calibración, evaluación por segmentos y revisión de fuga temporal. Un score de anomalía prioriza investigación; no es una etiqueta de fraude. Supervivencia con avance como exposición requiere variable dependiente del tiempo y tratamiento explícito de censura y evento previo.
 
+## De la medición a la decisión
+
+Los notebooks 07–11 convierten el EVER en decisiones. Cada método declara su supuesto de identificación; el memo final lo cita junto a la cifra.
+
+**Puente a pérdida (07).** En cohortes con MOB 18 observado, $a=\Pr(C\mid E)$, $b=\Pr(C\mid \neg E)$, lift $a/b$ y captura $\Pr(E\mid C)$. Para una cosecha joven con tasa temprana $r$: $\widehat L=r a+(1-r)b$. Supuesto: $a$ y $b$ estables entre cosechas; se verifica por cohorte madura y se re-estima cuando cambian producto, política o cobranza. Las cancelaciones antes de MOB 18 son un evento competitivo, no un "sin castigo".
+
+**Curva esperada y efecto de cohorte (07).** Bandas $\bar p_m\pm z\sqrt{\varphi\,\bar p_m(1-\bar p_m)/n}$ con sobredispersión $\varphi\ge1$ estimada en cohortes de referencia. Hazard logit en tiempo discreto, $\operatorname{logit}h_{i,m}=\alpha_m+\gamma_c+\beta^\top Z_{c+m}$. Como período = cohorte + edad, el modelo edad–período–cohorte libre no está identificado y la parte lineal de una serie de período se confunde con una tendencia de cohorte. El efecto de cohorte se reporta condicional a las covariables macro, y una tendencia suave de cohortes no se atribuye sin evidencia adicional.
+
+**Mezcla frente a tasa (08).** $\Delta R=\sum_s(w_{1s}-w_{0s})\tfrac{r_{0s}+r_{1s}}2+\sum_s(r_{1s}-r_{0s})\tfrac{w_{0s}+w_{1s}}2$, exacta. Depende de la segmentación, por lo que se reporta con varias.
+
+**Economía (08).** Margen ajustado = ingreso − costo − PD·LGD·EAD; PD de equilibrio = (ingreso − costo)/(LGD·EAD); RAROC sobre capital $\kappa B$. Valor de vida por cuenta: un bueno vale $Hm-b\,LGD\,B$; un malo, $(1-a)Hm+a(\tau m-LGD\,B)-k$. La **tasa de malos de equilibrio** $\bar g/(\bar g+\bar\ell)$ indica si una banda crea o destruye valor. Con aprobados solo se evalúa **endurecer** el corte.
+
+**Score, TPV y rechazados (09).** AUC, Gini, KS y orden por bandas sobre aprobados (truncados por el corte); PSI sobre solicitantes para cambio de población. Aporte del TPV: ΔAUC fuera de tiempo con bootstrap pareado. Swap set entre política vigente y alternativa. Inferencia de rechazados: si la aprobación es una regla sobre variables observadas, la selección es ignorable dado esas variables y un modelo ajustado en aprobados es válido cerca del soporte. Con una regla determinística todo rechazado queda fuera del soporte en alguna variable, así que se reporta la distancia. El bureau retro por bandas es un contraste simple y sesgado; los *overrides* manuales rompen el supuesto. La evidencia definitiva es una muestra controlada.
+
+**Avance: señal o causa (10).** El landmark en MOB 1 con Mantel-Haenszel ordena el tiempo, pero no elimina la selección por estrés no observado. Diferencias en diferencias sobre un cambio de política, con tendencias paralelas revisadas por cohorte, errores agrupados por cohorte y la advertencia de pocos clusters; primera etapa y cociente de Wald para el efecto por avance evitado. RD local lineal con kernel triangular en umbrales que cambian un tratamiento **entre aprobados** (cupo); no en el umbral de aprobación, donde no hay desempeño debajo del corte.
+
+**Prueba controlada (11).** Tamaño para dos proporciones con potencia 80 % y α 5 %, efecto de diseño si se asigna por grupos, métrica en el MOB donde actúa el mecanismo, guardarraíles y regla de detención. Para el swap-in, una prueba de precisión con su costo de información. Asignación por hash con sal registrada y balance por diferencias estandarizadas. Toda cifra del memo cita su supuesto.
+
 ## Gobierno y reproducibilidad
 
 Registrar fuente, esquema, fecha de extracción y disponibilidad, hash, versión de política, unidad monetaria, reglas de saldo y población. Las plantillas vacías solo verifican el flujo de ausencia de datos. Los ejemplos ilustrativos, si existen, se identifican como tales y no se mezclan con evidencia de cartera. No subir identificadores o información sensible al repositorio.

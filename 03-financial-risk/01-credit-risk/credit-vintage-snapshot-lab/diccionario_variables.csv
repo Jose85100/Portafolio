@@ -142,3 +142,86 @@ modelado_mob1,departamento,,derivado; verificar procedencia y disponibilidad,,No
 modelado_mob1,avance_mob1_cop,,derivado; verificar procedencia y disponibilidad,,No confirmado,,Definir transformación y aceptación
 modelado_mob1,primer_mob_avance,,derivado; verificar procedencia y disponibilidad,,No confirmado,,Definir transformación y aceptación
 modelado_mob1,evento_mora_mob2_3,,derivado; verificar procedencia y disponibilidad,,No confirmado,,Definir transformación y aceptación
+desempeno_largo,id_credito,Identificador del crédito,nuevo: requerido para las preguntas de decisión,,No confirmado,,llave con originación
+desempeno_largo,id_comercio,Identificador del comercio,nuevo: requerido para las preguntas de decisión,,No confirmado,,llave con originación
+desempeno_largo,corte_origen,Cohorte de originación AAAA-MM,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+desempeno_largo,fecha_asof,Fecha de corte del extracto de desempeño largo,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+desempeno_largo,mob_seguimiento_max,Último MOB observado para la cuenta al corte,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+desempeno_largo,seguimiento_largo_completo,1 si la cohorte alcanzó MOB 18 al corte; 0 si no,nuevo: requerido para las preguntas de decisión,,No confirmado,,solo las completas entran al puente
+desempeno_largo,castigo_largo,1 si la cuenta fue castigada hasta MOB 18,nuevo: requerido para las preguntas de decisión,,No confirmado,,regla de castigo aprobada por Contabilidad
+desempeno_largo,fecha_castigo,Fecha contable del castigo,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+desempeno_largo,mob_castigo,MOB en que ocurrió el castigo,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+desempeno_largo,saldo_castigado_cop,Saldo de capital castigado,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+desempeno_largo,recuperaciones_cop,Recuperaciones posteriores al castigo disponibles al corte,nuevo: requerido para las preguntas de decisión,,No confirmado,,definir descuento temporal
+desempeno_largo,perdida_neta_cop,Saldo castigado menos recuperaciones,nuevo: requerido para las preguntas de decisión,,No confirmado,,no negativo
+desempeno_largo,cancelada_antes_horizonte,1 si la cuenta se canceló antes de MOB 18 sin castigo,nuevo: requerido para las preguntas de decisión,,No confirmado,,riesgo competitivo
+desempeno_largo,fecha_disponibilidad,Fecha en que el dato estuvo disponible,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+macro_mensual,mes,Mes calendario AAAA-MM,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+macro_mensual,desempleo,Tasa de desempleo del mes (puntos porcentuales),nuevo: requerido para las preguntas de decisión,,No confirmado,,"usar la publicación disponible, no la revisada"
+macro_mensual,tasa_intervencion,Tasa de política monetaria vigente,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+macro_mensual,inflacion_anual,Inflación anual del mes,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+macro_mensual,indicador_actividad,Indicador de actividad económica,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+macro_mensual,fuente,Fuente oficial de la serie,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+macro_mensual,fecha_publicacion,Fecha de publicación del dato,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+macro_mensual,fecha_disponibilidad,Fecha en que el dato estuvo disponible para el análisis,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+solicitudes,id_solicitud,Identificador único de la solicitud,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+solicitudes,id_cliente,Identificador del cliente,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+solicitudes,id_comercio,Identificador del comercio,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+solicitudes,fecha_solicitud,Fecha de la solicitud,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+solicitudes,corte_origen,Mes de la solicitud AAAA-MM,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+solicitudes,tipo_persona,Natural o jurídica al momento de la solicitud,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+solicitudes,estrategia_originacion,"Estrategia aplicada: Experian, TPV u otra",nuevo: requerido para las preguntas de decisión,,No confirmado,,
+solicitudes,departamento_dane,Código DANE del departamento,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+solicitudes,municipio_dane,Código DANE del municipio,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+solicitudes,score_buro,Score de buró disponible al decidir,nuevo: requerido para las preguntas de decisión,,No confirmado,,nulo no equivale a cero
+solicitudes,version_score,Versión del score del proveedor,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+solicitudes,tpv_mensual_cop,Volumen transaccionado mensual del comercio disponible al decidir,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+solicitudes,meses_historia_tpv,Meses de historia transaccional disponibles,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+solicitudes,decision,"Aprobada, rechazada o desistida",nuevo: requerido para las preguntas de decisión,,No confirmado,,
+solicitudes,motivo_rechazo,Regla o motivo del rechazo,nuevo: requerido para las preguntas de decisión,,No confirmado,,identificar overrides manuales
+solicitudes,version_politica,Versión de política vigente al decidir,nuevo: requerido para las preguntas de decisión,,No confirmado,,llave con politicas
+solicitudes,cupo_ofrecido_cop,Cupo ofrecido en la decisión,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+solicitudes,id_credito,Crédito resultante si fue aprobada y desembolsada,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+solicitudes,fecha_disponibilidad,Fecha en que el registro estuvo disponible,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+bureau_retro,id_solicitud,Solicitud a la que corresponde el retro,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+bureau_retro,id_cliente,Identificador del cliente,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+bureau_retro,fecha_retro,Fecha de la consulta retro,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+bureau_retro,proveedor,Proveedor del buró,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+bureau_retro,ventana_meses,Meses desde la solicitud que cubre la observación,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+bureau_retro,retro_malo_12m,1 si tuvo mora relevante en otras entidades en la ventana,nuevo: requerido para las preguntas de decisión,,No confirmado,,definición alineada con EVER interno
+bureau_retro,definicion_malo_retro,Regla exacta de malo del proveedor,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+bureau_retro,obligaciones_nuevas_otras_entidades,Créditos nuevos en otras entidades en la ventana,nuevo: requerido para las preguntas de decisión,,No confirmado,,indica si el rechazado obtuvo crédito
+bureau_retro,fecha_disponibilidad,Fecha en que el dato estuvo disponible,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+economia_segmento,segmento,"Segmento económico (por ejemplo, estrategia × banda de score)",nuevo: requerido para las preguntas de decisión,,No confirmado,,
+economia_segmento,periodo,Período de referencia de las cifras,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+economia_segmento,n_cuentas,Cuentas del segmento,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+economia_segmento,saldo_promedio_cop,Saldo promedio por cuenta,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+economia_segmento,ead_cop,Exposición al default por cuenta,nuevo: requerido para las preguntas de decisión,,No confirmado,,incluye cupo no utilizado según CCF
+economia_segmento,tasa_interes_anual,Tasa efectiva anual cobrada sobre saldo rotativo,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+economia_segmento,ingreso_intercambio_anual_cop,Ingreso anual por intercambio por cuenta,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+economia_segmento,ingreso_comisiones_anual_cop,"Comisiones anuales por cuenta (avances, cuota de manejo)",nuevo: requerido para las preguntas de decisión,,No confirmado,,
+economia_segmento,costo_fondeo_anual,Costo anual de fondeo sobre saldo,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+economia_segmento,costo_operativo_anual_cop,Costo operativo anual por cuenta,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+economia_segmento,costo_adquisicion_cop,Costo de adquisición por cuenta,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+economia_segmento,lgd,Pérdida dado el default,nuevo: requerido para las preguntas de decisión,,No confirmado,,del puente o del modelo de LGD aprobado
+economia_segmento,capital_ratio,Capital económico como fracción del saldo,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+economia_segmento,hurdle,Costo de capital exigido,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+economia_segmento,fuente,Área y documento que aprueba las cifras,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+economia_segmento,fecha_disponibilidad,Fecha de aprobación de las cifras,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+experimentos,id_experimento,Identificador del experimento,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+experimentos,hipotesis,Hipótesis y origen del efecto esperado,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+experimentos,segmento_elegible,Regla de elegibilidad,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+experimentos,regla_champion,Política vigente,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+experimentos,regla_challenger,Política en prueba,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+experimentos,proporcion_challenger,Fracción asignada al challenger,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+experimentos,sal_asignacion,Sal del hash de asignación,nuevo: requerido para las preguntas de decisión,,No confirmado,,permite reconstruir la asignación
+experimentos,fecha_inicio,Inicio de la asignación,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+experimentos,fecha_lectura_mob1,Fecha de lectura temprana,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+experimentos,fecha_lectura_mob3,Fecha de lectura primaria,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+experimentos,metrica_primaria,Métrica primaria y MOB de lectura,nuevo: requerido para las preguntas de decisión,,No confirmado,,no cambiar después de iniciar
+experimentos,metricas_guardarrail,Métricas que no deben deteriorarse,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+experimentos,efecto_minimo_detectable,Efecto mínimo que el diseño detecta,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+experimentos,n_requerido_por_brazo,Tamaño por brazo con potencia 80 %,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+experimentos,criterio_detencion,Regla de detención por daño,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+experimentos,responsable,Dueño del experimento,nuevo: requerido para las preguntas de decisión,,No confirmado,,
+experimentos,estado,"Diseño, en curso, leído o cerrado",nuevo: requerido para las preguntas de decisión,,No confirmado,,
