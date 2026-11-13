@@ -1,0 +1,7 @@
+kind,price,error
+prior_EN_payments,0.05,0.0
+prior_EN_payments,0.14440532323881,0.0
+prior_EN_payments,0.8255764119219942,0.0
+prior_no_edges_prices,0.05,0.0
+prior_no_edges_prices,0.10951650607479953,0.0
+prior_no_edges_prices,0.8255764119219942,0.0

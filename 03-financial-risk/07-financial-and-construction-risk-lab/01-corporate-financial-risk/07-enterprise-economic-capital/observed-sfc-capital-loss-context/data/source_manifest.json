@@ -1,0 +1,39 @@
+{
+  "retrieved_utc": "2026-11-11T19:50:21.827498+00:00",
+  "solvency_source": "https://www.datos.gov.co/resource/x586-r5d2.json",
+  "solvency_dataset_id": "x586-r5d2",
+  "solvency_query_parameters": {
+    "$where": "(fecha='2021-03-31T00:00:00.000' OR fecha='2021-06-30T00:00:00.000' OR fecha='2021-09-30T00:00:00.000' OR fecha='2021-12-31T00:00:00.000' OR fecha='2022-03-31T00:00:00.000' OR fecha='2022-06-30T00:00:00.000' OR fecha='2022-09-30T00:00:00.000' OR fecha='2022-12-31T00:00:00.000' OR fecha='2023-03-31T00:00:00.000' OR fecha='2023-06-30T00:00:00.000' OR fecha='2023-09-30T00:00:00.000' OR fecha='2023-12-31T00:00:00.000' OR fecha='2024-03-31T00:00:00.000' OR fecha='2024-06-30T00:00:00.000' OR fecha='2024-09-30T00:00:00.000' OR fecha='2024-12-31T00:00:00.000' OR fecha='2025-03-31T00:00:00.000' OR fecha='2025-06-30T00:00:00.000' OR fecha='2025-09-30T00:00:00.000' OR fecha='2025-12-31T00:00:00.000' OR fecha='2026-03-31T00:00:00.000' OR fecha='2026-06-30T00:00:00.000') AND tipo_entidad IN (1,2,4,32) AND uc=14 AND columna=5 AND renglon IN (20,25,30,32,60)",
+    "$select": ":id,:created_at,:updated_at,tipo_entidad,codigo_entidad,nombre_entidad,fecha,columna,uc,renglon,concepto,valor",
+    "$order": ":created_at DESC",
+    "$limit": 20000
+  },
+  "solvency_response_sha256": "4da1af109c5f6f767dda5d015fd12ef1825c4dc28ef9ade07bdb46c1e00dd205",
+  "solvency_rows": 5730,
+  "pnl_source": "https://www.superfinanciera.gov.co/publicaciones/10086287/informes-y-cifrascifrasestablecimientos-de-creditoinformacion-periodicamensualindicadores-gerenciales-niifindicadores-gerenciales-series-historicas-por-entidades-niif-a-partir-de-enero-de-10086287/ (SFC downloadable Total Entidades Establecimiento de Crédito workbook idFile=1045555)",
+  "pnl_source_workbook_sha256": "7f74655b7cff09c00f1d00b6fe56ed562ea167d3b2b5467781e1df35ee678133",
+  "pnl_source_bytes": 908367,
+  "pnl_sheet": "PyG",
+  "pnl_source_rows_extracted": {
+    "net_impairment_ytd_cop_millions": {
+      "row_0_indexed": 139,
+      "label": "DETERIORO NETO DE RECUPERACION-DR."
+    },
+    "net_profit_ytd_cop_millions": {
+      "row_0_indexed": 129,
+      "label": "GANANCIAS (EXCEDENTES) Y PÉRDIDAS"
+    }
+  },
+  "pnl_rows": 129,
+  "pnl_period_first": "2016-01",
+  "pnl_period_last": "2026-09",
+  "pnl_csv_sha256": "747a5de7bf8df97883f963b4f8bd20bb5e8e3b4a3cecf77ec34429b0ddea0e1f",
+  "scope_note": "Financial statements aggregate: Todos los EC sin Ioes. Solvency records: types 1,2,4,32; type 22 (IOEs) excluded for scope alignment.",
+  "solvency_response_handling": "Entity-level response was processed in memory; raw response values, entity names, codes and row IDs are not retained in the repository.",
+  "solvency_aggregate_snapshot": {
+    "file": "sfc_solvency_aggregate_quarterly.csv",
+    "sha256": "9b7360ba104dd336df12a2f06a49f4625c2f545c6f59a2abb60949ac5d25143b",
+    "rows": 22,
+    "columns": "Quarter-level component sums, entity counts, weighted aggregate ratio, median reported ratio, and maximum ratio reconciliation difference; no row/entity identifiers."
+  }
+}

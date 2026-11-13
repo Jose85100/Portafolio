@@ -1,0 +1,169 @@
+{
+  "date": "2026-10-21",
+  "scope": "synthetic experiments, independent processes",
+  "notebooks": [
+    {
+      "path": "01-identity-kyc-consistency/notebooks/01-bayes-evidence-and-calibration.ipynb",
+      "cells": 38,
+      "code_cells": 11,
+      "figures": 4,
+      "execution_mode": "ipython",
+      "seconds": 4.109,
+      "metrics": {
+        "Posterior correcto": 0.2081,
+        "Posterior inválido por duplicación": 0.7293,
+        "Positivos de prueba": 26,
+        "Error máximo de gradiente": 1.6550684434069105e-12,
+        "Posterior con copia total": 0.2081
+      },
+      "sha256": "b130359449f5f551cfd8fec4a79de451a1ec229f356fdb1792142828718b39fc",
+      "code_lines": 115
+    },
+    {
+      "path": "01-identity-kyc-consistency/notebooks/02-economic-thresholds-and-capacity.ipynb",
+      "cells": 38,
+      "code_cells": 11,
+      "figures": 4,
+      "execution_mode": "ipython",
+      "seconds": 4.564,
+      "metrics": {
+        "Costo sin capacidad (COP)": 8025285.9,
+        "Costo con 60 minutos (COP)": 4274124.94,
+        "Costo adicional con eficacia cero (COP)": 120006.94,
+        "Umbral de revisión para 2 millones": 0.02043,
+        "EVSI neto con p=0,05 (COP)": 14290.5,
+        "Brecha sobre límite dual de grilla (COP)": -0.0
+      },
+      "sha256": "b1e5961cff36683436766ce5289cfa3505e11a08f84c78533c9f789fba6f96ae",
+      "code_lines": 99
+    },
+    {
+      "path": "02-temporal-application-graphs/notebooks/01-point-in-time-graph-features.ipynb",
+      "cells": 38,
+      "code_cells": 11,
+      "figures": 4,
+      "execution_mode": "ipython",
+      "seconds": 4.765,
+      "metrics": {
+        "Primer conteo válido de campaña": 0,
+        "Grado retrospectivo inválido": 24,
+        "Invariancia a eventos futuros": true,
+        "AP individual temporal": 0.3292,
+        "AP con red temporal": 0.3186,
+        "Campañas de prueba no vistas por bloque": true
+      },
+      "sha256": "091883c5a16e0744fbac3889800ebe417dd042392839e094eda8e6ae6773fae4",
+      "code_lines": 117
+    },
+    {
+      "path": "02-temporal-application-graphs/notebooks/02-network-overlap-and-loss-coverage.ipynb",
+      "cells": 38,
+      "code_cells": 11,
+      "figures": 4,
+      "execution_mode": "ipython",
+      "seconds": 3.792,
+      "metrics": {
+        "Beneficio ranking aditivo con K=2 (COP)": 110000.0,
+        "Beneficio cobertura conjunta K=2 (COP)": 220000.0,
+        "Presupuestos contrastados con oráculo": 4,
+        "Valor perfecto de información de vínculos (COP)": 0.0,
+        "Alternativas enumeradas con K<=2": 7,
+        "Mayor multiplicidad de exposición": 2
+      },
+      "sha256": "1c33ae6ddda92e51a304bdb70f38f247bc0b5dbe8f7210c20c1ca84e05522897",
+      "code_lines": 108
+    },
+    {
+      "path": "03-income-document-consistency/notebooks/01-income-quantiles-and-coverage.ipynb",
+      "cells": 38,
+      "code_cells": 11,
+      "figures": 4,
+      "execution_mode": "ipython",
+      "seconds": 4.499,
+      "metrics": {
+        "Cobertura nominal": 0.8,
+        "Cobertura test ampliada": 0.7829,
+        "Cobertura con cambio de ingreso": 0.2057,
+        "Ampliación en log puntos": 0.0097,
+        "Cobertura modelo de dos partes": 0.896,
+        "AP de sobrerreporte sintético": 0.7895,
+        "Error máximo de pinball en grilla": 0.0013
+      },
+      "sha256": "bee49e53ce4c7530eec3f0f01a1c98e7822b1b2a66c34fb90c652bdbcb529935",
+      "code_lines": 127
+    },
+    {
+      "path": "03-income-document-consistency/notebooks/02-flow-reconciliation-and-robustness.ipynb",
+      "cells": 38,
+      "code_cells": 11,
+      "figures": 3,
+      "execution_mode": "ipython",
+      "seconds": 4.486,
+      "metrics": {
+        "Abonos brutos (COP)": 10000000,
+        "Ingreso elegible (COP)": 3000000,
+        "Sobreestimación por sumar abonos": 3.333,
+        "Conversiones reconciliadas": 5,
+        "Ingreso conciliado por eventos (COP)": 3000000,
+        "Cambio de saldo consolidado (COP)": 7000000,
+        "Duplicado contradictorio rechazado": true
+      },
+      "sha256": "ef9260a431cd6eec5b4a60fb26e1753152d272683b54d9d1282cad75b190dc84",
+      "code_lines": 121
+    },
+    {
+      "path": "04-origination-process-anomalies/notebooks/01-case-mix-and-shrinkage.ipynb",
+      "cells": 38,
+      "code_cells": 11,
+      "figures": 4,
+      "execution_mode": "ipython",
+      "seconds": 4.268,
+      "metrics": {
+        "Grupos simulados": 80,
+        "Cambios inyectados": 4,
+        "Grupos revisados por criterio": 8,
+        "Mayor residuo ajustado": 9.7,
+        "rho beta-binomial ajustado": 0.0572,
+        "NLL beta-binomial test": 3.2774,
+        "NLL binomial test": 4.8174
+      },
+      "sha256": "7205df0a6ac092eaf4dd91900dad4e3f5a606309030f7239103d55b13351f2f4",
+      "code_lines": 103
+    },
+    {
+      "path": "04-origination-process-anomalies/notebooks/02-cusum-false-alarms-and-delay.ipynb",
+      "cells": 38,
+      "code_cells": 11,
+      "figures": 4,
+      "execution_mode": "ipython",
+      "seconds": 5.029,
+      "metrics": {
+        "Umbral calibrado": 5.604,
+        "Falsa alarma en 120 días": 0.0633,
+        "Réplicas independientes de evaluación": 600,
+        "Escenarios de cambio": 5,
+        "FA con phi=0,85": 0.795,
+        "FA al reutilizar umbral en 5 canales": 0.28,
+        "FA con umbral conjunto": 0.04
+      },
+      "sha256": "4fcf590823a04a6c56f6ef3e4ccb1d3ee12ea91468fc91fcbc83218b70bc2dcc",
+      "code_lines": 113
+    }
+  ],
+  "totals": {
+    "notebooks": 8,
+    "cells": 304,
+    "code_cells": 88,
+    "code_lines": 903,
+    "figures": 31,
+    "display_equations": 35
+  },
+  "inspection": {
+    "figures_visually_reviewed": 31,
+    "new_figures": 15,
+    "original_figures_byte_identical": 16,
+    "equations": "35 display blocks plus inline derivations and symbol/unit dictionaries inside notebooks",
+    "code_execution": "IPython dedicated processes; all 88 code cells passed",
+    "engine_tests": "21 passed, including 40 independent optimization comparisons"
+  }
+}

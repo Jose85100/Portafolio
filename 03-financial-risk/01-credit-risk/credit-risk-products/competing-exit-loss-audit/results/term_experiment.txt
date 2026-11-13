@@ -1,0 +1,47 @@
+{
+  "anchor": {
+    "exact_loss": 3.651612807692989,
+    "midpoint_exposure_loss": 3.651612807692989,
+    "default_probability": 0.12717870688631303,
+    "prepayment_probability": 0.6358935344315653,
+    "survival": 0.2369277586821218,
+    "terminal_discount": 0.8938654665285504
+  },
+  "discrete_midyear_payment": 4.157861225598016,
+  "smooth_same_endpoints": 3.895512384356232,
+  "semantic_difference": 0.2623488412417845,
+  "cases": 36,
+  "max_abs_error": 1.0063933242321355e-08,
+  "hypothesis": "max abs error <1e-6 money vs midpoint4096 on same event-DGP",
+  "passed": true,
+  "timings": {
+    "closed_form": {
+      "median_seconds": 1.9768840002143406e-05,
+      "samples_seconds": [
+        1.9768840002143406e-05,
+        1.985576000151923e-05,
+        1.857188000030874e-05,
+        1.6550479999750676e-05,
+        1.656808000007004e-05,
+        2.03801600036968e-05,
+        2.1163679998608132e-05
+      ],
+      "peak_python_bytes": 1432
+    },
+    "midpoint4096": {
+      "median_seconds": 0.0014216781599998285,
+      "samples_seconds": [
+        0.0013119467600017742,
+        0.001460084159998587,
+        0.0014866626000002725,
+        0.0013703462800003763,
+        0.0014216781599998285,
+        0.0014921899999990273,
+        0.0013762506400007623
+      ],
+      "peak_python_bytes": 1016
+    }
+  },
+  "python": "3.12.14",
+  "hardware": "Linux-6.18.57-x86_64-with-glibc2.39"
+}

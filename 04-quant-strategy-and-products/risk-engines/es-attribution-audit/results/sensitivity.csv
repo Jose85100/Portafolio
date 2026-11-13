@@ -1,0 +1,9 @@
+dimension,setting,n,VaR,ES,interpretation
+confidence,0.9,5000,2.7043615552613556,4.861565707685054,same synthetic sample
+confidence,0.95,5000,3.5281799736374446,6.639674450239519,same synthetic sample
+confidence,0.975,5000,4.289169030698484,9.409658672519422,same synthetic sample
+confidence,0.99,5000,5.8695839152855225,16.023538821674453,same synthetic sample
+crisis_loss_multiplier,0.0,5000,3.9103828563296728,4.751115881896011,counterfactual shock magnitude; not forecast
+crisis_loss_multiplier,0.5,5000,4.164341623100228,6.420174871586088,counterfactual shock magnitude; not forecast
+crisis_loss_multiplier,1.0,5000,4.289169030698484,9.409658672519422,counterfactual shock magnitude; not forecast
+crisis_loss_multiplier,1.5,5000,4.388330894937203,12.550910805009492,counterfactual shock magnitude; not forecast

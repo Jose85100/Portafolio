@@ -1,0 +1,20 @@
+test_decision_boundary_and_negative (test_joint_role.JointRoleTests.test_decision_boundary_and_negative) ... ok
+test_exact_recovery_role_certain_and_no_shock (test_joint_role.JointRoleTests.test_exact_recovery_role_certain_and_no_shock) ... ok
+test_invalid_and_ties (test_joint_role.JointRoleTests.test_invalid_and_ties) ... ok
+test_lp_oracle_grid_and_witness (test_joint_role.JointRoleTests.test_lp_oracle_grid_and_witness) ... ok
+test_restriction_and_monotonicity (test_joint_role.JointRoleTests.test_restriction_and_monotonicity) ... ok
+test_binomial_oracle_and_total_mass (test_quorum.QuorumTests.test_binomial_oracle_and_total_mass) ... ok
+test_closed_form_common_cause (test_quorum.QuorumTests.test_closed_form_common_cause) ... ok
+test_false_pass_and_infeasible (test_quorum.QuorumTests.test_false_pass_and_infeasible) ... ok
+test_invalid (test_quorum.QuorumTests.test_invalid) ... ok
+test_mandatory_and_deterministic (test_quorum.QuorumTests.test_mandatory_and_deterministic) ... ok
+test_cheapest_false_pass_and_robust_choice (test_reserve_ambiguity.ReserveAmbiguityTests.test_cheapest_false_pass_and_robust_choice) ... ok
+test_existing29_engine_recovers_nominal (test_reserve_ambiguity.ReserveAmbiguityTests.test_existing29_engine_recovers_nominal) ... ok
+test_invalid_and_coupling (test_reserve_ambiguity.ReserveAmbiguityTests.test_invalid_and_coupling) ... ok
+test_lp_oracle_sharp_bounds (test_reserve_ambiguity.ReserveAmbiguityTests.test_lp_oracle_sharp_bounds) ... ok
+test_threshold_and_positive_dependence_counterexample (test_reserve_ambiguity.ReserveAmbiguityTests.test_threshold_and_positive_dependence_counterexample) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.250s
+
+OK

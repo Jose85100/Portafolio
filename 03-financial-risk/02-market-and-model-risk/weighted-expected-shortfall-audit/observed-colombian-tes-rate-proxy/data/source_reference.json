@@ -1,0 +1,23 @@
+{
+  "source": "Banco de la República, Estadísticas Económicas, serie 15274",
+  "series": "Tasa de interés Cero Cupón, Títulos de Tesorería (TES), pesos - 10 años",
+  "series_id": 15274,
+  "official_url": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/220002/tasas_interes_cero_cupon_tes/",
+  "methodology_url": "https://www.banrep.gov.co/en/node/41443",
+  "source_method": "SEN and MEC operations; Banco de la República Nelson-Siegel zero-coupon curve",
+  "raw_file": "data/raw/banrep_tes10_official.json",
+  "raw_sha256": "335739330f675690c418a06d464b97a39f8b7326a2d3c7b6711647e58cd33f1b",
+  "raw_bytes": 312499,
+  "observations": 5801,
+  "period": ["2003-01-02", "2026-11-06"],
+  "last_loaded": "09 de noviembre de 2026",
+  "yield_unit": "percent per annum",
+  "timestamp_interpretation": "epoch milliseconds converted to Colombia local date (UTC-05:00)",
+  "transformation": {
+    "modified_duration_years_assumed": 8.0,
+    "notional_cop_assumed": 1000000000.0,
+    "loss_proxy_formula": "D_mod * (delta_yield_basis_points / 10000) * notional_COP",
+    "alpha": 0.975,
+    "scenario_probability": "equal for each consecutive observed yield-change interval"
+  }
+}

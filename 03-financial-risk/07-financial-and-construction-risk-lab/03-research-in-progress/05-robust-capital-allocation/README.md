@@ -19,3 +19,9 @@ Build a deterministic baseline, then stochastic scenario engine and parameter es
 
 ## Model risk and acceptance gates
 No deployment without independently reproducible inputs, unit and integration tests, documented limitations, backtesting and governance approval. **Status: design only.**
+
+## Contexto público observado (no es validación)
+
+El [perfil de concentración DNP/SGR](../../02-construction-enterprise-risk/11-portfolio-project-concentration/observed-dnp-sgr-project-concentration/README.md) describe distribución de valor en inversión pública para contextualizar concentración. No contiene pérdidas, dependencia ni capital económico de la cartera objetivo; la optimización robusta sigue en especificación.
+
+**Estado de madurez:** la propuesta continúa S1; el companion citado aporta contexto observable, pero no implementa ni valida el modelo descrito.

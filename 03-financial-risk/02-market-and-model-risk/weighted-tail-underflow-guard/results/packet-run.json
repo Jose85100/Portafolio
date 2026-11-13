@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-17",
+  "seed": 20261017,
+  "selected_fixture_ids": [
+    144,
+    16,
+    225,
+    94,
+    63,
+    254,
+    382,
+    348,
+    347,
+    377,
+    352,
+    351
+  ],
+  "valid_packets": 390,
+  "invalid_mutants": 114,
+  "json_invalid_accepted": 114,
+  "validator_invalid_accepted": 0,
+  "validator_valid_rejected": 0,
+  "consistent_forgery_accepted": true,
+  "max_bytes": 32768,
+  "max_digits": 2048,
+  "performance_rows": 56,
+  "source_sha256": {
+    "src/packet.py": "9cc8453f025766cb72a489af91933ca77711ad977da0261737fc6c733bd7ff70",
+    "benchmarks/packet.py": "090c2fcbf2ac584d80b50f665af64b1b372dd9619024446594ca99fdd6d582a7",
+    "results/fixtures.json": "935087242898f9b4ae8ab50f03fedc58d95966bb1675654b8ff76da0d6e32879"
+  },
+  "medians_ms": {
+    "1/json_loads": 0.004717,
+    "1/validated_receipt": 0.011948,
+    "32/json_loads": 0.005058,
+    "32/validated_receipt": 0.01345,
+    "512/json_loads": 0.005608,
+    "512/validated_receipt": 0.019048,
+    "2000/json_loads": 0.007351,
+    "2000/validated_receipt": 0.080749
+  }
+}

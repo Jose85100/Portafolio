@@ -1,0 +1,39 @@
+{
+  "observations": 214,
+  "exceptions": 2,
+  "expected_exceptions": 2.140000000000002,
+  "exception_rate": 0.009345794392523364,
+  "kupiec_uc_lr": 0.009457899657604685,
+  "kupiec_uc_pvalue": 0.9225264853654415,
+  "christoffersen_ind_lr": 0.0379152597019754,
+  "christoffersen_ind_pvalue": 0.8456133976538596,
+  "n00": 209,
+  "n01": 2,
+  "n10": 2,
+  "n11": 0,
+  "source_period_start": "2024-01-02",
+  "source_period_end": "2026-11-10",
+  "holdout_start": "2026-01-06",
+  "holdout_end": "2026-11-10",
+  "training_window": 500,
+  "confidence_level": 0.99,
+  "duration_assumption_years": 8.0,
+  "source_hashes": [
+    {
+      "file": "daily-treasury-yield-curve-2024.csv",
+      "sha256": "6775840b76cd7fd41121f61d6f6c60184eca6b2ba49954ec7372c463cbeef34d",
+      "bytes": 19098
+    },
+    {
+      "file": "daily-treasury-yield-curve-2025.csv",
+      "sha256": "cf2fa3da7f160384b63d2ead698532b1d76cd9f789ce4911e2304db85b14e6d5",
+      "bytes": 20155
+    },
+    {
+      "file": "daily-treasury-yield-curve-2026-11-10.csv",
+      "sha256": "782e0953ac34dd4c9751bc061feae3b1a2e18f0be8c7c181a3d2a472d1bdcbe5",
+      "bytes": 17606
+    }
+  ],
+  "scope_note": "single-factor first-order duration proxy; not an observed bond return series"
+}

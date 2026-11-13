@@ -1,0 +1,64 @@
+{
+  "config": {
+    "seed": 20261029,
+    "alpha_values": [
+      0.5,
+      1,
+      1.5
+    ],
+    "weight_values": [
+      0.5,
+      1,
+      2
+    ],
+    "target_values": [
+      0,
+      0.5,
+      1
+    ],
+    "shock_scales": [
+      0,
+      1
+    ],
+    "anchor": {
+      "alpha": 1,
+      "weight": 1,
+      "target": 1,
+      "shock_scale": 1
+    },
+    "hypothesis": "On54 exact two-state cases: RE residual commitment/discretion<=1e-12; loss gap=0.5*(weight*alpha*target)^2; scalar best-response oracle discrepancy<=1e-6. Anchor naive loss appears lower but RE residual>0, so reject as equilibrium comparison."
+  },
+  "case_count": 54,
+  "state_regime_records": 324,
+  "anchor": {
+    "alpha": 1,
+    "weight": 1,
+    "target": 1,
+    "shock_scale": 1,
+    "commitment_loss": 0.75,
+    "discretion_loss": 1.25,
+    "naive_loss_inconsistent": 0.5,
+    "commitment_re_residual": 0.0,
+    "discretion_re_residual": 0.0,
+    "naive_re_residual": 0.5,
+    "commitment_mean_output": 0.0,
+    "discretion_mean_output": 0.0,
+    "naive_mean_output": 0.5,
+    "loss_gap_identity_error": 0.0,
+    "max_best_response_oracle_error": 4.92471741164735e-09
+  },
+  "max_loss_gap_identity_error": 4.440892098500626e-16,
+  "max_best_response_oracle_error": 1.4187990338143663e-08,
+  "seconds": 0.2601676150000003,
+  "python_peak_bytes": 223110,
+  "hardware": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "source_sha256": "9afb79c86a47555431f29a1e2872e25a8a7489212ac0b96ac9e549a1f3587b92",
+  "data_sha256": "fa0ad551a68ad9a3d0064770b8e4bd78ec09182bf3c59911be5547e3cfddf875",
+  "note": "Exact equiprobable \u00b1sigma states; sigma0 repeats same zero state with probability0.5 each. No sampled uncertainty. Whole experiment instrumented Python allocation peak, not RSS or per-regime runtime."
+}

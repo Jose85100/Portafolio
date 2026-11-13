@@ -1,0 +1,34 @@
+{
+  "source": "https://www.arcgis.com/home/item.html?id=fab4a3ec84de4b1c9549ce63b01a0524",
+  "service_layer": "https://portalsig.anla.gov.co/publico/rest/services/PROYECTOS_ANLA/ProyectosANLA_Evaluacion/FeatureServer/2/query",
+  "query_sector_code": 102,
+  "query_sector_label": "Infraestructura (código de dominio oficial)",
+  "checked_at_utc": "2026-11-11T18:02:40+00:00",
+  "response_sha256_ephemeral": "0a55e8fe13f39f0922d4ea03f70528556edfa57bbbbed74d6916ac68a3aa9ffb",
+  "raw_geometry_rows_received": 77,
+  "deduplicated_project_action_date_rows": 19,
+  "unique_project_ids_count_only": 15,
+  "event_rows_by_registered_status": {
+    "EVALUACION": 9,
+    "SUSPENDIDO": 7,
+    "USUARIO": 3
+  },
+  "latest_record_status_by_project_count_only": {
+    "EVALUACION": 7,
+    "SUSPENDIDO": 6,
+    "USUARIO": 2
+  },
+  "pairs_with_both_dates": 19,
+  "negative_date_pairs_excluded": 0,
+  "missing_filing_date_pairs_excluded": 0,
+  "valid_nonnegative_pairs": 19,
+  "radicado_date_min": "2024-09-01",
+  "radicado_date_max": "2026-10-20",
+  "admin_act_date_min": "2024-09-18",
+  "admin_act_date_max": "2026-10-29",
+  "lag_days_median": 22.0,
+  "lag_days_p90_nearest_rank": 28.0,
+  "lag_days_max": 56.0,
+  "lag_definition": "Calendar days between the paired FECHA_RADICADO and FEC_ACT_AD on each current layer row; not end-to-end review or permit duration.",
+  "raw_project_identifiers_saved": false
+}

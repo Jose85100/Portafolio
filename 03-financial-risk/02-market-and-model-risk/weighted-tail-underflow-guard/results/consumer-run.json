@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-16",
+  "seed": 20261016,
+  "threshold": "0",
+  "fixtures": 388,
+  "naive_errors": 29,
+  "contract_errors": 0,
+  "rejection_policies_checked": 2,
+  "performance_rows": 112,
+  "python": "3.12.14",
+  "source_sha256": {
+    "src/consumer.py": "35ede51ae4da98b4d142641021183551bb56fc3fd492a83eafae597ea14390e3",
+    "src/guard.py": "1833defd42b257b9421a20b9c235f16ee14463688e92188fe55383d92b26f53e",
+    "benchmarks/consumer.py": "7a25a29f964e820b39473bcb4aeb3c01dcbfe86dd28401d7d58488e6d307b1c3",
+    "results/fixtures.json": "935087242898f9b4ae8ab50f03fedc58d95966bb1675654b8ff76da0d6e32879"
+  },
+  "cpu": "model name\t: AMD EPYC 9V74 80-Core Processor",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "medians_ms": {
+    "2/ordinary/naive_guard_float": 0.062292,
+    "2/ordinary/contract_json": 0.090304,
+    "2/tiny_weight/naive_guard_float": 0.085075,
+    "2/tiny_weight/contract_json": 0.107409,
+    "32/ordinary/naive_guard_float": 0.045828,
+    "32/ordinary/contract_json": 0.066729,
+    "32/tiny_weight/naive_guard_float": 0.262608,
+    "32/tiny_weight/contract_json": 0.278562,
+    "256/ordinary/naive_guard_float": 0.087549,
+    "256/ordinary/contract_json": 0.100859,
+    "256/tiny_weight/naive_guard_float": 1.247993,
+    "256/tiny_weight/contract_json": 1.249836,
+    "2048/ordinary/naive_guard_float": 0.411007,
+    "2048/ordinary/contract_json": 0.476334,
+    "2048/tiny_weight/naive_guard_float": 9.081613,
+    "2048/tiny_weight/contract_json": 9.224443
+  }
+}

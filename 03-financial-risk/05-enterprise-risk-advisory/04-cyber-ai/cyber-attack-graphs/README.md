@@ -44,3 +44,16 @@ D1 diagnóstico; D2 metodología; D3 código y pruebas; D4 validación independi
 ## 7. Restricciones y gobierno
 
 Los datos sintéticos validan cálculos, no desempeño real. Verificar regulación por jurisdicción y tipo de entidad; no confundir capital económico, regulatorio y contable. Seguir [arquitectura transversal](../../00-architecture/README.md).
+
+
+## Aplicación observada
+
+[Notebook: Mapa de proveedores y productos en CISA KEV](01_cisa_vendor_productos.ipynb). **Decisión:** identificar concentraciones del catálogo para orientar el cruce posterior con un inventario propio. La red se construye a partir de relaciones proveedor-producto reportadas; no representa rutas de ataque, conectividad de activos ni propagación.
+
+
+**Complemento de calidad:** El notebook verifica llaves y nombres faltantes y muestra concentración acumulada por proveedor declarado.
+
+
+### Ampliación metodológica
+
+El notebook incorpora variantes, métricas y bibliografía primaria con supuestos y alcance explícitos. Las proporciones y probabilidades condicionales del ejercicio no acreditan desempeño de una entidad.

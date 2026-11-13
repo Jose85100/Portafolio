@@ -1,0 +1,19 @@
+# MVP
+Qué: resumen escalar estable y fusionable para varianza de streams finitos. Comando: `bash run.sh` desde esta carpeta. Produce CSV/JSON/PNG, notebook con outputs, tests/cobertura/lint/tipos. Hipótesis local error<=1e-10 para offsets<=1e12 y fixture mod4 verificada. No cubre overflow, entradas originales perdidas por redondeo, distribución empírica ni varianza ponderada. Umbral no es garantía universal.
+
+##30: extensión ejecutada
+Mismo comando bash run.sh, añade src/scaled.py, tests/test_scaled.py, notebook_scale.ipynb y results/scale_raw.csv/scale_summary.json/scale_audit.png. Decisión continuar como adaptador de unidades con escala declarada. No sustituye NumPy ni recupera información perdida por redondeo; no cambio automático de escala. Varianza no representable se indica explícitamente, no como0/inf exitoso.
+
+## Incremento31: autoescala y subnormales
+`bash run.sh` conserva29/30 y reproduce31. API `src.dynamic.dynamic_moments(values, ddof=0)` consume iterable una vez; `DynamicMoments.push` permite inspeccionar estado y pérdidas detectadas. Ver notebook_dynamic.ipynb, derivacion_dynamic.md, informe_dynamic.md, config_dynamic.json y prior_art_dynamic.md. Salidas results/dynamic_raw.csv, dynamic_summary.json, dynamic_audit.png. No cubre merge dinámico, pesos, garantía universal de precisión o validación empírica. Prototipo local, no operacional.
+
+## Incremento1nov: fusionar autoescalas
+`bash run.sh` conserva todos los incrementos y añade `DynamicMoments.merge(other)` para resúmenes de observaciones disjuntas; no requiere reescanear datos. Ver derivacion_merge.md, notebook_merge.ipynb ejecutado, informe_merge.md14p/rúbricas, prior_art_merge.md y fixtures_merge.json. Salidas results/merge_raw.csv, merge_summary.json y merge_audit.png. Sin pesos, deduplicación, asociatividadbitabit, implementaciónparalela ni garantíauniversal. Costefull ymergeonly separados; NumPyescaladooffline sigue siendo másrápido. Prototipo local, nooperacional.
+
+## Incremento2nov: contrato hex y consumidor C++20
+`bash run.sh` requiere compilador g++/C++20; instala pins incluido CMake4.1.2, construye `.build` y `.build-san`, ejecuta CTest normal y ASan/UBSan con `detect_leaks=0` (no LSan),23tests Python, lint/tipos, benchmarks y notebooks acumulados. No hace falta instalar otro lenguaje en el notebook. Ver `derivacion_transport.md`, `notebook_transport.ipynb`, `informe_transport.md` y `prior_art_transport.md`.
+API: `export_state`, `import_state` y `cpp_bridge.consume(a,b,ddof)`; CLI `.build/moments_consumer 0` lee dos líneasMOMENTS_V1 y devuelve snapshot+JSON. V1 no transporta diagnósticos históricos ni observaciones; importarlos reinicia contadores, sin implicar ausencia de pérdida. Validación estructural, no de procedencia. Resultado: results/transport_raw.csv/transport_summary.json/transport_audit.png. No servicio persistente, autenticación, garantía universal, velocidad superior ni uso operacional. EL83 y contratos globales intactos.
+
+## Incremento3nov: envelope lateral
+
+Qué: serializa etiquetas declaradas de origen/partición y el estado `tracked/partial/unknown` de tres diagnósticos sin modificar el payload `MOMENTS_V1`. Comando: `bash run.sh`. Produce `results/envelope_raw.csv`, `envelope_summary.json`, `envelope_audit.png`, notebook ejecutado y logs. No prueba autenticidad, disjunción, JCS, procedencia real ni diagnósticos históricos ausentes. Clasificación: adaptación de ingeniería y auditoría semántica; prototipo, no operacional; revisión independiente pendiente.

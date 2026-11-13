@@ -1,0 +1,54 @@
+{
+  "source_provider": "World Bank",
+  "dataset": "World Development Indicators",
+  "source_api": "https://api.worldbank.org/v2/country/all/indicator/{indicator_code}",
+  "source_window": "2015-2022; latest available within the window per country-indicator",
+  "source_extraction_timestamp_recorded": false,
+  "source_snapshot_is_preexisting_repository_data": true,
+  "input_files": {
+    "indicator_observations": {
+      "path": "02-mathematics-statistics-and-quant/quantitative-methods/analisis-factorial-multiple-mfa/datos/indicadores_wb_largo.csv",
+      "sha256": "01f64eb57e57df13ff15103f82a02a1d8e8665528bb483e717991f2f0a5d0d02",
+      "bytes": 411741
+    },
+    "economy_metadata": {
+      "path": "02-mathematics-statistics-and-quant/quantitative-methods/analisis-factorial-multiple-mfa/datos/paises_meta.csv",
+      "sha256": "d7dee25d2ee20334ddcb409246c86ef6217b8e37f0d0ecd6847a6875eb86b081",
+      "bytes": 12088
+    }
+  },
+  "source_records_in_long_file": 6270,
+  "nonaggregate_economies_in_metadata": 217,
+  "indicators": 26,
+  "coverage_threshold": 0.85,
+  "eligible_countries": 171,
+  "eligible_observed_country_indicator_rows": 4334,
+  "grain": "country ISO3 \u00d7 WDI indicator code; one latest available value within 2015-2022",
+  "entity_identity": "official ISO3 country code; known identity, no record linkage inferred",
+  "seeds": 100,
+  "summary": {
+    "row": {
+      "runs": 100,
+      "mean_countries_split": 171.0,
+      "min_countries_split": 171,
+      "max_countries_split": 171,
+      "mean_rows_exposed": 4334.0,
+      "runs_with_zero_split_countries": 0
+    },
+    "component": {
+      "runs": 100,
+      "mean_countries_split": 0.0,
+      "min_countries_split": 0,
+      "max_countries_split": 0,
+      "mean_rows_exposed": 0.0,
+      "runs_with_zero_split_countries": 100
+    }
+  },
+  "interpretation": "measures split integrity for multirow country entities; not predictive quality or entity-resolution accuracy",
+  "limitations": [
+    "WDI snapshot has no recorded API extraction timestamp or revision vintage",
+    "country-indicator rows have no prediction target; this is a partition-integrity audit only",
+    "country identities are authoritative ISO3 keys, not ambiguous applicant/company links",
+    "coverage threshold selects a subset and does not remove missingness bias"
+  ]
+}

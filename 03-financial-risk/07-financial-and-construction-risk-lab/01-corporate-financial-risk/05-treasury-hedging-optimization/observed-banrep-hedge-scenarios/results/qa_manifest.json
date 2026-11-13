@@ -1,0 +1,22 @@
+{
+  "source_sha256": {
+    "trm_snapshot": "d5068f3801b18a5530d291d6a2d0587e5ceb580d52879de5ae363168999edf77",
+    "dtf_derived_snapshot": "56e4e436cd7add0aac50dd8e1c29007fa173ed8e07e4b484633d19faa33c79ec",
+    "joined_baseline_csv": "67b58ed41b2310d27a74ff8cfc6aa54cdd3d307180e5b9bcab51cbfdd1756b14"
+  },
+  "periods": 163,
+  "fx_nonmissing": 162,
+  "dtf_nonmissing": 163,
+  "scenario_rows": 8,
+  "ratios": [
+    0.0,
+    50.0,
+    80.0,
+    100.0
+  ],
+  "checks": {
+    "expected_scenario_rows": true,
+    "zero_hedge_matches_baseline": true,
+    "full_hedge_residuals_zero": true
+  }
+}

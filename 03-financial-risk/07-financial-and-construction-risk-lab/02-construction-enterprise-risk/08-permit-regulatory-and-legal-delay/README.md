@@ -26,3 +26,7 @@ Censura, competing risks, evidencia jurídica. Separación temporal de entrenami
 
 ## Productos esperados
 Metodología, código, pruebas, escenarios, reporte de validación y dashboard de decisiones.
+
+El [companion agregado de licencias ambientales de Corantioquia](../08-permit-environmental-and-regulatory-delay/observed-corantioquia-environmental-permits/README.md) aporta contexto de expedientes por tipo, municipio y estado; no contiene hitos fechados ni valida duración, demora o contingencia jurídica.
+
+El companion [ANLA para proyectos de infraestructura en evaluación](observed-anla-infrastructure-evaluation-actions/README.md) añade pares de fechas de radicado y acto administrativo de la capa pública: en el corte de noviembre de 2026, 19 eventos deduplicados tuvieron una mediana registrada de 22 días y un p90 de 28. El lapso entre esos dos campos no es la duración total de la evaluación, el tiempo hasta la decisión final ni un retraso de obra; véanse el QA y las limitaciones de la aplicación.

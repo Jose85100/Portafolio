@@ -22,3 +22,12 @@ Primera versión con datos sintéticos reproducibles. Futuras fuentes públicas 
 - Validación temporal, estabilidad, sensibilidad y benchmark.
 - Discusión de endogeneidad, cambios de régimen y validez externa.
 - Nota ejecutiva: Tasa y demanda de crédito.
+
+
+## Desarrollo estructural de la revisión semanal
+
+El [notebook](notebooks/01-estimation-and-robustness.ipynb) desarrolla el mecanismo específico de este proyecto, con DGP o equilibrio explícito, supuestos de identificación, 40 réplicas por escenario cuando corresponde, sensibilidad, oráculos y límites. Sustituye el ejemplo OLS genérico anterior; las cantidades siguen siendo sintéticas y no elevan el proyecto a validación empírica.
+
+## Auditoría de inferencia débil (S2 local)
+
+[weak-iv-inference-audit](weak-iv-inference-audit/) amplía el notebook con tests puntuales Anderson–Rubin vs Wald, 12.000 decisiones sintéticas, errores Monte Carlo y falsación por exclusión inválida. `bash run.sh` reproduce código, tests, comparación y notebook ejecutado. Este S2 corresponde únicamente al componente nuevo.

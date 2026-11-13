@@ -1,0 +1,25 @@
+{
+  "required_documents": [
+    "README.md",
+    "MVP.md",
+    "informe.md",
+    "referencias.bib",
+    "config.json",
+    "requirements.txt"
+  ],
+  "csv_rows": {
+    "population.csv": 48,
+    "raw.csv": 1280,
+    "summary.csv": 16,
+    "memory.csv": 16,
+    "rank_check.csv": 3
+  },
+  "tests_passed": 39,
+  "coverage_scope": "src/copulas.py and src/reference.py only",
+  "coverage_percent": 100.0,
+  "executed_code_cells": 8,
+  "png_outputs": 1,
+  "all_gates_passed": true,
+  "presentation_scope": "Figure inspected by author; notebook structurally validated and actually executed. Full notebook-viewer visual QA not claimed.",
+  "complete_visual_review": "Open notebook.ipynb in Jupyter, or install nbconvert and run python -m jupyter nbconvert --to html notebook.ipynb"
+}

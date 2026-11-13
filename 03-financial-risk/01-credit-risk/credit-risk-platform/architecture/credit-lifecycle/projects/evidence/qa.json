@@ -1,0 +1,24 @@
+{
+  "scope": "Structural design validation only; no research experiment or pentest.",
+  "projects": 10,
+  "project_ideas": 30,
+  "adversarial_scenarios": 40,
+  "additional_layers": 8,
+  "layer_studies": 16,
+  "local_markdown_links": 364,
+  "maturity": "all new designs S1; proposed/executed flags checked",
+  "cutoff": "2026-10-23 America/Bogota",
+  "new_defense_views": 4,
+  "native_components": 60,
+  "native_connectors": 58,
+  "visual_qa": "All four SVGs rendered with Inkscape at 1540x1130 and visually inspected; final fourth view reinspected.",
+  "rebuild": "Four defensive pages regenerated deterministically from shared geometry; prior nine lifecycle diagrams unchanged.",
+  "author_review": "Contract boundaries, adverse scenarios and formula scopes reviewed; provider recursion includes stop condition and bounded query budget.",
+  "limitations": [
+    "No project experiment, security penetration test or vendor API executed",
+    "No real ID document, phone line or personal data used",
+    "No draw.io GUI round-trip; SVG views inspected instead",
+    "No frontend KaTeX render; formulas reviewed in source",
+    "CI status belongs to PR head checks; not inferred from this local snapshot"
+  ]
+}

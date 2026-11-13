@@ -1,0 +1,11 @@
+test_exhaustive_path_oracle (test_breach.TestBreach.test_exhaustive_path_oracle) ... ok
+test_invalid (test_breach.TestBreach.test_invalid) ... ok
+test_monotonicity_mass_and_buffer (test_breach.TestBreach.test_monotonicity_mass_and_buffer) ... ok
+test_recovery_is_not_survival (test_breach.TestBreach.test_recovery_is_not_survival) ... ok
+test_stationary_marginals_and_one_day_ablation (test_breach.TestBreach.test_stationary_marginals_and_one_day_ablation) ... ok
+test_zero_boundary_and_empty_horizon (test_breach.TestBreach.test_zero_boundary_and_empty_horizon) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.009s
+
+OK

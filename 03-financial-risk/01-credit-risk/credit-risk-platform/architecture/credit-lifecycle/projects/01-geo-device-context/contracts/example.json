@@ -1,0 +1,19 @@
+{
+  "case_id": "synthetic-geo-001",
+  "cutoff": "2026-10-23T20:00:00Z",
+  "signal_status": "inconclusive",
+  "method_pair": [
+    "geoip",
+    "device_api"
+  ],
+  "radius_km": [
+    80,
+    null
+  ],
+  "delta_hours": 2,
+  "assessment": null,
+  "reason_codes": [
+    "missing_accuracy"
+  ],
+  "policy_version": "design-v1"
+}

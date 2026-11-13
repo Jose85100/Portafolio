@@ -13,10 +13,13 @@ Los proyectos históricos permanecen temporalmente en sus rutas originales duran
 
 ## Contenido
 
+- [Fundamentos matemáticos](basic/): proyectos sobre conceptos y métodos básicos.
+- [Núcleo numérico](numerical-core/): herramientas y componentes numéricos compartidos.
+
 - [Quantitative methods](quantitative-methods/): regularización, ARIMA, gradient boosting vs logit, Monte Carlo de opciones, validación cruzada temporal y análisis factorial múltiple (datos reales del Banco Mundial).
 - [Quant libraries](quant-libraries/): pérdida esperada de crédito con un contrato numérico común en Python, C, C++, R, MATLAB/Octave y Julia.
 
 
 ## Nueva línea: investigación matemática y estadística avanzada
 
-[Veinte programas de investigación avanzada](advanced-research/) sobre sistemas estocásticos, geometría de información, optimización robusta, dependencia extrema, memoria fraccional, causalidad dinámica, topología, problemas inversos, transporte óptimo y sistemas de agentes. **Estado:** 19 programas S1 (diseño); el programa 18 tiene un prototipo S2 de colas gaussianas desconectadas. No se confunden propuestas con validación externa.
+[Veinte programas de investigación avanzada](advanced-research/) sobre sistemas estocásticos, geometría de información, optimización robusta, dependencia extrema, memoria fraccional, causalidad dinámica, topología, problemas inversos, transporte óptimo y sistemas de agentes. **Estado:** 10 programas S1 (diseño); los programas 01 (auditoría OU, sin detector de crisis validado), 02 (detección continua FR, calibración y comparación KS/W1), 03 (DRO KL finita), 04 (coexcedencias elípticas y Monte Carlo condicional), 05 (operador fraccional y cotas de memoria), 08 (posterior gaussiano), 09 (transporte discreto), 12 (certificado Fisher de simetría de escala) 13 (firmas de nivel dos y aliasing) y 18 (colas gaussianas desconectadas) tienen prototipos S2 acotados. No se confunden propuestas con validación externa.

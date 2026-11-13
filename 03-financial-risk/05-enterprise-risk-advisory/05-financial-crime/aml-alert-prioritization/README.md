@@ -1,7 +1,7 @@
 # Priorización de alertas AML
 
 **Práctica:** Fraude, AML y cumplimiento  
-**Madurez:** S1, diseño científico y de producto; no implementación, resultados, ni conformidad regulatoria.
+**Madurez:** S1 para el programa completo, con una aplicación retrospectiva acotada; no conformidad regulatoria.
 
 ## 1. Mandato y pregunta falsable
 
@@ -44,3 +44,8 @@ D1 diagnóstico; D2 metodología; D3 código y pruebas; D4 validación independi
 ## 7. Restricciones y gobierno
 
 Los datos sintéticos validan cálculos, no desempeño real. Verificar regulación por jurisdicción y tipo de entidad; no confundir capital económico, regulatorio y contable. Seguir [arquitectura transversal](../../00-architecture/README.md).
+
+
+## Aplicación histórica: prioridades geográficas FinCEN
+
+[Notebook de señales SAR por jurisdicción](aplicacion-fincen-estados.ipynb). Compara una selección hipotética de jurisdicciones por volumen de sujetos reportados y por tasa publicada por millón de habitantes, para el corte 2012 Q2, a partir del [archivo estatal FinCEN](https://www.fincen.gov/fincen-mortgage-fraud-sar-datasets). Los dos criterios comparten 2 de las 5 primeras jurisdicciones entre 51 con datos; el resultado es descriptivo y depende de la capacidad elegida. Los SAR son sospechas, pueden repetir sujetos y reflejan prácticas de reporte; no se obtienen etiquetas de fraude, precisión de alertas ni probabilidades. Es un caso histórico, no un tablero vigente. La copia local de la fuente tiene SHA-256 `13ffd99a405c2f9885d6dc7e877cc22df94283b0301104d2ee66acf7252724f7`. Requiere pandas, openpyxl, matplotlib y Jupyter.

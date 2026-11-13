@@ -1,0 +1,368 @@
+Collecting numpy==2.3.5 (from -r requirements.txt (line 1))
+  Using cached numpy-2.3.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+Collecting matplotlib==3.10.8 (from -r requirements.txt (line 2))
+  Using cached matplotlib-3.10.8-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (52 kB)
+Collecting nbformat==5.10.4 (from -r requirements.txt (line 3))
+  Using cached nbformat-5.10.4-py3-none-any.whl.metadata (3.6 kB)
+Collecting nbclient==0.10.2 (from -r requirements.txt (line 4))
+  Downloading nbclient-0.10.2-py3-none-any.whl.metadata (8.3 kB)
+Collecting ipykernel==6.30.1 (from -r requirements.txt (line 5))
+  Downloading ipykernel-6.30.1-py3-none-any.whl.metadata (6.2 kB)
+Collecting ruff==0.14.2 (from -r requirements.txt (line 6))
+  Using cached ruff-0.14.2-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (25 kB)
+Collecting mypy==1.18.2 (from -r requirements.txt (line 7))
+  Using cached mypy-1.18.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.2 kB)
+Collecting coverage==7.11.0 (from -r requirements.txt (line 8))
+  Using cached coverage-7.11.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (9.0 kB)
+Collecting pandas==2.2.3 (from -r requirements.txt (line 9))
+  Downloading pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (89 kB)
+Collecting scipy==1.17.0 (from -r requirements.txt (line 11))
+  Using cached scipy-1.17.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+Collecting contourpy>=1.0.1 (from matplotlib==3.10.8->-r requirements.txt (line 2))
+  Using cached contourpy-1.4.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+Collecting cycler>=0.10 (from matplotlib==3.10.8->-r requirements.txt (line 2))
+  Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib==3.10.8->-r requirements.txt (line 2))
+  Using cached fonttools-4.68.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (139 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib==3.10.8->-r requirements.txt (line 2))
+  Using cached kiwisolver-1.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.2 kB)
+Collecting packaging>=20.0 (from matplotlib==3.10.8->-r requirements.txt (line 2))
+  Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pillow>=8 (from matplotlib==3.10.8->-r requirements.txt (line 2))
+  Using cached pillow-13.0.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+Collecting pyparsing>=3 (from matplotlib==3.10.8->-r requirements.txt (line 2))
+  Using cached pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+Collecting python-dateutil>=2.7 (from matplotlib==3.10.8->-r requirements.txt (line 2))
+  Using cached python_dateutil-3.0.0-py2.py3-none-any.whl.metadata (8.2 kB)
+Collecting fastjsonschema>=2.15 (from nbformat==5.10.4->-r requirements.txt (line 3))
+  Using cached fastjsonschema-2.22.2-py3-none-any.whl.metadata (2.1 kB)
+Collecting jsonschema>=2.6 (from nbformat==5.10.4->-r requirements.txt (line 3))
+  Using cached jsonschema-4.26.0-py3-none-any.whl.metadata (7.6 kB)
+Collecting jupyter-core!=5.0.*,>=4.12 (from nbformat==5.10.4->-r requirements.txt (line 3))
+  Using cached jupyter_core-5.9.1-py3-none-any.whl.metadata (1.5 kB)
+Collecting traitlets>=5.1 (from nbformat==5.10.4->-r requirements.txt (line 3))
+  Using cached traitlets-5.16.1-py3-none-any.whl.metadata (10 kB)
+Collecting jupyter-client>=6.1.12 (from nbclient==0.10.2->-r requirements.txt (line 4))
+  Downloading jupyter_client-8.10.0-py3-none-any.whl.metadata (8.5 kB)
+Collecting comm>=0.1.1 (from ipykernel==6.30.1->-r requirements.txt (line 5))
+  Downloading comm-0.2.3-py3-none-any.whl.metadata (3.7 kB)
+Collecting debugpy>=1.6.5 (from ipykernel==6.30.1->-r requirements.txt (line 5))
+  Downloading debugpy-1.8.22-cp312-cp312-manylinux_2_34_x86_64.whl.metadata (1.4 kB)
+Collecting ipython>=7.23.1 (from ipykernel==6.30.1->-r requirements.txt (line 5))
+  Downloading ipython-9.18.0-py3-none-any.whl.metadata (4.6 kB)
+Collecting matplotlib-inline>=0.1 (from ipykernel==6.30.1->-r requirements.txt (line 5))
+  Using cached matplotlib_inline-0.2.2-py3-none-any.whl.metadata (2.4 kB)
+Collecting nest-asyncio>=1.4 (from ipykernel==6.30.1->-r requirements.txt (line 5))
+  Downloading nest_asyncio-1.6.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting psutil>=5.7 (from ipykernel==6.30.1->-r requirements.txt (line 5))
+  Using cached psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl.metadata (22 kB)
+Collecting pyzmq>=25 (from ipykernel==6.30.1->-r requirements.txt (line 5))
+  Downloading pyzmq-27.2.0-cp312-abi3-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+Collecting tornado>=6.2 (from ipykernel==6.30.1->-r requirements.txt (line 5))
+  Downloading tornado-6.6-cp311-abi3-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (2.6 kB)
+Collecting typing_extensions>=4.6.0 (from mypy==1.18.2->-r requirements.txt (line 7))
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting mypy_extensions>=1.0.0 (from mypy==1.18.2->-r requirements.txt (line 7))
+  Using cached mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)
+Collecting pathspec>=0.9.0 (from mypy==1.18.2->-r requirements.txt (line 7))
+  Using cached pathspec-1.1.1-py3-none-any.whl.metadata (14 kB)
+Collecting pytz>=2020.1 (from pandas==2.2.3->-r requirements.txt (line 9))
+  Downloading pytz-2026.6-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas==2.2.3->-r requirements.txt (line 9))
+  Using cached tzdata-2026.6-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting ipython-pygments-lexers>=1.0.0 (from ipython>=7.23.1->ipykernel==6.30.1->-r requirements.txt (line 5))
+  Using cached ipython_pygments_lexers-1.1.1-py3-none-any.whl.metadata (1.1 kB)
+Collecting jedi>=0.18.2 (from ipython>=7.23.1->ipykernel==6.30.1->-r requirements.txt (line 5))
+  Using cached jedi-0.20.1-py2.py3-none-any.whl.metadata (23 kB)
+Collecting pexpect>4.6 (from ipython>=7.23.1->ipykernel==6.30.1->-r requirements.txt (line 5))
+  Using cached pexpect-4.9.0-py2.py3-none-any.whl.metadata (2.5 kB)
+Collecting prompt_toolkit<3.1.0,>=3.0.41 (from ipython>=7.23.1->ipykernel==6.30.1->-r requirements.txt (line 5))
+  Using cached prompt_toolkit-3.0.53-py3-none-any.whl.metadata (6.4 kB)
+Collecting pygments>=2.14.0 (from ipython>=7.23.1->ipykernel==6.30.1->-r requirements.txt (line 5))
+  Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting stack_data>=0.6.0 (from ipython>=7.23.1->ipykernel==6.30.1->-r requirements.txt (line 5))
+  Using cached stack_data-0.6.3-py3-none-any.whl.metadata (18 kB)
+Collecting attrs>=22.2.0 (from jsonschema>=2.6->nbformat==5.10.4->-r requirements.txt (line 3))
+  Using cached attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+Collecting jsonschema-specifications>=2023.03.6 (from jsonschema>=2.6->nbformat==5.10.4->-r requirements.txt (line 3))
+  Using cached jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+Collecting referencing>=0.28.4 (from jsonschema>=2.6->nbformat==5.10.4->-r requirements.txt (line 3))
+  Using cached referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting rpds-py>=0.25.0 (from jsonschema>=2.6->nbformat==5.10.4->-r requirements.txt (line 3))
+  Using cached rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+Collecting platformdirs>=2.5 (from jupyter-core!=5.0.*,>=4.12->nbformat==5.10.4->-r requirements.txt (line 3))
+  Using cached platformdirs-4.14.0-py3-none-any.whl.metadata (5.4 kB)
+Collecting six>=1.6 (from python-dateutil>=2.7->matplotlib==3.10.8->-r requirements.txt (line 2))
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting parso<0.9.0,>=0.8.7 (from jedi>=0.18.2->ipython>=7.23.1->ipykernel==6.30.1->-r requirements.txt (line 5))
+  Using cached parso-0.8.7-py2.py3-none-any.whl.metadata (8.2 kB)
+Collecting ptyprocess>=0.5 (from pexpect>4.6->ipython>=7.23.1->ipykernel==6.30.1->-r requirements.txt (line 5))
+  Using cached ptyprocess-0.7.0-py2.py3-none-any.whl.metadata (1.3 kB)
+Collecting wcwidth>=0.1.4 (from prompt_toolkit<3.1.0,>=3.0.41->ipython>=7.23.1->ipykernel==6.30.1->-r requirements.txt (line 5))
+  Using cached wcwidth-0.9.4-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (23 kB)
+Collecting executing>=1.2.0 (from stack_data>=0.6.0->ipython>=7.23.1->ipykernel==6.30.1->-r requirements.txt (line 5))
+  Using cached executing-2.3.0-py3-none-any.whl.metadata (9.1 kB)
+Collecting asttokens>=2.1.0 (from stack_data>=0.6.0->ipython>=7.23.1->ipykernel==6.30.1->-r requirements.txt (line 5))
+  Using cached asttokens-3.0.2-py3-none-any.whl.metadata (5.7 kB)
+Collecting pure-eval (from stack_data>=0.6.0->ipython>=7.23.1->ipykernel==6.30.1->-r requirements.txt (line 5))
+  Using cached pure_eval-0.2.4-py3-none-any.whl.metadata (6.4 kB)
+Using cached numpy-2.3.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.6 MB)
+Using cached matplotlib-3.10.8-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (8.7 MB)
+Using cached nbformat-5.10.4-py3-none-any.whl (78 kB)
+Downloading nbclient-0.10.2-py3-none-any.whl (25 kB)
+Downloading ipykernel-6.30.1-py3-none-any.whl (117 kB)
+Using cached ruff-0.14.2-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.3 MB)
+Using cached mypy-1.18.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (13.3 MB)
+Using cached coverage-7.11.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (250 kB)
+Downloading pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.7/12.7 MB 48.1 MB/s eta 0:00:00
+Using cached scipy-1.17.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.0 MB)
+Downloading comm-0.2.3-py3-none-any.whl (7.3 kB)
+Using cached contourpy-1.4.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (383 kB)
+Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading debugpy-1.8.22-cp312-cp312-manylinux_2_34_x86_64.whl (4.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.0/4.0 MB 36.0 MB/s eta 0:00:00
+Using cached fastjsonschema-2.22.2-py3-none-any.whl (27 kB)
+Using cached fonttools-4.68.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.4 MB)
+Downloading ipython-9.18.0-py3-none-any.whl (649 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 649.6/649.6 kB 7.7 MB/s eta 0:00:00
+Using cached jsonschema-4.26.0-py3-none-any.whl (90 kB)
+Downloading jupyter_client-8.10.0-py3-none-any.whl (110 kB)
+Using cached jupyter_core-5.9.1-py3-none-any.whl (29 kB)
+Using cached kiwisolver-1.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.5 MB)
+Using cached matplotlib_inline-0.2.2-py3-none-any.whl (9.5 kB)
+Using cached mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)
+Downloading nest_asyncio-1.6.0-py3-none-any.whl (5.2 kB)
+Using cached packaging-26.3-py3-none-any.whl (129 kB)
+Using cached pathspec-1.1.1-py3-none-any.whl (57 kB)
+Using cached pillow-13.0.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)
+Using cached psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl (155 kB)
+Using cached pyparsing-3.3.3-py3-none-any.whl (126 kB)
+Using cached python_dateutil-3.0.0-py2.py3-none-any.whl (94 kB)
+Downloading pytz-2026.6-py2.py3-none-any.whl (506 kB)
+Downloading pyzmq-27.2.0-cp312-abi3-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl (872 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 872.3/872.3 kB 49.1 MB/s eta 0:00:00
+Downloading tornado-6.6-cp311-abi3-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (529 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 529.5/529.5 kB 5.5 MB/s eta 0:00:00
+Using cached traitlets-5.16.1-py3-none-any.whl (86 kB)
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Using cached tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+Using cached attrs-26.1.0-py3-none-any.whl (67 kB)
+Using cached ipython_pygments_lexers-1.1.1-py3-none-any.whl (8.1 kB)
+Using cached jedi-0.20.1-py2.py3-none-any.whl (4.9 MB)
+Using cached jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+Using cached pexpect-4.9.0-py2.py3-none-any.whl (63 kB)
+Using cached platformdirs-4.14.0-py3-none-any.whl (35 kB)
+Using cached prompt_toolkit-3.0.53-py3-none-any.whl (392 kB)
+Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Using cached referencing-0.37.0-py3-none-any.whl (26 kB)
+Using cached rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (371 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Using cached stack_data-0.6.3-py3-none-any.whl (24 kB)
+Using cached asttokens-3.0.2-py3-none-any.whl (28 kB)
+Using cached executing-2.3.0-py3-none-any.whl (29 kB)
+Using cached parso-0.8.7-py2.py3-none-any.whl (107 kB)
+Using cached ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+Using cached wcwidth-0.9.4-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (785 kB)
+Using cached pure_eval-0.2.4-py3-none-any.whl (11 kB)
+Installing collected packages: pytz, pure-eval, ptyprocess, wcwidth, tzdata, typing_extensions, traitlets, tornado, six, ruff, rpds-py, pyzmq, pyparsing, pygments, psutil, platformdirs, pillow, pexpect, pathspec, parso, packaging, numpy, nest-asyncio, mypy_extensions, kiwisolver, fonttools, fastjsonschema, executing, debugpy, cycler, coverage, comm, attrs, asttokens, stack_data, scipy, referencing, python-dateutil, prompt_toolkit, mypy, matplotlib-inline, jupyter-core, jedi, ipython-pygments-lexers, contourpy, pandas, matplotlib, jupyter-client, jsonschema-specifications, ipython, jsonschema, ipykernel, nbformat, nbclient
+Successfully installed asttokens-3.0.2 attrs-26.1.0 comm-0.2.3 contourpy-1.4.0 coverage-7.11.0 cycler-0.12.1 debugpy-1.8.22 executing-2.3.0 fastjsonschema-2.22.2 fonttools-4.68.0 ipykernel-6.30.1 ipython-9.18.0 ipython-pygments-lexers-1.1.1 jedi-0.20.1 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 jupyter-client-8.10.0 jupyter-core-5.9.1 kiwisolver-1.5.1 matplotlib-3.10.8 matplotlib-inline-0.2.2 mypy-1.18.2 mypy_extensions-1.1.0 nbclient-0.10.2 nbformat-5.10.4 nest-asyncio-1.6.0 numpy-2.3.5 packaging-26.3 pandas-2.2.3 parso-0.8.7 pathspec-1.1.1 pexpect-4.9.0 pillow-13.0.0 platformdirs-4.14.0 prompt_toolkit-3.0.53 psutil-7.2.2 ptyprocess-0.7.0 pure-eval-0.2.4 pygments-2.21.0 pyparsing-3.3.3 python-dateutil-3.0.0 pytz-2026.6 pyzmq-27.2.0 referencing-0.37.0 rpds-py-2026.9.1 ruff-0.14.2 scipy-1.17.0 six-1.17.0 stack_data-0.6.3 tornado-6.6 traitlets-5.16.1 typing_extensions-4.16.0 tzdata-2026.6 wcwidth-0.9.4
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.2
+[notice] To update, run: python -m pip install --upgrade pip
+test_decision_boundary_and_negative (test_joint_role.JointRoleTests.test_decision_boundary_and_negative) ... ok
+test_exact_recovery_role_certain_and_no_shock (test_joint_role.JointRoleTests.test_exact_recovery_role_certain_and_no_shock) ... ok
+test_invalid_and_ties (test_joint_role.JointRoleTests.test_invalid_and_ties) ... ok
+test_lp_oracle_grid_and_witness (test_joint_role.JointRoleTests.test_lp_oracle_grid_and_witness) ... ok
+test_restriction_and_monotonicity (test_joint_role.JointRoleTests.test_restriction_and_monotonicity) ... ok
+test_binomial_oracle_and_total_mass (test_quorum.QuorumTests.test_binomial_oracle_and_total_mass) ... ok
+test_closed_form_common_cause (test_quorum.QuorumTests.test_closed_form_common_cause) ... ok
+test_false_pass_and_infeasible (test_quorum.QuorumTests.test_false_pass_and_infeasible) ... ok
+test_invalid (test_quorum.QuorumTests.test_invalid) ... ok
+test_mandatory_and_deterministic (test_quorum.QuorumTests.test_mandatory_and_deterministic) ... ok
+test_cheapest_false_pass_and_robust_choice (test_reserve_ambiguity.ReserveAmbiguityTests.test_cheapest_false_pass_and_robust_choice) ... ok
+test_existing29_engine_recovers_nominal (test_reserve_ambiguity.ReserveAmbiguityTests.test_existing29_engine_recovers_nominal) ... ok
+test_invalid_and_coupling (test_reserve_ambiguity.ReserveAmbiguityTests.test_invalid_and_coupling) ... ok
+test_lp_oracle_sharp_bounds (test_reserve_ambiguity.ReserveAmbiguityTests.test_lp_oracle_sharp_bounds) ... ok
+test_threshold_and_positive_dependence_counterexample (test_reserve_ambiguity.ReserveAmbiguityTests.test_threshold_and_positive_dependence_counterexample) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.507s
+
+OK
+Name                       Stmts   Miss  Cover
+----------------------------------------------
+src/__init__.py                0      0   100%
+src/joint_role.py             22      0   100%
+src/quorum.py                 66      0   100%
+src/reserve_ambiguity.py      67      0   100%
+----------------------------------------------
+TOTAL                        155      0   100%
+All checks passed!
+Success: no issues found in 4 source files
+{
+  "selected_exact": {
+    "standbys": 2,
+    "cost": 2,
+    "availability": 0.9139
+  },
+  "baseline_independent": {
+    "standbys": 0,
+    "cost": 0,
+    "availability": 0.8512000000000001
+  },
+  "actual_baseline_availability": 0.76,
+  "independence_error": 0.09120000000000006,
+  "seconds": 0.00590194699998392,
+  "python_peak_bytes": 32841,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39"
+}
+{
+  "nominal_choice": {
+    "name": "availability_A",
+    "cost": 2,
+    "lower_availability": 0.836,
+    "nominal_availability": 0.8531,
+    "upper_availability": 0.893
+  },
+  "robust_choice": {
+    "name": "availability_B",
+    "cost": 3,
+    "lower_availability": 0.874,
+    "nominal_availability": 0.8816,
+    "upper_availability": 0.912
+  },
+  "critical_nominal_q": 0.6882472016116852,
+  "critical_robust_q": 0.7368421052631577,
+  "original29_q09_bounds": {
+    "lower_joint": 0.8,
+    "independent_joint": 0.81,
+    "upper_joint": 0.9,
+    "lower_availability": 0.912,
+    "nominal_availability": 0.9139,
+    "upper_availability": 0.931
+  },
+  "seconds": 0.0001656389999880048,
+  "python_peak_bytes": 1160,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39"
+}
+{
+  "oracle_cases": 125,
+  "lp_objectives": 250,
+  "max_error": 2.220446049250313e-16,
+  "plans": [
+    {
+      "name": "A",
+      "q1": 0.7,
+      "q2": 0.7,
+      "cost": 2,
+      "lower": 0.83,
+      "upper": 0.9,
+      "restricted_lower30": 0.836,
+      "nominal": 0.8531,
+      "shock_lower": 0.34999999999999964,
+      "shock_upper": 0.7
+    },
+    {
+      "name": "B",
+      "q1": 0.8,
+      "q2": 0.8,
+      "cost": 3,
+      "lower": 0.87,
+      "upper": 0.92,
+      "restricted_lower30": 0.874,
+      "nominal": 0.8816,
+      "shock_lower": 0.5499999999999998,
+      "shock_upper": 0.8
+    },
+    {
+      "name": "C",
+      "q1": 0.9,
+      "q2": 0.9,
+      "cost": 4,
+      "lower": 0.91,
+      "upper": 0.9400000000000001,
+      "restricted_lower30": 0.912,
+      "nominal": 0.9139,
+      "shock_lower": 0.75,
+      "shock_upper": 0.9
+    }
+  ],
+  "decisions": [
+    {
+      "target": 0.85,
+      "method": "nominal",
+      "selected": "A"
+    },
+    {
+      "target": 0.85,
+      "method": "restricted30",
+      "selected": "B"
+    },
+    {
+      "target": 0.85,
+      "method": "joint31",
+      "selected": "B"
+    },
+    {
+      "target": 0.872,
+      "method": "nominal",
+      "selected": "B"
+    },
+    {
+      "target": 0.872,
+      "method": "restricted30",
+      "selected": "B"
+    },
+    {
+      "target": 0.872,
+      "method": "joint31",
+      "selected": "C"
+    },
+    {
+      "target": 0.9,
+      "method": "nominal",
+      "selected": "C"
+    },
+    {
+      "target": 0.9,
+      "method": "restricted30",
+      "selected": "C"
+    },
+    {
+      "target": 0.9,
+      "method": "joint31",
+      "selected": "C"
+    },
+    {
+      "target": 0.97,
+      "method": "nominal",
+      "selected": "infeasible"
+    },
+    {
+      "target": 0.97,
+      "method": "restricted30",
+      "selected": "infeasible"
+    },
+    {
+      "target": 0.97,
+      "method": "joint31",
+      "selected": "infeasible"
+    }
+  ],
+  "timings_n100_median_seconds": {
+    "closed": 0.0004717680000112523,
+    "lp8": 0.2074880719999328
+  },
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "memory_scope": "tracemalloc Python allocations; not native HiGHS/RSS",
+  "data": "designed synthetic benchmark; no attendance observations",
+  "seed": null
+}
+Executed notebook.ipynb with rich outputs

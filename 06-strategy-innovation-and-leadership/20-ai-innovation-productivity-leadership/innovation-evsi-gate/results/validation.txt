@@ -1,0 +1,60 @@
+test_evpi_upper_bound_independent_quadrature (test_evsi.DecisionTests.test_evpi_upper_bound_independent_quadrature) ... ok
+test_gate_and_expensive_ablation (test_evsi.DecisionTests.test_gate_and_expensive_ablation) ... ok
+test_information_properties (test_evsi.DecisionTests.test_information_properties) ... ok
+test_invalid (test_evsi.DecisionTests.test_invalid) ... ok
+test_no_information (test_evsi.DecisionTests.test_no_information) ... ok
+test_uniform_predictive_oracle (test_evsi.DecisionTests.test_uniform_predictive_oracle) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 1.619s
+
+OK
+Name          Stmts   Miss  Cover
+---------------------------------
+src/evsi.py      46      0   100%
+---------------------------------
+TOTAL            46      0   100%
+All checks passed!
+Success: no issues found in 1 source file
+{
+  "selected": {
+    "n": 50,
+    "evsi": 5490.41839524532,
+    "experiment_cost": 350.0,
+    "net_value": 5140.41839524532,
+    "immediate_value": 0.0,
+    "increment": 5140.41839524532,
+    "action": "experimentar"
+  },
+  "baseline_immediate": {
+    "n": 0,
+    "evsi": 0.0,
+    "experiment_cost": 0.0,
+    "net_value": 0.0,
+    "immediate_value": 0.0,
+    "increment": 0.0
+  },
+  "baseline_fixed_n100": {
+    "n": 100,
+    "evsi": 5738.223773850293,
+    "experiment_cost": 600.0,
+    "net_value": 5138.223773850293,
+    "immediate_value": 0.0,
+    "increment": 5138.223773850293
+  },
+  "evpi": 6019.743743999996,
+  "mc_mean": 5153.613560613619,
+  "mc_standard_error": 18.87000190645772,
+  "design_runtime_seconds": 0.04667553600006613,
+  "python_peak_bytes": 100888,
+  "process_peak_rss_kib_linux": 109336,
+  "seed": 20261023,
+  "replicates": 200000,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "matplotlib": "3.10.8"
+}
+Executed notebook.ipynb top-to-bottom

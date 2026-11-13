@@ -1,0 +1,32 @@
+{
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "intervals": "[start,end), date-granularity, None=end-unbounded",
+  "hypothesis": "bitemporal gate zero wrong definite citations and zero future leaks; latest and valid_only have >0 future leaks; conflict returns no citation",
+  "data": "synthetic version rectangles with retroactive correction, expiry and conflicting overlap; no legal/regulatory statements",
+  "selection": [
+    {
+      "idea": "bitemporal evidence gate",
+      "decision": "selected",
+      "reason": "new pilar06 S1 gap, prevents knowledge-time leakage before RAG retrieval"
+    },
+    {
+      "idea": "retrieval LRU cache",
+      "decision": "deferred",
+      "reason": "routing/cache project already implemented"
+    },
+    {
+      "idea": "memory TTL",
+      "decision": "deferred",
+      "reason": "near outbox prior cycle"
+    }
+  ]
+}

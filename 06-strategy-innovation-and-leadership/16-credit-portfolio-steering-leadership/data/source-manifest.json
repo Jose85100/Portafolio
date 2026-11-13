@@ -1,0 +1,27 @@
+{
+  "dataset": "dugh-vkir",
+  "provider": "ICETEX",
+  "source_url": "https://www.datos.gov.co/Educaci-n/Comportamiento-de-Cartera-y-Cr-dito-/dugh-vkir",
+  "api_url": "https://www.datos.gov.co/resource/dugh-vkir.json?%24select=fecha_corte%2Cdeptoresidencia%2Ccantidad_creditos_al_dia%2Ccantidad_creditos_con_mora%2Ccantidad_creditos_mora_mayor%2Ctotal_creditos%2Cindicador_cartera_vencida%2Cepoca_cartera&%24order=fecha_corte%2Cdeptoresidencia%2Cepoca_cartera&%24limit=5000",
+  "source_last_updated": "2026-10-15",
+  "source_snapshot_sha256": "b91afdd83dd9738fb0dcd9606f67ecbdff2fd0da2af31138d9aeb68f83867a7e",
+  "as_of": "2026-11-10",
+  "extracted_at": "2026-11-10T20:57:39.364926+00:00",
+  "rows": 1237,
+  "validated_rows": 1240,
+  "rejected_rows": 68,
+  "rejected_fraction": 0.05198776758409786,
+  "rejected_cuts": [
+    "2025-06-30"
+  ],
+  "valid_rows_excluded_with_rejected_cuts": 3,
+  "rejection_reasons": {
+    "Count reconciliation failed": 68
+  },
+  "source_rows": 1308,
+  "grain": "date x department x portfolio phase",
+  "evidence": "OBSERVED_ICETEX_EDUCATION_AGGREGATE_NOT_INDIVIDUAL_PD",
+  "quality_status": "COMPLETE_CUTS_ONLY_WITH_EXPLICIT_QUARANTINE",
+  "sha256": "c856d4e8ac26b63347d18e722f5467a7f9421dce9b01ab79d3aad4ca5f13ffcf",
+  "caveat": "Aggregate delinquency stocks are not individual PD or default transitions; source observation dates are not historical publication vintages"
+}

@@ -1,0 +1,37 @@
+{
+  "provider": "Corporación Autónoma Regional del Centro de Antioquia (Corantioquia)",
+  "dataset": "Licencias ambientales en la jurisdicción de Corantioquia",
+  "dataset_id": "h6gr-4izn",
+  "dataset_page": "https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/Licencias-ambientales-en-la-jurisdicci-n-de-Corant/h6gr-4izn",
+  "api_snapshot_query": "https://www.datos.gov.co/resource/h6gr-4izn.json?$select=municipio,tipo_proyecto,estado,count(*)%20as%20expedientes&$group=municipio,tipo_proyecto,estado&$limit=50000",
+  "snapshot_date": "2026-11-11",
+  "source_rows": 679,
+  "source_aggregated_records": 1790,
+  "source_fields": [
+    "estado",
+    "expedientes",
+    "municipio",
+    "tipo_proyecto"
+  ],
+  "source_sha256": "3091cd206a5fdb79cd0b1e528cd03472b1440ecabb868ee355b5a5887a61be13",
+  "source_bytes": 92617,
+  "output_excludes_expediente_nature_and_company_type": true,
+  "construction_category_rule": "tipo_proyecto starts with 'Construcción' or 'Construc'; mineral extraction for construction materials is excluded as mining.",
+  "construction_scope": {
+    "aggregated_records": 317,
+    "project_categories": 13,
+    "municipalities": 74,
+    "records_by_expediente_status": {
+      "Activo": 122,
+      "Archivado": 195
+    }
+  },
+  "limitations": [
+    "Snapshot has no application, decision, issuance or closure dates; no permit lead time or regulatory delay can be estimated.",
+    "Active/archived are expediente statuses, not approval/rejection, legal compliance, project delivery or environmental outcomes.",
+    "The dataset covers Corantioquia's jurisdiction only and is not a national census of environmental permits.",
+    "Project-type categories are regulatory labels; they do not confirm that every expediente reached construction or was executed.",
+    "No individual expediente, applicant name or company type is retained in outputs; no link to SECOP or works is available.",
+    "License/reuse terms are not explicitly stated in the catalog metadata; confirm before redistribution beyond attributed aggregate outputs."
+  ]
+}

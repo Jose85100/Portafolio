@@ -31,3 +31,28 @@ Código compartido en \`include/quant/risk.hpp\`, aplicaciones CLI separadas y p
 - Liquidez: \`03-financial-risk/03-market-liquidity-research\`.
 
 Esta carpeta constituye la biblioteca central para evitar duplicación de código.
+
+## Stage 3: recuperaciones descontadas — MVP C++ acotado
+
+[Stage3 Cashflow Audit](stage3-cashflow-audit/) añade `include/quant/stage3.hpp`:
+activos ya deteriorados, EIR no negativa y recuperaciones nominales <= importe
+bruto. Verifica paridad con Python/Decimal, sanitizers y coste de cálculo. No
+sustituye el simulador de defaults futuros ni constituye IFRS 9 completo.
+
+```bash
+bash 04-quant-strategy-and-products/risk-engines/stage3-cashflow-audit/run.sh
+```
+
+## ES de escenarios ponderados — MVP validado numéricamente
+
+[Weighted Tail Audit](weighted-tail-audit/) añade la API pública `include/quant/weighted_tail.hpp` con probabilidades desiguales, VaR inversa-CDF y ES fraccionario. Incluye CLI, oráculo racional, paridad Python/C++, benchmark contra expansión equivalente, pruebas generativas, ASan/UBSan y cobertura. No sustituye `quant::tail` ni cambia los motores existentes; no calcula capital regulatorio.
+
+Desde la raíz del repo, en Linux con Python 3.12/g++/gcov/make:
+
+```bash
+bash 04-quant-strategy-and-products/risk-engines/weighted-tail-audit/run.sh
+```
+
+## Ideas de investigación
+
+[Explorar las cinco propuestas por tema](IDEAS.md). Cada propuesta está en estado de idea y cuenta con su propia carpeta.

@@ -1,0 +1,24 @@
+{
+  "checked_at_local": "2026-10-23 America/Bogota",
+  "status": "Primary public sources; proposed tests not executed",
+  "sources": [
+    {
+      "id": "nist-proofing",
+      "title": "NIST SP 800-63A-4",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63a.html",
+      "scope": "Distinciones de comprobación de identidad y §3.14; referencia técnica, no conformidad acreditada."
+    },
+    {
+      "id": "nist-auth",
+      "title": "NIST SP 800-63B-4",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "scope": "Autenticación y riesgos de canales/cambio de SIM; no vincula por sí solo teléfono e identidad civil."
+    },
+    {
+      "id": "fincen-deepfake",
+      "title": "FinCEN FIN-2024-Alert004",
+      "url": "https://www.fincen.gov/system/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf",
+      "scope": "Tipologías de medios sintéticos/documentos alterados; no benchmark ni prevalencia local."
+    }
+  ]
+}

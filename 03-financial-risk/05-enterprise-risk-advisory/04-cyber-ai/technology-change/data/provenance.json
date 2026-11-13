@@ -1,0 +1,9 @@
+{
+  "provider": "Cybersecurity and Infrastructure Security Agency (CISA)",
+  "source_url": "https://www.cisa.gov/sites/default/files/csv/known_exploited_vulnerabilities.csv",
+  "catalog_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+  "download_date": "2026-11-12",
+  "sha256": "85f484aba48c592c113722cb3e17e768fb5bd2f8f8ee7c548a2ed471e44efb85",
+  "scope": "CVE with evidence of exploitation listed by CISA; not all CVE, organizational assets, or incidents",
+  "license_note": "CISA is a US government agency; consult the source site for attribution and any applicable third-party terms."
+}

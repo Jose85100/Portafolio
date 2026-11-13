@@ -1,0 +1,15 @@
+test_empty_and_redundant_polygon (test_polyhedra.PolyhedralTests.test_empty_and_redundant_polygon) ... ok
+test_invalid (test_polyhedra.PolyhedralTests.test_invalid) ... ok
+test_main_five_points (test_polyhedra.PolyhedralTests.test_main_five_points) ... ok
+test_nontrivial_family (test_polyhedra.PolyhedralTests.test_nontrivial_family) ... ok
+test_pruning_preserves_containment (test_polyhedra.PolyhedralTests.test_pruning_preserves_containment) ... ok
+test_rectangle_dimension_property (test_polyhedra.PolyhedralTests.test_rectangle_dimension_property) ... ok
+test_serialization (test_polyhedra.PolyhedralTests.test_serialization) ... ok
+test_singular_support_not_family (test_polyhedra.PolyhedralTests.test_singular_support_not_family) ... ok
+test_total_indifference_box (test_polyhedra.PolyhedralTests.test_total_indifference_box) ... ok
+test_vertices_and_barycenters_equilibria (test_polyhedra.PolyhedralTests.test_vertices_and_barycenters_equilibria) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.474s
+
+OK

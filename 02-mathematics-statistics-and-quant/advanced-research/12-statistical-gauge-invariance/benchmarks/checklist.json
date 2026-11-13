@@ -1,0 +1,8 @@
+{
+  "no_missing_files": true,
+  "all_predeclared_gates_pass": true,
+  "raw_rows_120": true,
+  "notebook_has_outputs": true,
+  "notebook_no_errors": true,
+  "bibliography_at_least_five": true
+}

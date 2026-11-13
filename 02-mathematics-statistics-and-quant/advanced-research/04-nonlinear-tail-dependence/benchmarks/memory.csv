@@ -1,0 +1,17 @@
+model,q,n,method,tracked_peak_bytes,replicate_replayed_for_memory
+gaussian,0.99,2000,direct,81493,0
+gaussian,0.99,2000,conditional,180514,0
+gaussian,0.99,20000,direct,801493,0
+gaussian,0.99,20000,conditional,1688850,0
+gaussian,0.999,2000,direct,81493,0
+gaussian,0.999,2000,conditional,180465,0
+gaussian,0.999,20000,direct,801493,0
+gaussian,0.999,20000,conditional,1688801,0
+t4,0.99,2000,direct,82373,0
+t4,0.99,2000,conditional,154713,0
+t4,0.99,20000,direct,801509,0
+t4,0.99,20000,conditional,1502990,0
+t4,0.999,2000,direct,82373,0
+t4,0.999,2000,conditional,154713,0
+t4,0.999,20000,direct,801509,0
+t4,0.999,20000,conditional,1502941,0

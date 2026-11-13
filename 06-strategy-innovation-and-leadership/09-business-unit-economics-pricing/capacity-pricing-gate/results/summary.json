@@ -1,0 +1,49 @@
+{
+  "constrained": {
+    "price": 18,
+    "expected_profit": 2143.0817905330564,
+    "cvar_shortfall": 477.13416179044214,
+    "scenario_profits": [
+      3200,
+      1178.607659206491,
+      -477.13416179044214
+    ]
+  },
+  "risk_neutral": {
+    "price": 22,
+    "expected_profit": 2725.894840743213,
+    "cvar_shortfall": 592.2560776980029,
+    "scenario_profits": [
+      4400,
+      698.9330095916546,
+      -592.2560776980029
+    ]
+  },
+  "plugin_prediction": {
+    "price": 20,
+    "expected_profit": 3800,
+    "cvar_shortfall": 0.0,
+    "scenario_profits": [
+      3800
+    ]
+  },
+  "plugin_actual": {
+    "price": 20,
+    "expected_profit": 2452.0,
+    "cvar_shortfall": 520.0,
+    "scenario_profits": [
+      3800,
+      1000.0,
+      -520.0
+    ]
+  },
+  "mc_mean": 2141.3922402160506,
+  "mc_se": 3.1104459994257114,
+  "replicates": 200000,
+  "selector_seconds": 0.0007848089999242802,
+  "selector_python_peak_bytes": 4832,
+  "seed": 20261025,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "numpy": "2.3.5"
+}

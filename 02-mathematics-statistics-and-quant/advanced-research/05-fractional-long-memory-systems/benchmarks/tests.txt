@@ -1,0 +1,22 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.7.0
+rootdir: /workspace/scratch/b4f745a5b045/math-cycle-20261019/02-mathematics-statistics-and-quant/advanced-research/05-fractional-long-memory-systems
+configfile: pyproject.toml
+testpaths: tests
+plugins: cov-6.2.1, hypothesis-6.138.2, platformdirs-4.13.5
+collected 35 items
+
+tests/test_fractional.py ..................................              [ 97%]
+tests/test_notebook_executor.py .                                        [100%]
+
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.12.14-final-0 _______________
+
+Name                Stmts   Miss  Cover   Missing
+-------------------------------------------------
+src/fractional.py      55      0   100%
+src/reference.py       19      0   100%
+-------------------------------------------------
+TOTAL                  74      0   100%
+Coverage JSON written to file benchmarks/coverage.json
+============================== 35 passed in 2.58s ==============================

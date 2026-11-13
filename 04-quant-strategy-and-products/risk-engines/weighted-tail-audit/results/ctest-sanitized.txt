@@ -1,0 +1,8 @@
+Internal ctest changing into directory: /workspace/scratch/e32aba0f5414/Portafolio/04-quant-strategy-and-products/risk-engines/weighted-tail-audit/build/sanitized
+Test project /workspace/scratch/e32aba0f5414/Portafolio/04-quant-strategy-and-products/risk-engines/weighted-tail-audit/build/sanitized
+    Start 1: weighted_invariants
+1/1 Test #1: weighted_invariants ..............   Passed    0.13 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.13 sec

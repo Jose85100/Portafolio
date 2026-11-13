@@ -1,0 +1,7 @@
+macro_sector,cohort_top1000_entities,matched_positive_current_accounts,coverage_pct_of_sector_cohort,median_entity_current_ratio,aggregate_current_ratio_ratio_of_sums
+AGROPECUARIO,24,17,70.8,1.0752,1.012
+COMERCIO,309,233,75.4,1.2973,1.2176
+CONSTRUCCIÓN,64,40,62.5,1.7436,1.5851
+MANUFACTURA,292,210,71.9,1.41,1.397
+MINERO-HIDROCARBUROS,49,34,69.4,1.3149,1.1344
+SERVICIOS,262,108,41.2,1.42,1.2637

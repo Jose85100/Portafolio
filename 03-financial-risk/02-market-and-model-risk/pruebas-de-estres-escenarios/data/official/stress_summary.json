@@ -1,0 +1,108 @@
+{
+  "source_period_start": "2024-01-02",
+  "source_period_end": "2026-11-10",
+  "yield_observations": 715,
+  "daily_changes": 714,
+  "duration_assumption_years": 8.0,
+  "notional_usd": 10000000.0,
+  "worst_long_bond_shocks": [
+    {
+      "date": "2024-04-10",
+      "yield_change_bp": 18.99999999999995,
+      "long_bond_loss_usd": 151999.9999999996,
+      "long_bond_loss_pct_notional": 0.01519999999999996
+    },
+    {
+      "date": "2024-02-02",
+      "yield_change_bp": 16.000000000000014,
+      "long_bond_loss_usd": 128000.00000000012,
+      "long_bond_loss_pct_notional": 0.012800000000000011
+    },
+    {
+      "date": "2024-11-06",
+      "yield_change_bp": 16.000000000000014,
+      "long_bond_loss_usd": 128000.00000000012,
+      "long_bond_loss_pct_notional": 0.012800000000000011
+    },
+    {
+      "date": "2026-09-23",
+      "yield_change_bp": 15.000000000000036,
+      "long_bond_loss_usd": 120000.00000000028,
+      "long_bond_loss_pct_notional": 0.012000000000000028
+    },
+    {
+      "date": "2024-06-07",
+      "yield_change_bp": 14.999999999999947,
+      "long_bond_loss_usd": 119999.99999999956,
+      "long_bond_loss_pct_notional": 0.011999999999999957
+    },
+    {
+      "date": "2025-04-07",
+      "yield_change_bp": 14.000000000000057,
+      "long_bond_loss_usd": 112000.00000000045,
+      "long_bond_loss_pct_notional": 0.011200000000000045
+    },
+    {
+      "date": "2024-02-05",
+      "yield_change_bp": 13.999999999999968,
+      "long_bond_loss_usd": 111999.99999999974,
+      "long_bond_loss_pct_notional": 0.011199999999999974
+    },
+    {
+      "date": "2024-02-13",
+      "yield_change_bp": 13.999999999999968,
+      "long_bond_loss_usd": 111999.99999999974,
+      "long_bond_loss_pct_notional": 0.011199999999999974
+    },
+    {
+      "date": "2026-03-20",
+      "yield_change_bp": 13.999999999999968,
+      "long_bond_loss_usd": 111999.99999999974,
+      "long_bond_loss_pct_notional": 0.011199999999999974
+    },
+    {
+      "date": "2024-04-01",
+      "yield_change_bp": 12.99999999999999,
+      "long_bond_loss_usd": 103999.99999999991,
+      "long_bond_loss_pct_notional": 0.01039999999999999
+    }
+  ],
+  "largest_yield_increase": {
+    "date": "2024-04-10",
+    "yield_change_bp": 18.99999999999995,
+    "long_bond_loss_usd": 151999.9999999996,
+    "long_bond_loss_pct_notional": 0.01519999999999996
+  },
+  "largest_yield_decrease": {
+    "date": "2024-08-02",
+    "yield_change_bp": -19.00000000000004,
+    "long_bond_loss_usd": -152000.00000000032,
+    "long_bond_loss_pct_notional": -0.015200000000000031
+  },
+  "reverse_stress_loss_target_pct": 10.0,
+  "required_yield_increase_bp": 125.0,
+  "historical_days_meeting_target": 0,
+  "source_hashes": [
+    {
+      "file": "daily-treasury-yield-curve-2024.csv",
+      "sha256": "6775840b76cd7fd41121f61d6f6c60184eca6b2ba49954ec7372c463cbeef34d",
+      "bytes": 19098
+    },
+    {
+      "file": "daily-treasury-yield-curve-2025.csv",
+      "sha256": "cf2fa3da7f160384b63d2ead698532b1d76cd9f789ce4911e2304db85b14e6d5",
+      "bytes": 20155
+    },
+    {
+      "file": "daily-treasury-yield-curve-2026-11-10.csv",
+      "sha256": "782e0953ac34dd4c9751bc061feae3b1a2e18f0be8c7c181a3d2a472d1bdcbe5",
+      "bytes": 17606
+    }
+  ],
+  "interpretation": "single-factor duration proxy, not a multi-factor portfolio valuation",
+  "limitations": [
+    "no convexity, carry, roll-down, coupon cash flows or basis risk",
+    "the observation period is 2024 through 2026 and does not include 2008 or 2020 crises",
+    "absence of a hit in this sample does not imply the reverse-stress target is implausible"
+  ]
+}

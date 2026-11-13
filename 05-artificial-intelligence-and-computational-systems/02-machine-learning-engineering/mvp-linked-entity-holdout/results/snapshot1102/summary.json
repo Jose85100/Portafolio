@@ -1,0 +1,38 @@
+{
+  "ungated1101_misuse": {
+    "admitted": 144,
+    "false_admit": 136,
+    "false_reject": 0,
+    "cases": 144
+  },
+  "semantics_only": {
+    "admitted": 18,
+    "false_admit": 10,
+    "false_reject": 0,
+    "cases": 144
+  },
+  "event_time_only": {
+    "admitted": 12,
+    "false_admit": 4,
+    "false_reject": 0,
+    "cases": 144
+  },
+  "asof_reference": {
+    "admitted": 8,
+    "false_admit": 0,
+    "false_reject": 0,
+    "cases": 144
+  },
+  "prospective_gate": {
+    "admitted": 8,
+    "false_admit": 0,
+    "false_reject": 0,
+    "cases": 144
+  },
+  "abstain_all": {
+    "admitted": 0,
+    "false_admit": 0,
+    "false_reject": 8,
+    "cases": 144
+  }
+}

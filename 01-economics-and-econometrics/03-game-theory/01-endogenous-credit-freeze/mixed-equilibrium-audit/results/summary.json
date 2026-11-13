@@ -1,0 +1,20 @@
+{
+  "pure_count": 3,
+  "mixed_inclusive_count": 5,
+  "new_mixed": 2,
+  "pure_bounds": [
+    0.0,
+    1.0
+  ],
+  "mixed_bounds": [
+    0.0,
+    1.0
+  ],
+  "oracle_cases": 50,
+  "oracle_isolated": 49,
+  "oracle_mismatches": 0,
+  "max_oracle_error": 4.440892098500626e-16,
+  "sensitivity_cases": 195,
+  "rejected_degenerate": 15,
+  "max_regret": 0.0
+}

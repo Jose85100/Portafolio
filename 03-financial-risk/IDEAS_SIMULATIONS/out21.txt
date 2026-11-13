@@ -1,0 +1,8 @@
+Criticos simulados: Kupiec=4.016 Z2=-0.693
+Tamano empirico 5 %: Kupiec=0.037  Z2=0.050
+Alternativa                                  Kupiec       Z2
+t(4) misma varianza (colas pesadas)           0.037    0.167
+t(6) misma varianza                           0.047    0.152
+N(0,1.2^2) (volatilidad subestimada)          0.632    0.775
+N(0,1.1^2)                                    0.233    0.366
+Nota: ES teorico normal = 2.3378  VaR = 1.96

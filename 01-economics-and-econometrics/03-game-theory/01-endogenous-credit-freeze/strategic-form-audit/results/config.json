@@ -1,0 +1,74 @@
+{
+  "regular": {
+    "prior": 0.5,
+    "accuracy": 0.8,
+    "cost": 0.9,
+    "complementarity": 0.8
+  },
+  "coordination_family": {
+    "prior": 0.5,
+    "accuracy": 0.5,
+    "cost": 0.9,
+    "complementarity": 0.8
+  },
+  "full_indifference": {
+    "prior": 0.5,
+    "accuracy": 0.5,
+    "cost": 0.5,
+    "complementarity": 0
+  },
+  "singular_isolated": {
+    "prior": 0.5,
+    "accuracy": 1,
+    "cost": 1,
+    "complementarity": 0.8
+  },
+  "random_0": {
+    "prior": 0.40708692586770145,
+    "accuracy": 0.7726859856781552,
+    "cost": 0.8631994584910685,
+    "complementarity": 0.8
+  },
+  "random_1": {
+    "prior": 0.49852865716894607,
+    "accuracy": 0.8390664853319818,
+    "cost": 0.5310738763429377,
+    "complementarity": 0.8
+  },
+  "random_2": {
+    "prior": 0.31960906347641527,
+    "accuracy": 0.7699830870216697,
+    "cost": 0.9187792608263325,
+    "complementarity": 0.8
+  },
+  "random_3": {
+    "prior": 0.6955175733191239,
+    "accuracy": 0.5959322351076135,
+    "cost": 0.9671764432321734,
+    "complementarity": 0.8
+  },
+  "random_4": {
+    "prior": 0.20874071382773343,
+    "accuracy": 0.6099054017859549,
+    "cost": 0.7488040325527878,
+    "complementarity": 0.8
+  },
+  "random_5": {
+    "prior": 0.7638658659442199,
+    "accuracy": 0.9458217327975911,
+    "cost": 0.6562918072659327,
+    "complementarity": 0.8
+  },
+  "random_6": {
+    "prior": 0.452020855013878,
+    "accuracy": 0.7448278092908208,
+    "cost": 0.5281967196984947,
+    "complementarity": 0.8
+  },
+  "random_7": {
+    "prior": 0.6307347633145381,
+    "accuracy": 0.8721964614828707,
+    "cost": 0.36712956203520397,
+    "complementarity": 0.8
+  }
+}

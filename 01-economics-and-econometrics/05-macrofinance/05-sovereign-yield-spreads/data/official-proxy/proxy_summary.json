@@ -1,0 +1,58 @@
+{
+  "construct": "nominal 10-year government yield differential proxy",
+  "formula": "BanRep COP TES zero-coupon 10y yield (%) minus US Treasury constant-maturity 10y yield (%)",
+  "unit": "percentage points",
+  "observations": 285,
+  "coverage": "2003-01 to 2026-10",
+  "missing_paired_months_not_interpolated": [
+    "2025-09"
+  ],
+  "sources": [
+    {
+      "file": "banrep-tes-zero-coupon-monthly-2003-2026.xml",
+      "sha256": "1c20f2e7c01c4e4d48c697c19d1836dbd99a88665e677c1b59a95e4e3288c780",
+      "raw_bytes": 172108,
+      "dataflow": "DF_TES_MONTHLY_HIST",
+      "series_subject": "IRGBRY10",
+      "unit": "percent",
+      "raw_encoding": "fraction; multiplied by 100 for percent",
+      "frequency": "monthly",
+      "observations": 285,
+      "first_month": "2003-01",
+      "last_month": "2026-10"
+    },
+    {
+      "file": "fred-us-treasury-10y-dgs10-daily.csv",
+      "sha256": "0a19145416475025a3db81f1d24cddde626211cc098ccba2c22c4baf426c5bb4",
+      "raw_bytes": 269347,
+      "series_id": "DGS10",
+      "unit": "percent",
+      "frequency": "daily source; arithmetic monthly mean",
+      "nonmissing_daily_observations": 16199,
+      "monthly_observations": 779,
+      "first_month": "1962-01",
+      "last_month": "2026-11"
+    }
+  ],
+  "proxy_interpretation": "co-movement benchmark for long-term local-currency sovereign financing conditions relative to a U.S. benchmark; not a pure sovereign default-risk premium",
+  "statistics_pp": {
+    "mean": 6.3431029009411555,
+    "minimum": 2.6927819692846775,
+    "maximum": 12.223228836871371,
+    "latest_month": "2026-10",
+    "latest": 8.11708552956242
+  },
+  "assumptions_and_expected_bias": [
+    "Both quoted rates are treated as comparable 10-year nominal government yields; differences in duration construction, liquidity, tax treatment, and market microstructure remain.",
+    "The differential includes expected inflation, expected depreciation and currency-risk compensation, local monetary-policy expectations, term premia, liquidity and credit risk. It will generally overstate or understate default risk depending on these components.",
+    "No hedge is applied. A U.S.-dollar investor's realized currency exposure is not removed, and the spread is not a tradable arbitrage measure.",
+    "Monthly averaging smooths daily volatility and may hide within-month repricing; the BanRep curve estimate is a model-based zero-coupon yield.",
+    "No causal relation to debt, fiscal news, or macro fundamentals is estimated in this companion."
+  ],
+  "admissible_use": "descriptive monitoring of relative long-term nominal financing conditions and a reproducible proxy input for sensitivity scenarios; not credit-rating, CDS, expected-loss, or investment decision substitute",
+  "limitations": [
+    "The sample starts in 2003 because the captured BanRep TES 10-year history begins then.",
+    "No official same-currency matched instrument or direct Colombian sovereign CDS/EMBI series is included.",
+    "The U.S. Treasury yield and TES zero-coupon curve differ in currency, inflation regime, market depth and benchmark construction."
+  ]
+}

@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")"
+if [[ -z "${PYTHON:-}" ]]; then
+  if [[ ! -x .venv/bin/python ]]; then python3 -m venv --system-site-packages .venv; fi
+  PYTHON="$PWD/.venv/bin/python"
+fi
+if [[ "${SKIP_INSTALL:-0}" != "1" ]]; then "$PYTHON" -m pip install -r requirements.txt; fi
+mkdir -p results
+"$PYTHON" -m coverage run --source=src.model,src.calendar,src.affine,src.term_structure,src.dated_contract,src.affine_lgd -m unittest discover -s tests -v > results/tests.txt 2>&1
+"$PYTHON" -m coverage json -o results/coverage.json
+"$PYTHON" -m coverage report > results/coverage.txt
+"$PYTHON" -m ruff check src tests benchmarks > results/lint.txt
+"$PYTHON" -m mypy --config-file mypy.ini src/model.py src/calendar.py src/affine.py src/term_structure.py src/dated_contract.py src/affine_lgd.py > results/types.txt
+"$PYTHON" -m src.experiment > results/experiment.txt
+"$PYTHON" -m src.calendar_experiment > results/calendar_experiment.txt
+"$PYTHON" benchmarks/build_notebook.py
+"$PYTHON" benchmarks/build_calendar_notebook.py
+"$PYTHON" -m src.affine_experiment > results/affine_experiment.txt
+"$PYTHON" benchmarks/build_affine_notebook.py
+"$PYTHON" -m pip freeze > results/environment31.txt
+uname -a >> results/environment31.txt
+"$PYTHON" -m src.term_experiment > results/term_experiment.txt
+"$PYTHON" benchmarks/build_term_notebook.py
+"$PYTHON" -m pip freeze > results/environment1101.txt
+uname -a >> results/environment1101.txt
+"$PYTHON" -m src.dated_experiment > results/dated_experiment.txt
+"$PYTHON" benchmarks/build_dated_notebook.py
+"$PYTHON" -m pip freeze > results/environment1102.txt
+uname -a >> results/environment1102.txt
+"$PYTHON" -m src.lgd_experiment > results/lgd_experiment.txt
+"$PYTHON" benchmarks/build_lgd_notebook.py
+"$PYTHON" -m pip freeze > results/environment1103.txt
+uname -a >> results/environment1103.txt

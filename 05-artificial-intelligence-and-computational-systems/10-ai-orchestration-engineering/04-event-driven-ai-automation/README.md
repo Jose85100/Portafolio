@@ -1,6 +1,6 @@
 # Event-Driven AI Automation Platform
 
-**Madurez:** M2 — prototipo local verificado, NO plataforma operacional.
+**Estado:** diseño S1 con dos prototipos locales: inbox M2 y [outbox con recibo semántico](mvp-outbox-idempotency/). No se declara plataforma operacional.
 
 ## Mandato y brecha S1
 
@@ -30,4 +30,17 @@ La transacción atómica cubre exclusivamente el efecto escrito en la misma base
 
 ## Fundamentos compartidos
 
-Consultar `../fundamentals/README.md` para modelos formales, estadística y diseño computacional. El proyecto sigue el estándar de madurez del repositorio y no altera `data-engineering/`.
+Consultar `../fundamentals/README.md` para modelos formales, estadística y diseño computacional. El proyecto no altera `data-engineering/`.
+
+- Baseline determinista y escenarios sintéticos con resultado esperado.
+- Unit tests, contract tests, integration tests, property tests y fault injection.
+- Evaluación de carga, límites de concurrencia, saturación y errores de red.
+- Idempotencia de efectos externos, autenticación, autorización y secretos fuera de logs.
+- Reproducción de incidentes, rollback y trazabilidad de entradas, salidas y versiones.
+- Benchmark con IC y comparación por carga, no una única corrida.
+
+## 6. Entregables y gates
+
+D1 arquitectura y amenaza; D2 contratos y modelo formal; D3 implementación; D4 pruebas y benchmarks; D5 validación independiente; D6 operación y runbook. G0 diseño → G1 modelo → G2 tests → G3 stress → G4 revisión → G5 operación. **D3–D4 parciales** en el MVP de outbox; D5–D6 y el resto de la plataforma siguen pendientes.
+
+[Fundamentos compartidos](../fundamentals/README.md).

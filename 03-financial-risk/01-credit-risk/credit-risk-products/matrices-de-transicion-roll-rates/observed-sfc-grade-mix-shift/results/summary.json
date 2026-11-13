@@ -1,0 +1,48 @@
+{
+  "latest_cut": "2026-08-31",
+  "products_at_latest_cut": 32,
+  "products_with_12m_comparison": 32,
+  "largest_positive_12m_mix_shifts": [
+    {
+      "product_code": 29,
+      "product": "CONSUMO BAJO MONTO",
+      "share_de_latest_pct": 4.8813,
+      "change_12m_pp": 2.9041,
+      "reporting_entities": 8,
+      "coverage_pct": 100.0
+    },
+    {
+      "product_code": 16,
+      "product": "LEASING HABITACIONAL NO VIS UVR",
+      "share_de_latest_pct": 8.413,
+      "change_12m_pp": 0.2958,
+      "reporting_entities": 5,
+      "coverage_pct": 100.0
+    },
+    {
+      "product_code": 20,
+      "product": "CARTERA COMERCIAL EMPRESARIAL",
+      "share_de_latest_pct": 7.0717,
+      "change_12m_pp": 0.2725,
+      "reporting_entities": 36,
+      "coverage_pct": 100.0
+    },
+    {
+      "product_code": 12,
+      "product": "VIVIENDA NO VIS UVR",
+      "share_de_latest_pct": 5.8657,
+      "change_12m_pp": 0.2211,
+      "reporting_entities": 14,
+      "coverage_pct": 99.7807
+    },
+    {
+      "product_code": 14,
+      "product": "LEASING HABITACIONAL VIS UVR",
+      "share_de_latest_pct": 2.9581,
+      "change_12m_pp": 0.1813,
+      "reporting_entities": 4,
+      "coverage_pct": 100.0
+    }
+  ],
+  "interpretation": "Descriptive change in product-level D+E grade mix; not account-level migration, default incidence, or a transition probability."
+}

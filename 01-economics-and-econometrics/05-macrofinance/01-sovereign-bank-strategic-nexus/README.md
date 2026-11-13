@@ -1,6 +1,6 @@
 # Sovereign–Bank Strategic Nexus
 
-> **Estado: formulación de investigación.** No se han estimado modelos, demostrado teoremas específicos ni obtenido resultados empíricos en este directorio.
+> **Estado: S2 parcial.** [Sovereign Clearing Audit](sovereign-clearing-audit/) implementa pagos; [Fire-Sale Price Audit](fire-sale-price-audit/) añade precio endógeno; [Coupled Clearing Audit](coupled-clearing-audit/) conecta ambos; [Collateral Liquidity Choice](collateral-liquidity-choice/) incorpora una decisión estática y acotada entre venta y préstamo colateralizado. El juego dinámico, garantías públicas e identificación siguen S1. No hay resultados empíricos ni teoremas nuevos del programa completo.
 
 ## Pregunta de investigación
 
@@ -58,3 +58,29 @@ Endogeneidad fiscal y falta de datos de balance granular limitan identificación
 3. Dataset versionado, contratos y vintages.
 4. Solver/estimador, simulación y pruebas automatizadas.
 5. Backtesting, análisis de robustez y reporte reproducible.
+
+## Ciclo 2026-10-18
+
+[Sovereign Clearing Audit](sovereign-clearing-audit/): primer componente S2 del
+programa. Reutiliza el mecanismo EN ya presente en el laboratorio semanal sin
+atribuirse su novedad; añade balances soberanos estáticos, contrato de parada,
+oráculos y conciliación entre impago bruto y acreedores externos. No implementa
+todavía el doom loop fiscal endógeno ni el juego dinámico descrito arriba.
+
+## Ciclo 2026-10-19
+
+[Fire-Sale Price Audit](fire-sale-price-audit/): extensión S2 de liquidación mínima
+de un activo, precios múltiples, pliegue y comparación con Picard/malla+Brent.
+Se comprueba la reducción al clearing anterior sin enlaces, no un acoplamiento
+simultáneo ya resuelto. Modelo sintético con piso exógeno; no política óptima.
+
+## Ciclo 2026-10-20
+
+[Coupled Clearing Audit](coupled-clearing-audit/): pagos y precios simultáneos,
+coeficientes racionales por régimen y contrastes con ambos MVP anteriores.
+El censo se limita a1–4 bancos; no se anuncia escalabilidad industrial ni
+solución del doom loop fiscal. Incluye contraejemplo a congelar cobros nominales.
+
+## Ciclo 2026-10-22
+
+[Collateral Liquidity Choice](collateral-liquidity-choice/): optimización privada de un banco entre venta y préstamo sujeto a capacidad pignorable. Compara con liquidación pura y malla densa. Es un componente S2 reducido, no equilibrio de red, política óptima ni evaluación de bienestar.

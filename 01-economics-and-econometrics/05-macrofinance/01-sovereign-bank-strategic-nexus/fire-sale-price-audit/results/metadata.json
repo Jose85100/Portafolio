@@ -1,0 +1,12 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+  "cpu_count": 9,
+  "seed": 20261019,
+  "memory": "tracemalloc Python allocations; not RSS/native memory",
+  "timing": "wall clock with tracemalloc on;3 paired repetitions;no speedup claim",
+  "base_commit": "f1658d32226a517f2e7e88652120001eeea6f47d",
+  "config_sha256": "623082f665b741e7b879d37a582b1e5941bac33c8d7a27eacacb7e02fc0e4df0"
+}

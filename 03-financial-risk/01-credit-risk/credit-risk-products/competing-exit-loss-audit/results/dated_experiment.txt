@@ -1,0 +1,51 @@
+{
+  "anchor": {
+    "exact_loss": 1.1671587409762665,
+    "midpoint_exposure_loss": 1.1671587409762665,
+    "default_probability": 0.12733418809728067,
+    "prepayment_probability": 0.6366709404864035,
+    "survival": 0.23599487141631587,
+    "terminal_discount": 0.9416097356994506
+  },
+  "calendar_days": [
+    2,
+    364
+  ],
+  "total_days": 366,
+  "max_unit_invariance_error": 1.3322676295501878e-15,
+  "direct_numeric_error": 0.0,
+  "naive_anchor_360_loss": 1.174426232514139,
+  "availability_cases": 6,
+  "availability_correct": 6,
+  "passed": true,
+  "timings": {
+    "dated_validated": {
+      "median_seconds": 1.609908999967047e-05,
+      "samples_seconds": [
+        1.7058009999573186e-05,
+        1.7232070000545718e-05,
+        1.4594579999993584e-05,
+        1.4596770000707693e-05,
+        1.609908999967047e-05,
+        1.6272450000087702e-05,
+        1.5805170000930957e-05
+      ],
+      "peak_python_bytes": 1546
+    },
+    "prevalidated_numeric": {
+      "median_seconds": 1.2710690000403702e-05,
+      "samples_seconds": [
+        1.4899920000743804e-05,
+        1.3566750000109096e-05,
+        1.3010330000042814e-05,
+        1.2207339999577016e-05,
+        1.2710690000403702e-05,
+        1.2308600000778824e-05,
+        1.209807999998702e-05
+      ],
+      "peak_python_bytes": 1464
+    }
+  },
+  "python": "3.12.14",
+  "hardware": "Linux-6.18.57-x86_64-with-glibc2.39"
+}

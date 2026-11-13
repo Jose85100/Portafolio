@@ -1,0 +1,50 @@
+{
+  "config": {
+    "seed": 20261014,
+    "fixture_trials": 200,
+    "fixture_max_n": 32,
+    "levels": [
+      0.5,
+      0.75,
+      0.875,
+      0.975,
+      0.99
+    ],
+    "benchmark_n": [
+      1000,
+      10000,
+      100000,
+      500000
+    ],
+    "benchmark_repeats": 7,
+    "integer_weights": [
+      1,
+      8
+    ],
+    "scaled_error_tolerance": 1e-12,
+    "inference": "Finite scenario measure, no population or forecast claims"
+  },
+  "python": "3.12.14",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "numeric_platform": {
+    "long_double_digits": 64,
+    "long_double_max_exponent": 16384,
+    "scenario_bytes": 16,
+    "atom_bytes": 32
+  },
+  "commit": "c213a687d501faae8b2637546f89b980425adfad",
+  "source_sha256": {
+    "04-quant-strategy-and-products/risk-engines/include/quant/risk.hpp": "241e6189f8232f74a3d7f926cb63654dbd354028c247a0253236ae83149399e6",
+    "03-financial-risk/02-market-and-model-risk/weighted-expected-shortfall-audit/src/tail.py": "82657e3fdcdce20f6100c3b63f094e0e1c800f39937a93af6e722970dd0a2587",
+    "04-quant-strategy-and-products/risk-engines/include/quant/weighted_tail.hpp": "07633dad7ec76309e31a9de33db46bd8346ee4883941bf4f31a24da2eb001aa9"
+  },
+  "fixtures": 207,
+  "performance_rows": 84,
+  "max_cpp_scaled_error": 0.0,
+  "max_cpp_relative_error": 0.0,
+  "rss_scope": "C++ /proc/self/status VmHWM after exec, includes dataset/runtime/warm-up; KiB",
+  "wait4_scope": "Raw fork-inherited maxima also preserved; not used as kernel memory",
+  "timing_scope": "C++ steady_clock, includes allocation/copy/expansion/sort, excludes CLI/startup",
+  "cpu": "model name\t: AMD EPYC 9V74 80-Core Processor"
+}

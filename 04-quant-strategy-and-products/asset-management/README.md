@@ -14,3 +14,7 @@ Optimización de portafolios, medición de riesgo y asignación sin ventas en co
 | [Métricas de desempeño y atribución](metricas-de-desempeno-y-atribucion) | Biblioteca de métricas de desempeño de un portafolio frente a su benchmark: retorno anualizado, volatilidad, Sharpe, Sortino, máximo drawdown, Calmar, alfa y beta por regresión, tracking error e information ratio. | Funcional · datos sintéticos |
 
 Cada proyecto trae su `main.py` ejecutable y el resultado de una corrida real. Las versiones con datos reales abiertos se agregarán por separado.
+
+## Ideas de investigación
+
+[Explorar las cinco propuestas por tema](IDEAS.md). Cada propuesta está en estado de idea y cuenta con su propia carpeta.

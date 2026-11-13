@@ -69,3 +69,16 @@ Paquetes futuros: `src/` (estimación/simulación), `tests/` (unitarios e invari
 **Gate A:** problema y métricas aprobados; **B:** datos auditables; **C:** baseline reproducible; **D:** modelo avanzado con pruebas; **E:** validación independiente y stress; **F:** decisión ejecutiva con evidencia y dueño. No promover de gate por documentación solamente.
 
 **Fases:** descubrimiento → baseline → modelado → stress/validación → piloto controlado → transferencia y monitoreo. Registrar versionado, reproducibilidad y resultados negativos.
+
+
+## Aplicación observada
+
+[Notebook: Riesgo operacional: accidentes laborales por sector](01_contexto_accidentalidad.ipynb). **Decisión:** contextualizar preguntas de prevención y monitoreo HSE por actividad económica. Se compara un indicador descriptivo construido con accidentes sucedidos y afiliaciones-mes; no se estima distribución de pérdidas monetarias.
+
+
+**Complemento de calidad:** El notebook contrasta la tasa agregada ponderada con la media sectorial y muestra su relación con el tamaño de exposición.
+
+
+### Ampliación metodológica
+
+El notebook incorpora variantes, métricas y bibliografía primaria con supuestos y alcance explícitos. Las proporciones y probabilidades condicionales del ejercicio no acreditan desempeño de una entidad.

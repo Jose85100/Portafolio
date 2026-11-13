@@ -1,6 +1,6 @@
 # Agentic Threat Model & Evaluation
 
-> **Estado: propuesta técnica (S0/S1).** No se declara implementación, benchmark ejecutado ni desempeño demostrado.
+> **Estado:** diseño amplio S0/S1 con [un componente S2 de broker read-only y evaluación TOCTOU](mvp-scoped-read-broker/), ejecutado con fixtures temporales sintéticas. No se declara plataforma operacional ni resistencia general a prompt injection.
 
 ## Pregunta de investigación
 

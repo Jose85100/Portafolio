@@ -1,0 +1,20 @@
+{
+  "seed": 422,
+  "samples": 800,
+  "accuracy_by_noise": {
+    "0": 1.0,
+    "0.05": 1.0,
+    "0.25": 1.0,
+    "1.0": 0.7
+  },
+  "endpoint_accuracy": 0.5,
+  "moments_accuracy": 0.5,
+  "max_oracle_error": 1.0658141036401503e-14,
+  "convergence_order": 1.999869639150011,
+  "aliasing_dense_area": 6.280662313909504,
+  "aliasing_four_segment_area": 0.0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "hardware": "x86_64",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+}

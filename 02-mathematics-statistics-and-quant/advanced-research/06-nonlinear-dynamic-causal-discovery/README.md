@@ -1,57 +1,27 @@
-# Causal Discovery in Nonlinear Stochastic Systems
+# Confusión temporal: auditoría de predicción frente a intervención
 
-> **Madurez: S1 — protocolo de investigación.** No se afirma código, experimentos ejecutados, revisión sistemática concluida ni novedad demostrada.
+**Componente S2 acotado, programa06 parcialmente implementado.** El prototipo cubre una esquina lineal gaussiana con confusor conocido; nonlinearidad, feedback y causal discovery general permanecen como investigación S1. No se afirma validación empírica ni operación.
 
-## Pregunta de investigación
+Desde esta carpeta, Python3.12:
 
-¿Bajo qué supuestos son identificables relaciones causales dinámicas con feedback y confusión latente?
-
-## Hipótesis contrastable
-
-El método propuesto supera a baselines explícitos en al menos una métrica predefinida, sin degradación inaceptable en robustez, calibración ni costo. Esta hipótesis debe operacionalizarse antes de observar resultados.
-
-## Formulación matemática
-
-X_{i,t}=f_i(Pa(X_{i,t}),U_{i,t}); especificar DAG temporal, intervenciones y restricciones de independencia.
-
-**Trabajo teórico pendiente:** definir espacios de probabilidad y parámetros, supuestos de existencia e identificabilidad, resultados de convergencia o estabilidad, demostraciones y contraejemplos. No se presume que tales propiedades estén establecidas.
-
-## Modelado estadístico y estimación
-
-Contrastar PCMCI, Granger no lineal y modelos aditivos; pruebas de independencia condicional.
-
-Estimar sesgo, varianza, consistencia bajo supuestos adecuados e intervalos de incertidumbre. Separar evaluación predictiva de identificación causal.
-
-## Métodos numéricos y protocolo experimental
-
-Sistemas sintéticos con grafos conocidos, lags variables, confusores y observación irregular; precisión estructural y cobertura.
-
-**Diseño mínimo:** (1) generador sintético con verdad conocida; (2) baseline trivial y avanzado; (3) evaluación fuera de muestra o por réplicas independientes; (4) ablaciones y pruebas adversariales; (5) tiempos, memoria y sensibilidad a hiperparámetros; (6) semillas, versiones y resultados reproducibles.
-
-## Aplicación económico-financiera
-
-Transmisión macroeconómica y contagio.
-
-## Limitaciones y posibles fallos
-
-Predicción temporal no prueba causalidad; explicitar no identificabilidad.
-
-## Entregables y criterios de aceptación
-
-- **S1:** revisión bibliográfica verificable, hipótesis operacionales, teoremas/proposiciones y plan preregistrado de simulación.
-- **S2:** módulos `src/`, `tests/`, datos sintéticos y script de reproducción, con cobertura de invariantes y casos límite.
-- **S3:** comparadores estadísticos, tablas y figuras generadas, análisis de sensibilidad, errores numéricos y benchmark de recursos.
-- **S4:** réplica independiente, aplicación con datos públicos licenciados, documentación de riesgos y límites de validez.
-
-## Estructura prevista (no creada aún)
-
-```text
-theory/       # supuestos, derivaciones y pruebas
-src/          # modelos, estimadores y algoritmos
-tests/        # tests unitarios y estadísticos
-experiments/  # simulaciones y benchmarks
-data/         # manifiestos y fuentes públicas
-docs/         # interpretación, limitaciones y referencias
+```bash
+bash run.sh
 ```
 
-**Regla de evidencia:** no reportar métricas, resultados, referencias bibliográficas ni garantías matemáticas que no hayan sido verificadas.
+Instala dependencias fijadas en entorno aislado `.venv`, ejecuta lint, tipos, seis tests, cobertura, benchmark y notebook con salidas reales. `MATH_ENV` permite elegir otro entorno. Notebook ejecutado secuencialmente en un namespace nuevo de IPython; no se afirma prueba con kernel Jupyter separado.
+
+## Aporte del ciclo25oct
+
+El diseño previo pedía distinguir predicción e intervención bajo confusión. Ahora hay un DGP con lags alineados, regresión anidada con F-test, oráculo independiente `scipy.stats.linregress`, identidad FWL y experimento con200 réplicas por configuración. Es un banco de falsación local, no un nuevo algoritmo de causal discovery.
+
+A n=500 y efecto causal cero, el modelo sin control rechaza ausencia de asociación en200/200 réplicas, pero la intervención SCM no cambia Y. Controlar Z en su lag correcto reduce rechazos a9/200 (4.5%, intervalo MC95%2.08–8.37%) y estima pendiente media−0.00627. Con efecto0.3, el control correcto estima0.30008 y rechaza en200/200.
+
+La regresión omitida detecta una asociación real: no se llama falso positivo del test predictivo. El error sería atribuir ese rechazo al efecto causal. Proxy ruidoso y lag incorrecto tampoco identifican el efecto en estos ejemplos.
+
+- [Notebook ejecutado con ecuaciones](notebook.ipynb).
+- [Informe de14 puntos y comparación de3ideas](informe.md).
+- [Fuentes verificadas](fuentes.md) y [BibTeX](referencias.bib).
+- `src/`: generador, test y benchmark; `tests/`: invariantes, oracle y degeneración.
+- `results/`:4800 ajustes sobre1200 datasets independientes, CSV/JSON, figura y cobertura.
+
+Los datos son sintéticos, con verdad impuesta. El contraste exacto requiere errores gaussianos IID independientes del diseño completo; la calibración se afirma solo para el modelo con control correcto. La ablación de lag erróneo no cumple esa condición global y sus p-valores se reportan como diagnóstico sin garantía exacta. No es un VAR general ni implementación de PCMCI. EL=83 no aplica y quant-libraries permanece intacto.

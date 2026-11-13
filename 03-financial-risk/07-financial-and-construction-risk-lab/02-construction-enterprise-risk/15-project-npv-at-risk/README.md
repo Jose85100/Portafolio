@@ -2,6 +2,14 @@
 
 **Estado:** investigación diseñada; implementación pendiente. **No calibrado ni validado.**
 
+## Aplicación observada de factores públicos
+
+El [companion DANE de sensibilidad NPV](observed-dane-npv-sensitivity/README.md) aplica cambios trimestrales IPVN nacionales y el índice de concreto ICOCED Bogotá/Cundinamarca a flujos de caja hipotéticos. Produce sensibilidad histórica reproducible, no NPV de una obra, pronóstico, VaR ni validación de riesgo. Los flujos y la tasa de descuento son supuestos declarados.
+
+## Evidencia pública y brecha
+
+Las series DANE de costos de construcción, precios de vivienda y avalúos residenciales, y las tasas públicas BanRep disponibles en otras rutas permiten parametrizar escenarios macroeconómicos ilustrativos. No aportan presupuestos versionados, cronogramas de desembolso, ventas/preventas, deuda, impuestos ni flujos realizados de una obra identificable. Por eso este repositorio no afirma validación de NPV-at-Risk. La [brecha de datos](DATA_GAP.md) separa esos factores de contexto de los flujos de caja y resultados requeridos por proyecto.
+
 ## Pregunta y alcance
 Distribución del VAN, TIR y pérdida de margen. ¿En qué condiciones se materializa el riesgo y qué acciones de mitigación generan valor ajustado por riesgo?
 

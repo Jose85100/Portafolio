@@ -1,0 +1,3 @@
+estatico     tasa total=0.0702  pre-quiebre=0.0521  post-quiebre=0.0792  racha max media=2.46
+adaptativo   tasa total=0.0512  pre-quiebre=0.0509  post-quiebre=0.0514  racha max media=2.05
+Objetivo alpha = 0.05

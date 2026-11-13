@@ -1,0 +1,61 @@
+{
+  "sources": [
+    {
+      "source": "DANE, IPC, índice total nacional empalmado, base diciembre de 2018=100",
+      "source_page": "https://www.dane.gov.co/index.php/estadisticas-por-tema/precios-y-costos/indice-de-precios-al-consumidor-ipc/ipc-historico",
+      "source_file": "dane-ipc-empalme-2003-oct2026.xlsx",
+      "source_bytes": 40540,
+      "source_sha256": "4e8366bf2d03d4bdc15d14b1b21b12a6eec6c3695926abd503a430858ef74e2e",
+      "sheet": "IndicesIPC",
+      "source_grain": "Colombia × mes",
+      "source_coverage": "2003-01 to 2026-10",
+      "source_release": "DANE November 2026; source workbook says updated 2026-11-09",
+      "transformation": "inflación anual (%) = 100 × (IPC_t / IPC_(t-12) − 1)"
+    },
+    {
+      "source": "DANE, ISE, serie original, fila total de tasas de crecimiento anuales",
+      "source_page": "https://www.dane.gov.co/index.php/estadisticas-por-tema/cuentas-nacionales/indicador-de-seguimiento-a-la-economia-ise",
+      "drive_file_id": "1y85mYZ4aPD4IorJx53M8XR69JM1GrzRn",
+      "atlas_manifest_vintage": "2026-10-08",
+      "source_file": "dane_ise_jul2026.xlsx",
+      "source_bytes": 487882,
+      "source_sha256": "4e333c97b6558eb7e1b82d17fb8a0aa966f9113c87f099fa000f2390a3d7a199",
+      "sheet": "Cuadro 1; Indicador de Seguimiento a la Economía",
+      "source_grain": "Colombia × mes",
+      "source_coverage": "2006-01 to 2026-07; latest year preliminary",
+      "transformation": "se usa directamente la variación anual reportada por DANE (%)"
+    }
+  ],
+  "paired_sample": {
+    "start": "2006-01",
+    "end": "2026-07",
+    "months": 247
+  },
+  "dependent_variable": "delta_inflation_pp = change from prior month in 12-month headline CPI inflation, percentage points",
+  "activity_proxy": "DANE original ISE year-over-year growth, percent",
+  "regression": "OLS: Δinflation_yoy_t on ISE_growth_yoy_t,...,ISE_growth_yoy_(t-3), month effects, linear trend; HAC maxlags=6",
+  "regression_observations": 244,
+  "sensitivity_without_trend_observations": 244,
+  "sensitivity_excluding_2020_2021_outcomes_observations": 220,
+  "cumulative_four_month_association": {
+    "estimate": 0.04208751221675405,
+    "hac_se": 0.011015783646986316,
+    "ci95_low": 0.020496576268660874,
+    "ci95_high": 0.06367844816484723
+  },
+  "sensitivity_without_trend": {
+    "estimate": 0.040056513166410956,
+    "hac_se": 0.010861514524163986,
+    "ci95_low": 0.018767944699049546,
+    "ci95_high": 0.061345081633772364
+  },
+  "sensitivity_excluding_outcomes_2020_2021": {
+    "estimate": 0.08518509831487774,
+    "hac_se": 0.012769765595281219,
+    "ci95_low": 0.06015635774812655,
+    "ci95_high": 0.11021383888162892
+  },
+  "contemporaneous_correlation": 0.35671474016778165,
+  "interpretation": "descriptive inflation-activity association; not Phillips curve structural slope or causal effect",
+  "raw_path_policy": "sources are passed at runtime; local paths are not persisted; canonical raw files are not copied into this product"
+}

@@ -1,0 +1,13 @@
+test_boundary (test_oracle.OracleTests.test_boundary) ... ok
+test_cli_invalid_fixtures (test_oracle.OracleTests.test_cli_invalid_fixtures) ... ok
+test_cli_invalid_numbers (test_oracle.OracleTests.test_cli_invalid_numbers) ... ok
+test_constant_negative (test_oracle.OracleTests.test_constant_negative) ... ok
+test_determinism (test_oracle.OracleTests.test_determinism) ... ok
+test_invalid_inputs (test_oracle.OracleTests.test_invalid_inputs) ... ok
+test_tiny_probability_remains_representable (test_oracle.OracleTests.test_tiny_probability_remains_representable) ... ok
+test_zero_weights (test_oracle.OracleTests.test_zero_weights) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.017s
+
+OK

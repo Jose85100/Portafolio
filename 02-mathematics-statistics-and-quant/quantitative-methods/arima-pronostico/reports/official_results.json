@@ -1,0 +1,52 @@
+{
+  "source": "DANE IPC, Índices. Serie de empalme 2003–2026 (octubre 2026)",
+  "source_url": "https://www.dane.gov.co/files/operaciones/IPC/oct2026/anex-IPC-Indices-oct2026.xlsx",
+  "publication_date": "2026-11-09",
+  "snapshot_sha256": "4e8366bf2d03d4bdc15d14b1b21b12a6eec6c3695926abd503a430858ef74e2e",
+  "sheet": "IndicesIPC",
+  "grain": "Total nacional, índice mensual, diciembre 2018=100",
+  "observed_index_period": [
+    "2003-01",
+    "2026-10"
+  ],
+  "target": "Inflación anual derivada = 100 * (IPC_t / IPC_t-12 - 1)",
+  "train_period": [
+    "2004-01",
+    "2024-10"
+  ],
+  "holdout_period": [
+    "2024-11",
+    "2026-10"
+  ],
+  "holdout_n": 24,
+  "selected_order": [
+    1,
+    1,
+    2
+  ],
+  "seasonal_order": [
+    1,
+    0,
+    0,
+    12
+  ],
+  "aic": 50.35391505154777,
+  "metrics": {
+    "model_rmse_pp": 1.0268970746756172,
+    "seasonal_naive_rmse_pp": 2.476763177611321,
+    "model_mae_pp": 0.84960745943185,
+    "seasonal_naive_mae_pp": 2.0622701135037658
+  },
+  "controls": [
+    "un mes por periodo, sin duplicados ni faltantes",
+    "corte temporal anterior al holdout",
+    "comparación con ingenuo estacional",
+    "rejilla AIC fijada antes de observar el holdout"
+  ],
+  "limitations": [
+    "Evaluación retrospectiva de una sola ventana; no es backtest de orígenes rodantes.",
+    "La transformación anual solapa 11 meses entre observaciones.",
+    "Selección AIC en una rejilla pequeña; no se prueba intervención, cambio metodológico ni incertidumbre de parámetros.",
+    "No valida pronóstico en tiempo real, uso de política monetaria ni capacidad productiva."
+  ]
+}

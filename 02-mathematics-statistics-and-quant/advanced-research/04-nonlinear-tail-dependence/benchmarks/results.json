@@ -1,0 +1,130 @@
+{
+  "checks": {
+    "max_quadrature_disagreement": 3.993009983532976e-11,
+    "max_independence_error": 9.71445146547012e-17,
+    "max_empirical_kendall_error": 0.006670627062706214,
+    "min_t4_to_gaussian_joint_ratio": 4.856196277246979,
+    "max_conditional_to_direct_rmse_ratio": 0.008863733701078102,
+    "max_conditional_relative_rmse": 0.0034776536357575827,
+    "max_variance_bound_violation": 0.0
+  },
+  "passed": {
+    "max_quadrature_disagreement": true,
+    "max_independence_error": true,
+    "max_empirical_kendall_error": true,
+    "min_t4_to_gaussian_joint_ratio": true,
+    "max_conditional_to_direct_rmse_ratio": true,
+    "max_conditional_relative_rmse": true,
+    "max_variance_bound_violation": true
+  },
+  "grid_cases": 48,
+  "timed_runs": 1280,
+  "gate_scenario": {
+    "rho": 0.5,
+    "q": 0.999,
+    "n": 20000,
+    "model": "t4"
+  },
+  "selected": {
+    "gaussian": {
+      "model": "gaussian",
+      "df": null,
+      "rho": 0.5,
+      "q": 0.999,
+      "kendall_tau": 0.33333333333333337,
+      "finite_lambda": 0.05425916819456234,
+      "joint_probability": 5.425916819456239e-05,
+      "latent_reference": 0.05425916819456713,
+      "coordinate_disagreement": 4.7878367936959876e-15,
+      "quad_error_tail": 7.514051880708195e-12,
+      "quad_error_latent": 4.6845997279060884e-11,
+      "asymptotic_lambda": 0.0,
+      "finite_minus_limit": 0.05425916819456234,
+      "conditional_variance_per_draw": 0.00041322955358063206,
+      "direct_variance_per_draw": 54.256224137229125,
+      "variance_ratio": 7.616260809736027e-06,
+      "variance_ratio_bound": 0.0009457921497007662,
+      "variance_bound_violation": 0.0
+    },
+    "t4": {
+      "model": "t4",
+      "df": 4.0,
+      "rho": 0.5,
+      "q": 0.999,
+      "kendall_tau": 0.33333333333333337,
+      "finite_lambda": 0.2634931705929513,
+      "joint_probability": 0.00026349317059295156,
+      "latent_reference": 0.26349317059295213,
+      "coordinate_disagreement": 8.326672684688674e-16,
+      "quad_error_tail": 2.952615929530111e-11,
+      "quad_error_latent": 2.8519479495897516e-13,
+      "asymptotic_lambda": 0.2531699951003227,
+      "finite_minus_limit": 0.010323175492628622,
+      "conditional_variance_per_draw": 0.01621846506838588,
+      "direct_variance_per_draw": 263.4237419420019,
+      "variance_ratio": 6.156797010330491e-05,
+      "variance_ratio_bound": 0.0007367009450748459,
+      "variance_bound_violation": 0.0
+    },
+    "direct": {
+      "model": "t4",
+      "q": 0.999,
+      "n": 20000,
+      "method": "direct",
+      "replicates": 80,
+      "reference": 0.2634931705929513,
+      "mean_estimate": 0.2393749999999998,
+      "bias": -0.02411817059295151,
+      "rmse": 0.10338058583578782,
+      "relative_rmse": 0.39234635798394907,
+      "replicate_q025": 0.049999999999999954,
+      "replicate_q975": 0.4499999999999996,
+      "zero_joint_fraction": 0.0125,
+      "undefined_random_denominator": 0,
+      "mean_seconds": 0.0013913511374994414,
+      "time_times_mse_proxy": 1.4870128627112996e-05
+    },
+    "conditional": {
+      "model": "t4",
+      "q": 0.999,
+      "n": 20000,
+      "method": "conditional",
+      "replicates": 80,
+      "reference": 0.2634931705929513,
+      "mean_estimate": 0.26352931393277945,
+      "bias": 3.6143339828170056e-05,
+      "rmse": 0.00091633798270987,
+      "relative_rmse": 0.0034776536357575827,
+      "replicate_q025": 0.26190432275180814,
+      "replicate_q975": 0.2652266369766993,
+      "zero_joint_fraction": null,
+      "undefined_random_denominator": null,
+      "mean_seconds": 0.007385466662510965,
+      "time_times_mse_proxy": 6.201393924825143e-09
+    }
+  },
+  "metadata": {
+    "date": "2026-10-18",
+    "base_commit": "2eb24941cd7fd7fd31a9bad05670a25361574413",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "cpu": "x86_64",
+    "logical_cpus": 9,
+    "python": "3.12.14",
+    "versions": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "matplotlib": "3.10.8",
+      "nbformat": "5.10.4",
+      "pytest": "9.1.1",
+      "hypothesis": "6.138.2",
+      "ruff": "0.12.9",
+      "mypy": "1.17.1"
+    },
+    "threads": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "policy": "Recorded at execution. One BLAS/OMP thread; timed calls include RNG; tracemalloc peak in separate calls, not RSS; no warmup, fixed order."
+  }
+}

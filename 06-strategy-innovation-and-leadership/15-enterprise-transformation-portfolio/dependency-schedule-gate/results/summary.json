@@ -1,0 +1,37 @@
+{
+  "exact": {
+    "starts": {
+      "platform": 1,
+      "analytics": 3,
+      "automation": 3,
+      "standalone": 0
+    },
+    "npv": 11.65596612253261,
+    "checked": 2500
+  },
+  "baseline": {
+    "starts": {
+      "standalone": 0,
+      "platform": 1,
+      "analytics": 3,
+      "automation": 3
+    },
+    "npv": 11.65596612253261,
+    "checked": 20
+  },
+  "increment": 0.0,
+  "dependency_relaxation": {
+    "starts": {
+      "analytics": 0,
+      "automation": 0,
+      "standalone": 1
+    },
+    "npv": 18.628099173553718,
+    "checked": 2500
+  },
+  "relaxed_schedule_feasible_original": false,
+  "seconds": 0.06769287199995233,
+  "python_peak_bytes": 2424,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+}

@@ -1,0 +1,50 @@
+{
+  "selected_interval": "C",
+  "target": 0.85,
+  "oracle_boxes": 81,
+  "lp_objectives": 162,
+  "max_error": 2.220446049250313e-16,
+  "plans": [
+    {
+      "plan": "A",
+      "cost": 2,
+      "point_lower31": 0.83,
+      "lower": 0.8056,
+      "upper": 0.9144000000000001,
+      "lp_lower": 0.8056,
+      "lp_upper": 0.9144
+    },
+    {
+      "plan": "B",
+      "cost": 3,
+      "point_lower31": 0.87,
+      "lower": 0.8476,
+      "upper": 0.9334000000000001,
+      "lp_lower": 0.8475999999999999,
+      "lp_upper": 0.9334
+    },
+    {
+      "plan": "C",
+      "cost": 4,
+      "point_lower31": 0.91,
+      "lower": 0.8896,
+      "upper": 0.9524000000000001,
+      "lp_lower": 0.8896,
+      "lp_upper": 0.9524
+    }
+  ],
+  "point_selection": "B",
+  "coverage_claim": "none: assumed deterministic boxes, no observed data",
+  "timing_n100_median_seconds": {
+    "closed": 0.0016055529999903229,
+    "lp8_intervals": 0.24009622900007344
+  },
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "memory_scope": "tracemalloc Python only, not native HiGHS/RSS",
+  "seed": null,
+  "source": "designed synthetic sensitivity benchmark; no observed attendance"
+}

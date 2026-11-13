@@ -1,0 +1,11 @@
+{
+  "case_id": "synthetic-formalization-001",
+  "offer_version": "offer-v2",
+  "accepted_offer_version": "offer-v1",
+  "instrument_status": "pending_review",
+  "ready_for_disbursement": false,
+  "reason_codes": [
+    "offer_version_mismatch"
+  ],
+  "policy_version": "design-v1"
+}

@@ -26,3 +26,9 @@ Identificación causal y sensibilidad a confusores. Separación temporal de entr
 
 ## Productos esperados
 Metodología, código, pruebas, escenarios, reporte de validación y dashboard de decisiones.
+
+## Contexto público observado (no es validación)
+
+Los [costos históricos ICOCED aplicados a escenarios de caja](../../02-construction-enterprise-risk/01-project-cashflow-at-risk/observed-icoced-cost-scenarios/README.md) y los [registros de suspensión/reanudación SECOP](../../02-construction-enterprise-risk/02-schedule-cost-overrun/observed-secop-work-suspensions/README.md) contextualizan shocks de costo y eventos administrativos. No hay enlace por obra, exposición a costo final, contrafactual ni identificación del efecto causal.
+
+**Estado de madurez:** la propuesta continúa S1; el companion citado aporta contexto observable, pero no implementa ni valida el modelo descrito.

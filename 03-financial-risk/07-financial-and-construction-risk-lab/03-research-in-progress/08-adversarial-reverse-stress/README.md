@@ -26,3 +26,9 @@ Plausibilidad y robustez de restricciones. Separación temporal de entrenamiento
 
 ## Productos esperados
 Metodología, código, pruebas, escenarios, reporte de validación y dashboard de decisiones.
+
+## Contexto público observado (no es validación)
+
+Los [escenarios históricos de costo ICOCED](../../02-construction-enterprise-risk/01-project-cashflow-at-risk/observed-icoced-cost-scenarios/README.md), el [IPVN](../../02-construction-enterprise-risk/13-real-estate-price-demand-regimes/observed-dane-ipvn-price-regimes/README.md) y la [sensibilidad DTF](../../02-construction-enterprise-risk/05-project-finance-covenants/observed-dtf-covenant-sensitivity/README.md) brindan rangos observados de factores para enmarcar shocks. No existe flujo de caja enlazado ni umbral institucional de insolvencia para resolver el problema inverso.
+
+**Estado de madurez:** la propuesta continúa S1; el companion citado aporta contexto observable, pero no implementa ni valida el modelo descrito.

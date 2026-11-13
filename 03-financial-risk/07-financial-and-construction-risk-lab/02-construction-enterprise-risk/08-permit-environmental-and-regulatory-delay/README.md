@@ -2,6 +2,8 @@
 
 **Maturity:** research specification, not a calibrated implementation.
 
+For a narrow observed application, see the [Corantioquia environmental-permit companion](observed-corantioquia-environmental-permits/README.md). It provides an aggregate inventory of project-type labels, municipality and expediente status, but lacks dated milestones and cannot measure regulatory delay.
+
 ## Research question
 Competing risks for approvals, land-use changes and stoppages. Determine when this model materially improves risk decisions relative to transparent baselines.
 

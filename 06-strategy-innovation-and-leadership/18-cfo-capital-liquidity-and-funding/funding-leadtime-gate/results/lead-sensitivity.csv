@@ -1,0 +1,6 @@
+lead,threshold,breach_probability,expected_cost,feasible
+0,0,0,0.33,True
+1,4,0,0.44200000000000006,True
+2,6,0,0.74,True
+3,8,0,0.8200000000000001,True
+4,,,,False

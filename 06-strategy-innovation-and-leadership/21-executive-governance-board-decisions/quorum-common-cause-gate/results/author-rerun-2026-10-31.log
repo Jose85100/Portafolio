@@ -1,0 +1,196 @@
+test_decision_boundary_and_negative (test_joint_role.JointRoleTests.test_decision_boundary_and_negative) ... ok
+test_exact_recovery_role_certain_and_no_shock (test_joint_role.JointRoleTests.test_exact_recovery_role_certain_and_no_shock) ... ok
+test_invalid_and_ties (test_joint_role.JointRoleTests.test_invalid_and_ties) ... ok
+test_lp_oracle_grid_and_witness (test_joint_role.JointRoleTests.test_lp_oracle_grid_and_witness) ... ok
+test_restriction_and_monotonicity (test_joint_role.JointRoleTests.test_restriction_and_monotonicity) ... ok
+test_binomial_oracle_and_total_mass (test_quorum.QuorumTests.test_binomial_oracle_and_total_mass) ... ok
+test_closed_form_common_cause (test_quorum.QuorumTests.test_closed_form_common_cause) ... ok
+test_false_pass_and_infeasible (test_quorum.QuorumTests.test_false_pass_and_infeasible) ... ok
+test_invalid (test_quorum.QuorumTests.test_invalid) ... ok
+test_mandatory_and_deterministic (test_quorum.QuorumTests.test_mandatory_and_deterministic) ... ok
+test_cheapest_false_pass_and_robust_choice (test_reserve_ambiguity.ReserveAmbiguityTests.test_cheapest_false_pass_and_robust_choice) ... ok
+test_existing29_engine_recovers_nominal (test_reserve_ambiguity.ReserveAmbiguityTests.test_existing29_engine_recovers_nominal) ... ok
+test_invalid_and_coupling (test_reserve_ambiguity.ReserveAmbiguityTests.test_invalid_and_coupling) ... ok
+test_lp_oracle_sharp_bounds (test_reserve_ambiguity.ReserveAmbiguityTests.test_lp_oracle_sharp_bounds) ... ok
+test_threshold_and_positive_dependence_counterexample (test_reserve_ambiguity.ReserveAmbiguityTests.test_threshold_and_positive_dependence_counterexample) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.411s
+
+OK
+Name                       Stmts   Miss  Cover
+----------------------------------------------
+src/__init__.py                0      0   100%
+src/joint_role.py             22      0   100%
+src/quorum.py                 66      0   100%
+src/reserve_ambiguity.py      67      0   100%
+----------------------------------------------
+TOTAL                        155      0   100%
+All checks passed!
+Success: no issues found in 4 source files
+{
+  "selected_exact": {
+    "standbys": 2,
+    "cost": 2,
+    "availability": 0.9139
+  },
+  "baseline_independent": {
+    "standbys": 0,
+    "cost": 0,
+    "availability": 0.8512000000000001
+  },
+  "actual_baseline_availability": 0.76,
+  "independence_error": 0.09120000000000006,
+  "seconds": 0.003220350999981747,
+  "python_peak_bytes": 32841,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39"
+}
+{
+  "nominal_choice": {
+    "name": "availability_A",
+    "cost": 2,
+    "lower_availability": 0.836,
+    "nominal_availability": 0.8531,
+    "upper_availability": 0.893
+  },
+  "robust_choice": {
+    "name": "availability_B",
+    "cost": 3,
+    "lower_availability": 0.874,
+    "nominal_availability": 0.8816,
+    "upper_availability": 0.912
+  },
+  "critical_nominal_q": 0.6882472016116852,
+  "critical_robust_q": 0.7368421052631577,
+  "original29_q09_bounds": {
+    "lower_joint": 0.8,
+    "independent_joint": 0.81,
+    "upper_joint": 0.9,
+    "lower_availability": 0.912,
+    "nominal_availability": 0.9139,
+    "upper_availability": 0.931
+  },
+  "seconds": 0.00010108200001468504,
+  "python_peak_bytes": 1160,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39"
+}
+{
+  "oracle_cases": 125,
+  "lp_objectives": 250,
+  "max_error": 2.220446049250313e-16,
+  "plans": [
+    {
+      "name": "A",
+      "q1": 0.7,
+      "q2": 0.7,
+      "cost": 2,
+      "lower": 0.83,
+      "upper": 0.9,
+      "restricted_lower30": 0.836,
+      "nominal": 0.8531,
+      "shock_lower": 0.34999999999999964,
+      "shock_upper": 0.7
+    },
+    {
+      "name": "B",
+      "q1": 0.8,
+      "q2": 0.8,
+      "cost": 3,
+      "lower": 0.87,
+      "upper": 0.92,
+      "restricted_lower30": 0.874,
+      "nominal": 0.8816,
+      "shock_lower": 0.5499999999999998,
+      "shock_upper": 0.8
+    },
+    {
+      "name": "C",
+      "q1": 0.9,
+      "q2": 0.9,
+      "cost": 4,
+      "lower": 0.91,
+      "upper": 0.9400000000000001,
+      "restricted_lower30": 0.912,
+      "nominal": 0.9139,
+      "shock_lower": 0.75,
+      "shock_upper": 0.9
+    }
+  ],
+  "decisions": [
+    {
+      "target": 0.85,
+      "method": "nominal",
+      "selected": "A"
+    },
+    {
+      "target": 0.85,
+      "method": "restricted30",
+      "selected": "B"
+    },
+    {
+      "target": 0.85,
+      "method": "joint31",
+      "selected": "B"
+    },
+    {
+      "target": 0.872,
+      "method": "nominal",
+      "selected": "B"
+    },
+    {
+      "target": 0.872,
+      "method": "restricted30",
+      "selected": "B"
+    },
+    {
+      "target": 0.872,
+      "method": "joint31",
+      "selected": "C"
+    },
+    {
+      "target": 0.9,
+      "method": "nominal",
+      "selected": "C"
+    },
+    {
+      "target": 0.9,
+      "method": "restricted30",
+      "selected": "C"
+    },
+    {
+      "target": 0.9,
+      "method": "joint31",
+      "selected": "C"
+    },
+    {
+      "target": 0.97,
+      "method": "nominal",
+      "selected": "infeasible"
+    },
+    {
+      "target": 0.97,
+      "method": "restricted30",
+      "selected": "infeasible"
+    },
+    {
+      "target": 0.97,
+      "method": "joint31",
+      "selected": "infeasible"
+    }
+  ],
+  "timings_n100_median_seconds": {
+    "closed": 0.00047142900007202115,
+    "lp8": 0.24370797899996433
+  },
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "memory_scope": "tracemalloc Python allocations; not native HiGHS/RSS",
+  "data": "designed synthetic benchmark; no attendance observations",
+  "seed": null
+}
+Executed notebook.ipynb with rich outputs

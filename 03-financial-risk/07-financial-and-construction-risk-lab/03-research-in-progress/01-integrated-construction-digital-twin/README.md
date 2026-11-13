@@ -20,3 +20,9 @@ Identificabilidad, calibración temporal y pruebas contrafactuales. Evaluar ince
 
 ## Entregables previstos
 Dataset versionado, diccionario de variables, metodología reproducible, motor Python, tests unitarios, validación out-of-time, escenarios y reporte ejecutivo con límites.
+
+## Contexto público observado (no es validación)
+
+El [flujo CEED](../../02-construction-enterprise-risk/07-real-estate-inventory-and-pricing/observed-dane-ceed-housing-supply-flow/README.md) aporta actividad agregada; los [escenarios de costo ICOCED](../../02-construction-enterprise-risk/01-project-cashflow-at-risk/observed-icoced-cost-scenarios/README.md), [precios IPVN](../../02-construction-enterprise-risk/13-real-estate-price-demand-regimes/observed-dane-ipvn-price-regimes/README.md) y [suspensiones SECOP](../../02-construction-enterprise-risk/02-schedule-cost-overrun/observed-secop-work-suspensions/README.md) cubren factores parciales. No hay integración de datos físicos, cronogramas y caja por obra ni gemelo implementado.
+
+**Estado de madurez:** la propuesta continúa S1; el companion citado aporta contexto observable, pero no implementa ni valida el modelo descrito.

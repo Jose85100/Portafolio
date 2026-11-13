@@ -165,8 +165,8 @@ def run() -> None:
     plt.close(fig)
     baselines = [
         ROOT / "03-financial-risk/02-market-and-model-risk/var-es-tres-metodos/main.py",
-        ROOT / "03-financial-risk/07-financial-and-construction-risk-lab/python/src/risk_models.py",
-        ROOT / "03-financial-risk/03-market-liquidity-research/python/laboratorio.py",
+        ROOT / "03-financial-risk/07-financial-and-construction-risk-lab/04-modelos-compartidos/python/src/risk_models.py",
+        ROOT / "03-financial-risk/03-market-liquidity-research/laboratorio-integrado/python/laboratorio.py",
         ROOT / "04-quant-strategy-and-products/risk-engines/include/quant/risk.hpp",
     ]
     metadata = {

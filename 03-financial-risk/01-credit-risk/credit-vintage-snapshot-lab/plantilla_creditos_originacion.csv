@@ -1,0 +1,1 @@
+﻿id_credito,id_comercio,id_cliente,referencia_credito,fecha_solicitud,fecha_desembolso,corte_origen,tipo_cliente,producto,lote,campana,estrategia_originacion,proveedor_estrategia,score_originacion,perfil_riesgo,version_credito,cupo_inicial_cop,tasa_interes,cargo_mensual_cop,plazo_meses,canal,decision,fecha_disponibilidad

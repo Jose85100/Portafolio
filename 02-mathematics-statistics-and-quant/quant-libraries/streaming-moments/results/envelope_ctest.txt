@@ -1,0 +1,7 @@
+Test project /workspace/scratch/6c8b818bd733/wt-math1103/02-mathematics-statistics-and-quant/quant-libraries/streaming-moments/.build
+    Start 1: moments_core
+1/1 Test #1: moments_core .....................   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.00 sec

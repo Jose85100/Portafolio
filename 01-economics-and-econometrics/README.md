@@ -10,7 +10,7 @@ Economía teórica, econometría avanzada y simulación computacional con énfas
 - [Econometría](04-econometrics/) — 2 programas
 - [Macrofinanzas](05-macrofinance/) — 2 programas
 
-**Total: 12 programas de investigación: 10 en S1 y dos con componentes en S2.** Los documentos describen hipótesis, modelos, identificación, fuentes potenciales, validación y límites. Real-Time Causal Nowcasting y Endogenous Credit Freeze incluyen ahora prototipos sintéticos ejecutables; no hay resultados empíricos de esos programas.
+**Total: 12 programas de investigación: nueve en S1 y tres con componentes en S2.** Los documentos describen hipótesis, modelos, identificación, fuentes potenciales, validación y límites. Real-Time Causal Nowcasting, Endogenous Credit Freeze y Sovereign–Bank Strategic Nexus incluyen prototipos sintéticos ejecutables; no hay resultados empíricos de esos programas. Los componentes dinámicos/empíricos no implementados siguen S1.
 
 ## Infraestructura compartida
 
@@ -55,3 +55,57 @@ python3 -m unittest discover -s 01-economics-and-econometrics/computational-econ
 ## Ciclo diario 2026-10-13
 
 [Bayesian Freeze Audit](03-game-theory/01-endogenous-credit-freeze/bayesian-freeze-audit/): enumeración finita de BNE, oracle racional, selección y tests; componente S2, modelo global completo S1.
+
+## Ciclo diario 2026-10-14
+
+[Mixed Freeze Audit](03-game-theory/01-endogenous-credit-freeze/mixed-equilibrium-audit/):
+extensión S2 del juego finito a equilibrios mixtos aislados, con regret, oráculo
+racional, controles de degeneración y comparación con el baseline puro.
+
+## Ciclo diario 2026-10-15
+
+[Polyhedral Freeze Audit](03-game-theory/01-endogenous-credit-freeze/polyhedral-freeze-audit/):
+extensión S2 a familias degeneradas del juego finito, con regiones racionales,
+dimensión afín, oracle LP y regresiones de los MVP anteriores.
+
+## Ciclo diario 2026-10-16
+
+[Strategic Form Audit](03-game-theory/01-endogenous-credit-freeze/strategic-form-audit/):
+exportación estratégica racional y contraste ejecutado con Nashpy externo; diagnóstico
+de degeneración y control negativo del regret ex ante en tipos raros. Componente S2,
+Endogenous Credit Freeze sigue S2 parcial; no hay nueva validación empírica.
+
+## Ciclo diario 2026-10-17
+
+[Rational Family Audit](03-game-theory/01-endogenous-credit-freeze/rational-family-audit/):
+parser y solver racional Gambit ejecutados, reconstrucción local de familias por
+compatibilidad y comparación exacta con los poliedros del repo. Extensión S2 del
+componente finito, sin elevar el programa completo a S3.
+
+## Ciclo diario 2026-10-18
+
+[Sovereign Clearing Audit](05-macrofinance/01-sovereign-bank-strategic-nexus/sovereign-clearing-audit/):
+componente estático S1→S2 del programa soberano-bancario, con dos cotas, LP, oráculo
+racional, regresión contra el notebook semanal y separación de impagos brutos de
+pérdidas a acreedores externos. Programa S2 parcial; doom loop dinámico sigue S1.
+
+
+## Profundización metodológica — octubre de 2026
+
+La auditoría detectó README breves en varios laboratorios frente al volumen de notebooks existentes. Se inició una refactorización por **mecanismo económico e identificación**, no por longitud artificial: [guía de métodos y núcleo OLS/IV](research-methods/), [multiplicadores fiscales](01-macroeconomics/04-fiscal-multipliers-local-projections/) y [elasticidad de crédito](02-microeconomics/03-consumer-credit-demand-elasticity/). Los ejemplos siguen siendo sintéticos. El resto de proyectos requiere una revisión individual antes de declarar cerrada la brecha documental y científica.
+
+## Ciclo diario 2026-10-19
+
+[Fire-Sale Price Audit](05-macrofinance/01-sovereign-bank-strategic-nexus/fire-sale-price-audit/):
+extensión S2 del mercado de un activo con precio endógeno, enumeración por
+regímenes, estabilidad de Picard y contraejemplos a unicidad por convergencia.
+No acopla todavía pagos interbancarios/precios ni implementa feedback fiscal.
+Sovereign–Bank Strategic Nexus permanece S2 parcial; inventario9 S1+3 S2 parciales.
+
+## Ciclo diario 2026-10-20
+
+[Coupled Clearing Audit](05-macrofinance/01-sovereign-bank-strategic-nexus/coupled-clearing-audit/):
+extensión S2 que acopla pagos interbancarios y precio de liquidación de un activo
+para1–4 bancos. Enumera regímenes y muestra cuándo congelar cobros nominales
+produce balances no factibles. Programa S2 parcial; no evidencia empírica ni
+promoción a S3. Conserva las regresiones de los componentes anteriores.

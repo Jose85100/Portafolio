@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1540" height="1130" viewBox="0 0 1540 1130"><title>B · Documentos e ingresos con evidencia</title><desc>Arquitectura de investigación por capas; integraciones no desplegadas.</desc><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#42596d"/></marker></defs><rect width="1540" height="1130" fill="#ffffff"/><g font-family="DejaVu Sans,Arial,sans-serif" fill="#17334d">
+<text x="38" y="60" font-size="28" font-weight="bold">B · Documentos e ingresos con evidencia</text>
+<text x="38" y="102" font-size="17">El documento aporta datos; la política y los permisos viven fuera del documento.</text>
+<text x="38" y="148" font-size="14">DISEÑO S1 · Azul: interno | Violeta: proveedor candidato | Ámbar: revisión/estado</text>
+<rect x="25" y="180" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="223" font-size="17" font-weight="bold">01 · Ingesta</text>
+<rect x="25" y="350" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="393" font-size="17" font-weight="bold">02 ·</text>
+<text x="42" y="417" font-size="17" font-weight="bold">Extracción</text>
+<rect x="25" y="520" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="563" font-size="17" font-weight="bold">03 ·</text>
+<text x="42" y="587" font-size="17" font-weight="bold">Contraste</text>
+<rect x="25" y="690" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="733" font-size="17" font-weight="bold">04 · Riesgo</text>
+<rect x="25" y="860" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="903" font-size="17" font-weight="bold">05 ·</text>
+<text x="42" y="927" font-size="17" font-weight="bold">Evidencia</text>
+<polyline points="400,305 400,343.0 400,343.0 400,381" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="595,428 635,428" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1260,305 1260,343.0 1260,343.0 1260,381" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="830,475 830,513.0 400,513.0 400,551" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="830,305 830,321 1490,321 1490,535 830,535 830,551" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="595,598 635,598" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1260,475 1260,513.0 1260,513.0 1260,551" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="830,475 830,513.0 1260,513.0 1260,551" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="830,645 830,683.0 400,683.0 400,721" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1260,645 1260,683.0 830,683.0 830,721" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="830,645 830,683.0 1260,683.0 1260,721" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="595,768 635,768" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="830,815 830,853.0 400,853.0 400,891" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1260,815 1260,853.0 830,853.0 830,891" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="400,985 400,1001 1260,1001 1260,985" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1025,938 1065,938" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="205" y="211" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="221" y="240" font-size="17" font-weight="bold">Zona de archivos aislada</text>
+<text x="221" y="265" font-size="15">Tipo, tamaño y análisis de archivo</text>
+<rect x="635" y="211" width="390" height="94" rx="9" fill="#f2edfc" stroke="#8061ad" stroke-width="1.7"/>
+<text x="651" y="240" font-size="17" font-weight="bold">Fuente financiera conectada</text>
+<text x="651" y="265" font-size="15">Belvo como candidato; cobertura por</text>
+<text x="651" y="285" font-size="15">país</text>
+<rect x="1065" y="211" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="1081" y="240" font-size="17" font-weight="bold">Permiso y trazabilidad</text>
+<text x="1081" y="265" font-size="15">Titular, finalidad y disponibilidad</text>
+<rect x="205" y="381" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="221" y="410" font-size="17" font-weight="bold">Original y hash</text>
+<text x="221" y="435" font-size="15">Bytes preservados; acceso restringido</text>
+<rect x="635" y="381" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="651" y="410" font-size="17" font-weight="bold">OCR y extracción tipada</text>
+<text x="651" y="435" font-size="15">Página, span y confianza</text>
+<rect x="1065" y="381" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="1081" y="410" font-size="17" font-weight="bold">Aislamiento del modelo</text>
+<text x="1081" y="435" font-size="15">Sin permisos de aprobación o pago</text>
+<rect x="205" y="551" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="221" y="580" font-size="17" font-weight="bold">Soporte semántico</text>
+<text x="221" y="605" font-size="15">Salario, préstamo o transferencia</text>
+<rect x="635" y="551" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="651" y="580" font-size="17" font-weight="bold">Conciliación independiente</text>
+<text x="651" y="605" font-size="15">Titular, período, moneda y flujos</text>
+<rect x="1065" y="551" width="390" height="94" rx="9" fill="#fff4d9" stroke="#bd8730" stroke-width="1.7"/>
+<text x="1081" y="580" font-size="17" font-weight="bold">Abstención explícita</text>
+<text x="1081" y="605" font-size="15">Falta de fuente o ambigüedad</text>
+<rect x="205" y="721" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="221" y="750" font-size="17" font-weight="bold">Discrepancia e irregularidad</text>
+<text x="221" y="775" font-size="15">Residuo robusto y cuantiles</text>
+<rect x="635" y="721" width="390" height="94" rx="9" fill="#fff4d9" stroke="#bd8730" stroke-width="1.7"/>
+<text x="651" y="750" font-size="17" font-weight="bold">Verificación de inconsistencia</text>
+<text x="651" y="775" font-size="15">Nueva fuente o revisión dirigida</text>
+<rect x="1065" y="721" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="1081" y="750" font-size="17" font-weight="bold">Capacidad de pago</text>
+<text x="1081" y="775" font-size="15">Evaluación crediticia separada</text>
+<rect x="205" y="891" width="390" height="94" rx="9" fill="#fff4d9" stroke="#bd8730" stroke-width="1.7"/>
+<text x="221" y="920" font-size="17" font-weight="bold">Caso adjudicado</text>
+<text x="221" y="945" font-size="15">Contradicción no equivale a fraude</text>
+<rect x="635" y="891" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="651" y="920" font-size="17" font-weight="bold">Paquete de evidencia</text>
+<text x="651" y="945" font-size="15">Origen y límites de cada afirmación</text>
+<rect x="1065" y="891" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="1081" y="920" font-size="17" font-weight="bold">Ledger y aprendizaje</text>
+<text x="1081" y="945" font-size="15">Etiqueta madura; no autoetiquetar</text>
+<text x="38" y="1072" font-size="16">Transversal: acceso mínimo · privacidad · auditoría · versiones · retención · responsables · rollback</text>
+<text x="38" y="1104" font-size="13">Portafolio · 23 octubre 2026 · Flechas: datos/decisiones propuestos · Véase ARCHITECTURES.md para alcance y fallos</text></g></svg>

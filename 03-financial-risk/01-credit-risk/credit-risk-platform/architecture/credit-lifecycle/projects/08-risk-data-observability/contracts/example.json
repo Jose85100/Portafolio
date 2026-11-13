@@ -1,0 +1,11 @@
+{
+  "cohort_id": "synthetic-monitor-001",
+  "cutoff": "2026-10-23T20:00:00Z",
+  "coverage_rate": 0.8,
+  "maturity_rate": 0.4,
+  "performance_status": "not_ready",
+  "reason_codes": [
+    "immature_labels"
+  ],
+  "model_version": "design-v1"
+}

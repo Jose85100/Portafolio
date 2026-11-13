@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1540" height="1130" viewBox="0 0 1540 1130"><title>01 · Evidencia: teléfono, documento, sujeto y efecto</title><desc>Arquitectura de investigación por capas; integraciones no desplegadas.</desc><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#42596d"/></marker></defs><rect width="1540" height="1130" fill="#ffffff"/><g font-family="DejaVu Sans,Arial,sans-serif" fill="#17334d">
+<text x="38" y="60" font-size="28" font-weight="bold">01 · Evidencia: teléfono, documento, sujeto y efecto</text>
+<text x="38" y="102" font-size="17">Cada pase conserva el hecho que verificó; no completa automáticamente la cadena.</text>
+<text x="38" y="148" font-size="14">DISEÑO S1 · Azul: interno | Violeta: proveedor candidato | Ámbar: revisión/estado</text>
+<rect x="25" y="180" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="223" font-size="17" font-weight="bold">01 · Captura</text>
+<rect x="25" y="350" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="393" font-size="17" font-weight="bold">02 ·</text>
+<text x="42" y="417" font-size="17" font-weight="bold">Validación</text>
+<rect x="25" y="520" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="563" font-size="17" font-weight="bold">03 · Vínculo</text>
+<rect x="25" y="690" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="733" font-size="17" font-weight="bold">04 · Puerta</text>
+<rect x="25" y="860" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="903" font-size="17" font-weight="bold">05 · Salida</text>
+<polyline points="400,305 400,343.0 400,343.0 400,381" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="830,305 830,343.0 830,343.0 830,381" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1260,305 1260,343.0 400,343.0 400,381" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1260,305 1260,343.0 1260,343.0 1260,381" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="400,475 400,513.0 400,513.0 400,551" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="830,475 830,513.0 830,513.0 830,551" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1260,475 1260,513.0 1260,513.0 1260,551" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="400,645 400,683.0 400,683.0 400,721" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="830,645 830,683.0 400,683.0 400,721" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1260,645 1260,683.0 830,683.0 830,721" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="595,768 635,768" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1025,768 1065,768" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="400,815 400,853.0 400,853.0 400,891" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1260,815 1260,853.0 830,853.0 830,891" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="400,985 400,1001 1260,1001 1260,985" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1025,938 1065,938" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="205" y="211" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="221" y="240" font-size="17" font-weight="bold">Identidad reclamada</text>
+<text x="221" y="265" font-size="15">Sujeto de prueba y solicitud</text>
+<rect x="635" y="211" width="390" height="94" rx="9" fill="#f2edfc" stroke="#8061ad" stroke-width="1.7"/>
+<text x="651" y="240" font-size="17" font-weight="bold">Teléfono y canal</text>
+<text x="651" y="265" font-size="15">Posesión distinta de titularidad</text>
+<rect x="1065" y="211" width="390" height="94" rx="9" fill="#f2edfc" stroke="#8061ad" stroke-width="1.7"/>
+<text x="1081" y="240" font-size="17" font-weight="bold">Documento aportado</text>
+<text x="1081" y="265" font-size="15">Campos, foto y fuente de prueba</text>
+<rect x="205" y="381" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="221" y="410" font-size="17" font-weight="bold">Autenticidad y alcance</text>
+<text x="221" y="435" font-size="15">Fuente, integridad y soporte</text>
+<rect x="635" y="381" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="651" y="410" font-size="17" font-weight="bold">Estado por hecho</text>
+<text x="651" y="435" font-size="15">Verificado, inconcluso o no observado</text>
+<rect x="1065" y="381" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="1081" y="410" font-size="17" font-weight="bold">Contexto de sesión</text>
+<text x="1081" y="435" font-size="15">Captura, tiempo y disponibilidad</text>
+<rect x="205" y="551" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="221" y="580" font-size="17" font-weight="bold">Binding de evidencia</text>
+<text x="221" y="605" font-size="15">Sujeto, caso, sesión y versión</text>
+<rect x="635" y="551" width="390" height="94" rx="9" fill="#fff4d9" stroke="#bd8730" stroke-width="1.7"/>
+<text x="651" y="580" font-size="17" font-weight="bold">Revisión de contradicciones</text>
+<text x="651" y="605" font-size="15">Canal controlado no basta</text>
+<rect x="1065" y="551" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="1081" y="580" font-size="17" font-weight="bold">Finalidad y cobertura</text>
+<text x="1081" y="605" font-size="15">Uso permitido y datos suficientes</text>
+<rect x="205" y="721" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="221" y="750" font-size="17" font-weight="bold">Identidad e intención</text>
+<text x="221" y="775" font-size="15">Procesos y límites separados</text>
+<rect x="635" y="721" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="651" y="750" font-size="17" font-weight="bold">Formalización coherente</text>
+<text x="651" y="775" font-size="15">Oferta aceptada y condiciones</text>
+<rect x="1065" y="721" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="1081" y="750" font-size="17" font-weight="bold">Destino y autoridad</text>
+<text x="1081" y="775" font-size="15">Cambios revalidados antes de efecto</text>
+<rect x="205" y="891" width="390" height="94" rx="9" fill="#fff4d9" stroke="#bd8730" stroke-width="1.7"/>
+<text x="221" y="920" font-size="17" font-weight="bold">Continuar o pedir evidencia</text>
+<text x="221" y="945" font-size="15">Razón sin acusación automática</text>
+<rect x="635" y="891" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="651" y="920" font-size="17" font-weight="bold">Autorización limitada</text>
+<text x="651" y="945" font-size="15">Solo con precondiciones cumplidas</text>
+<rect x="1065" y="891" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="1081" y="920" font-size="17" font-weight="bold">Ledger de evidencia y efecto</text>
+<text x="1081" y="945" font-size="15">Qué verificó cada control</text>
+<text x="38" y="1072" font-size="16">Transversal: acceso mínimo · privacidad · auditoría · versiones · retención · responsables · rollback</text>
+<text x="38" y="1104" font-size="13">Portafolio · 23 octubre 2026 · Flechas: datos/decisiones propuestos · Véase ARCHITECTURES.md para alcance y fallos</text></g></svg>

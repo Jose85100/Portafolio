@@ -1,0 +1,157 @@
+{
+  "research_date": "2026-10-26",
+  "recovery_execution_date": "2026-10-27",
+  "provenance": "Source reconstructed from visible session history after scratch worktree loss; outputs regenerated, not restored byte-for-byte",
+  "config": {
+    "seed": 20261026,
+    "sample_sizes": [
+      100,
+      500,
+      2000
+    ],
+    "replicates": 200,
+    "effects": [
+      0.0,
+      0.3
+    ],
+    "true_noise_variance": 1.0,
+    "assumed_noise_variances": [
+      0.0,
+      0.5,
+      1.0,
+      1.5
+    ],
+    "max_condition": 100.0,
+    "hypothesis": {
+      "known_variance_abs_bias_n2000_max": 0.04,
+      "known_variance_acceptance_n2000_min": 0.95,
+      "known_variance_rmse_vs_proxy_n2000_max_ratio": 0.5
+    },
+    "comparison": "same accepted replicates, abstentions separately reported"
+  },
+  "datasets": 1200,
+  "estimator_runs": 4800,
+  "checks": {
+    "bias": true,
+    "acceptance": true,
+    "matched_rmse": true
+  },
+  "n2000": [
+    {
+      "n": 2000,
+      "effect": 0.0,
+      "assumed_variance": 0.0,
+      "accepted": 200,
+      "replicates": 200,
+      "acceptance": 1.0,
+      "bias_accepted": 0.5595434219954988,
+      "rmse_accepted": 0.5598726694311495,
+      "naive_rmse_matched": 0.5598726694311495,
+      "oracle_rmse_matched": 0.02069513234873075,
+      "median_seconds": 0.0003534625000156666,
+      "max_python_bytes": 145512
+    },
+    {
+      "n": 2000,
+      "effect": 0.0,
+      "assumed_variance": 0.5,
+      "accepted": 200,
+      "replicates": 200,
+      "acceptance": 1.0,
+      "bias_accepted": 0.45871695612517427,
+      "rmse_accepted": 0.4593853734983091,
+      "naive_rmse_matched": 0.5598726694311495,
+      "oracle_rmse_matched": 0.02069513234873075,
+      "median_seconds": 0.0003349700000114808,
+      "max_python_bytes": 145480
+    },
+    {
+      "n": 2000,
+      "effect": 0.0,
+      "assumed_variance": 1.0,
+      "accepted": 200,
+      "replicates": 200,
+      "acceptance": 1.0,
+      "bias_accepted": -0.007857383397787639,
+      "rmse_accepted": 0.10081525009143791,
+      "naive_rmse_matched": 0.5598726694311495,
+      "oracle_rmse_matched": 0.02069513234873075,
+      "median_seconds": 0.0003315955000005033,
+      "max_python_bytes": 145480
+    },
+    {
+      "n": 2000,
+      "effect": 0.0,
+      "assumed_variance": 1.5,
+      "accepted": 0,
+      "replicates": 200,
+      "acceptance": 0.0,
+      "bias_accepted": null,
+      "rmse_accepted": null,
+      "naive_rmse_matched": null,
+      "oracle_rmse_matched": null,
+      "median_seconds": 0.0002994079999893984,
+      "max_python_bytes": 145480
+    },
+    {
+      "n": 2000,
+      "effect": 0.3,
+      "assumed_variance": 0.0,
+      "accepted": 200,
+      "replicates": 200,
+      "acceptance": 1.0,
+      "bias_accepted": 0.5610243436933964,
+      "rmse_accepted": 0.5613588391133354,
+      "naive_rmse_matched": 0.5613588391133353,
+      "oracle_rmse_matched": 0.02195330864159604,
+      "median_seconds": 0.0003741430000161472,
+      "max_python_bytes": 145512
+    },
+    {
+      "n": 2000,
+      "effect": 0.3,
+      "assumed_variance": 0.5,
+      "accepted": 200,
+      "replicates": 200,
+      "acceptance": 1.0,
+      "bias_accepted": 0.45950992125265044,
+      "rmse_accepted": 0.4602140539773883,
+      "naive_rmse_matched": 0.5613588391133353,
+      "oracle_rmse_matched": 0.02195330864159604,
+      "median_seconds": 0.0003404185000022153,
+      "max_python_bytes": 145480
+    },
+    {
+      "n": 2000,
+      "effect": 0.3,
+      "assumed_variance": 1.0,
+      "accepted": 200,
+      "replicates": 200,
+      "acceptance": 1.0,
+      "bias_accepted": -0.009444059428180654,
+      "rmse_accepted": 0.1047775097565075,
+      "naive_rmse_matched": 0.5613588391133353,
+      "oracle_rmse_matched": 0.02195330864159604,
+      "median_seconds": 0.0003357064999818249,
+      "max_python_bytes": 145480
+    },
+    {
+      "n": 2000,
+      "effect": 0.3,
+      "assumed_variance": 1.5,
+      "accepted": 0,
+      "replicates": 200,
+      "acceptance": 0.0,
+      "bias_accepted": null,
+      "rmse_accepted": null,
+      "naive_rmse_matched": null,
+      "oracle_rmse_matched": null,
+      "median_seconds": 0.0003022614999679263,
+      "max_python_bytes": 145480
+    }
+  ],
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "selection_warning": "All error comparisons conditional on correction acceptance on same replicates; abstention cost not assigned"
+}

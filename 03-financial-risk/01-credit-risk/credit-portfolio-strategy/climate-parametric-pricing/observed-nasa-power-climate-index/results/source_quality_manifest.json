@@ -1,0 +1,267 @@
+{
+  "provider": "NASA POWER",
+  "data_type": "gridded/model-derived meteorological estimates; not station observations",
+  "source_vintage": "downloaded 2026-07-20; requested through 2026-07-19",
+  "parameters": [
+    "T2M",
+    "T2M_MAX",
+    "T2M_MIN",
+    "PRECTOTCORR",
+    "RH2M",
+    "WS2M",
+    "ALLSKY_SFC_SW_DWN"
+  ],
+  "cities": [
+    "Barrancabermeja",
+    "Barranquilla",
+    "Bogotá",
+    "Bucaramanga",
+    "Cali",
+    "Cartagena",
+    "Medellín",
+    "Neiva",
+    "Pasto",
+    "Villavicencio"
+  ],
+  "raw_sha256": {
+    "barrancabermeja_daily_2000_2026.csv": "33b355c685ff91a32f4426bf0e7e301c4da5a519e6f4c18af9f6914df624c034",
+    "barranquilla_daily_2000_2026.csv": "3e8dc74e098ee7dd163c332383f0320de5ceac1394e70037a018cb49aa70fc52",
+    "bogota_daily_2000_2026.csv": "5237940794fbc638b94fd01546e0df60ee23d9c104f42a4522647248abce4900",
+    "bucaramanga_daily_2000_2026.csv": "00e9858d3a0ac5f090663f16916c789d861cde24da9a6caee29e7158cf793fcd",
+    "cali_daily_2000_2026.csv": "4d9b424f334656623d73f22e82db70c8b6a7fff38900af2ca8d9c1a207341598",
+    "cartagena_daily_2000_2026.csv": "3e36c93f0ca7452231cf585051405823decdb09808f6b90a5e274afdb70d36b8",
+    "medellin_daily_2000_2026.csv": "5eeebc932fc2b0cd158223d99421d2cbe0e2bcca42f277ff56da8df3146bef02",
+    "neiva_daily_2000_2026.csv": "fb687bb425db855790600f67d93aa00eb21826d491fda8884a750482ac72cc00",
+    "pasto_daily_2000_2026.csv": "86cf4b00c7fad5e05d4d68b2961e6970c5fb29ccfbee921ff2f63be17678c9e4",
+    "villavicencio_daily_2000_2026.csv": "22c56e6ce0ff30c4e9713c9162544671614a84b5ee355a31f89298acc76a8442"
+  },
+  "quality_profile": [
+    {
+      "city": "Barrancabermeja",
+      "file": "barrancabermeja_daily_2000_2026.csv",
+      "sha256": "33b355c685ff91a32f4426bf0e7e301c4da5a519e6f4c18af9f6914df624c034",
+      "rows_including_header": 9698,
+      "first_date": "2000-01-01",
+      "last_date": "2026-07-19",
+      "unique_dates": 9697,
+      "duplicate_dates": 0,
+      "calendar_dates_missing": 0,
+      "null_precip_days": 2,
+      "negative_precip_values": 0,
+      "null_by_parameter": {
+        "T2M": 2,
+        "T2M_MAX": 2,
+        "T2M_MIN": 2,
+        "PRECTOTCORR": 2,
+        "RH2M": 2,
+        "WS2M": 2,
+        "ALLSKY_SFC_SW_DWN": 6
+      }
+    },
+    {
+      "city": "Barranquilla",
+      "file": "barranquilla_daily_2000_2026.csv",
+      "sha256": "3e8dc74e098ee7dd163c332383f0320de5ceac1394e70037a018cb49aa70fc52",
+      "rows_including_header": 9698,
+      "first_date": "2000-01-01",
+      "last_date": "2026-07-19",
+      "unique_dates": 9697,
+      "duplicate_dates": 0,
+      "calendar_dates_missing": 0,
+      "null_precip_days": 2,
+      "negative_precip_values": 0,
+      "null_by_parameter": {
+        "T2M": 2,
+        "T2M_MAX": 2,
+        "T2M_MIN": 2,
+        "PRECTOTCORR": 2,
+        "RH2M": 2,
+        "WS2M": 2,
+        "ALLSKY_SFC_SW_DWN": 6
+      }
+    },
+    {
+      "city": "Bogotá",
+      "file": "bogota_daily_2000_2026.csv",
+      "sha256": "5237940794fbc638b94fd01546e0df60ee23d9c104f42a4522647248abce4900",
+      "rows_including_header": 9698,
+      "first_date": "2000-01-01",
+      "last_date": "2026-07-19",
+      "unique_dates": 9697,
+      "duplicate_dates": 0,
+      "calendar_dates_missing": 0,
+      "null_precip_days": 2,
+      "negative_precip_values": 0,
+      "null_by_parameter": {
+        "T2M": 2,
+        "T2M_MAX": 2,
+        "T2M_MIN": 2,
+        "PRECTOTCORR": 2,
+        "RH2M": 2,
+        "WS2M": 2,
+        "ALLSKY_SFC_SW_DWN": 6
+      }
+    },
+    {
+      "city": "Bucaramanga",
+      "file": "bucaramanga_daily_2000_2026.csv",
+      "sha256": "00e9858d3a0ac5f090663f16916c789d861cde24da9a6caee29e7158cf793fcd",
+      "rows_including_header": 9698,
+      "first_date": "2000-01-01",
+      "last_date": "2026-07-19",
+      "unique_dates": 9697,
+      "duplicate_dates": 0,
+      "calendar_dates_missing": 0,
+      "null_precip_days": 2,
+      "negative_precip_values": 0,
+      "null_by_parameter": {
+        "T2M": 2,
+        "T2M_MAX": 2,
+        "T2M_MIN": 2,
+        "PRECTOTCORR": 2,
+        "RH2M": 2,
+        "WS2M": 2,
+        "ALLSKY_SFC_SW_DWN": 6
+      }
+    },
+    {
+      "city": "Cali",
+      "file": "cali_daily_2000_2026.csv",
+      "sha256": "4d9b424f334656623d73f22e82db70c8b6a7fff38900af2ca8d9c1a207341598",
+      "rows_including_header": 9698,
+      "first_date": "2000-01-01",
+      "last_date": "2026-07-19",
+      "unique_dates": 9697,
+      "duplicate_dates": 0,
+      "calendar_dates_missing": 0,
+      "null_precip_days": 2,
+      "negative_precip_values": 0,
+      "null_by_parameter": {
+        "T2M": 2,
+        "T2M_MAX": 2,
+        "T2M_MIN": 2,
+        "PRECTOTCORR": 2,
+        "RH2M": 2,
+        "WS2M": 2,
+        "ALLSKY_SFC_SW_DWN": 6
+      }
+    },
+    {
+      "city": "Cartagena",
+      "file": "cartagena_daily_2000_2026.csv",
+      "sha256": "3e36c93f0ca7452231cf585051405823decdb09808f6b90a5e274afdb70d36b8",
+      "rows_including_header": 9698,
+      "first_date": "2000-01-01",
+      "last_date": "2026-07-19",
+      "unique_dates": 9697,
+      "duplicate_dates": 0,
+      "calendar_dates_missing": 0,
+      "null_precip_days": 2,
+      "negative_precip_values": 0,
+      "null_by_parameter": {
+        "T2M": 2,
+        "T2M_MAX": 2,
+        "T2M_MIN": 2,
+        "PRECTOTCORR": 2,
+        "RH2M": 2,
+        "WS2M": 2,
+        "ALLSKY_SFC_SW_DWN": 6
+      }
+    },
+    {
+      "city": "Medellín",
+      "file": "medellin_daily_2000_2026.csv",
+      "sha256": "5eeebc932fc2b0cd158223d99421d2cbe0e2bcca42f277ff56da8df3146bef02",
+      "rows_including_header": 9698,
+      "first_date": "2000-01-01",
+      "last_date": "2026-07-19",
+      "unique_dates": 9697,
+      "duplicate_dates": 0,
+      "calendar_dates_missing": 0,
+      "null_precip_days": 2,
+      "negative_precip_values": 0,
+      "null_by_parameter": {
+        "T2M": 2,
+        "T2M_MAX": 2,
+        "T2M_MIN": 2,
+        "PRECTOTCORR": 2,
+        "RH2M": 2,
+        "WS2M": 2,
+        "ALLSKY_SFC_SW_DWN": 6
+      }
+    },
+    {
+      "city": "Neiva",
+      "file": "neiva_daily_2000_2026.csv",
+      "sha256": "fb687bb425db855790600f67d93aa00eb21826d491fda8884a750482ac72cc00",
+      "rows_including_header": 9698,
+      "first_date": "2000-01-01",
+      "last_date": "2026-07-19",
+      "unique_dates": 9697,
+      "duplicate_dates": 0,
+      "calendar_dates_missing": 0,
+      "null_precip_days": 2,
+      "negative_precip_values": 0,
+      "null_by_parameter": {
+        "T2M": 2,
+        "T2M_MAX": 2,
+        "T2M_MIN": 2,
+        "PRECTOTCORR": 2,
+        "RH2M": 2,
+        "WS2M": 2,
+        "ALLSKY_SFC_SW_DWN": 6
+      }
+    },
+    {
+      "city": "Pasto",
+      "file": "pasto_daily_2000_2026.csv",
+      "sha256": "86cf4b00c7fad5e05d4d68b2961e6970c5fb29ccfbee921ff2f63be17678c9e4",
+      "rows_including_header": 9698,
+      "first_date": "2000-01-01",
+      "last_date": "2026-07-19",
+      "unique_dates": 9697,
+      "duplicate_dates": 0,
+      "calendar_dates_missing": 0,
+      "null_precip_days": 2,
+      "negative_precip_values": 0,
+      "null_by_parameter": {
+        "T2M": 2,
+        "T2M_MAX": 2,
+        "T2M_MIN": 2,
+        "PRECTOTCORR": 2,
+        "RH2M": 2,
+        "WS2M": 2,
+        "ALLSKY_SFC_SW_DWN": 6
+      }
+    },
+    {
+      "city": "Villavicencio",
+      "file": "villavicencio_daily_2000_2026.csv",
+      "sha256": "22c56e6ce0ff30c4e9713c9162544671614a84b5ee355a31f89298acc76a8442",
+      "rows_including_header": 9698,
+      "first_date": "2000-01-01",
+      "last_date": "2026-07-19",
+      "unique_dates": 9697,
+      "duplicate_dates": 0,
+      "calendar_dates_missing": 0,
+      "null_precip_days": 2,
+      "negative_precip_values": 0,
+      "null_by_parameter": {
+        "T2M": 2,
+        "T2M_MAX": 2,
+        "T2M_MIN": 2,
+        "PRECTOTCORR": 2,
+        "RH2M": 2,
+        "WS2M": 2,
+        "ALLSKY_SFC_SW_DWN": 6
+      }
+    }
+  ],
+  "baseline": "city-specific complete-year precipitation, 2000–2019",
+  "recent_window": "2020–2025; complete years only",
+  "limits": [
+    "10 urban coordinate points are not department/crop coverage",
+    "annual precipitation alone does not establish insured losses or basis risk",
+    "no pricing, trigger calibration, or causal credit claim is made"
+  ]
+}

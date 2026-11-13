@@ -1,0 +1,42 @@
+{
+  "selected": {
+    "deferred": 0.9,
+    "target": {
+      "name": "prudent",
+      "success_bonus": 10.0,
+      "failure_bonus": 0.9999999999999998,
+      "expected_bonus": 9.549999999999999,
+      "manager_utility": 8.549999999999999,
+      "gross_profit": 18.5,
+      "net_profit": 8.950000000000001
+    },
+    "ic_margin": 0.29999999999999893,
+    "participation_surplus": 8.549999999999999,
+    "implemented": "prudent"
+  },
+  "baseline_immediate": {
+    "name": "volume_chasing",
+    "success_bonus": 15.0,
+    "failure_bonus": 15.0,
+    "expected_bonus": 15.0,
+    "manager_utility": 15.0,
+    "gross_profit": -7.5,
+    "net_profit": -22.5
+  },
+  "baseline_no_contract_net_profit": 0.0,
+  "increment_vs_no_contract": 8.950000000000001,
+  "omitted_action_stress": {
+    "name": "unmodeled",
+    "success_bonus": 30.0,
+    "failure_bonus": 2.999999999999999,
+    "expected_bonus": 29.73,
+    "manager_utility": 29.73,
+    "gross_profit": -1.0,
+    "net_profit": -30.73
+  },
+  "analytic_minimum_for_margin": 0.8642857142857142,
+  "seconds": 0.00032440699999369826,
+  "python_peak_bytes": 3772,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+}

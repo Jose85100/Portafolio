@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "max_quadrature_disagreement": 3.993009983532976e-11,
+    "max_independence_error": 9.71445146547012e-17,
+    "max_empirical_kendall_error": 0.006670627062706214,
+    "min_t4_to_gaussian_joint_ratio": 4.856196277246979,
+    "max_conditional_to_direct_rmse_ratio": 0.008863733701078102,
+    "max_conditional_relative_rmse": 0.0034776536357575827,
+    "max_variance_bound_violation": 0.0
+  },
+  "passed": {
+    "max_quadrature_disagreement": true,
+    "max_independence_error": true,
+    "max_empirical_kendall_error": true,
+    "min_t4_to_gaussian_joint_ratio": true,
+    "max_conditional_to_direct_rmse_ratio": true,
+    "max_conditional_relative_rmse": true,
+    "max_variance_bound_violation": true
+  }
+}

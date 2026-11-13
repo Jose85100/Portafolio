@@ -1,0 +1,9 @@
+{
+  "seed": 20261021,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "random_cases": 100,
+  "max_float_midpoint_error": 1.432187701766452e-14,
+  "scope": "quadratic polynomial roots only; regime validity is separate"
+}

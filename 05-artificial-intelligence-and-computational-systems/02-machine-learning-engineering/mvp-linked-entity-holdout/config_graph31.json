@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-31",
+  "dataset": "synthetic controlled partitions, sizes 4/6/8/10",
+  "source": "src.graph_experiment.corpus; no external or personal data",
+  "seeds": [0,1,2,3,4,5,6,7,8,9,10,11],
+  "regimes": ["accurate", "missing", "overmerged", "mixed"],
+  "hypothesis_type": "refutation of sufficiency claim",
+  "hypothesis": "zero declared component cuts does not suffice for zero adjudicated leakage",
+  "threshold": "one explicit counterexample with declared_cuts=0 and adjudicated_cuts>0 refutes universal sufficiency",
+  "selection": "diagnostic scenarios designed before execution; no superiority or empirical prevalence claim",
+  "hardware": "recorded by run in results/graph31/environment.json",
+  "dependencies": "requirements.txt; pip-freeze captured separately",
+  "cost": "perf_counter_ns/tracemalloc; separate split and audit; installation excluded",
+  "truth_use": "post hoc diagnostic only; truth oracle explicitly privileged, not feasible production baseline"
+}

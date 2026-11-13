@@ -1,0 +1,36 @@
+{
+  "format": "binary64 hexadecimal; future cross-language fixtures, no extra language implementation claimed",
+  "cases": [
+    {
+      "name": "simple",
+      "left": [
+        "0x1.0000000000000p+0",
+        "0x1.0000000000000p+1"
+      ],
+      "right": [
+        "0x1.8000000000000p+1",
+        "0x1.0000000000000p+2"
+      ]
+    },
+    {
+      "name": "subnormal",
+      "left": [
+        "-0x0.0000000000001p-1022"
+      ],
+      "right": [
+        "0x0.0000000000001p-1022"
+      ]
+    },
+    {
+      "name": "mixed",
+      "left": [
+        "0x1.56e1fc2f8f359p-997",
+        "0x1.56e1fc2f8f359p-996"
+      ],
+      "right": [
+        "0x1.7e43c8800759cp+996",
+        "0x1.7e43c8800759cp+997"
+      ]
+    }
+  ]
+}

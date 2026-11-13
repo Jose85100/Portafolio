@@ -15,3 +15,6 @@ Se mantienen los tres proyectos existentes y se incorporan cuatro líneas nuevas
 - **Nuevo S1:** [Riesgo de deriva de modelos de IA](ai-model-drift-risk/)
 - **Nuevo S1:** [Robustez adversarial de modelos](adversarial-model-robustness/)
 - **Nuevo S1:** [Contagio por dependencias tecnológicas](technology-dependency-contagion/)
+
+
+[Inventario de aplicaciones y brechas de evidencia](EVIDENCE_GAPS.md).

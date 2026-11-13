@@ -1,0 +1,3 @@
+scenario,mean_exception_rate,rejection_asymptotic,rejection_permutation,rejection_randomized
+iid_null,0.010029999999999999,0.012,0.0125,0.048
+markov_clustered,0.009926,0.413,0.373,0.4515

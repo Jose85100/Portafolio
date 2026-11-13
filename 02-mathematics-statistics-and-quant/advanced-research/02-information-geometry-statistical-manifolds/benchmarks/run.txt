@@ -1,0 +1,57 @@
+{
+  "checks": {
+    "max_pvalue_difference": 0.0,
+    "max_oracle_error": 1.1102230246251565e-16,
+    "max_geodesic_error": 2.482534153247273e-16,
+    "max_identity_error": 2.220446049250313e-16,
+    "max_local_smallstep_relative_error": 1.2126111870403022e-05,
+    "min_local_asymmetry": 3.944685294770139,
+    "min_local_exceeds_pi": 1.783092641180346
+  },
+  "passed": {
+    "max_pvalue_difference": true,
+    "max_oracle_error": true,
+    "max_geodesic_error": true,
+    "max_identity_error": true,
+    "max_local_smallstep_relative_error": true,
+    "min_local_asymmetry": true,
+    "min_local_exceeds_pi": true
+  },
+  "counterexample": {
+    "p": [
+      0.99,
+      0.01
+    ],
+    "q": [
+      0.5,
+      0.5
+    ],
+    "fr": 1.3704614844717773,
+    "hellinger": 0.47510731199154455,
+    "local_at_p": 4.924685294770139,
+    "local_at_q": 0.98,
+    "naive_acos_nearby": {
+      "k": 2,
+      "step": 1e-12,
+      "fr": 1.2989306160842166e-12,
+      "oracle": 1.298915372526738e-12,
+      "abs_error": 1.5243557478473147e-17,
+      "naive_acos": 0.0,
+      "naive_error": 1.298915372526738e-12
+    }
+  },
+  "hardware": {
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "machine": "x86_64",
+    "python": "3.12.14"
+  },
+  "design": {
+    "datasets": 1600,
+    "test_results": 6400,
+    "random_partitions": 318400,
+    "timing_rows": 75,
+    "oracle_rows": 12,
+    "geodesic_rows": 132
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "purpose": "Historical context for a hypothetical bank-loan refinancing; not an issuer spread or forecast.",
+  "principal_cop": 10000000000,
+  "latest_period": "2026-09",
+  "latest_rate_pct": 14.13,
+  "observations": 293,
+  "period_coverage": [
+    "2002-05",
+    "2026-09"
+  ],
+  "scenarios": [
+    {
+      "scenario": "latest_observed",
+      "annual_effective_rate_pct": 14.13,
+      "hypothetical_annual_interest_cop": 1413000000,
+      "principal_cop": 10000000000,
+      "period": "2026-09"
+    },
+    {
+      "scenario": "historical_median",
+      "annual_effective_rate_pct": 9.6,
+      "hypothetical_annual_interest_cop": 960000000,
+      "principal_cop": 10000000000,
+      "period": "historical distribution"
+    },
+    {
+      "scenario": "historical_p90",
+      "annual_effective_rate_pct": 14.47,
+      "hypothetical_annual_interest_cop": 1447000000,
+      "principal_cop": 10000000000,
+      "period": "historical distribution"
+    },
+    {
+      "scenario": "historical_max",
+      "annual_effective_rate_pct": 19.4,
+      "hypothetical_annual_interest_cop": 1940000000,
+      "principal_cop": 10000000000,
+      "period": "historical distribution"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "source": {
+    "source": "Banco de la República, SDMX DF_TRM_DAILY_HIST",
+    "source_url": "https://totoro.banrep.gov.co/nsi-jax-ws/rest/data/ESTAT,DF_TRM_DAILY_HIST,1.0/all/ALL/?startPeriod=2020&endPeriod=2027&dimensionAtObservation=TIME_PERIOD&detail=full",
+    "file": "banrep-trm-daily-2020-2026-11-10.xml",
+    "sha256": "1295dda88cb5a808a2adb37ed9c8c4380dc3b1a170d3720dd53f53e8c313f25f",
+    "bytes": 472794,
+    "observations_in_source": 2506,
+    "weekday_observations_used": 1790,
+    "calendar_filter": "Monday-Friday",
+    "first_date": "2020-01-01",
+    "last_date": "2026-11-10",
+    "unit": "COP per USD; daily official TRM"
+  },
+  "series": "TRM diaria COP por USD; weekday-only log returns",
+  "sample_start": "2020-01-01",
+  "sample_end": "2026-11-10",
+  "weekday_levels": 1790,
+  "return_observations": 1789,
+  "training_observations": 1537,
+  "holdout_start": "2025-11-24",
+  "holdout_end": "2026-11-10",
+  "confidence_level": 0.99,
+  "parameters": {
+    "mu_pct": -0.02660102798580358,
+    "omega": 0.0384083523004154,
+    "alpha1": 0.10918941405111683,
+    "beta1": 0.8398230199065315,
+    "degrees_freedom": 5.855499147310417,
+    "alpha_plus_beta": 0.9490124339576483
+  },
+  "fit_diagnostics": {
+    "convergence_flag": 0,
+    "log_likelihood": -1767.2589616172068
+  },
+  "mean_holdout_sigma_pct": 0.7965652099622702,
+  "mean_holdout_var99_pct": 2.0748196632943134,
+  "backtest": {
+    "holdout_observations": 252,
+    "exceptions": 3,
+    "expected_exceptions": 2.5200000000000022,
+    "exception_rate": 0.011904761904761904,
+    "kupiec_uc_lr": 0.08704443664797168,
+    "kupiec_uc_pvalue": 0.767968715350954
+  },
+  "limitations": [
+    "the TRM is a reference exchange rate, not an executable investor price",
+    "calendar weekends are excluded; public holidays remain when present in the source",
+    "parameters are estimated once and held fixed during the holdout",
+    "252 observations and few 99% exceptions yield low backtest power",
+    "results do not establish hedge effectiveness or trading profitability"
+  ]
+}

@@ -1,0 +1,3 @@
+method,total,failed,nonconverged,max_raw_residual,max_rounded_residual
+naive,36,6,0,9.960410968234967e-10,4.501607420159814e-16
+log,36,0,1,0.00024523353173425133,4.527628272299467e-16

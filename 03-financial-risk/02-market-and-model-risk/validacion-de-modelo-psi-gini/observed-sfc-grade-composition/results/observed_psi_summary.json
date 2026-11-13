@@ -1,0 +1,74 @@
+{
+  "source_dataset_id": "rvii-eis8",
+  "source_raw_sha256": "94e767a38e182ca9a6b0d188eea1617be2afe061ed6841c97e523c6d0168fa2d",
+  "reused_derived_input_sha256": "45c116db15aac1912ebf17d6fa4ce69ed328a4a3f71be00d440fcf5d0d782690",
+  "selected_product_code": 1,
+  "selected_product_name": "CRÉDITO ROTATIVO",
+  "baseline_period": {
+    "start": "2018-01-31",
+    "end": "2019-12-31",
+    "months": 24,
+    "minimum_rated_balance_coverage_pct": 96.62727937,
+    "mean_rated_balance_coverage_pct": 97.76192421,
+    "mean_monthly_product_balance": 6366691377793.3
+  },
+  "comparison_period": {
+    "start": "2024-09-30",
+    "end": "2026-08-31",
+    "months": 24,
+    "minimum_rated_balance_coverage_pct": 99.99954289,
+    "mean_rated_balance_coverage_pct": 99.99998095375001,
+    "mean_monthly_product_balance": 4999987914512.892
+  },
+  "category_order": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "psi_mean_monthly_shares_equal_weighted_months": 0.00136604880679458,
+  "psi_pooled_balances_sensitivity": 0.00133147641883805,
+  "psi_thresholds_note": "0.10/0.25 are common rules of thumb in score PSI discussions; not calibrated or valid operational thresholds for this aggregate balance-mix statistic.",
+  "baseline_grade_shares_pct": {
+    "A": 89.84950217851097,
+    "B": 2.8932151729514426,
+    "C": 2.0155724267836947,
+    "D": 2.929398905224698,
+    "E": 2.312311316529185
+  },
+  "recent_grade_shares_pct": {
+    "A": 90.451425105323,
+    "B": 2.568750551009087,
+    "C": 1.787089376787303,
+    "D": 2.6106220479339997,
+    "E": 2.582112918946626
+  },
+  "changes_percentage_points": {
+    "A": 0.6019229268120152,
+    "B": -0.3244646219423559,
+    "C": -0.22848304999639157,
+    "D": -0.31877685729069793,
+    "E": 0.269801602417441
+  },
+  "interpretation": "Descriptive distribution shift in reported SFC product balances across rating grades; not score drift, model performance, default incidence or calibration.",
+  "period_diagnostics": {
+    "baseline": {
+      "start": "2018-01-31",
+      "end": "2019-12-31",
+      "months": 24,
+      "minimum_rated_balance_coverage_pct": 96.62727937,
+      "mean_rated_balance_coverage_pct": 97.76192421,
+      "mean_monthly_product_balance": 6366691377793.3
+    },
+    "recent": {
+      "start": "2024-09-30",
+      "end": "2026-08-31",
+      "months": 24,
+      "minimum_rated_balance_coverage_pct": 99.99954289,
+      "mean_rated_balance_coverage_pct": 99.99998095375001,
+      "mean_monthly_product_balance": 4999987914512.892
+    }
+  },
+  "months_excluded": 0
+}

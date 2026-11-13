@@ -22,5 +22,13 @@ class TestRecovery(unittest.TestCase):
     def test_invalid_message(self):
         with Inbox() as engine:
             self.assertEqual(engine.receive(Event("a", -2)), "invalid")
+    def test_invalid_messages_survive_restart(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "state.db"
+            for _ in range(2):
+                with Inbox(path) as engine:
+                    self.assertEqual(engine.receive(Event("a", -2)), "invalid")
+            with Inbox(path) as engine:
+                self.assertEqual(engine.db.execute("SELECT COUNT(*) FROM dlq").fetchone()[0], 2)
     def test_deterministic_workload(self):
         self.assertEqual(make_workload(15), make_workload(15))

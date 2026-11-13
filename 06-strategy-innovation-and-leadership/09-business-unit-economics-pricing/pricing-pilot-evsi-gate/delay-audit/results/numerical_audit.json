@@ -1,0 +1,30 @@
+[
+  {
+    "concentration_multiplier": 1,
+    "predictive_mass": 1.0000000000000107,
+    "mass_error": 1.0658141036401503e-14,
+    "raw_evsi": 34.63312384441781,
+    "negative_roundoff_flag": false
+  },
+  {
+    "concentration_multiplier": 10,
+    "predictive_mass": 1.0000000000000924,
+    "mass_error": 9.237055564881302e-14,
+    "raw_evsi": 1.3640374137137314,
+    "negative_roundoff_flag": false
+  },
+  {
+    "concentration_multiplier": 100,
+    "predictive_mass": 1.0000000000010452,
+    "mass_error": 1.0451639553821224e-12,
+    "raw_evsi": 1.150283424067311e-09,
+    "negative_roundoff_flag": false
+  },
+  {
+    "concentration_multiplier": 1000,
+    "predictive_mass": 0.9999999999694346,
+    "mass_error": -3.056543906865272e-11,
+    "raw_evsi": -3.362208644830389e-08,
+    "negative_roundoff_flag": true
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "documents": [
+    "README.md",
+    "MVP.md",
+    "informe.md",
+    "referencias.bib",
+    "config.json",
+    "requirements.txt"
+  ],
+  "csv_rows": {
+    "raw.csv": 648,
+    "summary.csv": 216,
+    "setup.csv": 36,
+    "oracle.csv": 6
+  },
+  "tests_passed": 35,
+  "coverage_scope": "src/fractional.py and src/reference.py only",
+  "coverage_percent": 100.0,
+  "executed_code_cells": 8,
+  "png_outputs": 1,
+  "all_gates_passed": true,
+  "presentation_scope": "Figure visually inspected by author; notebook format/outputs checked and cells executed. Full notebook-viewer visual QA not claimed.",
+  "finish_viewer_review": "Open notebook.ipynb in Jupyter; optionally install nbconvert and run python -m jupyter nbconvert --to html notebook.ipynb"
+}

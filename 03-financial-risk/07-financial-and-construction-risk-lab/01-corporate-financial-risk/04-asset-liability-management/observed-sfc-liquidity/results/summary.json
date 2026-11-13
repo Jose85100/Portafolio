@@ -1,0 +1,36 @@
+{
+  "purpose": "Descriptive, source-backed aggregate liquidity context; not corporate ALM validation or EVE/NII estimation",
+  "source": "Superintendencia Financiera de Colombia (SFC), Indicador de Riesgo de Liquidez (IRL), sheet Por Tipo",
+  "source_page": "https://www.superfinanciera.gov.co/publicaciones/10108220/informes-y-cifrascifrasestablecimientos-de-creditoinformacion-periodicamensualindicadores-de-riesgo-de-liquidez-indicador-de-riesgo-de-liquidez-irl-10108220/",
+  "source_file_url": "https://www.superfinanciera.gov.co/loader.php?idFile=1055598&lFuncion=descargar&lServicio=Tools2&lTipo=descargas",
+  "source_file_sha256": "52b24483f73b7a7402b26708826b417d5169ec2604c2aaacb5007a5ba72296e0",
+  "source_redownload_and_extraction_verified_this_run": true,
+  "source_file_sha256_verified_this_run": "52b24483f73b7a7402b26708826b417d5169ec2604c2aaacb5007a5ba72296e0",
+  "category_snapshot_sha256": "6ea7719b51d23faa4a5c5bfff2ab1893e082f10597645121f0dc0365f6b2d275",
+  "source_downloaded_local_date": "2026-11-11",
+  "snapshot_period": {
+    "start": "2020-03-31",
+    "end": "2022-12-31",
+    "months": 34
+  },
+  "input_rows": 102,
+  "input_category_rows_retained": "Only aggregate entity-type totals (Bancos, Compañías de Financiamiento, Cooperativas Financieras); no individual-institution rows retained.",
+  "source_reporting": "Monthly-average liquid market assets (ALM) and net liquidity requirement (RLN), in thousands of COP; IRL as reported by SFC.",
+  "aggregation_method": "Sector IRL = sum(ALM by entity type) / sum(RLN by entity type), computed from category-level totals. This is not the arithmetic mean of category ratios.",
+  "unit_conversion": "COP billions = source COP-thousands / 1,000,000",
+  "type_ratio_reconciliation_max_abs_gap": 0.0004998323846923114,
+  "latest_aggregate_observation": {
+    "date": "2022-12-31",
+    "alm_avg_month_cop_billions": 113795.13648860001,
+    "rln_avg_month_cop_billions": 61657.150114519995,
+    "irl_sector_ratio": 1.84561135695115,
+    "irl_monthly_change_percentage_points": 7.273637637970198
+  },
+  "limits": [
+    "Source vintage ends 2022-12; it is not a current 2026 condition indicator.",
+    "The IRL is a regulatory short-horizon liquidity measure, not interest-rate repricing, duration gap, EVE or NII.",
+    "Category-level totals are already aggregated by SFC; no institution-level cash flows, behavioral assumptions, instrument repricing dates, hedges or outcomes are available here.",
+    "Sector aggregation can mask institution heterogeneity and does not define a corporate or banking risk appetite threshold.",
+    "No independent model validation or forecast/backtest is performed; this is a transparent descriptive calculation."
+  ]
+}

@@ -1,18 +1,18 @@
 # Advanced Research — Mathematics, Statistics & Quantitative Methods
 
-Veinte programas de investigación. El programa 18 tiene un prototipo S2 acotado; los demás siguen como propuestas S1. Se conservan los seis proyectos existentes de métodos cuantitativos y las bibliotecas multilenguaje.
+Veinte programas de investigación. Los programas 01, 02, 03, 04, 05, 06, 08, 09, 12, 13 y 18 tienen prototipos S2 acotados; los demás siguen como propuestas S1. Se conservan los seis proyectos existentes de métodos cuantitativos y las bibliotecas multilenguaje.
 
 | ID | Proyecto | Estado |
 |---|---|---|
-| 01 | [Stochastic Dynamical Systems & Critical Transitions](01-stochastic-critical-transitions/) | S1: diseño científico |
-| 02 | [Information Geometry & Statistical Manifolds](02-information-geometry-statistical-manifolds/) | S1: diseño científico |
-| 03 | [Distributionally Robust Optimization](03-distributionally-robust-optimization/) | S1: diseño científico |
-| 04 | [Nonlinear Dependence & Tail Geometry](04-nonlinear-tail-dependence/) | S1: diseño científico |
-| 05 | [Fractional Calculus & Long-Memory Systems](05-fractional-long-memory-systems/) | S1: diseño científico |
-| 06 | [Causal Discovery in Nonlinear Stochastic Systems](06-nonlinear-dynamic-causal-discovery/) | S1: diseño científico |
+| 01 | [Stochastic Dynamical Systems & Critical Transitions](01-stochastic-critical-transitions/) | S2: auditoría OU de discretización e identificación, sin detector de crisis validado |
+| 02 | [Information Geometry & Statistical Manifolds](02-information-geometry-statistical-manifolds/) | S2: detector continuo FR gaussiano, calibración de tolerancia, KS/W1 y anexo categórico |
+| 03 | [Distributionally Robust Optimization](03-distributionally-robust-optimization/) | S2: expectativa robusta KL finita y diagnóstico primal-dual |
+| 04 | [Nonlinear Dependence & Tail Geometry](04-nonlinear-tail-dependence/) | S2: coexcedencia finita, límite asintótico y Monte Carlo condicional bivariado |
+| 05 | [Fractional Calculus & Long-Memory Systems](05-fractional-long-memory-systems/) | S2: diferencia fraccional discreta, cotas de truncación y frontera causal |
+| 06 | [Causal Discovery in Nonlinear Stochastic Systems](06-nonlinear-dynamic-causal-discovery/) | S2 acotado: falsación de lectura causal bajo confusión temporal lineal; nonlinearidad pendiente |
 | 07 | [Topological Data Analysis & Regime Detection](07-topological-regime-detection/) | S1: diseño científico |
-| 08 | [Bayesian Inverse Problems & Uncertainty Quantification](08-bayesian-inverse-uncertainty/) | S1: diseño científico |
-| 09 | [Optimal Transport & Distributional Dynamics](09-optimal-transport-distributional-dynamics/) | S1: diseño científico |
+| 08 | [Bayesian Inverse Problems & Uncertainty Quantification](08-bayesian-inverse-uncertainty/) | S2: posterior gaussiano, estabilidad y calibración |
+| 09 | [Optimal Transport & Distributional Dynamics](09-optimal-transport-distributional-dynamics/) | S2: factibilidad, estabilidad y sesgo de transporte discreto |
 | 10 | [Statistical Mechanics of Interacting Agents](10-interacting-agents-statistical-mechanics/) | S1: diseño científico |
 
 ## Priorización
@@ -27,13 +27,13 @@ Cada proyecto exige formulación rigurosa, supuestos y contraejemplos, evaluaci�
 
 ## Segunda generación — proyectos 11–20
 
-Esta segunda ola investiga conexiones interdisciplinarias. **Los programas siguen en S1 salvo el 18, que tiene un prototipo S2 acotado.**
+Esta segunda ola investiga conexiones interdisciplinarias. **Los programas 12, 13 y 18 tienen prototipos S2 acotados; los demás siguen en S1.**
 
 | ID | Investigación | Estado |
 |---|---|---|
 | 11 | [Causal Optimal Transport](11-causal-optimal-transport/) | S1 |
-| 12 | [Statistical Gauge Invariance](12-statistical-gauge-invariance/) | S1 |
-| 13 | [Path Signatures & Hidden Dynamics](13-path-signatures-hidden-dynamics/) | S1 |
+| 12 | [Statistical Gauge Invariance](12-statistical-gauge-invariance/) | S2: certificado Fisher de simetría de escala y caso degenerado |
+| 13 | [Path Signatures & Hidden Dynamics](13-path-signatures-hidden-dynamics/) | S2: firma nivel 2, certificado de Chen y auditoría de aliasing |
 | 14 | [Algorithmic Renormalization](14-algorithmic-renormalization/) | S1 |
 | 15 | [Distributional Phase Diagrams](15-distributional-phase-diagrams/) | S1 |
 | 16 | [Non-Equilibrium Information Thermodynamics](16-nonequilibrium-information-thermodynamics/) | S1 |
@@ -44,4 +44,6 @@ Esta segunda ola investiga conexiones interdisciplinarias. **Los programas sigue
 
 **Prioridad matemática exploratoria:** 12, 14 y 17. **Métodos computacionales con validación factible:** 11, 13, 16 y 18. **Aplicación macrofinanciera:** 15, 19 y 20.
 
-La revisión e implementación completas siguen pendientes para los programas S1. El programa 18 incluye un benchmark sintético reproducible; no constituye validación externa ni demuestra originalidad algorítmica.
+La revisión e implementación completas siguen pendientes para los programas S1. Los programas 01, 02, 03, 04, 05, 06, 08, 09, 12, 13 y 18 incluyen benchmarks sintéticos reproducibles; no constituyen validación externa ni demuestran originalidad algorítmica.
+
+Actualización25oct2026: el componente lineal gaussiano del programa06 incorpora simulación, test F, oráculos e intervención SCM reproducibles. Esto no completa su agenda no lineal ni equivale a validación externa.

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1540" height="1130" viewBox="0 0 1540 1130"><title>01 · Ciclo de crédito de extremo a extremo</title><desc>Arquitectura de investigación por capas; integraciones no desplegadas.</desc><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#42596d"/></marker></defs><rect width="1540" height="1130" fill="#ffffff"/><g font-family="DejaVu Sans,Arial,sans-serif" fill="#17334d">
+<text x="38" y="60" font-size="28" font-weight="bold">01 · Ciclo de crédito de extremo a extremo</text>
+<text x="38" y="102" font-size="17">Cada transición conserva autoridad, evidencia, estado y versión.</text>
+<text x="38" y="148" font-size="14">DISEÑO S1 · Azul: interno | Violeta: proveedor candidato | Ámbar: revisión/estado</text>
+<rect x="25" y="180" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="223" font-size="17" font-weight="bold">01 ·</text>
+<text x="42" y="247" font-size="17" font-weight="bold">Solicitud</text>
+<rect x="25" y="350" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="393" font-size="17" font-weight="bold">02 ·</text>
+<text x="42" y="417" font-size="17" font-weight="bold">Evaluación</text>
+<rect x="25" y="520" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="563" font-size="17" font-weight="bold">03 ·</text>
+<text x="42" y="587" font-size="17" font-weight="bold">Decisión</text>
+<rect x="25" y="690" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="733" font-size="17" font-weight="bold">04 ·</text>
+<text x="42" y="757" font-size="17" font-weight="bold">Ejecución</text>
+<rect x="25" y="860" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="903" font-size="17" font-weight="bold">05 · Gestión</text>
+<polyline points="595,258 635,258" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1025,258 1065,258" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1260,305 1260,343.0 400,343.0 400,381" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="595,428 635,428" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1025,428 1065,428" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1260,475 1260,513.0 400,513.0 400,551" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="595,598 635,598" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1025,598 1065,598" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1260,645 1260,683.0 400,683.0 400,721" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="595,768 635,768" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1025,768 1065,768" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1260,815 1260,853.0 400,853.0 400,891" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="595,938 635,938" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1025,938 1065,938" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="205" y="211" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="221" y="240" font-size="17" font-weight="bold">Producto y oferta</text>
+<text x="221" y="265" font-size="15">Apetito, elegibilidad y vigencia</text>
+<rect x="635" y="211" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="651" y="240" font-size="17" font-weight="bold">Canal y finalidad</text>
+<text x="651" y="265" font-size="15">Web, app, oficina, aliado y permisos</text>
+<rect x="1065" y="211" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="1081" y="240" font-size="17" font-weight="bold">Expediente / LOS</text>
+<text x="1081" y="265" font-size="15">Caso único; captura y estado</text>
+<rect x="205" y="381" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="221" y="410" font-size="17" font-weight="bold">Identidad y cumplimiento</text>
+<text x="221" y="435" font-size="15">Evidencias y colas competentes</text>
+<rect x="635" y="381" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="651" y="410" font-size="17" font-weight="bold">Fraude e ingresos</text>
+<text x="651" y="435" font-size="15">Contrastes con fuentes al corte</text>
+<rect x="1065" y="381" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="1081" y="410" font-size="17" font-weight="bold">Capacidad y riesgo de crédito</text>
+<text x="1081" y="435" font-size="15">PD, endeudamiento y escenarios</text>
+<rect x="205" y="551" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="221" y="580" font-size="17" font-weight="bold">Política y límites</text>
+<text x="221" y="605" font-size="15">Cupo, plazo, precio y exposición</text>
+<rect x="635" y="551" width="390" height="94" rx="9" fill="#fff4d9" stroke="#bd8730" stroke-width="1.7"/>
+<text x="651" y="580" font-size="17" font-weight="bold">Control y explicación</text>
+<text x="651" y="605" font-size="15">Razones; revisión cuando corresponda</text>
+<rect x="1065" y="551" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="1081" y="580" font-size="17" font-weight="bold">Oferta aceptada</text>
+<text x="1081" y="605" font-size="15">Vigente y coherente con condiciones</text>
+<rect x="205" y="721" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="221" y="750" font-size="17" font-weight="bold">Formalización y garantías</text>
+<text x="221" y="775" font-size="15">Contrato, instrumento y condiciones</text>
+<rect x="635" y="721" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="651" y="750" font-size="17" font-weight="bold">Desembolso y conciliación</text>
+<text x="651" y="775" font-size="15">Destino, reserva y efecto único</text>
+<rect x="1065" y="721" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="1081" y="750" font-size="17" font-weight="bold">Administración / LMS</text>
+<text x="1081" y="775" font-size="15">Cronograma, saldo e imputaciones</text>
+<rect x="205" y="891" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="221" y="920" font-size="17" font-weight="bold">Monitoreo y alertas</text>
+<text x="221" y="945" font-size="15">Cosechas, mora, riesgos y servicio</text>
+<rect x="635" y="891" width="390" height="94" rx="9" fill="#fff4d9" stroke="#bd8730" stroke-width="1.7"/>
+<text x="651" y="920" font-size="17" font-weight="bold">Cobranza o cierre</text>
+<text x="651" y="945" font-size="15">Según estado: pago, acuerdo o</text>
+<text x="651" y="965" font-size="15">recuperación</text>
+<rect x="1065" y="891" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="1081" y="920" font-size="17" font-weight="bold">Aprendizaje y gobierno</text>
+<text x="1081" y="945" font-size="15">Pérdida madura, modelos y provisiones</text>
+<text x="38" y="1072" font-size="16">Transversal: acceso mínimo · privacidad · auditoría · versiones · retención · responsables · rollback</text>
+<text x="38" y="1104" font-size="13">Portafolio · 23 octubre 2026 · Flechas: datos/decisiones propuestos · Véase ARCHITECTURES.md para alcance y fallos</text></g></svg>

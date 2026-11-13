@@ -1,0 +1,31 @@
+{
+  "source": "DANE CEED",
+  "source_url": "https://www.dane.gov.co/files/operaciones/CEED/anex-CEED-EstructuraSeriesDestino-IItrim2026.xlsx",
+  "source_index": "https://www.dane.gov.co/index.php/comunicados-y-boletines/construccion-y-vivienda/censo-de-edificaciones",
+  "snapshot": "data/raw/dane_ceed_structure_area_por_estado_2026q2.xlsx",
+  "sha256": "9446058a08ce93d0542c5061831beccfa7ef1a963f1eaf4fc26db7e61f3e24a1",
+  "sheet": "Serie 20 áreas (57_mpios)",
+  "reported_coverage": "14 áreas urbanas, cinco metropolitanas y Cundinamarca; agregado de Serie 20 áreas (57 municipios)",
+  "periods": [
+    "2015Q4",
+    "2026Q2"
+  ],
+  "destinations": [
+    "Apartamentos",
+    "Casas"
+  ],
+  "source_grain": "trimestre × destino residencial, área (m²) agregada; no project/company ID",
+  "formula": "100 × área paralizada o inactiva al corte / área total censada al corte",
+  "observation_count": 86,
+  "observation_count_with_derived_residential_aggregate": 129,
+  "missing_area_values": 0,
+  "duplicate_destination_period_keys": 0,
+  "publication_date": "2026-08-14",
+  "revision_note": "DANE indica que la provisionalidad se maneja a un año; cortes 2026 dentro de esa ventana.",
+  "limitations": [
+    "Proxy de composición de área censada, no atraso contractual, default, pérdida, ventas o unidades no vendidas.",
+    "La cobertura geográfica es la agregación del anexo de 57 municipios; no cubre todo el universo nacional ni identifica proyectos.",
+    "Composición y clasificación de obras pueden variar; últimos cortes sujetos a revisión.",
+    "No estima causalidad ni valida el motor de sobrecostos/cronograma."
+  ]
+}

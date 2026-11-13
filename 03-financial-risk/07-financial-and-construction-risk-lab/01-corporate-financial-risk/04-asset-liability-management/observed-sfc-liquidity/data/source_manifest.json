@@ -1,0 +1,19 @@
+{
+  "publisher": "Superintendencia Financiera de Colombia (SFC)",
+  "source_page": "https://www.superfinanciera.gov.co/publicaciones/10108220/informes-y-cifrascifrasestablecimientos-de-creditoinformacion-periodicamensualindicadores-de-riesgo-de-liquidez-indicador-de-riesgo-de-liquidez-irl-10108220/",
+  "source_file_url": "https://www.superfinanciera.gov.co/loader.php?idFile=1055598&lFuncion=descargar&lServicio=Tools2&lTipo=descargas",
+  "source_file_sha256": "52b24483f73b7a7402b26708826b417d5169ec2604c2aaacb5007a5ba72296e0",
+  "downloaded_local_date": "2026-11-11",
+  "source_workbook_sheet": "Por Tipo",
+  "source_workbook_heading_row": 5,
+  "extraction": "Only category-level rows from SFC sheet; rows per individual entity not retained.",
+  "extracted_file_sha256": "6ea7719b51d23faa4a5c5bfff2ab1893e082f10597645121f0dc0365f6b2d275",
+  "period_start": "2020-03-31",
+  "period_end": "2022-12-31",
+  "rows": 102,
+  "entity_types": [
+    "Bancos",
+    "Compañías de Financiamiento",
+    "Cooperativas Financieras"
+  ]
+}

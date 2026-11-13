@@ -1,0 +1,31 @@
+{
+  "source": "Banco de la República (BanRep), IPVU nominal y real, datos trimestrales",
+  "source_api": "https://suameca.banrep.gov.co/estadisticas-economicas-back/rest/estadisticaEconomicaRestService/consultaInformacionSerieXTipoDato?idSerie={56|57}&tipoDato=0&cantDatos=300",
+  "source_page": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/100004/indice_precios_vivienda_usada_ipvu/",
+  "vintage_downloaded": "2026-11-10",
+  "source_last_loaded": "2026-10-23",
+  "latest_observation": "2026-Q2",
+  "grain": "national quarterly index; base 1990=100",
+  "observations": 154,
+  "real_yoy_formula": "100 * (real_index_t / real_index_t_minus_4 - 1)",
+  "window_primary": "2015-Q1 to 2026-Q2; YoY requires four-quarter lag",
+  "window_sensitivity": "2010-Q1 to 2026-Q2",
+  "latest_real_yoy_pct": 2.830934682903674,
+  "primary_n_yoy": 46,
+  "primary_yoy_quantiles_pct": {
+    "p10": -3.181028757463028,
+    "p50": 1.499998016269244,
+    "p90": 4.275601923720718
+  },
+  "sensitivity_n_yoy": 66,
+  "sensitivity_yoy_quantiles_pct": {
+    "p10": -1.9123061792764573,
+    "p50": 2.5490396629233136,
+    "p90": 6.623721654854986
+  },
+  "sha256": {
+    "nominal": "2685543dd6ca23680aacd736cfb5078c163b36eda763b6b1708ff61a23de0ec4",
+    "real": "46d19dfcceac2ad0107cc0167809bd80be99089273615e784716d185d7ba0311"
+  },
+  "decision_use": "referencia descriptiva para enmarcar escenarios de mercado y priorizar revisión humana; no estima valor de un inmueble ni rentabilidad de una inversión"
+}

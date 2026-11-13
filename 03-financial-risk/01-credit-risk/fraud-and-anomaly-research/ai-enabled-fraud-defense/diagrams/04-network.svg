@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1540" height="1130" viewBox="0 0 1540 1130"><title>D · Redes, etiquetas y vigilancia de modelos</title><desc>Arquitectura de investigación por capas; integraciones no desplegadas.</desc><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#42596d"/></marker></defs><rect width="1540" height="1130" fill="#ffffff"/><g font-family="DejaVu Sans,Arial,sans-serif" fill="#17334d">
+<text x="38" y="60" font-size="28" font-weight="bold">D · Redes, etiquetas y vigilancia de modelos</text>
+<text x="38" y="102" font-size="17">El monitoreo abre investigación; una alerta no se convierte automáticamente en etiqueta.</text>
+<text x="38" y="148" font-size="14">DISEÑO S1 · Azul: interno | Violeta: proveedor candidato | Ámbar: revisión/estado</text>
+<rect x="25" y="180" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="223" font-size="17" font-weight="bold">01 ·</text>
+<text x="42" y="247" font-size="17" font-weight="bold">Registro</text>
+<rect x="25" y="350" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="393" font-size="17" font-weight="bold">02 ·</text>
+<text x="42" y="417" font-size="17" font-weight="bold">Snapshot</text>
+<rect x="25" y="520" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="563" font-size="17" font-weight="bold">03 · Modelos</text>
+<rect x="25" y="690" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="733" font-size="17" font-weight="bold">04 ·</text>
+<text x="42" y="757" font-size="17" font-weight="bold">Diagnóstico</text>
+<rect x="25" y="860" width="1490" height="150" rx="10" fill="#f7f9fc" stroke="#d9e2ec"/>
+<text x="42" y="903" font-size="17" font-weight="bold">05 ·</text>
+<text x="42" y="927" font-size="17" font-weight="bold">Liberación</text>
+<polyline points="400,305 400,343.0 400,343.0 400,381" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="830,305 830,343.0 830,343.0 830,381" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1260,305 1260,343.0 1260,343.0 1260,381" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="400,475 400,513.0 400,513.0 400,551" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="830,475 830,513.0 830,513.0 830,551" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1260,475 1260,513.0 1260,513.0 1260,551" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="400,645 400,661 1260,661 1260,645" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="400,645 400,683.0 400,683.0 400,721" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="830,645 830,683.0 830,683.0 830,721" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1260,645 1260,683.0 1260,683.0 1260,721" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="400,815 400,853.0 400,853.0 400,891" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="830,815 830,853.0 830,853.0 830,891" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1260,815 1260,853.0 830,853.0 830,891" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1025,938 1065,938" fill="none" stroke="#42596d" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="205" y="211" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="221" y="240" font-size="17" font-weight="bold">Eventos bitemporales</text>
+<text x="221" y="265" font-size="15">Fecha del hecho y de disponibilidad</text>
+<rect x="635" y="211" width="390" height="94" rx="9" fill="#f2edfc" stroke="#8061ad" stroke-width="1.7"/>
+<text x="651" y="240" font-size="17" font-weight="bold">Señales de proveedores</text>
+<text x="651" y="265" font-size="15">Versión, cobertura y cambios</text>
+<rect x="1065" y="211" width="390" height="94" rx="9" fill="#fff4d9" stroke="#bd8730" stroke-width="1.7"/>
+<text x="1081" y="240" font-size="17" font-weight="bold">Adjudicación y muestreo</text>
+<text x="1081" y="265" font-size="15">Aprobados y alertados; label madura</text>
+<rect x="205" y="381" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="221" y="410" font-size="17" font-weight="bold">Grafo al corte</text>
+<text x="221" y="435" font-size="15">Relaciones tipadas y caducidad</text>
+<rect x="635" y="381" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="651" y="410" font-size="17" font-weight="bold">Variables por canal</text>
+<text x="651" y="435" font-size="15">Mezcla, exposición y denominador</text>
+<rect x="1065" y="381" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="1081" y="410" font-size="17" font-weight="bold">Catálogo de etiquetas</text>
+<text x="1081" y="435" font-size="15">Fraude, default, ATO y desconocido</text>
+<rect x="205" y="551" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="221" y="580" font-size="17" font-weight="bold">Conteos y GNN challenger</text>
+<text x="221" y="605" font-size="15">Camuflaje y vecinos benignos</text>
+<rect x="635" y="551" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="651" y="580" font-size="17" font-weight="bold">Drift y calibración</text>
+<text x="651" y="605" font-size="15">Alertas múltiples y retraso de label</text>
+<rect x="1065" y="551" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="1081" y="580" font-size="17" font-weight="bold">Validación temporal</text>
+<text x="1081" y="605" font-size="15">Agrupar identidad y componente</text>
+<rect x="205" y="721" width="390" height="94" rx="9" fill="#fff4d9" stroke="#bd8730" stroke-width="1.7"/>
+<text x="221" y="750" font-size="17" font-weight="bold">Investigación de red</text>
+<text x="221" y="775" font-size="15">Prioridad por caso y deduplicación</text>
+<rect x="635" y="721" width="390" height="94" rx="9" fill="#fff4d9" stroke="#bd8730" stroke-width="1.7"/>
+<text x="651" y="750" font-size="17" font-weight="bold">Diagnóstico de cambio</text>
+<text x="651" y="775" font-size="15">Proveedor, población o modelo</text>
+<rect x="1065" y="721" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="1081" y="750" font-size="17" font-weight="bold">Registro de modelos</text>
+<text x="1081" y="775" font-size="15">Política congelada y replay</text>
+<rect x="205" y="891" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="221" y="920" font-size="17" font-weight="bold">Caso y ledger de pérdida</text>
+<text x="221" y="945" font-size="15">Atribución sin doble conteo</text>
+<rect x="635" y="891" width="390" height="94" rx="9" fill="#fff4d9" stroke="#bd8730" stroke-width="1.7"/>
+<text x="651" y="920" font-size="17" font-weight="bold">Sombra y aprobación</text>
+<text x="651" y="945" font-size="15">Métricas y responsables definidos</text>
+<rect x="1065" y="891" width="390" height="94" rx="9" fill="#eaf3fc" stroke="#3274a5" stroke-width="1.7"/>
+<text x="1081" y="920" font-size="17" font-weight="bold">Nueva versión o rollback</text>
+<text x="1081" y="945" font-size="15">Sin reentrenar con alerta = fraude</text>
+<text x="38" y="1072" font-size="16">Transversal: acceso mínimo · privacidad · auditoría · versiones · retención · responsables · rollback</text>
+<text x="38" y="1104" font-size="13">Portafolio · 23 octubre 2026 · Flechas: datos/decisiones propuestos · Véase ARCHITECTURES.md para alcance y fallos</text></g></svg>

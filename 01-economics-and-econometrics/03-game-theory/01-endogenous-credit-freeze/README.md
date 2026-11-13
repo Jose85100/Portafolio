@@ -62,3 +62,30 @@ Datos agregados pueden no identificar creencias privadas ni coordinación; hipó
 ## Ciclo 2026-10-13
 
 Prototipo ejecutable: [Bayesian Freeze Audit](bayesian-freeze-audit/). Enumera todos los perfiles puros del juego finito, reporta multiplicidad y compara con un único punto fijo de mejores respuestas.
+
+## Ciclo 2026-10-14
+
+[Mixed Freeze Audit](mixed-equilibrium-audit/) amplía el componente S2 a estrategias
+mixtas de comportamiento: 81 soportes, oráculo racional y rechazo explícito de
+soportes singulares factibles. No se eleva la madurez del juego global completo.
+
+## Ciclo 2026-10-15
+
+[Polyhedral Freeze Audit](polyhedral-freeze-audit/) representa también las regiones
+degeneradas mediante restricciones/vértices racionales y dimensión afín exacta.
+Distingue familias positivas de puntos aislados con soportes singulares; extensión
+S2 del mismo juego finito, no solver global ni validación empírica.
+
+## Ciclo 2026-10-16
+
+[Strategic Form Audit](strategic-form-audit/) exporta el juego finito a matrices
+ex ante racionales y contrasta equilibrios con Nashpy externo. Conserva fallos
+degenerados y muestra cómo el regret ex ante puede ocultar incentivos de tipos
+raros. Extensión S2 de auditoría; programa S2 parcial, sin ascenso a S3.
+
+## Ciclo 2026-10-17
+
+[Rational Family Audit](rational-family-audit/) ejecuta el parser NFG y solver racional
+Gambit, reconstruye familias mediante compatibilidad de estrategias y compara sus
+factores exactos con el baseline poliédrico. Conserva controles negativos de
+convexificación global y cobertura incompleta. Componente S2, programa S2 parcial.

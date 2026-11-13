@@ -1,0 +1,14 @@
+{
+  "gross": 100,
+  "recovery": 60,
+  "recovery_lag": 2,
+  "eir": 0.1,
+  "pd12": 0.05,
+  "future_pd_horizon": 5,
+  "cash_shortfall": 50.413223140495866,
+  "baseline_ecl": 10.21191964736598,
+  "certainty_but_extra_discount": 45.83020285499624,
+  "scenario_ecl": 47.10743801652893,
+  "tiny_rate_stable": 1.0000000000000001e-16,
+  "tiny_rate_subtractive": 0.0
+}

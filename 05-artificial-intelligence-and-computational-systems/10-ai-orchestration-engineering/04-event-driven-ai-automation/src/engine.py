@@ -3,6 +3,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 import re
 import sqlite3
+from uuid import uuid4
 from pathlib import Path
 
 _ID = re.compile(r"^[A-Za-z0-9_-]{1,40}$")
@@ -63,7 +64,7 @@ class Inbox:
         """Durably admit an event and attempt its local effect. Returns a status."""
         if not valid(event):
             self.invalid += 1
-            key = f"invalid-{self.invalid}"
+            key = f"invalid-{uuid4().hex}"
             self.db.execute("INSERT INTO dlq VALUES (?, ?)", (key, "invalid_schema"))
             return "invalid"
         row = self.db.execute(

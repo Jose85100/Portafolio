@@ -1,6 +1,8 @@
 # Refinanciación y covenants
 
-**Estado:** investigación diseñada; implementación pendiente. **No calibrado ni validado.**
+**Estado:** diseño con sensibilidad reproducible de tasa pública y términos hipotéticos. **No calibrado ni validado para emisor.**
+
+El companion [DSCR con tasa comercial observada](observed-banrep-dscr-sensitivity/README.md) muestra sensibilidad histórica para una deuda bullet interest-only hipotética. No aporta términos, breach, cura o resultados de una empresa.
 
 ## Pregunta y alcance
 Probabilidad de breach por estructura de deuda y tasas. ¿En qué condiciones se materializa el riesgo y qué acciones de mitigación generan valor ajustado por riesgo?
@@ -26,3 +28,7 @@ Stress de spreads, rollover y vencimientos. Separación temporal de entrenamient
 
 ## Productos esperados
 Metodología, código, pruebas, escenarios, reporte de validación y dashboard de decisiones.
+
+## Evidence gap
+
+The BanRep loan-rate companion is aggregate market context; issuer debt schedules, signed covenant terms, breach/cure and refinancing outcomes remain unavailable. See [DATA_GAP.md](DATA_GAP.md).

@@ -1,0 +1,19 @@
+{
+  "dataset": "dane-ipc-monthly.csv",
+  "dataset_sha256": "9dd8621dc3f979ea39d1728d1f35d682ea08746d089deea82d2db92cc00016bd",
+  "bytes": 4091,
+  "rows": 286,
+  "grain": "total nacional, un índice mensual; base diciembre 2018 = 100",
+  "source": "DANE, IPC Índices, serie de empalme 2003–2026 (octubre 2026)",
+  "publication_date": "2026-11-09",
+  "source_url": "https://www.dane.gov.co/files/operaciones/IPC/oct2026/anex-IPC-Indices-oct2026.xlsx",
+  "source_xlsx_sha256": "4e8366bf2d03d4bdc15d14b1b21b12a6eec6c3695926abd503a430858ef74e2e",
+  "transformation": "Extracted rows Enero–Diciembre and year columns from the DANE IndicesIPC sheet; no imputation or rescaling.",
+  "checks": {
+    "columnas_esperadas": true,
+    "meses_unicos": true,
+    "continuidad_mensual": true,
+    "valores_completos_y_positivos": true,
+    "rango_publicado_2003_2026_10": true
+  }
+}

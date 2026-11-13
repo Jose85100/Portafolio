@@ -20,7 +20,7 @@ flowchart LR
 - `loan_id`: nonempty string; `as_of_date`: ISO-8601 date; together form the immutable business key.
 - `principal`: nonnegative finite decimal, two places; `days_past_due`: nonnegative integer.
 - `status`: active, closed, default. Closed implies zero principal.
-- `schema_version`: 1.0. Unknown columns and invalid values fail the batch.
+- `schema_version`: 1.1 (the manifest contract version). Unknown columns and invalid values fail the batch.
 - Repeated same-key records in one source must be identical. Later batches can update the same key.
 - Historic snapshots are **not** summed to calculate a point-in-time outstanding balance; manifest sum is a sum across all stored snapshots, not a portfolio exposure metric.
 

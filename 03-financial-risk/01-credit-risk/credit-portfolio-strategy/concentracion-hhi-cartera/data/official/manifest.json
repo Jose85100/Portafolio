@@ -1,0 +1,45 @@
+{
+  "source_provider": "Superintendencia Financiera de Colombia",
+  "source_page": "https://www.datos.gov.co/Hacienda-y-Cr-dito-P-blico/Distribuci-n-de-cartera-por-producto/rvii-eis8",
+  "source_api": "https://www.datos.gov.co/resource/rvii-eis8.json",
+  "dataset_id": "rvii-eis8",
+  "extraction_filter": "fecha_corte >= 2024-01-01 AND desc_renglon LIKE '%TOTAL%'",
+  "selected_fields": [
+    "_1_saldo_de_la_cartera_a",
+    "codigo_entidad",
+    "desc_renglon",
+    "descrip_uc",
+    "fecha_corte",
+    "nombreentidad",
+    "renglon",
+    "tipo_entidad",
+    "unicap"
+  ],
+  "data_last_updated": "2026-10-23",
+  "latest_source_cut": "2026-08-31",
+  "extraction_cut": "2026-11-10",
+  "period_start": "2024-01-31",
+  "period_end": "2026-08-31",
+  "raw_rows": 9288,
+  "cuts": 32,
+  "institution_product_cut_rows": 9288,
+  "quality": {
+    "invalid_dates": 0,
+    "nonnumeric_balances": 0,
+    "negative_balances": 0,
+    "non_total_rows": 0,
+    "duplicate_key_rows": 0
+  },
+  "raw_sha256": "04462be2a93dc63d8e22ff9d3f55a423f980bc24e7087fc2a253544e271ecfd7",
+  "raw_bytes": 2514393,
+  "processed_sha256": "8feeabbe14dd786eb9e89b7ca35e187591a70aa226d5ea890233ed4d900892e3",
+  "processed_rows": 576,
+  "metric": "HHI=10,000*sum(entity balance share squared), within product and cut",
+  "institution_key": "tipo_entidad:codigo_entidad",
+  "limitations": [
+    "HHI covers lender concentration, not borrower or sector concentration",
+    "public product balances are not account-level exposures or internal obligor limits",
+    "source totals can contain repeated category spellings; product code UNICAP is used as the grouping key",
+    "does not estimate credit default risk, expected loss, systemic contagion or regulatory concentration limits"
+  ]
+}

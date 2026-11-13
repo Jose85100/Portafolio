@@ -1,0 +1,80 @@
+{
+  "target": 0.85,
+  "plans": [
+    {
+      "plan": "A",
+      "cost": 2,
+      "box_lower01nov": 0.8056,
+      "supplied_floor": 0.0,
+      "new_lower": 0.8056,
+      "lp_lower": 0.8056,
+      "required_floor": 0.5714285714285712,
+      "feasible_target": false
+    },
+    {
+      "plan": "B",
+      "cost": 3,
+      "box_lower01nov": 0.8476,
+      "supplied_floor": 0.65,
+      "new_lower": 0.8665,
+      "lp_lower": 0.8664999999999999,
+      "required_floor": 0.5714285714285712,
+      "feasible_target": true
+    },
+    {
+      "plan": "C",
+      "cost": 4,
+      "box_lower01nov": 0.8896,
+      "supplied_floor": 0.0,
+      "new_lower": 0.8896000000000001,
+      "lp_lower": 0.8896,
+      "required_floor": 0.0,
+      "feasible_target": true
+    }
+  ],
+  "focus_plan": "B",
+  "decision_ablations": [
+    {
+      "scenario": "none",
+      "target": 0.85,
+      "selected": "C"
+    },
+    {
+      "scenario": "configured_hypothetical",
+      "target": 0.85,
+      "selected": "B"
+    },
+    {
+      "scenario": "same_floor_all_plans",
+      "target": 0.85,
+      "selected": "A"
+    },
+    {
+      "scenario": "redundant_focus_floor",
+      "target": 0.85,
+      "selected": "C"
+    },
+    {
+      "scenario": "higher_target",
+      "target": 0.97,
+      "selected": "infeasible"
+    }
+  ],
+  "selected_box": "C",
+  "selected_supplied_constraints": "B",
+  "oracle_cases": 153,
+  "max_error": 1.1102230246251565e-16,
+  "timing_n100_median_seconds": {
+    "closed_lower": 0.00018519099990044197,
+    "lp8_lower": 0.2307129470000291
+  },
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "seed": null,
+  "memory_scope": "tracemalloc Python allocations; not native HiGHS or RSS",
+  "source": "hypothetical pair-assurance scenario, no observed attendance or approved empirical floor",
+  "evidence_status": "No floor is statistically estimated; B=.65 is a scenario only. Threshold required is a research/data requirement, not evidence obtained."
+}

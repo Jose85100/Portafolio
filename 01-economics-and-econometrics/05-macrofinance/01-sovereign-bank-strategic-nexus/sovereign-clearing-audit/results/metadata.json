@@ -1,0 +1,20 @@
+{
+  "seed": 20261018,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "cpu": "x86_64",
+  "numpy": "2.3.5",
+  "tolerance_l1": 1e-08,
+  "source_base": "e25c2ac",
+  "weekly_notebook_sha256": "a0386aff2a0402b6ce89490dc9752ff6543161d48f9f6c7b5b446b65601edc4c",
+  "memory": "tracemalloc Python allocation peak; excludes native RSS/HiGHS",
+  "numerical_enclosure": "Floating brackets, not directed-rounding interval proof",
+  "hashes": {
+    "weekly_regression.csv": "53f845d2e4ec98ea5ebb1df6b75fc2cc7dc9bf3f110201abc5a1d31189cc8905",
+    "near_closed.csv": "f70d6080588ed1d228f7fc53bff0165794d44095ea75d377126dd8e18f50d0d4",
+    "stress.csv": "a49a0e14d36da3ad3bb84a3605a1e909021bf4c5972e3722bc36d8a7ce373405",
+    "oracles.csv": "a1661f860ab8f6dc3dc30885fadda0382be8f066c66f5f08ae1541fba3d1211e",
+    "timing.csv": "b3658c3abeeeaab1bfc013787f9aa8d9dfd97d1944f651378baf245c60c4ca71",
+    "payments.csv": "f4d6360ec2c79a73c42aedd92c43097bfd821c19db83db5afec075167e35796c"
+  }
+}
