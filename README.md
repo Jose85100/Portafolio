@@ -2,6 +2,17 @@
 
 Proyectos de riesgo de crédito, modelado cuantitativo, portafolios, estrategia y ciencia de datos aplicada a finanzas y economía. El repositorio combina **notebooks extensos con pruebas automáticas**, **motores de decisión en Python** y una **plataforma de riesgo en C++**.
 
+## Por dónde empezar
+
+Los trabajos principales para cada perfil profesional. El catálogo completo está más abajo.
+
+| Perfil | Trabajos principales |
+|---|---|
+| **Riesgo de crédito y dirección de riesgo** | [Backtesting de onboarding y mora temprana en tarjeta](03-financial-risk/01-credit-risk/credit-vintage-snapshot-lab) · [IFRS 9 con evidencia pública](03-financial-risk/01-credit-risk/credit-risk-products/ifrs9-investigacion-cuantitativa) ([brief](output/pdf/ifrs9-ecl-executive-brief.pdf)) · [Scorecard logístico WoE/IV](03-financial-risk/01-credit-risk/credit-risk-products/scorecard-logistico-woe) · [Monitor de límites de apetito](03-financial-risk/01-credit-risk/credit-portfolio-strategy/monitor-de-limites-de-apetito) · [Plataforma de datos de riesgo](05-artificial-intelligence-and-computational-systems/data-engineering/risk-data-platform) ([brief](output/pdf/risk-data-platform-executive-brief.pdf)) |
+| **Estrategia, capital y finanzas** | [Venture capital: cap table, cohortes LTV/CAC, fondo, DCF](06-strategy-innovation-and-leadership/venture-capital) · [Capital, liquidez y fondeo (CFO)](06-strategy-innovation-and-leadership/18-cfo-capital-liquidity-and-funding) · [Asignación de cartera por RAROC](03-financial-risk/01-credit-risk/credit-portfolio-strategy/asignacion-de-capital-raroc) · [Opciones reales para asignar capital](06-strategy-innovation-and-leadership/01-capital-allocation-real-options) · [Construcción de portafolio venture](06-strategy-innovation-and-leadership/03-venture-portfolio-construction) |
+| **Quant, riesgo de modelos y validación** | [VaR y Expected Shortfall con tres métodos](03-financial-risk/02-market-and-model-risk/var-es-tres-metodos) ([brief](output/pdf/var-es-official-application-brief.pdf)) · [Backtesting Kupiec y Christoffersen](03-financial-risk/02-market-and-model-risk/backtesting-var-kupiec-christoffersen) · [Validación de modelo: Gini, calibración, PSI](03-financial-risk/02-market-and-model-risk/validacion-de-modelo-psi-gini) · [Pérdidas con cópula gaussiana](03-financial-risk/01-credit-risk/credit-portfolio-strategy/copula-gaussiana-perdidas) · [Plataforma de riesgo en C++17](04-quant-strategy-and-products/risk-engines) |
+| **Investigación académica** | [Econometría: DiD, IV, RDD, panel, cuantílica](01-economics-and-econometrics/04-econometrics) · [Nowcasting causal en tiempo real](01-economics-and-econometrics/04-econometrics/01-real-time-causal-nowcasting) · [Elasticidad de demanda de crédito con contraejemplo IV](01-economics-and-econometrics/02-microeconomics/03-consumer-credit-demand-elasticity) · [Congelamiento endógeno del crédito](01-economics-and-econometrics/03-game-theory/01-endogenous-credit-freeze) |
+
 ## Arquitectura de investigación
 
 La organización parte de la pregunta científica y el dominio, no de la herramienta. Consulta el [mapa de investigación y migración](RESEARCH_ARCHITECTURE.md) y la [matriz de madurez](PROJECT_MATURITY.md): un README o una propuesta no se presenta como producto terminado.
@@ -81,7 +92,7 @@ La [revisión del 12–17 de octubre de 2026](reviews/2026-10-12-week/README.md)
 
 ## Formatos de trabajo
 
-- **Notebooks (128; inventario al 23 de octubre de 2026)** — archivos `.ipynb` para derivaciones, diagnósticos, sensibilidad y reproducibilidad. Su base de evidencia varía por proyecto: incluye conjuntos públicos observados, datos controlados para verificar propiedades matemáticas y experimentos de método. Cada conclusión debe leerse junto a la fuente y los límites declarados en su README; las cifras empíricas se calculan desde los datos y no se atribuyen a una cartera real cuando el ejercicio no la observa.
+- **Notebooks (232; inventario al 12 de noviembre de 2026)** — archivos `.ipynb` para derivaciones, diagnósticos, sensibilidad y reproducibilidad. Su base de evidencia varía por proyecto: incluye conjuntos públicos observados, datos controlados para verificar propiedades matemáticas y experimentos de método. Cada conclusión debe leerse junto a la fuente y los límites declarados en su README; las cifras empíricas se calculan desde los datos y no se atribuyen a una cartera real cuando el ejercicio no la observa.
 - **`main.py` (40)** — la versión corta y ejecutable de cada notebook.
 - **Motores de decisión (15)** — proyectos 01–15 de la carpeta 06, cada uno con `src/`, `tests/` y `docs/`.
 - **Plataforma C++17** — simulación de pérdidas de crédito, riesgo de mercado y flujos de liquidez, con CMake y pruebas.
@@ -94,7 +105,7 @@ pip install -r requirements.txt
 # Para notebooks (incluye el entorno de investigación)
 pip install -r requirements-research.txt
 
-# Notebooks: ejecuta los 115 de principio a fin (puede tardar varias horas)
+# Notebooks: ejecuta todos de principio a fin (puede tardar varias horas)
 python3 -m unittest tests.test_notebooks -v
 
 # Un solo notebook
