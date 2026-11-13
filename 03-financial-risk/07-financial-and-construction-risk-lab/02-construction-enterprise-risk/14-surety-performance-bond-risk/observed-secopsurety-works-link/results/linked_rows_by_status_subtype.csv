@@ -1,0 +1,17 @@
+status,guarantee_subtype,matched_source_rows
+Pendiente,No Definido,1872
+Aceptada,No Definido,1621
+Expirada,No Definido,590
+Rechazada,No Definido,298
+Borrador Listo,No Definido,56
+Borrador,No Definido,40
+Aceptada,Garantia Bancaria,36
+Pendiente,Garantia Bancaria,29
+Archivada,No Definido,10
+Pendiente,Carta de Credito,9
+Rechazada,Carta de Credito,7
+Borrador Listo,Garantia Bancaria,5
+Cancelada,No Definido,5
+Expirada,Carta de Credito,4
+Aceptada,Carta de Credito,1
+Expirada,Garantia Bancaria,1

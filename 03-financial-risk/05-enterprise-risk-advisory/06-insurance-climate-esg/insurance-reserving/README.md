@@ -1,7 +1,7 @@
 # Pricing y reservas actuariales
 
 **Línea de servicio:** Seguros, clima y conducta  
-**Madurez:** especificación de investigación y consultoría; no software ni validación ejecutada.
+**Madurez:** especificación de investigación y aplicación retrospectiva acotada; no validación institucional.
 
 ## 1. Mandato, alcance y decisión
 
@@ -69,3 +69,10 @@ Paquetes futuros: `src/` (estimación/simulación), `tests/` (unitarios e invari
 **Gate A:** problema y métricas aprobados; **B:** datos auditables; **C:** baseline reproducible; **D:** modelo avanzado con pruebas; **E:** validación independiente y stress; **F:** decisión ejecutiva con evidencia y dueño. No promover de gate por documentación solamente.
 
 **Fases:** descubrimiento → baseline → modelado → stress/validación → piloto controlado → transferencia y monitoreo. Registrar versionado, reproducibilidad y resultados negativos.
+
+
+## Aplicación histórica: pagos y reservas hasta edad 10
+
+[Notebook chain ladder con datos CAS/NAIC](aplicacion-cas-chainladder.ipynb). Datos del grupo State Farm para años de accidente 1998–2007, compilados para CAS por S&P Global Market Intelligence a partir de NAIC Schedule P. Ajusta factores usando el corte de 2007 y contrasta las cohortes incompletas con pagos observados posteriormente; incluye una referencia de cero desarrollo, WAPE por agregado y comprobación de filtración futura. El caso tiene WAPE 2,50 % para nueve cohortes hasta edad 10; no incorpora cola ni valida reservas vigentes.
+
+Para reproducir desde la raíz: `python3 -m jupyter nbconvert --to notebook --execute --stdout 03-financial-risk/05-enterprise-risk-advisory/06-insurance-climate-esg/insurance-reserving/aplicacion-cas-chainladder.ipynb > /tmp/cas-reserving-ejecutado.ipynb`. Requiere pandas, NumPy, matplotlib, Jupyter, curl y conexión inicial a CAS. El CSV externo no se redistribuye aquí: el código lo descarga y exige el SHA-256 `6e838f1e44c67218133ef1c8e28ca2b34b9f21ba4ee94de408c412638f798d96`. La publicación [CAS y metodología](https://www.casact.org/publications-research/research/research-resources/loss-reserving-data-pulled-naic-schedule-p) requiere acreditar CAS y S&P.

@@ -44,3 +44,14 @@ D1 diagnóstico; D2 metodología; D3 código y pruebas; D4 validación independi
 ## 7. Restricciones y gobierno
 
 Los datos sintéticos validan cálculos, no desempeño real. Verificar regulación por jurisdicción y tipo de entidad; no confundir capital económico, regulatorio y contable. Seguir [arquitectura transversal](../../00-architecture/README.md).
+
+
+## Aplicación con datos públicos
+
+[Precipitación anual: señal climática para evaluar exposición](aplicacion_observada.ipynb). NASA POWER es una estimación meteorológica en puntos de referencia, no estación de una finca. No hay exposición georreferenciada ni default; esto no estima PD, pérdida crediticia, inundaciones ni causalidad.
+
+Ejecutar desde esta carpeta: `python -m jupyter nbconvert --execute --to notebook --inplace aplicacion_observada.ipynb`. Requiere Python con pandas, matplotlib, Jupyter y nbclient; los archivos de entrada están en el repositorio.
+
+### Variante y literatura incorporadas
+
+El notebook compara 2025 con la mediana 2001–2020 y calcula la distribución empírica de los 20 años de referencia por ciudad. No estima pérdidas, probabilidades de inundación ni periodos de retorno. Referencias: [NIST, distribución empírica](https://www.itl.nist.gov/div898/software/dataplot/refman1/auxillar/ecdfplot.htm), [NASA POWER, metodología](https://power.larc.nasa.gov/docs/methodology/) e [IPCC AR6](https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-1/).

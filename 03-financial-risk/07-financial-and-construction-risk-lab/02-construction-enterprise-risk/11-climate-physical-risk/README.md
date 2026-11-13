@@ -2,6 +2,10 @@
 
 **Maturity:** research specification, not a calibrated implementation.
 
+## Public observed context
+
+The [UNGRD 2025 event-register companion](../10-climate-flood-and-physical-risk/UNGRD_2025_COMPANION.md) summarizes reported hydro-geological event rows. Its geolocation and event-key limitations prevent it from estimating hazard frequency, site exposure or project loss; it is useful only to inspect reporting coverage and define requirements for a future location-linked assessment.
+
 ## Research question
 Flood, extreme rainfall, heat and business interruption scenarios. Determine when this model materially improves risk decisions relative to transparent baselines.
 

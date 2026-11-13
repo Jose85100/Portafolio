@@ -1,0 +1,14 @@
+{
+  "synthetic": true,
+  "description": "Illustrative two-price pilot; abstract contribution units per customer opportunity, not currency or observed commerce",
+  "prior": {"arm_a": {"alpha": 11, "beta": 9, "margin": 10}, "arm_b": {"alpha": 9, "beta": 11, "margin": 12}},
+  "n_per_arm": 10,
+  "horizon_periods": 100,
+  "delay_periods": [0, 2, 5, 10, 15, 20, 30, 50, 100],
+  "pilot_cost": 2,
+  "prior_concentration_multipliers": [0.25, 0.5, 1, 2, 4, 10],
+  "monte_carlo_replications": 20000,
+  "seed": 20261110,
+  "decision_rule": "pilot only when delayed expected value > immediate expected value; tie favors immediate",
+  "units": "abstract contribution units per customer opportunity times horizon; no empirical data"
+}

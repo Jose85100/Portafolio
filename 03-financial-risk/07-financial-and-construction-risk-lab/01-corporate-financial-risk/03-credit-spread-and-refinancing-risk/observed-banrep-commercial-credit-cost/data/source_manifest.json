@@ -1,0 +1,26 @@
+{
+  "publisher": "Banco de la República de Colombia (Suameca)",
+  "series_id": 15129,
+  "series_name": "Créditos Comerciales (Preferencial o Corporativo), Tasa de interés",
+  "frequency": "monthly",
+  "unit": "effective annual rate, percent",
+  "source_url": "https://suameca.banrep.gov.co/buscador-de-series/rest/buscadorSeriesRestService/consultaDatosSeries",
+  "query_parameters": {
+    "series": [
+      {
+        "idSerie": 15129,
+        "idPeriodicidades": [
+          22
+        ]
+      }
+    ],
+    "fechaInicio": 20020531,
+    "fechaFin": 20260930
+  },
+  "retrieved_utc": "2026-11-11T18:32:28.939162+00:00",
+  "source_response_sha256": "fa98c0e5542d13d220609f26d1f59661a166d06b5f524aafc3a021a04a59778e",
+  "snapshot_csv_sha256": "b56f377c08c43df8aa03a255c9ee1c3376d0fe36ae6cbf6a1638b2986876449d",
+  "observations": 293,
+  "first_period": "2002-05",
+  "last_period": "2026-09"
+}

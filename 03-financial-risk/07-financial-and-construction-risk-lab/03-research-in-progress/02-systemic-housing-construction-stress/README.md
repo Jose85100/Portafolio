@@ -20,3 +20,9 @@ Dependencias no lineales, escenarios severos plausibles y sensibilidad. Evaluar 
 
 ## Entregables previstos
 Dataset versionado, diccionario de variables, metodología reproducible, motor Python, tests unitarios, validación out-of-time, escenarios y reporte ejecutivo con límites.
+
+## Contexto público observado (no es validación)
+
+Los [precios DANE IPVN](../../02-construction-enterprise-risk/13-real-estate-price-demand-regimes/observed-dane-ipvn-price-regimes/README.md), el [stock CEED](../../02-construction-enterprise-risk/07-real-estate-inventory-and-pricing/observed-dane-ceed-unsold-completed-stock/README.md), los [flujos CEED](../../02-construction-enterprise-risk/07-real-estate-inventory-and-pricing/observed-dane-ceed-housing-supply-flow/README.md), los [costos ICOCED](../../02-construction-enterprise-risk/06-materials-inflation-and-supply-chain/README.md) y la [sensibilidad DTF](../../02-construction-enterprise-risk/05-project-finance-covenants/observed-dtf-covenant-sensitivity/README.md) ofrecen factores observados para escenarios macro-sectoriales. No están unidos a pérdidas, defaults ni exposición sistémica de proyectos.
+
+**Estado de madurez:** la propuesta continúa S1; el companion citado aporta contexto observable, pero no implementa ni valida el modelo descrito.

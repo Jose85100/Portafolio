@@ -1,0 +1,9 @@
+factor,hedge_ratio_pct,observations,position_assumption,unit,mean_cost_change,volatility_cost_change_sample_sd,p95_cost_change,worst_observed_adverse_cost_change,observed_max_cost_saving_change,scenario_assumptions
+fx_usd_liability,0.000000,162,1000000,COP millions / month,9.315000,131.353743,218.115500,524.950000,-311.170000,"perfect same-factor offset; zero transaction cost, basis risk, collateral and ineffectiveness"
+fx_usd_liability,50.000000,162,1000000,COP millions / month,4.657500,65.676872,109.057750,262.475000,-155.585000,"perfect same-factor offset; zero transaction cost, basis risk, collateral and ineffectiveness"
+fx_usd_liability,80.000000,162,1000000,COP millions / month,1.863000,26.270749,43.623100,104.990000,-62.234000,"perfect same-factor offset; zero transaction cost, basis risk, collateral and ineffectiveness"
+fx_usd_liability,100.000000,162,1000000,COP millions / month,0.000000,0.000000,0.000000,0.000000,0.000000,"perfect same-factor offset; zero transaction cost, basis risk, collateral and ineffectiveness"
+dtf_floating_interest,0.000000,163,100000000000,COP millions / year annualized,313.248452,2874.422891,6890.819352,10458.571424,-3757.096773,"perfect same-factor offset; zero transaction cost, basis risk, collateral and ineffectiveness"
+dtf_floating_interest,50.000000,163,100000000000,COP millions / year annualized,156.624226,1437.211446,3445.409676,5229.285712,-1878.548387,"perfect same-factor offset; zero transaction cost, basis risk, collateral and ineffectiveness"
+dtf_floating_interest,80.000000,163,100000000000,COP millions / year annualized,62.649690,574.884578,1378.163870,2091.714285,-751.419355,"perfect same-factor offset; zero transaction cost, basis risk, collateral and ineffectiveness"
+dtf_floating_interest,100.000000,163,100000000000,COP millions / year annualized,0.000000,0.000000,0.000000,0.000000,0.000000,"perfect same-factor offset; zero transaction cost, basis risk, collateral and ineffectiveness"

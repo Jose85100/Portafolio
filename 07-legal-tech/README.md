@@ -6,18 +6,18 @@ Línea de investigación para asistentes jurídicos con evidencia verificable. *
 
 | Proyecto | Pregunta |
 |---|---|
-| [RAG normativo temporal](projects/01-rag-normativo-temporal) | ¿Qué disposición era aplicable a una fecha y territorio determinados? |
-| [Jurisprudencia y precedente](projects/02-jurisprudencia-y-precedente) | ¿Qué decisiones apoyan o contradicen una tesis y por qué son comparables? |
-| [Validador de citas jurídicas](projects/03-validador-de-citas) | ¿Existe la referencia y respalda exactamente la afirmación? |
-| [RAG de expedientes privados](projects/04-rag-expedientes-privados) | ¿Qué hechos están documentados y qué evidencia falta en este expediente? |
-| [Revisión contractual con playbooks](projects/05-contratos-y-clausulas) | ¿Qué cláusulas difieren del playbook aprobado y cuál es su exposición? |
-| [Asistente de acceso a la justicia](projects/06-tutelas-y-peticiones) | ¿Cómo organizar hechos y soportes para un borrador revisable? |
-| [Radar de cumplimiento colombiano](projects/07-cumplimiento-regulatorio) | ¿Qué cambios normativos podrían afectar una obligación de la entidad? |
-| [Contratación pública y alertas documentales](projects/08-contratacion-publica) | ¿Qué inconsistencias entre pliego, adendas, oferta y contrato requieren revisión? |
-| [Laboral y seguridad social](projects/09-laboral-y-seguridad-social) | ¿Qué régimen y evidencia deben examinarse antes de responder? |
-| [Tributario nacional y territorial](projects/10-tributario-territorial) | ¿Qué fuente aplica al impuesto, periodo y municipio de la consulta? |
-| [Términos procesales asistidos](projects/11-terminos-y-actuaciones) | ¿Qué datos y reglas se requieren para construir un calendario revisable? |
-| [Clínica jurídica adversarial](projects/12-clinica-juridica-adversarial) | ¿Resiste la respuesta contraargumentos, excepciones y fuentes contradictorias? |
+| [RAG normativo temporal](01-rag-normativo-temporal) | ¿Qué disposición era aplicable a una fecha y territorio determinados? |
+| [Jurisprudencia y precedente](02-jurisprudencia-y-precedente) | ¿Qué decisiones apoyan o contradicen una tesis y por qué son comparables? |
+| [Validador de citas jurídicas](03-validador-de-citas) | ¿Existe la referencia y respalda exactamente la afirmación? |
+| [RAG de expedientes privados](04-rag-expedientes-privados) | ¿Qué hechos están documentados y qué evidencia falta en este expediente? |
+| [Revisión contractual con playbooks](05-contratos-y-clausulas) | ¿Qué cláusulas difieren del playbook aprobado y cuál es su exposición? |
+| [Asistente de acceso a la justicia](06-tutelas-y-peticiones) | ¿Cómo organizar hechos y soportes para un borrador revisable? |
+| [Radar de cumplimiento colombiano](07-cumplimiento-regulatorio) | ¿Qué cambios normativos podrían afectar una obligación de la entidad? |
+| [Contratación pública y alertas documentales](08-contratacion-publica) | ¿Qué inconsistencias entre pliego, adendas, oferta y contrato requieren revisión? |
+| [Laboral y seguridad social](09-laboral-y-seguridad-social) | ¿Qué régimen y evidencia deben examinarse antes de responder? |
+| [Tributario nacional y territorial](10-tributario-territorial) | ¿Qué fuente aplica al impuesto, periodo y municipio de la consulta? |
+| [Términos procesales asistidos](11-terminos-y-actuaciones) | ¿Qué datos y reglas se requieren para construir un calendario revisable? |
+| [Clínica jurídica adversarial](12-clinica-juridica-adversarial) | ¿Resiste la respuesta contraargumentos, excepciones y fuentes contradictorias? |
 
 ## Infraestructura compartida
 

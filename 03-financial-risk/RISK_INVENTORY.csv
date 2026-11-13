@@ -1,8 +1,8 @@
 readme,local_code_files,local_notebooks,category,first_heading
 01-credit-risk/README.md,0,0,documentation_or_parent_index,Riesgo de crédito
-01-credit-risk/architecture/README.md,0,0,documentation_or_parent_index,Arquitectura de referencia — riesgo de crédito
-01-credit-risk/contracts/README.md,0,0,documentation_or_parent_index,Contratos de intercambio
-01-credit-risk/cpp/README.md,0,0,documentation_or_parent_index,Integración C++
+01-credit-risk/credit-risk-platform/architecture/README.md,0,0,documentation_or_parent_index,Arquitectura de referencia — riesgo de crédito
+01-credit-risk/credit-risk-platform/contracts/README.md,0,0,documentation_or_parent_index,Contratos de intercambio
+01-credit-risk/credit-risk-platform/cpp/README.md,0,0,documentation_or_parent_index,Integración C++
 01-credit-risk/credit-portfolio-strategy/README.md,0,0,documentation_or_parent_index,Riesgo de crédito: estrategia y portafolio
 01-credit-risk/credit-portfolio-strategy/asignacion-de-capital-raroc/README.md,3,0,has_local_experiment_or_code,Asignación de cartera por RAROC
 01-credit-risk/credit-portfolio-strategy/concentracion-hhi-cartera/README.md,2,0,has_local_experiment_or_code,Concentración de cartera con HHI
@@ -17,8 +17,8 @@ readme,local_code_files,local_notebooks,category,first_heading
 01-credit-risk/credit-risk-products/perdida-esperada-pd-lgd-ead/README.md,2,0,has_local_experiment_or_code,"Pérdida esperada por producto (PD, LGD, EAD)"
 01-credit-risk/credit-risk-products/scorecard-logistico-woe/README.md,2,0,has_local_experiment_or_code,Scorecard logístico con WoE e IV
 01-credit-risk/credit-risk-products/segmentacion-clientes-kmeans/README.md,2,0,has_local_experiment_or_code,Segmentación de clientes con k-means
-01-credit-risk/database/README.md,0,0,documentation_or_parent_index,Modelo de datos y controles
-01-credit-risk/notebooks/README.md,0,0,documentation_or_parent_index,Notebooks reproducibles
+01-credit-risk/credit-risk-platform/database/README.md,0,0,documentation_or_parent_index,Modelo de datos y controles
+01-credit-risk/credit-risk-platform/notebooks/README.md,0,0,documentation_or_parent_index,Notebooks reproducibles
 02-market-and-model-risk/README.md,0,0,documentation_or_parent_index,Riesgo financiero y riesgo de modelos
 02-market-and-model-risk/backtesting-var-kupiec-christoffersen/README.md,2,0,has_local_experiment_or_code,Backtesting de VaR: Kupiec y Christoffersen
 02-market-and-model-risk/garch-volatilidad-y-var/README.md,2,0,has_local_experiment_or_code,Volatilidad GARCH y VaR condicional

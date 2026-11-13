@@ -1,0 +1,12 @@
+{
+  "intact_snapshot_verified": true,
+  "single_byte_stream_change_detected": true,
+  "structural_checks": {
+    "columnas_esperadas": true,
+    "meses_unicos": true,
+    "continuidad_mensual": true,
+    "valores_completos_y_positivos": true,
+    "rango_publicado_2003_2026_09": true
+  },
+  "status": "PASS"
+}

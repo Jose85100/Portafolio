@@ -1,0 +1,51 @@
+{
+  "domain": "Bogotá_Cundinamarca AR",
+  "source_sheet": "Anexo 7.2",
+  "summary": [
+    {
+      "input": "Acero corrugado",
+      "weight_pct_2021_base": 7.878,
+      "n_months": 57,
+      "first_period": "2022-01",
+      "last_period": "2026-09",
+      "first_index": 99.405,
+      "latest_index": 95.12,
+      "index_change_since_first_pct": -4.3106483577284855,
+      "monthly_change_mean_pct": -0.06233333333333332,
+      "monthly_change_std_pct": 2.3097605189200685,
+      "monthly_change_p95_pct": 3.6535999999999946,
+      "largest_monthly_increase_pct": 12.041,
+      "largest_monthly_decrease_pct": -3.396
+    },
+    {
+      "input": "Cemento",
+      "weight_pct_2021_base": 7.357,
+      "n_months": 57,
+      "first_period": "2022-01",
+      "last_period": "2026-09",
+      "first_index": 103.51,
+      "latest_index": 131.27,
+      "index_change_since_first_pct": 26.818664863298224,
+      "monthly_change_mean_pct": 0.5012105263157896,
+      "monthly_change_std_pct": 2.2015267732777284,
+      "monthly_change_p95_pct": 5.456399999999997,
+      "largest_monthly_increase_pct": 8.75,
+      "largest_monthly_decrease_pct": -2.394
+    },
+    {
+      "input": "Concreto común",
+      "weight_pct_2021_base": 10.112,
+      "n_months": 57,
+      "first_period": "2022-01",
+      "last_period": "2026-09",
+      "first_index": 100.733,
+      "latest_index": 133.07,
+      "index_change_since_first_pct": 32.101694578737835,
+      "monthly_change_mean_pct": 0.5276842105263159,
+      "monthly_change_std_pct": 2.345714901367223,
+      "monthly_change_p95_pct": 2.5779999999999976,
+      "largest_monthly_increase_pct": 15.37,
+      "largest_monthly_decrease_pct": -4.34
+    }
+  ]
+}

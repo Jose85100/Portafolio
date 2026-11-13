@@ -69,3 +69,16 @@ Paquetes futuros: `src/` (estimación/simulación), `tests/` (unitarios e invari
 **Gate A:** problema y métricas aprobados; **B:** datos auditables; **C:** baseline reproducible; **D:** modelo avanzado con pruebas; **E:** validación independiente y stress; **F:** decisión ejecutiva con evidencia y dueño. No promover de gate por documentación solamente.
 
 **Fases:** descubrimiento → baseline → modelado → stress/validación → piloto controlado → transferencia y monitoreo. Registrar versionado, reproducibilidad y resultados negativos.
+
+
+## Aplicación con datos observados y supuestos
+
+[Notebook reproducible](aplicacion-datos-observados.ipynb). Usa datos públicos y documenta los supuestos y límites; no acredita validación institucional. Requiere Python, pandas, matplotlib, Jupyter y un clon del repositorio.
+
+
+**Robustez del notebook:** Añade controles de cuantiles, cobertura y recuentos de entidades bajo la referencia; el corte final es 2022.
+
+
+## Literatura y variantes aplicadas
+
+El notebook presenta la proporción transversal de entidades observadas por debajo de la referencia. Referencia comparativa: [BCBS, LCR (2013)](https://www.bis.org/publications/201301-standards-basel-iii-liquidity-coverage-ratio-and-liquidity-risk-monitoring-tools). El IRL colombiano no se identifica automáticamente con LCR y la muestra termina en 2022.

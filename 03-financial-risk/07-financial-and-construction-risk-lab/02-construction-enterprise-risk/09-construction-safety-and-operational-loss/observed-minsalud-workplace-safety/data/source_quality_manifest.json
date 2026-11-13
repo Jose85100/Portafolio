@@ -1,0 +1,30 @@
+{
+  "provider": "Ministerio de Salud y Protección Social de Colombia",
+  "dataset": "Indicadores del Sistema General de Riesgos Laborales por actividad económica y departamento",
+  "source_page": "https://minsalud.gov.co/Proteccion-Social/RiesgosLaborales/Paginas/indicadores.aspx",
+  "source_file": "estadisticas-sgrl-actividad-economica-depto.zip",
+  "source_url": "https://minsalud.gov.co/sites/rid/Lists/BibliotecaDigital/RIDE/VP/RBC/estadisticas-sgrl-actividad-economica-depto.zip",
+  "source_workbook": "Trimestre 3_2026_Corte Septiembre_SECTOR ECONOMICO.xlsx",
+  "sheet": "Din Sector Económico",
+  "reporting_period": "2026-Q3 (July–September)",
+  "downloaded_at": "2026-11-11",
+  "source_bytes": 76028192,
+  "source_sha256": "6c1e6a6c5a8ba7b396ad5249bd224f179f4c367d946b9fcb95f912d25cd13a39",
+  "sectors": 21,
+  "license_or_reuse_terms": "Not explicitly stated on the cited Minsalud publication page; verify before redistribution beyond this attributed aggregate companion.",
+  "source_note": "The workbook states monthly counts are not cumulative; this cut aggregates the three reporting months. Exposure denominator is the sum of dependent, independent and student affiliations over the same period.",
+  "qa": {
+    "source_sector_totals_reconcile": true,
+    "construction_affiliations_over_period": 3772481,
+    "construction_work_accidents_occurred": 14666,
+    "construction_accidents_per_10000_affiliation_months": 38.876273,
+    "construction_deaths_reported_qualified_work_accident": 22
+  },
+  "limitations": [
+    "This is an aggregate sectoral benchmark for the insured population, not a project- or contractor-level loss measure.",
+    "Affiliations are used as exposure-months, not unique workers; the rate is not annualized.",
+    "Reported accidents and fatalities are not project incident outcomes and cannot be linked to SECOP contracts.",
+    "Only the 2026-Q3 workbook is captured; it is insufficient for trend inference or forecasting.",
+    "Reporting, classification and coverage exclude workers outside the insured system; no causal attribution is made."
+  ]
+}

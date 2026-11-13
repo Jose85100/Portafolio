@@ -1,0 +1,5 @@
+from_state,to_state,count,row_probability
+negative,negative,13,0.52
+negative,nonnegative,12,0.48
+nonnegative,negative,12,0.05429864253393665
+nonnegative,nonnegative,209,0.9457013574660633

@@ -1,0 +1,9 @@
+quarter,housing_type,source_vintage_units,published_bulletin_units,difference_source_minus_bulletin
+2024-1,VIS,519,519,0
+2024-1,No_VIS,1951,1951,0
+2024-2,VIS,678,679,-1
+2024-2,No_VIS,1970,1955,15
+2024-3,VIS,713,713,0
+2024-3,No_VIS,2129,2121,8
+2024-4,VIS,733,733,0
+2024-4,No_VIS,1859,1859,0

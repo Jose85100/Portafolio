@@ -1,0 +1,18 @@
+{
+  "source": "DANE, Indicador de Seguimiento a la Economía (ISE), Cuadro 1, serie original, tasas de crecimiento anuales",
+  "source_page": "https://www.dane.gov.co/index.php/estadisticas-por-tema/cuentas-nacionales/indicador-de-seguimiento-a-la-economia-ise",
+  "drive_file_id": "1y85mYZ4aPD4IorJx53M8XR69JM1GrzRn",
+  "atlas_manifest_vintage": "2026-10-08",
+  "source_snapshot_modified": "2026-10-08T17:13:03.954Z",
+  "source_file": "dane_ise_jul2026.xlsx",
+  "source_path_policy": "Ruta de entrada --ise-source; la ruta local no se persiste",
+  "source_bytes": 487882,
+  "source_sha256": "4e333c97b6558eb7e1b82d17fb8a0aa966f9113c87f099fa000f2390a3d7a199",
+  "workbook_sheet": "Cuadro 1",
+  "workbook_row": "Indicador de Seguimiento a la Economía, fila de tasas de crecimiento anuales",
+  "source_grain": "Colombia × mes",
+  "source_period": "2006-01 to 2026-07; ending observation is 2026pr",
+  "observation_unit": "percent year over year",
+  "derived_state_rule": "negative if ISE annual growth < 0%; nonnegative otherwise",
+  "n_observations": 247
+}

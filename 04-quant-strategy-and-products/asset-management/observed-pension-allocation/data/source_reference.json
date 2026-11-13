@@ -1,0 +1,23 @@
+{
+  "source_name": "SFC, Formato 351: composición del portafolio de inversiones (Pensiones Obligatorias y Cesantías), consulta agregada del portal Datos Abiertos",
+  "dataset_id": "ur2p-h4yf",
+  "dataset_url": "https://www.datos.gov.co/Hacienda-y-Cr-dito-P-blico/Formato-351-Composici-n-del-portafolio-de-inversio/ur2p-h4yf",
+  "sfc_reference_page": "https://www.superfinanciera.gov.co/publicaciones/10114986/portafolio-de-inversion-detallado-2023/",
+  "canonical_file_path": "/Users/admin/Desktop/Datos Riesgo Colombia/01_fuentes/Datos datos.gov.co/raw/sfc_pensiones_portafolio_mensual.csv",
+  "canonical_metadata_path": "/Users/admin/Desktop/Datos Riesgo Colombia/01_fuentes/Datos datos.gov.co/raw/sfc_pensiones_portafolio_mensual.metadata.json",
+  "file_role": "external query snapshot grouped by fecha_de_corte × nombre_patrimonio × descripcion_clase_inversion; not the unaggregated source dataset",
+  "downloaded_utc": "2026-10-11T15:45:49+00:00",
+  "query_window_start": "2023-01-01",
+  "rows": 26155,
+  "distinct_cut_dates": 43,
+  "latest_observation": "2026-07-31",
+  "sha256": "5fda31810a38e6b5387127f48517c779618ff5869b69e93eaeda13b680245eb7",
+  "bytes": 4992017,
+  "query": {
+    "$select": "fecha_de_corte,nombre_patrimonio,descripcion_clase_inversion,sum(valor_mercado_o_pres_pesos) as valor_mercado,sum(d_as_al_v_to*valor_mercado_o_pres_pesos) as dias_venc_por_valor,count(*) as titulos",
+    "$group": "fecha_de_corte,nombre_patrimonio,descripcion_clase_inversion",
+    "ventana": "fecha_de_corte",
+    "desde": "2023-01-01"
+  },
+  "raw_copy_in_product": false
+}

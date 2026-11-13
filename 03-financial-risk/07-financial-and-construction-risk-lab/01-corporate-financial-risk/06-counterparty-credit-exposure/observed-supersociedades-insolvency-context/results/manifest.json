@@ -1,0 +1,10 @@
+{
+  "source_sha256": "b82a38af56481e11a7dc8d604f4dbebcbf6991bc9207fdd365da1e45575fb91f",
+  "output_sha256": {
+    "by_process.csv": "5d92083a606a2b4d8d978a853bbee22791b88e2836abd2f0e3943c97c33cfb6f",
+    "by_macrosector.csv": "ebc0b1059e26f8f1565f753345bc319d6891bd2b88d3ea9c508498a9ef1a4a16",
+    "summary.json": "c8811f9dc880fd85fd2ef5a8ce35a0d95b6f086a295183f9d25c93c32238413b",
+    "records_by_process.png": "1abddb7f1749584b66696a6e82efb90d7d2a8aeab1d60a0c6f62c9d703c7dc33"
+  },
+  "privacy": "No row-level identifiers or names are persisted."
+}

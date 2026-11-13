@@ -22,7 +22,7 @@ jobs:
       - name: Test cashflow simulation
         run: python -m unittest discover -s 03-financial-risk/07-financial-and-construction-risk-lab/02-construction-enterprise-risk/01-project-cashflow-at-risk/tests -p 'test_*.py' -v
       - name: Test quantitative models
-        run: python -m unittest discover -s 03-financial-risk/07-financial-and-construction-risk-lab/python/tests -p 'test_*.py' -v
+        run: python -m unittest discover -s 03-financial-risk/07-financial-and-construction-risk-lab/04-modelos-compartidos/python/tests -p 'test_*.py' -v
   cpp:
     runs-on: ubuntu-latest
     strategy:
@@ -30,6 +30,6 @@ jobs:
         build-type: [Debug, Release]
     steps:
       - uses: actions/checkout@v4
-      - run: cmake -S 03-financial-risk/07-financial-and-construction-risk-lab/cpp -B /tmp/construction-risk-build -DCMAKE_BUILD_TYPE=${{ matrix.build-type }}
+      - run: cmake -S 03-financial-risk/07-financial-and-construction-risk-lab/04-modelos-compartidos/cpp -B /tmp/construction-risk-build -DCMAKE_BUILD_TYPE=${{ matrix.build-type }}
       - run: cmake --build /tmp/construction-risk-build
       - run: ctest --test-dir /tmp/construction-risk-build --output-on-failure

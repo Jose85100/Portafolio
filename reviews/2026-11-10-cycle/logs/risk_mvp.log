@@ -1,0 +1,58 @@
+test_additivity_translation_homogeneity_and_permutation (test_es_attribution.AttributionTests.test_additivity_translation_homogeneity_and_permutation) ... ok
+test_analytic_fractional_boundary (test_es_attribution.AttributionTests.test_analytic_fractional_boundary) ... ok
+test_rejects_invalid_inputs (test_es_attribution.AttributionTests.test_rejects_invalid_inputs) ... ok
+test_weighted_replication_oracle (test_es_attribution.AttributionTests.test_weighted_replication_oracle) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.004s
+
+OK
+All checks passed!
+Success: no issues found in 2 source files
+{
+  "classification": {
+    "scenario_data": "synthetic",
+    "market_proxy": false,
+    "empirical": false,
+    "units": "dimensionless illustrative loss units"
+  },
+  "seed": 20261110,
+  "n": 5000,
+  "alpha": 0.975,
+  "var": 4.289169030698484,
+  "es": 9.409658672519422,
+  "contributions": {
+    "COP_FX": 3.419796522994532,
+    "TES_RATE": 3.2480504140267725,
+    "EQUITY": 2.7418117354981177
+  },
+  "tail_weight_sum": 1.0,
+  "baseline_standalone_es_prorata": {
+    "COP_FX": 3.168476532119865,
+    "TES_RATE": 3.023515946083841,
+    "EQUITY": 3.217666194315716
+  },
+  "baseline_uniform_mean_contributions": {
+    "COP_FX": 0.004538508841070116,
+    "TES_RATE": 0.021138143918903524,
+    "EQUITY": 0.04434485155307456
+  },
+  "adverse_ablation_without_crisis": {
+    "n": 4889,
+    "var": 3.9146743216910043,
+    "es": 4.770142177553412,
+    "contributions": {
+      "COP_FX": 1.094883911809355,
+      "TES_RATE": 1.8429335701194025,
+      "EQUITY": 1.8323246956246548
+    }
+  },
+  "reconciliation_error": 0.0
+}
+{
+  "status": "success",
+  "method": "executed every notebook code cell in shared Python process",
+  "cells_executed": 2,
+  "outputs": "stdout and generated figure embedded in notebook",
+  "kernel_note": "No Jupyter kernel startup was attempted by this runner; no kernel validation is claimed."
+}

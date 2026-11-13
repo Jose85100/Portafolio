@@ -1,0 +1,13 @@
+{
+  "source_drive_id": "1Hpu_qk99U_-Hf0H3svT2GvVYWtb9EfpE",
+  "derived_sha256": "56e4e436cd7add0aac50dd8e1c29007fa173ed8e07e4b484633d19faa33c79ec",
+  "start": "2010-01",
+  "end": "2026-09",
+  "months": 201,
+  "hypothetical_balance_cop_millions": 100000,
+  "last_dtf_percent": 10.19966667,
+  "last_delta_12m_pp": 1.4403333369999984,
+  "last_sensitivity_cop_millions_annualized": 1440.3333369999984,
+  "min_delta_12m_pp": -3.7570967730000007,
+  "max_delta_12m_pp": 10.458571423999999
+}

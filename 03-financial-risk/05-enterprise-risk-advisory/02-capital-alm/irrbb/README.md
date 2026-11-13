@@ -69,3 +69,16 @@ Paquetes futuros: `src/` (estimación/simulación), `tests/` (unitarios e invari
 **Gate A:** problema y métricas aprobados; **B:** datos auditables; **C:** baseline reproducible; **D:** modelo avanzado con pruebas; **E:** validación independiente y stress; **F:** decisión ejecutiva con evidencia y dueño. No promover de gate por documentación solamente.
 
 **Fases:** descubrimiento → baseline → modelado → stress/validación → piloto controlado → transferencia y monitoreo. Registrar versionado, reproducibilidad y resultados negativos.
+
+
+## Aplicación con datos observados y supuestos
+
+[Notebook reproducible](aplicacion-datos-observados.ipynb). Usa datos públicos y documenta los supuestos y límites; no acredita validación institucional. Requiere Python, pandas, matplotlib, Jupyter y un clon del repositorio.
+
+
+**Robustez del notebook:** Incluye sensibilidad para duraciones alternativas de un activo hipotético; DTF no representa una curva completa.
+
+
+## Literatura y variantes aplicadas
+
+El notebook compara la aproximación de duración con un bono cero cupón hipotético valorado exactamente bajo tres shocks ilustrativos. Referencia: [BCBS, SRP98](https://www.bis.org/committees/bcbs/basel-framework/standard/srp/98/inforce/2019-12-15/published/2019-12-15). El ejemplo no constituye medición completa de EVE ni NII.

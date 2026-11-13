@@ -69,3 +69,14 @@ Paquetes futuros: `src/` (estimación/simulación), `tests/` (unitarios e invari
 **Gate A:** problema y métricas aprobados; **B:** datos auditables; **C:** baseline reproducible; **D:** modelo avanzado con pruebas; **E:** validación independiente y stress; **F:** decisión ejecutiva con evidencia y dueño. No promover de gate por documentación solamente.
 
 **Fases:** descubrimiento → baseline → modelado → stress/validación → piloto controlado → transferencia y monitoreo. Registrar versionado, reproducibilidad y resultados negativos.
+
+
+## Aplicación con datos públicos
+
+[Registros de emergencias hidrológicas y geológicas en Colombia](aplicacion_observada.ipynb). Son filas administrativas, no eventos únicos ni frecuencia de amenaza. Hay duplicaciones y problemas de ubicación; no estiman pérdidas aseguradas, exposición de activos ni probabilidad de inundación.
+
+Ejecutar desde esta carpeta: `python -m jupyter nbconvert --execute --to notebook --inplace aplicacion_observada.ipynb`. Requiere Python con pandas, matplotlib, Jupyter y nbclient; los archivos de entrada están en el repositorio.
+
+### Variante y literatura incorporadas
+
+El notebook añade la concentración HHI y el número equivalente de categorías para las cuatro clases de filas del extracto UNGRD. No equivale a una probabilidad de evento. El [IPCC AR6](https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-1/) distingue amenaza, exposición y vulnerabilidad: este extracto no contiene las tres dimensiones.

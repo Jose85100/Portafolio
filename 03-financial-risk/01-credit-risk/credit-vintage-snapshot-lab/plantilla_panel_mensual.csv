@@ -1,0 +1,1 @@
+﻿id_credito,id_comercio,id_cliente,fecha_corte,corte_obs,corte_origen,mob,dias_mora,saldo_capital_cop,saldo_total_cop,cupo_vigente_cop,pago_total_mes_cop,pago_capital_mes_cop,pago_interes_mes_cop,desembolso_mes_cop,castigado,fecha_castigo,version_cupo,producto,estado_credito,fecha_disponibilidad

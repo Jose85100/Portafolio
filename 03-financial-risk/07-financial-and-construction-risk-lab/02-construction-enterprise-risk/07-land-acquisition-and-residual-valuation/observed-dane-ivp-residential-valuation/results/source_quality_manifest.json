@@ -1,0 +1,28 @@
+{
+  "producer": "DANE",
+  "indicator": "Índice de Valoración Predial (IVP), variación anual de predios urbanos de destino habitacional",
+  "reference_periods": [
+    2024,
+    2025
+  ],
+  "geography": "22 cities; Bogotá is excluded from IVP coverage",
+  "source_bulletin": "https://www.dane.gov.co/files/operaciones/IVP/bol-IVP-2025.pdf",
+  "source_historical_series": "https://www.dane.gov.co/index.php/estadisticas-por-tema/precios-y-costos/indice-de-valoracion-predial-ivp",
+  "source_table": "DANE, Tabla 1. Variación anual del IVP total y según ciudades, 2024–2025",
+  "transcription": "Values in city_variations_2024_2025.csv manually transcribed from the official bulletin table; output is reproducible from this versioned transcription.",
+  "source_csv_sha256": "efca192eb88b7fc95cac0c42b9ef4c9dd8d34183c5078c6b5ac761fed4cbda4b",
+  "observations": 22,
+  "qa": {
+    "unique_cities": 22,
+    "expected_city_count": 22,
+    "min_2025_pct": 2.23,
+    "max_2025_pct": 6.48,
+    "national_2025_pct_reported_by_DANE": 3.45,
+    "city_mean_is_not_used_as_national_estimate": true
+  },
+  "limits": [
+    "Residential commercial appraisal movement, not vacant-land prices or transaction-level absorption.",
+    "Not an appraisal of a specific parcel and not a validation sample for residual land valuation.",
+    "DANE IVP excludes Bogotá and covers only 22 cities."
+  ]
+}

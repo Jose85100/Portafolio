@@ -1,0 +1,21 @@
+{
+  "seed": 20261110,
+  "scenarios": 5000,
+  "alpha": 0.975,
+  "weights": "unit; finite synthetic scenario measure",
+  "components": [
+    "COP_FX",
+    "TES_RATE",
+    "EQUITY"
+  ],
+  "generator": "Box-Muller independent normals plus shared crisis indicator; illustrative stresses, not observed market data",
+  "units": "dimensionless synthetic loss proxy",
+  "scenario_probability_crisis": 0.025,
+  "normal_generator": "Python random.Random.gauss(0,1), seed fixed",
+  "component_transform": {
+    "COP_FX": "0.8*z0 + 7*crisis_shock",
+    "TES_RATE": "1.1*(0.55*z0 + 0.84*z1) + 5*crisis_shock",
+    "EQUITY": "1.4*(-0.2*z0 + 0.98*z2) + 4*crisis_shock"
+  },
+  "crisis_shock": "independent standard normal only when crisis indicator true"
+}

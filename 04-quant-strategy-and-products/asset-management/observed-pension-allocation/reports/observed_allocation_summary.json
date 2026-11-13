@@ -1,0 +1,138 @@
+{
+  "source": "SFC, Formato 351: composición del portafolio de inversiones (Pensiones Obligatorias y Cesantías), consulta agregada del portal Datos Abiertos",
+  "dataset_id": "ur2p-h4yf",
+  "dataset_url": "https://www.datos.gov.co/Hacienda-y-Cr-dito-P-blico/Formato-351-Composici-n-del-portafolio-de-inversio/ur2p-h4yf",
+  "sfc_reference_page": "https://www.superfinanciera.gov.co/publicaciones/10114986/portafolio-de-inversion-detallado-2023/",
+  "snapshot_sha256": "5fda31810a38e6b5387127f48517c779618ff5869b69e93eaeda13b680245eb7",
+  "snapshot_bytes": 4992017,
+  "snapshot_downloaded_utc": "2026-10-11T15:45:49+00:00",
+  "snapshot_rows": 26155,
+  "snapshot_distinct_dates": 43,
+  "snapshot_max_observation": "2026-07-31",
+  "source_grain": "fecha_de_corte × nombre_patrimonio × descripcion_clase_inversion; query result already aggregated from Formato 351",
+  "analysis_cut": "2026-07-31",
+  "source_fields_used": [
+    "fecha_de_corte",
+    "nombre_patrimonio",
+    "descripcion_clase_inversion",
+    "valor_mercado"
+  ],
+  "source_rows_at_cut": 456,
+  "source_zero_market_values_at_cut": 1,
+  "source_negative_market_values_at_cut": 0,
+  "portfolios_by_profile": {
+    "Conservador": [
+      "FONDO DE PENSIONES COLFONDOS CONSERVADOR",
+      "FONDO DE PENSIONES OBLIGATORIAS PORVENIR CONSERVADOR",
+      "FONDO DE PENSIONES OBLIGATORIAS PROTECCIÓN CONSERVADOR",
+      "FONDO DE PENSIONES OBLIGATORIAS SKANDIA   CONSERVADOR"
+    ],
+    "Moderado": [
+      "FONDO DE PENSIONES MODERADO",
+      "FONDO DE PENSIONES OBLIGATORIAS SKANDIA MODERADO",
+      "FONDO DE PENSIONES OBLIGATORIO MODERADO"
+    ],
+    "Mayor riesgo": [
+      "FONDO DE PENSIONES COLFONDOS MAYOR RIESGO",
+      "FONDO DE PENSIONES OBLIGATORIAS PORVENIR MAYOR RIESGO",
+      "FONDO DE PENSIONES OBLIGATORIAS PROTECCION MAYOR RIESGO",
+      "FONDO DE PENSIONES OBLIGATORIAS SKANDIA  MAYOR RIESGO"
+    ],
+    "Retiro programado": [
+      "FONDO DE PENSIONES COLFONDOS ESEPCIAL DE RETIRO PROGRAMADO",
+      "FONDO DE PENSIONES OBLIGATORIAS  SKANDIA RETIRO PROGRAMADO",
+      "FONDO DE PENSIONES OBLIGATORIAS PORVENIR RETIRO PROGRAMADO",
+      "FONDO DE PENSIONES OBLIGATORIAS PROTECCIÓN RETIRO PROGRAMADO"
+    ]
+  },
+  "aggregation": "value-weighted profile composition sums market_value across source portfolio names within each official profile; equal-portfolio median is a sensitivity that treats absent class rows as zero",
+  "profile_summary": {
+    "Conservador": {
+      "n_reported_portfolios": 4,
+      "n_investment_classes": 51,
+      "total_market_value_cop": "50659218329200.082442",
+      "top_3_pooled_classes": [
+        {
+          "investment_class_sfc": "Títulos de Tesorería - TES Pesos TF",
+          "weight_pct": 55.53908721805038
+        },
+        {
+          "investment_class_sfc": "Títulos de Tesorería - TES UVR",
+          "weight_pct": 18.344413951249656
+        },
+        {
+          "investment_class_sfc": "Participaciones en fondos representativos de índices accionarios",
+          "weight_pct": 9.1680846565954
+        }
+      ],
+      "hhi_by_reported_class": 3528.630826082539,
+      "effective_reported_classes": 2.833960392252745
+    },
+    "Moderado": {
+      "n_reported_portfolios": 3,
+      "n_investment_classes": 51,
+      "total_market_value_cop": "279809798737548.332926",
+      "top_3_pooled_classes": [
+        {
+          "investment_class_sfc": "Participaciones en fondos representativos de índices accionarios",
+          "weight_pct": 25.392701233343793
+        },
+        {
+          "investment_class_sfc": "Títulos de Tesorería - TES Pesos TF",
+          "weight_pct": 21.462784243543748
+        },
+        {
+          "investment_class_sfc": "Títulos de Tesorería - TES UVR",
+          "weight_pct": 11.399769251994643
+        }
+      ],
+      "hhi_by_reported_class": 1443.0769168128038,
+      "effective_reported_classes": 6.929637556732676
+    },
+    "Mayor riesgo": {
+      "n_reported_portfolios": 4,
+      "n_investment_classes": 51,
+      "total_market_value_cop": "172329432562921.426128",
+      "top_3_pooled_classes": [
+        {
+          "investment_class_sfc": "Participaciones en fondos representativos de índices accionarios",
+          "weight_pct": 40.06574129755347
+        },
+        {
+          "investment_class_sfc": "Títulos de Tesorería - TES Pesos TF",
+          "weight_pct": 18.6455427322625
+        },
+        {
+          "investment_class_sfc": "Participaciones en fondos de capital privado constituidos en el exterior",
+          "weight_pct": 11.834924125438402
+        }
+      ],
+      "hhi_by_reported_class": 2181.2757169611136,
+      "effective_reported_classes": 4.584473169642072
+    },
+    "Retiro programado": {
+      "n_reported_portfolios": 4,
+      "n_investment_classes": 51,
+      "total_market_value_cop": "53668875878815.373647",
+      "top_3_pooled_classes": [
+        {
+          "investment_class_sfc": "Títulos de Tesorería - TES UVR",
+          "weight_pct": 64.2744091977032
+        },
+        {
+          "investment_class_sfc": "Títulos de Tesorería - TES Pesos TF",
+          "weight_pct": 9.55490406981334
+        },
+        {
+          "investment_class_sfc": "Participaciones en fondos representativos de índices accionarios",
+          "weight_pct": 8.384417908000062
+        }
+      ],
+      "hhi_by_reported_class": 4319.663163298208,
+      "effective_reported_classes": 2.3149953183767837
+    }
+  },
+  "decision_use": "contextual reference for a human review of reported asset allocation by pension-fund profile; verifies source-to-weight aggregation only",
+  "prohibited_inference": "does not validate return forecasts, expected returns, covariance, portfolio optimization, alpha, future risk, compliance, or suitability for any investor",
+  "freshness_note": "The external snapshot was downloaded 2026-10-11 but its latest observation is 2026-07-31; it is a frozen historical cut, not a current portfolio view."
+}

@@ -1,6 +1,6 @@
 # Matrices de transición y roll rates
 
-Estimación por máxima verosimilitud de una matriz de transición entre estados de mora (al día, 30, 60, 90+ días y default absorbente) a partir de historias simuladas, y cálculo de la PD acumulada a 12 meses con potencias de la matriz.
+Estimación por máxima verosimilitud de una matriz de transición entre estados de mora (al día, 30, 60, 90+ días y default absorbente) y cálculo de la PD acumulada a 12 meses con potencias de la matriz. El laboratorio controlado ilustra la mecánica con historias simuladas; una aplicación complementaria usa saldos agregados observados de la SFC para mostrar cambios de composición de calificaciones, sin inferir migraciones de cuentas.
 
 ## Método y contrato
 
@@ -11,6 +11,12 @@ El grano requerido es **cuenta–mes de observación** con `account_id`, `observ
 ## Datos
 
 Datos **sintéticos** generados con semilla fija (`numpy.random.default_rng`). No hay datos de clientes, de empresas ni confidenciales. Los resultados son **ilustrativos del método**, no evidencia de desempeño real.
+
+## Referencia observada: cambio agregado de mezcla D+E
+
+La [aplicación SFC de cambio de mezcla](observed-sfc-grade-mix-shift/results/report.md) compara, por producto, la participación de saldos calificados D+E con la del mismo mes un año antes. En agosto de 2026, 32 productos tenían comparación interanual; el mayor aumento fue **2,90 puntos porcentuales** en consumo de bajo monto (participación D+E de 4,88%; 8 entidades reportantes). Esta señal permite priorizar revisión sectorial y formular preguntas de monitoreo.
+
+Los datos SFC son agregados por producto y corte; no enlazan cuentas entre meses. Por ello, el cambio de mezcla no es una transición de estado, tasa de default, roll rate ni PD, y no valida la matriz del laboratorio. La aplicación documenta linaje, cobertura y límites, conserva un snapshot agregado reproducible y genera tabla, resumen y figura desde `build_companion.py`.
 
 ## Cómo ejecutar
 

@@ -1,8 +1,8 @@
 # Riesgo de crédito — productos y ciclo de vida
 
-Laboratorio reproducible para decisiones analíticas en torno a un producto de crédito: admisión, seguimiento, deterioro y lectura de cohortes. Reúne implementaciones pequeñas, trazables y ejecutables; no pretende ser un sistema de decisión ni una metodología aprobada.
+Este espacio combina laboratorios controlados para scorecards, medición, transiciones y cohortes con companions agregadas de datos oficiales de la SFC. Las companions observan el stock vencido por modalidad/entidad y la mezcla de saldos A–E por producto; no identifican outcomes de crédito individuales. Ninguna edición es un sistema de decisión ni una metodología aprobada.
 
-> **Uso responsable.** Todos los datos son sintéticos, generados localmente con semillas fijas. No hay clientes, exposiciones reales ni políticas de aprobación. Los resultados ilustran técnicas y **no deben** usarse para originación, provisiones, precios, límites, decisiones adversas ni cumplimiento normativo.
+> **Uso responsable.** Los proxies SFC miden cartera vencida agregada y mezcla agregada de saldos clasificados D/E. No son PD, default por operación ni roll-rates, y no validan scorecards, matrices de transición o pérdida esperada. No habilitan originación, provisiones, precios, límites, decisiones adversas o cumplimiento normativo.
 
 ```mermaid
 flowchart LR
@@ -27,8 +27,12 @@ flowchart LR
 | Monitoreo | [Análisis de cosechas](analisis-de-cosechas-vintage) | ¿Qué cohortes se deterioran frente al promedio? | Curvas acumuladas por vintage |
 | Exploración | [Segmentación con k-means](segmentacion-clientes-kmeans) | ¿Qué perfiles conductuales se observan? | Perfiles y silueta; no una regla de decisión |
 | Investigación | [IFRS 9 — investigación cuantitativa](ifrs9-investigacion-cuantitativa) | ¿Qué supuestos y pruebas exige una arquitectura ECL? | Seis monografías técnicas |
+| Referencia observada | [Proxy SFC de calidad de cartera](observed-sfc-quality-proxy) | ¿Cómo cambió el stock vencido por modalidad y entidad reportante? | ICV agregado por vencimiento; no PD ni transición |
+| Referencia observada | [Mezcla de calificación SFC por producto](perdida-esperada-pd-lgd-ead/observed-sfc-product-risk-mix) | ¿Qué proporción del saldo calificado A–E está en D/E y qué cobertura tiene frente al saldo bruto? | D+E / A–E por producto-mes; no PD, default individual ni transición |
 
-Cada proyecto tiene un `main.py` corto y ejecutable; los cinco ejercicios empíricos incluyen además un notebook con diagnósticos y aserciones. Los notebooks son material de aprendizaje, no pipelines de producción.
+Los laboratorios controlados siguen usando datos sintéticos; las companions agregadas SFC mantienen separados sus snapshots, hashes, transformaciones, visualizaciones e informes. Los notebooks son material de aprendizaje, no pipelines de producción. Las categorías y modalidades no son directamente comparables; los resultados no sustituyen validación con datos institucionales a nivel de crédito.
+
+La búsqueda de datos individuales colombianos está registrada en [DATA_GAP_PUBLIC_COLOMBIA.md](DATA_GAP_PUBLIC_COLOMBIA.md): FINAGRO publica originaciones/saldos por operación, pero la documentación no da un outcome explícito de default y requiere aclarar tratamiento/licencia antes de procesar datos a nivel de persona. SFC e ICETEX son agregados; MURIC es una fuente supervisora no pública. Por ahora, ningún snapshot de estas fuentes valida PD, LGD o scorecard colombiano.
 
 ## Fundamentos cuantitativos
 

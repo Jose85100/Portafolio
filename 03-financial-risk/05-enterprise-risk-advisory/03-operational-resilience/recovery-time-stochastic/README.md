@@ -44,3 +44,8 @@ D1 diagnóstico; D2 metodología; D3 código y pruebas; D4 validación independi
 ## 7. Restricciones y gobierno
 
 Los datos sintéticos validan cálculos, no desempeño real. Verificar regulación por jurisdicción y tipo de entidad; no confundir capital económico, regulatorio y contable. Seguir [arquitectura transversal](../../00-architecture/README.md).
+
+
+## Aplicación con incidentes públicos
+
+[Análisis de tiempos de contención VCDB](benchmark-vcdb-contencion.ipynb): explora la distribución de las duraciones disponibles y su sensibilidad a unidades. Contención es un proxy parcial de recuperación; el conjunto es seleccionado y la mayoría de registros carece de duración. No estima la probabilidad de recuperación de una entidad ni ajusta supervivencia censurada. Descarga la fuente fijada por commit y valida SHA-256; requiere internet y curl.

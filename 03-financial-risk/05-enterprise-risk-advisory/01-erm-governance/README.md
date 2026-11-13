@@ -15,3 +15,6 @@ Se mantienen los tres proyectos existentes y se incorporan cuatro líneas nuevas
 - **Nuevo S1:** [Reverse stress del apetito de riesgo](reverse-stress-risk-appetite/)
 - **Nuevo S1:** [Medición de cultura y conducta de riesgo](risk-culture-measurement/)
 - **Nuevo S1:** [Opciones reales y riesgo estratégico](strategic-option-risk/)
+
+
+[Estado de aplicaciones y datos pendientes](BRECHAS_APLICACION.md).

@@ -1,9 +1,9 @@
-import importlib.util,pathlib,unittest
+import calendar,importlib.util,pathlib,unittest
 p=pathlib.Path(__file__).resolve().parents[1]/"src"/"observed_alm.py"
 s=importlib.util.spec_from_file_location("observed_alm",p)
 m=importlib.util.module_from_spec(s);s.loader.exec_module(m)
 def item(y,month):
-    return {"fecha_corte":f"{y}-{month:02d}-30","depositos_corriente":"20",
+    return {"fecha_corte":f"{y}-{month:02d}-{calendar.monthrange(y,month)[1]}","depositos_corriente":"20",
             "depositos_ahorro":"40","cdt":"40","cartera_creditos":"80",
             "creditos_vivienda":"10","numero_oficinas":"1"}
 class Tests(unittest.TestCase):
@@ -21,6 +21,13 @@ class Tests(unittest.TestCase):
                          sorted(s["ratio_after_runoff"] for s in r["scenarios"]))
     def test_no_duplicate_quarter(self):
         with self.assertRaisesRegex(ValueError,"Duplicate"):m.calculate(self.rows+[self.rows[0]])
+    def test_missing_quarter_is_rejected(self):
+        rows=self.rows+[item(2026,3)]
+        del rows[2]
+        with self.assertRaisesRegex(ValueError,"Missing quarter"):m.calculate(rows)
+    def test_invalid_quarter_end_is_rejected(self):
+        rows=[dict(x) for x in self.rows];rows[0]["fecha_corte"]="2024-03-30"
+        with self.assertRaisesRegex(ValueError,"Bad quarter"):m.calculate(rows)
     def test_no_negative_balances(self):
         r=[dict(x) for x in self.rows];r[0]["cdt"]="-1"
         with self.assertRaisesRegex(ValueError,"Negative"):m.calculate(r)

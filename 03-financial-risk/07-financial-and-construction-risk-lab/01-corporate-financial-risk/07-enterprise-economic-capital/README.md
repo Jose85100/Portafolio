@@ -1,6 +1,6 @@
 # Capital económico corporativo
 
-**Estado:** investigación diseñada; implementación pendiente. **No calibrado ni validado.**
+**Estado:** especificación de capital económico con companion público de solvencia/deterioro. **El modelo de capital sigue sin implementar, calibrar ni validar.**
 
 ## Pregunta y alcance
 Capital económico con agregación de riesgos dependientes. ¿En qué condiciones se materializa el riesgo y qué acciones de mitigación generan valor ajustado por riesgo?
@@ -26,3 +26,11 @@ Copulas, sensibilidad a cola y asignación Euler. Separación temporal de entren
 
 ## Productos esperados
 Metodología, código, pruebas, escenarios, reporte de validación y dashboard de decisiones.
+
+## Evidence gap
+
+El companion [SFC de solvencia y deterioro](observed-sfc-capital-loss-context/README.md) aporta contexto regulatorio y contable agregado; no estima pérdidas de cola ni capital económico institucional. El panel institucional de pérdidas y dependencias sigue faltando. Véase [DATA_GAP.md](DATA_GAP.md).
+
+## Public regulatory context
+
+The [SFC aggregate solvency and impairment context](observed-sfc-capital-loss-context/README.md) provides an official, reproducible sector benchmark for regulatory capital and accounting deterioration. It does not estimate VaR, ES, or corporate economic capital; the institutional loss/factor/dependency gap remains open.

@@ -26,3 +26,9 @@ Pruebas contra modelo independiente y shocks comunes. Separación temporal de en
 
 ## Productos esperados
 Metodología, código, pruebas, escenarios, reporte de validación y dashboard de decisiones.
+
+## Contexto público observado (no es validación)
+
+El [proxy de extensiones SECOP](../../02-construction-enterprise-risk/04-contractor-counterparty-risk/observed-secop-works-extension-proxy/README.md), el [perfil financiero de contratistas](../../02-construction-enterprise-risk/04-contractor-counterparty-risk/observed-supersociedades-corporate-financial-proxy/README.md), la [base de insolvencia](../../01-corporate-financial-risk/06-counterparty-credit-exposure/observed-supersociedades-insolvency-context/README.md) y el [enlace administrativo de garantías a obras](../../02-construction-enterprise-risk/14-surety-performance-bond-risk/README.md) aportan contexto separado sobre entidades y contratos. No conforman una red longitudinal de dependencias ni identifican propagación de pérdidas.
+
+**Estado de madurez:** la propuesta continúa S1; el companion citado aporta contexto observable, pero no implementa ni valida el modelo descrito.

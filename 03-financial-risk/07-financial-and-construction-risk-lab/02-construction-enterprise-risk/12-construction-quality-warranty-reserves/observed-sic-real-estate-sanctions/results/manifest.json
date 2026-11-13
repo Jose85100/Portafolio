@@ -1,0 +1,9 @@
+{
+  "script_sha256": "5318ba2012d020c789531550cc5d19ec25f5182b60fece6aece5b10a8ec37f14",
+  "raw_response_sha256": "2542d4518e8d21ad85c607d771db9d0114ff6a0674f3589539fdc1a53ac2331c",
+  "summary_sha256": "5d2344e192af46ef8b99017d7faa52736adfc19fdb4e9ce980cd0f6c51cce06c",
+  "annual_csv_sha256": "9068714ba65c34843aaec56affde760ded6dd16938800c4fbf801b6ad52cbdd7",
+  "conduct_csv_sha256": "1fda1e18d1f458ccd916806da4c04f4bf8d23935c360f3d0e30bb2ae0963e876",
+  "figure_sha256": "02fbb1fc4d77de5c9a37ecc7545a9ee4e9aba384be9616fcb96edd24d9eb65fb",
+  "raw_rows_retained": false
+}

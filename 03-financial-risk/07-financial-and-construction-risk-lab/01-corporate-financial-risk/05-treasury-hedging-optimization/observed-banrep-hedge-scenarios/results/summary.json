@@ -1,0 +1,95 @@
+{
+  "purpose": "Historical observed-factor sensitivity for hypothetical positions and idealized hedge offsets; not a validated optimization or hedge recommendation.",
+  "source_sha256": {
+    "trm_snapshot": "d5068f3801b18a5530d291d6a2d0587e5ceb580d52879de5ae363168999edf77",
+    "dtf_derived_snapshot": "56e4e436cd7add0aac50dd8e1c29007fa173ed8e07e4b484633d19faa33c79ec",
+    "joined_baseline_csv": "67b58ed41b2310d27a74ff8cfc6aa54cdd3d307180e5b9bcab51cbfdd1756b14"
+  },
+  "period": [
+    "2013-03",
+    "2026-09"
+  ],
+  "positions": {
+    "usd_liability": 1000000,
+    "cop_dtf_floating_balance": 100000000000
+  },
+  "hedge_ratios_pct": [
+    0.0,
+    50.0,
+    80.0,
+    100.0
+  ],
+  "scenario_design": "Linear offset of observed factor cost shock; constant notional; 100% same-factor effectiveness; zero cost, basis, collateral, liquidity and accounting effects.",
+  "metrics": [
+    {
+      "factor": "fx_usd_liability",
+      "hedge_ratio_pct": 0.0,
+      "volatility_reduction_pct": 0.0,
+      "p95_cost_change": 218.1155,
+      "worst_adverse_cost_change": 524.95,
+      "unit": "COP millions / month"
+    },
+    {
+      "factor": "fx_usd_liability",
+      "hedge_ratio_pct": 50.0,
+      "volatility_reduction_pct": 50.0,
+      "p95_cost_change": 109.05775,
+      "worst_adverse_cost_change": 262.475,
+      "unit": "COP millions / month"
+    },
+    {
+      "factor": "fx_usd_liability",
+      "hedge_ratio_pct": 80.0,
+      "volatility_reduction_pct": 80.0,
+      "p95_cost_change": 43.62309999999999,
+      "worst_adverse_cost_change": 104.98999999999998,
+      "unit": "COP millions / month"
+    },
+    {
+      "factor": "fx_usd_liability",
+      "hedge_ratio_pct": 100.0,
+      "volatility_reduction_pct": 100.0,
+      "p95_cost_change": 0.0,
+      "worst_adverse_cost_change": 0.0,
+      "unit": "COP millions / month"
+    },
+    {
+      "factor": "dtf_floating_interest",
+      "hedge_ratio_pct": 0.0,
+      "volatility_reduction_pct": 0.0,
+      "p95_cost_change": 6890.819352100001,
+      "worst_adverse_cost_change": 10458.571423999998,
+      "unit": "COP millions / year annualized"
+    },
+    {
+      "factor": "dtf_floating_interest",
+      "hedge_ratio_pct": 50.0,
+      "volatility_reduction_pct": 50.0,
+      "p95_cost_change": 3445.4096760500006,
+      "worst_adverse_cost_change": 5229.285711999999,
+      "unit": "COP millions / year annualized"
+    },
+    {
+      "factor": "dtf_floating_interest",
+      "hedge_ratio_pct": 80.0,
+      "volatility_reduction_pct": 80.0,
+      "p95_cost_change": 1378.1638704199997,
+      "worst_adverse_cost_change": 2091.714284799999,
+      "unit": "COP millions / year annualized"
+    },
+    {
+      "factor": "dtf_floating_interest",
+      "hedge_ratio_pct": 100.0,
+      "volatility_reduction_pct": 100.0,
+      "p95_cost_change": 0.0,
+      "worst_adverse_cost_change": 0.0,
+      "unit": "COP millions / year annualized"
+    }
+  ],
+  "limitations": [
+    "FX and DTF metrics are separate and cannot be summed into joint loss.",
+    "Historical shock rows are not forecast distributions and ratio grid is not an optimization.",
+    "No institution exposure, derivative trade, hedge price, hedge effectiveness, or accounting outcome is observed.",
+    "DTF cost changes are annualized repricing sensitivities, not monthly realized interest cash flows."
+  ]
+}

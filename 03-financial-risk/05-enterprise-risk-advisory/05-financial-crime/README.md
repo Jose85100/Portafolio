@@ -15,3 +15,17 @@ Se mantienen los tres proyectos existentes y se incorporan cuatro líneas nuevas
 - **Nuevo S1:** [Priorización de alertas AML](aml-alert-prioritization/)
 - **Nuevo S1:** [Evaluación causal de medidas antifraude](fraud-causal-intervention/)
 - **Nuevo S1:** [Impacto de cambios regulatorios](regulatory-change-impact/)
+
+## Cobertura de aplicaciones y datos pendientes
+
+| Tema | Evidencia disponible y alcance |
+|---|---|
+| [Tipologías AML](aml-typologies/) | Composición descriptiva de sanciones OFAC; no identifica tipologías de lavado ni delitos. |
+| [Controles regulatorios](regulatory-controls/) | Completitud descriptiva de un corte OFAC; no verifica efectividad del screening. |
+| [Priorización de alertas](aml-alert-prioritization/) | Comparación histórica de dos reglas geográficas con sujetos reportados en SAR FinCEN; no evalúa alertas individuales ni precisión. |
+| [Fraude causal e intervención](fraud-causal-intervention/) | **Pendiente:** asignación de intervenciones, fechas, resultados y datos de selección; no se identifica causalidad con volúmenes SAR. |
+| [Redes dinámicas de fraude](fraud-dynamic-networks/) | **Pendiente:** relaciones entre entidades, fecha de cada arista, cobertura y etiquetas de fraude; un conteo por estado no es un grafo. |
+| [Grafos de fraude](fraud-graphs/) | **Pendiente:** transacciones o vínculos desidentificados con estructura y etiquetas verificables; no se infiere fraude de pertenencia a listas. |
+| [Impacto de cambios regulatorios](regulatory-change-impact/) | **Pendiente:** versiones normativas fechadas, ámbito y evidencia de implementación o resultados; no inferir efecto causal de una cronología. |
+
+Las tres aplicaciones actuales proporcionan contexto o diagnósticos acotados, no validación de un sistema institucional de prevención de crimen financiero.

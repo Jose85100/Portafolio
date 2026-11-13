@@ -1,5 +1,5 @@
 """Observed SFC aggregate funding stocks and hypothetical runoff scenarios."""
-import argparse,csv,hashlib,json,math
+import argparse,calendar,csv,hashlib,json,math
 from datetime import date,datetime,timezone
 from pathlib import Path
 FIELDS=("fecha_corte","depositos_corriente","depositos_ahorro","cdt","cartera_creditos","creditos_vivienda","numero_oficinas")
@@ -15,7 +15,7 @@ def calculate(records):
     for r in records:
         if not set(FIELDS).issubset(r):raise ValueError("Missing SFC fields")
         dt=date.fromisoformat(r["fecha_corte"])
-        if dt.month not in (3,6,9,12) or dt.day not in (30,31):raise ValueError("Bad quarter")
+        if dt.month not in (3,6,9,12) or dt.day != calendar.monthrange(dt.year,dt.month)[1]:raise ValueError("Bad quarter")
         if dt in rows:raise ValueError("Duplicate date")
         z={k:float(r[k]) for k in FIELDS[1:]}
         if any(not math.isfinite(v) or v<0 for v in z.values()):raise ValueError("Negative/nonfinite balance")
@@ -23,8 +23,10 @@ def calculate(records):
         if z["funding"]<=0 or z["cartera_creditos"]<=0:raise ValueError("Zero exposure")
         rows[dt]=z
     if len(rows)<8:raise ValueError("At least 8 observations required")
-    series=[];growth=[];prev=None
+    series=[];growth=[];prev=None;prev_date=None
     for d in sorted(rows):
+        if prev_date is not None and (d.year-prev_date.year)*12+d.month-prev_date.month != 3:
+            raise ValueError("Missing quarter in time series")
         z=rows[d];v=z["funding"]
         g=None if prev is None else v/prev-1
         if g is not None:growth.append(g)
@@ -35,7 +37,7 @@ def calculate(records):
                        "ahorro_share":z["depositos_ahorro"]/v,
                        "corriente_share":z["depositos_corriente"]/v,
                        "evidence":"OBSERVED_AGGREGATE_NOT_BANK_LCR"})
-        prev=v
+        prev=v;prev_date=d
     z=rows[max(rows)]
     scenarios=[]
     for name,(a,b,c) in SHOCKS.items():

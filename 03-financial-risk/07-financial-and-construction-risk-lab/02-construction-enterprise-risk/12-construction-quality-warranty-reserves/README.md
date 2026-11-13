@@ -2,6 +2,14 @@
 
 **Estado:** investigación diseñada; implementación pendiente. **No calibrado ni validado.**
 
+## Señal observada de sanciones
+
+El [companion SIC de sanciones firmes en Inmuebles](observed-sic-real-estate-sanctions/README.md) analiza un dataset oficial por resolución, fecha y conducta, sin conservar nombres ni identificadores de caso. En el corte del 11 de noviembre de 2026 hay 142 filas que corresponden a 126 resoluciones únicas de 2013 a 2026; 16 resoluciones contienen al menos una conducta cuyo rótulo incluye “Calidad”. Es una señal de enforcement de protección al consumidor, no una frecuencia de defectos ni de reclamos bajo garantía. El diseño de reservas sigue sin calibración o validación institucional.
+
+## Evidencia pública y brecha
+
+La [SIC informó](https://sedeelectronica.sic.gov.co/comunicado/comunicado-de-interes-sobre-la-proteccion-de-los-derechos-de-las-y-los-consumidores-en-proyectos-de-vivienda-nueva) que recibió 2.818 denuncias y 3.255 demandas relacionadas con presuntas vulneraciones a consumidores de vivienda nueva entre enero de 2024 y octubre de 2025. La comunicación incluye fallas de garantía entre varios motivos, junto con retrasos y otros incumplimientos; no desglosa el total en reclamaciones por defectos, proyecto, costo, reparación o pago. Es contexto de demanda de protección al consumidor, no una frecuencia de siniestros ni base actuarial para reservas. Los requisitos y límites están detallados en [DATA_GAP.md](DATA_GAP.md).
+
 ## Pregunta y alcance
 Reservas por defectos post-entrega y siniestralidad. ¿En qué condiciones se materializa el riesgo y qué acciones de mitigación generan valor ajustado por riesgo?
 

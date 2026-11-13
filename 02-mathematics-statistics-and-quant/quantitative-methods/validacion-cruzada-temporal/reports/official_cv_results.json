@@ -1,0 +1,35 @@
+{
+  "source": "DANE IPC total nacional, índices de empalme, 2003-01 a 2026-10",
+  "source_url": "https://www.dane.gov.co/files/operaciones/IPC/oct2026/anex-IPC-Indices-oct2026.xlsx",
+  "publication_date": "2026-11-09",
+  "source_xlsx_sha256": "4e8366bf2d03d4bdc15d14b1b21b12a6eec6c3695926abd503a430858ef74e2e",
+  "input_csv_sha256": "9dd8621dc3f979ea39d1728d1f35d682ea08746d089deea82d2db92cc00016bd",
+  "grain": "una observación mensual; target = inflación mensual porcentual del IPC total nacional",
+  "features": "12 rezagos de inflación mensual; StandardScaler dentro del fold; Ridge(alpha=1)",
+  "training_period": [
+    "2004-02",
+    "2024-10"
+  ],
+  "holdout_period": [
+    "2024-11",
+    "2026-10"
+  ],
+  "random_kfold_rmse_mean": 0.25659506675542987,
+  "random_kfold_rmse_sd": 0.017124917704766762,
+  "time_series_split_rmse_mean": 0.31508062262174635,
+  "time_series_split_rmse_sd": 0.10839768313945858,
+  "holdout_model_rmse": 0.2101964828545488,
+  "holdout_model_mae": 0.1643163283818573,
+  "holdout_persistence_rmse": 0.3109929655677554,
+  "controls": [
+    "últimos 24 meses fuera de todas las folds de entrenamiento",
+    "preprocesamiento ajustado dentro de cada fold",
+    "mismos predictores y estimador en ambos CV",
+    "comparación adicional contra persistencia lag-1"
+  ],
+  "limitations": [
+    "Serie macroeconómica agregada, un solo país y una sola ventana; no representa validación de riesgo crediticio ni cartera de clientes.",
+    "El dato del holdout ya era publicado al congelar el snapshot; es evaluación retrospectiva, no pronóstico en tiempo real.",
+    "El diseño compara esquemas de validación, no busca optimizar ni seleccionar un modelo para producción."
+  ]
+}
