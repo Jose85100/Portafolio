@@ -2,6 +2,8 @@
 
 **Madurez: investigación reproducible; no operativo.** Laboratorio para estudiar si la calidad de cartera por vencimiento de los establecimientos de crédito puede estimarse con indicadores financieros y macroeconómicos públicos. La evidencia y resultados se encuentran en [el informe](reports/informe.md); [especificación y controles](docs/modelo-y-gobierno.md) documenta la construcción y sus límites.
 
+La ampliación [territorial y económica](reports/territorial/informe.md) integra datos municipales SFC, coordenadas DIVIPOLA, proyecciones de población DANE e inflación anual del Banco Mundial. Es descriptiva y conserva las observaciones sin homologar en cuarentena. La cartera nacional de la fuente territorial difiere de la serie NIIF y no se han conciliado las causas.
+
 ## Pregunta y alcance
 
 Para un mes t, estimar el porcentaje `100 × saldo vencido / saldo bruto` para el total de establecimientos de crédito **sin instituciones oficiales especiales**, bajo el supuesto retrospectivo de que las cifras hasta t−2 son conocidas al cierre de t−1. La SFC define vencimiento por modalidad; es una razón de saldos en una fecha y no equivale a PD individual, transición de mora, pérdida esperada ni diagnóstico de solvencia.
@@ -22,7 +24,11 @@ Con Python y `requirements.txt` instalados, desde esta carpeta:
 
 ```bash
 python3 src/model.py
+python3 src/territorial.py
+python3 src/macro.py
 python3 -m pytest tests -q
 ```
 
 `src/download.py` actualiza ambas fuentes y sus hashes. Actualizar puede cambiar el histórico, el corte y las métricas; conservar la instantánea anterior si es necesario comparar versiones. El script de modelación actual exige exactamente la estructura y cobertura esperadas y falla ante datos incompletos o saldos inconsistentes. Antes de redistribuir datos, revisar atribución y condiciones de la fuente.
+
+Para actualizar fuentes territoriales y macroeconómicas se usan `src/download_territorial.py` y `src/macro.py --download`. Las consultas, las fechas y los hashes están en `data/territorial/raw/`; el procesamiento guarda municipios, cobertura y cuarentena en `data/territorial/processed/`. Las series macro y territoriales no se añadieron al backtest nacional: faltan historias suficientes y fechas de publicación por versión.

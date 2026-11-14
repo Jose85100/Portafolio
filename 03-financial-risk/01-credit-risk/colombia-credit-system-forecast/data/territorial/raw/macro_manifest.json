@@ -1,0 +1,8 @@
+{
+  "inflacion_promedio_anual.json": {
+    "url": "https://api.worldbank.org/v2/country/COL/indicator/FP.CPI.TOTL.ZG?format=json&per_page=100&date=2015:2025",
+    "sha256": "faf2798cfb66ffd3f42cc1e7c1ab49ff691046f42b2fe17d718ce49e8206db58",
+    "lastupdated": "2026-11-11"
+  },
+  "descargado_utc": "2026-11-14T22:49:26.994298+00:00"
+}

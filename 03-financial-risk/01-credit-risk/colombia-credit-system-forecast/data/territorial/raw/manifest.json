@@ -1,0 +1,23 @@
+{
+  "sfc_municipios.json": {
+    "url": "https://www.datos.gov.co/resource/u2wk-tfe3.json?%24select=fecha_de_corte%2Ctipo_de_entidad%2Cc_digo_del_departamento%2Cc_digo_del_municipio%2Cnombre_del_municipio%2Csum%28cartera_de_cr_ditos%29+as+cartera%2Ccount%28%2A%29+as+filas%2Ccount%28cartera_de_cr_ditos%29+as+filas_con_cartera&%24where=fecha_de_corte+in+%28%272025-06-30T00%3A00%3A00.000%27%2C%272026-06-30T00%3A00%3A00.000%27%29&%24group=fecha_de_corte%2Ctipo_de_entidad%2Cc_digo_del_departamento%2Cc_digo_del_municipio%2Cnombre_del_municipio&%24order=fecha_de_corte%2Ctipo_de_entidad%2Cc_digo_del_departamento%2Cc_digo_del_municipio%2Cnombre_del_municipio&%24limit=10000",
+    "bytes": 1094960,
+    "sha256": "ae775a84fafddea609da11f0715ed1476d176e9f0318e503639838dc43d55719"
+  },
+  "sfc_duplicados.json": {
+    "url": "https://www.datos.gov.co/resource/u2wk-tfe3.json?%24select=fecha_de_corte%2Ctipo_de_entidad%2Cc_digo_de_entidad%2Cc_digo_del_departamento%2Cc_digo_del_municipio%2Ccount%28%2A%29+as+n&%24where=fecha_de_corte+in+%28%272025-06-30T00%3A00%3A00.000%27%2C%272026-06-30T00%3A00%3A00.000%27%29&%24group=fecha_de_corte%2Ctipo_de_entidad%2Cc_digo_de_entidad%2Cc_digo_del_departamento%2Cc_digo_del_municipio&%24having=count%28%2A%29%3E1&%24limit=10",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  "divipola.json": {
+    "url": "https://www.datos.gov.co/resource/gdxc-w37w.json?%24limit=5000",
+    "bytes": 172803,
+    "sha256": "1028ab04c10a08fa860dd89e621de1eb9246710a56102c915f0988ae9e10d63d"
+  },
+  "poblacion_dane.xlsx": {
+    "url": "https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/PPED-AreaMun-2018-2042_VP.xlsx",
+    "bytes": 3948350,
+    "sha256": "1ea83594ad308becff39934a3977c102919c25740f60439be95d797396d11283"
+  },
+  "fecha_utc": "2026-11-14T22:50:36.824978+00:00"
+}
