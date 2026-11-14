@@ -1,0 +1,13 @@
+{
+  "sfc_total_ec_niif.xlsx": {
+    "url": "https://www.superfinanciera.gov.co/loader.php?idFile=1045555&lFuncion=descargar&lServicio=Tools2&lTipo=descargas",
+    "sha256": "7f74655b7cff09c00f1d00b6fe56ed562ea167d3b2b5467781e1df35ee678133",
+    "bytes": 908367
+  },
+  "trm.json": {
+    "url": "https://www.datos.gov.co/resource/32sa-8pi3.json?%24select=valor%2Cunidad%2Cvigenciadesde%2Cvigenciahasta&%24where=vigenciadesde+%3E%3D+%272015-01-01T00%3A00%3A00%27+AND+vigenciadesde+%3C+%272026-11-01T00%3A00%3A00%27&%24order=vigenciadesde+ASC&%24limit=10000",
+    "sha256": "d93d5d26c32f1a55097140b5d8ece10c8e841a7aedd705548dbd969f4485e0a0",
+    "bytes": 336067
+  },
+  "descargado_utc": "2026-11-14T22:24:45.540590+00:00"
+}
