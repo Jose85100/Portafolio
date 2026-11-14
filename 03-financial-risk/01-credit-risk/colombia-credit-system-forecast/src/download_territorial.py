@@ -11,7 +11,7 @@ import certifi
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'data/territorial/raw'
 BASE='https://www.datos.gov.co/resource/'
-QUERY={'$select':'fecha_de_corte,tipo_de_entidad,c_digo_del_departamento,c_digo_del_municipio,nombre_del_municipio,sum(cartera_de_cr_ditos) as cartera,count(*) as filas,count(cartera_de_cr_ditos) as filas_con_cartera', '$where':"fecha_de_corte in ('2025-06-30T00:00:00.000','2026-06-30T00:00:00.000')",'$group':'fecha_de_corte,tipo_de_entidad,c_digo_del_departamento,c_digo_del_municipio,nombre_del_municipio','$order':'fecha_de_corte,tipo_de_entidad,c_digo_del_departamento,c_digo_del_municipio,nombre_del_municipio','$limit':10000}
+QUERY={'$select':'fecha_de_corte,tipo_de_entidad,c_digo_del_departamento,c_digo_del_municipio,nombre_del_municipio,sum(cartera_de_cr_ditos) as cartera,count(*) as filas,count(cartera_de_cr_ditos) as filas_con_cartera', '$where':"fecha_de_corte in ('2023-06-30T00:00:00.000','2024-06-30T00:00:00.000','2025-06-30T00:00:00.000','2026-06-30T00:00:00.000')",'$group':'fecha_de_corte,tipo_de_entidad,c_digo_del_departamento,c_digo_del_municipio,nombre_del_municipio','$order':'fecha_de_corte,tipo_de_entidad,c_digo_del_departamento,c_digo_del_municipio,nombre_del_municipio','$limit':20000}
 DUP_QUERY={'$select':'fecha_de_corte,tipo_de_entidad,c_digo_de_entidad,c_digo_del_departamento,c_digo_del_municipio,count(*) as n','$where':QUERY['$where'],'$group':'fecha_de_corte,tipo_de_entidad,c_digo_de_entidad,c_digo_del_departamento,c_digo_del_municipio','$having':'count(*)>1','$limit':10}
 URLS={'sfc_municipios.json':BASE+'u2wk-tfe3.json?'+urlencode(QUERY),'sfc_duplicados.json':BASE+'u2wk-tfe3.json?'+urlencode(DUP_QUERY),'divipola.json':BASE+'gdxc-w37w.json?'+urlencode({'$limit':5000}),'poblacion_dane.xlsx':'https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/PPED-AreaMun-2018-2042_VP.xlsx'}
 
@@ -22,7 +22,7 @@ def main():
         if name.endswith('.json'):
             data=json.loads(body)
             if name=='sfc_duplicados.json' and data: raise ValueError('SFC contiene claves entidad-municipio duplicadas')
-            if name!='sfc_duplicados.json' and (not data or len(data)>= (10000 if name.startswith('sfc') else 5000)): raise ValueError('Consulta vacía o truncada: '+name)
+            if name!='sfc_duplicados.json' and (not data or len(data)>= (20000 if name.startswith('sfc') else 5000)): raise ValueError('Consulta vacía o truncada: '+name)
         elif not body.startswith(b'PK'): raise ValueError('Proyecciones DANE no son XLSX')
         (OUT/name).write_bytes(body)
         manifest[name]={'url':url,'bytes':len(body),'sha256':hashlib.sha256(body).hexdigest()}

@@ -2,7 +2,7 @@
 
 **Madurez: investigación reproducible; no operativo.** Laboratorio para estudiar si la calidad de cartera por vencimiento de los establecimientos de crédito puede estimarse con indicadores financieros y macroeconómicos públicos. La evidencia y resultados se encuentran en [el informe](reports/informe.md); [especificación y controles](docs/modelo-y-gobierno.md) documenta la construcción y sus límites.
 
-La ampliación [territorial y económica](reports/territorial/informe.md) integra datos municipales SFC, coordenadas DIVIPOLA, proyecciones de población DANE e inflación anual del Banco Mundial. Es descriptiva y conserva las observaciones sin homologar en cuarentena. La cartera nacional de la fuente territorial difiere de la serie NIIF y no se han conciliado las causas.
+La ampliación [territorial y económica](reports/territorial/informe.md) integra datos municipales SFC, coordenadas DIVIPOLA, proyecciones de población e IPC mensual del DANE e inflación anual del Banco Mundial. Compara cortes de junio de 2023–2026, calcula el crecimiento ajustado por IPC y descompone por tipo de entidad una brecha entre fuentes SFC. Es descriptiva y conserva las observaciones sin homologar en cuarentena. La diferencia entre fuentes aún no tiene causa identificada.
 
 ## Pregunta y alcance
 
@@ -26,9 +26,11 @@ Con Python y `requirements.txt` instalados, desde esta carpeta:
 python3 src/model.py
 python3 src/territorial.py
 python3 src/macro.py
+python3 src/contexto_economico.py
+python3 src/modelo_ipc.py
 python3 -m pytest tests -q
 ```
 
 `src/download.py` actualiza ambas fuentes y sus hashes. Actualizar puede cambiar el histórico, el corte y las métricas; conservar la instantánea anterior si es necesario comparar versiones. El script de modelación actual exige exactamente la estructura y cobertura esperadas y falla ante datos incompletos o saldos inconsistentes. Antes de redistribuir datos, revisar atribución y condiciones de la fuente.
 
-Para actualizar fuentes territoriales y macroeconómicas se usan `src/download_territorial.py` y `src/macro.py --download`. Las consultas, las fechas y los hashes están en `data/territorial/raw/`; el procesamiento guarda municipios, cobertura y cuarentena en `data/territorial/processed/`. Las series macro y territoriales no se añadieron al backtest nacional: faltan historias suficientes y fechas de publicación por versión.
+Para actualizar fuentes territoriales y macroeconómicas se usan `src/download_territorial.py`, `src/download_contexto.py` y `src/macro.py --download`. Las consultas, las fechas y los hashes están en `data/territorial/raw/`; el procesamiento guarda municipios, cobertura, cuarentena y comparaciones en `data/territorial/processed/`. El IPC se evalúa en challengers exploratorios, sin reseleccionar el modelo; los datos territoriales no entran al backtest nacional. Faltan fechas históricas de publicación por versión.

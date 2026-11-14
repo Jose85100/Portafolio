@@ -64,10 +64,14 @@ def run():
     valid=city[city.nom_mpio.notna() & city.nombre_coincide].copy()
     unmatched=city[~(city.nom_mpio.notna() & city.nombre_coincide)].copy()
     unmatched.to_csv(OUT/'cuarentena_homologacion.csv',index=False)
+    # Sensibilidad: coincidencia por código es una hipótesis, nunca una homologación.
+    candidates=unmatched[unmatched.nom_mpio.notna()].groupby(['fecha','cod_mpio','nombre_del_municipio','nom_mpio'],as_index=False).agg(cartera=('cartera','sum'))
+    candidates['estado']='coincide codigo; nombre pendiente de validacion'
+    candidates.to_csv(OUT/'candidatos_sensibilidad.csv',index=False)
     municipalities=valid.groupby(['fecha','cod_mpio','nom_mpio','dpto','latitud','longitud'],dropna=False,as_index=False).agg(cartera=('cartera','sum'),filas=('filas','sum'))
     # DANE: proyección anual para total de cada municipio, no dato censal observado al corte.
     pop=pd.read_excel(RAW/'poblacion_dane.xlsx',sheet_name='PobMunicipalxÁrea',header=7,dtype={'MPIO':str})
-    pop=pop[(pop['ÁREA GEOGRÁFICA']=='Total') & (pop['AÑO'].isin([2025,2026]))][['MPIO','AÑO','TOTAL']].copy()
+    pop=pop[(pop['ÁREA GEOGRÁFICA']=='Total') & (pop['AÑO'].isin([2023,2024,2025,2026]))][['MPIO','AÑO','TOTAL']].copy()
     pop.columns=['cod_mpio','year','poblacion']; pop.cod_mpio=pop.cod_mpio.str.zfill(5)
     if pop.duplicated(['cod_mpio','year']).any() or (pop.poblacion<0).any(): raise ValueError('Población DANE inválida')
     # Cero es posible en áreas no municipalizadas; no es un denominador válido.
