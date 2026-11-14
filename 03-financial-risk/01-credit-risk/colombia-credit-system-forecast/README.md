@@ -4,6 +4,8 @@
 
 La ampliación [territorial y económica](reports/territorial/informe.md) integra datos municipales SFC, coordenadas DIVIPOLA, proyecciones de población e IPC mensual del DANE e inflación anual del Banco Mundial. Compara cortes de junio de 2023–2026, calcula el crecimiento ajustado por IPC y descompone por tipo de entidad una brecha entre fuentes SFC. Es descriptiva y conserva las observaciones sin homologar en cuarentena. La diferencia entre fuentes aún no tiene causa identificada.
 
+El [análisis multivariado](reports/multivariado/informe.md) añade PCA, dos factores comunes, K-means y mezcla gaussiana sobre indicadores de cartera y variables económicas. Sus grupos describen meses agregados, no categorías de riesgo individual; los parámetros se ajustan en 2017–2022 y se examina su estabilidad posterior.
+
 ## Pregunta y alcance
 
 Para un mes t, estimar el porcentaje `100 × saldo vencido / saldo bruto` para el total de establecimientos de crédito **sin instituciones oficiales especiales**, bajo el supuesto retrospectivo de que las cifras hasta t−2 son conocidas al cierre de t−1. La SFC define vencimiento por modalidad; es una razón de saldos en una fecha y no equivale a PD individual, transición de mora, pérdida esperada ni diagnóstico de solvencia.
@@ -28,6 +30,7 @@ python3 src/territorial.py
 python3 src/macro.py
 python3 src/contexto_economico.py
 python3 src/modelo_ipc.py
+python3 src/analisis_multivariado.py
 python3 -m pytest tests -q
 ```
 
