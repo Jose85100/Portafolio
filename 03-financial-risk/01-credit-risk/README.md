@@ -6,6 +6,7 @@ Modelos y análisis para originación, seguimiento y gestión de cartera. El mat
 
 ## Áreas
 
+- [Modelo agregado de cartera colombiana](colombia-credit-system-forecast/): indicadores SFC, TRM y evaluación temporal de alternativas con datos públicos.
 - [Productos de crédito](credit-risk-products/): scorecard, pérdida esperada, roll rates, cosechas, segmentación e investigación IFRS 9.
 - [Fraude y anomalías](fraud-and-anomaly-research/): cuatro especialistas S1 de KYC, redes, ingresos y proceso, más un motor S2 acotado de comparación sintética y asignación por pérdida bajo capacidad.
 - [Estrategia de cartera](credit-portfolio-strategy/): concentración, cópula de pérdidas, capital, límites de apetito y Vasicek.

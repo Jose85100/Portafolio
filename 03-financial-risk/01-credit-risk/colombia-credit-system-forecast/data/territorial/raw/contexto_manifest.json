@@ -1,0 +1,28 @@
+{
+  "sfc_bancos.xlsx": {
+    "url": "https://www.superfinanciera.gov.co/loader.php?idFile=1017725&lFuncion=descargar&lServicio=Tools2&lTipo=descargas",
+    "sha256": "c50af0be446cf49634016e6f7796f6bda81bdab79e0db0218f2663b31ca07144",
+    "bytes": 894880
+  },
+  "sfc_financiamiento.xlsx": {
+    "url": "https://www.superfinanciera.gov.co/loader.php?idFile=1017880&lFuncion=descargar&lServicio=Tools2&lTipo=descargas",
+    "sha256": "9e6952bb33a0e2162c471fc6b70a0b7e73e6dabbe0d18d9f9b331eb49db2c55b",
+    "bytes": 783978
+  },
+  "sfc_corporaciones.xlsx": {
+    "url": "https://www.superfinanciera.gov.co/loader.php?idFile=1017894&lFuncion=descargar&lServicio=Tools2&lTipo=descargas",
+    "sha256": "6ffe1ff83dff43c0cab5a0d06018d195e77b072d9d458bb7fff1174b9f19234a",
+    "bytes": 473932
+  },
+  "sfc_cooperativas.xlsx": {
+    "url": "https://www.superfinanciera.gov.co/loader.php?idFile=1017801&lFuncion=descargar&lServicio=Tools2&lTipo=descargas",
+    "sha256": "3efe94e37330bc0066c1bab2b219aaa74ac1b6c78808f76171ef99e5ccf4dd02",
+    "bytes": 707202
+  },
+  "ipc_dane_oct2026.xlsx": {
+    "url": "https://www.dane.gov.co/files/operaciones/IPC/oct2026/anex-IPC-Indices-oct2026.xlsx",
+    "sha256": "4e8366bf2d03d4bdc15d14b1b21b12a6eec6c3695926abd503a430858ef74e2e",
+    "bytes": 40540
+  },
+  "descargado_utc": "2026-11-14T22:56:42.357381+00:00"
+}

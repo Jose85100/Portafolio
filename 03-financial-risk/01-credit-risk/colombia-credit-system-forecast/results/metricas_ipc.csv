@@ -1,0 +1,5 @@
+periodo,modelo,n,mae_pp,rmse_pp,sesgo_pp,max_abs_pp
+desarrollo,boosting_ipc,36,0.22354121,0.29651363,0.08738036,0.85958630
+desarrollo,ridge_ipc,36,0.23852135,0.31428287,-0.05958791,1.02407530
+evaluacion,boosting_ipc,45,0.10723301,0.15500428,-0.04649972,0.41869971
+evaluacion,ridge_ipc,45,0.14540418,0.20570318,-0.05006220,0.57077347

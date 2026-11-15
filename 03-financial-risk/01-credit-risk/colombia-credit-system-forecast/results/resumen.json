@@ -1,0 +1,13 @@
+{
+  "fecha_min": "2016-01-31",
+  "fecha_max": "2026-09-30",
+  "meses": 129,
+  "cobertura": "Establecimientos de crédito sin IOE; valores agregados SFC",
+  "max_conciliacion_indicador": 4.971627578370663e-07,
+  "seleccion": "persistencia",
+  "criterio": "menor MAE 2020-2022",
+  "evaluacion": "2023-01 hasta último mes; entrenamiento expansivo y corte t-2",
+  "banda_radio_pp": 0.5651887146198931,
+  "banda_cobertura_evaluacion": 1.0,
+  "nota_intervalo": "residuos de desarrollo; sin garantía por dependencia temporal, selección y cambios de distribución"
+}

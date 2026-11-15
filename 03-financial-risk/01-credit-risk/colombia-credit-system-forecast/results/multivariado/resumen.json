@@ -1,0 +1,59 @@
+{
+  "fecha_inicial": "2017-01-31",
+  "fecha_final": "2026-09-30",
+  "desarrollo_n": 72,
+  "posterior_n": 45,
+  "variables": [
+    "mora_comercial_pp",
+    "mora_consumo_pp",
+    "mora_vivienda_pp",
+    "mora_microcredito_pp",
+    "crecimiento_real_cartera_pct",
+    "inflacion_anual_pct",
+    "variacion_trm_anual_pct"
+  ],
+  "pca_varianza_explicada": [
+    0.5040687776533221,
+    0.30492869264858286,
+    0.07567450563376282,
+    0.06367228102460498,
+    0.02437815260221132,
+    0.019562196589358247,
+    0.007715393848157549
+  ],
+  "factor_iteraciones": 28,
+  "factor_convergencia": true,
+  "grupos_elegidos": 2,
+  "silhouette_desarrollo": [
+    {
+      "k": 2,
+      "silhouette_desarrollo": 0.38801197833552153,
+      "inercia": 311.7636548148246
+    },
+    {
+      "k": 3,
+      "silhouette_desarrollo": 0.34972353047585625,
+      "inercia": 215.16909268273767
+    },
+    {
+      "k": 4,
+      "silhouette_desarrollo": 0.3309869378317622,
+      "inercia": 166.67426468546603
+    },
+    {
+      "k": 5,
+      "silhouette_desarrollo": 0.37589950380807674,
+      "inercia": 125.9539700678688
+    }
+  ],
+  "gmm_convergencia": true,
+  "gmm_covarianza": "diagonal",
+  "ari_kmeans_gmm_desarrollo": 0.886557522982373,
+  "ari_kmeans_gmm_posterior": 0.30970149253731344,
+  "gmm_posterior_prob_max_inferior_080_pct": 8.88888888888889,
+  "distancia_p95_desarrollo": 3.4750490789184396,
+  "distancia_posterior_supera_p95_desarrollo_pct": 62.22222222222222,
+  "reconstruccion_pca2_mse_desarrollo": 0.19100252969809497,
+  "reconstruccion_pca2_mse_posterior": 1.2403934633552842,
+  "nota": "Exploración descriptiva retrospectiva; grupos no son categorías de riesgo, ni son independientes en el tiempo."
+}

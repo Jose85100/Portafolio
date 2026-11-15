@@ -1,0 +1,12 @@
+{
+  "fecha_inicial": "2025-06-30",
+  "fecha_final": "2026-06-30",
+  "cartera_inicial_pesos": 662877285317426.5,
+  "cartera_final_pesos": 726887918827449.8,
+  "ipc_inicial": 150.3,
+  "ipc_final": 159.53,
+  "crecimiento_nominal_pct": 9.656483172352326,
+  "inflacion_ipc_pct": 6.141051230871586,
+  "crecimiento_deflactado_ipc_pct": 3.312037991628891,
+  "advertencia": "Aproximación a precios de consumo nacional, no deflactor específico de crédito; no refleja inclusión, ni identifica una causa."
+}
