@@ -1,0 +1,9 @@
+scenario,metric_id,value,unit
+base,mora,3,%
+base,liquidez,145,%
+base,concentracion,11,%
+adverso,mora,4.5,%
+adverso,liquidez,120,%
+adverso,concentracion,13,%
+severo,mora,7,%
+severo,liquidez,105,%

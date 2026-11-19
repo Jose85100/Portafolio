@@ -7,17 +7,27 @@ Crédito, mercado, liquidez, riesgo sistémico, IFRS 9 y stress testing integrad
 1. [Crédito](01-credit-risk/): [productos de crédito](01-credit-risk/credit-risk-products/) y [estrategia de cartera](01-credit-risk/credit-portfolio-strategy/): scoring, IFRS 9, cosechas, concentración, cópula, capital y apetito de riesgo. Incluye [fraude, anomalías y minimización de pérdida](01-credit-risk/fraud-and-anomaly-research/), con cuatro especialistas S1 y un motor S2 acotado a datos sintéticos.
 2. [Mercado y modelos](02-market-and-model-risk/): VaR/ES, backtesting, GARCH, pruebas de estrés y validación (PSI/Gini), con un companion observado de PSI para mezcla de calificaciones SFC que no sustituye PSI de score.
 3. [Liquidez de mercado](03-market-liquidity-research/): ES dinámico y EVT, regímenes de volatilidad, liquidez estocástica, espirales de liquidez y optimización de liquidez.
-4. [Investigación avanzada](04-advanced-research/): siete propuestas metodológicas de crédito, IFRS 9, SIAR y control de cartera.
+4. [Investigación avanzada](04-advanced-research/): seis propuestas metodológicas y un primer prototipo sintético de originación causal.
 5. [Enterprise Risk Advisory](05-enterprise-risk-advisory/): 56 diseños metodológicos agrupados en ocho prácticas, con fundamentos separados.
 6. [Motor de investigación cuantitativa](06-quantitative-research-engine/): arquitectura y referencias numéricas de crédito.
 7. [Riesgo corporativo y construcción](07-financial-and-construction-risk-lab/): baselines Python/C++, experimentos y 45 carpetas preservadas con solapamientos documentados.
-8. [Sistemas regulatorios y motores de riesgo](08-regulatory-risk-systems/): catorce dominios, fundamentos, arquitectura y seis funciones numéricas de investigación con ocho pruebas locales. Incluye SARC, SARM, SARL, SARO, IFRS 9, SARAS, SIAR/SARE/MGR, capital, SARLAFT, BCP, KRIs, conducta, reporte, SAGRILAFT y SREP; los dominios mantienen estado S1.
+8. [Sistemas regulatorios y motores de riesgo](08-regulatory-risk-systems/): catorce dominios, fundamentos, arquitectura, funciones numéricas y un prototipo sintético de escalera de liquidez. Incluye SARC, SARM, SARL, SARO, IFRS 9, SARAS, SIAR/SARE/MGR, capital, SARLAFT, BCP, KRIs, conducta, reporte, SAGRILAFT y SREP; SARL incluye una escalera de caja sintética; los demás dominios mantienen estado de diseño.
 
 Los proyectos ejecutables de las dos primeras áreas incluyen notebooks; IFRS 9 conserva su notebook dentro de `notebooks/`. Los diseños de investigación no se cuentan como implementaciones. Los productos en C++ están en [04 · risk-engines](../04-quant-strategy-and-products/risk-engines/).
 
 ## Aplicaciones observadas y brechas
 
 El portafolio tiene companions observadas o proxy en crédito, mercado, liquidez y construcción; su existencia no equivale a validación institucional del modelo. Consulta el [registro de cierre de brechas](OBSERVED_APPLICATION_GAP_REGISTER.md) para identificar qué proyectos tienen aplicación, cuáles requieren datos por cliente/contrato/obra y qué entregables siguen siendo especificaciones S1. El inventario verificable de 45 rutas corporativas y de construcción tiene 45 rutas con companion, benchmark externo o contexto público observado enlazado; ninguna de las 45 tiene validación con resultados individuales de obra o empresa. Las propuestas S1 conservan su estado de investigación; la evaluación causal utiliza un benchmark externo de empleo y requiere datos de construcción para validar su aplicación al dominio.
+
+## Ejercicios con datos públicos y supuestos explícitos
+
+- [Originación causal: covariable UCI y desenlaces simulados](04-advanced-research/01-causal-origination-policy/semisynthetic_uci/README.md).
+- [Apetito de riesgo: base histórica SFC y escenarios](05-enterprise-risk-advisory/01-erm-governance/risk-appetite/case/README.md).
+- [SARL: componentes SFC y escalera hipotética](08-regulatory-risk-systems/04-sarl-liquidity/observed-sfc-proxy/README.md).
+- [Motor cuantitativo: proxy de cupo UCI](06-quantitative-research-engine/examples/uci_limit_proxy/README.md).
+- [Caja de construcción: escenarios con índice ICOCED](07-financial-and-construction-risk-lab/04-modelos-compartidos/examples/icoced_cash_path/README.md).
+
+Las variables observadas y los supuestos de cada ejercicio se distinguen en sus fichas; estos ejercicios no acreditan validación institucional ni desempeño predictivo.
 
 ## Agenda de investigación avanzada — siete proyectos
 
@@ -29,11 +39,11 @@ El portafolio tiene companions observadas o proxy en crédito, mercado, liquidez
 6. [Originación MCA con flujos comerciales intermitentes](04-advanced-research/06-mca-cashflow-credit-underwriting/): Inferir capacidad de pago bajo ventas irregulares y datos escasos.
 7. [Optimización de portafolio con capital y provisiones](04-advanced-research/07-capital-constrained-portfolio-control/): Asignar originación, pricing y límites maximizando valor sujeto a ECL y capital.
 
-**Estado:** propuestas metodológicas, no implementaciones ni resultados empíricos. Cada proyecto incluye formulación, identificación, validación, arquitectura objetivo y gobierno.
+**Estado:** originación causal incluye un primer experimento sintético; los seis proyectos restantes son propuestas. No hay validación empírica de estas propuestas. Cada proyecto incluye formulación y una agenda de validación.
 
 ## Enterprise Risk Advisory — consultoría integral
 
-[56 proyectos especificados en ocho líneas de servicio](05-enterprise-risk-advisory/). Incluyen gobierno, capital, liquidez, operacional, resiliencia, ciber, IA, fraude, cumplimiento, seguros, clima, contraparte, controles y datos de riesgo. **Diseños metodológicos pendientes de implementación.**
+[56 proyectos especificados en ocho líneas de servicio](05-enterprise-risk-advisory/). Incluyen gobierno, capital, liquidez, operacional, resiliencia, ciber, IA, fraude, cumplimiento, seguros, clima, contraparte, controles y datos de riesgo. **Catálogo metodológico con aplicaciones acotadas y un prototipo sintético de apetito; no son 56 implementaciones completas.**
 
 
 ## Cobertura: regulación prudencial, gestión integral y continuidad

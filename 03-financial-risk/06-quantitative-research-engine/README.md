@@ -10,7 +10,7 @@ Linearity of expectation gives E[L]=Σ_i a_i PD_i **without assuming independent
 
 Variance satisfies Var(L)=Σ_i a_i² PD_i(1−PD_i)+2Σ_{i<j}a_i a_j Cov(D_i,D_j).
 
-The C++ covariance API computes aᵀ C a from a caller-provided covariance matrix C. **It checks shape, symmetry, finiteness and nonnegative portfolio variance, but does not certify that C is PSD or that its entries are compatible with Bernoulli marginals.** Validate those upstream before any risk use.
+The C++ covariance API computes aᵀ C a from a caller-provided covariance matrix C. **It checks dimensions, symmetry, finiteness, Bernoulli variances and pairwise Fréchet bounds, and positive semidefiniteness using an LDL decomposition with absolute tolerance 1e-10. These necessary conditions do not guarantee a jointly feasible multivariate Bernoulli distribution.** Validate those upstream before any risk use.
 
 Under independent defaults, Cov(D_i,D_j)=0 for i≠j, yielding the diagonal formula.
 
@@ -39,9 +39,13 @@ The C++ kernel was compiled and its assertions executed locally before opening t
 
 ## Scientific validation backlog
 
-1. Add a PSD and Bernoulli-feasibility validator for supplied covariance matrices.
+1. Investigate joint Bernoulli feasibility beyond the implemented necessary pairwise bounds and PSD check.
 2. Test random portfolios against an independent high-precision implementation.
 3. Add stochastic LGD/EAD and dependence via Gaussian/t copulas with explicit limitations.
 4. Implement lifetime ECL separately with survival, scenarios and discounting.
 5. Compare Monte Carlo, quadrature and analytic methods; report error and runtime.
 6. Add CI, sanitizers, benchmarks and model governance artifacts.
+
+## Observed-data proxy example
+
+[UCI card-limit proxy](examples/uci_limit_proxy/README.md) runs the C++ engine on a historical Taiwan dataset, with an illustrative fixed LGD and a held-out random split. Credit limits are not EAD and the constructed loss is not observed loss.

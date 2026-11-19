@@ -12,5 +12,9 @@ int main(){
  assert(std::abs(risk::correlated_variance(e,cov)-775.0)<1e-12);
  bool thrown=false;try{risk::expected_loss({{-0.1,0.5,100}});}catch(const std::invalid_argument&){thrown=true;}assert(thrown);
  thrown=false;try{risk::correlated_variance(e,{{0.09,0.5},{0.5,0.16}});}catch(const std::invalid_argument&){thrown=true;}
+ assert(thrown);
+ risk::validate_default_covariance({{0.5,1,1},{0.5,1,1}},{{0.25,0.25},{0.25,0.25}});
+ thrown=false;try{risk::validate_default_covariance({{0.5,1,1},{0.5,1,1},{0.5,1,1}},{{0.25,-0.2,-0.2},{-0.2,0.25,-0.2},{-0.2,-0.2,0.25}});}catch(const std::invalid_argument&){thrown=true;}assert(thrown);
+ thrown=false;try{risk::validate_default_covariance(e,{{0.1,0.0},{0.0,0.16}});}catch(const std::invalid_argument&){thrown=true;}assert(thrown);
  return 0;
 }

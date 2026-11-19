@@ -1,0 +1,50 @@
+{
+  "n": 30000,
+  "seed": 42,
+  "source_sha256": "30c6be3abd8dcfd3e6096c828bad8c2f011238620f5369220bd60cfc82700933",
+  "limit_ntd_min": 10000.0,
+  "normalized_x_mean": 0.16748432266666666,
+  "policies": {
+    "never": {
+      "conditional_truth": 0.0,
+      "n": 30000,
+      "direct": 0.0,
+      "ips": 0.0,
+      "aipw": 0.0,
+      "aipw_se": 0.0,
+      "matched": 20995,
+      "effective_sample_size": 20696.269374782234,
+      "max_weight": 3.0120481927710836
+    },
+    "always": {
+      "conditional_truth": 0.033987458133333336,
+      "n": 30000,
+      "direct": 0.033987458133333336,
+      "ips": 0.03612230528611122,
+      "aipw": 0.0367743399428614,
+      "aipw_se": 0.010814113995256919,
+      "matched": 9005,
+      "effective_sample_size": 8493.75809800404,
+      "max_weight": 4.854368932038835
+    },
+    "threshold_0.125": {
+      "conditional_truth": 0.05838873813333334,
+      "n": 30000,
+      "direct": 0.05838873813333334,
+      "ips": 0.057581627958051676,
+      "aipw": 0.05816220405067202,
+      "aipw_se": 0.007259368146518152,
+      "matched": 16301,
+      "effective_sample_size": 13837.489379011718,
+      "max_weight": 3.597122302158273
+    }
+  },
+  "threshold_vs_always": {
+    "n": 30000,
+    "aipw_difference": 0.021387864107810614,
+    "aipw_difference_se": 0.008010224830188801,
+    "normal_95_low": 0.005688111932572095,
+    "normal_95_high": 0.03708761628304913,
+    "conditional_truth": 0.02440128
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "source": {
+    "period": "2026-08-31",
+    "entity_type": "Bancos",
+    "alm_million_cop": "160953536",
+    "rln_30d_million_cop": "90040630",
+    "ratio_alm_rln_pct": "178.7566",
+    "derived_csv_sha256": "eb9282570324306fb3a8509307a95d707df6721d0717439307525473f1615146",
+    "raw_pdf_sha256": "e38b879140f70d523b655af2aa72c12531f802473604d99bddc15fc57f8b985d"
+  },
+  "label": "Hypothetical scenario; snapshot components are not dated cash flows",
+  "results": {
+    "base": {
+      "assumed_usable_alm_fraction": "0.60",
+      "assumed_rln_multiple": "1.00",
+      "ladder": {
+        "as_of": "2026-11-01",
+        "through": "2026-12-01",
+        "currency": "COP",
+        "opening_balance": "96572121600000.00",
+        "flow_count": 3,
+        "total_inflows": "0.00",
+        "total_outflows": "90040630000000.00",
+        "closing_balance": "6531491600000.00",
+        "first_shortfall_date": null,
+        "minimum_closing_balance": "6531491600000.00",
+        "minimum_closing_date": "2026-12-01",
+        "minimum_initial_funding": "0.00",
+        "buckets": [
+          {
+            "date": "2026-11-01",
+            "inflows": "0.00",
+            "outflows": "0.00",
+            "net_flow": "0.00",
+            "closing_balance": "96572121600000.00",
+            "flow_ids": []
+          },
+          {
+            "date": "2026-11-11",
+            "inflows": "0.00",
+            "outflows": "30013543333333.34",
+            "net_flow": "-30013543333333.34",
+            "closing_balance": "66558578266666.66",
+            "flow_ids": [
+              "fictional-outflow-1"
+            ]
+          },
+          {
+            "date": "2026-11-21",
+            "inflows": "0.00",
+            "outflows": "30013543333333.33",
+            "net_flow": "-30013543333333.33",
+            "closing_balance": "36545034933333.33",
+            "flow_ids": [
+              "fictional-outflow-2"
+            ]
+          },
+          {
+            "date": "2026-12-01",
+            "inflows": "0.00",
+            "outflows": "30013543333333.33",
+            "net_flow": "-30013543333333.33",
+            "closing_balance": "6531491600000.00",
+            "flow_ids": [
+              "fictional-outflow-3"
+            ]
+          }
+        ]
+      }
+    },
+    "adverso": {
+      "assumed_usable_alm_fraction": "0.60",
+      "assumed_rln_multiple": "1.50",
+      "ladder": {
+        "as_of": "2026-11-01",
+        "through": "2026-12-01",
+        "currency": "COP",
+        "opening_balance": "96572121600000.00",
+        "flow_count": 3,
+        "total_inflows": "0.00",
+        "total_outflows": "135060945000000.00",
+        "closing_balance": "-38488823400000.00",
+        "first_shortfall_date": "2026-12-01",
+        "minimum_closing_balance": "-38488823400000.00",
+        "minimum_closing_date": "2026-12-01",
+        "minimum_initial_funding": "38488823400000.00",
+        "buckets": [
+          {
+            "date": "2026-11-01",
+            "inflows": "0.00",
+            "outflows": "0.00",
+            "net_flow": "0.00",
+            "closing_balance": "96572121600000.00",
+            "flow_ids": []
+          },
+          {
+            "date": "2026-11-11",
+            "inflows": "0.00",
+            "outflows": "45020315000000.00",
+            "net_flow": "-45020315000000.00",
+            "closing_balance": "51551806600000.00",
+            "flow_ids": [
+              "fictional-outflow-1"
+            ]
+          },
+          {
+            "date": "2026-11-21",
+            "inflows": "0.00",
+            "outflows": "45020315000000.00",
+            "net_flow": "-45020315000000.00",
+            "closing_balance": "6531491600000.00",
+            "flow_ids": [
+              "fictional-outflow-2"
+            ]
+          },
+          {
+            "date": "2026-12-01",
+            "inflows": "0.00",
+            "outflows": "45020315000000.00",
+            "net_flow": "-45020315000000.00",
+            "closing_balance": "-38488823400000.00",
+            "flow_ids": [
+              "fictional-outflow-3"
+            ]
+          }
+        ]
+      }
+    },
+    "severo": {
+      "assumed_usable_alm_fraction": "0.60",
+      "assumed_rln_multiple": "2.00",
+      "ladder": {
+        "as_of": "2026-11-01",
+        "through": "2026-12-01",
+        "currency": "COP",
+        "opening_balance": "96572121600000.00",
+        "flow_count": 3,
+        "total_inflows": "0.00",
+        "total_outflows": "180081260000000.00",
+        "closing_balance": "-83509138400000.00",
+        "first_shortfall_date": "2026-11-21",
+        "minimum_closing_balance": "-83509138400000.00",
+        "minimum_closing_date": "2026-12-01",
+        "minimum_initial_funding": "83509138400000.00",
+        "buckets": [
+          {
+            "date": "2026-11-01",
+            "inflows": "0.00",
+            "outflows": "0.00",
+            "net_flow": "0.00",
+            "closing_balance": "96572121600000.00",
+            "flow_ids": []
+          },
+          {
+            "date": "2026-11-11",
+            "inflows": "0.00",
+            "outflows": "60027086666666.67",
+            "net_flow": "-60027086666666.67",
+            "closing_balance": "36545034933333.33",
+            "flow_ids": [
+              "fictional-outflow-1"
+            ]
+          },
+          {
+            "date": "2026-11-21",
+            "inflows": "0.00",
+            "outflows": "60027086666666.67",
+            "net_flow": "-60027086666666.67",
+            "closing_balance": "-23482051733333.34",
+            "flow_ids": [
+              "fictional-outflow-2"
+            ]
+          },
+          {
+            "date": "2026-12-01",
+            "inflows": "0.00",
+            "outflows": "60027086666666.66",
+            "net_flow": "-60027086666666.66",
+            "closing_balance": "-83509138400000.00",
+            "flow_ids": [
+              "fictional-outflow-3"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

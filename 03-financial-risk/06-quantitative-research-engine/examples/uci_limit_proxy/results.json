@@ -1,0 +1,27 @@
+{
+  "source_sha256": "30c6be3abd8dcfd3e6096c828bad8c2f011238620f5369220bd60cfc82700933",
+  "seed": 42,
+  "n_train": 22500,
+  "n_test": 7500,
+  "training_default_rate": 0.22093333333333334,
+  "test_default_rate": 0.222,
+  "training_limit_cutpoints_twd": [
+    80000.0,
+    200000.0
+  ],
+  "training_segment_default_rates": [
+    0.29914741134313605,
+    0.2085255066387142,
+    0.1458907887479316
+  ],
+  "test_brier_global": 0.17271713777777778,
+  "test_brier_segmented": 0.1685412318997851,
+  "segmented_expected_proxy_loss_twd": 100868689.64486386,
+  "segmented_independent_variance_twd2": 8938632558169.938,
+  "lgd_assumption": 0.45,
+  "test_limit_sum_twd": 1249380000.0,
+  "expected_proxy_loss_twd": 124213359.60000001,
+  "realized_proxy_loss_twd": 97420500.0,
+  "independent_default_proxy_variance_twd2": 11541424757868.002,
+  "interpretation": "Credit limit, not EAD; fixed LGD hypothetical; proxy loss is not observed loss. Random split within 2005, not out-of-time."
+}

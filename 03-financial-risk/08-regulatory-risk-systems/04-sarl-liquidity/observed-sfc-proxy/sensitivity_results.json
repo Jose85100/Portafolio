@@ -1,0 +1,74 @@
+{
+  "source_period": "2026-08-31",
+  "entity_type": "Bancos",
+  "derived_csv_sha256": "eb9282570324306fb3a8509307a95d707df6721d0717439307525473f1615146",
+  "raw_pdf_sha256": "e38b879140f70d523b655af2aa72c12531f802473604d99bddc15fc57f8b985d",
+  "units": "COP",
+  "scenario_count": 9,
+  "label": "Hypothetical deterministic stress; not observed outflows or regulatory liquidity",
+  "sensitivity": [
+    {
+      "usable_alm_fraction": "0.40",
+      "rln_multiple": "1.00",
+      "minimum_initial_funding_cop": "25659215600000.00",
+      "first_shortfall_date": "2026-12-01",
+      "closing_balance_cop": "-25659215600000.00"
+    },
+    {
+      "usable_alm_fraction": "0.40",
+      "rln_multiple": "1.50",
+      "minimum_initial_funding_cop": "70679530600000.00",
+      "first_shortfall_date": "2026-11-21",
+      "closing_balance_cop": "-70679530600000.00"
+    },
+    {
+      "usable_alm_fraction": "0.40",
+      "rln_multiple": "2.00",
+      "minimum_initial_funding_cop": "115699845600000.00",
+      "first_shortfall_date": "2026-11-21",
+      "closing_balance_cop": "-115699845600000.00"
+    },
+    {
+      "usable_alm_fraction": "0.60",
+      "rln_multiple": "1.00",
+      "minimum_initial_funding_cop": "0.00",
+      "first_shortfall_date": null,
+      "closing_balance_cop": "6531491600000.00"
+    },
+    {
+      "usable_alm_fraction": "0.60",
+      "rln_multiple": "1.50",
+      "minimum_initial_funding_cop": "38488823400000.00",
+      "first_shortfall_date": "2026-12-01",
+      "closing_balance_cop": "-38488823400000.00"
+    },
+    {
+      "usable_alm_fraction": "0.60",
+      "rln_multiple": "2.00",
+      "minimum_initial_funding_cop": "83509138400000.00",
+      "first_shortfall_date": "2026-11-21",
+      "closing_balance_cop": "-83509138400000.00"
+    },
+    {
+      "usable_alm_fraction": "0.80",
+      "rln_multiple": "1.00",
+      "minimum_initial_funding_cop": "0.00",
+      "first_shortfall_date": null,
+      "closing_balance_cop": "38722198800000.00"
+    },
+    {
+      "usable_alm_fraction": "0.80",
+      "rln_multiple": "1.50",
+      "minimum_initial_funding_cop": "6298116200000.00",
+      "first_shortfall_date": "2026-12-01",
+      "closing_balance_cop": "-6298116200000.00"
+    },
+    {
+      "usable_alm_fraction": "0.80",
+      "rln_multiple": "2.00",
+      "minimum_initial_funding_cop": "51318431200000.00",
+      "first_shortfall_date": "2026-12-01",
+      "closing_balance_cop": "-51318431200000.00"
+    }
+  ]
+}

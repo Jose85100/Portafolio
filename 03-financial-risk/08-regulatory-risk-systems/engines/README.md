@@ -18,3 +18,5 @@ python3 -m unittest discover -s 03-financial-risk/08-regulatory-risk-systems/eng
 ```
 
 Las pruebas contrastan casos manuales, supervivencia, escala, traslación, descuento, dirección, simulación e inputs inválidos. El chequeo Monte Carlo usa semilla fija y tolerancia amplia; no valida la distribución de pérdidas de una entidad real.
+
+Además, la [escalera de liquidez](../04-sarl-liquidity/README.md#prototipo-reproducible-vencimientos-y-primera-insuficiencia) ofrece agregación por vencimiento, conciliación de entradas y salidas y primera insuficiencia con datos sintéticos. No calcula indicadores regulatorios.
