@@ -51,6 +51,10 @@ Los nuevos casos profundizan temas adicionales. Las aplicaciones con supuestos y
 
 La descarga de cotizaciones depende de la disponibilidad de Cboe; VCDB y CAS requieren acceso a sus fuentes en línea. Las simulaciones y perturbaciones son variables construidas sobre datos observados, no validación de desempeño institucional.
 
+## Prototipo sintético de apetito
+
+El [caso reproducible de apetito](01-erm-governance/risk-appetite/case/) evalúa indicadores hipotéticos en tres escenarios y genera un reporte con alertas, brechas y datos faltantes. Sus límites y acciones no están aprobados ni acreditan cumplimiento institucional.
+
 ## Orden de implementación
 
 1. Establecer contratos comunes y criterios de aceptación.

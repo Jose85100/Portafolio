@@ -1,7 +1,7 @@
 # Apetito de riesgo y cascada de límites
 
 **Línea de servicio:** Gobierno, ERM y estrategia  
-**Madurez:** especificación de investigación y consultoría; no software ni validación ejecutada.
+**Madurez:** especificación de investigación y consultoría con un prototipo de tablero sintético y pruebas; sin validación institucional.
 
 ## 1. Mandato, alcance y decisión
 
@@ -49,7 +49,7 @@ flowchart TD
  F --> G["Decisión y remediación"]
 ```
 
-Paquetes futuros: `src/` (estimación/simulación), `tests/` (unitarios e invariantes), `configs/` (escenarios), `notebooks/` (validación), `reports/` (comité), `data/README.md` (lineage). **No se afirma que estos archivos existan.**
+Arquitectura objetivo: `src/` (estimación/simulación), `tests/`, `configs/`, `notebooks/`, `reports/` y contratos de datos. El caso inicial reside en [`case/`](case/), con entradas, motor y pruebas locales; no implementa toda la arquitectura objetivo.
 
 ## 6. Entregables de consultoría
 
@@ -72,6 +72,8 @@ Paquetes futuros: `src/` (estimación/simulación), `tests/` (unitarios e invari
 
 
 ## Aplicación con datos observados y supuestos
+
+El [caso reproducible de apetito](case/) evalúa indicadores y umbrales hipotéticos, muestra faltantes y genera un reporte de comité con responsables y acciones sugeridas. Es un prototipo de reglas; no es una cascada de límites ni una validación institucional.
 
 [Notebook reproducible](aplicacion-datos-observados.ipynb). Usa datos públicos y documenta los supuestos y límites; no acredita validación institucional. Requiere Python, pandas, matplotlib, Jupyter y un clon del repositorio.
 

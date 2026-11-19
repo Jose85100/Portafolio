@@ -1,6 +1,25 @@
 # Originación causal y aprobación contrafactual
 
-> **Estado: propuesta de investigación; no implementado ni validado.** Línea 1 de siete.
+> **Estado:** prototipo sintético de evaluación de políticas, con propensiones y medias de resultado conocidas; no validado con solicitantes reales ni apto para decisiones de crédito. Línea 1 de siete.
+
+## Experimento reproducible
+
+Se implementó una primera evaluación fuera de política en [src/experiment.py](src/experiment.py), usando solamente la biblioteca estándar de Python. Genera solicitantes independientes con una covariable uniforme, acción binaria de aprobar/rechazar y política histórica conocida con probabilidades entre 0,2 y 0,8. Rechazar produce utilidad cero; la utilidad esperada de aprobar es `0,8 × x − 0,1`, más ruido normal. Estas utilidades son unidades arbitrarias, no pérdidas monetarias estimadas. Se comparan aprobar a todos, rechazar a todos y aprobar cuando `x ≥ 0,125`; sus valores poblacionales verdaderos son, respectivamente, 0,3, 0 y 0,30625.
+
+El evaluador calcula el método directo, ponderación inversa (IPS) y AIPW, además del error estándar de las contribuciones individuales, tamaño de muestra efectivo y peso máximo. Incluye una comparación AIPW pareada frente a tratar siempre, con incertidumbre de la diferencia que conserva la covarianza entre políticas. El experimento usa **propensión y media de resultado verdaderas**, no modelos ajustados; una prueba comprueba que IPS/AIPW recuperan aproximadamente el valor aun si se sustituye la media por cero. La muestra y las políticas se fijan antes de evaluarse; no se selecciona una política sobre la misma muestra. El error estándar supone observaciones independientes y no cubre incertidumbre de modelos estimados. Se rechazan propensiones sin solapamiento; no se recortan pesos silenciosamente.
+
+Desde la raíz del repositorio:
+
+```bash
+python3 03-financial-risk/04-advanced-research/01-causal-origination-policy/src/experiment.py
+python3 -m unittest discover -s 03-financial-risk/04-advanced-research/01-causal-origination-policy/tests -v
+```
+
+La identificación para datos reales exigiría consistencia, ausencia de confusión no medida condicional a las variables disponibles al decidir, positividad y desenlaces comparables para cada acción. La aprobación determina qué resultados de crédito se observan: los resultados de rechazados no se observan y no quedan identificados automáticamente. Faltan modelos de propensión y resultado estimados con separación temporal o cross-fitting, políticas aprendidas fuera de muestra, costos, censura, datos gobernados y análisis de sensibilidad; el ejercicio no demuestra mejora de una política real ni cumple por sí solo requisitos regulatorios.
+
+## Covariable observada con tratamiento simulado
+
+El [experimento semisintético UCI](semisynthetic_uci/) usa cupos observados de tarjetas de Taiwán con asignaciones y utilidades simuladas. Permite contrastar IPS y AIPW contra una verdad conocida, sin afirmar identificación ni desempeño de una política real.
 
 ## Pregunta y contribución
 
@@ -46,7 +65,7 @@ reports/   -> model card, comité y stress results
 data/      -> diccionario, licencias y procedencia (sin PII)
 ```
 
-Esta estructura es una **hoja de ruta**, no archivos creados en este commit. Reproducibilidad: Python, semillas, CI, versionado de datos y parámetros, revisión independiente y control de cambios.
+Esta estructura es una **hoja de ruta**; únicamente `src/experiment.py` y sus pruebas existen para el experimento sintético descrito arriba. Reproducibilidad objetivo: Python, semillas, CI, versionado de datos y parámetros, revisión independiente y control de cambios.
 
 ## Impacto de negocio
 

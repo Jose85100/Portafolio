@@ -1,0 +1,5 @@
+flow_id,due_date,currency,amount
+deposito_1,2026-01-02,COP,-130.00
+cobro_1,2026-01-02,COP,20.00
+cobro_2,2026-01-05,COP,45.00
+gasto_1,2026-01-07,COP,-10.00

@@ -9,7 +9,7 @@ Fundamentos, arquitectura y motores de investigación conectados con el portafol
 | [SIAR, SARE y conglomerados](01-siar-sare-mgr/) | Inventario de riesgos materiales y perímetro de consolidación | S1: diseño |
 | [SARC y riesgo de crédito](02-sarc-credit/) | Originación, seguimiento, deterioro y recuperación | S1: diseño |
 | [SARM y riesgo de mercado](03-sarm-market/) | Factores, posiciones y pérdidas bajo escenarios | S1: diseño |
-| [SARL y riesgo de liquidez](04-sarl-liquidity/) | Flujos, activos líquidos, fondeo y contingencia | S1: diseño |
+| [SARL y riesgo de liquidez](04-sarl-liquidity/) | Flujos, activos líquidos, fondeo y contingencia | Diseño con prototipo sintético de caja |
 | [SARO y riesgo operacional](05-saro-operational/) | Eventos, causas, controles y pérdidas | S1: diseño |
 | [IFRS 9 y conciliación contable](06-ifrs9-accounting/) | Deterioro, staging y conciliación; clasificación y cobertura en agenda separada | S1: diseño |
 | [SARAS y riesgo ambiental, social y climático](07-saras-climate/) | Debida diligencia y transmisión financiera de riesgos ASG | S1: diseño |
@@ -22,7 +22,7 @@ Fundamentos, arquitectura y motores de investigación conectados con el portafol
 | [SAGRILAFT](13-sagrilaft/) | Aplicabilidad, contrapartes y beneficiarios finales | S1: diseño |
 | [SREP](14-srep-supervisory-review/) | Revisión supervisora comparada y evidencia | S1: diseño |
 
-Los dominios son diseños S1; seis funciones numéricas transversales tienen pruebas locales acotadas. No hay certificación regulatoria, integración productiva ni validación empírica. No se eleva la madurez de los proyectos enlazados.
+Los dominios son diseños S1; seis funciones numéricas transversales y una escalera sintética de caja tienen pruebas locales acotadas. No hay certificación regulatoria, integración productiva ni validación empírica. No se eleva la madurez de los proyectos enlazados.
 
 ## Navegación
 

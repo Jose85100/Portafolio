@@ -1,6 +1,6 @@
 # Investigación avanzada de riesgo financiero
 
-Siete propuestas metodológicas para extender la investigación de crédito y cartera. Son diseños de investigación: definen formulación, identificación, validación, arquitectura objetivo y gobierno, pero no son implementaciones ni resultados empíricos.
+Siete líneas metodológicas para extender la investigación de crédito y cartera. La primera incorpora un prototipo sintético de evaluación causal de políticas con parámetros conocidos; las otras seis siguen siendo diseños. Ninguna tiene validación empírica en originación o cartera institucional.
 
 1. [Originación causal y aprobación contrafactual](01-causal-origination-policy/)
 2. [Gemelo digital de portafolio y cambios de régimen](02-nonstationary-credit-digital-twin/)

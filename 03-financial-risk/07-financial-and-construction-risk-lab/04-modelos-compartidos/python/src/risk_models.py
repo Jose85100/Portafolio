@@ -125,3 +125,33 @@ def correlated_project_losses(exposures, pds, lgds, scenarios=2000, seed=42, rho
                           if sqrt(rho) * z + sqrt(1 - rho) * rng.gauss(0, 1) < threshold))
     tail = empirical_var_es(losses)
     return {"expected_loss": mean(losses), "var95": tail["var"], "es95": tail["es"], "scenarios": scenarios}
+
+
+def project_cash_path(cfads, debt_service, initial_cash=0.0, liquidity_floor=0.0):
+    """Unfunded cash path, first breach, and minimum external liquidity required.
+
+    Period-end CFADS excludes debt service; no automatic financing, interest,
+    distributions, taxes or intra-period timing is assumed. Currency is common.
+    """
+    cfads = _finite_values(cfads, "cfads")
+    debt_service = _finite_values(debt_service, "debt_service")
+    if len(cfads) != len(debt_service) or any(x < 0 for x in debt_service):
+        raise ValueError("debt service must be nonnegative and match CFADS")
+    if not all(isfinite(x) and x >= 0 for x in (initial_cash, liquidity_floor)):
+        raise ValueError("initial cash and floor must be finite and nonnegative")
+    cash = float(initial_cash)
+    path = []
+    for cf, debt in zip(cfads, debt_service):
+        cash = cash + cf - debt
+        if not isfinite(cash):
+            raise ArithmeticError("cash path overflow")
+        path.append(cash)
+    first = 0 if initial_cash < liquidity_floor else next(
+        (i for i, value in enumerate(path, 1) if value < liquidity_floor), None)
+    funding = max(0.0, liquidity_floor - min([initial_cash, *path]))
+    if not isfinite(funding):
+        raise ArithmeticError("funding overflow")
+    finance = project_finance(cfads, debt_service, 0)
+    return {"cash_path": path, "first_breach_period": first,
+            "minimum_funding": funding, "dscr": finance["dscr"],
+            "minimum_dscr": finance["minimum_dscr"]}

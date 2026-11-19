@@ -1,0 +1,8 @@
+{
+  "scenarios": ["base", "adverso", "severo"],
+  "metrics": [
+    {"id": "mora", "label": "Cartera vencida / cartera bruta", "unit": "%", "direction": "upper", "minimum": 0, "maximum": 100, "warning": 4, "limit": 6, "owner": "Riesgo de crédito", "action": "Revisar cosechas y originación"},
+    {"id": "liquidez", "label": "Activos líquidos / salidas netas 30 días", "unit": "%", "direction": "lower", "minimum": 0, "maximum": 10000, "warning": 130, "limit": 110, "owner": "Tesorería", "action": "Revisar fuentes de fondeo"},
+    {"id": "concentracion", "label": "Mayor contraparte / exposición total", "unit": "%", "direction": "upper", "minimum": 0, "maximum": 100, "warning": 12, "limit": 15, "owner": "Riesgo integral", "action": "Revisar reducción de exposición"}
+  ]
+}

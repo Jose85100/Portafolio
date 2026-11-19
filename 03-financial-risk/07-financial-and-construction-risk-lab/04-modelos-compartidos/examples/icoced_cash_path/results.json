@@ -1,0 +1,298 @@
+{
+  "source_sha256": "b2e0b7bb52b8b7b588bc7c0bafefc4e54510906694da34a35b3c692de85a4daa",
+  "cost_share_sensitivity": [
+    {
+      "assumed_concrete_cost_share": 0.0,
+      "windows_with_shortfall": 0,
+      "maximum_funding_cop_millions": 0.0
+    },
+    {
+      "assumed_concrete_cost_share": 0.10112,
+      "windows_with_shortfall": 10,
+      "maximum_funding_cop_millions": 11.148776400912993
+    },
+    {
+      "assumed_concrete_cost_share": 0.2,
+      "windows_with_shortfall": 12,
+      "maximum_funding_cop_millions": 55.29742167902086
+    }
+  ],
+  "windows": 34,
+  "windows_with_shortfall": 10,
+  "maximum_funding_cop_millions": 11.148776400912993,
+  "worst_minimum_dscr": 0.8666784550830935,
+  "windows_detail": [
+    {
+      "start": "2022-01-01",
+      "end": "2023-12-01",
+      "first_breach_period": null,
+      "minimum_funding_cop_millions": 0.0,
+      "minimum_dscr": 0.9015212995410319,
+      "closing_cash_cop_millions": 3.117207350123607
+    },
+    {
+      "start": "2022-02-01",
+      "end": "2024-01-01",
+      "first_breach_period": null,
+      "minimum_funding_cop_millions": 0.0,
+      "minimum_dscr": 0.8873201037101381,
+      "closing_cash_cop_millions": 1.9223380581988039
+    },
+    {
+      "start": "2022-03-01",
+      "end": "2024-02-01",
+      "first_breach_period": 24,
+      "minimum_funding_cop_millions": 0.7933103992425856,
+      "minimum_dscr": 0.8710063016148534,
+      "closing_cash_cop_millions": -0.7933103992425856
+    },
+    {
+      "start": "2022-04-01",
+      "end": "2024-03-01",
+      "first_breach_period": 22,
+      "minimum_funding_cop_millions": 5.012234314600079,
+      "minimum_dscr": 0.8666784550830935,
+      "closing_cash_cop_millions": -5.012234314600079
+    },
+    {
+      "start": "2022-05-01",
+      "end": "2024-04-01",
+      "first_breach_period": 21,
+      "minimum_funding_cop_millions": 5.502530732570193,
+      "minimum_dscr": 0.8741943628293948,
+      "closing_cash_cop_millions": -5.502530732570193
+    },
+    {
+      "start": "2022-06-01",
+      "end": "2024-05-01",
+      "first_breach_period": 21,
+      "minimum_funding_cop_millions": 5.133656110355588,
+      "minimum_dscr": 0.8840861602227837,
+      "closing_cash_cop_millions": -5.133656110355588
+    },
+    {
+      "start": "2022-07-01",
+      "end": "2024-06-01",
+      "first_breach_period": 22,
+      "minimum_funding_cop_millions": 4.1373229131707205,
+      "minimum_dscr": 0.8951354972750949,
+      "closing_cash_cop_millions": -4.1373229131707205
+    },
+    {
+      "start": "2022-08-01",
+      "end": "2024-07-01",
+      "first_breach_period": 21,
+      "minimum_funding_cop_millions": 5.256701347276845,
+      "minimum_dscr": 0.8993233133595415,
+      "closing_cash_cop_millions": -5.256701347276845
+    },
+    {
+      "start": "2022-09-01",
+      "end": "2024-08-01",
+      "first_breach_period": 18,
+      "minimum_funding_cop_millions": 9.467888681890656,
+      "minimum_dscr": 0.8939092374568663,
+      "closing_cash_cop_millions": -9.467888681890656
+    },
+    {
+      "start": "2022-10-01",
+      "end": "2024-09-01",
+      "first_breach_period": 18,
+      "minimum_funding_cop_millions": 8.884039531701347,
+      "minimum_dscr": 0.9027457706147686,
+      "closing_cash_cop_millions": -8.884039531701347
+    },
+    {
+      "start": "2022-11-01",
+      "end": "2024-10-01",
+      "first_breach_period": 17,
+      "minimum_funding_cop_millions": 10.012949676784373,
+      "minimum_dscr": 0.9061168018525355,
+      "closing_cash_cop_millions": -10.012949676784373
+    },
+    {
+      "start": "2022-12-01",
+      "end": "2024-11-01",
+      "first_breach_period": 16,
+      "minimum_funding_cop_millions": 11.148776400912993,
+      "minimum_dscr": 0.9091158616093603,
+      "closing_cash_cop_millions": -11.148776400912993
+    },
+    {
+      "start": "2023-01-01",
+      "end": "2024-12-01",
+      "first_breach_period": null,
+      "minimum_funding_cop_millions": 0.0,
+      "minimum_dscr": 1.0198801711218295,
+      "closing_cash_cop_millions": 25.284981934112622
+    },
+    {
+      "start": "2023-02-01",
+      "end": "2025-01-01",
+      "first_breach_period": null,
+      "minimum_funding_cop_millions": 0.0,
+      "minimum_dscr": 1.016383580066157,
+      "closing_cash_cop_millions": 25.7279661623556
+    },
+    {
+      "start": "2023-03-01",
+      "end": "2025-02-01",
+      "first_breach_period": null,
+      "minimum_funding_cop_millions": 0.0,
+      "minimum_dscr": 1.0124562040639868,
+      "closing_cash_cop_millions": 25.734817120622637
+    },
+    {
+      "start": "2023-04-01",
+      "end": "2025-03-01",
+      "first_breach_period": null,
+      "minimum_funding_cop_millions": 0.0,
+      "minimum_dscr": 1.0161569588945345,
+      "closing_cash_cop_millions": 26.227811920316142
+    },
+    {
+      "start": "2023-05-01",
+      "end": "2025-04-01",
+      "first_breach_period": null,
+      "minimum_funding_cop_millions": 0.0,
+      "minimum_dscr": 1.0086503434343428,
+      "closing_cash_cop_millions": 24.891437252525208
+    },
+    {
+      "start": "2023-06-01",
+      "end": "2025-05-01",
+      "first_breach_period": null,
+      "minimum_funding_cop_millions": 0.0,
+      "minimum_dscr": 1.0093005651542066,
+      "closing_cash_cop_millions": 24.406417568222196
+    },
+    {
+      "start": "2023-07-01",
+      "end": "2025-06-01",
+      "first_breach_period": null,
+      "minimum_funding_cop_millions": 0.0,
+      "minimum_dscr": 1.0183415038673151,
+      "closing_cash_cop_millions": 26.771383462243733
+    },
+    {
+      "start": "2023-08-01",
+      "end": "2025-07-01",
+      "first_breach_period": null,
+      "minimum_funding_cop_millions": 0.0,
+      "minimum_dscr": 1.0151591222168832,
+      "closing_cash_cop_millions": 25.050969085375556
+    },
+    {
+      "start": "2023-09-01",
+      "end": "2025-08-01",
+      "first_breach_period": null,
+      "minimum_funding_cop_millions": 0.0,
+      "minimum_dscr": 1.0103620767494352,
+      "closing_cash_cop_millions": 22.643157691067373
+    },
+    {
+      "start": "2023-10-01",
+      "end": "2025-09-01",
+      "first_breach_period": null,
+      "minimum_funding_cop_millions": 0.0,
+      "minimum_dscr": 1.0110680412371134,
+      "closing_cash_cop_millions": 22.072628865979354
+    },
+    {
+      "start": "2023-11-01",
+      "end": "2025-10-01",
+      "first_breach_period": null,
+      "minimum_funding_cop_millions": 0.0,
+      "minimum_dscr": 1.0032866096866095,
+      "closing_cash_cop_millions": 19.021728612128555
+    },
+    {
+      "start": "2023-12-01",
+      "end": "2025-11-01",
+      "first_breach_period": null,
+      "minimum_funding_cop_millions": 0.0,
+      "minimum_dscr": 1.0131193317805791,
+      "closing_cash_cop_millions": 22.09478692474498
+    },
+    {
+      "start": "2024-01-01",
+      "end": "2025-12-01",
+      "first_breach_period": null,
+      "minimum_funding_cop_millions": 0.0,
+      "minimum_dscr": 1.0343948853890539,
+      "closing_cash_cop_millions": 29.166328395446698
+    },
+    {
+      "start": "2024-02-01",
+      "end": "2026-01-01",
+      "first_breach_period": null,
+      "minimum_funding_cop_millions": 0.0,
+      "minimum_dscr": 1.0482184375477752,
+      "closing_cash_cop_millions": 33.973719003210505
+    },
+    {
+      "start": "2024-03-01",
+      "end": "2026-02-01",
+      "first_breach_period": null,
+      "minimum_funding_cop_millions": 0.0,
+      "minimum_dscr": 1.042291635186184,
+      "closing_cash_cop_millions": 31.810924678128075
+    },
+    {
+      "start": "2024-04-01",
+      "end": "2026-03-01",
+      "first_breach_period": null,
+      "minimum_funding_cop_millions": 0.0,
+      "minimum_dscr": 1.0327528929851515,
+      "closing_cash_cop_millions": 32.18574254992312
+    },
+    {
+      "start": "2024-05-01",
+      "end": "2026-04-01",
+      "first_breach_period": null,
+      "minimum_funding_cop_millions": 0.0,
+      "minimum_dscr": 1.0360008154943936,
+      "closing_cash_cop_millions": 33.01817737003063
+    },
+    {
+      "start": "2024-06-01",
+      "end": "2026-05-01",
+      "first_breach_period": null,
+      "minimum_funding_cop_millions": 0.0,
+      "minimum_dscr": 1.0324808810347028,
+      "closing_cash_cop_millions": 31.7149910103726
+    },
+    {
+      "start": "2024-07-01",
+      "end": "2026-06-01",
+      "first_breach_period": null,
+      "minimum_funding_cop_millions": 0.0,
+      "minimum_dscr": 1.03329629061141,
+      "closing_cash_cop_millions": 31.87205648503455
+    },
+    {
+      "start": "2024-08-01",
+      "end": "2026-07-01",
+      "first_breach_period": null,
+      "minimum_funding_cop_millions": 0.0,
+      "minimum_dscr": 1.0288706360851554,
+      "closing_cash_cop_millions": 30.243043323808777
+    },
+    {
+      "start": "2024-09-01",
+      "end": "2026-08-01",
+      "first_breach_period": null,
+      "minimum_funding_cop_millions": 0.0,
+      "minimum_dscr": 1.0268858566302697,
+      "closing_cash_cop_millions": 29.290515914194955
+    },
+    {
+      "start": "2024-10-01",
+      "end": "2026-09-01",
+      "first_breach_period": null,
+      "minimum_funding_cop_millions": 0.0,
+      "minimum_dscr": 1.0263325634865272,
+      "closing_cash_cop_millions": 28.7900041850732
+    }
+  ]
+}
