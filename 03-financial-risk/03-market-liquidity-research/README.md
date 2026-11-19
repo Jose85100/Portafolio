@@ -34,3 +34,7 @@ Comparar contra baselines, registrar supuestos, hacer validación temporal, stre
 El [notebook](laboratorio-integrado/notebook.ipynb) separa pérdidas de mercado, déficit de financiación y costo económico de financiar ese déficit. Incluye reserva inicial, primera ruptura censurada, sensibilidad de ES y una ablación de dependencia por permutación.
 
 VaR usa ahora la inversa generalizada empírica (sin interpolar entre átomos); ES conserva masa de cola exactamente 1−α. La convención se contrasta con las mismas fixtures racionales de construcción. La acumulación de caja rechaza overflow y los conteos de escenarios/horizonte deben ser enteros explícitos.
+
+## Modelo de estados observado
+
+El [benchmark de transiciones de rangos IRL](03-liquidez-estocastica/irl-transition-benchmark/README.md) estima una matriz suavizada con datos SFC hasta 2021 y evalúa 2022 frente a referencias probabilísticas, con fórmulas y remuestreo por entidad. Los rangos son ilustrativos y no miden primera ruptura ni incumplimiento.

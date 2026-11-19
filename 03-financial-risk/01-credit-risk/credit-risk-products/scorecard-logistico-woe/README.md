@@ -39,3 +39,7 @@ AUC = 0.667 | Gini = 0.333 | KS = 0.254
 ## Aplicación observada externa
 
 [Benchmark UCI de tarjetas](observed-uci350/README.md): WoE y logística con datos históricos de Taiwán y prueba aleatoria retenida. No es un score de originación ni validación institucional.
+
+## Benchmark externo adicional
+
+[South German Credit UCI 573](observed-uci573/README.md) incorpora el archivo oficial, un modelo de clasificación con codificación categórica y pruebas de evaluación retenida. Es una muestra histórica de créditos seleccionados; no permite interpretar el score como PD poblacional ni valida originación colombiana.

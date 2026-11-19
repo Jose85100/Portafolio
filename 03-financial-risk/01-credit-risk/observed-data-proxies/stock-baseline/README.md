@@ -27,3 +27,20 @@ PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s 03-financial-risk/01-c
 ```
 
 Los valores por corte y el hash constan en [results.json](results.json). Datos: ICETEX, Fuente: Portal de Datos Abiertos www.datos.gov.co. Para validar PD o cosechas hacen falta registros longitudinales autorizados, fecha de originación, definición de default, migraciones y fechas de disponibilidad de cada versión de datos.
+
+## Descomposición de los cambios por fase
+
+La [descomposición reproducible](decomposition.json) distingue el cambio en la proporción de mora dentro de las fases del cambio en la participación de cada fase. Si `nᵢₜ` es el número de créditos, `mᵢₜ` los de mora mayor a 90 días, `rᵢₜ = mᵢₜ/nᵢₜ` y `wᵢₜ = nᵢₜ / Σⱼnⱼₜ`, el agregado es `Rₜ = Σᵢ wᵢₜ rᵢₜ`. Para dos cortes consecutivos la identidad exacta es:
+
+```text
+R₁ − R₀ = Σᵢ [(wᵢ₁ + wᵢ₀)/2] × (rᵢ₁ − rᵢ₀)
+         + Σᵢ [(rᵢ₁ + rᵢ₀)/2] × (wᵢ₁ − wᵢ₀)
+```
+
+El primer término es el **efecto aritmético de las tasas por fase** y el segundo el **efecto de mezcla**; se multiplican por 100 para expresarlos en puntos porcentuales. El promedio de extremos reparte la interacción de forma simétrica y permite reconciliar exactamente el cambio total. No identifica causas. Dentro de cada fase pueden cambiar departamentos, cartera y deudores; el archivo registra incorporaciones y salidas de etiquetas departamentales, sin afirmar que los grupos sean cohortes constantes. Se omite el salto marzo–septiembre de 2025 porque no hay junio válido.
+
+En el último par observado, junio–septiembre de 2026, la proporción total pasa de 8,391% a 8,941%: **+0,550 puntos**, de los cuales +0,590 corresponden a cambios de tasas por fase y −0,040 a mezcla. Es una identidad descriptiva de dos stocks; no son nuevos defaults, ni efectos causales ni una predicción.
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 03-financial-risk/01-credit-risk/observed-data-proxies/stock-baseline/decompose.py
+```

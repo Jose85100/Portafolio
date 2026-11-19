@@ -1,0 +1,58 @@
+{
+  "source_sha256": "0b40d40eb7321693d559e247a556f88a6cc8df8489c3cb2ae084db7592584551",
+  "seed": 42,
+  "split": "stratified random 75/25",
+  "features": [
+    "laufkont",
+    "moral",
+    "sparkont",
+    "beszeit",
+    "rate",
+    "laufzeit"
+  ],
+  "metrics": {
+    "train_n": 750,
+    "test_n": 250,
+    "train_bad_rate": 0.3,
+    "test_bad_rate": 0.3,
+    "baseline_brier": 0.20999999999999994,
+    "model_brier": 0.15522044077309222,
+    "model_auc": 0.8066285714285715,
+    "baseline_logloss": 0.6108643020548934,
+    "model_logloss": 0.48022838445263166,
+    "brier_gain_baseline_minus_model": 0.05477955922690775,
+    "brier_gain_bootstrap_95_conditional": [
+      0.03189004045268826,
+      0.07451609422442934
+    ],
+    "calibration_groups": [
+      {
+        "n": 50,
+        "mean_predicted": 0.06366316761236074,
+        "observed_rate": 0.08
+      },
+      {
+        "n": 51,
+        "mean_predicted": 0.13842184909935776,
+        "observed_rate": 0.09803921568627451
+      },
+      {
+        "n": 49,
+        "mean_predicted": 0.23008188943528676,
+        "observed_rate": 0.22448979591836735
+      },
+      {
+        "n": 50,
+        "mean_predicted": 0.38602148273215015,
+        "observed_rate": 0.42
+      },
+      {
+        "n": 50,
+        "mean_predicted": 0.6280042298534034,
+        "observed_rate": 0.68
+      }
+    ],
+    "overlapping_feature_patterns": 56
+  },
+  "scope": "Case-control-like historical sample with bad-credit oversampling; classification score, not a population PD."
+}

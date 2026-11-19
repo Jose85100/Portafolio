@@ -1,0 +1,592 @@
+{
+  "source_sha256": "c856d4e8ac26b63347d18e722f5467a7f9421dce9b01ab79d3aad4ca5f13ffcf",
+  "comparisons": [
+    {
+      "start": "2022-03-31",
+      "end": "2022-06-30",
+      "total_share_before": 0.061426700539603765,
+      "total_share_after": 0.07321939334016031,
+      "change_pp": 1.1792692800556546,
+      "rate_effect_pp": 1.1699678729400667,
+      "mix_effect_pp": 0.00930140711558827,
+      "reconciliation_residual_pp": -2.220446049250313e-16,
+      "phases": [
+        {
+          "phase": "AMORTIZACION",
+          "weight_before": 0.5042882744495648,
+          "weight_after": 0.5057028849888767,
+          "arrears_share_before": 0.10316127583547306,
+          "arrears_share_after": 0.09660638223587738,
+          "rate_effect_pp": -0.3310192293325632,
+          "mix_effect_pp": 0.014129671726069527,
+          "departments_added": [],
+          "departments_removed": []
+        },
+        {
+          "phase": "ESTUDIOS",
+          "weight_before": 0.49571172555043524,
+          "weight_after": 0.4942971150111233,
+          "arrears_share_before": 0.01897005512241148,
+          "arrears_share_after": 0.04929275610801543,
+          "rate_effect_pp": 1.5009871022726298,
+          "mix_effect_pp": -0.004828264610481259,
+          "departments_added": [
+            "Sin Informacion"
+          ],
+          "departments_removed": [
+            "SIN INFORMACION"
+          ]
+        }
+      ]
+    },
+    {
+      "start": "2022-06-30",
+      "end": "2022-09-30",
+      "total_share_before": 0.07321939334016031,
+      "total_share_after": 0.062386558234864456,
+      "change_pp": -1.0832835105295855,
+      "rate_effect_pp": -1.0027550379738464,
+      "mix_effect_pp": -0.08052847255573972,
+      "reconciliation_residual_pp": 6.661338147750939e-16,
+      "phases": [
+        {
+          "phase": "AMORTIZACION",
+          "weight_before": 0.5057028849888767,
+          "weight_after": 0.490312714516393,
+          "arrears_share_before": 0.09660638223587738,
+          "arrears_share_after": 0.09160978526231876,
+          "rate_effect_pp": -0.24883442650526,
+          "mix_effect_pp": -0.14483394517373924,
+          "departments_added": [],
+          "departments_removed": []
+        },
+        {
+          "phase": "ESTUDIOS",
+          "weight_before": 0.4942971150111233,
+          "weight_after": 0.509687285483607,
+          "arrears_share_before": 0.04929275610801543,
+          "arrears_share_after": 0.03427418388523828,
+          "rate_effect_pp": -0.7539206114685864,
+          "mix_effect_pp": 0.06430547261799952,
+          "departments_added": [],
+          "departments_removed": [
+            "Sin Informacion"
+          ]
+        }
+      ]
+    },
+    {
+      "start": "2022-09-30",
+      "end": "2022-12-31",
+      "total_share_before": 0.062386558234864456,
+      "total_share_after": 0.056414474506607734,
+      "change_pp": -0.5972083728256722,
+      "rate_effect_pp": -0.6197078946826226,
+      "mix_effect_pp": 0.022499521856950176,
+      "reconciliation_residual_pp": 1.1102230246251565e-16,
+      "phases": [
+        {
+          "phase": "AMORTIZACION",
+          "weight_before": 0.490312714516393,
+          "weight_after": 0.4966948843209512,
+          "arrears_share_before": 0.09160978526231876,
+          "arrears_share_after": 0.06304392689421204,
+          "rate_effect_pp": -1.4097359638316338,
+          "mix_effect_pp": 0.04935131259441224,
+          "departments_added": [],
+          "departments_removed": [
+            "SIN INFORMACION"
+          ]
+        },
+        {
+          "phase": "ESTUDIOS",
+          "weight_before": 0.509687285483607,
+          "weight_after": 0.5033051156790488,
+          "arrears_share_before": 0.03427418388523828,
+          "arrears_share_after": 0.04987209100166406,
+          "rate_effect_pp": 0.7900280691490112,
+          "mix_effect_pp": -0.026851790737462067,
+          "departments_added": [],
+          "departments_removed": []
+        }
+      ]
+    },
+    {
+      "start": "2022-12-31",
+      "end": "2023-03-31",
+      "total_share_before": 0.056414474506607734,
+      "total_share_after": 0.0630425800777522,
+      "change_pp": 0.662810557114446,
+      "rate_effect_pp": 0.7231428584017314,
+      "mix_effect_pp": -0.06033230128728491,
+      "reconciliation_residual_pp": -5.551115123125783e-16,
+      "phases": [
+        {
+          "phase": "AMORTIZACION",
+          "weight_before": 0.4966948843209512,
+          "weight_after": 0.47718294477371404,
+          "arrears_share_before": 0.06304392689421204,
+          "arrears_share_after": 0.0884878681087212,
+          "rate_effect_pp": 1.2389645116799228,
+          "mix_effect_pp": -0.1478339611790785,
+          "departments_added": [],
+          "departments_removed": []
+        },
+        {
+          "phase": "ESTUDIOS",
+          "weight_before": 0.5033051156790488,
+          "weight_after": 0.522817055226286,
+          "arrears_share_before": 0.04987209100166406,
+          "arrears_share_after": 0.03981828517027678,
+          "rate_effect_pp": -0.5158216532781914,
+          "mix_effect_pp": 0.08750165989179358,
+          "departments_added": [
+            "SIN INFORMACION"
+          ],
+          "departments_removed": []
+        }
+      ]
+    },
+    {
+      "start": "2023-03-31",
+      "end": "2023-06-30",
+      "total_share_before": 0.0630425800777522,
+      "total_share_after": 0.0713334522468547,
+      "change_pp": 0.8290872169102501,
+      "rate_effect_pp": 0.7665612064269538,
+      "mix_effect_pp": 0.06252601048329676,
+      "reconciliation_residual_pp": -4.440892098500626e-16,
+      "phases": [
+        {
+          "phase": "AMORTIZACION",
+          "weight_before": 0.47718294477371404,
+          "weight_after": 0.48979257735283843,
+          "arrears_share_before": 0.0884878681087212,
+          "arrears_share_after": 0.09710006834519813,
+          "rate_effect_pp": 0.4163893410162852,
+          "mix_effect_pp": 0.11700978449009047,
+          "departments_added": [],
+          "departments_removed": []
+        },
+        {
+          "phase": "ESTUDIOS",
+          "weight_before": 0.522817055226286,
+          "weight_after": 0.5102074226471616,
+          "arrears_share_before": 0.03981828517027678,
+          "arrears_share_after": 0.046597831500708786,
+          "rate_effect_pp": 0.3501718654106685,
+          "mix_effect_pp": -0.05448377400679372,
+          "departments_added": [],
+          "departments_removed": [
+            "SIN INFORMACION"
+          ]
+        }
+      ]
+    },
+    {
+      "start": "2023-06-30",
+      "end": "2023-09-30",
+      "total_share_before": 0.0713334522468547,
+      "total_share_after": 0.07928920099743121,
+      "change_pp": 0.7955748750576517,
+      "rate_effect_pp": 0.867409003685041,
+      "mix_effect_pp": -0.07183412862738994,
+      "reconciliation_residual_pp": 6.661338147750939e-16,
+      "phases": [
+        {
+          "phase": "AMORTIZACION",
+          "weight_before": 0.48979257735283843,
+          "weight_after": 0.479610710399466,
+          "arrears_share_before": 0.09710006834519813,
+          "arrears_share_after": 0.1264363873357802,
+          "rate_effect_pp": 1.4219362040010306,
+          "mix_effect_pp": -0.11380092254860759,
+          "departments_added": [],
+          "departments_removed": []
+        },
+        {
+          "phase": "ESTUDIOS",
+          "weight_before": 0.5102074226471616,
+          "weight_after": 0.520389289600534,
+          "arrears_share_before": 0.046597831500708786,
+          "arrears_share_after": 0.03583654740721338,
+          "rate_effect_pp": -0.5545272003159896,
+          "mix_effect_pp": 0.04196679392121765,
+          "departments_added": [],
+          "departments_removed": []
+        }
+      ]
+    },
+    {
+      "start": "2023-09-30",
+      "end": "2023-12-31",
+      "total_share_before": 0.07928920099743121,
+      "total_share_after": 0.0824874859291548,
+      "change_pp": 0.3198284931723583,
+      "rate_effect_pp": 0.1081863135618828,
+      "mix_effect_pp": 0.21164217961047516,
+      "reconciliation_residual_pp": 3.3306690738754696e-16,
+      "phases": [
+        {
+          "phase": "AMORTIZACION",
+          "weight_before": 0.479610710399466,
+          "weight_after": 0.5066390439010371,
+          "arrears_share_before": 0.1264363873357802,
+          "arrears_share_after": 0.11505315854909542,
+          "rate_effect_pp": -0.5613353297007133,
+          "mix_effect_pp": 0.3263529991659685,
+          "departments_added": [],
+          "departments_removed": []
+        },
+        {
+          "phase": "ESTUDIOS",
+          "weight_before": 0.520389289600534,
+          "weight_after": 0.49336095609896297,
+          "arrears_share_before": 0.03583654740721338,
+          "arrears_share_after": 0.049045355910152286,
+          "rate_effect_pp": 0.6695216432625961,
+          "mix_effect_pp": -0.11471081955549335,
+          "departments_added": [],
+          "departments_removed": []
+        }
+      ]
+    },
+    {
+      "start": "2023-12-31",
+      "end": "2024-03-31",
+      "total_share_before": 0.0824874859291548,
+      "total_share_after": 0.08963055614875377,
+      "change_pp": 0.7143070219598979,
+      "rate_effect_pp": 0.8348820778985433,
+      "mix_effect_pp": -0.12057505593864568,
+      "reconciliation_residual_pp": 2.220446049250313e-16,
+      "phases": [
+        {
+          "phase": "AMORTIZACION",
+          "weight_before": 0.5066390439010371,
+          "weight_after": 0.4925386093817101,
+          "arrears_share_before": 0.11505315854909542,
+          "arrears_share_after": 0.14292180442530159,
+          "rate_effect_pp": 1.3922864093377791,
+          "mix_effect_pp": -0.18187795365231418,
+          "departments_added": [],
+          "departments_removed": []
+        },
+        {
+          "phase": "ESTUDIOS",
+          "weight_before": 0.49336095609896297,
+          "weight_after": 0.5074613906182899,
+          "arrears_share_before": 0.049045355910152286,
+          "arrears_share_after": 0.037906429341065376,
+          "rate_effect_pp": -0.5574043314392358,
+          "mix_effect_pp": 0.0613028977136685,
+          "departments_added": [
+            "Sin Informacion"
+          ],
+          "departments_removed": []
+        }
+      ]
+    },
+    {
+      "start": "2024-03-31",
+      "end": "2024-06-30",
+      "total_share_before": 0.08963055614875377,
+      "total_share_after": 0.08688275298855268,
+      "change_pp": -0.27478031602010955,
+      "rate_effect_pp": -0.2554843866538561,
+      "mix_effect_pp": -0.019295929366251588,
+      "reconciliation_residual_pp": -1.887379141862766e-15,
+      "phases": [
+        {
+          "phase": "AMORTIZACION",
+          "weight_before": 0.4925386093817101,
+          "weight_after": 0.4904042466312781,
+          "arrears_share_before": 0.14292180442530159,
+          "arrears_share_after": 0.12550843645620988,
+          "rate_effect_pp": -0.8558172822172047,
+          "mix_effect_pp": -0.028646375361350035,
+          "departments_added": [],
+          "departments_removed": []
+        },
+        {
+          "phase": "ESTUDIOS",
+          "weight_before": 0.5074613906182899,
+          "weight_after": 0.509595753368722,
+          "arrears_share_before": 0.037906429341065376,
+          "arrears_share_after": 0.04971172266430887,
+          "rate_effect_pp": 0.6003328955633486,
+          "mix_effect_pp": 0.009350445995098447,
+          "departments_added": [],
+          "departments_removed": []
+        }
+      ]
+    },
+    {
+      "start": "2024-06-30",
+      "end": "2024-09-30",
+      "total_share_before": 0.08688275298855268,
+      "total_share_after": 0.09011707420727945,
+      "change_pp": 0.3234321218726771,
+      "rate_effect_pp": 0.46981928196474865,
+      "mix_effect_pp": -0.14638716009207395,
+      "reconciliation_residual_pp": 2.3314683517128287e-15,
+      "phases": [
+        {
+          "phase": "AMORTIZACION",
+          "weight_before": 0.4904042466312781,
+          "weight_after": 0.4748140127359738,
+          "arrears_share_before": 0.12550843645620988,
+          "arrears_share_after": 0.14893617021276595,
+          "rate_effect_pp": 1.130643819871123,
+          "mix_effect_pp": -0.21393278046370595,
+          "departments_added": [],
+          "departments_removed": []
+        },
+        {
+          "phase": "ESTUDIOS",
+          "weight_before": 0.509595753368722,
+          "weight_after": 0.5251859872640262,
+          "arrears_share_before": 0.04971172266430887,
+          "arrears_share_after": 0.036939472981930566,
+          "rate_effect_pp": -0.6608245379063744,
+          "mix_effect_pp": 0.067545620371632,
+          "departments_added": [],
+          "departments_removed": []
+        }
+      ]
+    },
+    {
+      "start": "2024-09-30",
+      "end": "2024-12-31",
+      "total_share_before": 0.09011707420727945,
+      "total_share_after": 0.08774949421747139,
+      "change_pp": -0.23675799898080635,
+      "rate_effect_pp": -0.44244417808461833,
+      "mix_effect_pp": 0.20568617910381257,
+      "reconciliation_residual_pp": -6.106226635438361e-16,
+      "phases": [
+        {
+          "phase": "AMORTIZACION",
+          "weight_before": 0.4748140127359738,
+          "weight_after": 0.49683522987264267,
+          "arrears_share_before": 0.14893617021276595,
+          "arrears_share_after": 0.12539154176289632,
+          "rate_effect_pp": -1.1438560200408554,
+          "mix_effect_pp": 0.30205150560108096,
+          "departments_added": [],
+          "departments_removed": []
+        },
+        {
+          "phase": "ESTUDIOS",
+          "weight_before": 0.5251859872640262,
+          "weight_after": 0.5031647701273573,
+          "arrears_share_before": 0.036939472981930566,
+          "arrears_share_after": 0.05058096324028381,
+          "rate_effect_pp": 0.7014118419562371,
+          "mix_effect_pp": -0.0963653264972684,
+          "departments_added": [],
+          "departments_removed": []
+        }
+      ]
+    },
+    {
+      "start": "2024-12-31",
+      "end": "2025-03-31",
+      "total_share_before": 0.08774949421747139,
+      "total_share_after": 0.09328886720322885,
+      "change_pp": 0.5539372985757463,
+      "rate_effect_pp": 0.4898571735279358,
+      "mix_effect_pp": 0.06408012504781171,
+      "reconciliation_residual_pp": -1.2212453270876722e-15,
+      "phases": [
+        {
+          "phase": "AMORTIZACION",
+          "weight_before": 0.49683522987264267,
+          "weight_after": 0.5038821015931065,
+          "arrears_share_before": 0.12539154176289632,
+          "arrears_share_after": 0.1464021134175692,
+          "rate_effect_pp": 1.0512821599417075,
+          "mix_effect_pp": 0.09576475112463646,
+          "departments_added": [
+            "DISTRITOCAPITAL",
+            "LAGUAJIRA",
+            "NORTEDESANTANDER",
+            "SANANDRES",
+            "VALLEDELCAUCA"
+          ],
+          "departments_removed": [
+            "DISTRITO CAPITAL",
+            "LA GUAJIRA",
+            "NORTE DE SANTANDER",
+            "SAN ANDRES",
+            "VALLE DEL CAUCA"
+          ]
+        },
+        {
+          "phase": "ESTUDIOS",
+          "weight_before": 0.5031647701273573,
+          "weight_after": 0.4961178984068935,
+          "arrears_share_before": 0.05058096324028381,
+          "arrears_share_after": 0.03934440317390599,
+          "rate_effect_pp": -0.5614249864137717,
+          "mix_effect_pp": -0.031684626076824755,
+          "departments_added": [
+            "DISTRITOCAPITAL",
+            "LAGUAJIRA",
+            "NORTEDESANTANDER",
+            "SANANDRES",
+            "SinInformacion",
+            "VALLEDELCAUCA"
+          ],
+          "departments_removed": [
+            "DISTRITO CAPITAL",
+            "LA GUAJIRA",
+            "NORTE DE SANTANDER",
+            "SAN ANDRES",
+            "Sin Informacion",
+            "VALLE DEL CAUCA"
+          ]
+        }
+      ]
+    },
+    {
+      "start": "2025-09-30",
+      "end": "2025-12-31",
+      "total_share_before": 0.08825878200514646,
+      "total_share_after": 0.08971873209462225,
+      "change_pp": 0.14599500894757894,
+      "rate_effect_pp": -0.05224580348746377,
+      "mix_effect_pp": 0.1982408124350435,
+      "reconciliation_residual_pp": -8.326672684688674e-16,
+      "phases": [
+        {
+          "phase": "AMORTIZACION",
+          "weight_before": 0.5236027171716175,
+          "weight_after": 0.5476436522877957,
+          "arrears_share_before": 0.13640001129762655,
+          "arrears_share_after": 0.11860923502321367,
+          "rate_effect_pp": -0.9529152246914729,
+          "mix_effect_pp": 0.30653303724124004,
+          "departments_added": [],
+          "departments_removed": [
+            "CARTAGENA",
+            "YOPAL"
+          ]
+        },
+        {
+          "phase": "ESTUDIOS",
+          "weight_before": 0.4763972828283824,
+          "weight_after": 0.4523563477122043,
+          "arrears_share_before": 0.035347316356411876,
+          "arrears_share_after": 0.054742544360630155,
+          "rate_effect_pp": 0.9006694212040092,
+          "mix_effect_pp": -0.10829222480619653,
+          "departments_added": [],
+          "departments_removed": []
+        }
+      ]
+    },
+    {
+      "start": "2025-12-31",
+      "end": "2026-03-31",
+      "total_share_before": 0.08971873209462225,
+      "total_share_after": 0.08398900246299006,
+      "change_pp": -0.5729729631632194,
+      "rate_effect_pp": -0.7385966605676005,
+      "mix_effect_pp": 0.165623697404381,
+      "reconciliation_residual_pp": 0.0,
+      "phases": [
+        {
+          "phase": "AMORTIZACION",
+          "weight_before": 0.5476436522877957,
+          "weight_after": 0.5694584025452633,
+          "arrears_share_before": 0.11860923502321367,
+          "arrears_share_after": 0.12186758473123294,
+          "rate_effect_pp": 0.18199545770965075,
+          "mix_effect_pp": 0.2622970882826651,
+          "departments_added": [],
+          "departments_removed": []
+        },
+        {
+          "phase": "ESTUDIOS",
+          "weight_before": 0.4523563477122043,
+          "weight_after": 0.4305415974547367,
+          "arrears_share_before": 0.054742544360630155,
+          "arrears_share_after": 0.033888670516735706,
+          "rate_effect_pp": -0.9205921182772513,
+          "mix_effect_pp": -0.09667339087828415,
+          "departments_added": [],
+          "departments_removed": []
+        }
+      ]
+    },
+    {
+      "start": "2026-03-31",
+      "end": "2026-06-30",
+      "total_share_before": 0.08398900246299006,
+      "total_share_after": 0.08391438840678563,
+      "change_pp": -0.007461405620443062,
+      "rate_effect_pp": -0.1337212001415361,
+      "mix_effect_pp": 0.12625979452109307,
+      "reconciliation_residual_pp": -5.551115123125783e-17,
+      "phases": [
+        {
+          "phase": "AMORTIZACION",
+          "weight_before": 0.5694584025452633,
+          "weight_after": 0.5862363883907994,
+          "arrears_share_before": 0.12186758473123294,
+          "arrears_share_after": 0.10978602723289763,
+          "rate_effect_pp": -0.6981296533610323,
+          "mix_effect_pp": 0.19433405113007515,
+          "departments_added": [],
+          "departments_removed": []
+        },
+        {
+          "phase": "ESTUDIOS",
+          "weight_before": 0.4305415974547367,
+          "weight_after": 0.4137636116092006,
+          "arrears_share_before": 0.033888670516735706,
+          "arrears_share_after": 0.04725844360732799,
+          "rate_effect_pp": 0.5644084532194962,
+          "mix_effect_pp": -0.06807425660898209,
+          "departments_added": [],
+          "departments_removed": []
+        }
+      ]
+    },
+    {
+      "start": "2026-06-30",
+      "end": "2026-09-30",
+      "total_share_before": 0.08391438840678563,
+      "total_share_after": 0.08941364945443814,
+      "change_pp": 0.5499261047652513,
+      "rate_effect_pp": 0.5896633577085234,
+      "mix_effect_pp": -0.03973725294327227,
+      "reconciliation_residual_pp": 2.220446049250313e-16,
+      "phases": [
+        {
+          "phase": "AMORTIZACION",
+          "weight_before": 0.5862363883907994,
+          "weight_after": 0.5815892305219529,
+          "arrears_share_before": 0.10978602723289763,
+          "arrears_share_after": 0.134806975258582,
+          "rate_effect_pp": 1.4610052056939338,
+          "mix_effect_pp": -0.056833114809653654,
+          "departments_added": [],
+          "departments_removed": []
+        },
+        {
+          "phase": "ESTUDIOS",
+          "weight_before": 0.4137636116092006,
+          "weight_after": 0.4184107694780471,
+          "arrears_share_before": 0.04725844360732799,
+          "arrears_share_after": 0.026317115256243938,
+          "rate_effect_pp": -0.8713418479854104,
+          "mix_effect_pp": 0.017095861866381384,
+          "departments_added": [],
+          "departments_removed": []
+        }
+      ]
+    }
+  ]
+}

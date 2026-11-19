@@ -32,3 +32,7 @@ La salida es solo JSON agregado. El archivo original permanece fuera del reposit
 El archivo [results.json](results.json) registra el ejercicio ejecutado con Python, numpy 2.1.2, pandas 2.2.3 y scikit-learn 1.5.2. Los bloques contienen 170.882/56.963/56.962 transacciones de entrenamiento/validación/prueba; el último contiene solo 75 fraudes (prevalencia 0,132%). En prueba, con 570 alertas (1% redondeado hacia arriba), la regresión identifica 64/75 y la regla de monto 3/75. La precisión es 11,23% frente a 0,53%; AP es 0,6981 frente a 0,00145. Son resultados descriptivos de esta partición y este baseline sencillo, no medidas de eficacia de un producto ni garantía de desempeño futuro. El pequeño número de eventos, la correlación desconocida y los límites de preprocesamiento y etiquetas hacen incierta la generalización.
 
 La precisión numérica de AP puede variar ligeramente entre entornos y configuraciones de BLAS por diferencias de ajuste y orden de scores casi empatados. Una repetición independiente con `OPENBLAS_NUM_THREADS=1` produjo AP de prueba 0,69815 y conservó 64/75 detecciones con 570 alertas; no se exige igualdad de los últimos decimales.
+
+## Capacidad y umbral fuera del bloque de prueba
+
+[Modelo y capacidad](MODEL_AND_CAPACITY.md) desarrolla la logística, la frontera precisión–recobro para cinco cupos y un umbral ajustado en validación y congelado en prueba. El resultado es un ejercicio de investigación con datos de pagos y no elimina las limitaciones del PCA, la disponibilidad de etiquetas o la evaluación retrospectiva.
