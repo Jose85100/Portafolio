@@ -4,6 +4,8 @@ Programa de investigación aplicada con seis estudios de modelación, una implem
 
 La edición observada conserva un snapshot mensual SFC por entidad con corte dic-2022 y un anexo discontinuo por tipo para ago-2025, jul-2026 y ago-2026, con fórmula, hashes, reporte, figura, conciliación y límites. Mide ratios de cobertura de liquidez a 30 días frente al mínimo de 100%, no probabilidad de iliquidez ni shortfall de caja realizado.
 
+El [benchmark retrospectivo de IRL](03-liquidez-estocastica/irl-forecast-benchmark/) compara persistencia y media móvil en 2022 sobre el snapshot histórico por entidad; no valida faltantes de caja ni primera ruptura.
+
 ## Módulos
 
 1. [Expected Shortfall dinámico, FHS y teoría de valores extremos](01-expected-shortfall-dinamico/)

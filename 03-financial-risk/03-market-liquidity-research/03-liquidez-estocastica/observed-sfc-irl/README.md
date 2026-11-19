@@ -74,3 +74,7 @@ La Tabla 12 del PDF reporta componentes en millones de COP. Se reconstruye `IRL 
 Reproducción desde esta carpeta: `python3 scripts/build_sfc_irl_bulletin_appendix.py` (PyMuPDF, pandas, matplotlib). El runner valida las fechas y grupos esperados, revisa componentes agregados y concilia los ratios de agosto de 2026 contra la figura. La cobertura de tipos no permite extender percentiles entre entidades. IRL sigue siendo un indicador de cobertura prudencial a 30 días, no una probabilidad de iliquidez ni un shortfall de caja.
 
 ![Vintage mensual histórica y snapshots tipológicos discontinuos](figures/sfc_irl_history_plus_bulletin.png)
+
+## Benchmark retrospectivo
+
+El [ejercicio de pronóstico un mes adelante](../irl-forecast-benchmark/README.md) compara persistencia y media móvil sobre la misma muestra de 2022. La evaluación es retrospectiva, sin reconstrucción de vintages de publicación, y no valida una distribución de caja.

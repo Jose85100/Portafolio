@@ -60,3 +60,7 @@ The frozen public ICETEX aggregate snapshot is versioned under [`data/`](data/RE
 ## Evidencia validada y señales
 
 [Reporte histórico de la ejecución 2026-11-05](reports/2026-11-05-observed-evidence.md). [GitHub Actions #42148884390](https://github.com/Jose85100/Portafolio/actions/runs/42148884390) completó pruebas, ingesta ICETEX y benchmark UCI. Ese run produjo 19 periodos porque conservó tres filas conciliadas del corte que luego se identificó como incompleto; la versión congelada actual excluye la fecha completa para no presentar un corte parcial.
+
+## Referencias retrospectivas
+
+El [ejercicio de baseline de mora agregada](stock-baseline/README.md) compara trimestre previo y media histórica por fase, sin tratar stocks de mora como PD o cosechas. Documenta la exclusión de cortes discontinuos y la ausencia de vintages de publicación.

@@ -19,6 +19,10 @@ La simulación del laboratorio usa datos **sintéticos** generados con semilla f
 
 Como contexto observado separado, este proyecto incluye la [companion SFC de mezcla de calificación por producto](observed-sfc-product-risk-mix/README.md). Calcula la participación de saldos D/E dentro de saldos calificados A–E y reporta su cobertura frente al saldo bruto. Es un agregado descriptivo de cartera, no PD de originación ni transición entre estados, y no calibra ni valida el cálculo EL de este laboratorio. Reproducción, hash, fuente y límites están documentados en la companion.
 
+## Benchmark de impago observado
+
+El [benchmark UCI de un mes](observed-uci-payment-risk/README.md) compara una tasa global con una logística basada en historial de pago, y evalúa calibración en una muestra aleatoria retenida. Las pérdidas emplean cupo y LGD hipotética como proxies, no EAD ni pérdidas observadas; el benchmark no valida PD de 12 meses ni ECL.
+
 ## Cómo ejecutar
 
 ```bash
