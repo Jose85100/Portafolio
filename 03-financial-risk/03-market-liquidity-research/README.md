@@ -4,6 +4,8 @@ Programa de investigación aplicada con seis estudios de modelación, una implem
 
 La edición observada conserva un snapshot mensual SFC por entidad con corte dic-2022 y un anexo discontinuo por tipo para ago-2025, jul-2026 y ago-2026, con fórmula, hashes, reporte, figura, conciliación y límites. Mide ratios de cobertura de liquidez a 30 días frente al mínimo de 100%, no probabilidad de iliquidez ni shortfall de caja realizado.
 
+El [benchmark retrospectivo de IRL](03-liquidez-estocastica/irl-forecast-benchmark/) compara persistencia y media móvil en 2022 sobre el snapshot histórico por entidad; no valida faltantes de caja ni primera ruptura.
+
 ## Módulos
 
 1. [Expected Shortfall dinámico, FHS y teoría de valores extremos](01-expected-shortfall-dinamico/)
@@ -32,3 +34,7 @@ Comparar contra baselines, registrar supuestos, hacer validación temporal, stre
 El [notebook](laboratorio-integrado/notebook.ipynb) separa pérdidas de mercado, déficit de financiación y costo económico de financiar ese déficit. Incluye reserva inicial, primera ruptura censurada, sensibilidad de ES y una ablación de dependencia por permutación.
 
 VaR usa ahora la inversa generalizada empírica (sin interpolar entre átomos); ES conserva masa de cola exactamente 1−α. La convención se contrasta con las mismas fixtures racionales de construcción. La acumulación de caja rechaza overflow y los conteos de escenarios/horizonte deben ser enteros explícitos.
+
+## Modelo de estados observado
+
+El [benchmark de transiciones de rangos IRL](03-liquidez-estocastica/irl-transition-benchmark/README.md) estima una matriz suavizada con datos SFC hasta 2021 y evalúa 2022 frente a referencias probabilísticas, con fórmulas y remuestreo por entidad. Los rangos son ilustrativos y no miden primera ruptura ni incumplimiento.

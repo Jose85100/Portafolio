@@ -14,6 +14,10 @@ Cuatro programas de investigación para solicitudes de crédito y KYC. Revisión
 - [Técnicas y minimización de pérdida](MODEL_AND_LOSS_METHODS.md): calibración, costos por acción, MILP y escenarios.
 - [Motor ejecutable](loss-minimization-engine/README.md) y [resultados](loss-minimization-engine/RESULTS.md): logit, boosting, novedad y siete políticas.
 
+## Benchmark público de fraude transaccional
+
+[Benchmark externo de tarjetas](observed-card-fraud-benchmark/README.md): evaluación con separación temporal y cupo comparable sobre datos públicos de pagos, con métricas reproducibles. Es otro dominio; componentes anonimizados preprocesados, etiquetas sin fecha de disponibilidad y ranking retrospectivo impiden tratarlo como validación libre de fugas de fraude de originación.
+
 ## Extensión: fraude con IA y defensa por capas
 
 [Arquitecturas, proveedores y agenda defensiva](ai-enabled-fraud-defense/README.md): cuatro diagramas editables en draw.io, ocho proveedores candidatos documentados, 16 ideas de experimentos y un notebook nuevo ejecutado (32 celdas, 172 líneas de código y tres figuras). Estudia dependencia entre controles y estrés de proveedores/colas con datos sintéticos. Los ocho notebooks originales conservan las cifras de su entrega; este cuaderno y el conformal posterior se registran por separado. Las arquitecturas son diseño, sin integraciones comerciales desplegadas.

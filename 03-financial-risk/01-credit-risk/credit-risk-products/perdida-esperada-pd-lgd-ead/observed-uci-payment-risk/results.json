@@ -1,0 +1,72 @@
+{
+  "source_sha256": "30c6be3abd8dcfd3e6096c828bad8c2f011238620f5369220bd60cfc82700933",
+  "split": "stratified random 75/25, seed 42",
+  "features": [
+    "PAY_0",
+    "PAY_2",
+    "PAY_3",
+    "PAY_4",
+    "PAY_5",
+    "PAY_6"
+  ],
+  "n_train": 22500,
+  "n_test": 7500,
+  "train_default_rate": 0.2212,
+  "test_default_rate": 0.2212,
+  "baseline": {
+    "brier": 0.17227056,
+    "log_loss": 0.5284225707356826
+  },
+  "model": {
+    "brier": 0.147264536282231,
+    "auc": 0.6988782193673848,
+    "log_loss": 0.47457161192561576
+  },
+  "brier_improvement_baseline_minus_model": 0.025006023717768968,
+  "brier_improvement_bootstrap_95pct_conditional_on_fit": [
+    0.021668792197159017,
+    0.028309007709473234
+  ],
+  "calibration_bins": [
+    {
+      "n": 759,
+      "predicted": 0.04942715671598724,
+      "observed": 0.15151515151515152
+    },
+    {
+      "n": 760,
+      "predicted": 0.09694705456583647,
+      "observed": 0.1355263157894737
+    },
+    {
+      "n": 731,
+      "predicted": 0.12481031684814395,
+      "observed": 0.17510259917920656
+    },
+    {
+      "n": 3007,
+      "predicted": 0.20012704889591934,
+      "observed": 0.11406717658796142
+    },
+    {
+      "n": 747,
+      "predicted": 0.2213630536719929,
+      "observed": 0.23560910307898258
+    },
+    {
+      "n": 877,
+      "predicted": 0.37047605819697843,
+      "observed": 0.4070695553021665
+    },
+    {
+      "n": 619,
+      "predicted": 0.6016748196572175,
+      "observed": 0.7059773828756059
+    }
+  ],
+  "hypothetical_lgd": 0.45,
+  "sum_limit_twd": 1257247680.0,
+  "expected_proxy_loss_twd": 107713020.05796969,
+  "default_label_weighted_proxy_loss_twd": 100191456.0,
+  "interpretation": "One-month payment label in Taiwan, random holdout; credit limit is not EAD and proxy loss is not observed loss."
+}
